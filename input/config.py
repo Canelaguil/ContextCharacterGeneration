@@ -5,6 +5,7 @@ simulation = {
 }
 
 population_seed = {
+    'city_mode' : 'vars', # ['vars', 'files']
     'number_of_houses' : 750, # number of houses is only taken into account if not specified in input files
     'percentage_inhabited_houses' : 0.75,
 }
@@ -34,14 +35,17 @@ aesthetic_seed = {
     'light_skin_eye_color_distribution' : [0.3, 0.2, 0.5],
 }
 
-community = {
+society = {
     'marriage' : True,
     'divorce' : False,
     'marriage_age_women' : 16,
     'marriage_age_men' : 20,
     'male_meant_for_indepence' :  True,
     'female_meant_for_independece' : False,
+    'name_system' : 'medieval', # ['medieval', 'male-centric', 'equal']
+}
 
+community = {
     'classes' : 5,
     'class_names' : ['working class', 'lower middle class', 'middle class', 'upper middle class', 'nobility'],
     'class_distribution' : [0.5, 0.3, 0.15, 0.1, 0.05],

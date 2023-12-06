@@ -71,5 +71,9 @@ if __name__ == '__main__':
     if not check_config():
         print('There is a issue with the config formatting. Please check and try again.')
     else:
-        community = Community(simulation, population_seed, health_stats,
+        community = Community(society, population_seed, health_stats,
                               aesthetic_seed, community, institutions)
+        community.run(simulation['number_of_years'], simulation['simulation_output'])
+        if simulation['json_output']: 
+            community.json_output()
+        

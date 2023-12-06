@@ -1,11 +1,11 @@
 import numpy as np
-import mesa
+from mesa import Agent, Model
 from home import Home
 from person_classes import Personality
 
-class Person(mesa.Agent):
-    def __init__(self):
-        pass
+class Person(Agent):
+    def __init__(self, unique_id: int, model: Model) -> None:
+        super().__init__(unique_id, model)
 
     def step(self):
         pass
