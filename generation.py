@@ -1,5 +1,5 @@
 from input.config import *
-from classes.community import *
+from classes import Community
 
 def check_config(): 
     """
@@ -67,9 +67,9 @@ def check_config():
     return error
 
 
-
 if __name__ == '__main__':
     if not check_config():
         print('There is a issue with the config formatting. Please check and try again.')
     else:
-        pass
+        community = Community(simulation, population_seed, health_stats,
+                              aesthetic_seed, community, institutions)

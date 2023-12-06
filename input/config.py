@@ -7,10 +7,10 @@ simulation = {
 population_seed = {
     'number_of_houses' : 750, # number of houses is only taken into account if not specified in input files
     'percentage_inhabited_houses' : 0.75,
-    'bio_male_female_ratio' : 0.49 # percentage of men
 }
 
 health_stats = {
+    'bio_male_female_ratio' : 0.49, # percentage of men
     'average_health' : 0.7, # on a scale from 0-1
     'health_care_modifier' : 0.0, # increased chance for cure 
     'child_mortality' : 0.2, # yearly chance of child dying from childhood-specific illnesses (0 cancels out all childhood mortality)
