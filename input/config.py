@@ -49,11 +49,13 @@ community = {
     'classes' : 5,
     'class_names' : ['working class', 'lower middle class', 'middle class', 'upper middle class', 'nobility'],
     'class_distribution' : [0.5, 0.3, 0.15, 0.1, 0.05],
+    'class_mobility' : [(0.9, 0.08, 0.02, 0, 0), (), (), (), ()],
     # class distribution will only be taken into account if not specified in input
 
     'factions' : 3,
     'faction_names' : ['Zealots', 'Dogmatists', 'No religion'],
     'faction_distribution' : [0.35, 0.3, 0.35],
+    'faction_mobility' : [(0.95, 0.01, 0.04), (0.02, 0.9, 0.8), (0.15, 0.12, 0.73)],
     # faction distribution will only be taken into account if not specified in input
 }
 
