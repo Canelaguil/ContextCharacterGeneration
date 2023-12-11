@@ -1,5 +1,5 @@
 
 
 class Factions():
-    def __init__(self) -> None:
+    def __init__(self, community) -> None:
         pass

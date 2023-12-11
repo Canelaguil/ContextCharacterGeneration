@@ -4,10 +4,25 @@ simulation = {
     'json_output' : True,
 }
 
-population_seed = {
+seed = {
     'city_mode' : 'vars', # ['vars', 'files']
-    'number_of_houses' : 750, # number of houses is only taken into account if not specified in input files
     'percentage_inhabited_houses' : 0.75,
+    'generate' : False,
+
+    # generate city
+    'number_of_houses' : 750, 
+    'streets_per_neighborhood' : 5, 
+    'sections_per_neighborhood' : 5,
+    'houses_per_section': 5, 
+    'input_streets' : 'input/city/streetnames.txt', 
+    'input_neighborhoods' : 'input/city/neighborhoods.txt',
+    'input_male_names' : 'input/names/male.names', 
+    'input_female_names' : 'input/names/female.names', 
+    'input_surnames' : 'input/names/genericsur.names',
+
+    # pre-crafted city
+    'sections_street_file' : 'input/preset_city/SectionStreets.csv',
+    'neighborhood_file' : 'input/preset_city/Buurten.csv'
 }
 
 health_stats = {
@@ -37,18 +52,19 @@ aesthetic_seed = {
 
 society = {
     'marriage' : True,
+    'same_sex_marriage' : False,
     'divorce' : False,
     'marriage_age_women' : 16,
     'marriage_age_men' : 20,
-    'male_meant_for_indepence' :  True,
-    'female_meant_for_independece' : False,
+    'male_meant_for_independence' :  True,
+    'female_meant_for_independence' : False,
     'name_system' : 'medieval', # ['medieval', 'male-centric', 'equal']
 }
 
 community = {
     'classes' : 5,
     'class_names' : ['working class', 'lower middle class', 'middle class', 'upper middle class', 'nobility'],
-    'class_distribution' : [0.5, 0.3, 0.15, 0.1, 0.05],
+    'class_distribution' : [0.45, 0.3, 0.15, 0.08, 0.02],
     'class_mobility' : [(0.9, 0.08, 0.02, 0, 0), (), (), (), ()],
     # class distribution will only be taken into account if not specified in input
 

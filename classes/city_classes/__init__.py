@@ -1,2 +1,3 @@
-from city import City
-from institutions import Institutions
+from .city import City
+from .section import Section
+from .institutions import Institutions

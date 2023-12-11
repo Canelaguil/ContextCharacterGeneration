@@ -10,7 +10,7 @@ Factions can be used as:
 - religious factions
 - medieval guildes
 - political leanings
--
+- fantasy races
 ### Classes
 Class is the income class of the characters. Class determines the places people can live, the jobs they can access and the people they interact with. There is customizable mobility between factions.
 
@@ -23,3 +23,8 @@ An orphanage is a place where children younger than 18 go to live if there are n
 A monastery is a place where adults older than 16 can go to live, sometimes linked to a faction they belong to.
 
 Alternative implementation: university, sect, cult
+
+## Agent ID's 
+- Houses:           1-999
+- People:           1000 - 10 000
+- Relationships:    10 000 - 2 000 000
