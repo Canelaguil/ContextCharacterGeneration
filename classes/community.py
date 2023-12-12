@@ -4,7 +4,7 @@ from mesa import Agent, Model
 from mesa.time import StagedActivation
 from .city_classes import City, Institutions
 from .community_classes import Factions, CommunityEvents
-from .person_classes import Naming
+from .person_classes import Naming, Body
 from .person import Person
 from .relationship import Relationship
 
@@ -22,10 +22,8 @@ class Community(Model):
         self.manager = CommunityEvents(society)
         
         self.set_globals(health_stats, aesthetic_seed, names, society)
-
-        test = Person(3, self)
-
         self.init_community(society, aesthetic_seed, health_stats)
+        self.tests()
 
     """
     INIT FUNCTIONS
@@ -39,23 +37,25 @@ class Community(Model):
 
         # health
         Person.bio_mf_ratio = health_stats['bio_male_female_ratio']
-        Person.average_health = health_stats['average_health']
-        Person.health_care_modifier = health_stats['health_care_modifier']
-        Person.child_mortality = health_stats['child_mortality']
-        Person.disability_ch = health_stats['physical_disability_chance']
-        Person.disability_distr = health_stats['physical_disabilities_distribution']
-        Person.disability_impact = health_stats['physical_disabilities_health_impact']
-        Person.disabilities = health_stats['physical_disabilities']
-        Person.old_age = health_stats['old_age']
+        Body.average_health = health_stats['average_health']
+        Body.health_care_modifier = health_stats['health_care_modifier']
+        Body.child_mortality = health_stats['child_mortality']
+        Body.disability_ch = health_stats['physical_disability_chance']
+        Body.disability_distr = health_stats['physical_disabilities_distribution']
+        Body.disability_impact = health_stats['physical_disabilities_health_impact']
+        Body.disabilities = health_stats['physical_disabilities']
+        Body.old_age = health_stats['old_age']
 
         # aesthetics
-        Person.skin_distr = aesthetic_seed['skin_color_distribution']
-        Person.hair_colors = aesthetic_seed['hair_colors']
-        Person.dark_hair_distr = aesthetic_seed['dark_skin_hair_color_distribution']
-        Person.light_hair_distr = aesthetic_seed['light_skin_hair_color_distribution']
-        Person.eye_colors = aesthetic_seed['eye_colors']
-        Person.dark_eye_distr = aesthetic_seed['dark_skin_eye_color_distribution']
-        Person.light_eye_distr = aesthetic_seed['light_skin_eye_color_distribution']
+        Body.skin_distr = aesthetic_seed['skin_color_distribution']
+        Body.no_skins = len(Body.skin_distr)
+        Body.skins = list(range(Body.no_skins))
+        Body.hair_colors = aesthetic_seed['hair_colors']
+        Body.dark_hair_distr = aesthetic_seed['dark_skin_hair_color_distribution']
+        Body.light_hair_distr = aesthetic_seed['light_skin_hair_color_distribution']
+        Body.eye_colors = aesthetic_seed['eye_colors']
+        Body.dark_eye_distr = aesthetic_seed['dark_skin_eye_color_distribution']
+        Body.light_eye_distr = aesthetic_seed['light_skin_eye_color_distribution']
     
         # people
         Person.male_for_indepenence = society['male_meant_for_independence']
@@ -75,6 +75,13 @@ class Community(Model):
 
     def init_community(self, society, aesthetic_seed, health_stats):
         pass
+
+    def tests(self): 
+        test = Person(3, self)
+        print(test.names.full())
+        body = Body({'skin_color' : 2}, {'skin_color' : 4})
+        print(body.skin_color)
+
 
     """
     SIMULATION FUNCTIONS

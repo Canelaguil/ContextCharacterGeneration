@@ -6,7 +6,7 @@ from .person_classes import Personality, Naming
 class Person(Agent):
     def __init__(self, unique_id: int, model: Model) -> None:
         super().__init__(unique_id, model)
-        self.names = Naming('m', 'Jack', 'Femke', '', first_gen=True)
+        self.names = Naming('m', 'Jack', 'Femke', '', True)
         print(self.names.full())
 
     def step(self):

@@ -1,15 +1,19 @@
 import random
 
 class Naming():
-    def __init__(self, sex, father, mother, surnames, mode='medieval', first_gen=False) -> None:
-        if mode == 'medieval':
+    def __init__(self, sex, father, mother, surnames, first_gen=False) -> None:
+        """
+        Generates a name for the person 
+        """
+        # reads naming system
+        if Naming.system == 'medieval':
             self.generator = self.MedievalNameGenerator(sex, father, mother)
-        elif mode == 'male-centric': 
-            self.generator = self.MaleCentricNameGenerator(sex)
-        elif mode == 'female-centric': 
-            self.generator = self.MaleCentricNameGenerator(sex)
-        elif mode == 'equal':
-            self.generator = self.EqualNameGenerator(sex)
+        elif Naming.system == 'male-centric': 
+            self.generator = self.MaleCentricNameGenerator(sex, father, mother)
+        elif Naming.system == 'female-centric': 
+            self.generator = self.MaleCentricNameGenerator(sex, father, mother)
+        elif Naming.system == 'equal':
+            self.generator = self.EqualNameGenerator(sex, father, mother)
 
         if sex == 'f': 
             self.name = self.generator.get_female_first_name()
@@ -22,13 +26,14 @@ class Naming():
         """
         Returns string of full name
         """
-        return f"{self.name} {self.surname}"
+        return f"{self.name} {self.surname}".strip()
 
 
     class MedievalNameGenerator(): 
         def __init__(self, sex, father, mother) -> None:       
             """
             Naming based on late middle-ages Netherlands. 
+            Vars are double stored here and in parent for ease of use.
             """
             self.sex = sex
             self.mother = mother
@@ -81,7 +86,6 @@ class Naming():
             elif ch < 0.8:
                 return surnames
             return ""
-
 
     class MaleCentricNameGenerator():
         def __init__(self, sex, father, mother) -> None:

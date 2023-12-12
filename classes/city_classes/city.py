@@ -7,7 +7,8 @@ class City:
     def __init__(self, model, seed, community) -> None:
         self.model = model
         self.no_houses = 0
-        self.house_id = 1 # used for house unique IDs
+        self.house_id = 0 # used for house unique IDs
+        self.section_id = 0 # used for section unique IDs
         self.class_names =  community['class_names']
 
         self.class_houses = {}
@@ -32,26 +33,30 @@ class City:
         Initialize more or less the specified amount of houses (rounding error)
         with the correct class distribution.
         """
-        for c, class_perc in enumerate(class_distr):
-            self.class_houses[c] = {}
-            no_class_houses = round(class_perc * households)
-            for house in range(no_class_houses):
-                id = house + self.no_houses
-                key = f"h{id}"
-                self.class_houses[c][key] = Home(key, id, self.model, (c, self.class_names[c]))
-            self.no_houses += no_class_houses
+        # non functional
+        return
+        # for c, class_perc in enumerate(class_distr):
+        #     self.class_houses[c] = {}
+        #     no_class_houses = round(class_perc * households)
+        #     for house in range(no_class_houses):
+        #         id = house + self.no_houses
+        #         key = f"h{id}"
+        #         self.class_houses[c][key] = Home(key, id, self.model, (c, self.class_names[c]))
+        #     self.no_houses += no_class_houses
         # it's possible these don't align neatly
 
     def init_neighborhoods(self, no_neighs, no_neighstreets, no_streetsections, 
                            houses_per_section):
-        quan_class_distr = [len(self.class_houses[n]) for n in range(no_neighs)]
-        class_per_neigh = [[0 for _ in range(len(self.class_houses))] for _ in range(no_neighs)]
-        print(quan_class_distr)
-        print(class_per_neigh)
+        # non functional
+        pass
+        # quan_class_distr = [len(self.class_houses[n]) for n in range(no_neighs)]
+        # class_per_neigh = [[0 for _ in range(len(self.class_houses))] for _ in range(no_neighs)]
+        # print(quan_class_distr)
+        # print(class_per_neigh)
 
-        # Descending order
-        for neigh in range(no_neighs -1, -1, -1):
-            print(neigh)
+        # # Descending order
+        # for neigh in range(no_neighs -1, -1, -1):
+        #     print(neigh)
 
     def import_town(self, neigh_file, street_file):
         self.neighborhoods = {}
@@ -93,9 +98,10 @@ class City:
                 self.house_id += 1
                 house = Home(house_key, self.house_id, self.model, 
                              (in_class, self.class_names[in_class]), this_section)
+                house.register(self.street_lookup[street_name], street_name)
                 this_section.add_house(house)
 
-            self.streets[street_name][section_key] = this_section
+            self.sections[section_key] = this_section
             self.class_sections[in_class] = this_section
     
     """

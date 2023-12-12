@@ -20,13 +20,12 @@ class Home(Agent):
         self.caretakers = []
         self.care_dependants = []
 
-    def register(self, neighborhood: str, street: str, section: str):
+    def register(self, neighborhood: str, street: str):
         """
         Registers a house in its location. 
         """
         self.neighborhood = neighborhood
         self.street = street
-        self.section = section
         self.registered = True
 
     def step(self):
