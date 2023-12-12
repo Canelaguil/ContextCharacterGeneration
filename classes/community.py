@@ -51,6 +51,7 @@ class Community(Model):
         Body.no_skins = len(Body.skin_distr)
         Body.skins = list(range(Body.no_skins))
         Body.hair_colors = aesthetic_seed['hair_colors']
+        Body.hair_type_seed = aesthetic_seed['hair_type_seed']
         Body.dark_hair_distr = aesthetic_seed['dark_skin_hair_color_distribution']
         Body.light_hair_distr = aesthetic_seed['light_skin_hair_color_distribution']
         Body.eye_colors = aesthetic_seed['eye_colors']

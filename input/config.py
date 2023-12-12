@@ -45,6 +45,7 @@ aesthetic_seed = {
     'hair_colors' : ['black', 'dark brown', 'brown', 'red', 'blonde', 'strawberry blonde'],
     'dark_skin_hair_color_distribution' : [0.7, 0.25, 0.035, 0.005, 0.005, 0.005],
     'light_skin_hair_color_distribution' : [0.05, 0.1, 0.3, 0.05, 0.3, 0.2],
+    'hair_type_seed' : ['C', 'S'], # the curly / straight hair gene seed (lenght inconsequential)
     'eye_colors' : ['brown', 'green', 'blue'],
     'dark_skin_eye_color_distribution' : [0.7, 0.2, 0.1],
     'light_skin_eye_color_distribution' : [0.3, 0.2, 0.5],

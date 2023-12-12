@@ -8,7 +8,8 @@ class Body():
 
         # body variables
         self.skin_color = self.set_skin()
-        self.hair_type, self.hair_color = self.set_hair()
+        self.hair_type = self.set_hair_type()
+        self.hair_color = self.set_hair_color()
         self.eye_color = self.set_eyes()
         self.health = self.set_health()
 
@@ -26,40 +27,28 @@ class Body():
             m = self.mother_gens['skin_color']
             f = self.father_gens['skin_color']
 
-            skin_range = round(Body.no_skins * 0.25)
-            high = max(m, f) + skin_range
-            high_cap = high if high < Body.no_skins else Body.no_skins - 1
-            low = min(m, f) - skin_range
-            low_cap = low if low > -1 else 0
+            skin_range = round(Body.no_skins * 0.1)
             average = (m + f) / 2
-            
-            skin = random.triangular(low_cap, average, high_cap, 1)
-            return round(skin[0])
+            skin = random.normal(average, skin_range)
+            if skin < 0:
+                skin = 0
+            elif skin >= Body.no_skins:
+                skin = Body.no_skins - 1
+            return round(skin)                     
 
 
-
-
-            # distr = [0 for _ in Body.skins]
-            # distr[m] = 0.25
-            # if m-1 > 0:
-            #     distr[m-1] += 0.1
-            #     if distr[m-2] > 0:
-            #         distr[m-2] += 0.025
-            #     else: 
-            #         distr[m-1] += 0.025
-            # else:
-            #     distr[m] += 0.125
-            
-
-            # if m+1
-            # distr[f] = 0.25
-            
-            
-
-
-    def set_hair(self):
-        return None, None
-        pass
+    def set_hair_type(self):
+        if self.first_gen:
+            return [random.choice(Body.hair_type_seed),
+                    random.choice(Body.hair_type_seed)]
+        else:
+            mother_hair = self.mother_gens['hair_type']
+            father_hair = self.father_gens['hair_type']
+            return [random.choice(mother_hair), 
+                    random.choice(father_hair)]
+        
+    def set_hair_color(self):
+        return None
 
     def set_eyes(self):
         return None
