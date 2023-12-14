@@ -50,7 +50,7 @@ def check_config():
         print('Mismatch of lists in healt_stats.physical_disabilities')
         error = False
     for tup in health_stats['physical_disabilities_health_impact']:
-        if len(tup) != 3:
+        if len(tup) != 4:
             print('Incorrectly formatted tuple in physical_disabilities_health_impact')
             error = False
         
@@ -111,7 +111,7 @@ if __name__ == '__main__':
     else:
         names = read_names(seed['input_male_names'], seed['input_female_names'], seed['input_surnames'])
         community = Community(society, seed, health_stats,
-                              aesthetic_seed, community, institutions, names)
+                              aesthetic_seed, community, institutions, names, simulation['tests'])
         community.run(simulation['number_of_years'], simulation['simulation_output'])
         if simulation['json_output']: 
             community.json_output()

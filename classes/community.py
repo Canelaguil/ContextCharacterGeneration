@@ -9,7 +9,6 @@ from .person import Person
 from .relationship import Relationship
 from .tests import run_tests
 
-
 class Community(Model):
     def __init__(self, society, seed, health_stats, aesthetic_seed, 
                  community, institutions, names, testing=True) -> None:
@@ -45,18 +44,20 @@ class Community(Model):
         Body.disability_ch = health_stats['physical_disability_chance']
         Body.disability_distr = health_stats['physical_disabilities_distribution']
         Body.disability_impact = health_stats['physical_disabilities_health_impact']
-        Body.disabilities = health_stats['physical_disabilities']
+        Body.all_disabilities = health_stats['physical_disabilities']
         Body.old_age = health_stats['old_age']
 
         # aesthetics
         Body.skin_distr = aesthetic_seed['skin_color_distribution']
         Body.no_skins = len(Body.skin_distr)
         Body.skins = list(range(Body.no_skins))
+
         Body.hair_colors = aesthetic_seed['hair_colors']
         Body.no_hairs = len(Body.hair_colors)
         Body.hair_type_seed = aesthetic_seed['hair_type_seed']
         Body.dark_hair_distr = np.array(aesthetic_seed['dark_skin_hair_color_distribution'])
         Body.light_hair_distr = np.array(aesthetic_seed['light_skin_hair_color_distribution'])
+
         Body.eye_colors = aesthetic_seed['eye_colors']
         Body.dark_eye_distr = aesthetic_seed['dark_skin_eye_color_distribution']
         Body.light_eye_distr = aesthetic_seed['light_skin_eye_color_distribution']

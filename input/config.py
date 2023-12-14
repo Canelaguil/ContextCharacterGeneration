@@ -2,6 +2,7 @@ simulation = {
     'number_of_years' : 100,
     'simulation_output' : True,
     'json_output' : True,
+    'tests' : True
 }
 
 seed = {
@@ -33,10 +34,12 @@ health_stats = {
     'old_age' : 40, # when is a person considered to be old in this community?
 
     'physical_disability_chance' : 0.1,
-    'physical_disabilities' : ['blind', 'deaf', 'mute', 'missing limb', 'decreased mobility'], # from birth, an accident or old age
-    'physical_disabilities_distribution' : [0.2, 0.2, 0.2, 0.2, 0.2], # given that a disability occurs, chance of each
-    'physical_disabilities_health_impact' : [(False, True, 0), (True, False, -0.2), (True, False, -0.2), 
-                                             (False, True, -0.2), (False, True, -0.3)], # (communication, mobility, health_modifier)
+    'physical_disabilities' : ['blind', 'deaf', 'mute', 'missing limb', 'decreased mobility', 'cognitive'], # from birth, an accident or old age
+    'physical_disabilities_distribution' : [0.2, 0.1, 0.2, 0.2, 0.2, 0.1], # given that a disability occurs, chance of each
+    'physical_disabilities_health_impact' : [(False, True, False, 0), (True, False, False, -0.2), 
+                                             (True, False, False, -0.2), (False, True, False, -0.2), 
+                                             (False, True, False, -0.3), (True, False, True, -0.3)], 
+                                             # (communication, mobility, cognitive, health_modifier)
 
 }
 
@@ -46,9 +49,9 @@ aesthetic_seed = {
     'dark_skin_hair_color_distribution' : [0.7, 0.25, 0.035, 0.005, 0.005, 0.005],
     'light_skin_hair_color_distribution' : [0.05, 0.1, 0.3, 0.05, 0.3, 0.2],
     'hair_type_seed' : ['C', 'S'], # the curly / straight hair gene seed (lenght inconsequential)
-    'eye_colors' : ['brown', 'green', 'blue'],
-    'dark_skin_eye_color_distribution' : [0.7, 0.2, 0.1],
-    'light_skin_eye_color_distribution' : [0.3, 0.2, 0.5],
+    'eye_colors' : ['blue', 'green', 'brown'], # ['brown', 'green', 'blue'],
+    'dark_skin_eye_color_distribution' : [0.1, 0.2, 0.7],
+    'light_skin_eye_color_distribution' : [0.5, 0.2, 0.3],
 }
 
 society = {
