@@ -7,11 +7,12 @@ from .community_classes import Factions, CommunityEvents
 from .person_classes import Naming, Body
 from .person import Person
 from .relationship import Relationship
+from .tests import run_tests
 
 
 class Community(Model):
     def __init__(self, society, seed, health_stats, aesthetic_seed, 
-                 community, institutions, names) -> None:
+                 community, institutions, names, testing=True) -> None:
         super().__init__(self)
         self.schedule = StagedActivation(self, ["people", "relationships", "houses"])
 
@@ -23,7 +24,8 @@ class Community(Model):
         
         self.set_globals(health_stats, aesthetic_seed, names, society)
         self.init_community(society, aesthetic_seed, health_stats)
-        self.tests()
+        if testing:
+            run_tests(self)
 
     """
     INIT FUNCTIONS
@@ -51,9 +53,10 @@ class Community(Model):
         Body.no_skins = len(Body.skin_distr)
         Body.skins = list(range(Body.no_skins))
         Body.hair_colors = aesthetic_seed['hair_colors']
+        Body.no_hairs = len(Body.hair_colors)
         Body.hair_type_seed = aesthetic_seed['hair_type_seed']
-        Body.dark_hair_distr = aesthetic_seed['dark_skin_hair_color_distribution']
-        Body.light_hair_distr = aesthetic_seed['light_skin_hair_color_distribution']
+        Body.dark_hair_distr = np.array(aesthetic_seed['dark_skin_hair_color_distribution'])
+        Body.light_hair_distr = np.array(aesthetic_seed['light_skin_hair_color_distribution'])
         Body.eye_colors = aesthetic_seed['eye_colors']
         Body.dark_eye_distr = aesthetic_seed['dark_skin_eye_color_distribution']
         Body.light_eye_distr = aesthetic_seed['light_skin_eye_color_distribution']
@@ -76,13 +79,6 @@ class Community(Model):
 
     def init_community(self, society, aesthetic_seed, health_stats):
         pass
-
-    def tests(self): 
-        test = Person(3, self)
-        print(test.names.full())
-        body = Body({'skin_color' : 2}, {'skin_color' : 4})
-        print(body.skin_color)
-
 
     """
     SIMULATION FUNCTIONS
