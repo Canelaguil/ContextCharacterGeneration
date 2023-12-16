@@ -5,7 +5,7 @@ from mesa import Agent, Model
 from mesa.time import StagedActivation
 from .city_classes import City, Institutions
 from .community_classes import Factions, CommunityEvents
-from .person_classes import Naming, Body
+from .person_classes import Naming, Body, Personality
 from .person import Person
 from .relationship import Relationship
 import matplotlib.pyplot as plt
@@ -22,6 +22,35 @@ def plot(x, y, title, xlabel='', ylabel=''):
     plt.ylabel(ylabel)
     plt.xticks(x)
     plt.savefig(f'output/tests/plots/{title}.png')
+
+def plot3d(x, y, z, title, xlabel='', ylabel='', zlabel=''):
+    ax = plt.figure().add_subplot(projection='3d')
+    ax.scatter(x, y, z)
+
+    # ax.legend()
+    # ax.set_xlim(min(x), max(x))
+    # ax.set_ylim(0, 1)
+    # ax.set_zlim(0, 1)
+    ax.set_xlabel(xlabel)
+    ax.set_ylabel(ylabel)
+    ax.set_zlabel(zlabel)
+    plt.title(title)
+    plt.savefig(f'output/tests/plots/{title}.png')
+
+def beautify_print(d):
+    if isinstance(d, dict):
+        for k, v in d.items():
+            if isinstance(v, dict):
+                print(k)
+                for k2, v2 in v.items():
+                    print(f"- {k2} : {v2}")
+            else:
+                print(f"{k} : {v}")
+    elif isinstance(d, list):
+        for i in d:
+            print(i)
+    else:
+        print(d)
 
 def body_tests(no=500):
     # skin color tests
@@ -70,9 +99,9 @@ def body_tests(no=500):
         skin2[body2.pass_gens()['skin_color']] += 1
         skin0[body0.pass_gens()['skin_color']] += 1
 
-    ys = [(skin2, 'parents skins: 6 & 4'), (skin4, 'parent skins: 8 & 4'), 
-          (skin6, 'parents skins: 8 & 2'), (skin8, 'parents skins: 9 & 1'),
-          (skin0, 'parents skins: 4 & 4')]
+    ys = [(skin2, 'parent skins: 6 & 4'), (skin4, 'parent skins: 8 & 4'), 
+          (skin6, 'parent skins: 8 & 2'), (skin8, 'parent skins: 9 & 1'),
+          (skin0, 'parent skins: 4 & 4')]
     plot(skins, ys, f"Skin color distribution: {no} bodies each", xlabel='skin color (int)')
 
     # hair type tests
@@ -104,18 +133,30 @@ def naming_tests(model):
         print(test.names.full(), file=f)
     f.close()
 
+def personality_tests(no=500, output=False):
+    ps = []
+    for _ in range(no):
+        p = Personality()
+        ps.append(p.get_personality(True))
+        if output:
+            print(p.get_personality())
+    x, y, z = zip(*ps)
+    plot3d(x, y, z, 'Scatterplot of personalities (scale: 0.4)', 'lawful-chaotic', 'nice-nasty', 'honest-false')
+
 def base_test(model):
-    test = Person(3, model)
-    body2 = Body({'skin_color' : 6, 
-                      'hair_type' : ['C', 'C'], 'hair_color_code' : 5, 
-                      'eye_color' : 'blue', 'health' : 0.2}, 
-                    {'skin_color' : 4, 
-                     'hair_type' : ['C', 'S'], 'hair_color_code' : 3, 
-                      'eye_color' : 'blue', 'health' : 0.9})
-    print(body2.pass_gens())
+    test = Person(3, model, 2, {}, {}, 'r', 20, True)
+    beautify_print(test.description())
+    # body2 = Body({'skin_color' : 6, 
+    #                   'hair_type' : ['C', 'C'], 'hair_color_code' : 5, 
+    #                   'eye_color' : 'blue', 'health' : 0.2}, 
+    #                 {'skin_color' : 4, 
+    #                  'hair_type' : ['C', 'S'], 'hair_color_code' : 3, 
+    #                   'eye_color' : 'blue', 'health' : 0.9})
+    # print(body2.pass_gens())
 
 def run_tests(model):
     # person tests
     base_test(model)
+    personality_tests(output=False)
     body_tests()
-    naming_tests(model)
+    # naming_tests(model)

@@ -66,26 +66,37 @@ class Naming():
             If parents, child has a chance of being named after them. If a 
             surname was specified, there is a chance of that being given. Else 
             no surname or a random one is returned.
+
+            NOTE: if child is not acknowledged by one of the parents BUT child 
+            is not first gen, surname entry [fathersur, mothersur] contains a 
+            False at that point. If acknowledged but no name, the string is 
+            simply empty
             """
-            if not first_gen and self.father not in ("", None, self.name) and self.mother not in ("", None, self.name):
+            if first_gen:
+                random_name = 0.7 if first_gen else 0.1
                 ch = random.random()
-                if ch < 0.3:
-                    if self.sex == 'f':
-                        return f"{self.father}sdochter"
-                    if self.sex == 'm':
-                        return f"{self.father}szoon"
-                elif ch < 0.5:
-                    if random.random() < 0.7:
-                        return f"van {self.father}"
-                    else:
-                        return f"van {self.mother}"
-            random_name = 0.7 if first_gen else 0.1
+                if ch < random_name:
+                    return random.choice(Naming.surnames)
+                elif ch < 0.8:
+                    return surnames
+                return ""
+            
+            # if father's surname is given
+            if surnames[0]:
+                pass
             ch = random.random()
-            if ch < random_name:
-                return random.choice(Naming.surnames)
-            elif ch < 0.8:
-                return surnames
+            if ch < 0.3:
+                if self.sex == 'f':
+                    return f"{self.father}sdochter"
+                if self.sex == 'm':
+                    return f"{self.father}szoon"
+            elif ch < 0.5:
+                if random.random() < 0.7:
+                    return f"van {self.father}"
+                else:
+                    return f"van {self.mother}"
             return ""
+            
 
     class MaleCentricNameGenerator():
         def __init__(self, sex, father, mother) -> None:

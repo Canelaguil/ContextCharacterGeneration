@@ -1,6 +1,7 @@
 import numpy as np
 from numpy import random
 from random import choices as weighted_choice
+from ..utils import fair_mod, normal_in_range
 
 def punnett_eye_model(eye1, eye2):
     # source: https://www.verywellhealth.com/genetics-of-eye-color-3421603
@@ -30,13 +31,14 @@ class Body():
         self.first_gen = first_gen
 
         # body vars
-        self.skin_color = self.set_skin()
-        self.hair_type = self.set_hair_type()
-        self.hair_color, self.hair_color_code = self.set_hair_color()
-        self.eye_color = self.set_eyes()
+        self.skin_color = self._set_skin()
+        self.hair_type = self._set_hair_type()
+        self.hair_color, self.hair_color_code = self._set_hair_color()
+        self.eye_color = self._set_eyes()
 
         # health vars
-        self.health = self.set_health()
+        self.health = self._set_health()
+        self.fertility = self._set_fertility()
         self.disabled = False
         self.disabilities = []
         self.communication_impaired = False
@@ -47,7 +49,7 @@ class Body():
     """
     INIT FUNCTIONS
     """
-    def set_skin(self):
+    def _set_skin(self):
         """
         Weighted choice of skin color OR random skin color if first_gen
         """
@@ -59,14 +61,10 @@ class Body():
 
             average = (m + f) / 2
             skin_range = abs(f-average) / 2
-            skin = round(random.normal(average, skin_range))
-            if skin < 0:
-                skin = 0
-            elif skin >= Body.no_skins:
-                skin = Body.no_skins - 1
+            skin = normal_in_range(average, skin_range, Body.no_skins, 0, 0)
             return skin                     
 
-    def set_hair_type(self):
+    def _set_hair_type(self):
         """
         Hair type based on parents, random if first_gen
         """
@@ -79,7 +77,7 @@ class Body():
             return [random.choice(mother_hair), 
                     random.choice(father_hair)]
         
-    def set_hair_color(self):
+    def _set_hair_color(self):
         """
         Weighted hair_color based on skin color or parents' gens
         """
@@ -98,14 +96,10 @@ class Body():
 
             # modify average with skin modifier (average / Body.no_hairs)
             modified =  average - ((self.skin_color / Body.no_skins) * Body.no_hairs) / 2
-            hair = round(random.normal(modified, hair_range))
-            if hair < 0:
-                hair = 0
-            elif hair >= Body.no_hairs:
-                hair = Body.no_hairs - 1
+            hair = normal_in_range(modified, hair_range, Body.no_hairs, 0, 0)
             return Body.hair_colors[hair], hair
 
-    def set_eyes(self):
+    def _set_eyes(self):
         """
         Assigns eye color either based on the punnett model or with seed
         """
@@ -121,35 +115,40 @@ class Body():
             f = self.father_gens['eye_color']
             return punnett_eye_model(m, f)
 
-    def set_health(self):
+    def _set_health(self):
         """
         Gets health from normal distribution
         """
         if self.first_gen:
-            h = random.normal(Body.average_health, 0.1)            
+            h = normal_in_range(Body.average_health, 0.1)            
         else:
             m = self.mother_gens['health']
             f = self.father_gens['health']
             loc = (m + f) / 2
             scale = abs(f-loc) / 2 
-            h = random.normal(loc, scale) 
-        if h > 1:
-                h = 1.0
-        elif h < 0:
-            h = 0.
-        return round(h, 3)
+            h = normal_in_range(loc, scale) 
+        return h
+    
+    def _set_fertility(self):
+        """
+        Set fertility based on own health
+        """
+        f = normal_in_range(self.health, 0.05) 
+        return f
 
     """
-    CHECK BODY
+    BODILY FUNCTIONS
     """
     def yearly_step(self, age):
         pass
 
-    def trigger(self, trigger, modifier=0.):
+    def trigger(self, trigger, modifier=0., age=None):
+        """
+        Returns False if further action is required
+        """
         if trigger == 'birth': 
             if random.random() < 0.05:
                 self.add_disability()
-
 
     """
     EVENTS
@@ -158,13 +157,7 @@ class Body():
         """
         Using the fair math principle, modifies health
         """
-        if modifier > 0:
-            self.health = self.health + ((1 - self.health) * modifier)
-        if modifier < 0: 
-            self.health = self.health + (self.health * modifier)
-
-        # the round is not very precise (bc of floats) but that's okay
-        self.health = round(self.health, 3)
+        self.health = fair_mod(self.health, modifier, 1, 3)
 
     def add_disability(self, key='blind', random_d=True):
         """
@@ -174,7 +167,7 @@ class Body():
             disability = random.choice(Body.all_disabilities, 
                                           p=Body.disability_distr)
         else:
-            disability = key
+            disability = key # to avoid confusion
             
         i = Body.all_disabilities.index(disability)
 
@@ -191,8 +184,6 @@ class Body():
         if not self.cognitive_impaired:
             self.cognitive_impaired = cog_impact
 
-
-
     """
     INFO FUNCTIONS
     """
@@ -204,6 +195,7 @@ class Body():
             'hair_color_code' : self.hair_color_code,
             'hair_type' : self.hair_type,
             'health' : self.health,
+            'fertility' : self.fertility,
             'communication_impaired' : self.communication_impaired,
             'mobility impaired' : self.mobility_impaired,
             'cognitive impaired' : self.cognitive_impaired,

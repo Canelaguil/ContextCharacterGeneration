@@ -1,3 +1,11 @@
+"""
+Though written in python for ease and & type control, this can 
+easily be converted to another config format like .ini or .yaml. 
+These dictionaries are never referenced directly in the code and
+are fed to the model through generation.py. 
+"""
+
+
 simulation = {
     'number_of_years' : 100,
     'simulation_output' : True,
