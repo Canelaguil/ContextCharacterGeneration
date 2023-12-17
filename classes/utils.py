@@ -1,5 +1,6 @@
 import numpy as np
 from numpy import random
+from random import choices as weighted_choice
 
 def fair_mod(value, mod, high, round_dec=0):
     """
@@ -28,3 +29,73 @@ def normal_in_range(loc, scale, upper=1, lower=0, round_dec=3):
     if round_dec == 0:
         return int(n)
     return n
+
+def rand():
+    return random.random()
+
+def rand_int(high, low=0):
+    return random.randint(low, high)
+
+def rand_choice(l, p=[], weights=[]):
+    if p != []:
+        return random.choice(l, p=p)
+    elif weights != []:
+        w = weighted_choice(l, weights=weights)
+        return w[0]
+    return random.choice(l)
+
+def beautify_print(d):
+    # could be implemented recursively?
+    if isinstance(d, dict):
+        for k, v in d.items():
+            if isinstance(v, dict):
+                print(k)
+                for k2, v2 in v.items():
+                    if isinstance(v2, dict): 
+                        print(f"- {k2}")
+                        for k3, v3 in v2.items():
+                            print(f"--- {k3} : {v3}")
+                    else:
+                        print(f"- {k2} : {v2}")
+            else:
+                print(f"{k} : {v}")
+    elif isinstance(d, list):
+        for i in d:
+            print(i)
+    else:
+        print(d)
+
+def print_dict_types(d : dict):
+    """
+    For debugging purposes (useful when json dumping)
+    """
+    for k, v in d.items():
+        print(k)
+        if isinstance(v, dict):
+            for k2, v2 in v.items():
+                print(k2)
+                if isinstance(k2, dict):
+                    for k3, v3 in v2:
+                        print(type(k3), type(v3))
+                else:
+                    print(type(k2), type(v2))
+        else:
+            print(type(k), type(v))
+
+
+class MessageInbox():
+    def __init__(self, owner) -> None:
+        self.owner = owner
+        self.inbox = []
+
+    def add(self, msg: dict):
+        self.inbox.append(msg)
+
+    def get(self) -> dict:
+        if not self.empty():
+            return self.inbox[0]
+
+    def empty(self) -> bool:
+        if self.inbox == []:
+            return True
+        return False

@@ -1,10 +1,12 @@
 import csv
+from mesa import Model
+from ..utils import *
 from ..home import Home
-from .section import Section
+from .section import StreetSection
 
 
 class City:
-    def __init__(self, model, seed, community) -> None:
+    def __init__(self, model : Model, seed : dict, community : dict) -> None:
         self.model = model
         self.no_houses = 0
         self.house_id = 0 # used for house unique IDs
@@ -33,30 +35,11 @@ class City:
         Initialize more or less the specified amount of houses (rounding error)
         with the correct class distribution.
         """
-        # non functional
         return
-        # for c, class_perc in enumerate(class_distr):
-        #     self.class_houses[c] = {}
-        #     no_class_houses = round(class_perc * households)
-        #     for house in range(no_class_houses):
-        #         id = house + self.no_houses
-        #         key = f"h{id}"
-        #         self.class_houses[c][key] = Home(key, id, self.model, (c, self.class_names[c]))
-        #     self.no_houses += no_class_houses
-        # it's possible these don't align neatly
 
     def init_neighborhoods(self, no_neighs, no_neighstreets, no_streetsections, 
                            houses_per_section):
-        # non functional
         pass
-        # quan_class_distr = [len(self.class_houses[n]) for n in range(no_neighs)]
-        # class_per_neigh = [[0 for _ in range(len(self.class_houses))] for _ in range(no_neighs)]
-        # print(quan_class_distr)
-        # print(class_per_neigh)
-
-        # # Descending order
-        # for neigh in range(no_neighs -1, -1, -1):
-        #     print(neigh)
 
     def import_town(self, neigh_file, street_file):
         self.neighborhoods = {}
@@ -75,34 +58,39 @@ class City:
                 self.init_street(row[0], row)
 
     def init_street(self, street_name, row):
+        """
+        INPUT FILE STRUCTURE: 
+        cols = ['street', 'A', 'class', 'B', 'class',
+                'C', 'class', 'D', 'class', 'E', 'class']
+        
+        This loops over the provided row and inits sections and the houses 
+        within
+        """
         if row == [] or not row or row == '':
             print(f'Could not init street {street_name}')
             return
         self.streets[street_name] = {}
 
-        # INPUT FILE STRUCTURE: 
-        # cols = ['street', 'A', 'class', 'B', 'class',
-        #         'C', 'class', 'D', 'class', 'E', 'class']
-        # This loops over the provided row and inits sections and the houses 
-        # within
         for i in range(1, 11, 2):
             if row[i] == '' or i >= len(row):
                 break
             no_section_houses = int(row[i])
             in_class = int(row[i+1]) - 1 # -1 because input file has classes starting with 1
-            section_key = f's{i}.c{in_class}'
-            this_section =  Section(section_key, no_section_houses, in_class, 
-                                    street_name)
+            section_key = f'st{street_name}.se{i}.c{in_class}'
+            this_section =  StreetSection(section_key, no_section_houses, in_class, 
+                                    street_name, self.model)
             for _ in range(no_section_houses):
                 house_key = f'h{self.house_id}'
                 self.house_id += 1
+                self.no_houses += 1
                 house = Home(house_key, self.house_id, self.model, 
                              (in_class, self.class_names[in_class]), this_section)
                 house.register(self.street_lookup[street_name], street_name)
-                this_section.add_house(house)
+                house_info = house.info()
+                this_section.add_house(house_info)
+                self.model.add_home(house)
 
             self.sections[section_key] = this_section
-            self.class_sections[in_class] = this_section
     
     """
     CITY MANAGEMENT
@@ -120,3 +108,16 @@ class City:
                     print("Got wrong house_key")
         return False
 
+    """
+    INFO 
+    """
+    def stats(self, output=False):
+        s = {
+            'houses' : self.no_houses, 
+            'sections' : len(self.sections), 
+            'streets' : len(self.street_lookup),
+            'neighborhoods' : len(self.neighborhoods)
+        }
+        if output:
+            beautify_print(s)
+        return s

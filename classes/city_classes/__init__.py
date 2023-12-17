@@ -1,3 +1,3 @@
 from .city import City
-from .section import Section
+from .section import StreetSection
 from .institutions import Institutions

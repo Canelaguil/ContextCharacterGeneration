@@ -1,13 +1,12 @@
 from typing import Any
 import pathlib
 import numpy as np
-from mesa import Agent, Model
-from mesa.time import StagedActivation
 from .city_classes import City, Institutions
 from .community_classes import Factions, CommunityEvents
 from .person_classes import Naming, Body, Personality
 from .person import Person
 from .relationship import Relationship
+from .utils import *
 import matplotlib.pyplot as plt
 
 def plot(x, y, title, xlabel='', ylabel=''):
@@ -27,32 +26,13 @@ def plot3d(x, y, z, title, xlabel='', ylabel='', zlabel=''):
     ax = plt.figure().add_subplot(projection='3d')
     ax.scatter(x, y, z)
 
-    # ax.legend()
-    # ax.set_xlim(min(x), max(x))
-    # ax.set_ylim(0, 1)
-    # ax.set_zlim(0, 1)
     ax.set_xlabel(xlabel)
     ax.set_ylabel(ylabel)
     ax.set_zlabel(zlabel)
     plt.title(title)
     plt.savefig(f'output/tests/plots/{title}.png')
 
-def beautify_print(d):
-    if isinstance(d, dict):
-        for k, v in d.items():
-            if isinstance(v, dict):
-                print(k)
-                for k2, v2 in v.items():
-                    print(f"- {k2} : {v2}")
-            else:
-                print(f"{k} : {v}")
-    elif isinstance(d, list):
-        for i in d:
-            print(i)
-    else:
-        print(d)
-
-def body_tests(no=500):
+def body_tests(person, no=500):
     # skin color tests
     skin8 = [0 for _ in range(Body.no_skins)]
     skin6 = [0 for _ in range(Body.no_skins)]
@@ -62,31 +42,31 @@ def body_tests(no=500):
     skins = [sk for sk in Body.skins]
     
     for _ in range(no):
-        body8 = Body({'skin_color' : 9, 
+        body8 = Body(person, {'skin_color' : 9, 
                       'hair_type' : ['C', 'C'], 'hair_color_code' : 5, 
                       'eye_color' : 'brown', 'health' : 0.75}, 
                     {'skin_color' : 1, 
                      'hair_type' : ['S', 'S'], 'hair_color_code' : 3, 
                       'eye_color' : 'blue', 'health' : 0.8})
-        body6 = Body({'skin_color' : 8, 
+        body6 = Body(person, {'skin_color' : 8, 
                       'hair_type' : ['C', 'S'], 'hair_color_code' : 5, 
                       'eye_color' : 'brown', 'health' : 0.2}, 
                     {'skin_color' : 2, 
                      'hair_type' : ['C', 'S'], 'hair_color_code' : 3, 
                      'eye_color' : 'green', 'health' : 0.75})
-        body4 = Body({'skin_color' : 8, 
+        body4 = Body(person, {'skin_color' : 8, 
                       'hair_type' : ['C', 'S'], 'hair_color_code' : 5, 
                       'eye_color' : 'green', 'health' : 0.3}, 
                     {'skin_color' : 4, 
                      'hair_type' : ['S', 'S'], 'hair_color_code' : 3, 
                       'eye_color' : 'blue', 'health' : 0.6})
-        body2 = Body({'skin_color' : 6, 
+        body2 = Body(person, {'skin_color' : 6, 
                       'hair_type' : ['C', 'C'], 'hair_color_code' : 5, 
                       'eye_color' : 'blue', 'health' : 0.2}, 
                     {'skin_color' : 4, 
                      'hair_type' : ['C', 'S'], 'hair_color_code' : 3, 
                       'eye_color' : 'blue', 'health' : 0.9})
-        body0 = Body({'skin_color' : 4, 
+        body0 = Body(person, {'skin_color' : 4, 
                       'hair_type' : ['C', 'C'], 'hair_color_code' : 5, 
                       'eye_color' : 'blue', 'health' : 0.7}, 
                     {'skin_color' : 4, 
@@ -133,10 +113,10 @@ def naming_tests(model):
         print(test.names.full(), file=f)
     f.close()
 
-def personality_tests(no=500, output=False):
+def personality_tests(person, no=500, output=False):
     ps = []
     for _ in range(no):
-        p = Personality()
+        p = Personality(person)
         ps.append(p.get_personality(True))
         if output:
             print(p.get_personality())
@@ -146,6 +126,7 @@ def personality_tests(no=500, output=False):
 def base_test(model):
     test = Person(3, model, 2, {}, {}, 'r', 20, True)
     beautify_print(test.description())
+    return test
     # body2 = Body({'skin_color' : 6, 
     #                   'hair_type' : ['C', 'C'], 'hair_color_code' : 5, 
     #                   'eye_color' : 'blue', 'health' : 0.2}, 
@@ -156,7 +137,7 @@ def base_test(model):
 
 def run_tests(model):
     # person tests
-    base_test(model)
-    personality_tests(output=False)
-    body_tests()
+    person = base_test(model)
+    personality_tests(person, output=False)
+    body_tests(person)
     # naming_tests(model)

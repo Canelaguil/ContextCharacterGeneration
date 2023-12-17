@@ -1,7 +1,10 @@
 from typing import Any
 import numpy as np
+import json
+import os
 from mesa import Agent, Model
 from mesa.time import StagedActivation
+from .utils import *
 from .city_classes import City, Institutions
 from .community_classes import Factions, CommunityEvents
 from .person_classes import Naming, Body
@@ -9,27 +12,7 @@ from .person import Person
 from .relationship import Relationship
 from .tests import run_tests
 
-class Community(Model):
-    def __init__(self, society, seed, health_stats, aesthetic_seed, 
-                 community, institutions, names, testing=True) -> None:
-        super().__init__(self)
-        self.schedule = StagedActivation(self, ["people", "relationships", "houses"])
-
-        # init the various community components
-        self.city = City(self, seed, community)
-        self.factions = Factions(community)
-        self.institutions = Institutions(institutions)
-        self.manager = CommunityEvents(society)
-        
-        self.set_globals(health_stats, aesthetic_seed, names, society)
-        self.init_community(society, aesthetic_seed, health_stats)
-        if testing:
-            run_tests(self)
-
-    """
-    INIT FUNCTIONS
-    """
-    def set_globals(self, health_stats, aesthetic_seed, names, society):
+def set_globals(health_stats, aesthetic_seed, names, society):
         # names
         Naming.surnames = names[2]
         Naming.female_names = names[1]
@@ -78,20 +61,129 @@ class Community(Model):
         Relationship.marriage_age_women = society['marriage_age_women']
         Relationship.marriage_age_men = society['marriage_age_men']
 
+
+class Community(Model):
+    def __init__(self, society, seed, health_stats, aesthetic_seed, 
+                 community, institutions, names, testing=True, year=1200) -> None:
+        super().__init__(self)
+        set_globals(health_stats, aesthetic_seed, names, society)
+        self.schedule = StagedActivation(self, ["people", "relationships", "houses", "post_processing"], True)
+        self.year = year
+        self.people = {}
+        self.homes = {}
+        self.relationships = {}
+
+        # init the various community components
+        self.city = City(self, seed, community)
+        self.factions = Factions(community)
+        self.institutions = Institutions(institutions)
+        self.manager = CommunityEvents(society)
+        self.init_community(society, aesthetic_seed, health_stats)
+        if testing:
+            run_tests(self)
+
+    """
+    INIT FUNCTIONS
+    """
     def init_community(self, society, aesthetic_seed, health_stats):
-        pass
+        test = Person(100000, self, 2, {}, {}, 'r', 20, True)
+        self.add_person(test)
+
+    """
+    INPUT FUNCTIONS
+    """
+    def add_person(self, person : Agent):
+        self.people[person.unique_id] = person
+        self.schedule.add(person)
+
+    def add_home(self, home : Agent):
+        self.homes[home.unique_id] = home
+        self.schedule.add(home)
+
+    def add_person_to_home(self, house_key, person_key):
+        person_info = self.people[person_key]
+        self.homes[house_key].add_person(person_info)
+
+    def add_relationship(self, relat : Agent):
+        self.relationships[relat.unique_id] = relat 
+        self.schedule.add(relat)
+
+    """
+    MESSAGE FUNCTIONS
+    """
+    def messsage_person(self, key, msg):
+        self.people[key].receive_message(msg)
+
+    def messsage_home(self, key, msg):
+        self.homes[key].receive_message(msg)
+
+    def messsage_relationship(self, key, msg):
+        self.relationships[key].receive_message(msg)
 
     """
     SIMULATION FUNCTIONS
     """
     def step(self):
-        pass
+        self.schedule.step()
 
-    def run(self, years, output=True):
-        pass
+    def run(self, years, output=False):
+        for _ in range(years):
+            if output:
+                pass
+                # print(self.year)
+            self.step()
+            self.year += 1
+        print('AGENTS')
+        print(self.schedule.get_agent_count())    
+        beautify_print(self.people[100000].description())
+        print('')
+        self.city.stats(True)
 
     """
     OUTPUT FUNCTIONS
     """
+    def get_person(self, key):
+        return self.people[key].description()
+    
+    def get_home(self, key):
+        return self.homes[key].info()
+    
+    def get_relationship(self, key):
+        return self.relationships[key].status()
+
+    def get_people(self):
+        return [p.description() for p in self.people.values()]
+    
+    def get_homes(self):
+        return [h.info() for h in self.homes.values()]
+
+    def relationships(self):
+        return [r.status() for r in self.relationships.values()]
+
     def json_output(self):
-        pass
+        """
+        Output all agent info into json files. Deletes all previous files.
+        """
+        if not os.path.exists('output/people_json'):
+            os.mkdir('output/people_json')
+
+        for key, p in self.people.items():
+            with open(f"output/people_json/{key}.json", 'w') as output:
+                json.dump({f'{key}' : p.description()}, output)
+
+        if not os.path.exists('output/homes_json'):
+            os.mkdir('output/homes_json')
+        for key, h in self.homes.items():
+            with open(f"output/homes_json/{key}.json", 'w') as output:
+                json.dump({key : h.info()}, output)
+
+        if not os.path.exists('output/relationships_json'):
+            os.mkdir('output/relationships_json')
+        for key, r in self.relationships.items():
+            with open(f"output/relationships_json/{key}.json", 'w') as output:
+                json.dump({key : r.status()}, output)
+
+        # useful tool when json dump gives errors:
+        # print_dict_types(self.homes[2].info())
+        
+

@@ -1,28 +1,28 @@
-from numpy import random
-from ..utils import normal_in_range, fair_mod
+from ..utils import *
 
 class Personality():
-    def __init__(self) -> None:
+    def __init__(self, person) -> None:
+        self.person = person
         self.lawfulchaotic = normal_in_range(0.5, 0.4)
         self.nicenasty = normal_in_range(0.5, 0.4)
         self.honestfalse = normal_in_range(0.5, 0.4)
 
-        self.dream = normal_in_range(0.5, 0.2)
+        self.dream = normal_in_range(0.4, 0.2)
 
     def influence_lc(self, chance, modifier):
-        if random.random() < chance:
+        if rand() < chance:
             self.lawfulchaotic = fair_mod(self.lawfulchaotic, modifier, 1, 3)
             return True
         return False
 
     def influence_nn(self, chance, modifier):
-        if random.random() < chance:
+        if rand() < chance:
             self.nicenasty = fair_mod(self.nicenasty, modifier, 1, 3)
             return True
         return False   
         
     def influence_hf(self, chance, modifier):
-        if random.random() < chance:
+        if rand() < chance:
             self.honestfalse = fair_mod(self.honestfalse, modifier, 1, 3)
             return True
         return False

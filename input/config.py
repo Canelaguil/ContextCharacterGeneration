@@ -10,7 +10,7 @@ simulation = {
     'number_of_years' : 100,
     'simulation_output' : True,
     'json_output' : True,
-    'tests' : True
+    'tests' : False
 }
 
 seed = {

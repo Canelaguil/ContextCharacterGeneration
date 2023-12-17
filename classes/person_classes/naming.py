@@ -1,4 +1,5 @@
 import random
+from ..utils import *
 
 class Naming():
     def __init__(self, sex, father, mother, surnames, first_gen=False) -> None:
@@ -28,6 +29,11 @@ class Naming():
         """
         return f"{self.name} {self.surname}".strip()
 
+    def first_name(self):
+            return str(self.name)
+        
+    def last_name(self):
+        return str(self.surname)
 
     class MedievalNameGenerator(): 
         def __init__(self, sex, father, mother) -> None:       
@@ -45,9 +51,9 @@ class Naming():
             parent
             """
             if self.mother: 
-                if random.random() < 0.2:
+                if rand() < 0.2:
                     self.name = self.mother
-            self.name = random.choice(Naming.female_names)
+            self.name = rand_choice(Naming.female_names)
             return self.name
 
         def get_male_first_name(self):
@@ -56,9 +62,9 @@ class Naming():
             parent
             """
             if self.father: 
-                if random.random() < 0.2:
+                if rand() < 0.2:
                     self.name = self.father
-            self.name = random.choice(Naming.male_names)
+            self.name = rand_choice(Naming.male_names)
             return self.name
 
         def get_surname(self, surnames, first_gen): 
@@ -74,9 +80,9 @@ class Naming():
             """
             if first_gen:
                 random_name = 0.7 if first_gen else 0.1
-                ch = random.random()
+                ch = rand()
                 if ch < random_name:
-                    return random.choice(Naming.surnames)
+                    return rand_choice(Naming.surnames)
                 elif ch < 0.8:
                     return surnames
                 return ""
@@ -84,20 +90,19 @@ class Naming():
             # if father's surname is given
             if surnames[0]:
                 pass
-            ch = random.random()
+            ch = rand()
             if ch < 0.3:
                 if self.sex == 'f':
                     return f"{self.father}sdochter"
                 if self.sex == 'm':
                     return f"{self.father}szoon"
             elif ch < 0.5:
-                if random.random() < 0.7:
+                if rand() < 0.7:
                     return f"van {self.father}"
                 else:
                     return f"van {self.mother}"
             return ""
             
-
     class MaleCentricNameGenerator():
         def __init__(self, sex, father, mother) -> None:
             pass

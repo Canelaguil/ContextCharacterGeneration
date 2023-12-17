@@ -1,5 +1,6 @@
 from mesa import Agent, Model
-# from .city_classes import Section # Dit kan nog problemen opleveren
+from .utils import *
+# from .city_classes import StreetSection # Dit kan nog problemen opleveren
 
 class Home(Agent):
     def __init__(self, key: str, unique_id: int, model: Model, income_class: int, section) -> None:
@@ -8,10 +9,11 @@ class Home(Agent):
         self.key = key
         self.income_class = income_class # (number, class_name)
         self.section = section
+        self.tasks = MessageInbox(self)
 
         # Location variables
         self.registered = False
-        self.neighborhood, self.street, self.section = None, None, None
+        self.neighborhood, self.street = None, None
 
         # Inhabitants
         self.no_inhabitants = 0
@@ -26,16 +28,34 @@ class Home(Agent):
         """
         self.neighborhood = neighborhood
         self.street = street
+        if self.section == None:
+            print(self.street, self.income_class)
+        self.section_key = self.section.key
         self.registered = True
 
-    def step(self):
-        print(f"Hi, I'm {self.unique_id}")
+    """
+    PHASES / STEPS
+    """
+    def people(self):
+        return        
+
+    def relationships(self): 
+        return
+    
+    def houses(self):
+        return
+
+    def post_processing(self):
+        return
 
     """
     UPDATE FUNCTIONS 
     """
-    def add_person(self, person_key): 
+    def add_person(self, person_info): 
         pass
+
+    def receive_message(self, msg):
+        self.tasks.add(msg)
 
     """
     INFO FUNCTIONS 
@@ -45,4 +65,15 @@ class Home(Agent):
             return True
         else:
             return False
+        
+    def info(self):
+        return {
+            'income class' : self.income_class[0], 
+            'income class label' : self.income_class[1],
+            'section' : self.section.key, 
+            'street' : self.street, 
+            'neighborhood' : self.neighborhood, 
+            'key' : self.key, 
+            'unique id' : self.unique_id,
+        }
     

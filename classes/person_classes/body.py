@@ -1,7 +1,7 @@
 import numpy as np
 from numpy import random
 from random import choices as weighted_choice
-from ..utils import fair_mod, normal_in_range
+from ..utils import *
 
 def punnett_eye_model(eye1, eye2):
     # source: https://www.verywellhealth.com/genetics-of-eye-color-3421603
@@ -22,10 +22,11 @@ def punnett_eye_model(eye1, eye2):
             'brown' : [0.18, 0.07, 0.75], 
         }
     }[eye1][eye2]
-    return random.choice(['blue', 'green', 'brown'], p=p)
+    return rand_choice(['blue', 'green', 'brown'], p=p)
 
 class Body():
-    def __init__(self, father_gens, mother_gens, first_gen = False) -> None:
+    def __init__(self, person, father_gens, mother_gens, first_gen = False) -> None:
+        self.person = person
         self.father_gens = father_gens
         self.mother_gens =  mother_gens
         self.first_gen = first_gen
@@ -53,8 +54,8 @@ class Body():
         """
         Weighted choice of skin color OR random skin color if first_gen
         """
-        if self.first_gen: 
-            return random.choice(Body.skins, p=Body.skin_distr)
+        if self.first_gen:
+            return rand_choice(Body.skins, p=Body.skin_distr)
         else:
             m = self.mother_gens['skin_color']
             f = self.father_gens['skin_color']
@@ -62,20 +63,20 @@ class Body():
             average = (m + f) / 2
             skin_range = abs(f-average) / 2
             skin = normal_in_range(average, skin_range, Body.no_skins, 0, 0)
-            return skin                     
+            return int(skin)                     
 
     def _set_hair_type(self):
         """
         Hair type based on parents, random if first_gen
         """
         if self.first_gen:
-            return [random.choice(Body.hair_type_seed),
-                    random.choice(Body.hair_type_seed)]
+            return [rand_choice(Body.hair_type_seed),
+                    rand_choice(Body.hair_type_seed)]
         else:
             mother_hair = self.mother_gens['hair_type']
             father_hair = self.father_gens['hair_type']
-            return [random.choice(mother_hair), 
-                    random.choice(father_hair)]
+            return [rand_choice(mother_hair), 
+                    rand_choice(father_hair)]
         
     def _set_hair_color(self):
         """
@@ -84,8 +85,8 @@ class Body():
         if self.first_gen: 
             weights = np.array([abs(a-b) / Body.no_skins * self.skin_color for a, 
                                 b in zip(Body.dark_hair_distr, Body.light_hair_distr)])
-            hair = weighted_choice(list(range(Body.no_hairs)), weights=weights)
-            hair = round(hair[0])
+            hair = rand_choice(list(range(Body.no_hairs)), weights=weights)
+            hair = round(hair)
             return Body.hair_colors[hair], hair
         else:
             m = self.mother_gens['hair_color_code']
@@ -109,11 +110,11 @@ class Body():
             else: 
                 p = Body.light_eye_distr
 
-            return random.choice(['blue', 'green', 'brown'], p=p)
+            return str(rand_choice(['blue', 'green', 'brown'], p=p))
         else:
             m = self.mother_gens['eye_color'] 
             f = self.father_gens['eye_color']
-            return punnett_eye_model(m, f)
+            return str(punnett_eye_model(m, f))
 
     def _set_health(self):
         """
@@ -147,7 +148,7 @@ class Body():
         Returns False if further action is required
         """
         if trigger == 'birth': 
-            if random.random() < 0.05:
+            if rand() < 0.1:
                 self.add_disability()
 
     """
@@ -164,7 +165,7 @@ class Body():
         Adjusts body to assigned or random disability
         """
         if random_d:
-            disability = random.choice(Body.all_disabilities, 
+            disability = rand_choice(Body.all_disabilities, 
                                           p=Body.disability_distr)
         else:
             disability = key # to avoid confusion
@@ -189,7 +190,7 @@ class Body():
     """
     def pass_gens(self):
         return {
-            'skin_color' : self.skin_color,
+            'skin_color' : int(self.skin_color),
             'eye_color' : self.eye_color, 
             'hair_color' : self.hair_color,
             'hair_color_code' : self.hair_color_code,
