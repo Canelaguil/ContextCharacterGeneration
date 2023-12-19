@@ -1,1 +1,1 @@
-from relationship_modules import *
+from classes.relationship_classes.onesided_potential import *

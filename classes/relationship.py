@@ -1,4 +1,4 @@
-import mesa
+from .utils import *
 from mesa import Agent, Model
 
 class Relationship(Agent):
@@ -31,3 +31,4 @@ class Relationship(Agent):
     
     def receive_message(self, msg):
         return
+    

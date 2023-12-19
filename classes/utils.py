@@ -2,6 +2,9 @@ import numpy as np
 from numpy import random
 from random import choices as weighted_choice
 
+"""
+MODIFIERS
+"""
 def fair_mod(value, mod, high, round_dec=0):
     """
     Using fair math: 
@@ -16,6 +19,12 @@ def fair_mod(value, mod, high, round_dec=0):
     # ints: 0, floats: 3
     return round(value, round_dec)
 
+def get_modified_chance(base_chance, positive_mods=[], negative_mods=[], mode='%'):
+    return 
+
+"""
+RANDOM NUMBERS & CHOICES
+"""
 def normal_in_range(loc, scale, upper=1, lower=0, round_dec=3):
     n = random.normal(loc, scale)
     # round happens now to avoid failed checks later
@@ -44,15 +53,21 @@ def rand_choice(l, p=[], weights=[]):
         return w[0]
     return random.choice(l)
 
+"""
+PRINT HELP
+"""
 def beautify_print(d):
+    """
+    Properly print out a dict object with up to 2 nested dicts.
+    """
     # could be implemented recursively?
     if isinstance(d, dict):
         for k, v in d.items():
             if isinstance(v, dict):
-                print(k)
+                print(f"{k}:")
                 for k2, v2 in v.items():
                     if isinstance(v2, dict): 
-                        print(f"- {k2}")
+                        print(f"- {k2}:")
                         for k3, v3 in v2.items():
                             print(f"--- {k3} : {v3}")
                     else:

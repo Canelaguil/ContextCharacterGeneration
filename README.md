@@ -24,7 +24,7 @@ A monastery is a place where adults older than 16 can go to live, sometimes link
 
 Alternative implementation: university, sect, cult
 
-## Agent ID's 
+<!-- ## Agent ID's 
 - Houses:           1-999
 - People:           1000 - 10 000
-- Relationships:    10 000 - 2 000 000
+- Relationships:    10 000 - 2 000 000 -->
