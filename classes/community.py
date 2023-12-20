@@ -132,12 +132,11 @@ class Community(Model):
                 pass
                 # print(self.year)
             self.step()
-            self.year += 1
-        print('AGENTS')
-        print(self.schedule.get_agent_count())    
+            self.year += 1 
         beautify_print(self.people[100000].description())
-        print('')
-        self.city.stats(True)
+        # print('')
+        # print(f'people alive: {self.schedule.get_agent_count()}')
+        # self.city.stats(True)
 
     """
     OUTPUT FUNCTIONS

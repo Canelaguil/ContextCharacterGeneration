@@ -38,7 +38,8 @@ class Person(Agent):
             self.homsoc = Neutral(self, self.get_homsoc_attributes(), 
                                   self.personality.get_personality())
 
-        self.messages = MessageInbox(self)    
+        self.messages = MessageInbox(self)
+        self.memory = Memory(self, self.model) 
     
     def born_this_way(self, sex):
         """
@@ -69,11 +70,26 @@ class Person(Agent):
             loc2, scale2 = (0.3, 0.2)
         self.gender_expression = normal_in_range(loc2, scale2) # 0 = 1-1 with sex
 
+    def die(self):
+        self.alive = False
+
     """
     PHASES / STEPS
     """
     def people(self):
-        self.age += 1
+        if self.alive:
+            self.age += 1
+
+            # health update
+            health_report = self.body.yearly_step(self.age)
+            if health_report['death']:
+                self.die()
+
+            record = {
+                'health' : health_report,
+            }
+
+            self.memory.add_record(record)
         # print(f"Hi I'm {self.names.full()} and I'm {self.age} years old.")
 
     def relationships(self): 
@@ -115,6 +131,7 @@ class Person(Agent):
             'network' : self.network.links(),
             'occupation' : self.occupation.resume(),
             'genetics' : self.body.pass_gens(), 
+            'memory' : self.memory.summary(),
         }
         return me
 

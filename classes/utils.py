@@ -5,9 +5,9 @@ from random import choices as weighted_choice
 """
 MODIFIERS
 """
-def fair_mod(value, mod, high, round_dec=0):
+def fair_mod(value, mod, high=1, round_dec=3):
     """
-    Using fair math: 
+    Modify value fairly using fair math: 
     https://choicescriptdev.fandom.com/wiki/Arithmetic_operators#Fairmath
     """
     if mod > 0:
@@ -19,13 +19,44 @@ def fair_mod(value, mod, high, round_dec=0):
     # ints: 0, floats: 3
     return round(value, round_dec)
 
-def get_modified_chance(base_chance, positive_mods=[], negative_mods=[], mode='%'):
-    return 
+def get_modified_chance(base_chance, positive_mods=[], negative_mods=[], values=[], mode='bayes'):
+    """
+    Bayesian updating model, based on an idea by my good friend Phil. Takes a 
+    base chance of an event happening and applies the positive and negative 
+    likelihoods to influence base chance given the event. 
+    NOTE: all parameters are assumed to be positive floats between 0 and 1.
+    """
+    if mode == 'bayes':
+        posterior = base_chance
+
+        for (pos_lh, neg_lh, value) in zip(positive_mods, negative_mods, values):
+            # Calculate likelihoods based on traits
+            likelihood = pos_lh * value
+            neg_likelihood = neg_lh * (1 - value)
+
+            # Calculate marginal likelihood of the trait
+            marginal = likelihood * posterior + neg_likelihood * (1 - posterior)
+            
+            # Update posterior probability using Bayes' Theorem
+            posterior = (likelihood * posterior) / marginal
+    
+        return posterior
+    
+    else:
+        # simple chance modifications with just the modifiers (no values)
+        for positive_mod in positive_mod:
+            base_chance = fair_mod(base_chance, positive_mod)
+        for negative_mod in negative_mods:
+            base_chance = fair_mod(base_chance, -1 * negative_mod)
+        return base_chance
 
 """
 RANDOM NUMBERS & CHOICES
 """
 def normal_in_range(loc, scale, upper=1, lower=0, round_dec=3):
+    """
+    Return random float from a normal distribution, within the specified range.
+    """
     n = random.normal(loc, scale)
     # round happens now to avoid failed checks later
     n = round(n, round_dec)
@@ -40,12 +71,21 @@ def normal_in_range(loc, scale, upper=1, lower=0, round_dec=3):
     return n
 
 def rand():
+    """
+    Return random float.
+    """
     return random.random()
 
 def rand_int(high, low=0):
+    """
+    Return random integer.
+    """
     return random.randint(low, high)
 
 def rand_choice(l, p=[], weights=[]):
+    """
+    Return random element from list weighted either by weights or a distribution.
+    """
     if p != []:
         return random.choice(l, p=p)
     elif weights != []:

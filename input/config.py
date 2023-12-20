@@ -39,7 +39,7 @@ health_stats = {
     'average_health' : 0.7, # on a scale from 0-1
     'health_care_modifier' : 0.0, # increased chance for cure 
     'child_mortality' : 0.2, # yearly chance of child dying from childhood-specific illnesses (0 cancels out all childhood mortality)
-    'old_age' : 40, # when is a person considered to be old in this community?
+    'old_age' : 50, # when is a person considered to be old in this community?
 
     'physical_disability_chance' : 0.1,
     'physical_disabilities' : ['blind', 'deaf', 'mute', 'missing limb', 'decreased mobility', 'cognitive'], # from birth, an accident or old age

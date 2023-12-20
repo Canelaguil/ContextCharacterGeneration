@@ -1,6 +1,4 @@
 import numpy as np
-from numpy import random
-from random import choices as weighted_choice
 from ..utils import *
 
 def punnett_eye_model(eye1, eye2):
@@ -141,8 +139,62 @@ class Body():
     BODILY FUNCTIONS
     """
     def yearly_step(self, age):
-        pass
+        report = {}
+        report['health'] = self.health_event(age)
+        report['death'] = self.mortality_event(age)
+        return report
 
+    def health_event(self, age):
+        """
+        Does something happen health wise this year?
+        """
+        if age < 12:
+            chance = (fair_mod(Body.child_mortality, - (0.01 * age))) * (1 - self.health)
+        elif age > Body.old_age:
+            chance = (0.15 + (0.05 * age)) * (1 - self.health)
+        else:
+            chance = 0.12 * (1 - self.health)
+
+        # compose report
+        report = {'change' : False, 'value_change' : 0.}
+        if rand() < chance:
+            report['change'] = True
+            loc_impact = 1 - self.health
+            scale_impact = loc_impact / 4
+            impact = -1 * normal_in_range(loc_impact, scale_impact)
+
+            # chance of gaining disability
+            if rand() < 0.05:
+                self.add_disability() 
+                report['new_disability'] = self.disabilities[-1]
+
+            old_health = self.health
+            self.health_change(impact)
+            report['value_change'] = round(self.health - old_health, 3)
+
+        report['new_health'] = self.health
+        return report
+
+    def mortality_event(self, age):
+        """
+        Does the person die this turn?
+        """
+        if self.health == 0:
+            chance = 1
+        elif age < 12:
+            chance = (fair_mod(Body.child_mortality, - (0.1 * age))) * (1 - self.health)
+        elif age > Body.old_age:
+            chance = (0.15 + (0.015 * age)) * (1 - self.health)
+        else:
+            chance = 0.005 * (1 - self.health)
+        
+        if rand() < chance:
+            return True
+        return False
+
+    """
+    TRIGGERS
+    """
     def trigger(self, trigger, modifier=0., age=None):
         """
         Returns False if further action is required
@@ -151,9 +203,6 @@ class Body():
             if rand() < 0.1:
                 self.add_disability()
 
-    """
-    EVENTS
-    """
     def health_change(self, modifier):
         """
         Using the fair math principle, modifies health

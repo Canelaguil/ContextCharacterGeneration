@@ -9,9 +9,9 @@ class HomoSociologicus():
         self.romantic_interest = born_like['romantic interest']
         self.sex_interest = born_like['sex interest']
         self.gender_expression = born_like['gender expression']
-        self.set_expression_of_expressions()
+        self.set_expression_of_expressions(personality)
 
-        self.tasks = MessageInbox(self, personality)
+        self.tasks = MessageInbox(self)
         
     def set_expression_of_expressions(self, personaltiy):
         """
@@ -23,6 +23,7 @@ class HomoSociologicus():
         self.gender_expression_expression = normal_in_range(loc, scale, 
                                                             self.gender_expression)
         # sexuality
+        # TODO: modify with lawfulness
         loc2 = 0.6 * self.sexuality
         scale2 = 0.4 * (self.sexuality - loc2)
         self.sexuality_expression = normal_in_range(loc2, scale2, self.sexuality)
