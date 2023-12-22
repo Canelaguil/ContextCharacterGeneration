@@ -123,6 +123,45 @@ def personality_tests(person, no=500, output=False):
     x, y, z = zip(*ps)
     plot3d(x, y, z, 'Scatterplot of personalities (scale: 0.4)', 'lawful-chaotic', 'nice-nasty', 'honest-false')
 
+def sexuality_test():
+    couples = [
+        {'a' : ('f', 'straight', 0.1),
+         'b' : ('m', 'straight', 0.)},
+        {'a' : ('f', 'straight', 0.),
+        'b' : ('f', 'gay', 0.9)},
+        {'a' : ('m', 'bi', 0.6),
+         'b' : ('f', 'straight', 0.2)},
+        {'a' : ('f', 'straight', 0.2),
+        'b' : ('f', 'straight', 0.13)},
+        {'a' : ('f', 'straight', 0.2),
+        'b' : ('f', 'gay', 0.8)},
+    ]
+    for couple in couples:
+        print('--------')
+        print(couple['a'])
+        print(couple['b'])
+        match = sexuality_match(couple['a'][0], couple['b'][0],
+                                couple['a'][1], couple['b'][1], 'bool')
+        print(f'match: {match}')
+        score = sexuality_match(couple['a'][0], couple['b'][0],
+                                couple['a'][2], couple['b'][2], 'score')
+        print(f'score: {score}')
+
+def age_match_test():
+    age1 = list(range(60))
+    x, y, m = [], [], []
+    for a1 in age1:
+        age2 = list(range(a1, 60))
+        for a2 in age2:
+            x.append(a1)
+            y.append(a2)
+            am = age_match(a1, a2)
+            m.append(am)
+            print(f"{a1} & {a2} : {am}")
+    # matchscores = [age_match(a1, a2) for a1, a2 in zip(age1, age2)]
+    plot3d(m, y, x, 'Age Match algorithm', 'match scores',
+           'age person 1', 'age person 2')
+
 def base_test(model):
     test = Person(3, model, 2, {}, {}, 'r', 20, True)
     beautify_print(test.description())
@@ -138,6 +177,9 @@ def base_test(model):
 def run_tests(model):
     # person tests
     person = base_test(model)
-    personality_tests(person, output=False)
+    # personality_tests(person, output=False)
     body_tests(person)
+    age_match_test()
     # naming_tests(model)
+    # sexuality_test()
+    return

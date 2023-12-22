@@ -25,7 +25,7 @@ class Person(Agent):
             self.body = Body(self, father['genetics'], mother['genetics'])
 
         self.personality = Personality(self)
-        self.network = Network(self)
+        self.network = Network(self, mother, father)
         self.occupation = Occupation(self, self.income_class)
 
         if self.sex == 'f':
@@ -85,6 +85,7 @@ class Person(Agent):
             if health_report['death']:
                 self.die()
 
+
             record = {
                 'health' : health_report,
             }
@@ -127,11 +128,14 @@ class Person(Agent):
             'age' : self.age,
             'income class' : self.income_class, 
             'personality' : self.personality.get_personality(),
+            'attitude' : self.personality.get_attitude(),
             'homsoc' : self.homsoc.homo_sociologicus(),
             'network' : self.network.links(),
             'occupation' : self.occupation.resume(),
             'genetics' : self.body.pass_gens(), 
             'memory' : self.memory.summary(),
+            'key' : self.unique_id,
+            'sex' : self.sex
         }
         return me
 

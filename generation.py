@@ -29,7 +29,6 @@ def read_names(male_file, female_file, surname_file):
 
     return [m_names, w_names, s_names]
 
-
 def check_config(): 
     """
     Checks the integrity of the provided input.

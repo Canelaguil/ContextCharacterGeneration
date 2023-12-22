@@ -67,6 +67,7 @@ class Community(Model):
                  community, institutions, names, testing=True, year=1200) -> None:
         super().__init__(self)
         set_globals(health_stats, aesthetic_seed, names, society)
+        self.ids = 10000
         self.schedule = StagedActivation(self, ["people", "relationships", "houses", "post_processing"], True)
         self.year = year
         self.people = {}
@@ -86,8 +87,19 @@ class Community(Model):
     INIT FUNCTIONS
     """
     def init_community(self, society, aesthetic_seed, health_stats):
-        test = Person(100000, self, 2, {}, {}, 'r', 20, True)
-        self.add_person(test)
+        # test = Person(self.get_id(), self, 2, {}, {}, 'r', 20, True)
+        # self.add_person(test)        
+        for _ in range(4):
+            self.make_couple()
+
+    def make_couple(self):
+        man = Person(self.get_id(), self, 2, {}, {}, 'm', 25, True )
+        woman = Person(self.get_id(), self, 2, {}, {}, 'f', 22, True)
+        self.add_person(man)
+        self.add_person(woman)
+        marriage = Relationship(self.get_id(), self, man.description(),
+                                woman.description(), 'arranged marriage')
+        self.add_relationship(marriage)
 
     """
     INPUT FUNCTIONS
@@ -108,10 +120,22 @@ class Community(Model):
         self.relationships[relat.unique_id] = relat 
         self.schedule.add(relat)
 
+    def birth_child(self, key_father, key_mother):
+        father = self.get_person(key_father)
+        mother = self.get_person(key_mother)
+        unique_id = self.get_id()
+        child = Person(unique_id, self, father['income class'], mother, father)
+        self.add_person(child)
+        return child.description()
+
+    def get_id(self):
+        self.ids += 1
+        return self.ids - 1
+    
     """
     MESSAGE FUNCTIONS
     """
-    def messsage_person(self, key, msg):
+    def message_person(self, key, msg):
         self.people[key].receive_message(msg)
 
     def messsage_home(self, key, msg):
@@ -133,7 +157,7 @@ class Community(Model):
                 # print(self.year)
             self.step()
             self.year += 1 
-        beautify_print(self.people[100000].description())
+        # beautify_print(self.people[100000].description())
         # print('')
         # print(f'people alive: {self.schedule.get_agent_count()}')
         # self.city.stats(True)

@@ -50,6 +50,23 @@ def get_modified_chance(base_chance, positive_mods=[], negative_mods=[], values=
             base_chance = fair_mod(base_chance, -1 * negative_mod)
         return base_chance
 
+def get_vector_distance(element1, element2):
+    """
+    Returns vector distance between two sets of vector attributes. 
+    """
+    # convert input to vectors
+    if isinstance(element1, dict):
+        e1 = np.vector(element1.values())
+    else:
+        e1 = np.vector(element1)
+    if isinstance(element2, dict):
+        e2 = np.vector(element2.values())
+    else:
+        e2 = np.vector(element2)
+
+    distance = np.linalg.norm(e2 - e1)
+    return distance
+
 """
 RANDOM NUMBERS & CHOICES
 """
@@ -137,6 +154,68 @@ def print_dict_types(d : dict):
         else:
             print(type(k), type(v))
 
+"""
+OTHER UTILS
+"""
+def sexuality_match(sexA, sexB, sexualityA, sexualityB, mode='bool'):
+    """
+    TODO : score mode does not work well yet
+    mode : ['bool', 'score']
+    """
+    if mode == 'bool': 
+        if sexA != sexB:
+            if sexualityA not in ['straight', 'bi']:
+                return False
+            if sexualityB not in ['straight', 'bi']:
+                return False
+            return True
+        else:
+            if sexualityA not in ['gay', 'bi']:
+                return False
+            if sexualityB not in ['gay', 'bi']:
+                return False
+            return True
+    else:
+        if sexA != sexB:
+            if sexualityA < 0.75:
+                a = 1 - sexualityA
+            else:
+                a = sexualityA
+            if sexualityB < 0.75:
+                b = 1 - sexualityB
+            else:
+                b = sexualityB
+        else:
+            if sexualityA < 0.75:
+                a = sexualityA
+            else:
+                a = 1 - sexualityA
+            if sexualityB < 0.75:
+                b = sexualityB
+            else:
+                b = 1 - sexualityB
+        return a * b
+
+def age_match(ageA, ageB):
+    """
+    
+    """
+    elder = max(ageA, ageB)
+    younger = min(ageA, ageB)
+    match = 1
+    
+    if younger < 14:        
+        difference = elder - younger
+        for _ in range(difference):
+            match *= 0.5
+    else:
+        rule_of_thumb = int((elder / 2) + 7)
+        if younger < rule_of_thumb:
+            adjusted_difference = rule_of_thumb - younger
+            for _ in range(adjusted_difference):
+                match *= 0.8
+    return match
+    
 
 class MessageInbox():
     def __init__(self, owner) -> None:

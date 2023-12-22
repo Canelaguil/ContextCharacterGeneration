@@ -3,11 +3,14 @@ from ..utils import *
 class Personality():
     def __init__(self, person) -> None:
         self.person = person
+        # personality
         self.lawfulchaotic = normal_in_range(0.5, 0.4)
         self.nicenasty = normal_in_range(0.5, 0.4)
         self.honestfalse = normal_in_range(0.5, 0.4)
 
+        # attitude
         self.dream = normal_in_range(0.4, 0.2)
+        self.outgoing = normal_in_range(0.5, 0.2)
 
     def influence_lc(self, chance, modifier):
         if rand() < chance:
@@ -42,7 +45,13 @@ class Personality():
             'lawful-chaotic': self.lawfulchaotic,
             'nice-nasty': self.nicenasty,
             'honest-false': self.honestfalse, 
-            'dream' : self.dream
         }
         return p
+    
+    def get_attitude(self):
+        a = {
+            'outgoing' : self.outgoing,
+            'dream' : self.dream,
+        }
+        return a
     

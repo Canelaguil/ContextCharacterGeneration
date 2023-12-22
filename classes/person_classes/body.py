@@ -164,7 +164,7 @@ class Body():
             impact = -1 * normal_in_range(loc_impact, scale_impact)
 
             # chance of gaining disability
-            if rand() < 0.05:
+            if rand() < 0.1 * impact:
                 self.add_disability() 
                 report['new_disability'] = self.disabilities[-1]
 
