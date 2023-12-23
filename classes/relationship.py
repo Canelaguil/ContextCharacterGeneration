@@ -29,6 +29,7 @@ class Relationship(Agent):
             'people' : [self.personA['key'], self.personB['key']]
         }
         self.update_people(notify_people_msg)
+        self.end_cause = 'still active' # updated when relationship ends
 
     def arrange_marriage(self):
         """
@@ -48,6 +49,13 @@ class Relationship(Agent):
     def platonic(self):
         pass
 
+    def end(self, cause, context={}):
+        self.active = False
+        if cause == 'person died':
+            self.end_cause = f"{context['person']['name']} died"
+        else:
+            self.end_casue = cause
+
     """
     PHASES / STEPS
     """
@@ -55,17 +63,32 @@ class Relationship(Agent):
         return       
 
     def relationships(self): 
-        friend_report = self.friendship_aspect.evolve()
-        romance_report = self.romance_aspect.evolve()
-        sexual_report = self.sexual_aspect.evolve()
-        if self.sexual_aspect.conceive():
-            self.add_child_birth()
+        if self.active:
+            friend_report = self.friendship_aspect.evolve()
+            romance_report = self.romance_aspect.evolve()
+            sexual_report = self.sexual_aspect.evolve()
+            conceived = self.sexual_aspect.conceive()
+            if conceived:
+                self.add_child_birth()
+
+            report = {
+                'friendship' : friend_report,
+                'romance' : romance_report,
+                'sex'  : sexual_report, 
+                'conceived' : conceived
+            }
+            return report
         
     def houses(self):
         return
 
     def post_processing(self):
-        return
+        task = self.tasks.get()
+        while task != None:
+            topic = task['topic']
+            if topic == 'person died':
+                self.end(task['topic'], {'person' : task['person']})
+            task = self.tasks.get()
     
     """
     UTILS
@@ -99,10 +122,12 @@ class Relationship(Agent):
 
     def status(self):
         return {
+            'active' : self.active,
             'no children' : len(self.children),
-            'no adopted children' : len(self.adopted_children)
+            'no adopted children' : len(self.adopted_children), 
+            'end cause': self.end_cause
         }
     
     def receive_message(self, task):
         self.tasks.add(task)
-    
+

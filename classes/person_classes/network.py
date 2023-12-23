@@ -11,6 +11,25 @@ class Network():
         self.adopted_children = []
         self.relationships = {} # relationship key : other person key
 
+    def unravel(self):
+        """
+        Person dies, network ends and relationships & people are notified
+        """
+        for r, p in self.relationships.items():
+            person_message = {
+                'topic' : 'person died', 
+                'person' : self.community.get_person_short(self.person_key)
+            }
+            self.community.message_person(p, person_message)
+            relation_message = {
+                'topic' : 'person died', 
+                'person' : self.community.get_person_short(self.person_key)
+            }
+            self.community.message_relationship(r, relation_message)
+
+    """
+    RELATIONSHIP MANAGEMENT
+    """
     def add_relationship(self, relationship_key, people):
         # instead of popping this, because I fear python var copies
         other = people[0] if people[0] != self.person_key else people[1]
@@ -22,6 +41,9 @@ class Network():
         else:
             self.adopted_children.append(child_key)
 
+    """
+    INFO FUNCTIONS
+    """
     def get_parents(self):
         if self.mother != {}:
             return {

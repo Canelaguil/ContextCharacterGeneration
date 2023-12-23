@@ -5,11 +5,14 @@ from .utils import *
 from .person_classes import *
 
 class Person(Agent):
-    def __init__(self, unique_id: int, model: Model, income_class : int, 
+    def __init__(self, unique_id: int, model: Model, birth_year : int, income_class : int,
                  mother: dict = {} , father: dict = {}, sex='r', age=0, 
                  first_gen=False) -> None:
         super().__init__(unique_id, model)
         self.community = model
+        self.birth_year = birth_year
+        if age != 0:
+            self.birth_year -= age
         self.born_this_way(sex)
         self.income_class = income_class
         self.age = age
@@ -72,6 +75,7 @@ class Person(Agent):
 
     def die(self):
         self.alive = False
+        self.network.unravel()
 
     """
     PHASES / STEPS
@@ -109,10 +113,13 @@ class Person(Agent):
         # }
         msg = self.messages.get()
         while msg != None:
-            if msg['topic'] == 'new child':
+            topic = msg['topic']
+            if topic == 'new child':
                 self.network.add_child(msg['child key'], msg['addition type'])
-            elif msg['topic'] == 'new relationship': 
+            elif topic == 'new relationship': 
                 self.network.add_relationship(msg['key'], msg['people'])
+            elif topic == 'person died':
+                self.memory.add_event(msg)
             msg = self.messages.get()
 
     """
@@ -155,6 +162,7 @@ class Person(Agent):
             'full_name' : self.names.full(),
             'born this way' : self.get_homsoc_attributes(),
             'age' : self.age,
+            'birth year' : self.birth_year,
             'income class' : self.income_class, 
             'personality' : self.personality.get_personality(),
             'attitude' : self.personality.get_attitude(),

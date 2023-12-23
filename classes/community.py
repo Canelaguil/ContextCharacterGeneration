@@ -94,8 +94,8 @@ class Community(Model):
             self.make_couple()
 
     def make_couple(self):
-        man = Person(self.get_id(), self, 2, {}, {}, 'm', 25, True )
-        woman = Person(self.get_id(), self, 2, {}, {}, 'f', 22, True)
+        man = Person(self.get_id(), self, self.year, 2, {}, {}, 'm', 25, True )
+        woman = Person(self.get_id(), self, self.year, 2, {}, {}, 'f', 22, True)
         self.add_person(man)
         self.add_person(woman)
         marriage = Relationship(self.get_id(), self, man.description(),
@@ -125,13 +125,11 @@ class Community(Model):
         father = self.get_person(key_father)
         mother = self.get_person(key_mother)
         unique_id = self.get_id()
-        child = Person(unique_id, self, father['income class'], mother, father)
+        child = Person(unique_id, self, self.year, father['income class'], mother, 
+                       father, age=0)
         self.add_person(child)
         return child.description()
 
-    def get_id(self):
-        self.ids += 1
-        return self.ids - 1
     
     """
     MESSAGE FUNCTIONS
@@ -139,10 +137,10 @@ class Community(Model):
     def message_person(self, key, msg):
         self.people[key].receive_message(msg)
 
-    def messsage_home(self, key, msg):
+    def message_home(self, key, msg):
         self.homes[key].receive_message(msg)
 
-    def messsage_relationship(self, key, msg):
+    def message_relationship(self, key, msg):
         self.relationships[key].receive_message(msg)
 
     """
@@ -158,9 +156,12 @@ class Community(Model):
                 # print(self.year)
             self.step()
             self.year += 1 
-        # beautify_print(self.people[100000].description())
-        # print('')
-        # print(f'people alive: {self.schedule.get_agent_count()}')
+        print("SIMULATION STATS")
+        print(f"- {years} years")
+        print(f"- {len(self.people)} people")
+        print(f"- {len(self.relationships)} relationships")
+        print(f"- {len(self.homes)} homes")
+        print(f'- {self.schedule.get_agent_count()} active agents')
         # self.city.stats(True)
 
     """
@@ -177,6 +178,13 @@ class Community(Model):
     
     def get_relationship(self, key):
         return self.relationships[key].status()
+
+    def get_year(self):
+        return self.year
+    
+    def get_id(self):
+        self.ids += 1
+        return self.ids - 1
 
     def get_people(self):
         return [p.description() for p in self.people.values()]

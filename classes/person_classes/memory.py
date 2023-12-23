@@ -13,16 +13,18 @@ class Memory:
         if selective:
             if record['health'] == self.health_prev_year:
                 return
-        self.health_records[self.model.year] = record['health']
+        self.health_records[self.model.get_year()] = record['health']
         self.health_prev_year = record['health']
 
     def add_event(self, event):
-        if self.model.year not in self.events:
-            self.events[self.model.year] = []
-        self.events[self.model.year].append(event)
+        yr = self.model.get_year()
+        if yr not in self.events:
+            self.events[yr] = []
+        self.events[yr].append(event)
 
     def summary(self):
         records = {
-            'health' : self.health_records
+            'health' : self.health_records,
+            'events' : self.events
         }
         return records
