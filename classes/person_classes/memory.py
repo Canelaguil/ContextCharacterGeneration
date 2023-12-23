@@ -4,15 +4,25 @@ class Memory:
     def __init__(self, person, model) -> None:
         self.person = person
         self.model = model
-        self.records = {}
-        self.prev_year = {}
+        self.events = {}
+        self.health_records = {}
+        self.health_prev_year = {}
 
     def add_record(self, record, selective = True):
+        # health record
         if selective:
-            if record == self.prev_year:
+            if record['health'] == self.health_prev_year:
                 return
-        self.records[self.model.year] = record
-        self.prev_year = record
+        self.health_records[self.model.year] = record['health']
+        self.health_prev_year = record['health']
+
+    def add_event(self, event):
+        if self.model.year not in self.events:
+            self.events[self.model.year] = []
+        self.events[self.model.year].append(event)
 
     def summary(self):
-        return self.records
+        records = {
+            'health' : self.health_records
+        }
+        return records

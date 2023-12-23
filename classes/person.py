@@ -25,7 +25,7 @@ class Person(Agent):
             self.body = Body(self, father['genetics'], mother['genetics'])
 
         self.personality = Personality(self)
-        self.network = Network(self, mother, father)
+        self.network = Network(self, model, mother, father)
         self.occupation = Occupation(self, self.income_class)
 
         if self.sex == 'f':
@@ -100,7 +100,20 @@ class Person(Agent):
         return
 
     def post_processing(self):
-        return
+        # msg = {
+        #     'topic' : 'new child',
+        #     'child name' : child['name'],
+        #     'child sex' : child['sex'], 
+        #     'child key' : child['key'], 
+        #     'addition type' : kind
+        # }
+        msg = self.messages.get()
+        while msg != None:
+            if msg['topic'] == 'new child':
+                self.network.add_child(msg['child key'], msg['addition type'])
+            elif msg['topic'] == 'new relationship': 
+                self.network.add_relationship(msg['key'], msg['people'])
+            msg = self.messages.get()
 
     """
     UTIL FUNCTIONS
@@ -117,8 +130,24 @@ class Person(Agent):
             'sex interest' : self.sex_interest, 
             'gender expression' : self.gender_expression
         }
+    
+    def whoisthis(self):
+        """
+        Short summary for descriptive purposes
+        """
+        return {
+            'key' : self.unique_id, 
+            'name' : self.names.full(),
+            'age' : self.age,
+            'alive' : self.alive,
+            'sex' : self.sex, 
+            'parents' : self.network.get_parents()
+        }
 
     def description(self) -> dict:
+        """
+        Long description for json objects
+        """
         me = {
             'alive' : self.alive,
             'name' : self.names.first_name(),
@@ -138,4 +167,5 @@ class Person(Agent):
             'sex' : self.sex
         }
         return me
+    
 

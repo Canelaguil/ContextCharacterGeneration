@@ -13,6 +13,7 @@ class Relationship(Agent):
         self.children = []
         self.adopted_children = []
         self.living_children = []
+        self.tasks = MessageInbox(self)
 
         # don't allow for romance or sexual angle 
         self.platonic_only = platonic_only
@@ -21,6 +22,13 @@ class Relationship(Agent):
             self.arrange_marriage()
         else:
             self.platonic()
+
+        notify_people_msg = {
+            'topic' : 'new relationship',
+            'key' : self.unique_id, 
+            'people' : [self.personA['key'], self.personB['key']]
+        }
+        self.update_people(notify_people_msg)
 
     def arrange_marriage(self):
         """
@@ -91,9 +99,10 @@ class Relationship(Agent):
 
     def status(self):
         return {
-            
+            'no children' : len(self.children),
+            'no adopted children' : len(self.adopted_children)
         }
     
-    def receive_message(self, msg):
-        return
+    def receive_message(self, task):
+        self.tasks.add(task)
     

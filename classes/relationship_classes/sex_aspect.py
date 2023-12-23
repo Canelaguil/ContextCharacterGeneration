@@ -44,19 +44,22 @@ class BirdsAndBees():
             
             # update known age
             self.mother_age += 1
-
-            if self.mother_age > 41:
-                chance = 0.03
+            if self.mother_age > 50:
+                self.can_conceive = False
+                return False
+            elif self.mother_age > 41:
+                chance = 0.01
             elif self.mother_age > 36:
-                chance = 0.3
+                chance = 0.2
             elif self.mother_age > 25:
-                chance = 0.5
+                chance = 0.35
             elif self.mother_age > 14:
-                chance = 0.6
+                chance = 0.45
             else:
                 chance = 0.
-
-            if rand() < chance * self.fertility:
+            updated_chance = chance * self.fertility
+            # print(f'mother: {self.mother_age}, chance: {updated_chance}')
+            if rand() < updated_chance:
                 return True
             return False
             

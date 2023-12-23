@@ -1,6 +1,7 @@
 from typing import Any
 import numpy as np
 import json
+import shutil
 import os
 from mesa import Agent, Model
 from mesa.time import StagedActivation
@@ -168,6 +169,9 @@ class Community(Model):
     def get_person(self, key):
         return self.people[key].description()
     
+    def get_person_short(self, key):
+        return self.people[key].whoisthis()
+    
     def get_home(self, key):
         return self.homes[key].info()
     
@@ -187,8 +191,10 @@ class Community(Model):
         """
         Output all agent info into json files. Deletes all previous files.
         """
-        if not os.path.exists('output/people_json'):
-            os.mkdir('output/people_json')
+        # remove existing generation to start fresh (so save communities you like!!)
+        if os.path.exists('output/people_json'):
+            shutil.rmtree('output/people_json')
+        os.mkdir('output/people_json')
 
         for key, p in self.people.items():
             with open(f"output/people_json/{key}.json", 'w') as output:

@@ -227,7 +227,9 @@ class MessageInbox():
 
     def get(self) -> dict:
         if not self.empty():
-            return self.inbox[0]
+            msg = self.inbox.pop(0)
+            return msg
+        return None
 
     def empty(self) -> bool:
         if self.inbox == []:
