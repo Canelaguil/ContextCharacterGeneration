@@ -68,7 +68,12 @@ class Community(Model):
                  community, institutions, names, testing=True, year=1200) -> None:
         super().__init__(self)
         set_globals(health_stats, aesthetic_seed, names, society)
+
+        # stat trackers
         self.ids = 10000
+        self.births = 0
+        self.deaths = 0
+
         self.schedule = StagedActivation(self, ["people", "relationships", "houses", "post_processing"], True)
         self.year = year
         self.people = {}
@@ -122,6 +127,7 @@ class Community(Model):
         self.schedule.add(relat)
 
     def birth_child(self, key_father, key_mother):
+        self.births += 1
         father = self.get_person(key_father)
         mother = self.get_person(key_mother)
         unique_id = self.get_id()
@@ -129,6 +135,10 @@ class Community(Model):
                        father, age=0)
         self.add_person(child)
         return child.description()
+    
+    def report_death(self, key):
+        self.deaths += 1
+        self.schedule.remove(self.people[key])
 
     
     """
@@ -151,11 +161,15 @@ class Community(Model):
 
     def run(self, years, output=False):
         for _ in range(years):
-            if output:
-                pass
-                # print(self.year)
             self.step()
+            if output:
+                print(f"~{self.year}~")
+                print(f"births : {self.births}")
+                print(f"deaths : {self.deaths}")
+                print('------------------------')
             self.year += 1 
+            self.births = 0
+            self.deaths = 0
         print("SIMULATION STATS")
         print(f"- {years} years")
         print(f"- {len(self.people)} people")

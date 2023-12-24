@@ -7,7 +7,7 @@ are fed to the model through generation.py.
 
 
 simulation = {
-    'number_of_years' : 100,
+    'number_of_years' : 25,
     'simulation_output' : True,
     'json_output' : True,
     'tests' : False
@@ -38,7 +38,7 @@ health_stats = {
     'bio_male_female_ratio' : 0.49, # percentage of men
     'average_health' : 0.7, # on a scale from 0-1
     'health_care_modifier' : 0.0, # increased chance for cure 
-    'child_mortality' : 0.2, # yearly chance of child dying from childhood-specific illnesses (0 cancels out all childhood mortality)
+    'child_mortality' : 0.1, # yearly chance of child dying from childhood-specific illnesses (0 cancels out all childhood mortality)
     'old_age' : 50, # when is a person considered to be old in this community?
 
     'physical_disability_chance' : 0.1,

@@ -153,7 +153,7 @@ class Body():
         elif age > Body.old_age:
             chance = (0.15 + (0.05 * age)) * (1 - self.health)
         else:
-            chance = 0.12 * (1 - self.health)
+            chance = 0.02 * (1 - self.health)
 
         # compose report
         report = {'change' : False, 'value_change' : 0.}

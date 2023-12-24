@@ -17,8 +17,9 @@ class Person(Agent):
         self.income_class = income_class
         self.age = age
         self.alive = True
+        self.first_gen = first_gen
 
-        if first_gen:
+        if self.first_gen:
             self.names = Naming(self.sex, '', '', '', True)
             self.body = Body(self, {}, {}, True)
         else:
@@ -76,6 +77,7 @@ class Person(Agent):
     def die(self):
         self.alive = False
         self.network.unravel()
+        self.community.report_death(self.unique_id)
 
     """
     PHASES / STEPS
@@ -95,7 +97,8 @@ class Person(Agent):
             }
 
             self.memory.add_record(record)
-        # print(f"Hi I'm {self.names.full()} and I'm {self.age} years old.")
+            # if not self.first_gen:
+                # print(f"Hi I'm {self.names.full()} and I'm {self.age} years old.")
 
     def relationships(self): 
         return
@@ -104,20 +107,15 @@ class Person(Agent):
         return
 
     def post_processing(self):
-        # msg = {
-        #     'topic' : 'new child',
-        #     'child name' : child['name'],
-        #     'child sex' : child['sex'], 
-        #     'child key' : child['key'], 
-        #     'addition type' : kind
-        # }
         msg = self.messages.get()
         while msg != None:
             topic = msg['topic']
             if topic == 'new child':
                 self.network.add_child(msg['child key'], msg['addition type'])
+                self.memory.add_event(msg)
             elif topic == 'new relationship': 
                 self.network.add_relationship(msg['key'], msg['people'])
+                self.memory.add_event(msg)
             elif topic == 'person died':
                 self.memory.add_event(msg)
             msg = self.messages.get()
@@ -130,12 +128,12 @@ class Person(Agent):
 
     def get_homsoc_attributes(self):
         return {
-            'sex' : self.sex, 
             'sexuality label' : self.primary_sexuality,
             'sexuality' : self.secondary_sexuality, 
             'romantic interest' : self.romance_interest,
             'sex interest' : self.sex_interest, 
-            'gender expression' : self.gender_expression
+            'gender expression' : self.gender_expression,
+            'sex' : self.sex,
         }
     
     def whoisthis(self):
@@ -163,6 +161,7 @@ class Person(Agent):
             'born this way' : self.get_homsoc_attributes(),
             'age' : self.age,
             'birth year' : self.birth_year,
+            'sex' : self.sex,
             'income class' : self.income_class, 
             'personality' : self.personality.get_personality(),
             'attitude' : self.personality.get_attitude(),
@@ -172,7 +171,6 @@ class Person(Agent):
             'genetics' : self.body.pass_gens(), 
             'memory' : self.memory.summary(),
             'key' : self.unique_id,
-            'sex' : self.sex
         }
         return me
     
