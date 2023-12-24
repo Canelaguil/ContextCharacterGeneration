@@ -6,7 +6,7 @@ from .person_classes import *
 
 class Person(Agent):
     def __init__(self, unique_id: int, model: Model, birth_year : int, income_class : int,
-                 mother: dict = {} , father: dict = {}, sex='r', age=0, 
+                 mother: dict = {} , father: dict = {}, siblings=[], sex='r', age=0, 
                  first_gen=False) -> None:
         super().__init__(unique_id, model)
         self.community = model
@@ -15,6 +15,7 @@ class Person(Agent):
             self.birth_year -= age
         self.born_this_way(sex)
         self.income_class = income_class
+        self.home = None
         self.age = age
         self.alive = True
         self.first_gen = first_gen
@@ -30,6 +31,8 @@ class Person(Agent):
 
         self.personality = Personality(self)
         self.network = Network(self, model, mother, father)
+        # if not self.first_gen:
+        #     self.network.siblings = siblings
         self.occupation = Occupation(self, self.income_class)
 
         if self.sex == 'f':
@@ -111,20 +114,43 @@ class Person(Agent):
         while msg != None:
             topic = msg['topic']
             if topic == 'new child':
-                self.network.add_child(msg['child key'], msg['addition type'])
+                self.network.add_child(msg['child key'], msg['kind'])
                 self.memory.add_event(msg)
+                if self.sex == 'f' : # add child to mother's home
+                    self.community.add_person_to_home(self.home['unique id'], 
+                                                      msg['child key'])
             elif topic == 'new relationship': 
                 self.network.add_relationship(msg['key'], msg['people'])
                 self.memory.add_event(msg)
+            elif topic == 'new sibling': 
+                self.network.add_sibling(msg['child key'], msg['kind'])
+                self.memory.add_event(msg)
             elif topic == 'person died':
                 self.memory.add_event(msg)
+            elif topic == 'new home': 
+                self.move(msg['home'])
             msg = self.messages.get()
 
     """
     UTIL FUNCTIONS
     """        
-    def receive_message(self, message):
-        self.messages.add(message)
+    def receive_message(self, msg):
+        if self.alive:
+            self.messages.add(msg)
+        else:
+            # if person not alive, add only certain info and add directly
+            posthumous_info = ['new sibling']
+            topic = msg['topic']
+            if topic in posthumous_info:         
+                if topic == 'new sibling' :    
+                    self.network.add_sibling(msg['child key'], msg['kind'])
+
+    def move(self, home_info):
+        self.home = home_info
+
+    """
+    INFO FUNCTIONS
+    """
 
     def get_homsoc_attributes(self):
         return {
@@ -171,6 +197,7 @@ class Person(Agent):
             'genetics' : self.body.pass_gens(), 
             'memory' : self.memory.summary(),
             'key' : self.unique_id,
+            'home' : self.home
         }
         return me
     

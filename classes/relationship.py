@@ -12,7 +12,6 @@ class Relationship(Agent):
         self.active = True
         self.children = []
         self.adopted_children = []
-        self.living_children = []
         self.tasks = MessageInbox(self)
 
         # don't allow for romance or sexual angle 
@@ -96,29 +95,42 @@ class Relationship(Agent):
     def add_child_birth(self):
         # this is the only place where the specific sex of the partners matters within this class
         mother, father = self.sexual_aspect.get_parents()
-        child = self.model.birth_child(father, mother)
+        child = self.model.birth_child(father, mother, self.children)
         self.add_child(child, 'birth')
 
     def add_child(self, child, kind='birth'):
         """
         Add child, either through birth or adoption
         """        
-        self.children.append(child['key'])
-        self.living_children.append(child['key'])
-
-        # notify parents they've had a child
+        # notify parents and other children
         msg = {
             'topic' : 'new child',
             'child name' : child['name'],
             'child sex' : child['sex'], 
             'child key' : child['key'], 
-            'addition type' : kind
+            'kind' : kind
         }
         self.update_people(msg)
+        msg2 = { # new message necessary to avoid errors
+            'topic' : 'new sibling',
+            'child name' : child['name'],
+            'child sex' : child['sex'], 
+            'child key' : child['key'], 
+            'kind' : kind
+        }
+        self.update_children(msg2)
+
+        self.children.append(child['key'])
 
     def update_people(self, msg):
         self.model.message_person(self.personA['key'], msg)
         self.model.message_person(self.personB['key'], msg)
+
+    def update_children(self, msg):
+        for child in self.children:
+            self.model.message_person(child, msg)
+        for a_child in self.adopted_children:
+            self.model.message_person(a_child, msg)
 
     def status(self):
         return {

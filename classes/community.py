@@ -70,11 +70,12 @@ class Community(Model):
         set_globals(health_stats, aesthetic_seed, names, society)
 
         # stat trackers
-        self.ids = 10000
+        self.ids = 10000 # TODO : find consistent system?
         self.births = 0
         self.deaths = 0
 
-        self.schedule = StagedActivation(self, ["people", "relationships", "houses", "post_processing"], True)
+        self.schedule = StagedActivation(self, ["people", "relationships", "houses", 
+                                                "post_processing"], True)
         self.year = year
         self.people = {}
         self.homes = {}
@@ -85,27 +86,34 @@ class Community(Model):
         self.factions = Factions(community)
         self.institutions = Institutions(institutions)
         self.manager = CommunityEvents(society)
-        self.init_community(society, aesthetic_seed, health_stats)
+
+        self.init_community(society, seed)
+
         if testing:
             run_tests(self)
 
     """
     INIT FUNCTIONS
     """
-    def init_community(self, society, aesthetic_seed, health_stats):
-        # test = Person(self.get_id(), self, 2, {}, {}, 'r', 20, True)
-        # self.add_person(test)        
-        for _ in range(4):
-            self.make_couple()
+    def init_community(self, society, seed):
+        for hk, h in self.homes.items():
+            if rand() < seed['percentage_inhabited_houses']: 
+                income_class = h.income_class
+                m, w = self.make_couple(income_class)
+                self.add_person_to_home(hk, m)
+                self.add_person_to_home(hk, w)
 
-    def make_couple(self):
-        man = Person(self.get_id(), self, self.year, 2, {}, {}, 'm', 25, True )
-        woman = Person(self.get_id(), self, self.year, 2, {}, {}, 'f', 22, True)
+    def make_couple(self, income_class):
+        man = Person(self.get_id(), self, self.year, income_class, {}, {}, [], 
+                     'm', 25, True )
+        woman = Person(self.get_id(), self, self.year, income_class, {}, {}, [], 
+                       'f', 22, True)
         self.add_person(man)
         self.add_person(woman)
         marriage = Relationship(self.get_id(), self, man.description(),
                                 woman.description(), 'arranged marriage')
         self.add_relationship(marriage)
+        return (man.unique_id, woman.unique_id)
 
     """
     INPUT FUNCTIONS
@@ -119,20 +127,20 @@ class Community(Model):
         self.schedule.add(home)
 
     def add_person_to_home(self, house_key, person_key):
-        person_info = self.people[person_key]
+        person_info = self.people[person_key].description()
         self.homes[house_key].add_person(person_info)
 
     def add_relationship(self, relat : Agent):
         self.relationships[relat.unique_id] = relat 
         self.schedule.add(relat)
 
-    def birth_child(self, key_father, key_mother):
+    def birth_child(self, key_father, key_mother, siblings):
         self.births += 1
         father = self.get_person(key_father)
         mother = self.get_person(key_mother)
         unique_id = self.get_id()
-        child = Person(unique_id, self, self.year, father['income class'], mother, 
-                       father, age=0)
+        child = Person(unique_id, self, self.year, mother['income class'], mother, 
+                       father, siblings, age=0)
         self.add_person(child)
         return child.description()
     

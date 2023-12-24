@@ -7,6 +7,7 @@ class Network():
         self.person_key = person.unique_id
         self.mother = mother
         self.father = father
+        self.siblings = []
         self.children = []
         self.adopted_children = []
         self.relationships = {} # relationship key : other person key
@@ -41,6 +42,14 @@ class Network():
         else:
             self.adopted_children.append(child_key)
 
+    def add_sibling(self, sibling_key, kind='full'):
+        """
+        TODO : half siblings & adopted
+        """
+        if sibling_key in self.siblings:
+            print(sibling_key)
+        self.siblings.append(sibling_key)
+
     """
     INFO FUNCTIONS
     """
@@ -72,6 +81,7 @@ class Network():
     def links(self):
         return {
             'parents' : self.get_parents(),
+            'siblings' : self.siblings,
             'children' : self.get_child_descriptions(),
             'relationships' : self.relationships
         }

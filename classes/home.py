@@ -46,13 +46,32 @@ class Home(Agent):
         return
 
     def post_processing(self):
-        return
+        msg = self.tasks.get()
+        while msg != None:
+            task = msg['topic']
+            if task == 'new person':
+                self.add_person(msg)
+            elif task == 'person died':
+                self.remove_person(msg)
+            elif task == 'person moved':
+                self.remove_person(msg)
+            task = self.tasks.get()
 
     """
     UPDATE FUNCTIONS 
     """
     def add_person(self, person_info): 
-        pass
+        self.no_inhabitants += 1
+        self.inhabitants.append(person_info['key'])
+        move_notice = {
+            'topic' : 'new home',
+            'home' : self.info()
+        }
+        self.model.message_person(person_info['key'], move_notice)
+
+    def remove_person(self, person_info):
+        self.no_inhabitants -= 1
+        self.inhabitants.remove(person_info['key'])
 
     def receive_message(self, msg):
         self.tasks.add(msg)
