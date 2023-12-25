@@ -14,7 +14,7 @@ class Relationship(Agent):
         self.adopted_children = []
         self.tasks = MessageInbox(self)
 
-        # don't allow for romance or sexual angle 
+        # don't allow for romance or sexual angle (w/ family eg)
         self.platonic_only = platonic_only
 
         if init_type == 'arranged marriage':
@@ -92,6 +92,9 @@ class Relationship(Agent):
     """
     UTILS
     """
+    def receive_message(self, task):
+        self.tasks.add(task)
+
     def add_child_birth(self):
         # this is the only place where the specific sex of the partners matters within this class
         mother, father = self.sexual_aspect.get_parents()
@@ -120,7 +123,10 @@ class Relationship(Agent):
         }
         self.update_children(msg2)
 
-        self.children.append(child['key'])
+        if kind == 'birth':
+            self.children.append(child['key'])
+        else: 
+            self.adopted_children.append(child['key'])
 
     def update_people(self, msg):
         self.model.message_person(self.personA['key'], msg)
@@ -140,6 +146,3 @@ class Relationship(Agent):
             'end cause': self.end_cause
         }
     
-    def receive_message(self, task):
-        self.tasks.add(task)
-

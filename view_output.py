@@ -7,6 +7,7 @@ if __name__ == '__main__':
     print("Welcome! Use this tool to quickly parse biographies.")
     print("Enter 'd' at any time to switch to the descriptive mode.")
     print("Enter 'e' at any time to leave.")
+    print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
     while True:
         inp = input("Enter a person's identification key: ")
         print("-------------------------------------------------------------")
