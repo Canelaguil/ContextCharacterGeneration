@@ -104,9 +104,9 @@ class Community(Model):
                 self.add_person_to_home(hk, w)
 
     def make_couple(self, income_class):
-        man = Person(self.get_id(), self, self.year, income_class, {}, {}, [], 
+        man = Person(self.get_id(), self, self.year, income_class, 'firstgen', 
                      'm', 25, True )
-        woman = Person(self.get_id(), self, self.year, income_class, {}, {}, [], 
+        woman = Person(self.get_id(), self, self.year, income_class, 'firstgen',
                        'f', 22, True)
         self.add_person(man)
         self.add_person(woman)
@@ -134,13 +134,12 @@ class Community(Model):
         self.relationships[relat.unique_id] = relat 
         self.schedule.add(relat)
 
-    def birth_child(self, key_father, key_mother, siblings):
+    def birth_child(self, relationship_key, income_class):
         self.births += 1
-        father = self.get_person(key_father)
-        mother = self.get_person(key_mother)
+        parent_info = self.get_relationship(relationship_key)
         unique_id = self.get_id()
-        child = Person(unique_id, self, self.year, mother['income class'], mother, 
-                       father, siblings, age=0)
+        child = Person(unique_id, self, self.year, income_class, 
+                       parent_info)
         self.add_person(child)
         return child.description()
     
@@ -159,7 +158,10 @@ class Community(Model):
         self.homes[key].receive_message(msg)
 
     def message_relationship(self, key, msg):
-        self.relationships[key].receive_message(msg)
+        try:
+            self.relationships[key].receive_message(msg)
+        except:
+            fatal_error(msg)
 
     """
     SIMULATION FUNCTIONS

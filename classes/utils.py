@@ -1,6 +1,7 @@
 import numpy as np
 from numpy import random
 from random import choices as weighted_choice
+import sys 
 
 """
 MODIFIERS
@@ -157,6 +158,10 @@ def print_dict_types(d : dict):
 """
 OTHER UTILS
 """
+def fatal_error(msg): 
+    print(msg)
+    sys.exit()
+
 def sexuality_match(sexA, sexB, sexualityA, sexualityB, mode='bool'):
     """
     TODO : score mode does not work well yet

@@ -1,11 +1,13 @@
 from classes.utils import *
 import sys, os
+import random
 import json
 
 if __name__ == '__main__':
     directory = 'output/people_json/'
     print("Welcome! Use this tool to quickly parse biographies.")
     print("Enter 'd' at any time to switch to the descriptive mode.")
+    print("Enter 'r' at any time to get a random person.")
     print("Enter 'e' at any time to leave.")
     print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
     while True:
@@ -17,6 +19,12 @@ if __name__ == '__main__':
             print(f'Directory switched to {directory}')
         elif inp == 'e':
             sys.exit()
+        elif inp == 'r':
+            f = random.choice(os.listdir(directory))
+            path = f"{directory}{f}"
+            with open(path) as json_data:
+                p = json.load(json_data)
+            beautify_print(p)
         else:
             try: 
                 if ' ' in inp:

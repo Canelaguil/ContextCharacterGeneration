@@ -5,8 +5,8 @@ from .utils import *
 from .person_classes import *
 
 class Person(Agent):
-    def __init__(self, unique_id: int, model: Model, birth_year : int, income_class : int,
-                 mother: dict = {} , father: dict = {}, siblings=[], sex='r', age=0, 
+    def __init__(self, unique_id: int, model: Model, birth_year : int, 
+                 income_class : int, parent_info={}, sex='r', age=0, 
                  first_gen=False) -> None:
         super().__init__(unique_id, model)
         self.community = model
@@ -14,27 +14,24 @@ class Person(Agent):
         if age != 0:
             self.birth_year -= age
         self.born_this_way(sex)
+
         self.income_class = income_class
+        self.parent_key = parent_info if first_gen else parent_info['key']
         self.home = None
         self.age = age
         self.alive = True
         self.first_gen = first_gen
 
+        # Init submodules 
+        self.personality = Personality(self)
         if self.first_gen:
             self.names = Naming(self.sex, '', '', '', True)
             self.body = Body(self, {}, {}, True)
+            self.network = Network(self, self.model, {}, {})
         else:
-            surnames = [father['surname'], mother['surname']]
-            self.names = Naming(self.sex, father['name'], mother['name'], 
-                                surnames)
-            self.body = Body(self, father['genetics'], mother['genetics'])
+            self.init_essentials_legacy(parent_info)
 
-        self.personality = Personality(self)
-        self.network = Network(self, model, mother, father)
-        # if not self.first_gen:
-        #     self.network.siblings = siblings
-        self.occupation = Occupation(self, self.income_class)
-
+        self.occupation = Occupation(self, self.income_class, age)
         if self.sex == 'f':
             self.homsoc = WomanMA(self, self.get_homsoc_attributes(), 
                                   self.personality.get_personality())
@@ -48,6 +45,22 @@ class Person(Agent):
         self.messages = MessageInbox(self)
         self.memory = Memory(self, self.model) 
     
+    def init_essentials_legacy(self, parent_info): 
+        """
+        Init submodules for all people with parents (=not first gen)
+        """
+        # get parent info 
+        mother_key, father_key = parent_info['people']
+        mother = self.community.get_person(mother_key)
+        father = self.community.get_person(father_key)
+        surnames = [father['surname'], mother['surname']]
+        self.names = Naming(self.sex, father['name'], mother['name'], 
+                            surnames)
+        self.body = Body(self, father['genetics'], mother['genetics'])
+        self.network = Network(self, self.model, mother, father)
+        siblings = parent_info['birth children'] + parent_info['adopted children']
+        self.network.init_siblings(siblings)
+
     def born_this_way(self, sex):
         """
         Define sex, gender & sexuality
@@ -125,7 +138,7 @@ class Person(Agent):
             elif topic == 'new sibling': 
                 self.network.add_sibling(msg['child key'], msg['kind'])
                 self.memory.add_event(msg)
-            elif topic == 'person died':
+            elif topic == 'person died' or topic == 'sibling died':
                 self.memory.add_event(msg)
             elif topic == 'new home': 
                 self.move(msg['home'])
