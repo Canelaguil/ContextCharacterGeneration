@@ -93,9 +93,8 @@ class Relationship(Agent):
     UTILS
     """
     def add_child_birth(self):
-        # this is the only place where the specific sex of the partners matters within this class
-        mother, father = self.sexual_aspect.get_parents()
-        child = self.model.birth_child(father, mother, self.children)
+        income_class = self.personA['income class']
+        child = self.model.birth_child(self.unique_id, income_class)
         self.add_child(child, 'birth')
 
     def add_child(self, child, kind='birth'):
@@ -133,11 +132,21 @@ class Relationship(Agent):
             self.model.message_person(a_child, msg)
 
     def status(self):
+        # return woman first if woman in relationship
+        if self.personA['sex'] == 'f':
+            people = [self.personA['key'], self.personB['key']]
+        else:
+            people = [self.personB['key'], self.personA['key']]
+
         return {
             'active' : self.active,
-            'no children' : len(self.children),
+            'people' : people,
+            'no birth children' : len(self.children),
+            'birth children' : self.children,
             'no adopted children' : len(self.adopted_children), 
-            'end cause': self.end_cause
+            'adopted children' : self.adopted_children,
+            'end cause': self.end_cause, 
+            'key' : self.unique_id
         }
     
     def receive_message(self, task):

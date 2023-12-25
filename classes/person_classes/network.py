@@ -16,17 +16,25 @@ class Network():
         """
         Person dies, network ends and relationships & people are notified
         """
+        about_me = self.community.get_person_short(self.person_key)
         for r, p in self.relationships.items():
             person_message = {
                 'topic' : 'person died', 
-                'person' : self.community.get_person_short(self.person_key)
+                'person' : about_me
             }
             self.community.message_person(p, person_message)
             relation_message = {
                 'topic' : 'person died', 
-                'person' : self.community.get_person_short(self.person_key)
+                'person' : about_me
             }
             self.community.message_relationship(r, relation_message)
+
+        for s in self.siblings:
+            sib_message = {
+                'topic' : 'sibling died', 
+                'person' : about_me
+            }
+            self.community.message_person(s, sib_message)
 
     """
     RELATIONSHIP MANAGEMENT
@@ -49,6 +57,13 @@ class Network():
         if sibling_key in self.siblings:
             print(sibling_key)
         self.siblings.append(sibling_key)
+
+    def init_siblings(self, list_of_siblings):
+        """
+        Add list of existing siblings
+        """
+        for s in list_of_siblings:
+            self.siblings.append(s)
 
     """
     INFO FUNCTIONS
