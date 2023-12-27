@@ -227,6 +227,9 @@ class Community(Model):
         if os.path.exists('output/people_json'):
             shutil.rmtree('output/people_json')
         os.mkdir('output/people_json')
+        if os.path.exists('output/relationships_json'):
+            shutil.rmtree('output/relationships_json')
+        os.mkdir('output/relationships_json')
 
         for key, p in self.people.items():
             with open(f"output/people_json/{key}.json", 'w') as output:

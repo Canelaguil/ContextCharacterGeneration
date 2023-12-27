@@ -28,3 +28,4 @@ class Memory:
             'events' : self.events
         }
         return records
+    

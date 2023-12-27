@@ -67,8 +67,10 @@ class BirdsAndBees():
             """
             TODO : implement happiness with current sexual relationship
             """
-            if not self.is_sexual:
-                return False
+            # if not self.is_sexual:
+            return {
+                'change' : False
+            }
             
         def get_parents(self):
             return self.mother, self.father

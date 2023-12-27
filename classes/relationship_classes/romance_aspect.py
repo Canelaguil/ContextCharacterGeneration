@@ -13,5 +13,5 @@ class Romance():
 
     def evolve(self):
         return {
-            
+            'change' : False
         }

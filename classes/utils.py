@@ -54,19 +54,21 @@ def get_modified_chance(base_chance, positive_mods=[], negative_mods=[], values=
 def get_vector_distance(element1, element2):
     """
     Returns vector distance between two sets of vector attributes. 
+    Normalized for range (0, 0, 0) -> (1, 1, 1)
     """
     # convert input to vectors
     if isinstance(element1, dict):
-        e1 = np.vector(element1.values())
+        e1 = np.array(list(element1.values()))
     else:
-        e1 = np.vector(element1)
+        e1 = np.array(element1)
     if isinstance(element2, dict):
-        e2 = np.vector(element2.values())
+        e2 = np.array(list(element2.values()))
     else:
-        e2 = np.vector(element2)
+        e2 = np.array(element2)
 
     distance = np.linalg.norm(e2 - e1)
-    return distance
+    max_distance = 1.732 # distance between (0, 0, 0) and (1, 1, 1)
+    return round(distance / max_distance, 3)
 
 """
 RANDOM NUMBERS & CHOICES
@@ -220,8 +222,10 @@ def age_match(ageA, ageB):
             for _ in range(adjusted_difference):
                 match *= 0.8
     return match
-    
 
+"""
+CLASSES
+"""    
 class MessageInbox():
     def __init__(self, owner) -> None:
         self.owner = owner
@@ -240,3 +244,21 @@ class MessageInbox():
         if self.inbox == []:
             return True
         return False
+    
+class Log:
+    def __init__(self, model) -> None:
+        """
+        Not to be confused with memory (which only applies to people): keeps track
+        of events pertaining to homes and relationships.
+        """
+        self.model = model
+        self.logs = {}
+
+    def add_log(self, log):
+        yr = self.model.get_year()
+        if yr not in self.logs:
+            self.logs[yr] = []
+        self.logs[yr].append(log)
+
+    def get_logs(self):
+        return self.logs

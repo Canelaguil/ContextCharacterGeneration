@@ -9,10 +9,12 @@ class Relationship(Agent):
         self.personA = personA
         self.personB = personB
         self.keys = [personA['key'], personB['key']]
+        self.proximity_score = 1 # for testing
         self.active = True
         self.children = []
         self.adopted_children = []
         self.tasks = MessageInbox(self)
+        self.logs = Log(model)
 
         # don't allow for romance or sexual angle (w/ family eg)
         self.platonic_only = platonic_only
@@ -63,20 +65,29 @@ class Relationship(Agent):
 
     def relationships(self): 
         if self.active:
-            friend_report = self.friendship_aspect.evolve()
-            romance_report = self.romance_aspect.evolve()
-            sexual_report = self.sexual_aspect.evolve()
-            conceived = self.sexual_aspect.conceive()
-            if conceived:
-                self.add_child_birth()
-
+            change = False
+            friend_report = self.friendship_aspect.evolve(self.proximity_score)
             report = {
                 'friendship' : friend_report,
-                'romance' : romance_report,
-                'sex'  : sexual_report, 
-                'conceived' : conceived
             }
-            return report
+            change = report['friendship']['change']
+            if not self.platonic_only:
+                romance_report = self.romance_aspect.evolve()
+                sexual_report = self.sexual_aspect.evolve()
+                conceived = self.sexual_aspect.conceive()
+                if conceived:
+                    self.add_child_birth()
+                if romance_report['change'] or sexual_report['change'] or conceived:
+                    change = True
+
+                # merge reports
+                report = {** report, ** {
+                    'romance' : romance_report,
+                    'sex'  : sexual_report, 
+                    'conceived' : conceived
+                }}
+            if change:
+                self.logs.add_log(report)
         
     def houses(self):
         return
@@ -92,9 +103,6 @@ class Relationship(Agent):
     """
     UTILS
     """
-    def receive_message(self, task):
-        self.tasks.add(task)
-
     def add_child_birth(self):
         income_class = self.personA['income class']
         child = self.model.birth_child(self.unique_id, income_class)
@@ -127,6 +135,12 @@ class Relationship(Agent):
         else: 
             self.adopted_children.append(child['key'])
 
+    """
+    MESSAGING FUNCTIONS
+    """
+    def receive_message(self, task):
+        self.tasks.add(task)
+
     def update_people(self, msg):
         self.model.message_person(self.personA['key'], msg)
         self.model.message_person(self.personB['key'], msg)
@@ -137,6 +151,9 @@ class Relationship(Agent):
         for a_child in self.adopted_children:
             self.model.message_person(a_child, msg)
 
+    """
+    INFO FUNCTIONS
+    """
     def status(self):
         # return woman first if woman in relationship
         if self.personA['sex'] == 'f':
@@ -146,12 +163,16 @@ class Relationship(Agent):
 
         return {
             'active' : self.active,
+            'compatibility' : self.friendship_aspect.determine_compatibility(self.personA, self.personB),
+            'platonic only' : self.platonic_only,
             'people' : people,
             'no birth children' : len(self.children),
             'birth children' : self.children,
             'no adopted children' : len(self.adopted_children), 
             'adopted children' : self.adopted_children,
             'end cause': self.end_cause, 
-            'key' : self.unique_id
+            'key' : self.unique_id, 
+            'logs' : self.logs.get_logs(), 
+            'friendship trajectory' : self.friendship_aspect.trajectory()
         }
     
