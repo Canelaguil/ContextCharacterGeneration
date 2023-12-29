@@ -15,7 +15,7 @@ def plot(x, y, title, xlabel='', ylabel=''):
     plt.xticks(x)
     plt.savefig(f'output/analysis/plots/{title}.png')
 
-def plot_scatter(x, y, title, xlabel='', ylabel=''):
+def plot_scatter(x, y, title, xlabel='', ylabel='', all_xticks=False):
     if isinstance(y[0], tuple):
         for subY in y:
             plt.scatter(x, subY[0], label=subY[1])
@@ -25,8 +25,20 @@ def plot_scatter(x, y, title, xlabel='', ylabel=''):
     plt.title(title)
     plt.xlabel(xlabel)
     plt.ylabel(ylabel)
-    # plt.xticks(x)
+    if all_xticks:
+        plt.xticks(x)
     plt.savefig(f'output/analysis/plots/{title}.png')
+
+def plot_bar(ys, title, xs = None, xlabel='', ylabel=''):
+    if not xs:
+        xs = [i for i in range(len(ys))]
+    plt.bar(xs, ys)
+    plt.title(title)
+    plt.xlabel(xlabel)
+    plt.ylabel(ylabel)
+    plt.xticks(xs)
+    plt.savefig(f'output/analysis/plots/{title}.png')
+    
 
 def plot3d(x, y, z, title, xlabel='', ylabel='', zlabel=''):
     ax = plt.figure().add_subplot(projection='3d')
@@ -40,7 +52,8 @@ def plot3d(x, y, z, title, xlabel='', ylabel='', zlabel=''):
 
 def relationship_analysis():
     directory = 'output/relationships_json/'
-    dfs, cmp = [], []
+    dfs, cmp = [], [] # relationship compatiblitity / progression
+    no_children = [0] * 15
     for f in os.listdir(directory):
         path = f"{directory}{f}"
         with open(path) as json_data:
@@ -49,9 +62,15 @@ def relationship_analysis():
         r = r[key]
         difference = r['friendship trajectory']['current'] - r['friendship trajectory']['start']
         compatiblity = r['compatibility']
+        try:
+            no_children[r['no birth children']] += 1
+        except:
+            print(r['no birth children'])
         dfs.append(difference)
         cmp.append(compatiblity)
-    plot_scatter(cmp, dfs, 'Relationship trajectory with compatiblity', 'compatibility score', 'difference during relationship')
+    plot_scatter(cmp, dfs, 'Relationship trajectory with compatiblity', 
+                 'compatibility score', 'difference during relationship')
+    plot_bar(no_children, 'Frequency of number of children', xlabel='Number of children', ylabel='Frequency')
         
 
 if __name__ == '__main__':

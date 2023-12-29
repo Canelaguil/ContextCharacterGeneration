@@ -28,7 +28,7 @@ class Friendship():
         
     def evolve(self, proximity_score):
         """
-        current_score * base_event_chance + (proximity_modifier ^ proximity score)
+        Every year there is a chance of something happening
         """
         # chance of something happening
         something_chance = self.score * 0.2 + (0.2 ** proximity_score)

@@ -31,16 +31,23 @@ class BirdsAndBees():
 
             else:
                 self.can_conceive = False
-            
-        def init_types(self, type='arranged'):
-             ...
 
+            # sex life variables
+            self.max_sex_life = max(personA['born this way']['sex interest'], 
+                                    personB['born this way']['sex interest'])
+            self.min_sex_life = min(personA['born this way']['sex interest'], 
+                                    personB['born this way']['sex interest'])
+            self.current_sex_life = round((self.max_sex_life + self.min_sex_life) / 2, 3)
+            self.drive_compatibility = 1 - round(self.max_sex_life - self.min_sex_life, 3)
+            
         def conceive(self):
             """
             TODO: actually do something with the fertility scores
             """
             if not self.can_conceive or not self.is_sexual:
                 return False
+            
+            chance_modifier = 1
             
             # update known age
             self.mother_age += 1
@@ -57,7 +64,7 @@ class BirdsAndBees():
                 chance = 0.45
             else:
                 chance = 0.
-            updated_chance = chance * self.fertility
+            updated_chance = chance * self.fertility * chance_modifier
             # print(f'mother: {self.mother_age}, chance: {updated_chance}')
             if rand() < updated_chance:
                 return True
@@ -65,9 +72,20 @@ class BirdsAndBees():
             
         def evolve(self):
             """
-            TODO : implement happiness with current sexual relationship
+            Reasoning: the tendencies in relationships to have less sex as time 
+            progresses, as well as the tendency to have better sex as time progresses
+            and two partners know each other better, cancel each other out, thus
+            not 
             """
-            # if not self.is_sexual:
+            report = {'change' : False}
+            if not self.is_sexual:
+                if self.sexuality_compatible:
+                    if rand() < 0.001 * self.drive_compatibility:
+                        self.is_sexual = True
+
+            # chance of something changing
+            something_chance = ...
+
             return {
                 'change' : False
             }

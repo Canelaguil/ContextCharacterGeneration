@@ -249,5 +249,3 @@ class Community(Model):
 
         # useful tool when json dump gives errors:
         # print_dict_types(self.homes[2].info())
-        
-
