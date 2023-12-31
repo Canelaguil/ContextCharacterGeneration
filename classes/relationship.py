@@ -4,7 +4,7 @@ from .relationship_classes import *
 
 class Relationship(Agent):
     def __init__(self, unique_id: int, model: Model, personA : dict, 
-                 personB : dict, init_type : str, platonic_only=False) -> None:
+                 personB : dict, label : str, platonic_only=False) -> None:
         super().__init__(unique_id, model)
         self.personA = personA
         self.personB = personB
@@ -16,18 +16,21 @@ class Relationship(Agent):
         self.tasks = MessageInbox(self)
         self.logs = Log(model)
 
-        # don't allow for romance or sexual angle (w/ family eg)
+        # don't allow for romance or sexual angle (w/ family e.g.)
         self.platonic_only = platonic_only
 
-        if init_type == 'arranged marriage':
+        if label == 'spouse':
             self.arrange_marriage()
         else:
             self.platonic()
-
+        
+        self.label = label
         notify_people_msg = {
             'topic' : 'new relationship',
             'key' : self.unique_id, 
-            'people' : [self.personA['key'], self.personB['key']]
+            'people' : [self.personA['key'], self.personB['key']], 
+            'label' : self.label,
+            'committed' : True if self.label in ['spouse', 'partner'] else False
         }
         self.update_people(notify_people_msg)
         self.end_cause = 'still active' # updated when relationship ends
@@ -42,13 +45,37 @@ class Relationship(Agent):
                                      False, friendship_seed)
 
         self.sexual_aspect = BirdsAndBees(self, self.personA, self.personB, True)
-        self.sexual_aspect.init_types('arranged')
-
-        self.romance_aspect = Romance(self, self.personA, self.personB, 
-                                      friendship_seed)
+        # self.sexual_aspect.init_types('arranged')
+        if rand() < self.friendship_aspect.compatibility:
+            initA = 'solid love'
+            initB = 'solid love'
+        else:
+            initA = 'out of love'
+            initB = 'solid love' if rand() < 0.5 else 'out of love'
+        self.romance_aspect = Romance(self, self.model, self.personA, self.personB, 
+                                      initA, initB)
 
     def platonic(self):
         pass
+
+    """
+    CHANGE RELATIONSHIP STATE
+    """
+    def romance_change(self, new_label):
+        self.update_label(new_label)
+        if new_label in ['spouse', 'partner']:
+            taken = True
+        else: taken = False
+
+        notify_people_msg = {
+            'topic' : 'relationship change', 
+            'label' : new_label,
+            'people' : [self.personA['key'], self.personB['key']], 
+            'key' : self.unique_id,
+            'committed' : taken,
+        }
+        self.update_people(notify_people_msg)
+
 
     def end(self, cause, context={}):
         self.active = False
@@ -56,6 +83,18 @@ class Relationship(Agent):
             self.end_cause = f"{context['person']['name']} died"
         else:
             self.end_casue = cause
+
+    def update_label(self, new_label):
+        label_hierarchy = [
+            'sibling'
+            'parentchild',
+            'spouse',
+            'partner', 
+            'friend', 
+            'acuqaintance'
+        ]
+        if label_hierarchy.index(new_label) < label_hierarchy.index(self.label):
+            self.label = new_label
 
     """
     PHASES / STEPS
@@ -163,6 +202,7 @@ class Relationship(Agent):
 
         return {
             'active' : self.active,
+            'label' : self.label,
             'compatibility' : self.friendship_aspect.determine_compatibility(self.personA, self.personB),
             'platonic only' : self.platonic_only,
             'people' : people,

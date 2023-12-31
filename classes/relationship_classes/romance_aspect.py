@@ -1,7 +1,11 @@
 from ..utils import *
 
 class LoveIsAStateMachine():
-    def __init__(self, relationship, subject, love_object, can_marry=True, start='nothing') -> None:
+    def __init__(self, relationship, subject, love_object, can_marry=True, 
+                 can_break_up=True, start='nothing') -> None:
+        """
+        TODO: young love
+        """
         self.relationship = relationship
         self.subject = subject
         self.object = love_object
@@ -20,6 +24,7 @@ class LoveIsAStateMachine():
         else:
             self.can_love = True # lucky bisexuals
         self.can_marry = can_marry
+        self.can_break_up = can_break_up
         self.state = start 
 
     def turn(self, marriage_age_restraint=False, love_restraint=False):
@@ -57,6 +62,9 @@ class LoveIsAStateMachine():
         else:
             self.can_break_up = True
     
+    def end_relationship(self):
+        self.state = 'nothing'
+
     def receive_declaration(self, status={}):
         """
         INPUT: current relationship status
@@ -156,7 +164,7 @@ class LoveIsAStateMachine():
         else:
             if rng < 0.95:
                 return 'out of love'
-        return 'solid love'
+        return 'infatuation'
 
     def solid_love(self):
         rng = rand()
@@ -167,24 +175,43 @@ class LoveIsAStateMachine():
 
 
 class Romance():
-    def __init__(self, relationship, personA, personB, friendshiplevel=0) -> None:
+    def __init__(self, model, relationship, personA, personB, initA='nothing',
+                  initB='nothing') -> None:
         self.relationship = relationship
-        self.personA = personA
-        self.personB = personB
-        
-        self.influence_love(friendshiplevel)
+        self.model = model
+        self.people = {
+            personA['key'] : personA,
+            personB['key']  : personB
+        }
 
-    def influence_love(self, friendship):
-        pass
+        if Romance.equal_rights or (personA['sex'] != personB['sex']):
+            can_marry = True
+            can_break_up = Romance.can_divorce
+        else:
+            can_marry = False
+            can_break_up = True
+        self.state_machineA = LoveIsAStateMachine(self, personA, personB, can_marry, 
+                                                  can_break_up, initA)
+        self.state_machineB = LoveIsAStateMachine(self, personB, personA, can_marry, 
+                                                  can_break_up, initB)
 
-    def declaration(self, origin):
-        pass
+    def declaration(self, receiver):
+        status = self.model.get_relationship_status_person(receiver)
+        response = self.people[receiver].receive_declaration(status)
+        return response
 
     def break_up(self, origin):
-        pass
+        for p in self.people.items():
+            p.break_up()
 
     def evolve(self):
-
+        changeA = self.state_machineA.turn()
+        changeB = self.state_machineB.turn()
+        change = True if changeA or changeB else False
         return {
-            'change' : False
+            'change' : change,
+            'change A' : changeA,
+            'state A' : self.state_machineA.state,
+            'change B' : changeB,
+            'state B' : self.state_machineB.state,
         }

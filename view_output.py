@@ -8,6 +8,7 @@ if __name__ == '__main__':
     print("Welcome! Use this tool to quickly parse biographies.")
     print("Enter 'd' at any time to switch to the descriptive mode.")
     print("Enter 'r' at any time to get a random person.")
+    print("Enter 's' to switch between the people and relationship json directories.")
     print("Enter 'e' at any time to leave.")
     print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
     while True:
@@ -19,6 +20,12 @@ if __name__ == '__main__':
             print(f'Directory switched to {directory}')
         elif inp == 'e':
             sys.exit()
+        elif inp == 's':
+            if directory == 'output/relationships_json/':
+                directory = 'output/people_json/'
+            else:
+                directory = 'output/relationships_json/'
+            print(f'Directory switched to {directory}')
         elif inp == 'r':
             f = random.choice(os.listdir(directory))
             path = f"{directory}{f}"

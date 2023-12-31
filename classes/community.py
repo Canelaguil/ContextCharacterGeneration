@@ -11,6 +11,7 @@ from .community_classes import Factions, CommunityEvents
 from .person_classes import Naming, Body
 from .person import Person
 from .relationship import Relationship
+from .relationship_classes import Romance
 from .tests import run_tests
 
 def set_globals(health_stats, aesthetic_seed, names, society):
@@ -56,11 +57,11 @@ def set_globals(health_stats, aesthetic_seed, names, society):
         Person.equal_rights = society['same_sex_marriage']
         Person.marriage_age_women = society['marriage_age_women']
         Person.marriage_age_men = society['marriage_age_men']
-        Relationship.can_divorce = society['divorce']
-        Relationship.can_marry = society['marriage']
-        Relationship.equal_rights = society['same_sex_marriage']
-        Relationship.marriage_age_women = society['marriage_age_women']
-        Relationship.marriage_age_men = society['marriage_age_men']
+        Romance.can_divorce = society['divorce']
+        Romance.can_marry = society['marriage']
+        Romance.equal_rights = society['same_sex_marriage']
+        Romance.marriage_age_women = society['marriage_age_women']
+        Romance.marriage_age_men = society['marriage_age_men']
 
 
 class Community(Model):
@@ -111,7 +112,7 @@ class Community(Model):
         self.add_person(man)
         self.add_person(woman)
         marriage = Relationship(self.get_id(), self, man.description(),
-                                woman.description(), 'arranged marriage')
+                                woman.description(), 'spouse')
         self.add_relationship(marriage)
         return (man.unique_id, woman.unique_id)
 
@@ -202,6 +203,9 @@ class Community(Model):
     
     def get_relationship(self, key):
         return self.relationships[key].status()
+    
+    def get_relationship_status_person(self, key):
+        return self.people[key].get_relationship_status()
 
     def get_year(self):
         return self.year

@@ -21,6 +21,11 @@ class Person(Agent):
         self.age = age
         self.alive = True
         self.first_gen = first_gen
+        self.romantic_relationship_status = {
+            'taken' : False,
+            'married' : False,
+            'relationships' : []
+        }
 
         # Init submodules 
         self.personality = Personality(self)
@@ -107,14 +112,11 @@ class Person(Agent):
             if health_report['death']:
                 self.die()
 
-
             record = {
                 'health' : health_report,
             }
 
             self.memory.add_record(record)
-            # if not self.first_gen:
-                # print(f"Hi I'm {self.names.full()} and I'm {self.age} years old.")
 
     def relationships(self): 
         return
@@ -132,8 +134,12 @@ class Person(Agent):
                 if self.sex == 'f' : # add child to mother's home
                     self.community.add_person_to_home(self.home['unique id'], 
                                                       msg['child key'])
-            elif topic == 'new relationship': 
+            elif topic == 'new relationship':
+                self.update_relationship_status(msg) 
                 self.network.add_relationship(msg['key'], msg['people'])
+                self.memory.add_event(msg)
+            elif topic == 'relationship change':
+                self.update_relationship_status(msg)
                 self.memory.add_event(msg)
             elif topic == 'new sibling': 
                 self.network.add_sibling(msg['child key'], msg['kind'])
@@ -161,6 +167,12 @@ class Person(Agent):
     def move(self, home_info):
         self.home = home_info
 
+    def update_relationship_status(self, info):
+        self.romantic_relationship_status['taken'] = info['committed']
+        if info['label'] == 'spouse':
+            self.romantic_relationship_status['married'] = True
+        self.romantic_relationship_status['relationships'].append(info['key'])
+
     """
     INFO FUNCTIONS
     """
@@ -174,6 +186,9 @@ class Person(Agent):
             'gender expression' : self.gender_expression,
             'sex' : self.sex,
         }
+    
+    def get_relationship_status(self):
+        return self.romantic_relationship_status
     
     def whoisthis(self):
         """
@@ -210,7 +225,8 @@ class Person(Agent):
             'genetics' : self.body.pass_gens(), 
             'memory' : self.memory.summary(),
             'key' : self.unique_id,
-            'home' : self.home
+            'home' : self.home, 
+            'relationship status' : self.get_relationship_status()
         }
         return me
     
