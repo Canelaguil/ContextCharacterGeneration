@@ -40,6 +40,7 @@ class Relationship(Agent):
         Arrange marriage for first_gen couples. Disregards the platonic_only 
         parameter.
         """
+        # print('arrangingggg')
         friendship_seed = normal_in_range(0.7, 0.3)
         self.friendship_aspect = Friendship(self, self.personA, self.personB, 
                                      False, friendship_seed)

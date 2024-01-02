@@ -19,10 +19,14 @@ class Candidates():
         # TODO : check for incest
         # TODO : move in together
         # TODO : check for motivation
-        options = rand_choice(self.candidate_list, size=10)
+        no_candidates = len(self.candidate_list)
+        if no_candidates < 49:
+            size = no_candidates
+        else: size = 50
+
+        options = rand_choice(self.candidate_list, size=size)
         best_option = {}
         best_personality_distance = 1
-        best_class_distance = 2
         # best_age_match = 
         for op in options:
             if for_marriage:
@@ -70,6 +74,15 @@ class Intention_Manager(Agent):
         self.female_marriage_intentions = Candidates(self)
         self.friend_intentions = Candidates(self)
 
+        # stat collection
+        self.male_births = []
+        self.female_births = []
+        self.marriages = []
+        self.bachelors = []
+        self.bachelorettes = []
+        self.births = []
+        self.deaths = []
+
     """
     Intention management
     """
@@ -87,12 +100,22 @@ class Intention_Manager(Agent):
         pass
 
     def relationships(self):
+        self.bachelors.append(len(self.male_marriage_intentions.candidate_list))
+        self.bachelorettes.append(len(self.female_marriage_intentions.candidate_list))
+        print(f'number of bachelors : {len(self.male_marriage_intentions.candidate_list)}')
+        print(f'number of bachelorettes : {len(self.female_marriage_intentions.candidate_list)}')
         marriage_intention = self.male_marriage_intentions.get()
         while marriage_intention != None:
             partner = self.female_marriage_intentions.find_match(marriage_intention)
             if partner:
+                # print(beautify_print(partner))
+                # print(beautify_print(marriage_intention))
+                # import sys
+                # sys.exit()
                 self.model.marry(marriage_intention['source'], partner['source'])
             marriage_intention = self.male_marriage_intentions.get()
+        self.male_marriage_intentions.end_year()
+        self.female_marriage_intentions.end_year()
 
 
     def houses(self):
@@ -104,6 +127,24 @@ class Intention_Manager(Agent):
     """
     INFO FUNCTIONS
     """
+    def receive_stats(self, new_males, new_females, new_deaths, new_marriages):
+        all = new_males + new_females
+        self.male_births.append(new_males)
+        self.births.append(all)
+        self.deaths.append(new_deaths)
+        self.female_births.append(new_females)
+        self.marriages.append(new_marriages)
+
+    def demographics(self):
+        return {
+            'male births' : self.male_births, 
+            'female births' : self.female_births, 
+            'births' : self.births,
+            'deaths' : self.deaths,
+            'marriages' : self.marriages, 
+            'bachelors' : self.bachelors, 
+            'bachelorettes' : self.bachelorettes
+        }
 
 
 

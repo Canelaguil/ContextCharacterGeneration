@@ -63,8 +63,8 @@ def set_globals(health_stats, aesthetic_seed, names, society, community):
         Romance.can_divorce = society['divorce']
         Romance.can_marry = society['marriage']
         Romance.equal_rights = society['same_sex_marriage']
-        Romance.marriage_age_women = society['marriage_age_women']
-        Romance.marriage_age_men = society['marriage_age_men']
+        HomoSociologicus.marriage_age_women = society['marriage_age_women']
+        HomoSociologicus.marriage_age_men = society['marriage_age_men']
 
 
 class Community(Model):
@@ -76,7 +76,9 @@ class Community(Model):
         # stat trackers
         self.ids = 10000 # TODO : find consistent system?
         self.births = 0
+        self.male_births, self.female_births = 0, 0
         self.deaths = 0
+        self.marriages = 0
 
         self.schedule = StagedActivation(self, ["people", "relationships", "houses", 
                                                 "post_processing"], True)
@@ -108,7 +110,7 @@ class Community(Model):
                 self.add_person_to_home(hk, w)
 
     def make_couple(self, income_class):
-        max_age = Person.adult_age_men + int((Body.old_age - Person.adult_age_men) * 0.6)
+        max_age = Body.old_age # Person.adult_age_men + int((Body.old_age - Person.adult_age_men) * 0.6)
         man_age = rand_int(max_age, Person.adult_age_men)
         man = Person(self.get_id(), self, self.year, income_class, 'firstgen', 
                      'm', man_age, True )
@@ -142,6 +144,7 @@ class Community(Model):
         self.schedule.add(relat)
 
     def marry(self, keyA, keyB, type='arranged'):
+        self.marriages += 1
         personA = self.get_person(keyA)
         personB = self.get_person(keyB)
         marriage = Relationship(self.get_id(), self, personA, personB, 'spouse')
@@ -157,6 +160,10 @@ class Community(Model):
         unique_id = self.get_id()
         child = Person(unique_id, self, self.year, income_class, 
                        parent_info)
+        if child.sex == 'f':
+            self.female_births += 1
+        else:
+            self.male_births += 1
         self.add_person(child)
         return child.description()
     
@@ -195,12 +202,16 @@ class Community(Model):
             self.step()
             if output:
                 print(f"~{self.year}~")
-                print(f"births : {self.births}")
+                print(f"births : {self.male_births + self.female_births}")
                 print(f"deaths : {self.deaths}")
+                print(f"marriages : {self.marriages}")
                 print('------------------------')
+                self.intention_manager.receive_stats(self.male_births, self.female_births, self.deaths, self.marriages)
             self.year += 1 
             self.births = 0
             self.deaths = 0
+            self.female_births, self.male_births = 0, 0
+            self.marriages = 0
         print("SIMULATION STATS")
         print(f"- {years} years")
         print(f"- {len(self.people)} people")
@@ -273,6 +284,11 @@ class Community(Model):
         for key, r in self.relationships.items():
             with open(f"output/relationships_json/{key}.json", 'w') as output:
                 json.dump({key : r.status()}, output)
+
+        with open('output/stats.json', 'w') as output:
+            dems = self.intention_manager.demographics()
+            # print_dict_types(dems)
+            json.dump(dems, output)
 
         # useful tool when json dump gives errors:
         # print_dict_types(self.homes[2].info())

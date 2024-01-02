@@ -158,8 +158,11 @@ class Person(Agent):
                 self.network.add_child(msg['child key'], msg['kind'])
                 self.memory.add_event(msg)
                 if self.sex == 'f' : # add child to mother's home
-                    self.community.add_person_to_home(self.home['unique id'], 
-                                                      msg['child key'])
+                    try:
+                        self.community.add_person_to_home(self.home['unique id'], 
+                                                          msg['child key'])
+                    except:
+                        print(self.unique_id)
             elif topic == 'new relationship':
                 self.update_relationship_status(msg) 
                 self.network.add_relationship(msg['key'], msg['people'])

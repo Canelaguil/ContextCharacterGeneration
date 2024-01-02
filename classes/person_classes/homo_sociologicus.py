@@ -50,6 +50,7 @@ class HomoSociologicus():
             self.needs_care = True
 
         # filter for age
+        # print(self.independent_age)
         if age < self.independent_age:
             self.childhood(age, record)
         else:
@@ -92,9 +93,7 @@ class HomoSociologicus():
 
     def go_find_job(self, age):
         # change to message?
-        self.person.occupation.find_job(age)
-
-    
+        self.person.occupation.find_job(age)    
 
     """
     INFO
@@ -120,11 +119,11 @@ Homo sociologicus classes
 class WomanMA(HomoSociologicus):
     def __init__(self, person, community, born_like, whoami, income_class) -> None:
         super().__init__(person, community, born_like, whoami, income_class)
-        self.independent_age = HomoSociologicus.female_for_indepenence
+        self.independent_age = 16 #HomoSociologicus.marriage_age_women
 
     def marriage_wish(self):
         look_at_me_now = self.community.get_person(self.person_key)
-        return 0.3
+        return 0.7
         # independent :  70 / 1 , 90 / 0
         # sexuality : 95 / straigth, 85 / bisexual , 50 / gay
         # romance : 95 / 1, 85 / 0
@@ -147,12 +146,12 @@ class WomanMA(HomoSociologicus):
 class ManMA(HomoSociologicus):
     def __init__(self, person, community, born_like, whoami, income_class) -> None:
         super().__init__(person, community, born_like, whoami, income_class)
-        self.independent_age = HomoSociologicus.male_for_indepenence
+        self.independent_age = 16 #HomoSociologicus.marriage_age_men
 
     def marriage_wish(self):
         # look_at_me_now = self.community.get_person(self.person_key)
         # personality = look_at_me_now['personality']
-        return 0.15
+        return 0.7
         pos_mods, neg_mods, vals = [], [], []
 
         # independent :  90 / 1 , 20 / 0
@@ -207,7 +206,7 @@ class ManMA(HomoSociologicus):
 class Neutral(HomoSociologicus):
     def __init__(self, person, community, born_like, whoami, income_class) -> None:
         super().__init__(person, community, born_like, whoami, income_class)
-        self.independent_age = HomoSociologicus.male_for_indepenence
+        self.independent_age = 16 #HomoSociologicus.male_for_indepenence
 
     
     def childhood(self, age, record):
