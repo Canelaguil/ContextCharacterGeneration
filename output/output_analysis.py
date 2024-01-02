@@ -70,7 +70,7 @@ def relationship_analysis():
         cmp.append(compatiblity)
     plot_scatter(cmp, dfs, 'Relationship trajectory with compatiblity', 
                  'compatibility score', 'difference during relationship')
-    plot_bar(no_children, 'Frequency of number of children', xlabel='Number of children', ylabel='Frequency')
+    plot_bar(no_children, 'Frequency of number of children per relationship with heterosexual sex', xlabel='Number of children', ylabel='Frequency')
         
 
 if __name__ == '__main__':

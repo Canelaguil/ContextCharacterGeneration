@@ -7,7 +7,7 @@ are fed to the model through generation.py.
 
 
 simulation = {
-    'number_of_years' : 25,
+    'number_of_years' : 100,
     'simulation_output' : True,
     'json_output' : True,
     'tests' : False

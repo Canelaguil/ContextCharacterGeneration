@@ -102,16 +102,20 @@ def rand_int(high, low=0):
     """
     return random.randint(low, high)
 
-def rand_choice(l, p=[], weights=[]):
+def rand_choice(l, p=[], weights=[], size=None):
     """
     Return random element from list weighted either by weights or a distribution.
     """
     if p != []:
-        return random.choice(l, p=p)
+        return random.choice(l, p=p, size=size)
     elif weights != []:
-        w = weighted_choice(l, weights=weights)
-        return w[0]
-    return random.choice(l)
+        if size == None:
+            w = weighted_choice(l, weights=weights)
+            return w[0]
+        else:
+            w = weighted_choice(l, weights=weights, k=size)
+            return w
+    return random.choice(l, size=size)
 
 """
 PRINT HELP

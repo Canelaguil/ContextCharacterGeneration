@@ -6,8 +6,8 @@ import os
 from mesa import Agent, Model
 from mesa.time import StagedActivation
 from .utils import *
-from .city_classes import City, Institutions
-from .community_classes import Factions, CommunityEvents
+from .city_classes import *
+from .community_classes import *
 from .person_classes import *
 from .person import Person
 from .home import Home
@@ -90,7 +90,7 @@ class Community(Model):
         self.factions = Factions(community)
         self.institutions = Institutions(institutions)
         self.manager = CommunityEvents(society)
-
+        self.intention_manager = Intention_Manager(0, self)
         self.init_community(society, seed)
 
         if testing:
@@ -108,10 +108,13 @@ class Community(Model):
                 self.add_person_to_home(hk, w)
 
     def make_couple(self, income_class):
+        max_age = Person.adult_age_men + int((Body.old_age - Person.adult_age_men) * 0.6)
+        man_age = rand_int(max_age, Person.adult_age_men)
         man = Person(self.get_id(), self, self.year, income_class, 'firstgen', 
-                     'm', 25, True )
+                     'm', man_age, True )
+        woman_age = rand_int(max_age, Person.adult_age_women)
         woman = Person(self.get_id(), self, self.year, income_class, 'firstgen',
-                       'f', 22, True)
+                       'f', woman_age, True)
         self.add_person(man)
         self.add_person(woman)
         marriage = Relationship(self.get_id(), self, man.description(),
@@ -137,6 +140,16 @@ class Community(Model):
     def add_relationship(self, relat : Agent):
         self.relationships[relat.unique_id] = relat 
         self.schedule.add(relat)
+
+    def marry(self, keyA, keyB, type='arranged'):
+        personA = self.get_person(keyA)
+        personB = self.get_person(keyB)
+        marriage = Relationship(self.get_id(), self, personA, personB, 'spouse')
+        self.add_relationship(marriage)
+        # print(keyA, keyB)
+
+    def express_intention(self, intention):
+        self.intention_manager.receive_intention(intention)
 
     def birth_child(self, relationship_key, income_class):
         self.births += 1
@@ -174,6 +187,10 @@ class Community(Model):
         self.schedule.step()
 
     def run(self, years, output=False):
+        # add intention manager to schedule (unique ID=0)
+        self.schedule.add(self.intention_manager)
+
+        # run simulation
         for _ in range(years):
             self.step()
             if output:

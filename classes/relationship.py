@@ -6,11 +6,11 @@ class Relationship(Agent):
     def __init__(self, unique_id: int, model: Model, personA : dict, 
                  personB : dict, label : str, platonic_only=False) -> None:
         super().__init__(unique_id, model)
+        self.active = True
         self.personA = personA
         self.personB = personB
         self.keys = [personA['key'], personB['key']]
         self.proximity_score = 1 # for testing
-        self.active = True
         self.children = []
         self.adopted_children = []
         self.tasks = MessageInbox(self)
@@ -78,11 +78,29 @@ class Relationship(Agent):
 
 
     def end(self, cause, context={}):
-        self.active = False
+        # if relationship already done for
+        if not self.active:
+            return
+        
         if cause == 'person died':
             self.end_cause = f"{context['person']['name']} died"
+            # print(context)
+            self.keys.remove(context['person']['key'])
+            
+            # if relationship, update relationship status
+            msg = {
+                'key' : self.unique_id, 
+            }
+            if self.label == 'spouse':
+                msg['topic'] = 'unmarried'
+                self.model.message_person(self.keys[0], msg)
+            elif self.label == 'partner':
+                msg['topic'] = 'single'
+                self.model.message_person(self.keys[0], msg)
         else:
-            self.end_casue = cause
+            self.end_cause = cause
+        
+        self.active = False
 
     def update_label(self, new_label):
         label_hierarchy = [
@@ -103,51 +121,52 @@ class Relationship(Agent):
         return       
 
     def relationships(self): 
-        if self.active:
-            change = False
-            friend_report = self.friendship_aspect.evolve(self.proximity_score)
-            report = {
-                'friendship' : friend_report,
-            }
-            change = report['friendship']['change']
-            if not self.platonic_only:
-                romance_report = self.romance_aspect.evolve()
-                sexual_report = self.sexual_aspect.evolve()
-                conceived = self.sexual_aspect.conceive()
-                if conceived:
-                    self.add_child_birth()
-                    change = True
-                if romance_report['change']:
-                    change = True
+        if not self.active:
+            return
+        change = False
+        friend_report = self.friendship_aspect.evolve(self.proximity_score)
+        report = {
+            'friendship' : friend_report,
+        }
+        change = report['friendship']['change']
+        if not self.platonic_only:
+            romance_report = self.romance_aspect.evolve()
+            sexual_report = self.sexual_aspect.evolve()
+            conceived = self.sexual_aspect.conceive()
+            if conceived:
+                self.add_child_birth()
+                change = True
+            if romance_report['change']:
+                change = True
 
-                    # notify person that their feelings changed
-                    if romance_report['change A']:
-                        update = {
-                            'topic' : 'feelings change', 
-                            'target' : self.keys[1],
-                            'state' : romance_report['state A'],
-                            'relationship' : self.unique_id
-                        }
-                        self.model.message_person(self.keys[0], update)
-                    else:
-                        update = {
-                            'topic' : 'feelings change', 
-                            'target' : self.keys[0],
-                            'state' : romance_report['state B'],
-                            'relationship' : self.unique_id
-                        }
-                        self.model.message_person(self.keys[1], update)
-                if sexual_report['change']:
-                    change = True
+                # notify person that their feelings changed
+                if romance_report['change A']:
+                    update = {
+                        'topic' : 'feelings change', 
+                        'target' : self.keys[1],
+                        'state' : romance_report['state A'],
+                        'relationship' : self.unique_id
+                    }
+                    self.model.message_person(self.keys[0], update)
+                else:
+                    update = {
+                        'topic' : 'feelings change', 
+                        'target' : self.keys[0],
+                        'state' : romance_report['state B'],
+                        'relationship' : self.unique_id
+                    }
+                    self.model.message_person(self.keys[1], update)
+            if sexual_report['change']:
+                change = True
 
-                # merge reports
-                report = {** report, ** {
-                    'romance' : romance_report,
-                    'sex'  : sexual_report, 
-                    'conceived' : conceived
-                }}
-            if change:
-                self.logs.add_log(report)
+            # merge reports
+            report = {** report, ** {
+                'romance' : romance_report,
+                'sex'  : sexual_report, 
+                'conceived' : conceived
+            }}
+        if change:
+            self.logs.add_log(report)
         
     def houses(self):
         return

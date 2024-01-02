@@ -22,8 +22,8 @@ class Person(Agent):
         self.alive = True
         self.first_gen = first_gen
         self.romantic_relationship_status = {
-            'taken' : False,
-            'married' : False,
+            'taken' : False if not first_gen else True,
+            'married' : False if not first_gen else True,
             'relationships' : []
         }
 
@@ -39,17 +39,17 @@ class Person(Agent):
         self.occupation = Occupation(self, self.income_class, 
                                      self.personality.get_personality())
         if self.sex == 'f':
-            self.homsoc = WomanMA(self, self.get_homsoc_attributes(), 
+            self.homsoc = WomanMA(self, self.model, self.get_homsoc_attributes(), 
                                   self.personality.get_personality(), 
                                   self.income_class)
         elif self.sex == 'm':
-            self.homsoc = ManMA(self, self.get_homsoc_attributes(), 
+            self.homsoc = ManMA(self, self.model, self.get_homsoc_attributes(), 
                                   self.personality.get_personality(), 
                                   self.income_class)
             if self.age > Occupation.adult_age:
                 self.occupation.find_job(self.age)  
         else: 
-            self.homsoc = Neutral(self, self.get_homsoc_attributes(), 
+            self.homsoc = Neutral(self, self.model, self.get_homsoc_attributes(), 
                                   self.personality.get_personality(), 
                                   self.income_class)
 
@@ -140,7 +140,7 @@ class Person(Agent):
             'occupation' : occupation_report
         }
 
-        homsoc_report = self.homsoc.evolve(self.age, record)
+        homsoc_report = self.homsoc.evolve(self.age, record, self.romantic_relationship_status)
         record['homsoc'] = homsoc_report
         self.memory.add_record(record)
 
@@ -164,7 +164,7 @@ class Person(Agent):
                 self.update_relationship_status(msg) 
                 self.network.add_relationship(msg['key'], msg['people'])
                 self.memory.add_event(msg)
-            elif topic == 'relationship change': # relationship label
+            elif topic in ['relationship change', 'unmarried', 'single']: # relationship label
                 self.update_relationship_status(msg)
                 self.memory.add_event(msg)
             elif topic == 'feelings change':
@@ -198,6 +198,14 @@ class Person(Agent):
         self.home = home_info
 
     def update_relationship_status(self, info):
+        # end relationship 
+        if info['topic'] in ['unmarried', 'single']:
+            # TODO : account for cheating
+            self.romantic_relationship_status['married'] = False
+            self.romantic_relationship_status['taken'] = False
+            return
+
+        # start relationship
         self.romantic_relationship_status['taken'] = info['committed']
         if info['label'] == 'spouse':
             self.romantic_relationship_status['married'] = True
