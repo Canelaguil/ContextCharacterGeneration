@@ -112,8 +112,8 @@ class Intention_Manager(Agent):
     def relationships(self):
         self.bachelors.append(len(self.male_marriage_intentions.candidate_list))
         self.bachelorettes.append(len(self.female_marriage_intentions.candidate_list))
-        print(f'number of bachelors : {len(self.male_marriage_intentions.candidate_list)}')
-        print(f'number of bachelorettes : {len(self.female_marriage_intentions.candidate_list)}')
+        # print(f'number of bachelors : {len(self.male_marriage_intentions.candidate_list)}')
+        # print(f'number of bachelorettes : {len(self.female_marriage_intentions.candidate_list)}')
         marriage_intention = self.male_marriage_intentions.get()
         while marriage_intention != None:
             partner = self.female_marriage_intentions.find_match(marriage_intention)

@@ -173,6 +173,13 @@ def fatal_error(msg):
     print(msg)
     sys.exit()
 
+errors = {}
+def log_error(error, info):
+    global errors
+    if error not in errors:
+        errors[error] = []
+    errors[error].append(info)
+
 def sexuality_match(sexA, sexB, sexualityA, sexualityB, mode='bool'):
     """
     TODO : score mode does not work well yet

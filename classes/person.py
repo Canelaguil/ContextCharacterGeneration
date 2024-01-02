@@ -175,6 +175,7 @@ class Person(Agent):
                 self.memory.add_event(msg)
             elif topic == 'new home': 
                 self.move(msg['home'])
+                self.memory.add_event(msg)
             elif topic == 'get a job':
                 self.occupation.find_job(self.age)
             msg = self.messages.get()

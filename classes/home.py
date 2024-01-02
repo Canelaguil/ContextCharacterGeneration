@@ -54,7 +54,8 @@ class Home(Agent):
                 'topic' : 'not enough income',
                 'income' : income,
                 'income needed' : round(income_needed, 3),
-                'no inhabitants' : self.no_inhabitants
+                'no inhabitants' : self.no_inhabitants,
+                'inhabitants' : self.inhabitants
             }
             self.log.add_log(log)
 
@@ -94,7 +95,7 @@ class Home(Agent):
             self.no_inhabitants -= 1
             self.inhabitants.remove(person_info['key'])
         else:
-            print('home remove error')
+            log_error('home remove error', {'person' : person_info, 'house' : self.info()})
 
     def receive_message(self, msg):
         if msg['topic'] == 'income report':

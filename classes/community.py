@@ -330,8 +330,11 @@ class Community(Model):
 
         with open('output/stats.json', 'w') as output:
             dems = self.intention_manager.demographics()
-            # print_dict_types(dems)
             json.dump(dems, output)
+
+        with open('output/errors.json', 'w') as output:
+            global errors
+            json.dump(errors, output)
 
         # useful tool when json dump gives errors:
         # print_dict_types(self.homes[2].info())
