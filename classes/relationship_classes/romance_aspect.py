@@ -173,7 +173,6 @@ class LoveIsAStateMachine():
         else:
             return 'out of love'
 
-
 class Romance():
     def __init__(self, model, relationship, personA, personB, initA='nothing',
                   initB='nothing') -> None:

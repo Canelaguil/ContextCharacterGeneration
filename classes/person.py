@@ -36,16 +36,22 @@ class Person(Agent):
         else:
             self.init_essentials_legacy(parent_info)
 
-        self.occupation = Occupation(self, self.income_class, age)
+        self.occupation = Occupation(self, self.income_class, 
+                                     self.personality.get_personality())
         if self.sex == 'f':
             self.homsoc = WomanMA(self, self.get_homsoc_attributes(), 
-                                  self.personality.get_personality())
+                                  self.personality.get_personality(), 
+                                  self.income_class)
         elif self.sex == 'm':
             self.homsoc = ManMA(self, self.get_homsoc_attributes(), 
-                                  self.personality.get_personality())  
+                                  self.personality.get_personality(), 
+                                  self.income_class)
+            if self.age > Occupation.adult_age:
+                self.occupation.find_job(self.age)  
         else: 
             self.homsoc = Neutral(self, self.get_homsoc_attributes(), 
-                                  self.personality.get_personality())
+                                  self.personality.get_personality(), 
+                                  self.income_class)
 
         self.messages = MessageInbox(self)
         self.memory = Memory(self, self.model) 
@@ -98,25 +104,45 @@ class Person(Agent):
     def die(self):
         self.alive = False
         self.network.unravel()
+        i_died = {
+            'topic' : 'person died', 
+            'key' : self.unique_id
+        }
+        if self.home != None:
+            self.community.message_home(self.home['unique id'], i_died)
         self.community.report_death(self.unique_id)
 
     """
     PHASES / STEPS
     """
     def people(self):
-        if self.alive:
-            self.age += 1
+        if not self.alive: 
+            return        
+        self.age += 1
 
-            # health update
-            health_report = self.body.yearly_step(self.age)
-            if health_report['death']:
-                self.die()
+        # health update
+        health_report = self.body.yearly_step(self.age)
+        if health_report['death']:
+            self.die()
 
-            record = {
-                'health' : health_report,
-            }
+        # job update
+        occupation_report = self.occupation.evolve(self.age)
+        home_msg ={
+            'topic' : 'income report',
+            'sender' : self.unique_id,
+            'report' : occupation_report
+        }
+        if self.home != None:
+            self.community.message_home(self.home['unique id'], home_msg)
 
-            self.memory.add_record(record)
+        record = {
+            'health' : health_report,
+            'occupation' : occupation_report
+        }
+
+        homsoc_report = self.homsoc.evolve(self.age, record)
+        record['homsoc'] = homsoc_report
+        self.memory.add_record(record)
 
     def relationships(self): 
         return
@@ -138,8 +164,10 @@ class Person(Agent):
                 self.update_relationship_status(msg) 
                 self.network.add_relationship(msg['key'], msg['people'])
                 self.memory.add_event(msg)
-            elif topic == 'relationship change':
+            elif topic == 'relationship change': # relationship label
                 self.update_relationship_status(msg)
+                self.memory.add_event(msg)
+            elif topic == 'feelings change':
                 self.memory.add_event(msg)
             elif topic == 'new sibling': 
                 self.network.add_sibling(msg['child key'], msg['kind'])
@@ -148,6 +176,8 @@ class Person(Agent):
                 self.memory.add_event(msg)
             elif topic == 'new home': 
                 self.move(msg['home'])
+            elif topic == 'get a job':
+                self.occupation.find_job(self.age)
             msg = self.messages.get()
 
     """
@@ -189,6 +219,12 @@ class Person(Agent):
     
     def get_relationship_status(self):
         return self.romantic_relationship_status
+    
+    def in_short(self):
+        return {
+            'name' : self.names.full(),
+            'age' : self.age
+        }
     
     def whoisthis(self):
         """

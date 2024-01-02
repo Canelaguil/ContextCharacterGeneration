@@ -75,7 +75,7 @@ class Naming():
 
             NOTE: if child is not acknowledged by one of the parents BUT child 
             is not first gen, surname entry [fathersur, mothersur] contains a 
-            False at that point. If acknowledged but no name, the string is 
+            False at that point. If acknowledged but no surname, the string is 
             simply empty
             """
             if first_gen:
@@ -89,7 +89,9 @@ class Naming():
             
             # if father's surname is given
             if surnames[0]:
-                pass
+                if not any(substr in surnames[0] for substr in ['van', 'sdochter', 'szoon']): # if not relational surname
+                    if rand() < 0.9:
+                        return surnames[0]
             ch = rand()
             if ch < 0.3:
                 if self.sex == 'f':

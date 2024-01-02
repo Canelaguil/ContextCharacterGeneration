@@ -8,13 +8,14 @@ from mesa.time import StagedActivation
 from .utils import *
 from .city_classes import City, Institutions
 from .community_classes import Factions, CommunityEvents
-from .person_classes import Naming, Body
+from .person_classes import *
 from .person import Person
+from .home import Home
 from .relationship import Relationship
 from .relationship_classes import Romance
 from .tests import run_tests
 
-def set_globals(health_stats, aesthetic_seed, names, society):
+def set_globals(health_stats, aesthetic_seed, names, society, community):
         # names
         Naming.surnames = names[2]
         Naming.female_names = names[1]
@@ -48,15 +49,17 @@ def set_globals(health_stats, aesthetic_seed, names, society):
         Body.light_eye_distr = aesthetic_seed['light_skin_eye_color_distribution']
     
         # people
-        Person.male_for_indepenence = society['male_meant_for_independence']
-        Person.female_for_indepenence = society['female_meant_for_independence']
-
+        HomoSociologicus.male_for_indepenence = society['male_meant_for_independence']
+        HomoSociologicus.female_for_indepenence = society['female_meant_for_independence']
+        Occupation.adult_age = society['male_meant_for_independence']
+        Home.person_income_percentage = community['class_person_household_percentage']
+        
         # relationships
         Person.can_divorce = society['divorce']
         Person.can_marry = society['marriage']
         Person.equal_rights = society['same_sex_marriage']
-        Person.marriage_age_women = society['marriage_age_women']
-        Person.marriage_age_men = society['marriage_age_men']
+        Person.adult_age_women = society['marriage_age_women']
+        Person.adult_age_men = society['marriage_age_men']
         Romance.can_divorce = society['divorce']
         Romance.can_marry = society['marriage']
         Romance.equal_rights = society['same_sex_marriage']
@@ -68,7 +71,7 @@ class Community(Model):
     def __init__(self, society, seed, health_stats, aesthetic_seed, 
                  community, institutions, names, testing=True, year=1200) -> None:
         super().__init__(self)
-        set_globals(health_stats, aesthetic_seed, names, society)
+        set_globals(health_stats, aesthetic_seed, names, society, community)
 
         # stat trackers
         self.ids = 10000 # TODO : find consistent system?
@@ -197,6 +200,9 @@ class Community(Model):
     
     def get_person_short(self, key):
         return self.people[key].whoisthis()
+    
+    def get_person_summary(self, key): 
+        return self.people[key].in_short()
     
     def get_home(self, key):
         return self.homes[key].info()

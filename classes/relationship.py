@@ -50,8 +50,8 @@ class Relationship(Agent):
             initA = 'solid love'
             initB = 'solid love'
         else:
-            initA = 'out of love'
-            initB = 'solid love' if rand() < 0.5 else 'out of love'
+            initA = 'infatuation'
+            initB = 'infatuation' if rand() < 0.5 else 'out of love'
         self.romance_aspect = Romance(self, self.model, self.personA, self.personB, 
                                       initA, initB)
 
@@ -116,7 +116,28 @@ class Relationship(Agent):
                 conceived = self.sexual_aspect.conceive()
                 if conceived:
                     self.add_child_birth()
-                if romance_report['change'] or sexual_report['change'] or conceived:
+                    change = True
+                if romance_report['change']:
+                    change = True
+
+                    # notify person that their feelings changed
+                    if romance_report['change A']:
+                        update = {
+                            'topic' : 'feelings change', 
+                            'target' : self.keys[1],
+                            'state' : romance_report['state A'],
+                            'relationship' : self.unique_id
+                        }
+                        self.model.message_person(self.keys[0], update)
+                    else:
+                        update = {
+                            'topic' : 'feelings change', 
+                            'target' : self.keys[0],
+                            'state' : romance_report['state B'],
+                            'relationship' : self.unique_id
+                        }
+                        self.model.message_person(self.keys[1], update)
+                if sexual_report['change']:
                     change = True
 
                 # merge reports

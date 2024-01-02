@@ -1,7 +1,8 @@
 from ..utils import *
 
 class BirdsAndBees():
-        def __init__(self, relationship, personA : dict, personB : dict, sexualRelationship) -> None:
+        def __init__(self, relationship, personA : dict, personB : dict, 
+                     sexualRelationship : bool) -> None:
             self.relationship = relationship
 
             # nature of sexual relationship
@@ -78,17 +79,26 @@ class BirdsAndBees():
             not 
             """
             report = {'change' : False}
-            if not self.is_sexual:
-                if self.sexuality_compatible:
-                    if rand() < 0.001 * self.drive_compatibility:
-                        self.is_sexual = True
+            if not self.is_sexual: 
+                return report
+            # TODO : one night stand
+            # if not self.is_sexual:
+            #     if self.sexuality_compatible:
+            #         if rand() < 0.001 * self.drive_compatibility:
+            #             self.is_sexual = True
 
             # chance of something changing
-            something_chance = ...
+            something_chance = 0.2 * (1-self.drive_compatibility)
+            if rand() < something_chance:
+                loc = self.min_sex_life
+                scale = (self.max_sex_life - self.min_sex_life) / 2
+                old_sex = self.sex_degree
+                self.sex_degree = normal_in_range(loc, scale, round_dec=3)
+                report['change'] = True
+                report['value change'] = self.sex_degree - old_sex
+            report['sex degree'] = self.sex_degree
 
-            return {
-                'change' : False
-            }
+            return report
             
         def get_parents(self):
             return self.mother, self.father
