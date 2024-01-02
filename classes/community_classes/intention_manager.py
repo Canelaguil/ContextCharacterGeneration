@@ -20,15 +20,17 @@ class Candidates():
         # TODO : move in together
         # TODO : check for motivation
         no_candidates = len(self.candidate_list)
-        if no_candidates < 49:
+        if no_candidates < 200:
             size = no_candidates
-        else: size = 50
+        else: size = 200
 
         options = rand_choice(self.candidate_list, size=size)
         best_option = {}
         best_personality_distance = 1
+        best_age = 80
         # best_age_match = 
         for op in options:
+            this_option = False
             if for_marriage:
                 # discard if class difference too big
                 class_distance = abs(op['income class'][0] - seeker['income class'][0])
@@ -41,16 +43,24 @@ class Candidates():
                     if personality_distance > 0.2:
                         break
 
+                # give priority to younger women
+                if op['age'] < best_age:                
+                    this_option = True
+
             # check age compatibility
-            if age_match(op['age'], seeker['age']) < 1:
+            if age_match(op['age'], seeker['age']) < 0.8:
                 break
             
             # check personality distance
             personality_distance = get_vector_distance(op['personality'], 
                                    seeker['personality'])
             if personality_distance < best_personality_distance:
+                this_option = True
+
+            if this_option:   
                 best_option = op
                 best_personality_distance = personality_distance
+                best_age = op['age']
         
         # check if a match was found
         if best_option == {}:

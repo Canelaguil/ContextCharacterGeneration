@@ -60,6 +60,7 @@ def set_globals(health_stats, aesthetic_seed, names, society, community):
         Person.equal_rights = society['same_sex_marriage']
         Person.adult_age_women = society['marriage_age_women']
         Person.adult_age_men = society['marriage_age_men']
+        Body.adult_age = society['marriage_age_men']
         Romance.can_divorce = society['divorce']
         Romance.can_marry = society['marriage']
         Romance.equal_rights = society['same_sex_marriage']

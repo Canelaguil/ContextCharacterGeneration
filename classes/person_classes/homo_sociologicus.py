@@ -123,7 +123,7 @@ class WomanMA(HomoSociologicus):
 
     def marriage_wish(self):
         look_at_me_now = self.community.get_person(self.person_key)
-        return 0.7
+        return 1
         # independent :  70 / 1 , 90 / 0
         # sexuality : 95 / straigth, 85 / bisexual , 50 / gay
         # romance : 95 / 1, 85 / 0
@@ -151,7 +151,7 @@ class ManMA(HomoSociologicus):
     def marriage_wish(self):
         # look_at_me_now = self.community.get_person(self.person_key)
         # personality = look_at_me_now['personality']
-        return 0.7
+        return 1
         pos_mods, neg_mods, vals = [], [], []
 
         # independent :  90 / 1 , 20 / 0

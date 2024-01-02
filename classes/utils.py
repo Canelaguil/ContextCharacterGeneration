@@ -133,7 +133,12 @@ def beautify_print(d):
                     if isinstance(v2, dict): 
                         print(f"- {k2}:")
                         for k3, v3 in v2.items():
-                            print(f"--- {k3} : {v3}")
+                            if isinstance(v3, dict):
+                                print(f"--- {k3}:")
+                                for k4, v4 in v3.items():
+                                    print(f"------ {k4} : {v4}")
+                            else:
+                                print(f"--- {k3} : {v3}")
                     else:
                         print(f"- {k2} : {v2}")
             else:

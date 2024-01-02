@@ -78,7 +78,8 @@ def relationship_analysis():
 
 def output_people():
     directory = 'output/people_json/'
-    ages = [0] * 60
+    ages = [0] * 80
+    age_to_die = [0] * 80
     for f in os.listdir(directory):
         path = f"{directory}{f}"
         with open(path) as json_data:
@@ -90,8 +91,14 @@ def output_people():
                 ages[p['age']] += 1
             except:
                 print(p['age'])
+        else:
+            try:
+                age_to_die[p['age']] += 1
+            except:
+                print(p['age'])
     
     plot_bar(ages, 'People per age', None, 'ages', 'number of people')
+    plot_bar(age_to_die, 'People to die per age', None, 'ages', 'number of people')
 
 def overall_stats():
     path = 'output/stats.json'
@@ -107,6 +114,6 @@ def overall_stats():
     plot(x, ys, 'Demographics', 'years', 'number of people')
 
 if __name__ == '__main__':
-    # relationship_analysis()
+    relationship_analysis()
     overall_stats()
     output_people()
