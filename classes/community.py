@@ -106,11 +106,11 @@ class Community(Model):
         for hk, h in self.homes.items():
             if rand() < seed['percentage_inhabited_houses']: 
                 income_class = h.income_class
-                m, w = self.make_couple(income_class)
+                m, w = self.make_couple(income_class, h.address())
                 self.add_person_to_home(hk, m)
                 self.add_person_to_home(hk, w)
 
-    def make_couple(self, income_class):
+    def make_couple(self, income_class, home_address):
         max_age = Body.old_age # Person.adult_age_men + int((Body.old_age - Person.adult_age_men) * 0.6)
         man_age = rand_int(max_age, Person.adult_age_men)
         man = Person(self.get_id(), self, self.year, income_class, 'firstgen', 
@@ -122,6 +122,7 @@ class Community(Model):
         self.add_person(woman)
         marriage = Relationship(self.get_id(), self, man.description(),
                                 woman.description(), 'spouse')
+        marriage.set_home(home_address['unique id'])
         self.add_relationship(marriage)
         return (man.unique_id, woman.unique_id)
 
@@ -140,6 +141,15 @@ class Community(Model):
         person_info = self.people[person_key].description()
         self.homes[house_key].add_person(person_info)
 
+    def move_person_to_home(self, house_key, person_key):
+        person_info = self.people[person_key].description()
+        try:
+            old_home = person_info['home']['unique id']
+            self.homes[old_home].remove_person(person_info)
+        except:
+            pass
+        self.homes[house_key].add_person(person_info)
+
     def add_relationship(self, relat : Agent):
         self.relationships[relat.unique_id] = relat 
         self.schedule.add(relat)
@@ -150,7 +160,39 @@ class Community(Model):
         personB = self.get_person(keyB)
         marriage = Relationship(self.get_id(), self, personA, personB, 'spouse')
         self.add_relationship(marriage)
-        # print(keyA, keyB)
+
+        # TODO : could be moved to community events?
+        # add spouse to house of other spouse (MA inclination for moving in with husband)
+        husband = personA if personA['sex'] == 'm' else personB
+        wife = personA if personA['sex'] == 'f' else personB
+
+        ch = rand()
+        if (ch < 0.8 or wife['home'] == None) and husband['home'] != None:
+            couple_home = husband['home']
+            try:
+                if wife['home']['unique id'] == None:
+                    return
+            except:
+                beautify_print(wife)
+                fatal_error(wife['home'])
+            care_dependants = self.homes[wife['home']['unique id']].get_my_children(wife)
+            self.move_person_to_home(couple_home['unique id'], wife['key'])
+        elif wife['home'] != None:
+            couple_home = wife['home']
+            try:
+                if husband['home']['unique id'] == None:
+                    return
+            except:
+                beautify_print(husband)
+                fatal_error(husband['home'])
+            care_dependants = self.homes[husband['home']['unique id']].get_my_children(husband)
+            self.move_person_to_home(couple_home['unique id'], husband['key'])
+        else:
+            # if either or both of the houses are not available (because person died this year, eg)
+            return
+        marriage.set_home(couple_home['unique id'])
+        for person in care_dependants:
+            self.move_person_to_home(couple_home['unique id'], person)
 
     def express_intention(self, intention):
         self.intention_manager.receive_intention(intention)

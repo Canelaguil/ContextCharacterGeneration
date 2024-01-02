@@ -205,6 +205,10 @@ class Body():
         if trigger == 'accident': 
             if rand() < 0.1:
                 self.add_disability()
+        elif trigger == 'childbirth':
+            ch = 0.1 * (1 - self.health)
+            if rand() < ch:
+                self.person.die()
 
     def health_change(self, modifier):
         """

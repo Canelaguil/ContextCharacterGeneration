@@ -59,6 +59,9 @@ class Relationship(Agent):
     def platonic(self):
         pass
 
+    def set_home(self, house_key):
+        self.common_home = house_key
+
     """
     CHANGE RELATIONSHIP STATE
     """
@@ -214,6 +217,12 @@ class Relationship(Agent):
             self.children.append(child['key'])
         else: 
             self.adopted_children.append(child['key'])
+
+        try:
+            self.model.move_person_to_home(self.common_home, child['key'])
+        except:
+            print(child)
+            fatal_error(self.common_home)
 
     """
     MESSAGING FUNCTIONS

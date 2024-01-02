@@ -101,6 +101,7 @@ class Home(Agent):
             self.income_reports.append(msg)
         else:
             self.tasks.add(msg)
+
     """
     UTILS
     """
@@ -117,6 +118,16 @@ class Home(Agent):
     """
     INFO FUNCTIONS 
     """
+    def get_my_children(self, person_info):
+        children = []
+        for key, child in person_info['network']['children']['birth'].items():
+            if key in self.inhabitants:
+                if child['age'] < 18:
+                    children.append(key)
+                # TODO: check if care dependant
+        return children
+        
+
     def is_empty(self): 
         if self.no_inhabitants == 0:
             return True
