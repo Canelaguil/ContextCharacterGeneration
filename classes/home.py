@@ -47,6 +47,7 @@ class Home(Agent):
     
     def houses(self):
         income = self.process_income_reports()
+        self.income = income
         income_needed = self.no_inhabitants * self.person_percentage
         if income_needed > income:
             self.not_enough_income()
@@ -114,7 +115,48 @@ class Home(Agent):
         return income
     
     def not_enough_income(self):
-        ...
+        msg = {
+            'topic' : 'not enough income',
+            'income' : self.income,
+            'inhabitants' : self.inhabitants
+        }
+        self.notify_inhabitants(msg)
+
+    def set_people_to_work(self, income_needed):
+        # check if people are eligible to work & not working, and set to work
+        best_candidate = None
+        max_age = 10
+        best_age = 10 # minimum working age...
+        best_sex = 'f'
+        for i in self.inhabitants:
+            option = False
+            candidate = self.model.get_person(i)
+
+            if candidate['sex'] == 'm' and best_sex == 'f' and candidate['age'] > 10:
+                option = True            
+            
+            if candidate['age'] > best_age:
+                option = True
+
+            if candidate['age'] > max_age:
+                max_age = candidate['age']
+
+            if option:
+                best_candidate = i
+                best_age = candidate['age']
+                best_sex = candidate['sex']
+
+        if max_age < 16:
+            # this does not really seem to be a problem often, so for now will not be further remedied
+            log_error('no adults', self.info())
+        # if all people are already employed or not eligible for employment: find house for them
+        if best_candidate != None:
+            msg = {
+                'topic' : 'get a job'
+            }
+            self.model.message_person(best_candidate, msg)
+        else:
+            log_error('no possible worker', self.info())
 
     """
     INFO FUNCTIONS 
@@ -140,6 +182,10 @@ class Home(Agent):
         for i in self.inhabitants:
             my_people[i] = self.model.get_person_summary(i)
         return my_people
+    
+    def notify_inhabitants(self, msg):
+        for i in self.inhabitants:
+            self.model.message_person(i, msg)
     
     def address(self):
         return {

@@ -28,6 +28,8 @@ class Person(Agent):
         }
 
         # Init submodules 
+        self.messages = MessageInbox(self)
+        self.memory = Memory(self, self.model) 
         self.personality = Personality(self)
         if self.first_gen:
             self.names = Naming(self.sex, '', '', '', True)
@@ -36,7 +38,7 @@ class Person(Agent):
         else:
             self.init_essentials_legacy(parent_info)
 
-        self.occupation = Occupation(self, self.income_class, 
+        self.occupation = Occupation(self, self.model, self.income_class, 
                                      self.personality.get_personality())
         if self.sex == 'f':
             self.homsoc = WomanMA(self, self.model, self.get_homsoc_attributes(), 
@@ -53,8 +55,6 @@ class Person(Agent):
                                   self.personality.get_personality(), 
                                   self.income_class)
 
-        self.messages = MessageInbox(self)
-        self.memory = Memory(self, self.model) 
     
     def init_essentials_legacy(self, parent_info): 
         """
@@ -176,8 +176,12 @@ class Person(Agent):
             elif topic == 'new home': 
                 self.move(msg['home'])
                 self.memory.add_event(msg)
+            elif topic == 'not enough income':
+                self.memory.add_event(msg)
             elif topic == 'get a job':
                 self.occupation.find_job(self.age)
+            elif topic == 'job notice':
+                self.memory.add_event(msg)
             msg = self.messages.get()
 
     """

@@ -186,6 +186,7 @@ class Community(Model):
                 beautify_print(husband)
                 fatal_error(husband['home'])
             care_dependants = self.homes[husband['home']['unique id']].get_my_children(husband)
+
             self.move_person_to_home(couple_home['unique id'], husband['key'])
         else:
             # if either or both of the houses are not available (because person died this year, eg)
@@ -307,6 +308,7 @@ class Community(Model):
         """
         Output all agent info into json files. Deletes all previous files.
         """
+        print('Creating output files...')
         # remove existing generation to start fresh (so save communities you like!!)
         if os.path.exists('output/people_json'):
             shutil.rmtree('output/people_json')
@@ -338,6 +340,7 @@ class Community(Model):
         with open('output/errors.json', 'w') as output:
             global errors
             json.dump(errors, output)
+        print('Done!')
 
         # useful tool when json dump gives errors:
         # print_dict_types(self.homes[2].info())

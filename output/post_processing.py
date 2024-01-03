@@ -101,6 +101,10 @@ if __name__ == '__main__':
                         write_to_file(d, f"No longer in a relationship.")
                     elif topic == 'feelings change':
                         write_to_file(d, f"Feelings change about {e['target name']}: now {e['state']}.")
+                    elif topic == 'not enough income':
+                        write_to_file(d, "Not enough income in household.")
+                    elif topic == 'job notice':
+                        write_to_file(d, f"Income change: {e['notice']}, with income {e['income']}.")
                     else:
                         print(e)
 

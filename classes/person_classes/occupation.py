@@ -22,9 +22,10 @@ def income_adjusted_for_age(age, income, previously_employed=False):
 
 
 class Occupation():
-    def __init__(self, person, income_class, personality, lawful=None, honest=None, 
+    def __init__(self, person, model, income_class, personality, lawful=None, honest=None, 
                  hereditary=False) -> None:
         self.person = person
+        self.community = model
         self.personality = personality
         self.has_job = False
         self.income_class = income_class
@@ -60,19 +61,38 @@ class Occupation():
                 self.income = income_adjusted_for_age(age, self.income)
         self.has_job = True
         self.all_incomes.append(self.income)
+        self.notify('found job')
         return self.income
     
     def evolve(self, age):
+        old_income = self.income
         if self.has_job:
             scale = job_volatility(**self.job)
             if age < Occupation.adult_age:
                 self.income += income_adjusted_for_age(age, self.income, True)
             self.income = normal_in_range(self.income, scale, 1.5, 0)
             self.all_incomes.append(self.income)
+            if self.income < 0.25 and old_income > 0.25:
+                self.notify('hardly any income')
+            elif self.income < 0.5  and old_income > 0.25:
+                self.notify('earning very little')
+            elif self.income < 0.75 and old_income > 0.75:
+                self.notify('low income')
+            elif self.income > 1 and old_income < 1:
+                self.notify('comfortable earnings')
         return {
             'has job' : self.has_job,
             'income' : self.income, 
         }
+    
+    def notify(self, notice):
+        # has to go through person instead of message processing because of creation order
+        event = {
+            'topic' : 'job notice',
+            'notice' : notice, 
+            'income' : self.income
+        }
+        self.person.memory.add_event(event)
         
     def resume(self):
         resume =  {

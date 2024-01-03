@@ -29,9 +29,15 @@ if __name__ == '__main__':
         elif inp == 'r':
             f = random.choice(os.listdir(directory))
             path = f"{directory}{f}"
-            with open(path) as json_data:
-                p = json.load(json_data)
-            beautify_print(p)
+            if 'json' in directory:
+                with open(path) as json_data:
+                    p = json.load(json_data)
+                beautify_print(p)
+            else:
+                path = f"{directory}{f}"
+                with open(path, 'r') as des:
+                    for l in des:
+                        print(l.strip())
         else:
             try: 
                 if ' ' in inp:
@@ -54,6 +60,7 @@ if __name__ == '__main__':
                     with open(path, 'r') as des:
                         for l in des:
                             print(l.strip())
-                print("-------------------------------------------------------------")
+                
             except:
                 print("Did not recognize that key. Try again.")
+        print("-------------------------------------------------------------")

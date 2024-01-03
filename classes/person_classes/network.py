@@ -9,6 +9,7 @@ class Network():
         self.father = father
         self.siblings = []
         self.children = []
+        self.relationship_types = {}
         self.adopted_children = []
         self.relationships = {} # relationship key : other person key
 
