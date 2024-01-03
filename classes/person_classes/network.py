@@ -18,11 +18,12 @@ class Network():
         """
         about_me = self.community.get_person_short(self.person_key)
         for r, p in self.relationships.items():
-            person_message = {
-                'topic' : 'person died', 
-                'person' : about_me
-            }
-            self.community.message_person(p, person_message)
+            # person_message = {
+            #     'topic' : 'person died',
+            #     # 'label' : r.label, 
+            #     'person' : about_me
+            # }
+            # self.community.message_person(p, person_message)
             relation_message = {
                 'topic' : 'person died', 
                 'person' : about_me
@@ -31,8 +32,9 @@ class Network():
 
         for s in self.siblings:
             sib_message = {
-                'topic' : 'sibling died', 
-                'person' : about_me
+                'topic' : 'person died', 
+                'person' : about_me,
+                'label' : 'sibling'
             }
             self.community.message_person(s, sib_message)
 

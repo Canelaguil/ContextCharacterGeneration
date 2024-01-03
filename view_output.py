@@ -53,7 +53,7 @@ if __name__ == '__main__':
                     path = f"{directory}{f}.txt"
                     with open(path, 'r') as des:
                         for l in des:
-                            print(l)
+                            print(l.strip())
                 print("-------------------------------------------------------------")
             except:
                 print("Did not recognize that key. Try again.")

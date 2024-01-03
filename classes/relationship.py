@@ -21,6 +21,8 @@ class Relationship(Agent):
 
         if label == 'spouse':
             self.arrange_marriage()
+        elif label in ['parentchild', 'sibling']:
+            self.family()
         else:
             self.platonic()
         
@@ -29,6 +31,7 @@ class Relationship(Agent):
             'topic' : 'new relationship',
             'key' : self.unique_id, 
             'people' : [self.personA['key'], self.personB['key']], 
+            'people names' : [self.personA['full name'], self.personB['full name']],
             'label' : self.label,
             'committed' : True if self.label in ['spouse', 'partner'] else False
         }
@@ -57,6 +60,9 @@ class Relationship(Agent):
                                       initA, initB)
 
     def platonic(self):
+        pass
+
+    def family(self):
         pass
 
     def set_home(self, house_key):
@@ -88,19 +94,45 @@ class Relationship(Agent):
         
         if cause == 'person died':
             self.end_cause = f"{context['person']['name']} died"
-            # print(context)
             self.keys.remove(context['person']['key'])
             
             # if relationship, update relationship status
-            msg = {
+            relationship_msg = {
                 'key' : self.unique_id, 
             }
             if self.label == 'spouse':
-                msg['topic'] = 'unmarried'
-                self.model.message_person(self.keys[0], msg)
+                relationship_msg['topic'] = 'unmarried'
+                self.model.message_person(self.keys[0], relationship_msg)
             elif self.label == 'partner':
-                msg['topic'] = 'single'
-                self.model.message_person(self.keys[0], msg)
+                relationship_msg['topic'] = 'single'
+                self.model.message_person(self.keys[0], relationship_msg)
+
+            # Determine whether it was a child or a parent to the survior
+            if self.label == 'parentchild':
+                if self.personA['key'] == context['person']['key']:
+                    # this uses the ages at creation but that's fine
+                    if self.personA['age'] < self.personB['age']:
+                        descriptor = 'child'
+                    else:
+                        descriptor = 'parent'
+                elif self.personB['key'] == context['person']['key']:
+                    if self.personA['age'] < self.personB['age']:
+                        descriptor = 'parent'
+                    else:
+                        descriptor = 'child'
+                else:
+                    log_error('finding parentchild', [self.personA, self.personB, context])
+                    descriptor = self.label
+            else:
+                descriptor = self.label
+
+            death_note = {
+                'topic' : 'person died',
+                'person' : context['person'],
+                'label' : descriptor
+            }
+            self.model.message_person(self.keys[0], death_note)
+            
         else:
             self.end_cause = cause
         
@@ -148,6 +180,7 @@ class Relationship(Agent):
                     update = {
                         'topic' : 'feelings change', 
                         'target' : self.keys[1],
+                        'target name' : self.personB['full name'],
                         'state' : romance_report['state A'],
                         'relationship' : self.unique_id
                     }
@@ -156,6 +189,7 @@ class Relationship(Agent):
                     update = {
                         'topic' : 'feelings change', 
                         'target' : self.keys[0],
+                        'target name' : self.personA['full name'],
                         'state' : romance_report['state B'],
                         'relationship' : self.unique_id
                     }

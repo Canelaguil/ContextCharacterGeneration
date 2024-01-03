@@ -28,6 +28,7 @@ if __name__ == '__main__':
         p = p[key]
         target = f"{target_directory}{key}.txt"
         with open(target, 'a') as d:
+            # headline
             write_to_file(d, title(f"{p['full name']} ({p['sex']})"))
             if p['network']['parents'] != 'firstgen':
                 write_to_file(d, f"Born in {p['birth year']} to {p['network']['parents']['mother']} and {p['network']['parents']['father']}.")
@@ -35,22 +36,15 @@ if __name__ == '__main__':
                 write_to_file(d, f"Born in {p['birth year']} as a part of the first generation.")
             write_to_file(d, f"Is currently {'' if p['relationship status']['married'] else 'not '}married, has had {len(p['relationship status']['relationships'])} romantic relationship(s).\n")
 
+            # basics
             write_to_file(d, f"{p['age']} ({'alive' if p['alive'] else 'dead'})", 'Age')
-
-            if p['network']['siblings'] == []:
-                write_to_file(d, "Has no siblings.")
-            else:
-                write_to_file(d, f"{len(p['network']['siblings'])}", 'siblings')
-
-
-            if p['network']['children']['birth'] == {}:
-                write_to_file(d, "Has no children.")
-            else:
-                write_to_file(d, f"{len(p['network']['children']['birth'])}", 'children')
+            write_to_file(d, f"{len(p['network']['siblings'])}", 'siblings')
+            write_to_file(d, f"{len(p['network']['children']['birth'])}", 'children')
             if p['home']:
                 write_to_file(d, f"{p['home']['street']} in the {p['home']['neighborhood']} neighborhood", 'address')
             else:
                 write_to_file(d, f"no home", 'address')
+            write_to_file(d, p['key'], 'key')
 
             # personality
             write_to_file(d, title('personality scales'))
@@ -76,7 +70,37 @@ if __name__ == '__main__':
             if p['occupation']['has job']:
                 write_to_file(d, f"Has job, latest income {p['occupation']['income']}")
 
+            # relationship info
+            write_to_file(d, title('relationship data'))
+            for i, ii in p['born this way'].items():
+                if i not in ['sexuality', 'sex']:
+                    write_to_file(d, ii, i)
+
             # events
             write_to_file(d, title('events'))
-
+            for y, events in p['memory']['events'].items():
+                write_to_file(d, f"-~{y}~-")
+                for e in events:
+                    topic = e['topic']
+                    if topic == 'new home':
+                        write_to_file(d, f"Moved to {e['home']['street']} in {e['home']['neighborhood']}.")
+                    elif topic == 'new sibling':
+                        write_to_file(d, f"New sibling was born, {e['child name']}.")
+                    elif topic == 'sibling died':
+                        write_to_file(d, f"Sibling {e['person']['name']} died.")
+                    elif topic == 'new child':
+                        write_to_file(d, f"Child was born, {e['child name']}.")
+                    elif topic == 'person died':
+                        write_to_file(d, f"{e['label'].title()} died.")
+                    elif topic == 'new relationship':
+                        other = e['people names'][0] if p['key'] == e['people'][1] else e['people names'][1]
+                        write_to_file(d, f"New {e['label']}: {other}")
+                    elif topic == 'unmarried':
+                        write_to_file(d, f"No longer married.")
+                    elif topic == 'single':
+                        write_to_file(d, f"No longer in a relationship.")
+                    elif topic == 'feelings change':
+                        write_to_file(d, f"Feelings change about {e['target name']}: now {e['state']}.")
+                    else:
+                        print(e)
 
