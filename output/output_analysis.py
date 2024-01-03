@@ -84,7 +84,7 @@ def output_people():
         path = f"{directory}{f}"
         with open(path) as json_data:
             p = json.load(json_data)
-        key = key = f[0:-5]
+        key = f[0:-5]
         p = p[key]
         if p['alive']:
             try:

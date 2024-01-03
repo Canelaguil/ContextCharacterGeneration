@@ -261,6 +261,9 @@ class Community(Model):
         print(f"- {len(self.relationships)} relationships")
         print(f"- {len(self.homes)} homes")
         print(f'- {self.schedule.get_agent_count()} active agents')
+        global errors
+        if errors != {}:
+            print("Errors were logged in output/errors.json")
         # self.city.stats(True)
 
     """

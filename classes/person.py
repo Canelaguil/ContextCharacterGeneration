@@ -255,7 +255,7 @@ class Person(Agent):
             'alive' : self.alive,
             'name' : self.names.first_name(),
             'surname' : self.names.last_name(),
-            'full_name' : self.names.full(),
+            'full name' : self.names.full(),
             'born this way' : self.get_homsoc_attributes(),
             'age' : self.age,
             'birth year' : self.birth_year,

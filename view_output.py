@@ -39,16 +39,21 @@ if __name__ == '__main__':
                 else:
                     f = inp
                     key = False
+                if 'json' in directory:
+                    path = f"{directory}{f}.json"
+                    with open(path) as json_data:
+                        p = json.load(json_data)
 
-                path = f"{directory}{f}.json"
-                with open(path) as json_data:
-                    p = json.load(json_data)
-
-                if key:
-                    print(f)
-                    beautify_print(p[f][key])
+                    if key:
+                        print(f)
+                        beautify_print(p[f][key])
+                    else:
+                        beautify_print(p[f])
                 else:
-                    beautify_print(p[f])
+                    path = f"{directory}{f}.txt"
+                    with open(path, 'r') as des:
+                        for l in des:
+                            print(l)
                 print("-------------------------------------------------------------")
             except:
                 print("Did not recognize that key. Try again.")

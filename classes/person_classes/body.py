@@ -254,8 +254,8 @@ class Body():
             'health' : self.health,
             'fertility' : self.fertility,
             'communication_impaired' : self.communication_impaired,
-            'mobility impaired' : self.mobility_impaired,
-            'cognitive impaired' : self.cognitive_impaired,
+            'mobility_impaired' : self.mobility_impaired,
+            'cognitive_impaired' : self.cognitive_impaired,
             'disabilities' : self.disabilities, 
         }
 
