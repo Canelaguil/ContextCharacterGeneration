@@ -235,26 +235,7 @@ class Relationship(Agent):
     def add_child(self, child, kind='birth'):
         """
         Add child, either through birth or adoption
-        """        
-        # notify parents and other children
-        # print('adding child')
-        # msg = {
-        #     'topic' : 'new child',
-        #     'child name' : child['name'],
-        #     'child sex' : child['sex'], 
-        #     'child key' : child['key'], 
-        #     'kind' : kind
-        # }
-        # self.update_people(msg)
-        # msg2 = { # new message necessary to avoid errors
-        #     'topic' : 'new relationship',
-        #     'label' : 'sibling',
-        #     'child name' : child['name'],
-        #     'child sex' : child['sex'], 
-        #     'child key' : child['key'], 
-        #     'kind' : kind
-        # }
-        # self.update_children(msg2)
+        """
         for parent in self.keys:
             self.model.create_relationship(parent, child['key'], 'parentchild', True)
 

@@ -171,9 +171,6 @@ class Person(Agent):
                 self.memory.add_event(msg)
             elif topic == 'feelings change':
                 self.memory.add_event(msg)
-            elif topic == 'new sibling': 
-                self.network.add_sibling(msg['child key'], msg['kind'])
-                self.memory.add_event(msg)
             elif topic == 'person died': # or topic == 'sibling died':
                 self.memory.add_event(msg)
             elif topic == 'new home': 
@@ -187,6 +184,8 @@ class Person(Agent):
                 self.memory.add_event(msg)
             elif topic == 'die':
                 self.mark_for_death = True
+            else:
+                log_error('person received unrecognized message', msg)
             msg = self.messages.get()
         
         # only die after everything else is processed this year

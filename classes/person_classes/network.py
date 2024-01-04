@@ -30,7 +30,6 @@ class Network():
                         self.community.message_relationship(r, relation_message)
             else:
                 for r in l:
-                    print(r)
                     self.community.message_relationship(r, relation_message)
 
     """
@@ -54,7 +53,7 @@ class Network():
                 child = notice['people'][0] if notice['people'][0] != self.person_key else notice['people'][1]
                 self.children.append(child)
             except:
-                log_error('cannot find child' ,notice)
+                log_error('cannot find child', notice)
 
         if label not in self.relationship_types:
             self.relationship_types[label] = {}
@@ -62,25 +61,12 @@ class Network():
             self.relationship_types[label][kind] = []
         self.relationship_types[label][kind].append(notice['key'])
 
-        # if isinstance(child, dict):
-        #     child_key = child['child key']
-        #     log_error('I received a message instead of a key', child)
-        # else:
-        #     child_key = child
-        # if 'child' not in self.relationship_types:
-        #     self.relationship_types['child'] = []
-        # self.relationship_types['child'].append(child_key)
-        # if kind == 'birth' : 
-        #     self.children.append(child_key)
-        # else:
-        #     self.adopted_children.append(child_key)
-
     def add_sibling(self, sibling_key, kind='full'):
         """
         TODO : half siblings & adopted
         """
         if sibling_key in self.siblings:
-            print(sibling_key)
+            print(' sibling dance')
         self.siblings.append(sibling_key)
 
     def init_siblings(self, list_of_siblings):
