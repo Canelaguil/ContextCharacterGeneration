@@ -18,40 +18,52 @@ class Network():
         Person dies, network ends and relationships & people are notified
         """
         about_me = self.community.get_person_short(self.person_key)
-        for r, p in self.relationships.items():
-            # person_message = {
-            #     'topic' : 'person died',
-            #     # 'label' : r.label, 
-            #     'person' : about_me
-            # }
-            # self.community.message_person(p, person_message)
-            relation_message = {
-                'topic' : 'person died', 
-                'person' : about_me
-            }
-            self.community.message_relationship(r, relation_message)
+        for l in self.relationship_types.values():
+            for r in l:
+                # person_message = {
+                #     'topic' : 'person died',
+                #     # 'label' : r.label, 
+                #     'person' : about_me
+                # }
+                # self.community.message_person(p, person_message)
+                relation_message = {
+                    'topic' : 'person died', 
+                    'person' : about_me
+                }
+                # if self.community.year != 1200:
+                print(r)
+                self.community.message_relationship(r, relation_message)
 
-        for s in self.siblings:
-            sib_message = {
-                'topic' : 'person died', 
-                'person' : about_me,
-                'label' : 'sibling'
-            }
-            self.community.message_person(s, sib_message)
+        # for s in self.siblings:
+        #     sib_message = {
+        #         'topic' : 'person died', 
+        #         'person' : about_me,
+        #         'label' : 'sibling'
+        #     }
+        #     self.community.message_person(s, sib_message)
 
     """
     RELATIONSHIP MANAGEMENT
     """
-    def add_relationship(self, relationship_key, people):
+    def add_relationship(self, update):
         # instead of popping this, because I fear python var copies
-        other = people[0] if people[0] != self.person_key else people[1]
-        self.relationships[relationship_key] = other
+        # other = update[0] if update[0] != self.person_key else update[1]
+        # self.relationships[relationship_key] = other
+        # print(update)
+        label = update['label']
+        if label not in self.relationship_types:
+            self.relationship_types[label] = []
+        self.relationship_types[label].append(update['key'])
+        # print(self.relationship_types)
 
     def add_child(self, child_key, kind='birth'):
-        if kind == 'birth' : 
-            self.children.append(child_key)
-        else:
-            self.adopted_children.append(child_key)
+        if 'child' not in self.relationship_types:
+            self.relationship_types['child'] = []
+        self.relationship_types['child'].append(child_key)
+        # if kind == 'birth' : 
+        #     self.children.append(child_key)
+        # else:
+        #     self.adopted_children.append(child_key)
 
     def add_sibling(self, sibling_key, kind='full'):
         """
@@ -99,8 +111,9 @@ class Network():
     def links(self):
         return {
             'parents' : self.get_parents(),
-            'siblings' : self.siblings,
-            'children' : self.get_child_descriptions(),
-            'relationships' : self.relationships
+            # 'siblings' : self.siblings,
+            # 'children' : self.get_child_descriptions(),
+            # 'relationships' : self.relationships,
+            ** self.relationship_types
         }
     

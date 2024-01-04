@@ -16,15 +16,19 @@ class Relationship(Agent):
         self.tasks = MessageInbox(self)
         self.logs = Log(model)
 
+        if not isinstance(personA, dict):            
+            print('sdfsf')
+            fatal_error(personA)
+
         # don't allow for romance or sexual angle (w/ family e.g.)
         self.platonic_only = platonic_only
 
         if label == 'spouse':
-            self.arrange_marriage()
+            self.arranged_marriage_init()
         elif label in ['parentchild', 'sibling']:
-            self.family()
+            self.family_init()
         else:
-            self.platonic()
+            self.platonic_init()
         
         self.label = label
         notify_people_msg = {
@@ -38,7 +42,7 @@ class Relationship(Agent):
         self.update_people(notify_people_msg)
         self.end_cause = 'still active' # updated when relationship ends
 
-    def arrange_marriage(self):
+    def arranged_marriage_init(self):
         """
         Arrange marriage for first_gen couples. Disregards the platonic_only 
         parameter.
@@ -46,7 +50,7 @@ class Relationship(Agent):
         # print('arrangingggg')
         friendship_seed = normal_in_range(0.7, 0.3)
         self.friendship_aspect = Friendship(self, self.personA, self.personB, 
-                                     False, friendship_seed)
+                                            False, friendship_seed)
 
         self.sexual_aspect = BirdsAndBees(self, self.personA, self.personB, True)
         # self.sexual_aspect.init_types('arranged')
@@ -59,11 +63,15 @@ class Relationship(Agent):
         self.romance_aspect = Romance(self, self.model, self.personA, self.personB, 
                                       initA, initB)
 
-    def platonic(self):
-        pass
+    def platonic_init(self):
+        friendship_seed = normal_in_range(0.7, 0.3)
+        self.friendship_aspect = Friendship(self, self.personA, self.personB, 
+                                            False, friendship_seed)
 
-    def family(self):
-        pass
+    def family_init(self):
+        friendship_seed = normal_in_range(0.7, 0.3)
+        self.friendship_aspect = Friendship(self, self.personA, self.personB, 
+                                            True, friendship_seed)
 
     def set_home(self, house_key):
         self.common_home = house_key
@@ -85,7 +93,6 @@ class Relationship(Agent):
             'committed' : taken,
         }
         self.update_people(notify_people_msg)
-
 
     def end(self, cause, context={}):
         # if relationship already done for
@@ -230,6 +237,7 @@ class Relationship(Agent):
         Add child, either through birth or adoption
         """        
         # notify parents and other children
+        # print('adding child')
         msg = {
             'topic' : 'new child',
             'child name' : child['name'],
@@ -238,14 +246,17 @@ class Relationship(Agent):
             'kind' : kind
         }
         self.update_people(msg)
-        msg2 = { # new message necessary to avoid errors
-            'topic' : 'new sibling',
-            'child name' : child['name'],
-            'child sex' : child['sex'], 
-            'child key' : child['key'], 
-            'kind' : kind
-        }
-        self.update_children(msg2)
+        # msg2 = { # new message necessary to avoid errors
+        #     'topic' : 'new relationship',
+        #     'label' : 'sibling',
+        #     'child name' : child['name'],
+        #     'child sex' : child['sex'], 
+        #     'child key' : child['key'], 
+        #     'kind' : kind
+        # }
+        # self.update_children(msg2)
+        for sibling in self.children:
+            self.model.create_relationship(sibling, child['key'], 'sibling', True)
 
         if kind == 'birth':
             self.children.append(child['key'])
@@ -255,8 +266,10 @@ class Relationship(Agent):
         try:
             self.model.move_person_to_home(self.common_home, child['key'])
         except:
+            print('Could not move child in')
             print(child)
             fatal_error(self.common_home)
+
 
     """
     MESSAGING FUNCTIONS

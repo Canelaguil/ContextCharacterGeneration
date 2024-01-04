@@ -208,7 +208,7 @@ class Body():
         elif trigger == 'childbirth':
             ch = 0.1 * (1 - self.health)
             if rand() < ch:
-                self.person.die()
+                self.person.mark_for_death = True
 
     def health_change(self, modifier):
         """

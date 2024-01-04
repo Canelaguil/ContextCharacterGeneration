@@ -54,6 +54,8 @@ class Person(Agent):
             self.homsoc = Neutral(self, self.model, self.get_homsoc_attributes(), 
                                   self.personality.get_personality(), 
                                   self.income_class)
+            
+        self.mark_for_death = False # am I gonna die this year?
 
     
     def init_essentials_legacy(self, parent_info): 
@@ -101,12 +103,13 @@ class Person(Agent):
             loc2, scale2 = (0.3, 0.2)
         self.gender_expression = normal_in_range(loc2, scale2) # 0 = 1-1 with sex
 
-    def die(self):
+    def die(self, cause=''):
         self.alive = False
         self.network.unravel()
         i_died = {
             'topic' : 'person died', 
-            'key' : self.unique_id
+            'key' : self.unique_id,
+            'cause' : cause
         }
         if self.home != None:
             self.community.message_home(self.home['unique id'], i_died)
@@ -123,7 +126,7 @@ class Person(Agent):
         # health update
         health_report = self.body.yearly_step(self.age)
         if health_report['death']:
-            self.die()
+            self.mark_for_death = True
 
         # job update
         occupation_report = self.occupation.evolve(self.age)
@@ -155,13 +158,13 @@ class Person(Agent):
         while msg != None:
             topic = msg['topic']
             if topic == 'new child':
-                self.network.add_child(msg['child key'], msg['kind'])
+                self.network.add_child(msg)
                 self.memory.add_event(msg)
                 if self.sex == 'f' :
                     self.body.trigger('childbirth')
             elif topic == 'new relationship':
                 self.update_relationship_status(msg) 
-                self.network.add_relationship(msg['key'], msg['people'])
+                self.network.add_relationship(msg)
                 self.memory.add_event(msg)
             elif topic in ['relationship change', 'unmarried', 'single']: # relationship label
                 self.update_relationship_status(msg)
@@ -171,7 +174,7 @@ class Person(Agent):
             elif topic == 'new sibling': 
                 self.network.add_sibling(msg['child key'], msg['kind'])
                 self.memory.add_event(msg)
-            elif topic == 'person died' or topic == 'sibling died':
+            elif topic == 'person died': # or topic == 'sibling died':
                 self.memory.add_event(msg)
             elif topic == 'new home': 
                 self.move(msg['home'])
@@ -182,7 +185,13 @@ class Person(Agent):
                 self.occupation.find_job(self.age)
             elif topic == 'job notice':
                 self.memory.add_event(msg)
+            elif topic == 'die':
+                self.mark_for_death = True
             msg = self.messages.get()
+        
+        # only die after everything else is processed this year
+        if self.mark_for_death:
+            self.die()
 
     """
     UTIL FUNCTIONS

@@ -144,10 +144,11 @@ class Community(Model):
     def move_person_to_home(self, house_key, person_key):
         person_info = self.people[person_key].description()
         try:
-            old_home = person_info['home']['unique id']
-            self.homes[old_home].remove_person(person_info)
+            if person_info['home'] != None: # like for newborns
+                old_home = person_info['home']['unique id']
+                self.homes[old_home].remove_person(person_info)
         except:
-            pass
+            log_error('could not move person', [house_key, person_info])
         self.homes[house_key].add_person(person_info)
 
     def add_relationship(self, relat : Agent):
@@ -195,6 +196,15 @@ class Community(Model):
         for person in care_dependants:
             self.move_person_to_home(couple_home['unique id'], person)
 
+    def create_relationship(self, personA_key, personB_key, label, 
+                            platonic_only=False):
+        personA = self.get_person(personA_key)
+        personB = self.get_person(personB_key)
+        u_id = self.get_id()
+        r = Relationship(u_id, self, personA, personB, label, platonic_only)
+        self.add_relationship(r)
+        return u_id
+
     def express_intention(self, intention):
         self.intention_manager.receive_intention(intention)
 
@@ -229,6 +239,8 @@ class Community(Model):
         try:
             self.relationships[key].receive_message(msg)
         except:
+            print('in relationship messaging')
+            print(key)
             fatal_error(msg)
 
     """
@@ -337,9 +349,9 @@ class Community(Model):
             dems = self.intention_manager.demographics()
             json.dump(dems, output)
 
-        with open('output/errors.json', 'w') as output:
-            global errors
-            json.dump(errors, output)
+        global errors
+        if errors != {}:
+            output_errors()
         print('Done!')
 
         # useful tool when json dump gives errors:

@@ -169,16 +169,23 @@ def print_dict_types(d : dict):
 """
 OTHER UTILS
 """
-def fatal_error(msg): 
-    print(msg)
-    sys.exit()
-
 errors = {}
 def log_error(error, info):
     global errors
     if error not in errors:
         errors[error] = []
     errors[error].append(info)
+
+def output_errors():
+    global errors 
+    with open('output/errors.json', 'w') as output:
+        import json
+        json.dump(errors, output)
+
+def fatal_error(msg): 
+    print(msg)
+    output_errors()
+    sys.exit()
 
 def sexuality_match(sexA, sexB, sexualityA, sexualityB, mode='bool'):
     """
