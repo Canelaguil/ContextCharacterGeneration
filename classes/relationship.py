@@ -238,14 +238,14 @@ class Relationship(Agent):
         """        
         # notify parents and other children
         # print('adding child')
-        msg = {
-            'topic' : 'new child',
-            'child name' : child['name'],
-            'child sex' : child['sex'], 
-            'child key' : child['key'], 
-            'kind' : kind
-        }
-        self.update_people(msg)
+        # msg = {
+        #     'topic' : 'new child',
+        #     'child name' : child['name'],
+        #     'child sex' : child['sex'], 
+        #     'child key' : child['key'], 
+        #     'kind' : kind
+        # }
+        # self.update_people(msg)
         # msg2 = { # new message necessary to avoid errors
         #     'topic' : 'new relationship',
         #     'label' : 'sibling',
@@ -255,6 +255,9 @@ class Relationship(Agent):
         #     'kind' : kind
         # }
         # self.update_children(msg2)
+        for parent in self.keys:
+            self.model.create_relationship(parent, child['key'], 'parentchild', True)
+
         for sibling in self.children:
             self.model.create_relationship(sibling, child['key'], 'sibling', True)
 

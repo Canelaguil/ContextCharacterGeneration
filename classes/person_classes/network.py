@@ -18,48 +18,58 @@ class Network():
         Person dies, network ends and relationships & people are notified
         """
         about_me = self.community.get_person_short(self.person_key)
+        relation_message = {
+            'topic' : 'person died', 
+            'person' : about_me
+        }
         for l in self.relationship_types.values():
-            for r in l:
-                # person_message = {
-                #     'topic' : 'person died',
-                #     # 'label' : r.label, 
-                #     'person' : about_me
-                # }
-                # self.community.message_person(p, person_message)
-                relation_message = {
-                    'topic' : 'person died', 
-                    'person' : about_me
-                }
-                # if self.community.year != 1200:
-                print(r)
-                self.community.message_relationship(r, relation_message)
-
-        # for s in self.siblings:
-        #     sib_message = {
-        #         'topic' : 'person died', 
-        #         'person' : about_me,
-        #         'label' : 'sibling'
-        #     }
-        #     self.community.message_person(s, sib_message)
+            # for children subcategories
+            if isinstance(l, dict):
+                for _, l2 in l.items():
+                    for r in l2:
+                        self.community.message_relationship(r, relation_message)
+            else:
+                for r in l:
+                    print(r)
+                    self.community.message_relationship(r, relation_message)
 
     """
     RELATIONSHIP MANAGEMENT
     """
     def add_relationship(self, update):
-        # instead of popping this, because I fear python var copies
-        # other = update[0] if update[0] != self.person_key else update[1]
-        # self.relationships[relationship_key] = other
-        # print(update)
         label = update['label']
         if label not in self.relationship_types:
             self.relationship_types[label] = []
         self.relationship_types[label].append(update['key'])
-        # print(self.relationship_types)
 
-    def add_child(self, child_key, kind='birth'):
-        if 'child' not in self.relationship_types:
-            self.relationship_types['child'] = []
-        self.relationship_types['child'].append(child_key)
+    def process_parent_child(self, notice, age, kind='birth'):
+        if age == 0: # meaning, these are their parents
+            label = 'parent'
+        else: # they are the parents
+            label = 'child'
+
+            # also add to list of children to keep track of
+            try:
+                # has to be done like this because of python var referencing
+                child = notice['people'][0] if notice['people'][0] != self.person_key else notice['people'][1]
+                self.children.append(child)
+            except:
+                log_error('cannot find child' ,notice)
+
+        if label not in self.relationship_types:
+            self.relationship_types[label] = {}
+        if kind not in self.relationship_types[label]:
+            self.relationship_types[label][kind] = []
+        self.relationship_types[label][kind].append(notice['key'])
+
+        # if isinstance(child, dict):
+        #     child_key = child['child key']
+        #     log_error('I received a message instead of a key', child)
+        # else:
+        #     child_key = child
+        # if 'child' not in self.relationship_types:
+        #     self.relationship_types['child'] = []
+        # self.relationship_types['child'].append(child_key)
         # if kind == 'birth' : 
         #     self.children.append(child_key)
         # else:
@@ -93,13 +103,10 @@ class Network():
             return 'firstgen'
     
     def get_child_descriptions(self):
-        child_summary = {'birth' : {}, 'adopted' : {}}
+        child_summary = {}
         for child_key in self.children:
             child = self.community.get_person_short(child_key)
-            child_summary['birth'][child_key] = child
-        for child_key in self.adopted_children:
-            child = self.community.get_person_short(child_key)
-            child_summary['adopted'][child_key] = child
+            child_summary[child_key] = child
         return child_summary
 
     def get_relationships(self):
@@ -112,7 +119,7 @@ class Network():
         return {
             'parents' : self.get_parents(),
             # 'siblings' : self.siblings,
-            # 'children' : self.get_child_descriptions(),
+            'children' : self.get_child_descriptions(),
             # 'relationships' : self.relationships,
             ** self.relationship_types
         }

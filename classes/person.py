@@ -157,14 +157,14 @@ class Person(Agent):
         msg = self.messages.get()
         while msg != None:
             topic = msg['topic']
-            if topic == 'new child':
-                self.network.add_child(msg)
-                self.memory.add_event(msg)
-                if self.sex == 'f' :
-                    self.body.trigger('childbirth')
-            elif topic == 'new relationship':
-                self.update_relationship_status(msg) 
-                self.network.add_relationship(msg)
+            if topic == 'new relationship':
+                if msg['label'] == 'parentchild':
+                    self.network.process_parent_child(msg, self.age)
+                    if self.sex == 'f' :
+                        self.body.trigger('childbirth')
+                else:
+                    self.update_relationship_status(msg) 
+                    self.network.add_relationship(msg)
                 self.memory.add_event(msg)
             elif topic in ['relationship change', 'unmarried', 'single']: # relationship label
                 self.update_relationship_status(msg)

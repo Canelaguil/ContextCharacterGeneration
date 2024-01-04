@@ -163,7 +163,7 @@ class Home(Agent):
     """
     def get_my_children(self, person_info):
         children = []
-        for key, child in person_info['network']['children']['birth'].items():
+        for key, child in person_info['network']['children'].items():
             if key in self.inhabitants:
                 if child['age'] < 18:
                     children.append(key)

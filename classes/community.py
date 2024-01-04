@@ -240,7 +240,7 @@ class Community(Model):
             self.relationships[key].receive_message(msg)
         except:
             print('in relationship messaging')
-            print(key)
+            print(f"key: {key}")
             fatal_error(msg)
 
     """
