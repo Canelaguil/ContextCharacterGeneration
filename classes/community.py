@@ -87,6 +87,7 @@ class Community(Model):
         self.people = {}
         self.homes = {}
         self.relationships = {}
+        self.whoknowswho = {} # person_key : [list of acquaintances]
 
         # init the various community components
         self.city = City(self, seed, community)
@@ -152,6 +153,13 @@ class Community(Model):
         self.homes[house_key].add_person(person_info)
 
     def add_relationship(self, relat : Agent):
+        a, b = relat.keys
+        if not a in self.whoknowswho:
+            self.whoknowswho[a] = []
+        if not b in self.whoknowswho:
+            self.whoknowswho[b] = []
+        self.whoknowswho[a].append(b)
+        self.whoknowswho[b].append(a)
         self.relationships[relat.unique_id] = relat 
         self.schedule.add(relat)
 
@@ -299,6 +307,12 @@ class Community(Model):
     
     def get_relationship_status_person(self, key):
         return self.people[key].get_relationship_status()
+    
+    def we_know_each_other(self, keyA, keyB):
+        if keyA not in self.whoknowswho:
+            log_error('knows no one', keyA)
+            return False
+        return keyB in self.whoknowswho[keyA]
 
     def get_year(self):
         return self.year

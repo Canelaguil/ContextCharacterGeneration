@@ -7,6 +7,8 @@ class Relationship(Agent):
                  personB : dict, label : str, platonic_only=False) -> None:
         super().__init__(unique_id, model)
         self.active = True
+        self.start_year = self.model.get_year()
+        self.end_year = 0
         self.personA = personA
         self.personB = personB
         self.keys = [personA['key'], personB['key']]
@@ -100,6 +102,7 @@ class Relationship(Agent):
             return
         
         if cause == 'person died':
+            self.end_year = self.model.get_year()
             self.end_cause = f"{context['person']['name']} died"
             self.keys.remove(context['person']['key'])
             
@@ -274,6 +277,13 @@ class Relationship(Agent):
     """
     INFO FUNCTIONS
     """
+    def update(self):
+        about_us = {
+            'friendship' : self.friendship_aspect.score
+        }
+        if not self.platonic_only:
+            about_us['romantic state']
+
     def status(self):
         # return woman first if woman in relationship
         if self.personA['sex'] == 'f':
@@ -283,6 +293,7 @@ class Relationship(Agent):
 
         return {
             'active' : self.active,
+            'duration' : [self.start_year, self.end_year],
             'label' : self.label,
             'compatibility' : self.friendship_aspect.determine_compatibility(self.personA, self.personB),
             'platonic only' : self.platonic_only,

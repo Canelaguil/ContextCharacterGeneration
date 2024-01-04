@@ -66,10 +66,8 @@ def relationship_analysis():
         r = r[key]
         difference = r['friendship trajectory']['current'] - r['friendship trajectory']['start']
         compatiblity = r['compatibility']
-        try:
+        if r['label'] in ['spouse', 'partner'] and r['duration'][0] != 1200 and (r['duration'][1] - r['duration'][0]) > 5:
             no_children[r['no birth children']] += 1
-        except:
-            print(r['no birth children'])
         dfs.append(difference)
         cmp.append(compatiblity)
     plot_scatter(cmp, dfs, 'Relationship trajectory with compatiblity', 

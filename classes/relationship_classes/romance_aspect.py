@@ -203,6 +203,11 @@ class Romance():
         for p in self.people.items():
             p.break_up()
 
+    def get_states(self):
+        return {
+            
+        }
+
     def evolve(self):
         changeA = self.state_machineA.turn()
         changeB = self.state_machineB.turn()

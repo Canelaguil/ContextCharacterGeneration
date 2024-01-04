@@ -1,7 +1,7 @@
 from ..utils import * 
 from mesa import Agent, Model
 
-class Candidates():
+class MarriageCandidates():
     def __init__(self, owner) -> None:
         self.owner = owner
         self.candidate_list = []
@@ -15,14 +15,13 @@ class Candidates():
             return msg
         return None    
     
-    def find_match(self, seeker, for_marriage=True):
-        # TODO : check for incest
-        # TODO : move in together
+    def find_match(self, seeker):
         # TODO : check for motivation
+        sample_size = 400
         no_candidates = len(self.candidate_list)
-        if no_candidates < 200:
+        if no_candidates < sample_size:
             size = no_candidates
-        else: size = 200
+        else: size = sample_size
 
         options = rand_choice(self.candidate_list, size=size)
         best_option = {}
@@ -31,21 +30,26 @@ class Candidates():
         # best_age_match = 
         for op in options:
             this_option = False
-            if for_marriage:
-                # discard if class difference too big
-                class_distance = abs(op['income class'][0] - seeker['income class'][0])
-                if class_distance > 1:
-                    break
-                # only marry between classes if personality good match
-                elif class_distance == 1: 
-                    personality_distance = get_vector_distance(op['personality'], 
-                                   seeker['personality'])
-                    if personality_distance > 0.2:
-                        break
 
-                # give priority to younger women
-                if op['age'] < best_age:                
-                    this_option = True
+            # check if these two already know each other (siblings, eg)
+            if self.owner.model.we_know_each_other(op['source'], seeker['source']):
+                break
+
+            # discard for marriage if class difference too big
+            class_distance = abs(op['income class'][0] - seeker['income class'][0])
+            if class_distance > 1:
+                break
+
+            # only marry between classes if personality good match
+            elif class_distance == 1: 
+                personality_distance = get_vector_distance(op['personality'], 
+                                seeker['personality'])
+                if personality_distance > 0.2:
+                    break
+
+            # give priority to younger women
+            if op['age'] < best_age:                
+                this_option = True
 
             # check age compatibility
             if age_match(op['age'], seeker['age']) < 0.8:
@@ -80,9 +84,9 @@ class Candidates():
 class Intention_Manager(Agent):
     def __init__(self, unique_id: int, model: Model) -> None:
         super().__init__(unique_id, model)
-        self.male_marriage_intentions = Candidates(self)
-        self.female_marriage_intentions = Candidates(self)
-        self.friend_intentions = Candidates(self)
+        self.male_marriage_intentions = MarriageCandidates(self)
+        self.female_marriage_intentions = MarriageCandidates(self)
+        self.friend_intentions = MarriageCandidates(self)
 
         # stat collection
         self.male_births = []

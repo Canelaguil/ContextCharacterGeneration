@@ -165,7 +165,9 @@ class Person(Agent):
                 else:
                     self.update_relationship_status(msg) 
                     self.network.add_relationship(msg)
-                self.memory.add_event(msg)
+
+                if self.age != 0: # skip memories for family new relationships
+                    self.memory.add_event(msg)
             elif topic in ['relationship change', 'unmarried', 'single']: # relationship label
                 self.update_relationship_status(msg)
                 self.memory.add_event(msg)

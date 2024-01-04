@@ -8,10 +8,8 @@ class Network():
         self.mother = mother
         self.father = father
         self.siblings = []
-        self.children = []
+        self.children_keys = []
         self.relationship_types = {}
-        self.adopted_children = []
-        self.relationships = {} # relationship key : other person key
 
     def unravel(self):
         """
@@ -44,6 +42,9 @@ class Network():
     def process_parent_child(self, notice, age, kind='birth'):
         if age == 0: # meaning, these are their parents
             label = 'parent'
+            if label not in self.relationship_types:
+                self.relationship_types[label] = []
+            self.relationship_types[label].append(notice['key'])
         else: # they are the parents
             label = 'child'
 
@@ -51,15 +52,15 @@ class Network():
             try:
                 # has to be done like this because of python var referencing
                 child = notice['people'][0] if notice['people'][0] != self.person_key else notice['people'][1]
-                self.children.append(child)
+                self.children_keys.append(child)
             except:
                 log_error('cannot find child', notice)
 
-        if label not in self.relationship_types:
-            self.relationship_types[label] = {}
-        if kind not in self.relationship_types[label]:
-            self.relationship_types[label][kind] = []
-        self.relationship_types[label][kind].append(notice['key'])
+            if label not in self.relationship_types:
+                self.relationship_types[label] = {}
+            if kind not in self.relationship_types[label]:
+                self.relationship_types[label][kind] = []
+            self.relationship_types[label][kind].append(notice['key'])
 
     def add_sibling(self, sibling_key, kind='full'):
         """
@@ -90,7 +91,7 @@ class Network():
     
     def get_child_descriptions(self):
         child_summary = {}
-        for child_key in self.children:
+        for child_key in self.children_keys:
             child = self.community.get_person_short(child_key)
             child_summary[child_key] = child
         return child_summary
@@ -104,9 +105,7 @@ class Network():
     def links(self):
         return {
             'parents' : self.get_parents(),
-            # 'siblings' : self.siblings,
             'children' : self.get_child_descriptions(),
-            # 'relationships' : self.relationships,
-            ** self.relationship_types
+            'keys': self.relationship_types
         }
     
