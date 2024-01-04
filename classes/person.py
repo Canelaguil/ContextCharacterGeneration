@@ -71,8 +71,6 @@ class Person(Agent):
                             surnames)
         self.body = Body(self, father['genetics'], mother['genetics'])
         self.network = Network(self, self.model, mother, father)
-        siblings = parent_info['birth children'] + parent_info['adopted children']
-        self.network.init_siblings(siblings)
 
     def born_this_way(self, sex):
         """

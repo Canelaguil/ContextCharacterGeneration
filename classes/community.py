@@ -131,6 +131,10 @@ class Community(Model):
     INPUT FUNCTIONS
     """
     def add_person(self, person : Agent):
+        # everyone knows themselves
+        if not person.unique_id in self.whoknowswho:
+            self.whoknowswho[person.unique_id] = []
+        self.whoknowswho[person.unique_id].append(person.unique_id)
         self.people[person.unique_id] = person
         self.schedule.add(person)
 

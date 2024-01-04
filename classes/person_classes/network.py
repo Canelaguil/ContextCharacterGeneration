@@ -45,7 +45,7 @@ class Network():
             if label not in self.relationship_types:
                 self.relationship_types[label] = []
             self.relationship_types[label].append(notice['key'])
-        else: # they are the parents
+        else: # they are the parent
             label = 'child'
 
             # also add to list of children to keep track of
@@ -62,20 +62,15 @@ class Network():
                 self.relationship_types[label][kind] = []
             self.relationship_types[label][kind].append(notice['key'])
 
-    def add_sibling(self, sibling_key, kind='full'):
-        """
-        TODO : half siblings & adopted
-        """
-        if sibling_key in self.siblings:
-            print(' sibling dance')
-        self.siblings.append(sibling_key)
+            self.introduce_children(child)
 
-    def init_siblings(self, list_of_siblings):
+    def introduce_children(self, new_child):
         """
-        Add list of existing siblings
+        
         """
-        for s in list_of_siblings:
-            self.siblings.append(s)
+        for ch in self.children_keys:
+            if not self.community.we_know_each_other(ch, new_child):
+                log_error('half siblings', self.community.create_relationship(ch, new_child, 'half-sibling', True))
 
     """
     INFO FUNCTIONS
@@ -106,6 +101,6 @@ class Network():
         return {
             'parents' : self.get_parents(),
             'children' : self.get_child_descriptions(),
-            'keys': self.relationship_types
+            'relationship keys': self.relationship_types
         }
     

@@ -27,7 +27,7 @@ class Relationship(Agent):
 
         if label == 'spouse':
             self.arranged_marriage_init()
-        elif label in ['parentchild', 'sibling']:
+        elif label in ['parentchild', 'sibling', 'half-sibling']:
             self.family_init()
         else:
             self.platonic_init()
@@ -150,12 +150,13 @@ class Relationship(Agent):
 
     def update_label(self, new_label):
         label_hierarchy = [
-            'sibling'
+            'sibling',
+            'half-sibling',
             'parentchild',
             'spouse',
             'partner', 
             'friend', 
-            'acuqaintance'
+            'acquaintance'
         ]
         if label_hierarchy.index(new_label) < label_hierarchy.index(self.label):
             self.label = new_label
