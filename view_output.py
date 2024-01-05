@@ -7,7 +7,7 @@ if __name__ == '__main__':
     directory = 'output/people_json/'
     print("Welcome! Use this tool to quickly parse biographies.")
     print("Enter 'd' at any time to switch to the descriptive mode.")
-    print("Enter 'r' at any time to get a random person.")
+    print("Enter 'r' at any time to get a random (living) person.")
     print("Enter 's' to switch between the people and relationship json directories.")
     print("Enter 'e' at any time to leave.")
     print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
@@ -29,10 +29,17 @@ if __name__ == '__main__':
         elif inp == 'r':
             f = random.choice(os.listdir(directory))
             path = f"{directory}{f}"
+
+            # get a random, living adult person
             if 'json' in directory:
-                with open(path) as json_data:
-                    p = json.load(json_data)
-                beautify_print(p)
+                while True:
+                    with open(path) as json_data:
+                        p = json.load(json_data)
+                    if p[f[0:-5]]['alive'] and p[f[0:-5]]['age'] > 16:
+                        beautify_print(p)
+                        break
+                    f = random.choice(os.listdir(directory))
+                    path = f"{directory}{f}"
             else:
                 path = f"{directory}{f}"
                 with open(path, 'r') as des:
