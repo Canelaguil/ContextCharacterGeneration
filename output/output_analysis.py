@@ -1,7 +1,9 @@
 import json
 import matplotlib.pyplot as plt
+import argparse
 import sys, os
 
+experiment = ''
 def plot(x, y, title, xlabel='', ylabel=''):
     if isinstance(y[0], tuple):
         # print(y)
@@ -14,7 +16,7 @@ def plot(x, y, title, xlabel='', ylabel=''):
     plt.xlabel(xlabel)
     plt.ylabel(ylabel)
     # plt.xticks(x)
-    plt.savefig(f'output/analysis/plots/{title}.png')
+    plt.savefig(f'output/analysis/plots/{experiment}{title}.png')
     plt.close()
 
 def plot_scatter(x, y, title, xlabel='', ylabel='', all_xticks=False):
@@ -29,7 +31,7 @@ def plot_scatter(x, y, title, xlabel='', ylabel='', all_xticks=False):
     plt.ylabel(ylabel)
     if all_xticks:
         plt.xticks(x)
-    plt.savefig(f'output/analysis/plots/{title}.png')
+    plt.savefig(f'output/analysis/plots/{experiment}{title}.png')
     plt.close()
 
 def plot_bar(ys, title, xs = None, xlabel='', ylabel=''):
@@ -40,7 +42,7 @@ def plot_bar(ys, title, xs = None, xlabel='', ylabel=''):
     plt.xlabel(xlabel)
     plt.ylabel(ylabel)
     # plt.xticks(xs)
-    plt.savefig(f'output/analysis/plots/{title}.png')
+    plt.savefig(f'output/analysis/plots/{experiment}{title}.png')
     plt.close()
     
 def plot3d(x, y, z, title, xlabel='', ylabel='', zlabel=''):
@@ -51,13 +53,13 @@ def plot3d(x, y, z, title, xlabel='', ylabel='', zlabel=''):
     ax.set_ylabel(ylabel)
     ax.set_zlabel(zlabel)
     plt.title(title)
-    plt.savefig(f'output/analysis/plots/{title}.png')
+    plt.savefig(f'output/analysis/plots/{experiment}{title}.png')
     plt.close()
 
 def relationship_analysis():
     directory = 'output/relationships_json/'
     dfs, cmp = [], [] # relationship compatiblitity / progression
-    no_children = [0] * 15
+    no_children = [0] * 16
     for f in os.listdir(directory):
         path = f"{directory}{f}"
         with open(path) as json_data:
@@ -67,7 +69,10 @@ def relationship_analysis():
         difference = r['friendship trajectory']['current'] - r['friendship trajectory']['start']
         compatiblity = r['compatibility']
         if r['label'] in ['spouse', 'partner'] and r['duration'][0] != 1200 and (r['duration'][1] - r['duration'][0]) > 5:
-            no_children[r['no birth children']] += 1
+            try:
+                no_children[r['no birth children']] += 1
+            except:
+                print(f"Too many children: {r['no birth children']}")
         dfs.append(difference)
         cmp.append(compatiblity)
     plot_scatter(cmp, dfs, 'Relationship trajectory with compatiblity', 
@@ -76,8 +81,8 @@ def relationship_analysis():
 
 def output_people():
     directory = 'output/people_json/'
-    ages = [0] * 80
-    age_to_die = [0] * 80
+    ages = [0] * 100
+    age_to_die = [0] * 100
     for f in os.listdir(directory):
         path = f"{directory}{f}"
         with open(path) as json_data:
@@ -88,12 +93,12 @@ def output_people():
             try:
                 ages[p['age']] += 1
             except:
-                print(p['age'])
+                print(f"Living person too old: {p['age']}, key {p['key']}")
         else:
             try:
                 age_to_die[p['age']] += 1
             except:
-                print(p['age'])
+                print(f"Dead person too old: {p['age']}, key {p['key']}")
     
     plot_bar(ages, 'People per age', None, 'ages', 'number of people')
     plot_bar(age_to_die, 'People to die per age', None, 'ages', 'number of people')
@@ -112,6 +117,14 @@ def overall_stats():
     plot(x, ys, 'Demographics', 'years', 'number of people')
 
 if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description='Create analysis graphs for files created by generation.py.')
+    parser.add_argument('experiment_name', type=str, nargs='?', 
+                        help='name for experiment')
+    arg = parser.parse_args().experiment_name
+
+    if arg != None:
+        experiment = arg + '_'
+
     relationship_analysis()
     overall_stats()
     output_people()

@@ -180,7 +180,7 @@ def output_errors():
     global errors 
     with open('output/errors.json', 'w') as output:
         import json
-        json.dump(errors, output)
+        json.dump(errors, output, indent=2, separators=(',', ': '))
 
 def fatal_error(msg): 
     print(msg)

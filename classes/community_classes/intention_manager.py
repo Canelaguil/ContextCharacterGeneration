@@ -94,6 +94,7 @@ class Intention_Manager(Agent):
         self.marriages = []
         self.bachelors = []
         self.bachelorettes = []
+        self.living_people = []
         self.births = []
         self.deaths = []
 
@@ -141,13 +142,15 @@ class Intention_Manager(Agent):
     """
     INFO FUNCTIONS
     """
-    def receive_stats(self, new_males, new_females, new_deaths, new_marriages):
+    def receive_stats(self, new_males, new_females, new_deaths, new_marriages,
+                      living_people):
         all = new_males + new_females
         self.male_births.append(new_males)
         self.births.append(all)
         self.deaths.append(new_deaths)
         self.female_births.append(new_females)
         self.marriages.append(new_marriages)
+        self.living_people.append(living_people)
 
     def demographics(self):
         return {
@@ -157,7 +160,8 @@ class Intention_Manager(Agent):
             'deaths' : self.deaths,
             'marriages' : self.marriages, 
             'bachelors' : self.bachelors, 
-            'bachelorettes' : self.bachelorettes
+            'bachelorettes' : self.bachelorettes,
+            'living people' : self.living_people
         }
 
 

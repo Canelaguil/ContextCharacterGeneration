@@ -80,6 +80,7 @@ class Community(Model):
         self.male_births, self.female_births = 0, 0
         self.deaths = 0
         self.marriages = 0
+        self.people_alive = 0
 
         self.schedule = StagedActivation(self, ["people", "relationships", "houses", 
                                                 "post_processing"], True)
@@ -131,6 +132,7 @@ class Community(Model):
     INPUT FUNCTIONS
     """
     def add_person(self, person : Agent):
+        self.people_alive += 1
         # everyone knows themselves
         if not person.unique_id in self.whoknowswho:
             self.whoknowswho[person.unique_id] = []
@@ -234,6 +236,7 @@ class Community(Model):
         return child.description()
     
     def report_death(self, key):
+        self.people_alive -= 1
         self.deaths += 1
         self.schedule.remove(self.people[key])
 
@@ -270,11 +273,14 @@ class Community(Model):
             self.step()
             if output:
                 print(f"~{self.year}~")
+                print(f"Currently {self.people_alive} are alive in the city.\nStats this year:")
                 print(f"births : {self.male_births + self.female_births}")
                 print(f"deaths : {self.deaths}")
                 print(f"marriages : {self.marriages}")
                 print('------------------------')
-                self.intention_manager.receive_stats(self.male_births, self.female_births, self.deaths, self.marriages)
+            # record stats and reset
+            self.intention_manager.receive_stats(self.male_births, self.female_births, 
+                                                    self.deaths, self.marriages, self.people_alive)
             self.year += 1 
             self.births = 0
             self.deaths = 0
@@ -349,19 +355,19 @@ class Community(Model):
 
         for key, p in self.people.items():
             with open(f"output/people_json/{key}.json", 'w') as output:
-                json.dump({f'{key}' : p.description()}, output)
+                json.dump({f'{key}' : p.description()}, output, indent=2, separators=(',', ': '))
 
         if not os.path.exists('output/homes_json'):
             os.mkdir('output/homes_json')
         for key, h in self.homes.items():
             with open(f"output/homes_json/{key}.json", 'w') as output:
-                json.dump({key : h.info()}, output)
+                json.dump({key : h.info()}, output, indent=2, separators=(',', ': '))
 
         if not os.path.exists('output/relationships_json'):
             os.mkdir('output/relationships_json')
         for key, r in self.relationships.items():
             with open(f"output/relationships_json/{key}.json", 'w') as output:
-                json.dump({key : r.status()}, output)
+                json.dump({key : r.status()}, output, indent=2, separators=(',', ': '))
 
         with open('output/stats.json', 'w') as output:
             dems = self.intention_manager.demographics()

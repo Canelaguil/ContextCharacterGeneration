@@ -179,15 +179,19 @@ class Body():
         """
         Does the person die this turn?
         """
+        # to avoid random 200+ years olds given an old age of 50
+        max_age_this_year = (Body.old_age * 2) - rand_int(int(Body.old_age * 0.2), 0)
         if self.health == 0:
             chance = 1
         elif age < 12:
-            chance = (fair_mod(Body.child_mortality, - (0.05 * age))) * (1 - self.health)
+            chance = (fair_mod(Body.child_mortality, - (0.075 * age))) * (1 - self.health)
         elif age > Body.old_age:
             chance = (0.05 + (0.01 * (age - Body.old_age))) * (1 - self.health)
         elif age > 0.5 * Body.old_age:
             years = age - Body.adult_age
             chance = 0.025 * (1 - self.health) + (0.001 * years)
+        elif age >= max_age_this_year:
+            return True
         else:
             chance = 0.05 * (1 - self.health)
         
