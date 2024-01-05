@@ -1,53 +1,74 @@
 {
   "11363": {
     "alive": false,
-    "name": "Thedwi",
-    "surname": "Cnif",
-    "full name": "Thedwi Cnif",
+    "name": "Brundonis",
+    "surname": "Svarten",
+    "full name": "Brundonis Svarten",
     "born this way": {
       "sexuality label": "gay",
-      "sexuality": 0.829,
-      "romantic interest": 0.813,
-      "sex interest": 0.811,
-      "gender expression": 0.472,
+      "sexuality": 0.92,
+      "romantic interest": 0.687,
+      "sex interest": 0.431,
+      "gender expression": 0.286,
       "sex": "f"
     },
-    "age": 56,
-    "birth year": 1160,
+    "age": 54,
+    "birth year": 1171,
     "sex": "f",
     "income class": [
       3,
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.47,
-      "honest-false": 0.275
+      "lawful-chaotic": 0.842,
+      "nice-nasty": 0.999,
+      "honest-false": 0.999
     },
     "attitude": {
-      "outgoing": 0.218,
-      "dream": 0.445
+      "outgoing": 0.5,
+      "dream": 0.565
     },
     "homsoc": {
       "means": {
-        "independent": false,
-        "taken_care_of": false,
-        "caretaker": false,
-        "needs_care": false
+        "independent": true,
+        "taken_care_of": true,
+        "caretaker": true,
+        "needs_care": false,
+        "flags": [
+          "caretaker",
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.519,
-        "gender expression expression": 0.21
+        "sexuality expression": 0.258,
+        "gender expression expression": 0.148
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12911": {
+          "key": 12911,
+          "name": "Marie Heurkint",
+          "age": 8,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Brundonis (11363)",
+            "father": "Heinone (11362)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          11364,
-          16973
-        ]
+          11364
+        ],
+        "child": {
+          "birth": [
+            12913
+          ]
+        }
       }
     },
     "occupation": {
@@ -60,16 +81,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 0,
-      "eye_color": "brown",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "skin_color": 1,
+      "eye_color": "green",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "S",
+        "C",
         "C"
       ],
       "health": 0.0,
-      "fertility": 0.81,
+      "fertility": 0.747,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -81,46 +102,38 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.785
+            "new_health": 0.781
           },
           "death": false
         },
-        "1211": {
+        "1221": {
           "health": {
             "change": true,
-            "value_change": -0.139,
-            "new_health": 0.646
+            "value_change": -0.217,
+            "new_health": 0.564
           },
           "death": false
         },
-        "1212": {
+        "1222": {
           "health": {
             "change": true,
-            "value_change": -0.194,
-            "new_health": 0.452
+            "value_change": -0.239,
+            "new_health": 0.325
           },
           "death": false
         },
-        "1213": {
+        "1223": {
           "health": {
             "change": true,
-            "value_change": -0.261,
-            "new_health": 0.191
+            "value_change": -0.271,
+            "new_health": 0.054
           },
           "death": false
         },
-        "1214": {
+        "1224": {
           "health": {
             "change": true,
-            "value_change": -0.168,
-            "new_health": 0.023
-          },
-          "death": false
-        },
-        "1215": {
-          "health": {
-            "change": true,
-            "value_change": -0.023,
+            "value_change": -0.054,
             "new_health": 0.0
           },
           "death": true
@@ -136,8 +149,8 @@
               11363
             ],
             "people names": [
-              "Frethericus Lecker",
-              "Thedwi Cnif"
+              "Heinone Heurkint",
+              "Brundonis Svarten"
             ],
             "label": "spouse",
             "committed": true
@@ -150,23 +163,80 @@
               "section": "stDie lange straet1.se1.c3",
               "street": "Die lange straet1",
               "neighborhood": "olvbuurt",
-              "unique id": 609
+              "unique id": 608
             }
-          },
+          }
+        ],
+        "1201": [
           {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
+            "topic": "new relationship",
+            "key": 12913,
+            "people": [
+              11363,
+              12911
+            ],
+            "people names": [
+              "Brundonis Svarten",
+              "Marie Heurkint"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1202": [
+          {
+            "topic": "feelings change",
+            "target": 11362,
+            "target name": "Heinone Heurkint",
+            "state": "out of love",
+            "relationship": 11364
+          }
+        ],
+        "1210": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12911,
+              "name": "Marie Heurkint",
+              "age": 8,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Brundonis (11363)",
+                "father": "Heinone (11362)"
+              }
+            },
+            "label": "child"
           }
         ],
         "1211": [
           {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
+            "topic": "feelings change",
+            "target": 11362,
+            "target name": "Heinone Heurkint",
+            "state": "infatuation",
+            "relationship": 11364
           }
         ],
         "1212": [
+          {
+            "topic": "feelings change",
+            "target": 11362,
+            "target name": "Heinone Heurkint",
+            "state": "solid love",
+            "relationship": 11364
+          }
+        ],
+        "1214": [
+          {
+            "topic": "feelings change",
+            "target": 11362,
+            "target name": "Heinone Heurkint",
+            "state": "out of love",
+            "relationship": 11364
+          }
+        ],
+        "1215": [
           {
             "key": 11364,
             "topic": "unmarried"
@@ -175,8 +245,8 @@
             "topic": "person died",
             "person": {
               "key": 11362,
-              "name": "Frethericus Lecker",
-              "age": 55,
+              "name": "Heinone Heurkint",
+              "age": 38,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
@@ -187,40 +257,82 @@
             "topic": "not enough income",
             "income": 0,
             "inhabitants": []
+          },
+          {
+            "topic": "neglected"
           }
         ],
-        "1213": [
+        "1216": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": [
+              12911
+            ]
+          },
+          {
+            "topic": "new caretaker",
+            "person": 11363
+          }
+        ],
+        "1217": [
           {
             "topic": "not enough income",
             "income": 0,
             "inhabitants": []
           }
         ],
-        "1214": [
+        "1218": [
           {
-            "topic": "new relationship",
-            "key": 16973,
-            "people": [
-              11542,
-              11363
-            ],
-            "people names": [
-              "Wissen Markolf",
-              "Thedwi Cnif"
-            ],
-            "label": "spouse",
-            "committed": true
-          },
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1219": [
           {
-            "topic": "new home",
-            "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stDie lange straet3.se5.c3",
-              "street": "Die lange straet3",
-              "neighborhood": "visbuurt",
-              "unique id": 694
-            }
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1220": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1221": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1222": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1223": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1224": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ]
       }
@@ -229,17 +341,16 @@
     "home": {
       "income class": 3,
       "income class label": "upper middle class",
-      "section": "stDie lange straet3.se5.c3",
-      "street": "Die lange straet3",
-      "neighborhood": "visbuurt",
-      "unique id": 694
+      "section": "stDie lange straet1.se1.c3",
+      "street": "Die lange straet1",
+      "neighborhood": "olvbuurt",
+      "unique id": 608
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
-        11364,
-        16973
+        11364
       ]
     }
   }

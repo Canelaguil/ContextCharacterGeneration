@@ -1,52 +1,86 @@
 {
   "11410": {
     "alive": false,
-    "name": "Wernerus",
-    "surname": "Ome",
-    "full name": "Wernerus Ome",
+    "name": "Karis",
+    "surname": "Croenekin",
+    "full name": "Karis Croenekin",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.09,
-      "romantic interest": 0.566,
-      "sex interest": 0.762,
-      "gender expression": 0.158,
+      "sexuality": 0.053,
+      "romantic interest": 0.487,
+      "sex interest": 0.733,
+      "gender expression": 0.162,
       "sex": "m"
     },
-    "age": 53,
-    "birth year": 1158,
+    "age": 54,
+    "birth year": 1169,
     "sex": "m",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.463,
-      "nice-nasty": 0.219,
-      "honest-false": 0.892
+      "lawful-chaotic": 0.703,
+      "nice-nasty": 0.931,
+      "honest-false": 0.189
     },
     "attitude": {
-      "outgoing": 0.455,
-      "dream": 0.485
+      "outgoing": 0.23,
+      "dream": 0.138
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
-        "needs_care": false
+        "needs_care": false,
+        "flags": [
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.043,
-        "gender expression expression": 0.103
+        "sexuality expression": 0.033,
+        "gender expression expression": 0.076
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12496": {
+          "key": 12496,
+          "name": "Lisebette Croenekin",
+          "age": 49,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Jacomin (11411)",
+            "father": "Karis (11410)"
+          }
+        },
+        "16735": {
+          "key": 16735,
+          "name": "Gloria Croenekin",
+          "age": 25,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Waldrada (11420)",
+            "father": "Karis (11410)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          11412
-        ]
+          11412,
+          16476
+        ],
+        "child": {
+          "birth": [
+            12497,
+            16736
+          ]
+        }
       }
     },
     "occupation": {
@@ -55,37 +89,49 @@
         2,
         "middle class"
       ],
-      "income": 1.424,
+      "income": 0.053,
       "all_incomes": [
-        1.061,
-        1.208,
+        0.616,
+        0.546,
+        0.446,
+        0.541,
+        0.142,
+        0.158,
+        0.446,
+        0.865,
+        1.266,
+        1.158,
+        1.214,
+        1.412,
         1.499,
-        1.257,
         1.499,
-        1.499,
-        1.152,
-        1.032,
-        1.105,
-        1.459,
-        1.499,
-        1.424
+        1.356,
+        1.103,
+        0.698,
+        1.016,
+        0.791,
+        0.479,
+        0.384,
+        0.281,
+        0.191,
+        0.053
       ],
       "job": {
-        "lawful": false,
+        "lawful": true,
         "honest": false
       }
     },
     "genetics": {
-      "skin_color": 9,
+      "skin_color": 5,
       "eye_color": "brown",
-      "hair_color": "red",
-      "hair_color_code": 3,
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
       "hair_type": [
         "C",
         "C"
       ],
       "health": 0.0,
-      "fertility": 0.556,
+      "fertility": 0.603,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -97,30 +143,38 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.557
+            "new_health": 0.654
           },
           "death": false
         },
-        "1208": {
+        "1219": {
           "health": {
             "change": true,
-            "value_change": -0.338,
-            "new_health": 0.219
+            "value_change": -0.237,
+            "new_health": 0.417
           },
           "death": false
         },
-        "1209": {
+        "1220": {
           "health": {
             "change": true,
-            "value_change": -0.182,
-            "new_health": 0.037
+            "value_change": -0.176,
+            "new_health": 0.241
           },
           "death": false
         },
-        "1210": {
+        "1221": {
           "health": {
             "change": true,
-            "value_change": -0.037,
+            "value_change": -0.187,
+            "new_health": 0.054
+          },
+          "death": false
+        },
+        "1222": {
+          "health": {
+            "change": true,
+            "value_change": -0.054,
             "new_health": 0.0
           },
           "death": true
@@ -131,7 +185,7 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.061
+            "income": 0.616
           },
           {
             "topic": "new relationship",
@@ -141,8 +195,8 @@
               11411
             ],
             "people names": [
-              "Wernerus Ome",
-              "Wijfgode"
+              "Karis Croenekin",
+              "Jacomin"
             ],
             "label": "spouse",
             "committed": true
@@ -152,14 +206,76 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stScherbier straet.se3.c2",
+              "section": "stScherbier straet.se1.c2",
               "street": "Scherbier straet",
               "neighborhood": "cingelzuid",
-              "unique id": 636
+              "unique id": 628
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12497,
+            "people": [
+              11410,
+              12496
+            ],
+            "people names": [
+              "Karis Croenekin",
+              "Lisebette Croenekin"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1210": [
+        "1201": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.446
+          }
+        ],
+        "1203": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.142
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.142,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "not enough income",
+            "income": 0.158,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.266
+          }
+        ],
+        "1209": [
+          {
+            "topic": "feelings change",
+            "target": 11411,
+            "target name": "Jacomin",
+            "state": "out of love",
+            "relationship": 11412
+          }
+        ],
+        "1211": [
           {
             "key": 11412,
             "topic": "unmarried"
@@ -168,13 +284,126 @@
             "topic": "person died",
             "person": {
               "key": 11411,
-              "name": "Wijfgode",
-              "age": 55,
+              "name": "Jacomin",
+              "age": 48,
               "alive": false,
               "sex": "f",
               "parents": "firstgen"
             },
             "label": "spouse"
+          }
+        ],
+        "1213": [
+          {
+            "topic": "new relationship",
+            "key": 16476,
+            "people": [
+              11410,
+              11420
+            ],
+            "people names": [
+              "Karis Croenekin",
+              "Waldrada"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stScherbier straet.se1.c2",
+              "street": "Scherbier straet",
+              "neighborhood": "cingelzuid",
+              "unique id": 632
+            }
+          }
+        ],
+        "1214": [
+          {
+            "topic": "new relationship",
+            "key": 16736,
+            "people": [
+              11410,
+              16735
+            ],
+            "people names": [
+              "Karis Croenekin",
+              "Gloria Croenekin"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1215": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.698
+          }
+        ],
+        "1216": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.016
+          }
+        ],
+        "1218": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.479
+          }
+        ],
+        "1219": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.384
+          }
+        ],
+        "1220": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.281
+          }
+        ],
+        "1221": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.191
+          },
+          {
+            "key": 16476,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11420,
+              "name": "Waldrada",
+              "age": 45,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.191,
+            "inhabitants": [
+              20199,
+              21456,
+              22473
+            ]
+          },
+          {
+            "topic": "neglected"
           }
         ]
       }
@@ -183,16 +412,17 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stScherbier straet.se3.c2",
+      "section": "stScherbier straet.se1.c2",
       "street": "Scherbier straet",
       "neighborhood": "cingelzuid",
-      "unique id": 636
+      "unique id": 632
     },
     "relationship status": {
       "taken": false,
       "married": false,
       "relationships": [
-        11412
+        11412,
+        16476
       ]
     }
   }

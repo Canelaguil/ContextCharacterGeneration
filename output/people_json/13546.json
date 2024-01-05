@@ -1,81 +1,133 @@
 {
   "13546": {
-    "alive": false,
-    "name": "Oda",
-    "surname": "van Ricmoden",
-    "full name": "Oda van Ricmoden",
+    "alive": true,
+    "name": "Ghela",
+    "surname": "Barlebaens",
+    "full name": "Ghela Barlebaens",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.953,
-      "romantic interest": 0.636,
-      "sex interest": 0.999,
-      "gender expression": 0.431,
+      "sexuality label": "bi",
+      "sexuality": 0.622,
+      "romantic interest": 0.667,
+      "sex interest": 0.923,
+      "gender expression": 0.534,
       "sex": "f"
     },
-    "age": 2,
+    "age": 46,
     "birth year": 1203,
     "sex": "f",
     "income class": [
-      1,
-      "lower middle class"
+      2,
+      "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.805,
-      "nice-nasty": 0.279,
-      "honest-false": 0.066
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.0,
+      "honest-false": 0.0
     },
     "attitude": {
-      "outgoing": 0.416,
-      "dream": 0.0
+      "outgoing": 0.415,
+      "dream": 0.054
     },
     "homsoc": {
       "means": {
-        "independent": false,
-        "taken_care_of": false,
-        "caretaker": false,
-        "needs_care": true
+        "independent": true,
+        "taken_care_of": true,
+        "caretaker": true,
+        "needs_care": false,
+        "flags": [
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.721,
-        "gender expression expression": 0.267
+        "sexuality expression": 0.461,
+        "gender expression expression": 0.168
       }
     },
     "network": {
       "parents": {
-        "mother": "Ricmoden (10379)",
-        "father": "Sander (10378)"
+        "mother": "Ryccie (10490)",
+        "father": "Ghodekin (10489)"
       },
-      "children": {},
+      "children": {
+        "20606": {
+          "key": 20606,
+          "name": "Hardenbernus Bier",
+          "age": 17,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Ghela (13546)",
+            "father": "Wybel (15478)"
+          }
+        },
+        "20888": {
+          "key": 20888,
+          "name": "Ricward Bier",
+          "age": 16,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Ghela (13546)",
+            "father": "Wybel (15478)"
+          }
+        }
+      },
       "relationship keys": {
         "parent": [
           13547,
           13548
         ],
         "sibling": [
-          13936
-        ]
+          13549
+        ],
+        "spouse": [
+          18446
+        ],
+        "child": {
+          "birth": [
+            20608,
+            20890
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        1,
-        "lower middle class"
+        2,
+        "middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.342,
+      "all_incomes": [
+        1.039,
+        1.056,
+        1.04,
+        1.237,
+        1.21,
+        1.374,
+        1.49,
+        1.37,
+        1.412,
+        1.499,
+        1.342
+      ],
+      "job": {
+        "lawful": true,
+        "honest": false
+      }
     },
     "genetics": {
       "skin_color": 4,
-      "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "eye_color": "green",
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
       "hair_type": [
         "S",
         "S"
       ],
-      "health": 0.736,
-      "fertility": 0.766,
+      "health": 0.632,
+      "fertility": 0.691,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -87,17 +139,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.736
+            "new_health": 0.632
           },
           "death": false
-        },
-        "1205": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.736
-          },
-          "death": true
         }
       },
       "events": {
@@ -105,47 +149,291 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stMuelen straet.se3.c1",
-              "street": "Muelen straet",
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stOp 't Speuy.se1.c2",
+              "street": "Op 't Speuy",
               "neighborhood": "jorisbuurt",
-              "unique id": 167
+              "unique id": 200
             }
           }
         ],
         "1204": [
           {
+            "topic": "person died",
+            "person": {
+              "key": 10489,
+              "name": "Ghodekin Barlebaens",
+              "age": 48,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "parent"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10490,
+              "name": "Ryccie Euer",
+              "age": 21,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "label": "parent"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "new caretaker",
+            "person": 10490
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1215": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1216": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1217": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1218": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1219": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1220": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1221": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 13138,
+              "name": "Tetta Barlebaens",
+              "age": 18,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Ryccie (10490)",
+                "father": "Ghodekin (10489)"
+              }
+            },
+            "label": "sibling"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1222": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1223": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1224": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1225": [
+          {
             "topic": "new relationship",
-            "key": 13936,
+            "key": 18446,
             "people": [
-              13546,
-              13933
+              15478,
+              13546
             ],
             "people names": [
-              "Oda van Ricmoden",
-              "Alene"
+              "Wybel Bier",
+              "Ghela Barlebaens"
             ],
-            "label": "sibling",
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stCorte gracht.se3.c2",
+              "street": "Corte gracht",
+              "neighborhood": "visbuurt",
+              "unique id": 743
+            }
+          }
+        ],
+        "1232": [
+          {
+            "topic": "new relationship",
+            "key": 20608,
+            "people": [
+              13546,
+              20606
+            ],
+            "people names": [
+              "Ghela Barlebaens",
+              "Hardenbernus Bier"
+            ],
+            "label": "parentchild",
             "committed": false
+          }
+        ],
+        "1233": [
+          {
+            "topic": "new relationship",
+            "key": 20890,
+            "people": [
+              13546,
+              20888
+            ],
+            "people names": [
+              "Ghela Barlebaens",
+              "Ricward Bier"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1239": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.039
           }
         ]
       }
     },
     "key": 13546,
     "home": {
-      "income class": 1,
-      "income class label": "lower middle class",
-      "section": "stMuelen straet.se3.c1",
-      "street": "Muelen straet",
-      "neighborhood": "jorisbuurt",
-      "unique id": 167
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stCorte gracht.se3.c2",
+      "street": "Corte gracht",
+      "neighborhood": "visbuurt",
+      "unique id": 743
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
-        13936
+        13549,
+        18446
       ]
     }
   }

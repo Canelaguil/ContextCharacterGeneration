@@ -1,53 +1,70 @@
 {
   "10003": {
     "alive": false,
-    "name": "Bel",
-    "surname": "Caen",
-    "full name": "Bel Caen",
+    "name": "Gilis",
+    "surname": "Putocke",
+    "full name": "Gilis Putocke",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.048,
-      "romantic interest": 0.806,
-      "sex interest": 0.812,
-      "gender expression": 0.0,
+      "sexuality": 0.108,
+      "romantic interest": 0.709,
+      "sex interest": 0.557,
+      "gender expression": 0.228,
       "sex": "m"
     },
-    "age": 51,
-    "birth year": 1158,
+    "age": 55,
+    "birth year": 1156,
     "sex": "m",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.672,
-      "nice-nasty": 0.569,
-      "honest-false": 0.535
+      "lawful-chaotic": 0.737,
+      "nice-nasty": 0.999,
+      "honest-false": 0.165
     },
     "attitude": {
-      "outgoing": 0.441,
-      "dream": 0.643
+      "outgoing": 0.591,
+      "dream": 0.429
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
-        "needs_care": false
+        "needs_care": false,
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.043,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.093,
+        "gender expression expression": 0.086
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14971": {
+          "key": 14971,
+          "name": "Adolfus Putocke",
+          "age": 35,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Itsburgis (10004)",
+            "father": "Gilis (10003)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          10005,
-          14652
-        ]
+          10005
+        ],
+        "child": {
+          "birth": [
+            14972
+          ]
+        }
       }
     },
     "occupation": {
@@ -56,18 +73,20 @@
         2,
         "middle class"
       ],
-      "income": 1.0,
+      "income": 0.645,
       "all_incomes": [
-        0.995,
-        0.915,
-        0.972,
-        0.937,
-        0.915,
-        0.94,
-        0.951,
-        0.991,
-        0.951,
-        1.0
+        0.996,
+        0.946,
+        0.905,
+        0.86,
+        0.833,
+        0.781,
+        0.768,
+        0.738,
+        0.753,
+        0.7,
+        0.685,
+        0.645
       ],
       "job": {
         "lawful": true,
@@ -75,16 +94,16 @@
       }
     },
     "genetics": {
-      "skin_color": 3,
-      "eye_color": "brown",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "skin_color": 6,
+      "eye_color": "blue",
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
-        "C",
+        "S",
         "S"
       ],
-      "health": 0.448,
-      "fertility": 0.735,
+      "health": 0.0,
+      "fertility": 0.871,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -96,15 +115,47 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.666
+            "new_health": 0.837
+          },
+          "death": false
+        },
+        "1206": {
+          "health": {
+            "change": true,
+            "value_change": -0.115,
+            "new_health": 0.722
+          },
+          "death": false
+        },
+        "1207": {
+          "health": {
+            "change": true,
+            "value_change": -0.225,
+            "new_health": 0.497
           },
           "death": false
         },
         "1208": {
           "health": {
             "change": true,
-            "value_change": -0.218,
-            "new_health": 0.448
+            "value_change": -0.34,
+            "new_health": 0.157
+          },
+          "death": false
+        },
+        "1209": {
+          "health": {
+            "change": true,
+            "value_change": -0.073,
+            "new_health": 0.084
+          },
+          "death": false
+        },
+        "1210": {
+          "health": {
+            "change": true,
+            "value_change": -0.084,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -114,7 +165,7 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.995
+            "income": 0.996
           },
           {
             "topic": "new relationship",
@@ -124,8 +175,8 @@
               10004
             ],
             "people names": [
-              "Bel Caen",
-              "Aue Screvel"
+              "Gilis Putocke",
+              "Itsburgis"
             ],
             "label": "spouse",
             "committed": true
@@ -138,72 +189,83 @@
               "section": "stUterechse straet.se1.c2",
               "street": "Uterechse straet",
               "neighborhood": "varkensbuurt",
-              "unique id": 2
+              "unique id": 4
             }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "feelings change",
+            "target": 10004,
+            "target name": "Itsburgis",
+            "state": "solid love",
+            "relationship": 10005
           }
         ],
         "1202": [
           {
-            "key": 10005,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 10004,
-              "name": "Aue Screvel",
-              "age": 46,
-              "alive": false,
-              "sex": "f",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
+            "topic": "feelings change",
+            "target": 10004,
+            "target name": "Itsburgis",
+            "state": "out of love",
+            "relationship": 10005
           }
         ],
         "1205": [
           {
+            "topic": "feelings change",
+            "target": 10004,
+            "target name": "Itsburgis",
+            "state": "infatuation",
+            "relationship": 10005
+          }
+        ],
+        "1206": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.738
+          }
+        ],
+        "1207": [
+          {
             "topic": "new relationship",
-            "key": 14652,
+            "key": 14972,
             "people": [
               10003,
-              11585
+              14971
             ],
             "people names": [
-              "Bel Caen",
-              "Soeten Mol"
+              "Gilis Putocke",
+              "Adolfus Putocke"
             ],
-            "label": "spouse",
-            "committed": true
-          },
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1208": [
           {
-            "topic": "new home",
-            "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stDie lange straet3.se7.c3",
-              "street": "Die lange straet3",
-              "neighborhood": "visbuurt",
-              "unique id": 711
-            }
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.7
           }
         ]
       }
     },
     "key": 10003,
     "home": {
-      "income class": 3,
-      "income class label": "upper middle class",
-      "section": "stDie lange straet3.se7.c3",
-      "street": "Die lange straet3",
-      "neighborhood": "visbuurt",
-      "unique id": 711
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stUterechse straet.se1.c2",
+      "street": "Uterechse straet",
+      "neighborhood": "varkensbuurt",
+      "unique id": 4
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        10005,
-        14652
+        10005
       ]
     }
   }

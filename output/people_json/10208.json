@@ -1,43 +1,47 @@
 {
   "10208": {
     "alive": false,
-    "name": "Salome",
-    "surname": "Bart",
-    "full name": "Salome Bart",
+    "name": "Moerseil",
+    "surname": "Broem",
+    "full name": "Moerseil Broem",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.877,
-      "romantic interest": 0.737,
-      "sex interest": 0.67,
-      "gender expression": 0.297,
+      "sexuality label": "straight",
+      "sexuality": 0.06,
+      "romantic interest": 0.567,
+      "sex interest": 0.772,
+      "gender expression": 0.089,
       "sex": "f"
     },
-    "age": 48,
-    "birth year": 1155,
+    "age": 50,
+    "birth year": 1158,
     "sex": "f",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.536,
-      "nice-nasty": 0.519,
-      "honest-false": 0.897
+      "lawful-chaotic": 0.816,
+      "nice-nasty": 0.578,
+      "honest-false": 0.983
     },
     "attitude": {
-      "outgoing": 0.2,
-      "dream": 0.542
+      "outgoing": 0.581,
+      "dream": 0.476
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
-        "needs_care": false
+        "needs_care": false,
+        "flags": [
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.401,
-        "gender expression expression": 0.215
+        "sexuality expression": 0.035,
+        "gender expression expression": 0.049
       }
     },
     "network": {
@@ -45,7 +49,8 @@
       "children": {},
       "relationship keys": {
         "spouse": [
-          10209
+          10209,
+          14966
         ]
       }
     },
@@ -59,16 +64,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 1,
+      "skin_color": 0,
       "eye_color": "brown",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
         "C",
         "C"
       ],
-      "health": 0.852,
-      "fertility": 0.745,
+      "health": 0.859,
+      "fertility": 0.85,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -80,15 +85,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.852
+            "new_health": 0.859
           },
           "death": false
         },
-        "1202": {
+        "1207": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.852
+            "new_health": 0.859
           },
           "death": true
         }
@@ -103,8 +108,8 @@
               10208
             ],
             "people names": [
-              "Salomon",
-              "Salome Bart"
+              "Snellekine Croppes",
+              "Moerseil Broem"
             ],
             "label": "spouse",
             "committed": true
@@ -114,14 +119,21 @@
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stHelle voet.se3.c1",
-              "street": "Helle voet",
-              "neighborhood": "jorisbuurt",
-              "unique id": 93
+              "section": "stMerrien hoof.se1.c1",
+              "street": "Merrien hoof",
+              "neighborhood": "varkensbuurt",
+              "unique id": 79
             }
+          },
+          {
+            "topic": "feelings change",
+            "target": 10207,
+            "target name": "Snellekine Croppes",
+            "state": "solid love",
+            "relationship": 10209
           }
         ],
-        "1202": [
+        "1205": [
           {
             "key": 10209,
             "topic": "unmarried"
@@ -130,8 +142,8 @@
             "topic": "person died",
             "person": {
               "key": 10207,
-              "name": "Salomon",
-              "age": 37,
+              "name": "Snellekine Croppes",
+              "age": 54,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
@@ -143,6 +155,46 @@
             "income": 0,
             "inhabitants": []
           }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 14966,
+            "people": [
+              11701,
+              10208
+            ],
+            "people names": [
+              "Waldfridus",
+              "Moerseil Broem"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stNieu straet.se1.c1",
+              "street": "Nieu straet",
+              "neighborhood": "visbuurt",
+              "unique id": 762
+            }
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.567,
+            "inhabitants": [
+              12580,
+              18717,
+              18960,
+              20717
+            ]
+          },
+          {
+            "topic": "neglected"
+          }
         ]
       }
     },
@@ -150,16 +202,17 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stHelle voet.se3.c1",
-      "street": "Helle voet",
-      "neighborhood": "jorisbuurt",
-      "unique id": 93
+      "section": "stNieu straet.se1.c1",
+      "street": "Nieu straet",
+      "neighborhood": "visbuurt",
+      "unique id": 762
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
-        10209
+        10209,
+        14966
       ]
     }
   }

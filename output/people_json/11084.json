@@ -1,83 +1,95 @@
 {
   "11084": {
     "alive": false,
-    "name": "Victoria",
-    "surname": "",
-    "full name": "Victoria",
+    "name": "Breghlent",
+    "surname": "Donevoet",
+    "full name": "Breghlent Donevoet",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.076,
-      "romantic interest": 0.639,
-      "sex interest": 0.703,
-      "gender expression": 0.0,
+      "sexuality label": "gay",
+      "sexuality": 0.925,
+      "romantic interest": 0.787,
+      "sex interest": 0.661,
+      "gender expression": 0.249,
       "sex": "f"
     },
-    "age": 32,
-    "birth year": 1175,
+    "age": 50,
+    "birth year": 1165,
     "sex": "f",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.431,
-      "nice-nasty": 0.661,
-      "honest-false": 0.53
+      "lawful-chaotic": 0.778,
+      "nice-nasty": 0.581,
+      "honest-false": 0.211
     },
     "attitude": {
-      "outgoing": 0.141,
-      "dream": 0.467
+      "outgoing": 0.252,
+      "dream": 0.152
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
         "caretaker": false,
-        "needs_care": false
+        "needs_care": false,
+        "flags": [
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.044,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.577,
+        "gender expression expression": 0.134
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12421": {
+          "key": 12421,
+          "name": "Alene Meinoldosdochter",
+          "age": 29,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Breghlent (11084)",
+            "father": "Meinoldo (11083)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11085
-        ]
+        ],
+        "child": {
+          "birth": [
+            12423
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
         1,
         "lower middle class"
       ],
-      "income": 0.937,
-      "all_incomes": [
-        1.384,
-        1.081,
-        1.034,
-        0.937
-      ],
-      "job": {
-        "lawful": true,
-        "honest": false
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 3,
-      "eye_color": "green",
+      "skin_color": 1,
+      "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
         "C",
         "S"
       ],
-      "health": 0.869,
-      "fertility": 0.9,
+      "health": 0.734,
+      "fertility": 0.777,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -89,15 +101,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.869
+            "new_health": 0.734
           },
           "death": false
         },
-        "1206": {
+        "1214": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.869
+            "new_health": 0.734
           },
           "death": true
         }
@@ -112,8 +124,8 @@
               11084
             ],
             "people names": [
-              "Hildebolding",
-              "Victoria"
+              "Meinoldo",
+              "Breghlent Donevoet"
             ],
             "label": "spouse",
             "committed": true
@@ -126,40 +138,76 @@
               "section": "stOly straetje.se5.c1",
               "street": "Oly straetje",
               "neighborhood": "kampbuurt",
-              "unique id": 490
+              "unique id": 488
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12423,
+            "people": [
+              11084,
+              12421
+            ],
+            "people names": [
+              "Breghlent Donevoet",
+              "Alene Meinoldosdochter"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1203": [
+        "1202": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.384
-          },
+            "topic": "neglected"
+          }
+        ],
+        "1209": [
           {
             "topic": "feelings change",
             "target": 11083,
-            "target name": "Hildebolding",
+            "target name": "Meinoldo",
             "state": "out of love",
             "relationship": 11085
           }
         ],
-        "1205": [
+        "1211": [
           {
-            "key": 11085,
-            "topic": "unmarried"
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
           },
           {
-            "topic": "person died",
-            "person": {
-              "key": 11083,
-              "name": "Hildebolding",
-              "age": 49,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
+            "topic": "neglected"
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0.122,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0.328,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
           }
         ]
       }
@@ -171,11 +219,11 @@
       "section": "stOly straetje.se5.c1",
       "street": "Oly straetje",
       "neighborhood": "kampbuurt",
-      "unique id": 490
+      "unique id": 488
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
         11085
       ]

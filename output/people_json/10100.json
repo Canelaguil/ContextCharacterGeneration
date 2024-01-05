@@ -1,53 +1,76 @@
 {
   "10100": {
     "alive": false,
-    "name": "Goneir",
-    "surname": "",
-    "full name": "Goneir",
+    "name": "Euffemia",
+    "surname": "Kenode",
+    "full name": "Euffemia Kenode",
     "born this way": {
       "sexuality label": "bi",
-      "sexuality": 0.3,
-      "romantic interest": 0.751,
-      "sex interest": 0.818,
-      "gender expression": 0.0,
+      "sexuality": 0.711,
+      "romantic interest": 0.748,
+      "sex interest": 0.801,
+      "gender expression": 0.323,
       "sex": "f"
     },
-    "age": 56,
-    "birth year": 1156,
+    "age": 48,
+    "birth year": 1166,
     "sex": "f",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.533,
+      "lawful-chaotic": 0.092,
       "nice-nasty": 0.0,
-      "honest-false": 0.853
+      "honest-false": 0.503
     },
     "attitude": {
-      "outgoing": 0.467,
-      "dream": 0.198
+      "outgoing": 0.431,
+      "dream": 0.154
     },
     "homsoc": {
       "means": {
-        "independent": false,
-        "taken_care_of": false,
-        "caretaker": false,
-        "needs_care": false
+        "independent": true,
+        "taken_care_of": true,
+        "caretaker": true,
+        "needs_care": false,
+        "flags": [
+          "caretaker",
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.107,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.35,
+        "gender expression expression": 0.056
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12250": {
+          "key": 12250,
+          "name": "Willekine",
+          "age": 41,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Euffemia (10100)",
+            "father": "Grote (10099)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10101,
-          15953
-        ]
+          15248,
+          16487
+        ],
+        "child": {
+          "birth": [
+            12252
+          ]
+        }
       }
     },
     "occupation": {
@@ -60,16 +83,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 3,
-      "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 9,
+      "eye_color": "blue",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
-        "S",
-        "S"
+        "C",
+        "C"
       ],
-      "health": 0.0,
-      "fertility": 0.636,
+      "health": 0.628,
+      "fertility": 0.628,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -81,55 +104,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.656
+            "new_health": 0.628
           },
           "death": false
         },
-        "1206": {
+        "1213": {
           "health": {
-            "change": true,
-            "value_change": -0.192,
-            "new_health": 0.464
-          },
-          "death": false
-        },
-        "1207": {
-          "health": {
-            "change": true,
-            "value_change": -0.166,
-            "new_health": 0.298
-          },
-          "death": false
-        },
-        "1208": {
-          "health": {
-            "change": true,
-            "value_change": -0.153,
-            "new_health": 0.145
-          },
-          "death": false
-        },
-        "1209": {
-          "health": {
-            "change": true,
-            "value_change": -0.117,
-            "new_health": 0.028
-          },
-          "death": false
-        },
-        "1210": {
-          "health": {
-            "change": true,
-            "value_change": -0.026,
-            "new_health": 0.002
-          },
-          "death": false
-        },
-        "1211": {
-          "health": {
-            "change": true,
-            "value_change": -0.002,
-            "new_health": 0.0
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.628
           },
           "death": true
         }
@@ -144,8 +127,8 @@
               10100
             ],
             "people names": [
-              "Amilius Cornuit",
-              "Goneir"
+              "Grote Manghenus",
+              "Euffemia Kenode"
             ],
             "label": "spouse",
             "committed": true
@@ -158,11 +141,25 @@
               "section": "stSlyck straet.se1.c1",
               "street": "Slyck straet",
               "neighborhood": "varkensbuurt",
-              "unique id": 42
+              "unique id": 36
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12252,
+            "people": [
+              10100,
+              12250
+            ],
+            "people names": [
+              "Euffemia Kenode",
+              "Willekine"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1201": [
+        "1206": [
           {
             "key": 10101,
             "topic": "unmarried"
@@ -171,8 +168,8 @@
             "topic": "person died",
             "person": {
               "key": 10099,
-              "name": "Amilius Cornuit",
-              "age": 37,
+              "name": "Grote Manghenus",
+              "age": 53,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
@@ -182,83 +179,114 @@
           {
             "topic": "not enough income",
             "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1202": [
+            "inhabitants": [
+              20940,
+              23782,
+              24222,
+              24460,
+              24672
+            ]
+          },
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1203": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1204": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1205": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1206": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "neglected"
           }
         ],
         "1207": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1208": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1209": [
-          {
             "topic": "new relationship",
-            "key": 15953,
+            "key": 15248,
             "people": [
-              10963,
+              12199,
               10100
             ],
             "people names": [
-              "Lieuin Svancken",
-              "Goneir"
+              "Ringot Snauel",
+              "Euffemia Kenode"
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stSt. Ians straet.se5.c1",
-              "street": "St. Ians straet",
-              "neighborhood": "kampbuurt",
-              "unique id": 433
-            }
+            "topic": "now caretaker",
+            "care dependants": [
+              13427,
+              23495,
+              23782,
+              24222,
+              24460,
+              24672
+            ]
+          },
+          {
+            "topic": "new caretaker",
+            "person": 10100
+          }
+        ],
+        "1208": [
+          {
+            "topic": "feelings change",
+            "target": 12199,
+            "target name": "Ringot Snauel",
+            "state": "solid love",
+            "relationship": 15248
+          }
+        ],
+        "1211": [
+          {
+            "key": 15248,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12199,
+              "name": "Ringot Snauel",
+              "age": 57,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              20940,
+              23782,
+              24222,
+              24460,
+              24672
+            ]
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              20940,
+              23782,
+              24222,
+              24460,
+              24672
+            ]
+          }
+        ],
+        "1213": [
+          {
+            "topic": "new relationship",
+            "key": 16487,
+            "people": [
+              11689,
+              10100
+            ],
+            "people names": [
+              "Euerardus Regis",
+              "Euffemia Kenode"
+            ],
+            "label": "spouse",
+            "committed": true
           }
         ]
       }
@@ -267,17 +295,18 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stSt. Ians straet.se5.c1",
-      "street": "St. Ians straet",
-      "neighborhood": "kampbuurt",
-      "unique id": 433
+      "section": "stSlyck straet.se1.c1",
+      "street": "Slyck straet",
+      "neighborhood": "varkensbuurt",
+      "unique id": 36
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
         10101,
-        15953
+        15248,
+        16487
       ]
     }
   }

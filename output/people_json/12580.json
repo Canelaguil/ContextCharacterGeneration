@@ -1,81 +1,178 @@
 {
   "12580": {
-    "alive": false,
-    "name": "Trove",
-    "surname": "Bara",
-    "full name": "Trove Bara",
+    "alive": true,
+    "name": "Jurre",
+    "surname": "",
+    "full name": "Jurre",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.031,
-      "romantic interest": 0.436,
-      "sex interest": 0.611,
-      "gender expression": 0.293,
+      "sexuality": 0.054,
+      "romantic interest": 0.326,
+      "sex interest": 0.539,
+      "gender expression": 0.168,
       "sex": "m"
     },
-    "age": 6,
+    "age": 49,
     "birth year": 1200,
     "sex": "m",
     "income class": [
-      2,
-      "middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.588,
-      "nice-nasty": 0.951,
-      "honest-false": 0.886
+      "lawful-chaotic": 0.568,
+      "nice-nasty": 0.603,
+      "honest-false": 0.318
     },
     "attitude": {
-      "outgoing": 0.202,
-      "dream": 0.244
+      "outgoing": 0.396,
+      "dream": 0.057
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
-        "needs_care": true
+        "caretaker": true,
+        "needs_care": false,
+        "flags": [
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.024,
-        "gender expression expression": 0.208
+        "sexuality expression": 0.048,
+        "gender expression expression": 0.07
       }
     },
     "network": {
       "parents": {
-        "mother": "Ghoudekinen (11987)",
-        "father": "Snelle (11986)"
+        "mother": "Ermerut (11702)",
+        "father": "Waldfridus (11701)"
       },
-      "children": {},
+      "children": {
+        "18769": {
+          "key": 18769,
+          "name": "Diddekin",
+          "age": 23,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Hersewindis (13050)",
+            "father": "Jurre (12580)"
+          }
+        },
+        "19318": {
+          "key": 19318,
+          "name": "Aue van Hersewindis",
+          "age": 21,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Hersewindis (13050)",
+            "father": "Jurre (12580)"
+          }
+        },
+        "20146": {
+          "key": 20146,
+          "name": "Jute van Jurre",
+          "age": 18,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Hersewindis (13050)",
+            "father": "Jurre (12580)"
+          }
+        },
+        "22050": {
+          "key": 22050,
+          "name": "Hadewigis",
+          "age": 1,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Hersewindis (13050)",
+            "father": "Jurre (12580)"
+          }
+        }
+      },
       "relationship keys": {
         "parent": [
           12581,
           12582
         ],
         "sibling": [
-          13019
-        ]
+          12957
+        ],
+        "spouse": [
+          17404,
+          23867
+        ],
+        "child": {
+          "birth": [
+            18770,
+            19319,
+            20147,
+            22051
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        2,
-        "middle class"
+        1,
+        "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.824,
+      "all_incomes": [
+        1.063,
+        1.036,
+        1.081,
+        1.117,
+        1.105,
+        1.079,
+        0.981,
+        1.053,
+        1.039,
+        1.096,
+        1.145,
+        1.133,
+        1.203,
+        1.183,
+        1.099,
+        1.049,
+        1.029,
+        0.921,
+        0.99,
+        0.925,
+        0.974,
+        0.947,
+        0.847,
+        0.854,
+        0.891,
+        0.832,
+        0.901,
+        0.876,
+        0.859,
+        0.811,
+        0.824
+      ],
+      "job": {
+        "lawful": true,
+        "honest": true
+      }
     },
     "genetics": {
       "skin_color": 6,
-      "eye_color": "green",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "eye_color": "blue",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "C",
-        "C"
+        "S",
+        "S"
       ],
-      "health": 0.813,
-      "fertility": 0.856,
+      "health": 0.78,
+      "fertility": 0.809,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -87,17 +184,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.813
+            "new_health": 0.78
           },
           "death": false
-        },
-        "1206": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.813
-          },
-          "death": true
         }
       },
       "events": {
@@ -105,47 +194,433 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stCromme straet.se3.c2",
-              "street": "Cromme straet",
-              "neighborhood": "denhof",
-              "unique id": 883
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stNieu straet.se1.c1",
+              "street": "Nieu straet",
+              "neighborhood": "visbuurt",
+              "unique id": 762
             }
           }
         ],
         "1201": [
           {
             "topic": "new relationship",
-            "key": 13019,
+            "key": 12957,
             "people": [
               12580,
-              13016
+              12954
             ],
             "people names": [
-              "Trove Bara",
-              "Siabbo Bara"
+              "Jurre",
+              "Berta van Ermerut"
             ],
             "label": "sibling",
             "committed": false
+          }
+        ],
+        "1202": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11702,
+              "name": "Ermerut",
+              "age": 35,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "label": "parent"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "not enough income",
+            "income": 0.205,
+            "inhabitants": [
+              12580,
+              18717,
+              18960,
+              20717
+            ]
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              12580,
+              18717,
+              18960,
+              20717
+            ]
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              12580,
+              18717,
+              18960,
+              20717
+            ]
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0.567,
+            "inhabitants": [
+              12580,
+              18717,
+              18960,
+              20717
+            ]
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0.111,
+            "inhabitants": [
+              12580,
+              18717,
+              18960,
+              20717
+            ]
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1215": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11701,
+              "name": "Waldfridus",
+              "age": 46,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "parent"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              12580,
+              18717,
+              18960,
+              20717
+            ]
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1216": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              12580,
+              18717,
+              18960,
+              20717
+            ]
+          },
+          {
+            "topic": "new caretaker",
+            "person": 12954
+          }
+        ],
+        "1217": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              12580,
+              18717,
+              18960,
+              20717
+            ]
+          }
+        ],
+        "1218": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              12580,
+              18717,
+              18960,
+              20717
+            ]
+          }
+        ],
+        "1219": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.063
+          },
+          {
+            "topic": "new relationship",
+            "key": 17404,
+            "people": [
+              12580,
+              13050
+            ],
+            "people names": [
+              "Jurre",
+              "Hersewindis Hoeghen"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              12580,
+              18717,
+              18960,
+              20717
+            ]
+          }
+        ],
+        "1221": [
+          {
+            "topic": "feelings change",
+            "target": 13050,
+            "target name": "Hersewindis Hoeghen",
+            "state": "solid love",
+            "relationship": 17404
+          }
+        ],
+        "1225": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12954,
+              "name": "Berta van Ermerut",
+              "age": 23,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Ermerut (11702)",
+                "father": "Waldfridus (11701)"
+              }
+            },
+            "label": "sibling"
+          }
+        ],
+        "1226": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.053
+          },
+          {
+            "topic": "new relationship",
+            "key": 18770,
+            "people": [
+              12580,
+              18769
+            ],
+            "people names": [
+              "Jurre",
+              "Diddekin"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1228": [
+          {
+            "topic": "new relationship",
+            "key": 19319,
+            "people": [
+              12580,
+              19318
+            ],
+            "people names": [
+              "Jurre",
+              "Aue van Hersewindis"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1231": [
+          {
+            "topic": "new relationship",
+            "key": 20147,
+            "people": [
+              12580,
+              20146
+            ],
+            "people names": [
+              "Jurre",
+              "Jute van Jurre"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1237": [
+          {
+            "topic": "new relationship",
+            "key": 22051,
+            "people": [
+              12580,
+              22050
+            ],
+            "people names": [
+              "Jurre",
+              "Hadewigis"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 13050,
+            "target name": "Hersewindis Hoeghen",
+            "state": "out of love",
+            "relationship": 17404
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1238": [
+          {
+            "key": 17404,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 13050,
+              "name": "Hersewindis Hoeghen",
+              "age": 35,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Sophia (10106)",
+                "father": "Haghen (10105)"
+              }
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1239": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 22050,
+              "name": "Hadewigis",
+              "age": 1,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Hersewindis (13050)",
+                "father": "Jurre (12580)"
+              }
+            },
+            "label": "child"
+          }
+        ],
+        "1243": [
+          {
+            "topic": "new relationship",
+            "key": 23867,
+            "people": [
+              12580,
+              12789
+            ],
+            "people names": [
+              "Jurre",
+              "Lielde"
+            ],
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1245": [
+          {
+            "topic": "feelings change",
+            "target": 12789,
+            "target name": "Lielde",
+            "state": "out of love",
+            "relationship": 23867
+          }
+        ],
+        "1249": [
+          {
+            "key": 23867,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12789,
+              "name": "Lielde",
+              "age": 47,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Menoldis (10742)",
+                "father": "Trueb (10741)"
+              }
+            },
+            "label": "spouse"
           }
         ]
       }
     },
     "key": 12580,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stCromme straet.se3.c2",
-      "street": "Cromme straet",
-      "neighborhood": "denhof",
-      "unique id": 883
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stNieu straet.se1.c1",
+      "street": "Nieu straet",
+      "neighborhood": "visbuurt",
+      "unique id": 762
     },
     "relationship status": {
       "taken": false,
       "married": false,
       "relationships": [
-        13019
+        12957,
+        17404,
+        23867
       ]
     }
   }

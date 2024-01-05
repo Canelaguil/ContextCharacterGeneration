@@ -1,74 +1,111 @@
 {
   "10052": {
     "alive": false,
-    "name": "Aghata",
-    "surname": "Roden",
-    "full name": "Aghata Roden",
+    "name": "Nimme",
+    "surname": "",
+    "full name": "Nimme",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.022,
-      "romantic interest": 0.896,
-      "sex interest": 0.705,
-      "gender expression": 0.104,
+      "sexuality": 0.0,
+      "romantic interest": 0.742,
+      "sex interest": 0.56,
+      "gender expression": 0.17,
       "sex": "f"
     },
-    "age": 44,
-    "birth year": 1160,
+    "age": 55,
+    "birth year": 1165,
     "sex": "f",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.365,
-      "nice-nasty": 0.0,
-      "honest-false": 0.356
+      "lawful-chaotic": 0.724,
+      "nice-nasty": 0.514,
+      "honest-false": 0.152
     },
     "attitude": {
-      "outgoing": 0.522,
-      "dream": 0.474
+      "outgoing": 0.433,
+      "dream": 0.306
     },
     "homsoc": {
       "means": {
-        "independent": false,
-        "taken_care_of": false,
-        "caretaker": false,
-        "needs_care": false
+        "independent": true,
+        "taken_care_of": true,
+        "caretaker": true,
+        "needs_care": false,
+        "flags": [
+          "caretaker",
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.014,
-        "gender expression expression": 0.07
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.05
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14247": {
+          "key": 14247,
+          "name": "Rembrandus Wybelszoon",
+          "age": 24,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Nimme (10052)",
+            "father": "Wybel (10051)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          10053
-        ]
+          10053,
+          15905
+        ],
+        "child": {
+          "birth": [
+            14249
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.059,
+      "all_incomes": [
+        1.14,
+        1.312,
+        1.358,
+        1.055,
+        1.035,
+        0.547,
+        1.11,
+        0.67,
+        1.059
+      ],
+      "job": {
+        "lawful": false,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 2,
-      "eye_color": "green",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "skin_color": 8,
+      "eye_color": "brown",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.773,
-      "fertility": 0.785,
+      "health": 0.0,
+      "fertility": 0.735,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -80,15 +117,47 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.773
+            "new_health": 0.742
           },
           "death": false
         },
-        "1203": {
+        "1215": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.773
+            "change": true,
+            "value_change": -0.243,
+            "new_health": 0.499
+          },
+          "death": false
+        },
+        "1216": {
+          "health": {
+            "change": true,
+            "value_change": -0.202,
+            "new_health": 0.297
+          },
+          "death": false
+        },
+        "1217": {
+          "health": {
+            "change": true,
+            "value_change": -0.216,
+            "new_health": 0.081
+          },
+          "death": false
+        },
+        "1218": {
+          "health": {
+            "change": true,
+            "value_change": -0.069,
+            "new_health": 0.012
+          },
+          "death": false
+        },
+        "1219": {
+          "health": {
+            "change": true,
+            "value_change": -0.012,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -103,8 +172,8 @@
               10052
             ],
             "people names": [
-              "Pelegrim",
-              "Aghata Roden"
+              "Wybel",
+              "Nimme"
             ],
             "label": "spouse",
             "committed": true
@@ -117,8 +186,150 @@
               "section": "stUterechse straet.se3.c2",
               "street": "Uterechse straet",
               "neighborhood": "varkensbuurt",
-              "unique id": 21
+              "unique id": 20
             }
+          }
+        ],
+        "1205": [
+          {
+            "topic": "new relationship",
+            "key": 14249,
+            "people": [
+              10052,
+              14247
+            ],
+            "people names": [
+              "Nimme",
+              "Rembrandus Wybelszoon"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1208": [
+          {
+            "key": 10053,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10051,
+              "name": "Wybel",
+              "age": 35,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              14572,
+              16241,
+              18389,
+              19361,
+              14388,
+              17599,
+              23212,
+              17544,
+              24059,
+              24235,
+              25244
+            ]
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              14572,
+              16241,
+              18389,
+              19361,
+              14388,
+              17599,
+              23212,
+              17544,
+              24059,
+              24235,
+              25244
+            ]
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": [
+              17671,
+              17846,
+              18078,
+              18264,
+              18470,
+              23212,
+              24059,
+              24235,
+              25244
+            ]
+          },
+          {
+            "topic": "new caretaker",
+            "person": 10052
+          }
+        ],
+        "1210": [
+          {
+            "topic": "new relationship",
+            "key": 15905,
+            "people": [
+              11113,
+              10052
+            ],
+            "people names": [
+              "Boidin",
+              "Nimme"
+            ],
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1211": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.14
+          }
+        ],
+        "1216": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.547
+          }
+        ],
+        "1217": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.11
+          }
+        ],
+        "1218": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.67
+          }
+        ],
+        "1219": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.059
           }
         ]
       }
@@ -130,13 +341,14 @@
       "section": "stUterechse straet.se3.c2",
       "street": "Uterechse straet",
       "neighborhood": "varkensbuurt",
-      "unique id": 21
+      "unique id": 20
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        10053
+        10053,
+        15905
       ]
     }
   }

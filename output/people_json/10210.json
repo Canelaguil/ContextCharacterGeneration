@@ -1,43 +1,46 @@
 {
   "10210": {
     "alive": false,
-    "name": "Wlfarde",
-    "surname": "Svancken",
-    "full name": "Wlfarde Svancken",
+    "name": "Rodolf",
+    "surname": "Regis",
+    "full name": "Rodolf Regis",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.029,
-      "romantic interest": 0.6,
-      "sex interest": 0.673,
-      "gender expression": 0.069,
+      "sexuality": 0.011,
+      "romantic interest": 0.697,
+      "sex interest": 0.834,
+      "gender expression": 0.32,
       "sex": "m"
     },
-    "age": 48,
-    "birth year": 1154,
+    "age": 35,
+    "birth year": 1171,
     "sex": "m",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.057,
-      "nice-nasty": 0.999,
-      "honest-false": 0.859
+      "lawful-chaotic": 0.0,
+      "nice-nasty": 0.194,
+      "honest-false": 0.01
     },
     "attitude": {
-      "outgoing": 0.508,
-      "dream": 0.049
+      "outgoing": 0.398,
+      "dream": 0.483
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
-        "needs_care": false
+        "needs_care": false,
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.01,
-        "gender expression expression": 0.019
+        "sexuality expression": 0.007,
+        "gender expression expression": 0.145
       }
     },
     "network": {
@@ -55,28 +58,32 @@
         1,
         "lower middle class"
       ],
-      "income": 1.416,
+      "income": 0.468,
       "all_incomes": [
-        1.239,
-        1.249,
-        1.416
+        0.0,
+        0.0,
+        0.163,
+        0.0,
+        0.464,
+        0.384,
+        0.468
       ],
       "job": {
         "lawful": false,
-        "honest": true
+        "honest": false
       }
     },
     "genetics": {
-      "skin_color": 4,
-      "eye_color": "green",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "skin_color": 2,
+      "eye_color": "brown",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "S",
+        "C",
         "C"
       ],
-      "health": 0.733,
-      "fertility": 0.703,
+      "health": 0.826,
+      "fertility": 0.834,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -88,15 +95,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.733
+            "new_health": 0.826
           },
           "death": false
         },
-        "1201": {
+        "1205": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.733
+            "new_health": 0.826
           },
           "death": true
         }
@@ -106,7 +113,7 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.239
+            "income": 0.0
           },
           {
             "topic": "new relationship",
@@ -116,8 +123,8 @@
               10211
             ],
             "people names": [
-              "Wlfarde Svancken",
-              "Vreile Neue"
+              "Rodolf Regis",
+              "Linnea"
             ],
             "label": "spouse",
             "committed": true
@@ -127,11 +134,67 @@
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stHelle voet.se3.c1",
-              "street": "Helle voet",
-              "neighborhood": "jorisbuurt",
-              "unique id": 94
+              "section": "stMerrien hoof.se3.c1",
+              "street": "Merrien hoof",
+              "neighborhood": "varkensbuurt",
+              "unique id": 81
             }
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1201": [
+          {
+            "topic": "feelings change",
+            "target": 10211,
+            "target name": "Linnea",
+            "state": "out of love",
+            "relationship": 10212
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.163,
+            "inhabitants": []
+          }
+        ],
+        "1202": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1204": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.384
+          },
+          {
+            "key": 10212,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10211,
+              "name": "Linnea",
+              "age": 48,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.468
           }
         ]
       }
@@ -140,14 +203,14 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stHelle voet.se3.c1",
-      "street": "Helle voet",
-      "neighborhood": "jorisbuurt",
-      "unique id": 94
+      "section": "stMerrien hoof.se3.c1",
+      "street": "Merrien hoof",
+      "neighborhood": "varkensbuurt",
+      "unique id": 81
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         10212
       ]

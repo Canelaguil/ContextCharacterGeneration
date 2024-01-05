@@ -1,78 +1,119 @@
 {
   "12247": {
     "alive": false,
-    "name": "Aghata",
-    "surname": "Kiekin",
-    "full name": "Aghata Kiekin",
+    "name": "Rycaldis",
+    "surname": "Croenekin",
+    "full name": "Rycaldis Croenekin",
     "born this way": {
-      "sexuality label": "bi",
-      "sexuality": 0.538,
-      "romantic interest": 0.599,
-      "sex interest": 0.754,
-      "gender expression": 0.157,
+      "sexuality label": "straight",
+      "sexuality": 0.036,
+      "romantic interest": 0.982,
+      "sex interest": 0.661,
+      "gender expression": 0.278,
       "sex": "f"
     },
-    "age": 1,
+    "age": 24,
     "birth year": 1200,
     "sex": "f",
     "income class": [
-      1,
-      "lower middle class"
+      2,
+      "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.999,
-      "honest-false": 0.321
+      "lawful-chaotic": 0.725,
+      "nice-nasty": 0.479,
+      "honest-false": 0.33
     },
     "attitude": {
-      "outgoing": 0.458,
-      "dream": 0.648
+      "outgoing": 0.757,
+      "dream": 0.276
     },
     "homsoc": {
       "means": {
         "independent": false,
-        "taken_care_of": false,
-        "caretaker": false,
-        "needs_care": true
+        "taken_care_of": true,
+        "caretaker": true,
+        "needs_care": false,
+        "flags": [
+          "caretaker",
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.257,
-        "gender expression expression": 0.064
+        "sexuality expression": 0.022,
+        "gender expression expression": 0.276
       }
     },
     "network": {
       "parents": {
-        "mother": "Cecilia (10133)",
-        "father": "Ebram (10132)"
+        "mother": "Lelien (10076)",
+        "father": "Arnekin (10075)"
       },
-      "children": {},
+      "children": {
+        "17584": {
+          "key": 17584,
+          "name": "Esa Borluet",
+          "age": 29,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Rycaldis (12247)",
+            "father": "Kolekinus (12235)"
+          }
+        },
+        "18315": {
+          "key": 18315,
+          "name": "Snelle Kolekinusszoon",
+          "age": 21,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Rycaldis (12247)",
+            "father": "Kolekinus (12235)"
+          }
+        }
+      },
       "relationship keys": {
         "parent": [
           12248,
           12249
-        ]
+        ],
+        "sibling": [
+          12683,
+          15537
+        ],
+        "spouse": [
+          17291
+        ],
+        "child": {
+          "birth": [
+            17586,
+            18317
+          ]
+        }
       }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        1,
-        "lower middle class"
+        2,
+        "middle class"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 1,
-      "eye_color": "brown",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "skin_color": 8,
+      "eye_color": "blue",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "S",
-        "S"
+        "C"
       ],
-      "health": 0.632,
-      "fertility": 0.689,
+      "health": 0.557,
+      "fertility": 0.55,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -84,9 +125,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.632
+            "new_health": 0.557
           },
-          "death": true
+          "death": false
         }
       },
       "events": {
@@ -94,30 +135,229 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stKoe straet.se1.c1",
-              "street": "Koe straet",
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stVerckens merct.se3.c2",
+              "street": "Verckens merct",
               "neighborhood": "varkensbuurt",
-              "unique id": 58
+              "unique id": 28
             }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 12683,
+            "people": [
+              12247,
+              12680
+            ],
+            "people names": [
+              "Rycaldis Croenekin",
+              "Woltwigis Croenekin"
+            ],
+            "label": "sibling",
+            "committed": false
+          }
+        ],
+        "1209": [
+          {
+            "topic": "new relationship",
+            "key": 15537,
+            "people": [
+              12247,
+              15534
+            ],
+            "people names": [
+              "Rycaldis Croenekin",
+              "Waldrada Croenekin"
+            ],
+            "label": "sibling",
+            "committed": false
+          }
+        ],
+        "1211": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10076,
+              "name": "Lelien Ledeghe",
+              "age": 41,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "label": "parent"
+          }
+        ],
+        "1213": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10075,
+              "name": "Arnekin Croenekin",
+              "age": 53,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "parent"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              13352,
+              19719,
+              21903,
+              22268,
+              17988,
+              24492
+            ]
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              13352,
+              19719,
+              21903,
+              22268,
+              17988,
+              24492
+            ]
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": [
+              14036,
+              15758,
+              17584,
+              21903,
+              22268,
+              24062,
+              24492
+            ]
+          },
+          {
+            "topic": "new caretaker",
+            "person": 12247
+          }
+        ],
+        "1215": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              13352,
+              19719,
+              21903,
+              22268,
+              17988,
+              24492
+            ]
+          }
+        ],
+        "1216": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              13352,
+              19719,
+              21903,
+              22268,
+              17988,
+              24492
+            ]
+          }
+        ],
+        "1217": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              13352,
+              19719,
+              21903,
+              22268,
+              17988,
+              24492
+            ]
+          }
+        ],
+        "1218": [
+          {
+            "topic": "new relationship",
+            "key": 17291,
+            "people": [
+              12235,
+              12247
+            ],
+            "people names": [
+              "Kolekinus Borluet",
+              "Rycaldis Croenekin"
+            ],
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1220": [
+          {
+            "topic": "new relationship",
+            "key": 17586,
+            "people": [
+              12247,
+              17584
+            ],
+            "people names": [
+              "Rycaldis Croenekin",
+              "Esa Borluet"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1224": [
+          {
+            "topic": "new relationship",
+            "key": 18317,
+            "people": [
+              12247,
+              18315
+            ],
+            "people names": [
+              "Rycaldis Croenekin",
+              "Snelle Kolekinusszoon"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ]
       }
     },
     "key": 12247,
     "home": {
-      "income class": 1,
-      "income class label": "lower middle class",
-      "section": "stKoe straet.se1.c1",
-      "street": "Koe straet",
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stVerckens merct.se3.c2",
+      "street": "Verckens merct",
       "neighborhood": "varkensbuurt",
-      "unique id": 58
+      "unique id": 28
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
-      "relationships": []
+      "taken": true,
+      "married": true,
+      "relationships": [
+        12683,
+        15537,
+        17291
+      ]
     }
   }
 }

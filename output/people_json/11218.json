@@ -1,52 +1,73 @@
 {
   "11218": {
     "alive": false,
-    "name": "Diddekin",
-    "surname": "Ulf",
-    "full name": "Diddekin Ulf",
+    "name": "Sanders",
+    "surname": "Vraet",
+    "full name": "Sanders Vraet",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.081,
-      "romantic interest": 0.641,
-      "sex interest": 0.752,
-      "gender expression": 0.281,
+      "sexuality": 0.067,
+      "romantic interest": 0.912,
+      "sex interest": 0.56,
+      "gender expression": 0.185,
       "sex": "m"
     },
-    "age": 52,
-    "birth year": 1151,
+    "age": 42,
+    "birth year": 1169,
     "sex": "m",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.084,
-      "honest-false": 0.611
+      "lawful-chaotic": 0.22,
+      "nice-nasty": 0.999,
+      "honest-false": 0.892
     },
     "attitude": {
-      "outgoing": 0.499,
-      "dream": 0.377
+      "outgoing": 0.554,
+      "dream": 0.347
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
-        "needs_care": false
+        "needs_care": false,
+        "flags": [
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.039,
-        "gender expression expression": 0.102
+        "sexuality expression": 0.049,
+        "gender expression expression": 0.144
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12887": {
+          "key": 12887,
+          "name": "Atghardis",
+          "age": 48,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Hadewigis (11219)",
+            "father": "Sanders (11218)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11220
-        ]
+        ],
+        "child": {
+          "birth": [
+            12888
+          ]
+        }
       }
     },
     "occupation": {
@@ -55,12 +76,20 @@
         2,
         "middle class"
       ],
-      "income": 1.202,
+      "income": 0.034,
       "all_incomes": [
-        1.085,
-        1.057,
-        1.091,
-        1.202
+        0.925,
+        0.811,
+        0.782,
+        0.838,
+        0.774,
+        0.7,
+        0.596,
+        0.396,
+        0.183,
+        0.246,
+        0.288,
+        0.034
       ],
       "job": {
         "lawful": false,
@@ -68,16 +97,16 @@
       }
     },
     "genetics": {
-      "skin_color": 6,
-      "eye_color": "blue",
-      "hair_color": "red",
-      "hair_color_code": 3,
+      "skin_color": 1,
+      "eye_color": "brown",
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
-        "C",
+        "S",
         "S"
       ],
-      "health": 0.151,
-      "fertility": 0.693,
+      "health": 0.714,
+      "fertility": 0.616,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -89,23 +118,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.62
+            "new_health": 0.714
           },
           "death": false
         },
-        "1201": {
+        "1210": {
           "health": {
-            "change": true,
-            "value_change": -0.216,
-            "new_health": 0.404
-          },
-          "death": false
-        },
-        "1202": {
-          "health": {
-            "change": true,
-            "value_change": -0.253,
-            "new_health": 0.151
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.714
           },
           "death": true
         }
@@ -115,7 +136,7 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.085
+            "income": 0.925
           },
           {
             "topic": "new relationship",
@@ -125,8 +146,8 @@
               11219
             ],
             "people names": [
-              "Diddekin Ulf",
-              "Lelien Kiekiins"
+              "Sanders Vraet",
+              "Hadewigis Loeuin"
             ],
             "label": "spouse",
             "committed": true
@@ -143,13 +164,103 @@
             }
           }
         ],
-        "1202": [
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 12888,
+            "people": [
+              11218,
+              12887
+            ],
+            "people names": [
+              "Sanders Vraet",
+              "Atghardis"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
           {
             "topic": "feelings change",
             "target": 11219,
-            "target name": "Lelien Kiekiins",
+            "target name": "Hadewigis Loeuin",
             "state": "solid love",
             "relationship": 11220
+          }
+        ],
+        "1204": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.7
+          }
+        ],
+        "1206": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.396
+          }
+        ],
+        "1207": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.183
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.183,
+            "inhabitants": [
+              13880,
+              13413
+            ]
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0.246,
+            "inhabitants": [
+              13880,
+              13413
+            ]
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0.288,
+            "inhabitants": [
+              13880,
+              13413
+            ]
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.034
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.034,
+            "inhabitants": [
+              13880,
+              13413
+            ]
+          },
+          {
+            "topic": "neglected"
           }
         ]
       }

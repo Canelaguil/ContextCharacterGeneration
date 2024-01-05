@@ -1,52 +1,72 @@
 {
   "11113": {
     "alive": false,
-    "name": "Tielen",
+    "name": "Boidin",
     "surname": "",
-    "full name": "Tielen",
+    "full name": "Boidin",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.716,
-      "sex interest": 0.644,
-      "gender expression": 0.102,
+      "sexuality": 0.008,
+      "romantic interest": 0.692,
+      "sex interest": 0.7,
+      "gender expression": 0.261,
       "sex": "m"
     },
-    "age": 37,
-    "birth year": 1169,
+    "age": 57,
+    "birth year": 1172,
     "sex": "m",
     "income class": [
       3,
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.081,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.671,
+      "nice-nasty": 0.601,
+      "honest-false": 0.0
     },
     "attitude": {
-      "outgoing": 0.487,
-      "dream": 0.283
+      "outgoing": 0.833,
+      "dream": 0.216
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
         "caretaker": false,
-        "needs_care": false
+        "needs_care": false,
+        "flags": []
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.094
+        "sexuality expression": 0.004,
+        "gender expression expression": 0.176
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12864": {
+          "key": 12864,
+          "name": "Gerburgis",
+          "age": 48,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Trame (11114)",
+            "father": "Boidin (11113)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          11115
-        ]
+          11115,
+          15905,
+          17811
+        ],
+        "child": {
+          "birth": [
+            12865
+          ]
+        }
       }
     },
     "occupation": {
@@ -55,32 +75,55 @@
         3,
         "upper middle class"
       ],
-      "income": 1.021,
+      "income": 1.057,
       "all_incomes": [
-        0.994,
-        0.944,
-        0.972,
-        0.963,
-        0.941,
-        0.956,
-        1.021
+        0.893,
+        0.696,
+        0.826,
+        1.122,
+        1.434,
+        1.212,
+        1.39,
+        1.308,
+        1.37,
+        1.252,
+        1.387,
+        1.321,
+        1.453,
+        1.499,
+        1.375,
+        1.403,
+        1.272,
+        1.141,
+        1.215,
+        1.089,
+        1.422,
+        1.345,
+        1.214,
+        1.192,
+        1.142,
+        1.093,
+        1.31,
+        1.236,
+        1.191,
+        1.057
       ],
       "job": {
         "lawful": true,
-        "honest": true
+        "honest": false
       }
     },
     "genetics": {
-      "skin_color": 6,
-      "eye_color": "green",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 0,
+      "eye_color": "brown",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
         "C",
         "C"
       ],
-      "health": 0.715,
-      "fertility": 0.764,
+      "health": 0.083,
+      "fertility": 0.791,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -92,15 +135,39 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.715
+            "new_health": 0.812
           },
           "death": false
         },
-        "1205": {
+        "1225": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.715
+            "change": true,
+            "value_change": -0.175,
+            "new_health": 0.637
+          },
+          "death": false
+        },
+        "1226": {
+          "health": {
+            "change": true,
+            "value_change": -0.135,
+            "new_health": 0.502
+          },
+          "death": false
+        },
+        "1227": {
+          "health": {
+            "change": true,
+            "value_change": -0.215,
+            "new_health": 0.287
+          },
+          "death": false
+        },
+        "1228": {
+          "health": {
+            "change": true,
+            "value_change": -0.204,
+            "new_health": 0.083
           },
           "death": true
         }
@@ -110,7 +177,12 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.994
+            "income": 0.893
+          },
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.696
           },
           {
             "topic": "new relationship",
@@ -120,8 +192,8 @@
               11114
             ],
             "people names": [
-              "Tielen",
-              "Imma Callart"
+              "Boidin",
+              "Trame"
             ],
             "label": "spouse",
             "committed": true
@@ -138,29 +210,133 @@
             }
           }
         ],
-        "1205": [
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 12865,
+            "people": [
+              11113,
+              12864
+            ],
+            "people names": [
+              "Boidin",
+              "Gerburgis"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 11114,
+            "target name": "Trame",
+            "state": "out of love",
+            "relationship": 11115
+          }
+        ],
+        "1202": [
           {
             "topic": "job notice",
             "notice": "comfortable earnings",
-            "income": 1.021
+            "income": 1.122
+          }
+        ],
+        "1208": [
+          {
+            "key": 11115,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11114,
+              "name": "Trame",
+              "age": 54,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "new relationship",
+            "key": 15905,
+            "people": [
+              11113,
+              10052
+            ],
+            "people names": [
+              "Boidin",
+              "Nimme"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stUterechse straet.se3.c2",
+              "street": "Uterechse straet",
+              "neighborhood": "varkensbuurt",
+              "unique id": 20
+            }
+          }
+        ],
+        "1220": [
+          {
+            "key": 15905,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10052,
+              "name": "Nimme",
+              "age": 55,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          }
+        ],
+        "1222": [
+          {
+            "topic": "new relationship",
+            "key": 17811,
+            "people": [
+              11113,
+              11285
+            ],
+            "people names": [
+              "Boidin",
+              "Verthwi"
+            ],
+            "label": "spouse",
+            "committed": true
           }
         ]
       }
     },
     "key": 11113,
     "home": {
-      "income class": 3,
-      "income class label": "upper middle class",
-      "section": "stLange gracht.se3.c3",
-      "street": "Lange gracht",
-      "neighborhood": "olvbuurt",
-      "unique id": 501
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stUterechse straet.se3.c2",
+      "street": "Uterechse straet",
+      "neighborhood": "varkensbuurt",
+      "unique id": 20
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        11115
+        11115,
+        15905,
+        17811
       ]
     }
   }

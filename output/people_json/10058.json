@@ -1,19 +1,19 @@
 {
   "10058": {
     "alive": false,
-    "name": "Uergina",
-    "surname": "Duue",
-    "full name": "Uergina Duue",
+    "name": "Jute",
+    "surname": "Bloeme",
+    "full name": "Jute Bloeme",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.124,
-      "romantic interest": 0.515,
-      "sex interest": 0.863,
-      "gender expression": 0.0,
+      "sexuality": 0.174,
+      "romantic interest": 0.733,
+      "sex interest": 0.795,
+      "gender expression": 0.113,
       "sex": "f"
     },
-    "age": 52,
-    "birth year": 1155,
+    "age": 37,
+    "birth year": 1170,
     "sex": "f",
     "income class": [
       2,
@@ -21,32 +21,62 @@
     ],
     "personality": {
       "lawful-chaotic": 0.0,
-      "nice-nasty": 0.724,
-      "honest-false": 0.047
+      "nice-nasty": 0.729,
+      "honest-false": 0.507
     },
     "attitude": {
-      "outgoing": 0.356,
-      "dream": 0.788
+      "outgoing": 0.377,
+      "dream": 0.406
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
-        "needs_care": false
+        "needs_care": false,
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.07,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.069,
+        "gender expression expression": 0.034
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13880": {
+          "key": 13880,
+          "name": "Victoria Vosseken",
+          "age": 45,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Jute (10058)",
+            "father": "Arnekin (10057)"
+          }
+        },
+        "14635": {
+          "key": 14635,
+          "name": "Flore Vosseken",
+          "age": 16,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Jute (10058)",
+            "father": "Arnekin (10057)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10059
-        ]
+        ],
+        "child": {
+          "birth": [
+            13882,
+            14637
+          ]
+        }
       }
     },
     "occupation": {
@@ -59,16 +89,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 8,
-      "eye_color": "blue",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 4,
+      "eye_color": "brown",
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
       "hair_type": [
         "S",
         "S"
       ],
-      "health": 0.0,
-      "fertility": 0.407,
+      "health": 0.766,
+      "fertility": 0.765,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -80,25 +110,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.479
+            "new_health": 0.766
           },
           "death": false
-        },
-        "1205": {
-          "health": {
-            "change": true,
-            "value_change": -0.32,
-            "new_health": 0.159
-          },
-          "death": false
-        },
-        "1206": {
-          "health": {
-            "change": true,
-            "value_change": -0.159,
-            "new_health": 0.0
-          },
-          "death": true
         }
       },
       "events": {
@@ -111,8 +125,8 @@
               10058
             ],
             "people names": [
-              "Segher Manghenus",
-              "Uergina Duue"
+              "Arnekin Vosseken",
+              "Jute Bloeme"
             ],
             "label": "spouse",
             "committed": true
@@ -125,8 +139,49 @@
               "section": "stVerckens merct.se1.c2",
               "street": "Verckens merct",
               "neighborhood": "varkensbuurt",
-              "unique id": 23
+              "unique id": 22
             }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "feelings change",
+            "target": 10057,
+            "target name": "Arnekin Vosseken",
+            "state": "out of love",
+            "relationship": 10059
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 13882,
+            "people": [
+              10058,
+              13880
+            ],
+            "people names": [
+              "Jute Bloeme",
+              "Victoria Vosseken"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 14637,
+            "people": [
+              10058,
+              14635
+            ],
+            "people names": [
+              "Jute Bloeme",
+              "Flore Vosseken"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ]
       }
@@ -138,7 +193,7 @@
       "section": "stVerckens merct.se1.c2",
       "street": "Verckens merct",
       "neighborhood": "varkensbuurt",
-      "unique id": 23
+      "unique id": 22
     },
     "relationship status": {
       "taken": true,

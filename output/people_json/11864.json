@@ -1,57 +1,83 @@
 {
   "11864": {
     "alive": false,
-    "name": "Hadewigis",
-    "surname": "Canne",
-    "full name": "Hadewigis Canne",
+    "name": "Ricmoden",
+    "surname": "Kiekin",
+    "full name": "Ricmoden Kiekin",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.135,
-      "romantic interest": 0.342,
-      "sex interest": 0.629,
-      "gender expression": 0.0,
+      "sexuality": 0.085,
+      "romantic interest": 0.807,
+      "sex interest": 0.774,
+      "gender expression": 0.125,
       "sex": "f"
     },
-    "age": 18,
-    "birth year": 1184,
+    "age": 28,
+    "birth year": 1179,
     "sex": "f",
     "income class": [
       4,
       "nobility"
     ],
     "personality": {
-      "lawful-chaotic": 0.614,
-      "nice-nasty": 0.302,
-      "honest-false": 0.827
+      "lawful-chaotic": 0.045,
+      "nice-nasty": 0.751,
+      "honest-false": 0.619
     },
     "attitude": {
-      "outgoing": 0.498,
-      "dream": 0.028
+      "outgoing": 0.658,
+      "dream": 0.115
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
-        "needs_care": false
+        "needs_care": false,
+        "flags": [
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.091,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.035,
+        "gender expression expression": 0.042
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "13007": {
-          "key": 13007,
-          "name": "Brun",
-          "age": 3,
-          "alive": false,
+        "13363": {
+          "key": 13363,
+          "name": "Thieleman Kybbenszoon",
+          "age": 47,
+          "alive": true,
           "sex": "m",
           "parents": {
-            "mother": "Hadewigis (11864)",
-            "father": "Dauid (11863)"
+            "mother": "Ricmoden (11864)",
+            "father": "Kybben (11863)"
+          }
+        },
+        "13817": {
+          "key": 13817,
+          "name": "Rolekine",
+          "age": 46,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Ricmoden (11864)",
+            "father": "Kybben (11863)"
+          }
+        },
+        "14182": {
+          "key": 14182,
+          "name": "Reymodis",
+          "age": 26,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Ricmoden (11864)",
+            "father": "Kybben (11863)"
           }
         }
       },
@@ -61,7 +87,9 @@
         ],
         "child": {
           "birth": [
-            13009
+            13365,
+            13819,
+            14184
           ]
         }
       }
@@ -76,16 +104,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 2,
-      "eye_color": "brown",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "skin_color": 6,
+      "eye_color": "green",
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
         "S",
-        "S"
+        "C"
       ],
-      "health": 0.719,
-      "fertility": 0.712,
+      "health": 0.856,
+      "fertility": 0.972,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -97,15 +125,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.719
+            "new_health": 0.856
           },
           "death": false
         },
-        "1201": {
+        "1206": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.719
+            "new_health": 0.856
           },
           "death": true
         }
@@ -120,8 +148,8 @@
               11864
             ],
             "people names": [
-              "Dauid",
-              "Hadewigis Canne"
+              "Kybben",
+              "Ricmoden Kiekin"
             ],
             "label": "spouse",
             "committed": true
@@ -134,24 +162,75 @@
               "section": "stOp Havick1.se1.c4",
               "street": "Op Havick1",
               "neighborhood": "cingelnoord",
-              "unique id": 832
+              "unique id": 842
             }
           }
         ],
-        "1201": [
+        "1202": [
           {
             "topic": "new relationship",
-            "key": 13009,
+            "key": 13365,
             "people": [
               11864,
-              13007
+              13363
             ],
             "people names": [
-              "Hadewigis Canne",
-              "Brun"
+              "Ricmoden Kiekin",
+              "Thieleman Kybbenszoon"
             ],
             "label": "parentchild",
             "committed": false
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 13819,
+            "people": [
+              11864,
+              13817
+            ],
+            "people names": [
+              "Ricmoden Kiekin",
+              "Rolekine"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 14184,
+            "people": [
+              11864,
+              14182
+            ],
+            "people names": [
+              "Ricmoden Kiekin",
+              "Reymodis"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1205": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              13363,
+              15880,
+              25421
+            ]
+          },
+          {
+            "topic": "neglected"
           }
         ]
       }
@@ -163,7 +242,7 @@
       "section": "stOp Havick1.se1.c4",
       "street": "Op Havick1",
       "neighborhood": "cingelnoord",
-      "unique id": 832
+      "unique id": 842
     },
     "relationship status": {
       "taken": true,

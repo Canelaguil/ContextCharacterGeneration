@@ -1,80 +1,116 @@
 {
   "11282": {
     "alive": false,
-    "name": "Machtilden",
-    "surname": "Longus",
-    "full name": "Machtilden Longus",
+    "name": "Emmelina",
+    "surname": "Stoc",
+    "full name": "Emmelina Stoc",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.026,
-      "romantic interest": 0.873,
-      "sex interest": 0.762,
-      "gender expression": 0.0,
+      "sexuality": 0.036,
+      "romantic interest": 0.717,
+      "sex interest": 0.708,
+      "gender expression": 0.183,
       "sex": "f"
     },
-    "age": 55,
-    "birth year": 1156,
+    "age": 38,
+    "birth year": 1169,
     "sex": "f",
     "income class": [
       3,
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.378,
-      "nice-nasty": 0.206,
-      "honest-false": 0.0
+      "lawful-chaotic": 0.361,
+      "nice-nasty": 0.563,
+      "honest-false": 0.769
     },
     "attitude": {
-      "outgoing": 0.999,
-      "dream": 0.303
+      "outgoing": 0.282,
+      "dream": 0.419
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
-        "needs_care": false
+        "needs_care": false,
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.005,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.025,
+        "gender expression expression": 0.111
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12472": {
+          "key": 12472,
+          "name": "Brundonis Longus",
+          "age": 49,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Emmelina (11282)",
+            "father": "Lieuin (11281)"
+          }
+        },
+        "12897": {
+          "key": 12897,
+          "name": "Euerocker Longus",
+          "age": 25,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Emmelina (11282)",
+            "father": "Lieuin (11281)"
+          }
+        },
+        "13253": {
+          "key": 13253,
+          "name": "Atghardis Longus",
+          "age": 18,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Emmelina (11282)",
+            "father": "Lieuin (11281)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11283
-        ]
+        ],
+        "child": {
+          "birth": [
+            12474,
+            12899,
+            13255
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
         3,
         "upper middle class"
       ],
-      "income": 1.347,
-      "all_incomes": [
-        1.347
-      ],
-      "job": {
-        "lawful": false,
-        "honest": false
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 1,
-      "eye_color": "brown",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "skin_color": 4,
+      "eye_color": "blue",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "C",
         "S"
       ],
-      "health": 0.0,
-      "fertility": 0.618,
+      "health": 0.551,
+      "fertility": 0.587,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -86,47 +122,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.675
+            "new_health": 0.551
           },
           "death": false
         },
         "1206": {
           "health": {
-            "change": true,
-            "value_change": -0.117,
-            "new_health": 0.558
-          },
-          "death": false
-        },
-        "1207": {
-          "health": {
-            "change": true,
-            "value_change": -0.326,
-            "new_health": 0.232
-          },
-          "death": false
-        },
-        "1208": {
-          "health": {
-            "change": true,
-            "value_change": -0.127,
-            "new_health": 0.105
-          },
-          "death": false
-        },
-        "1209": {
-          "health": {
-            "change": true,
-            "value_change": -0.071,
-            "new_health": 0.034
-          },
-          "death": false
-        },
-        "1210": {
-          "health": {
-            "change": true,
-            "value_change": -0.034,
-            "new_health": 0.0
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.551
           },
           "death": true
         }
@@ -141,8 +145,8 @@
               11282
             ],
             "people names": [
-              "Franco Brede",
-              "Machtilden Longus"
+              "Lieuin Longus",
+              "Emmelina Stoc"
             ],
             "label": "spouse",
             "committed": true
@@ -155,43 +159,61 @@
               "section": "stBreestraat.se7.c3",
               "street": "Breestraat",
               "neighborhood": "olvbuurt",
-              "unique id": 576
+              "unique id": 577
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12474,
+            "people": [
+              11282,
+              12472
+            ],
+            "people names": [
+              "Emmelina Stoc",
+              "Brundonis Longus"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 11281,
+            "target name": "Lieuin Longus",
+            "state": "solid love",
+            "relationship": 11283
           }
         ],
-        "1204": [
+        "1201": [
           {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
+            "topic": "new relationship",
+            "key": 12899,
+            "people": [
+              11282,
+              12897
+            ],
+            "people names": [
+              "Emmelina Stoc",
+              "Euerocker Longus"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1205": [
+        "1202": [
           {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
-          }
-        ],
-        "1207": [
-          {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
-          }
-        ],
-        "1208": [
-          {
-            "topic": "not enough income",
-            "income": 0.006,
-            "inhabitants": []
-          }
-        ],
-        "1210": [
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.347
+            "topic": "new relationship",
+            "key": 13255,
+            "people": [
+              11282,
+              13253
+            ],
+            "people names": [
+              "Emmelina Stoc",
+              "Atghardis Longus"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ]
       }
@@ -203,7 +225,7 @@
       "section": "stBreestraat.se7.c3",
       "street": "Breestraat",
       "neighborhood": "olvbuurt",
-      "unique id": 576
+      "unique id": 577
     },
     "relationship status": {
       "taken": true,

@@ -1,94 +1,108 @@
 {
   "11020": {
     "alive": false,
-    "name": "Firiin",
-    "surname": "Screvel",
-    "full name": "Firiin Screvel",
+    "name": "Amelgeir",
+    "surname": "Bobel",
+    "full name": "Amelgeir Bobel",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.069,
-      "romantic interest": 0.818,
-      "sex interest": 0.613,
-      "gender expression": 0.217,
+      "sexuality label": "gay",
+      "sexuality": 0.82,
+      "romantic interest": 0.719,
+      "sex interest": 0.74,
+      "gender expression": 0.414,
       "sex": "m"
     },
-    "age": 54,
-    "birth year": 1160,
+    "age": 55,
+    "birth year": 1152,
     "sex": "m",
     "income class": [
-      0,
-      "working class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.044,
-      "nice-nasty": 0.0,
-      "honest-false": 0.183
+      "lawful-chaotic": 0.611,
+      "nice-nasty": 0.347,
+      "honest-false": 0.167
     },
     "attitude": {
-      "outgoing": 0.424,
-      "dream": 0.319
+      "outgoing": 0.536,
+      "dream": 0.204
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
         "caretaker": false,
-        "needs_care": false
+        "needs_care": false,
+        "flags": [
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.034,
-        "gender expression expression": 0.125
+        "sexuality expression": 0.664,
+        "gender expression expression": 0.094
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12847": {
+          "key": 12847,
+          "name": "Imma Bobel",
+          "age": 48,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Hadewigis (11021)",
+            "father": "Amelgeir (11020)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11022
-        ]
+        ],
+        "child": {
+          "birth": [
+            12848
+          ]
+        }
       }
     },
     "occupation": {
       "has job": true,
       "income class": [
-        0,
-        "working class"
+        1,
+        "lower middle class"
       ],
-      "income": 1.119,
+      "income": 1.215,
       "all_incomes": [
-        0.802,
-        0.852,
-        0.96,
-        1.063,
-        0.738,
-        0.835,
-        0.766,
-        0.936,
-        0.99,
-        1.219,
-        1.254,
-        1.382,
-        1.403,
-        1.165,
-        1.119
+        0.841,
+        0.603,
+        0.463,
+        0.928,
+        0.777,
+        0.38,
+        0.957,
+        1.215
       ],
       "job": {
         "lawful": false,
-        "honest": true
+        "honest": false
       }
     },
     "genetics": {
-      "skin_color": 8,
-      "eye_color": "blue",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "skin_color": 6,
+      "eye_color": "brown",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
         "C",
-        "C"
+        "S"
       ],
-      "health": 0.001,
-      "fertility": 0.758,
+      "health": 0.004,
+      "fertility": 0.636,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -100,39 +114,47 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.7
+            "new_health": 0.626
           },
           "death": false
         },
-        "1210": {
+        "1202": {
           "health": {
             "change": true,
-            "value_change": -0.169,
-            "new_health": 0.531
+            "value_change": -0.263,
+            "new_health": 0.363
           },
           "death": false
         },
-        "1211": {
+        "1203": {
           "health": {
             "change": true,
-            "value_change": -0.268,
-            "new_health": 0.263
+            "value_change": -0.188,
+            "new_health": 0.175
           },
           "death": false
         },
-        "1212": {
+        "1204": {
           "health": {
             "change": true,
-            "value_change": -0.134,
-            "new_health": 0.129
+            "value_change": -0.127,
+            "new_health": 0.048
           },
           "death": false
         },
-        "1213": {
+        "1205": {
           "health": {
             "change": true,
-            "value_change": -0.128,
-            "new_health": 0.001
+            "value_change": -0.038,
+            "new_health": 0.01
+          },
+          "death": false
+        },
+        "1206": {
+          "health": {
+            "change": true,
+            "value_change": -0.006,
+            "new_health": 0.004
           },
           "death": true
         }
@@ -142,7 +164,12 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.802
+            "income": 0.841
+          },
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.603
           },
           {
             "topic": "new relationship",
@@ -152,8 +179,8 @@
               11021
             ],
             "people names": [
-              "Firiin Screvel",
-              "Jute Croic"
+              "Amelgeir Bobel",
+              "Hadewigis Craye"
             ],
             "label": "spouse",
             "committed": true
@@ -161,75 +188,88 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stDie Coninc straet.se3.c0",
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stDie Coninc straet.se5.c1",
               "street": "Die Coninc straet",
               "neighborhood": "kampbuurt",
-              "unique id": 457
+              "unique id": 461
             }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.463
+          },
+          {
+            "topic": "new relationship",
+            "key": 12848,
+            "people": [
+              11020,
+              12847
+            ],
+            "people names": [
+              "Amelgeir Bobel",
+              "Imma Bobel"
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
             "topic": "feelings change",
             "target": 11021,
-            "target name": "Jute Croic",
-            "state": "solid love",
+            "target name": "Hadewigis Craye",
+            "state": "out of love",
             "relationship": 11022
+          },
+          {
+            "topic": "neglected"
           }
         ],
-        "1202": [
+        "1204": [
           {
             "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.063
-          }
-        ],
-        "1203": [
+            "notice": "earning very little",
+            "income": 0.38
+          },
           {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.738
+            "topic": "not enough income",
+            "income": 0.38,
+            "inhabitants": [
+              12847,
+              13375,
+              18309,
+              20090,
+              17184
+            ]
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1206": [
           {
-            "key": 11022,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 11021,
-              "name": "Jute Croic",
-              "age": 53,
-              "alive": false,
-              "sex": "f",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
-          }
-        ],
-        "1208": [
-          {
             "topic": "job notice",
             "notice": "comfortable earnings",
-            "income": 1.219
+            "income": 1.215
           }
         ]
       }
     },
     "key": 11020,
     "home": {
-      "income class": 0,
-      "income class label": "working class",
-      "section": "stDie Coninc straet.se3.c0",
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stDie Coninc straet.se5.c1",
       "street": "Die Coninc straet",
       "neighborhood": "kampbuurt",
-      "unique id": 457
+      "unique id": 461
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
         11022
       ]

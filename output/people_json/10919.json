@@ -1,43 +1,47 @@
 {
   "10919": {
     "alive": false,
-    "name": "Imsoete",
-    "surname": "",
-    "full name": "Imsoete",
+    "name": "Imma",
+    "surname": "Scinkel",
+    "full name": "Imma Scinkel",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.074,
-      "romantic interest": 0.705,
-      "sex interest": 0.776,
-      "gender expression": 0.062,
+      "sexuality": 0.0,
+      "romantic interest": 0.639,
+      "sex interest": 0.535,
+      "gender expression": 0.118,
       "sex": "f"
     },
-    "age": 54,
-    "birth year": 1159,
+    "age": 50,
+    "birth year": 1174,
     "sex": "f",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.999,
-      "honest-false": 0.295
+      "lawful-chaotic": 0.054,
+      "nice-nasty": 0.127,
+      "honest-false": 0.148
     },
     "attitude": {
-      "outgoing": 0.668,
-      "dream": 0.198
+      "outgoing": 0.116,
+      "dream": 0.304
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
-        "needs_care": false
+        "needs_care": false,
+        "flags": [
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.043,
-        "gender expression expression": 0.024
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.077
       }
     },
     "network": {
@@ -45,7 +49,8 @@
       "children": {},
       "relationship keys": {
         "spouse": [
-          10920
+          10920,
+          16976
         ]
       }
     },
@@ -59,16 +64,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 9,
-      "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 5,
+      "eye_color": "blue",
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
-        "C",
+        "S",
         "C"
       ],
-      "health": 0.0,
-      "fertility": 0.719,
+      "health": 0.688,
+      "fertility": 0.69,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -80,39 +85,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.671
+            "new_health": 0.688
           },
           "death": false
         },
-        "1209": {
+        "1223": {
           "health": {
-            "change": true,
-            "value_change": -0.259,
-            "new_health": 0.412
-          },
-          "death": false
-        },
-        "1210": {
-          "health": {
-            "change": true,
-            "value_change": -0.272,
-            "new_health": 0.14
-          },
-          "death": false
-        },
-        "1211": {
-          "health": {
-            "change": true,
-            "value_change": -0.085,
-            "new_health": 0.055
-          },
-          "death": false
-        },
-        "1212": {
-          "health": {
-            "change": true,
-            "value_change": -0.055,
-            "new_health": 0.0
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.688
           },
           "death": true
         }
@@ -127,8 +108,8 @@
               10919
             ],
             "people names": [
-              "Thezonus Mol",
-              "Imsoete"
+              "Lennot Bruneel",
+              "Imma Scinkel"
             ],
             "label": "spouse",
             "committed": true
@@ -145,14 +126,110 @@
             }
           }
         ],
-        "1206": [
+        "1215": [
+          {
+            "key": 10920,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10918,
+              "name": "Lennot Bruneel",
+              "age": 56,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
           {
             "topic": "not enough income",
-            "income": 0.208,
-            "inhabitants": [
-              35173,
-              40691
-            ]
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1216": [
+          {
+            "topic": "new relationship",
+            "key": 16976,
+            "people": [
+              11146,
+              10919
+            ],
+            "people names": [
+              "Ysewin Commer",
+              "Imma Scinkel"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stPaternoster straetje.se1.c1",
+              "street": "Paternoster straetje",
+              "neighborhood": "olvbuurt",
+              "unique id": 519
+            }
+          }
+        ],
+        "1217": [
+          {
+            "topic": "feelings change",
+            "target": 11146,
+            "target name": "Ysewin Commer",
+            "state": "solid love",
+            "relationship": 16976
+          }
+        ],
+        "1220": [
+          {
+            "topic": "not enough income",
+            "income": 0.381,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1221": [
+          {
+            "topic": "not enough income",
+            "income": 0.326,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1222": [
+          {
+            "topic": "not enough income",
+            "income": 0.345,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1223": [
+          {
+            "topic": "feelings change",
+            "target": 11146,
+            "target name": "Ysewin Commer",
+            "state": "out of love",
+            "relationship": 16976
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.164,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
           }
         ]
       }
@@ -161,16 +238,17 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stSt. Ians straet.se1.c1",
-      "street": "St. Ians straet",
-      "neighborhood": "kampbuurt",
-      "unique id": 411
+      "section": "stPaternoster straetje.se1.c1",
+      "street": "Paternoster straetje",
+      "neighborhood": "olvbuurt",
+      "unique id": 519
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        10920
+        10920,
+        16976
       ]
     }
   }

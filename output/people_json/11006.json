@@ -1,53 +1,76 @@
 {
   "11006": {
     "alive": false,
-    "name": "Eingeliadis",
-    "surname": "",
-    "full name": "Eingeliadis",
+    "name": "Alretieren",
+    "surname": "Vincs",
+    "full name": "Alretieren Vincs",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.616,
-      "sex interest": 0.751,
-      "gender expression": 0.183,
+      "sexuality": 0.095,
+      "romantic interest": 0.541,
+      "sex interest": 0.684,
+      "gender expression": 0.149,
       "sex": "f"
     },
-    "age": 54,
-    "birth year": 1163,
+    "age": 55,
+    "birth year": 1184,
     "sex": "f",
     "income class": [
       0,
       "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.847,
-      "nice-nasty": 0.47,
-      "honest-false": 0.352
+      "lawful-chaotic": 0.919,
+      "nice-nasty": 0.999,
+      "honest-false": 0.786
     },
     "attitude": {
-      "outgoing": 0.657,
-      "dream": 0.261
+      "outgoing": 0.505,
+      "dream": 0.612
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
-        "needs_care": false
+        "caretaker": true,
+        "needs_care": false,
+        "flags": [
+          "caretaker",
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.0
+        "sexuality expression": 0.075,
+        "gender expression expression": 0.148
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13208": {
+          "key": 13208,
+          "name": "Ricmoden Bein",
+          "age": 41,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Alretieren (11006)",
+            "father": "Evergero (11005)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11007,
-          16602
-        ]
+          16693,
+          18230
+        ],
+        "child": {
+          "birth": [
+            13210
+          ]
+        }
       }
     },
     "occupation": {
@@ -60,16 +83,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 8,
+      "skin_color": 2,
       "eye_color": "brown",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "S",
         "S"
       ],
       "health": 0.0,
-      "fertility": 0.806,
+      "fertility": 0.715,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -81,38 +104,46 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.727
+            "new_health": 0.716
           },
           "death": false
         },
-        "1213": {
+        "1234": {
           "health": {
             "change": true,
-            "value_change": -0.276,
-            "new_health": 0.451
+            "value_change": -0.193,
+            "new_health": 0.523
           },
           "death": false
         },
-        "1214": {
+        "1235": {
           "health": {
             "change": true,
-            "value_change": -0.149,
-            "new_health": 0.302
+            "value_change": -0.263,
+            "new_health": 0.26
           },
           "death": false
         },
-        "1215": {
+        "1236": {
           "health": {
             "change": true,
-            "value_change": -0.168,
-            "new_health": 0.134
+            "value_change": -0.252,
+            "new_health": 0.008
           },
           "death": false
         },
-        "1216": {
+        "1237": {
           "health": {
             "change": true,
-            "value_change": -0.134,
+            "value_change": -0.005,
+            "new_health": 0.003
+          },
+          "death": false
+        },
+        "1238": {
+          "health": {
+            "change": true,
+            "value_change": -0.003,
             "new_health": 0.0
           },
           "death": true
@@ -128,8 +159,8 @@
               11006
             ],
             "people names": [
-              "Breghtgherus Stuucs",
-              "Eingeliadis"
+              "Evergero Bein",
+              "Alretieren Vincs"
             ],
             "label": "spouse",
             "committed": true
@@ -142,11 +173,27 @@
               "section": "stDie Coninc straet.se3.c0",
               "street": "Die Coninc straet",
               "neighborhood": "kampbuurt",
-              "unique id": 452
+              "unique id": 453
             }
           }
         ],
-        "1201": [
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 13210,
+            "people": [
+              11006,
+              13208
+            ],
+            "people names": [
+              "Alretieren Vincs",
+              "Ricmoden Bein"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1206": [
           {
             "key": 11007,
             "topic": "unmarried"
@@ -155,8 +202,8 @@
             "topic": "person died",
             "person": {
               "key": 11005,
-              "name": "Breghtgherus Stuucs",
-              "age": 48,
+              "name": "Evergero Bein",
+              "age": 53,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
@@ -167,41 +214,9 @@
             "topic": "not enough income",
             "income": 0,
             "inhabitants": []
-          }
-        ],
-        "1202": [
+          },
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1203": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1204": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1205": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1206": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "neglected"
           }
         ],
         "1207": [
@@ -209,6 +224,16 @@
             "topic": "not enough income",
             "income": 0,
             "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": [
+              13208
+            ]
+          },
+          {
+            "topic": "new caretaker",
+            "person": 11006
           }
         ],
         "1208": [
@@ -241,15 +266,29 @@
         ],
         "1212": [
           {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1214": [
+          {
             "topic": "new relationship",
-            "key": 16602,
+            "key": 16693,
             "people": [
-              11071,
+              10663,
               11006
             ],
             "people names": [
-              "Moys",
-              "Eingeliadis"
+              "Karel",
+              "Alretieren Vincs"
             ],
             "label": "spouse",
             "committed": true
@@ -259,30 +298,141 @@
             "home": {
               "income class": 0,
               "income class label": "working class",
-              "section": "stOly straetje.se1.c0",
-              "street": "Oly straetje",
-              "neighborhood": "kampbuurt",
-              "unique id": 483
+              "section": "stDe Tuyt.se3.c0",
+              "street": "De Tuyt",
+              "neighborhood": "agnesbuurt",
+              "unique id": 288
             }
+          }
+        ],
+        "1215": [
+          {
+            "topic": "feelings change",
+            "target": 10663,
+            "target name": "Karel",
+            "state": "out of love",
+            "relationship": 16693
+          }
+        ],
+        "1219": [
+          {
+            "key": 16693,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10663,
+              "name": "Karel",
+              "age": 43,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1220": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1221": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1222": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1223": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1224": [
+          {
+            "topic": "new relationship",
+            "key": 18230,
+            "people": [
+              12169,
+              11006
+            ],
+            "people names": [
+              "Gerart",
+              "Alretieren Vincs"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stAppel Marckt.se3.c1",
+              "street": "Appel Marckt",
+              "neighborhood": "denhof",
+              "unique id": 968
+            }
+          }
+        ],
+        "1228": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1232": [
+          {
+            "key": 18230,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12169,
+              "name": "Gerart",
+              "age": 55,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
           }
         ]
       }
     },
     "key": 11006,
     "home": {
-      "income class": 0,
-      "income class label": "working class",
-      "section": "stOly straetje.se1.c0",
-      "street": "Oly straetje",
-      "neighborhood": "kampbuurt",
-      "unique id": 483
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stAppel Marckt.se3.c1",
+      "street": "Appel Marckt",
+      "neighborhood": "denhof",
+      "unique id": 968
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         11007,
-        16602
+        16693,
+        18230
       ]
     }
   }

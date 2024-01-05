@@ -1,69 +1,107 @@
 {
   "10814": {
     "alive": false,
-    "name": "Folqui",
-    "surname": "",
-    "full name": "Folqui",
+    "name": "Ryccie",
+    "surname": "Turc",
+    "full name": "Ryccie Turc",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.557,
-      "sex interest": 0.816,
-      "gender expression": 0.127,
+      "sexuality": 0.051,
+      "romantic interest": 0.705,
+      "sex interest": 0.818,
+      "gender expression": 0.226,
       "sex": "f"
     },
-    "age": 48,
-    "birth year": 1168,
+    "age": 26,
+    "birth year": 1183,
     "sex": "f",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.567,
-      "nice-nasty": 0.999,
-      "honest-false": 0.0
+      "lawful-chaotic": 0.813,
+      "nice-nasty": 0.191,
+      "honest-false": 0.443
     },
     "attitude": {
-      "outgoing": 0.514,
-      "dream": 0.302
+      "outgoing": 0.561,
+      "dream": 0.24
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
-        "needs_care": false
+        "needs_care": false,
+        "flags": [
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.057
+        "sexuality expression": 0.04,
+        "gender expression expression": 0.062
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "12367": {
-          "key": 12367,
-          "name": "Truden Siabbosdochter",
-          "age": 49,
-          "alive": false,
+        "12815": {
+          "key": 12815,
+          "name": "Walwin Smicke",
+          "age": 48,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Ryccie (10814)",
+            "father": "Ysaac (10813)"
+          }
+        },
+        "14028": {
+          "key": 14028,
+          "name": "Pauels Smicke",
+          "age": 45,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Ryccie (10814)",
+            "father": "Ysaac (10813)"
+          }
+        },
+        "15065": {
+          "key": 15065,
+          "name": "Sarre Smicke",
+          "age": 42,
+          "alive": true,
           "sex": "f",
           "parents": {
-            "mother": "Folqui (10814)",
-            "father": "Siabbo (10813)"
+            "mother": "Ryccie (10814)",
+            "father": "Ysaac (10813)"
+          }
+        },
+        "15363": {
+          "key": 15363,
+          "name": "Albertus Smicke",
+          "age": 3,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Ryccie (10814)",
+            "father": "Ysaac (10813)"
           }
         }
       },
       "relationship keys": {
         "spouse": [
-          10815,
-          15632,
-          16600
+          10815
         ],
         "child": {
           "birth": [
-            12369
+            12817,
+            14030,
+            15067,
+            15365
           ]
         }
       }
@@ -78,7 +116,7 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 1,
+      "skin_color": 5,
       "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
@@ -86,8 +124,8 @@
         "C",
         "C"
       ],
-      "health": 0.761,
-      "fertility": 0.725,
+      "health": 0.689,
+      "fertility": 0.722,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -99,17 +137,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.761
+            "new_health": 0.689
           },
           "death": false
-        },
-        "1215": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.761
-          },
-          "death": true
         }
       },
       "events": {
@@ -122,8 +152,8 @@
               10814
             ],
             "people names": [
-              "Siabbo",
-              "Folqui"
+              "Ysaac Smicke",
+              "Ryccie Turc"
             ],
             "label": "spouse",
             "committed": true
@@ -136,138 +166,174 @@
               "section": "stDie Camp.se1.c2",
               "street": "Die Camp",
               "neighborhood": "kampbuurt",
-              "unique id": 358
+              "unique id": 359
             }
-          },
+          }
+        ],
+        "1201": [
           {
             "topic": "new relationship",
-            "key": 12369,
+            "key": 12817,
             "people": [
               10814,
-              12367
+              12815
             ],
             "people names": [
-              "Folqui",
-              "Truden Siabbosdochter"
+              "Ryccie Turc",
+              "Walwin Smicke"
             ],
             "label": "parentchild",
             "committed": false
           }
         ],
-        "1206": [
+        "1203": [
           {
-            "key": 10815,
-            "topic": "unmarried"
+            "topic": "not enough income",
+            "income": 0.151,
+            "inhabitants": [
+              12815,
+              14028,
+              21332,
+              21208
+            ]
           },
           {
-            "topic": "person died",
-            "person": {
-              "key": 10813,
-              "name": "Siabbo",
-              "age": 53,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 14030,
+            "people": [
+              10814,
+              14028
+            ],
+            "people names": [
+              "Ryccie Turc",
+              "Pauels Smicke"
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
             "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "income": 0.249,
+            "inhabitants": [
+              12815,
+              14028,
+              21332,
+              21208
+            ]
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "not enough income",
+            "income": 0.244,
+            "inhabitants": [
+              12815,
+              14028,
+              21332,
+              21208
+            ]
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              12815,
+              14028,
+              21332,
+              21208
+            ]
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1207": [
           {
+            "topic": "new relationship",
+            "key": 15067,
+            "people": [
+              10814,
+              15065
+            ],
+            "people names": [
+              "Ryccie Turc",
+              "Sarre Smicke"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
             "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "income": 0.069,
+            "inhabitants": [
+              12815,
+              14028,
+              21332,
+              21208
+            ]
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1208": [
           {
             "topic": "new relationship",
-            "key": 15632,
+            "key": 15365,
             "people": [
-              11638,
-              10814
+              10814,
+              15363
             ],
             "people names": [
-              "Gheynekine Blaubloeme",
-              "Folqui"
+              "Ryccie Turc",
+              "Albertus Smicke"
             ],
-            "label": "spouse",
-            "committed": true
-          }
-        ],
-        "1211": [
-          {
-            "key": 15632,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 11638,
-              "name": "Gheynekine Blaubloeme",
-              "age": 57,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
+            "label": "parentchild",
+            "committed": false
           },
           {
             "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1212": [
-          {
-            "topic": "new relationship",
-            "key": 16600,
-            "people": [
-              11839,
-              10814
-            ],
-            "people names": [
-              "Pelegrim Huuchals",
-              "Folqui"
-            ],
-            "label": "spouse",
-            "committed": true
+            "income": 0.274,
+            "inhabitants": [
+              12815,
+              14028,
+              21332,
+              21208
+            ]
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stMuurhuysen2.se7.c3",
-              "street": "Muurhuysen2",
-              "neighborhood": "cingelnoord",
-              "unique id": 821
-            }
+            "topic": "neglected"
           }
         ]
       }
     },
     "key": 10814,
     "home": {
-      "income class": 3,
-      "income class label": "upper middle class",
-      "section": "stMuurhuysen2.se7.c3",
-      "street": "Muurhuysen2",
-      "neighborhood": "cingelnoord",
-      "unique id": 821
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stDie Camp.se1.c2",
+      "street": "Die Camp",
+      "neighborhood": "kampbuurt",
+      "unique id": 359
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        10815,
-        15632,
-        16600
+        10815
       ]
     }
   }

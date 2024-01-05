@@ -1,52 +1,75 @@
 {
   "10697": {
     "alive": false,
-    "name": "Geile",
-    "surname": "Tay",
-    "full name": "Geile Tay",
+    "name": "Reymodis",
+    "surname": "Strument",
+    "full name": "Reymodis Strument",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.045,
-      "romantic interest": 0.665,
-      "sex interest": 0.637,
-      "gender expression": 0.105,
+      "sexuality": 0.039,
+      "romantic interest": 0.792,
+      "sex interest": 0.89,
+      "gender expression": 0.065,
       "sex": "f"
     },
-    "age": 55,
-    "birth year": 1152,
+    "age": 42,
+    "birth year": 1170,
     "sex": "f",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.129,
-      "nice-nasty": 0.83,
-      "honest-false": 0.403
+      "lawful-chaotic": 0.197,
+      "nice-nasty": 0.999,
+      "honest-false": 0.999
     },
     "attitude": {
-      "outgoing": 0.394,
-      "dream": 0.296
+      "outgoing": 0.659,
+      "dream": 0.841
     },
     "homsoc": {
       "means": {
-        "independent": false,
-        "taken_care_of": false,
-        "caretaker": false,
-        "needs_care": false
+        "independent": true,
+        "taken_care_of": true,
+        "caretaker": true,
+        "needs_care": false,
+        "flags": [
+          "caretaker",
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.038,
-        "gender expression expression": 0.064
+        "sexuality expression": 0.029,
+        "gender expression expression": 0.044
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12352": {
+          "key": 12352,
+          "name": "Batten Calvesnack",
+          "age": 39,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Reymodis (10697)",
+            "father": "Ghisebrecht (10696)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          10698
-        ]
+          10698,
+          15245
+        ],
+        "child": {
+          "birth": [
+            12354
+          ]
+        }
       }
     },
     "occupation": {
@@ -59,16 +82,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 1,
+      "skin_color": 8,
       "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
-        "S",
-        "S"
+        "C",
+        "C"
       ],
-      "health": 0.0,
-      "fertility": 0.641,
+      "health": 0.721,
+      "fertility": 0.779,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -80,47 +103,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.677
+            "new_health": 0.721
           },
           "death": false
         },
-        "1202": {
+        "1211": {
           "health": {
-            "change": true,
-            "value_change": -0.269,
-            "new_health": 0.408
-          },
-          "death": false
-        },
-        "1203": {
-          "health": {
-            "change": true,
-            "value_change": -0.295,
-            "new_health": 0.113
-          },
-          "death": false
-        },
-        "1204": {
-          "health": {
-            "change": true,
-            "value_change": -0.08,
-            "new_health": 0.033
-          },
-          "death": false
-        },
-        "1205": {
-          "health": {
-            "change": true,
-            "value_change": -0.028,
-            "new_health": 0.005
-          },
-          "death": false
-        },
-        "1206": {
-          "health": {
-            "change": true,
-            "value_change": -0.005,
-            "new_health": 0.0
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.721
           },
           "death": true
         }
@@ -135,8 +126,8 @@
               10697
             ],
             "people names": [
-              "Amelgeir",
-              "Geile Tay"
+              "Ghisebrecht Calvesnack",
+              "Reymodis Strument"
             ],
             "label": "spouse",
             "committed": true
@@ -149,36 +140,120 @@
               "section": "stCingel.se1.c2",
               "street": "Cingel",
               "neighborhood": "agnesbuurt",
-              "unique id": 306
+              "unique id": 305
             }
           },
           {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": [
-              31751,
-              33602,
-              40382,
-              40906
-            ]
+            "topic": "new relationship",
+            "key": 12354,
+            "people": [
+              10697,
+              12352
+            ],
+            "people names": [
+              "Reymodis Strument",
+              "Batten Calvesnack"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1201": [
           {
-            "topic": "feelings change",
-            "target": 10696,
-            "target name": "Amelgeir",
-            "state": "out of love",
-            "relationship": 10698
+            "key": 10698,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10696,
+              "name": "Ghisebrecht Calvesnack",
+              "age": 48,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1202": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": [
+              12352
+            ]
+          },
+          {
+            "topic": "new caretaker",
+            "person": 10697
           }
         ],
         "1203": [
           {
-            "topic": "feelings change",
-            "target": 10696,
-            "target name": "Amelgeir",
-            "state": "infatuation",
-            "relationship": 10698
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1204": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "new relationship",
+            "key": 15245,
+            "people": [
+              11653,
+              10697
+            ],
+            "people names": [
+              "Diddekin",
+              "Reymodis Strument"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stCorte gracht.se3.c2",
+              "street": "Corte gracht",
+              "neighborhood": "visbuurt",
+              "unique id": 739
+            }
           }
         ]
       }
@@ -187,16 +262,17 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stCingel.se1.c2",
-      "street": "Cingel",
-      "neighborhood": "agnesbuurt",
-      "unique id": 306
+      "section": "stCorte gracht.se3.c2",
+      "street": "Corte gracht",
+      "neighborhood": "visbuurt",
+      "unique id": 739
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        10698
+        10698,
+        15245
       ]
     }
   }

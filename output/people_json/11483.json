@@ -1,52 +1,99 @@
 {
   "11483": {
     "alive": false,
-    "name": "Gheesen",
-    "surname": "Pluckerose",
-    "full name": "Gheesen Pluckerose",
+    "name": "Amalburga",
+    "surname": "Scelwart",
+    "full name": "Amalburga Scelwart",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.888,
-      "romantic interest": 0.902,
-      "sex interest": 0.667,
-      "gender expression": 0.218,
+      "sexuality label": "straight",
+      "sexuality": 0.077,
+      "romantic interest": 0.697,
+      "sex interest": 0.545,
+      "gender expression": 0.086,
       "sex": "f"
     },
-    "age": 48,
-    "birth year": 1156,
+    "age": 41,
+    "birth year": 1177,
     "sex": "f",
     "income class": [
       3,
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.705,
-      "nice-nasty": 0.528,
-      "honest-false": 0.769
+      "lawful-chaotic": 0.727,
+      "nice-nasty": 0.0,
+      "honest-false": 0.0
     },
     "attitude": {
-      "outgoing": 0.538,
-      "dream": 0.402
+      "outgoing": 0.629,
+      "dream": 0.267
     },
     "homsoc": {
       "means": {
-        "independent": false,
-        "taken_care_of": false,
-        "caretaker": false,
-        "needs_care": false
+        "independent": true,
+        "taken_care_of": true,
+        "caretaker": true,
+        "needs_care": false,
+        "flags": [
+          "caretaker",
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.565,
-        "gender expression expression": 0.217
+        "sexuality expression": 0.069,
+        "gender expression expression": 0.04
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12532": {
+          "key": 12532,
+          "name": "Diewiven Quic",
+          "age": 49,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Amalburga (11483)",
+            "father": "Hubrecht (11482)"
+          }
+        },
+        "15665": {
+          "key": 15665,
+          "name": "Gilis Donevoet",
+          "age": 40,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Amalburga (11483)",
+            "father": "Wedeghe (12124)"
+          }
+        },
+        "16855": {
+          "key": 16855,
+          "name": "Gheeneman Donevoet",
+          "age": 34,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Amalburga (11483)",
+            "father": "Wedeghe (12124)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          11484
-        ]
+          11484,
+          14232
+        ],
+        "child": {
+          "birth": [
+            12534,
+            15667,
+            16857
+          ]
+        }
       }
     },
     "occupation": {
@@ -59,16 +106,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 3,
-      "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 6,
+      "eye_color": "blue",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
         "S",
         "S"
       ],
-      "health": 0.66,
-      "fertility": 0.688,
+      "health": 0.748,
+      "fertility": 0.774,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -80,15 +127,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.66
+            "new_health": 0.748
           },
           "death": false
         },
-        "1203": {
+        "1217": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.66
+            "new_health": 0.748
           },
           "death": true
         }
@@ -103,8 +150,8 @@
               11483
             ],
             "people names": [
-              "Sifridus Bonghe",
-              "Gheesen Pluckerose"
+              "Hubrecht Quic",
+              "Amalburga Scelwart"
             ],
             "label": "spouse",
             "committed": true
@@ -117,15 +164,119 @@
               "section": "stMuurhuysen1.se3.c3",
               "street": "Muurhuysen1",
               "neighborhood": "cingelzuid",
-              "unique id": 666
+              "unique id": 665
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12534,
+            "people": [
+              11483,
+              12532
+            ],
+            "people names": [
+              "Amalburga Scelwart",
+              "Diewiven Quic"
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
             "topic": "feelings change",
             "target": 11482,
-            "target name": "Sifridus Bonghe",
-            "state": "out of love",
+            "target name": "Hubrecht Quic",
+            "state": "solid love",
             "relationship": 11484
+          }
+        ],
+        "1203": [
+          {
+            "key": 11484,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11482,
+              "name": "Hubrecht Quic",
+              "age": 28,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              16855,
+              23485,
+              24667
+            ]
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 14232,
+            "people": [
+              12124,
+              11483
+            ],
+            "people names": [
+              "Wedeghe Donevoet",
+              "Amalburga Scelwart"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": [
+              23485,
+              24023,
+              24667
+            ]
+          },
+          {
+            "topic": "new caretaker",
+            "person": 11483
+          }
+        ],
+        "1209": [
+          {
+            "topic": "new relationship",
+            "key": 15667,
+            "people": [
+              11483,
+              15665
+            ],
+            "people names": [
+              "Amalburga Scelwart",
+              "Gilis Donevoet"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1215": [
+          {
+            "topic": "new relationship",
+            "key": 16857,
+            "people": [
+              11483,
+              16855
+            ],
+            "people names": [
+              "Amalburga Scelwart",
+              "Gheeneman Donevoet"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ]
       }
@@ -137,13 +288,14 @@
       "section": "stMuurhuysen1.se3.c3",
       "street": "Muurhuysen1",
       "neighborhood": "cingelzuid",
-      "unique id": 666
+      "unique id": 665
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        11484
+        11484,
+        14232
       ]
     }
   }

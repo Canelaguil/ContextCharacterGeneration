@@ -1,52 +1,106 @@
 {
   "11513": {
     "alive": false,
-    "name": "Ermerut",
-    "surname": "Capoen",
-    "full name": "Ermerut Capoen",
+    "name": "Cofte",
+    "surname": "Vrie",
+    "full name": "Cofte Vrie",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.006,
-      "romantic interest": 0.702,
-      "sex interest": 0.589,
-      "gender expression": 0.065,
+      "sexuality": 0.004,
+      "romantic interest": 0.851,
+      "sex interest": 0.807,
+      "gender expression": 0.086,
       "sex": "f"
     },
-    "age": 58,
-    "birth year": 1154,
+    "age": 28,
+    "birth year": 1180,
     "sex": "f",
     "income class": [
       3,
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.22,
+      "lawful-chaotic": 0.999,
       "nice-nasty": 0.0,
-      "honest-false": 0.087
+      "honest-false": 0.168
     },
     "attitude": {
-      "outgoing": 0.283,
-      "dream": 0.678
+      "outgoing": 0.258,
+      "dream": 0.472
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
-        "needs_care": false
+        "needs_care": false,
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.004,
-        "gender expression expression": 0.041
+        "sexuality expression": 0.003,
+        "gender expression expression": 0.063
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13732": {
+          "key": 13732,
+          "name": "Harlo",
+          "age": 46,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Cofte (11513)",
+            "father": "Sylof (11512)"
+          }
+        },
+        "14482": {
+          "key": 14482,
+          "name": "Sarre Naghel",
+          "age": 12,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Cofte (11513)",
+            "father": "Sylof (11512)"
+          }
+        },
+        "14865": {
+          "key": 14865,
+          "name": "Jdir Naghel",
+          "age": 43,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Cofte (11513)",
+            "father": "Sylof (11512)"
+          }
+        },
+        "15164": {
+          "key": 15164,
+          "name": "Conrad Naghel",
+          "age": 42,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Cofte (11513)",
+            "father": "Sylof (11512)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11514
-        ]
+        ],
+        "child": {
+          "birth": [
+            13734,
+            14484,
+            14867,
+            15166
+          ]
+        }
       }
     },
     "occupation": {
@@ -60,15 +114,15 @@
     },
     "genetics": {
       "skin_color": 3,
-      "eye_color": "green",
+      "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
-        "S",
-        "S"
+        "C",
+        "C"
       ],
-      "health": 0.0,
-      "fertility": 0.885,
+      "health": 0.846,
+      "fertility": 0.859,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -80,47 +134,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.874
+            "new_health": 0.846
           },
           "death": false
         },
         "1207": {
           "health": {
-            "change": true,
-            "value_change": -0.106,
-            "new_health": 0.768
-          },
-          "death": false
-        },
-        "1208": {
-          "health": {
-            "change": true,
-            "value_change": -0.127,
-            "new_health": 0.641
-          },
-          "death": false
-        },
-        "1209": {
-          "health": {
-            "change": true,
-            "value_change": -0.182,
-            "new_health": 0.459
-          },
-          "death": false
-        },
-        "1210": {
-          "health": {
-            "change": true,
-            "value_change": -0.16,
-            "new_health": 0.299
-          },
-          "death": false
-        },
-        "1211": {
-          "health": {
-            "change": true,
-            "value_change": -0.299,
-            "new_health": 0.0
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.846
           },
           "death": true
         }
@@ -135,8 +157,8 @@
               11513
             ],
             "people names": [
-              "Stephanus Hoesterlinc",
-              "Ermerut Capoen"
+              "Sylof Naghel",
+              "Cofte Vrie"
             ],
             "label": "spouse",
             "committed": true
@@ -149,24 +171,81 @@
               "section": "stDie lange straet3.se3.c3",
               "street": "Die lange straet3",
               "neighborhood": "visbuurt",
-              "unique id": 682
+              "unique id": 680
             }
+          }
+        ],
+        "1202": [
+          {
+            "topic": "feelings change",
+            "target": 11512,
+            "target name": "Sylof Naghel",
+            "state": "solid love",
+            "relationship": 11514
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 13734,
+            "people": [
+              11513,
+              13732
+            ],
+            "people names": [
+              "Cofte Vrie",
+              "Harlo"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1205": [
+          {
+            "topic": "new relationship",
+            "key": 14484,
+            "people": [
+              11513,
+              14482
+            ],
+            "people names": [
+              "Cofte Vrie",
+              "Sarre Naghel"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1206": [
           {
-            "topic": "feelings change",
-            "target": 11512,
-            "target name": "Stephanus Hoesterlinc",
-            "state": "out of love",
-            "relationship": 11514
+            "topic": "new relationship",
+            "key": 14867,
+            "people": [
+              11513,
+              14865
+            ],
+            "people names": [
+              "Cofte Vrie",
+              "Jdir Naghel"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1211": [
+        "1207": [
           {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
+            "topic": "new relationship",
+            "key": 15166,
+            "people": [
+              11513,
+              15164
+            ],
+            "people names": [
+              "Cofte Vrie",
+              "Conrad Naghel"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ]
       }
@@ -178,7 +257,7 @@
       "section": "stDie lange straet3.se3.c3",
       "street": "Die lange straet3",
       "neighborhood": "visbuurt",
-      "unique id": 682
+      "unique id": 680
     },
     "relationship status": {
       "taken": true,

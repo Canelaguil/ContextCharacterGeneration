@@ -1,75 +1,131 @@
 {
   "11288": {
     "alive": false,
-    "name": "Gisele",
-    "surname": "Vraet",
-    "full name": "Gisele Vraet",
+    "name": "Nannen",
+    "surname": "",
+    "full name": "Nannen",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.01,
-      "romantic interest": 0.692,
-      "sex interest": 0.729,
-      "gender expression": 0.0,
+      "sexuality": 0.018,
+      "romantic interest": 0.73,
+      "sex interest": 0.44,
+      "gender expression": 0.115,
       "sex": "f"
     },
-    "age": 55,
-    "birth year": 1156,
+    "age": 53,
+    "birth year": 1168,
     "sex": "f",
     "income class": [
       3,
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.779,
-      "nice-nasty": 0.466,
-      "honest-false": 0.37
+      "lawful-chaotic": 0.371,
+      "nice-nasty": 0.999,
+      "honest-false": 0.906
     },
     "attitude": {
-      "outgoing": 0.828,
-      "dream": 0.474
+      "outgoing": 0.665,
+      "dream": 0.378
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
-        "needs_care": false
+        "needs_care": false,
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.003,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.011,
+        "gender expression expression": 0.049
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14451": {
+          "key": 14451,
+          "name": "Veder Quic",
+          "age": 19,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Nannen (11288)",
+            "father": "Waldfridus (11287)"
+          }
+        },
+        "14807": {
+          "key": 14807,
+          "name": "Eghenonis Quic",
+          "age": 34,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Nannen (11288)",
+            "father": "Waldfridus (11287)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11289,
-          14656
-        ]
+          16690
+        ],
+        "child": {
+          "birth": [
+            14453,
+            14809
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         3,
         "upper middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.03,
+      "all_incomes": [
+        1.073,
+        0.921,
+        1.044,
+        0.749,
+        0.72,
+        0.731,
+        0.628,
+        0.698,
+        0.543,
+        0.641,
+        0.662,
+        0.823,
+        1.034,
+        0.852,
+        0.717,
+        0.728,
+        0.869,
+        0.845,
+        0.78,
+        0.903,
+        1.03
+      ],
+      "job": {
+        "lawful": false,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 4,
-      "eye_color": "green",
+      "skin_color": 6,
+      "eye_color": "blue",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
         "C",
-        "C"
+        "S"
       ],
       "health": 0.0,
-      "fertility": 0.727,
+      "fertility": 0.599,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -81,38 +137,30 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.739
+            "new_health": 0.573
           },
           "death": false
         },
-        "1207": {
+        "1218": {
           "health": {
             "change": true,
-            "value_change": -0.161,
-            "new_health": 0.578
+            "value_change": -0.167,
+            "new_health": 0.406
           },
           "death": false
         },
-        "1208": {
+        "1219": {
           "health": {
             "change": true,
-            "value_change": -0.229,
-            "new_health": 0.349
+            "value_change": -0.309,
+            "new_health": 0.097
           },
           "death": false
         },
-        "1209": {
+        "1220": {
           "health": {
             "change": true,
-            "value_change": -0.262,
-            "new_health": 0.087
-          },
-          "death": false
-        },
-        "1210": {
-          "health": {
-            "change": true,
-            "value_change": -0.087,
+            "value_change": -0.097,
             "new_health": 0.0
           },
           "death": true
@@ -121,6 +169,11 @@
       "events": {
         "1200": [
           {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.073
+          },
+          {
             "topic": "new relationship",
             "key": 11289,
             "people": [
@@ -128,8 +181,8 @@
               11288
             ],
             "people names": [
-              "Alem",
-              "Gisele Vraet"
+              "Waldfridus Quic",
+              "Nannen"
             ],
             "label": "spouse",
             "committed": true
@@ -148,6 +201,59 @@
         ],
         "1202": [
           {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.044
+          }
+        ],
+        "1203": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.749
+          }
+        ],
+        "1205": [
+          {
+            "topic": "new relationship",
+            "key": 14453,
+            "people": [
+              11288,
+              14451
+            ],
+            "people names": [
+              "Nannen",
+              "Veder Quic"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 14809,
+            "people": [
+              11288,
+              14807
+            ],
+            "people names": [
+              "Nannen",
+              "Eghenonis Quic"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1212": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.034
+          }
+        ],
+        "1213": [
+          {
             "key": 11289,
             "topic": "unmarried"
           },
@@ -155,99 +261,87 @@
             "topic": "person died",
             "person": {
               "key": 11287,
-              "name": "Alem",
-              "age": 49,
+              "name": "Waldfridus Quic",
+              "age": 54,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
             },
             "label": "spouse"
+          }
+        ],
+        "1214": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.717
           },
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1203": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1204": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1205": [
-          {
             "topic": "new relationship",
-            "key": 14656,
+            "key": 16690,
             "people": [
-              11482,
+              10525,
               11288
             ],
             "people names": [
-              "Sifridus Bonghe",
-              "Gisele Vraet"
+              "Lubertus Salm",
+              "Nannen"
             ],
             "label": "spouse",
             "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stBloemendaelse straet.se1.c2",
+              "street": "Bloemendaelse straet",
+              "neighborhood": "agnesbuurt",
+              "unique id": 217
+            }
           }
         ],
-        "1207": [
+        "1220": [
           {
-            "topic": "feelings change",
-            "target": 11482,
-            "target name": "Sifridus Bonghe",
-            "state": "out of love",
-            "relationship": 14656
-          }
-        ],
-        "1210": [
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.03
+          },
           {
-            "key": 14656,
+            "key": 16690,
             "topic": "unmarried"
           },
           {
             "topic": "person died",
             "person": {
-              "key": 11482,
-              "name": "Sifridus Bonghe",
-              "age": 56,
+              "key": 10525,
+              "name": "Lubertus Salm",
+              "age": 40,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
             },
             "label": "spouse"
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
           }
         ]
       }
     },
     "key": 11288,
     "home": {
-      "income class": 3,
-      "income class label": "upper middle class",
-      "section": "stBreestraat.se7.c3",
-      "street": "Breestraat",
-      "neighborhood": "olvbuurt",
-      "unique id": 579
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stBloemendaelse straet.se1.c2",
+      "street": "Bloemendaelse straet",
+      "neighborhood": "agnesbuurt",
+      "unique id": 217
     },
     "relationship status": {
       "taken": false,
       "married": false,
       "relationships": [
         11289,
-        14656
+        16690
       ]
     }
   }

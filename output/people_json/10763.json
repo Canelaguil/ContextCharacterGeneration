@@ -1,57 +1,83 @@
 {
   "10763": {
     "alive": false,
-    "name": "Hersewindis",
-    "surname": "Hyseriin",
-    "full name": "Hersewindis Hyseriin",
+    "name": "Erkenradis",
+    "surname": "",
+    "full name": "Erkenradis",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.063,
-      "romantic interest": 0.826,
-      "sex interest": 0.72,
-      "gender expression": 0.186,
+      "sexuality": 0.03,
+      "romantic interest": 0.541,
+      "sex interest": 0.765,
+      "gender expression": 0.146,
       "sex": "f"
     },
-    "age": 53,
-    "birth year": 1170,
+    "age": 22,
+    "birth year": 1183,
     "sex": "f",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.523,
-      "nice-nasty": 0.757,
-      "honest-false": 0.432
+      "lawful-chaotic": 0.575,
+      "nice-nasty": 0.722,
+      "honest-false": 0.999
     },
     "attitude": {
-      "outgoing": 0.519,
-      "dream": 0.35
+      "outgoing": 0.69,
+      "dream": 0.0
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
-        "needs_care": false
+        "needs_care": false,
+        "flags": [
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.033,
-        "gender expression expression": 0.102
+        "sexuality expression": 0.025,
+        "gender expression expression": 0.016
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "14779": {
-          "key": 14779,
-          "name": "Oderada",
-          "age": 17,
+        "12803": {
+          "key": 12803,
+          "name": "Wlfarde",
+          "age": 13,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Erkenradis (10763)",
+            "father": "Dybben (10762)"
+          }
+        },
+        "13182": {
+          "key": 13182,
+          "name": "Erkenradis Dybbensdochter",
+          "age": 43,
           "alive": false,
           "sex": "f",
           "parents": {
-            "mother": "Hersewindis (10763)",
-            "father": "Rolekine (10762)"
+            "mother": "Erkenradis (10763)",
+            "father": "Dybben (10762)"
+          }
+        },
+        "13594": {
+          "key": 13594,
+          "name": "Moerseil",
+          "age": 6,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Erkenradis (10763)",
+            "father": "Dybben (10762)"
           }
         }
       },
@@ -61,7 +87,9 @@
         ],
         "child": {
           "birth": [
-            14781
+            12805,
+            13184,
+            13596
           ]
         }
       }
@@ -76,16 +104,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 6,
-      "eye_color": "brown",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "skin_color": 7,
+      "eye_color": "blue",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
-        "S",
-        "S"
+        "C",
+        "C"
       ],
-      "health": 0.0,
-      "fertility": 0.546,
+      "health": 0.683,
+      "fertility": 0.57,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -97,31 +125,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.602
+            "new_health": 0.683
           },
           "death": false
         },
-        "1220": {
+        "1204": {
           "health": {
-            "change": true,
-            "value_change": -0.246,
-            "new_health": 0.356
-          },
-          "death": false
-        },
-        "1221": {
-          "health": {
-            "change": true,
-            "value_change": -0.245,
-            "new_health": 0.111
-          },
-          "death": false
-        },
-        "1222": {
-          "health": {
-            "change": true,
-            "value_change": -0.111,
-            "new_health": 0.0
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.683
           },
           "death": true
         }
@@ -136,8 +148,8 @@
               10763
             ],
             "people names": [
-              "Rolekine",
-              "Hersewindis Hyseriin"
+              "Dybben",
+              "Erkenradis"
             ],
             "label": "spouse",
             "committed": true
@@ -147,24 +159,24 @@
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stTuytsteeg.se3.c1",
-              "street": "Tuytsteeg",
+              "section": "stCoppelstraet.se1.c1",
+              "street": "Coppelstraet",
               "neighborhood": "agnesbuurt",
-              "unique id": 331
+              "unique id": 337
             }
           }
         ],
-        "1206": [
+        "1201": [
           {
             "topic": "new relationship",
-            "key": 14781,
+            "key": 12805,
             "people": [
               10763,
-              14779
+              12803
             ],
             "people names": [
-              "Hersewindis Hyseriin",
-              "Oderada"
+              "Erkenradis",
+              "Wlfarde"
             ],
             "label": "parentchild",
             "committed": false
@@ -172,12 +184,67 @@
           {
             "topic": "feelings change",
             "target": 10762,
-            "target name": "Rolekine",
-            "state": "out of love",
+            "target name": "Dybben",
+            "state": "infatuation",
             "relationship": 10764
           }
         ],
-        "1210": [
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 13184,
+            "people": [
+              10763,
+              13182
+            ],
+            "people names": [
+              "Erkenradis",
+              "Erkenradis Dybbensdochter"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 10762,
+            "target name": "Dybben",
+            "state": "solid love",
+            "relationship": 10764
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.132,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 13596,
+            "people": [
+              10763,
+              13594
+            ],
+            "people names": [
+              "Erkenradis",
+              "Moerseil"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.087,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
           {
             "key": 10764,
             "topic": "unmarried"
@@ -186,8 +253,8 @@
             "topic": "person died",
             "person": {
               "key": 10762,
-              "name": "Rolekine",
-              "age": 55,
+              "name": "Dybben",
+              "age": 53,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
@@ -198,90 +265,9 @@
             "topic": "not enough income",
             "income": 0,
             "inhabitants": []
-          }
-        ],
-        "1211": [
+          },
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1212": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1213": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1214": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1215": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1216": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1217": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1218": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1219": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1220": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1221": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1222": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "neglected"
           }
         ]
       }
@@ -290,10 +276,10 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stTuytsteeg.se3.c1",
-      "street": "Tuytsteeg",
+      "section": "stCoppelstraet.se1.c1",
+      "street": "Coppelstraet",
       "neighborhood": "agnesbuurt",
-      "unique id": 331
+      "unique id": 337
     },
     "relationship status": {
       "taken": false,

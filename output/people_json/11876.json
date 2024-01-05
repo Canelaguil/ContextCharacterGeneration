@@ -1,52 +1,85 @@
 {
   "11876": {
     "alive": false,
-    "name": "Heile",
-    "surname": "Mulart",
-    "full name": "Heile Mulart",
+    "name": "Menoldis",
+    "surname": "",
+    "full name": "Menoldis",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.851,
-      "romantic interest": 0.817,
-      "sex interest": 0.734,
-      "gender expression": 0.483,
+      "sexuality label": "bi",
+      "sexuality": 0.553,
+      "romantic interest": 0.459,
+      "sex interest": 0.447,
+      "gender expression": 0.241,
       "sex": "f"
     },
-    "age": 54,
-    "birth year": 1165,
+    "age": 35,
+    "birth year": 1173,
     "sex": "f",
     "income class": [
       4,
       "nobility"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.508,
-      "honest-false": 0.489
+      "lawful-chaotic": 0.547,
+      "nice-nasty": 0.999,
+      "honest-false": 0.332
     },
     "attitude": {
-      "outgoing": 0.674,
-      "dream": 0.739
+      "outgoing": 0.579,
+      "dream": 0.394
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
-        "needs_care": false
+        "needs_care": false,
+        "flags": [
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.44,
-        "gender expression expression": 0.225
+        "sexuality expression": 0.47,
+        "gender expression expression": 0.184
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14187": {
+          "key": 14187,
+          "name": "Didderic Bards",
+          "age": 45,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Menoldis (11876)",
+            "father": "Gheuardus (11875)"
+          }
+        },
+        "15209": {
+          "key": 15209,
+          "name": "Lammekin Gheuardusszoon",
+          "age": 27,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Menoldis (11876)",
+            "father": "Gheuardus (11875)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11877
-        ]
+        ],
+        "child": {
+          "birth": [
+            14189,
+            15211
+          ]
+        }
       }
     },
     "occupation": {
@@ -59,16 +92,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 2,
-      "eye_color": "brown",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "skin_color": 4,
+      "eye_color": "green",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
-        "C",
+        "S",
         "S"
       ],
-      "health": 0.0,
-      "fertility": 0.742,
+      "health": 0.669,
+      "fertility": 0.652,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -80,39 +113,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.754
+            "new_health": 0.669
           },
           "death": false
         },
-        "1215": {
+        "1207": {
           "health": {
-            "change": true,
-            "value_change": -0.214,
-            "new_health": 0.54
-          },
-          "death": false
-        },
-        "1216": {
-          "health": {
-            "change": true,
-            "value_change": -0.167,
-            "new_health": 0.373
-          },
-          "death": false
-        },
-        "1217": {
-          "health": {
-            "change": true,
-            "value_change": -0.294,
-            "new_health": 0.079
-          },
-          "death": false
-        },
-        "1218": {
-          "health": {
-            "change": true,
-            "value_change": -0.079,
-            "new_health": 0.0
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.669
           },
           "death": true
         }
@@ -127,8 +136,8 @@
               11876
             ],
             "people names": [
-              "Folpertus",
-              "Heile Mulart"
+              "Gheuardus Bards",
+              "Menoldis"
             ],
             "label": "spouse",
             "committed": true
@@ -141,66 +150,60 @@
               "section": "stOp Havick1.se1.c4",
               "street": "Op Havick1",
               "neighborhood": "cingelnoord",
-              "unique id": 836
+              "unique id": 847
             }
           }
         ],
-        "1213": [
+        "1204": [
           {
-            "key": 11877,
-            "topic": "unmarried"
+            "topic": "new relationship",
+            "key": 14189,
+            "people": [
+              11876,
+              14187
+            ],
+            "people names": [
+              "Menoldis",
+              "Didderic Bards"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1207": [
+          {
+            "topic": "new relationship",
+            "key": 15211,
+            "people": [
+              11876,
+              15209
+            ],
+            "people names": [
+              "Menoldis",
+              "Lammekin Gheuardusszoon"
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
-            "topic": "person died",
-            "person": {
-              "key": 11875,
-              "name": "Folpertus",
-              "age": 57,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
+            "topic": "feelings change",
+            "target": 11875,
+            "target name": "Gheuardus Bards",
+            "state": "infatuation",
+            "relationship": 11877
           },
           {
             "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1214": [
+            "income": 0.06,
+            "inhabitants": [
+              17991,
+              14811,
+              18639,
+              19633
+            ]
+          },
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1215": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1216": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1217": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1218": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "neglected"
           }
         ]
       }
@@ -212,11 +215,11 @@
       "section": "stOp Havick1.se1.c4",
       "street": "Op Havick1",
       "neighborhood": "cingelnoord",
-      "unique id": 836
+      "unique id": 847
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
         11877
       ]

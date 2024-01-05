@@ -1,52 +1,70 @@
 {
   "10720": {
     "alive": false,
-    "name": "Winrechus",
-    "surname": "Donevoet",
-    "full name": "Winrechus Donevoet",
+    "name": "Vroeden",
+    "surname": "",
+    "full name": "Vroeden",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.092,
-      "romantic interest": 0.668,
-      "sex interest": 0.686,
-      "gender expression": 0.027,
+      "sexuality": 0.056,
+      "romantic interest": 0.836,
+      "sex interest": 0.566,
+      "gender expression": 0.217,
       "sex": "m"
     },
-    "age": 35,
-    "birth year": 1180,
+    "age": 53,
+    "birth year": 1151,
     "sex": "m",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.73,
-      "nice-nasty": 0.999,
-      "honest-false": 0.623
+      "lawful-chaotic": 0.291,
+      "nice-nasty": 0.032,
+      "honest-false": 0.009
     },
     "attitude": {
-      "outgoing": 0.452,
-      "dream": 0.152
+      "outgoing": 0.617,
+      "dream": 0.329
     },
     "homsoc": {
       "means": {
         "independent": false,
         "taken_care_of": false,
         "caretaker": false,
-        "needs_care": false
+        "needs_care": false,
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.07,
-        "gender expression expression": 0.02
+        "sexuality expression": 0.043,
+        "gender expression expression": 0.151
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13174": {
+          "key": 13174,
+          "name": "Reymar",
+          "age": 47,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Hersewindis (10721)",
+            "father": "Vroeden (10720)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10722
-        ]
+        ],
+        "child": {
+          "birth": [
+            13175
+          ]
+        }
       }
     },
     "occupation": {
@@ -55,24 +73,13 @@
         2,
         "middle class"
       ],
-      "income": 0.137,
+      "income": 0.467,
       "all_incomes": [
-        0.88,
-        0.513,
-        0.882,
-        0.447,
-        0.153,
-        0.299,
-        0.0,
-        0.254,
-        0.64,
-        0.73,
-        0.913,
-        0.642,
-        0.469,
-        0.19,
-        0.166,
-        0.137
+        0.971,
+        0.98,
+        0.499,
+        0.373,
+        0.467
       ],
       "job": {
         "lawful": true,
@@ -80,16 +87,16 @@
       }
     },
     "genetics": {
-      "skin_color": 3,
-      "eye_color": "brown",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "skin_color": 9,
+      "eye_color": "blue",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "C",
-        "S"
+        "S",
+        "C"
       ],
-      "health": 0.698,
-      "fertility": 0.649,
+      "health": 0.0,
+      "fertility": 0.591,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -101,15 +108,31 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.698
+            "new_health": 0.651
           },
           "death": false
         },
-        "1214": {
+        "1201": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.698
+            "change": true,
+            "value_change": -0.281,
+            "new_health": 0.37
+          },
+          "death": false
+        },
+        "1202": {
+          "health": {
+            "change": true,
+            "value_change": -0.264,
+            "new_health": 0.106
+          },
+          "death": false
+        },
+        "1203": {
+          "health": {
+            "change": true,
+            "value_change": -0.106,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -119,12 +142,7 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.88
-          },
-          {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.513
+            "income": 0.971
           },
           {
             "topic": "new relationship",
@@ -134,8 +152,8 @@
               10721
             ],
             "people names": [
-              "Winrechus Donevoet",
-              "Siwa Maerke"
+              "Vroeden",
+              "Hersewindis Stuucs"
             ],
             "label": "spouse",
             "committed": true
@@ -148,69 +166,43 @@
               "section": "stCingel.se5.c2",
               "street": "Cingel",
               "neighborhood": "agnesbuurt",
-              "unique id": 315
+              "unique id": 314
             }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.499
           }
         ],
         "1202": [
           {
             "topic": "job notice",
             "notice": "earning very little",
-            "income": 0.447
+            "income": 0.373
+          },
+          {
+            "topic": "new relationship",
+            "key": 13175,
+            "people": [
+              10720,
+              13174
+            ],
+            "people names": [
+              "Vroeden",
+              "Reymar"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1203": [
           {
             "topic": "job notice",
-            "notice": "hardly any income",
-            "income": 0.153
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.153,
-            "inhabitants": []
-          }
-        ],
-        "1205": [
-          {
-            "topic": "job notice",
-            "notice": "hardly any income",
-            "income": 0.0
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
-          }
-        ],
-        "1206": [
-          {
-            "topic": "feelings change",
-            "target": 10721,
-            "target name": "Siwa Maerke",
-            "state": "out of love",
-            "relationship": 10722
-          }
-        ],
-        "1210": [
-          {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.642
-          }
-        ],
-        "1211": [
-          {
-            "topic": "job notice",
             "notice": "earning very little",
-            "income": 0.469
-          }
-        ],
-        "1212": [
-          {
-            "topic": "job notice",
-            "notice": "hardly any income",
-            "income": 0.19
+            "income": 0.467
           }
         ]
       }
@@ -222,7 +214,7 @@
       "section": "stCingel.se5.c2",
       "street": "Cingel",
       "neighborhood": "agnesbuurt",
-      "unique id": 315
+      "unique id": 314
     },
     "relationship status": {
       "taken": true,

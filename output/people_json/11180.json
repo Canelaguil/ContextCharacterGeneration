@@ -1,52 +1,70 @@
 {
   "11180": {
     "alive": false,
-    "name": "Linnea",
-    "surname": "",
-    "full name": "Linnea",
+    "name": "Katrin",
+    "surname": "Riken",
+    "full name": "Katrin Riken",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.185,
-      "romantic interest": 0.564,
-      "sex interest": 0.811,
-      "gender expression": 0.116,
+      "sexuality": 0.031,
+      "romantic interest": 0.423,
+      "sex interest": 0.801,
+      "gender expression": 0.284,
       "sex": "f"
     },
-    "age": 56,
-    "birth year": 1152,
+    "age": 35,
+    "birth year": 1170,
     "sex": "f",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.346,
-      "nice-nasty": 0.37,
-      "honest-false": 0.188
+      "lawful-chaotic": 0.599,
+      "nice-nasty": 0.851,
+      "honest-false": 0.355
     },
     "attitude": {
-      "outgoing": 0.845,
-      "dream": 0.315
+      "outgoing": 0.631,
+      "dream": 0.586
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
-        "needs_care": false
+        "needs_care": false,
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.12,
-        "gender expression expression": 0.032
+        "sexuality expression": 0.02,
+        "gender expression expression": 0.056
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12880": {
+          "key": 12880,
+          "name": "Sander Duckar",
+          "age": 4,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Katrin (11180)",
+            "father": "Radewijns (11179)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11181
-        ]
+        ],
+        "child": {
+          "birth": [
+            12882
+          ]
+        }
       }
     },
     "occupation": {
@@ -59,16 +77,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 1,
-      "eye_color": "green",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "skin_color": 8,
+      "eye_color": "blue",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
-        "C",
+        "S",
         "C"
       ],
-      "health": 0.0,
-      "fertility": 0.863,
+      "health": 0.569,
+      "fertility": 0.545,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -80,55 +98,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.783
-          },
-          "death": false
-        },
-        "1202": {
-          "health": {
-            "change": true,
-            "value_change": -0.082,
-            "new_health": 0.701
-          },
-          "death": false
-        },
-        "1203": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.701
+            "new_health": 0.569
           },
           "death": false
         },
         "1204": {
           "health": {
-            "change": true,
-            "value_change": -0.275,
-            "new_health": 0.426
-          },
-          "death": false
-        },
-        "1205": {
-          "health": {
-            "change": true,
-            "value_change": -0.239,
-            "new_health": 0.187
-          },
-          "death": false
-        },
-        "1206": {
-          "health": {
-            "change": true,
-            "value_change": -0.059,
-            "new_health": 0.128
-          },
-          "death": false
-        },
-        "1207": {
-          "health": {
-            "change": true,
-            "value_change": -0.128,
-            "new_health": 0.0
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.569
           },
           "death": true
         }
@@ -143,8 +121,8 @@
               11180
             ],
             "people names": [
-              "Ripperti Calle",
-              "Linnea"
+              "Radewijns Duckar",
+              "Katrin Riken"
             ],
             "label": "spouse",
             "committed": true
@@ -157,15 +135,31 @@
               "section": "stBreestraat.se1.c2",
               "street": "Breestraat",
               "neighborhood": "olvbuurt",
-              "unique id": 530
+              "unique id": 532
             }
           }
         ],
-        "1205": [
+        "1201": [
           {
-            "topic": "not enough income",
-            "income": 0.192,
-            "inhabitants": []
+            "topic": "new relationship",
+            "key": 12882,
+            "people": [
+              11180,
+              12880
+            ],
+            "people names": [
+              "Katrin Riken",
+              "Sander Duckar"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 11179,
+            "target name": "Radewijns Duckar",
+            "state": "out of love",
+            "relationship": 11181
           }
         ]
       }
@@ -177,7 +171,7 @@
       "section": "stBreestraat.se1.c2",
       "street": "Breestraat",
       "neighborhood": "olvbuurt",
-      "unique id": 530
+      "unique id": 532
     },
     "relationship status": {
       "taken": true,

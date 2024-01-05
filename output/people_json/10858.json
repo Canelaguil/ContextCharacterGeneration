@@ -1,52 +1,98 @@
 {
   "10858": {
     "alive": false,
-    "name": "Trove",
+    "name": "Godino",
     "surname": "",
-    "full name": "Trove",
+    "full name": "Godino",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.027,
-      "romantic interest": 0.552,
-      "sex interest": 0.728,
-      "gender expression": 0.121,
+      "sexuality": 0.08,
+      "romantic interest": 0.467,
+      "sex interest": 0.708,
+      "gender expression": 0.0,
       "sex": "m"
     },
-    "age": 46,
-    "birth year": 1158,
+    "age": 55,
+    "birth year": 1174,
     "sex": "m",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.281,
-      "nice-nasty": 0.243,
-      "honest-false": 0.904
+      "lawful-chaotic": 0.0,
+      "nice-nasty": 0.272,
+      "honest-false": 0.354
     },
     "attitude": {
-      "outgoing": 0.629,
-      "dream": 0.132
+      "outgoing": 0.144,
+      "dream": 0.531
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
-        "needs_care": false
+        "needs_care": false,
+        "flags": [
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.013,
-        "gender expression expression": 0.034
+        "sexuality expression": 0.034,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12373": {
+          "key": 12373,
+          "name": "Oliuerus Godinoszoon",
+          "age": 9,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Siwa (10859)",
+            "father": "Godino (10858)"
+          }
+        },
+        "13190": {
+          "key": 13190,
+          "name": "Kerstiaen van Siwa",
+          "age": 12,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Siwa (10859)",
+            "father": "Godino (10858)"
+          }
+        },
+        "14722": {
+          "key": 14722,
+          "name": "Conrad",
+          "age": 43,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Siwa (10859)",
+            "father": "Godino (10858)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          10860
-        ]
+          10860,
+          16847
+        ],
+        "child": {
+          "birth": [
+            12374,
+            13191,
+            14723
+          ]
+        }
       }
     },
     "occupation": {
@@ -55,13 +101,38 @@
         2,
         "middle class"
       ],
-      "income": 1.142,
+      "income": 0.068,
       "all_incomes": [
-        1.265,
-        1.304,
-        1.325,
-        1.343,
-        1.142
+        0.77,
+        0.487,
+        0.419,
+        0.323,
+        0.15,
+        0.289,
+        0.419,
+        0.401,
+        0.449,
+        0.483,
+        0.368,
+        0.551,
+        0.641,
+        0.598,
+        0.693,
+        0.532,
+        0.453,
+        0.195,
+        0.399,
+        0.194,
+        0.122,
+        0.105,
+        0.27,
+        0.391,
+        0.111,
+        0.11,
+        0.124,
+        0.212,
+        0.174,
+        0.068
       ],
       "job": {
         "lawful": false,
@@ -69,16 +140,16 @@
       }
     },
     "genetics": {
-      "skin_color": 9,
+      "skin_color": 1,
       "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
         "S",
-        "C"
+        "S"
       ],
-      "health": 0.497,
-      "fertility": 0.499,
+      "health": 0.0,
+      "fertility": 0.671,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -90,15 +161,47 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.497
+            "new_health": 0.6
           },
           "death": false
         },
-        "1203": {
+        "1224": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.497
+            "change": true,
+            "value_change": -0.22,
+            "new_health": 0.38
+          },
+          "death": false
+        },
+        "1225": {
+          "health": {
+            "change": true,
+            "value_change": -0.23,
+            "new_health": 0.15
+          },
+          "death": false
+        },
+        "1226": {
+          "health": {
+            "change": true,
+            "value_change": -0.121,
+            "new_health": 0.029
+          },
+          "death": false
+        },
+        "1227": {
+          "health": {
+            "change": true,
+            "value_change": -0.027,
+            "new_health": 0.002
+          },
+          "death": false
+        },
+        "1228": {
+          "health": {
+            "change": true,
+            "value_change": -0.002,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -108,7 +211,12 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.265
+            "income": 0.77
+          },
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.487
           },
           {
             "topic": "new relationship",
@@ -118,8 +226,8 @@
               10859
             ],
             "people names": [
-              "Trove",
-              "Mette Stippekender"
+              "Godino",
+              "Siwa Peteman"
             ],
             "label": "spouse",
             "committed": true
@@ -129,18 +237,304 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stDie Camp.se3.c2",
+              "section": "stDie Camp.se5.c2",
               "street": "Die Camp",
               "neighborhood": "kampbuurt",
-              "unique id": 381
+              "unique id": 385
             }
           },
           {
-            "topic": "feelings change",
-            "target": 10859,
-            "target name": "Mette Stippekender",
-            "state": "solid love",
-            "relationship": 10860
+            "topic": "new relationship",
+            "key": 12374,
+            "people": [
+              10858,
+              12373
+            ],
+            "people names": [
+              "Godino",
+              "Oliuerus Godinoszoon"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1201": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.419
+          }
+        ],
+        "1202": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.323
+          },
+          {
+            "topic": "new relationship",
+            "key": 13191,
+            "people": [
+              10858,
+              13190
+            ],
+            "people names": [
+              "Godino",
+              "Kerstiaen van Siwa"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.323,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.15
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.15,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "not enough income",
+            "income": 0.289,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.419
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1206": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.401
+          },
+          {
+            "topic": "new relationship",
+            "key": 14723,
+            "people": [
+              10858,
+              14722
+            ],
+            "people names": [
+              "Godino",
+              "Conrad"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.401,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.449
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.449,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.483
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.483,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.368
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.368,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12373,
+              "name": "Oliuerus Godinoszoon",
+              "age": 9,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Siwa (10859)",
+                "father": "Godino (10858)"
+              }
+            },
+            "label": "child"
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1214": [
+          {
+            "key": 10860,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10859,
+              "name": "Siwa Peteman",
+              "age": 43,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1215": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.453
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 13190,
+              "name": "Kerstiaen van Siwa",
+              "age": 12,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Siwa (10859)",
+                "father": "Godino (10858)"
+              }
+            },
+            "label": "child"
+          },
+          {
+            "topic": "new relationship",
+            "key": 16847,
+            "people": [
+              10858,
+              11900
+            ],
+            "people names": [
+              "Godino",
+              "Saswe"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stDie Camp.se1.c2",
+              "street": "Die Camp",
+              "neighborhood": "kampbuurt",
+              "unique id": 365
+            }
+          }
+        ],
+        "1216": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.195
+          }
+        ],
+        "1218": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.194
+          }
+        ],
+        "1221": [
+          {
+            "key": 16847,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11900,
+              "name": "Saswe",
+              "age": 54,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          }
+        ],
+        "1222": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.391
+          }
+        ],
+        "1223": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.111
           }
         ]
       }
@@ -149,16 +543,17 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stDie Camp.se3.c2",
+      "section": "stDie Camp.se1.c2",
       "street": "Die Camp",
       "neighborhood": "kampbuurt",
-      "unique id": 381
+      "unique id": 365
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
-        10860
+        10860,
+        16847
       ]
     }
   }

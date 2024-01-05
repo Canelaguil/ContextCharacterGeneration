@@ -1,52 +1,98 @@
 {
   "10558": {
     "alive": false,
-    "name": "Alebaren",
-    "surname": "Vromoeds",
-    "full name": "Alebaren Vromoeds",
+    "name": "Herdradus",
+    "surname": "Euer",
+    "full name": "Herdradus Euer",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.025,
-      "romantic interest": 0.749,
-      "sex interest": 0.711,
-      "gender expression": 0.026,
+      "sexuality": 0.03,
+      "romantic interest": 0.415,
+      "sex interest": 0.758,
+      "gender expression": 0.137,
       "sex": "m"
     },
-    "age": 36,
-    "birth year": 1169,
+    "age": 55,
+    "birth year": 1163,
     "sex": "m",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.554,
-      "nice-nasty": 0.862,
-      "honest-false": 0.458
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.271,
+      "honest-false": 0.0
     },
     "attitude": {
-      "outgoing": 0.338,
-      "dream": 0.395
+      "outgoing": 0.585,
+      "dream": 0.37
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
-        "needs_care": false
+        "needs_care": false,
+        "flags": [
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.015,
-        "gender expression expression": 0.002
+        "sexuality expression": 0.01,
+        "gender expression expression": 0.086
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12331": {
+          "key": 12331,
+          "name": "Ramont van Volcwiif",
+          "age": 6,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Volcwiif (10559)",
+            "father": "Herdradus (10558)"
+          }
+        },
+        "13553": {
+          "key": 13553,
+          "name": "Ymmekine Euer",
+          "age": 46,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Volcwiif (10559)",
+            "father": "Herdradus (10558)"
+          }
+        },
+        "14689": {
+          "key": 14689,
+          "name": "Natelien Euer",
+          "age": 30,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Volcwiif (10559)",
+            "father": "Herdradus (10558)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          10560
-        ]
+          10560,
+          15499
+        ],
+        "child": {
+          "birth": [
+            12332,
+            13554,
+            14690
+          ]
+        }
       }
     },
     "occupation": {
@@ -55,31 +101,44 @@
         2,
         "middle class"
       ],
-      "income": 1.152,
+      "income": 0.719,
       "all_incomes": [
-        1.001,
-        1.056,
-        1.077,
+        1.137,
+        1.289,
+        0.979,
+        0.683,
+        0.3,
+        0.475,
+        0.088,
+        0.328,
+        0.471,
+        0.442,
+        0.608,
+        0.871,
+        1.12,
+        1.407,
+        1.333,
+        1.075,
         1.071,
-        1.084,
-        1.152
+        0.845,
+        0.719
       ],
       "job": {
         "lawful": true,
-        "honest": true
+        "honest": false
       }
     },
     "genetics": {
-      "skin_color": 8,
-      "eye_color": "green",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 1,
+      "eye_color": "brown",
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
         "S",
-        "S"
+        "C"
       ],
-      "health": 0.873,
-      "fertility": 0.842,
+      "health": 0.024,
+      "fertility": 0.825,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -91,15 +150,47 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.873
+            "new_health": 0.789
           },
           "death": false
         },
-        "1204": {
+        "1213": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.873
+            "change": true,
+            "value_change": -0.202,
+            "new_health": 0.587
+          },
+          "death": false
+        },
+        "1214": {
+          "health": {
+            "change": true,
+            "value_change": -0.152,
+            "new_health": 0.435
+          },
+          "death": false
+        },
+        "1215": {
+          "health": {
+            "change": true,
+            "value_change": -0.154,
+            "new_health": 0.281
+          },
+          "death": false
+        },
+        "1216": {
+          "health": {
+            "change": true,
+            "value_change": -0.175,
+            "new_health": 0.106
+          },
+          "death": false
+        },
+        "1217": {
+          "health": {
+            "change": true,
+            "value_change": -0.082,
+            "new_health": 0.024
           },
           "death": true
         }
@@ -109,7 +200,7 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.001
+            "income": 1.137
           },
           {
             "topic": "new relationship",
@@ -119,8 +210,8 @@
               10559
             ],
             "people names": [
-              "Alebaren Vromoeds",
-              "Hildeburgis"
+              "Herdradus Euer",
+              "Volcwiif"
             ],
             "label": "spouse",
             "committed": true
@@ -130,18 +221,228 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stWaale straet.se1.c2",
-              "street": "Waale straet",
+              "section": "stBloemendaelse straet.se7.c2",
+              "street": "Bloemendaelse straet",
               "neighborhood": "agnesbuurt",
-              "unique id": 245
+              "unique id": 239
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12332,
+            "people": [
+              10558,
+              12331
+            ],
+            "people names": [
+              "Herdradus Euer",
+              "Ramont van Volcwiif"
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
             "topic": "feelings change",
             "target": 10559,
-            "target name": "Hildeburgis",
+            "target name": "Volcwiif",
             "state": "out of love",
             "relationship": 10560
+          }
+        ],
+        "1202": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.683
+          }
+        ],
+        "1203": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.3
+          },
+          {
+            "topic": "new relationship",
+            "key": 13554,
+            "people": [
+              10558,
+              13553
+            ],
+            "people names": [
+              "Herdradus Euer",
+              "Ymmekine Euer"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.3,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.475
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.088
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.088,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 14690,
+            "people": [
+              10558,
+              14689
+            ],
+            "people names": [
+              "Herdradus Euer",
+              "Natelien Euer"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.328,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.471
+          },
+          {
+            "key": 10560,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10559,
+              "name": "Volcwiif",
+              "age": 42,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12331,
+              "name": "Ramont van Volcwiif",
+              "age": 6,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Volcwiif (10559)",
+                "father": "Herdradus (10558)"
+              }
+            },
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.471,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.442
+          },
+          {
+            "topic": "new relationship",
+            "key": 15499,
+            "people": [
+              10558,
+              10514
+            ],
+            "people names": [
+              "Herdradus Euer",
+              "Victoria Borlutte"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "feelings change",
+            "target": 10514,
+            "target name": "Victoria Borlutte",
+            "state": "solid love",
+            "relationship": 15499
+          }
+        ],
+        "1211": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.12
+          }
+        ],
+        "1214": [
+          {
+            "key": 15499,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10514,
+              "name": "Victoria Borlutte",
+              "age": 57,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          }
+        ],
+        "1217": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.719
           }
         ]
       }
@@ -150,16 +451,17 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stWaale straet.se1.c2",
-      "street": "Waale straet",
+      "section": "stBloemendaelse straet.se7.c2",
+      "street": "Bloemendaelse straet",
       "neighborhood": "agnesbuurt",
-      "unique id": 245
+      "unique id": 239
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
-        10560
+        10560,
+        15499
       ]
     }
   }

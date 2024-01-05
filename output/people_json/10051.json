@@ -1,19 +1,19 @@
 {
   "10051": {
     "alive": false,
-    "name": "Pelegrim",
+    "name": "Wybel",
     "surname": "",
-    "full name": "Pelegrim",
+    "full name": "Wybel",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.548,
-      "sex interest": 0.941,
-      "gender expression": 0.26,
+      "sexuality": 0.093,
+      "romantic interest": 0.861,
+      "sex interest": 0.733,
+      "gender expression": 0.055,
       "sex": "m"
     },
-    "age": 53,
-    "birth year": 1158,
+    "age": 35,
+    "birth year": 1173,
     "sex": "m",
     "income class": [
       2,
@@ -21,33 +21,50 @@
     ],
     "personality": {
       "lawful-chaotic": 0.999,
-      "nice-nasty": 0.762,
-      "honest-false": 0.604
+      "nice-nasty": 0.019,
+      "honest-false": 0.38
     },
     "attitude": {
-      "outgoing": 0.351,
-      "dream": 0.591
+      "outgoing": 0.563,
+      "dream": 0.546
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
-        "needs_care": false
+        "needs_care": false,
+        "flags": []
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.101
+        "sexuality expression": 0.034,
+        "gender expression expression": 0.03
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14247": {
+          "key": 14247,
+          "name": "Rembrandus Wybelszoon",
+          "age": 24,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Nimme (10052)",
+            "father": "Wybel (10051)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          10053,
-          16144
-        ]
+          10053
+        ],
+        "child": {
+          "birth": [
+            14248
+          ]
+        }
       }
     },
     "occupation": {
@@ -56,20 +73,17 @@
         2,
         "middle class"
       ],
-      "income": 0.703,
+      "income": 0.96,
       "all_incomes": [
+        1.143,
+        1.064,
+        1.047,
+        1.06,
+        1.092,
         0.996,
-        0.928,
-        0.883,
-        0.94,
-        0.914,
-        0.826,
-        0.887,
-        0.872,
-        0.827,
-        0.765,
-        0.764,
-        0.703
+        0.942,
+        1.019,
+        0.96
       ],
       "job": {
         "lawful": true,
@@ -77,16 +91,16 @@
       }
     },
     "genetics": {
-      "skin_color": 3,
+      "skin_color": 1,
       "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
         "C",
-        "S"
+        "C"
       ],
-      "health": 0.0,
-      "fertility": 0.809,
+      "health": 0.628,
+      "fertility": 0.66,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -98,47 +112,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.737
+            "new_health": 0.628
           },
           "death": false
         },
-        "1202": {
-          "health": {
-            "change": true,
-            "value_change": -0.248,
-            "new_health": 0.489
-          },
-          "death": false
-        },
-        "1203": {
+        "1207": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.489
-          },
-          "death": false
-        },
-        "1208": {
-          "health": {
-            "change": true,
-            "value_change": -0.229,
-            "new_health": 0.26
-          },
-          "death": false
-        },
-        "1209": {
-          "health": {
-            "change": true,
-            "value_change": -0.208,
-            "new_health": 0.052
-          },
-          "death": false
-        },
-        "1210": {
-          "health": {
-            "change": true,
-            "value_change": -0.052,
-            "new_health": 0.0
+            "new_health": 0.628
           },
           "death": true
         }
@@ -148,7 +130,7 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.996
+            "income": 1.143
           },
           {
             "topic": "new relationship",
@@ -158,8 +140,8 @@
               10052
             ],
             "people names": [
-              "Pelegrim",
-              "Aghata Roden"
+              "Wybel",
+              "Nimme"
             ],
             "label": "spouse",
             "committed": true
@@ -172,47 +154,38 @@
               "section": "stUterechse straet.se3.c2",
               "street": "Uterechse straet",
               "neighborhood": "varkensbuurt",
-              "unique id": 21
+              "unique id": 20
             }
-          }
-        ],
-        "1204": [
-          {
-            "key": 10053,
-            "topic": "unmarried"
           },
           {
-            "topic": "person died",
-            "person": {
-              "key": 10052,
-              "name": "Aghata Roden",
-              "age": 44,
-              "alive": false,
-              "sex": "f",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
+            "topic": "feelings change",
+            "target": 10052,
+            "target name": "Nimme",
+            "state": "solid love",
+            "relationship": 10053
           }
         ],
-        "1210": [
-          {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.703
-          },
+        "1205": [
           {
             "topic": "new relationship",
-            "key": 16144,
+            "key": 14248,
             "people": [
               10051,
-              11114
+              14247
             ],
             "people names": [
-              "Pelegrim",
-              "Imma Callart"
+              "Wybel",
+              "Rembrandus Wybelszoon"
             ],
-            "label": "spouse",
-            "committed": true
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1206": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.019
           }
         ]
       }
@@ -224,14 +197,13 @@
       "section": "stUterechse straet.se3.c2",
       "street": "Uterechse straet",
       "neighborhood": "varkensbuurt",
-      "unique id": 21
+      "unique id": 20
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        10053,
-        16144
+        10053
       ]
     }
   }

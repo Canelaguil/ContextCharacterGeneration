@@ -1,52 +1,112 @@
 {
   "11936": {
     "alive": false,
-    "name": "Clementia",
-    "surname": "",
-    "full name": "Clementia",
+    "name": "Oda",
+    "surname": "Vint",
+    "full name": "Oda Vint",
     "born this way": {
       "sexuality label": "straight",
       "sexuality": 0.04,
-      "romantic interest": 0.701,
-      "sex interest": 0.705,
-      "gender expression": 0.18,
+      "romantic interest": 0.952,
+      "sex interest": 0.693,
+      "gender expression": 0.29,
       "sex": "f"
     },
-    "age": 46,
-    "birth year": 1160,
+    "age": 42,
+    "birth year": 1182,
     "sex": "f",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.669,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.0,
+      "nice-nasty": 0.072,
+      "honest-false": 0.327
     },
     "attitude": {
-      "outgoing": 0.414,
-      "dream": 0.455
+      "outgoing": 0.266,
+      "dream": 0.136
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
-        "needs_care": false
+        "caretaker": true,
+        "needs_care": false,
+        "flags": [
+          "caretaker",
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.027,
-        "gender expression expression": 0.117
+        "sexuality expression": 0.019,
+        "gender expression expression": 0.201
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13375": {
+          "key": 13375,
+          "name": "Ringot Vos",
+          "age": 47,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Oda (11936)",
+            "father": "Dybben (11935)"
+          }
+        },
+        "14193": {
+          "key": 14193,
+          "name": "Anthonius Vos",
+          "age": 38,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Oda (11936)",
+            "father": "Dybben (11935)"
+          }
+        },
+        "17428": {
+          "key": 17428,
+          "name": "Ryccie Neue",
+          "age": 28,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Oda (11936)",
+            "father": "Gheram (10108)"
+          }
+        },
+        "17655": {
+          "key": 17655,
+          "name": "Syuardus Neue",
+          "age": 5,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Oda (11936)",
+            "father": "Gheram (10108)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          11937
-        ]
+          11937,
+          14960,
+          16488
+        ],
+        "child": {
+          "birth": [
+            13377,
+            14195,
+            17430,
+            17657
+          ]
+        }
       }
     },
     "occupation": {
@@ -59,16 +119,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 8,
-      "eye_color": "brown",
+      "skin_color": 2,
+      "eye_color": "blue",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
         "S",
-        "S"
+        "C"
       ],
-      "health": 0.69,
-      "fertility": 0.755,
+      "health": 0.756,
+      "fertility": 0.837,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -80,15 +140,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.69
+            "new_health": 0.756
           },
           "death": false
         },
-        "1205": {
+        "1223": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.69
+            "new_health": 0.756
           },
           "death": true
         }
@@ -103,8 +163,8 @@
               11936
             ],
             "people names": [
-              "Iacobus Coe",
-              "Clementia"
+              "Dybben Vos",
+              "Oda Vint"
             ],
             "label": "spouse",
             "committed": true
@@ -114,11 +174,429 @@
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stDe Vyver.se3.c1",
-              "street": "De Vyver",
+              "section": "stCromme straet.se1.c1",
+              "street": "Cromme straet",
               "neighborhood": "denhof",
-              "unique id": 864
+              "unique id": 872
             }
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 13377,
+            "people": [
+              11936,
+              13375
+            ],
+            "people names": [
+              "Oda Vint",
+              "Ringot Vos"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 14195,
+            "people": [
+              11936,
+              14193
+            ],
+            "people names": [
+              "Oda Vint",
+              "Anthonius Vos"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1205": [
+          {
+            "key": 11937,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11935,
+              "name": "Dybben Vos",
+              "age": 32,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 14960,
+            "people": [
+              11683,
+              11936
+            ],
+            "people names": [
+              "Hughe Tunne",
+              "Oda Vint"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stNieu straet.se1.c1",
+              "street": "Nieu straet",
+              "neighborhood": "visbuurt",
+              "unique id": 754
+            }
+          }
+        ],
+        "1208": [
+          {
+            "key": 14960,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11683,
+              "name": "Hughe Tunne",
+              "age": 37,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": [
+              13375,
+              14193
+            ]
+          },
+          {
+            "topic": "new caretaker",
+            "person": 11936
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
+          {
+            "topic": "new relationship",
+            "key": 16488,
+            "people": [
+              10108,
+              11936
+            ],
+            "people names": [
+              "Gheram Neue",
+              "Oda Vint"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stSlyck straet.se1.c1",
+              "street": "Slyck straet",
+              "neighborhood": "varkensbuurt",
+              "unique id": 39
+            }
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              13053,
+              17930,
+              18784,
+              19562,
+              20591,
+              20772,
+              21057,
+              21141,
+              17667,
+              22420,
+              15335,
+              24475,
+              19276,
+              18732,
+              25259,
+              25331,
+              25430,
+              25556
+            ]
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0.115,
+            "inhabitants": [
+              13053,
+              17930,
+              18784,
+              19562,
+              20591,
+              20772,
+              21057,
+              21141,
+              17667,
+              22420,
+              15335,
+              24475,
+              19276,
+              18732,
+              25259,
+              25331,
+              25430,
+              25556
+            ]
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1215": [
+          {
+            "topic": "feelings change",
+            "target": 10108,
+            "target name": "Gheram Neue",
+            "state": "out of love",
+            "relationship": 16488
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.376,
+            "inhabitants": [
+              13053,
+              17930,
+              18784,
+              19562,
+              20591,
+              20772,
+              21057,
+              21141,
+              17667,
+              22420,
+              15335,
+              24475,
+              19276,
+              18732,
+              25259,
+              25331,
+              25430,
+              25556
+            ]
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1216": [
+          {
+            "topic": "not enough income",
+            "income": 0.177,
+            "inhabitants": [
+              13053,
+              17930,
+              18784,
+              19562,
+              20591,
+              20772,
+              21057,
+              21141,
+              17667,
+              22420,
+              15335,
+              24475,
+              19276,
+              18732,
+              25259,
+              25331,
+              25430,
+              25556
+            ]
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1217": [
+          {
+            "topic": "not enough income",
+            "income": 0.406,
+            "inhabitants": [
+              13053,
+              17930,
+              18784,
+              19562,
+              20591,
+              20772,
+              21057,
+              21141,
+              17667,
+              22420,
+              15335,
+              24475,
+              19276,
+              18732,
+              25259,
+              25331,
+              25430,
+              25556
+            ]
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1218": [
+          {
+            "topic": "not enough income",
+            "income": 0.033,
+            "inhabitants": [
+              13053,
+              17930,
+              18784,
+              19562,
+              20591,
+              20772,
+              21057,
+              21141,
+              17667,
+              22420,
+              15335,
+              24475,
+              19276,
+              18732,
+              25259,
+              25331,
+              25430,
+              25556
+            ]
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1219": [
+          {
+            "topic": "new relationship",
+            "key": 17430,
+            "people": [
+              11936,
+              17428
+            ],
+            "people names": [
+              "Oda Vint",
+              "Ryccie Neue"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              13053,
+              17930,
+              18784,
+              19562,
+              20591,
+              20772,
+              21057,
+              21141,
+              17667,
+              22420,
+              15335,
+              24475,
+              19276,
+              18732,
+              25259,
+              25331,
+              25430,
+              25556
+            ]
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1221": [
+          {
+            "topic": "new relationship",
+            "key": 17657,
+            "people": [
+              11936,
+              17655
+            ],
+            "people names": [
+              "Oda Vint",
+              "Syuardus Neue"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ]
       }
@@ -127,16 +605,18 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stDe Vyver.se3.c1",
-      "street": "De Vyver",
-      "neighborhood": "denhof",
-      "unique id": 864
+      "section": "stSlyck straet.se1.c1",
+      "street": "Slyck straet",
+      "neighborhood": "varkensbuurt",
+      "unique id": 39
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        11937
+        11937,
+        14960,
+        16488
       ]
     }
   }

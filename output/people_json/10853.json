@@ -1,52 +1,73 @@
 {
   "10853": {
     "alive": false,
-    "name": "Imsoete",
+    "name": "Pietersen",
     "surname": "",
-    "full name": "Imsoete",
+    "full name": "Pietersen",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.018,
-      "romantic interest": 0.385,
-      "sex interest": 0.468,
-      "gender expression": 0.0,
+      "sexuality label": "bi",
+      "sexuality": 0.813,
+      "romantic interest": 0.381,
+      "sex interest": 0.911,
+      "gender expression": 0.222,
       "sex": "f"
     },
-    "age": 53,
-    "birth year": 1151,
+    "age": 41,
+    "birth year": 1168,
     "sex": "f",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.182,
-      "nice-nasty": 0.999,
-      "honest-false": 0.697
+      "lawful-chaotic": 0.752,
+      "nice-nasty": 0.858,
+      "honest-false": 0.784
     },
     "attitude": {
-      "outgoing": 0.379,
-      "dream": 0.48
+      "outgoing": 0.506,
+      "dream": 0.22
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
-        "needs_care": false
+        "needs_care": false,
+        "flags": [
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.009,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.642,
+        "gender expression expression": 0.114
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14719": {
+          "key": 14719,
+          "name": "Badeloghen",
+          "age": 4,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Pietersen (10853)",
+            "father": "Arnst (10852)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10854
-        ]
+        ],
+        "child": {
+          "birth": [
+            14721
+          ]
+        }
       }
     },
     "occupation": {
@@ -59,16 +80,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 3,
-      "eye_color": "green",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "skin_color": 6,
+      "eye_color": "brown",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "C",
         "S"
       ],
-      "health": 0.034,
-      "fertility": 0.647,
+      "health": 0.855,
+      "fertility": 0.866,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -80,31 +101,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.657
+            "new_health": 0.855
           },
           "death": false
         },
-        "1201": {
+        "1208": {
           "health": {
-            "change": true,
-            "value_change": -0.16,
-            "new_health": 0.497
-          },
-          "death": false
-        },
-        "1202": {
-          "health": {
-            "change": true,
-            "value_change": -0.245,
-            "new_health": 0.252
-          },
-          "death": false
-        },
-        "1203": {
-          "health": {
-            "change": true,
-            "value_change": -0.218,
-            "new_health": 0.034
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.855
           },
           "death": true
         }
@@ -119,8 +124,8 @@
               10853
             ],
             "people names": [
-              "Barwoud",
-              "Imsoete"
+              "Arnst",
+              "Pietersen"
             ],
             "label": "spouse",
             "committed": true
@@ -133,8 +138,68 @@
               "section": "stDie Camp.se3.c2",
               "street": "Die Camp",
               "neighborhood": "kampbuurt",
-              "unique id": 379
+              "unique id": 383
             }
+          }
+        ],
+        "1203": [
+          {
+            "topic": "feelings change",
+            "target": 10852,
+            "target name": "Arnst",
+            "state": "infatuation",
+            "relationship": 10854
+          }
+        ],
+        "1205": [
+          {
+            "topic": "feelings change",
+            "target": 10852,
+            "target name": "Arnst",
+            "state": "out of love",
+            "relationship": 10854
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 14721,
+            "people": [
+              10853,
+              14719
+            ],
+            "people names": [
+              "Pietersen",
+              "Badeloghen"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1208": [
+          {
+            "key": 10854,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10852,
+              "name": "Arnst",
+              "age": 54,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
           }
         ]
       }
@@ -146,11 +211,11 @@
       "section": "stDie Camp.se3.c2",
       "street": "Die Camp",
       "neighborhood": "kampbuurt",
-      "unique id": 379
+      "unique id": 383
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         10854
       ]

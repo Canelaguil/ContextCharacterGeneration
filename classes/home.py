@@ -46,19 +46,22 @@ class Home(Agent):
         return
     
     def houses(self):
-        income = self.process_income_reports()
-        self.income = income
-        income_needed = self.no_inhabitants * self.person_percentage
-        if income_needed > income:
+        self.income = self.process_income_reports()
+        self.income_needed = self.no_inhabitants * self.person_percentage
+        if self.income_needed > self.income:
             self.not_enough_income()
             log = {
                 'topic' : 'not enough income',
-                'income' : income,
-                'income needed' : round(income_needed, 3),
+                'income' : self.income,
+                'income needed' : round(self.income_needed, 3),
                 'no inhabitants' : self.no_inhabitants,
                 'inhabitants' : self.inhabitants
             }
             self.log.add_log(log)
+            
+        
+        if self.care_dependants != [] and self.caretakers == []:
+            self.find_caretaker()
 
     def post_processing(self):
         msg = self.tasks.get()
@@ -70,6 +73,12 @@ class Home(Agent):
                 self.remove_person(msg)
             elif task == 'person moved':
                 self.remove_person(msg)
+            elif task == 'new care dependant':
+                self.add_care_dependant(msg['key'])
+            elif task == 'remove care dependant':
+                self.remove_care_dependants(msg['key'])
+            else:
+                log_error('did not recognize home task', msg)
             msg = self.tasks.get()
 
     """
@@ -90,6 +99,9 @@ class Home(Agent):
         self.model.message_person(person_info['key'], move_notice)
         self.income_reports.append(ic)
 
+        if person_info['age'] < 14:
+            self.care_dependants.append(person_info['key'])
+
     def remove_person(self, person_info):
         if person_info['key'] in self.inhabitants:
             # print('here')
@@ -97,6 +109,28 @@ class Home(Agent):
             self.inhabitants.remove(person_info['key'])
         else:
             log_error('home remove error', {'person' : person_info, 'house' : self.info()})
+
+    def add_care_dependant(self, key):
+        if key not in self.care_dependants:
+            if key not in self.inhabitants:
+                log_error('I dont even go here', [key, self.unique_id])
+                return
+            self.care_dependants.append(key)
+
+    def remove_care_dependants(self, key):
+        if key in self.care_dependants:
+            if key not in self.inhabitants:
+                log_error('I dont even go here', [key, self.unique_id])
+                return
+            self.care_dependants.remove(key)
+
+        # if there are caretakers
+        if self.care_dependants == [] and self.caretakers != []:
+            msg = {
+                'topic' : 'not caretaker'
+            }
+            self.model.message_person(self.caretakers[0], msg)
+            self.caretakers = []
 
     def receive_message(self, msg):
         if msg['topic'] == 'income report':
@@ -131,6 +165,9 @@ class Home(Agent):
         for i in self.inhabitants:
             option = False
             candidate = self.model.get_person(i)
+            # if candidate already employed
+            if candidate['occupation']['has job']:
+                break
 
             if candidate['sex'] == 'm' and best_sex == 'f' and candidate['age'] > 10:
                 option = True            
@@ -158,6 +195,55 @@ class Home(Agent):
         else:
             log_error('no possible worker', self.info())
 
+    def find_caretaker(self):
+        # check if people are eligible to work & not working, and set to work
+        best_candidate = None
+        best_age = 8 # minimum caretaking age...
+        best_sex = 'm'
+        for i in self.inhabitants:
+            option = False
+            candidate = self.model.get_person(i)
+
+            # if candidate already employed
+            if candidate['occupation']['has job']:
+                break
+
+            if candidate['sex'] == 'f' and best_sex == 'm' and candidate['age'] > 10:
+                option = True            
+            
+            if candidate['age'] > best_age:
+                option = True
+
+            if option:
+                best_candidate = i
+                best_age = candidate['age']
+                best_sex = candidate['sex']
+
+
+        if best_candidate != None:
+            # notify caretaker
+            msg = {
+                'topic' : 'now caretaker',
+                'care dependants' : self.care_dependants
+            }
+            self.model.message_person(best_candidate, msg)
+
+            # notify care dependants
+            msg2 = {
+                'topic' : 'new caretaker',
+                'person' : best_candidate
+            }
+            self.notify_care_dependants(msg2)
+            self.caretakers.append(best_candidate)
+        else:
+            # can we assume there'd be enough income to provide alternative childcare?
+            if (self.income - self.income_needed) <= (len(self.care_dependants) * 0.05):
+                msg = {
+                    'topic' : 'neglected',
+                }
+                self.notify_care_dependants(msg)
+                log_error('no possible caretaker', self.info())
+
     """
     INFO FUNCTIONS 
     """
@@ -184,6 +270,10 @@ class Home(Agent):
         return my_people
     
     def notify_inhabitants(self, msg):
+        for i in self.inhabitants:
+            self.model.message_person(i, msg)
+
+    def notify_care_dependants(self, msg):
         for i in self.inhabitants:
             self.model.message_person(i, msg)
     

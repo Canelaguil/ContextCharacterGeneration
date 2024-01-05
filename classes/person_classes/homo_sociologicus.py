@@ -1,7 +1,8 @@
 from ..utils import *
 
 class HomoSociologicus():
-    def __init__(self, person, community, born_like, personality, income_class) -> None:
+    def __init__(self, person, community, born_like, personality, income_class, 
+                 age=0, disabilities=[]) -> None:
 
         self.person = person 
         self.personality = personality
@@ -12,10 +13,19 @@ class HomoSociologicus():
         self.tasks = MessageInbox(self)
 
         # needs
-        self.independent = False
-        self.needs_care = False
-        self.taken_care_of = False
-        self.caretaker = False
+        if age == 0:
+            self.independent = False
+            self.needs_care = True
+            self.taken_care_of = True
+            self.caretaker = True
+        else:
+            self.independent = True
+            self.needs_care = disabilities != []
+            self.taken_care_of = False
+            self.caretaker = False
+
+        # flags set
+        self.flags = set()
         
     def set_expression_of_expressions(self, born_like):
         """
@@ -80,16 +90,52 @@ class HomoSociologicus():
                 'taken_care_of' : self.taken_care_of, 
                 'caretaker' : self.caretaker, 
             }
+    
+    def situation_change(self, update, age):
+        change = update['topic']
+        if change == 'now caretaker':
+            self.caretaker = True
+            self.flags.add('caretaker')
+        elif change == 'not caretaker':
+            self.caretaker = False
+        elif change == 'new caretaker':
+            self.taken_care_of = True
+        elif change == 'neglected':
+            if age != 0:
+                self.taken_care_of = False
+                self.flags.add('neglected')
+                print(self.person_key)
+        elif change == 'need care':
+            self.need_care = True
+        elif change == 'not enough income':
+            self.flags.add('starving')
+        else:
+            log_error('Did not recognize that homsoc update.', update)
 
     """
     UTILS
     """
     def become_adult(self):
         look_at_me_now = self.community.get_person(self.person_key)
-        if look_at_me_now['genetics']['disabilities'] != []:
-            self.needs_care = True
-        else:
-            self.needs_care = False
+        if look_at_me_now['genetics']['disabilities'] == []:
+            addr = look_at_me_now['home']['unique id']
+            self.i_dont_need_care(addr)
+
+    def need_care(self, home_key : int):
+        self.needs_care = True
+        msg = {
+            'topic' : 'new care dependant',
+            'key' : self.person_key
+        }
+        self.community.message_home(home_key, msg)
+
+    def i_dont_need_care(self, home_key : int):
+        self.needs_care = False
+        msg = {
+            'topic' : 'remove care dependant',
+            'key' : self.person_key
+        }
+        self.community.message_home(home_key, msg)
 
     def go_find_job(self, age):
         # change to message?
@@ -104,7 +150,8 @@ class HomoSociologicus():
                 'independent' : self.independent, 
                 'taken_care_of' : self.taken_care_of, 
                 'caretaker' : self.caretaker, 
-                'needs_care' : self.needs_care
+                'needs_care' : self.needs_care, 
+                'flags' : list(self.flags)
             },
             'expression'  : {
                 'sexuality expression' : self.sexuality_expression,
@@ -117,8 +164,10 @@ class HomoSociologicus():
 Homo sociologicus classes
 """
 class WomanMA(HomoSociologicus):
-    def __init__(self, person, community, born_like, whoami, income_class) -> None:
-        super().__init__(person, community, born_like, whoami, income_class)
+    def __init__(self, person, community, born_like, whoami, income_class,
+                 age=0, disabilities=[]) -> None:
+        super().__init__(person, community, born_like, whoami, income_class,
+                         age, disabilities)
         self.independent_age = 16 #HomoSociologicus.marriage_age_women
 
     def marriage_wish(self):
@@ -144,8 +193,10 @@ class WomanMA(HomoSociologicus):
                 self.independent = False
 
 class ManMA(HomoSociologicus):
-    def __init__(self, person, community, born_like, whoami, income_class) -> None:
-        super().__init__(person, community, born_like, whoami, income_class)
+    def __init__(self, person, community, born_like, whoami, income_class,
+                 age=0, disabilities=[]) -> None:
+        super().__init__(person, community, born_like, whoami, income_class,
+                         age, disabilities)
         self.independent_age = 16 #HomoSociologicus.marriage_age_men
 
     def marriage_wish(self):
@@ -204,8 +255,10 @@ class ManMA(HomoSociologicus):
         
 
 class Neutral(HomoSociologicus):
-    def __init__(self, person, community, born_like, whoami, income_class) -> None:
-        super().__init__(person, community, born_like, whoami, income_class)
+    def __init__(self, person, community, born_like, whoami, income_class,
+                 age=0, disabilities=[]) -> None:
+        super().__init__(person, community, born_like, whoami, income_class,
+                         age, disabilities)
         self.independent_age = 16 #HomoSociologicus.male_for_indepenence
 
     

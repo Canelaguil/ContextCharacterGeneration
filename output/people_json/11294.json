@@ -1,66 +1,103 @@
 {
   "11294": {
     "alive": false,
-    "name": "Brundonis",
-    "surname": "Dicbir",
-    "full name": "Brundonis Dicbir",
+    "name": "Ghela",
+    "surname": "Zuakart",
+    "full name": "Ghela Zuakart",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.122,
-      "romantic interest": 0.703,
-      "sex interest": 0.807,
-      "gender expression": 0.222,
+      "sexuality": 0.059,
+      "romantic interest": 0.787,
+      "sex interest": 0.735,
+      "gender expression": 0.155,
       "sex": "f"
     },
     "age": 53,
-    "birth year": 1156,
+    "birth year": 1163,
     "sex": "f",
     "income class": [
       3,
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.305,
-      "nice-nasty": 0.766,
-      "honest-false": 0.355
+      "lawful-chaotic": 0.41,
+      "nice-nasty": 0.388,
+      "honest-false": 0.28
     },
     "attitude": {
-      "outgoing": 0.633,
-      "dream": 0.519
+      "outgoing": 0.371,
+      "dream": 0.408
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
-        "needs_care": false
+        "needs_care": false,
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.062,
-        "gender expression expression": 0.018
+        "sexuality expression": 0.04,
+        "gender expression expression": 0.072
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12904": {
+          "key": 12904,
+          "name": "Salome Coram",
+          "age": 16,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Ghela (11294)",
+            "father": "Thomas (11293)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11295
-        ]
+        ],
+        "child": {
+          "birth": [
+            12906
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         3,
         "upper middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.208,
+      "all_incomes": [
+        0.872,
+        1.236,
+        1.001,
+        0.894,
+        0.689,
+        0.86,
+        0.655,
+        0.576,
+        0.518,
+        0.664,
+        0.762,
+        1.064,
+        1.184,
+        1.208
+      ],
+      "job": {
+        "lawful": true,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 4,
-      "eye_color": "brown",
+      "skin_color": 6,
+      "eye_color": "green",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
@@ -68,7 +105,7 @@
         "C"
       ],
       "health": 0.0,
-      "fertility": 0.622,
+      "fertility": 0.64,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -80,30 +117,30 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.64
+            "new_health": 0.573
           },
           "death": false
         },
-        "1206": {
+        "1213": {
           "health": {
             "change": true,
-            "value_change": -0.251,
-            "new_health": 0.389
+            "value_change": -0.266,
+            "new_health": 0.307
           },
           "death": false
         },
-        "1207": {
+        "1214": {
           "health": {
             "change": true,
-            "value_change": -0.259,
-            "new_health": 0.13
+            "value_change": -0.272,
+            "new_health": 0.035
           },
           "death": false
         },
-        "1208": {
+        "1215": {
           "health": {
             "change": true,
-            "value_change": -0.13,
+            "value_change": -0.035,
             "new_health": 0.0
           },
           "death": true
@@ -119,8 +156,8 @@
               11294
             ],
             "people names": [
-              "Havix Baers",
-              "Brundonis Dicbir"
+              "Thomas Coram",
+              "Ghela Zuakart"
             ],
             "label": "spouse",
             "committed": true
@@ -137,13 +174,64 @@
             }
           }
         ],
-        "1208": [
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 12906,
+            "people": [
+              11294,
+              12904
+            ],
+            "people names": [
+              "Ghela Zuakart",
+              "Salome Coram"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1202": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.872
+          }
+        ],
+        "1203": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.236
+          }
+        ],
+        "1204": [
           {
             "topic": "feelings change",
             "target": 11293,
-            "target name": "Havix Baers",
+            "target name": "Thomas Coram",
             "state": "out of love",
             "relationship": 11295
+          }
+        ],
+        "1206": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.689
+          }
+        ],
+        "1208": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.655
+          }
+        ],
+        "1213": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.064
           }
         ]
       }

@@ -1,52 +1,70 @@
 {
   "10000": {
     "alive": false,
-    "name": "Yseboldus",
-    "surname": "Hoen",
-    "full name": "Yseboldus Hoen",
+    "name": "Suam",
+    "surname": "Boene",
+    "full name": "Suam Boene",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.073,
-      "romantic interest": 0.622,
-      "sex interest": 0.777,
-      "gender expression": 0.271,
+      "sexuality": 0.056,
+      "romantic interest": 0.667,
+      "sex interest": 0.945,
+      "gender expression": 0.211,
       "sex": "m"
     },
-    "age": 44,
-    "birth year": 1168,
+    "age": 55,
+    "birth year": 1159,
     "sex": "m",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.068,
-      "nice-nasty": 0.206,
-      "honest-false": 0.785
+      "lawful-chaotic": 0.683,
+      "nice-nasty": 0.999,
+      "honest-false": 0.0
     },
     "attitude": {
-      "outgoing": 0.335,
-      "dream": 0.608
+      "outgoing": 0.684,
+      "dream": 0.038
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
         "caretaker": false,
-        "needs_care": false
+        "needs_care": false,
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.044,
-        "gender expression expression": 0.016
+        "sexuality expression": 0.031,
+        "gender expression expression": 0.11
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "15527": {
+          "key": 15527,
+          "name": "Flore Boene",
+          "age": 13,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Aleberna (10001)",
+            "father": "Suam (10000)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10002
-        ]
+        ],
+        "child": {
+          "birth": [
+            15528
+          ]
+        }
       }
     },
     "occupation": {
@@ -55,38 +73,40 @@
         2,
         "middle class"
       ],
-      "income": 1.499,
+      "income": 0.976,
       "all_incomes": [
-        1.08,
-        1.331,
+        0.889,
+        1.296,
+        1.248,
+        1.188,
+        1.226,
         1.32,
-        1.32,
-        1.118,
-        1.223,
+        1.156,
         1.499,
+        1.471,
         1.499,
-        1.499,
-        1.459,
-        1.499,
-        1.499,
-        1.499
+        1.1,
+        1.043,
+        1.124,
+        0.975,
+        0.976
       ],
       "job": {
-        "lawful": false,
-        "honest": true
+        "lawful": true,
+        "honest": false
       }
     },
     "genetics": {
-      "skin_color": 1,
+      "skin_color": 5,
       "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
         "S",
-        "C"
+        "S"
       ],
-      "health": 0.659,
-      "fertility": 0.64,
+      "health": 0.0,
+      "fertility": 0.744,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -98,15 +118,47 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.659
+            "new_health": 0.681
+          },
+          "death": false
+        },
+        "1209": {
+          "health": {
+            "change": true,
+            "value_change": -0.177,
+            "new_health": 0.504
+          },
+          "death": false
+        },
+        "1210": {
+          "health": {
+            "change": true,
+            "value_change": -0.205,
+            "new_health": 0.299
           },
           "death": false
         },
         "1211": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.659
+            "change": true,
+            "value_change": -0.185,
+            "new_health": 0.114
+          },
+          "death": false
+        },
+        "1212": {
+          "health": {
+            "change": true,
+            "value_change": -0.077,
+            "new_health": 0.037
+          },
+          "death": false
+        },
+        "1213": {
+          "health": {
+            "change": true,
+            "value_change": -0.037,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -116,7 +168,12 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.08
+            "income": 0.889
+          },
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.296
           },
           {
             "topic": "new relationship",
@@ -126,8 +183,8 @@
               10001
             ],
             "people names": [
-              "Yseboldus Hoen",
-              "Remsindis Froes"
+              "Suam Boene",
+              "Aleberna Huntekin"
             ],
             "label": "spouse",
             "committed": true
@@ -140,17 +197,33 @@
               "section": "stUterechse straet.se1.c2",
               "street": "Uterechse straet",
               "neighborhood": "varkensbuurt",
-              "unique id": 1
+              "unique id": 2
             }
           }
         ],
-        "1207": [
+        "1201": [
           {
             "topic": "feelings change",
             "target": 10001,
-            "target name": "Remsindis Froes",
+            "target name": "Aleberna Huntekin",
             "state": "out of love",
             "relationship": 10002
+          }
+        ],
+        "1209": [
+          {
+            "topic": "new relationship",
+            "key": 15528,
+            "people": [
+              10000,
+              15527
+            ],
+            "people names": [
+              "Suam Boene",
+              "Flore Boene"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ]
       }
@@ -162,7 +235,7 @@
       "section": "stUterechse straet.se1.c2",
       "street": "Uterechse straet",
       "neighborhood": "varkensbuurt",
-      "unique id": 1
+      "unique id": 2
     },
     "relationship status": {
       "taken": true,

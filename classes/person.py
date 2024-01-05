@@ -43,17 +43,17 @@ class Person(Agent):
         if self.sex == 'f':
             self.homsoc = WomanMA(self, self.model, self.get_homsoc_attributes(), 
                                   self.personality.get_personality(), 
-                                  self.income_class)
+                                  self.income_class, age, self.body.disabilities)
         elif self.sex == 'm':
             self.homsoc = ManMA(self, self.model, self.get_homsoc_attributes(), 
                                   self.personality.get_personality(), 
-                                  self.income_class)
+                                  self.income_class, age, self.body.disabilities)
             if self.age > Occupation.adult_age:
                 self.occupation.find_job(self.age)  
         else: 
             self.homsoc = Neutral(self, self.model, self.get_homsoc_attributes(), 
                                   self.personality.get_personality(), 
-                                  self.income_class)
+                                  self.income_class, age, self.body.disabilities)
             
         self.mark_for_death = False # am I gonna die this year?
 
@@ -156,16 +156,7 @@ class Person(Agent):
         while msg != None:
             topic = msg['topic']
             if topic == 'new relationship':
-                if msg['label'] == 'parentchild':
-                    self.network.process_parent_child(msg, self.age)
-                    if self.sex == 'f' :
-                        self.body.trigger('childbirth')
-                else:
-                    self.update_relationship_status(msg) 
-                    self.network.add_relationship(msg)
-
-                if self.age != 0: # skip memories for family new relationships
-                    self.memory.add_event(msg)
+                self.relationship_processing(msg)
             elif topic in ['relationship change', 'unmarried', 'single']: # relationship label
                 self.update_relationship_status(msg)
                 self.memory.add_event(msg)
@@ -177,6 +168,8 @@ class Person(Agent):
                 self.move(msg['home'])
                 self.memory.add_event(msg)
             elif topic == 'not enough income':
+                self.body.trigger('starving')
+                self.homsoc.situation_change(msg, self.age)
                 self.memory.add_event(msg)
             elif topic == 'get a job':
                 self.occupation.find_job(self.age)
@@ -184,6 +177,11 @@ class Person(Agent):
                 self.memory.add_event(msg)
             elif topic == 'die':
                 self.mark_for_death = True
+            elif topic in ['now caretaker', 'not caretaker', 'new caretaker', 
+                           'neglected', 'need care']:
+                self.homsoc.situation_change(msg, self.age)
+                if self.age != 0:
+                    self.memory.add_event(msg)
             else:
                 log_error('person received unrecognized message', msg)
             msg = self.messages.get()
@@ -205,6 +203,18 @@ class Person(Agent):
             if topic in posthumous_info:         
                 if topic == 'new sibling' :    
                     self.network.add_sibling(msg['child key'], msg['kind'])
+
+    def relationship_processing(self, msg):
+        if msg['label'] == 'parentchild':
+            self.network.process_parent_child(msg, self.age)
+            if self.sex == 'f' :
+                self.body.trigger('childbirth')
+        else:
+            self.update_relationship_status(msg) 
+            self.network.add_relationship(msg)
+
+        if self.age != 0: # skip memories for family new relationships
+            self.memory.add_event(msg)
 
     def move(self, home_info):
         self.home = home_info

@@ -1,43 +1,46 @@
 {
   "10883": {
     "alive": false,
-    "name": "Agota",
+    "name": "Saswe",
     "surname": "",
-    "full name": "Agota",
+    "full name": "Saswe",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.02,
-      "romantic interest": 0.781,
-      "sex interest": 0.585,
-      "gender expression": 0.071,
+      "sexuality": 0.046,
+      "romantic interest": 0.526,
+      "sex interest": 0.855,
+      "gender expression": 0.0,
       "sex": "f"
     },
-    "age": 41,
-    "birth year": 1167,
+    "age": 54,
+    "birth year": 1162,
     "sex": "f",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.885,
-      "nice-nasty": 0.257,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.503,
+      "nice-nasty": 0.19,
+      "honest-false": 0.444
     },
     "attitude": {
-      "outgoing": 0.875,
-      "dream": 0.198
+      "outgoing": 0.32,
+      "dream": 0.506
     },
     "homsoc": {
       "means": {
         "independent": false,
         "taken_care_of": false,
         "caretaker": false,
-        "needs_care": false
+        "needs_care": false,
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.017,
-        "gender expression expression": 0.028
+        "sexuality expression": 0.024,
+        "gender expression expression": -0.001
       }
     },
     "network": {
@@ -45,30 +48,41 @@
       "children": {},
       "relationship keys": {
         "spouse": [
-          10884
+          10884,
+          16300
         ]
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.624,
+      "all_incomes": [
+        0.991,
+        0.9,
+        0.649,
+        0.647,
+        0.624
+      ],
+      "job": {
+        "lawful": true,
+        "honest": false
+      }
     },
     "genetics": {
       "skin_color": 3,
       "eye_color": "brown",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "hair_color": "red",
+      "hair_color_code": 3,
       "hair_type": [
-        "S",
-        "C"
+        "C",
+        "S"
       ],
-      "health": 0.789,
-      "fertility": 0.737,
+      "health": 0.0,
+      "fertility": 0.587,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -80,15 +94,39 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.789
+            "new_health": 0.601
           },
           "death": false
         },
-        "1207": {
+        "1212": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.789
+            "change": true,
+            "value_change": -0.108,
+            "new_health": 0.493
+          },
+          "death": false
+        },
+        "1213": {
+          "health": {
+            "change": true,
+            "value_change": -0.116,
+            "new_health": 0.377
+          },
+          "death": false
+        },
+        "1214": {
+          "health": {
+            "change": true,
+            "value_change": -0.32,
+            "new_health": 0.057
+          },
+          "death": false
+        },
+        "1215": {
+          "health": {
+            "change": true,
+            "value_change": -0.057,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -103,8 +141,8 @@
               10883
             ],
             "people names": [
-              "Otto Clove",
-              "Agota"
+              "Galo Vrode",
+              "Saswe"
             ],
             "label": "spouse",
             "committed": true
@@ -114,20 +152,87 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stDie Camp.se7.c2",
+              "section": "stDie Camp.se5.c2",
               "street": "Die Camp",
               "neighborhood": "kampbuurt",
-              "unique id": 396
+              "unique id": 394
             }
           }
         ],
-        "1203": [
+        "1209": [
           {
-            "topic": "feelings change",
-            "target": 10882,
-            "target name": "Otto Clove",
-            "state": "out of love",
-            "relationship": 10884
+            "key": 10884,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10882,
+              "name": "Galo Vrode",
+              "age": 54,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.991
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "new relationship",
+            "key": 16300,
+            "people": [
+              12112,
+              10883
+            ],
+            "people names": [
+              "Coppesoeten",
+              "Saswe"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stDen Hof.se3.c2",
+              "street": "Den Hof",
+              "neighborhood": "denhof",
+              "unique id": 944
+            }
+          }
+        ],
+        "1213": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.649
           }
         ]
       }
@@ -136,16 +241,17 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stDie Camp.se7.c2",
-      "street": "Die Camp",
-      "neighborhood": "kampbuurt",
-      "unique id": 396
+      "section": "stDen Hof.se3.c2",
+      "street": "Den Hof",
+      "neighborhood": "denhof",
+      "unique id": 944
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        10884
+        10884,
+        16300
       ]
     }
   }

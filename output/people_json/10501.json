@@ -1,43 +1,44 @@
 {
   "10501": {
     "alive": false,
-    "name": "Elberino",
-    "surname": "Canis",
-    "full name": "Elberino Canis",
+    "name": "Rissewint",
+    "surname": "",
+    "full name": "Rissewint",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.008,
-      "romantic interest": 0.658,
-      "sex interest": 0.667,
-      "gender expression": 0.152,
+      "sexuality": 0.022,
+      "romantic interest": 0.676,
+      "sex interest": 0.64,
+      "gender expression": 0.0,
       "sex": "m"
     },
-    "age": 45,
-    "birth year": 1161,
+    "age": 50,
+    "birth year": 1164,
     "sex": "m",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.641,
-      "nice-nasty": 0.47,
-      "honest-false": 0.432
+      "lawful-chaotic": 0.649,
+      "nice-nasty": 0.029,
+      "honest-false": 0.056
     },
     "attitude": {
-      "outgoing": 0.43,
-      "dream": 0.315
+      "outgoing": 0.434,
+      "dream": 0.341
     },
     "homsoc": {
       "means": {
         "independent": false,
-        "taken_care_of": false,
+        "taken_care_of": true,
         "caretaker": false,
-        "needs_care": false
+        "needs_care": false,
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.004,
-        "gender expression expression": 0.115
+        "sexuality expression": 0.014,
+        "gender expression expression": -0.001
       }
     },
     "network": {
@@ -45,7 +46,8 @@
       "children": {},
       "relationship keys": {
         "spouse": [
-          10503
+          10503,
+          16289
         ]
       }
     },
@@ -55,32 +57,40 @@
         2,
         "middle class"
       ],
-      "income": 0.122,
+      "income": 0.761,
       "all_incomes": [
-        0.0,
-        0.0,
-        0.534,
-        0.848,
-        0.762,
-        0.104,
-        0.122
+        1.158,
+        1.344,
+        1.381,
+        1.154,
+        1.355,
+        0.769,
+        0.576,
+        0.478,
+        0.181,
+        0.624,
+        1.098,
+        0.977,
+        0.959,
+        0.855,
+        0.761
       ],
       "job": {
-        "lawful": false,
+        "lawful": true,
         "honest": false
       }
     },
     "genetics": {
-      "skin_color": 4,
+      "skin_color": 5,
       "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
       "hair_type": [
         "C",
-        "C"
+        "S"
       ],
-      "health": 0.574,
-      "fertility": 0.588,
+      "health": 0.751,
+      "fertility": 0.764,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -92,15 +102,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.574
+            "new_health": 0.751
           },
           "death": false
         },
-        "1205": {
+        "1213": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.574
+            "new_health": 0.751
           },
           "death": true
         }
@@ -110,7 +120,7 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.0
+            "income": 1.158
           },
           {
             "topic": "new relationship",
@@ -120,8 +130,8 @@
               10502
             ],
             "people names": [
-              "Elberino Canis",
-              "Liedelde"
+              "Rissewint",
+              "Agota Coquus"
             ],
             "label": "spouse",
             "committed": true
@@ -131,53 +141,114 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stBloemendaelse straet.se3.c2",
-              "street": "Bloemendaelse straet",
-              "neighborhood": "agnesbuurt",
-              "unique id": 219
+              "section": "stDoelen.se1.c2",
+              "street": "Doelen",
+              "neighborhood": "jorisbuurt",
+              "unique id": 204
             }
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
           }
         ],
-        "1204": [
+        "1202": [
           {
-            "topic": "job notice",
-            "notice": "hardly any income",
-            "income": 0.104
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.104,
-            "inhabitants": []
+            "topic": "feelings change",
+            "target": 10502,
+            "target name": "Agota Coquus",
+            "state": "solid love",
+            "relationship": 10503
           }
         ],
         "1205": [
           {
-            "topic": "not enough income",
-            "income": 0.122,
-            "inhabitants": []
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.576
+          }
+        ],
+        "1206": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.478
+          },
+          {
+            "key": 10503,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10502,
+              "name": "Agota Coquus",
+              "age": 53,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.181
+          }
+        ],
+        "1209": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.098
+          }
+        ],
+        "1212": [
+          {
+            "topic": "new relationship",
+            "key": 16289,
+            "people": [
+              10501,
+              11261
+            ],
+            "people names": [
+              "Rissewint",
+              "Natelien"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 3,
+              "income class label": "upper middle class",
+              "section": "stBreestraat.se3.c3",
+              "street": "Breestraat",
+              "neighborhood": "olvbuurt",
+              "unique id": 568
+            }
+          },
+          {
+            "topic": "new caretaker",
+            "person": 11261
           }
         ]
       }
     },
     "key": 10501,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stBloemendaelse straet.se3.c2",
-      "street": "Bloemendaelse straet",
-      "neighborhood": "agnesbuurt",
-      "unique id": 219
+      "income class": 3,
+      "income class label": "upper middle class",
+      "section": "stBreestraat.se3.c3",
+      "street": "Breestraat",
+      "neighborhood": "olvbuurt",
+      "unique id": 568
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        10503
+        10503,
+        16289
       ]
     }
   }

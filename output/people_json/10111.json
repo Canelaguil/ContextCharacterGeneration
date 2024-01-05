@@ -1,52 +1,85 @@
 {
   "10111": {
     "alive": false,
-    "name": "Wybel",
-    "surname": "Butziel",
-    "full name": "Wybel Butziel",
+    "name": "Voghel",
+    "surname": "",
+    "full name": "Voghel",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.737,
-      "sex interest": 0.79,
-      "gender expression": 0.122,
+      "sexuality": 0.022,
+      "romantic interest": 0.508,
+      "sex interest": 0.762,
+      "gender expression": 0.216,
       "sex": "m"
     },
-    "age": 53,
-    "birth year": 1152,
+    "age": 52,
+    "birth year": 1169,
     "sex": "m",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.488,
-      "nice-nasty": 0.0,
-      "honest-false": 0.406
+      "lawful-chaotic": 0.115,
+      "nice-nasty": 0.784,
+      "honest-false": 0.968
     },
     "attitude": {
-      "outgoing": 0.364,
-      "dream": 0.38
+      "outgoing": 0.461,
+      "dream": 0.314
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
-        "needs_care": false
+        "needs_care": false,
+        "flags": [
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.057
+        "sexuality expression": 0.016,
+        "gender expression expression": 0.114
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13462": {
+          "key": 13462,
+          "name": "Cecilia",
+          "age": 0,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Amalburga (10112)",
+            "father": "Voghel (10111)"
+          }
+        },
+        "13893": {
+          "key": 13893,
+          "name": "Salomon Voghelszoon",
+          "age": 8,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Amalburga (10112)",
+            "father": "Voghel (10111)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10113
-        ]
+        ],
+        "child": {
+          "birth": [
+            13463,
+            13894
+          ]
+        }
       }
     },
     "occupation": {
@@ -55,31 +88,47 @@
         1,
         "lower middle class"
       ],
-      "income": 1.109,
+      "income": 0.306,
       "all_incomes": [
-        0.865,
-        1.225,
-        1.11,
-        0.972,
-        1.024,
-        1.109
+        1.112,
+        1.021,
+        1.057,
+        0.986,
+        1.132,
+        0.935,
+        0.841,
+        0.477,
+        0.658,
+        0.677,
+        0.542,
+        0.331,
+        0.31,
+        0.12,
+        0.04,
+        0.131,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.173,
+        0.306
       ],
       "job": {
-        "lawful": true,
-        "honest": false
+        "lawful": false,
+        "honest": true
       }
     },
     "genetics": {
-      "skin_color": 6,
-      "eye_color": "blue",
+      "skin_color": 8,
+      "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
         "S",
         "C"
       ],
-      "health": 0.141,
-      "fertility": 0.681,
+      "health": 0.03,
+      "fertility": 0.473,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -91,31 +140,23 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.678
+            "new_health": 0.506
           },
           "death": false
         },
-        "1202": {
+        "1219": {
           "health": {
             "change": true,
-            "value_change": -0.209,
-            "new_health": 0.469
+            "value_change": -0.21,
+            "new_health": 0.296
           },
           "death": false
         },
-        "1203": {
+        "1220": {
           "health": {
             "change": true,
-            "value_change": -0.169,
-            "new_health": 0.3
-          },
-          "death": false
-        },
-        "1204": {
-          "health": {
-            "change": true,
-            "value_change": -0.159,
-            "new_health": 0.141
+            "value_change": -0.266,
+            "new_health": 0.03
           },
           "death": true
         }
@@ -125,12 +166,7 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.865
-          },
-          {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.225
+            "income": 1.112
           },
           {
             "topic": "new relationship",
@@ -140,8 +176,8 @@
               10112
             ],
             "people names": [
-              "Wybel Butziel",
-              "Linnea Wittebroet"
+              "Voghel",
+              "Amalburga Croenekin"
             ],
             "label": "spouse",
             "committed": true
@@ -151,18 +187,215 @@
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stSlyck straet.se3.c1",
+              "section": "stSlyck straet.se1.c1",
               "street": "Slyck straet",
               "neighborhood": "varkensbuurt",
-              "unique id": 46
+              "unique id": 40
             }
+          },
+          {
+            "topic": "feelings change",
+            "target": 10112,
+            "target name": "Amalburga Croenekin",
+            "state": "solid love",
+            "relationship": 10113
           }
         ],
         "1203": [
           {
             "topic": "job notice",
             "notice": "comfortable earnings",
-            "income": 1.024
+            "income": 1.132
+          },
+          {
+            "topic": "new relationship",
+            "key": 13463,
+            "people": [
+              10111,
+              13462
+            ],
+            "people names": [
+              "Voghel",
+              "Cecilia"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1204": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 13462,
+              "name": "Cecilia",
+              "age": 0,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Amalburga (10112)",
+                "father": "Voghel (10111)"
+              }
+            },
+            "label": "child"
+          },
+          {
+            "topic": "new relationship",
+            "key": 13894,
+            "people": [
+              10111,
+              13893
+            ],
+            "people names": [
+              "Voghel",
+              "Salomon Voghelszoon"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1206": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.477
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.331
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.331,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1211": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.31
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.31,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1212": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.12
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.12,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1213": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 13893,
+              "name": "Salomon Voghelszoon",
+              "age": 8,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Amalburga (10112)",
+                "father": "Voghel (10111)"
+              }
+            },
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.04,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0.131,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1215": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1216": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1217": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1218": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1219": [
+          {
+            "topic": "not enough income",
+            "income": 0.173,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
           }
         ]
       }
@@ -171,10 +404,10 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stSlyck straet.se3.c1",
+      "section": "stSlyck straet.se1.c1",
       "street": "Slyck straet",
       "neighborhood": "varkensbuurt",
-      "unique id": 46
+      "unique id": 40
     },
     "relationship status": {
       "taken": true,

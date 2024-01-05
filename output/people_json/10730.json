@@ -1,52 +1,73 @@
 {
   "10730": {
     "alive": false,
-    "name": "Clara",
-    "surname": "Cornute",
-    "full name": "Clara Cornute",
+    "name": "Imma",
+    "surname": "Pauwe",
+    "full name": "Imma Pauwe",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.161,
-      "romantic interest": 0.632,
-      "sex interest": 0.498,
-      "gender expression": 0.048,
+      "sexuality": 0.052,
+      "romantic interest": 0.621,
+      "sex interest": 0.776,
+      "gender expression": 0.171,
       "sex": "f"
     },
-    "age": 49,
-    "birth year": 1158,
+    "age": 53,
+    "birth year": 1157,
     "sex": "f",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.453,
-      "nice-nasty": 0.637,
-      "honest-false": 0.545
+      "lawful-chaotic": 0.0,
+      "nice-nasty": 0.0,
+      "honest-false": 0.527
     },
     "attitude": {
-      "outgoing": 0.532,
-      "dream": 0.575
+      "outgoing": 0.274,
+      "dream": 0.178
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
-        "needs_care": false
+        "needs_care": false,
+        "flags": [
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.07,
-        "gender expression expression": 0.017
+        "sexuality expression": 0.042,
+        "gender expression expression": 0.051
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12786": {
+          "key": 12786,
+          "name": "Thedwi Dicbier",
+          "age": 17,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Imma (10730)",
+            "father": "Vesse (10729)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10731
-        ]
+        ],
+        "child": {
+          "birth": [
+            12788
+          ]
+        }
       }
     },
     "occupation": {
@@ -59,16 +80,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 2,
+      "skin_color": 3,
       "eye_color": "brown",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
       "hair_type": [
-        "S",
-        "C"
+        "C",
+        "S"
       ],
-      "health": 0.557,
-      "fertility": 0.525,
+      "health": 0.0,
+      "fertility": 0.721,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -80,15 +101,31 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.557
+            "new_health": 0.628
           },
           "death": false
         },
-        "1206": {
+        "1207": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.557
+            "change": true,
+            "value_change": -0.232,
+            "new_health": 0.396
+          },
+          "death": false
+        },
+        "1208": {
+          "health": {
+            "change": true,
+            "value_change": -0.241,
+            "new_health": 0.155
+          },
+          "death": false
+        },
+        "1209": {
+          "health": {
+            "change": true,
+            "value_change": -0.155,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -103,8 +140,8 @@
               10730
             ],
             "people names": [
-              "Abben",
-              "Clara Cornute"
+              "Vesse Dicbier",
+              "Imma Pauwe"
             ],
             "label": "spouse",
             "committed": true
@@ -117,14 +154,60 @@
               "section": "stSt. Aechten straet.se1.c1",
               "street": "St. Aechten straet",
               "neighborhood": "agnesbuurt",
-              "unique id": 319
+              "unique id": 317
             }
           },
           {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 12788,
+            "people": [
+              10730,
+              12786
+            ],
+            "people names": [
+              "Imma Pauwe",
+              "Thedwi Dicbier"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1202": [
+          {
+            "topic": "not enough income",
+            "income": 0.288,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1209": [
+          {
             "topic": "feelings change",
             "target": 10729,
-            "target name": "Abben",
-            "state": "out of love",
+            "target name": "Vesse Dicbier",
+            "state": "infatuation",
             "relationship": 10731
           }
         ]
@@ -137,7 +220,7 @@
       "section": "stSt. Aechten straet.se1.c1",
       "street": "St. Aechten straet",
       "neighborhood": "agnesbuurt",
-      "unique id": 319
+      "unique id": 317
     },
     "relationship status": {
       "taken": true,

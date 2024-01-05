@@ -1,79 +1,98 @@
 {
   "10142": {
     "alive": false,
-    "name": "Gerburgis",
-    "surname": "Sonderland",
-    "full name": "Gerburgis Sonderland",
+    "name": "Lelien",
+    "surname": "Scarlaken",
+    "full name": "Lelien Scarlaken",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.011,
-      "romantic interest": 0.578,
-      "sex interest": 0.857,
+      "sexuality": 0.096,
+      "romantic interest": 0.992,
+      "sex interest": 0.544,
       "gender expression": 0.0,
       "sex": "f"
     },
-    "age": 29,
-    "birth year": 1180,
+    "age": 54,
+    "birth year": 1184,
     "sex": "f",
     "income class": [
-      0,
-      "working class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.068,
-      "nice-nasty": 0.21,
-      "honest-false": 0.141
+      "lawful-chaotic": 0.657,
+      "nice-nasty": 0.926,
+      "honest-false": 0.0
     },
     "attitude": {
-      "outgoing": 0.624,
-      "dream": 0.53
+      "outgoing": 0.538,
+      "dream": 0.339
     },
     "homsoc": {
       "means": {
         "independent": true,
-        "taken_care_of": false,
-        "caretaker": false,
-        "needs_care": false
+        "taken_care_of": true,
+        "caretaker": true,
+        "needs_care": false,
+        "flags": [
+          "caretaker",
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.007,
+        "sexuality expression": 0.068,
         "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "13902": {
-          "key": 13902,
-          "name": "Reynold Vriend",
-          "age": 57,
+        "13897": {
+          "key": 13897,
+          "name": "Wolcout Wittebroet",
+          "age": 33,
           "alive": false,
           "sex": "m",
           "parents": {
-            "mother": "Gerburgis (10142)",
-            "father": "Curdiin (10141)"
+            "mother": "Lelien (10142)",
+            "father": "Rase (10141)"
           }
         },
-        "15381": {
-          "key": 15381,
-          "name": "Conrad Vriend",
-          "age": 54,
+        "14993": {
+          "key": 14993,
+          "name": "Bertrade van Lelien",
+          "age": 24,
           "alive": false,
-          "sex": "m",
+          "sex": "f",
           "parents": {
-            "mother": "Gerburgis (10142)",
-            "father": "Curdiin (10141)"
+            "mother": "Lelien (10142)",
+            "father": "Rase (10141)"
+          }
+        },
+        "16343": {
+          "key": 16343,
+          "name": "Rabburgis Bobel",
+          "age": 23,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Lelien (10142)",
+            "father": "Pieter (10234)"
           }
         }
       },
       "relationship keys": {
         "spouse": [
-          10143
+          10143,
+          15901,
+          17164
         ],
         "child": {
           "birth": [
-            13904,
-            15383
+            13899,
+            14995,
+            16345
           ]
         }
       }
@@ -81,33 +100,33 @@
     "occupation": {
       "has job": true,
       "income class": [
-        0,
-        "working class"
+        1,
+        "lower middle class"
       ],
-      "income": 1.499,
+      "income": 1.235,
       "all_incomes": [
-        0.724,
-        0.932,
-        1.37,
-        1.499,
-        1.499
+        1.013,
+        1.097,
+        0.869,
+        1.143,
+        1.235
       ],
       "job": {
-        "lawful": false,
-        "honest": true
+        "lawful": true,
+        "honest": false
       }
     },
     "genetics": {
-      "skin_color": 2,
+      "skin_color": 8,
       "eye_color": "brown",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
         "C",
         "C"
       ],
-      "health": 0.679,
-      "fertility": 0.673,
+      "health": 0.0,
+      "fertility": 0.701,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -119,9 +138,41 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.679
+            "new_health": 0.636
           },
           "death": false
+        },
+        "1234": {
+          "health": {
+            "change": true,
+            "value_change": -0.188,
+            "new_health": 0.448
+          },
+          "death": false
+        },
+        "1235": {
+          "health": {
+            "change": true,
+            "value_change": -0.241,
+            "new_health": 0.207
+          },
+          "death": false
+        },
+        "1236": {
+          "health": {
+            "change": true,
+            "value_change": -0.171,
+            "new_health": 0.036
+          },
+          "death": false
+        },
+        "1237": {
+          "health": {
+            "change": true,
+            "value_change": -0.036,
+            "new_health": 0.0
+          },
+          "death": true
         }
       },
       "events": {
@@ -134,8 +185,8 @@
               10142
             ],
             "people names": [
-              "Curdiin Vriend",
-              "Gerburgis Sonderland"
+              "Rase Wittebroet",
+              "Lelien Scarlaken"
             ],
             "label": "spouse",
             "committed": true
@@ -143,101 +194,382 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stIn den Haeg.se1.c0",
-              "street": "In den Haeg",
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stKoe straet.se1.c1",
+              "street": "Koe straet",
               "neighborhood": "varkensbuurt",
-              "unique id": 65
+              "unique id": 55
             }
-          }
-        ],
-        "1201": [
-          {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
-          }
-        ],
-        "1202": [
-          {
-            "topic": "not enough income",
-            "income": 0.336,
-            "inhabitants": []
-          }
-        ],
-        "1203": [
-          {
-            "topic": "not enough income",
-            "income": 0.062,
-            "inhabitants": []
           }
         ],
         "1204": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.724
-          },
-          {
             "topic": "new relationship",
-            "key": 13904,
+            "key": 13899,
             "people": [
               10142,
-              13902
+              13897
             ],
             "people names": [
-              "Gerburgis Sonderland",
-              "Reynold Vriend"
+              "Lelien Scarlaken",
+              "Wolcout Wittebroet"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1207": [
+          {
+            "topic": "new relationship",
+            "key": 14995,
+            "people": [
+              10142,
+              14993
+            ],
+            "people names": [
+              "Lelien Scarlaken",
+              "Bertrade van Lelien"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 10141,
+            "target name": "Rase Wittebroet",
+            "state": "out of love",
+            "relationship": 10143
+          }
+        ],
+        "1209": [
+          {
+            "key": 10143,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10141,
+              "name": "Rase Wittebroet",
+              "age": 47,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "new relationship",
+            "key": 15901,
+            "people": [
+              10234,
+              10142
+            ],
+            "people names": [
+              "Pieter Bobel",
+              "Lelien Scarlaken"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stHelle voet.se1.c1",
+              "street": "Helle voet",
+              "neighborhood": "jorisbuurt",
+              "unique id": 90
+            }
+          }
+        ],
+        "1212": [
+          {
+            "topic": "new relationship",
+            "key": 16345,
+            "people": [
+              10142,
+              16343
+            ],
+            "people names": [
+              "Lelien Scarlaken",
+              "Rabburgis Bobel"
             ],
             "label": "parentchild",
             "committed": false
           },
           {
             "topic": "not enough income",
-            "income": 0.044,
-            "inhabitants": []
+            "income": 0.772,
+            "inhabitants": [
+              12993,
+              12757
+            ]
+          },
+          {
+            "topic": "neglected"
           }
         ],
-        "1206": [
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0.72,
+            "inhabitants": [
+              12993,
+              12757
+            ]
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1214": [
+          {
+            "key": 15901,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10234,
+              "name": "Pieter Bobel",
+              "age": 43,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              12993,
+              12757
+            ]
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1215": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              12993,
+              12757
+            ]
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": [
+              13897,
+              14993,
+              16343,
+              19166
+            ]
+          },
+          {
+            "topic": "new caretaker",
+            "person": 10142
+          }
+        ],
+        "1216": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              12993,
+              12757
+            ]
+          }
+        ],
+        "1217": [
+          {
+            "topic": "new relationship",
+            "key": 17164,
+            "people": [
+              11905,
+              10142
+            ],
+            "people names": [
+              "Gisekin Buc",
+              "Lelien Scarlaken"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stDe Vyver.se1.c1",
+              "street": "De Vyver",
+              "neighborhood": "denhof",
+              "unique id": 861
+            }
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1218": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1219": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1220": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1221": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1228": [
+          {
+            "key": 17164,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11905,
+              "name": "Gisekin Buc",
+              "age": 53,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          }
+        ],
+        "1229": [
+          {
+            "topic": "now caretaker",
+            "care dependants": [
+              19588,
+              20195,
+              20527,
+              21760,
+              22125
+            ]
+          },
+          {
+            "topic": "new caretaker",
+            "person": 10142
+          }
+        ],
+        "1232": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 14993,
+              "name": "Bertrade van Lelien",
+              "age": 24,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Lelien (10142)",
+                "father": "Rase (10141)"
+              }
+            },
+            "label": "child"
+          }
+        ],
+        "1233": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.013
+          }
+        ],
+        "1236": [
           {
             "topic": "job notice",
             "notice": "comfortable earnings",
-            "income": 1.37
-          }
-        ],
-        "1208": [
+            "income": 1.143
+          },
           {
-            "topic": "new relationship",
-            "key": 15383,
-            "people": [
-              10142,
-              15381
-            ],
-            "people names": [
-              "Gerburgis Sonderland",
-              "Conrad Vriend"
-            ],
-            "label": "parentchild",
-            "committed": false
+            "topic": "person died",
+            "person": {
+              "key": 16343,
+              "name": "Rabburgis Bobel",
+              "age": 23,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Lelien (10142)",
+                "father": "Pieter (10234)"
+              }
+            },
+            "label": "child"
           }
         ]
       }
     },
     "key": 10142,
     "home": {
-      "income class": 0,
-      "income class label": "working class",
-      "section": "stIn den Haeg.se1.c0",
-      "street": "In den Haeg",
-      "neighborhood": "varkensbuurt",
-      "unique id": 65
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stDe Vyver.se1.c1",
+      "street": "De Vyver",
+      "neighborhood": "denhof",
+      "unique id": 861
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
-        10143
+        10143,
+        15901,
+        17164
       ]
     }
   }

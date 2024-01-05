@@ -1,52 +1,77 @@
 {
   "10898": {
     "alive": false,
-    "name": "Nimme",
-    "surname": "Toreel",
-    "full name": "Nimme Toreel",
+    "name": "Aghete",
+    "surname": "Wittebroet",
+    "full name": "Aghete Wittebroet",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.072,
-      "romantic interest": 0.52,
-      "sex interest": 0.865,
-      "gender expression": 0.055,
+      "sexuality": 0.051,
+      "romantic interest": 0.999,
+      "sex interest": 0.823,
+      "gender expression": 0.172,
       "sex": "f"
     },
-    "age": 42,
-    "birth year": 1159,
+    "age": 55,
+    "birth year": 1174,
     "sex": "f",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.472,
-      "nice-nasty": 0.797,
-      "honest-false": 0.563
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.478,
+      "honest-false": 0.191
     },
     "attitude": {
-      "outgoing": 0.599,
-      "dream": 0.675
+      "outgoing": 0.295,
+      "dream": 0.746
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
-        "needs_care": false
+        "needs_care": false,
+        "flags": [
+          "caretaker",
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.048,
-        "gender expression expression": 0.035
+        "sexuality expression": 0.042,
+        "gender expression expression": 0.161
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12382": {
+          "key": 12382,
+          "name": "Adolfus Coc",
+          "age": 16,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Aghete (10898)",
+            "father": "Scoutekiin (10897)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          10899
-        ]
+          10899,
+          16678,
+          17412,
+          18227
+        ],
+        "child": {
+          "birth": [
+            12384
+          ]
+        }
       }
     },
     "occupation": {
@@ -59,16 +84,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 2,
-      "eye_color": "brown",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "skin_color": 9,
+      "eye_color": "green",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
         "C",
         "C"
       ],
-      "health": 0.73,
-      "fertility": 0.687,
+      "health": 0.0,
+      "fertility": 0.47,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -80,7 +105,47 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.73
+            "new_health": 0.495
+          },
+          "death": false
+        },
+        "1224": {
+          "health": {
+            "change": true,
+            "value_change": -0.281,
+            "new_health": 0.214
+          },
+          "death": false
+        },
+        "1225": {
+          "health": {
+            "change": true,
+            "value_change": -0.145,
+            "new_health": 0.069
+          },
+          "death": false
+        },
+        "1226": {
+          "health": {
+            "change": true,
+            "value_change": -0.058,
+            "new_health": 0.011
+          },
+          "death": false
+        },
+        "1227": {
+          "health": {
+            "change": true,
+            "value_change": -0.01,
+            "new_health": 0.001
+          },
+          "death": false
+        },
+        "1228": {
+          "health": {
+            "change": true,
+            "value_change": -0.001,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -95,8 +160,8 @@
               10898
             ],
             "people names": [
-              "Ancelmus",
-              "Nimme Toreel"
+              "Scoutekiin Coc",
+              "Aghete Wittebroet"
             ],
             "label": "spouse",
             "committed": true
@@ -111,6 +176,267 @@
               "neighborhood": "kampbuurt",
               "unique id": 403
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12384,
+            "people": [
+              10898,
+              12382
+            ],
+            "people names": [
+              "Aghete Wittebroet",
+              "Adolfus Coc"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 10897,
+            "target name": "Scoutekiin Coc",
+            "state": "out of love",
+            "relationship": 10899
+          }
+        ],
+        "1209": [
+          {
+            "topic": "feelings change",
+            "target": 10897,
+            "target name": "Scoutekiin Coc",
+            "state": "infatuation",
+            "relationship": 10899
+          }
+        ],
+        "1210": [
+          {
+            "topic": "feelings change",
+            "target": 10897,
+            "target name": "Scoutekiin Coc",
+            "state": "solid love",
+            "relationship": 10899
+          }
+        ],
+        "1212": [
+          {
+            "key": 10899,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10897,
+              "name": "Scoutekiin Coc",
+              "age": 56,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          },
+          {
+            "topic": "new caretaker",
+            "person": 10898
+          }
+        ],
+        "1214": [
+          {
+            "topic": "new relationship",
+            "key": 16678,
+            "people": [
+              10585,
+              10898
+            ],
+            "people names": [
+              "Betten lucrose",
+              "Aghete Wittebroet"
+            ],
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1216": [
+          {
+            "topic": "not caretaker"
+          }
+        ],
+        "1217": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12382,
+              "name": "Adolfus Coc",
+              "age": 16,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Aghete (10898)",
+                "father": "Scoutekiin (10897)"
+              }
+            },
+            "label": "child"
+          },
+          {
+            "key": 16678,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10585,
+              "name": "Betten lucrose",
+              "age": 52,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1218": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1219": [
+          {
+            "topic": "new relationship",
+            "key": 17412,
+            "people": [
+              12109,
+              10898
+            ],
+            "people names": [
+              "Heinhoca",
+              "Aghete Wittebroet"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stDen Hof.se3.c2",
+              "street": "Den Hof",
+              "neighborhood": "denhof",
+              "unique id": 943
+            }
+          }
+        ],
+        "1221": [
+          {
+            "key": 17412,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12109,
+              "name": "Heinhoca",
+              "age": 57,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              14036,
+              14134,
+              19846,
+              21079,
+              22704
+            ]
+          }
+        ],
+        "1223": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1224": [
+          {
+            "topic": "new relationship",
+            "key": 18227,
+            "people": [
+              10027,
+              10898
+            ],
+            "people names": [
+              "Bartrarde Baers",
+              "Aghete Wittebroet"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stUterechse straet.se3.c2",
+              "street": "Uterechse straet",
+              "neighborhood": "varkensbuurt",
+              "unique id": 12
+            }
+          }
+        ],
+        "1226": [
+          {
+            "topic": "feelings change",
+            "target": 10027,
+            "target name": "Bartrarde Baers",
+            "state": "out of love",
+            "relationship": 18227
+          }
+        ],
+        "1228": [
+          {
+            "key": 18227,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10027,
+              "name": "Bartrarde Baers",
+              "age": 57,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
           }
         ]
       }
@@ -119,16 +445,19 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stDie Camp.se7.c2",
-      "street": "Die Camp",
-      "neighborhood": "kampbuurt",
-      "unique id": 403
+      "section": "stUterechse straet.se3.c2",
+      "street": "Uterechse straet",
+      "neighborhood": "varkensbuurt",
+      "unique id": 12
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
-        10899
+        10899,
+        16678,
+        17412,
+        18227
       ]
     }
   }

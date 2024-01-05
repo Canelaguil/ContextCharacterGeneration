@@ -1,43 +1,46 @@
 {
   "11837": {
     "alive": false,
-    "name": "Waldrada",
-    "surname": "Huuchals",
-    "full name": "Waldrada Huuchals",
+    "name": "Goneir",
+    "surname": "Ziele",
+    "full name": "Goneir Ziele",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.02,
-      "romantic interest": 0.947,
-      "sex interest": 0.519,
-      "gender expression": 0.066,
+      "sexuality": 0.103,
+      "romantic interest": 0.716,
+      "sex interest": 0.743,
+      "gender expression": 0.081,
       "sex": "f"
     },
-    "age": 38,
-    "birth year": 1167,
+    "age": 54,
+    "birth year": 1157,
     "sex": "f",
     "income class": [
       3,
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.509,
-      "nice-nasty": 0.463,
-      "honest-false": 0.741
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.596,
+      "honest-false": 0.233
     },
     "attitude": {
-      "outgoing": 0.855,
-      "dream": 0.445
+      "outgoing": 0.85,
+      "dream": 0.521
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
-        "needs_care": false
+        "needs_care": false,
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.011,
-        "gender expression expression": 0.053
+        "sexuality expression": 0.064,
+        "gender expression expression": 0.06
       }
     },
     "network": {
@@ -45,7 +48,8 @@
       "children": {},
       "relationship keys": {
         "spouse": [
-          11838
+          11838,
+          15899
         ]
       }
     },
@@ -59,16 +63,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 7,
-      "eye_color": "blue",
+      "skin_color": 2,
+      "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
-        "S",
-        "C"
+        "C",
+        "S"
       ],
-      "health": 0.543,
-      "fertility": 0.61,
+      "health": 0.0,
+      "fertility": 0.78,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -80,15 +84,39 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.543
+            "new_health": 0.691
           },
           "death": false
         },
-        "1204": {
+        "1207": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.543
+            "change": true,
+            "value_change": -0.243,
+            "new_health": 0.448
+          },
+          "death": false
+        },
+        "1208": {
+          "health": {
+            "change": true,
+            "value_change": -0.27,
+            "new_health": 0.178
+          },
+          "death": false
+        },
+        "1209": {
+          "health": {
+            "change": true,
+            "value_change": -0.11,
+            "new_health": 0.068
+          },
+          "death": false
+        },
+        "1210": {
+          "health": {
+            "change": true,
+            "value_change": -0.068,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -103,8 +131,8 @@
               11837
             ],
             "people names": [
-              "Herlewin",
-              "Waldrada Huuchals"
+              "Jdir",
+              "Goneir Ziele"
             ],
             "label": "spouse",
             "committed": true
@@ -117,7 +145,94 @@
               "section": "stMuurhuysen2.se7.c3",
               "street": "Muurhuysen2",
               "neighborhood": "cingelnoord",
-              "unique id": 820
+              "unique id": 828
+            }
+          },
+          {
+            "topic": "feelings change",
+            "target": 11836,
+            "target name": "Jdir",
+            "state": "out of love",
+            "relationship": 11838
+          }
+        ],
+        "1205": [
+          {
+            "topic": "feelings change",
+            "target": 11836,
+            "target name": "Jdir",
+            "state": "infatuation",
+            "relationship": 11838
+          }
+        ],
+        "1206": [
+          {
+            "key": 11838,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11836,
+              "name": "Jdir",
+              "age": 54,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "new relationship",
+            "key": 15899,
+            "people": [
+              12028,
+              11837
+            ],
+            "people names": [
+              "Radulphus Baligant",
+              "Goneir Ziele"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 3,
+              "income class label": "upper middle class",
+              "section": "stCromme straet.se7.c3",
+              "street": "Cromme straet",
+              "neighborhood": "denhof",
+              "unique id": 916
             }
           }
         ]
@@ -127,16 +242,17 @@
     "home": {
       "income class": 3,
       "income class label": "upper middle class",
-      "section": "stMuurhuysen2.se7.c3",
-      "street": "Muurhuysen2",
-      "neighborhood": "cingelnoord",
-      "unique id": 820
+      "section": "stCromme straet.se7.c3",
+      "street": "Cromme straet",
+      "neighborhood": "denhof",
+      "unique id": 916
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        11838
+        11838,
+        15899
       ]
     }
   }

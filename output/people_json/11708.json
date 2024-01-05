@@ -1,81 +1,107 @@
 {
   "11708": {
     "alive": false,
-    "name": "Lisebette",
-    "surname": "Moer",
-    "full name": "Lisebette Moer",
+    "name": "Helyana",
+    "surname": "Vint",
+    "full name": "Helyana Vint",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.108,
-      "romantic interest": 0.832,
-      "sex interest": 0.822,
-      "gender expression": 0.255,
+      "sexuality": 0.031,
+      "romantic interest": 0.58,
+      "sex interest": 0.889,
+      "gender expression": 0.189,
       "sex": "f"
     },
-    "age": 53,
-    "birth year": 1162,
+    "age": 40,
+    "birth year": 1171,
     "sex": "f",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.963,
-      "honest-false": 0.689
+      "lawful-chaotic": 0.573,
+      "nice-nasty": 0.63,
+      "honest-false": 0.042
     },
     "attitude": {
-      "outgoing": 0.664,
-      "dream": 0.715
+      "outgoing": 0.254,
+      "dream": 0.45
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
-        "needs_care": false
+        "needs_care": false,
+        "flags": [
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.047,
-        "gender expression expression": 0.21
+        "sexuality expression": 0.029,
+        "gender expression expression": 0.061
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12583": {
+          "key": 12583,
+          "name": "Wauthem",
+          "age": 13,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Helyana (11708)",
+            "father": "Kerstiaen (11707)"
+          }
+        },
+        "13781": {
+          "key": 13781,
+          "name": "Sybillia van Kerstiaen",
+          "age": 11,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Helyana (11708)",
+            "father": "Kerstiaen (11707)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          11709,
-          15638
-        ]
+          11709
+        ],
+        "child": {
+          "birth": [
+            12585,
+            13783
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
         1,
         "lower middle class"
       ],
-      "income": 1.197,
-      "all_incomes": [
-        1.197
-      ],
-      "job": {
-        "lawful": false,
-        "honest": true
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 1,
-      "eye_color": "brown",
+      "skin_color": 5,
+      "eye_color": "blue",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
         "C",
-        "C"
+        "S"
       ],
-      "health": 0.0,
-      "fertility": 0.617,
+      "health": 0.763,
+      "fertility": 0.737,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -87,31 +113,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.563
+            "new_health": 0.763
           },
           "death": false
         },
-        "1212": {
+        "1210": {
           "health": {
-            "change": true,
-            "value_change": -0.2,
-            "new_health": 0.363
-          },
-          "death": false
-        },
-        "1213": {
-          "health": {
-            "change": true,
-            "value_change": -0.269,
-            "new_health": 0.094
-          },
-          "death": false
-        },
-        "1214": {
-          "health": {
-            "change": true,
-            "value_change": -0.094,
-            "new_health": 0.0
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.763
           },
           "death": true
         }
@@ -126,8 +136,8 @@
               11708
             ],
             "people names": [
-              "Seukinus Junghe",
-              "Lisebette Moer"
+              "Kerstiaen",
+              "Helyana Vint"
             ],
             "label": "spouse",
             "committed": true
@@ -137,176 +147,125 @@
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stNieu straet.se1.c1",
+              "section": "stNieu straet.se3.c1",
               "street": "Nieu straet",
               "neighborhood": "visbuurt",
-              "unique id": 762
+              "unique id": 766
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12585,
+            "people": [
+              11708,
+              12583
+            ],
+            "people names": [
+              "Helyana Vint",
+              "Wauthem"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1202": [
+          {
+            "topic": "not enough income",
+            "income": 0.428,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 13783,
+            "people": [
+              11708,
+              13781
+            ],
+            "people names": [
+              "Helyana Vint",
+              "Sybillia van Kerstiaen"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.231,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "not enough income",
+            "income": 0.133,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "not enough income",
+            "income": 0.235,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1206": [
+          {
+            "topic": "feelings change",
+            "target": 11707,
+            "target name": "Kerstiaen",
+            "state": "infatuation",
+            "relationship": 11709
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.241,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1207": [
           {
-            "key": 11709,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 11707,
-              "name": "Seukinus Junghe",
-              "age": 46,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
-          },
-          {
             "topic": "not enough income",
-            "income": 0,
+            "income": 0.265,
             "inhabitants": []
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1208": [
           {
-            "topic": "new relationship",
-            "key": 15638,
-            "people": [
-              11734,
-              11708
-            ],
-            "people names": [
-              "Bartholomeus Cauwen",
-              "Lisebette Moer"
-            ],
-            "label": "spouse",
-            "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stStoof straet.se1.c1",
-              "street": "Stoof straet",
-              "neighborhood": "visbuurt",
-              "unique id": 772
-            }
-          },
-          {
             "topic": "not enough income",
-            "income": 0.57,
-            "inhabitants": [
-              27996,
-              31405,
-              34919,
-              29464,
-              37423,
-              38964,
-              35022,
-              41076
-            ]
+            "income": 0.503,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1209": [
           {
-            "topic": "not enough income",
-            "income": 0.691,
-            "inhabitants": [
-              27996,
-              31405,
-              34919,
-              29464,
-              37423,
-              38964,
-              35022,
-              41076
-            ]
-          }
-        ],
-        "1210": [
-          {
-            "topic": "not enough income",
-            "income": 0.672,
-            "inhabitants": [
-              27996,
-              31405,
-              34919,
-              29464,
-              37423,
-              38964,
-              35022,
-              41076
-            ]
-          }
-        ],
-        "1211": [
-          {
-            "topic": "not enough income",
-            "income": 0.518,
-            "inhabitants": [
-              27996,
-              31405,
-              34919,
-              29464,
-              37423,
-              38964,
-              35022,
-              41076
-            ]
-          }
-        ],
-        "1212": [
-          {
-            "topic": "not enough income",
-            "income": 0.568,
-            "inhabitants": [
-              27996,
-              31405,
-              34919,
-              29464,
-              37423,
-              38964,
-              35022,
-              41076
-            ]
-          }
-        ],
-        "1213": [
-          {
-            "topic": "not enough income",
-            "income": 0.51,
-            "inhabitants": [
-              27996,
-              31405,
-              34919,
-              29464,
-              37423,
-              38964,
-              35022,
-              41076
-            ]
-          }
-        ],
-        "1214": [
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.197
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.432,
-            "inhabitants": [
-              27996,
-              31405,
-              34919,
-              29464,
-              37423,
-              38964,
-              35022,
-              41076
-            ]
+            "topic": "feelings change",
+            "target": 11707,
+            "target name": "Kerstiaen",
+            "state": "solid love",
+            "relationship": 11709
           }
         ]
       }
@@ -315,17 +274,16 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stStoof straet.se1.c1",
-      "street": "Stoof straet",
+      "section": "stNieu straet.se3.c1",
+      "street": "Nieu straet",
       "neighborhood": "visbuurt",
-      "unique id": 772
+      "unique id": 766
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        11709,
-        15638
+        11709
       ]
     }
   }

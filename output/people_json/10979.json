@@ -1,69 +1,55 @@
 {
   "10979": {
     "alive": false,
-    "name": "Alene",
-    "surname": "Markolf",
-    "full name": "Alene Markolf",
+    "name": "Heilsota",
+    "surname": "Cabellau",
+    "full name": "Heilsota Cabellau",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.046,
-      "romantic interest": 0.535,
-      "sex interest": 0.618,
-      "gender expression": 0.115,
+      "sexuality": 0.0,
+      "romantic interest": 0.848,
+      "sex interest": 0.617,
+      "gender expression": 0.18,
       "sex": "f"
     },
-    "age": 22,
-    "birth year": 1179,
+    "age": 54,
+    "birth year": 1155,
     "sex": "f",
     "income class": [
       0,
       "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.478,
-      "nice-nasty": 0.624,
-      "honest-false": 0.289
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.374,
+      "honest-false": 0.999
     },
     "attitude": {
-      "outgoing": 0.671,
-      "dream": 0.451
+      "outgoing": 0.775,
+      "dream": 0.264
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
-        "needs_care": false
+        "needs_care": false,
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.019,
-        "gender expression expression": 0.052
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.179
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {
-        "12412": {
-          "key": 12412,
-          "name": "Soeten Magnus",
-          "age": 36,
-          "alive": false,
-          "sex": "f",
-          "parents": {
-            "mother": "Alene (10979)",
-            "father": "Jurre (10978)"
-          }
-        }
-      },
+      "children": {},
       "relationship keys": {
         "spouse": [
           10980
-        ],
-        "child": {
-          "birth": [
-            12414
-          ]
-        }
+        ]
       }
     },
     "occupation": {
@@ -76,16 +62,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 8,
+      "skin_color": 4,
       "eye_color": "brown",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "S",
-        "C"
+        "C",
+        "S"
       ],
-      "health": 0.613,
-      "fertility": 0.689,
+      "health": 0.0,
+      "fertility": 0.746,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -97,9 +83,41 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.613
+            "new_health": 0.718
           },
           "death": false
+        },
+        "1205": {
+          "health": {
+            "change": true,
+            "value_change": -0.223,
+            "new_health": 0.495
+          },
+          "death": false
+        },
+        "1206": {
+          "health": {
+            "change": true,
+            "value_change": -0.288,
+            "new_health": 0.207
+          },
+          "death": false
+        },
+        "1207": {
+          "health": {
+            "change": true,
+            "value_change": -0.194,
+            "new_health": 0.013
+          },
+          "death": false
+        },
+        "1208": {
+          "health": {
+            "change": true,
+            "value_change": -0.013,
+            "new_health": 0.0
+          },
+          "death": true
         }
       },
       "events": {
@@ -112,8 +130,8 @@
               10979
             ],
             "people names": [
-              "Jurre Magnus",
-              "Alene Markolf"
+              "Daniel Neue",
+              "Heilsota Cabellau"
             ],
             "label": "spouse",
             "committed": true
@@ -128,27 +146,36 @@
               "neighborhood": "kampbuurt",
               "unique id": 439
             }
-          },
-          {
-            "topic": "new relationship",
-            "key": 12414,
-            "people": [
-              10979,
-              12412
-            ],
-            "people names": [
-              "Alene Markolf",
-              "Soeten Magnus"
-            ],
-            "label": "parentchild",
-            "committed": false
-          },
+          }
+        ],
+        "1205": [
           {
             "topic": "feelings change",
             "target": 10978,
-            "target name": "Jurre Magnus",
-            "state": "solid love",
+            "target name": "Daniel Neue",
+            "state": "out of love",
             "relationship": 10980
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0.401,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0.324,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0.317,
+            "inhabitants": []
           }
         ]
       }

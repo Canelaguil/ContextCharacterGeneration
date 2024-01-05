@@ -1,74 +1,97 @@
 {
   "11741": {
     "alive": false,
-    "name": "Gisele",
+    "name": "Meynseth",
     "surname": "",
-    "full name": "Gisele",
+    "full name": "Meynseth",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.653,
-      "sex interest": 0.812,
-      "gender expression": 0.084,
+      "sexuality": 0.114,
+      "romantic interest": 0.809,
+      "sex interest": 0.736,
+      "gender expression": 0.048,
       "sex": "f"
     },
-    "age": 46,
-    "birth year": 1156,
+    "age": 50,
+    "birth year": 1162,
     "sex": "f",
     "income class": [
-      1,
-      "lower middle class"
+      2,
+      "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.632,
-      "nice-nasty": 0.604,
-      "honest-false": 0.641
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.882,
+      "honest-false": 0.451
     },
     "attitude": {
-      "outgoing": 0.307,
-      "dream": 0.245
+      "outgoing": 0.763,
+      "dream": 0.936
     },
     "homsoc": {
       "means": {
-        "independent": false,
-        "taken_care_of": false,
-        "caretaker": false,
-        "needs_care": false
+        "independent": true,
+        "taken_care_of": true,
+        "caretaker": true,
+        "needs_care": false,
+        "flags": [
+          "caretaker",
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.033
+        "sexuality expression": 0.06,
+        "gender expression expression": 0.03
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13349": {
+          "key": 13349,
+          "name": "Aue Crulleken",
+          "age": 1,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Meynseth (11741)",
+            "father": "Snellekine (11740)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          11742
-        ]
+          11742,
+          15250
+        ],
+        "child": {
+          "birth": [
+            13351
+          ]
+        }
       }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        1,
-        "lower middle class"
+        2,
+        "middle class"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 2,
-      "eye_color": "brown",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "skin_color": 7,
+      "eye_color": "blue",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "S",
         "S"
       ],
-      "health": 0.909,
-      "fertility": 0.826,
+      "health": 0.526,
+      "fertility": 0.591,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -80,15 +103,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.909
+            "new_health": 0.526
           },
           "death": false
         },
-        "1201": {
+        "1211": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.909
+            "new_health": 0.526
           },
           "death": true
         }
@@ -103,8 +126,8 @@
               11741
             ],
             "people names": [
-              "Bollarde",
-              "Gisele"
+              "Snellekine Crulleken",
+              "Meynseth"
             ],
             "label": "spouse",
             "committed": true
@@ -112,31 +135,138 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stStoof straet.se1.c1",
-              "street": "Stoof straet",
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stGoetscalcstraet.se1.c2",
+              "street": "Goetscalcstraet",
               "neighborhood": "visbuurt",
-              "unique id": 775
+              "unique id": 784
             }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "feelings change",
+            "target": 11740,
+            "target name": "Snellekine Crulleken",
+            "state": "solid love",
+            "relationship": 11742
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 13351,
+            "people": [
+              11741,
+              13349
+            ],
+            "people names": [
+              "Meynseth",
+              "Aue Crulleken"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1204": [
+          {
+            "key": 11742,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11740,
+              "name": "Snellekine Crulleken",
+              "age": 48,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 13349,
+              "name": "Aue Crulleken",
+              "age": 1,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Meynseth (11741)",
+                "father": "Snellekine (11740)"
+              }
+            },
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": [
+              13349
+            ]
+          },
+          {
+            "topic": "new caretaker",
+            "person": 11741
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "new relationship",
+            "key": 15250,
+            "people": [
+              11968,
+              11741
+            ],
+            "people names": [
+              "Geraldus Tunne",
+              "Meynseth"
+            ],
+            "label": "spouse",
+            "committed": true
           }
         ]
       }
     },
     "key": 11741,
     "home": {
-      "income class": 1,
-      "income class label": "lower middle class",
-      "section": "stStoof straet.se1.c1",
-      "street": "Stoof straet",
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stGoetscalcstraet.se1.c2",
+      "street": "Goetscalcstraet",
       "neighborhood": "visbuurt",
-      "unique id": 775
+      "unique id": 784
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        11742
+        11742,
+        15250
       ]
     }
   }

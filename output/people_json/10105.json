@@ -1,52 +1,74 @@
 {
   "10105": {
     "alive": false,
-    "name": "Pelegrim",
-    "surname": "Crul",
-    "full name": "Pelegrim Crul",
+    "name": "Haghen",
+    "surname": "Hoeghen",
+    "full name": "Haghen Hoeghen",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.919,
-      "romantic interest": 0.882,
-      "sex interest": 0.669,
-      "gender expression": 0.023,
+      "sexuality label": "straight",
+      "sexuality": 0.047,
+      "romantic interest": 0.547,
+      "sex interest": 0.713,
+      "gender expression": 0.202,
       "sex": "m"
     },
-    "age": 31,
-    "birth year": 1171,
+    "age": 42,
+    "birth year": 1169,
     "sex": "m",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.999,
-      "honest-false": 0.944
+      "lawful-chaotic": 0.517,
+      "nice-nasty": 0.646,
+      "honest-false": 0.569
     },
     "attitude": {
-      "outgoing": 0.654,
-      "dream": 0.186
+      "outgoing": 0.352,
+      "dream": 0.687
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
-        "needs_care": false
+        "needs_care": false,
+        "flags": [
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.441,
-        "gender expression expression": 0.012
+        "sexuality expression": 0.031,
+        "gender expression expression": 0.039
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13050": {
+          "key": 13050,
+          "name": "Hersewindis Hoeghen",
+          "age": 35,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Sophia (10106)",
+            "father": "Haghen (10105)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          10107
-        ]
+          10107,
+          14950
+        ],
+        "child": {
+          "birth": [
+            13051
+          ]
+        }
       }
     },
     "occupation": {
@@ -55,28 +77,37 @@
         1,
         "lower middle class"
       ],
-      "income": 0.963,
+      "income": 0.596,
       "all_incomes": [
-        0.975,
-        0.957,
-        0.963
+        1.208,
+        0.81,
+        0.355,
+        0.215,
+        0.404,
+        0.276,
+        0.272,
+        0.052,
+        0.313,
+        0.555,
+        0.474,
+        0.596
       ],
       "job": {
         "lawful": true,
-        "honest": true
+        "honest": false
       }
     },
     "genetics": {
       "skin_color": 3,
-      "eye_color": "brown",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "eye_color": "green",
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
-        "S",
-        "S"
+        "C",
+        "C"
       ],
-      "health": 0.817,
-      "fertility": 0.837,
+      "health": 0.705,
+      "fertility": 0.632,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -88,15 +119,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.817
+            "new_health": 0.705
           },
           "death": false
         },
-        "1201": {
+        "1210": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.817
+            "new_health": 0.705
           },
           "death": true
         }
@@ -106,7 +137,7 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.975
+            "income": 1.208
           },
           {
             "topic": "new relationship",
@@ -116,8 +147,8 @@
               10106
             ],
             "people names": [
-              "Pelegrim Crul",
-              "Imsoete Heurkint"
+              "Haghen Hoeghen",
+              "Sophia Colueken"
             ],
             "label": "spouse",
             "committed": true
@@ -130,8 +161,162 @@
               "section": "stSlyck straet.se1.c1",
               "street": "Slyck straet",
               "neighborhood": "varkensbuurt",
-              "unique id": 44
+              "unique id": 38
             }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.355
+          }
+        ],
+        "1202": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.215
+          },
+          {
+            "topic": "new relationship",
+            "key": 13051,
+            "people": [
+              10105,
+              13050
+            ],
+            "people names": [
+              "Haghen Hoeghen",
+              "Hersewindis Hoeghen"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.215,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "not enough income",
+            "income": 0.404,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.276
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.276,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.272
+          },
+          {
+            "key": 10107,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10106,
+              "name": "Sophia Colueken",
+              "age": 30,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.272,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1206": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.052
+          },
+          {
+            "topic": "new relationship",
+            "key": 14950,
+            "people": [
+              10105,
+              10478
+            ],
+            "people names": [
+              "Haghen Hoeghen",
+              "Itsburgis Oge"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.052,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1207": [
+          {
+            "key": 14950,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10478,
+              "name": "Itsburgis Oge",
+              "age": 53,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.313,
+            "inhabitants": []
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.474
           }
         ]
       }
@@ -143,13 +328,14 @@
       "section": "stSlyck straet.se1.c1",
       "street": "Slyck straet",
       "neighborhood": "varkensbuurt",
-      "unique id": 44
+      "unique id": 38
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
-        10107
+        10107,
+        14950
       ]
     }
   }

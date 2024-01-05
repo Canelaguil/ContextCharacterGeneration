@@ -1,85 +1,104 @@
 {
   "11648": {
     "alive": false,
-    "name": "Soeten",
-    "surname": "Slabbart",
-    "full name": "Soeten Slabbart",
+    "name": "Flore",
+    "surname": "",
+    "full name": "Flore",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.13,
-      "romantic interest": 0.743,
-      "sex interest": 0.803,
-      "gender expression": 0.049,
+      "sexuality label": "gay",
+      "sexuality": 0.914,
+      "romantic interest": 0.856,
+      "sex interest": 0.638,
+      "gender expression": 0.443,
       "sex": "f"
     },
-    "age": 55,
-    "birth year": 1169,
+    "age": 56,
+    "birth year": 1163,
     "sex": "f",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.624,
-      "nice-nasty": 0.794,
-      "honest-false": 0.151
+      "lawful-chaotic": 0.242,
+      "nice-nasty": 0.329,
+      "honest-false": 0.991
     },
     "attitude": {
-      "outgoing": 0.339,
-      "dream": 0.117
+      "outgoing": 0.322,
+      "dream": 0.001
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
         "caretaker": false,
-        "needs_care": false
+        "needs_care": false,
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.078,
-        "gender expression expression": 0.035
+        "sexuality expression": 0.704,
+        "gender expression expression": 0.155
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12568": {
+          "key": 12568,
+          "name": "Havix",
+          "age": 41,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Flore (11648)",
+            "father": "Jonghen (11647)"
+          }
+        },
+        "13769": {
+          "key": 13769,
+          "name": "Ghela",
+          "age": 35,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Flore (11648)",
+            "father": "Jonghen (11647)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          11649,
-          16353,
-          16975
-        ]
+          11649
+        ],
+        "child": {
+          "birth": [
+            12570,
+            13771
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 0.844,
-      "all_incomes": [
-        1.103,
-        0.827,
-        0.851,
-        0.844
-      ],
-      "job": {
-        "lawful": true,
-        "honest": false
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 1,
+      "skin_color": 4,
       "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
         "C",
-        "C"
+        "S"
       ],
       "health": 0.0,
-      "fertility": 0.579,
+      "fertility": 0.722,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -91,46 +110,38 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.66
+            "new_health": 0.766
           },
           "death": false
         },
-        "1219": {
+        "1215": {
           "health": {
             "change": true,
-            "value_change": -0.18,
-            "new_health": 0.48
+            "value_change": -0.123,
+            "new_health": 0.643
           },
           "death": false
         },
-        "1220": {
+        "1216": {
           "health": {
             "change": true,
-            "value_change": -0.276,
-            "new_health": 0.204
+            "value_change": -0.264,
+            "new_health": 0.379
           },
           "death": false
         },
-        "1221": {
+        "1217": {
           "health": {
             "change": true,
-            "value_change": -0.169,
-            "new_health": 0.035
+            "value_change": -0.205,
+            "new_health": 0.174
           },
           "death": false
         },
-        "1222": {
+        "1218": {
           "health": {
             "change": true,
-            "value_change": -0.019,
-            "new_health": 0.016
-          },
-          "death": false
-        },
-        "1223": {
-          "health": {
-            "change": true,
-            "value_change": -0.016,
+            "value_change": -0.174,
             "new_health": 0.0
           },
           "death": true
@@ -146,8 +157,8 @@
               11648
             ],
             "people names": [
-              "Herlewin Canis",
-              "Soeten Slabbart"
+              "Jonghen",
+              "Flore"
             ],
             "label": "spouse",
             "committed": true
@@ -160,145 +171,47 @@
               "section": "stCorte gracht.se3.c2",
               "street": "Corte gracht",
               "neighborhood": "visbuurt",
-              "unique id": 736
+              "unique id": 737
             }
           },
+          {
+            "topic": "new relationship",
+            "key": 12570,
+            "people": [
+              11648,
+              12568
+            ],
+            "people names": [
+              "Flore",
+              "Havix"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 13771,
+            "people": [
+              11648,
+              13769
+            ],
+            "people names": [
+              "Flore",
+              "Ghela"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1204": [
           {
             "topic": "feelings change",
             "target": 11647,
-            "target name": "Herlewin Canis",
+            "target name": "Jonghen",
             "state": "out of love",
             "relationship": 11649
-          }
-        ],
-        "1208": [
-          {
-            "key": 11649,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 11647,
-              "name": "Herlewin Canis",
-              "age": 55,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1209": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1210": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1211": [
-          {
-            "topic": "new relationship",
-            "key": 16353,
-            "people": [
-              11626,
-              11648
-            ],
-            "people names": [
-              "Richolfus Bec",
-              "Soeten Slabbart"
-            ],
-            "label": "spouse",
-            "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stCorte gracht.se1.c2",
-              "street": "Corte gracht",
-              "neighborhood": "visbuurt",
-              "unique id": 728
-            }
-          }
-        ],
-        "1213": [
-          {
-            "key": 16353,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 11626,
-              "name": "Richolfus Bec",
-              "age": 54,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1214": [
-          {
-            "topic": "new relationship",
-            "key": 16975,
-            "people": [
-              11272,
-              11648
-            ],
-            "people names": [
-              "Niels Baligant",
-              "Soeten Slabbart"
-            ],
-            "label": "spouse",
-            "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stBreestraat.se5.c2",
-              "street": "Breestraat",
-              "neighborhood": "olvbuurt",
-              "unique id": 573
-            }
-          }
-        ],
-        "1215": [
-          {
-            "topic": "feelings change",
-            "target": 11272,
-            "target name": "Niels Baligant",
-            "state": "out of love",
-            "relationship": 16975
-          }
-        ],
-        "1220": [
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.103
           }
         ]
       }
@@ -307,18 +220,16 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stBreestraat.se5.c2",
-      "street": "Breestraat",
-      "neighborhood": "olvbuurt",
-      "unique id": 573
+      "section": "stCorte gracht.se3.c2",
+      "street": "Corte gracht",
+      "neighborhood": "visbuurt",
+      "unique id": 737
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        11649,
-        16353,
-        16975
+        11649
       ]
     }
   }
