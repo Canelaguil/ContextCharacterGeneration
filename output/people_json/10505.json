@@ -1,53 +1,76 @@
 {
   "10505": {
     "alive": false,
-    "name": "Rabburgis",
-    "surname": "Barvoet",
-    "full name": "Rabburgis Barvoet",
+    "name": "Douwen",
+    "surname": "Vetten",
+    "full name": "Douwen Vetten",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.836,
-      "romantic interest": 0.48,
-      "sex interest": 0.315,
-      "gender expression": 0.373,
+      "sexuality label": "straight",
+      "sexuality": 0.059,
+      "romantic interest": 0.944,
+      "sex interest": 0.595,
+      "gender expression": 0.077,
       "sex": "f"
     },
-    "age": 53,
-    "birth year": 1157,
+    "age": 56,
+    "birth year": 1172,
     "sex": "f",
+    "faction": "No religion",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.689,
-      "nice-nasty": 0.811,
-      "honest-false": 0.624
+      "lawful-chaotic": 0.458,
+      "nice-nasty": 0.999,
+      "honest-false": 0.075
     },
     "attitude": {
-      "outgoing": 0.172,
-      "dream": 0.0
+      "outgoing": 0.458,
+      "dream": 0.339
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "caretaker",
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.657,
-        "gender expression expression": 0.265
+        "sexuality expression": 0.036,
+        "gender expression expression": 0.01
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13652": {
+          "key": 13652,
+          "name": "Gisele Crane",
+          "age": 35,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Douwen (10505)",
+            "father": "Herman (10504)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          10506
-        ]
+          10506,
+          15039
+        ],
+        "child": {
+          "birth": [
+            13654
+          ]
+        }
       }
     },
     "occupation": {
@@ -60,16 +83,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 9,
+      "skin_color": 5,
       "eye_color": "blue",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
         "C",
-        "S"
+        "C"
       ],
       "health": 0.0,
-      "fertility": 0.619,
+      "fertility": 0.793,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -81,30 +104,54 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.595
+            "new_health": 0.818
           },
           "death": false
         },
-        "1207": {
+        "1222": {
           "health": {
             "change": true,
-            "value_change": -0.23,
-            "new_health": 0.365
+            "value_change": -0.086,
+            "new_health": 0.732
           },
           "death": false
         },
-        "1208": {
+        "1223": {
           "health": {
             "change": true,
-            "value_change": -0.236,
-            "new_health": 0.129
+            "value_change": -0.235,
+            "new_health": 0.497
           },
           "death": false
         },
-        "1209": {
+        "1224": {
           "health": {
             "change": true,
-            "value_change": -0.129,
+            "value_change": -0.201,
+            "new_health": 0.296
+          },
+          "death": false
+        },
+        "1225": {
+          "health": {
+            "change": true,
+            "value_change": -0.221,
+            "new_health": 0.075
+          },
+          "death": false
+        },
+        "1226": {
+          "health": {
+            "change": true,
+            "value_change": -0.074,
+            "new_health": 0.001
+          },
+          "death": false
+        },
+        "1227": {
+          "health": {
+            "change": true,
+            "value_change": -0.001,
             "new_health": 0.0
           },
           "death": true
@@ -120,8 +167,99 @@
               10505
             ],
             "people names": [
-              "Tiuri",
-              "Rabburgis Barvoet"
+              "Herman Crane",
+              "Douwen Vetten"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stBloemendaelse straet.se5.c2",
+              "street": "Bloemendaelse straet",
+              "neighborhood": "agnesbuurt",
+              "unique id": 234
+            }
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 13654,
+            "people": [
+              10505,
+              13652
+            ],
+            "people names": [
+              "Douwen Vetten",
+              "Gisele Crane"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 10504,
+            "target name": "Herman Crane",
+            "state": "infatuation",
+            "relationship": 10506
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
+            "key": 10506,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10504,
+              "name": "Herman Crane",
+              "age": 26,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          },
+          {
+            "topic": "new caretaker",
+            "person": 10505
+          }
+        ],
+        "1205": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 15039,
+            "people": [
+              10489,
+              10505
+            ],
+            "people names": [
+              "Rolant",
+              "Douwen Vetten"
             ],
             "label": "spouse",
             "committed": true
@@ -134,8 +272,136 @@
               "section": "stBloemendaelse straet.se3.c2",
               "street": "Bloemendaelse straet",
               "neighborhood": "agnesbuurt",
-              "unique id": 221
+              "unique id": 227
             }
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1211": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1212": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1213": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1214": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1215": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1216": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1217": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1218": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1221": [
+          {
+            "key": 15039,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10489,
+              "name": "Rolant",
+              "age": 54,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1222": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1223": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1224": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1225": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1226": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1227": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ]
       }
@@ -147,13 +413,14 @@
       "section": "stBloemendaelse straet.se3.c2",
       "street": "Bloemendaelse straet",
       "neighborhood": "agnesbuurt",
-      "unique id": 221
+      "unique id": 227
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
-        10506
+        10506,
+        15039
       ]
     }
   }

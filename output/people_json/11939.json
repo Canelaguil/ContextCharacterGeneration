@@ -1,109 +1,85 @@
 {
   "11939": {
     "alive": false,
-    "name": "Sybillia",
-    "surname": "Mues",
-    "full name": "Sybillia Mues",
+    "name": "Nimme",
+    "surname": "Steenard",
+    "full name": "Nimme Steenard",
     "born this way": {
       "sexuality label": "straight",
       "sexuality": 0.0,
-      "romantic interest": 0.795,
-      "sex interest": 0.782,
-      "gender expression": 0.031,
+      "romantic interest": 0.728,
+      "sex interest": 0.838,
+      "gender expression": 0.163,
       "sex": "f"
     },
-    "age": 45,
-    "birth year": 1184,
+    "age": 42,
+    "birth year": 1162,
     "sex": "f",
+    "faction": "Zealots",
     "income class": [
-      1,
-      "lower middle class"
+      2,
+      "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.763,
-      "nice-nasty": 0.91,
-      "honest-false": 0.02
+      "lawful-chaotic": 0.713,
+      "nice-nasty": 0.866,
+      "honest-false": 0.753
     },
     "attitude": {
-      "outgoing": 0.523,
-      "dream": 0.246
+      "outgoing": 0.617,
+      "dream": 0.128
     },
     "homsoc": {
       "means": {
         "independent": true,
-        "taken_care_of": true,
-        "caretaker": true,
+        "taken_care_of": false,
+        "caretaker": false,
         "needs_care": false,
-        "flags": [
-          "starving",
-          "caretaker",
-          "neglected"
-        ]
+        "flags": []
       },
       "expression": {
         "sexuality expression": -0.001,
-        "gender expression expression": 0.024
+        "gender expression expression": 0.041
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {
-        "12613": {
-          "key": 12613,
-          "name": "Bernero Brune",
-          "age": 49,
-          "alive": true,
-          "sex": "m",
-          "parents": {
-            "mother": "Sybillia (11939)",
-            "father": "Willai (11938)"
-          }
-        },
-        "17048": {
-          "key": 17048,
-          "name": "Zuanelt Boghart",
-          "age": 34,
-          "alive": false,
-          "sex": "f",
-          "parents": {
-            "mother": "Sybillia (11939)",
-            "father": "Eggerdus (10423)"
-          }
-        }
-      },
+      "children": {},
       "relationship keys": {
         "spouse": [
-          11940,
-          16685
-        ],
-        "child": {
-          "birth": [
-            12615,
-            17050
-          ]
-        }
+          11940
+        ]
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        1,
-        "lower middle class"
+        2,
+        "middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.152,
+      "all_incomes": [
+        1.045,
+        1.08,
+        1.116,
+        1.152
+      ],
+      "job": {
+        "lawful": true,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 5,
+      "skin_color": 8,
       "eye_color": "blue",
       "hair_color": "blonde",
       "hair_color_code": 4,
       "hair_type": [
-        "S",
-        "S"
+        "C",
+        "C"
       ],
-      "health": 0.728,
-      "fertility": 0.73,
+      "health": 0.476,
+      "fertility": 0.727,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -115,21 +91,42 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.728
+            "new_health": 0.666
           },
           "death": false
         },
-        "1228": {
+        "1201": {
+          "health": {
+            "change": true,
+            "value_change": -0.19,
+            "new_health": 0.476
+          },
+          "death": false
+        },
+        "1202": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.728
+            "new_health": 0.476
+          },
+          "death": false
+        },
+        "1203": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.476
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.045
+          },
           {
             "topic": "new relationship",
             "key": 11940,
@@ -138,8 +135,8 @@
               11939
             ],
             "people names": [
-              "Willai Brune",
-              "Sybillia Mues"
+              "Soi Craiman",
+              "Nimme Steenard"
             ],
             "label": "spouse",
             "committed": true
@@ -147,246 +144,31 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stDe Vyver.se3.c1",
-              "street": "De Vyver",
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stCromme straet.se3.c2",
+              "street": "Cromme straet",
               "neighborhood": "denhof",
-              "unique id": 864
+              "unique id": 879
             }
-          },
-          {
-            "topic": "new relationship",
-            "key": 12615,
-            "people": [
-              11939,
-              12613
-            ],
-            "people names": [
-              "Sybillia Mues",
-              "Bernero Brune"
-            ],
-            "label": "parentchild",
-            "committed": false
-          },
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1201": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1202": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1203": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1204": [
-          {
-            "key": 11940,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 11938,
-              "name": "Willai Brune",
-              "age": 35,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          },
-          {
-            "topic": "now caretaker",
-            "care dependants": []
-          },
-          {
-            "topic": "new caretaker",
-            "person": 11939
-          }
-        ],
-        "1205": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1206": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1207": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1208": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1209": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1210": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1211": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1212": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1213": [
-          {
-            "topic": "new relationship",
-            "key": 16685,
-            "people": [
-              10423,
-              11939
-            ],
-            "people names": [
-              "Eggerdus Boghart",
-              "Sybillia Mues"
-            ],
-            "label": "spouse",
-            "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stDavids hof.se3.c1",
-              "street": "Davids hof",
-              "neighborhood": "jorisbuurt",
-              "unique id": 187
-            }
-          },
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1214": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1215": [
-          {
-            "topic": "new relationship",
-            "key": 17050,
-            "people": [
-              11939,
-              17048
-            ],
-            "people names": [
-              "Sybillia Mues",
-              "Zuanelt Boghart"
-            ],
-            "label": "parentchild",
-            "committed": false
-          }
-        ],
-        "1217": [
-          {
-            "topic": "not enough income",
-            "income": 0.46,
-            "inhabitants": [
-              12613,
-              12328
-            ]
-          }
-        ],
-        "1218": [
-          {
-            "key": 16685,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 10423,
-              "name": "Eggerdus Boghart",
-              "age": 52,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": [
-              12613,
-              12328
-            ]
-          },
-          {
-            "topic": "now caretaker",
-            "care dependants": []
-          },
-          {
-            "topic": "new caretaker",
-            "person": 11939
           }
         ]
       }
     },
     "key": 11939,
     "home": {
-      "income class": 1,
-      "income class label": "lower middle class",
-      "section": "stDavids hof.se3.c1",
-      "street": "Davids hof",
-      "neighborhood": "jorisbuurt",
-      "unique id": 187
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stCromme straet.se3.c2",
+      "street": "Cromme straet",
+      "neighborhood": "denhof",
+      "unique id": 879
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
-        11940,
-        16685
+        11940
       ]
     }
   }

@@ -1,32 +1,33 @@
 {
   "10772": {
     "alive": false,
-    "name": "Aghete",
-    "surname": "",
-    "full name": "Aghete",
+    "name": "Margareta",
+    "surname": "Catere",
+    "full name": "Margareta Catere",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.842,
-      "romantic interest": 0.744,
-      "sex interest": 0.852,
-      "gender expression": 0.136,
+      "sexuality label": "straight",
+      "sexuality": 0.014,
+      "romantic interest": 0.83,
+      "sex interest": 0.811,
+      "gender expression": 0.211,
       "sex": "f"
     },
-    "age": 33,
-    "birth year": 1173,
+    "age": 58,
+    "birth year": 1170,
     "sex": "f",
+    "faction": "No religion",
     "income class": [
-      1,
-      "lower middle class"
+      2,
+      "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.975,
-      "nice-nasty": 0.893,
-      "honest-false": 0.25
+      "lawful-chaotic": 0.817,
+      "nice-nasty": 0.951,
+      "honest-false": 0.445
     },
     "attitude": {
-      "outgoing": 0.335,
-      "dream": 0.556
+      "outgoing": 0.546,
+      "dream": 0.454
     },
     "homsoc": {
       "means": {
@@ -34,42 +35,103 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.458,
-        "gender expression expression": 0.078
+        "sexuality expression": 0.01,
+        "gender expression expression": 0.16
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13287": {
+          "key": 13287,
+          "name": "Ricward",
+          "age": 47,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Margareta (10772)",
+            "father": "Vroeden (10771)"
+          }
+        },
+        "14072": {
+          "key": 14072,
+          "name": "Alvericus Vroedenszoon",
+          "age": 39,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Margareta (10772)",
+            "father": "Vroeden (10771)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          10773
-        ]
+          10773,
+          17138
+        ],
+        "child": {
+          "birth": [
+            13289,
+            14074
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        1,
-        "lower middle class"
+        2,
+        "middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.991,
+      "all_incomes": [
+        1.06,
+        1.499,
+        1.499,
+        1.317,
+        1.283,
+        1.35,
+        1.461,
+        1.347,
+        1.466,
+        1.499,
+        1.395,
+        1.499,
+        1.296,
+        1.224,
+        0.864,
+        0.711,
+        0.558,
+        0.28,
+        0.263,
+        0.462,
+        0.955,
+        1.084,
+        0.991
+      ],
+      "job": {
+        "lawful": true,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 6,
-      "eye_color": "brown",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "skin_color": 5,
+      "eye_color": "blue",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "C",
         "C"
       ],
-      "health": 0.691,
-      "fertility": 0.665,
+      "health": 0.0,
+      "fertility": 0.718,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -81,15 +143,55 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.691
+            "new_health": 0.853
           },
           "death": false
         },
-        "1205": {
+        "1222": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.691
+            "change": true,
+            "value_change": -0.078,
+            "new_health": 0.775
+          },
+          "death": false
+        },
+        "1223": {
+          "health": {
+            "change": true,
+            "value_change": -0.219,
+            "new_health": 0.556
+          },
+          "death": false
+        },
+        "1224": {
+          "health": {
+            "change": true,
+            "value_change": -0.221,
+            "new_health": 0.335
+          },
+          "death": false
+        },
+        "1225": {
+          "health": {
+            "change": true,
+            "value_change": -0.221,
+            "new_health": 0.114
+          },
+          "death": false
+        },
+        "1226": {
+          "health": {
+            "change": true,
+            "value_change": -0.097,
+            "new_health": 0.017
+          },
+          "death": false
+        },
+        "1227": {
+          "health": {
+            "change": true,
+            "value_change": -0.017,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -104,8 +206,8 @@
               10772
             ],
             "people names": [
-              "Goeskin Hont",
-              "Aghete"
+              "Vroeden",
+              "Margareta Catere"
             ],
             "label": "spouse",
             "committed": true
@@ -113,31 +215,267 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stCoppelstraet.se1.c1",
-              "street": "Coppelstraet",
-              "neighborhood": "agnesbuurt",
-              "unique id": 337
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stDie Camp.se1.c2",
+              "street": "Die Camp",
+              "neighborhood": "kampbuurt",
+              "unique id": 361
             }
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 13289,
+            "people": [
+              10772,
+              13287
+            ],
+            "people names": [
+              "Margareta Catere",
+              "Ricward"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.113,
+            "inhabitants": []
+          }
+        ],
+        "1203": [
+          {
+            "topic": "not enough income",
+            "income": 0.103,
+            "inhabitants": []
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 14074,
+            "people": [
+              10772,
+              14072
+            ],
+            "people names": [
+              "Margareta Catere",
+              "Alvericus Vroedenszoon"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1205": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.06
+          }
+        ],
+        "1206": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1209": [
+          {
+            "key": 10773,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10771,
+              "name": "Vroeden",
+              "age": 55,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1211": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1212": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1213": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1214": [
+          {
+            "topic": "new relationship",
+            "key": 17138,
+            "people": [
+              11743,
+              10772
+            ],
+            "people names": [
+              "Niels Cnijf",
+              "Margareta Catere"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stGoetscalcstraet.se3.c2",
+              "street": "Goetscalcstraet",
+              "neighborhood": "visbuurt",
+              "unique id": 789
+            }
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1215": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1216": [
+          {
+            "key": 17138,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11743,
+              "name": "Niels Cnijf",
+              "age": 53,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1217": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1218": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1219": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1220": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.711
+          }
+        ],
+        "1222": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.28
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1223": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.263
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1224": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.462
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1225": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1226": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.084
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1227": [
+          {
+            "topic": "neglected"
           }
         ]
       }
     },
     "key": 10772,
     "home": {
-      "income class": 1,
-      "income class label": "lower middle class",
-      "section": "stCoppelstraet.se1.c1",
-      "street": "Coppelstraet",
-      "neighborhood": "agnesbuurt",
-      "unique id": 337
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stGoetscalcstraet.se3.c2",
+      "street": "Goetscalcstraet",
+      "neighborhood": "visbuurt",
+      "unique id": 789
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
-        10773
+        10773,
+        17138
       ]
     }
   }

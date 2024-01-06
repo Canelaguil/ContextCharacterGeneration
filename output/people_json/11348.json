@@ -1,75 +1,113 @@
 {
   "11348": {
     "alive": false,
-    "name": "Nannen",
-    "surname": "Donevoet",
-    "full name": "Nannen Donevoet",
+    "name": "Katrin",
+    "surname": "",
+    "full name": "Katrin",
     "born this way": {
       "sexuality label": "straight",
       "sexuality": 0.0,
-      "romantic interest": 0.659,
-      "sex interest": 0.797,
-      "gender expression": 0.015,
+      "romantic interest": 0.943,
+      "sex interest": 0.999,
+      "gender expression": 0.083,
       "sex": "f"
     },
-    "age": 54,
-    "birth year": 1151,
+    "age": 53,
+    "birth year": 1169,
     "sex": "f",
+    "faction": "Dogmatists",
     "income class": [
-      4,
-      "nobility"
+      3,
+      "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.739,
+      "lawful-chaotic": 0.0,
       "nice-nasty": 0.0,
-      "honest-false": 0.545
+      "honest-false": 0.449
     },
     "attitude": {
-      "outgoing": 0.506,
-      "dream": 0.26
+      "outgoing": 0.757,
+      "dream": 0.253
     },
     "homsoc": {
       "means": {
-        "independent": true,
-        "taken_care_of": false,
-        "caretaker": false,
+        "independent": false,
+        "taken_care_of": true,
+        "caretaker": true,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "caretaker",
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
         "sexuality expression": -0.001,
-        "gender expression expression": 0.008
+        "gender expression expression": 0.049
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14150": {
+          "key": 14150,
+          "name": "Marcibilia",
+          "age": 3,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Katrin (11348)",
+            "father": "Robbrecht (11347)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          11349
-        ]
+          11349,
+          16239
+        ],
+        "child": {
+          "birth": [
+            14152
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        4,
-        "nobility"
+        3,
+        "upper middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.435,
+      "all_incomes": [
+        0.783,
+        0.757,
+        0.515,
+        0.186,
+        0.095,
+        0.0,
+        0.0,
+        0.55,
+        0.427,
+        0.435
+      ],
+      "job": {
+        "lawful": false,
+        "honest": false
+      }
     },
     "genetics": {
       "skin_color": 2,
-      "eye_color": "green",
+      "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
-        "S",
-        "C"
+        "C",
+        "S"
       ],
-      "health": 0.0,
-      "fertility": 0.682,
+      "health": 0.002,
+      "fertility": 0.569,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -81,39 +119,31 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.739
+            "new_health": 0.524
           },
           "death": false
         },
-        "1201": {
+        "1219": {
           "health": {
             "change": true,
-            "value_change": -0.209,
-            "new_health": 0.53
+            "value_change": -0.425,
+            "new_health": 0.099
           },
           "death": false
         },
-        "1202": {
+        "1220": {
           "health": {
             "change": true,
-            "value_change": -0.149,
-            "new_health": 0.381
+            "value_change": -0.056,
+            "new_health": 0.043
           },
           "death": false
         },
-        "1203": {
+        "1221": {
           "health": {
             "change": true,
-            "value_change": -0.359,
-            "new_health": 0.022
-          },
-          "death": false
-        },
-        "1204": {
-          "health": {
-            "change": true,
-            "value_change": -0.022,
-            "new_health": 0.0
+            "value_change": -0.041,
+            "new_health": 0.002
           },
           "death": true
         }
@@ -128,8 +158,8 @@
               11348
             ],
             "people names": [
-              "Rodolf Gole",
-              "Nannen Donevoet"
+              "Robbrecht",
+              "Katrin"
             ],
             "label": "spouse",
             "committed": true
@@ -137,31 +167,266 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 4,
-              "income class label": "nobility",
-              "section": "stLievevrouwe kerch.se3.c4",
+              "income class": 3,
+              "income class label": "upper middle class",
+              "section": "stLievevrouwe kerch.se7.c3",
               "street": "Lievevrouwe kerch",
               "neighborhood": "olvbuurt",
-              "unique id": 593
+              "unique id": 601
             }
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 14152,
+            "people": [
+              11348,
+              14150
+            ],
+            "people names": [
+              "Katrin",
+              "Marcibilia"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 11347,
+            "target name": "Robbrecht",
+            "state": "out of love",
+            "relationship": 11349
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1206": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1207": [
+          {
+            "key": 11349,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11347,
+              "name": "Robbrecht",
+              "age": 52,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              13072,
+              14090,
+              20569,
+              21234,
+              23496,
+              19529,
+              20790
+            ]
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": [
+              23496
+            ]
+          },
+          {
+            "topic": "new caretaker",
+            "person": 11348
+          }
+        ],
+        "1208": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 14150,
+              "name": "Marcibilia",
+              "age": 3,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Katrin (11348)",
+                "father": "Robbrecht (11347)"
+              }
+            },
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              13072,
+              14090,
+              20569,
+              21234,
+              23496,
+              19529,
+              20790
+            ]
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              13072,
+              14090,
+              20569,
+              21234,
+              23496,
+              19529,
+              20790
+            ]
+          }
+        ],
+        "1210": [
+          {
+            "topic": "new relationship",
+            "key": 16239,
+            "people": [
+              12064,
+              11348
+            ],
+            "people names": [
+              "Herdradus Strich",
+              "Katrin"
+            ],
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1212": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.783
+          }
+        ],
+        "1214": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.515
+          }
+        ],
+        "1215": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.186
+          }
+        ],
+        "1216": [
+          {
+            "key": 16239,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12064,
+              "name": "Herdradus Strich",
+              "age": 41,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.095,
+            "inhabitants": [
+              13072,
+              14090,
+              20569,
+              21234,
+              23496,
+              19529,
+              20790
+            ]
+          }
+        ],
+        "1217": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              13072,
+              14090,
+              20569,
+              21234,
+              23496,
+              19529,
+              20790
+            ]
+          }
+        ],
+        "1218": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              13072,
+              14090,
+              20569,
+              21234,
+              23496,
+              19529,
+              20790
+            ]
+          }
+        ],
+        "1220": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.427
+          }
+        ],
+        "1221": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.435
           }
         ]
       }
     },
     "key": 11348,
     "home": {
-      "income class": 4,
-      "income class label": "nobility",
-      "section": "stLievevrouwe kerch.se3.c4",
+      "income class": 3,
+      "income class label": "upper middle class",
+      "section": "stLievevrouwe kerch.se7.c3",
       "street": "Lievevrouwe kerch",
       "neighborhood": "olvbuurt",
-      "unique id": 593
+      "unique id": 601
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
-        11349
+        11349,
+        16239
       ]
     }
   }

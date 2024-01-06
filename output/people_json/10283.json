@@ -1,75 +1,140 @@
 {
   "10283": {
     "alive": false,
-    "name": "Clara",
-    "surname": "",
-    "full name": "Clara",
+    "name": "Clementia",
+    "surname": "Canis",
+    "full name": "Clementia Canis",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.721,
-      "sex interest": 0.845,
-      "gender expression": 0.015,
+      "sexuality label": "gay",
+      "sexuality": 0.897,
+      "romantic interest": 0.682,
+      "sex interest": 0.414,
+      "gender expression": 0.33,
       "sex": "f"
     },
-    "age": 55,
-    "birth year": 1154,
+    "age": 34,
+    "birth year": 1182,
     "sex": "f",
+    "faction": "Zealots",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.585,
-      "nice-nasty": 0.134,
-      "honest-false": 0.444
+      "lawful-chaotic": 0.645,
+      "nice-nasty": 0.822,
+      "honest-false": 0.221
     },
     "attitude": {
-      "outgoing": 0.547,
-      "dream": 0.348
+      "outgoing": 0.627,
+      "dream": 0.401
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "caretaker",
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.011
+        "sexuality expression": 0.447,
+        "gender expression expression": 0.09
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12268": {
+          "key": 12268,
+          "name": "Mense Hoedekine",
+          "age": 42,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Clementia (10283)",
+            "father": "Reuro (10282)"
+          }
+        },
+        "13153": {
+          "key": 13153,
+          "name": "Kerstine Hoedekine",
+          "age": 47,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Clementia (10283)",
+            "father": "Reuro (10282)"
+          }
+        },
+        "13993": {
+          "key": 13993,
+          "name": "Marcibilia Hoedekine",
+          "age": 36,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Clementia (10283)",
+            "father": "Reuro (10282)"
+          }
+        },
+        "17277": {
+          "key": 17277,
+          "name": "Heile Bartrardesdochter",
+          "age": 16,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Clementia (10283)",
+            "father": "Bartrarde (11605)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          10284
-        ]
+          10284,
+          15032
+        ],
+        "child": {
+          "birth": [
+            12270,
+            13155,
+            13995,
+            17279
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         1,
         "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.811,
+      "all_incomes": [
+        0.811
+      ],
+      "job": {
+        "lawful": true,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 2,
+      "skin_color": 0,
       "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
         "S",
         "S"
       ],
-      "health": 0.0,
-      "fertility": 0.622,
+      "health": 0.501,
+      "fertility": 0.51,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -81,49 +146,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.672
+            "new_health": 0.501
           },
           "death": false
-        },
-        "1204": {
-          "health": {
-            "change": true,
-            "value_change": -0.153,
-            "new_health": 0.519
-          },
-          "death": false
-        },
-        "1205": {
-          "health": {
-            "change": true,
-            "value_change": -0.162,
-            "new_health": 0.357
-          },
-          "death": false
-        },
-        "1206": {
-          "health": {
-            "change": true,
-            "value_change": -0.238,
-            "new_health": 0.119
-          },
-          "death": false
-        },
-        "1207": {
-          "health": {
-            "change": true,
-            "value_change": -0.107,
-            "new_health": 0.012
-          },
-          "death": false
-        },
-        "1208": {
-          "health": {
-            "change": true,
-            "value_change": -0.012,
-            "new_health": 0.0
-          },
-          "death": true
         }
       },
       "events": {
@@ -136,8 +161,8 @@
               10283
             ],
             "people names": [
-              "Radwardo Mie",
-              "Clara"
+              "Reuro Hoedekine",
+              "Clementia Canis"
             ],
             "label": "spouse",
             "committed": true
@@ -150,26 +175,221 @@
               "section": "stHelle voet.se9.c1",
               "street": "Helle voet",
               "neighborhood": "jorisbuurt",
-              "unique id": 128
+              "unique id": 130
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12270,
+            "people": [
+              10283,
+              12268
+            ],
+            "people names": [
+              "Clementia Canis",
+              "Mense Hoedekine"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 10282,
+            "target name": "Reuro Hoedekine",
+            "state": "out of love",
+            "relationship": 10284
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1201": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 13155,
+            "people": [
+              10283,
+              13153
+            ],
+            "people names": [
+              "Clementia Canis",
+              "Kerstine Hoedekine"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 13995,
+            "people": [
+              10283,
+              13993
+            ],
+            "people names": [
+              "Clementia Canis",
+              "Marcibilia Hoedekine"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1205": [
+          {
+            "key": 10284,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10282,
+              "name": "Reuro Hoedekine",
+              "age": 45,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          },
+          {
+            "topic": "new caretaker",
+            "person": 10283
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 15032,
+            "people": [
+              11605,
+              10283
+            ],
+            "people names": [
+              "Bartrarde Slabbart",
+              "Clementia Canis"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stDie lange straet3.se9.c2",
+              "street": "Die lange straet3",
+              "neighborhood": "visbuurt",
+              "unique id": 724
+            }
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1211": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1212": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1213": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1214": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1215": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.811
+          },
+          {
+            "topic": "new relationship",
+            "key": 17279,
+            "people": [
+              10283,
+              17277
+            ],
+            "people names": [
+              "Clementia Canis",
+              "Heile Bartrardesdochter"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
           }
         ]
       }
     },
     "key": 10283,
     "home": {
-      "income class": 1,
-      "income class label": "lower middle class",
-      "section": "stHelle voet.se9.c1",
-      "street": "Helle voet",
-      "neighborhood": "jorisbuurt",
-      "unique id": 128
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stDie lange straet3.se9.c2",
+      "street": "Die lange straet3",
+      "neighborhood": "visbuurt",
+      "unique id": 724
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        10284
+        10284,
+        15032
       ]
     }
   }

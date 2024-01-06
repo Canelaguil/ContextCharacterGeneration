@@ -1,53 +1,97 @@
 {
   "11857": {
     "alive": false,
-    "name": "Wissen",
-    "surname": "Zonne",
-    "full name": "Wissen Zonne",
+    "name": "Lieuin",
+    "surname": "",
+    "full name": "Lieuin",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.008,
-      "romantic interest": 0.747,
-      "sex interest": 0.546,
-      "gender expression": 0.0,
+      "sexuality": 0.04,
+      "romantic interest": 0.663,
+      "sex interest": 0.622,
+      "gender expression": 0.105,
       "sex": "m"
     },
-    "age": 53,
-    "birth year": 1153,
+    "age": 55,
+    "birth year": 1155,
     "sex": "m",
+    "faction": "No religion",
     "income class": [
       4,
       "nobility"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.172,
-      "honest-false": 0.981
+      "lawful-chaotic": 0.765,
+      "nice-nasty": 0.382,
+      "honest-false": 0.386
     },
     "attitude": {
-      "outgoing": 0.564,
-      "dream": 0.204
+      "outgoing": 0.602,
+      "dream": 0.748
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "neglected"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.004,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.025,
+        "gender expression expression": 0.075
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12571": {
+          "key": 12571,
+          "name": "Zuanelt",
+          "age": 8,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Hildegardis (11858)",
+            "father": "Lieuin (11857)"
+          }
+        },
+        "14240": {
+          "key": 14240,
+          "name": "Frethericus van Lieuin",
+          "age": 45,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Hildegardis (11858)",
+            "father": "Lieuin (11857)"
+          }
+        },
+        "14629": {
+          "key": 14629,
+          "name": "Richolfus van Lieuin",
+          "age": 2,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Hildegardis (11858)",
+            "father": "Lieuin (11857)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11859
-        ]
+        ],
+        "child": {
+          "birth": [
+            12572,
+            14241,
+            14630
+          ]
+        }
       }
     },
     "occupation": {
@@ -56,23 +100,27 @@
         4,
         "nobility"
       ],
-      "income": 0.509,
+      "income": 1.165,
       "all_incomes": [
-        0.842,
-        0.594,
-        0.633,
-        0.612,
-        0.502,
-        0.682,
-        0.509
+        1.076,
+        0.962,
+        1.109,
+        0.962,
+        1.001,
+        1.082,
+        1.085,
+        0.833,
+        0.854,
+        1.037,
+        1.165
       ],
       "job": {
-        "lawful": false,
-        "honest": true
+        "lawful": true,
+        "honest": false
       }
     },
     "genetics": {
-      "skin_color": 9,
+      "skin_color": 4,
       "eye_color": "brown",
       "hair_color": "dark brown",
       "hair_color_code": 1,
@@ -80,8 +128,8 @@
         "S",
         "C"
       ],
-      "health": 0.0,
-      "fertility": 0.599,
+      "health": 0.001,
+      "fertility": 0.693,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -93,31 +141,47 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.633
-          },
-          "death": false
-        },
-        "1203": {
-          "health": {
-            "change": true,
-            "value_change": -0.264,
-            "new_health": 0.369
-          },
-          "death": false
-        },
-        "1204": {
-          "health": {
-            "change": true,
-            "value_change": -0.167,
-            "new_health": 0.202
+            "new_health": 0.747
           },
           "death": false
         },
         "1205": {
           "health": {
             "change": true,
-            "value_change": -0.202,
-            "new_health": 0.0
+            "value_change": -0.172,
+            "new_health": 0.575
+          },
+          "death": false
+        },
+        "1206": {
+          "health": {
+            "change": true,
+            "value_change": -0.287,
+            "new_health": 0.288
+          },
+          "death": false
+        },
+        "1207": {
+          "health": {
+            "change": true,
+            "value_change": -0.167,
+            "new_health": 0.121
+          },
+          "death": false
+        },
+        "1208": {
+          "health": {
+            "change": true,
+            "value_change": -0.067,
+            "new_health": 0.054
+          },
+          "death": false
+        },
+        "1209": {
+          "health": {
+            "change": true,
+            "value_change": -0.053,
+            "new_health": 0.001
           },
           "death": true
         }
@@ -127,12 +191,7 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.842
-          },
-          {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.594
+            "income": 1.076
           },
           {
             "topic": "new relationship",
@@ -142,8 +201,8 @@
               11858
             ],
             "people names": [
-              "Wissen Zonne",
-              "Margareta"
+              "Lieuin",
+              "Hildegardis Oge"
             ],
             "label": "spouse",
             "committed": true
@@ -156,26 +215,143 @@
               "section": "stOp Havick1.se1.c4",
               "street": "Op Havick1",
               "neighborhood": "cingelnoord",
-              "unique id": 830
+              "unique id": 843
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12572,
+            "people": [
+              11857,
+              12571
+            ],
+            "people names": [
+              "Lieuin",
+              "Zuanelt"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1201": [
           {
-            "key": 11859,
-            "topic": "unmarried"
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.109
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1202": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.001
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 14241,
+            "people": [
+              11857,
+              14240
+            ],
+            "people names": [
+              "Lieuin",
+              "Frethericus van Lieuin"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "new relationship",
+            "key": 14630,
+            "people": [
+              11857,
+              14629
+            ],
+            "people names": [
+              "Lieuin",
+              "Richolfus van Lieuin"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1206": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.037
           },
           {
             "topic": "person died",
             "person": {
-              "key": 11858,
-              "name": "Margareta",
-              "age": 29,
+              "key": 14629,
+              "name": "Richolfus van Lieuin",
+              "age": 2,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Hildegardis (11858)",
+                "father": "Lieuin (11857)"
+              }
+            },
+            "label": "child"
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12571,
+              "name": "Zuanelt",
+              "age": 8,
               "alive": false,
               "sex": "f",
-              "parents": "firstgen"
+              "parents": {
+                "mother": "Hildegardis (11858)",
+                "father": "Lieuin (11857)"
+              }
             },
-            "label": "spouse"
+            "label": "child"
+          },
+          {
+            "topic": "neglected"
           }
         ]
       }
@@ -187,11 +363,11 @@
       "section": "stOp Havick1.se1.c4",
       "street": "Op Havick1",
       "neighborhood": "cingelnoord",
-      "unique id": 830
+      "unique id": 843
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
         11859
       ]

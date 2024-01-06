@@ -94,7 +94,7 @@ class Community(Model):
         self.city = City(self, seed, community)
         self.factions = Factions(community)
         self.institutions = Institutions(institutions)
-        self.manager = CommunityEvents(society)
+        self.manager = CommunityEvents(self, community)
         self.intention_manager = Intention_Manager(0, self)
         self.init_community(society, seed)
 
@@ -115,10 +115,11 @@ class Community(Model):
     def make_couple(self, income_class, home_address):
         max_age = Body.old_age # Person.adult_age_men + int((Body.old_age - Person.adult_age_men) * 0.6)
         man_age = rand_int(max_age, Person.adult_age_men)
-        man = Person(self.get_id(), self, self.year, income_class, 'firstgen', 
+        faction = self.factions.assign_faction()
+        man = Person(self.get_id(), self, self.year, income_class, faction,'firstgen', 
                      'm', man_age, True )
         woman_age = rand_int(max_age, Person.adult_age_women)
-        woman = Person(self.get_id(), self, self.year, income_class, 'firstgen',
+        woman = Person(self.get_id(), self, self.year, income_class, faction, 'firstgen',
                        'f', woman_age, True)
         self.add_person(man)
         self.add_person(woman)
@@ -222,11 +223,11 @@ class Community(Model):
     def express_intention(self, intention):
         self.intention_manager.receive_intention(intention)
 
-    def birth_child(self, relationship_key, income_class):
+    def birth_child(self, relationship_key, income_class, faction):
         self.births += 1
         parent_info = self.get_relationship(relationship_key)
         unique_id = self.get_id()
-        child = Person(unique_id, self, self.year, income_class, 
+        child = Person(unique_id, self, self.year, income_class, faction, 
                        parent_info)
         if child.sex == 'f':
             self.female_births += 1

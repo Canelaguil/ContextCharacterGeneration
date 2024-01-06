@@ -1,32 +1,33 @@
 {
   "10049": {
     "alive": false,
-    "name": "Esa",
-    "surname": "Vincs",
-    "full name": "Esa Vincs",
+    "name": "Oda",
+    "surname": "Ulf",
+    "full name": "Oda Ulf",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.054,
-      "romantic interest": 0.566,
-      "sex interest": 0.64,
-      "gender expression": 0.107,
+      "sexuality": 0.089,
+      "romantic interest": 0.804,
+      "sex interest": 0.698,
+      "gender expression": 0.0,
       "sex": "f"
     },
-    "age": 64,
-    "birth year": 1151,
+    "age": 28,
+    "birth year": 1173,
     "sex": "f",
+    "faction": "Zealots",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.563,
-      "nice-nasty": 0.63,
-      "honest-false": 0.267
+      "lawful-chaotic": 0.937,
+      "nice-nasty": 0.92,
+      "honest-false": 0.63
     },
     "attitude": {
-      "outgoing": 0.168,
-      "dream": 0.225
+      "outgoing": 0.672,
+      "dream": 0.398
     },
     "homsoc": {
       "means": {
@@ -35,22 +36,38 @@
         "caretaker": false,
         "needs_care": false,
         "flags": [
-          "starving"
+          "neglected"
         ]
       },
       "expression": {
-        "sexuality expression": 0.017,
-        "gender expression expression": 0.043
+        "sexuality expression": 0.037,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12226": {
+          "key": 12226,
+          "name": "Godeweris",
+          "age": 2,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Oda (10049)",
+            "father": "Iacobus (10048)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          10050,
-          15189
-        ]
+          10050
+        ],
+        "child": {
+          "birth": [
+            12228
+          ]
+        }
       }
     },
     "occupation": {
@@ -63,16 +80,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 8,
-      "eye_color": "blue",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "skin_color": 2,
+      "eye_color": "brown",
+      "hair_color": "red",
+      "hair_color_code": 3,
       "hair_type": [
-        "S",
-        "S"
+        "C",
+        "C"
       ],
-      "health": 0.0,
-      "fertility": 0.92,
+      "health": 0.619,
+      "fertility": 0.671,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -84,55 +101,7 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.833
-          },
-          "death": false
-        },
-        "1209": {
-          "health": {
-            "change": true,
-            "value_change": -0.078,
-            "new_health": 0.755
-          },
-          "death": false
-        },
-        "1210": {
-          "health": {
-            "change": true,
-            "value_change": -0.19,
-            "new_health": 0.565
-          },
-          "death": false
-        },
-        "1211": {
-          "health": {
-            "change": true,
-            "value_change": -0.219,
-            "new_health": 0.346
-          },
-          "death": false
-        },
-        "1212": {
-          "health": {
-            "change": true,
-            "value_change": -0.166,
-            "new_health": 0.18
-          },
-          "death": false
-        },
-        "1213": {
-          "health": {
-            "change": true,
-            "value_change": -0.161,
-            "new_health": 0.019
-          },
-          "death": false
-        },
-        "1214": {
-          "health": {
-            "change": true,
-            "value_change": -0.019,
-            "new_health": 0.0
+            "new_health": 0.619
           },
           "death": true
         }
@@ -147,8 +116,8 @@
               10049
             ],
             "people names": [
-              "Meinoldo Burne",
-              "Esa Vincs"
+              "Iacobus",
+              "Oda Ulf"
             ],
             "label": "spouse",
             "committed": true
@@ -163,65 +132,23 @@
               "neighborhood": "varkensbuurt",
               "unique id": 22
             }
-          }
-        ],
-        "1206": [
-          {
-            "key": 10050,
-            "topic": "unmarried"
           },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 10048,
-              "name": "Meinoldo Burne",
-              "age": 48,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1207": [
           {
             "topic": "new relationship",
-            "key": 15189,
+            "key": 12228,
             "people": [
-              10468,
-              10049
+              10049,
+              12226
             ],
             "people names": [
-              "Ringot",
-              "Esa Vincs"
+              "Oda Ulf",
+              "Godeweris"
             ],
-            "label": "spouse",
-            "committed": true
+            "label": "parentchild",
+            "committed": false
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stDoelen.se1.c2",
-              "street": "Doelen",
-              "neighborhood": "jorisbuurt",
-              "unique id": 203
-            }
-          }
-        ],
-        "1210": [
-          {
-            "topic": "feelings change",
-            "target": 10468,
-            "target name": "Ringot",
-            "state": "out of love",
-            "relationship": 15189
+            "topic": "neglected"
           }
         ]
       }
@@ -230,17 +157,16 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stDoelen.se1.c2",
-      "street": "Doelen",
-      "neighborhood": "jorisbuurt",
-      "unique id": 203
+      "section": "stVerckens merct.se1.c2",
+      "street": "Verckens merct",
+      "neighborhood": "varkensbuurt",
+      "unique id": 22
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        10050,
-        15189
+        10050
       ]
     }
   }

@@ -1,32 +1,33 @@
 {
   "10048": {
     "alive": false,
-    "name": "Meinoldo",
-    "surname": "Burne",
-    "full name": "Meinoldo Burne",
+    "name": "Iacobus",
+    "surname": "",
+    "full name": "Iacobus",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.062,
-      "romantic interest": 0.529,
-      "sex interest": 0.866,
-      "gender expression": 0.072,
+      "sexuality": 0.051,
+      "romantic interest": 0.84,
+      "sex interest": 0.588,
+      "gender expression": 0.093,
       "sex": "m"
     },
     "age": 48,
-    "birth year": 1158,
+    "birth year": 1161,
     "sex": "m",
+    "faction": "Zealots",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.631,
-      "nice-nasty": 0.917,
-      "honest-false": 0.522
+      "lawful-chaotic": 0.636,
+      "nice-nasty": 0.416,
+      "honest-false": 0.247
     },
     "attitude": {
-      "outgoing": 0.702,
-      "dream": 0.485
+      "outgoing": 0.212,
+      "dream": 0.247
     },
     "homsoc": {
       "means": {
@@ -34,20 +35,52 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "neglected"
+        ]
       },
       "expression": {
         "sexuality expression": 0.045,
-        "gender expression expression": 0.071
+        "gender expression expression": 0.024
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12226": {
+          "key": 12226,
+          "name": "Godeweris",
+          "age": 2,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Oda (10049)",
+            "father": "Iacobus (10048)"
+          }
+        },
+        "14321": {
+          "key": 14321,
+          "name": "Goneir Iacobussdochter",
+          "age": 4,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Aleydis (11225)",
+            "father": "Iacobus (10048)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          10050
-        ]
+          10050,
+          13562
+        ],
+        "child": {
+          "birth": [
+            12227,
+            14322
+          ]
+        }
       }
     },
     "occupation": {
@@ -56,32 +89,35 @@
         2,
         "middle class"
       ],
-      "income": 0.872,
+      "income": 1.392,
       "all_incomes": [
-        0.938,
-        1.035,
-        1.051,
-        1.042,
-        0.989,
-        0.963,
-        0.872
+        0.782,
+        0.968,
+        0.996,
+        0.981,
+        1.06,
+        1.356,
+        1.218,
+        1.181,
+        1.186,
+        1.392
       ],
       "job": {
-        "lawful": true,
-        "honest": true
+        "lawful": false,
+        "honest": false
       }
     },
     "genetics": {
-      "skin_color": 5,
+      "skin_color": 4,
       "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
-        "C",
+        "S",
         "C"
       ],
-      "health": 0.598,
-      "fertility": 0.491,
+      "health": 0.724,
+      "fertility": 0.775,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -93,15 +129,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.598
+            "new_health": 0.724
           },
           "death": false
         },
-        "1205": {
+        "1208": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.598
+            "new_health": 0.724
           },
           "death": true
         }
@@ -111,12 +147,7 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.938
-          },
-          {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.035
+            "income": 0.782
           },
           {
             "topic": "new relationship",
@@ -126,8 +157,8 @@
               10049
             ],
             "people names": [
-              "Meinoldo Burne",
-              "Esa Vincs"
+              "Iacobus",
+              "Oda Ulf"
             ],
             "label": "spouse",
             "committed": true
@@ -142,15 +173,147 @@
               "neighborhood": "varkensbuurt",
               "unique id": 22
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12227,
+            "people": [
+              10048,
+              12226
+            ],
+            "people names": [
+              "Iacobus",
+              "Godeweris"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1201": [
+          {
+            "key": 10050,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10049,
+              "name": "Oda Ulf",
+              "age": 28,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1202": [
           {
+            "topic": "new relationship",
+            "key": 13562,
+            "people": [
+              10048,
+              11225
+            ],
+            "people names": [
+              "Iacobus",
+              "Aleydis Suardt"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.06
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12226,
+              "name": "Godeweris",
+              "age": 2,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Oda (10049)",
+                "father": "Iacobus (10048)"
+              }
+            },
+            "label": "child"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 14322,
+            "people": [
+              10048,
+              14321
+            ],
+            "people names": [
+              "Iacobus",
+              "Goneir Iacobussdochter"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1205": [
+          {
             "topic": "feelings change",
-            "target": 10049,
-            "target name": "Esa Vincs",
+            "target": 11225,
+            "target name": "Aleydis Suardt",
             "state": "out of love",
-            "relationship": 10050
+            "relationship": 13562
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1206": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1207": [
+          {
+            "key": 13562,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11225,
+              "name": "Aleydis Suardt",
+              "age": 33,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "neglected"
           }
         ]
       }
@@ -165,10 +328,11 @@
       "unique id": 22
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
-        10050
+        10050,
+        13562
       ]
     }
   }

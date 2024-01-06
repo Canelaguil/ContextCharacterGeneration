@@ -1,32 +1,33 @@
 {
   "10334": {
     "alive": false,
-    "name": "Nimme",
-    "surname": "Blome",
-    "full name": "Nimme Blome",
+    "name": "Hersewindis",
+    "surname": "Coe",
+    "full name": "Hersewindis Coe",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.079,
-      "romantic interest": 0.411,
-      "sex interest": 0.765,
-      "gender expression": 0.094,
+      "sexuality": 0.091,
+      "romantic interest": 0.798,
+      "sex interest": 0.668,
+      "gender expression": 0.0,
       "sex": "f"
     },
-    "age": 53,
-    "birth year": 1152,
+    "age": 42,
+    "birth year": 1167,
     "sex": "f",
+    "faction": "No religion",
     "income class": [
-      0,
-      "working class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.902,
-      "nice-nasty": 0.602,
-      "honest-false": 0.384
+      "lawful-chaotic": 0.243,
+      "nice-nasty": 0.06,
+      "honest-false": 0.999
     },
     "attitude": {
-      "outgoing": 0.306,
-      "dream": 0.221
+      "outgoing": 0.264,
+      "dream": 0.492
     },
     "homsoc": {
       "means": {
@@ -35,50 +36,60 @@
         "caretaker": false,
         "needs_care": false,
         "flags": [
-          "starving"
+          "neglected"
         ]
       },
       "expression": {
-        "sexuality expression": 0.045,
-        "gender expression expression": 0.036
+        "sexuality expression": 0.06,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12286": {
+          "key": 12286,
+          "name": "Brundonis Stael",
+          "age": 3,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Hersewindis (10334)",
+            "father": "Wouter (10333)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10335
-        ]
+        ],
+        "child": {
+          "birth": [
+            12288
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
-        0,
-        "working class"
+        1,
+        "lower middle class"
       ],
-      "income": 0.905,
-      "all_incomes": [
-        0.925,
-        0.905
-      ],
-      "job": {
-        "lawful": true,
-        "honest": true
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 4,
-      "eye_color": "brown",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "skin_color": 5,
+      "eye_color": "green",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "S",
         "C"
       ],
-      "health": 0.0,
-      "fertility": 0.531,
+      "health": 0.468,
+      "fertility": 0.438,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -90,31 +101,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.539
+            "new_health": 0.468
           },
           "death": false
         },
-        "1202": {
+        "1208": {
           "health": {
-            "change": true,
-            "value_change": -0.274,
-            "new_health": 0.265
-          },
-          "death": false
-        },
-        "1203": {
-          "health": {
-            "change": true,
-            "value_change": -0.252,
-            "new_health": 0.013
-          },
-          "death": false
-        },
-        "1204": {
-          "health": {
-            "change": true,
-            "value_change": -0.013,
-            "new_health": 0.0
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.468
           },
           "death": true
         }
@@ -129,8 +124,8 @@
               10334
             ],
             "people names": [
-              "Weitijn Heldecop",
-              "Nimme Blome"
+              "Wouter Stael",
+              "Hersewindis Coe"
             ],
             "label": "spouse",
             "committed": true
@@ -138,57 +133,78 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stSt. Joris straet.se3.c0",
-              "street": "St. Joris straet",
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stMuelen straet.se1.c1",
+              "street": "Muelen straet",
               "neighborhood": "jorisbuurt",
-              "unique id": 149
+              "unique id": 153
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12288,
+            "people": [
+              10334,
+              12286
+            ],
+            "people names": [
+              "Hersewindis Coe",
+              "Brundonis Stael"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1201": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1202": [
+          {
+            "topic": "neglected"
           }
         ],
         "1203": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.925
-          },
-          {
-            "key": 10335,
-            "topic": "unmarried"
-          },
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
           {
             "topic": "person died",
             "person": {
-              "key": 10333,
-              "name": "Weitijn Heldecop",
-              "age": 38,
+              "key": 12286,
+              "name": "Brundonis Stael",
+              "age": 3,
               "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
+              "sex": "f",
+              "parents": {
+                "mother": "Hersewindis (10334)",
+                "father": "Wouter (10333)"
+              }
             },
-            "label": "spouse"
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "label": "child"
           }
         ]
       }
     },
     "key": 10334,
     "home": {
-      "income class": 0,
-      "income class label": "working class",
-      "section": "stSt. Joris straet.se3.c0",
-      "street": "St. Joris straet",
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stMuelen straet.se1.c1",
+      "street": "Muelen straet",
       "neighborhood": "jorisbuurt",
-      "unique id": 149
+      "unique id": 153
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
         10335
       ]

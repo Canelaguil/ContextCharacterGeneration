@@ -1,32 +1,33 @@
 {
   "11252": {
     "alive": false,
-    "name": "Lutghardis",
-    "surname": "Craye",
-    "full name": "Lutghardis Craye",
+    "name": "Bertrade",
+    "surname": "",
+    "full name": "Bertrade",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.08,
-      "romantic interest": 0.83,
-      "sex interest": 0.527,
-      "gender expression": 0.244,
+      "sexuality label": "bi",
+      "sexuality": 0.547,
+      "romantic interest": 0.647,
+      "sex interest": 0.691,
+      "gender expression": 0.229,
       "sex": "f"
     },
-    "age": 50,
-    "birth year": 1161,
+    "age": 32,
+    "birth year": 1173,
     "sex": "f",
+    "faction": "Zealots",
     "income class": [
       3,
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.177,
-      "nice-nasty": 0.999,
-      "honest-false": 0.397
+      "lawful-chaotic": 0.581,
+      "nice-nasty": 0.371,
+      "honest-false": 0.892
     },
     "attitude": {
-      "outgoing": 0.589,
-      "dream": 0.434
+      "outgoing": 0.25,
+      "dream": 0.431
     },
     "homsoc": {
       "means": {
@@ -35,23 +36,38 @@
         "caretaker": false,
         "needs_care": false,
         "flags": [
-          "starving",
           "neglected"
         ]
       },
       "expression": {
-        "sexuality expression": 0.02,
-        "gender expression expression": 0.126
+        "sexuality expression": 0.371,
+        "gender expression expression": 0.213
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13789": {
+          "key": 13789,
+          "name": "Adam Froes",
+          "age": 14,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Bertrade (11252)",
+            "father": "Menaures (11251)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          11253,
-          15187
-        ]
+          11253
+        ],
+        "child": {
+          "birth": [
+            13791
+          ]
+        }
       }
     },
     "occupation": {
@@ -64,16 +80,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 3,
-      "eye_color": "brown",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "skin_color": 7,
+      "eye_color": "green",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
         "C",
-        "S"
+        "C"
       ],
-      "health": 0.529,
-      "fertility": 0.564,
+      "health": 0.59,
+      "fertility": 0.584,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -85,15 +101,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.529
+            "new_health": 0.59
           },
           "death": false
         },
-        "1210": {
+        "1204": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.529
+            "new_health": 0.59
           },
           "death": true
         }
@@ -108,8 +124,8 @@
               11252
             ],
             "people names": [
-              "Strom",
-              "Lutghardis Craye"
+              "Menaures Froes",
+              "Bertrade"
             ],
             "label": "spouse",
             "committed": true
@@ -122,95 +138,30 @@
               "section": "stBreestraat.se3.c3",
               "street": "Breestraat",
               "neighborhood": "olvbuurt",
-              "unique id": 555
+              "unique id": 559
             }
           }
         ],
         "1203": [
           {
-            "key": 11253,
-            "topic": "unmarried"
+            "topic": "new relationship",
+            "key": 13791,
+            "people": [
+              11252,
+              13789
+            ],
+            "people names": [
+              "Bertrade",
+              "Adam Froes"
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
-            "topic": "person died",
-            "person": {
-              "key": 11251,
-              "name": "Strom",
-              "age": 30,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "neglected"
           }
         ],
         "1204": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1205": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1206": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1207": [
-          {
-            "topic": "new relationship",
-            "key": 15187,
-            "people": [
-              11125,
-              11252
-            ],
-            "people names": [
-              "Heinone Omekine",
-              "Lutghardis Craye"
-            ],
-            "label": "spouse",
-            "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stLange gracht.se1.c3",
-              "street": "Lange gracht",
-              "neighborhood": "olvbuurt",
-              "unique id": 496
-            }
-          },
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1208": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1209": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1210": [
           {
             "topic": "neglected"
           }
@@ -221,17 +172,16 @@
     "home": {
       "income class": 3,
       "income class label": "upper middle class",
-      "section": "stLange gracht.se1.c3",
-      "street": "Lange gracht",
+      "section": "stBreestraat.se3.c3",
+      "street": "Breestraat",
       "neighborhood": "olvbuurt",
-      "unique id": 496
+      "unique id": 559
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        11253,
-        15187
+        11253
       ]
     }
   }

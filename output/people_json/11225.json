@@ -1,32 +1,33 @@
 {
   "11225": {
     "alive": false,
-    "name": "Soeten",
-    "surname": "Calf",
-    "full name": "Soeten Calf",
+    "name": "Aleydis",
+    "surname": "Suardt",
+    "full name": "Aleydis Suardt",
     "born this way": {
-      "sexuality label": "bi",
-      "sexuality": 0.337,
-      "romantic interest": 0.488,
-      "sex interest": 0.799,
-      "gender expression": 0.609,
+      "sexuality label": "straight",
+      "sexuality": 0.031,
+      "romantic interest": 0.765,
+      "sex interest": 0.78,
+      "gender expression": 0.045,
       "sex": "f"
     },
-    "age": 28,
-    "birth year": 1173,
+    "age": 33,
+    "birth year": 1174,
     "sex": "f",
+    "faction": "Zealots",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.463,
-      "nice-nasty": 0.999,
-      "honest-false": 0.137
+      "lawful-chaotic": 0.188,
+      "nice-nasty": 0.0,
+      "honest-false": 0.158
     },
     "attitude": {
-      "outgoing": 0.169,
-      "dream": 0.591
+      "outgoing": 0.646,
+      "dream": 0.371
     },
     "homsoc": {
       "means": {
@@ -35,66 +36,62 @@
         "caretaker": false,
         "needs_care": false,
         "flags": [
-          "neglected"
+          "neglected",
+          "starving"
         ]
       },
       "expression": {
-        "sexuality expression": 0.222,
-        "gender expression expression": 0.307
+        "sexuality expression": 0.013,
+        "gender expression expression": 0.008
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "12487": {
-          "key": 12487,
-          "name": "Wilmarus Hoeuedekin",
-          "age": 49,
-          "alive": true,
-          "sex": "m",
+        "14321": {
+          "key": 14321,
+          "name": "Goneir Iacobussdochter",
+          "age": 4,
+          "alive": false,
+          "sex": "f",
           "parents": {
-            "mother": "Soeten (11225)",
-            "father": "Hardenbernus (11224)"
+            "mother": "Aleydis (11225)",
+            "father": "Iacobus (10048)"
           }
         }
       },
       "relationship keys": {
         "spouse": [
-          11226
+          11226,
+          13562
         ],
         "child": {
           "birth": [
-            12489
+            14323
           ]
         }
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 0.91,
-      "all_incomes": [
-        0.91
-      ],
-      "job": {
-        "lawful": true,
-        "honest": false
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 0,
+      "skin_color": 2,
       "eye_color": "brown",
       "hair_color": "strawberry blonde",
       "hair_color_code": 5,
       "hair_type": [
-        "S",
-        "C"
+        "C",
+        "S"
       ],
-      "health": 0.571,
-      "fertility": 0.544,
+      "health": 0.565,
+      "fertility": 0.6,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -106,18 +103,21 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.571
+            "new_health": 0.565
           },
           "death": false
+        },
+        "1206": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.565
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.91
-          },
           {
             "topic": "new relationship",
             "key": 11226,
@@ -126,8 +126,8 @@
               11225
             ],
             "people names": [
-              "Hardenbernus Hoeuedekin",
-              "Soeten Calf"
+              "Willibrando",
+              "Aleydis Suardt"
             ],
             "label": "spouse",
             "committed": true
@@ -140,23 +140,88 @@
               "section": "stBreestraat.se1.c2",
               "street": "Breestraat",
               "neighborhood": "olvbuurt",
-              "unique id": 541
+              "unique id": 549
+            }
+          }
+        ],
+        "1201": [
+          {
+            "key": 11226,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11224,
+              "name": "Willibrando",
+              "age": 21,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 13562,
+            "people": [
+              10048,
+              11225
+            ],
+            "people names": [
+              "Iacobus",
+              "Aleydis Suardt"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stVerckens merct.se1.c2",
+              "street": "Verckens merct",
+              "neighborhood": "varkensbuurt",
+              "unique id": 22
             }
           },
           {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
             "topic": "new relationship",
-            "key": 12489,
+            "key": 14323,
             "people": [
               11225,
-              12487
+              14321
             ],
             "people names": [
-              "Soeten Calf",
-              "Wilmarus Hoeuedekin"
+              "Aleydis Suardt",
+              "Goneir Iacobussdochter"
             ],
             "label": "parentchild",
             "committed": false
           },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1206": [
           {
             "topic": "neglected"
           }
@@ -167,16 +232,17 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stBreestraat.se1.c2",
-      "street": "Breestraat",
-      "neighborhood": "olvbuurt",
-      "unique id": 541
+      "section": "stVerckens merct.se1.c2",
+      "street": "Verckens merct",
+      "neighborhood": "varkensbuurt",
+      "unique id": 22
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        11226
+        11226,
+        13562
       ]
     }
   }

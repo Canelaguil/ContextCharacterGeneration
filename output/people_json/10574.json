@@ -1,32 +1,33 @@
 {
   "10574": {
     "alive": false,
-    "name": "Sywi",
-    "surname": "Muil",
-    "full name": "Sywi Muil",
+    "name": "Hersewindis",
+    "surname": "Calf",
+    "full name": "Hersewindis Calf",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.755,
-      "sex interest": 0.649,
-      "gender expression": 0.019,
+      "sexuality": 0.109,
+      "romantic interest": 0.865,
+      "sex interest": 0.852,
+      "gender expression": 0.205,
       "sex": "f"
     },
-    "age": 48,
-    "birth year": 1155,
+    "age": 53,
+    "birth year": 1161,
     "sex": "f",
+    "faction": "No religion",
     "income class": [
-      2,
-      "middle class"
+      0,
+      "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.32,
-      "honest-false": 0.133
+      "lawful-chaotic": 0.42,
+      "nice-nasty": 0.5,
+      "honest-false": 0.826
     },
     "attitude": {
-      "outgoing": 0.07,
-      "dream": 0.534
+      "outgoing": 0.211,
+      "dream": 0.461
     },
     "homsoc": {
       "means": {
@@ -34,42 +35,80 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "neglected"
+        ]
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.004
+        "sexuality expression": 0.061,
+        "gender expression expression": 0.085
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "15787": {
+          "key": 15787,
+          "name": "Sybillia",
+          "age": 40,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Hersewindis (10574)",
+            "father": "Sylawert (10573)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10575
-        ]
+        ],
+        "child": {
+          "birth": [
+            15789
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        2,
-        "middle class"
+        0,
+        "working class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.499,
+      "all_incomes": [
+        1.08,
+        1.113,
+        1.245,
+        1.43,
+        1.479,
+        1.216,
+        1.467,
+        1.499,
+        1.499,
+        1.499,
+        1.414,
+        1.499,
+        1.416,
+        1.499
+      ],
+      "job": {
+        "lawful": false,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 5,
-      "eye_color": "brown",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "skin_color": 7,
+      "eye_color": "green",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
-        "S",
+        "C",
         "C"
       ],
-      "health": 0.548,
-      "fertility": 0.552,
+      "health": 0.0,
+      "fertility": 0.5,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -81,21 +120,42 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.548
+            "new_health": 0.478
           },
           "death": false
         },
-        "1202": {
+        "1211": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.548
+            "change": true,
+            "value_change": -0.261,
+            "new_health": 0.217
+          },
+          "death": false
+        },
+        "1212": {
+          "health": {
+            "change": true,
+            "value_change": -0.16,
+            "new_health": 0.057
+          },
+          "death": false
+        },
+        "1213": {
+          "health": {
+            "change": true,
+            "value_change": -0.057,
+            "new_health": 0.0
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.08
+          },
           {
             "topic": "new relationship",
             "key": 10575,
@@ -104,8 +164,8 @@
               10574
             ],
             "people names": [
-              "Reinardus",
-              "Sywi Muil"
+              "Sylawert",
+              "Hersewindis Calf"
             ],
             "label": "spouse",
             "committed": true
@@ -113,25 +173,73 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stWaale straet.se1.c2",
-              "street": "Waale straet",
+              "income class": 0,
+              "income class label": "working class",
+              "section": "stWalker straet.se1.c0",
+              "street": "Walker straet",
               "neighborhood": "agnesbuurt",
-              "unique id": 250
+              "unique id": 265
             }
+          }
+        ],
+        "1202": [
+          {
+            "topic": "feelings change",
+            "target": 10573,
+            "target name": "Sylawert",
+            "state": "out of love",
+            "relationship": 10575
+          }
+        ],
+        "1209": [
+          {
+            "topic": "new relationship",
+            "key": 15789,
+            "people": [
+              10574,
+              15787
+            ],
+            "people names": [
+              "Hersewindis Calf",
+              "Sybillia"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1211": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1212": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1213": [
+          {
+            "topic": "neglected"
           }
         ]
       }
     },
     "key": 10574,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stWaale straet.se1.c2",
-      "street": "Waale straet",
+      "income class": 0,
+      "income class label": "working class",
+      "section": "stWalker straet.se1.c0",
+      "street": "Walker straet",
       "neighborhood": "agnesbuurt",
-      "unique id": 250
+      "unique id": 265
     },
     "relationship status": {
       "taken": true,

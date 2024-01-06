@@ -1,32 +1,33 @@
 {
   "11782": {
     "alive": false,
-    "name": "Lammekin",
-    "surname": "Spirinc",
-    "full name": "Lammekin Spirinc",
+    "name": "Trove",
+    "surname": "Burne",
+    "full name": "Trove Burne",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.01,
-      "romantic interest": 0.916,
-      "sex interest": 0.59,
-      "gender expression": 0.224,
+      "sexuality label": "bi",
+      "sexuality": 0.445,
+      "romantic interest": 0.741,
+      "sex interest": 0.435,
+      "gender expression": 0.593,
       "sex": "m"
     },
-    "age": 54,
-    "birth year": 1152,
+    "age": 35,
+    "birth year": 1167,
     "sex": "m",
+    "faction": "Dogmatists",
     "income class": [
       4,
       "nobility"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.376,
-      "honest-false": 0.74
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.456,
+      "honest-false": 0.652
     },
     "attitude": {
-      "outgoing": 0.048,
-      "dream": 0.316
+      "outgoing": 0.903,
+      "dream": 0.168
     },
     "homsoc": {
       "means": {
@@ -34,20 +35,39 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "neglected"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.007,
-        "gender expression expression": 0.097
+        "sexuality expression": 0.218,
+        "gender expression expression": 0.324
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12544": {
+          "key": 12544,
+          "name": "Duker Troveszoon",
+          "age": 2,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Soeten (11783)",
+            "father": "Trove (11782)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11784
-        ]
+        ],
+        "child": {
+          "birth": [
+            12545
+          ]
+        }
       }
     },
     "occupation": {
@@ -56,32 +76,28 @@
         4,
         "nobility"
       ],
-      "income": 1.411,
+      "income": 0.855,
       "all_incomes": [
-        1.302,
-        1.253,
-        1.187,
-        1.345,
-        1.229,
-        1.165,
-        1.411
+        0.901,
+        0.831,
+        0.855
       ],
       "job": {
-        "lawful": false,
-        "honest": true
+        "lawful": true,
+        "honest": false
       }
     },
     "genetics": {
       "skin_color": 7,
-      "eye_color": "green",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "eye_color": "blue",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "S",
-        "S"
+        "C",
+        "C"
       ],
-      "health": 0.149,
-      "fertility": 0.723,
+      "health": 0.938,
+      "fertility": 0.876,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -93,31 +109,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.76
+            "new_health": 0.938
           },
           "death": false
         },
-        "1203": {
+        "1201": {
           "health": {
-            "change": true,
-            "value_change": -0.185,
-            "new_health": 0.575
-          },
-          "death": false
-        },
-        "1204": {
-          "health": {
-            "change": true,
-            "value_change": -0.273,
-            "new_health": 0.302
-          },
-          "death": false
-        },
-        "1205": {
-          "health": {
-            "change": true,
-            "value_change": -0.153,
-            "new_health": 0.149
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.938
           },
           "death": true
         }
@@ -127,7 +127,7 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.302
+            "income": 0.901
           },
           {
             "topic": "new relationship",
@@ -137,8 +137,8 @@
               11783
             ],
             "people names": [
-              "Lammekin Spirinc",
-              "Bertrade"
+              "Trove Burne",
+              "Soeten Innighe"
             ],
             "label": "spouse",
             "committed": true
@@ -148,18 +148,33 @@
             "home": {
               "income class": 4,
               "income class label": "nobility",
-              "section": "stMuurhuysen2.se1.c4",
+              "section": "stMuurhuysen2.se3.c4",
               "street": "Muurhuysen2",
               "neighborhood": "cingelnoord",
-              "unique id": 795
+              "unique id": 807
             }
           },
           {
-            "topic": "feelings change",
-            "target": 11783,
-            "target name": "Bertrade",
-            "state": "out of love",
-            "relationship": 11784
+            "topic": "new relationship",
+            "key": 12545,
+            "people": [
+              11782,
+              12544
+            ],
+            "people names": [
+              "Trove Burne",
+              "Duker Troveszoon"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1201": [
+          {
+            "topic": "neglected"
           }
         ]
       }
@@ -168,10 +183,10 @@
     "home": {
       "income class": 4,
       "income class label": "nobility",
-      "section": "stMuurhuysen2.se1.c4",
+      "section": "stMuurhuysen2.se3.c4",
       "street": "Muurhuysen2",
       "neighborhood": "cingelnoord",
-      "unique id": 795
+      "unique id": 807
     },
     "relationship status": {
       "taken": true,

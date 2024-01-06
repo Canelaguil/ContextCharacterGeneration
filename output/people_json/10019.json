@@ -1,97 +1,135 @@
 {
   "10019": {
     "alive": false,
-    "name": "Rabburgis",
+    "name": "Eingeliadis",
     "surname": "",
-    "full name": "Rabburgis",
+    "full name": "Eingeliadis",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.029,
-      "romantic interest": 0.74,
-      "sex interest": 0.63,
-      "gender expression": 0.151,
+      "sexuality": 0.102,
+      "romantic interest": 0.291,
+      "sex interest": 0.558,
+      "gender expression": 0.1,
       "sex": "f"
     },
-    "age": 48,
-    "birth year": 1163,
+    "age": 46,
+    "birth year": 1176,
     "sex": "f",
+    "faction": "No religion",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.879,
-      "nice-nasty": 0.867,
-      "honest-false": 0.865
+      "lawful-chaotic": 0.0,
+      "nice-nasty": 0.451,
+      "honest-false": 0.0
     },
     "attitude": {
-      "outgoing": 0.343,
-      "dream": 0.153
+      "outgoing": 0.346,
+      "dream": 0.48
     },
     "homsoc": {
       "means": {
         "independent": true,
-        "taken_care_of": true,
-        "caretaker": true,
+        "taken_care_of": false,
+        "caretaker": false,
         "needs_care": false,
         "flags": [
-          "starving",
-          "caretaker",
           "neglected"
         ]
       },
       "expression": {
-        "sexuality expression": 0.02,
-        "gender expression expression": 0.118
+        "sexuality expression": 0.1,
+        "gender expression expression": 0.042
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "13096": {
-          "key": 13096,
-          "name": "Sanders",
-          "age": 47,
-          "alive": true,
+        "13098": {
+          "key": 13098,
+          "name": "Trove Strument",
+          "age": 9,
+          "alive": false,
           "sex": "m",
           "parents": {
-            "mother": "Rabburgis (10019)",
-            "father": "Alwin (10018)"
+            "mother": "Eingeliadis (10019)",
+            "father": "Coekea (10018)"
+          }
+        },
+        "15057": {
+          "key": 15057,
+          "name": "Margareta Strument",
+          "age": 0,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Eingeliadis (10019)",
+            "father": "Coekea (10018)"
           }
         }
       },
       "relationship keys": {
         "spouse": [
           10020,
-          15436
+          16521
         ],
         "child": {
           "birth": [
-            13098
+            13100,
+            15059
           ]
         }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.499,
+      "all_incomes": [
+        1.321,
+        1.499,
+        1.499,
+        1.499,
+        1.472,
+        1.499,
+        1.451,
+        1.387,
+        1.499,
+        1.499,
+        1.353,
+        1.073,
+        1.328,
+        1.453,
+        1.499,
+        0.836,
+        0.489,
+        0.771,
+        1.292,
+        1.299,
+        1.499,
+        1.499
+      ],
+      "job": {
+        "lawful": false,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 9,
-      "eye_color": "blue",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "skin_color": 3,
+      "eye_color": "brown",
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
       "hair_type": [
         "S",
-        "S"
+        "C"
       ],
-      "health": 0.697,
-      "fertility": 0.728,
+      "health": 0.345,
+      "fertility": 0.544,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -103,21 +141,42 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.697
+            "new_health": 0.556
           },
           "death": false
         },
-        "1210": {
+        "1215": {
+          "health": {
+            "change": true,
+            "value_change": -0.211,
+            "new_health": 0.345
+          },
+          "death": false
+        },
+        "1216": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.697
+            "new_health": 0.345
+          },
+          "death": false
+        },
+        "1221": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.345
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.321
+          },
           {
             "topic": "new relationship",
             "key": 10020,
@@ -126,8 +185,8 @@
               10019
             ],
             "people names": [
-              "Alwin",
-              "Rabburgis"
+              "Coekea Strument",
+              "Eingeliadis"
             ],
             "label": "spouse",
             "committed": true
@@ -137,24 +196,24 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stUterechse straet.se3.c2",
+              "section": "stUterechse straet.se1.c2",
               "street": "Uterechse straet",
               "neighborhood": "varkensbuurt",
-              "unique id": 11
+              "unique id": 7
             }
           }
         ],
         "1202": [
           {
             "topic": "new relationship",
-            "key": 13098,
+            "key": 13100,
             "people": [
               10019,
-              13096
+              13098
             ],
             "people names": [
-              "Rabburgis",
-              "Sanders"
+              "Eingeliadis",
+              "Trove Strument"
             ],
             "label": "parentchild",
             "committed": false
@@ -165,16 +224,12 @@
         ],
         "1203": [
           {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
+            "topic": "neglected"
           }
         ],
         "1204": [
           {
-            "topic": "not enough income",
-            "income": 0.215,
-            "inhabitants": []
+            "topic": "neglected"
           }
         ],
         "1205": [
@@ -184,10 +239,61 @@
         ],
         "1206": [
           {
+            "topic": "feelings change",
+            "target": 10018,
+            "target name": "Coekea Strument",
+            "state": "infatuation",
+            "relationship": 10020
+          },
+          {
             "topic": "neglected"
           }
         ],
         "1207": [
+          {
+            "topic": "new relationship",
+            "key": 15059,
+            "people": [
+              10019,
+              15057
+            ],
+            "people names": [
+              "Eingeliadis",
+              "Margareta Strument"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 15057,
+              "name": "Margareta Strument",
+              "age": 0,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Eingeliadis (10019)",
+                "father": "Coekea (10018)"
+              }
+            },
+            "label": "child"
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1210": [
           {
             "key": 10020,
             "topic": "unmarried"
@@ -196,8 +302,8 @@
             "topic": "person died",
             "person": {
               "key": 10018,
-              "name": "Alwin",
-              "age": 54,
+              "name": "Coekea Strument",
+              "age": 38,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
@@ -205,30 +311,20 @@
             "label": "spouse"
           },
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          },
-          {
-            "topic": "now caretaker",
-            "care dependants": []
-          },
-          {
-            "topic": "new caretaker",
-            "person": 10019
+            "topic": "neglected"
           }
         ],
-        "1208": [
+        "1211": [
           {
             "topic": "new relationship",
-            "key": 15436,
+            "key": 16521,
             "people": [
-              11623,
+              10456,
               10019
             ],
             "people names": [
-              "Kerstiaen Borlutte",
-              "Rabburgis"
+              "Amilius Mule",
+              "Eingeliadis"
             ],
             "label": "spouse",
             "committed": true
@@ -238,30 +334,63 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stDie lange straet3.se9.c2",
-              "street": "Die lange straet3",
-              "neighborhood": "visbuurt",
-              "unique id": 723
+              "section": "stBloemendaelse straet.se1.c2",
+              "street": "Bloemendaelse straet",
+              "neighborhood": "agnesbuurt",
+              "unique id": 213
             }
           },
           {
-            "topic": "not enough income",
-            "income": 0.423,
-            "inhabitants": []
+            "topic": "neglected"
           }
         ],
-        "1209": [
+        "1212": [
           {
-            "topic": "not enough income",
-            "income": 0.264,
-            "inhabitants": []
+            "topic": "person died",
+            "person": {
+              "key": 13098,
+              "name": "Trove Strument",
+              "age": 9,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Eingeliadis (10019)",
+                "father": "Coekea (10018)"
+              }
+            },
+            "label": "child"
           }
         ],
-        "1210": [
+        "1216": [
           {
-            "topic": "not enough income",
-            "income": 0.174,
-            "inhabitants": []
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.489
+          }
+        ],
+        "1217": [
+          {
+            "key": 16521,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10456,
+              "name": "Amilius Mule",
+              "age": 54,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          }
+        ],
+        "1218": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.292
           }
         ]
       }
@@ -270,17 +399,17 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stDie lange straet3.se9.c2",
-      "street": "Die lange straet3",
-      "neighborhood": "visbuurt",
-      "unique id": 723
+      "section": "stBloemendaelse straet.se1.c2",
+      "street": "Bloemendaelse straet",
+      "neighborhood": "agnesbuurt",
+      "unique id": 213
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         10020,
-        15436
+        16521
       ]
     }
   }

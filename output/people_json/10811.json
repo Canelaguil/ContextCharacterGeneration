@@ -1,53 +1,100 @@
 {
   "10811": {
     "alive": false,
-    "name": "Esa",
-    "surname": "Visevase",
-    "full name": "Esa Visevase",
+    "name": "Imma",
+    "surname": "",
+    "full name": "Imma",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.058,
-      "romantic interest": 0.708,
-      "sex interest": 0.656,
-      "gender expression": 0.247,
+      "sexuality": 0.12,
+      "romantic interest": 0.82,
+      "sex interest": 0.466,
+      "gender expression": 0.0,
       "sex": "f"
     },
-    "age": 58,
-    "birth year": 1151,
+    "age": 54,
+    "birth year": 1169,
     "sex": "f",
+    "faction": "Dogmatists",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.537,
-      "nice-nasty": 0.665,
-      "honest-false": 0.636
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.549,
+      "honest-false": 0.999
     },
     "attitude": {
-      "outgoing": 0.865,
-      "dream": 0.14
+      "outgoing": 0.643,
+      "dream": 0.262
     },
     "homsoc": {
       "means": {
         "independent": true,
-        "taken_care_of": false,
-        "caretaker": false,
+        "taken_care_of": true,
+        "caretaker": true,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "caretaker",
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.044,
-        "gender expression expression": 0.146
+        "sexuality expression": 0.067,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12364": {
+          "key": 12364,
+          "name": "Ghiselijn Cnode",
+          "age": 38,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Imma (10811)",
+            "father": "Wlfarde (10810)"
+          }
+        },
+        "13301": {
+          "key": 13301,
+          "name": "Everyng Cnode",
+          "age": 11,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Imma (10811)",
+            "father": "Wlfarde (10810)"
+          }
+        },
+        "15174": {
+          "key": 15174,
+          "name": "Hadewigis Cnode",
+          "age": 36,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Imma (10811)",
+            "father": "Wlfarde (10810)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          10812
-        ]
+          10812,
+          16950
+        ],
+        "child": {
+          "birth": [
+            12366,
+            13303,
+            15176
+          ]
+        }
       }
     },
     "occupation": {
@@ -60,16 +107,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 7,
-      "eye_color": "blue",
+      "skin_color": 1,
+      "eye_color": "brown",
       "hair_color": "blonde",
       "hair_color_code": 4,
       "hair_type": [
         "C",
-        "S"
+        "C"
       ],
       "health": 0.0,
-      "fertility": 0.796,
+      "fertility": 0.717,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -81,62 +128,38 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.832
+            "new_health": 0.692
           },
           "death": false
         },
-        "1202": {
+        "1219": {
           "health": {
             "change": true,
-            "value_change": -0.094,
-            "new_health": 0.738
+            "value_change": -0.211,
+            "new_health": 0.481
           },
           "death": false
         },
-        "1203": {
+        "1220": {
           "health": {
             "change": true,
-            "value_change": -0.191,
-            "new_health": 0.547
+            "value_change": -0.251,
+            "new_health": 0.23
           },
           "death": false
         },
-        "1204": {
+        "1221": {
           "health": {
             "change": true,
-            "value_change": -0.234,
-            "new_health": 0.313
+            "value_change": -0.171,
+            "new_health": 0.059
           },
           "death": false
         },
-        "1205": {
+        "1222": {
           "health": {
             "change": true,
-            "value_change": -0.17,
-            "new_health": 0.143
-          },
-          "death": false
-        },
-        "1206": {
-          "health": {
-            "change": true,
-            "value_change": -0.135,
-            "new_health": 0.008
-          },
-          "death": false
-        },
-        "1207": {
-          "health": {
-            "change": true,
-            "value_change": -0.007,
-            "new_health": 0.001
-          },
-          "death": false
-        },
-        "1208": {
-          "health": {
-            "change": true,
-            "value_change": -0.001,
+            "value_change": -0.059,
             "new_health": 0.0
           },
           "death": true
@@ -152,8 +175,8 @@
               10811
             ],
             "people names": [
-              "Iacobus",
-              "Esa Visevase"
+              "Wlfarde Cnode",
+              "Imma"
             ],
             "label": "spouse",
             "committed": true
@@ -163,11 +186,207 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stDie Camp.se1.c2",
+              "section": "stDie Camp.se3.c2",
               "street": "Die Camp",
               "neighborhood": "kampbuurt",
-              "unique id": 353
+              "unique id": 377
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12366,
+            "people": [
+              10811,
+              12364
+            ],
+            "people names": [
+              "Imma",
+              "Ghiselijn Cnode"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1201": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 13303,
+            "people": [
+              10811,
+              13301
+            ],
+            "people names": [
+              "Imma",
+              "Everyng Cnode"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1206": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "new relationship",
+            "key": 15176,
+            "people": [
+              10811,
+              15174
+            ],
+            "people names": [
+              "Imma",
+              "Hadewigis Cnode"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1211": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1212": [
+          {
+            "key": 10812,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10810,
+              "name": "Wlfarde Cnode",
+              "age": 55,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              10861,
+              15369,
+              19617,
+              20463,
+              17469,
+              23754,
+              24077,
+              24462,
+              25060,
+              20305,
+              25922,
+              20617,
+              26270,
+              26955
+            ]
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": [
+              23754,
+              24077,
+              24462,
+              25060,
+              25922,
+              26270,
+              26955
+            ]
+          },
+          {
+            "topic": "new caretaker",
+            "person": 10811
+          }
+        ],
+        "1213": [
+          {
+            "topic": "new relationship",
+            "key": 16950,
+            "people": [
+              10861,
+              10811
+            ],
+            "people names": [
+              "Huwardo",
+              "Imma"
+            ],
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1214": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 13301,
+              "name": "Everyng Cnode",
+              "age": 11,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Imma (10811)",
+                "father": "Wlfarde (10810)"
+              }
+            },
+            "label": "child"
+          }
+        ],
+        "1217": [
+          {
+            "topic": "feelings change",
+            "target": 10861,
+            "target name": "Huwardo",
+            "state": "out of love",
+            "relationship": 16950
           }
         ]
       }
@@ -176,16 +395,17 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stDie Camp.se1.c2",
+      "section": "stDie Camp.se3.c2",
       "street": "Die Camp",
       "neighborhood": "kampbuurt",
-      "unique id": 353
+      "unique id": 377
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        10812
+        10812,
+        16950
       ]
     }
   }

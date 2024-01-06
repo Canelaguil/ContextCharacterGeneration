@@ -1,53 +1,86 @@
 {
   "12064": {
     "alive": false,
-    "name": "Hatebrandus",
-    "surname": "Brusch",
-    "full name": "Hatebrandus Brusch",
+    "name": "Herdradus",
+    "surname": "Strich",
+    "full name": "Herdradus Strich",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.034,
-      "romantic interest": 0.554,
-      "sex interest": 0.727,
-      "gender expression": 0.161,
+      "sexuality": 0.0,
+      "romantic interest": 0.999,
+      "sex interest": 0.696,
+      "gender expression": 0.013,
       "sex": "m"
     },
-    "age": 54,
-    "birth year": 1159,
+    "age": 41,
+    "birth year": 1175,
     "sex": "m",
+    "faction": "Zealots",
     "income class": [
       3,
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.625,
-      "nice-nasty": 0.07,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.876,
+      "nice-nasty": 0.999,
+      "honest-false": 0.0
     },
     "attitude": {
-      "outgoing": 0.55,
-      "dream": 0.257
+      "outgoing": 0.321,
+      "dream": 0.486
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "neglected"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.024,
-        "gender expression expression": 0.017
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.012
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13072": {
+          "key": 13072,
+          "name": "Linnea Strich",
+          "age": 48,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Ymmekine (12065)",
+            "father": "Herdradus (12064)"
+          }
+        },
+        "13527": {
+          "key": 13527,
+          "name": "Wigherus Strich",
+          "age": 15,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Ymmekine (12065)",
+            "father": "Herdradus (12064)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          12066
-        ]
+          12066,
+          16239
+        ],
+        "child": {
+          "birth": [
+            13073,
+            13528
+          ]
+        }
       }
     },
     "occupation": {
@@ -56,39 +89,42 @@
         3,
         "upper middle class"
       ],
-      "income": 1.26,
+      "income": 0.148,
       "all_incomes": [
-        1.013,
-        0.857,
-        0.901,
-        0.643,
-        0.491,
-        0.491,
-        0.635,
-        0.716,
-        1.066,
-        0.877,
-        0.738,
+        1.075,
+        1.071,
+        1.088,
+        1.102,
+        1.276,
+        1.032,
+        1.085,
+        1.046,
+        0.906,
+        0.946,
+        0.897,
+        0.704,
         0.913,
-        1.066,
-        1.26
+        0.876,
+        0.392,
+        0.136,
+        0.148
       ],
       "job": {
-        "lawful": false,
-        "honest": true
+        "lawful": true,
+        "honest": false
       }
     },
     "genetics": {
-      "skin_color": 7,
-      "eye_color": "blue",
+      "skin_color": 6,
+      "eye_color": "green",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
         "C",
-        "C"
+        "S"
       ],
-      "health": 0.209,
-      "fertility": 0.823,
+      "health": 0.75,
+      "fertility": 0.74,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -100,31 +136,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.798
+            "new_health": 0.75
           },
           "death": false
         },
-        "1210": {
+        "1215": {
           "health": {
-            "change": true,
-            "value_change": -0.167,
-            "new_health": 0.631
-          },
-          "death": false
-        },
-        "1211": {
-          "health": {
-            "change": true,
-            "value_change": -0.223,
-            "new_health": 0.408
-          },
-          "death": false
-        },
-        "1212": {
-          "health": {
-            "change": true,
-            "value_change": -0.199,
-            "new_health": 0.209
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.75
           },
           "death": true
         }
@@ -134,7 +154,7 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.013
+            "income": 1.075
           },
           {
             "topic": "new relationship",
@@ -144,8 +164,8 @@
               12065
             ],
             "people names": [
-              "Hatebrandus Brusch",
-              "Folqui Strument"
+              "Herdradus Strich",
+              "Ymmekine Screvel"
             ],
             "label": "spouse",
             "committed": true
@@ -155,47 +175,84 @@
             "home": {
               "income class": 3,
               "income class label": "upper middle class",
-              "section": "stCromme straet.se7.c3",
-              "street": "Cromme straet",
+              "section": "stMarcktgang.se3.c3",
+              "street": "Marcktgang",
               "neighborhood": "denhof",
-              "unique id": 917
+              "unique id": 929
             }
+          },
+          {
+            "topic": "feelings change",
+            "target": 12065,
+            "target name": "Ymmekine Screvel",
+            "state": "out of love",
+            "relationship": 12066
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 13073,
+            "people": [
+              12064,
+              13072
+            ],
+            "people names": [
+              "Herdradus Strich",
+              "Linnea Strich"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1202": [
           {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.643
+            "topic": "new relationship",
+            "key": 13528,
+            "people": [
+              12064,
+              13527
+            ],
+            "people names": [
+              "Herdradus Strich",
+              "Wigherus Strich"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1203": [
           {
-            "topic": "job notice",
-            "notice": "earning very little",
-            "income": 0.491
+            "topic": "neglected"
           }
         ],
         "1204": [
           {
-            "topic": "job notice",
-            "notice": "earning very little",
-            "income": 0.491
+            "topic": "neglected"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1206": [
+          {
+            "topic": "neglected"
           }
         ],
         "1207": [
           {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.066
+            "topic": "neglected"
           }
         ],
-        "1209": [
-          {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.738
-          },
+        "1208": [
           {
             "key": 12066,
             "topic": "unmarried"
@@ -204,20 +261,76 @@
             "topic": "person died",
             "person": {
               "key": 12065,
-              "name": "Folqui Strument",
-              "age": 52,
+              "name": "Ymmekine Screvel",
+              "age": 43,
               "alive": false,
               "sex": "f",
               "parents": "firstgen"
             },
             "label": "spouse"
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.704
+          },
+          {
+            "topic": "new relationship",
+            "key": 16239,
+            "people": [
+              12064,
+              11348
+            ],
+            "people names": [
+              "Herdradus Strich",
+              "Katrin"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 3,
+              "income class label": "upper middle class",
+              "section": "stLievevrouwe kerch.se7.c3",
+              "street": "Lievevrouwe kerch",
+              "neighborhood": "olvbuurt",
+              "unique id": 601
+            }
           }
         ],
         "1211": [
           {
+            "topic": "feelings change",
+            "target": 11348,
+            "target name": "Katrin",
+            "state": "solid love",
+            "relationship": 16239
+          }
+        ],
+        "1213": [
+          {
             "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.066
+            "notice": "earning very little",
+            "income": 0.392
+          }
+        ],
+        "1214": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.136
           }
         ]
       }
@@ -226,16 +339,17 @@
     "home": {
       "income class": 3,
       "income class label": "upper middle class",
-      "section": "stCromme straet.se7.c3",
-      "street": "Cromme straet",
-      "neighborhood": "denhof",
-      "unique id": 917
+      "section": "stLievevrouwe kerch.se7.c3",
+      "street": "Lievevrouwe kerch",
+      "neighborhood": "olvbuurt",
+      "unique id": 601
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
-        12066
+        12066,
+        16239
       ]
     }
   }

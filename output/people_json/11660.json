@@ -1,32 +1,33 @@
 {
   "11660": {
     "alive": false,
-    "name": "Aghete",
-    "surname": "Hoeft",
-    "full name": "Aghete Hoeft",
+    "name": "Suaneka",
+    "surname": "Coc",
+    "full name": "Suaneka Coc",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.044,
-      "romantic interest": 0.732,
-      "sex interest": 0.665,
-      "gender expression": 0.262,
+      "sexuality": 0.096,
+      "romantic interest": 0.766,
+      "sex interest": 0.623,
+      "gender expression": 0.159,
       "sex": "f"
     },
-    "age": 54,
-    "birth year": 1158,
+    "age": 41,
+    "birth year": 1163,
     "sex": "f",
+    "faction": "Dogmatists",
     "income class": [
-      2,
-      "middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.0,
-      "honest-false": 0.862
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.147,
+      "honest-false": 0.0
     },
     "attitude": {
-      "outgoing": 0.689,
-      "dream": 0.101
+      "outgoing": 0.279,
+      "dream": 0.452
     },
     "homsoc": {
       "means": {
@@ -34,53 +35,61 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "neglected"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.027,
-        "gender expression expression": 0.261
+        "sexuality expression": 0.06,
+        "gender expression expression": 0.141
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13863": {
+          "key": 13863,
+          "name": "Salome van Voghel",
+          "age": 33,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Suaneka (11660)",
+            "father": "Voghel (11659)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11661
-        ]
+        ],
+        "child": {
+          "birth": [
+            13865
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
-        2,
-        "middle class"
+        1,
+        "lower middle class"
       ],
-      "income": 1.499,
-      "all_incomes": [
-        1.159,
-        1.171,
-        1.399,
-        1.499,
-        1.499,
-        1.499
-      ],
-      "job": {
-        "lawful": false,
-        "honest": true
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 0,
+      "skin_color": 7,
       "eye_color": "brown",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.0,
-      "fertility": 0.661,
+      "health": 0.642,
+      "fertility": 0.724,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -92,39 +101,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.63
+            "new_health": 0.642
           },
           "death": false
         },
-        "1208": {
+        "1203": {
           "health": {
-            "change": true,
-            "value_change": -0.248,
-            "new_health": 0.382
-          },
-          "death": false
-        },
-        "1209": {
-          "health": {
-            "change": true,
-            "value_change": -0.314,
-            "new_health": 0.068
-          },
-          "death": false
-        },
-        "1210": {
-          "health": {
-            "change": true,
-            "value_change": -0.057,
-            "new_health": 0.011
-          },
-          "death": false
-        },
-        "1211": {
-          "health": {
-            "change": true,
-            "value_change": -0.011,
-            "new_health": 0.0
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.642
           },
           "death": true
         }
@@ -139,8 +124,8 @@
               11660
             ],
             "people names": [
-              "Thomas Borsdraghere",
-              "Aghete Hoeft"
+              "Voghel",
+              "Suaneka Coc"
             ],
             "label": "spouse",
             "committed": true
@@ -148,48 +133,44 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stCorte gracht.se3.c2",
-              "street": "Corte gracht",
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stMooierstraet.se3.c1",
+              "street": "Mooierstraet",
               "neighborhood": "visbuurt",
-              "unique id": 737
+              "unique id": 749
             }
-          },
-          {
-            "topic": "feelings change",
-            "target": 11659,
-            "target name": "Thomas Borsdraghere",
-            "state": "out of love",
-            "relationship": 11661
           }
         ],
         "1203": [
           {
-            "topic": "feelings change",
-            "target": 11659,
-            "target name": "Thomas Borsdraghere",
-            "state": "solid love",
-            "relationship": 11661
-          }
-        ],
-        "1206": [
+            "topic": "new relationship",
+            "key": 13865,
+            "people": [
+              11660,
+              13863
+            ],
+            "people names": [
+              "Suaneka Coc",
+              "Salome van Voghel"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.159
+            "topic": "neglected"
           }
         ]
       }
     },
     "key": 11660,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stCorte gracht.se3.c2",
-      "street": "Corte gracht",
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stMooierstraet.se3.c1",
+      "street": "Mooierstraet",
       "neighborhood": "visbuurt",
-      "unique id": 737
+      "unique id": 749
     },
     "relationship status": {
       "taken": true,

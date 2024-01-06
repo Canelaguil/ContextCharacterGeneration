@@ -1,53 +1,98 @@
 {
   "10204": {
     "alive": false,
-    "name": "Wasseliin",
-    "surname": "Duue",
-    "full name": "Wasseliin Duue",
+    "name": "Jois",
+    "surname": "Strich",
+    "full name": "Jois Strich",
     "born this way": {
       "sexuality label": "bi",
-      "sexuality": 0.398,
-      "romantic interest": 0.549,
-      "sex interest": 0.679,
-      "gender expression": 0.324,
+      "sexuality": 0.426,
+      "romantic interest": 0.577,
+      "sex interest": 0.475,
+      "gender expression": 0.503,
       "sex": "m"
     },
-    "age": 54,
-    "birth year": 1152,
+    "age": 44,
+    "birth year": 1173,
     "sex": "m",
+    "faction": "Zealots",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.941,
-      "nice-nasty": 0.614,
-      "honest-false": 0.866
+      "lawful-chaotic": 0.254,
+      "nice-nasty": 0.192,
+      "honest-false": 0.0
     },
     "attitude": {
-      "outgoing": 0.406,
-      "dream": 0.341
+      "outgoing": 0.639,
+      "dream": 0.596
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.281,
-        "gender expression expression": 0.234
+        "sexuality expression": 0.198,
+        "gender expression expression": 0.386
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14350": {
+          "key": 14350,
+          "name": "Lambrecht Strich",
+          "age": 44,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Ricmoden (10205)",
+            "father": "Jois (10204)"
+          }
+        },
+        "14753": {
+          "key": 14753,
+          "name": "Anselmi Strich",
+          "age": 43,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Ricmoden (10205)",
+            "father": "Jois (10204)"
+          }
+        },
+        "15742": {
+          "key": 15742,
+          "name": "Tiuri Strich",
+          "age": 40,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Ricmoden (10205)",
+            "father": "Jois (10204)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10206
-        ]
+        ],
+        "child": {
+          "birth": [
+            14351,
+            14754,
+            15743
+          ]
+        }
       }
     },
     "occupation": {
@@ -56,32 +101,43 @@
         1,
         "lower middle class"
       ],
-      "income": 1.142,
+      "income": 0.087,
       "all_incomes": [
-        1.103,
-        1.186,
-        1.209,
-        1.189,
-        1.14,
-        1.155,
-        1.142
+        1.27,
+        1.285,
+        1.011,
+        0.855,
+        0.939,
+        0.393,
+        0.332,
+        0.179,
+        0.145,
+        0.256,
+        0.595,
+        0.006,
+        0.137,
+        0.135,
+        0.22,
+        0.0,
+        0.0,
+        0.087
       ],
       "job": {
-        "lawful": true,
-        "honest": true
+        "lawful": false,
+        "honest": false
       }
     },
     "genetics": {
       "skin_color": 2,
-      "eye_color": "green",
+      "eye_color": "brown",
       "hair_color": "blonde",
       "hair_color_code": 4,
       "hair_type": [
         "C",
-        "C"
+        "S"
       ],
-      "health": 0.0,
-      "fertility": 0.645,
+      "health": 0.865,
+      "fertility": 0.852,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -93,39 +149,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.645
+            "new_health": 0.865
           },
           "death": false
         },
-        "1202": {
+        "1216": {
           "health": {
-            "change": true,
-            "value_change": -0.223,
-            "new_health": 0.422
-          },
-          "death": false
-        },
-        "1203": {
-          "health": {
-            "change": true,
-            "value_change": -0.23,
-            "new_health": 0.192
-          },
-          "death": false
-        },
-        "1204": {
-          "health": {
-            "change": true,
-            "value_change": -0.167,
-            "new_health": 0.025
-          },
-          "death": false
-        },
-        "1205": {
-          "health": {
-            "change": true,
-            "value_change": -0.025,
-            "new_health": 0.0
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.865
           },
           "death": true
         }
@@ -135,7 +167,7 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.103
+            "income": 1.27
           },
           {
             "topic": "new relationship",
@@ -145,8 +177,8 @@
               10205
             ],
             "people names": [
-              "Wasseliin Duue",
-              "Lutghardis Widoeghe"
+              "Jois Strich",
+              "Ricmoden"
             ],
             "label": "spouse",
             "committed": true
@@ -156,11 +188,344 @@
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stHelle voet.se3.c1",
+              "section": "stHelle voet.se1.c1",
               "street": "Helle voet",
               "neighborhood": "jorisbuurt",
-              "unique id": 93
+              "unique id": 87
             }
+          },
+          {
+            "topic": "feelings change",
+            "target": 10205,
+            "target name": "Ricmoden",
+            "state": "solid love",
+            "relationship": 10206
+          }
+        ],
+        "1201": [
+          {
+            "topic": "feelings change",
+            "target": 10205,
+            "target name": "Ricmoden",
+            "state": "out of love",
+            "relationship": 10206
+          }
+        ],
+        "1204": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.393
+          }
+        ],
+        "1205": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.332
+          },
+          {
+            "topic": "new relationship",
+            "key": 14351,
+            "people": [
+              10204,
+              14350
+            ],
+            "people names": [
+              "Jois Strich",
+              "Lambrecht Strich"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 10205,
+            "target name": "Ricmoden",
+            "state": "infatuation",
+            "relationship": 10206
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.332,
+            "inhabitants": [
+              14350,
+              14753,
+              15742,
+              13860,
+              20073,
+              16648,
+              15735,
+              22172,
+              22431,
+              23314,
+              23703,
+              25298,
+              25589,
+              21412
+            ]
+          }
+        ],
+        "1206": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.179
+          },
+          {
+            "topic": "new relationship",
+            "key": 14754,
+            "people": [
+              10204,
+              14753
+            ],
+            "people names": [
+              "Jois Strich",
+              "Anselmi Strich"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 10205,
+            "target name": "Ricmoden",
+            "state": "out of love",
+            "relationship": 10206
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.179,
+            "inhabitants": [
+              14350,
+              14753,
+              15742,
+              13860,
+              20073,
+              16648,
+              15735,
+              22172,
+              22431,
+              23314,
+              23703,
+              25298,
+              25589,
+              21412
+            ]
+          }
+        ],
+        "1208": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "new relationship",
+            "key": 15743,
+            "people": [
+              10204,
+              15742
+            ],
+            "people names": [
+              "Jois Strich",
+              "Tiuri Strich"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.595,
+            "inhabitants": [
+              14350,
+              14753,
+              15742,
+              13860,
+              20073,
+              16648,
+              15735,
+              22172,
+              22431,
+              23314,
+              23703,
+              25298,
+              25589,
+              21412
+            ]
+          }
+        ],
+        "1210": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.006
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.006,
+            "inhabitants": [
+              14350,
+              14753,
+              15742,
+              13860,
+              20073,
+              16648,
+              15735,
+              22172,
+              22431,
+              23314,
+              23703,
+              25298,
+              25589,
+              21412
+            ]
+          }
+        ],
+        "1211": [
+          {
+            "topic": "feelings change",
+            "target": 10205,
+            "target name": "Ricmoden",
+            "state": "infatuation",
+            "relationship": 10206
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.137,
+            "inhabitants": [
+              14350,
+              14753,
+              15742,
+              13860,
+              20073,
+              16648,
+              15735,
+              22172,
+              22431,
+              23314,
+              23703,
+              25298,
+              25589,
+              21412
+            ]
+          }
+        ],
+        "1212": [
+          {
+            "topic": "feelings change",
+            "target": 10205,
+            "target name": "Ricmoden",
+            "state": "solid love",
+            "relationship": 10206
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.135,
+            "inhabitants": [
+              14350,
+              14753,
+              15742,
+              13860,
+              20073,
+              16648,
+              15735,
+              22172,
+              22431,
+              23314,
+              23703,
+              25298,
+              25589,
+              21412
+            ]
+          }
+        ],
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0.265,
+            "inhabitants": [
+              14350,
+              14753,
+              15742,
+              13860,
+              20073,
+              16648,
+              15735,
+              22172,
+              22431,
+              23314,
+              23703,
+              25298,
+              25589,
+              21412
+            ]
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0.104,
+            "inhabitants": [
+              14350,
+              14753,
+              15742,
+              13860,
+              20073,
+              16648,
+              15735,
+              22172,
+              22431,
+              23314,
+              23703,
+              25298,
+              25589,
+              21412
+            ]
+          }
+        ],
+        "1215": [
+          {
+            "topic": "not enough income",
+            "income": 0.284,
+            "inhabitants": [
+              14350,
+              14753,
+              15742,
+              13860,
+              20073,
+              16648,
+              15735,
+              22172,
+              22431,
+              23314,
+              23703,
+              25298,
+              25589,
+              21412
+            ]
+          }
+        ],
+        "1216": [
+          {
+            "topic": "not enough income",
+            "income": 0.537,
+            "inhabitants": [
+              14350,
+              14753,
+              15742,
+              13860,
+              20073,
+              16648,
+              15735,
+              22172,
+              22431,
+              23314,
+              23703,
+              25298,
+              25589,
+              21412
+            ]
           }
         ]
       }
@@ -169,10 +534,10 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stHelle voet.se3.c1",
+      "section": "stHelle voet.se1.c1",
       "street": "Helle voet",
       "neighborhood": "jorisbuurt",
-      "unique id": 93
+      "unique id": 87
     },
     "relationship status": {
       "taken": true,

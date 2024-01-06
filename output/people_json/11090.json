@@ -1,32 +1,33 @@
 {
   "11090": {
     "alive": false,
-    "name": "Zuanelt",
-    "surname": "Keghelaere",
-    "full name": "Zuanelt Keghelaere",
+    "name": "Soeten",
+    "surname": "Bier",
+    "full name": "Soeten Bier",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.074,
-      "romantic interest": 0.708,
-      "sex interest": 0.886,
-      "gender expression": 0.337,
+      "sexuality": 0.067,
+      "romantic interest": 0.305,
+      "sex interest": 0.482,
+      "gender expression": 0.127,
       "sex": "f"
     },
-    "age": 56,
-    "birth year": 1153,
+    "age": 51,
+    "birth year": 1166,
     "sex": "f",
+    "faction": "No religion",
     "income class": [
-      1,
-      "lower middle class"
+      3,
+      "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.753,
-      "nice-nasty": 0.634,
-      "honest-false": 0.56
+      "lawful-chaotic": 0.763,
+      "nice-nasty": 0.624,
+      "honest-false": 0.999
     },
     "attitude": {
-      "outgoing": 0.359,
-      "dream": 0.396
+      "outgoing": 0.708,
+      "dream": 0.69
     },
     "homsoc": {
       "means": {
@@ -34,11 +35,13 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.045,
-        "gender expression expression": 0.153
+        "sexuality expression": 0.051,
+        "gender expression expression": 0.11
       }
     },
     "network": {
@@ -51,25 +54,34 @@
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        1,
-        "lower middle class"
+        3,
+        "upper middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.12,
+      "all_incomes": [
+        0.952,
+        1.017,
+        1.039,
+        1.12
+      ],
+      "job": {
+        "lawful": true,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 2,
+      "skin_color": 5,
       "eye_color": "brown",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "C",
         "S"
       ],
-      "health": 0.0,
-      "fertility": 0.694,
+      "health": 0.22,
+      "fertility": 0.558,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -81,47 +93,31 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.768
+            "new_health": 0.707
+          },
+          "death": false
+        },
+        "1203": {
+          "health": {
+            "change": true,
+            "value_change": -0.283,
+            "new_health": 0.424
           },
           "death": false
         },
         "1204": {
           "health": {
-            "change": true,
-            "value_change": -0.145,
-            "new_health": 0.623
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.424
           },
           "death": false
         },
-        "1205": {
+        "1216": {
           "health": {
             "change": true,
-            "value_change": -0.159,
-            "new_health": 0.464
-          },
-          "death": false
-        },
-        "1206": {
-          "health": {
-            "change": true,
-            "value_change": -0.229,
-            "new_health": 0.235
-          },
-          "death": false
-        },
-        "1207": {
-          "health": {
-            "change": true,
-            "value_change": -0.215,
-            "new_health": 0.02
-          },
-          "death": false
-        },
-        "1208": {
-          "health": {
-            "change": true,
-            "value_change": -0.02,
-            "new_health": 0.0
+            "value_change": -0.204,
+            "new_health": 0.22
           },
           "death": true
         }
@@ -136,8 +132,8 @@
               11090
             ],
             "people names": [
-              "Clarebout",
-              "Zuanelt Keghelaere"
+              "Justaes",
+              "Soeten Bier"
             ],
             "label": "spouse",
             "committed": true
@@ -145,38 +141,94 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stDie Coninc straet.se9.c1",
-              "street": "Die Coninc straet",
-              "neighborhood": "kampbuurt",
-              "unique id": 480
+              "income class": 3,
+              "income class label": "upper middle class",
+              "section": "stLange gracht.se1.c3",
+              "street": "Lange gracht",
+              "neighborhood": "olvbuurt",
+              "unique id": 496
             }
           }
         ],
-        "1208": [
+        "1203": [
           {
             "topic": "feelings change",
             "target": 11089,
-            "target name": "Clarebout",
-            "state": "out of love",
+            "target name": "Justaes",
+            "state": "solid love",
             "relationship": 11091
+          }
+        ],
+        "1210": [
+          {
+            "key": 11091,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11089,
+              "name": "Justaes",
+              "age": 41,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.952
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1214": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.017
           }
         ]
       }
     },
     "key": 11090,
     "home": {
-      "income class": 1,
-      "income class label": "lower middle class",
-      "section": "stDie Coninc straet.se9.c1",
-      "street": "Die Coninc straet",
-      "neighborhood": "kampbuurt",
-      "unique id": 480
+      "income class": 3,
+      "income class label": "upper middle class",
+      "section": "stLange gracht.se1.c3",
+      "street": "Lange gracht",
+      "neighborhood": "olvbuurt",
+      "unique id": 496
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         11091
       ]

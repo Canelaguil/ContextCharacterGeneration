@@ -1,75 +1,125 @@
 {
   "11750": {
     "alive": false,
-    "name": "Siburgis",
-    "surname": "Roede",
-    "full name": "Siburgis Roede",
+    "name": "Erkenradis",
+    "surname": "Stuucs",
+    "full name": "Erkenradis Stuucs",
     "born this way": {
       "sexuality label": "straight",
       "sexuality": 0.0,
-      "romantic interest": 0.622,
-      "sex interest": 0.635,
-      "gender expression": 0.018,
+      "romantic interest": 0.554,
+      "sex interest": 0.979,
+      "gender expression": 0.022,
       "sex": "f"
     },
-    "age": 53,
-    "birth year": 1154,
+    "age": 43,
+    "birth year": 1183,
     "sex": "f",
+    "faction": "Dogmatists",
     "income class": [
-      1,
-      "lower middle class"
+      4,
+      "nobility"
     ],
     "personality": {
       "lawful-chaotic": 0.999,
-      "nice-nasty": 0.909,
-      "honest-false": 0.126
+      "nice-nasty": 0.0,
+      "honest-false": 0.131
     },
     "attitude": {
-      "outgoing": 0.639,
-      "dream": 0.376
+      "outgoing": 0.629,
+      "dream": 0.505
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
         "sexuality expression": -0.001,
-        "gender expression expression": 0.01
+        "gender expression expression": 0.016
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "18016": {
+          "key": 18016,
+          "name": "Radulphus Scamps",
+          "age": 7,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Erkenradis (11750)",
+            "father": "Bertoldus (11842)"
+          }
+        },
+        "18303": {
+          "key": 18303,
+          "name": "Wasseliin Scamps",
+          "age": 27,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Erkenradis (11750)",
+            "father": "Bertoldus (11842)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          11751
-        ]
+          11751,
+          16947
+        ],
+        "child": {
+          "birth": [
+            18018,
+            18305
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        1,
-        "lower middle class"
+        4,
+        "nobility"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.652,
+      "all_incomes": [
+        1.008,
+        1.303,
+        0.715,
+        0.821,
+        0.693,
+        0.681,
+        0.644,
+        0.907,
+        0.958,
+        0.763,
+        0.652
+      ],
+      "job": {
+        "lawful": true,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 0,
+      "skin_color": 4,
       "eye_color": "brown",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "S",
+        "C",
         "C"
       ],
-      "health": 0.058,
-      "fertility": 0.59,
+      "health": 0.662,
+      "fertility": 0.61,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -81,31 +131,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.567
+            "new_health": 0.662
           },
           "death": false
         },
-        "1204": {
+        "1225": {
           "health": {
-            "change": true,
-            "value_change": -0.2,
-            "new_health": 0.367
-          },
-          "death": false
-        },
-        "1205": {
-          "health": {
-            "change": true,
-            "value_change": -0.258,
-            "new_health": 0.109
-          },
-          "death": false
-        },
-        "1206": {
-          "health": {
-            "change": true,
-            "value_change": -0.051,
-            "new_health": 0.058
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.662
           },
           "death": true
         }
@@ -120,8 +154,8 @@
               11750
             ],
             "people names": [
-              "Siccone Iude",
-              "Siburgis Roede"
+              "Walic",
+              "Erkenradis Stuucs"
             ],
             "label": "spouse",
             "committed": true
@@ -129,31 +163,262 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stStoof straet.se3.c1",
-              "street": "Stoof straet",
-              "neighborhood": "visbuurt",
-              "unique id": 779
+              "income class": 4,
+              "income class label": "nobility",
+              "section": "stMuurhuysen2.se1.c4",
+              "street": "Muurhuysen2",
+              "neighborhood": "cingelnoord",
+              "unique id": 793
             }
+          }
+        ],
+        "1202": [
+          {
+            "key": 11751,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11749,
+              "name": "Walic",
+              "age": 31,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1203": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1204": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
+          {
+            "topic": "new relationship",
+            "key": 16947,
+            "people": [
+              11842,
+              11750
+            ],
+            "people names": [
+              "Bertoldus Scamps",
+              "Erkenradis Stuucs"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 4,
+              "income class label": "nobility",
+              "section": "stOp Havick1.se1.c4",
+              "street": "Op Havick1",
+              "neighborhood": "cingelnoord",
+              "unique id": 836
+            }
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1214": [
+          {
+            "topic": "feelings change",
+            "target": 11842,
+            "target name": "Bertoldus Scamps",
+            "state": "out of love",
+            "relationship": 16947
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1215": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.008
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1216": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1217": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.715
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1219": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.693
+          }
+        ],
+        "1220": [
+          {
+            "topic": "new relationship",
+            "key": 18018,
+            "people": [
+              11750,
+              18016
+            ],
+            "people names": [
+              "Erkenradis Stuucs",
+              "Radulphus Scamps"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1221": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1222": [
+          {
+            "topic": "new relationship",
+            "key": 18305,
+            "people": [
+              11750,
+              18303
+            ],
+            "people names": [
+              "Erkenradis Stuucs",
+              "Wasseliin Scamps"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1223": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1224": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1225": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.652
+          },
+          {
+            "topic": "neglected"
           }
         ]
       }
     },
     "key": 11750,
     "home": {
-      "income class": 1,
-      "income class label": "lower middle class",
-      "section": "stStoof straet.se3.c1",
-      "street": "Stoof straet",
-      "neighborhood": "visbuurt",
-      "unique id": 779
+      "income class": 4,
+      "income class label": "nobility",
+      "section": "stOp Havick1.se1.c4",
+      "street": "Op Havick1",
+      "neighborhood": "cingelnoord",
+      "unique id": 836
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        11751
+        11751,
+        16947
       ]
     }
   }

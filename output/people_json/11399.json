@@ -1,55 +1,88 @@
 {
   "11399": {
     "alive": false,
-    "name": "Ghoudekinen",
-    "surname": "Mie",
-    "full name": "Ghoudekinen Mie",
+    "name": "Siwa",
+    "surname": "",
+    "full name": "Siwa",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.84,
-      "romantic interest": 0.621,
-      "sex interest": 0.611,
-      "gender expression": 0.522,
+      "sexuality label": "bi",
+      "sexuality": 0.42,
+      "romantic interest": 0.568,
+      "sex interest": 0.877,
+      "gender expression": 0.362,
       "sex": "f"
     },
-    "age": 55,
-    "birth year": 1151,
+    "age": 50,
+    "birth year": 1171,
     "sex": "f",
+    "faction": "Dogmatists",
     "income class": [
       3,
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.709,
-      "nice-nasty": 0.984,
-      "honest-false": 0.283
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.257,
+      "honest-false": 0.108
     },
     "attitude": {
-      "outgoing": 0.565,
-      "dream": 0.284
+      "outgoing": 0.853,
+      "dream": 0.641
     },
     "homsoc": {
       "means": {
         "independent": true,
-        "taken_care_of": false,
-        "caretaker": false,
+        "taken_care_of": true,
+        "caretaker": true,
         "needs_care": false,
         "flags": [
+          "caretaker",
+          "neglected",
           "starving"
         ]
       },
       "expression": {
-        "sexuality expression": 0.572,
-        "gender expression expression": 0.388
+        "sexuality expression": 0.326,
+        "gender expression expression": 0.269
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12475": {
+          "key": 12475,
+          "name": "Victoria Verkins",
+          "age": 37,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Siwa (11399)",
+            "father": "Menzone (11398)"
+          }
+        },
+        "12928": {
+          "key": 12928,
+          "name": "Wigherus Verkins",
+          "age": 48,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Siwa (11399)",
+            "father": "Menzone (11398)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          11400
-        ]
+          11400,
+          16523
+        ],
+        "child": {
+          "birth": [
+            12477,
+            12930
+          ]
+        }
       }
     },
     "occupation": {
@@ -62,16 +95,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 2,
-      "eye_color": "green",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "skin_color": 9,
+      "eye_color": "brown",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "S",
-        "C"
+        "C",
+        "S"
       ],
-      "health": 0.0,
-      "fertility": 0.619,
+      "health": 0.833,
+      "fertility": 0.885,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -83,47 +116,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.615
+            "new_health": 0.833
           },
           "death": false
         },
-        "1201": {
+        "1220": {
           "health": {
-            "change": true,
-            "value_change": -0.208,
-            "new_health": 0.407
-          },
-          "death": false
-        },
-        "1202": {
-          "health": {
-            "change": true,
-            "value_change": -0.221,
-            "new_health": 0.186
-          },
-          "death": false
-        },
-        "1203": {
-          "health": {
-            "change": true,
-            "value_change": -0.084,
-            "new_health": 0.102
-          },
-          "death": false
-        },
-        "1204": {
-          "health": {
-            "change": true,
-            "value_change": -0.085,
-            "new_health": 0.017
-          },
-          "death": false
-        },
-        "1205": {
-          "health": {
-            "change": true,
-            "value_change": -0.017,
-            "new_health": 0.0
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.833
           },
           "death": true
         }
@@ -138,8 +139,8 @@
               11399
             ],
             "people names": [
-              "Dybben",
-              "Ghoudekinen Mie"
+              "Menzone Verkins",
+              "Siwa"
             ],
             "label": "spouse",
             "committed": true
@@ -149,18 +150,292 @@
             "home": {
               "income class": 3,
               "income class label": "upper middle class",
-              "section": "stDie lange straet1.se3.c3",
-              "street": "Die lange straet1",
-              "neighborhood": "olvbuurt",
-              "unique id": 616
+              "section": "stDie lange straet2.se1.c3",
+              "street": "Die lange straet2",
+              "neighborhood": "cingelzuid",
+              "unique id": 624
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12477,
+            "people": [
+              11399,
+              12475
+            ],
+            "people names": [
+              "Siwa",
+              "Victoria Verkins"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 12930,
+            "people": [
+              11399,
+              12928
+            ],
+            "people names": [
+              "Siwa",
+              "Wigherus Verkins"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1202": [
+          {
+            "topic": "feelings change",
+            "target": 11398,
+            "target name": "Menzone Verkins",
+            "state": "out of love",
+            "relationship": 11400
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "neglected"
           }
         ],
         "1204": [
           {
+            "topic": "neglected"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1206": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1208": [
+          {
+            "key": 11400,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11398,
+              "name": "Menzone Verkins",
+              "age": 57,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
             "topic": "not enough income",
-            "income": 0.089,
+            "income": 0,
             "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          },
+          {
+            "topic": "new caretaker",
+            "person": 11399
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "new relationship",
+            "key": 16523,
+            "people": [
+              11107,
+              11399
+            ],
+            "people names": [
+              "Gabriel Heldecop",
+              "Siwa"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 3,
+              "income class label": "upper middle class",
+              "section": "stLange gracht.se3.c3",
+              "street": "Lange gracht",
+              "neighborhood": "olvbuurt",
+              "unique id": 502
+            }
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              12928,
+              14503,
+              18440,
+              20862,
+              21548,
+              21924,
+              18702,
+              23880,
+              24238,
+              24518,
+              24806,
+              24897,
+              26007,
+              26151,
+              26858
+            ]
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0.014,
+            "inhabitants": [
+              12928,
+              14503,
+              18440,
+              20862,
+              21548,
+              21924,
+              18702,
+              23880,
+              24238,
+              24518,
+              24806,
+              24897,
+              26007,
+              26151,
+              26858
+            ]
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0.009,
+            "inhabitants": [
+              12928,
+              14503,
+              18440,
+              20862,
+              21548,
+              21924,
+              18702,
+              23880,
+              24238,
+              24518,
+              24806,
+              24897,
+              26007,
+              26151,
+              26858
+            ]
+          }
+        ],
+        "1215": [
+          {
+            "topic": "not enough income",
+            "income": 0.02,
+            "inhabitants": [
+              12928,
+              14503,
+              18440,
+              20862,
+              21548,
+              21924,
+              18702,
+              23880,
+              24238,
+              24518,
+              24806,
+              24897,
+              26007,
+              26151,
+              26858
+            ]
+          }
+        ],
+        "1216": [
+          {
+            "topic": "not enough income",
+            "income": 0.079,
+            "inhabitants": [
+              12928,
+              14503,
+              18440,
+              20862,
+              21548,
+              21924,
+              18702,
+              23880,
+              24238,
+              24518,
+              24806,
+              24897,
+              26007,
+              26151,
+              26858
+            ]
+          }
+        ],
+        "1217": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              12928,
+              14503,
+              18440,
+              20862,
+              21548,
+              21924,
+              18702,
+              23880,
+              24238,
+              24518,
+              24806,
+              24897,
+              26007,
+              26151,
+              26858
+            ]
           }
         ]
       }
@@ -169,16 +444,17 @@
     "home": {
       "income class": 3,
       "income class label": "upper middle class",
-      "section": "stDie lange straet1.se3.c3",
-      "street": "Die lange straet1",
+      "section": "stLange gracht.se3.c3",
+      "street": "Lange gracht",
       "neighborhood": "olvbuurt",
-      "unique id": 616
+      "unique id": 502
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        11400
+        11400,
+        16523
       ]
     }
   }

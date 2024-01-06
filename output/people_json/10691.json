@@ -1,32 +1,33 @@
 {
   "10691": {
     "alive": false,
-    "name": "Aghata",
-    "surname": "Bein",
-    "full name": "Aghata Bein",
+    "name": "Erkenradis",
+    "surname": "Capoen",
+    "full name": "Erkenradis Capoen",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.057,
-      "romantic interest": 0.376,
-      "sex interest": 0.818,
-      "gender expression": 0.243,
+      "sexuality": 0.066,
+      "romantic interest": 0.752,
+      "sex interest": 0.962,
+      "gender expression": 0.31,
       "sex": "f"
     },
-    "age": 53,
-    "birth year": 1162,
+    "age": 56,
+    "birth year": 1180,
     "sex": "f",
+    "faction": "Zealots",
     "income class": [
-      0,
-      "working class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.426,
-      "nice-nasty": 0.287,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.228,
+      "nice-nasty": 0.401,
+      "honest-false": 0.647
     },
     "attitude": {
-      "outgoing": 0.42,
-      "dream": 0.175
+      "outgoing": 0.24,
+      "dream": 0.452
     },
     "homsoc": {
       "means": {
@@ -35,43 +36,126 @@
         "caretaker": false,
         "needs_care": false,
         "flags": [
-          "starving"
+          "neglected"
         ]
       },
       "expression": {
-        "sexuality expression": 0.035,
-        "gender expression expression": 0.132
+        "sexuality expression": 0.046,
+        "gender expression expression": 0.069
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13261": {
+          "key": 13261,
+          "name": "Conzone Banghe",
+          "age": 10,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Erkenradis (10691)",
+            "father": "Werenboud (10690)"
+          }
+        },
+        "15714": {
+          "key": 15714,
+          "name": "Andreas van Gobel",
+          "age": 39,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Erkenradis (10691)",
+            "father": "Gobel (11500)"
+          }
+        },
+        "16750": {
+          "key": 16750,
+          "name": "Truden Gobelsdochter",
+          "age": 0,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Erkenradis (10691)",
+            "father": "Gobel (11500)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          10692
-        ]
+          10692,
+          15383
+        ],
+        "child": {
+          "birth": [
+            13263,
+            15716,
+            16752
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        0,
-        "working class"
+        1,
+        "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.915,
+      "all_incomes": [
+        0.924,
+        1.037,
+        0.592,
+        0.759,
+        0.94,
+        0.622,
+        0.596,
+        0.899,
+        0.707,
+        0.45,
+        0.277,
+        0.314,
+        0.87,
+        0.994,
+        1.067,
+        1.189,
+        1.425,
+        1.159,
+        1.499,
+        1.456,
+        1.499,
+        1.499,
+        0.869,
+        0.875,
+        1.473,
+        1.499,
+        1.499,
+        1.484,
+        1.305,
+        0.527,
+        0.593,
+        0.237,
+        0.351,
+        0.709,
+        0.93,
+        0.915
+      ],
+      "job": {
+        "lawful": false,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 7,
-      "eye_color": "blue",
+      "skin_color": 2,
+      "eye_color": "green",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
-        "C",
+        "S",
         "C"
       ],
       "health": 0.0,
-      "fertility": 0.681,
+      "fertility": 0.666,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -83,30 +167,38 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.693
+            "new_health": 0.739
           },
           "death": false
         },
-        "1212": {
+        "1232": {
           "health": {
             "change": true,
-            "value_change": -0.242,
-            "new_health": 0.451
+            "value_change": -0.17,
+            "new_health": 0.569
           },
           "death": false
         },
-        "1213": {
+        "1233": {
           "health": {
             "change": true,
-            "value_change": -0.248,
-            "new_health": 0.203
+            "value_change": -0.303,
+            "new_health": 0.266
           },
           "death": false
         },
-        "1214": {
+        "1234": {
           "health": {
             "change": true,
-            "value_change": -0.203,
+            "value_change": -0.175,
+            "new_health": 0.091
+          },
+          "death": false
+        },
+        "1235": {
+          "health": {
+            "change": true,
+            "value_change": -0.091,
             "new_health": 0.0
           },
           "death": true
@@ -115,6 +207,11 @@
       "events": {
         "1200": [
           {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.924
+          },
+          {
             "topic": "new relationship",
             "key": 10692,
             "people": [
@@ -122,8 +219,8 @@
               10691
             ],
             "people names": [
-              "Waldfridus",
-              "Aghata Bein"
+              "Werenboud Banghe",
+              "Erkenradis Capoen"
             ],
             "label": "spouse",
             "committed": true
@@ -131,77 +228,358 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stDe Tuyt.se7.c0",
-              "street": "De Tuyt",
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stTuytsteeg.se1.c1",
+              "street": "Tuytsteeg",
               "neighborhood": "agnesbuurt",
-              "unique id": 301
+              "unique id": 323
             }
-          },
+          }
+        ],
+        "1201": [
           {
-            "topic": "feelings change",
-            "target": 10690,
-            "target name": "Waldfridus",
-            "state": "out of love",
-            "relationship": 10692
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.037
           }
         ],
         "1202": [
           {
-            "topic": "not enough income",
-            "income": 0.471,
-            "inhabitants": []
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.592
+          },
+          {
+            "topic": "new relationship",
+            "key": 13263,
+            "people": [
+              10691,
+              13261
+            ],
+            "people names": [
+              "Erkenradis Capoen",
+              "Conzone Banghe"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1203": [
           {
-            "topic": "not enough income",
-            "income": 0.29,
-            "inhabitants": []
+            "topic": "feelings change",
+            "target": 10690,
+            "target name": "Werenboud Banghe",
+            "state": "infatuation",
+            "relationship": 10692
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
+            "key": 10692,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10690,
+              "name": "Werenboud Banghe",
+              "age": 30,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1205": [
           {
-            "topic": "feelings change",
-            "target": 10690,
-            "target name": "Waldfridus",
-            "state": "infatuation",
-            "relationship": 10692
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.622
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1206": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "new relationship",
+            "key": 15383,
+            "people": [
+              11500,
+              10691
+            ],
+            "people names": [
+              "Gobel",
+              "Erkenradis Capoen"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stDie lange straet3.se1.c2",
+              "street": "Die lange straet3",
+              "neighborhood": "visbuurt",
+              "unique id": 671
+            }
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.707
+          },
+          {
+            "topic": "new relationship",
+            "key": 15716,
+            "people": [
+              10691,
+              15714
+            ],
+            "people names": [
+              "Erkenradis Capoen",
+              "Andreas van Gobel"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1209": [
           {
-            "topic": "feelings change",
-            "target": 10690,
-            "target name": "Waldfridus",
-            "state": "solid love",
-            "relationship": 10692
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.45
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.277
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1211": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.314
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1212": [
           {
-            "topic": "not enough income",
-            "income": 0.28,
-            "inhabitants": []
+            "topic": "new relationship",
+            "key": 16752,
+            "people": [
+              10691,
+              16750
+            ],
+            "people names": [
+              "Erkenradis Capoen",
+              "Truden Gobelsdochter"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1213": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 13261,
+              "name": "Conzone Banghe",
+              "age": 10,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Erkenradis (10691)",
+                "father": "Werenboud (10690)"
+              }
+            },
+            "label": "child"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 16750,
+              "name": "Truden Gobelsdochter",
+              "age": 0,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Erkenradis (10691)",
+                "father": "Gobel (11500)"
+              }
+            },
+            "label": "child"
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1214": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.067
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1215": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1216": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1217": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1218": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1219": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1220": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1221": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1222": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1223": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1224": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.473
+          }
+        ],
+        "1229": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.527
+          }
+        ],
+        "1230": [
+          {
+            "key": 15383,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11500,
+              "name": "Gobel",
+              "age": 54,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          }
+        ],
+        "1231": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.237
+          }
+        ],
+        "1233": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1234": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1235": [
+          {
+            "topic": "neglected"
           }
         ]
       }
     },
     "key": 10691,
     "home": {
-      "income class": 0,
-      "income class label": "working class",
-      "section": "stDe Tuyt.se7.c0",
-      "street": "De Tuyt",
-      "neighborhood": "agnesbuurt",
-      "unique id": 301
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stDie lange straet3.se1.c2",
+      "street": "Die lange straet3",
+      "neighborhood": "visbuurt",
+      "unique id": 671
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
-        10692
+        10692,
+        15383
       ]
     }
   }

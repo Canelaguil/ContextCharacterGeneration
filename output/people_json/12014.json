@@ -1,53 +1,77 @@
 {
   "12014": {
     "alive": false,
-    "name": "Lutghardis",
-    "surname": "Calle",
-    "full name": "Lutghardis Calle",
+    "name": "Thedwi",
+    "surname": "Bloemart",
+    "full name": "Thedwi Bloemart",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.042,
-      "romantic interest": 0.827,
-      "sex interest": 0.898,
-      "gender expression": 0.046,
+      "sexuality": 0.093,
+      "romantic interest": 0.796,
+      "sex interest": 0.654,
+      "gender expression": 0.1,
       "sex": "f"
     },
-    "age": 45,
-    "birth year": 1157,
+    "age": 58,
+    "birth year": 1161,
     "sex": "f",
+    "faction": "Dogmatists",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.369,
-      "nice-nasty": 0.282,
-      "honest-false": 0.0
+      "lawful-chaotic": 0.488,
+      "nice-nasty": 0.548,
+      "honest-false": 0.477
     },
     "attitude": {
-      "outgoing": 0.813,
-      "dream": 0.671
+      "outgoing": 0.69,
+      "dream": 0.451
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "caretaker",
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.025,
-        "gender expression expression": 0.044
+        "sexuality expression": 0.056,
+        "gender expression expression": 0.035
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12607": {
+          "key": 12607,
+          "name": "Reinardus Pinart",
+          "age": 31,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Thedwi (12014)",
+            "father": "Gheuardus (12013)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          12015
-        ]
+          12015,
+          14699,
+          17252
+        ],
+        "child": {
+          "birth": [
+            12609
+          ]
+        }
       }
     },
     "occupation": {
@@ -56,26 +80,36 @@
         2,
         "middle class"
       ],
-      "income": 0.941,
+      "income": 1.499,
       "all_incomes": [
-        0.941
+        1.072,
+        1.088,
+        1.108,
+        1.1,
+        1.092,
+        1.353,
+        1.43,
+        1.499,
+        1.499,
+        1.499,
+        1.499
       ],
       "job": {
         "lawful": false,
-        "honest": false
+        "honest": true
       }
     },
     "genetics": {
-      "skin_color": 0,
-      "eye_color": "green",
+      "skin_color": 3,
+      "eye_color": "brown",
       "hair_color": "strawberry blonde",
       "hair_color_code": 5,
       "hair_type": [
         "S",
-        "S"
+        "C"
       ],
-      "health": 0.744,
-      "fertility": 0.802,
+      "health": 0.0,
+      "fertility": 0.716,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -87,15 +121,55 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.744
+            "new_health": 0.731
           },
           "death": false
         },
-        "1201": {
+        "1213": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.744
+            "change": true,
+            "value_change": -0.211,
+            "new_health": 0.52
+          },
+          "death": false
+        },
+        "1214": {
+          "health": {
+            "change": true,
+            "value_change": -0.335,
+            "new_health": 0.185
+          },
+          "death": false
+        },
+        "1215": {
+          "health": {
+            "change": true,
+            "value_change": -0.122,
+            "new_health": 0.063
+          },
+          "death": false
+        },
+        "1216": {
+          "health": {
+            "change": true,
+            "value_change": -0.043,
+            "new_health": 0.02
+          },
+          "death": false
+        },
+        "1217": {
+          "health": {
+            "change": true,
+            "value_change": -0.019,
+            "new_health": 0.001
+          },
+          "death": false
+        },
+        "1218": {
+          "health": {
+            "change": true,
+            "value_change": -0.001,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -110,8 +184,8 @@
               12014
             ],
             "people names": [
-              "Dolf",
-              "Lutghardis Calle"
+              "Gheuardus Pinart",
+              "Thedwi Bloemart"
             ],
             "label": "spouse",
             "committed": true
@@ -124,33 +198,220 @@
               "section": "stCromme straet.se5.c2",
               "street": "Cromme straet",
               "neighborhood": "denhof",
-              "unique id": 894
+              "unique id": 908
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12609,
+            "people": [
+              12014,
+              12607
+            ],
+            "people names": [
+              "Thedwi Bloemart",
+              "Reinardus Pinart"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1201": [
           {
+            "topic": "neglected"
+          }
+        ],
+        "1202": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "key": 12015,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12013,
+              "name": "Gheuardus Pinart",
+              "age": 27,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          },
+          {
+            "topic": "new caretaker",
+            "person": 12014
+          }
+        ],
+        "1204": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "new relationship",
+            "key": 14699,
+            "people": [
+              10873,
+              12014
+            ],
+            "people names": [
+              "Mewekinus Coluen",
+              "Thedwi Bloemart"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stDie Camp.se7.c2",
+              "street": "Die Camp",
+              "neighborhood": "kampbuurt",
+              "unique id": 403
+            }
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1206": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1208": [
+          {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.941
+            "income": 1.072
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1211": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1212": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1213": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1214": [
+          {
+            "key": 14699,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10873,
+              "name": "Mewekinus Coluen",
+              "age": 50,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "new caretaker",
+            "person": 12373
+          }
+        ],
+        "1215": [
+          {
+            "topic": "new relationship",
+            "key": 17252,
+            "people": [
+              10249,
+              12014
+            ],
+            "people names": [
+              "Oudrauen",
+              "Thedwi Bloemart"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stHelle voet.se5.c1",
+              "street": "Helle voet",
+              "neighborhood": "jorisbuurt",
+              "unique id": 115
+            }
+          },
+          {
+            "topic": "neglected"
           }
         ]
       }
     },
     "key": 12014,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stCromme straet.se5.c2",
-      "street": "Cromme straet",
-      "neighborhood": "denhof",
-      "unique id": 894
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stHelle voet.se5.c1",
+      "street": "Helle voet",
+      "neighborhood": "jorisbuurt",
+      "unique id": 115
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        12015
+        12015,
+        14699,
+        17252
       ]
     }
   }

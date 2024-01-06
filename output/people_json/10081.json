@@ -1,53 +1,73 @@
 {
   "10081": {
     "alive": false,
-    "name": "Jurre",
-    "surname": "Craie",
-    "full name": "Jurre Craie",
+    "name": "Goeskin",
+    "surname": "Roede",
+    "full name": "Goeskin Roede",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.611,
-      "sex interest": 0.881,
-      "gender expression": 0.032,
+      "sexuality": 0.107,
+      "romantic interest": 0.75,
+      "sex interest": 0.643,
+      "gender expression": 0.167,
       "sex": "m"
     },
-    "age": 55,
-    "birth year": 1158,
+    "age": 37,
+    "birth year": 1165,
     "sex": "m",
+    "faction": "Dogmatists",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.598,
-      "nice-nasty": 0.507,
-      "honest-false": 0.705
+      "lawful-chaotic": 0.604,
+      "nice-nasty": 0.672,
+      "honest-false": 0.428
     },
     "attitude": {
-      "outgoing": 0.424,
-      "dream": 0.45
+      "outgoing": 0.447,
+      "dream": 0.047
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "neglected"
+        ]
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.022
+        "sexuality expression": 0.062,
+        "gender expression expression": 0.093
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12232": {
+          "key": 12232,
+          "name": "Richolfus Roede",
+          "age": 49,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Agnes (10082)",
+            "father": "Goeskin (10081)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10083
-        ]
+        ],
+        "child": {
+          "birth": [
+            12233
+          ]
+        }
       }
     },
     "occupation": {
@@ -56,39 +76,28 @@
         2,
         "middle class"
       ],
-      "income": 1.112,
+      "income": 0.764,
       "all_incomes": [
-        0.924,
-        0.942,
-        0.896,
-        0.86,
-        0.87,
-        0.909,
-        0.999,
-        1.032,
-        0.992,
-        1.064,
-        1.065,
-        1.135,
-        1.101,
-        1.112
+        0.969,
+        0.766,
+        0.764
       ],
       "job": {
-        "lawful": true,
+        "lawful": false,
         "honest": true
       }
     },
     "genetics": {
-      "skin_color": 3,
-      "eye_color": "brown",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "skin_color": 4,
+      "eye_color": "green",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "C",
         "S"
       ],
-      "health": 0.0,
-      "fertility": 0.584,
+      "health": 0.65,
+      "fertility": 0.612,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -100,47 +109,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.709
+            "new_health": 0.65
           },
           "death": false
         },
-        "1208": {
+        "1201": {
           "health": {
-            "change": true,
-            "value_change": -0.297,
-            "new_health": 0.412
-          },
-          "death": false
-        },
-        "1209": {
-          "health": {
-            "change": true,
-            "value_change": -0.245,
-            "new_health": 0.167
-          },
-          "death": false
-        },
-        "1210": {
-          "health": {
-            "change": true,
-            "value_change": -0.16,
-            "new_health": 0.007
-          },
-          "death": false
-        },
-        "1211": {
-          "health": {
-            "change": true,
-            "value_change": -0.005,
-            "new_health": 0.002
-          },
-          "death": false
-        },
-        "1212": {
-          "health": {
-            "change": true,
-            "value_change": -0.002,
-            "new_health": 0.0
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.65
           },
           "death": true
         }
@@ -150,7 +127,7 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.924
+            "income": 0.969
           },
           {
             "topic": "new relationship",
@@ -160,8 +137,8 @@
               10082
             ],
             "people names": [
-              "Jurre Craie",
-              "Hodine Stuucs"
+              "Goeskin Roede",
+              "Agnes"
             ],
             "label": "spouse",
             "committed": true
@@ -174,31 +151,30 @@
               "section": "stVerckens merct.se5.c2",
               "street": "Verckens merct",
               "neighborhood": "varkensbuurt",
-              "unique id": 35
+              "unique id": 34
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12233,
+            "people": [
+              10081,
+              12232
+            ],
+            "people names": [
+              "Goeskin Roede",
+              "Richolfus Roede"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1201": [
           {
-            "topic": "feelings change",
-            "target": 10082,
-            "target name": "Hodine Stuucs",
-            "state": "out of love",
-            "relationship": 10083
-          }
-        ],
-        "1206": [
-          {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.032
-          }
-        ],
-        "1208": [
-          {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.064
+            "topic": "neglected"
           }
         ]
       }
@@ -210,7 +186,7 @@
       "section": "stVerckens merct.se5.c2",
       "street": "Verckens merct",
       "neighborhood": "varkensbuurt",
-      "unique id": 35
+      "unique id": 34
     },
     "relationship status": {
       "taken": true,

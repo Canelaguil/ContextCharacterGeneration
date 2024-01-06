@@ -1,32 +1,33 @@
 {
   "10898": {
     "alive": false,
-    "name": "Agnes",
-    "surname": "Borlut",
-    "full name": "Agnes Borlut",
+    "name": "Reynildis",
+    "surname": "Die niene verloech",
+    "full name": "Reynildis Die niene verloech",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.051,
-      "romantic interest": 0.847,
-      "sex interest": 0.55,
-      "gender expression": 0.088,
+      "sexuality label": "bi",
+      "sexuality": 0.477,
+      "romantic interest": 0.637,
+      "sex interest": 0.877,
+      "gender expression": 0.335,
       "sex": "f"
     },
-    "age": 49,
+    "age": 56,
     "birth year": 1163,
     "sex": "f",
+    "faction": "Zealots",
     "income class": [
-      2,
-      "middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.472,
-      "nice-nasty": 0.647,
-      "honest-false": 0.216
+      "lawful-chaotic": 0.713,
+      "nice-nasty": 0.737,
+      "honest-false": 0.134
     },
     "attitude": {
-      "outgoing": 0.707,
-      "dream": 0.442
+      "outgoing": 0.603,
+      "dream": 0.507
     },
     "homsoc": {
       "means": {
@@ -34,42 +35,64 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.043,
-        "gender expression expression": 0.072
+        "sexuality expression": 0.225,
+        "gender expression expression": 0.038
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12834": {
+          "key": 12834,
+          "name": "Walic Wittebroet",
+          "age": 4,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Reynildis (10898)",
+            "father": "Tielen (10897)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          10899
-        ]
+          10899,
+          15385,
+          17148
+        ],
+        "child": {
+          "birth": [
+            12836
+          ]
+        }
       }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        2,
-        "middle class"
+        1,
+        "lower middle class"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 2,
+      "skin_color": 3,
       "eye_color": "blue",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
         "S",
         "S"
       ],
-      "health": 0.662,
-      "fertility": 0.671,
+      "health": 0.0,
+      "fertility": 0.65,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -81,15 +104,55 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.662
+            "new_health": 0.656
           },
           "death": false
         },
-        "1211": {
+        "1213": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.662
+            "change": true,
+            "value_change": -0.266,
+            "new_health": 0.39
+          },
+          "death": false
+        },
+        "1214": {
+          "health": {
+            "change": true,
+            "value_change": -0.184,
+            "new_health": 0.206
+          },
+          "death": false
+        },
+        "1215": {
+          "health": {
+            "change": true,
+            "value_change": -0.17,
+            "new_health": 0.036
+          },
+          "death": false
+        },
+        "1216": {
+          "health": {
+            "change": true,
+            "value_change": -0.03,
+            "new_health": 0.006
+          },
+          "death": false
+        },
+        "1217": {
+          "health": {
+            "change": true,
+            "value_change": -0.005,
+            "new_health": 0.001
+          },
+          "death": false
+        },
+        "1218": {
+          "health": {
+            "change": true,
+            "value_change": -0.001,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -104,8 +167,8 @@
               10898
             ],
             "people names": [
-              "Gheram",
-              "Agnes Borlut"
+              "Tielen Wittebroet",
+              "Reynildis Die niene verloech"
             ],
             "label": "spouse",
             "committed": true
@@ -113,49 +176,232 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stDie Camp.se5.c2",
-              "street": "Die Camp",
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stSt. Ians straet.se1.c1",
+              "street": "St. Ians straet",
               "neighborhood": "kampbuurt",
-              "unique id": 393
+              "unique id": 414
             }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 12836,
+            "people": [
+              10898,
+              12834
+            ],
+            "people names": [
+              "Reynildis Die niene verloech",
+              "Walic Wittebroet"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1202": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "feelings change",
+            "target": 10897,
+            "target name": "Tielen Wittebroet",
+            "state": "out of love",
+            "relationship": 10899
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "neglected"
           }
         ],
         "1206": [
           {
-            "topic": "feelings change",
-            "target": 10897,
-            "target name": "Gheram",
-            "state": "infatuation",
-            "relationship": 10899
+            "key": 10899,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10897,
+              "name": "Tielen Wittebroet",
+              "age": 55,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12834,
+              "name": "Walic Wittebroet",
+              "age": 4,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Reynildis (10898)",
+                "father": "Tielen (10897)"
+              }
+            },
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ],
         "1207": [
           {
-            "topic": "feelings change",
-            "target": 10897,
-            "target name": "Gheram",
-            "state": "solid love",
-            "relationship": 10899
+            "topic": "new relationship",
+            "key": 15385,
+            "people": [
+              10894,
+              10898
+            ],
+            "people names": [
+              "Gheynekine Voit",
+              "Reynildis Die niene verloech"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stSt. Ians straet.se1.c1",
+              "street": "St. Ians straet",
+              "neighborhood": "kampbuurt",
+              "unique id": 413
+            }
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.227,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0.202,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "key": 15385,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10894,
+              "name": "Gheynekine Voit",
+              "age": 58,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1214": [
+          {
+            "topic": "new relationship",
+            "key": 17148,
+            "people": [
+              10333,
+              10898
+            ],
+            "people names": [
+              "Wouter Stael",
+              "Reynildis Die niene verloech"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stMuelen straet.se1.c1",
+              "street": "Muelen straet",
+              "neighborhood": "jorisbuurt",
+              "unique id": 153
+            }
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.156,
+            "inhabitants": []
+          }
+        ],
+        "1218": [
+          {
+            "topic": "not enough income",
+            "income": 0.152,
+            "inhabitants": []
           }
         ]
       }
     },
     "key": 10898,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stDie Camp.se5.c2",
-      "street": "Die Camp",
-      "neighborhood": "kampbuurt",
-      "unique id": 393
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stMuelen straet.se1.c1",
+      "street": "Muelen straet",
+      "neighborhood": "jorisbuurt",
+      "unique id": 153
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        10899
+        10899,
+        15385,
+        17148
       ]
     }
   }

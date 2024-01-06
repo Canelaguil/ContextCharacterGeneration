@@ -1,54 +1,73 @@
 {
   "12013": {
     "alive": false,
-    "name": "Dolf",
-    "surname": "",
-    "full name": "Dolf",
+    "name": "Gheuardus",
+    "surname": "Pinart",
+    "full name": "Gheuardus Pinart",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.01,
-      "romantic interest": 0.898,
-      "sex interest": 0.742,
-      "gender expression": 0.176,
+      "sexuality label": "bi",
+      "sexuality": 0.333,
+      "romantic interest": 0.614,
+      "sex interest": 0.815,
+      "gender expression": 0.147,
       "sex": "m"
     },
-    "age": 46,
-    "birth year": 1158,
+    "age": 27,
+    "birth year": 1176,
     "sex": "m",
+    "faction": "Dogmatists",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.087,
-      "nice-nasty": 0.539,
-      "honest-false": 0.308
+      "lawful-chaotic": 0.748,
+      "nice-nasty": 0.424,
+      "honest-false": 0.767
     },
     "attitude": {
-      "outgoing": 0.55,
-      "dream": 0.228
+      "outgoing": 0.295,
+      "dream": 0.114
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "neglected"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.005,
-        "gender expression expression": 0.077
+        "sexuality expression": 0.12,
+        "gender expression expression": 0.118
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12607": {
+          "key": 12607,
+          "name": "Reinardus Pinart",
+          "age": 31,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Thedwi (12014)",
+            "father": "Gheuardus (12013)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          12015,
-          13871
-        ]
+          12015
+        ],
+        "child": {
+          "birth": [
+            12608
+          ]
+        }
       }
     },
     "occupation": {
@@ -57,30 +76,29 @@
         2,
         "middle class"
       ],
-      "income": 0.6,
+      "income": 1.078,
       "all_incomes": [
-        0.898,
-        0.905,
-        0.912,
-        0.697,
-        0.6
+        1.071,
+        1.099,
+        1.104,
+        1.078
       ],
       "job": {
-        "lawful": false,
+        "lawful": true,
         "honest": true
       }
     },
     "genetics": {
-      "skin_color": 3,
-      "eye_color": "green",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "skin_color": 4,
+      "eye_color": "brown",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "S",
-        "C"
+        "S"
       ],
-      "health": 0.87,
-      "fertility": 0.778,
+      "health": 0.797,
+      "fertility": 0.758,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -92,15 +110,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.87
+            "new_health": 0.797
           },
           "death": false
         },
-        "1203": {
+        "1202": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.87
+            "new_health": 0.797
           },
           "death": true
         }
@@ -110,7 +128,7 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.898
+            "income": 1.071
           },
           {
             "topic": "new relationship",
@@ -120,8 +138,8 @@
               12014
             ],
             "people names": [
-              "Dolf",
-              "Lutghardis Calle"
+              "Gheuardus Pinart",
+              "Thedwi Bloemart"
             ],
             "label": "spouse",
             "committed": true
@@ -134,47 +152,42 @@
               "section": "stCromme straet.se5.c2",
               "street": "Cromme straet",
               "neighborhood": "denhof",
-              "unique id": 894
+              "unique id": 908
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12608,
+            "people": [
+              12013,
+              12607
+            ],
+            "people names": [
+              "Gheuardus Pinart",
+              "Reinardus Pinart"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1201": [
+          {
+            "topic": "feelings change",
+            "target": 12014,
+            "target name": "Thedwi Bloemart",
+            "state": "out of love",
+            "relationship": 12015
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1202": [
           {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.697
-          },
-          {
-            "key": 12015,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 12014,
-              "name": "Lutghardis Calle",
-              "age": 45,
-              "alive": false,
-              "sex": "f",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
-          }
-        ],
-        "1203": [
-          {
-            "topic": "new relationship",
-            "key": 13871,
-            "people": [
-              12013,
-              10502
-            ],
-            "people names": [
-              "Dolf",
-              "Siburgis Blessard"
-            ],
-            "label": "spouse",
-            "committed": true
+            "topic": "neglected"
           }
         ]
       }
@@ -186,14 +199,13 @@
       "section": "stCromme straet.se5.c2",
       "street": "Cromme straet",
       "neighborhood": "denhof",
-      "unique id": 894
+      "unique id": 908
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        12015,
-        13871
+        12015
       ]
     }
   }

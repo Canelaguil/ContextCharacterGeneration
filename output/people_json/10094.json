@@ -1,32 +1,33 @@
 {
   "10094": {
     "alive": false,
-    "name": "Marcibilia",
-    "surname": "Bruneel",
-    "full name": "Marcibilia Bruneel",
+    "name": "Salome",
+    "surname": "Napbrekere",
+    "full name": "Salome Napbrekere",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.882,
-      "romantic interest": 0.636,
-      "sex interest": 0.738,
-      "gender expression": 0.154,
+      "sexuality label": "straight",
+      "sexuality": 0.098,
+      "romantic interest": 0.46,
+      "sex interest": 0.45,
+      "gender expression": 0.051,
       "sex": "f"
     },
-    "age": 55,
-    "birth year": 1163,
+    "age": 53,
+    "birth year": 1172,
     "sex": "f",
+    "faction": "Zealots",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.285,
-      "honest-false": 0.765
+      "lawful-chaotic": 0.119,
+      "nice-nasty": 0.744,
+      "honest-false": 0.666
     },
     "attitude": {
-      "outgoing": 0.677,
-      "dream": 0.399
+      "outgoing": 0.771,
+      "dream": 0.333
     },
     "homsoc": {
       "means": {
@@ -35,22 +36,51 @@
         "caretaker": false,
         "needs_care": false,
         "flags": [
-          "neglected"
+          "neglected",
+          "starving"
         ]
       },
       "expression": {
-        "sexuality expression": 0.289,
-        "gender expression expression": 0.055
+        "sexuality expression": 0.062,
+        "gender expression expression": 0.036
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12656": {
+          "key": 12656,
+          "name": "Heile Durcant",
+          "age": 48,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Salome (10094)",
+            "father": "Reynold (10093)"
+          }
+        },
+        "14720": {
+          "key": 14720,
+          "name": "Thitardo Durcant",
+          "age": 29,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Salome (10094)",
+            "father": "Reynold (10093)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          10095,
-          16480
-        ]
+          10095
+        ],
+        "child": {
+          "birth": [
+            12658,
+            14722
+          ]
+        }
       }
     },
     "occupation": {
@@ -59,37 +89,32 @@
         1,
         "lower middle class"
       ],
-      "income": 0.961,
+      "income": 1.407,
       "all_incomes": [
-        0.987,
-        0.972,
-        0.934,
-        0.856,
-        0.879,
-        0.799,
-        0.867,
-        0.898,
-        0.937,
-        0.98,
-        0.947,
-        0.961
+        1.229,
+        1.187,
+        0.886,
+        0.818,
+        0.849,
+        1.28,
+        1.407
       ],
       "job": {
-        "lawful": true,
-        "honest": true
+        "lawful": false,
+        "honest": false
       }
     },
     "genetics": {
-      "skin_color": 1,
+      "skin_color": 8,
       "eye_color": "green",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "S",
-        "S"
+        "C",
+        "C"
       ],
       "health": 0.0,
-      "fertility": 0.585,
+      "fertility": 0.572,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -99,48 +124,40 @@
       "health": {
         "1200": {
           "health": {
+            "change": true,
+            "value_change": -0.167,
+            "new_health": 0.414
+          },
+          "death": false
+        },
+        "1201": {
+          "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.635
+            "new_health": 0.414
           },
           "death": false
         },
-        "1213": {
+        "1222": {
           "health": {
             "change": true,
-            "value_change": -0.132,
-            "new_health": 0.503
+            "value_change": -0.187,
+            "new_health": 0.227
           },
           "death": false
         },
-        "1214": {
+        "1223": {
           "health": {
             "change": true,
-            "value_change": -0.271,
-            "new_health": 0.232
+            "value_change": -0.17,
+            "new_health": 0.057
           },
           "death": false
         },
-        "1215": {
+        "1224": {
           "health": {
             "change": true,
-            "value_change": -0.138,
-            "new_health": 0.094
-          },
-          "death": false
-        },
-        "1216": {
-          "health": {
-            "change": true,
-            "value_change": -0.071,
-            "new_health": 0.023
-          },
-          "death": false
-        },
-        "1217": {
-          "health": {
-            "change": true,
-            "value_change": -0.023,
+            "value_change": -0.057,
             "new_health": 0.0
           },
           "death": true
@@ -156,8 +173,8 @@
               10094
             ],
             "people names": [
-              "Gelmarus",
-              "Marcibilia Bruneel"
+              "Reynold Durcant",
+              "Salome Napbrekere"
             ],
             "label": "spouse",
             "committed": true
@@ -170,79 +187,101 @@
               "section": "stSlyck straet.se1.c1",
               "street": "Slyck straet",
               "neighborhood": "varkensbuurt",
-              "unique id": 42
+              "unique id": 39
             }
           }
         ],
         "1201": [
           {
-            "topic": "feelings change",
-            "target": 10093,
-            "target name": "Gelmarus",
-            "state": "solid love",
-            "relationship": 10095
+            "topic": "new relationship",
+            "key": 12658,
+            "people": [
+              10094,
+              12656
+            ],
+            "people names": [
+              "Salome Napbrekere",
+              "Heile Durcant"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1202": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "neglected"
           }
         ],
         "1204": [
           {
+            "topic": "neglected"
+          }
+        ],
+        "1205": [
+          {
             "topic": "feelings change",
             "target": 10093,
-            "target name": "Gelmarus",
-            "state": "out of love",
+            "target name": "Reynold Durcant",
+            "state": "infatuation",
             "relationship": 10095
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1206": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.987
+            "topic": "new relationship",
+            "key": 14722,
+            "people": [
+              10094,
+              14720
+            ],
+            "people names": [
+              "Salome Napbrekere",
+              "Thitardo Durcant"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "neglected"
           }
         ],
         "1210": [
           {
-            "key": 10095,
-            "topic": "unmarried"
-          },
+            "topic": "neglected"
+          }
+        ],
+        "1211": [
           {
-            "topic": "person died",
-            "person": {
-              "key": 10093,
-              "name": "Gelmarus",
-              "age": 55,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
+            "topic": "neglected"
           }
         ],
         "1212": [
-          {
-            "topic": "new relationship",
-            "key": 16480,
-            "people": [
-              10126,
-              10094
-            ],
-            "people names": [
-              "Wilbord Loeuin",
-              "Marcibilia Bruneel"
-            ],
-            "label": "spouse",
-            "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stKoe straet.se1.c1",
-              "street": "Koe straet",
-              "neighborhood": "varkensbuurt",
-              "unique id": 59
-            }
-          },
           {
             "topic": "neglected"
           }
@@ -271,6 +310,62 @@
           {
             "topic": "neglected"
           }
+        ],
+        "1218": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.229
+          },
+          {
+            "key": 10095,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10093,
+              "name": "Reynold Durcant",
+              "age": 56,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              17890,
+              22994,
+              23774,
+              24097,
+              15290
+            ]
+          }
+        ],
+        "1219": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1220": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1221": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1223": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.28
+          }
         ]
       }
     },
@@ -278,17 +373,16 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stKoe straet.se1.c1",
-      "street": "Koe straet",
+      "section": "stSlyck straet.se1.c1",
+      "street": "Slyck straet",
       "neighborhood": "varkensbuurt",
-      "unique id": 59
+      "unique id": 39
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
-        10095,
-        16480
+        10095
       ]
     }
   }

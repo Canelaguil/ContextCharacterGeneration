@@ -1,44 +1,47 @@
 {
   "10072": {
     "alive": false,
-    "name": "Riquardus",
-    "surname": "Valant",
-    "full name": "Riquardus Valant",
+    "name": "Egbertus",
+    "surname": "Vosseken",
+    "full name": "Egbertus Vosseken",
     "born this way": {
       "sexuality label": "bi",
-      "sexuality": 0.289,
-      "romantic interest": 0.843,
-      "sex interest": 0.715,
-      "gender expression": 0.156,
+      "sexuality": 0.534,
+      "romantic interest": 0.611,
+      "sex interest": 0.724,
+      "gender expression": 0.564,
       "sex": "m"
     },
-    "age": 54,
-    "birth year": 1155,
+    "age": 52,
+    "birth year": 1161,
     "sex": "m",
+    "faction": "Dogmatists",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.693,
-      "nice-nasty": 0.687,
-      "honest-false": 0.221
+      "lawful-chaotic": 0.237,
+      "nice-nasty": 0.999,
+      "honest-false": 0.498
     },
     "attitude": {
-      "outgoing": 0.678,
-      "dream": 0.259
+      "outgoing": 0.512,
+      "dream": 0.157
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.196,
-        "gender expression expression": 0.132
+        "sexuality expression": 0.478,
+        "gender expression expression": 0.462
       }
     },
     "network": {
@@ -56,35 +59,39 @@
         2,
         "middle class"
       ],
-      "income": 0.999,
+      "income": 0.718,
       "all_incomes": [
-        1.0,
-        0.907,
-        0.952,
-        0.951,
-        0.95,
-        0.94,
-        1.043,
-        1.007,
-        0.961,
-        0.999
+        0.863,
+        0.62,
+        0.729,
+        0.678,
+        0.541,
+        0.443,
+        0.347,
+        0.309,
+        0.02,
+        0.115,
+        0.447,
+        0.442,
+        0.625,
+        0.718
       ],
       "job": {
         "lawful": true,
-        "honest": true
+        "honest": false
       }
     },
     "genetics": {
-      "skin_color": 0,
-      "eye_color": "blue",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "skin_color": 1,
+      "eye_color": "green",
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
       "hair_type": [
         "S",
         "C"
       ],
-      "health": 0.0,
-      "fertility": 0.558,
+      "health": 0.189,
+      "fertility": 0.721,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -96,39 +103,23 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.571
+            "new_health": 0.664
           },
           "death": false
         },
-        "1205": {
+        "1211": {
           "health": {
             "change": true,
-            "value_change": -0.195,
-            "new_health": 0.376
+            "value_change": -0.214,
+            "new_health": 0.45
           },
           "death": false
         },
-        "1206": {
+        "1212": {
           "health": {
             "change": true,
-            "value_change": -0.246,
-            "new_health": 0.13
-          },
-          "death": false
-        },
-        "1207": {
-          "health": {
-            "change": true,
-            "value_change": -0.079,
-            "new_health": 0.051
-          },
-          "death": false
-        },
-        "1208": {
-          "health": {
-            "change": true,
-            "value_change": -0.051,
-            "new_health": 0.0
+            "value_change": -0.261,
+            "new_health": 0.189
           },
           "death": true
         }
@@ -138,7 +129,12 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.0
+            "income": 0.863
+          },
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.62
           },
           {
             "topic": "new relationship",
@@ -148,8 +144,8 @@
               10073
             ],
             "people names": [
-              "Riquardus Valant",
-              "Leanne Stoerm"
+              "Egbertus Vosseken",
+              "Oda"
             ],
             "label": "spouse",
             "committed": true
@@ -162,31 +158,71 @@
               "section": "stVerckens merct.se3.c2",
               "street": "Verckens merct",
               "neighborhood": "varkensbuurt",
-              "unique id": 30
+              "unique id": 31
             }
           },
           {
             "topic": "feelings change",
             "target": 10073,
-            "target name": "Leanne Stoerm",
+            "target name": "Oda",
             "state": "solid love",
             "relationship": 10074
+          }
+        ],
+        "1204": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.443
           }
         ],
         "1205": [
           {
             "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.043
+            "notice": "earning very little",
+            "income": 0.347
+          }
+        ],
+        "1206": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.309
+          },
+          {
+            "key": 10074,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10073,
+              "name": "Oda",
+              "age": 54,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
           }
         ],
         "1207": [
           {
-            "topic": "feelings change",
-            "target": 10073,
-            "target name": "Leanne Stoerm",
-            "state": "out of love",
-            "relationship": 10074
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.02
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.02,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.442
           }
         ]
       }
@@ -198,11 +234,11 @@
       "section": "stVerckens merct.se3.c2",
       "street": "Verckens merct",
       "neighborhood": "varkensbuurt",
-      "unique id": 30
+      "unique id": 31
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         10074
       ]

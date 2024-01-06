@@ -1,53 +1,74 @@
 {
   "11980": {
     "alive": false,
-    "name": "Jonas",
-    "surname": "Wittebart",
-    "full name": "Jonas Wittebart",
+    "name": "Rutgerus",
+    "surname": "Euer",
+    "full name": "Rutgerus Euer",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.101,
-      "romantic interest": 0.513,
-      "sex interest": 0.727,
-      "gender expression": 0.168,
+      "sexuality": 0.074,
+      "romantic interest": 0.661,
+      "sex interest": 0.792,
+      "gender expression": 0.11,
       "sex": "m"
     },
-    "age": 24,
-    "birth year": 1178,
+    "age": 55,
+    "birth year": 1172,
     "sex": "m",
+    "faction": "Zealots",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.223,
-      "nice-nasty": 0.148,
-      "honest-false": 0.588
+      "lawful-chaotic": 0.161,
+      "nice-nasty": 0.79,
+      "honest-false": 0.145
     },
     "attitude": {
-      "outgoing": 0.471,
-      "dream": 0.271
+      "outgoing": 0.459,
+      "dream": 0.355
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.052,
-        "gender expression expression": 0.13
+        "sexuality expression": 0.063,
+        "gender expression expression": 0.065
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13053": {
+          "key": 13053,
+          "name": "Huwardo Rutgerusszoon",
+          "age": 20,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Amelgeir (11981)",
+            "father": "Rutgerus (11980)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11982
-        ]
+        ],
+        "child": {
+          "birth": [
+            13054
+          ]
+        }
       }
     },
     "occupation": {
@@ -56,28 +77,53 @@
         2,
         "middle class"
       ],
-      "income": 1.024,
+      "income": 0.555,
       "all_incomes": [
-        1.071,
-        0.859,
-        1.024
+        0.943,
+        1.131,
+        1.033,
+        0.986,
+        1.285,
+        1.159,
+        1.041,
+        0.594,
+        0.336,
+        0.083,
+        0.187,
+        0.0,
+        0.0,
+        0.094,
+        0.0,
+        0.0,
+        0.121,
+        0.0,
+        0.0,
+        0.0,
+        0.138,
+        0.246,
+        0.0,
+        0.016,
+        0.145,
+        0.585,
+        0.735,
+        0.555
       ],
       "job": {
         "lawful": false,
-        "honest": true
+        "honest": false
       }
     },
     "genetics": {
-      "skin_color": 3,
+      "skin_color": 7,
       "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.825,
-      "fertility": 0.746,
+      "health": 0.0,
+      "fertility": 0.689,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -89,15 +135,47 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.825
+            "new_health": 0.749
           },
           "death": false
         },
-        "1201": {
+        "1222": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.825
+            "change": true,
+            "value_change": -0.145,
+            "new_health": 0.604
+          },
+          "death": false
+        },
+        "1223": {
+          "health": {
+            "change": true,
+            "value_change": -0.326,
+            "new_health": 0.278
+          },
+          "death": false
+        },
+        "1224": {
+          "health": {
+            "change": true,
+            "value_change": -0.156,
+            "new_health": 0.122
+          },
+          "death": false
+        },
+        "1225": {
+          "health": {
+            "change": true,
+            "value_change": -0.112,
+            "new_health": 0.01
+          },
+          "death": false
+        },
+        "1226": {
+          "health": {
+            "change": true,
+            "value_change": -0.01,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -107,7 +185,12 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.071
+            "income": 0.943
+          },
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.131
           },
           {
             "topic": "new relationship",
@@ -117,8 +200,8 @@
               11981
             ],
             "people names": [
-              "Jonas Wittebart",
-              "Victoria Visevase"
+              "Rutgerus Euer",
+              "Amelgeir Virtichponde"
             ],
             "label": "spouse",
             "committed": true
@@ -128,25 +211,185 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stCromme straet.se3.c2",
+              "section": "stCromme straet.se5.c2",
               "street": "Cromme straet",
               "neighborhood": "denhof",
-              "unique id": 880
+              "unique id": 895
             }
           }
         ],
         "1201": [
           {
+            "topic": "new relationship",
+            "key": 13054,
+            "people": [
+              11980,
+              13053
+            ],
+            "people names": [
+              "Rutgerus Euer",
+              "Huwardo Rutgerusszoon"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1202": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
             "topic": "job notice",
             "notice": "comfortable earnings",
-            "income": 1.024
+            "income": 1.285
           },
           {
             "topic": "feelings change",
             "target": 11981,
-            "target name": "Victoria Visevase",
+            "target name": "Amelgeir Virtichponde",
             "state": "out of love",
             "relationship": 11982
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1206": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.594
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.336
+          }
+        ],
+        "1208": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.083
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.083,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0.187,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "feelings change",
+            "target": 11981,
+            "target name": "Amelgeir Virtichponde",
+            "state": "infatuation",
+            "relationship": 11982
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.094,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1215": [
+          {
+            "topic": "feelings change",
+            "target": 11981,
+            "target name": "Amelgeir Virtichponde",
+            "state": "out of love",
+            "relationship": 11982
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.121,
+            "inhabitants": []
+          }
+        ],
+        "1216": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1217": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1222": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 13053,
+              "name": "Huwardo Rutgerusszoon",
+              "age": 20,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Amelgeir (11981)",
+                "father": "Rutgerus (11980)"
+              }
+            },
+            "label": "child"
           }
         ]
       }
@@ -155,10 +398,10 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stCromme straet.se3.c2",
+      "section": "stCromme straet.se5.c2",
       "street": "Cromme straet",
       "neighborhood": "denhof",
-      "unique id": 880
+      "unique id": 895
     },
     "relationship status": {
       "taken": true,

@@ -1,32 +1,33 @@
 {
   "11273": {
     "alive": false,
-    "name": "Alretieren",
-    "surname": "",
-    "full name": "Alretieren",
+    "name": "Heile",
+    "surname": "Voit",
+    "full name": "Heile Voit",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.046,
-      "romantic interest": 0.589,
-      "sex interest": 0.999,
-      "gender expression": 0.0,
+      "sexuality label": "gay",
+      "sexuality": 0.9,
+      "romantic interest": 0.773,
+      "sex interest": 0.539,
+      "gender expression": 0.32,
       "sex": "f"
     },
-    "age": 54,
-    "birth year": 1153,
+    "age": 24,
+    "birth year": 1180,
     "sex": "f",
+    "faction": "Dogmatists",
     "income class": [
       3,
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.357,
-      "nice-nasty": 0.549,
-      "honest-false": 0.383
+      "lawful-chaotic": 0.162,
+      "nice-nasty": 0.121,
+      "honest-false": 0.09
     },
     "attitude": {
-      "outgoing": 0.638,
-      "dream": 0.357
+      "outgoing": 0.548,
+      "dream": 0.618
     },
     "homsoc": {
       "means": {
@@ -34,20 +35,51 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "neglected"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.021,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.501,
+        "gender expression expression": 0.25
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12454": {
+          "key": 12454,
+          "name": "Gheesen van Heile",
+          "age": 6,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Heile (11273)",
+            "father": "Walic (11272)"
+          }
+        },
+        "13391": {
+          "key": 13391,
+          "name": "Oderada",
+          "age": 0,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Heile (11273)",
+            "father": "Walic (11272)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11274
-        ]
+        ],
+        "child": {
+          "birth": [
+            12456,
+            13393
+          ]
+        }
       }
     },
     "occupation": {
@@ -60,16 +92,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 6,
-      "eye_color": "blue",
+      "skin_color": 0,
+      "eye_color": "green",
       "hair_color": "strawberry blonde",
       "hair_color_code": 5,
       "hair_type": [
-        "S",
+        "C",
         "C"
       ],
-      "health": 0.0,
-      "fertility": 0.736,
+      "health": 0.663,
+      "fertility": 0.658,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -81,55 +113,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.757
-          },
-          "death": false
-        },
-        "1201": {
-          "health": {
-            "change": true,
-            "value_change": -0.173,
-            "new_health": 0.584
-          },
-          "death": false
-        },
-        "1202": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.584
+            "new_health": 0.663
           },
           "death": false
         },
         "1203": {
           "health": {
-            "change": true,
-            "value_change": -0.223,
-            "new_health": 0.361
-          },
-          "death": false
-        },
-        "1204": {
-          "health": {
-            "change": true,
-            "value_change": -0.248,
-            "new_health": 0.113
-          },
-          "death": false
-        },
-        "1205": {
-          "health": {
-            "change": true,
-            "value_change": -0.077,
-            "new_health": 0.036
-          },
-          "death": false
-        },
-        "1206": {
-          "health": {
-            "change": true,
-            "value_change": -0.036,
-            "new_health": 0.0
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.663
           },
           "death": true
         }
@@ -144,8 +136,8 @@
               11273
             ],
             "people names": [
-              "Rase Coluen",
-              "Alretieren"
+              "Walic",
+              "Heile Voit"
             ],
             "label": "spouse",
             "committed": true
@@ -158,17 +150,76 @@
               "section": "stBreestraat.se3.c3",
               "street": "Breestraat",
               "neighborhood": "olvbuurt",
-              "unique id": 564
+              "unique id": 566
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12456,
+            "people": [
+              11273,
+              12454
+            ],
+            "people names": [
+              "Heile Voit",
+              "Gheesen van Heile"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
           }
         ],
-        "1204": [
+        "1201": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 13393,
+            "people": [
+              11273,
+              13391
+            ],
+            "people names": [
+              "Heile Voit",
+              "Oderada"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
           {
             "topic": "feelings change",
             "target": 11272,
-            "target name": "Rase Coluen",
-            "state": "out of love",
+            "target name": "Walic",
+            "state": "solid love",
             "relationship": 11274
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 13391,
+              "name": "Oderada",
+              "age": 0,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Heile (11273)",
+                "father": "Walic (11272)"
+              }
+            },
+            "label": "child"
+          },
+          {
+            "topic": "neglected"
           }
         ]
       }
@@ -180,7 +231,7 @@
       "section": "stBreestraat.se3.c3",
       "street": "Breestraat",
       "neighborhood": "olvbuurt",
-      "unique id": 564
+      "unique id": 566
     },
     "relationship status": {
       "taken": true,

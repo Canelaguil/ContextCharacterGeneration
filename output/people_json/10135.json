@@ -1,32 +1,33 @@
 {
   "10135": {
     "alive": false,
-    "name": "Froumoldus",
-    "surname": "Calvus",
-    "full name": "Froumoldus Calvus",
+    "name": "Poppo",
+    "surname": "",
+    "full name": "Poppo",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.116,
-      "romantic interest": 0.631,
-      "sex interest": 0.84,
-      "gender expression": 0.002,
+      "sexuality label": "bi",
+      "sexuality": 0.633,
+      "romantic interest": 0.895,
+      "sex interest": 0.795,
+      "gender expression": -0.0,
       "sex": "m"
     },
-    "age": 39,
-    "birth year": 1167,
+    "age": 50,
+    "birth year": 1161,
     "sex": "m",
+    "faction": "No religion",
     "income class": [
-      0,
-      "working class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.1,
-      "nice-nasty": 0.187,
-      "honest-false": 0.0
+      "lawful-chaotic": 0.0,
+      "nice-nasty": 0.109,
+      "honest-false": 0.993
     },
     "attitude": {
-      "outgoing": 0.629,
-      "dream": 0.621
+      "outgoing": 0.343,
+      "dream": 0.609
     },
     "homsoc": {
       "means": {
@@ -34,11 +35,14 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.075,
-        "gender expression expression": 0.001
+        "sexuality expression": 0.405,
+        "gender expression expression": -0.001
       }
     },
     "network": {
@@ -46,42 +50,49 @@
       "children": {},
       "relationship keys": {
         "spouse": [
-          10137
+          10137,
+          14713,
+          16242
         ]
       }
     },
     "occupation": {
       "has job": true,
       "income class": [
-        0,
-        "working class"
+        1,
+        "lower middle class"
       ],
-      "income": 0.509,
+      "income": 0.359,
       "all_incomes": [
-        0.907,
-        1.149,
-        1.33,
-        1.291,
-        1.196,
-        0.865,
-        0.509
+        0.843,
+        0.711,
+        0.314,
+        0.4,
+        0.651,
+        0.701,
+        0.372,
+        0.0,
+        0.0,
+        0.09,
+        0.177,
+        0.359
       ],
       "job": {
         "lawful": false,
-        "honest": false
+        "honest": true
       }
     },
     "genetics": {
-      "skin_color": 0,
-      "eye_color": "brown",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "skin_color": 2,
+      "eye_color": "green",
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.892,
-      "fertility": 0.939,
+      "health": 0.502,
+      "fertility": 0.732,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -91,17 +102,25 @@
       "health": {
         "1200": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.892
+            "change": true,
+            "value_change": -0.266,
+            "new_health": 0.502
           },
           "death": false
         },
-        "1205": {
+        "1201": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.892
+            "new_health": 0.502
+          },
+          "death": false
+        },
+        "1210": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.502
           },
           "death": true
         }
@@ -111,12 +130,12 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.907
+            "income": 0.843
           },
           {
             "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.149
+            "notice": "low income",
+            "income": 0.711
           },
           {
             "topic": "new relationship",
@@ -126,8 +145,8 @@
               10136
             ],
             "people names": [
-              "Froumoldus Calvus",
-              "Siwa Ruffo"
+              "Poppo",
+              "Mette"
             ],
             "label": "spouse",
             "committed": true
@@ -135,38 +154,170 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stIn den Haeg.se1.c0",
-              "street": "In den Haeg",
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stKoe straet.se1.c1",
+              "street": "Koe straet",
               "neighborhood": "varkensbuurt",
-              "unique id": 64
+              "unique id": 55
             }
+          },
+          {
+            "topic": "feelings change",
+            "target": 10136,
+            "target name": "Mette",
+            "state": "out of love",
+            "relationship": 10137
+          }
+        ],
+        "1201": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.314
+          }
+        ],
+        "1202": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.4
+          },
+          {
+            "key": 10137,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10136,
+              "name": "Mette",
+              "age": 34,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
           }
         ],
         "1205": [
           {
             "topic": "job notice",
-            "notice": "low income",
-            "income": 0.509
+            "notice": "earning very little",
+            "income": 0.372
+          },
+          {
+            "topic": "new relationship",
+            "key": 14713,
+            "people": [
+              10135,
+              12215
+            ],
+            "people names": [
+              "Poppo",
+              "Liedelde Cleine"
+            ],
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1206": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.0
+          },
+          {
+            "topic": "feelings change",
+            "target": 12215,
+            "target name": "Liedelde Cleine",
+            "state": "solid love",
+            "relationship": 14713
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "key": 14713,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12215,
+              "name": "Liedelde Cleine",
+              "age": 44,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0.09,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "new relationship",
+            "key": 16242,
+            "people": [
+              10135,
+              10889
+            ],
+            "people names": [
+              "Poppo",
+              "Sybillia Ballinc"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stSt. Ians straet.se1.c1",
+              "street": "St. Ians straet",
+              "neighborhood": "kampbuurt",
+              "unique id": 410
+            }
+          },
+          {
+            "topic": "neglected"
           }
         ]
       }
     },
     "key": 10135,
     "home": {
-      "income class": 0,
-      "income class label": "working class",
-      "section": "stIn den Haeg.se1.c0",
-      "street": "In den Haeg",
-      "neighborhood": "varkensbuurt",
-      "unique id": 64
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stSt. Ians straet.se1.c1",
+      "street": "St. Ians straet",
+      "neighborhood": "kampbuurt",
+      "unique id": 410
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        10137
+        10137,
+        14713,
+        16242
       ]
     }
   }

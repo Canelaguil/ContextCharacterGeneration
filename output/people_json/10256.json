@@ -1,55 +1,76 @@
 {
   "10256": {
     "alive": false,
-    "name": "Sybillia",
-    "surname": "Stamelarit",
-    "full name": "Sybillia Stamelarit",
+    "name": "Hodine",
+    "surname": "",
+    "full name": "Hodine",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.061,
-      "romantic interest": 0.874,
-      "sex interest": 0.672,
-      "gender expression": 0.11,
+      "sexuality": 0.057,
+      "romantic interest": 0.599,
+      "sex interest": 0.66,
+      "gender expression": 0.071,
       "sex": "f"
     },
-    "age": 55,
-    "birth year": 1152,
+    "age": 42,
+    "birth year": 1168,
     "sex": "f",
+    "faction": "No religion",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.738,
-      "nice-nasty": 0.843,
-      "honest-false": 0.852
+      "lawful-chaotic": 0.477,
+      "nice-nasty": 0.751,
+      "honest-false": 0.885
     },
     "attitude": {
-      "outgoing": 0.564,
-      "dream": 0.511
+      "outgoing": 0.532,
+      "dream": 0.805
     },
     "homsoc": {
       "means": {
         "independent": true,
-        "taken_care_of": false,
-        "caretaker": false,
+        "taken_care_of": true,
+        "caretaker": true,
         "needs_care": false,
         "flags": [
+          "caretaker",
+          "neglected",
           "starving"
         ]
       },
       "expression": {
-        "sexuality expression": 0.037,
-        "gender expression expression": 0.002
+        "sexuality expression": 0.043,
+        "gender expression expression": 0.028
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14353": {
+          "key": 14353,
+          "name": "Clementia Baligant",
+          "age": 4,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Hodine (10256)",
+            "father": "Eremboldus (10255)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          10257
-        ]
+          10257,
+          15684
+        ],
+        "child": {
+          "birth": [
+            14355
+          ]
+        }
       }
     },
     "occupation": {
@@ -62,16 +83,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 9,
+      "skin_color": 3,
       "eye_color": "brown",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
         "S",
         "S"
       ],
-      "health": 0.0,
-      "fertility": 0.563,
+      "health": 0.677,
+      "fertility": 0.779,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -83,47 +104,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.573
+            "new_health": 0.677
           },
           "death": false
         },
-        "1202": {
+        "1209": {
           "health": {
-            "change": true,
-            "value_change": -0.25,
-            "new_health": 0.323
-          },
-          "death": false
-        },
-        "1203": {
-          "health": {
-            "change": true,
-            "value_change": -0.222,
-            "new_health": 0.101
-          },
-          "death": false
-        },
-        "1204": {
-          "health": {
-            "change": true,
-            "value_change": -0.07,
-            "new_health": 0.031
-          },
-          "death": false
-        },
-        "1205": {
-          "health": {
-            "change": true,
-            "value_change": -0.024,
-            "new_health": 0.007
-          },
-          "death": false
-        },
-        "1206": {
-          "health": {
-            "change": true,
-            "value_change": -0.007,
-            "new_health": 0.0
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.677
           },
           "death": true
         }
@@ -138,8 +127,8 @@
               10256
             ],
             "people names": [
-              "Wigherus Hanen",
-              "Sybillia Stamelarit"
+              "Eremboldus Baligant",
+              "Hodine"
             ],
             "label": "spouse",
             "committed": true
@@ -152,28 +141,101 @@
               "section": "stHelle voet.se5.c1",
               "street": "Helle voet",
               "neighborhood": "jorisbuurt",
-              "unique id": 115
+              "unique id": 117
             }
-          }
-        ],
-        "1203": [
-          {
-            "topic": "not enough income",
-            "income": 0.16,
-            "inhabitants": []
-          }
-        ],
-        "1204": [
-          {
-            "topic": "not enough income",
-            "income": 0.01,
-            "inhabitants": []
           }
         ],
         "1205": [
           {
+            "topic": "new relationship",
+            "key": 14355,
+            "people": [
+              10256,
+              14353
+            ],
+            "people names": [
+              "Hodine",
+              "Clementia Baligant"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1206": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1207": [
+          {
+            "key": 10257,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10255,
+              "name": "Eremboldus Baligant",
+              "age": 56,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
             "topic": "not enough income",
-            "income": 0.0,
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          },
+          {
+            "topic": "new caretaker",
+            "person": 10256
+          }
+        ],
+        "1208": [
+          {
+            "topic": "new relationship",
+            "key": 15684,
+            "people": [
+              12184,
+              10256
+            ],
+            "people names": [
+              "Amelgeir",
+              "Hodine"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stPapenhofstede.se3.c1",
+              "street": "Papenhofstede",
+              "neighborhood": "denhof",
+              "unique id": 980
+            }
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.157,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0.383,
             "inhabitants": []
           }
         ]
@@ -183,16 +245,17 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stHelle voet.se5.c1",
-      "street": "Helle voet",
-      "neighborhood": "jorisbuurt",
-      "unique id": 115
+      "section": "stPapenhofstede.se3.c1",
+      "street": "Papenhofstede",
+      "neighborhood": "denhof",
+      "unique id": 980
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        10257
+        10257,
+        15684
       ]
     }
   }

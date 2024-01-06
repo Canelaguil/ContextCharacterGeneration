@@ -1,32 +1,33 @@
 {
   "10562": {
     "alive": false,
-    "name": "Berta",
-    "surname": "Buk",
-    "full name": "Berta Buk",
+    "name": "Tetta",
+    "surname": "Butziel",
+    "full name": "Tetta Butziel",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.132,
-      "romantic interest": 0.802,
-      "sex interest": 0.853,
-      "gender expression": 0.131,
+      "sexuality": 0.107,
+      "romantic interest": 0.905,
+      "sex interest": 0.614,
+      "gender expression": 0.265,
       "sex": "f"
     },
     "age": 25,
-    "birth year": 1180,
+    "birth year": 1179,
     "sex": "f",
+    "faction": "Zealots",
     "income class": [
-      2,
-      "middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.228,
-      "nice-nasty": 0.169,
-      "honest-false": 0.465
+      "lawful-chaotic": 0.155,
+      "nice-nasty": 0.434,
+      "honest-false": 0.611
     },
     "attitude": {
-      "outgoing": 0.614,
-      "dream": 0.576
+      "outgoing": 0.308,
+      "dream": 0.396
     },
     "homsoc": {
       "means": {
@@ -35,80 +36,43 @@
         "caretaker": false,
         "needs_care": false,
         "flags": [
-          "neglected"
+          "starving"
         ]
       },
       "expression": {
-        "sexuality expression": 0.05,
-        "gender expression expression": 0.023
+        "sexuality expression": 0.052,
+        "gender expression expression": 0.018
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {
-        "12361": {
-          "key": 12361,
-          "name": "Ludingus Thuin",
-          "age": 37,
-          "alive": false,
-          "sex": "m",
-          "parents": {
-            "mother": "Berta (10562)",
-            "father": "Snelgerus (10561)"
-          }
-        },
-        "13956": {
-          "key": 13956,
-          "name": "Ghiselijn Thuin",
-          "age": 4,
-          "alive": false,
-          "sex": "m",
-          "parents": {
-            "mother": "Berta (10562)",
-            "father": "Snelgerus (10561)"
-          }
-        }
-      },
+      "children": {},
       "relationship keys": {
         "spouse": [
           10563
-        ],
-        "child": {
-          "birth": [
-            12363,
-            13958
-          ]
-        }
+        ]
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
-        2,
-        "middle class"
+        1,
+        "lower middle class"
       ],
-      "income": 0.992,
-      "all_incomes": [
-        1.028,
-        0.988,
-        0.992
-      ],
-      "job": {
-        "lawful": true,
-        "honest": true
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
       "skin_color": 3,
       "eye_color": "blue",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
         "S",
-        "S"
+        "C"
       ],
-      "health": 0.478,
-      "fertility": 0.458,
+      "health": 0.753,
+      "fertility": 0.727,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -120,9 +84,17 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.478
+            "new_health": 0.753
           },
           "death": false
+        },
+        "1203": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.753
+          },
+          "death": true
         }
       },
       "events": {
@@ -135,8 +107,8 @@
               10562
             ],
             "people names": [
-              "Snelgerus Thuin",
-              "Berta Buk"
+              "Ricout Codde",
+              "Tetta Butziel"
             ],
             "label": "spouse",
             "committed": true
@@ -144,92 +116,59 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stWaale straet.se1.c2",
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stWaale straet.se3.c1",
               "street": "Waale straet",
               "neighborhood": "agnesbuurt",
-              "unique id": 246
+              "unique id": 258
             }
-          },
-          {
-            "topic": "new relationship",
-            "key": 12363,
-            "people": [
-              10562,
-              12361
-            ],
-            "people names": [
-              "Berta Buk",
-              "Ludingus Thuin"
-            ],
-            "label": "parentchild",
-            "committed": false
-          },
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1201": [
-          {
-            "topic": "feelings change",
-            "target": 10561,
-            "target name": "Snelgerus Thuin",
-            "state": "out of love",
-            "relationship": 10563
-          },
-          {
-            "topic": "neglected"
           }
         ],
         "1202": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.028
+            "key": 10563,
+            "topic": "unmarried"
           },
           {
-            "topic": "neglected"
+            "topic": "person died",
+            "person": {
+              "key": 10561,
+              "name": "Ricout Codde",
+              "age": 29,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ],
         "1203": [
           {
-            "topic": "neglected"
-          }
-        ],
-        "1204": [
-          {
-            "topic": "new relationship",
-            "key": 13958,
-            "people": [
-              10562,
-              13956
-            ],
-            "people names": [
-              "Berta Buk",
-              "Ghiselijn Thuin"
-            ],
-            "label": "parentchild",
-            "committed": false
-          },
-          {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ]
       }
     },
     "key": 10562,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stWaale straet.se1.c2",
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stWaale straet.se3.c1",
       "street": "Waale straet",
       "neighborhood": "agnesbuurt",
-      "unique id": 246
+      "unique id": 258
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         10563
       ]

@@ -1,70 +1,73 @@
 {
   "10693": {
     "alive": false,
-    "name": "Ricward",
-    "surname": "Korte",
-    "full name": "Ricward Korte",
+    "name": "Hildebrandus",
+    "surname": "",
+    "full name": "Hildebrandus",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.048,
-      "romantic interest": 0.363,
-      "sex interest": 0.594,
-      "gender expression": 0.042,
+      "sexuality": 0.096,
+      "romantic interest": 0.568,
+      "sex interest": 0.538,
+      "gender expression": 0.0,
       "sex": "m"
     },
-    "age": 48,
-    "birth year": 1158,
+    "age": 55,
+    "birth year": 1164,
     "sex": "m",
+    "faction": "Zealots",
     "income class": [
-      2,
-      "middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.754,
-      "nice-nasty": 0.335,
-      "honest-false": 0.021
+      "lawful-chaotic": 0.199,
+      "nice-nasty": 0.425,
+      "honest-false": 0.607
     },
     "attitude": {
-      "outgoing": 0.456,
-      "dream": 0.632
+      "outgoing": 0.469,
+      "dream": 0.335
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
         "flags": [
-          "neglected"
+          "neglected",
+          "starving"
         ]
       },
       "expression": {
-        "sexuality expression": 0.029,
-        "gender expression expression": 0.019
+        "sexuality expression": 0.02,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "12382": {
-          "key": 12382,
-          "name": "Zuanelt Korte",
-          "age": 2,
-          "alive": false,
+        "13264": {
+          "key": 13264,
+          "name": "Imsoete van Zuanelt",
+          "age": 47,
+          "alive": true,
           "sex": "f",
           "parents": {
-            "mother": "Marie (10694)",
-            "father": "Ricward (10693)"
+            "mother": "Zuanelt (10694)",
+            "father": "Hildebrandus (10693)"
           }
         }
       },
       "relationship keys": {
         "spouse": [
-          10695
+          10695,
+          15968
         ],
         "child": {
           "birth": [
-            12383
+            13265
           ]
         }
       }
@@ -72,35 +75,48 @@
     "occupation": {
       "has job": true,
       "income class": [
-        2,
-        "middle class"
+        1,
+        "lower middle class"
       ],
-      "income": 1.208,
+      "income": 0.0,
       "all_incomes": [
-        0.957,
-        0.929,
-        0.726,
-        0.903,
-        1.075,
-        0.914,
-        1.208
+        0.845,
+        0.515,
+        0.448,
+        0.402,
+        0.252,
+        0.158,
+        0.188,
+        0.059,
+        0.205,
+        0.302,
+        0.366,
+        0.324,
+        0.603,
+        0.604,
+        0.446,
+        0.187,
+        0.078,
+        0.315,
+        0.366,
+        0.0
       ],
       "job": {
-        "lawful": true,
-        "honest": false
+        "lawful": false,
+        "honest": true
       }
     },
     "genetics": {
-      "skin_color": 7,
-      "eye_color": "blue",
+      "skin_color": 4,
+      "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.62,
-      "fertility": 0.689,
+      "health": 0.0,
+      "fertility": 0.854,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -112,15 +128,47 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.62
+            "new_health": 0.817
           },
           "death": false
         },
-        "1205": {
+        "1214": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.62
+            "change": true,
+            "value_change": -0.136,
+            "new_health": 0.681
+          },
+          "death": false
+        },
+        "1215": {
+          "health": {
+            "change": true,
+            "value_change": -0.251,
+            "new_health": 0.43
+          },
+          "death": false
+        },
+        "1216": {
+          "health": {
+            "change": true,
+            "value_change": -0.28,
+            "new_health": 0.15
+          },
+          "death": false
+        },
+        "1217": {
+          "health": {
+            "change": true,
+            "value_change": -0.089,
+            "new_health": 0.061
+          },
+          "death": false
+        },
+        "1218": {
+          "health": {
+            "change": true,
+            "value_change": -0.061,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -130,7 +178,12 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.957
+            "income": 0.845
+          },
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.515
           },
           {
             "topic": "new relationship",
@@ -140,8 +193,135 @@
               10694
             ],
             "people names": [
-              "Ricward Korte",
-              "Marie Smicke"
+              "Hildebrandus",
+              "Zuanelt"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stTuytsteeg.se1.c1",
+              "street": "Tuytsteeg",
+              "neighborhood": "agnesbuurt",
+              "unique id": 324
+            }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.448
+          }
+        ],
+        "1202": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.402
+          },
+          {
+            "topic": "new relationship",
+            "key": 13265,
+            "people": [
+              10693,
+              13264
+            ],
+            "people names": [
+              "Hildebrandus",
+              "Imsoete van Zuanelt"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.402,
+            "inhabitants": []
+          }
+        ],
+        "1203": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.252
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.252,
+            "inhabitants": []
+          }
+        ],
+        "1204": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.158
+          },
+          {
+            "topic": "feelings change",
+            "target": 10694,
+            "target name": "Zuanelt",
+            "state": "out of love",
+            "relationship": 10695
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1206": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1207": [
+          {
+            "key": 10695,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10694,
+              "name": "Zuanelt",
+              "age": 40,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.205,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.366
+          },
+          {
+            "topic": "new relationship",
+            "key": 15968,
+            "people": [
+              10693,
+              11609
+            ],
+            "people names": [
+              "Hildebrandus",
+              "Breghlent Strument"
             ],
             "label": "spouse",
             "committed": true
@@ -151,79 +331,88 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stCingel.se1.c2",
-              "street": "Cingel",
-              "neighborhood": "agnesbuurt",
-              "unique id": 303
+              "section": "stDie lange straet3.se9.c2",
+              "street": "Die lange straet3",
+              "neighborhood": "visbuurt",
+              "unique id": 726
             }
           },
           {
-            "topic": "new relationship",
-            "key": 12383,
-            "people": [
-              10693,
-              12382
-            ],
-            "people names": [
-              "Ricward Korte",
-              "Zuanelt Korte"
-            ],
-            "label": "parentchild",
-            "committed": false
+            "topic": "neglected"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.324
           },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1211": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1212": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1213": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.446
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1214": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.187
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1215": [
           {
             "topic": "feelings change",
-            "target": 10694,
-            "target name": "Marie Smicke",
-            "state": "solid love",
-            "relationship": 10695
+            "target": 11609,
+            "target name": "Breghlent Strument",
+            "state": "out of love",
+            "relationship": 15968
           },
           {
             "topic": "neglected"
           }
         ],
-        "1201": [
+        "1216": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1217": [
           {
             "topic": "job notice",
-            "notice": "low income",
-            "income": 0.726
+            "notice": "earning very little",
+            "income": 0.366
           },
           {
             "topic": "neglected"
           }
         ],
-        "1202": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1203": [
+        "1218": [
           {
             "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.075
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 12382,
-              "name": "Zuanelt Korte",
-              "age": 2,
-              "alive": false,
-              "sex": "f",
-              "parents": {
-                "mother": "Marie (10694)",
-                "father": "Ricward (10693)"
-              }
-            },
-            "label": "child"
-          }
-        ],
-        "1205": [
-          {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.208
+            "notice": "hardly any income",
+            "income": 0.0
           }
         ]
       }
@@ -232,16 +421,17 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stCingel.se1.c2",
-      "street": "Cingel",
-      "neighborhood": "agnesbuurt",
-      "unique id": 303
+      "section": "stDie lange straet3.se9.c2",
+      "street": "Die lange straet3",
+      "neighborhood": "visbuurt",
+      "unique id": 726
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        10695
+        10695,
+        15968
       ]
     }
   }

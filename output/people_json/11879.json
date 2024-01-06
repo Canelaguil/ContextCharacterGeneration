@@ -1,100 +1,113 @@
 {
   "11879": {
     "alive": false,
-    "name": "Linnea",
-    "surname": "Crick",
-    "full name": "Linnea Crick",
+    "name": "Liedelde",
+    "surname": "",
+    "full name": "Liedelde",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.948,
-      "sex interest": 0.817,
-      "gender expression": 0.083,
+      "sexuality": 0.051,
+      "romantic interest": 0.516,
+      "sex interest": 0.685,
+      "gender expression": 0.064,
       "sex": "f"
     },
-    "age": 54,
-    "birth year": 1161,
+    "age": 55,
+    "birth year": 1169,
     "sex": "f",
+    "faction": "No religion",
     "income class": [
-      4,
-      "nobility"
+      2,
+      "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.545,
-      "honest-false": 0.68
+      "lawful-chaotic": 0.855,
+      "nice-nasty": 0.961,
+      "honest-false": 0.999
     },
     "attitude": {
-      "outgoing": 0.404,
-      "dream": 0.289
+      "outgoing": 0.418,
+      "dream": 0.463
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
         "flags": [
-          "neglected"
+          "caretaker",
+          "neglected",
+          "starving"
         ]
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.051
+        "sexuality expression": 0.049,
+        "gender expression expression": 0.021
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "13013": {
-          "key": 13013,
-          "name": "Saxiardis Curthals",
-          "age": 41,
+        "13491": {
+          "key": 13491,
+          "name": "Geile",
+          "age": 25,
           "alive": false,
           "sex": "f",
           "parents": {
-            "mother": "Linnea (11879)",
-            "father": "Arnst (11878)"
+            "mother": "Liedelde (11879)",
+            "father": "Duker (11878)"
+          }
+        },
+        "15632": {
+          "key": 15632,
+          "name": "Macharius",
+          "age": 41,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Liedelde (11879)",
+            "father": "Duker (11878)"
+          }
+        },
+        "15917": {
+          "key": 15917,
+          "name": "Saxiardis van Liedelde",
+          "age": 40,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Liedelde (11879)",
+            "father": "Duker (11878)"
           }
         }
       },
       "relationship keys": {
         "spouse": [
-          11880
+          11880,
+          17979
         ],
         "child": {
           "birth": [
-            13015
+            13493,
+            15634,
+            15919
           ]
         }
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
-        4,
-        "nobility"
+        2,
+        "middle class"
       ],
-      "income": 0.548,
-      "all_incomes": [
-        0.91,
-        0.756,
-        0.483,
-        0.333,
-        0.554,
-        0.335,
-        0.425,
-        0.439,
-        0.266,
-        0.548
-      ],
-      "job": {
-        "lawful": false,
-        "honest": true
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 1,
+      "skin_color": 4,
       "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
@@ -103,7 +116,7 @@
         "C"
       ],
       "health": 0.0,
-      "fertility": 0.706,
+      "fertility": 0.789,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -115,38 +128,46 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.691
+            "new_health": 0.728
           },
           "death": false
         },
-        "1211": {
+        "1219": {
           "health": {
             "change": true,
-            "value_change": -0.22,
-            "new_health": 0.471
+            "value_change": -0.218,
+            "new_health": 0.51
           },
           "death": false
         },
-        "1212": {
+        "1220": {
           "health": {
             "change": true,
-            "value_change": -0.249,
-            "new_health": 0.222
+            "value_change": -0.213,
+            "new_health": 0.297
           },
           "death": false
         },
-        "1213": {
+        "1221": {
           "health": {
             "change": true,
-            "value_change": -0.18,
-            "new_health": 0.042
+            "value_change": -0.245,
+            "new_health": 0.052
           },
           "death": false
         },
-        "1214": {
+        "1222": {
           "health": {
             "change": true,
-            "value_change": -0.042,
+            "value_change": -0.044,
+            "new_health": 0.008
+          },
+          "death": false
+        },
+        "1223": {
+          "health": {
+            "change": true,
+            "value_change": -0.008,
             "new_health": 0.0
           },
           "death": true
@@ -162,8 +183,8 @@
               11879
             ],
             "people names": [
-              "Arnst Curthals",
-              "Linnea Crick"
+              "Duker",
+              "Liedelde"
             ],
             "label": "spouse",
             "committed": true
@@ -171,35 +192,30 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 4,
-              "income class label": "nobility",
-              "section": "stOp Havick1.se1.c4",
-              "street": "Op Havick1",
-              "neighborhood": "cingelnoord",
-              "unique id": 839
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stOp Havick2.se1.c2",
+              "street": "Op Havick2",
+              "neighborhood": "denhof",
+              "unique id": 851
             }
           }
         ],
-        "1201": [
+        "1202": [
           {
             "topic": "new relationship",
-            "key": 13015,
+            "key": 13493,
             "people": [
               11879,
-              13013
+              13491
             ],
             "people names": [
-              "Linnea Crick",
-              "Saxiardis Curthals"
+              "Liedelde",
+              "Geile"
             ],
             "label": "parentchild",
             "committed": false
           },
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1202": [
           {
             "topic": "neglected"
           }
@@ -211,110 +227,263 @@
         ],
         "1204": [
           {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0.147,
+            "inhabitants": []
           }
         ],
         "1205": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.91
-          },
-          {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0.129,
+            "inhabitants": []
           }
         ],
         "1206": [
           {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
           }
         ],
         "1207": [
           {
-            "topic": "job notice",
-            "notice": "earning very little",
-            "income": 0.483
-          },
-          {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
           }
         ],
         "1208": [
           {
-            "topic": "job notice",
-            "notice": "earning very little",
-            "income": 0.333
+            "topic": "new relationship",
+            "key": 15634,
+            "people": [
+              11879,
+              15632
+            ],
+            "people names": [
+              "Liedelde",
+              "Macharius"
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
           }
         ],
         "1209": [
           {
-            "topic": "neglected"
+            "topic": "new relationship",
+            "key": 15919,
+            "people": [
+              11879,
+              15917
+            ],
+            "people names": [
+              "Liedelde",
+              "Saxiardis van Liedelde"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
           }
         ],
         "1210": [
           {
-            "topic": "job notice",
-            "notice": "earning very little",
-            "income": 0.335
-          },
-          {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0.337,
+            "inhabitants": []
           }
         ],
         "1211": [
           {
-            "topic": "job notice",
-            "notice": "earning very little",
-            "income": 0.425
-          },
-          {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0.125,
+            "inhabitants": []
           }
         ],
         "1212": [
           {
-            "topic": "job notice",
-            "notice": "earning very little",
-            "income": 0.439
-          },
-          {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0.276,
+            "inhabitants": []
           }
         ],
         "1213": [
           {
-            "topic": "job notice",
-            "notice": "earning very little",
-            "income": 0.266
+            "topic": "not enough income",
+            "income": 0.353,
+            "inhabitants": []
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0.025,
+            "inhabitants": []
+          }
+        ],
+        "1215": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1216": [
+          {
+            "topic": "not enough income",
+            "income": 0.097,
+            "inhabitants": []
+          }
+        ],
+        "1217": [
+          {
+            "topic": "not enough income",
+            "income": 0.499,
+            "inhabitants": []
+          }
+        ],
+        "1218": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1219": [
+          {
+            "key": 11880,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11878,
+              "name": "Duker",
+              "age": 56,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          },
+          {
+            "topic": "new caretaker",
+            "person": 11879
+          }
+        ],
+        "1220": [
+          {
+            "topic": "new relationship",
+            "key": 17979,
+            "people": [
+              10066,
+              11879
+            ],
+            "people names": [
+              "Wilmarus",
+              "Liedelde"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stVerckens merct.se3.c2",
+              "street": "Verckens merct",
+              "neighborhood": "varkensbuurt",
+              "unique id": 29
+            }
           },
           {
             "topic": "neglected"
           }
         ],
-        "1214": [
+        "1221": [
+          {
+            "topic": "feelings change",
+            "target": 10066,
+            "target name": "Wilmarus",
+            "state": "out of love",
+            "relationship": 17979
+          },
           {
             "topic": "neglected"
+          }
+        ],
+        "1222": [
+          {
+            "topic": "feelings change",
+            "target": 10066,
+            "target name": "Wilmarus",
+            "state": "infatuation",
+            "relationship": 17979
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.057,
+            "inhabitants": [
+              15632,
+              20710,
+              21667,
+              20034
+            ]
+          }
+        ],
+        "1223": [
+          {
+            "topic": "feelings change",
+            "target": 10066,
+            "target name": "Wilmarus",
+            "state": "out of love",
+            "relationship": 17979
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.032,
+            "inhabitants": [
+              15632,
+              20710,
+              21667,
+              20034
+            ]
           }
         ]
       }
     },
     "key": 11879,
     "home": {
-      "income class": 4,
-      "income class label": "nobility",
-      "section": "stOp Havick1.se1.c4",
-      "street": "Op Havick1",
-      "neighborhood": "cingelnoord",
-      "unique id": 839
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stVerckens merct.se3.c2",
+      "street": "Verckens merct",
+      "neighborhood": "varkensbuurt",
+      "unique id": 29
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        11880
+        11880,
+        17979
       ]
     }
   }

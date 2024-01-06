@@ -1,32 +1,33 @@
 {
   "11984": {
     "alive": false,
-    "name": "Woltwigis",
-    "surname": "Corbeel",
-    "full name": "Woltwigis Corbeel",
+    "name": "Hildegardis",
+    "surname": "Capoen",
+    "full name": "Hildegardis Capoen",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.145,
-      "romantic interest": 0.807,
-      "sex interest": 0.623,
-      "gender expression": 0.118,
+      "sexuality": 0.029,
+      "romantic interest": 0.991,
+      "sex interest": 0.788,
+      "gender expression": 0.266,
       "sex": "f"
     },
-    "age": 54,
-    "birth year": 1164,
+    "age": 38,
+    "birth year": 1169,
     "sex": "f",
+    "faction": "Dogmatists",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.077,
-      "nice-nasty": 0.461,
-      "honest-false": 0.155
+      "lawful-chaotic": 0.42,
+      "nice-nasty": 0.321,
+      "honest-false": 0.334
     },
     "attitude": {
-      "outgoing": 0.638,
-      "dream": 0.249
+      "outgoing": 0.712,
+      "dream": 0.286
     },
     "homsoc": {
       "means": {
@@ -35,23 +36,50 @@
         "caretaker": false,
         "needs_care": false,
         "flags": [
-          "starving"
+          "neglected"
         ]
       },
       "expression": {
-        "sexuality expression": 0.096,
-        "gender expression expression": 0.04
+        "sexuality expression": 0.028,
+        "gender expression expression": 0.206
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12601": {
+          "key": 12601,
+          "name": "Clemmam Dukinghe",
+          "age": 3,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Hildegardis (11984)",
+            "father": "Ghoris (11983)"
+          }
+        },
+        "13505": {
+          "key": 13505,
+          "name": "Ebram Dukinghe",
+          "age": 47,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Hildegardis (11984)",
+            "father": "Ghoris (11983)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          11985,
-          13870,
-          17334
-        ]
+          11985
+        ],
+        "child": {
+          "birth": [
+            12603,
+            13507
+          ]
+        }
       }
     },
     "occupation": {
@@ -64,16 +92,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 8,
-      "eye_color": "blue",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "skin_color": 3,
+      "eye_color": "brown",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "S",
-        "C"
+        "C",
+        "S"
       ],
-      "health": 0.554,
-      "fertility": 0.892,
+      "health": 0.542,
+      "fertility": 0.6,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -85,39 +113,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.897
+            "new_health": 0.542
           },
           "death": false
         },
-        "1212": {
-          "health": {
-            "change": true,
-            "value_change": -0.056,
-            "new_health": 0.841
-          },
-          "death": false
-        },
-        "1213": {
+        "1206": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.841
-          },
-          "death": false
-        },
-        "1216": {
-          "health": {
-            "change": true,
-            "value_change": -0.142,
-            "new_health": 0.699
-          },
-          "death": false
-        },
-        "1217": {
-          "health": {
-            "change": true,
-            "value_change": -0.145,
-            "new_health": 0.554
+            "new_health": 0.542
           },
           "death": true
         }
@@ -132,8 +136,8 @@
               11984
             ],
             "people names": [
-              "Oudrauen",
-              "Woltwigis Corbeel"
+              "Ghoris Dukinghe",
+              "Hildegardis Capoen"
             ],
             "label": "spouse",
             "committed": true
@@ -143,118 +147,94 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stCromme straet.se3.c2",
+              "section": "stCromme straet.se5.c2",
               "street": "Cromme straet",
               "neighborhood": "denhof",
-              "unique id": 881
+              "unique id": 896
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12603,
+            "people": [
+              11984,
+              12601
+            ],
+            "people names": [
+              "Hildegardis Capoen",
+              "Clemmam Dukinghe"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1201": [
+          {
+            "topic": "neglected"
           }
         ],
         "1202": [
           {
-            "key": 11985,
-            "topic": "unmarried"
+            "topic": "new relationship",
+            "key": 13507,
+            "people": [
+              11984,
+              13505
+            ],
+            "people names": [
+              "Hildegardis Capoen",
+              "Ebram Dukinghe"
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
-            "topic": "person died",
-            "person": {
-              "key": 11983,
-              "name": "Oudrauen",
-              "age": 41,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "neglected"
           }
         ],
         "1203": [
           {
-            "topic": "new relationship",
-            "key": 13870,
-            "people": [
-              10861,
-              11984
-            ],
-            "people names": [
-              "Ysewin Masc",
-              "Woltwigis Corbeel"
-            ],
-            "label": "spouse",
-            "committed": true
+            "topic": "feelings change",
+            "target": 11983,
+            "target name": "Ghoris Dukinghe",
+            "state": "out of love",
+            "relationship": 11985
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stDie Camp.se3.c2",
-              "street": "Die Camp",
-              "neighborhood": "kampbuurt",
-              "unique id": 378
-            }
+            "topic": "neglected"
           }
         ],
-        "1215": [
-          {
-            "key": 13870,
-            "topic": "unmarried"
-          },
+        "1204": [
           {
             "topic": "person died",
             "person": {
-              "key": 10861,
-              "name": "Ysewin Masc",
-              "age": 52,
+              "key": 12601,
+              "name": "Clemmam Dukinghe",
+              "age": 3,
               "alive": false,
               "sex": "m",
-              "parents": "firstgen"
+              "parents": {
+                "mother": "Hildegardis (11984)",
+                "father": "Ghoris (11983)"
+              }
             },
-            "label": "spouse"
+            "label": "child"
           },
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "neglected"
           }
         ],
-        "1216": [
+        "1205": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "neglected"
           }
         ],
-        "1217": [
+        "1206": [
           {
-            "topic": "new relationship",
-            "key": 17334,
-            "people": [
-              11671,
-              11984
-            ],
-            "people names": [
-              "Hornekinga Innighe",
-              "Woltwigis Corbeel"
-            ],
-            "label": "spouse",
-            "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stCorte gracht.se3.c2",
-              "street": "Corte gracht",
-              "neighborhood": "visbuurt",
-              "unique id": 741
-            }
+            "topic": "neglected"
           }
         ]
       }
@@ -263,18 +243,16 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stCorte gracht.se3.c2",
-      "street": "Corte gracht",
-      "neighborhood": "visbuurt",
-      "unique id": 741
+      "section": "stCromme straet.se5.c2",
+      "street": "Cromme straet",
+      "neighborhood": "denhof",
+      "unique id": 896
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        11985,
-        13870,
-        17334
+        11985
       ]
     }
   }

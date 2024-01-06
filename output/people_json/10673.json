@@ -1,32 +1,33 @@
 {
   "10673": {
     "alive": false,
-    "name": "Hersewindis",
-    "surname": "Ghoede",
-    "full name": "Hersewindis Ghoede",
+    "name": "Hildegardis",
+    "surname": "Commer",
+    "full name": "Hildegardis Commer",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.123,
-      "romantic interest": 0.706,
-      "sex interest": 0.689,
-      "gender expression": 0.155,
+      "sexuality label": "gay",
+      "sexuality": 0.889,
+      "romantic interest": 0.824,
+      "sex interest": 0.862,
+      "gender expression": 0.289,
       "sex": "f"
     },
-    "age": 49,
-    "birth year": 1159,
+    "age": 44,
+    "birth year": 1168,
     "sex": "f",
+    "faction": "Zealots",
     "income class": [
-      0,
-      "working class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.739,
-      "nice-nasty": 0.195,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.305,
+      "nice-nasty": 0.66,
+      "honest-false": 0.526
     },
     "attitude": {
-      "outgoing": 0.383,
-      "dream": 0.527
+      "outgoing": 0.166,
+      "dream": 0.328
     },
     "homsoc": {
       "means": {
@@ -34,42 +35,69 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "neglected"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.049,
-        "gender expression expression": 0.095
+        "sexuality expression": 0.709,
+        "gender expression expression": 0.217
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12789": {
+          "key": 12789,
+          "name": "Sanders Pertshoeft",
+          "age": 6,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Hildegardis (10673)",
+            "father": "Hubrecht (10672)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10674
-        ]
+        ],
+        "child": {
+          "birth": [
+            12791
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        0,
-        "working class"
+        1,
+        "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.463,
+      "all_incomes": [
+        1.234,
+        1.364,
+        1.463
+      ],
+      "job": {
+        "lawful": false,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 2,
+      "skin_color": 5,
       "eye_color": "brown",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
         "C",
         "S"
       ],
-      "health": 0.651,
-      "fertility": 0.68,
+      "health": 0.676,
+      "fertility": 0.657,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -81,15 +109,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.651
+            "new_health": 0.676
           },
           "death": false
         },
-        "1207": {
+        "1211": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.651
+            "new_health": 0.676
           },
           "death": true
         }
@@ -104,8 +132,8 @@
               10673
             ],
             "people names": [
-              "Godelief Cornuit",
-              "Hersewindis Ghoede"
+              "Hubrecht Pertshoeft",
+              "Hildegardis Commer"
             ],
             "label": "spouse",
             "committed": true
@@ -113,29 +141,141 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stDe Tuyt.se3.c0",
-              "street": "De Tuyt",
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stSt. Aechten straet.se1.c1",
+              "street": "St. Aechten straet",
               "neighborhood": "agnesbuurt",
-              "unique id": 292
+              "unique id": 317
             }
+          },
+          {
+            "topic": "feelings change",
+            "target": 10672,
+            "target name": "Hubrecht Pertshoeft",
+            "state": "out of love",
+            "relationship": 10674
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 12791,
+            "people": [
+              10673,
+              12789
+            ],
+            "people names": [
+              "Hildegardis Commer",
+              "Sanders Pertshoeft"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 10672,
+            "target name": "Hubrecht Pertshoeft",
+            "state": "infatuation",
+            "relationship": 10674
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1202": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "feelings change",
+            "target": 10672,
+            "target name": "Hubrecht Pertshoeft",
+            "state": "solid love",
+            "relationship": 10674
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1206": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12789,
+              "name": "Sanders Pertshoeft",
+              "age": 6,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Hildegardis (10673)",
+                "father": "Hubrecht (10672)"
+              }
+            },
+            "label": "child"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.234
+          }
+        ],
+        "1211": [
+          {
+            "key": 10674,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10672,
+              "name": "Hubrecht Pertshoeft",
+              "age": 51,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
           }
         ]
       }
     },
     "key": 10673,
     "home": {
-      "income class": 0,
-      "income class label": "working class",
-      "section": "stDe Tuyt.se3.c0",
-      "street": "De Tuyt",
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stSt. Aechten straet.se1.c1",
+      "street": "St. Aechten straet",
       "neighborhood": "agnesbuurt",
-      "unique id": 292
+      "unique id": 317
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         10674
       ]

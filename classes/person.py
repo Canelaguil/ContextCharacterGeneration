@@ -6,8 +6,8 @@ from .person_classes import *
 
 class Person(Agent):
     def __init__(self, unique_id: int, model: Model, birth_year : int, 
-                 income_class : int, parent_info={}, sex='r', age=0, 
-                 first_gen=False) -> None:
+                 income_class : int, faction : str, parent_info={}, sex='r',  
+                 age=0, first_gen=False) -> None:
         super().__init__(unique_id, model)
         self.community = model
         self.birth_year = birth_year
@@ -21,6 +21,7 @@ class Person(Agent):
         self.age = age
         self.alive = True
         self.first_gen = first_gen
+        self.faction = faction
         self.romantic_relationship_status = {
             'taken' : False if not first_gen else True,
             'married' : False if not first_gen else True,
@@ -233,6 +234,10 @@ class Person(Agent):
             self.romantic_relationship_status['married'] = True
         self.romantic_relationship_status['relationships'].append(info['key'])
 
+    def process_event(self, info):
+        self.memory.add_event(info)
+
+
     """
     INFO FUNCTIONS
     """
@@ -282,6 +287,7 @@ class Person(Agent):
             'age' : self.age,
             'birth year' : self.birth_year,
             'sex' : self.sex,
+            'faction' : self.faction,
             'income class' : self.income_class, 
             'personality' : self.personality.get_personality(),
             'attitude' : self.personality.get_attitude(),

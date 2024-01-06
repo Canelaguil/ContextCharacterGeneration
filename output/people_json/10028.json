@@ -1,32 +1,33 @@
 {
   "10028": {
     "alive": false,
-    "name": "Erkenradis",
-    "surname": "Clove",
-    "full name": "Erkenradis Clove",
+    "name": "Auesoete",
+    "surname": "Vaelspaen",
+    "full name": "Auesoete Vaelspaen",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.088,
-      "romantic interest": 0.98,
-      "sex interest": 0.495,
-      "gender expression": 0.245,
+      "sexuality": 0.079,
+      "romantic interest": 0.775,
+      "sex interest": 0.754,
+      "gender expression": 0.161,
       "sex": "f"
     },
-    "age": 38,
-    "birth year": 1163,
+    "age": 55,
+    "birth year": 1156,
     "sex": "f",
+    "faction": "Zealots",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.746,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.33,
+      "nice-nasty": 0.909,
+      "honest-false": 0.717
     },
     "attitude": {
-      "outgoing": 0.862,
-      "dream": 0.401
+      "outgoing": 0.604,
+      "dream": 0.191
     },
     "homsoc": {
       "means": {
@@ -34,11 +35,13 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "neglected"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.062,
-        "gender expression expression": 0.049
+        "sexuality expression": 0.045,
+        "gender expression expression": 0.092
       }
     },
     "network": {
@@ -46,30 +49,43 @@
       "children": {},
       "relationship keys": {
         "spouse": [
-          10029
+          10029,
+          15981
         ]
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.967,
+      "all_incomes": [
+        0.928,
+        0.908,
+        0.822,
+        0.843,
+        0.907,
+        0.931,
+        0.967
+      ],
+      "job": {
+        "lawful": true,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 2,
-      "eye_color": "brown",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "skin_color": 7,
+      "eye_color": "blue",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "C",
         "S"
       ],
-      "health": 0.802,
-      "fertility": 0.735,
+      "health": 0.0,
+      "fertility": 0.687,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -81,7 +97,47 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.802
+            "new_health": 0.674
+          },
+          "death": false
+        },
+        "1206": {
+          "health": {
+            "change": true,
+            "value_change": -0.183,
+            "new_health": 0.491
+          },
+          "death": false
+        },
+        "1207": {
+          "health": {
+            "change": true,
+            "value_change": -0.243,
+            "new_health": 0.248
+          },
+          "death": false
+        },
+        "1208": {
+          "health": {
+            "change": true,
+            "value_change": -0.19,
+            "new_health": 0.058
+          },
+          "death": false
+        },
+        "1209": {
+          "health": {
+            "change": true,
+            "value_change": -0.057,
+            "new_health": 0.001
+          },
+          "death": false
+        },
+        "1210": {
+          "health": {
+            "change": true,
+            "value_change": -0.001,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -96,8 +152,8 @@
               10028
             ],
             "people names": [
-              "Herbert Criec",
-              "Erkenradis Clove"
+              "Gosuinus Juvene",
+              "Auesoete Vaelspaen"
             ],
             "label": "spouse",
             "committed": true
@@ -110,8 +166,68 @@
               "section": "stUterechse straet.se3.c2",
               "street": "Uterechse straet",
               "neighborhood": "varkensbuurt",
-              "unique id": 15
+              "unique id": 11
             }
+          }
+        ],
+        "1204": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.928
+          }
+        ],
+        "1207": [
+          {
+            "key": 10029,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10027,
+              "name": "Gosuinus Juvene",
+              "age": 41,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "new relationship",
+            "key": 15981,
+            "people": [
+              11950,
+              10028
+            ],
+            "people names": [
+              "Alwin Bloemart",
+              "Auesoete Vaelspaen"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stCorte gracht.se3.c2",
+              "street": "Corte gracht",
+              "neighborhood": "visbuurt",
+              "unique id": 740
+            }
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "neglected"
           }
         ]
       }
@@ -120,16 +236,17 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stUterechse straet.se3.c2",
-      "street": "Uterechse straet",
-      "neighborhood": "varkensbuurt",
-      "unique id": 15
+      "section": "stCorte gracht.se3.c2",
+      "street": "Corte gracht",
+      "neighborhood": "visbuurt",
+      "unique id": 740
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        10029
+        10029,
+        15981
       ]
     }
   }

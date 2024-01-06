@@ -1,32 +1,33 @@
 {
   "10358": {
     "alive": false,
-    "name": "Baua",
-    "surname": "",
-    "full name": "Baua",
+    "name": "Mabelie",
+    "surname": "Ledeghe",
+    "full name": "Mabelie Ledeghe",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.066,
-      "romantic interest": 0.701,
-      "sex interest": 0.633,
-      "gender expression": 0.129,
+      "sexuality": 0.098,
+      "romantic interest": 0.752,
+      "sex interest": 0.786,
+      "gender expression": 0.127,
       "sex": "f"
     },
-    "age": 44,
-    "birth year": 1157,
+    "age": 36,
+    "birth year": 1175,
     "sex": "f",
+    "faction": "Dogmatists",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.489,
-      "nice-nasty": 0.849,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.0,
+      "nice-nasty": 0.473,
+      "honest-false": 0.727
     },
     "attitude": {
-      "outgoing": 0.593,
-      "dream": 0.583
+      "outgoing": 0.412,
+      "dream": 0.25
     },
     "homsoc": {
       "means": {
@@ -34,20 +35,64 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.012,
-        "gender expression expression": 0.112
+        "sexuality expression": 0.029,
+        "gender expression expression": 0.053
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14766": {
+          "key": 14766,
+          "name": "Emgelberna",
+          "age": 30,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Mabelie (10358)",
+            "father": "Kerolus (10357)"
+          }
+        },
+        "15107": {
+          "key": 15107,
+          "name": "Machtilden",
+          "age": 42,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Mabelie (10358)",
+            "father": "Kerolus (10357)"
+          }
+        },
+        "15493": {
+          "key": 15493,
+          "name": "Uergina Kerolussdochter",
+          "age": 31,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Mabelie (10358)",
+            "father": "Kerolus (10357)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10359
-        ]
+        ],
+        "child": {
+          "birth": [
+            14768,
+            15109,
+            15495
+          ]
+        }
       }
     },
     "occupation": {
@@ -60,16 +105,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 8,
-      "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 6,
+      "eye_color": "blue",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
         "S",
         "S"
       ],
-      "health": 0.601,
-      "fertility": 0.658,
+      "health": 0.632,
+      "fertility": 0.648,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -81,7 +126,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.601
+            "new_health": 0.632
+          },
+          "death": false
+        },
+        "1210": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.632
           },
           "death": true
         }
@@ -96,8 +149,8 @@
               10358
             ],
             "people names": [
-              "Tielekine",
-              "Baua"
+              "Kerolus",
+              "Mabelie Ledeghe"
             ],
             "label": "spouse",
             "committed": true
@@ -110,8 +163,95 @@
               "section": "stMuelen straet.se3.c1",
               "street": "Muelen straet",
               "neighborhood": "jorisbuurt",
-              "unique id": 161
+              "unique id": 163
             }
+          }
+        ],
+        "1203": [
+          {
+            "topic": "feelings change",
+            "target": 10357,
+            "target name": "Kerolus",
+            "state": "out of love",
+            "relationship": 10359
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 14768,
+            "people": [
+              10358,
+              14766
+            ],
+            "people names": [
+              "Mabelie Ledeghe",
+              "Emgelberna"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "new relationship",
+            "key": 15109,
+            "people": [
+              10358,
+              15107
+            ],
+            "people names": [
+              "Mabelie Ledeghe",
+              "Machtilden"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.586,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "new relationship",
+            "key": 15495,
+            "people": [
+              10358,
+              15493
+            ],
+            "people names": [
+              "Mabelie Ledeghe",
+              "Uergina Kerolussdochter"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.523,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "feelings change",
+            "target": 10357,
+            "target name": "Kerolus",
+            "state": "infatuation",
+            "relationship": 10359
+          },
+          {
+            "topic": "neglected"
           }
         ]
       }
@@ -123,7 +263,7 @@
       "section": "stMuelen straet.se3.c1",
       "street": "Muelen straet",
       "neighborhood": "jorisbuurt",
-      "unique id": 161
+      "unique id": 163
     },
     "relationship status": {
       "taken": true,

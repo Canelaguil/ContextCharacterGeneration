@@ -1,54 +1,75 @@
 {
   "11305": {
     "alive": false,
-    "name": "Thezonus",
-    "surname": "Canne",
-    "full name": "Thezonus Canne",
+    "name": "Splinter",
+    "surname": "Mule",
+    "full name": "Splinter Mule",
     "born this way": {
       "sexuality label": "gay",
-      "sexuality": 0.885,
-      "romantic interest": 0.511,
-      "sex interest": 0.358,
-      "gender expression": 0.405,
+      "sexuality": 0.868,
+      "romantic interest": 0.634,
+      "sex interest": 0.679,
+      "gender expression": 0.086,
       "sex": "m"
     },
     "age": 52,
-    "birth year": 1173,
+    "birth year": 1178,
     "sex": "m",
+    "faction": "Dogmatists",
     "income class": [
       3,
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.243,
-      "nice-nasty": 0.662,
-      "honest-false": 0.539
+      "lawful-chaotic": 0.344,
+      "nice-nasty": 0.578,
+      "honest-false": 0.0
     },
     "attitude": {
-      "outgoing": 0.383,
-      "dream": 0.242
+      "outgoing": 0.409,
+      "dream": 0.418
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.569,
-        "gender expression expression": 0.037
+        "sexuality expression": 0.709,
+        "gender expression expression": 0.058
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "17300": {
+          "key": 17300,
+          "name": "Diewiven Mule",
+          "age": 20,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Machtilden (11573)",
+            "father": "Splinter (11305)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11307,
-          17164
-        ]
+          16718
+        ],
+        "child": {
+          "birth": [
+            17301
+          ]
+        }
       }
     },
     "occupation": {
@@ -57,51 +78,56 @@
         3,
         "upper middle class"
       ],
-      "income": 1.003,
+      "income": 0.79,
       "all_incomes": [
-        1.058,
-        1.245,
-        1.032,
-        1.168,
-        1.428,
-        1.279,
-        1.321,
-        1.499,
-        1.434,
-        1.499,
-        1.453,
-        1.237,
-        1.328,
-        1.499,
-        1.48,
-        1.499,
-        1.227,
-        1.403,
-        1.388,
-        1.283,
-        1.06,
-        0.787,
-        0.851,
-        0.886,
-        0.95,
-        1.003
+        1.055,
+        0.416,
+        1.021,
+        1.169,
+        1.049,
+        1.048,
+        1.049,
+        1.415,
+        0.972,
+        0.879,
+        0.735,
+        0.384,
+        0.0,
+        0.276,
+        0.712,
+        0.551,
+        0.855,
+        0.393,
+        0.025,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.065,
+        0.126,
+        0.79
       ],
       "job": {
         "lawful": false,
-        "honest": true
+        "honest": false
       }
     },
     "genetics": {
-      "skin_color": 8,
-      "eye_color": "green",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "skin_color": 0,
+      "eye_color": "brown",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
         "C",
         "C"
       ],
-      "health": 0.398,
-      "fertility": 0.737,
+      "health": 0.0,
+      "fertility": 0.514,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -113,15 +139,55 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.717
+            "new_health": 0.493
+          },
+          "death": false
+        },
+        "1219": {
+          "health": {
+            "change": true,
+            "value_change": -0.306,
+            "new_health": 0.187
+          },
+          "death": false
+        },
+        "1220": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.187
+          },
+          "death": false
+        },
+        "1223": {
+          "health": {
+            "change": true,
+            "value_change": -0.154,
+            "new_health": 0.033
           },
           "death": false
         },
         "1224": {
           "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.033
+          },
+          "death": false
+        },
+        "1228": {
+          "health": {
             "change": true,
-            "value_change": -0.319,
-            "new_health": 0.398
+            "value_change": -0.028,
+            "new_health": 0.005
+          },
+          "death": false
+        },
+        "1229": {
+          "health": {
+            "change": true,
+            "value_change": -0.005,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -131,7 +197,12 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.058
+            "income": 1.055
+          },
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.416
           },
           {
             "topic": "new relationship",
@@ -141,8 +212,8 @@
               11306
             ],
             "people names": [
-              "Thezonus Canne",
-              "Riet"
+              "Splinter Mule",
+              "Gisele"
             ],
             "label": "spouse",
             "committed": true
@@ -155,11 +226,45 @@
               "section": "stBreestraat.se7.c3",
               "street": "Breestraat",
               "neighborhood": "olvbuurt",
-              "unique id": 576
+              "unique id": 578
             }
           }
         ],
-        "1209": [
+        "1201": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.021
+          }
+        ],
+        "1204": [
+          {
+            "topic": "feelings change",
+            "target": 11306,
+            "target name": "Gisele",
+            "state": "out of love",
+            "relationship": 11307
+          }
+        ],
+        "1205": [
+          {
+            "topic": "feelings change",
+            "target": 11306,
+            "target name": "Gisele",
+            "state": "infatuation",
+            "relationship": 11307
+          }
+        ],
+        "1206": [
+          {
+            "topic": "feelings change",
+            "target": 11306,
+            "target name": "Gisele",
+            "state": "out of love",
+            "relationship": 11307
+          }
+        ],
+        "1207": [
           {
             "key": 11307,
             "topic": "unmarried"
@@ -168,8 +273,8 @@
             "topic": "person died",
             "person": {
               "key": 11306,
-              "name": "Riet",
-              "age": 55,
+              "name": "Gisele",
+              "age": 47,
               "alive": false,
               "sex": "f",
               "parents": "firstgen"
@@ -177,54 +282,154 @@
             "label": "spouse"
           }
         ],
-        "1216": [
+        "1209": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.735
+          }
+        ],
+        "1210": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.384
+          }
+        ],
+        "1211": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.0
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
           {
             "topic": "new relationship",
-            "key": 17164,
+            "key": 16718,
             "people": [
               11305,
-              11342
+              11573
             ],
             "people names": [
-              "Thezonus Canne",
-              "Esa Vlieghe"
+              "Splinter Mule",
+              "Machtilden Senum"
             ],
             "label": "spouse",
             "committed": true
           }
         ],
+        "1213": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1214": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1215": [
+          {
+            "topic": "new relationship",
+            "key": 17301,
+            "people": [
+              11305,
+              17300
+            ],
+            "people names": [
+              "Splinter Mule",
+              "Diewiven Mule"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1216": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.393
+          }
+        ],
         "1217": [
           {
-            "topic": "feelings change",
-            "target": 11342,
-            "target name": "Esa Vlieghe",
-            "state": "out of love",
-            "relationship": 17164
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.025
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.025,
+            "inhabitants": []
           }
         ],
         "1218": [
           {
-            "key": 17164,
-            "topic": "unmarried"
-          },
+            "topic": "neglected"
+          }
+        ],
+        "1219": [
           {
-            "topic": "person died",
-            "person": {
-              "key": 11342,
-              "name": "Esa Vlieghe",
-              "age": 54,
-              "alive": false,
-              "sex": "f",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
+            "topic": "neglected"
+          }
+        ],
+        "1220": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1221": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1222": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1223": [
+          {
+            "topic": "neglected"
           }
         ],
         "1224": [
           {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.003
+            "topic": "neglected"
+          }
+        ],
+        "1225": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1226": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1227": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1228": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1229": [
+          {
+            "topic": "neglected"
           }
         ]
       }
@@ -236,14 +441,14 @@
       "section": "stBreestraat.se7.c3",
       "street": "Breestraat",
       "neighborhood": "olvbuurt",
-      "unique id": 576
+      "unique id": 578
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
         11307,
-        17164
+        16718
       ]
     }
   }

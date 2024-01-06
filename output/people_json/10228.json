@@ -1,54 +1,85 @@
 {
   "10228": {
     "alive": false,
-    "name": "Geldmaro",
+    "name": "Arnoud",
     "surname": "",
-    "full name": "Geldmaro",
+    "full name": "Arnoud",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.006,
-      "romantic interest": 0.646,
-      "sex interest": 0.788,
-      "gender expression": 0.097,
+      "sexuality": 0.063,
+      "romantic interest": 0.688,
+      "sex interest": 0.81,
+      "gender expression": 0.171,
       "sex": "m"
     },
-    "age": 37,
-    "birth year": 1175,
+    "age": 53,
+    "birth year": 1153,
     "sex": "m",
+    "faction": "No religion",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.623,
-      "nice-nasty": 0.994,
-      "honest-false": 0.39
+      "lawful-chaotic": 0.378,
+      "nice-nasty": 0.791,
+      "honest-false": 0.999
     },
     "attitude": {
-      "outgoing": 0.215,
-      "dream": 0.68
+      "outgoing": 0.418,
+      "dream": 0.221
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "neglected"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.004,
-        "gender expression expression": 0.013
+        "sexuality expression": 0.019,
+        "gender expression expression": 0.128
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12676": {
+          "key": 12676,
+          "name": "Ludolphus Arnoudszoon",
+          "age": 48,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Sipper (10229)",
+            "father": "Arnoud (10228)"
+          }
+        },
+        "13975": {
+          "key": 13975,
+          "name": "Maelkin",
+          "age": 3,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Sipper (10229)",
+            "father": "Arnoud (10228)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          10230,
-          15942
-        ]
+          10230
+        ],
+        "child": {
+          "birth": [
+            12677,
+            13976
+          ]
+        }
       }
     },
     "occupation": {
@@ -57,38 +88,32 @@
         1,
         "lower middle class"
       ],
-      "income": 0.343,
+      "income": 1.141,
       "all_incomes": [
-        1.069,
-        1.046,
-        1.449,
-        1.328,
-        1.233,
-        0.923,
-        1.051,
-        1.187,
-        1.082,
-        1.0,
-        0.73,
-        0.741,
-        0.343
+        0.992,
+        1.025,
+        1.072,
+        1.06,
+        1.094,
+        1.129,
+        1.141
       ],
       "job": {
         "lawful": true,
-        "honest": false
+        "honest": true
       }
     },
     "genetics": {
-      "skin_color": 2,
-      "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 9,
+      "eye_color": "blue",
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
       "hair_type": [
         "C",
         "C"
       ],
-      "health": 0.492,
-      "fertility": 0.461,
+      "health": 0.0,
+      "fertility": 0.652,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -100,15 +125,31 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.492
+            "new_health": 0.694
           },
           "death": false
         },
-        "1211": {
+        "1203": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.492
+            "change": true,
+            "value_change": -0.271,
+            "new_health": 0.423
+          },
+          "death": false
+        },
+        "1204": {
+          "health": {
+            "change": true,
+            "value_change": -0.258,
+            "new_health": 0.165
+          },
+          "death": false
+        },
+        "1205": {
+          "health": {
+            "change": true,
+            "value_change": -0.165,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -118,7 +159,12 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.069
+            "income": 0.992
+          },
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.025
           },
           {
             "topic": "new relationship",
@@ -128,8 +174,8 @@
               10229
             ],
             "people names": [
-              "Geldmaro",
-              "Riet Zonne"
+              "Arnoud",
+              "Sipper Scamel"
             ],
             "label": "spouse",
             "committed": true
@@ -142,70 +188,61 @@
               "section": "stHelle voet.se5.c1",
               "street": "Helle voet",
               "neighborhood": "jorisbuurt",
-              "unique id": 101
+              "unique id": 102
             }
           }
         ],
         "1201": [
           {
-            "topic": "feelings change",
-            "target": 10229,
-            "target name": "Riet Zonne",
-            "state": "out of love",
-            "relationship": 10230
+            "topic": "new relationship",
+            "key": 12677,
+            "people": [
+              10228,
+              12676
+            ],
+            "people names": [
+              "Arnoud",
+              "Ludolphus Arnoudszoon"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1202": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 13976,
+            "people": [
+              10228,
+              13975
+            ],
+            "people names": [
+              "Arnoud",
+              "Maelkin"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1205": [
           {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.051
-          }
-        ],
-        "1209": [
-          {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.73
-          },
-          {
-            "key": 10230,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 10229,
-              "name": "Riet Zonne",
-              "age": 46,
-              "alive": false,
-              "sex": "f",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
-          }
-        ],
-        "1210": [
-          {
-            "topic": "new relationship",
-            "key": 15942,
-            "people": [
-              10228,
-              10694
-            ],
-            "people names": [
-              "Geldmaro",
-              "Marie Smicke"
-            ],
-            "label": "spouse",
-            "committed": true
-          }
-        ],
-        "1211": [
-          {
-            "topic": "job notice",
-            "notice": "earning very little",
-            "income": 0.343
+            "topic": "neglected"
           }
         ]
       }
@@ -217,14 +254,13 @@
       "section": "stHelle voet.se5.c1",
       "street": "Helle voet",
       "neighborhood": "jorisbuurt",
-      "unique id": 101
+      "unique id": 102
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        10230,
-        15942
+        10230
       ]
     }
   }

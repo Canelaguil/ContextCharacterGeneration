@@ -1,32 +1,33 @@
 {
   "11402": {
     "alive": false,
-    "name": "Sara",
-    "surname": "",
-    "full name": "Sara",
+    "name": "Vreile",
+    "surname": "Clinkart",
+    "full name": "Vreile Clinkart",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.03,
-      "romantic interest": 0.649,
-      "sex interest": 0.438,
-      "gender expression": 0.122,
+      "sexuality": 0.003,
+      "romantic interest": 0.842,
+      "sex interest": 0.923,
+      "gender expression": 0.0,
       "sex": "f"
     },
-    "age": 52,
+    "age": 37,
     "birth year": 1167,
     "sex": "f",
+    "faction": "Dogmatists",
     "income class": [
-      3,
-      "upper middle class"
+      2,
+      "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.505,
+      "lawful-chaotic": 0.55,
+      "nice-nasty": 0.653,
       "honest-false": 0.0
     },
     "attitude": {
-      "outgoing": 0.444,
-      "dream": 0.367
+      "outgoing": 0.787,
+      "dream": 0.475
     },
     "homsoc": {
       "means": {
@@ -34,68 +35,61 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "neglected"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.011,
-        "gender expression expression": 0.024
+        "sexuality expression": 0.002,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13405": {
+          "key": 13405,
+          "name": "Gilis Snepore",
+          "age": 47,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Vreile (11402)",
+            "father": "Geykonis (11401)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          11403,
-          14915,
-          16493
-        ]
+          11403
+        ],
+        "child": {
+          "birth": [
+            13407
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
-        3,
-        "upper middle class"
+        2,
+        "middle class"
       ],
-      "income": 1.454,
-      "all_incomes": [
-        1.129,
-        0.984,
-        0.979,
-        1.034,
-        1.22,
-        1.399,
-        1.454,
-        1.254,
-        1.499,
-        1.499,
-        1.499,
-        1.499,
-        1.499,
-        1.165,
-        1.388,
-        1.412,
-        1.427,
-        1.499,
-        1.454
-      ],
-      "job": {
-        "lawful": true,
-        "honest": false
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 1,
-      "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 9,
+      "eye_color": "green",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
         "C",
         "S"
       ],
-      "health": 0.0,
-      "fertility": 0.577,
+      "health": 0.468,
+      "fertility": 0.53,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -107,34 +101,21 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.586
+            "new_health": 0.468
           },
           "death": false
         },
-        "1217": {
+        "1203": {
           "health": {
-            "change": true,
-            "value_change": -0.385,
-            "new_health": 0.201
-          },
-          "death": false
-        },
-        "1218": {
-          "health": {
-            "change": true,
-            "value_change": -0.201,
-            "new_health": 0.0
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.468
           },
           "death": true
         }
       },
       "events": {
         "1200": [
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.129
-          },
           {
             "topic": "new relationship",
             "key": 11403,
@@ -143,8 +124,8 @@
               11402
             ],
             "people names": [
-              "Ivone Buyc",
-              "Sara"
+              "Geykonis Snepore",
+              "Vreile Clinkart"
             ],
             "label": "spouse",
             "committed": true
@@ -152,128 +133,62 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stDie lange straet1.se3.c3",
-              "street": "Die lange straet1",
-              "neighborhood": "olvbuurt",
-              "unique id": 617
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stScherbier straet.se1.c2",
+              "street": "Scherbier straet",
+              "neighborhood": "cingelzuid",
+              "unique id": 626
             }
+          },
+          {
+            "topic": "feelings change",
+            "target": 11401,
+            "target name": "Geykonis Snepore",
+            "state": "out of love",
+            "relationship": 11403
           }
         ],
         "1202": [
           {
-            "key": 11403,
-            "topic": "unmarried"
+            "topic": "new relationship",
+            "key": 13407,
+            "people": [
+              11402,
+              13405
+            ],
+            "people names": [
+              "Vreile Clinkart",
+              "Gilis Snepore"
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
-            "topic": "person died",
-            "person": {
-              "key": 11401,
-              "name": "Ivone Buyc",
-              "age": 36,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
+            "topic": "neglected"
           }
         ],
         "1203": [
           {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.034
-          }
-        ],
-        "1206": [
-          {
-            "topic": "new relationship",
-            "key": 14915,
-            "people": [
-              12175,
-              11402
-            ],
-            "people names": [
-              "Ghoris Criec",
-              "Sara"
-            ],
-            "label": "spouse",
-            "committed": true
-          }
-        ],
-        "1207": [
-          {
-            "topic": "feelings change",
-            "target": 12175,
-            "target name": "Ghoris Criec",
-            "state": "out of love",
-            "relationship": 14915
-          }
-        ],
-        "1211": [
-          {
-            "key": 14915,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 12175,
-              "name": "Ghoris Criec",
-              "age": 49,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
-          }
-        ],
-        "1212": [
-          {
-            "topic": "new relationship",
-            "key": 16493,
-            "people": [
-              12148,
-              11402
-            ],
-            "people names": [
-              "Fellen Borlutte",
-              "Sara"
-            ],
-            "label": "spouse",
-            "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stDen Hof.se5.c3",
-              "street": "Den Hof",
-              "neighborhood": "denhof",
-              "unique id": 949
-            }
+            "topic": "neglected"
           }
         ]
       }
     },
     "key": 11402,
     "home": {
-      "income class": 3,
-      "income class label": "upper middle class",
-      "section": "stDen Hof.se5.c3",
-      "street": "Den Hof",
-      "neighborhood": "denhof",
-      "unique id": 949
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stScherbier straet.se1.c2",
+      "street": "Scherbier straet",
+      "neighborhood": "cingelzuid",
+      "unique id": 626
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        11403,
-        14915,
-        16493
+        11403
       ]
     }
   }

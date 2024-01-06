@@ -1,32 +1,33 @@
 {
   "11192": {
     "alive": false,
-    "name": "Jute",
-    "surname": "",
-    "full name": "Jute",
+    "name": "Rabburgis",
+    "surname": "Valant",
+    "full name": "Rabburgis Valant",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.014,
-      "romantic interest": 0.819,
-      "sex interest": 0.677,
-      "gender expression": 0.03,
+      "sexuality": 0.095,
+      "romantic interest": 0.492,
+      "sex interest": 0.686,
+      "gender expression": 0.181,
       "sex": "f"
     },
-    "age": 39,
-    "birth year": 1165,
+    "age": 53,
+    "birth year": 1175,
     "sex": "f",
+    "faction": "Zealots",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.153,
-      "nice-nasty": 0.149,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.788,
+      "nice-nasty": 0.472,
+      "honest-false": 0.246
     },
     "attitude": {
-      "outgoing": 0.486,
-      "dream": 0.451
+      "outgoing": 0.556,
+      "dream": 0.505
     },
     "homsoc": {
       "means": {
@@ -34,42 +35,92 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "neglected"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.007,
-        "gender expression expression": 0.005
+        "sexuality expression": 0.019,
+        "gender expression expression": 0.057
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "15226": {
+          "key": 15226,
+          "name": "Dilane",
+          "age": 6,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Rabburgis (11192)",
+            "father": "Brandekijn (11191)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          11193
-        ]
+          11193,
+          18515,
+          19117
+        ],
+        "child": {
+          "birth": [
+            15228
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.138,
+      "all_incomes": [
+        1.085,
+        0.972,
+        0.952,
+        0.902,
+        0.835,
+        0.949,
+        1.101,
+        1.203,
+        1.105,
+        1.171,
+        0.984,
+        1.377,
+        1.166,
+        1.19,
+        1.162,
+        1.085,
+        0.957,
+        1.238,
+        1.108,
+        1.063,
+        1.13,
+        1.261,
+        1.333,
+        1.138
+      ],
+      "job": {
+        "lawful": true,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 5,
-      "eye_color": "blue",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 3,
+      "eye_color": "brown",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
         "S",
         "S"
       ],
-      "health": 0.745,
-      "fertility": 0.806,
+      "health": 0.0,
+      "fertility": 0.527,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -81,15 +132,31 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.745
+            "new_health": 0.531
           },
           "death": false
         },
-        "1203": {
+        "1225": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.745
+            "change": true,
+            "value_change": -0.225,
+            "new_health": 0.306
+          },
+          "death": false
+        },
+        "1226": {
+          "health": {
+            "change": true,
+            "value_change": -0.213,
+            "new_health": 0.093
+          },
+          "death": false
+        },
+        "1227": {
+          "health": {
+            "change": true,
+            "value_change": -0.093,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -104,8 +171,8 @@
               11192
             ],
             "people names": [
-              "Stemaers Duckar",
-              "Jute"
+              "Brandekijn",
+              "Rabburgis Valant"
             ],
             "label": "spouse",
             "committed": true
@@ -118,15 +185,226 @@
               "section": "stBreestraat.se1.c2",
               "street": "Breestraat",
               "neighborhood": "olvbuurt",
-              "unique id": 528
+              "unique id": 535
             }
-          },
+          }
+        ],
+        "1204": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.085
+          }
+        ],
+        "1206": [
           {
             "topic": "feelings change",
             "target": 11191,
-            "target name": "Stemaers Duckar",
+            "target name": "Brandekijn",
             "state": "out of love",
             "relationship": 11193
+          }
+        ],
+        "1207": [
+          {
+            "topic": "new relationship",
+            "key": 15228,
+            "people": [
+              11192,
+              15226
+            ],
+            "people names": [
+              "Rabburgis Valant",
+              "Dilane"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.101
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1211": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1212": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1213": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1214": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 15226,
+              "name": "Dilane",
+              "age": 6,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Rabburgis (11192)",
+                "father": "Brandekijn (11191)"
+              }
+            },
+            "label": "child"
+          }
+        ],
+        "1215": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.377
+          }
+        ],
+        "1221": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.238
+          },
+          {
+            "key": 11193,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11191,
+              "name": "Brandekijn",
+              "age": 58,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          }
+        ],
+        "1223": [
+          {
+            "topic": "new relationship",
+            "key": 18515,
+            "people": [
+              11506,
+              11192
+            ],
+            "people names": [
+              "Scoutekiin",
+              "Rabburgis Valant"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stDie lange straet3.se1.c2",
+              "street": "Die lange straet3",
+              "neighborhood": "visbuurt",
+              "unique id": 673
+            }
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1224": [
+          {
+            "key": 18515,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11506,
+              "name": "Scoutekiin",
+              "age": 57,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1225": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1226": [
+          {
+            "topic": "new relationship",
+            "key": 19117,
+            "people": [
+              11212,
+              11192
+            ],
+            "people names": [
+              "Richolfus Oge",
+              "Rabburgis Valant"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stBreestraat.se1.c2",
+              "street": "Breestraat",
+              "neighborhood": "olvbuurt",
+              "unique id": 544
+            }
+          }
+        ],
+        "1227": [
+          {
+            "key": 19117,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11212,
+              "name": "Richolfus Oge",
+              "age": 57,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
           }
         ]
       }
@@ -138,13 +416,15 @@
       "section": "stBreestraat.se1.c2",
       "street": "Breestraat",
       "neighborhood": "olvbuurt",
-      "unique id": 528
+      "unique id": 544
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
-        11193
+        11193,
+        18515,
+        19117
       ]
     }
   }

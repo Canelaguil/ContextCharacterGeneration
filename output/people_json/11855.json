@@ -1,88 +1,121 @@
 {
   "11855": {
     "alive": false,
-    "name": "Vreile",
-    "surname": "Blessard",
-    "full name": "Vreile Blessard",
+    "name": "Amelgeir",
+    "surname": "Oge",
+    "full name": "Amelgeir Oge",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.078,
-      "romantic interest": 0.7,
-      "sex interest": 0.826,
-      "gender expression": 0.228,
+      "sexuality label": "gay",
+      "sexuality": 0.799,
+      "romantic interest": 0.499,
+      "sex interest": 0.78,
+      "gender expression": 0.353,
       "sex": "f"
     },
-    "age": 60,
-    "birth year": 1165,
+    "age": 30,
+    "birth year": 1179,
     "sex": "f",
+    "faction": "Dogmatists",
     "income class": [
       4,
       "nobility"
     ],
     "personality": {
-      "lawful-chaotic": 0.515,
-      "nice-nasty": 0.0,
-      "honest-false": 0.506
+      "lawful-chaotic": 0.769,
+      "nice-nasty": 0.184,
+      "honest-false": 0.544
     },
     "attitude": {
-      "outgoing": 0.374,
-      "dream": 0.487
+      "outgoing": 0.4,
+      "dream": 0.549
     },
     "homsoc": {
       "means": {
-        "independent": false,
-        "taken_care_of": false,
-        "caretaker": false,
+        "independent": true,
+        "taken_care_of": true,
+        "caretaker": true,
         "needs_care": false,
         "flags": [
+          "caretaker",
+          "neglected",
           "starving"
         ]
       },
       "expression": {
-        "sexuality expression": 0.063,
-        "gender expression expression": 0.163
+        "sexuality expression": 0.251,
+        "gender expression expression": 0.169
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12568": {
+          "key": 12568,
+          "name": "Machtilden",
+          "age": 49,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Amelgeir (11855)",
+            "father": "Justaes (11854)"
+          }
+        },
+        "13895": {
+          "key": 13895,
+          "name": "Truden",
+          "age": 32,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Amelgeir (11855)",
+            "father": "Justaes (11854)"
+          }
+        },
+        "14235": {
+          "key": 14235,
+          "name": "Saswe Justaessdochter",
+          "age": 4,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Amelgeir (11855)",
+            "father": "Justaes (11854)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11856
-        ]
+        ],
+        "child": {
+          "birth": [
+            12570,
+            13897,
+            14237
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
         4,
         "nobility"
       ],
-      "income": 0.323,
-      "all_incomes": [
-        0.958,
-        0.449,
-        0.378,
-        0.845,
-        0.664,
-        0.323
-      ],
-      "job": {
-        "lawful": false,
-        "honest": false
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 5,
+      "skin_color": 4,
       "eye_color": "brown",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
       "hair_type": [
-        "C",
+        "S",
         "C"
       ],
-      "health": 0.646,
-      "fertility": 0.95,
+      "health": 0.576,
+      "fertility": 0.629,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -94,31 +127,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.92
+            "new_health": 0.576
           },
           "death": false
         },
-        "1221": {
-          "health": {
-            "change": true,
-            "value_change": -0.088,
-            "new_health": 0.832
-          },
-          "death": false
-        },
-        "1222": {
+        "1208": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.832
-          },
-          "death": false
-        },
-        "1224": {
-          "health": {
-            "change": true,
-            "value_change": -0.186,
-            "new_health": 0.646
+            "new_health": 0.576
           },
           "death": true
         }
@@ -133,8 +150,8 @@
               11855
             ],
             "people names": [
-              "Reymbernus Rape",
-              "Vreile Blessard"
+              "Justaes",
+              "Amelgeir Oge"
             ],
             "label": "spouse",
             "committed": true
@@ -147,29 +164,76 @@
               "section": "stOp Havick1.se1.c4",
               "street": "Op Havick1",
               "neighborhood": "cingelnoord",
-              "unique id": 829
+              "unique id": 841
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12570,
+            "people": [
+              11855,
+              12568
+            ],
+            "people names": [
+              "Amelgeir Oge",
+              "Machtilden"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1201": [
+          {
+            "topic": "neglected"
           }
         ],
         "1202": [
           {
-            "topic": "feelings change",
-            "target": 11854,
-            "target name": "Reymbernus Rape",
-            "state": "out of love",
-            "relationship": 11856
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 13897,
+            "people": [
+              11855,
+              13895
+            ],
+            "people names": [
+              "Amelgeir Oge",
+              "Truden"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1204": [
           {
-            "topic": "feelings change",
-            "target": 11854,
-            "target name": "Reymbernus Rape",
-            "state": "infatuation",
-            "relationship": 11856
+            "topic": "new relationship",
+            "key": 14237,
+            "people": [
+              11855,
+              14235
+            ],
+            "people names": [
+              "Amelgeir Oge",
+              "Saswe Justaessdochter"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
           }
         ],
-        "1213": [
+        "1206": [
           {
             "key": 11856,
             "topic": "unmarried"
@@ -178,8 +242,8 @@
             "topic": "person died",
             "person": {
               "key": 11854,
-              "name": "Reymbernus Rape",
-              "age": 36,
+              "name": "Justaes",
+              "age": 54,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
@@ -190,81 +254,28 @@
             "topic": "not enough income",
             "income": 0,
             "inhabitants": []
-          }
-        ],
-        "1214": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1215": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1216": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1217": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1218": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1219": [
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.958
           },
           {
+            "topic": "now caretaker",
+            "care dependants": []
+          },
+          {
+            "topic": "new caretaker",
+            "person": 11855
+          }
+        ],
+        "1207": [
+          {
             "topic": "not enough income",
             "income": 0,
             "inhabitants": []
           }
         ],
-        "1220": [
+        "1208": [
           {
-            "topic": "job notice",
-            "notice": "earning very little",
-            "income": 0.449
-          }
-        ],
-        "1221": [
-          {
-            "topic": "job notice",
-            "notice": "earning very little",
-            "income": 0.378
-          }
-        ],
-        "1223": [
-          {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.664
-          }
-        ],
-        "1224": [
-          {
-            "topic": "job notice",
-            "notice": "earning very little",
-            "income": 0.323
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ]
       }
@@ -276,7 +287,7 @@
       "section": "stOp Havick1.se1.c4",
       "street": "Op Havick1",
       "neighborhood": "cingelnoord",
-      "unique id": 829
+      "unique id": 841
     },
     "relationship status": {
       "taken": false,

@@ -1,32 +1,33 @@
 {
   "12101": {
     "alive": false,
-    "name": "Badeloghen",
-    "surname": "Blaubloeme",
-    "full name": "Badeloghen Blaubloeme",
+    "name": "Jacomin",
+    "surname": "Vrint",
+    "full name": "Jacomin Vrint",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.016,
-      "romantic interest": 0.526,
-      "sex interest": 0.37,
-      "gender expression": 0.036,
+      "sexuality": 0.047,
+      "romantic interest": 0.514,
+      "sex interest": 0.761,
+      "gender expression": 0.132,
       "sex": "f"
     },
-    "age": 47,
-    "birth year": 1159,
+    "age": 56,
+    "birth year": 1164,
     "sex": "f",
+    "faction": "Dogmatists",
     "income class": [
-      3,
-      "upper middle class"
+      2,
+      "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.523,
-      "nice-nasty": 0.408,
-      "honest-false": 0.647
+      "lawful-chaotic": 0.473,
+      "nice-nasty": 0.782,
+      "honest-false": 0.837
     },
     "attitude": {
-      "outgoing": 0.737,
-      "dream": 0.237
+      "outgoing": 0.139,
+      "dream": 0.317
     },
     "homsoc": {
       "means": {
@@ -35,43 +36,75 @@
         "caretaker": false,
         "needs_care": false,
         "flags": [
-          "starving"
+          "neglected"
         ]
       },
       "expression": {
-        "sexuality expression": 0.009,
-        "gender expression expression": 0.017
+        "sexuality expression": 0.035,
+        "gender expression expression": 0.076
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "15011": {
+          "key": 15011,
+          "name": "Ricmoden Lancgeroch",
+          "age": 21,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Jacomin (12101)",
+            "father": "Poppo (12100)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           12102
-        ]
+        ],
+        "child": {
+          "birth": [
+            15013
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        3,
-        "upper middle class"
+        2,
+        "middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.244,
+      "all_incomes": [
+        1.326,
+        1.499,
+        1.296,
+        1.038,
+        1.332,
+        1.458,
+        1.499,
+        1.499,
+        1.499,
+        1.244
+      ],
+      "job": {
+        "lawful": false,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 5,
-      "eye_color": "brown",
+      "skin_color": 4,
+      "eye_color": "green",
       "hair_color": "strawberry blonde",
       "hair_color_code": 5,
       "hair_type": [
         "C",
         "S"
       ],
-      "health": 0.751,
-      "fertility": 0.733,
+      "health": 0.0,
+      "fertility": 0.819,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -83,15 +116,39 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.751
+            "new_health": 0.809
           },
           "death": false
         },
-        "1205": {
+        "1216": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.751
+            "change": true,
+            "value_change": -0.147,
+            "new_health": 0.662
+          },
+          "death": false
+        },
+        "1217": {
+          "health": {
+            "change": true,
+            "value_change": -0.203,
+            "new_health": 0.459
+          },
+          "death": false
+        },
+        "1218": {
+          "health": {
+            "change": true,
+            "value_change": -0.318,
+            "new_health": 0.141
+          },
+          "death": false
+        },
+        "1219": {
+          "health": {
+            "change": true,
+            "value_change": -0.141,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -106,8 +163,8 @@
               12101
             ],
             "people names": [
-              "Ingel Bards",
-              "Badeloghen Blaubloeme"
+              "Poppo Lancgeroch",
+              "Jacomin Vrint"
             ],
             "label": "spouse",
             "committed": true
@@ -115,80 +172,139 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stMarcktgang.se3.c3",
-              "street": "Marcktgang",
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stDen Hof.se3.c2",
+              "street": "Den Hof",
               "neighborhood": "denhof",
-              "unique id": 931
+              "unique id": 945
             }
-          }
-        ],
-        "1201": [
-          {
-            "key": 12102,
-            "topic": "unmarried"
           },
           {
-            "topic": "person died",
-            "person": {
-              "key": 12100,
-              "name": "Ingel Bards",
-              "age": 33,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
+            "topic": "feelings change",
+            "target": 12100,
+            "target name": "Poppo Lancgeroch",
+            "state": "out of love",
+            "relationship": 12102
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 15013,
+            "people": [
+              12101,
+              15011
+            ],
+            "people names": [
+              "Jacomin Vrint",
+              "Ricmoden Lancgeroch"
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "neglected"
           }
         ],
-        "1202": [
+        "1207": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "neglected"
           }
         ],
-        "1203": [
+        "1208": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "neglected"
           }
         ],
-        "1204": [
+        "1209": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "neglected"
           }
         ],
-        "1205": [
+        "1210": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.326
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1211": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1212": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1213": [
+          {
+            "topic": "feelings change",
+            "target": 12100,
+            "target name": "Poppo Lancgeroch",
+            "state": "infatuation",
+            "relationship": 12102
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1214": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1215": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1216": [
+          {
+            "topic": "feelings change",
+            "target": 12100,
+            "target name": "Poppo Lancgeroch",
+            "state": "out of love",
+            "relationship": 12102
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1217": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1218": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1219": [
+          {
+            "topic": "neglected"
           }
         ]
       }
     },
     "key": 12101,
     "home": {
-      "income class": 3,
-      "income class label": "upper middle class",
-      "section": "stMarcktgang.se3.c3",
-      "street": "Marcktgang",
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stDen Hof.se3.c2",
+      "street": "Den Hof",
       "neighborhood": "denhof",
-      "unique id": 931
+      "unique id": 945
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
         12102
       ]

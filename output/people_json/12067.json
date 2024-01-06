@@ -1,53 +1,73 @@
 {
   "12067": {
     "alive": false,
-    "name": "Samuel",
-    "surname": "",
-    "full name": "Samuel",
+    "name": "Godeuert",
+    "surname": "Vos",
+    "full name": "Godeuert Vos",
     "born this way": {
-      "sexuality label": "bi",
-      "sexuality": 0.569,
-      "romantic interest": 0.944,
-      "sex interest": 0.548,
-      "gender expression": 0.162,
+      "sexuality label": "straight",
+      "sexuality": 0.0,
+      "romantic interest": 0.604,
+      "sex interest": 0.781,
+      "gender expression": 0.192,
       "sex": "m"
     },
-    "age": 39,
-    "birth year": 1168,
+    "age": 36,
+    "birth year": 1170,
     "sex": "m",
+    "faction": "No religion",
     "income class": [
       3,
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.503,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.53,
+      "nice-nasty": 0.0,
+      "honest-false": 0.458
     },
     "attitude": {
-      "outgoing": 0.306,
-      "dream": 0.627
+      "outgoing": 0.516,
+      "dream": 0.067
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "neglected"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.568,
-        "gender expression expression": 0.074
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.092
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13075": {
+          "key": 13075,
+          "name": "Hako Vos",
+          "age": 48,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Emgelberna (12068)",
+            "father": "Godeuert (12067)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           12069
-        ]
+        ],
+        "child": {
+          "birth": [
+            13076
+          ]
+        }
       }
     },
     "occupation": {
@@ -56,33 +76,32 @@
         3,
         "upper middle class"
       ],
-      "income": 1.461,
+      "income": 0.706,
       "all_incomes": [
-        0.99,
-        1.038,
-        1.311,
-        1.435,
-        1.29,
-        1.352,
-        1.372,
-        1.461
+        1.225,
+        1.034,
+        1.213,
+        1.16,
+        0.689,
+        0.497,
+        0.706
       ],
       "job": {
-        "lawful": false,
-        "honest": true
+        "lawful": true,
+        "honest": false
       }
     },
     "genetics": {
-      "skin_color": 8,
+      "skin_color": 1,
       "eye_color": "green",
       "hair_color": "brown",
       "hair_color_code": 2,
       "hair_type": [
-        "C",
-        "S"
+        "S",
+        "C"
       ],
-      "health": 0.775,
-      "fertility": 0.811,
+      "health": 0.76,
+      "fertility": 0.684,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -94,15 +113,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.775
+            "new_health": 0.76
           },
           "death": false
         },
-        "1206": {
+        "1205": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.775
+            "new_health": 0.76
           },
           "death": true
         }
@@ -112,12 +131,7 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.99
-          },
-          {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.038
+            "income": 1.225
           },
           {
             "topic": "new relationship",
@@ -127,8 +141,8 @@
               12068
             ],
             "people names": [
-              "Samuel",
-              "Leanne"
+              "Godeuert Vos",
+              "Emgelberna Scinkel"
             ],
             "label": "spouse",
             "committed": true
@@ -138,20 +152,67 @@
             "home": {
               "income class": 3,
               "income class label": "upper middle class",
-              "section": "stCromme straet.se7.c3",
-              "street": "Cromme straet",
+              "section": "stMarcktgang.se3.c3",
+              "street": "Marcktgang",
               "neighborhood": "denhof",
-              "unique id": 918
+              "unique id": 932
             }
+          },
+          {
+            "topic": "feelings change",
+            "target": 12068,
+            "target name": "Emgelberna Scinkel",
+            "state": "solid love",
+            "relationship": 12069
           }
         ],
         "1201": [
           {
-            "topic": "feelings change",
-            "target": 12068,
-            "target name": "Leanne",
-            "state": "solid love",
-            "relationship": 12069
+            "topic": "new relationship",
+            "key": 13076,
+            "people": [
+              12067,
+              13075
+            ],
+            "people names": [
+              "Godeuert Vos",
+              "Hako Vos"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1202": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.689
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.497
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "neglected"
           }
         ]
       }
@@ -160,10 +221,10 @@
     "home": {
       "income class": 3,
       "income class label": "upper middle class",
-      "section": "stCromme straet.se7.c3",
-      "street": "Cromme straet",
+      "section": "stMarcktgang.se3.c3",
+      "street": "Marcktgang",
       "neighborhood": "denhof",
-      "unique id": 918
+      "unique id": 932
     },
     "relationship status": {
       "taken": true,

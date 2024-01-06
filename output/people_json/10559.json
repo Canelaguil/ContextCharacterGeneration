@@ -1,32 +1,33 @@
 {
   "10559": {
     "alive": false,
-    "name": "Siwa",
-    "surname": "Suardt",
-    "full name": "Siwa Suardt",
+    "name": "Ghodelde",
+    "surname": "Scinkel",
+    "full name": "Ghodelde Scinkel",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.942,
-      "romantic interest": 0.912,
-      "sex interest": 0.977,
-      "gender expression": 0.34,
+      "sexuality label": "straight",
+      "sexuality": 0.093,
+      "romantic interest": 0.842,
+      "sex interest": 0.637,
+      "gender expression": 0.067,
       "sex": "f"
     },
-    "age": 17,
-    "birth year": 1184,
+    "age": 51,
+    "birth year": 1167,
     "sex": "f",
+    "faction": "Zealots",
     "income class": [
-      2,
-      "middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.338,
-      "nice-nasty": 0.577,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.0,
+      "nice-nasty": 0.0,
+      "honest-false": 0.0
     },
     "attitude": {
-      "outgoing": 0.355,
-      "dream": 0.216
+      "outgoing": 0.578,
+      "dream": 0.552
     },
     "homsoc": {
       "means": {
@@ -35,51 +36,47 @@
         "caretaker": false,
         "needs_care": false,
         "flags": [
-          "neglected"
+          "neglected",
+          "starving"
         ]
       },
       "expression": {
-        "sexuality expression": 0.745,
-        "gender expression expression": 0.155
+        "sexuality expression": 0.056,
+        "gender expression expression": 0.043
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {
-        "12358": {
-          "key": 12358,
-          "name": "Galo",
-          "age": 13,
-          "alive": false,
-          "sex": "m",
-          "parents": {
-            "mother": "Siwa (10559)",
-            "father": "Blankard (10558)"
-          }
-        }
-      },
+      "children": {},
       "relationship keys": {
         "spouse": [
-          10560
-        ],
-        "child": {
-          "birth": [
-            12360
-          ]
-        }
+          10560,
+          13948
+        ]
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        2,
-        "middle class"
+        1,
+        "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.863,
+      "all_incomes": [
+        0.623,
+        0.396,
+        0.875,
+        0.446,
+        0.7,
+        0.863
+      ],
+      "job": {
+        "lawful": false,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 8,
+      "skin_color": 5,
       "eye_color": "brown",
       "hair_color": "blonde",
       "hair_color_code": 4,
@@ -87,8 +84,8 @@
         "S",
         "S"
       ],
-      "health": 0.654,
-      "fertility": 0.671,
+      "health": 0.784,
+      "fertility": 0.799,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -100,9 +97,17 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.654
+            "new_health": 0.784
           },
           "death": false
+        },
+        "1217": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.784
+          },
+          "death": true
         }
       },
       "events": {
@@ -115,8 +120,8 @@
               10559
             ],
             "people names": [
-              "Blankard",
-              "Siwa Suardt"
+              "Kerolus Sonderland",
+              "Ghodelde Scinkel"
             ],
             "label": "spouse",
             "committed": true
@@ -124,28 +129,165 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stWaale straet.se1.c2",
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stWaale straet.se3.c1",
               "street": "Waale straet",
               "neighborhood": "agnesbuurt",
-              "unique id": 245
+              "unique id": 257
+            }
+          }
+        ],
+        "1201": [
+          {
+            "key": 10560,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10558,
+              "name": "Kerolus Sonderland",
+              "age": 34,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1202": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 13948,
+            "people": [
+              10549,
+              10559
+            ],
+            "people names": [
+              "Splinter Crane",
+              "Ghodelde Scinkel"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stWaale straet.se3.c1",
+              "street": "Waale straet",
+              "neighborhood": "agnesbuurt",
+              "unique id": 254
             }
           },
           {
-            "topic": "new relationship",
-            "key": 12360,
-            "people": [
-              10559,
-              12358
-            ],
-            "people names": [
-              "Siwa Suardt",
-              "Galo"
-            ],
-            "label": "parentchild",
-            "committed": false
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1206": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "feelings change",
+            "target": 10549,
+            "target name": "Splinter Crane",
+            "state": "infatuation",
+            "relationship": 13948
           },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "feelings change",
+            "target": 10549,
+            "target name": "Splinter Crane",
+            "state": "solid love",
+            "relationship": 13948
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1211": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1212": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.623
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1213": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.396
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1214": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1215": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.446
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1216": [
           {
             "topic": "neglected"
           }
@@ -154,18 +296,19 @@
     },
     "key": 10559,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stWaale straet.se1.c2",
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stWaale straet.se3.c1",
       "street": "Waale straet",
       "neighborhood": "agnesbuurt",
-      "unique id": 245
+      "unique id": 254
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        10560
+        10560,
+        13948
       ]
     }
   }

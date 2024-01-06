@@ -1,32 +1,33 @@
 {
   "11111": {
     "alive": false,
-    "name": "Godeweris",
+    "name": "Clementia",
     "surname": "",
-    "full name": "Godeweris",
+    "full name": "Clementia",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.041,
-      "romantic interest": 0.721,
-      "sex interest": 0.78,
-      "gender expression": 0.067,
+      "sexuality": 0.098,
+      "romantic interest": 0.644,
+      "sex interest": 0.567,
+      "gender expression": 0.22,
       "sex": "f"
     },
-    "age": 38,
-    "birth year": 1163,
+    "age": 53,
+    "birth year": 1172,
     "sex": "f",
+    "faction": "Zealots",
     "income class": [
-      0,
-      "working class"
+      3,
+      "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.364,
-      "nice-nasty": 0.997,
-      "honest-false": 0.273
+      "lawful-chaotic": 0.741,
+      "nice-nasty": 0.999,
+      "honest-false": 0.0
     },
     "attitude": {
-      "outgoing": 0.33,
-      "dream": 0.072
+      "outgoing": 0.552,
+      "dream": 0.357
     },
     "homsoc": {
       "means": {
@@ -34,27 +35,58 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "neglected"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.03,
-        "gender expression expression": 0.036
+        "sexuality expression": 0.064,
+        "gender expression expression": 0.104
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12878": {
+          "key": 12878,
+          "name": "Clemmam Cabelliau",
+          "age": 48,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Clementia (11111)",
+            "father": "Rissewint (11110)"
+          }
+        },
+        "16653": {
+          "key": 16653,
+          "name": "Mauricius Cabelliau",
+          "age": 37,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Clementia (11111)",
+            "father": "Rissewint (11110)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11112
-        ]
+        ],
+        "child": {
+          "birth": [
+            12880,
+            16655
+          ]
+        }
       }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        0,
-        "working class"
+        3,
+        "upper middle class"
       ],
       "income": 0,
       "all_incomes": []
@@ -62,14 +94,14 @@
     "genetics": {
       "skin_color": 7,
       "eye_color": "brown",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "S",
         "C"
       ],
-      "health": 0.825,
-      "fertility": 0.865,
+      "health": 0.0,
+      "fertility": 0.637,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -81,7 +113,31 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.825
+            "new_health": 0.634
+          },
+          "death": false
+        },
+        "1222": {
+          "health": {
+            "change": true,
+            "value_change": -0.197,
+            "new_health": 0.437
+          },
+          "death": false
+        },
+        "1223": {
+          "health": {
+            "change": true,
+            "value_change": -0.336,
+            "new_health": 0.101
+          },
+          "death": false
+        },
+        "1224": {
+          "health": {
+            "change": true,
+            "value_change": -0.101,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -96,8 +152,8 @@
               11111
             ],
             "people names": [
-              "Heinhoca Mey",
-              "Godeweris"
+              "Rissewint Cabelliau",
+              "Clementia"
             ],
             "label": "spouse",
             "committed": true
@@ -105,25 +161,180 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stOly straetje.se3.c0",
-              "street": "Oly straetje",
-              "neighborhood": "kampbuurt",
-              "unique id": 487
+              "income class": 3,
+              "income class label": "upper middle class",
+              "section": "stLange gracht.se3.c3",
+              "street": "Lange gracht",
+              "neighborhood": "olvbuurt",
+              "unique id": 503
             }
+          },
+          {
+            "topic": "feelings change",
+            "target": 11110,
+            "target name": "Rissewint Cabelliau",
+            "state": "solid love",
+            "relationship": 11112
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 12880,
+            "people": [
+              11111,
+              12878
+            ],
+            "people names": [
+              "Clementia",
+              "Clemmam Cabelliau"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1202": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1206": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1211": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1212": [
+          {
+            "topic": "new relationship",
+            "key": 16655,
+            "people": [
+              11111,
+              16653
+            ],
+            "people names": [
+              "Clementia",
+              "Mauricius Cabelliau"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1213": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1214": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1215": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1216": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1217": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1218": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1219": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1220": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1221": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1222": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1223": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1224": [
+          {
+            "topic": "neglected"
           }
         ]
       }
     },
     "key": 11111,
     "home": {
-      "income class": 0,
-      "income class label": "working class",
-      "section": "stOly straetje.se3.c0",
-      "street": "Oly straetje",
-      "neighborhood": "kampbuurt",
-      "unique id": 487
+      "income class": 3,
+      "income class label": "upper middle class",
+      "section": "stLange gracht.se3.c3",
+      "street": "Lange gracht",
+      "neighborhood": "olvbuurt",
+      "unique id": 503
     },
     "relationship status": {
       "taken": true,

@@ -1,121 +1,85 @@
 {
   "12454": {
-    "alive": true,
-    "name": "Wernerus",
-    "surname": "Lubertusszoon",
-    "full name": "Wernerus Lubertusszoon",
+    "alive": false,
+    "name": "Gheesen",
+    "surname": "van Heile",
+    "full name": "Gheesen van Heile",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.029,
-      "romantic interest": 0.617,
-      "sex interest": 0.726,
-      "gender expression": 0.144,
-      "sex": "m"
+      "sexuality": 0.0,
+      "romantic interest": 0.554,
+      "sex interest": 0.718,
+      "gender expression": 0.0,
+      "sex": "f"
     },
-    "age": 49,
+    "age": 6,
     "birth year": 1200,
-    "sex": "m",
+    "sex": "f",
+    "faction": "Dogmatists",
     "income class": [
-      0,
-      "working class"
+      3,
+      "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.02,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.157,
+      "nice-nasty": 0.38,
+      "honest-false": 0.779
     },
     "attitude": {
-      "outgoing": 0.197,
-      "dream": 0.27
+      "outgoing": 0.102,
+      "dream": 0.0
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": true,
-        "needs_care": false,
+        "needs_care": true,
         "flags": [
-          "starving",
           "neglected"
         ]
       },
       "expression": {
-        "sexuality expression": 0.028,
-        "gender expression expression": 0.065
+        "sexuality expression": -0.001,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": {
-        "mother": "Baua (11099)",
-        "father": "Lubertus (11098)"
+        "mother": "Heile (11273)",
+        "father": "Walic (11272)"
       },
       "children": {},
       "relationship keys": {
         "parent": [
           12455,
           12456
+        ],
+        "sibling": [
+          13394
         ]
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
-        0,
-        "working class"
+        3,
+        "upper middle class"
       ],
-      "income": 0.975,
-      "all_incomes": [
-        1.022,
-        1.007,
-        1.063,
-        1.051,
-        1.068,
-        0.996,
-        0.936,
-        0.939,
-        0.946,
-        0.897,
-        0.89,
-        0.862,
-        0.964,
-        1.02,
-        0.966,
-        0.986,
-        1.031,
-        1.025,
-        0.977,
-        0.937,
-        0.926,
-        0.891,
-        0.928,
-        0.984,
-        0.977,
-        0.944,
-        0.992,
-        0.913,
-        0.952,
-        0.902,
-        0.926,
-        1.016,
-        0.988,
-        0.975
-      ],
-      "job": {
-        "lawful": true,
-        "honest": true
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 1,
-      "eye_color": "brown",
+      "skin_color": 0,
+      "eye_color": "green",
       "hair_color": "strawberry blonde",
       "hair_color_code": 5,
       "hair_type": [
-        "S",
-        "S"
+        "C",
+        "C"
       ],
-      "health": 0.684,
-      "fertility": 0.72,
+      "health": 0.593,
+      "fertility": 0.745,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -127,9 +91,33 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.684
+            "new_health": 0.714
           },
           "death": false
+        },
+        "1202": {
+          "health": {
+            "change": true,
+            "value_change": -0.121,
+            "new_health": 0.593
+          },
+          "death": false
+        },
+        "1203": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.593
+          },
+          "death": false
+        },
+        "1206": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.593
+          },
+          "death": true
         }
       },
       "events": {
@@ -137,12 +125,12 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stOly straetje.se1.c0",
-              "street": "Oly straetje",
-              "neighborhood": "kampbuurt",
-              "unique id": 483
+              "income class": 3,
+              "income class label": "upper middle class",
+              "section": "stBreestraat.se3.c3",
+              "street": "Breestraat",
+              "neighborhood": "olvbuurt",
+              "unique id": 566
             }
           }
         ],
@@ -153,12 +141,56 @@
         ],
         "1202": [
           {
-            "topic": "not enough income",
-            "income": 0.729,
-            "inhabitants": []
+            "topic": "new relationship",
+            "key": 13394,
+            "people": [
+              12454,
+              13391
+            ],
+            "people names": [
+              "Gheesen van Heile",
+              "Oderada"
+            ],
+            "label": "sibling",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 13391,
+              "name": "Oderada",
+              "age": 0,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Heile (11273)",
+                "father": "Walic (11272)"
+              }
+            },
+            "label": "sibling"
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1204": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11273,
+              "name": "Heile Voit",
+              "age": 24,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "label": "parent"
+          },
           {
             "topic": "neglected"
           }
@@ -170,175 +202,26 @@
         ],
         "1206": [
           {
-            "topic": "not enough income",
-            "income": 0.732,
-            "inhabitants": []
-          }
-        ],
-        "1207": [
-          {
             "topic": "neglected"
-          }
-        ],
-        "1208": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1209": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1210": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1211": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1212": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1213": [
-          {
-            "topic": "person died",
-            "person": {
-              "key": 11098,
-              "name": "Lubertus",
-              "age": 42,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "label": "parent"
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          },
-          {
-            "topic": "new caretaker",
-            "person": 11099
-          }
-        ],
-        "1214": [
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stDe Tuyt.se3.c0",
-              "street": "De Tuyt",
-              "neighborhood": "agnesbuurt",
-              "unique id": 289
-            }
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.449,
-            "inhabitants": [
-              12454
-            ]
-          }
-        ],
-        "1215": [
-          {
-            "topic": "person died",
-            "person": {
-              "key": 11099,
-              "name": "Baua Rowerus",
-              "age": 55,
-              "alive": false,
-              "sex": "f",
-              "parents": "firstgen"
-            },
-            "label": "parent"
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.566,
-            "inhabitants": [
-              12454
-            ]
-          }
-        ],
-        "1216": [
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.022
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.685,
-            "inhabitants": [
-              12454
-            ]
-          }
-        ],
-        "1217": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1218": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1219": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1220": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1229": [
-          {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.02
-          }
-        ],
-        "1232": [
-          {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.031
-          }
-        ],
-        "1247": [
-          {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.016
           }
         ]
       }
     },
     "key": 12454,
     "home": {
-      "income class": 0,
-      "income class label": "working class",
-      "section": "stDe Tuyt.se3.c0",
-      "street": "De Tuyt",
-      "neighborhood": "agnesbuurt",
-      "unique id": 289
+      "income class": 3,
+      "income class label": "upper middle class",
+      "section": "stBreestraat.se3.c3",
+      "street": "Breestraat",
+      "neighborhood": "olvbuurt",
+      "unique id": 566
     },
     "relationship status": {
       "taken": false,
       "married": false,
-      "relationships": []
+      "relationships": [
+        13394
+      ]
     }
   }
 }

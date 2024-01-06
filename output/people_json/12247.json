@@ -1,70 +1,82 @@
 {
   "12247": {
     "alive": false,
-    "name": "Brame",
-    "surname": "Scelwart",
-    "full name": "Brame Scelwart",
+    "name": "Ghoris",
+    "surname": "Croppes",
+    "full name": "Ghoris Croppes",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.987,
-      "romantic interest": 0.644,
-      "sex interest": 0.905,
-      "gender expression": 0.62,
+      "sexuality label": "straight",
+      "sexuality": 0.116,
+      "romantic interest": 0.54,
+      "sex interest": 0.609,
+      "gender expression": 0.179,
       "sex": "m"
     },
-    "age": 30,
-    "birth year": 1177,
+    "age": 18,
+    "birth year": 1200,
     "sex": "m",
+    "faction": "Zealots",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.376,
-      "nice-nasty": 0.9,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.512,
+      "nice-nasty": 0.767,
+      "honest-false": 0.493
     },
     "attitude": {
-      "outgoing": 0.73,
-      "dream": 0.758
+      "outgoing": 0.625,
+      "dream": 0.27
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
         "flags": [
-          "neglected"
+          "neglected",
+          "starving"
         ]
       },
       "expression": {
-        "sexuality expression": 0.685,
-        "gender expression expression": 0.061
+        "sexuality expression": 0.061,
+        "gender expression expression": 0.039
       }
     },
     "network": {
-      "parents": "firstgen",
+      "parents": {
+        "mother": "Ricmoden (10196)",
+        "father": "Bobone (10195)"
+      },
       "children": {
-        "14586": {
-          "key": 14586,
-          "name": "Atghardis Scelwart",
-          "age": 44,
+        "17776": {
+          "key": 17776,
+          "name": "Bodekine Croppes",
+          "age": 31,
           "alive": true,
-          "sex": "f",
+          "sex": "m",
           "parents": {
-            "mother": "Lisebette (12248)",
-            "father": "Brame (12247)"
+            "mother": "Lutghardis (12987)",
+            "father": "Ghoris (12247)"
           }
         }
       },
       "relationship keys": {
-        "spouse": [
+        "parent": [
+          12248,
           12249
+        ],
+        "sibling": [
+          15473
+        ],
+        "spouse": [
+          17565
         ],
         "child": {
           "birth": [
-            14587
+            17777
           ]
         }
       }
@@ -75,33 +87,28 @@
         1,
         "lower middle class"
       ],
-      "income": 1.311,
+      "income": 0.847,
       "all_incomes": [
-        0.903,
-        1.181,
-        1.217,
-        1.171,
-        1.028,
-        1.022,
-        1.214,
-        1.311
+        1.01,
+        0.856,
+        0.847
       ],
       "job": {
-        "lawful": false,
-        "honest": true
+        "lawful": true,
+        "honest": false
       }
     },
     "genetics": {
       "skin_color": 6,
-      "eye_color": "green",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "eye_color": "brown",
+      "hair_color": "red",
+      "hair_color_code": 3,
       "hair_type": [
-        "S",
-        "C"
+        "C",
+        "S"
       ],
-      "health": 0.728,
-      "fertility": 0.744,
+      "health": 0.713,
+      "fertility": 0.644,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -109,19 +116,19 @@
     },
     "memory": {
       "health": {
-        "1200": {
+        "1201": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.728
+            "new_health": 0.713
           },
           "death": false
         },
-        "1206": {
+        "1218": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.728
+            "new_health": 0.713
           },
           "death": true
         }
@@ -129,63 +136,38 @@
       "events": {
         "1200": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.903
-          },
-          {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.181
-          },
-          {
-            "topic": "new relationship",
-            "key": 12249,
-            "people": [
-              12247,
-              12248
-            ],
-            "people names": [
-              "Brame Scelwart",
-              "Lisebette"
-            ],
-            "label": "spouse",
-            "committed": true
-          },
-          {
             "topic": "new home",
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stKerckstraet.se5.c1",
-              "street": "Kerckstraet",
-              "neighborhood": "denhof",
-              "unique id": 994
+              "section": "stHelle voet.se1.c1",
+              "street": "Helle voet",
+              "neighborhood": "jorisbuurt",
+              "unique id": 84
             }
-          },
+          }
+        ],
+        "1201": [
           {
-            "topic": "feelings change",
-            "target": 12248,
-            "target name": "Lisebette",
-            "state": "out of love",
-            "relationship": 12249
+            "topic": "neglected"
+          }
+        ],
+        "1202": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "neglected"
           }
         ],
         "1205": [
-          {
-            "topic": "new relationship",
-            "key": 14587,
-            "people": [
-              12247,
-              14586
-            ],
-            "people names": [
-              "Brame Scelwart",
-              "Atghardis Scelwart"
-            ],
-            "label": "parentchild",
-            "committed": false
-          },
           {
             "topic": "neglected"
           }
@@ -194,6 +176,151 @@
           {
             "topic": "neglected"
           }
+        ],
+        "1207": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "new relationship",
+            "key": 15473,
+            "people": [
+              12247,
+              15470
+            ],
+            "people names": [
+              "Ghoris Croppes",
+              "Dauid Croppes"
+            ],
+            "label": "sibling",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10195,
+              "name": "Bobone Croppes",
+              "age": 55,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "parent"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              17216
+            ]
+          },
+          {
+            "topic": "new caretaker",
+            "person": 10196
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              17216
+            ]
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              17216
+            ]
+          }
+        ],
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              17216
+            ]
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              17216
+            ]
+          }
+        ],
+        "1215": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              17216
+            ]
+          }
+        ],
+        "1216": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.01
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              17216
+            ]
+          }
+        ],
+        "1217": [
+          {
+            "topic": "new relationship",
+            "key": 17565,
+            "people": [
+              12247,
+              12987
+            ],
+            "people names": [
+              "Ghoris Croppes",
+              "Lutghardis"
+            ],
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1218": [
+          {
+            "topic": "new relationship",
+            "key": 17777,
+            "people": [
+              12247,
+              17776
+            ],
+            "people names": [
+              "Ghoris Croppes",
+              "Bodekine Croppes"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
         ]
       }
     },
@@ -201,16 +328,17 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stKerckstraet.se5.c1",
-      "street": "Kerckstraet",
-      "neighborhood": "denhof",
-      "unique id": 994
+      "section": "stHelle voet.se1.c1",
+      "street": "Helle voet",
+      "neighborhood": "jorisbuurt",
+      "unique id": 84
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        12249
+        15473,
+        17565
       ]
     }
   }

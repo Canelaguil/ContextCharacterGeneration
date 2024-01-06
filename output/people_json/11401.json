@@ -1,32 +1,33 @@
 {
   "11401": {
     "alive": false,
-    "name": "Ivone",
-    "surname": "Buyc",
-    "full name": "Ivone Buyc",
+    "name": "Geykonis",
+    "surname": "Snepore",
+    "full name": "Geykonis Snepore",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.03,
-      "romantic interest": 0.589,
-      "sex interest": 0.499,
-      "gender expression": 0.007,
+      "sexuality label": "gay",
+      "sexuality": 0.835,
+      "romantic interest": 0.536,
+      "sex interest": 0.883,
+      "gender expression": 0.692,
       "sex": "m"
     },
-    "age": 36,
-    "birth year": 1166,
+    "age": 56,
+    "birth year": 1154,
     "sex": "m",
+    "faction": "Dogmatists",
     "income class": [
-      3,
-      "upper middle class"
+      2,
+      "middle class"
     ],
     "personality": {
       "lawful-chaotic": 0.0,
-      "nice-nasty": 0.288,
-      "honest-false": 0.768
+      "nice-nasty": 0.561,
+      "honest-false": 0.408
     },
     "attitude": {
-      "outgoing": 0.603,
-      "dream": 0.458
+      "outgoing": 0.477,
+      "dream": 0.637
     },
     "homsoc": {
       "means": {
@@ -34,33 +35,61 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "neglected"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.022,
-        "gender expression expression": 0.003
+        "sexuality expression": 0.506,
+        "gender expression expression": 0.264
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13405": {
+          "key": 13405,
+          "name": "Gilis Snepore",
+          "age": 47,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Vreile (11402)",
+            "father": "Geykonis (11401)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          11403
-        ]
+          11403,
+          15038
+        ],
+        "child": {
+          "birth": [
+            13406
+          ]
+        }
       }
     },
     "occupation": {
       "has job": true,
       "income class": [
-        3,
-        "upper middle class"
+        2,
+        "middle class"
       ],
-      "income": 1.158,
+      "income": 1.183,
       "all_incomes": [
-        1.113,
-        1.172,
-        1.158
+        0.924,
+        0.963,
+        1.209,
+        1.399,
+        1.325,
+        1.17,
+        1.114,
+        1.017,
+        1.117,
+        1.148,
+        1.183
       ],
       "job": {
         "lawful": false,
@@ -70,14 +99,14 @@
     "genetics": {
       "skin_color": 6,
       "eye_color": "blue",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
         "C",
-        "S"
+        "C"
       ],
-      "health": 0.597,
-      "fertility": 0.558,
+      "health": 0.734,
+      "fertility": 0.79,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -89,15 +118,31 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.597
+            "new_health": 0.807
           },
           "death": false
         },
-        "1201": {
+        "1207": {
+          "health": {
+            "change": true,
+            "value_change": -0.073,
+            "new_health": 0.734
+          },
+          "death": false
+        },
+        "1208": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.597
+            "new_health": 0.734
+          },
+          "death": false
+        },
+        "1209": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.734
           },
           "death": true
         }
@@ -107,7 +152,7 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.113
+            "income": 0.924
           },
           {
             "topic": "new relationship",
@@ -117,8 +162,8 @@
               11402
             ],
             "people names": [
-              "Ivone Buyc",
-              "Sara"
+              "Geykonis Snepore",
+              "Vreile Clinkart"
             ],
             "label": "spouse",
             "committed": true
@@ -126,38 +171,130 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stDie lange straet1.se3.c3",
-              "street": "Die lange straet1",
-              "neighborhood": "olvbuurt",
-              "unique id": 617
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stScherbier straet.se1.c2",
+              "street": "Scherbier straet",
+              "neighborhood": "cingelzuid",
+              "unique id": 626
             }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.209
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 13406,
+            "people": [
+              11401,
+              13405
+            ],
+            "people names": [
+              "Geykonis Snepore",
+              "Gilis Snepore"
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
+            "key": 11403,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11402,
+              "name": "Vreile Clinkart",
+              "age": 37,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 15038,
+            "people": [
+              11401,
+              11588
+            ],
+            "people names": [
+              "Geykonis Snepore",
+              "Emgelberna Zuakart"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1209": [
+          {
             "topic": "feelings change",
-            "target": 11402,
-            "target name": "Sara",
+            "target": 11588,
+            "target name": "Emgelberna Zuakart",
             "state": "solid love",
-            "relationship": 11403
+            "relationship": 15038
+          },
+          {
+            "topic": "neglected"
           }
         ]
       }
     },
     "key": 11401,
     "home": {
-      "income class": 3,
-      "income class label": "upper middle class",
-      "section": "stDie lange straet1.se3.c3",
-      "street": "Die lange straet1",
-      "neighborhood": "olvbuurt",
-      "unique id": 617
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stScherbier straet.se1.c2",
+      "street": "Scherbier straet",
+      "neighborhood": "cingelzuid",
+      "unique id": 626
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        11403
+        11403,
+        15038
       ]
     }
   }

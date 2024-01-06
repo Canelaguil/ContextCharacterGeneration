@@ -1,32 +1,33 @@
 {
   "11999": {
     "alive": false,
-    "name": "Vreile",
-    "surname": "Vos",
-    "full name": "Vreile Vos",
+    "name": "Walburgis",
+    "surname": "Vint",
+    "full name": "Walburgis Vint",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.681,
-      "sex interest": 0.713,
-      "gender expression": 0.177,
+      "sexuality label": "bi",
+      "sexuality": 0.491,
+      "romantic interest": 0.774,
+      "sex interest": 0.835,
+      "gender expression": 0.397,
       "sex": "f"
     },
-    "age": 41,
-    "birth year": 1161,
+    "age": 49,
+    "birth year": 1160,
     "sex": "f",
+    "faction": "No religion",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.663,
-      "honest-false": 0.876
+      "lawful-chaotic": 0.253,
+      "nice-nasty": 0.977,
+      "honest-false": 0.251
     },
     "attitude": {
-      "outgoing": 0.578,
-      "dream": 0.302
+      "outgoing": 0.366,
+      "dream": 0.338
     },
     "homsoc": {
       "means": {
@@ -34,61 +35,52 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": [
-          "neglected"
-        ]
+        "flags": []
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.133
+        "sexuality expression": 0.32,
+        "gender expression expression": 0.148
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {
-        "13048": {
-          "key": 13048,
-          "name": "Herardus Bloeme",
-          "age": 4,
-          "alive": false,
-          "sex": "m",
-          "parents": {
-            "mother": "Vreile (11999)",
-            "father": "Reynerus (11998)"
-          }
-        }
-      },
+      "children": {},
       "relationship keys": {
         "spouse": [
           12000
-        ],
-        "child": {
-          "birth": [
-            13050
-          ]
-        }
+        ]
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.119,
+      "all_incomes": [
+        1.134,
+        1.066,
+        0.884,
+        1.022,
+        1.119
+      ],
+      "job": {
+        "lawful": false,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 3,
+      "skin_color": 2,
       "eye_color": "brown",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
-        "C",
-        "C"
+        "S",
+        "S"
       ],
-      "health": 0.816,
-      "fertility": 0.752,
+      "health": 0.692,
+      "fertility": 0.683,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -100,9 +92,17 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.816
+            "new_health": 0.692
           },
           "death": false
+        },
+        "1208": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.692
+          },
+          "death": true
         }
       },
       "events": {
@@ -115,8 +115,8 @@
               11999
             ],
             "people names": [
-              "Reynerus Bloeme",
-              "Vreile Vos"
+              "Blankard Naghel",
+              "Walburgis Vint"
             ],
             "label": "spouse",
             "committed": true
@@ -129,34 +129,47 @@
               "section": "stCromme straet.se5.c2",
               "street": "Cromme straet",
               "neighborhood": "denhof",
-              "unique id": 887
+              "unique id": 903
             }
-          }
-        ],
-        "1201": [
-          {
-            "topic": "new relationship",
-            "key": 13050,
-            "people": [
-              11999,
-              13048
-            ],
-            "people names": [
-              "Vreile Vos",
-              "Herardus Bloeme"
-            ],
-            "label": "parentchild",
-            "committed": false
           },
           {
             "topic": "feelings change",
             "target": 11998,
-            "target name": "Reynerus Bloeme",
-            "state": "solid love",
+            "target name": "Blankard Naghel",
+            "state": "out of love",
             "relationship": 12000
+          }
+        ],
+        "1204": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.134
+          }
+        ],
+        "1207": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.022
+          }
+        ],
+        "1208": [
+          {
+            "key": 12000,
+            "topic": "unmarried"
           },
           {
-            "topic": "neglected"
+            "topic": "person died",
+            "person": {
+              "key": 11998,
+              "name": "Blankard Naghel",
+              "age": 53,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
           }
         ]
       }
@@ -168,11 +181,11 @@
       "section": "stCromme straet.se5.c2",
       "street": "Cromme straet",
       "neighborhood": "denhof",
-      "unique id": 887
+      "unique id": 903
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         12000
       ]

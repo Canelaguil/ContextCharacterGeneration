@@ -1,32 +1,33 @@
 {
   "10109": {
     "alive": false,
-    "name": "Diewiven",
-    "surname": "Craiman",
-    "full name": "Diewiven Craiman",
+    "name": "Thedwi",
+    "surname": "Catere",
+    "full name": "Thedwi Catere",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.854,
-      "romantic interest": 0.719,
-      "sex interest": 0.85,
-      "gender expression": 0.178,
+      "sexuality label": "bi",
+      "sexuality": 0.546,
+      "romantic interest": 0.581,
+      "sex interest": 0.986,
+      "gender expression": 0.306,
       "sex": "f"
     },
-    "age": 57,
-    "birth year": 1160,
+    "age": 55,
+    "birth year": 1167,
     "sex": "f",
+    "faction": "Zealots",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.41,
-      "nice-nasty": 0.571,
-      "honest-false": 0.249
+      "lawful-chaotic": 0.506,
+      "nice-nasty": 0.86,
+      "honest-false": 0.363
     },
     "attitude": {
-      "outgoing": 0.598,
-      "dream": 0.656
+      "outgoing": 0.409,
+      "dream": 0.323
     },
     "homsoc": {
       "means": {
@@ -35,22 +36,50 @@
         "caretaker": false,
         "needs_care": false,
         "flags": [
-          "starving"
+          "neglected"
         ]
       },
       "expression": {
-        "sexuality expression": 0.748,
-        "gender expression expression": 0.116
+        "sexuality expression": 0.255,
+        "gender expression expression": 0.169
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12241": {
+          "key": 12241,
+          "name": "Heilsota Vraet",
+          "age": 18,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Thedwi (10109)",
+            "father": "Cees (10108)"
+          }
+        },
+        "15061": {
+          "key": 15061,
+          "name": "Alretieren Vraet",
+          "age": 21,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Thedwi (10109)",
+            "father": "Cees (10108)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          10110,
-          15686
-        ]
+          10110
+        ],
+        "child": {
+          "birth": [
+            12243,
+            15063
+          ]
+        }
       }
     },
     "occupation": {
@@ -59,14 +88,12 @@
         1,
         "lower middle class"
       ],
-      "income": 1.136,
+      "income": 1.499,
       "all_incomes": [
-        1.463,
-        1.026,
-        1.06,
-        1.377,
+        1.252,
         1.499,
-        1.136
+        1.48,
+        1.499
       ],
       "job": {
         "lawful": false,
@@ -74,16 +101,16 @@
       }
     },
     "genetics": {
-      "skin_color": 0,
-      "eye_color": "green",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "skin_color": 4,
+      "eye_color": "brown",
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
         "S",
         "S"
       ],
-      "health": 0.349,
-      "fertility": 0.817,
+      "health": 0.0,
+      "fertility": 0.755,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -95,31 +122,63 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.889
+            "new_health": 0.765
+          },
+          "death": false
+        },
+        "1213": {
+          "health": {
+            "change": true,
+            "value_change": -0.194,
+            "new_health": 0.571
           },
           "death": false
         },
         "1214": {
           "health": {
-            "change": true,
-            "value_change": -0.095,
-            "new_health": 0.794
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.571
           },
           "death": false
         },
-        "1215": {
+        "1217": {
           "health": {
             "change": true,
-            "value_change": -0.204,
-            "new_health": 0.59
+            "value_change": -0.246,
+            "new_health": 0.325
           },
           "death": false
         },
-        "1216": {
+        "1218": {
           "health": {
             "change": true,
-            "value_change": -0.241,
-            "new_health": 0.349
+            "value_change": -0.166,
+            "new_health": 0.159
+          },
+          "death": false
+        },
+        "1219": {
+          "health": {
+            "change": true,
+            "value_change": -0.121,
+            "new_health": 0.038
+          },
+          "death": false
+        },
+        "1220": {
+          "health": {
+            "change": true,
+            "value_change": -0.037,
+            "new_health": 0.001
+          },
+          "death": false
+        },
+        "1221": {
+          "health": {
+            "change": true,
+            "value_change": -0.001,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -134,8 +193,8 @@
               10109
             ],
             "people names": [
-              "Sollen Vekenstyl",
-              "Diewiven Craiman"
+              "Cees Vraet",
+              "Thedwi Catere"
             ],
             "label": "spouse",
             "committed": true
@@ -145,114 +204,174 @@
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stSlyck straet.se3.c1",
+              "section": "stSlyck straet.se1.c1",
               "street": "Slyck straet",
               "neighborhood": "varkensbuurt",
-              "unique id": 48
+              "unique id": 44
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12243,
+            "people": [
+              10109,
+              12241
+            ],
+            "people names": [
+              "Thedwi Catere",
+              "Heilsota Vraet"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1201": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1202": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "neglected"
           }
         ],
         "1204": [
           {
-            "topic": "not enough income",
-            "income": 0.147,
-            "inhabitants": []
+            "topic": "neglected"
           }
         ],
         "1205": [
           {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
+            "topic": "neglected"
           }
         ],
         "1206": [
           {
-            "key": 10110,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 10108,
-              "name": "Sollen Vekenstyl",
-              "age": 34,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "neglected"
           }
         ],
         "1207": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "new relationship",
+            "key": 15063,
+            "people": [
+              10109,
+              15061
+            ],
+            "people names": [
+              "Thedwi Catere",
+              "Alretieren Vraet"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 10108,
+            "target name": "Cees Vraet",
+            "state": "out of love",
+            "relationship": 10110
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1208": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "neglected"
           }
         ],
         "1209": [
           {
-            "topic": "new relationship",
-            "key": 15686,
-            "people": [
-              10579,
-              10109
-            ],
-            "people names": [
-              "Pieter Pryckert",
-              "Diewiven Craiman"
-            ],
-            "label": "spouse",
-            "committed": true
-          },
+            "topic": "neglected"
+          }
+        ],
+        "1210": [
           {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stWaale straet.se3.c1",
-              "street": "Waale straet",
-              "neighborhood": "agnesbuurt",
-              "unique id": 254
-            }
+            "topic": "neglected"
           }
         ],
         "1211": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.463
+            "topic": "neglected"
+          }
+        ],
+        "1212": [
+          {
+            "topic": "neglected"
           }
         ],
         "1213": [
           {
-            "topic": "feelings change",
-            "target": 10579,
-            "target name": "Pieter Pryckert",
-            "state": "infatuation",
-            "relationship": 15686
+            "topic": "neglected"
           }
         ],
         "1214": [
           {
-            "topic": "feelings change",
-            "target": 10579,
-            "target name": "Pieter Pryckert",
-            "state": "out of love",
-            "relationship": 15686
+            "topic": "neglected"
+          }
+        ],
+        "1215": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1216": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1217": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1218": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.252
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1219": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12241,
+              "name": "Heilsota Vraet",
+              "age": 18,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Thedwi (10109)",
+                "father": "Cees (10108)"
+              }
+            },
+            "label": "child"
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1220": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1221": [
+          {
+            "topic": "neglected"
           }
         ]
       }
@@ -261,17 +380,16 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stWaale straet.se3.c1",
-      "street": "Waale straet",
-      "neighborhood": "agnesbuurt",
-      "unique id": 254
+      "section": "stSlyck straet.se1.c1",
+      "street": "Slyck straet",
+      "neighborhood": "varkensbuurt",
+      "unique id": 44
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        10110,
-        15686
+        10110
       ]
     }
   }

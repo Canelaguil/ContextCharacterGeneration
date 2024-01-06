@@ -1,32 +1,33 @@
 {
   "10519": {
     "alive": false,
-    "name": "Lambrecht",
-    "surname": "Weder",
-    "full name": "Lambrecht Weder",
+    "name": "Snellekine",
+    "surname": "Cnif",
+    "full name": "Snellekine Cnif",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.067,
-      "romantic interest": 0.72,
-      "sex interest": 0.753,
-      "gender expression": 0.166,
+      "sexuality": 0.0,
+      "romantic interest": 0.928,
+      "sex interest": 0.595,
+      "gender expression": 0.009,
       "sex": "m"
     },
-    "age": 46,
-    "birth year": 1172,
+    "age": 53,
+    "birth year": 1155,
     "sex": "m",
+    "faction": "Dogmatists",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.329,
-      "honest-false": 0.382
+      "lawful-chaotic": 0.0,
+      "nice-nasty": 0.818,
+      "honest-false": 0.849
     },
     "attitude": {
-      "outgoing": 0.72,
-      "dream": 0.481
+      "outgoing": 0.559,
+      "dream": 0.678
     },
     "homsoc": {
       "means": {
@@ -35,22 +36,51 @@
         "caretaker": false,
         "needs_care": false,
         "flags": [
+          "neglected",
           "starving"
         ]
       },
       "expression": {
-        "sexuality expression": 0.04,
-        "gender expression expression": 0.093
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.005
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12307": {
+          "key": 12307,
+          "name": "Kerstine Cnif",
+          "age": 12,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Godeweris (10520)",
+            "father": "Snellekine (10519)"
+          }
+        },
+        "13227": {
+          "key": 13227,
+          "name": "Erkenradis Cnif",
+          "age": 22,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Godeweris (10520)",
+            "father": "Snellekine (10519)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          10521,
-          15438
-        ]
+          10521
+        ],
+        "child": {
+          "birth": [
+            12308,
+            13228
+          ]
+        }
       }
     },
     "occupation": {
@@ -59,44 +89,34 @@
         2,
         "middle class"
       ],
-      "income": 0.747,
+      "income": 0.787,
       "all_incomes": [
-        1.215,
-        1.084,
-        0.847,
-        1.242,
-        0.921,
-        0.671,
-        0.439,
-        0.024,
-        0.0,
-        0.0,
-        0.416,
-        0.586,
-        0.546,
-        0.56,
-        0.529,
-        0.569,
-        0.718,
-        0.664,
-        0.747
+        1.213,
+        1.039,
+        1.02,
+        0.999,
+        0.574,
+        0.706,
+        0.361,
+        0.373,
+        0.787
       ],
       "job": {
-        "lawful": true,
+        "lawful": false,
         "honest": false
       }
     },
     "genetics": {
       "skin_color": 7,
-      "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "eye_color": "green",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
-        "C",
+        "S",
         "S"
       ],
-      "health": 0.766,
-      "fertility": 0.865,
+      "health": 0.091,
+      "fertility": 0.619,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -108,15 +128,31 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.766
+            "new_health": 0.596
           },
           "death": false
         },
-        "1217": {
+        "1205": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.766
+            "change": true,
+            "value_change": -0.138,
+            "new_health": 0.458
+          },
+          "death": false
+        },
+        "1206": {
+          "health": {
+            "change": true,
+            "value_change": -0.255,
+            "new_health": 0.203
+          },
+          "death": false
+        },
+        "1207": {
+          "health": {
+            "change": true,
+            "value_change": -0.112,
+            "new_health": 0.091
           },
           "death": true
         }
@@ -126,7 +162,7 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.215
+            "income": 1.213
           },
           {
             "topic": "new relationship",
@@ -136,8 +172,8 @@
               10520
             ],
             "people names": [
-              "Lambrecht Weder",
-              "Nannen Borlut"
+              "Snellekine Cnif",
+              "Godeweris Snauel"
             ],
             "label": "spouse",
             "committed": true
@@ -147,130 +183,117 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stBloemendaelse straet.se3.c2",
+              "section": "stBloemendaelse straet.se7.c2",
               "street": "Bloemendaelse straet",
               "neighborhood": "agnesbuurt",
-              "unique id": 229
+              "unique id": 241
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12308,
+            "people": [
+              10519,
+              12307
+            ],
+            "people names": [
+              "Snellekine Cnif",
+              "Kerstine Cnif"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1201": [
+          {
+            "topic": "feelings change",
+            "target": 10520,
+            "target name": "Godeweris Snauel",
+            "state": "out of love",
+            "relationship": 10521
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1202": [
           {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.242
+            "topic": "new relationship",
+            "key": 13228,
+            "people": [
+              10519,
+              13227
+            ],
+            "people names": [
+              "Snellekine Cnif",
+              "Erkenradis Cnif"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1203": [
           {
-            "key": 10521,
-            "topic": "unmarried"
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.574
           },
           {
-            "topic": "person died",
-            "person": {
-              "key": 10520,
-              "name": "Nannen Borlut",
-              "age": 45,
-              "alive": false,
-              "sex": "f",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
+            "topic": "neglected"
           }
         ],
         "1204": [
           {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.671
+            "topic": "neglected"
           }
         ],
         "1205": [
           {
             "topic": "job notice",
             "notice": "earning very little",
-            "income": 0.439
+            "income": 0.361
+          },
+          {
+            "topic": "feelings change",
+            "target": 10520,
+            "target name": "Godeweris Snauel",
+            "state": "infatuation",
+            "relationship": 10521
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.361,
+            "inhabitants": []
           }
         ],
         "1206": [
           {
             "topic": "job notice",
-            "notice": "hardly any income",
-            "income": 0.024
+            "notice": "earning very little",
+            "income": 0.373
+          },
+          {
+            "topic": "feelings change",
+            "target": 10520,
+            "target name": "Godeweris Snauel",
+            "state": "solid love",
+            "relationship": 10521
           },
           {
             "topic": "not enough income",
-            "income": 0.024,
+            "income": 0.373,
             "inhabitants": []
           }
         ],
         "1207": [
           {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
-          }
-        ],
-        "1208": [
-          {
-            "topic": "new relationship",
-            "key": 15438,
-            "people": [
-              10519,
-              10553
-            ],
-            "people names": [
-              "Lambrecht Weder",
-              "Berta"
-            ],
-            "label": "spouse",
-            "committed": true
-          }
-        ],
-        "1209": [
-          {
-            "topic": "feelings change",
-            "target": 10553,
-            "target name": "Berta",
-            "state": "out of love",
-            "relationship": 15438
-          }
-        ],
-        "1211": [
-          {
-            "topic": "feelings change",
-            "target": 10553,
-            "target name": "Berta",
-            "state": "infatuation",
-            "relationship": 15438
-          }
-        ],
-        "1212": [
-          {
-            "topic": "feelings change",
-            "target": 10553,
-            "target name": "Berta",
-            "state": "solid love",
-            "relationship": 15438
-          }
-        ],
-        "1214": [
-          {
-            "key": 15438,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 10553,
-              "name": "Berta",
-              "age": 55,
-              "alive": false,
-              "sex": "f",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
+            "topic": "neglected"
           }
         ]
       }
@@ -279,17 +302,16 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stBloemendaelse straet.se3.c2",
+      "section": "stBloemendaelse straet.se7.c2",
       "street": "Bloemendaelse straet",
       "neighborhood": "agnesbuurt",
-      "unique id": 229
+      "unique id": 241
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
-        10521,
-        15438
+        10521
       ]
     }
   }

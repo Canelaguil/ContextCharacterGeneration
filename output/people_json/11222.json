@@ -1,32 +1,33 @@
 {
   "11222": {
     "alive": false,
-    "name": "Imsoete",
-    "surname": "",
-    "full name": "Imsoete",
+    "name": "Nimme",
+    "surname": "Kriec",
+    "full name": "Nimme Kriec",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.001,
-      "romantic interest": 0.699,
-      "sex interest": 0.857,
-      "gender expression": 0.299,
+      "sexuality": 0.137,
+      "romantic interest": 0.824,
+      "sex interest": 0.329,
+      "gender expression": 0.172,
       "sex": "f"
     },
-    "age": 54,
-    "birth year": 1160,
+    "age": 33,
+    "birth year": 1170,
     "sex": "f",
+    "faction": "No religion",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.716,
-      "nice-nasty": 0.199,
-      "honest-false": 0.974
+      "lawful-chaotic": 0.647,
+      "nice-nasty": 0.826,
+      "honest-false": 0.999
     },
     "attitude": {
-      "outgoing": 0.249,
-      "dream": 0.18
+      "outgoing": 0.35,
+      "dream": 0.563
     },
     "homsoc": {
       "means": {
@@ -35,58 +36,60 @@
         "caretaker": false,
         "needs_care": false,
         "flags": [
-          "starving"
+          "neglected"
         ]
       },
       "expression": {
-        "sexuality expression": -0.0,
-        "gender expression expression": 0.173
+        "sexuality expression": 0.093,
+        "gender expression expression": 0.066
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12910": {
+          "key": 12910,
+          "name": "Geykonis Iude",
+          "age": 48,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Nimme (11222)",
+            "father": "Pelegrim (11221)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          11223,
-          15691
-        ]
+          11223
+        ],
+        "child": {
+          "birth": [
+            12912
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 0.934,
-      "all_incomes": [
-        0.932,
-        0.894,
-        0.886,
-        0.85,
-        0.808,
-        0.787,
-        0.813,
-        0.857,
-        0.934
-      ],
-      "job": {
-        "lawful": true,
-        "honest": true
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 1,
+      "skin_color": 4,
       "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
-        "S",
-        "C"
+        "C",
+        "S"
       ],
-      "health": 0.0,
-      "fertility": 0.677,
+      "health": 0.767,
+      "fertility": 0.722,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -98,39 +101,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.701
+            "new_health": 0.767
           },
           "death": false
         },
-        "1210": {
+        "1202": {
           "health": {
-            "change": true,
-            "value_change": -0.285,
-            "new_health": 0.416
-          },
-          "death": false
-        },
-        "1211": {
-          "health": {
-            "change": true,
-            "value_change": -0.345,
-            "new_health": 0.071
-          },
-          "death": false
-        },
-        "1212": {
-          "health": {
-            "change": true,
-            "value_change": -0.06,
-            "new_health": 0.011
-          },
-          "death": false
-        },
-        "1213": {
-          "health": {
-            "change": true,
-            "value_change": -0.011,
-            "new_health": 0.0
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.767
           },
           "death": true
         }
@@ -145,8 +124,8 @@
               11222
             ],
             "people names": [
-              "Helpriko Virtichponde",
-              "Imsoete"
+              "Pelegrim Iude",
+              "Nimme Kriec"
             ],
             "label": "spouse",
             "committed": true
@@ -159,81 +138,32 @@
               "section": "stBreestraat.se1.c2",
               "street": "Breestraat",
               "neighborhood": "olvbuurt",
-              "unique id": 540
+              "unique id": 548
             }
           }
         ],
-        "1205": [
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.932
-          },
-          {
-            "key": 11223,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 11221,
-              "name": "Helpriko Virtichponde",
-              "age": 25,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1209": [
+        "1201": [
           {
             "topic": "new relationship",
-            "key": 15691,
+            "key": 12912,
             "people": [
-              11185,
-              11222
+              11222,
+              12910
             ],
             "people names": [
-              "Eelbout Buke",
-              "Imsoete"
+              "Nimme Kriec",
+              "Geykonis Iude"
             ],
-            "label": "spouse",
-            "committed": true
+            "label": "parentchild",
+            "committed": false
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stBreestraat.se1.c2",
-              "street": "Breestraat",
-              "neighborhood": "olvbuurt",
-              "unique id": 526
-            }
+            "topic": "neglected"
           }
         ],
-        "1212": [
+        "1202": [
           {
-            "key": 15691,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 11185,
-              "name": "Eelbout Buke",
-              "age": 49,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
+            "topic": "neglected"
           }
         ]
       }
@@ -245,14 +175,13 @@
       "section": "stBreestraat.se1.c2",
       "street": "Breestraat",
       "neighborhood": "olvbuurt",
-      "unique id": 526
+      "unique id": 548
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
-        11223,
-        15691
+        11223
       ]
     }
   }

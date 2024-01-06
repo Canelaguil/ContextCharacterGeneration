@@ -1,44 +1,47 @@
 {
   "12215": {
     "alive": false,
-    "name": "Lelien",
-    "surname": "",
-    "full name": "Lelien",
+    "name": "Liedelde",
+    "surname": "Cleine",
+    "full name": "Liedelde Cleine",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.082,
-      "romantic interest": 0.684,
-      "sex interest": 0.984,
-      "gender expression": 0.025,
+      "sexuality": 0.0,
+      "romantic interest": 0.451,
+      "sex interest": 0.544,
+      "gender expression": 0.109,
       "sex": "f"
     },
-    "age": 58,
-    "birth year": 1151,
+    "age": 44,
+    "birth year": 1163,
     "sex": "f",
+    "faction": "Zealots",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.04,
-      "nice-nasty": 0.387,
-      "honest-false": 0.464
+      "lawful-chaotic": 0.479,
+      "nice-nasty": 0.357,
+      "honest-false": 0.521
     },
     "attitude": {
-      "outgoing": 0.576,
-      "dream": 0.679
+      "outgoing": 0.642,
+      "dream": 0.389
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.045,
-        "gender expression expression": 0.021
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.031
       }
     },
     "network": {
@@ -46,30 +49,42 @@
       "children": {},
       "relationship keys": {
         "spouse": [
-          12216
+          12216,
+          14713
         ]
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         1,
         "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.0,
+      "all_incomes": [
+        0.726,
+        0.454,
+        0.456,
+        0.376,
+        0.039,
+        0.0
+      ],
+      "job": {
+        "lawful": false,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 0,
+      "skin_color": 6,
       "eye_color": "brown",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "hair_color": "red",
+      "hair_color_code": 3,
       "hair_type": [
-        "C",
+        "S",
         "S"
       ],
-      "health": 0.0,
-      "fertility": 0.875,
+      "health": 0.676,
+      "fertility": 0.611,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -81,47 +96,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.862
-          },
-          "death": false
-        },
-        "1204": {
-          "health": {
-            "change": true,
-            "value_change": -0.185,
-            "new_health": 0.677
-          },
-          "death": false
-        },
-        "1205": {
-          "health": {
-            "change": true,
-            "value_change": -0.173,
-            "new_health": 0.504
+            "new_health": 0.676
           },
           "death": false
         },
         "1206": {
           "health": {
-            "change": true,
-            "value_change": -0.232,
-            "new_health": 0.272
-          },
-          "death": false
-        },
-        "1207": {
-          "health": {
-            "change": true,
-            "value_change": -0.182,
-            "new_health": 0.09
-          },
-          "death": false
-        },
-        "1208": {
-          "health": {
-            "change": true,
-            "value_change": -0.09,
-            "new_health": 0.0
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.676
           },
           "death": true
         }
@@ -136,8 +119,8 @@
               12215
             ],
             "people names": [
-              "Jacob Huntekin",
-              "Lelien"
+              "Godino Quistwater",
+              "Liedelde Cleine"
             ],
             "label": "spouse",
             "committed": true
@@ -147,20 +130,94 @@
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stPapenhofstede.se3.c1",
-              "street": "Papenhofstede",
+              "section": "stKerckstraet.se5.c1",
+              "street": "Kerckstraet",
               "neighborhood": "denhof",
-              "unique id": 979
+              "unique id": 994
             }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.726
           }
         ],
         "1202": [
           {
-            "topic": "feelings change",
-            "target": 12214,
-            "target name": "Jacob Huntekin",
-            "state": "out of love",
-            "relationship": 12216
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.454
+          },
+          {
+            "key": 12216,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12214,
+              "name": "Godino Quistwater",
+              "age": 44,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.456
+          }
+        ],
+        "1204": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.376
+          }
+        ],
+        "1205": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.039
+          },
+          {
+            "topic": "new relationship",
+            "key": 14713,
+            "people": [
+              10135,
+              12215
+            ],
+            "people names": [
+              "Poppo",
+              "Liedelde Cleine"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stKoe straet.se1.c1",
+              "street": "Koe straet",
+              "neighborhood": "varkensbuurt",
+              "unique id": 55
+            }
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
           }
         ]
       }
@@ -169,16 +226,17 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stPapenhofstede.se3.c1",
-      "street": "Papenhofstede",
-      "neighborhood": "denhof",
-      "unique id": 979
+      "section": "stKoe straet.se1.c1",
+      "street": "Koe straet",
+      "neighborhood": "varkensbuurt",
+      "unique id": 55
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        12216
+        12216,
+        14713
       ]
     }
   }

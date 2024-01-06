@@ -1,106 +1,111 @@
 {
   "10058": {
     "alive": false,
-    "name": "Margareta",
-    "surname": "",
-    "full name": "Margareta",
+    "name": "Lenildis",
+    "surname": "Burne",
+    "full name": "Lenildis Burne",
     "born this way": {
-      "sexuality label": "bi",
-      "sexuality": 0.479,
-      "romantic interest": 0.792,
-      "sex interest": 0.971,
-      "gender expression": 0.177,
+      "sexuality label": "straight",
+      "sexuality": 0.0,
+      "romantic interest": 0.567,
+      "sex interest": 0.838,
+      "gender expression": 0.0,
       "sex": "f"
     },
-    "age": 24,
-    "birth year": 1179,
+    "age": 53,
+    "birth year": 1165,
     "sex": "f",
+    "faction": "No religion",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.599,
-      "nice-nasty": 0.374,
-      "honest-false": 0.476
+      "lawful-chaotic": 0.568,
+      "nice-nasty": 0.21,
+      "honest-false": 0.089
     },
     "attitude": {
-      "outgoing": 0.328,
-      "dream": 0.273
+      "outgoing": 0.623,
+      "dream": 0.444
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
         "flags": [
-          "neglected"
+          "caretaker",
+          "neglected",
+          "starving"
         ]
       },
       "expression": {
-        "sexuality expression": 0.353,
-        "gender expression expression": 0.079
+        "sexuality expression": -0.001,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "12686": {
-          "key": 12686,
-          "name": "Scilla Mourinsdochter",
-          "age": 0,
+        "13960": {
+          "key": 13960,
+          "name": "Alene",
+          "age": 35,
           "alive": false,
           "sex": "f",
           "parents": {
-            "mother": "Margareta (10058)",
-            "father": "Mourin (10057)"
-          }
-        },
-        "13106": {
-          "key": 13106,
-          "name": "Hilduardis Mourinsdochter",
-          "age": 47,
-          "alive": true,
-          "sex": "f",
-          "parents": {
-            "mother": "Margareta (10058)",
-            "father": "Mourin (10057)"
+            "mother": "Lenildis (10058)",
+            "father": "Ysaac (10057)"
           }
         }
       },
       "relationship keys": {
         "spouse": [
-          10059
+          10059,
+          15973,
+          17259
         ],
         "child": {
           "birth": [
-            12688,
-            13108
+            13962
           ]
         }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.017,
+      "all_incomes": [
+        1.255,
+        1.499,
+        1.28,
+        1.499,
+        1.389,
+        1.353,
+        1.017
+      ],
+      "job": {
+        "lawful": false,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 2,
-      "eye_color": "brown",
+      "skin_color": 5,
+      "eye_color": "blue",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
         "C",
-        "C"
+        "S"
       ],
-      "health": 0.691,
-      "fertility": 0.738,
+      "health": 0.0,
+      "fertility": 0.679,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -112,15 +117,47 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.691
+            "new_health": 0.69
           },
           "death": false
         },
-        "1202": {
+        "1204": {
+          "health": {
+            "change": true,
+            "value_change": -0.197,
+            "new_health": 0.493
+          },
+          "death": false
+        },
+        "1205": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.691
+            "new_health": 0.493
+          },
+          "death": false
+        },
+        "1215": {
+          "health": {
+            "change": true,
+            "value_change": -0.273,
+            "new_health": 0.22
+          },
+          "death": false
+        },
+        "1216": {
+          "health": {
+            "change": true,
+            "value_change": -0.104,
+            "new_health": 0.116
+          },
+          "death": false
+        },
+        "1217": {
+          "health": {
+            "change": true,
+            "value_change": -0.116,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -135,8 +172,8 @@
               10058
             ],
             "people names": [
-              "Mourin",
-              "Margareta"
+              "Ysaac",
+              "Lenildis Burne"
             ],
             "label": "spouse",
             "committed": true
@@ -155,15 +192,24 @@
         ],
         "1201": [
           {
+            "topic": "feelings change",
+            "target": 10057,
+            "target name": "Ysaac",
+            "state": "out of love",
+            "relationship": 10059
+          }
+        ],
+        "1204": [
+          {
             "topic": "new relationship",
-            "key": 12688,
+            "key": 13962,
             "people": [
               10058,
-              12686
+              13960
             ],
             "people names": [
-              "Margareta",
-              "Scilla Mourinsdochter"
+              "Lenildis Burne",
+              "Alene"
             ],
             "label": "parentchild",
             "committed": false
@@ -172,36 +218,167 @@
             "topic": "neglected"
           }
         ],
-        "1202": [
+        "1205": [
+          {
+            "key": 10059,
+            "topic": "unmarried"
+          },
           {
             "topic": "person died",
             "person": {
-              "key": 12686,
-              "name": "Scilla Mourinsdochter",
-              "age": 0,
+              "key": 10057,
+              "name": "Ysaac",
+              "age": 41,
               "alive": false,
-              "sex": "f",
-              "parents": {
-                "mother": "Margareta (10058)",
-                "father": "Mourin (10057)"
-              }
+              "sex": "m",
+              "parents": "firstgen"
             },
-            "label": "child"
+            "label": "spouse"
           },
           {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          },
+          {
+            "topic": "new caretaker",
+            "person": 10058
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
             "topic": "new relationship",
-            "key": 13108,
+            "key": 15973,
             "people": [
-              10058,
-              13106
+              10801,
+              10058
             ],
             "people names": [
-              "Margareta",
-              "Hilduardis Mourinsdochter"
+              "Guido Brebart",
+              "Lenildis Burne"
             ],
-            "label": "parentchild",
-            "committed": false
+            "label": "spouse",
+            "committed": true
           },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stDie Camp.se3.c2",
+              "street": "Die Camp",
+              "neighborhood": "kampbuurt",
+              "unique id": 373
+            }
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.255
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.252,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "key": 15973,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10801,
+              "name": "Guido Brebart",
+              "age": 59,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "new caretaker",
+            "person": 13298
+          }
+        ],
+        "1215": [
+          {
+            "topic": "new relationship",
+            "key": 17259,
+            "people": [
+              10837,
+              10058
+            ],
+            "people names": [
+              "Trueb Smout",
+              "Lenildis Burne"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stDie Camp.se5.c2",
+              "street": "Die Camp",
+              "neighborhood": "kampbuurt",
+              "unique id": 388
+            }
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1216": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1217": [
           {
             "topic": "neglected"
           }
@@ -212,16 +389,18 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stVerckens merct.se1.c2",
-      "street": "Verckens merct",
-      "neighborhood": "varkensbuurt",
-      "unique id": 25
+      "section": "stDie Camp.se5.c2",
+      "street": "Die Camp",
+      "neighborhood": "kampbuurt",
+      "unique id": 388
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        10059
+        10059,
+        15973,
+        17259
       ]
     }
   }

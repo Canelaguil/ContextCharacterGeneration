@@ -1,32 +1,33 @@
 {
   "12134": {
     "alive": false,
-    "name": "Nannen",
-    "surname": "Weder",
-    "full name": "Nannen Weder",
+    "name": "Oda",
+    "surname": "Onlost",
+    "full name": "Oda Onlost",
     "born this way": {
       "sexuality label": "gay",
-      "sexuality": 0.933,
-      "romantic interest": 0.981,
-      "sex interest": 0.596,
-      "gender expression": 0.363,
+      "sexuality": 0.797,
+      "romantic interest": 0.739,
+      "sex interest": 0.731,
+      "gender expression": -0.0,
       "sex": "f"
     },
-    "age": 39,
-    "birth year": 1164,
+    "age": 54,
+    "birth year": 1171,
     "sex": "f",
+    "faction": "Dogmatists",
     "income class": [
-      2,
-      "middle class"
+      3,
+      "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.416,
-      "honest-false": 0.499
+      "lawful-chaotic": 0.612,
+      "nice-nasty": 0.688,
+      "honest-false": 0.016
     },
     "attitude": {
-      "outgoing": 0.447,
-      "dream": 0.727
+      "outgoing": 0.768,
+      "dream": 0.509
     },
     "homsoc": {
       "means": {
@@ -34,42 +35,91 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "neglected"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.493,
-        "gender expression expression": 0.256
+        "sexuality expression": 0.751,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12628": {
+          "key": 12628,
+          "name": "Siccone Turc",
+          "age": 43,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Oda (12134)",
+            "father": "Helpriko (12133)"
+          }
+        },
+        "13935": {
+          "key": 13935,
+          "name": "Wernerus Turc",
+          "age": 3,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Oda (12134)",
+            "father": "Helpriko (12133)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           12135
-        ]
+        ],
+        "child": {
+          "birth": [
+            12630,
+            13937
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        2,
-        "middle class"
+        3,
+        "upper middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.499,
+      "all_incomes": [
+        0.936,
+        0.914,
+        0.838,
+        1.394,
+        1.368,
+        1.499,
+        1.424,
+        1.499,
+        1.499,
+        1.499,
+        1.499,
+        1.499,
+        1.499
+      ],
+      "job": {
+        "lawful": false,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 9,
-      "eye_color": "blue",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "skin_color": 3,
+      "eye_color": "brown",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
         "C",
         "S"
       ],
-      "health": 0.656,
-      "fertility": 0.65,
+      "health": 0.0,
+      "fertility": 0.564,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -81,15 +131,39 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.656
+            "new_health": 0.619
           },
           "death": false
         },
-        "1202": {
+        "1221": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.656
+            "change": true,
+            "value_change": -0.201,
+            "new_health": 0.418
+          },
+          "death": false
+        },
+        "1222": {
+          "health": {
+            "change": true,
+            "value_change": -0.187,
+            "new_health": 0.231
+          },
+          "death": false
+        },
+        "1223": {
+          "health": {
+            "change": true,
+            "value_change": -0.167,
+            "new_health": 0.064
+          },
+          "death": false
+        },
+        "1224": {
+          "health": {
+            "change": true,
+            "value_change": -0.064,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -104,8 +178,8 @@
               12134
             ],
             "people names": [
-              "Tijs",
-              "Nannen Weder"
+              "Helpriko Turc",
+              "Oda Onlost"
             ],
             "label": "spouse",
             "committed": true
@@ -113,29 +187,229 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stDen Hof.se3.c2",
+              "income class": 3,
+              "income class label": "upper middle class",
+              "section": "stDen Hof.se7.c3",
               "street": "Den Hof",
               "neighborhood": "denhof",
-              "unique id": 943
+              "unique id": 961
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12630,
+            "people": [
+              12134,
+              12628
+            ],
+            "people names": [
+              "Oda Onlost",
+              "Siccone Turc"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 12133,
+            "target name": "Helpriko Turc",
+            "state": "out of love",
+            "relationship": 12135
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1201": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1202": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 13937,
+            "people": [
+              12134,
+              13935
+            ],
+            "people names": [
+              "Oda Onlost",
+              "Wernerus Turc"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1206": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 13935,
+              "name": "Wernerus Turc",
+              "age": 3,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Oda (12134)",
+                "father": "Helpriko (12133)"
+              }
+            },
+            "label": "child"
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1211": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1212": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.936
+          },
+          {
+            "topic": "feelings change",
+            "target": 12133,
+            "target name": "Helpriko Turc",
+            "state": "infatuation",
+            "relationship": 12135
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1213": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1214": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1215": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.394
+          },
+          {
+            "topic": "feelings change",
+            "target": 12133,
+            "target name": "Helpriko Turc",
+            "state": "solid love",
+            "relationship": 12135
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1220": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1221": [
+          {
+            "topic": "feelings change",
+            "target": 12133,
+            "target name": "Helpriko Turc",
+            "state": "out of love",
+            "relationship": 12135
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1222": [
+          {
+            "key": 12135,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12133,
+              "name": "Helpriko Turc",
+              "age": 55,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1223": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1224": [
+          {
+            "topic": "neglected"
           }
         ]
       }
     },
     "key": 12134,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stDen Hof.se3.c2",
+      "income class": 3,
+      "income class label": "upper middle class",
+      "section": "stDen Hof.se7.c3",
       "street": "Den Hof",
       "neighborhood": "denhof",
-      "unique id": 943
+      "unique id": 961
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         12135
       ]

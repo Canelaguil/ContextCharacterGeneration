@@ -1,32 +1,33 @@
 {
   "11864": {
     "alive": false,
-    "name": "Soeten",
+    "name": "Ghoudekinen",
     "surname": "",
-    "full name": "Soeten",
+    "full name": "Ghoudekinen",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.135,
-      "romantic interest": 0.721,
-      "sex interest": 0.708,
-      "gender expression": 0.104,
+      "sexuality": 0.011,
+      "romantic interest": 0.656,
+      "sex interest": 0.694,
+      "gender expression": 0.068,
       "sex": "f"
     },
-    "age": 56,
-    "birth year": 1166,
+    "age": 41,
+    "birth year": 1178,
     "sex": "f",
+    "faction": "Zealots",
     "income class": [
       4,
       "nobility"
     ],
     "personality": {
-      "lawful-chaotic": 0.674,
-      "nice-nasty": 0.12,
-      "honest-false": 0.405
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.681,
+      "honest-false": 0.0
     },
     "attitude": {
-      "outgoing": 0.072,
-      "dream": 0.533
+      "outgoing": 0.541,
+      "dream": 0.015
     },
     "homsoc": {
       "means": {
@@ -34,20 +35,53 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.061,
-        "gender expression expression": 0.045
+        "sexuality expression": 0.006,
+        "gender expression expression": 0.044
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "16758": {
+          "key": 16758,
+          "name": "Woutgerus Clove",
+          "age": 34,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Ghoudekinen (11864)",
+            "father": "Claward (11860)"
+          }
+        },
+        "17596": {
+          "key": 17596,
+          "name": "Reynold Clove",
+          "age": 27,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Ghoudekinen (11864)",
+            "father": "Claward (11860)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          11865
-        ]
+          11865,
+          15980
+        ],
+        "child": {
+          "birth": [
+            16760,
+            17598
+          ]
+        }
       }
     },
     "occupation": {
@@ -56,31 +90,37 @@
         4,
         "nobility"
       ],
-      "income": 0.481,
+      "income": 0.0,
       "all_incomes": [
-        1.017,
-        0.546,
-        1.231,
-        0.65,
-        0.849,
-        0.481
+        1.158,
+        0.964,
+        1.008,
+        1.214,
+        0.95,
+        0.997,
+        0.666,
+        0.722,
+        0.48,
+        0.25,
+        0.098,
+        0.0
       ],
       "job": {
-        "lawful": false,
+        "lawful": true,
         "honest": false
       }
     },
     "genetics": {
       "skin_color": 2,
-      "eye_color": "green",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "eye_color": "brown",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
-        "S",
-        "C"
+        "C",
+        "S"
       ],
-      "health": 0.0,
-      "fertility": 0.813,
+      "health": 0.63,
+      "fertility": 0.663,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -92,55 +132,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.792
-          },
-          "death": false
-        },
-        "1216": {
-          "health": {
-            "change": true,
-            "value_change": -0.178,
-            "new_health": 0.614
-          },
-          "death": false
-        },
-        "1217": {
-          "health": {
-            "change": true,
-            "value_change": -0.367,
-            "new_health": 0.247
+            "new_health": 0.63
           },
           "death": false
         },
         "1218": {
           "health": {
-            "change": true,
-            "value_change": -0.098,
-            "new_health": 0.149
-          },
-          "death": false
-        },
-        "1219": {
-          "health": {
-            "change": true,
-            "value_change": -0.11,
-            "new_health": 0.039
-          },
-          "death": false
-        },
-        "1220": {
-          "health": {
-            "change": true,
-            "value_change": -0.032,
-            "new_health": 0.007
-          },
-          "death": false
-        },
-        "1221": {
-          "health": {
-            "change": true,
-            "value_change": -0.007,
-            "new_health": 0.0
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.63
           },
           "death": true
         }
@@ -155,8 +155,8 @@
               11864
             ],
             "people names": [
-              "Brun Crudepenninx",
-              "Soeten"
+              "Lammekin",
+              "Ghoudekinen"
             ],
             "label": "spouse",
             "committed": true
@@ -169,84 +169,201 @@
               "section": "stOp Havick1.se1.c4",
               "street": "Op Havick1",
               "neighborhood": "cingelnoord",
-              "unique id": 832
+              "unique id": 845
             }
           }
         ],
         "1201": [
           {
-            "topic": "feelings change",
-            "target": 11863,
-            "target name": "Brun Crudepenninx",
-            "state": "out of love",
-            "relationship": 11865
+            "key": 11865,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11863,
+              "name": "Lammekin",
+              "age": 46,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1202": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1203": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1204": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.158
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ],
         "1209": [
           {
-            "topic": "feelings change",
-            "target": 11863,
-            "target name": "Brun Crudepenninx",
-            "state": "infatuation",
-            "relationship": 11865
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.008
+          },
+          {
+            "topic": "new relationship",
+            "key": 15980,
+            "people": [
+              11860,
+              11864
+            ],
+            "people names": [
+              "Claward Clove",
+              "Ghoudekinen"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 4,
+              "income class label": "nobility",
+              "section": "stOp Havick1.se1.c4",
+              "street": "Op Havick1",
+              "neighborhood": "cingelnoord",
+              "unique id": 844
+            }
           }
         ],
-        "1211": [
+        "1212": [
+          {
+            "topic": "new relationship",
+            "key": 16760,
+            "people": [
+              11864,
+              16758
+            ],
+            "people names": [
+              "Ghoudekinen",
+              "Woutgerus Clove"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1213": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.666
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1214": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1215": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.48
+          },
           {
             "topic": "feelings change",
-            "target": 11863,
-            "target name": "Brun Crudepenninx",
-            "state": "out of love",
-            "relationship": 11865
+            "target": 11860,
+            "target name": "Claward Clove",
+            "state": "infatuation",
+            "relationship": 15980
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1216": [
           {
             "topic": "job notice",
-            "notice": "found job",
-            "income": 1.017
+            "notice": "earning very little",
+            "income": 0.25
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1217": [
           {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.546
-          },
-          {
-            "topic": "feelings change",
-            "target": 11863,
-            "target name": "Brun Crudepenninx",
-            "state": "infatuation",
-            "relationship": 11865
+            "topic": "new relationship",
+            "key": 17598,
+            "people": [
+              11864,
+              17596
+            ],
+            "people names": [
+              "Ghoudekinen",
+              "Reynold Clove"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1218": [
           {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.231
+            "topic": "feelings change",
+            "target": 11860,
+            "target name": "Claward Clove",
+            "state": "out of love",
+            "relationship": 15980
           },
           {
-            "topic": "feelings change",
-            "target": 11863,
-            "target name": "Brun Crudepenninx",
-            "state": "out of love",
-            "relationship": 11865
-          }
-        ],
-        "1219": [
-          {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.65
-          }
-        ],
-        "1221": [
-          {
-            "topic": "job notice",
-            "notice": "earning very little",
-            "income": 0.481
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
           }
         ]
       }
@@ -258,13 +375,14 @@
       "section": "stOp Havick1.se1.c4",
       "street": "Op Havick1",
       "neighborhood": "cingelnoord",
-      "unique id": 832
+      "unique id": 844
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        11865
+        11865,
+        15980
       ]
     }
   }

@@ -233,7 +233,7 @@ class Relationship(Agent):
     """
     def add_child_birth(self):
         income_class = self.personA['income class']
-        child = self.model.birth_child(self.unique_id, income_class)
+        child = self.model.birth_child(self.unique_id, income_class, self.personA['faction'])
         self.add_child(child, 'birth')
 
     def add_child(self, child, kind='birth'):

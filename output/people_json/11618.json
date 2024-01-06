@@ -1,32 +1,33 @@
 {
   "11618": {
     "alive": false,
-    "name": "Liedelde",
-    "surname": "",
-    "full name": "Liedelde",
+    "name": "Ryccie",
+    "surname": "Mule",
+    "full name": "Ryccie Mule",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.002,
-      "romantic interest": 0.858,
-      "sex interest": 0.842,
-      "gender expression": 0.196,
+      "sexuality": 0.048,
+      "romantic interest": 0.999,
+      "sex interest": 0.833,
+      "gender expression": 0.217,
       "sex": "f"
     },
-    "age": 56,
-    "birth year": 1152,
+    "age": 34,
+    "birth year": 1168,
     "sex": "f",
+    "faction": "Zealots",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.561,
-      "nice-nasty": 0.094,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.0,
+      "nice-nasty": 0.183,
+      "honest-false": 0.264
     },
     "attitude": {
-      "outgoing": 0.194,
-      "dream": 0.305
+      "outgoing": 0.719,
+      "dream": 0.647
     },
     "homsoc": {
       "means": {
@@ -34,53 +35,73 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "neglected"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.001,
-        "gender expression expression": 0.079
+        "sexuality expression": 0.035,
+        "gender expression expression": 0.124
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12511": {
+          "key": 12511,
+          "name": "Lielde Coquus",
+          "age": 49,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Ryccie (11618)",
+            "father": "Wilmarus (11617)"
+          }
+        },
+        "12971": {
+          "key": 12971,
+          "name": "Beatrice Coquus",
+          "age": 44,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Ryccie (11618)",
+            "father": "Wilmarus (11617)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11619
-        ]
+        ],
+        "child": {
+          "birth": [
+            12513,
+            12973
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 0.901,
-      "all_incomes": [
-        0.911,
-        0.802,
-        0.904,
-        0.915,
-        0.931,
-        0.901
-      ],
-      "job": {
-        "lawful": false,
-        "honest": true
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 1,
-      "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 7,
+      "eye_color": "green",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
         "C",
         "S"
       ],
-      "health": 0.002,
-      "fertility": 0.82,
+      "health": 0.791,
+      "fertility": 0.761,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -92,49 +113,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.79
+            "new_health": 0.791
           },
           "death": false
-        },
-        "1203": {
-          "health": {
-            "change": true,
-            "value_change": -0.128,
-            "new_health": 0.662
-          },
-          "death": false
-        },
-        "1204": {
-          "health": {
-            "change": true,
-            "value_change": -0.209,
-            "new_health": 0.453
-          },
-          "death": false
-        },
-        "1205": {
-          "health": {
-            "change": true,
-            "value_change": -0.333,
-            "new_health": 0.12
-          },
-          "death": false
-        },
-        "1206": {
-          "health": {
-            "change": true,
-            "value_change": -0.115,
-            "new_health": 0.005
-          },
-          "death": false
-        },
-        "1207": {
-          "health": {
-            "change": true,
-            "value_change": -0.003,
-            "new_health": 0.002
-          },
-          "death": true
         }
       },
       "events": {
@@ -147,8 +128,8 @@
               11618
             ],
             "people names": [
-              "Hildebrandus Cauwen",
-              "Liedelde"
+              "Wilmarus Coquus",
+              "Ryccie Mule"
             ],
             "label": "spouse",
             "committed": true
@@ -158,25 +139,47 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stDie lange straet3.se9.c2",
-              "street": "Die lange straet3",
+              "section": "stCorte gracht.se1.c2",
+              "street": "Corte gracht",
               "neighborhood": "visbuurt",
-              "unique id": 721
+              "unique id": 733
             }
           },
           {
-            "topic": "feelings change",
-            "target": 11617,
-            "target name": "Hildebrandus Cauwen",
-            "state": "solid love",
-            "relationship": 11619
+            "topic": "new relationship",
+            "key": 12513,
+            "people": [
+              11618,
+              12511
+            ],
+            "people names": [
+              "Ryccie Mule",
+              "Lielde Coquus"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
           }
         ],
-        "1202": [
+        "1201": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.911
+            "topic": "new relationship",
+            "key": 12973,
+            "people": [
+              11618,
+              12971
+            ],
+            "people names": [
+              "Ryccie Mule",
+              "Beatrice Coquus"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
           }
         ]
       }
@@ -185,10 +188,10 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stDie lange straet3.se9.c2",
-      "street": "Die lange straet3",
+      "section": "stCorte gracht.se1.c2",
+      "street": "Corte gracht",
       "neighborhood": "visbuurt",
-      "unique id": 721
+      "unique id": 733
     },
     "relationship status": {
       "taken": true,

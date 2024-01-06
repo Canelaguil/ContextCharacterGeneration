@@ -1,94 +1,87 @@
 {
   "10907": {
     "alive": false,
-    "name": "Diewiven",
-    "surname": "Pauwe",
-    "full name": "Diewiven Pauwe",
+    "name": "Cofte",
+    "surname": "Vosseken",
+    "full name": "Cofte Vosseken",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.05,
-      "romantic interest": 0.767,
-      "sex interest": 0.738,
-      "gender expression": 0.109,
+      "sexuality": 0.0,
+      "romantic interest": 0.757,
+      "sex interest": 0.67,
+      "gender expression": 0.146,
       "sex": "f"
     },
-    "age": 22,
-    "birth year": 1180,
+    "age": 53,
+    "birth year": 1159,
     "sex": "f",
+    "faction": "Zealots",
     "income class": [
-      2,
-      "middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.537,
-      "nice-nasty": 0.756,
-      "honest-false": 0.658
+      "lawful-chaotic": 0.924,
+      "nice-nasty": 0.284,
+      "honest-false": 0.462
     },
     "attitude": {
-      "outgoing": 0.26,
-      "dream": 0.116
+      "outgoing": 0.433,
+      "dream": 0.324
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": [
-          "neglected"
-        ]
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.025,
-        "gender expression expression": 0.064
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.137
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {
-        "12844": {
-          "key": 12844,
-          "name": "Agota Zieken",
-          "age": 26,
-          "alive": false,
-          "sex": "f",
-          "parents": {
-            "mother": "Diewiven (10907)",
-            "father": "Lambrecht (10906)"
-          }
-        }
-      },
+      "children": {},
       "relationship keys": {
         "spouse": [
           10908
-        ],
-        "child": {
-          "birth": [
-            12846
-          ]
-        }
+        ]
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        2,
-        "middle class"
+        1,
+        "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.331,
+      "all_incomes": [
+        0.0,
+        0.0,
+        0.07,
+        0.454,
+        0.341,
+        0.331
+      ],
+      "job": {
+        "lawful": true,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 7,
-      "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 5,
+      "eye_color": "green",
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
-        "S",
+        "C",
         "C"
       ],
-      "health": 0.654,
-      "fertility": 0.589,
+      "health": 0.0,
+      "fertility": 0.657,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -100,9 +93,33 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.654
+            "new_health": 0.67
           },
           "death": false
+        },
+        "1209": {
+          "health": {
+            "change": true,
+            "value_change": -0.165,
+            "new_health": 0.505
+          },
+          "death": false
+        },
+        "1210": {
+          "health": {
+            "change": true,
+            "value_change": -0.213,
+            "new_health": 0.292
+          },
+          "death": false
+        },
+        "1211": {
+          "health": {
+            "change": true,
+            "value_change": -0.292,
+            "new_health": 0.0
+          },
+          "death": true
         }
       },
       "events": {
@@ -115,8 +132,8 @@
               10907
             ],
             "people names": [
-              "Lambrecht Zieken",
-              "Diewiven Pauwe"
+              "Guido Virtichponde",
+              "Cofte Vosseken"
             ],
             "label": "spouse",
             "committed": true
@@ -124,48 +141,66 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stDie Camp.se7.c2",
-              "street": "Die Camp",
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stSt. Ians straet.se3.c1",
+              "street": "St. Ians straet",
               "neighborhood": "kampbuurt",
-              "unique id": 396
+              "unique id": 417
             }
           }
         ],
-        "1201": [
+        "1206": [
           {
-            "topic": "new relationship",
-            "key": 12846,
-            "people": [
-              10907,
-              12844
-            ],
-            "people names": [
-              "Diewiven Pauwe",
-              "Agota Zieken"
-            ],
-            "label": "parentchild",
-            "committed": false
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.0
+          }
+        ],
+        "1210": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.341
+          }
+        ],
+        "1211": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.331
           },
           {
-            "topic": "neglected"
+            "key": 10908,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10906,
+              "name": "Guido Virtichponde",
+              "age": 55,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
           }
         ]
       }
     },
     "key": 10907,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stDie Camp.se7.c2",
-      "street": "Die Camp",
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stSt. Ians straet.se3.c1",
+      "street": "St. Ians straet",
       "neighborhood": "kampbuurt",
-      "unique id": 396
+      "unique id": 417
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         10908
       ]

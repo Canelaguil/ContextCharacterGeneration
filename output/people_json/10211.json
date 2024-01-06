@@ -1,53 +1,124 @@
 {
   "10211": {
     "alive": false,
-    "name": "Cofte",
-    "surname": "",
-    "full name": "Cofte",
+    "name": "Siwa",
+    "surname": "Turc",
+    "full name": "Siwa Turc",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.15,
-      "romantic interest": 0.716,
-      "sex interest": 0.64,
-      "gender expression": 0.009,
+      "sexuality": 0.066,
+      "romantic interest": 0.693,
+      "sex interest": 0.818,
+      "gender expression": 0.011,
       "sex": "f"
     },
-    "age": 47,
-    "birth year": 1156,
+    "age": 50,
+    "birth year": 1172,
     "sex": "f",
+    "faction": "No religion",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.556,
-      "nice-nasty": 0.575,
-      "honest-false": 0.591
+      "lawful-chaotic": 0.0,
+      "nice-nasty": 0.0,
+      "honest-false": 0.999
     },
     "attitude": {
-      "outgoing": 0.365,
-      "dream": 0.403
+      "outgoing": 0.532,
+      "dream": 0.27
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "caretaker",
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.068,
+        "sexuality expression": 0.04,
         "gender expression expression": 0.007
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12250": {
+          "key": 12250,
+          "name": "Ase Borluet",
+          "age": 35,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Siwa (10211)",
+            "father": "Sylof (10210)"
+          }
+        },
+        "12669": {
+          "key": 12669,
+          "name": "Ghisebrecht Borluet",
+          "age": 48,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Siwa (10211)",
+            "father": "Sylof (10210)"
+          }
+        },
+        "13133": {
+          "key": 13133,
+          "name": "Remboldus Borluet",
+          "age": 32,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Siwa (10211)",
+            "father": "Sylof (10210)"
+          }
+        },
+        "13969": {
+          "key": 13969,
+          "name": "Lelien Borluet",
+          "age": 16,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Siwa (10211)",
+            "father": "Sylof (10210)"
+          }
+        },
+        "16562": {
+          "key": 16562,
+          "name": "Grote van Tarun",
+          "age": 25,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Siwa (10211)",
+            "father": "Tarun (11152)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          10212
-        ]
+          10212,
+          15398
+        ],
+        "child": {
+          "birth": [
+            12252,
+            12671,
+            13135,
+            13971,
+            16564
+          ]
+        }
       }
     },
     "occupation": {
@@ -60,16 +131,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 6,
-      "eye_color": "blue",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 2,
+      "eye_color": "brown",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.824,
-      "fertility": 0.839,
+      "health": 0.676,
+      "fertility": 0.706,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -81,15 +152,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.824
+            "new_health": 0.676
           },
           "death": false
         },
-        "1202": {
+        "1221": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.824
+            "new_health": 0.676
           },
           "death": true
         }
@@ -104,8 +175,8 @@
               10211
             ],
             "people names": [
-              "Engelbertus",
-              "Cofte"
+              "Sylof Borluet",
+              "Siwa Turc"
             ],
             "label": "spouse",
             "committed": true
@@ -118,8 +189,449 @@
               "section": "stHelle voet.se3.c1",
               "street": "Helle voet",
               "neighborhood": "jorisbuurt",
-              "unique id": 95
+              "unique id": 93
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12252,
+            "people": [
+              10211,
+              12250
+            ],
+            "people names": [
+              "Siwa Turc",
+              "Ase Borluet"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 12671,
+            "people": [
+              10211,
+              12669
+            ],
+            "people names": [
+              "Siwa Turc",
+              "Ghisebrecht Borluet"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 13135,
+            "people": [
+              10211,
+              13133
+            ],
+            "people names": [
+              "Siwa Turc",
+              "Remboldus Borluet"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 13971,
+            "people": [
+              10211,
+              13969
+            ],
+            "people names": [
+              "Siwa Turc",
+              "Lelien Borluet"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1206": [
+          {
+            "key": 10212,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10210,
+              "name": "Sylof Borluet",
+              "age": 54,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          },
+          {
+            "topic": "new caretaker",
+            "person": 10211
+          }
+        ],
+        "1207": [
+          {
+            "topic": "new relationship",
+            "key": 15398,
+            "people": [
+              11152,
+              10211
+            ],
+            "people names": [
+              "Tarun",
+              "Siwa Turc"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stPaternoster straetje.se1.c1",
+              "street": "Paternoster straetje",
+              "neighborhood": "olvbuurt",
+              "unique id": 519
+            }
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.775,
+            "inhabitants": [
+              12669,
+              19443,
+              19814,
+              21647,
+              22338,
+              17916,
+              23098,
+              14011,
+              24128,
+              25103,
+              12831,
+              20653,
+              22812,
+              16746,
+              22194
+            ]
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0.718,
+            "inhabitants": [
+              12669,
+              19443,
+              19814,
+              21647,
+              22338,
+              17916,
+              23098,
+              14011,
+              24128,
+              25103,
+              12831,
+              20653,
+              22812,
+              16746,
+              22194
+            ]
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0.697,
+            "inhabitants": [
+              12669,
+              19443,
+              19814,
+              21647,
+              22338,
+              17916,
+              23098,
+              14011,
+              24128,
+              25103,
+              12831,
+              20653,
+              22812,
+              16746,
+              22194
+            ]
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0.714,
+            "inhabitants": [
+              12669,
+              19443,
+              19814,
+              21647,
+              22338,
+              17916,
+              23098,
+              14011,
+              24128,
+              25103,
+              12831,
+              20653,
+              22812,
+              16746,
+              22194
+            ]
+          }
+        ],
+        "1211": [
+          {
+            "topic": "new relationship",
+            "key": 16564,
+            "people": [
+              10211,
+              16562
+            ],
+            "people names": [
+              "Siwa Turc",
+              "Grote van Tarun"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.771,
+            "inhabitants": [
+              12669,
+              19443,
+              19814,
+              21647,
+              22338,
+              17916,
+              23098,
+              14011,
+              24128,
+              25103,
+              12831,
+              20653,
+              22812,
+              16746,
+              22194
+            ]
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0.77,
+            "inhabitants": [
+              12669,
+              19443,
+              19814,
+              21647,
+              22338,
+              17916,
+              23098,
+              14011,
+              24128,
+              25103,
+              12831,
+              20653,
+              22812,
+              16746,
+              22194
+            ]
+          }
+        ],
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0.712,
+            "inhabitants": [
+              12669,
+              19443,
+              19814,
+              21647,
+              22338,
+              17916,
+              23098,
+              14011,
+              24128,
+              25103,
+              12831,
+              20653,
+              22812,
+              16746,
+              22194
+            ]
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0.824,
+            "inhabitants": [
+              12669,
+              19443,
+              19814,
+              21647,
+              22338,
+              17916,
+              23098,
+              14011,
+              24128,
+              25103,
+              12831,
+              20653,
+              22812,
+              16746,
+              22194
+            ]
+          }
+        ],
+        "1215": [
+          {
+            "topic": "feelings change",
+            "target": 11152,
+            "target name": "Tarun",
+            "state": "out of love",
+            "relationship": 15398
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.835,
+            "inhabitants": [
+              12669,
+              19443,
+              19814,
+              21647,
+              22338,
+              17916,
+              23098,
+              14011,
+              24128,
+              25103,
+              12831,
+              20653,
+              22812,
+              16746,
+              22194
+            ]
+          }
+        ],
+        "1216": [
+          {
+            "topic": "not enough income",
+            "income": 0.875,
+            "inhabitants": [
+              12669,
+              19443,
+              19814,
+              21647,
+              22338,
+              17916,
+              23098,
+              14011,
+              24128,
+              25103,
+              12831,
+              20653,
+              22812,
+              16746,
+              22194
+            ]
+          }
+        ],
+        "1217": [
+          {
+            "topic": "not enough income",
+            "income": 0.876,
+            "inhabitants": [
+              12669,
+              19443,
+              19814,
+              21647,
+              22338,
+              17916,
+              23098,
+              14011,
+              24128,
+              25103,
+              12831,
+              20653,
+              22812,
+              16746,
+              22194
+            ]
+          }
+        ],
+        "1218": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1219": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1220": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1221": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 13969,
+              "name": "Lelien Borluet",
+              "age": 16,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Siwa (10211)",
+                "father": "Sylof (10210)"
+              }
+            },
+            "label": "child"
+          },
+          {
+            "topic": "neglected"
           }
         ]
       }
@@ -128,16 +640,17 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stHelle voet.se3.c1",
-      "street": "Helle voet",
-      "neighborhood": "jorisbuurt",
-      "unique id": 95
+      "section": "stPaternoster straetje.se1.c1",
+      "street": "Paternoster straetje",
+      "neighborhood": "olvbuurt",
+      "unique id": 519
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        10212
+        10212,
+        15398
       ]
     }
   }

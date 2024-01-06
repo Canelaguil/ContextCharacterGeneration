@@ -1,32 +1,33 @@
 {
   "12161": {
     "alive": false,
-    "name": "Lielde",
+    "name": "Sywi",
     "surname": "",
-    "full name": "Lielde",
+    "full name": "Sywi",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.039,
-      "romantic interest": 0.667,
-      "sex interest": 0.683,
-      "gender expression": 0.092,
+      "sexuality": 0.03,
+      "romantic interest": 0.827,
+      "sex interest": 0.999,
+      "gender expression": 0.026,
       "sex": "f"
     },
-    "age": 44,
-    "birth year": 1161,
+    "age": 34,
+    "birth year": 1179,
     "sex": "f",
+    "faction": "Zealots",
     "income class": [
-      3,
-      "upper middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.999,
-      "honest-false": 0.0
+      "lawful-chaotic": 0.543,
+      "nice-nasty": 0.404,
+      "honest-false": 0.557
     },
     "attitude": {
-      "outgoing": 0.666,
-      "dream": 0.463
+      "outgoing": 0.575,
+      "dream": 0.287
     },
     "homsoc": {
       "means": {
@@ -34,42 +35,92 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "neglected"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.018,
-        "gender expression expression": 0.054
+        "sexuality expression": 0.019,
+        "gender expression expression": 0.015
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13088": {
+          "key": 13088,
+          "name": "Euffemia Jserine",
+          "age": 48,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Sywi (12161)",
+            "father": "Heillam (12160)"
+          }
+        },
+        "13944": {
+          "key": 13944,
+          "name": "Fays Jserine",
+          "age": 46,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Sywi (12161)",
+            "father": "Heillam (12160)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          12162
-        ]
+          12162,
+          16724
+        ],
+        "child": {
+          "birth": [
+            13090,
+            13946
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        3,
-        "upper middle class"
+        1,
+        "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.336,
+      "all_incomes": [
+        0.577,
+        0.494,
+        0.295,
+        0.409,
+        0.736,
+        0.365,
+        0.322,
+        0.472,
+        0.678,
+        0.864,
+        1.168,
+        1.184,
+        1.336
+      ],
+      "job": {
+        "lawful": false,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 3,
-      "eye_color": "brown",
+      "skin_color": 5,
+      "eye_color": "blue",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.576,
-      "fertility": 0.598,
+      "health": 0.568,
+      "fertility": 0.589,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -81,21 +132,26 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.576
+            "new_health": 0.568
           },
           "death": false
         },
-        "1204": {
+        "1212": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.576
+            "new_health": 0.568
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.577
+          },
           {
             "topic": "new relationship",
             "key": 12162,
@@ -104,8 +160,8 @@
               12161
             ],
             "people names": [
-              "Bel",
-              "Lielde"
+              "Heillam Jserine",
+              "Sywi"
             ],
             "label": "spouse",
             "committed": true
@@ -113,31 +169,203 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stDen Hof.se7.c3",
-              "street": "Den Hof",
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stAppel Marckt.se3.c1",
+              "street": "Appel Marckt",
               "neighborhood": "denhof",
-              "unique id": 955
+              "unique id": 972
             }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.494
+          },
+          {
+            "topic": "new relationship",
+            "key": 13090,
+            "people": [
+              12161,
+              13088
+            ],
+            "people names": [
+              "Sywi",
+              "Euffemia Jserine"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1202": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.295
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.409
+          },
+          {
+            "topic": "new relationship",
+            "key": 13946,
+            "people": [
+              12161,
+              13944
+            ],
+            "people names": [
+              "Sywi",
+              "Fays Jserine"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.365
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1206": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.322
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.472
+          },
+          {
+            "topic": "feelings change",
+            "target": 12160,
+            "target name": "Heillam Jserine",
+            "state": "out of love",
+            "relationship": 12162
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.168
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1211": [
+          {
+            "key": 12162,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12160,
+              "name": "Heillam Jserine",
+              "age": 53,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1212": [
+          {
+            "topic": "new relationship",
+            "key": 16724,
+            "people": [
+              12211,
+              12161
+            ],
+            "people names": [
+              "Hughekine Vaken",
+              "Sywi"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stKerckstraet.se5.c1",
+              "street": "Kerckstraet",
+              "neighborhood": "denhof",
+              "unique id": 993
+            }
+          },
+          {
+            "topic": "neglected"
           }
         ]
       }
     },
     "key": 12161,
     "home": {
-      "income class": 3,
-      "income class label": "upper middle class",
-      "section": "stDen Hof.se7.c3",
-      "street": "Den Hof",
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stKerckstraet.se5.c1",
+      "street": "Kerckstraet",
       "neighborhood": "denhof",
-      "unique id": 955
+      "unique id": 993
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        12162
+        12162,
+        16724
       ]
     }
   }

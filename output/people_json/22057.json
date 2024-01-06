@@ -1,32 +1,33 @@
 {
   "22057": {
     "alive": true,
-    "name": "Sander",
-    "surname": "Magnus",
-    "full name": "Sander Magnus",
+    "name": "Lutbrandus",
+    "surname": "Pluuier",
+    "full name": "Lutbrandus Pluuier",
     "born this way": {
       "sexuality label": "straight",
       "sexuality": 0.0,
-      "romantic interest": 0.987,
-      "sex interest": 0.75,
-      "gender expression": 0.0,
+      "romantic interest": 0.543,
+      "sex interest": 0.71,
+      "gender expression": 0.166,
       "sex": "m"
     },
-    "age": 12,
-    "birth year": 1237,
+    "age": 14,
+    "birth year": 1235,
     "sex": "m",
+    "faction": "No religion",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.271,
-      "honest-false": 0.931
+      "lawful-chaotic": 0.11,
+      "nice-nasty": 0.788,
+      "honest-false": 0.522
     },
     "attitude": {
-      "outgoing": 0.687,
-      "dream": 0.282
+      "outgoing": 0.358,
+      "dream": 0.283
     },
     "homsoc": {
       "means": {
@@ -35,18 +36,19 @@
         "caretaker": true,
         "needs_care": true,
         "flags": [
-          "neglected"
+          "neglected",
+          "starving"
         ]
       },
       "expression": {
         "sexuality expression": -0.001,
-        "gender expression expression": -0.001
+        "gender expression expression": 0.078
       }
     },
     "network": {
       "parents": {
-        "mother": "Lielde (16870)",
-        "father": "Sanders (16233)"
+        "mother": "Alretieren (15193)",
+        "father": "Samuel (15299)"
       },
       "children": {},
       "relationship keys": {
@@ -57,12 +59,14 @@
         "sibling": [
           22060,
           22061,
-          22677,
-          22955,
-          23793
+          22062,
+          22063
         ],
         "half-sibling": [
-          25268
+          23415,
+          25480,
+          25761,
+          26733
         ]
       }
     },
@@ -76,16 +80,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 4,
-      "eye_color": "blue",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "skin_color": 6,
+      "eye_color": "brown",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "C",
-        "C"
+        "S"
       ],
-      "health": 0.737,
-      "fertility": 0.658,
+      "health": 0.452,
+      "fertility": 0.673,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -93,68 +97,123 @@
     },
     "memory": {
       "health": {
-        "1238": {
+        "1236": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.737
+            "new_health": 0.687
+          },
+          "death": false
+        },
+        "1244": {
+          "health": {
+            "change": true,
+            "value_change": -0.235,
+            "new_health": 0.452
+          },
+          "death": false
+        },
+        "1245": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.452
           },
           "death": false
         }
       },
       "events": {
+        "1235": [
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stStoof straet.se1.c1",
+              "street": "Stoof straet",
+              "neighborhood": "visbuurt",
+              "unique id": 776
+            }
+          }
+        ],
+        "1236": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 15299,
+              "name": "Samuel Pluuier",
+              "age": 28,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Ghodelde (11720)",
+                "father": "Falco (11719)"
+              }
+            },
+            "label": "parent"
+          }
+        ],
         "1237": [
           {
             "topic": "new home",
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stSlyck straet.se1.c1",
-              "street": "Slyck straet",
-              "neighborhood": "varkensbuurt",
-              "unique id": 39
+              "section": "stSt. Ians straet.se5.c1",
+              "street": "St. Ians straet",
+              "neighborhood": "kampbuurt",
+              "unique id": 430
             }
+          },
+          {
+            "topic": "not enough income",
+            "income": 1.07,
+            "inhabitants": [
+              13322,
+              15548,
+              18226,
+              18743,
+              19388,
+              15193,
+              19823,
+              20680,
+              22057,
+              23389,
+              19079,
+              19072,
+              25391,
+              25629,
+              19620,
+              26346,
+              26534,
+              26696,
+              20180,
+              26945
+            ]
           }
         ],
         "1238": [
           {
-            "topic": "neglected"
+            "topic": "new relationship",
+            "key": 23415,
+            "people": [
+              22057,
+              23389
+            ],
+            "people names": [
+              "Lutbrandus Pluuier",
+              "Ghodelde Reynerussdochter"
+            ],
+            "label": "half-sibling",
+            "committed": false
           }
         ],
         "1239": [
-          {
-            "topic": "new relationship",
-            "key": 22677,
-            "people": [
-              22057,
-              22672
-            ],
-            "people names": [
-              "Sander Magnus",
-              "Ghoudekinen van Sanders"
-            ],
-            "label": "sibling",
-            "committed": false
-          },
           {
             "topic": "neglected"
           }
         ],
         "1240": [
-          {
-            "topic": "new relationship",
-            "key": 22955,
-            "people": [
-              22057,
-              22950
-            ],
-            "people names": [
-              "Sander Magnus",
-              "Radewijns Magnus"
-            ],
-            "label": "sibling",
-            "committed": false
-          },
           {
             "topic": "neglected"
           }
@@ -171,61 +230,45 @@
         ],
         "1243": [
           {
-            "topic": "new relationship",
-            "key": 23793,
-            "people": [
-              22057,
-              23788
-            ],
-            "people names": [
-              "Sander Magnus",
-              "Sara Magnus"
-            ],
-            "label": "sibling",
-            "committed": false
-          },
-          {
             "topic": "neglected"
           }
         ],
         "1244": [
           {
             "topic": "neglected"
+          },
+          {
+            "topic": "new relationship",
+            "key": 25480,
+            "people": [
+              22057,
+              25391
+            ],
+            "people names": [
+              "Lutbrandus Pluuier",
+              "Flore"
+            ],
+            "label": "half-sibling",
+            "committed": false
           }
         ],
         "1245": [
           {
-            "topic": "person died",
-            "person": {
-              "key": 16870,
-              "name": "Lielde Croppes",
-              "age": 30,
-              "alive": false,
-              "sex": "f",
-              "parents": {
-                "mother": "Geile (12245)",
-                "father": "Gheram (12244)"
-              }
-            },
-            "label": "parent"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 23788,
-              "name": "Sara Magnus",
-              "age": 1,
-              "alive": false,
-              "sex": "f",
-              "parents": {
-                "mother": "Lielde (16870)",
-                "father": "Sanders (16233)"
-              }
-            },
-            "label": "sibling"
-          },
-          {
             "topic": "neglected"
+          },
+          {
+            "topic": "new relationship",
+            "key": 25761,
+            "people": [
+              22057,
+              25629
+            ],
+            "people names": [
+              "Lutbrandus Pluuier",
+              "Amalburga"
+            ],
+            "label": "half-sibling",
+            "committed": false
           }
         ],
         "1246": [
@@ -241,40 +284,25 @@
         "1248": [
           {
             "topic": "neglected"
+          },
+          {
+            "topic": "new relationship",
+            "key": 26733,
+            "people": [
+              22057,
+              26534
+            ],
+            "people names": [
+              "Lutbrandus Pluuier",
+              "Cofte van Reynerus"
+            ],
+            "label": "half-sibling",
+            "committed": false
           }
         ],
         "1249": [
           {
-            "topic": "person died",
-            "person": {
-              "key": 22672,
-              "name": "Ghoudekinen van Sanders",
-              "age": 9,
-              "alive": false,
-              "sex": "f",
-              "parents": {
-                "mother": "Lielde (16870)",
-                "father": "Sanders (16233)"
-              }
-            },
-            "label": "sibling"
-          },
-          {
             "topic": "neglected"
-          },
-          {
-            "topic": "new relationship",
-            "key": 25268,
-            "people": [
-              22057,
-              25241
-            ],
-            "people names": [
-              "Sander Magnus",
-              "Laurens Magnus"
-            ],
-            "label": "half-sibling",
-            "committed": false
           }
         ]
       }
@@ -283,10 +311,10 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stSlyck straet.se1.c1",
-      "street": "Slyck straet",
-      "neighborhood": "varkensbuurt",
-      "unique id": 39
+      "section": "stSt. Ians straet.se5.c1",
+      "street": "St. Ians straet",
+      "neighborhood": "kampbuurt",
+      "unique id": 430
     },
     "relationship status": {
       "taken": false,
@@ -294,10 +322,12 @@
       "relationships": [
         22060,
         22061,
-        22677,
-        22955,
-        23793,
-        25268
+        22062,
+        22063,
+        23415,
+        25480,
+        25761,
+        26733
       ]
     }
   }

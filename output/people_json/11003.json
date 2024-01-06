@@ -1,53 +1,112 @@
 {
   "11003": {
     "alive": false,
-    "name": "Lielde",
-    "surname": "Vos",
-    "full name": "Lielde Vos",
+    "name": "Rycaldis",
+    "surname": "Ledeghe",
+    "full name": "Rycaldis Ledeghe",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.076,
-      "romantic interest": 0.615,
-      "sex interest": 0.866,
-      "gender expression": 0.161,
+      "sexuality label": "bi",
+      "sexuality": 0.443,
+      "romantic interest": 0.682,
+      "sex interest": 0.442,
+      "gender expression": 0.35,
       "sex": "f"
     },
-    "age": 39,
-    "birth year": 1164,
+    "age": 37,
+    "birth year": 1177,
     "sex": "f",
+    "faction": "No religion",
     "income class": [
       0,
       "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.707,
-      "honest-false": 0.363
+      "lawful-chaotic": 0.0,
+      "nice-nasty": 0.0,
+      "honest-false": 0.999
     },
     "attitude": {
-      "outgoing": 0.291,
-      "dream": 0.929
+      "outgoing": 0.487,
+      "dream": 0.142
     },
     "homsoc": {
       "means": {
         "independent": true,
-        "taken_care_of": false,
-        "caretaker": false,
+        "taken_care_of": true,
+        "caretaker": true,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "caretaker",
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.039,
-        "gender expression expression": 0.16
+        "sexuality expression": 0.353,
+        "gender expression expression": 0.282
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12415": {
+          "key": 12415,
+          "name": "Ermegardis Tiedemansdochter",
+          "age": 36,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Rycaldis (11003)",
+            "father": "Tiedeman (11002)"
+          }
+        },
+        "13344": {
+          "key": 13344,
+          "name": "Goneir Tiedemansdochter",
+          "age": 47,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Rycaldis (11003)",
+            "father": "Tiedeman (11002)"
+          }
+        },
+        "13736": {
+          "key": 13736,
+          "name": "Hadewigis van Tiedeman",
+          "age": 37,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Rycaldis (11003)",
+            "father": "Tiedeman (11002)"
+          }
+        },
+        "14476": {
+          "key": 14476,
+          "name": "Vandelghis Tiedemanszoon",
+          "age": 7,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Rycaldis (11003)",
+            "father": "Tiedeman (11002)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          11004
-        ]
+          11004,
+          16528
+        ],
+        "child": {
+          "birth": [
+            12417,
+            13346,
+            13738,
+            14478
+          ]
+        }
       }
     },
     "occupation": {
@@ -60,16 +119,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 1,
-      "eye_color": "brown",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "skin_color": 0,
+      "eye_color": "green",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
-        "C",
-        "S"
+        "S",
+        "C"
       ],
-      "health": 0.648,
-      "fertility": 0.626,
+      "health": 0.678,
+      "fertility": 0.675,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -81,15 +140,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.648
+            "new_health": 0.678
           },
           "death": false
         },
-        "1202": {
+        "1213": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.648
+            "new_health": 0.678
           },
           "death": true
         }
@@ -104,8 +163,8 @@
               11003
             ],
             "people names": [
-              "Blomart Olipot",
-              "Lielde Vos"
+              "Tiedeman",
+              "Rycaldis Ledeghe"
             ],
             "label": "spouse",
             "committed": true
@@ -115,11 +174,221 @@
             "home": {
               "income class": 0,
               "income class label": "working class",
-              "section": "stDie Coninc straet.se1.c0",
+              "section": "stDie Coninc straet.se3.c0",
               "street": "Die Coninc straet",
               "neighborhood": "kampbuurt",
-              "unique id": 440
+              "unique id": 458
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12417,
+            "people": [
+              11003,
+              12415
+            ],
+            "people names": [
+              "Rycaldis Ledeghe",
+              "Ermegardis Tiedemansdochter"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1201": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 13346,
+            "people": [
+              11003,
+              13344
+            ],
+            "people names": [
+              "Rycaldis Ledeghe",
+              "Goneir Tiedemansdochter"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 13738,
+            "people": [
+              11003,
+              13736
+            ],
+            "people names": [
+              "Rycaldis Ledeghe",
+              "Hadewigis van Tiedeman"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 1.17,
+            "inhabitants": []
+          }
+        ],
+        "1204": [
+          {
+            "topic": "not enough income",
+            "income": 1.157,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "new relationship",
+            "key": 14478,
+            "people": [
+              11003,
+              14476
+            ],
+            "people names": [
+              "Rycaldis Ledeghe",
+              "Vandelghis Tiedemanszoon"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 1.224,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 1.241,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 1.334,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "key": 11004,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11002,
+              "name": "Tiedeman",
+              "age": 47,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          },
+          {
+            "topic": "new caretaker",
+            "person": 11003
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "new relationship",
+            "key": 16528,
+            "people": [
+              10576,
+              11003
+            ],
+            "people names": [
+              "Coekea Bobel",
+              "Rycaldis Ledeghe"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 0,
+              "income class label": "working class",
+              "section": "stWalker straet.se3.c0",
+              "street": "Walker straet",
+              "neighborhood": "agnesbuurt",
+              "unique id": 268
+            }
+          },
+          {
+            "topic": "not enough income",
+            "income": 1.099,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 1.071,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 14476,
+              "name": "Vandelghis Tiedemanszoon",
+              "age": 7,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Rycaldis (11003)",
+                "father": "Tiedeman (11002)"
+              }
+            },
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 1.04,
+            "inhabitants": []
           }
         ]
       }
@@ -128,16 +397,17 @@
     "home": {
       "income class": 0,
       "income class label": "working class",
-      "section": "stDie Coninc straet.se1.c0",
-      "street": "Die Coninc straet",
-      "neighborhood": "kampbuurt",
-      "unique id": 440
+      "section": "stWalker straet.se3.c0",
+      "street": "Walker straet",
+      "neighborhood": "agnesbuurt",
+      "unique id": 268
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        11004
+        11004,
+        16528
       ]
     }
   }

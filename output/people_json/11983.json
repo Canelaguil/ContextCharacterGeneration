@@ -1,53 +1,85 @@
 {
   "11983": {
     "alive": false,
-    "name": "Oudrauen",
-    "surname": "",
-    "full name": "Oudrauen",
+    "name": "Ghoris",
+    "surname": "Dukinghe",
+    "full name": "Ghoris Dukinghe",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.851,
-      "romantic interest": 0.67,
-      "sex interest": 0.681,
-      "gender expression": 0.279,
+      "sexuality label": "bi",
+      "sexuality": 0.535,
+      "romantic interest": 0.755,
+      "sex interest": 0.313,
+      "gender expression": 0.348,
       "sex": "m"
     },
-    "age": 41,
-    "birth year": 1161,
+    "age": 56,
+    "birth year": 1151,
     "sex": "m",
+    "faction": "Dogmatists",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.755,
-      "nice-nasty": 0.292,
-      "honest-false": 0.057
+      "lawful-chaotic": 0.608,
+      "nice-nasty": 0.458,
+      "honest-false": 0.604
     },
     "attitude": {
-      "outgoing": 0.612,
-      "dream": 0.374
+      "outgoing": 0.169,
+      "dream": 0.216
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "neglected"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.438,
-        "gender expression expression": 0.077
+        "sexuality expression": 0.524,
+        "gender expression expression": 0.166
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12601": {
+          "key": 12601,
+          "name": "Clemmam Dukinghe",
+          "age": 3,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Hildegardis (11984)",
+            "father": "Ghoris (11983)"
+          }
+        },
+        "13505": {
+          "key": 13505,
+          "name": "Ebram Dukinghe",
+          "age": 47,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Hildegardis (11984)",
+            "father": "Ghoris (11983)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11985
-        ]
+        ],
+        "child": {
+          "birth": [
+            12602,
+            13506
+          ]
+        }
       }
     },
     "occupation": {
@@ -56,28 +88,33 @@
         2,
         "middle class"
       ],
-      "income": 0.639,
+      "income": 1.499,
       "all_incomes": [
-        0.964,
-        1.024,
-        0.639
+        1.087,
+        1.464,
+        1.476,
+        1.499,
+        1.464,
+        1.499,
+        1.499,
+        1.499
       ],
       "job": {
-        "lawful": true,
-        "honest": false
+        "lawful": false,
+        "honest": true
       }
     },
     "genetics": {
-      "skin_color": 2,
-      "eye_color": "green",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "skin_color": 8,
+      "eye_color": "brown",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "S",
+        "C",
         "C"
       ],
-      "health": 0.742,
-      "fertility": 0.78,
+      "health": 0.126,
+      "fertility": 0.742,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -89,15 +126,31 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.742
+            "new_health": 0.749
           },
           "death": false
         },
-        "1201": {
+        "1204": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.742
+            "change": true,
+            "value_change": -0.267,
+            "new_health": 0.482
+          },
+          "death": false
+        },
+        "1205": {
+          "health": {
+            "change": true,
+            "value_change": -0.217,
+            "new_health": 0.265
+          },
+          "death": false
+        },
+        "1206": {
+          "health": {
+            "change": true,
+            "value_change": -0.139,
+            "new_health": 0.126
           },
           "death": true
         }
@@ -107,12 +160,7 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.964
-          },
-          {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.024
+            "income": 1.087
           },
           {
             "topic": "new relationship",
@@ -122,8 +170,8 @@
               11984
             ],
             "people names": [
-              "Oudrauen",
-              "Woltwigis Corbeel"
+              "Ghoris Dukinghe",
+              "Hildegardis Capoen"
             ],
             "label": "spouse",
             "committed": true
@@ -133,18 +181,94 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stCromme straet.se3.c2",
+              "section": "stCromme straet.se5.c2",
               "street": "Cromme straet",
               "neighborhood": "denhof",
-              "unique id": 881
+              "unique id": 896
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12602,
+            "people": [
+              11983,
+              12601
+            ],
+            "people names": [
+              "Ghoris Dukinghe",
+              "Clemmam Dukinghe"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1201": [
           {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.639
+            "topic": "neglected"
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 13506,
+            "people": [
+              11983,
+              13505
+            ],
+            "people names": [
+              "Ghoris Dukinghe",
+              "Ebram Dukinghe"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12601,
+              "name": "Clemmam Dukinghe",
+              "age": 3,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Hildegardis (11984)",
+                "father": "Ghoris (11983)"
+              }
+            },
+            "label": "child"
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "feelings change",
+            "target": 11984,
+            "target name": "Hildegardis Capoen",
+            "state": "out of love",
+            "relationship": 11985
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1206": [
+          {
+            "topic": "neglected"
           }
         ]
       }
@@ -153,10 +277,10 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stCromme straet.se3.c2",
+      "section": "stCromme straet.se5.c2",
       "street": "Cromme straet",
       "neighborhood": "denhof",
-      "unique id": 881
+      "unique id": 896
     },
     "relationship status": {
       "taken": true,

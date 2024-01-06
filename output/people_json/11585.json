@@ -1,32 +1,33 @@
 {
   "11585": {
     "alive": false,
-    "name": "Walburgis",
-    "surname": "Crudepen",
-    "full name": "Walburgis Crudepen",
+    "name": "Tetta",
+    "surname": "Craye",
+    "full name": "Tetta Craye",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.045,
-      "romantic interest": 0.725,
-      "sex interest": 0.779,
-      "gender expression": 0.0,
+      "sexuality": 0.028,
+      "romantic interest": 0.731,
+      "sex interest": 0.557,
+      "gender expression": 0.139,
       "sex": "f"
     },
-    "age": 18,
-    "birth year": 1184,
+    "age": 54,
+    "birth year": 1174,
     "sex": "f",
+    "faction": "Zealots",
     "income class": [
-      3,
-      "upper middle class"
+      2,
+      "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.933,
-      "nice-nasty": 0.382,
-      "honest-false": 0.353
+      "lawful-chaotic": 0.583,
+      "nice-nasty": 0.277,
+      "honest-false": 0.643
     },
     "attitude": {
-      "outgoing": 0.556,
-      "dream": 0.42
+      "outgoing": 0.281,
+      "dream": 0.319
     },
     "homsoc": {
       "means": {
@@ -34,42 +35,84 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "caretaker",
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.026,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.022,
+        "gender expression expression": 0.094
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14546": {
+          "key": 14546,
+          "name": "Gerburgis Stippekender",
+          "age": 19,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Tetta (11585)",
+            "father": "Lutgeri (11584)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          11586
-        ]
+          11586,
+          15982,
+          18281
+        ],
+        "child": {
+          "birth": [
+            14548
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        3,
-        "upper middle class"
+        2,
+        "middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.09,
+      "all_incomes": [
+        0.989,
+        0.973,
+        1.098,
+        1.15,
+        1.157,
+        1.14,
+        1.092,
+        1.046,
+        1.008,
+        0.993,
+        1.083,
+        1.059,
+        1.034,
+        1.09
+      ],
+      "job": {
+        "lawful": true,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 9,
+      "skin_color": 0,
       "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
         "S",
         "S"
       ],
-      "health": 0.556,
-      "fertility": 0.503,
+      "health": 0.0,
+      "fertility": 0.613,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -81,15 +124,39 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.556
+            "new_health": 0.557
           },
           "death": false
         },
-        "1201": {
+        "1224": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.556
+            "change": true,
+            "value_change": -0.319,
+            "new_health": 0.238
+          },
+          "death": false
+        },
+        "1225": {
+          "health": {
+            "change": true,
+            "value_change": -0.161,
+            "new_health": 0.077
+          },
+          "death": false
+        },
+        "1226": {
+          "health": {
+            "change": true,
+            "value_change": -0.075,
+            "new_health": 0.002
+          },
+          "death": false
+        },
+        "1227": {
+          "health": {
+            "change": true,
+            "value_change": -0.002,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -104,8 +171,8 @@
               11585
             ],
             "people names": [
-              "Geykonis Pratre",
-              "Walburgis Crudepen"
+              "Lutgeri Stippekender",
+              "Tetta Craye"
             ],
             "label": "spouse",
             "committed": true
@@ -113,31 +180,219 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stDie lange straet3.se7.c3",
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stDie lange straet3.se9.c2",
               "street": "Die lange straet3",
               "neighborhood": "visbuurt",
-              "unique id": 701
+              "unique id": 714
             }
+          }
+        ],
+        "1205": [
+          {
+            "topic": "new relationship",
+            "key": 14548,
+            "people": [
+              11585,
+              14546
+            ],
+            "people names": [
+              "Tetta Craye",
+              "Gerburgis Stippekender"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1206": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1208": [
+          {
+            "key": 11586,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11584,
+              "name": "Lutgeri Stippekender",
+              "age": 37,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          },
+          {
+            "topic": "new caretaker",
+            "person": 11585
+          }
+        ],
+        "1209": [
+          {
+            "topic": "new relationship",
+            "key": 15982,
+            "people": [
+              11284,
+              11585
+            ],
+            "people names": [
+              "Kerstiaen Lecker",
+              "Tetta Craye"
+            ],
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1214": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.989
+          }
+        ],
+        "1216": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.098
+          }
+        ],
+        "1221": [
+          {
+            "key": 15982,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11284,
+              "name": "Kerstiaen Lecker",
+              "age": 44,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not caretaker"
+          }
+        ],
+        "1222": [
+          {
+            "topic": "new relationship",
+            "key": 18281,
+            "people": [
+              11659,
+              11585
+            ],
+            "people names": [
+              "Voghel",
+              "Tetta Craye"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stMooierstraet.se3.c1",
+              "street": "Mooierstraet",
+              "neighborhood": "visbuurt",
+              "unique id": 749
+            }
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1223": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1224": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.083
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1225": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 14546,
+              "name": "Gerburgis Stippekender",
+              "age": 19,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Tetta (11585)",
+                "father": "Lutgeri (11584)"
+              }
+            },
+            "label": "child"
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1226": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1227": [
+          {
+            "topic": "neglected"
           }
         ]
       }
     },
     "key": 11585,
     "home": {
-      "income class": 3,
-      "income class label": "upper middle class",
-      "section": "stDie lange straet3.se7.c3",
-      "street": "Die lange straet3",
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stMooierstraet.se3.c1",
+      "street": "Mooierstraet",
       "neighborhood": "visbuurt",
-      "unique id": 701
+      "unique id": 749
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        11586
+        11586,
+        15982,
+        18281
       ]
     }
   }

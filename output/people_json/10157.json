@@ -1,55 +1,89 @@
 {
   "10157": {
     "alive": false,
-    "name": "Bertrade",
-    "surname": "Quistwater",
-    "full name": "Bertrade Quistwater",
+    "name": "Katrin",
+    "surname": "Coram",
+    "full name": "Katrin Coram",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.061,
-      "romantic interest": 0.501,
-      "sex interest": 0.566,
-      "gender expression": 0.117,
+      "sexuality": 0.05,
+      "romantic interest": 0.551,
+      "sex interest": 0.972,
+      "gender expression": 0.104,
       "sex": "f"
     },
-    "age": 54,
-    "birth year": 1159,
+    "age": 56,
+    "birth year": 1171,
     "sex": "f",
+    "faction": "No religion",
     "income class": [
       0,
       "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.073,
-      "nice-nasty": 0.592,
-      "honest-false": 0.284
+      "lawful-chaotic": 0.23,
+      "nice-nasty": 0.763,
+      "honest-false": 0.887
     },
     "attitude": {
-      "outgoing": 0.434,
-      "dream": 0.488
+      "outgoing": 0.426,
+      "dream": 0.59
     },
     "homsoc": {
       "means": {
         "independent": true,
-        "taken_care_of": false,
+        "taken_care_of": true,
         "caretaker": false,
         "needs_care": false,
         "flags": [
+          "caretaker",
+          "neglected",
           "starving"
         ]
       },
       "expression": {
         "sexuality expression": 0.025,
-        "gender expression expression": 0.089
+        "gender expression expression": 0.032
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12666": {
+          "key": 12666,
+          "name": "Oda",
+          "age": 12,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Katrin (10157)",
+            "father": "Reinardus (10156)"
+          }
+        },
+        "13589": {
+          "key": 13589,
+          "name": "Otto van Reinardus",
+          "age": 2,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Katrin (10157)",
+            "father": "Reinardus (10156)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          10158
-        ]
+          10158,
+          17716,
+          17982
+        ],
+        "child": {
+          "birth": [
+            12668,
+            13591
+          ]
+        }
       }
     },
     "occupation": {
@@ -62,16 +96,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 2,
-      "eye_color": "green",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "skin_color": 8,
+      "eye_color": "brown",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
         "S",
-        "C"
+        "S"
       ],
       "health": 0.0,
-      "fertility": 0.831,
+      "fertility": 0.775,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -83,30 +117,46 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.672
+            "new_health": 0.765
           },
           "death": false
         },
-        "1210": {
+        "1222": {
           "health": {
             "change": true,
-            "value_change": -0.286,
-            "new_health": 0.386
+            "value_change": -0.113,
+            "new_health": 0.652
           },
           "death": false
         },
-        "1211": {
+        "1223": {
           "health": {
             "change": true,
-            "value_change": -0.229,
-            "new_health": 0.157
+            "value_change": -0.177,
+            "new_health": 0.475
           },
           "death": false
         },
-        "1212": {
+        "1224": {
           "health": {
             "change": true,
-            "value_change": -0.157,
+            "value_change": -0.277,
+            "new_health": 0.198
+          },
+          "death": false
+        },
+        "1225": {
+          "health": {
+            "change": true,
+            "value_change": -0.13,
+            "new_health": 0.068
+          },
+          "death": false
+        },
+        "1226": {
+          "health": {
+            "change": true,
+            "value_change": -0.068,
             "new_health": 0.0
           },
           "death": true
@@ -122,8 +172,8 @@
               10157
             ],
             "people names": [
-              "Everocker",
-              "Bertrade Quistwater"
+              "Reinardus",
+              "Katrin Coram"
             ],
             "label": "spouse",
             "committed": true
@@ -133,21 +183,137 @@
             "home": {
               "income class": 0,
               "income class label": "working class",
-              "section": "stIn den Haeg.se3.c0",
+              "section": "stIn den Haeg.se1.c0",
               "street": "In den Haeg",
               "neighborhood": "varkensbuurt",
-              "unique id": 74
+              "unique id": 67
             }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 12668,
+            "people": [
+              10157,
+              12666
+            ],
+            "people names": [
+              "Katrin Coram",
+              "Oda"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1202": [
+          {
+            "topic": "neglected"
           }
         ],
         "1203": [
           {
+            "topic": "new relationship",
+            "key": 13591,
+            "people": [
+              10157,
+              13589
+            ],
+            "people names": [
+              "Katrin Coram",
+              "Otto van Reinardus"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
             "topic": "not enough income",
-            "income": 0.436,
+            "income": 0.862,
             "inhabitants": []
           }
         ],
         "1204": [
+          {
+            "topic": "not enough income",
+            "income": 0.797,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "not enough income",
+            "income": 0.716,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 13589,
+              "name": "Otto van Reinardus",
+              "age": 2,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Katrin (10157)",
+                "father": "Reinardus (10156)"
+              }
+            },
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.677,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0.656,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0.639,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0.583,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0.636,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0.659,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0.653,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
           {
             "key": 10158,
             "topic": "unmarried"
@@ -156,7 +322,111 @@
             "topic": "person died",
             "person": {
               "key": 10156,
-              "name": "Everocker",
+              "name": "Reinardus",
+              "age": 49,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          },
+          {
+            "topic": "new caretaker",
+            "person": 10157
+          }
+        ],
+        "1214": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12666,
+              "name": "Oda",
+              "age": 12,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Katrin (10157)",
+                "father": "Reinardus (10156)"
+              }
+            },
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1215": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1216": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1217": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1218": [
+          {
+            "topic": "new relationship",
+            "key": 17716,
+            "people": [
+              10969,
+              10157
+            ],
+            "people names": [
+              "Splinter Salm",
+              "Katrin Coram"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 0,
+              "income class label": "working class",
+              "section": "stDie Coninc straet.se1.c0",
+              "street": "Die Coninc straet",
+              "neighborhood": "kampbuurt",
+              "unique id": 443
+            }
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1219": [
+          {
+            "key": 17716,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10969,
+              "name": "Splinter Salm",
               "age": 53,
               "alive": false,
               "sex": "m",
@@ -168,58 +438,85 @@
             "topic": "not enough income",
             "income": 0,
             "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          },
+          {
+            "topic": "new caretaker",
+            "person": 10157
           }
         ],
-        "1205": [
+        "1220": [
+          {
+            "topic": "new relationship",
+            "key": 17982,
+            "people": [
+              10297,
+              10157
+            ],
+            "people names": [
+              "Bertoldus Crane",
+              "Katrin Coram"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.685,
+            "inhabitants": []
+          }
+        ],
+        "1221": [
+          {
+            "topic": "not enough income",
+            "income": 0.684,
+            "inhabitants": []
+          }
+        ],
+        "1223": [
+          {
+            "topic": "not enough income",
+            "income": 0.648,
+            "inhabitants": []
+          }
+        ],
+        "1224": [
+          {
+            "topic": "not enough income",
+            "income": 0.676,
+            "inhabitants": []
+          }
+        ],
+        "1225": [
+          {
+            "key": 17982,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10297,
+              "name": "Bertoldus Crane",
+              "age": 47,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not caretaker"
+          },
           {
             "topic": "not enough income",
             "income": 0,
             "inhabitants": []
           }
         ],
-        "1206": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1207": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1208": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1209": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1210": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1211": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1212": [
+        "1226": [
           {
             "topic": "not enough income",
             "income": 0,
@@ -232,16 +529,18 @@
     "home": {
       "income class": 0,
       "income class label": "working class",
-      "section": "stIn den Haeg.se3.c0",
-      "street": "In den Haeg",
-      "neighborhood": "varkensbuurt",
-      "unique id": 74
+      "section": "stDie Coninc straet.se1.c0",
+      "street": "Die Coninc straet",
+      "neighborhood": "kampbuurt",
+      "unique id": 443
     },
     "relationship status": {
       "taken": false,
       "married": false,
       "relationships": [
-        10158
+        10158,
+        17716,
+        17982
       ]
     }
   }

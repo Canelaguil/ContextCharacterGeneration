@@ -1,32 +1,33 @@
 {
   "10318": {
     "alive": false,
-    "name": "Ramont",
-    "surname": "Codde",
-    "full name": "Ramont Codde",
+    "name": "Radewijns",
+    "surname": "Ziele",
+    "full name": "Radewijns Ziele",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.112,
-      "romantic interest": 0.684,
-      "sex interest": 0.754,
-      "gender expression": 0.002,
+      "sexuality": 0.072,
+      "romantic interest": 0.744,
+      "sex interest": 0.484,
+      "gender expression": 0.123,
       "sex": "m"
     },
-    "age": 30,
-    "birth year": 1176,
+    "age": 54,
+    "birth year": 1158,
     "sex": "m",
+    "faction": "Dogmatists",
     "income class": [
       0,
       "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.379,
-      "nice-nasty": 0.999,
-      "honest-false": 0.989
+      "lawful-chaotic": 0.033,
+      "nice-nasty": 0.808,
+      "honest-false": 0.49
     },
     "attitude": {
-      "outgoing": 0.634,
-      "dream": 0.547
+      "outgoing": 0.676,
+      "dream": 0.421
     },
     "homsoc": {
       "means": {
@@ -34,20 +35,40 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "neglected"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.09,
-        "gender expression expression": 0.001
+        "sexuality expression": 0.055,
+        "gender expression expression": 0.0
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12280": {
+          "key": 12280,
+          "name": "Trame",
+          "age": 49,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Reynwi (10319)",
+            "father": "Radewijns (10318)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          10320
-        ]
+          10320,
+          14707
+        ],
+        "child": {
+          "birth": [
+            12281
+          ]
+        }
       }
     },
     "occupation": {
@@ -56,32 +77,38 @@
         0,
         "working class"
       ],
-      "income": 0.892,
+      "income": 1.463,
       "all_incomes": [
-        1.025,
-        1.037,
-        1.024,
-        1.021,
-        0.986,
-        0.943,
-        0.892
+        1.22,
+        1.157,
+        1.206,
+        1.172,
+        1.243,
+        1.311,
+        1.107,
+        1.134,
+        1.295,
+        1.499,
+        1.499,
+        1.48,
+        1.463
       ],
       "job": {
-        "lawful": true,
+        "lawful": false,
         "honest": true
       }
     },
     "genetics": {
-      "skin_color": 6,
-      "eye_color": "brown",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "skin_color": 9,
+      "eye_color": "blue",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "S",
-        "C"
+        "C",
+        "S"
       ],
-      "health": 0.786,
-      "fertility": 0.764,
+      "health": 0.0,
+      "fertility": 0.631,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -93,15 +120,39 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.786
+            "new_health": 0.665
           },
           "death": false
         },
-        "1205": {
+        "1208": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.786
+            "change": true,
+            "value_change": -0.173,
+            "new_health": 0.492
+          },
+          "death": false
+        },
+        "1209": {
+          "health": {
+            "change": true,
+            "value_change": -0.251,
+            "new_health": 0.241
+          },
+          "death": false
+        },
+        "1210": {
+          "health": {
+            "change": true,
+            "value_change": -0.164,
+            "new_health": 0.077
+          },
+          "death": false
+        },
+        "1211": {
+          "health": {
+            "change": true,
+            "value_change": -0.077,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -111,7 +162,7 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.025
+            "income": 1.22
           },
           {
             "topic": "new relationship",
@@ -121,8 +172,8 @@
               10319
             ],
             "people names": [
-              "Ramont Codde",
-              "Saswe Jserine"
+              "Radewijns Ziele",
+              "Reynwi Scoreel"
             ],
             "label": "spouse",
             "committed": true
@@ -132,11 +183,113 @@
             "home": {
               "income class": 0,
               "income class label": "working class",
-              "section": "stSt. Joris straet.se1.c0",
+              "section": "stSt. Joris straet.se3.c0",
               "street": "St. Joris straet",
               "neighborhood": "jorisbuurt",
-              "unique id": 143
+              "unique id": 147
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12281,
+            "people": [
+              10318,
+              12280
+            ],
+            "people names": [
+              "Radewijns Ziele",
+              "Trame"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1201": [
+          {
+            "key": 10320,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10319,
+              "name": "Reynwi Scoreel",
+              "age": 35,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1202": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "new relationship",
+            "key": 14707,
+            "people": [
+              10318,
+              10607
+            ],
+            "people names": [
+              "Radewijns Ziele",
+              "Soeten"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1206": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1211": [
+          {
+            "topic": "neglected"
           }
         ]
       }
@@ -145,16 +298,17 @@
     "home": {
       "income class": 0,
       "income class label": "working class",
-      "section": "stSt. Joris straet.se1.c0",
+      "section": "stSt. Joris straet.se3.c0",
       "street": "St. Joris straet",
       "neighborhood": "jorisbuurt",
-      "unique id": 143
+      "unique id": 147
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        10320
+        10320,
+        14707
       ]
     }
   }

@@ -1,32 +1,33 @@
 {
   "11251": {
     "alive": false,
-    "name": "Strom",
-    "surname": "",
-    "full name": "Strom",
+    "name": "Menaures",
+    "surname": "Froes",
+    "full name": "Menaures Froes",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.085,
-      "romantic interest": 0.696,
-      "sex interest": 0.461,
-      "gender expression": 0.16,
+      "sexuality": 0.038,
+      "romantic interest": 0.645,
+      "sex interest": 0.417,
+      "gender expression": 0.052,
       "sex": "m"
     },
-    "age": 30,
-    "birth year": 1173,
+    "age": 47,
+    "birth year": 1159,
     "sex": "m",
+    "faction": "Zealots",
     "income class": [
       3,
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.515,
-      "nice-nasty": 0.286,
-      "honest-false": 0.456
+      "lawful-chaotic": 0.222,
+      "nice-nasty": 0.041,
+      "honest-false": 0.42
     },
     "attitude": {
-      "outgoing": 0.535,
-      "dream": 0.0
+      "outgoing": 0.803,
+      "dream": 0.371
     },
     "homsoc": {
       "means": {
@@ -34,20 +35,39 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "neglected"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.037,
-        "gender expression expression": 0.06
+        "sexuality expression": 0.017,
+        "gender expression expression": 0.019
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13789": {
+          "key": 13789,
+          "name": "Adam Froes",
+          "age": 14,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Bertrade (11252)",
+            "father": "Menaures (11251)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11253
-        ]
+        ],
+        "child": {
+          "birth": [
+            13790
+          ]
+        }
       }
     },
     "occupation": {
@@ -56,29 +76,32 @@
         3,
         "upper middle class"
       ],
-      "income": 0.988,
+      "income": 1.499,
       "all_incomes": [
-        1.067,
-        1.065,
-        1.042,
-        0.988
+        1.003,
+        1.239,
+        1.273,
+        1.377,
+        1.249,
+        1.272,
+        1.499
       ],
       "job": {
-        "lawful": true,
+        "lawful": false,
         "honest": true
       }
     },
     "genetics": {
-      "skin_color": 7,
-      "eye_color": "green",
+      "skin_color": 6,
+      "eye_color": "blue",
       "hair_color": "strawberry blonde",
       "hair_color_code": 5,
       "hair_type": [
         "C",
-        "C"
+        "S"
       ],
-      "health": 0.766,
-      "fertility": 0.75,
+      "health": 0.768,
+      "fertility": 0.754,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -90,15 +113,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.766
+            "new_health": 0.768
           },
           "death": false
         },
-        "1202": {
+        "1205": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.766
+            "new_health": 0.768
           },
           "death": true
         }
@@ -108,7 +131,7 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.067
+            "income": 1.003
           },
           {
             "topic": "new relationship",
@@ -118,8 +141,8 @@
               11252
             ],
             "people names": [
-              "Strom",
-              "Lutghardis Craye"
+              "Menaures Froes",
+              "Bertrade"
             ],
             "label": "spouse",
             "committed": true
@@ -132,8 +155,60 @@
               "section": "stBreestraat.se3.c3",
               "street": "Breestraat",
               "neighborhood": "olvbuurt",
-              "unique id": 555
+              "unique id": 559
             }
+          },
+          {
+            "topic": "feelings change",
+            "target": 11252,
+            "target name": "Bertrade",
+            "state": "solid love",
+            "relationship": 11253
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 13790,
+            "people": [
+              11251,
+              13789
+            ],
+            "people names": [
+              "Menaures Froes",
+              "Adam Froes"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1205": [
+          {
+            "key": 11253,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11252,
+              "name": "Bertrade",
+              "age": 32,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "neglected"
           }
         ]
       }
@@ -145,11 +220,11 @@
       "section": "stBreestraat.se3.c3",
       "street": "Breestraat",
       "neighborhood": "olvbuurt",
-      "unique id": 555
+      "unique id": 559
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         11253
       ]

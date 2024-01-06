@@ -1,32 +1,33 @@
 {
   "11546": {
     "alive": false,
-    "name": "Sywi",
-    "surname": "Paus",
-    "full name": "Sywi Paus",
+    "name": "Cofte",
+    "surname": "Kiekiins",
+    "full name": "Cofte Kiekiins",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.129,
-      "romantic interest": 0.937,
-      "sex interest": 0.824,
-      "gender expression": 0.081,
+      "sexuality": 0.102,
+      "romantic interest": 0.684,
+      "sex interest": 0.926,
+      "gender expression": 0.0,
       "sex": "f"
     },
-    "age": 19,
-    "birth year": 1184,
+    "age": 52,
+    "birth year": 1163,
     "sex": "f",
+    "faction": "Dogmatists",
     "income class": [
       3,
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.814,
-      "nice-nasty": 0.979,
-      "honest-false": 0.708
+      "lawful-chaotic": 0.335,
+      "nice-nasty": 0.999,
+      "honest-false": 0.61
     },
     "attitude": {
-      "outgoing": 0.402,
-      "dream": 0.224
+      "outgoing": 0.453,
+      "dream": 0.574
     },
     "homsoc": {
       "means": {
@@ -39,56 +40,77 @@
         ]
       },
       "expression": {
-        "sexuality expression": 0.032,
-        "gender expression expression": 0.041
+        "sexuality expression": 0.043,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "13386": {
-          "key": 13386,
-          "name": "Lenildis Isbrandussdochter",
-          "age": 28,
+        "12954": {
+          "key": 12954,
+          "name": "Dilane Syuardusszoon",
+          "age": 46,
           "alive": false,
-          "sex": "f",
+          "sex": "m",
           "parents": {
-            "mother": "Sywi (11546)",
-            "father": "Isbrandus (11545)"
+            "mother": "Cofte (11546)",
+            "father": "Syuardus (11545)"
           }
         }
       },
       "relationship keys": {
         "spouse": [
-          11547
+          11547,
+          15975
         ],
         "child": {
           "birth": [
-            13388
+            12956
           ]
         }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         3,
         "upper middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.063,
+      "all_incomes": [
+        0.971,
+        0.749,
+        0.753,
+        0.826,
+        0.791,
+        0.782,
+        1.125,
+        1.139,
+        1.008,
+        0.844,
+        0.878,
+        0.803,
+        0.804,
+        0.84,
+        1.063
+      ],
+      "job": {
+        "lawful": false,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 6,
+      "skin_color": 0,
       "eye_color": "blue",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
         "S",
-        "S"
+        "C"
       ],
-      "health": 0.78,
-      "fertility": 0.778,
+      "health": 0.334,
+      "fertility": 0.631,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -100,13 +122,34 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.78
+            "new_health": 0.682
           },
           "death": false
+        },
+        "1213": {
+          "health": {
+            "change": true,
+            "value_change": -0.118,
+            "new_health": 0.564
+          },
+          "death": false
+        },
+        "1214": {
+          "health": {
+            "change": true,
+            "value_change": -0.23,
+            "new_health": 0.334
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.971
+          },
           {
             "topic": "new relationship",
             "key": 11547,
@@ -115,8 +158,8 @@
               11546
             ],
             "people names": [
-              "Isbrandus",
-              "Sywi Paus"
+              "Syuardus",
+              "Cofte Kiekiins"
             ],
             "label": "spouse",
             "committed": true
@@ -126,27 +169,162 @@
             "home": {
               "income class": 3,
               "income class label": "upper middle class",
-              "section": "stDie lange straet3.se3.c3",
+              "section": "stDie lange straet3.se5.c3",
               "street": "Die lange straet3",
               "neighborhood": "visbuurt",
-              "unique id": 682
+              "unique id": 691
             }
+          },
+          {
+            "topic": "feelings change",
+            "target": 11545,
+            "target name": "Syuardus",
+            "state": "out of love",
+            "relationship": 11547
+          }
+        ],
+        "1201": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.749
+          },
+          {
+            "topic": "new relationship",
+            "key": 12956,
+            "people": [
+              11546,
+              12954
+            ],
+            "people names": [
+              "Cofte Kiekiins",
+              "Dilane Syuardusszoon"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1202": [
           {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1206": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.125
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1207": [
+          {
+            "key": 11547,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11545,
+              "name": "Syuardus",
+              "age": 56,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1209": [
+          {
             "topic": "new relationship",
-            "key": 13388,
+            "key": 15975,
             "people": [
-              11546,
-              13386
+              10024,
+              11546
             ],
             "people names": [
-              "Sywi Paus",
-              "Lenildis Isbrandussdochter"
+              "Didderic Mie",
+              "Cofte Kiekiins"
             ],
-            "label": "parentchild",
-            "committed": false
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stUterechse straet.se1.c2",
+              "street": "Uterechse straet",
+              "neighborhood": "varkensbuurt",
+              "unique id": 10
+            }
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "feelings change",
+            "target": 10024,
+            "target name": "Didderic Mie",
+            "state": "out of love",
+            "relationship": 15975
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1211": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1212": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1213": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1214": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.063
           },
           {
             "topic": "neglected"
@@ -156,18 +334,19 @@
     },
     "key": 11546,
     "home": {
-      "income class": 3,
-      "income class label": "upper middle class",
-      "section": "stDie lange straet3.se3.c3",
-      "street": "Die lange straet3",
-      "neighborhood": "visbuurt",
-      "unique id": 682
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stUterechse straet.se1.c2",
+      "street": "Uterechse straet",
+      "neighborhood": "varkensbuurt",
+      "unique id": 10
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        11547
+        11547,
+        15975
       ]
     }
   }

@@ -74,18 +74,24 @@ society = {
 }
 
 community = {
+    # class system
     'classes' : 5,
     'class_names' : ['working class', 'lower middle class', 'middle class', 'upper middle class', 'nobility'],
     'class_distribution' : [0.45, 0.3, 0.15, 0.08, 0.02],
     'class_person_household_percentage' : [0.25, 0.15, 0.1, 0.05, 0.025], # what percentage of 1 income is needed to sustain 1 person?
-    'class_mobility' : [(0.9, 0.08, 0.02, 0, 0), (), (), (), ()],
     # class distribution will only be taken into account if not specified in input
 
+    # factions
     'factions' : 3,
     'faction_names' : ['Zealots', 'Dogmatists', 'No religion'],
     'faction_distribution' : [0.35, 0.3, 0.35],
     'faction_mobility' : [(0.95, 0.01, 0.04), (0.02, 0.9, 0.8), (0.15, 0.12, 0.73)],
-    # faction distribution will only be taken into account if not specified in input
+
+    # community events
+    'community_events' : ['war', 'famine', 'plague', 'faction upheaval'],
+    'comunnity_events_yearly_chance' : 0.05,
+    'community_events_distr' : [0.2, 0.2, 0.2, 0.4], # given that something will happen, what will?
+    'community_fixed_events' : [(), (), (), ()] # fixed years in which these events will happen
 }
 
 
