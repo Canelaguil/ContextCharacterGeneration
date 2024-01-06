@@ -1,32 +1,32 @@
 {
   "12011": {
     "alive": false,
-    "name": "Bertrade",
-    "surname": "Coluen",
-    "full name": "Bertrade Coluen",
+    "name": "Hille",
+    "surname": "Voit",
+    "full name": "Hille Voit",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.057,
-      "romantic interest": 0.702,
-      "sex interest": 0.873,
-      "gender expression": 0.0,
+      "sexuality label": "gay",
+      "sexuality": 0.824,
+      "romantic interest": 0.89,
+      "sex interest": 0.595,
+      "gender expression": 0.576,
       "sex": "f"
     },
-    "age": 56,
-    "birth year": 1151,
+    "age": 55,
+    "birth year": 1159,
     "sex": "f",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.685,
-      "nice-nasty": 0.695,
-      "honest-false": 0.643
+      "lawful-chaotic": 0.551,
+      "nice-nasty": 0.0,
+      "honest-false": 0.172
     },
     "attitude": {
-      "outgoing": 0.953,
-      "dream": 0.03
+      "outgoing": 0.246,
+      "dream": 0.394
     },
     "homsoc": {
       "means": {
@@ -34,11 +34,13 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.03,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.398,
+        "gender expression expression": 0.113
       }
     },
     "network": {
@@ -46,38 +48,31 @@
       "children": {},
       "relationship keys": {
         "spouse": [
-          12012
+          12012,
+          15926
         ]
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 0.892,
-      "all_incomes": [
-        1.017,
-        0.957,
-        0.892
-      ],
-      "job": {
-        "lawful": true,
-        "honest": true
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 3,
+      "skin_color": 8,
       "eye_color": "green",
-      "hair_color": "red",
-      "hair_color_code": 3,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "S",
-        "S"
+        "C"
       ],
       "health": 0.0,
-      "fertility": 0.77,
+      "fertility": 0.55,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -89,54 +84,46 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.744
+            "new_health": 0.486
           },
           "death": false
         },
-        "1201": {
+        "1209": {
           "health": {
             "change": true,
-            "value_change": -0.158,
-            "new_health": 0.586
+            "value_change": -0.34,
+            "new_health": 0.146
           },
           "death": false
         },
-        "1202": {
+        "1210": {
           "health": {
             "change": true,
-            "value_change": -0.231,
-            "new_health": 0.355
+            "value_change": -0.067,
+            "new_health": 0.079
           },
           "death": false
         },
-        "1203": {
+        "1211": {
           "health": {
             "change": true,
-            "value_change": -0.244,
-            "new_health": 0.111
+            "value_change": -0.052,
+            "new_health": 0.027
           },
           "death": false
         },
-        "1204": {
+        "1212": {
           "health": {
             "change": true,
-            "value_change": -0.089,
-            "new_health": 0.022
+            "value_change": -0.024,
+            "new_health": 0.003
           },
           "death": false
         },
-        "1205": {
+        "1213": {
           "health": {
             "change": true,
-            "value_change": -0.016,
-            "new_health": 0.006
-          },
-          "death": false
-        },
-        "1206": {
-          "health": {
-            "change": true,
-            "value_change": -0.006,
+            "value_change": -0.003,
             "new_health": 0.0
           },
           "death": true
@@ -152,8 +139,8 @@
               12011
             ],
             "people names": [
-              "Hildebrandus Voit",
-              "Bertrade Coluen"
+              "Florens",
+              "Hille Voit"
             ],
             "label": "spouse",
             "committed": true
@@ -166,15 +153,74 @@
               "section": "stCromme straet.se5.c2",
               "street": "Cromme straet",
               "neighborhood": "denhof",
-              "unique id": 906
+              "unique id": 891
             }
           }
         ],
         "1204": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.017
+            "topic": "feelings change",
+            "target": 12010,
+            "target name": "Florens",
+            "state": "out of love",
+            "relationship": 12012
+          }
+        ],
+        "1208": [
+          {
+            "key": 12012,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12010,
+              "name": "Florens",
+              "age": 33,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "new relationship",
+            "key": 15926,
+            "people": [
+              10921,
+              12011
+            ],
+            "people names": [
+              "Huwardo",
+              "Hille Voit"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stDie Camp.se7.c2",
+              "street": "Die Camp",
+              "neighborhood": "kampbuurt",
+              "unique id": 404
+            }
           }
         ]
       }
@@ -183,16 +229,17 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stCromme straet.se5.c2",
-      "street": "Cromme straet",
-      "neighborhood": "denhof",
-      "unique id": 906
+      "section": "stDie Camp.se7.c2",
+      "street": "Die Camp",
+      "neighborhood": "kampbuurt",
+      "unique id": 404
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        12012
+        12012,
+        15926
       ]
     }
   }

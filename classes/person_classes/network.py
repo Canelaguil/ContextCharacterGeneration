@@ -70,7 +70,8 @@ class Network():
         """
         for ch in self.children_keys:
             if not self.community.we_know_each_other(ch, new_child):
-                log_error('half siblings', self.community.create_relationship(ch, new_child, 'half-sibling', True))
+                self.community.create_relationship(ch, new_child, 'half-sibling', True)
+                # log_error('half siblings', self.community.create_relationship(ch, new_child, 'half-sibling', True))
 
     """
     INFO FUNCTIONS

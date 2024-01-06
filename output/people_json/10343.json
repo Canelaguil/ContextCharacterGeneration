@@ -1,87 +1,107 @@
 {
   "10343": {
     "alive": false,
-    "name": "Gloria",
-    "surname": "Callart",
-    "full name": "Gloria Callart",
+    "name": "Helyana",
+    "surname": "Brune",
+    "full name": "Helyana Brune",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.057,
-      "romantic interest": 0.451,
-      "sex interest": 0.531,
-      "gender expression": 0.174,
+      "sexuality": 0.097,
+      "romantic interest": 0.593,
+      "sex interest": 0.468,
+      "gender expression": 0.049,
       "sex": "f"
     },
-    "age": 54,
-    "birth year": 1155,
+    "age": 53,
+    "birth year": 1168,
     "sex": "f",
     "income class": [
-      0,
-      "working class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.513,
-      "honest-false": 0.0
+      "lawful-chaotic": 0.516,
+      "nice-nasty": 0.624,
+      "honest-false": 0.999
     },
     "attitude": {
-      "outgoing": 0.519,
-      "dream": 0.599
+      "outgoing": 0.877,
+      "dream": 0.681
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving",
+          "caretaker",
+          "neglected"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.043,
-        "gender expression expression": 0.135
+        "sexuality expression": 0.074,
+        "gender expression expression": 0.02
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12753": {
+          "key": 12753,
+          "name": "Pelegrim van Kerstiaen",
+          "age": 48,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Helyana (10343)",
+            "father": "Kerstiaen (10342)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          10344
-        ]
+          10344,
+          14596,
+          16201
+        ],
+        "child": {
+          "birth": [
+            12755
+          ]
+        }
       }
     },
     "occupation": {
       "has job": true,
       "income class": [
-        0,
-        "working class"
+        1,
+        "lower middle class"
       ],
-      "income": 0.0,
+      "income": 1.297,
       "all_incomes": [
-        0.865,
-        0.609,
-        0.262,
-        0.0,
-        0.0,
-        0.113,
-        0.0
+        0.96,
+        1.127,
+        1.237,
+        1.297
       ],
       "job": {
         "lawful": false,
-        "honest": false
+        "honest": true
       }
     },
     "genetics": {
       "skin_color": 5,
       "eye_color": "green",
-      "hair_color": "red",
-      "hair_color_code": 3,
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
       "hair_type": [
-        "S",
-        "S"
+        "C",
+        "C"
       ],
-      "health": 0.029,
-      "fertility": 0.778,
+      "health": 0.08,
+      "fertility": 0.659,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -93,31 +113,31 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.749
+            "new_health": 0.696
           },
           "death": false
         },
-        "1206": {
+        "1218": {
           "health": {
             "change": true,
-            "value_change": -0.261,
-            "new_health": 0.488
+            "value_change": -0.225,
+            "new_health": 0.471
           },
           "death": false
         },
-        "1207": {
+        "1219": {
           "health": {
             "change": true,
-            "value_change": -0.133,
-            "new_health": 0.355
+            "value_change": -0.2,
+            "new_health": 0.271
           },
           "death": false
         },
-        "1208": {
+        "1220": {
           "health": {
             "change": true,
-            "value_change": -0.326,
-            "new_health": 0.029
+            "value_change": -0.191,
+            "new_health": 0.08
           },
           "death": true
         }
@@ -132,8 +152,8 @@
               10343
             ],
             "people names": [
-              "Lammekin",
-              "Gloria Callart"
+              "Kerstiaen",
+              "Helyana Brune"
             ],
             "label": "spouse",
             "committed": true
@@ -141,66 +161,311 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stSt. Joris straet.se1.c0",
-              "street": "St. Joris straet",
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stMuelen straet.se1.c1",
+              "street": "Muelen straet",
               "neighborhood": "jorisbuurt",
-              "unique id": 138
+              "unique id": 153
             }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 12755,
+            "people": [
+              10343,
+              12753
+            ],
+            "people names": [
+              "Helyana Brune",
+              "Pelegrim van Kerstiaen"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1202": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.865
+            "topic": "neglected"
           }
         ],
         "1203": [
           {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.609
+            "topic": "neglected"
           }
         ],
         "1204": [
           {
-            "topic": "job notice",
-            "notice": "earning very little",
-            "income": 0.262
+            "key": 10344,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10342,
+              "name": "Kerstiaen",
+              "age": 26,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          },
+          {
+            "topic": "new caretaker",
+            "person": 10343
           }
         ],
         "1205": [
           {
-            "topic": "job notice",
-            "notice": "hardly any income",
-            "income": 0.0
+            "topic": "new relationship",
+            "key": 14596,
+            "people": [
+              10210,
+              10343
+            ],
+            "people names": [
+              "Engelbertus",
+              "Helyana Brune"
+            ],
+            "label": "spouse",
+            "committed": true
           },
           {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stHelle voet.se3.c1",
+              "street": "Helle voet",
+              "neighborhood": "jorisbuurt",
+              "unique id": 95
+            }
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1206": [
+          {
             "topic": "feelings change",
-            "target": 10342,
-            "target name": "Lammekin",
-            "state": "solid love",
-            "relationship": 10344
+            "target": 10210,
+            "target name": "Engelbertus",
+            "state": "out of love",
+            "relationship": 14596
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1209": [
+          {
+            "key": 14596,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10210,
+              "name": "Engelbertus",
+              "age": 47,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          },
+          {
+            "topic": "new caretaker",
+            "person": 10343
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "new relationship",
+            "key": 16201,
+            "people": [
+              10609,
+              10343
+            ],
+            "people names": [
+              "Reynold Pannekins",
+              "Helyana Brune"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stWalker straet.se5.c1",
+              "street": "Walker straet",
+              "neighborhood": "agnesbuurt",
+              "unique id": 270
+            }
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1212": [
+          {
+            "topic": "feelings change",
+            "target": 10609,
+            "target name": "Reynold Pannekins",
+            "state": "out of love",
+            "relationship": 16201
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1213": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1215": [
+          {
+            "topic": "not enough income",
+            "income": 0.166,
+            "inhabitants": [
+              12753,
+              14338,
+              19320,
+              19861,
+              22814,
+              24235,
+              18580,
+              19777,
+              25238
+            ]
+          }
+        ],
+        "1216": [
+          {
+            "topic": "not enough income",
+            "income": 0.253,
+            "inhabitants": [
+              12753,
+              14338,
+              19320,
+              19861,
+              22814,
+              24235,
+              18580,
+              19777,
+              25238
+            ]
+          }
+        ],
+        "1217": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.96
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.228,
+            "inhabitants": [
+              12753,
+              14338,
+              19320,
+              19861,
+              22814,
+              24235,
+              18580,
+              19777,
+              25238
+            ]
+          }
+        ],
+        "1218": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.127
+          }
+        ],
+        "1219": [
+          {
+            "key": 16201,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10609,
+              "name": "Reynold Pannekins",
+              "age": 55,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
           }
         ]
       }
     },
     "key": 10343,
     "home": {
-      "income class": 0,
-      "income class label": "working class",
-      "section": "stSt. Joris straet.se1.c0",
-      "street": "St. Joris straet",
-      "neighborhood": "jorisbuurt",
-      "unique id": 138
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stWalker straet.se5.c1",
+      "street": "Walker straet",
+      "neighborhood": "agnesbuurt",
+      "unique id": 270
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
-        10344
+        10344,
+        14596,
+        16201
       ]
     }
   }

@@ -1,55 +1,88 @@
 {
   "11686": {
     "alive": false,
-    "name": "Otger",
-    "surname": "Spiegel",
-    "full name": "Otger Spiegel",
+    "name": "Heyman",
+    "surname": "",
+    "full name": "Heyman",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.047,
-      "romantic interest": 0.558,
-      "sex interest": 0.782,
-      "gender expression": 0.04,
+      "sexuality": 0.03,
+      "romantic interest": 0.637,
+      "sex interest": 0.714,
+      "gender expression": 0.249,
       "sex": "m"
     },
-    "age": 29,
-    "birth year": 1175,
+    "age": 46,
+    "birth year": 1179,
     "sex": "m",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.211,
-      "nice-nasty": 0.27,
-      "honest-false": 0.052
+      "lawful-chaotic": 0.556,
+      "nice-nasty": 0.0,
+      "honest-false": 0.173
     },
     "attitude": {
-      "outgoing": 0.262,
-      "dream": 0.257
+      "outgoing": 0.473,
+      "dream": 0.721
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
         "flags": [
-          "starving"
+          "starving",
+          "neglected"
         ]
       },
       "expression": {
-        "sexuality expression": 0.023,
-        "gender expression expression": 0.023
+        "sexuality expression": 0.012,
+        "gender expression expression": 0.212
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12565": {
+          "key": 12565,
+          "name": "Engelbertus van Heyman",
+          "age": 17,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Gheesen (11687)",
+            "father": "Heyman (11686)"
+          }
+        },
+        "15385": {
+          "key": 15385,
+          "name": "Lenildis",
+          "age": 26,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Gheesen (11687)",
+            "father": "Heyman (11686)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          11688
-        ]
+          11688,
+          15927,
+          17708,
+          18161
+        ],
+        "child": {
+          "birth": [
+            12566,
+            15386
+          ]
+        }
       }
     },
     "occupation": {
@@ -58,30 +91,51 @@
         1,
         "lower middle class"
       ],
-      "income": 0.0,
+      "income": 0.838,
       "all_incomes": [
-        0.0,
-        0.002,
-        0.226,
-        0.388,
-        0.0
+        0.956,
+        0.965,
+        1.035,
+        0.862,
+        0.836,
+        0.898,
+        0.911,
+        1.004,
+        0.99,
+        0.964,
+        0.905,
+        0.822,
+        0.816,
+        0.818,
+        0.832,
+        0.87,
+        0.849,
+        0.898,
+        0.83,
+        0.867,
+        0.868,
+        0.873,
+        0.895,
+        0.759,
+        0.856,
+        0.838
       ],
       "job": {
-        "lawful": false,
-        "honest": false
+        "lawful": true,
+        "honest": true
       }
     },
     "genetics": {
-      "skin_color": 5,
-      "eye_color": "blue",
+      "skin_color": 2,
+      "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
-        "C",
+        "S",
         "C"
       ],
-      "health": 0.69,
-      "fertility": 0.632,
+      "health": 0.851,
+      "fertility": 0.927,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -93,15 +147,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.69
+            "new_health": 0.851
           },
           "death": false
         },
-        "1203": {
+        "1224": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.69
+            "new_health": 0.851
           },
           "death": true
         }
@@ -111,7 +165,7 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.0
+            "income": 0.956
           },
           {
             "topic": "new relationship",
@@ -121,8 +175,8 @@
               11687
             ],
             "people names": [
-              "Otger Spiegel",
-              "Folqui Stir"
+              "Heyman",
+              "Gheesen"
             ],
             "label": "spouse",
             "committed": true
@@ -132,35 +186,307 @@
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stNieu straet.se1.c1",
-              "street": "Nieu straet",
+              "section": "stMooierstraet.se3.c1",
+              "street": "Mooierstraet",
               "neighborhood": "visbuurt",
-              "unique id": 755
+              "unique id": 750
             }
           },
           {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
+            "topic": "new relationship",
+            "key": 12566,
+            "people": [
+              11686,
+              12565
+            ],
+            "people names": [
+              "Heyman",
+              "Engelbertus van Heyman"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 11687,
+            "target name": "Gheesen",
+            "state": "out of love",
+            "relationship": 11688
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1201": [
           {
-            "topic": "not enough income",
-            "income": 0.226,
-            "inhabitants": []
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.035
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1202": [
+          {
+            "topic": "neglected"
           }
         ],
         "1203": [
           {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1206": [
+          {
             "topic": "job notice",
-            "notice": "hardly any income",
-            "income": 0.0
+            "notice": "comfortable earnings",
+            "income": 1.004
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "new relationship",
+            "key": 15386,
+            "people": [
+              11686,
+              15385
+            ],
+            "people names": [
+              "Heyman",
+              "Lenildis"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1209": [
+          {
+            "key": 11688,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11687,
+              "name": "Gheesen",
+              "age": 36,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "new relationship",
+            "key": 15927,
+            "people": [
+              11686,
+              10103
+            ],
+            "people names": [
+              "Heyman",
+              "Lielde"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1211": [
+          {
+            "key": 15927,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10103,
+              "name": "Lielde",
+              "age": 48,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1212": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1213": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1214": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1215": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1216": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1217": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1218": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12565,
+              "name": "Engelbertus van Heyman",
+              "age": 17,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Gheesen (11687)",
+                "father": "Heyman (11686)"
+              }
+            },
+            "label": "child"
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1219": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1220": [
+          {
+            "topic": "new relationship",
+            "key": 17708,
+            "people": [
+              11686,
+              10301
+            ],
+            "people names": [
+              "Heyman",
+              "Tetta"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1221": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1222": [
+          {
+            "key": 17708,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10301,
+              "name": "Tetta",
+              "age": 54,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1223": [
+          {
+            "topic": "new relationship",
+            "key": 18161,
+            "people": [
+              11686,
+              10277
+            ],
+            "people names": [
+              "Heyman",
+              "Beatrice Weder"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stHelle voet.se9.c1",
+              "street": "Helle voet",
+              "neighborhood": "jorisbuurt",
+              "unique id": 126
+            }
           },
           {
             "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
+            "income": 0.856,
+            "inhabitants": [
+              14946,
+              14629,
+              19942,
+              23138,
+              23995
+            ]
+          }
+        ],
+        "1224": [
+          {
+            "topic": "feelings change",
+            "target": 10277,
+            "target name": "Beatrice Weder",
+            "state": "out of love",
+            "relationship": 18161
           }
         ]
       }
@@ -169,16 +495,19 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stNieu straet.se1.c1",
-      "street": "Nieu straet",
-      "neighborhood": "visbuurt",
-      "unique id": 755
+      "section": "stHelle voet.se9.c1",
+      "street": "Helle voet",
+      "neighborhood": "jorisbuurt",
+      "unique id": 126
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        11688
+        11688,
+        15927,
+        17708,
+        18161
       ]
     }
   }

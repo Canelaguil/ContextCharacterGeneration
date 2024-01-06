@@ -1,56 +1,87 @@
 {
   "11939": {
     "alive": false,
-    "name": "Hille",
-    "surname": "Markolf",
-    "full name": "Hille Markolf",
+    "name": "Sybillia",
+    "surname": "Mues",
+    "full name": "Sybillia Mues",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.102,
-      "romantic interest": 0.771,
-      "sex interest": 0.487,
-      "gender expression": 0.177,
+      "sexuality": 0.0,
+      "romantic interest": 0.795,
+      "sex interest": 0.782,
+      "gender expression": 0.031,
       "sex": "f"
     },
-    "age": 53,
-    "birth year": 1152,
+    "age": 45,
+    "birth year": 1184,
     "sex": "f",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.862,
-      "nice-nasty": 0.525,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.763,
+      "nice-nasty": 0.91,
+      "honest-false": 0.02
     },
     "attitude": {
-      "outgoing": 0.491,
-      "dream": 0.472
+      "outgoing": 0.523,
+      "dream": 0.246
     },
     "homsoc": {
       "means": {
         "independent": true,
-        "taken_care_of": false,
-        "caretaker": false,
+        "taken_care_of": true,
+        "caretaker": true,
         "needs_care": false,
         "flags": [
-          "starving"
+          "starving",
+          "caretaker",
+          "neglected"
         ]
       },
       "expression": {
-        "sexuality expression": 0.042,
-        "gender expression expression": 0.052
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.024
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12613": {
+          "key": 12613,
+          "name": "Bernero Brune",
+          "age": 49,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Sybillia (11939)",
+            "father": "Willai (11938)"
+          }
+        },
+        "17048": {
+          "key": 17048,
+          "name": "Zuanelt Boghart",
+          "age": 34,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Sybillia (11939)",
+            "father": "Eggerdus (10423)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11940,
-          13871
-        ]
+          16685
+        ],
+        "child": {
+          "birth": [
+            12615,
+            17050
+          ]
+        }
       }
     },
     "occupation": {
@@ -63,16 +94,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 3,
-      "eye_color": "green",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "skin_color": 5,
+      "eye_color": "blue",
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
-        "C",
-        "C"
+        "S",
+        "S"
       ],
-      "health": 0.0,
-      "fertility": 0.634,
+      "health": 0.728,
+      "fertility": 0.73,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -84,31 +115,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.595
+            "new_health": 0.728
           },
           "death": false
         },
-        "1202": {
+        "1228": {
           "health": {
-            "change": true,
-            "value_change": -0.24,
-            "new_health": 0.355
-          },
-          "death": false
-        },
-        "1203": {
-          "health": {
-            "change": true,
-            "value_change": -0.291,
-            "new_health": 0.064
-          },
-          "death": false
-        },
-        "1204": {
-          "health": {
-            "change": true,
-            "value_change": -0.064,
-            "new_health": 0.0
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.728
           },
           "death": true
         }
@@ -123,8 +138,8 @@
               11939
             ],
             "people names": [
-              "Batten Vrie",
-              "Hille Markolf"
+              "Willai Brune",
+              "Sybillia Mues"
             ],
             "label": "spouse",
             "committed": true
@@ -134,23 +149,46 @@
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stCromme straet.se1.c1",
-              "street": "Cromme straet",
+              "section": "stDe Vyver.se3.c1",
+              "street": "De Vyver",
               "neighborhood": "denhof",
-              "unique id": 874
+              "unique id": 864
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12615,
+            "people": [
+              11939,
+              12613
+            ],
+            "people names": [
+              "Sybillia Mues",
+              "Bernero Brune"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1201": [
           {
-            "topic": "feelings change",
-            "target": 11938,
-            "target name": "Batten Vrie",
-            "state": "out of love",
-            "relationship": 11940
+            "topic": "neglected"
           }
         ],
         "1202": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
           {
             "key": 11940,
             "topic": "unmarried"
@@ -159,8 +197,8 @@
             "topic": "person died",
             "person": {
               "key": 11938,
-              "name": "Batten Vrie",
-              "age": 39,
+              "name": "Willai Brune",
+              "age": 35,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
@@ -171,19 +209,83 @@
             "topic": "not enough income",
             "income": 0,
             "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          },
+          {
+            "topic": "new caretaker",
+            "person": 11939
           }
         ],
-        "1203": [
+        "1205": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
           {
             "topic": "new relationship",
-            "key": 13871,
+            "key": 16685,
             "people": [
-              11683,
+              10423,
               11939
             ],
             "people names": [
-              "Hughe Tunne",
-              "Hille Markolf"
+              "Eggerdus Boghart",
+              "Sybillia Mues"
             ],
             "label": "spouse",
             "committed": true
@@ -193,20 +295,79 @@
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stNieu straet.se1.c1",
-              "street": "Nieu straet",
-              "neighborhood": "visbuurt",
-              "unique id": 754
+              "section": "stDavids hof.se3.c1",
+              "street": "Davids hof",
+              "neighborhood": "jorisbuurt",
+              "unique id": 187
             }
+          },
+          {
+            "topic": "neglected"
           }
         ],
-        "1204": [
+        "1214": [
           {
-            "topic": "feelings change",
-            "target": 11683,
-            "target name": "Hughe Tunne",
-            "state": "solid love",
-            "relationship": 13871
+            "topic": "neglected"
+          }
+        ],
+        "1215": [
+          {
+            "topic": "new relationship",
+            "key": 17050,
+            "people": [
+              11939,
+              17048
+            ],
+            "people names": [
+              "Sybillia Mues",
+              "Zuanelt Boghart"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1217": [
+          {
+            "topic": "not enough income",
+            "income": 0.46,
+            "inhabitants": [
+              12613,
+              12328
+            ]
+          }
+        ],
+        "1218": [
+          {
+            "key": 16685,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10423,
+              "name": "Eggerdus Boghart",
+              "age": 52,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              12613,
+              12328
+            ]
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          },
+          {
+            "topic": "new caretaker",
+            "person": 11939
           }
         ]
       }
@@ -215,17 +376,17 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stNieu straet.se1.c1",
-      "street": "Nieu straet",
-      "neighborhood": "visbuurt",
-      "unique id": 754
+      "section": "stDavids hof.se3.c1",
+      "street": "Davids hof",
+      "neighborhood": "jorisbuurt",
+      "unique id": 187
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         11940,
-        13871
+        16685
       ]
     }
   }

@@ -1,81 +1,104 @@
 {
   "10274": {
     "alive": false,
-    "name": "Aleberna",
+    "name": "Gertrudis",
     "surname": "",
-    "full name": "Aleberna",
+    "full name": "Gertrudis",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.595,
-      "sex interest": 0.734,
-      "gender expression": 0.199,
+      "sexuality label": "bi",
+      "sexuality": 0.47,
+      "romantic interest": 0.586,
+      "sex interest": 0.876,
+      "gender expression": 0.105,
       "sex": "f"
     },
-    "age": 55,
-    "birth year": 1159,
+    "age": 24,
+    "birth year": 1182,
     "sex": "f",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.764,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.51,
+      "nice-nasty": 0.468,
+      "honest-false": 0.0
     },
     "attitude": {
-      "outgoing": 0.548,
-      "dream": 0.304
+      "outgoing": 0.052,
+      "dream": 0.307
     },
     "homsoc": {
       "means": {
         "independent": true,
-        "taken_care_of": true,
-        "caretaker": true,
+        "taken_care_of": false,
+        "caretaker": false,
         "needs_care": false,
         "flags": [
-          "caretaker",
-          "starving"
+          "starving",
+          "neglected"
         ]
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.139
+        "sexuality expression": 0.278,
+        "gender expression expression": 0.032
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12298": {
+          "key": 12298,
+          "name": "Euerardus",
+          "age": 25,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Gertrudis (10274)",
+            "father": "Philips (10273)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10275,
-          14618,
-          15252,
-          16485
-        ]
+          14255
+        ],
+        "child": {
+          "birth": [
+            12300
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         1,
         "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.499,
+      "all_incomes": [
+        1.076,
+        1.499,
+        1.499
+      ],
+      "job": {
+        "lawful": false,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 5,
-      "eye_color": "brown",
+      "skin_color": 9,
+      "eye_color": "blue",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
-        "S",
-        "S"
+        "C",
+        "C"
       ],
-      "health": 0.0,
-      "fertility": 0.766,
+      "health": 0.729,
+      "fertility": 0.819,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -87,63 +110,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.699
+            "new_health": 0.729
           },
           "death": false
         },
-        "1201": {
-          "health": {
-            "change": true,
-            "value_change": -0.252,
-            "new_health": 0.447
-          },
-          "death": false
-        },
-        "1202": {
+        "1205": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.447
-          },
-          "death": false
-        },
-        "1209": {
-          "health": {
-            "change": true,
-            "value_change": -0.202,
-            "new_health": 0.245
-          },
-          "death": false
-        },
-        "1210": {
-          "health": {
-            "change": true,
-            "value_change": -0.225,
-            "new_health": 0.02
-          },
-          "death": false
-        },
-        "1211": {
-          "health": {
-            "change": true,
-            "value_change": -0.007,
-            "new_health": 0.013
-          },
-          "death": false
-        },
-        "1212": {
-          "health": {
-            "change": true,
-            "value_change": -0.011,
-            "new_health": 0.002
-          },
-          "death": false
-        },
-        "1213": {
-          "health": {
-            "change": true,
-            "value_change": -0.002,
-            "new_health": 0.0
+            "new_health": 0.729
           },
           "death": true
         }
@@ -158,8 +133,8 @@
               10274
             ],
             "people names": [
-              "Snelgerus",
-              "Aleberna"
+              "Philips",
+              "Gertrudis"
             ],
             "label": "spouse",
             "committed": true
@@ -169,14 +144,43 @@
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stHelle voet.se5.c1",
+              "section": "stHelle voet.se9.c1",
               "street": "Helle voet",
               "neighborhood": "jorisbuurt",
-              "unique id": 104
+              "unique id": 125
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12300,
+            "people": [
+              10274,
+              12298
+            ],
+            "people names": [
+              "Gertrudis",
+              "Euerardus"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
           }
         ],
-        "1202": [
+        "1201": [
+          {
+            "topic": "not enough income",
+            "income": 0.334,
+            "inhabitants": []
+          }
+        ],
+        "1203": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.076
+          },
           {
             "key": 10275,
             "topic": "unmarried"
@@ -185,21 +189,14 @@
             "topic": "person died",
             "person": {
               "key": 10273,
-              "name": "Snelgerus",
-              "age": 25,
+              "name": "Philips",
+              "age": 43,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
             },
             "label": "spouse"
           },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1203": [
           {
             "topic": "not enough income",
             "income": 0,
@@ -208,71 +205,15 @@
         ],
         "1204": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1205": [
-          {
             "topic": "new relationship",
-            "key": 14618,
+            "key": 14255,
             "people": [
-              10621,
+              10939,
               10274
             ],
             "people names": [
-              "Lutbrandus Midach",
-              "Aleberna"
-            ],
-            "label": "spouse",
-            "committed": true
-          },
-          {
-            "topic": "now caretaker",
-            "care dependants": [
-              12777
-            ]
-          },
-          {
-            "topic": "new caretaker",
-            "person": 10274
-          }
-        ],
-        "1206": [
-          {
-            "key": 14618,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 10621,
-              "name": "Lutbrandus Midach",
-              "age": 45,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1207": [
-          {
-            "topic": "new relationship",
-            "key": 15252,
-            "people": [
-              10258,
-              10274
-            ],
-            "people names": [
-              "Cats Markolf",
-              "Aleberna"
+              "Gherelm",
+              "Gertrudis"
             ],
             "label": "spouse",
             "committed": true
@@ -282,58 +223,19 @@
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stHelle voet.se3.c1",
-              "street": "Helle voet",
-              "neighborhood": "jorisbuurt",
-              "unique id": 99
+              "section": "stSt. Ians straet.se1.c1",
+              "street": "St. Ians straet",
+              "neighborhood": "kampbuurt",
+              "unique id": 412
             }
+          },
+          {
+            "topic": "neglected"
           }
         ],
-        "1212": [
+        "1205": [
           {
-            "key": 15252,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 10258,
-              "name": "Cats Markolf",
-              "age": 42,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1213": [
-          {
-            "topic": "new relationship",
-            "key": 16485,
-            "people": [
-              10729,
-              10274
-            ],
-            "people names": [
-              "Vesse Dicbier",
-              "Aleberna"
-            ],
-            "label": "spouse",
-            "committed": true
-          },
-          {
-            "topic": "now caretaker",
-            "care dependants": []
-          },
-          {
-            "topic": "new caretaker",
-            "person": 10274
+            "topic": "neglected"
           }
         ]
       }
@@ -342,19 +244,17 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stHelle voet.se3.c1",
-      "street": "Helle voet",
-      "neighborhood": "jorisbuurt",
-      "unique id": 99
+      "section": "stSt. Ians straet.se1.c1",
+      "street": "St. Ians straet",
+      "neighborhood": "kampbuurt",
+      "unique id": 412
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
         10275,
-        14618,
-        15252,
-        16485
+        14255
       ]
     }
   }

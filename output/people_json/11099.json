@@ -1,66 +1,88 @@
 {
   "11099": {
     "alive": false,
-    "name": "Pietersen",
-    "surname": "",
-    "full name": "Pietersen",
+    "name": "Baua",
+    "surname": "Rowerus",
+    "full name": "Baua Rowerus",
     "born this way": {
-      "sexuality label": "bi",
-      "sexuality": 0.591,
-      "romantic interest": 0.581,
-      "sex interest": 0.712,
-      "gender expression": 0.433,
+      "sexuality label": "gay",
+      "sexuality": 0.886,
+      "romantic interest": 0.596,
+      "sex interest": 0.751,
+      "gender expression": 0.349,
       "sex": "f"
     },
-    "age": 49,
-    "birth year": 1156,
+    "age": 55,
+    "birth year": 1160,
     "sex": "f",
     "income class": [
-      3,
-      "upper middle class"
+      0,
+      "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.999,
-      "honest-false": 0.468
+      "lawful-chaotic": 0.177,
+      "nice-nasty": 0.606,
+      "honest-false": 0.457
     },
     "attitude": {
-      "outgoing": 0.674,
-      "dream": 0.179
+      "outgoing": 0.54,
+      "dream": 0.0
     },
     "homsoc": {
       "means": {
         "independent": true,
-        "taken_care_of": false,
-        "caretaker": false,
+        "taken_care_of": true,
+        "caretaker": true,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving",
+          "caretaker",
+          "neglected"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.525,
-        "gender expression expression": 0.172
+        "sexuality expression": 0.643,
+        "gender expression expression": 0.16
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12454": {
+          "key": 12454,
+          "name": "Wernerus Lubertusszoon",
+          "age": 49,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Baua (11099)",
+            "father": "Lubertus (11098)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          11100
-        ]
+          11100,
+          16890
+        ],
+        "child": {
+          "birth": [
+            12456
+          ]
+        }
       }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        3,
-        "upper middle class"
+        0,
+        "working class"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 1,
+      "skin_color": 3,
       "eye_color": "brown",
       "hair_color": "strawberry blonde",
       "hair_color_code": 5,
@@ -68,8 +90,8 @@
         "S",
         "S"
       ],
-      "health": 0.58,
-      "fertility": 0.597,
+      "health": 0.0,
+      "fertility": 0.802,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -81,15 +103,47 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.58
+            "new_health": 0.72
           },
           "death": false
         },
-        "1204": {
+        "1210": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.58
+            "change": true,
+            "value_change": -0.081,
+            "new_health": 0.639
+          },
+          "death": false
+        },
+        "1211": {
+          "health": {
+            "change": true,
+            "value_change": -0.218,
+            "new_health": 0.421
+          },
+          "death": false
+        },
+        "1212": {
+          "health": {
+            "change": true,
+            "value_change": -0.25,
+            "new_health": 0.171
+          },
+          "death": false
+        },
+        "1213": {
+          "health": {
+            "change": true,
+            "value_change": -0.146,
+            "new_health": 0.025
+          },
+          "death": false
+        },
+        "1214": {
+          "health": {
+            "change": true,
+            "value_change": -0.025,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -104,8 +158,8 @@
               11099
             ],
             "people names": [
-              "Philips",
-              "Pietersen"
+              "Lubertus",
+              "Baua Rowerus"
             ],
             "label": "spouse",
             "committed": true
@@ -113,31 +167,210 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stLange gracht.se1.c3",
-              "street": "Lange gracht",
-              "neighborhood": "olvbuurt",
-              "unique id": 495
+              "income class": 0,
+              "income class label": "working class",
+              "section": "stOly straetje.se1.c0",
+              "street": "Oly straetje",
+              "neighborhood": "kampbuurt",
+              "unique id": 483
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12456,
+            "people": [
+              11099,
+              12454
+            ],
+            "people names": [
+              "Baua Rowerus",
+              "Wernerus Lubertusszoon"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1201": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1202": [
+          {
+            "topic": "not enough income",
+            "income": 0.729,
+            "inhabitants": []
+          }
+        ],
+        "1203": [
+          {
+            "topic": "feelings change",
+            "target": 11098,
+            "target name": "Lubertus",
+            "state": "infatuation",
+            "relationship": 11100
+          }
+        ],
+        "1204": [
+          {
+            "topic": "feelings change",
+            "target": 11098,
+            "target name": "Lubertus",
+            "state": "solid love",
+            "relationship": 11100
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1206": [
+          {
+            "topic": "feelings change",
+            "target": 11098,
+            "target name": "Lubertus",
+            "state": "out of love",
+            "relationship": 11100
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.732,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "feelings change",
+            "target": 11098,
+            "target name": "Lubertus",
+            "state": "infatuation",
+            "relationship": 11100
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1211": [
+          {
+            "topic": "feelings change",
+            "target": 11098,
+            "target name": "Lubertus",
+            "state": "out of love",
+            "relationship": 11100
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1212": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1213": [
+          {
+            "key": 11100,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11098,
+              "name": "Lubertus",
+              "age": 42,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          },
+          {
+            "topic": "new caretaker",
+            "person": 11099
+          }
+        ],
+        "1214": [
+          {
+            "topic": "new relationship",
+            "key": 16890,
+            "people": [
+              10663,
+              11099
+            ],
+            "people names": [
+              "Hughe Haec",
+              "Baua Rowerus"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 0,
+              "income class label": "working class",
+              "section": "stDe Tuyt.se3.c0",
+              "street": "De Tuyt",
+              "neighborhood": "agnesbuurt",
+              "unique id": 289
+            }
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.449,
+            "inhabitants": [
+              12454
+            ]
           }
         ]
       }
     },
     "key": 11099,
     "home": {
-      "income class": 3,
-      "income class label": "upper middle class",
-      "section": "stLange gracht.se1.c3",
-      "street": "Lange gracht",
-      "neighborhood": "olvbuurt",
-      "unique id": 495
+      "income class": 0,
+      "income class label": "working class",
+      "section": "stDe Tuyt.se3.c0",
+      "street": "De Tuyt",
+      "neighborhood": "agnesbuurt",
+      "unique id": 289
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        11100
+        11100,
+        16890
       ]
     }
   }

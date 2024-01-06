@@ -1,19 +1,19 @@
 {
   "11432": {
     "alive": false,
-    "name": "Saxiardis",
-    "surname": "",
-    "full name": "Saxiardis",
+    "name": "Machtilden",
+    "surname": "Smiec",
+    "full name": "Machtilden Smiec",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.055,
-      "romantic interest": 0.769,
-      "sex interest": 0.829,
-      "gender expression": 0.228,
+      "sexuality": 0.102,
+      "romantic interest": 0.949,
+      "sex interest": 0.711,
+      "gender expression": 0.094,
       "sex": "f"
     },
-    "age": 55,
-    "birth year": 1152,
+    "age": 25,
+    "birth year": 1177,
     "sex": "f",
     "income class": [
       2,
@@ -21,12 +21,12 @@
     ],
     "personality": {
       "lawful-chaotic": 0.999,
-      "nice-nasty": 0.999,
-      "honest-false": 0.319
+      "nice-nasty": 0.665,
+      "honest-false": 0.652
     },
     "attitude": {
-      "outgoing": 0.489,
-      "dream": 0.681
+      "outgoing": 0.422,
+      "dream": 0.539
     },
     "homsoc": {
       "means": {
@@ -34,20 +34,39 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "neglected"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.023,
-        "gender expression expression": 0.189
+        "sexuality expression": 0.073,
+        "gender expression expression": 0.059
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12921": {
+          "key": 12921,
+          "name": "Gertrudis Firenbrais",
+          "age": 19,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Machtilden (11432)",
+            "father": "Everyng (11431)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11433
-        ]
+        ],
+        "child": {
+          "birth": [
+            12923
+          ]
+        }
       }
     },
     "occupation": {
@@ -60,16 +79,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 9,
+      "skin_color": 5,
       "eye_color": "brown",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
         "C",
-        "C"
+        "S"
       ],
-      "health": 0.002,
-      "fertility": 0.551,
+      "health": 0.668,
+      "fertility": 0.587,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -81,49 +100,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.601
+            "new_health": 0.668
           },
           "death": false
-        },
-        "1202": {
-          "health": {
-            "change": true,
-            "value_change": -0.191,
-            "new_health": 0.41
-          },
-          "death": false
-        },
-        "1203": {
-          "health": {
-            "change": true,
-            "value_change": -0.133,
-            "new_health": 0.277
-          },
-          "death": false
-        },
-        "1204": {
-          "health": {
-            "change": true,
-            "value_change": -0.208,
-            "new_health": 0.069
-          },
-          "death": false
-        },
-        "1205": {
-          "health": {
-            "change": true,
-            "value_change": -0.055,
-            "new_health": 0.014
-          },
-          "death": false
-        },
-        "1206": {
-          "health": {
-            "change": true,
-            "value_change": -0.012,
-            "new_health": 0.002
-          },
-          "death": true
         }
       },
       "events": {
@@ -136,8 +115,8 @@
               11432
             ],
             "people names": [
-              "Kolekinus",
-              "Saxiardis"
+              "Everyng Firenbrais",
+              "Machtilden Smiec"
             ],
             "label": "spouse",
             "committed": true
@@ -147,20 +126,30 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stScherbier straet.se3.c2",
+              "section": "stScherbier straet.se1.c2",
               "street": "Scherbier straet",
               "neighborhood": "cingelzuid",
-              "unique id": 639
+              "unique id": 631
             }
           }
         ],
-        "1202": [
+        "1201": [
           {
-            "topic": "feelings change",
-            "target": 11431,
-            "target name": "Kolekinus",
-            "state": "solid love",
-            "relationship": 11433
+            "topic": "new relationship",
+            "key": 12923,
+            "people": [
+              11432,
+              12921
+            ],
+            "people names": [
+              "Machtilden Smiec",
+              "Gertrudis Firenbrais"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
           }
         ]
       }
@@ -169,10 +158,10 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stScherbier straet.se3.c2",
+      "section": "stScherbier straet.se1.c2",
       "street": "Scherbier straet",
       "neighborhood": "cingelzuid",
-      "unique id": 639
+      "unique id": 631
     },
     "relationship status": {
       "taken": true,

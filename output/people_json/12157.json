@@ -1,53 +1,96 @@
 {
   "12157": {
     "alive": false,
-    "name": "Anselmi",
+    "name": "Henric",
     "surname": "",
-    "full name": "Anselmi",
+    "full name": "Henric",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.153,
-      "romantic interest": 0.764,
-      "sex interest": 0.569,
-      "gender expression": 0.133,
+      "sexuality": 0.023,
+      "romantic interest": 0.445,
+      "sex interest": 0.575,
+      "gender expression": 0.131,
       "sex": "m"
     },
-    "age": 44,
-    "birth year": 1167,
+    "age": 50,
+    "birth year": 1169,
     "sex": "m",
     "income class": [
       3,
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.355,
-      "nice-nasty": 0.664,
-      "honest-false": 0.962
+      "lawful-chaotic": 0.0,
+      "nice-nasty": 0.417,
+      "honest-false": 0.656
     },
     "attitude": {
-      "outgoing": 0.408,
-      "dream": 0.505
+      "outgoing": 0.707,
+      "dream": 0.863
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "neglected"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.072,
-        "gender expression expression": 0.071
+        "sexuality expression": 0.012,
+        "gender expression expression": 0.115
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13500": {
+          "key": 13500,
+          "name": "Woutersoet Henricszoon",
+          "age": 1,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Salome (12158)",
+            "father": "Henric (12157)"
+          }
+        },
+        "15168": {
+          "key": 15168,
+          "name": "Sophia",
+          "age": 42,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Salome (12158)",
+            "father": "Henric (12157)"
+          }
+        },
+        "15672": {
+          "key": 15672,
+          "name": "Ludolphus",
+          "age": 40,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Salome (12158)",
+            "father": "Henric (12157)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           12159
-        ]
+        ],
+        "child": {
+          "birth": [
+            13501,
+            15169,
+            15673
+          ]
+        }
       }
     },
     "occupation": {
@@ -56,37 +99,45 @@
         3,
         "upper middle class"
       ],
-      "income": 0.586,
+      "income": 1.372,
       "all_incomes": [
-        1.084,
-        1.179,
-        1.269,
-        1.346,
-        1.01,
-        0.884,
-        0.915,
-        0.7,
-        0.795,
-        0.752,
-        0.762,
-        0.586
+        1.063,
+        0.907,
+        0.942,
+        0.975,
+        1.049,
+        1.153,
+        1.345,
+        1.397,
+        1.442,
+        1.499,
+        1.499,
+        1.499,
+        1.285,
+        1.499,
+        1.499,
+        1.499,
+        1.499,
+        0.757,
+        1.081,
+        1.372
       ],
       "job": {
         "lawful": false,
-        "honest": true
+        "honest": false
       }
     },
     "genetics": {
-      "skin_color": 6,
-      "eye_color": "blue",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "skin_color": 4,
+      "eye_color": "brown",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
-        "C",
+        "S",
         "C"
       ],
-      "health": 0.658,
-      "fertility": 0.61,
+      "health": 0.627,
+      "fertility": 0.595,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -98,15 +149,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.658
+            "new_health": 0.627
           },
           "death": false
         },
-        "1210": {
+        "1218": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.658
+            "new_health": 0.627
           },
           "death": true
         }
@@ -116,7 +167,7 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.084
+            "income": 1.063
           },
           {
             "topic": "new relationship",
@@ -126,8 +177,8 @@
               12158
             ],
             "people names": [
-              "Anselmi",
-              "Diewiven Juvene"
+              "Henric",
+              "Salome"
             ],
             "label": "spouse",
             "committed": true
@@ -137,52 +188,166 @@
             "home": {
               "income class": 3,
               "income class label": "upper middle class",
-              "section": "stDen Hof.se7.c3",
+              "section": "stDen Hof.se5.c3",
               "street": "Den Hof",
               "neighborhood": "denhof",
-              "unique id": 963
+              "unique id": 953
             }
-          }
-        ],
-        "1201": [
+          },
           {
             "topic": "feelings change",
             "target": 12158,
-            "target name": "Diewiven Juvene",
+            "target name": "Salome",
+            "state": "solid love",
+            "relationship": 12159
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 13501,
+            "people": [
+              12157,
+              13500
+            ],
+            "people names": [
+              "Henric",
+              "Woutersoet Henricszoon"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.049
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 13500,
+              "name": "Woutersoet Henricszoon",
+              "age": 1,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Salome (12158)",
+                "father": "Henric (12157)"
+              }
+            },
+            "label": "child"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "feelings change",
+            "target": 12158,
+            "target name": "Salome",
             "state": "out of love",
             "relationship": 12159
           }
         ],
-        "1206": [
-          {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.7
-          }
-        ],
         "1207": [
           {
-            "key": 12159,
-            "topic": "unmarried"
+            "topic": "new relationship",
+            "key": 15169,
+            "people": [
+              12157,
+              15168
+            ],
+            "people names": [
+              "Henric",
+              "Sophia"
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
-            "topic": "person died",
-            "person": {
-              "key": 12158,
-              "name": "Diewiven Juvene",
-              "age": 54,
-              "alive": false,
-              "sex": "f",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
+            "topic": "neglected"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "new relationship",
+            "key": 15673,
+            "people": [
+              12157,
+              15672
+            ],
+            "people names": [
+              "Henric",
+              "Ludolphus"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1210": [
           {
+            "topic": "neglected"
+          }
+        ],
+        "1211": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1212": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1213": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1214": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1215": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1216": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1217": [
+          {
             "topic": "job notice",
-            "notice": "low income",
-            "income": 0.586
+            "notice": "comfortable earnings",
+            "income": 1.081
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1218": [
+          {
+            "topic": "neglected"
           }
         ]
       }
@@ -191,14 +356,14 @@
     "home": {
       "income class": 3,
       "income class label": "upper middle class",
-      "section": "stDen Hof.se7.c3",
+      "section": "stDen Hof.se5.c3",
       "street": "Den Hof",
       "neighborhood": "denhof",
-      "unique id": 963
+      "unique id": 953
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
         12159
       ]

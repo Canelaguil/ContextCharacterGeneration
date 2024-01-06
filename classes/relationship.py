@@ -243,8 +243,14 @@ class Relationship(Agent):
         for parent in self.keys:
             self.model.create_relationship(parent, child['key'], 'parentchild', True)
 
-        for sibling in self.children:
-            self.model.create_relationship(sibling, child['key'], 'sibling', True)
+        for sibling in self.children: 
+            try:
+                if not self.model.we_know_each_other(sibling, child['key']):
+                    self.model.create_relationship(sibling, child['key'], 'sibling', True)
+            except:
+                print(sibling)
+                print(child['key'])
+                fatal_error('failed to notify siblings', [sibling, child, self.unique_id])
 
         if kind == 'birth':
             self.children.append(child['key'])

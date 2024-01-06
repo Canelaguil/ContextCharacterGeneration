@@ -1,32 +1,32 @@
 {
   "12085": {
     "alive": false,
-    "name": "Gheram",
-    "surname": "",
-    "full name": "Gheram",
+    "name": "Otto",
+    "surname": "Duckar",
+    "full name": "Otto Duckar",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.664,
-      "sex interest": 0.61,
-      "gender expression": 0.27,
+      "sexuality label": "gay",
+      "sexuality": 0.9,
+      "romantic interest": 0.705,
+      "sex interest": 0.879,
+      "gender expression": 0.224,
       "sex": "m"
     },
-    "age": 54,
-    "birth year": 1155,
+    "age": 38,
+    "birth year": 1163,
     "sex": "m",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.089,
-      "nice-nasty": 0.6,
-      "honest-false": 0.926
+      "lawful-chaotic": 0.33,
+      "nice-nasty": 0.0,
+      "honest-false": 0.864
     },
     "attitude": {
-      "outgoing": 0.843,
-      "dream": 0.631
+      "outgoing": 0.443,
+      "dream": 0.353
     },
     "homsoc": {
       "means": {
@@ -34,20 +34,39 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "neglected"
+        ]
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.126
+        "sexuality expression": 0.295,
+        "gender expression expression": 0.195
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12643": {
+          "key": 12643,
+          "name": "Dolf Duckar",
+          "age": 49,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Gisele (12086)",
+            "father": "Otto (12085)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           12087
-        ]
+        ],
+        "child": {
+          "birth": [
+            12644
+          ]
+        }
       }
     },
     "occupation": {
@@ -56,35 +75,27 @@
         2,
         "middle class"
       ],
-      "income": 1.26,
+      "income": 1.063,
       "all_incomes": [
-        1.037,
-        1.411,
-        1.138,
-        1.373,
-        1.499,
-        1.499,
-        1.204,
-        1.423,
-        1.416,
-        1.26
+        1.07,
+        1.063
       ],
       "job": {
-        "lawful": false,
+        "lawful": true,
         "honest": true
       }
     },
     "genetics": {
-      "skin_color": 6,
+      "skin_color": 8,
       "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
-        "C",
-        "S"
+        "S",
+        "C"
       ],
-      "health": 0.0,
-      "fertility": 0.551,
+      "health": 0.759,
+      "fertility": 0.756,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -96,39 +107,7 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.656
-          },
-          "death": false
-        },
-        "1205": {
-          "health": {
-            "change": true,
-            "value_change": -0.184,
-            "new_health": 0.472
-          },
-          "death": false
-        },
-        "1206": {
-          "health": {
-            "change": true,
-            "value_change": -0.226,
-            "new_health": 0.246
-          },
-          "death": false
-        },
-        "1207": {
-          "health": {
-            "change": true,
-            "value_change": -0.129,
-            "new_health": 0.117
-          },
-          "death": false
-        },
-        "1208": {
-          "health": {
-            "change": true,
-            "value_change": -0.117,
-            "new_health": 0.0
+            "new_health": 0.759
           },
           "death": true
         }
@@ -138,7 +117,7 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.037
+            "income": 1.07
           },
           {
             "topic": "new relationship",
@@ -148,8 +127,8 @@
               12086
             ],
             "people names": [
-              "Gheram",
-              "Yda"
+              "Otto Duckar",
+              "Gisele"
             ],
             "label": "spouse",
             "committed": true
@@ -159,38 +138,28 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stMarcktgang.se5.c2",
+              "section": "stMarcktgang.se1.c2",
               "street": "Marcktgang",
               "neighborhood": "denhof",
-              "unique id": 935
+              "unique id": 924
             }
-          }
-        ],
-        "1201": [
-          {
-            "topic": "feelings change",
-            "target": 12086,
-            "target name": "Yda",
-            "state": "out of love",
-            "relationship": 12087
-          }
-        ],
-        "1207": [
-          {
-            "key": 12087,
-            "topic": "unmarried"
           },
           {
-            "topic": "person died",
-            "person": {
-              "key": 12086,
-              "name": "Yda",
-              "age": 37,
-              "alive": false,
-              "sex": "f",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
+            "topic": "new relationship",
+            "key": 12644,
+            "people": [
+              12085,
+              12643
+            ],
+            "people names": [
+              "Otto Duckar",
+              "Dolf Duckar"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
           }
         ]
       }
@@ -199,14 +168,14 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stMarcktgang.se5.c2",
+      "section": "stMarcktgang.se1.c2",
       "street": "Marcktgang",
       "neighborhood": "denhof",
-      "unique id": 935
+      "unique id": 924
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
         12087
       ]

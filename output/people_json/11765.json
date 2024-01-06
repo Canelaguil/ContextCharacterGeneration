@@ -1,32 +1,32 @@
 {
   "11765": {
     "alive": false,
-    "name": "Agnes",
+    "name": "Margareta",
     "surname": "",
-    "full name": "Agnes",
+    "full name": "Margareta",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.095,
-      "romantic interest": 0.667,
-      "sex interest": 0.8,
-      "gender expression": 0.0,
+      "sexuality": 0.144,
+      "romantic interest": 0.833,
+      "sex interest": 0.71,
+      "gender expression": 0.031,
       "sex": "f"
     },
-    "age": 41,
-    "birth year": 1173,
+    "age": 54,
+    "birth year": 1157,
     "sex": "f",
     "income class": [
-      4,
-      "nobility"
+      2,
+      "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.603,
-      "nice-nasty": 0.5,
-      "honest-false": 0.694
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.999,
+      "honest-false": 0.0
     },
     "attitude": {
-      "outgoing": 0.129,
-      "dream": 0.312
+      "outgoing": 0.341,
+      "dream": 0.509
     },
     "homsoc": {
       "means": {
@@ -34,11 +34,13 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.067,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.128,
+        "gender expression expression": 0.004
       }
     },
     "network": {
@@ -46,39 +48,31 @@
       "children": {},
       "relationship keys": {
         "spouse": [
-          11766
+          11766,
+          15935
         ]
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
-        4,
-        "nobility"
+        2,
+        "middle class"
       ],
-      "income": 1.105,
-      "all_incomes": [
-        1.001,
-        1.058,
-        1.074,
-        1.105
-      ],
-      "job": {
-        "lawful": true,
-        "honest": true
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 3,
+      "skin_color": 2,
       "eye_color": "brown",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.205,
-      "fertility": 0.4,
+      "health": 0.0,
+      "fertility": 0.776,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -90,31 +84,39 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.403
+            "new_health": 0.687
+          },
+          "death": false
+        },
+        "1207": {
+          "health": {
+            "change": true,
+            "value_change": -0.21,
+            "new_health": 0.477
+          },
+          "death": false
+        },
+        "1208": {
+          "health": {
+            "change": true,
+            "value_change": -0.154,
+            "new_health": 0.323
           },
           "death": false
         },
         "1209": {
           "health": {
             "change": true,
-            "value_change": -0.198,
-            "new_health": 0.205
+            "value_change": -0.195,
+            "new_health": 0.128
           },
           "death": false
         },
         "1210": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.205
-          },
-          "death": false
-        },
-        "1213": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.205
+            "change": true,
+            "value_change": -0.128,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -129,8 +131,8 @@
               11765
             ],
             "people names": [
-              "Jonghen",
-              "Agnes"
+              "Arnekin Strument",
+              "Margareta"
             ],
             "label": "spouse",
             "committed": true
@@ -138,47 +140,89 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 4,
-              "income class label": "nobility",
-              "section": "stMuurhuysen2.se1.c4",
-              "street": "Muurhuysen2",
-              "neighborhood": "cingelnoord",
-              "unique id": 794
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stGoetscalcstraet.se3.c2",
+              "street": "Goetscalcstraet",
+              "neighborhood": "visbuurt",
+              "unique id": 787
             }
+          }
+        ],
+        "1208": [
+          {
+            "key": 11766,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11764,
+              "name": "Arnekin Strument",
+              "age": 54,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ],
         "1210": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.001
-          }
-        ],
-        "1212": [
+            "topic": "new relationship",
+            "key": 15935,
+            "people": [
+              10051,
+              11765
+            ],
+            "people names": [
+              "Conrad Zassen",
+              "Margareta"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
           {
-            "topic": "feelings change",
-            "target": 11764,
-            "target name": "Jonghen",
-            "state": "out of love",
-            "relationship": 11766
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stVerckens merct.se1.c2",
+              "street": "Verckens merct",
+              "neighborhood": "varkensbuurt",
+              "unique id": 23
+            }
           }
         ]
       }
     },
     "key": 11765,
     "home": {
-      "income class": 4,
-      "income class label": "nobility",
-      "section": "stMuurhuysen2.se1.c4",
-      "street": "Muurhuysen2",
-      "neighborhood": "cingelnoord",
-      "unique id": 794
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stVerckens merct.se1.c2",
+      "street": "Verckens merct",
+      "neighborhood": "varkensbuurt",
+      "unique id": 23
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        11766
+        11766,
+        15935
       ]
     }
   }

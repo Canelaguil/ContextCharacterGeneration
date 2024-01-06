@@ -1,32 +1,32 @@
 {
   "11822": {
     "alive": false,
-    "name": "Clara",
-    "surname": "Storhem",
-    "full name": "Clara Storhem",
+    "name": "Alene",
+    "surname": "Bier",
+    "full name": "Alene Bier",
     "born this way": {
-      "sexuality label": "bi",
-      "sexuality": 0.506,
-      "romantic interest": 0.494,
-      "sex interest": 0.483,
-      "gender expression": 0.255,
+      "sexuality label": "straight",
+      "sexuality": 0.035,
+      "romantic interest": 0.676,
+      "sex interest": 0.798,
+      "gender expression": 0.0,
       "sex": "f"
     },
-    "age": 58,
-    "birth year": 1163,
+    "age": 44,
+    "birth year": 1165,
     "sex": "f",
     "income class": [
       3,
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.317,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.204,
+      "nice-nasty": 0.497,
+      "honest-false": 0.046
     },
     "attitude": {
-      "outgoing": 0.555,
-      "dream": 0.18
+      "outgoing": 0.336,
+      "dream": 0.014
     },
     "homsoc": {
       "means": {
@@ -35,43 +35,110 @@
         "caretaker": false,
         "needs_care": false,
         "flags": [
-          "starving"
+          "neglected"
         ]
       },
       "expression": {
-        "sexuality expression": 0.488,
-        "gender expression expression": 0.254
+        "sexuality expression": 0.025,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12998": {
+          "key": 12998,
+          "name": "Segherarden Stuucs",
+          "age": 48,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Alene (11822)",
+            "father": "Lucas (11821)"
+          }
+        },
+        "13440": {
+          "key": 13440,
+          "name": "Gelmarus Stuucs",
+          "age": 7,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Alene (11822)",
+            "father": "Lucas (11821)"
+          }
+        },
+        "13803": {
+          "key": 13803,
+          "name": "Gheesen Stuucs",
+          "age": 24,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Alene (11822)",
+            "father": "Lucas (11821)"
+          }
+        },
+        "14177": {
+          "key": 14177,
+          "name": "Ghodscalc Stuucs",
+          "age": 3,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Alene (11822)",
+            "father": "Lucas (11821)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11823
-        ]
+        ],
+        "child": {
+          "birth": [
+            13000,
+            13442,
+            13805,
+            14179
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         3,
         "upper middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.018,
+      "all_incomes": [
+        1.376,
+        1.353,
+        1.265,
+        1.499,
+        1.499,
+        1.433,
+        1.499,
+        1.499,
+        1.018
+      ],
+      "job": {
+        "lawful": false,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 8,
+      "skin_color": 5,
       "eye_color": "blue",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
       "hair_type": [
-        "C",
-        "S"
+        "S",
+        "C"
       ],
-      "health": 0.0,
-      "fertility": 0.806,
+      "health": 0.759,
+      "fertility": 0.68,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -83,45 +150,26 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.793
+            "new_health": 0.759
           },
           "death": false
         },
-        "1217": {
+        "1208": {
           "health": {
-            "change": true,
-            "value_change": -0.178,
-            "new_health": 0.615
-          },
-          "death": false
-        },
-        "1218": {
-          "health": {
-            "change": true,
-            "value_change": -0.306,
-            "new_health": 0.309
-          },
-          "death": false
-        },
-        "1219": {
-          "health": {
-            "change": true,
-            "value_change": -0.213,
-            "new_health": 0.096
-          },
-          "death": false
-        },
-        "1220": {
-          "health": {
-            "change": true,
-            "value_change": -0.096,
-            "new_health": 0.0
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.759
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.376
+          },
           {
             "topic": "new relationship",
             "key": 11823,
@@ -130,8 +178,8 @@
               11822
             ],
             "people names": [
-              "Andreas",
-              "Clara Storhem"
+              "Lucas Stuucs",
+              "Alene Bier"
             ],
             "label": "spouse",
             "committed": true
@@ -141,67 +189,122 @@
             "home": {
               "income class": 3,
               "income class label": "upper middle class",
-              "section": "stMuurhuysen2.se7.c3",
+              "section": "stMuurhuysen2.se5.c3",
               "street": "Muurhuysen2",
               "neighborhood": "cingelnoord",
-              "unique id": 820
+              "unique id": 813
             }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 13000,
+            "people": [
+              11822,
+              12998
+            ],
+            "people names": [
+              "Alene Bier",
+              "Segherarden Stuucs"
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
-            "topic": "feelings change",
-            "target": 11821,
-            "target name": "Andreas",
-            "state": "solid love",
-            "relationship": 11823
+            "topic": "neglected"
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 13442,
+            "people": [
+              11822,
+              13440
+            ],
+            "people names": [
+              "Alene Bier",
+              "Gelmarus Stuucs"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 13805,
+            "people": [
+              11822,
+              13803
+            ],
+            "people names": [
+              "Alene Bier",
+              "Gheesen Stuucs"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1204": [
           {
-            "topic": "not enough income",
-            "income": 0.034,
-            "inhabitants": []
+            "topic": "new relationship",
+            "key": 14179,
+            "people": [
+              11822,
+              14177
+            ],
+            "people names": [
+              "Alene Bier",
+              "Ghodscalc Stuucs"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1205": [
           {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
+            "topic": "neglected"
           }
         ],
         "1206": [
           {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
+            "topic": "neglected"
           }
         ],
-        "1217": [
+        "1207": [
           {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
+            "topic": "neglected"
           }
         ],
-        "1218": [
+        "1208": [
           {
-            "topic": "not enough income",
-            "income": 0.043,
-            "inhabitants": []
-          }
-        ],
-        "1219": [
+            "topic": "person died",
+            "person": {
+              "key": 14177,
+              "name": "Ghodscalc Stuucs",
+              "age": 3,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Alene (11822)",
+                "father": "Lucas (11821)"
+              }
+            },
+            "label": "child"
+          },
           {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
-          }
-        ],
-        "1220": [
-          {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
+            "topic": "neglected"
           }
         ]
       }
@@ -210,10 +313,10 @@
     "home": {
       "income class": 3,
       "income class label": "upper middle class",
-      "section": "stMuurhuysen2.se7.c3",
+      "section": "stMuurhuysen2.se5.c3",
       "street": "Muurhuysen2",
       "neighborhood": "cingelnoord",
-      "unique id": 820
+      "unique id": 813
     },
     "relationship status": {
       "taken": true,

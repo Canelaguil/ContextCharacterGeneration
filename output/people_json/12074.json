@@ -1,77 +1,129 @@
 {
   "12074": {
     "alive": false,
-    "name": "Walburgis",
-    "surname": "Hont",
-    "full name": "Walburgis Hont",
+    "name": "Truden",
+    "surname": "",
+    "full name": "Truden",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.079,
-      "romantic interest": 0.821,
-      "sex interest": 0.729,
-      "gender expression": 0.082,
+      "sexuality": 0.148,
+      "romantic interest": 0.585,
+      "sex interest": 0.872,
+      "gender expression": 0.126,
       "sex": "f"
     },
-    "age": 37,
-    "birth year": 1172,
+    "age": 54,
+    "birth year": 1168,
     "sex": "f",
     "income class": [
       3,
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.66,
-      "nice-nasty": 0.999,
-      "honest-false": 0.023
+      "lawful-chaotic": 0.467,
+      "nice-nasty": 0.441,
+      "honest-false": 0.422
     },
     "attitude": {
-      "outgoing": 0.686,
-      "dream": 0.676
+      "outgoing": 0.504,
+      "dream": 0.491
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
         "flags": [
-          "starving"
+          "neglected"
         ]
       },
       "expression": {
-        "sexuality expression": 0.031,
-        "gender expression expression": 0.016
+        "sexuality expression": 0.062,
+        "gender expression expression": 0.064
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12637": {
+          "key": 12637,
+          "name": "Remsindis Brede",
+          "age": 49,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Truden (12074)",
+            "father": "Rissewint (12073)"
+          }
+        },
+        "13480": {
+          "key": 13480,
+          "name": "Symon Brede",
+          "age": 47,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Truden (12074)",
+            "father": "Rissewint (12073)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          12075
-        ]
+          12075,
+          17587
+        ],
+        "child": {
+          "birth": [
+            12639,
+            13482
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         3,
         "upper middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.414,
+      "all_incomes": [
+        1.186,
+        1.499,
+        1.499,
+        1.21,
+        1.104,
+        0.858,
+        0.439,
+        0.411,
+        0.436,
+        0.713,
+        0.983,
+        0.755,
+        0.369,
+        0.24,
+        0.088,
+        0.303,
+        0.414
+      ],
+      "job": {
+        "lawful": true,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 2,
+      "skin_color": 0,
       "eye_color": "brown",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
-        "C",
+        "S",
         "C"
       ],
-      "health": 0.702,
-      "fertility": 0.718,
+      "health": 0.0,
+      "fertility": 0.887,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -83,15 +135,39 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.702
+            "new_health": 0.824
           },
           "death": false
         },
-        "1208": {
+        "1218": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.702
+            "change": true,
+            "value_change": -0.168,
+            "new_health": 0.656
+          },
+          "death": false
+        },
+        "1219": {
+          "health": {
+            "change": true,
+            "value_change": -0.246,
+            "new_health": 0.41
+          },
+          "death": false
+        },
+        "1220": {
+          "health": {
+            "change": true,
+            "value_change": -0.203,
+            "new_health": 0.207
+          },
+          "death": false
+        },
+        "1221": {
+          "health": {
+            "change": true,
+            "value_change": -0.207,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -106,8 +182,8 @@
               12074
             ],
             "people names": [
-              "Heinhoca Valant",
-              "Walburgis Hont"
+              "Rissewint Brede",
+              "Truden"
             ],
             "label": "spouse",
             "committed": true
@@ -117,68 +193,237 @@
             "home": {
               "income class": 3,
               "income class label": "upper middle class",
-              "section": "stMarcktgang.se3.c3",
-              "street": "Marcktgang",
+              "section": "stCromme straet.se7.c3",
+              "street": "Cromme straet",
               "neighborhood": "denhof",
-              "unique id": 931
+              "unique id": 920
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12639,
+            "people": [
+              12074,
+              12637
+            ],
+            "people names": [
+              "Truden",
+              "Remsindis Brede"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1201": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 13482,
+            "people": [
+              12074,
+              13480
+            ],
+            "people names": [
+              "Truden",
+              "Symon Brede"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "neglected"
           }
         ],
         "1204": [
           {
-            "topic": "feelings change",
-            "target": 12073,
-            "target name": "Heinhoca Valant",
-            "state": "solid love",
-            "relationship": 12075
+            "topic": "neglected"
           }
         ],
         "1205": [
           {
-            "topic": "feelings change",
-            "target": 12073,
-            "target name": "Heinhoca Valant",
-            "state": "out of love",
-            "relationship": 12075
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.186
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1206": [
           {
-            "topic": "not enough income",
-            "income": 0.063,
-            "inhabitants": []
+            "topic": "neglected"
           }
         ],
         "1207": [
           {
-            "topic": "not enough income",
-            "income": 0.003,
-            "inhabitants": []
+            "topic": "neglected"
           }
         ],
         "1208": [
           {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
+            "topic": "neglected"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1211": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.439
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1212": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.411
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1213": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.436
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1214": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1215": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1216": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1217": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.369
+          },
+          {
+            "key": 12075,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12073,
+              "name": "Rissewint Brede",
+              "age": 56,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1218": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.24
+          }
+        ],
+        "1219": [
+          {
+            "topic": "new relationship",
+            "key": 17587,
+            "people": [
+              11848,
+              12074
+            ],
+            "people names": [
+              "Dilane Blonde",
+              "Truden"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stCingel.se1.c2",
+              "street": "Cingel",
+              "neighborhood": "agnesbuurt",
+              "unique id": 306
+            }
+          }
+        ],
+        "1220": [
+          {
+            "topic": "feelings change",
+            "target": 11848,
+            "target name": "Dilane Blonde",
+            "state": "out of love",
+            "relationship": 17587
+          }
+        ],
+        "1221": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.414
           }
         ]
       }
     },
     "key": 12074,
     "home": {
-      "income class": 3,
-      "income class label": "upper middle class",
-      "section": "stMarcktgang.se3.c3",
-      "street": "Marcktgang",
-      "neighborhood": "denhof",
-      "unique id": 931
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stCingel.se1.c2",
+      "street": "Cingel",
+      "neighborhood": "agnesbuurt",
+      "unique id": 306
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        12075
+        12075,
+        17587
       ]
     }
   }

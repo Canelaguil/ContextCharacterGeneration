@@ -1,53 +1,99 @@
 {
   "10118": {
     "alive": false,
-    "name": "Emgelberna",
-    "surname": "",
-    "full name": "Emgelberna",
+    "name": "Flore",
+    "surname": "Caen",
+    "full name": "Flore Caen",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.007,
-      "romantic interest": 0.517,
-      "sex interest": 0.535,
-      "gender expression": 0.326,
+      "sexuality": 0.092,
+      "romantic interest": 0.765,
+      "sex interest": 0.738,
+      "gender expression": 0.27,
       "sex": "f"
     },
-    "age": 46,
-    "birth year": 1164,
+    "age": 43,
+    "birth year": 1177,
     "sex": "f",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.234,
-      "honest-false": 0.299
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.78,
+      "honest-false": 0.923
     },
     "attitude": {
-      "outgoing": 0.41,
-      "dream": 0.433
+      "outgoing": 0.611,
+      "dream": 0.123
     },
     "homsoc": {
       "means": {
-        "independent": false,
-        "taken_care_of": false,
-        "caretaker": false,
+        "independent": true,
+        "taken_care_of": true,
+        "caretaker": true,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "neglected",
+          "starving",
+          "caretaker"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.004,
-        "gender expression expression": 0.052
+        "sexuality expression": 0.07,
+        "gender expression expression": 0.197
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "15237": {
+          "key": 15237,
+          "name": "Ricward van Flore",
+          "age": 24,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Flore (10118)",
+            "father": "Rodolf (10117)"
+          }
+        },
+        "15489": {
+          "key": 15489,
+          "name": "Conzone Rodolfszoon",
+          "age": 40,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Flore (10118)",
+            "father": "Rodolf (10117)"
+          }
+        },
+        "15733": {
+          "key": 15733,
+          "name": "Ghiselijn",
+          "age": 39,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Flore (10118)",
+            "father": "Rodolf (10117)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          10119
-        ]
+          10119,
+          16693
+        ],
+        "child": {
+          "birth": [
+            15239,
+            15491,
+            15735
+          ]
+        }
       }
     },
     "occupation": {
@@ -56,33 +102,32 @@
         1,
         "lower middle class"
       ],
-      "income": 0.385,
+      "income": 0.985,
       "all_incomes": [
-        0.94,
-        1.029,
-        0.913,
-        0.844,
-        0.874,
-        0.749,
-        0.564,
-        0.385
+        1.0,
+        0.985,
+        0.934,
+        0.977,
+        0.961,
+        0.986,
+        0.985
       ],
       "job": {
-        "lawful": false,
+        "lawful": true,
         "honest": true
       }
     },
     "genetics": {
-      "skin_color": 6,
-      "eye_color": "blue",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "skin_color": 3,
+      "eye_color": "green",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
         "S",
         "S"
       ],
-      "health": 0.663,
-      "fertility": 0.729,
+      "health": 0.776,
+      "fertility": 0.725,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -94,15 +139,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.663
+            "new_health": 0.776
           },
           "death": false
         },
-        "1209": {
+        "1219": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.663
+            "new_health": 0.776
           },
           "death": true
         }
@@ -117,8 +162,8 @@
               10118
             ],
             "people names": [
-              "Coekea",
-              "Emgelberna"
+              "Rodolf",
+              "Flore Caen"
             ],
             "label": "spouse",
             "committed": true
@@ -128,55 +173,189 @@
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stSlyck straet.se1.c1",
+              "section": "stSlyck straet.se3.c1",
               "street": "Slyck straet",
               "neighborhood": "varkensbuurt",
-              "unique id": 44
+              "unique id": 53
             }
           }
         ],
-        "1202": [
+        "1208": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.94
+            "topic": "new relationship",
+            "key": 15239,
+            "people": [
+              10118,
+              15237
+            ],
+            "people names": [
+              "Flore Caen",
+              "Ricward van Flore"
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
-            "topic": "feelings change",
-            "target": 10117,
-            "target name": "Coekea",
-            "state": "out of love",
-            "relationship": 10119
-          }
-        ],
-        "1203": [
-          {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.029
-          }
-        ],
-        "1206": [
-          {
-            "topic": "feelings change",
-            "target": 10117,
-            "target name": "Coekea",
-            "state": "infatuation",
-            "relationship": 10119
-          }
-        ],
-        "1207": [
-          {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.749
+            "topic": "not enough income",
+            "income": 0.424,
+            "inhabitants": []
           }
         ],
         "1209": [
           {
+            "topic": "new relationship",
+            "key": 15491,
+            "people": [
+              10118,
+              15489
+            ],
+            "people names": [
+              "Flore Caen",
+              "Conzone Rodolfszoon"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.303,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "new relationship",
+            "key": 15735,
+            "people": [
+              10118,
+              15733
+            ],
+            "people names": [
+              "Flore Caen",
+              "Ghiselijn"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.291,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "key": 10119,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10117,
+              "name": "Rodolf",
+              "age": 42,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          },
+          {
+            "topic": "new caretaker",
+            "person": 10118
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
+          {
             "topic": "job notice",
-            "notice": "earning very little",
-            "income": 0.385
+            "notice": "found job",
+            "income": 1.0
+          },
+          {
+            "topic": "new relationship",
+            "key": 16693,
+            "people": [
+              11950,
+              10118
+            ],
+            "people names": [
+              "Franco Cornute",
+              "Flore Caen"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stDe Vyver.se3.c1",
+              "street": "De Vyver",
+              "neighborhood": "denhof",
+              "unique id": 868
+            }
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1214": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1215": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1217": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1218": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1219": [
+          {
+            "key": 16693,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11950,
+              "name": "Franco Cornute",
+              "age": 53,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "new caretaker",
+            "person": 15202
           }
         ]
       }
@@ -185,16 +364,17 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stSlyck straet.se1.c1",
-      "street": "Slyck straet",
-      "neighborhood": "varkensbuurt",
-      "unique id": 44
+      "section": "stDe Vyver.se3.c1",
+      "street": "De Vyver",
+      "neighborhood": "denhof",
+      "unique id": 868
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
-        10119
+        10119,
+        16693
       ]
     }
   }

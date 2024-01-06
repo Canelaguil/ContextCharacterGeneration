@@ -1,32 +1,32 @@
 {
   "10342": {
     "alive": false,
-    "name": "Lammekin",
+    "name": "Kerstiaen",
     "surname": "",
-    "full name": "Lammekin",
+    "full name": "Kerstiaen",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.067,
-      "romantic interest": 0.71,
-      "sex interest": 0.756,
-      "gender expression": 0.085,
+      "sexuality": 0.0,
+      "romantic interest": 0.462,
+      "sex interest": 0.732,
+      "gender expression": 0.083,
       "sex": "m"
     },
-    "age": 44,
-    "birth year": 1169,
+    "age": 26,
+    "birth year": 1178,
     "sex": "m",
     "income class": [
-      0,
-      "working class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.635,
-      "nice-nasty": 0.999,
-      "honest-false": 0.673
+      "lawful-chaotic": 0.338,
+      "nice-nasty": 0.749,
+      "honest-false": 0.461
     },
     "attitude": {
-      "outgoing": 0.567,
-      "dream": 0.379
+      "outgoing": 0.318,
+      "dream": 0.0
     },
     "homsoc": {
       "means": {
@@ -34,62 +34,71 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "neglected"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.019,
-        "gender expression expression": 0.048
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.027
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12753": {
+          "key": 12753,
+          "name": "Pelegrim van Kerstiaen",
+          "age": 48,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Helyana (10343)",
+            "father": "Kerstiaen (10342)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          10344,
-          16103
-        ]
+          10344
+        ],
+        "child": {
+          "birth": [
+            12754
+          ]
+        }
       }
     },
     "occupation": {
       "has job": true,
       "income class": [
-        0,
-        "working class"
+        1,
+        "lower middle class"
       ],
-      "income": 1.212,
+      "income": 1.408,
       "all_incomes": [
-        1.016,
-        1.02,
-        0.994,
-        0.978,
-        1.01,
-        1.017,
-        1.102,
-        1.129,
-        1.131,
-        1.132,
-        1.077,
-        1.158,
-        1.172,
-        1.212
+        1.15,
+        1.405,
+        1.059,
+        1.225,
+        1.408
       ],
       "job": {
-        "lawful": true,
-        "honest": true
+        "lawful": false,
+        "honest": false
       }
     },
     "genetics": {
-      "skin_color": 6,
-      "eye_color": "blue",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "skin_color": 2,
+      "eye_color": "green",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
         "S",
         "S"
       ],
-      "health": 0.26,
-      "fertility": 0.576,
+      "health": 0.756,
+      "fertility": 0.813,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -101,31 +110,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.588
+            "new_health": 0.756
           },
           "death": false
         },
-        "1205": {
-          "health": {
-            "change": true,
-            "value_change": -0.328,
-            "new_health": 0.26
-          },
-          "death": false
-        },
-        "1206": {
+        "1203": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.26
-          },
-          "death": false
-        },
-        "1212": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.26
+            "new_health": 0.756
           },
           "death": true
         }
@@ -135,7 +128,7 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.016
+            "income": 1.15
           },
           {
             "topic": "new relationship",
@@ -145,8 +138,8 @@
               10343
             ],
             "people names": [
-              "Lammekin",
-              "Gloria Callart"
+              "Kerstiaen",
+              "Helyana Brune"
             ],
             "label": "spouse",
             "committed": true
@@ -154,120 +147,60 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stSt. Joris straet.se1.c0",
-              "street": "St. Joris straet",
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stMuelen straet.se1.c1",
+              "street": "Muelen straet",
               "neighborhood": "jorisbuurt",
-              "unique id": 138
+              "unique id": 153
             }
           }
         ],
         "1201": [
           {
-            "topic": "feelings change",
-            "target": 10343,
-            "target name": "Gloria Callart",
-            "state": "out of love",
-            "relationship": 10344
+            "topic": "new relationship",
+            "key": 12754,
+            "people": [
+              10342,
+              12753
+            ],
+            "people names": [
+              "Kerstiaen",
+              "Pelegrim van Kerstiaen"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1202": [
+          {
+            "topic": "neglected"
           }
         ],
         "1203": [
           {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.01
-          }
-        ],
-        "1204": [
-          {
-            "topic": "feelings change",
-            "target": 10343,
-            "target name": "Gloria Callart",
-            "state": "infatuation",
-            "relationship": 10344
-          }
-        ],
-        "1207": [
-          {
-            "topic": "feelings change",
-            "target": 10343,
-            "target name": "Gloria Callart",
-            "state": "solid love",
-            "relationship": 10344
-          }
-        ],
-        "1209": [
-          {
-            "key": 10344,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 10343,
-              "name": "Gloria Callart",
-              "age": 54,
-              "alive": false,
-              "sex": "f",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
-          }
-        ],
-        "1211": [
-          {
-            "topic": "new relationship",
-            "key": 16103,
-            "people": [
-              10342,
-              11012
-            ],
-            "people names": [
-              "Lammekin",
-              "Euffemia"
-            ],
-            "label": "spouse",
-            "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stDie Coninc straet.se3.c0",
-              "street": "Die Coninc straet",
-              "neighborhood": "kampbuurt",
-              "unique id": 457
-            }
-          }
-        ],
-        "1212": [
-          {
-            "topic": "feelings change",
-            "target": 11012,
-            "target name": "Euffemia",
-            "state": "solid love",
-            "relationship": 16103
+            "topic": "neglected"
           }
         ]
       }
     },
     "key": 10342,
     "home": {
-      "income class": 0,
-      "income class label": "working class",
-      "section": "stDie Coninc straet.se3.c0",
-      "street": "Die Coninc straet",
-      "neighborhood": "kampbuurt",
-      "unique id": 457
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stMuelen straet.se1.c1",
+      "street": "Muelen straet",
+      "neighborhood": "jorisbuurt",
+      "unique id": 153
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        10344,
-        16103
+        10344
       ]
     }
   }

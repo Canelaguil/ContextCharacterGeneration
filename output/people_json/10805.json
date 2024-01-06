@@ -1,75 +1,132 @@
 {
   "10805": {
     "alive": false,
-    "name": "Woltwigis",
-    "surname": "",
-    "full name": "Woltwigis",
+    "name": "Imma",
+    "surname": "Heylighevrouwe",
+    "full name": "Imma Heylighevrouwe",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.889,
-      "romantic interest": 0.774,
-      "sex interest": 0.85,
-      "gender expression": 0.495,
+      "sexuality label": "straight",
+      "sexuality": 0.001,
+      "romantic interest": 0.38,
+      "sex interest": 0.572,
+      "gender expression": 0.0,
       "sex": "f"
     },
-    "age": 36,
-    "birth year": 1165,
+    "age": 39,
+    "birth year": 1178,
     "sex": "f",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.228,
-      "nice-nasty": 0.772,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.419,
+      "nice-nasty": 0.385,
+      "honest-false": 0.317
     },
     "attitude": {
-      "outgoing": 0.325,
-      "dream": 0.333
+      "outgoing": 0.471,
+      "dream": 0.346
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving",
+          "caretaker",
+          "neglected"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.44,
-        "gender expression expression": 0.106
+        "sexuality expression": 0.0,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12394": {
+          "key": 12394,
+          "name": "Wybel Pipe",
+          "age": 49,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Imma (10805)",
+            "father": "Wernerus (10804)"
+          }
+        },
+        "14260": {
+          "key": 14260,
+          "name": "Iris Hoeuedekin",
+          "age": 40,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Imma (10805)",
+            "father": "Hardenbernus (11224)"
+          }
+        },
+        "17170": {
+          "key": 17170,
+          "name": "Duker Hoeuedekin",
+          "age": 33,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Imma (10805)",
+            "father": "Hardenbernus (11224)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          10806
-        ]
+          10806,
+          13516
+        ],
+        "child": {
+          "birth": [
+            12396,
+            14262,
+            17172
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.236,
+      "all_incomes": [
+        1.011,
+        0.994,
+        0.423,
+        0.755,
+        0.522,
+        0.236
+      ],
+      "job": {
+        "lawful": false,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 7,
-      "eye_color": "blue",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "skin_color": 9,
+      "eye_color": "green",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.608,
-      "fertility": 0.684,
+      "health": 0.761,
+      "fertility": 0.723,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -81,7 +138,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.608
+            "new_health": 0.761
+          },
+          "death": false
+        },
+        "1216": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.761
           },
           "death": true
         }
@@ -96,8 +161,8 @@
               10805
             ],
             "people names": [
-              "Heinkin",
-              "Woltwigis"
+              "Wernerus Pipe",
+              "Imma Heylighevrouwe"
             ],
             "label": "spouse",
             "committed": true
@@ -110,8 +175,239 @@
               "section": "stDie Camp.se1.c2",
               "street": "Die Camp",
               "neighborhood": "kampbuurt",
-              "unique id": 355
+              "unique id": 351
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12396,
+            "people": [
+              10805,
+              12394
+            ],
+            "people names": [
+              "Imma Heylighevrouwe",
+              "Wybel Pipe"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1201": [
+          {
+            "key": 10806,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10804,
+              "name": "Wernerus Pipe",
+              "age": 23,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          },
+          {
+            "topic": "new caretaker",
+            "person": 10805
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 13516,
+            "people": [
+              11224,
+              10805
+            ],
+            "people names": [
+              "Hardenbernus Hoeuedekin",
+              "Imma Heylighevrouwe"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stBreestraat.se1.c2",
+              "street": "Breestraat",
+              "neighborhood": "olvbuurt",
+              "unique id": 541
+            }
+          }
+        ],
+        "1203": [
+          {
+            "topic": "not enough income",
+            "income": 0.167,
+            "inhabitants": [
+              12487,
+              12394,
+              17170,
+              17395,
+              14043,
+              14413,
+              18106,
+              18459,
+              15460,
+              19304,
+              19674,
+              19701,
+              19843,
+              21337,
+              21435,
+              21547,
+              21581,
+              21671,
+              21780,
+              21797,
+              17629,
+              22223,
+              22698,
+              22726,
+              22891,
+              22975,
+              23584,
+              23724,
+              24094,
+              19707,
+              19633,
+              24733,
+              24834,
+              24837,
+              18827,
+              25045,
+              25224,
+              25247
+            ]
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 14262,
+            "people": [
+              10805,
+              14260
+            ],
+            "people names": [
+              "Imma Heylighevrouwe",
+              "Iris Hoeuedekin"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1205": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1206": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1211": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.011
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1212": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1213": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.423
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1214": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1215": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.522
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1216": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.236
+          },
+          {
+            "topic": "new relationship",
+            "key": 17172,
+            "people": [
+              10805,
+              17170
+            ],
+            "people names": [
+              "Imma Heylighevrouwe",
+              "Duker Hoeuedekin"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
           }
         ]
       }
@@ -120,16 +416,17 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stDie Camp.se1.c2",
-      "street": "Die Camp",
-      "neighborhood": "kampbuurt",
-      "unique id": 355
+      "section": "stBreestraat.se1.c2",
+      "street": "Breestraat",
+      "neighborhood": "olvbuurt",
+      "unique id": 541
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        10806
+        10806,
+        13516
       ]
     }
   }

@@ -1,32 +1,32 @@
 {
   "10748": {
     "alive": false,
-    "name": "Aghete",
-    "surname": "",
-    "full name": "Aghete",
+    "name": "Heilsota",
+    "surname": "Bruus",
+    "full name": "Heilsota Bruus",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.925,
-      "romantic interest": 0.774,
-      "sex interest": 0.589,
-      "gender expression": 0.213,
+      "sexuality label": "straight",
+      "sexuality": 0.089,
+      "romantic interest": 0.924,
+      "sex interest": 0.5,
+      "gender expression": 0.155,
       "sex": "f"
     },
-    "age": 49,
-    "birth year": 1165,
+    "age": 45,
+    "birth year": 1175,
     "sex": "f",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.078,
-      "nice-nasty": 0.455,
-      "honest-false": 0.294
+      "lawful-chaotic": 0.0,
+      "nice-nasty": 0.048,
+      "honest-false": 0.999
     },
     "attitude": {
-      "outgoing": 0.503,
-      "dream": 0.28
+      "outgoing": 0.544,
+      "dream": 0.54
     },
     "homsoc": {
       "means": {
@@ -35,27 +35,48 @@
         "caretaker": false,
         "needs_care": false,
         "flags": [
-          "neglected",
-          "starving"
+          "neglected"
         ]
       },
       "expression": {
-        "sexuality expression": 0.774,
-        "gender expression expression": 0.1
+        "sexuality expression": 0.04,
+        "gender expression expression": 0.048
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "14388": {
-          "key": 14388,
-          "name": "Veder Ingelszoon",
-          "age": 44,
+        "13641": {
+          "key": 13641,
+          "name": "Ermerut van Menzone",
+          "age": 2,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Heilsota (10748)",
+            "father": "Menzone (10747)"
+          }
+        },
+        "13986": {
+          "key": 13986,
+          "name": "Ioris van Menzone",
+          "age": 45,
           "alive": true,
           "sex": "m",
           "parents": {
-            "mother": "Aghete (10748)",
-            "father": "Ingel (10747)"
+            "mother": "Heilsota (10748)",
+            "father": "Menzone (10747)"
+          }
+        },
+        "14365": {
+          "key": 14365,
+          "name": "Victoria",
+          "age": 16,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Heilsota (10748)",
+            "father": "Menzone (10747)"
           }
         }
       },
@@ -65,7 +86,9 @@
         ],
         "child": {
           "birth": [
-            14390
+            13643,
+            13988,
+            14367
           ]
         }
       }
@@ -80,16 +103,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 3,
+      "skin_color": 2,
       "eye_color": "brown",
       "hair_color": "brown",
       "hair_color_code": 2,
       "hair_type": [
-        "S",
+        "C",
         "C"
       ],
-      "health": 0.917,
-      "fertility": 0.913,
+      "health": 0.722,
+      "fertility": 0.697,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -101,15 +124,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.917
+            "new_health": 0.722
           },
           "death": false
         },
-        "1213": {
+        "1219": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.917
+            "new_health": 0.722
           },
           "death": true
         }
@@ -124,8 +147,8 @@
               10748
             ],
             "people names": [
-              "Ingel Cabellau",
-              "Aghete"
+              "Menzone",
+              "Heilsota Bruus"
             ],
             "label": "spouse",
             "committed": true
@@ -135,51 +158,186 @@
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stTuytsteeg.se3.c1",
+              "section": "stTuytsteeg.se1.c1",
               "street": "Tuytsteeg",
               "neighborhood": "agnesbuurt",
-              "unique id": 330
+              "unique id": 325
             }
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 13643,
+            "people": [
+              10748,
+              13641
+            ],
+            "people names": [
+              "Heilsota Bruus",
+              "Ermerut van Menzone"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 13988,
+            "people": [
+              10748,
+              13986
+            ],
+            "people names": [
+              "Heilsota Bruus",
+              "Ioris van Menzone"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1205": [
           {
             "topic": "new relationship",
-            "key": 14390,
+            "key": 14367,
             "people": [
               10748,
-              14388
+              14365
             ],
             "people names": [
-              "Aghete",
-              "Veder Ingelszoon"
+              "Heilsota Bruus",
+              "Victoria"
             ],
             "label": "parentchild",
             "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 10747,
+            "target name": "Menzone",
+            "state": "out of love",
+            "relationship": 10749
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1206": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 13641,
+              "name": "Ermerut van Menzone",
+              "age": 2,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Heilsota (10748)",
+                "father": "Menzone (10747)"
+              }
+            },
+            "label": "child"
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1211": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1212": [
+          {
+            "topic": "neglected"
           }
         ],
         "1213": [
           {
-            "key": 10749,
-            "topic": "unmarried"
+            "topic": "feelings change",
+            "target": 10747,
+            "target name": "Menzone",
+            "state": "infatuation",
+            "relationship": 10749
           },
           {
-            "topic": "person died",
-            "person": {
-              "key": 10747,
-              "name": "Ingel Cabellau",
-              "age": 51,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
+            "topic": "neglected"
+          }
+        ],
+        "1214": [
+          {
+            "topic": "feelings change",
+            "target": 10747,
+            "target name": "Menzone",
+            "state": "out of love",
+            "relationship": 10749
           },
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "neglected"
+          }
+        ],
+        "1215": [
+          {
+            "topic": "feelings change",
+            "target": 10747,
+            "target name": "Menzone",
+            "state": "infatuation",
+            "relationship": 10749
           },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1216": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1217": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1218": [
+          {
+            "topic": "feelings change",
+            "target": 10747,
+            "target name": "Menzone",
+            "state": "solid love",
+            "relationship": 10749
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1219": [
           {
             "topic": "neglected"
           }
@@ -190,14 +348,14 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stTuytsteeg.se3.c1",
+      "section": "stTuytsteeg.se1.c1",
       "street": "Tuytsteeg",
       "neighborhood": "agnesbuurt",
-      "unique id": 330
+      "unique id": 325
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
         10749
       ]

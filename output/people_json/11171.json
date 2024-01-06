@@ -2,31 +2,31 @@
   "11171": {
     "alive": false,
     "name": "Sipper",
-    "surname": "Rin",
-    "full name": "Sipper Rin",
+    "surname": "Vlieghe",
+    "full name": "Sipper Vlieghe",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.008,
-      "romantic interest": 0.851,
-      "sex interest": 0.813,
-      "gender expression": 0.058,
+      "sexuality": 0.0,
+      "romantic interest": 0.593,
+      "sex interest": 0.733,
+      "gender expression": 0.141,
       "sex": "f"
     },
-    "age": 48,
-    "birth year": 1165,
+    "age": 28,
+    "birth year": 1178,
     "sex": "f",
     "income class": [
-      2,
-      "middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.283,
-      "nice-nasty": 0.938,
-      "honest-false": 0.109
+      "lawful-chaotic": 0.526,
+      "nice-nasty": 0.0,
+      "honest-false": 0.129
     },
     "attitude": {
-      "outgoing": 0.634,
-      "dream": 0.396
+      "outgoing": 0.27,
+      "dream": 0.122
     },
     "homsoc": {
       "means": {
@@ -34,55 +34,61 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.007,
-        "gender expression expression": 0.028
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.083
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14442": {
+          "key": 14442,
+          "name": "Ermerut",
+          "age": 44,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Sipper (11171)",
+            "father": "Menaures (11170)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11172
-        ]
+        ],
+        "child": {
+          "birth": [
+            14444
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
-        2,
-        "middle class"
+        1,
+        "lower middle class"
       ],
-      "income": 1.365,
-      "all_incomes": [
-        1.433,
-        1.499,
-        1.402,
-        1.499,
-        1.499,
-        1.429,
-        1.243,
-        1.365
-      ],
-      "job": {
-        "lawful": true,
-        "honest": false
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 6,
-      "eye_color": "blue",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "skin_color": 1,
+      "eye_color": "green",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
-        "S",
+        "C",
         "C"
       ],
-      "health": 0.729,
-      "fertility": 0.796,
+      "health": 0.694,
+      "fertility": 0.666,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -94,15 +100,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.729
+            "new_health": 0.694
           },
           "death": false
         },
-        "1212": {
+        "1205": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.729
+            "new_health": 0.694
           },
           "death": true
         }
@@ -117,8 +123,8 @@
               11171
             ],
             "people names": [
-              "Bobone Euer",
-              "Sipper Rin"
+              "Menaures Broem",
+              "Sipper Vlieghe"
             ],
             "label": "spouse",
             "committed": true
@@ -126,59 +132,56 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stBreestraat.se1.c2",
-              "street": "Breestraat",
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stPaternoster straetje.se1.c1",
+              "street": "Paternoster straetje",
               "neighborhood": "olvbuurt",
-              "unique id": 528
+              "unique id": 519
             }
-          }
-        ],
-        "1201": [
-          {
-            "topic": "feelings change",
-            "target": 11170,
-            "target name": "Bobone Euer",
-            "state": "out of love",
-            "relationship": 11172
-          }
-        ],
-        "1204": [
-          {
-            "topic": "feelings change",
-            "target": 11170,
-            "target name": "Bobone Euer",
-            "state": "infatuation",
-            "relationship": 11172
           }
         ],
         "1205": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.433
-          }
-        ],
-        "1208": [
+            "topic": "new relationship",
+            "key": 14444,
+            "people": [
+              11171,
+              14442
+            ],
+            "people names": [
+              "Sipper Vlieghe",
+              "Ermerut"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
           {
-            "topic": "feelings change",
-            "target": 11170,
-            "target name": "Bobone Euer",
-            "state": "solid love",
-            "relationship": 11172
+            "topic": "not enough income",
+            "income": 0.253,
+            "inhabitants": [
+              14442,
+              18319,
+              15917,
+              21681,
+              23276,
+              24342,
+              19698,
+              24560,
+              24822
+            ]
           }
         ]
       }
     },
     "key": 11171,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stBreestraat.se1.c2",
-      "street": "Breestraat",
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stPaternoster straetje.se1.c1",
+      "street": "Paternoster straetje",
       "neighborhood": "olvbuurt",
-      "unique id": 528
+      "unique id": 519
     },
     "relationship status": {
       "taken": true,

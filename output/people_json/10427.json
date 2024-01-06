@@ -1,68 +1,108 @@
 {
   "10427": {
     "alive": false,
-    "name": "Marie",
-    "surname": "Blessard",
-    "full name": "Marie Blessard",
+    "name": "Gisele",
+    "surname": "Blideleuen",
+    "full name": "Gisele Blideleuen",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.133,
-      "romantic interest": 0.584,
-      "sex interest": 0.471,
-      "gender expression": 0.151,
+      "sexuality": 0.087,
+      "romantic interest": 0.732,
+      "sex interest": 0.878,
+      "gender expression": 0.122,
       "sex": "f"
     },
-    "age": 53,
-    "birth year": 1158,
+    "age": 56,
+    "birth year": 1169,
     "sex": "f",
     "income class": [
-      2,
-      "middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.097,
-      "nice-nasty": 0.738,
-      "honest-false": 0.346
+      "lawful-chaotic": 0.579,
+      "nice-nasty": 0.715,
+      "honest-false": 0.315
     },
     "attitude": {
-      "outgoing": 0.685,
-      "dream": 0.453
+      "outgoing": 0.496,
+      "dream": 0.062
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
         "flags": [
-          "starving"
+          "starving",
+          "caretaker",
+          "neglected"
         ]
       },
       "expression": {
-        "sexuality expression": 0.108,
-        "gender expression expression": 0.084
+        "sexuality expression": 0.041,
+        "gender expression expression": 0.093
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13191": {
+          "key": 13191,
+          "name": "Aleberna Denijssdochter",
+          "age": 47,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Gisele (10427)",
+            "father": "Denijs (10426)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          10428
-        ]
+          10428,
+          15950
+        ],
+        "child": {
+          "birth": [
+            13193
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        2,
-        "middle class"
+        1,
+        "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.639,
+      "all_incomes": [
+        0.957,
+        0.976,
+        1.303,
+        1.303,
+        1.483,
+        1.317,
+        1.499,
+        1.376,
+        1.458,
+        1.256,
+        1.027,
+        0.94,
+        0.991,
+        0.647,
+        0.639
+      ],
+      "job": {
+        "lawful": true,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 7,
+      "skin_color": 4,
       "eye_color": "brown",
       "hair_color": "strawberry blonde",
       "hair_color_code": 5,
@@ -70,8 +110,8 @@
         "C",
         "S"
       ],
-      "health": 0.026,
-      "fertility": 0.649,
+      "health": 0.0,
+      "fertility": 0.833,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -83,31 +123,47 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.629
+            "new_health": 0.776
           },
           "death": false
         },
-        "1208": {
+        "1220": {
           "health": {
             "change": true,
-            "value_change": -0.284,
-            "new_health": 0.345
+            "value_change": -0.195,
+            "new_health": 0.581
           },
           "death": false
         },
-        "1209": {
+        "1221": {
           "health": {
             "change": true,
-            "value_change": -0.228,
-            "new_health": 0.117
+            "value_change": -0.282,
+            "new_health": 0.299
           },
           "death": false
         },
-        "1210": {
+        "1222": {
           "health": {
             "change": true,
-            "value_change": -0.091,
-            "new_health": 0.026
+            "value_change": -0.203,
+            "new_health": 0.096
+          },
+          "death": false
+        },
+        "1223": {
+          "health": {
+            "change": true,
+            "value_change": -0.088,
+            "new_health": 0.008
+          },
+          "death": false
+        },
+        "1224": {
+          "health": {
+            "change": true,
+            "value_change": -0.008,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -122,8 +178,8 @@
               10427
             ],
             "people names": [
-              "Maelkin Calle",
-              "Marie Blessard"
+              "Denijs",
+              "Gisele Blideleuen"
             ],
             "label": "spouse",
             "committed": true
@@ -131,16 +187,86 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stDavids hof.se1.c2",
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stDavids hof.se3.c1",
               "street": "Davids hof",
               "neighborhood": "jorisbuurt",
-              "unique id": 171
+              "unique id": 188
             }
+          },
+          {
+            "topic": "feelings change",
+            "target": 10426,
+            "target name": "Denijs",
+            "state": "out of love",
+            "relationship": 10428
           }
         ],
-        "1210": [
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 13193,
+            "people": [
+              10427,
+              13191
+            ],
+            "people names": [
+              "Gisele Blideleuen",
+              "Aleberna Denijssdochter"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 10426,
+            "target name": "Denijs",
+            "state": "infatuation",
+            "relationship": 10428
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "feelings change",
+            "target": 10426,
+            "target name": "Denijs",
+            "state": "out of love",
+            "relationship": 10428
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1206": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1209": [
           {
             "key": 10428,
             "topic": "unmarried"
@@ -149,8 +275,8 @@
             "topic": "person died",
             "person": {
               "key": 10426,
-              "name": "Maelkin Calle",
-              "age": 56,
+              "name": "Denijs",
+              "age": 55,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
@@ -161,24 +287,133 @@
             "topic": "not enough income",
             "income": 0,
             "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          },
+          {
+            "topic": "new caretaker",
+            "person": 10427
+          }
+        ],
+        "1210": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.957
+          },
+          {
+            "topic": "new relationship",
+            "key": 15950,
+            "people": [
+              11971,
+              10427
+            ],
+            "people names": [
+              "Geldmaro Cum Macula",
+              "Gisele Blideleuen"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stCromme straet.se1.c1",
+              "street": "Cromme straet",
+              "neighborhood": "denhof",
+              "unique id": 876
+            }
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1211": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1212": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.303
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1213": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1214": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1215": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1216": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1217": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1220": [
+          {
+            "key": 15950,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11971,
+              "name": "Geldmaro Cum Macula",
+              "age": 44,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          }
+        ],
+        "1223": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.647
           }
         ]
       }
     },
     "key": 10427,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stDavids hof.se1.c2",
-      "street": "Davids hof",
-      "neighborhood": "jorisbuurt",
-      "unique id": 171
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stCromme straet.se1.c1",
+      "street": "Cromme straet",
+      "neighborhood": "denhof",
+      "unique id": 876
     },
     "relationship status": {
       "taken": false,
       "married": false,
       "relationships": [
-        10428
+        10428,
+        15950
       ]
     }
   }

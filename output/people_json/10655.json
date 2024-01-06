@@ -1,32 +1,32 @@
 {
   "10655": {
     "alive": false,
-    "name": "Douwen",
-    "surname": "Valke",
-    "full name": "Douwen Valke",
+    "name": "Gertrudis",
+    "surname": "Zassen",
+    "full name": "Gertrudis Zassen",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.06,
-      "romantic interest": 0.589,
-      "sex interest": 0.698,
-      "gender expression": 0.065,
+      "sexuality": 0.072,
+      "romantic interest": 0.853,
+      "sex interest": 0.731,
+      "gender expression": 0.0,
       "sex": "f"
     },
-    "age": 54,
-    "birth year": 1159,
+    "age": 31,
+    "birth year": 1182,
     "sex": "f",
     "income class": [
       0,
       "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.659,
-      "nice-nasty": 0.696,
-      "honest-false": 0.302
+      "lawful-chaotic": 0.504,
+      "nice-nasty": 0.43,
+      "honest-false": 0.732
     },
     "attitude": {
-      "outgoing": 0.452,
-      "dream": 0.129
+      "outgoing": 0.208,
+      "dream": 0.279
     },
     "homsoc": {
       "means": {
@@ -35,31 +35,86 @@
         "caretaker": false,
         "needs_care": false,
         "flags": [
-          "starving"
+          "starving",
+          "neglected"
         ]
       },
       "expression": {
-        "sexuality expression": 0.04,
-        "gender expression expression": 0.048
+        "sexuality expression": 0.043,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13235": {
+          "key": 13235,
+          "name": "Reuro Buk",
+          "age": 15,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Gertrudis (10655)",
+            "father": "Barwoud (10654)"
+          }
+        },
+        "15776": {
+          "key": 15776,
+          "name": "Herlewin Buk",
+          "age": 4,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Gertrudis (10655)",
+            "father": "Barwoud (10654)"
+          }
+        },
+        "16312": {
+          "key": 16312,
+          "name": "Heylewigis Buk",
+          "age": 37,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Gertrudis (10655)",
+            "father": "Barwoud (10654)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10656
-        ]
+        ],
+        "child": {
+          "birth": [
+            13237,
+            15778,
+            16314
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         0,
         "working class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.955,
+      "all_incomes": [
+        1.049,
+        1.066,
+        1.12,
+        1.088,
+        1.027,
+        0.998,
+        0.958,
+        0.955
+      ],
+      "job": {
+        "lawful": true,
+        "honest": true
+      }
     },
     "genetics": {
       "skin_color": 2,
@@ -67,11 +122,11 @@
       "hair_color": "blonde",
       "hair_color_code": 4,
       "hair_type": [
-        "C",
-        "C"
+        "S",
+        "S"
       ],
-      "health": 0.0,
-      "fertility": 0.672,
+      "health": 0.559,
+      "fertility": 0.566,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -83,41 +138,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.671
+            "new_health": 0.559
           },
           "death": false
-        },
-        "1209": {
-          "health": {
-            "change": true,
-            "value_change": -0.284,
-            "new_health": 0.387
-          },
-          "death": false
-        },
-        "1210": {
-          "health": {
-            "change": true,
-            "value_change": -0.225,
-            "new_health": 0.162
-          },
-          "death": false
-        },
-        "1211": {
-          "health": {
-            "change": true,
-            "value_change": -0.158,
-            "new_health": 0.004
-          },
-          "death": false
-        },
-        "1212": {
-          "health": {
-            "change": true,
-            "value_change": -0.004,
-            "new_health": 0.0
-          },
-          "death": true
         }
       },
       "events": {
@@ -130,8 +153,8 @@
               10655
             ],
             "people names": [
-              "Veder Huuchals",
-              "Douwen Valke"
+              "Barwoud Buk",
+              "Gertrudis Zassen"
             ],
             "label": "spouse",
             "committed": true
@@ -144,101 +167,159 @@
               "section": "stDe Tuyt.se1.c0",
               "street": "De Tuyt",
               "neighborhood": "agnesbuurt",
-              "unique id": 285
+              "unique id": 286
             }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "feelings change",
+            "target": 10654,
+            "target name": "Barwoud Buk",
+            "state": "infatuation",
+            "relationship": 10656
           }
         ],
         "1202": [
           {
-            "key": 10656,
-            "topic": "unmarried"
+            "topic": "new relationship",
+            "key": 13237,
+            "people": [
+              10655,
+              13235
+            ],
+            "people names": [
+              "Gertrudis Zassen",
+              "Reuro Buk"
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
-            "topic": "person died",
-            "person": {
-              "key": 10654,
-              "name": "Veder Huuchals",
-              "age": 43,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "neglected"
           }
         ],
         "1203": [
           {
             "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "income": 0.629,
+            "inhabitants": [
+              16312,
+              16020,
+              22118,
+              22435,
+              23564,
+              23829,
+              24525,
+              24906
+            ]
           }
         ],
         "1204": [
           {
             "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "income": 0.655,
+            "inhabitants": [
+              16312,
+              16020,
+              22118,
+              22435,
+              23564,
+              23829,
+              24525,
+              24906
+            ]
           }
         ],
         "1205": [
           {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.049
+          },
+          {
+            "topic": "feelings change",
+            "target": 10654,
+            "target name": "Barwoud Buk",
+            "state": "solid love",
+            "relationship": 10656
+          },
+          {
             "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "income": 0.635,
+            "inhabitants": [
+              16312,
+              16020,
+              22118,
+              22435,
+              23564,
+              23829,
+              24525,
+              24906
+            ]
           }
         ],
         "1206": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "neglected"
           }
         ],
         "1207": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "neglected"
           }
         ],
         "1208": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "neglected"
           }
         ],
         "1209": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "neglected"
           }
         ],
         "1210": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "new relationship",
+            "key": 15778,
+            "people": [
+              10655,
+              15776
+            ],
+            "people names": [
+              "Gertrudis Zassen",
+              "Herlewin Buk"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1211": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "neglected"
           }
         ],
         "1212": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "new relationship",
+            "key": 16314,
+            "people": [
+              10655,
+              16312
+            ],
+            "people names": [
+              "Gertrudis Zassen",
+              "Heylewigis Buk"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
           }
         ]
       }
@@ -250,11 +331,11 @@
       "section": "stDe Tuyt.se1.c0",
       "street": "De Tuyt",
       "neighborhood": "agnesbuurt",
-      "unique id": 285
+      "unique id": 286
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
         10656
       ]

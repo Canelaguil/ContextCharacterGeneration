@@ -1,32 +1,32 @@
 {
   "11942": {
     "alive": false,
-    "name": "Segherarden",
-    "surname": "",
-    "full name": "Segherarden",
+    "name": "Ermerut",
+    "surname": "Naghel",
+    "full name": "Ermerut Naghel",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.1,
-      "romantic interest": 0.91,
-      "sex interest": 0.7,
-      "gender expression": 0.035,
+      "sexuality": 0.032,
+      "romantic interest": 0.563,
+      "sex interest": 0.886,
+      "gender expression": 0.075,
       "sex": "f"
     },
-    "age": 53,
-    "birth year": 1153,
+    "age": 28,
+    "birth year": 1175,
     "sex": "f",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.127,
-      "nice-nasty": 0.482,
-      "honest-false": 0.557
+      "lawful-chaotic": 0.21,
+      "nice-nasty": 0.94,
+      "honest-false": 0.0
     },
     "attitude": {
-      "outgoing": 0.535,
-      "dream": 0.513
+      "outgoing": 0.35,
+      "dream": 0.068
     },
     "homsoc": {
       "means": {
@@ -34,20 +34,51 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "neglected"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.09,
-        "gender expression expression": 0.014
+        "sexuality expression": 0.018,
+        "gender expression expression": 0.0
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13027": {
+          "key": 13027,
+          "name": "Ramont Magnus",
+          "age": 48,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Ermerut (11942)",
+            "father": "Assceric (11941)"
+          }
+        },
+        "13455": {
+          "key": 13455,
+          "name": "Firiin Magnus",
+          "age": 42,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Ermerut (11942)",
+            "father": "Assceric (11941)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11943
-        ]
+        ],
+        "child": {
+          "birth": [
+            13029,
+            13457
+          ]
+        }
       }
     },
     "occupation": {
@@ -60,16 +91,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 3,
-      "eye_color": "brown",
+      "skin_color": 6,
+      "eye_color": "blue",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
-        "S",
-        "C"
+        "C",
+        "S"
       ],
-      "health": 0.0,
-      "fertility": 0.623,
+      "health": 0.702,
+      "fertility": 0.645,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -81,33 +112,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.66
+            "new_health": 0.702
           },
           "death": false
-        },
-        "1203": {
-          "health": {
-            "change": true,
-            "value_change": -0.267,
-            "new_health": 0.393
-          },
-          "death": false
-        },
-        "1204": {
-          "health": {
-            "change": true,
-            "value_change": -0.252,
-            "new_health": 0.141
-          },
-          "death": false
-        },
-        "1205": {
-          "health": {
-            "change": true,
-            "value_change": -0.141,
-            "new_health": 0.0
-          },
-          "death": true
         }
       },
       "events": {
@@ -120,8 +127,8 @@
               11942
             ],
             "people names": [
-              "Jiusippus Blauoets",
-              "Segherarden"
+              "Assceric Magnus",
+              "Ermerut Naghel"
             ],
             "label": "spouse",
             "committed": true
@@ -131,20 +138,56 @@
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stCromme straet.se1.c1",
-              "street": "Cromme straet",
+              "section": "stDe Vyver.se3.c1",
+              "street": "De Vyver",
               "neighborhood": "denhof",
-              "unique id": 875
+              "unique id": 865
             }
+          },
+          {
+            "topic": "feelings change",
+            "target": 11941,
+            "target name": "Assceric Magnus",
+            "state": "out of love",
+            "relationship": 11943
           }
         ],
         "1201": [
           {
-            "topic": "feelings change",
-            "target": 11941,
-            "target name": "Jiusippus Blauoets",
-            "state": "solid love",
-            "relationship": 11943
+            "topic": "new relationship",
+            "key": 13029,
+            "people": [
+              11942,
+              13027
+            ],
+            "people names": [
+              "Ermerut Naghel",
+              "Ramont Magnus"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 13457,
+            "people": [
+              11942,
+              13455
+            ],
+            "people names": [
+              "Ermerut Naghel",
+              "Firiin Magnus"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
           }
         ]
       }
@@ -153,10 +196,10 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stCromme straet.se1.c1",
-      "street": "Cromme straet",
+      "section": "stDe Vyver.se3.c1",
+      "street": "De Vyver",
       "neighborhood": "denhof",
-      "unique id": 875
+      "unique id": 865
     },
     "relationship status": {
       "taken": true,

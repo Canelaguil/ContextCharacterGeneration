@@ -21,7 +21,10 @@ class Home(Agent):
 
         # Inhabitants
         self.no_inhabitants = 0
+        self.inhabitant_tracking = []
         self.inhabitants = []
+        self.people_to_add_this_round = []
+        self.people_to_remove_this_round = []
         self.caretakers = []
         self.care_dependants = []
 
@@ -46,24 +49,8 @@ class Home(Agent):
         return
     
     def houses(self):
-        self.income = self.process_income_reports()
-        self.income_needed = self.no_inhabitants * self.person_percentage
-        if self.income_needed > self.income:
-            self.not_enough_income()
-            log = {
-                'topic' : 'not enough income',
-                'income' : self.income,
-                'income needed' : round(self.income_needed, 3),
-                'no inhabitants' : self.no_inhabitants,
-                'inhabitants' : self.inhabitants
-            }
-            self.log.add_log(log)
-            
-        
-        if self.care_dependants != [] and self.caretakers == []:
-            self.find_caretaker()
-
-    def post_processing(self):
+        if self.no_inhabitants == 0:
+            return
         msg = self.tasks.get()
         while msg != None:
             task = msg['topic']
@@ -80,6 +67,41 @@ class Home(Agent):
             else:
                 log_error('did not recognize home task', msg)
             msg = self.tasks.get()
+        
+        self.income = self.process_income_reports()
+        self.income_needed = self.no_inhabitants * self.person_percentage
+        if self.income_needed > self.income:
+            self.not_enough_income()
+            log = {
+                'topic' : 'not enough income',
+                'income' : self.income,
+                'income needed' : round(self.income_needed, 3),
+                'no inhabitants' : self.no_inhabitants,
+                'inhabitants' : self.inhabitants
+            }
+            self.log.add_log(log)
+            
+        
+        if self.care_dependants != [] and self.caretakers == []:
+            log = {
+                'topic' : 'needs new caretaker', 
+                'care dependants' : self.care_dependants,
+                'caretakers' : self.caretakers,
+                'inhabitants' : self.inhabitants,
+                'income' : self.income,
+                'income needed' : round(self.income_needed, 3),
+            }
+            self.log.add_log(log)
+            self.find_caretaker()
+
+    def post_processing(self):
+        
+
+        self.inhabitant_tracking.append((self.no_inhabitants, self.inhabitants))
+        # for p in self.people_to_add_this_round:
+        #     self.add_person(p)
+        # for p2 in self.people_to_remove_this_round:
+        #     self.remove_person(p2)
 
     """
     UPDATE FUNCTIONS 
@@ -100,15 +122,19 @@ class Home(Agent):
         self.income_reports.append(ic)
 
         if person_info['age'] < 14:
-            self.care_dependants.append(person_info['key'])
+            self.add_care_dependant(person_info['key'])
 
     def remove_person(self, person_info):
         if person_info['key'] in self.inhabitants:
             # print('here')
             self.no_inhabitants -= 1
             self.inhabitants.remove(person_info['key'])
+            if person_info['key'] in self.care_dependants:
+                self.care_dependants.remove(person_info['key'])
+            elif person_info['key'] in self.caretakers:
+                self.caretakers.remove(person_info['key'])
         else:
-            log_error('home remove error', {'person' : person_info, 'house' : self.info()})
+            log_error('home remove error', {'person' : person_info, 'house' : self.address()})
 
     def add_care_dependant(self, key):
         if key not in self.care_dependants:
@@ -123,6 +149,7 @@ class Home(Agent):
                 log_error('I dont even go here', [key, self.unique_id])
                 return
             self.care_dependants.remove(key)
+            # print('removed')
 
         # if there are caretakers
         if self.care_dependants == [] and self.caretakers != []:
@@ -218,6 +245,7 @@ class Home(Agent):
                 best_candidate = i
                 best_age = candidate['age']
                 best_sex = candidate['sex']
+                # beautify_print(candidate)
 
 
         if best_candidate != None:
@@ -237,17 +265,23 @@ class Home(Agent):
             self.caretakers.append(best_candidate)
         else:
             # can we assume there'd be enough income to provide alternative childcare?
-            if (self.income - self.income_needed) <= (len(self.care_dependants) * 0.05):
+            if (self.income - self.income_needed) >= (len(self.care_dependants) * 0.05):
                 msg = {
                     'topic' : 'neglected',
                 }
                 self.notify_care_dependants(msg)
-                log_error('no possible caretaker', self.info())
+                # log_error('no possible caretaker', self.info())
+                # if self.income_class[0] > 2:                    
+                #     print(self.care_dependants)
 
     """
     INFO FUNCTIONS 
     """
     def get_my_children(self, person_info):
+        """
+        Get all children of person living in the house (used eg when a parent moves
+        in with a new spouse).
+        """
         children = []
         for key, child in person_info['network']['children'].items():
             if key in self.inhabitants:
@@ -297,7 +331,10 @@ class Home(Agent):
             'key' : self.key, 
             'unique id' : self.unique_id,
             'no inhabitants' : self.no_inhabitants,
+            'inhabitant history' : self.inhabitant_tracking,
             'inhabitants' : self.get_inhabitants(),
+            'caretakers' : self.caretakers,
+            'care dependants' : self.care_dependants,
             'log' : self.log.get_logs()
         }
  

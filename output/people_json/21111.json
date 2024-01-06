@@ -1,50 +1,52 @@
 {
   "21111": {
-    "alive": true,
-    "name": "Albertus",
+    "alive": false,
+    "name": "Walburgis",
     "surname": "",
-    "full name": "Albertus",
+    "full name": "Walburgis",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.036,
-      "romantic interest": 0.715,
-      "sex interest": 0.836,
-      "gender expression": 0.0,
-      "sex": "m"
+      "sexuality": 0.08,
+      "romantic interest": 0.46,
+      "sex interest": 0.717,
+      "gender expression": 0.278,
+      "sex": "f"
     },
-    "age": 15,
+    "age": 4,
     "birth year": 1234,
-    "sex": "m",
+    "sex": "f",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.846,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.151,
+      "nice-nasty": 0.307,
+      "honest-false": 0.189
     },
     "attitude": {
-      "outgoing": 0.834,
-      "dream": 0.524
+      "outgoing": 0.51,
+      "dream": 0.564
     },
     "homsoc": {
       "means": {
         "independent": false,
-        "taken_care_of": true,
+        "taken_care_of": false,
         "caretaker": true,
         "needs_care": true,
-        "flags": []
+        "flags": [
+          "neglected"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.024,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.047,
+        "gender expression expression": 0.062
       }
     },
     "network": {
       "parents": {
-        "mother": "Ymmekine (13553)",
-        "father": "Gilis (13170)"
+        "mother": "Scilla (14983)",
+        "father": "Wellinus (15415)"
       },
       "children": {},
       "relationship keys": {
@@ -55,7 +57,11 @@
         "sibling": [
           21114,
           21115,
-          22732
+          21387
+        ],
+        "half-sibling": [
+          21181,
+          21182
         ]
       }
     },
@@ -69,16 +75,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 1,
-      "eye_color": "blue",
+      "skin_color": 6,
+      "eye_color": "brown",
       "hair_color": "dark brown",
       "hair_color_code": 1,
       "hair_type": [
-        "C",
+        "S",
         "C"
       ],
-      "health": 0.663,
-      "fertility": 0.583,
+      "health": 0.36,
+      "fertility": 0.603,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -88,11 +94,27 @@
       "health": {
         "1235": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.663
+            "change": true,
+            "value_change": -0.27,
+            "new_health": 0.36
           },
           "death": false
+        },
+        "1236": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.36
+          },
+          "death": false
+        },
+        "1238": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.36
+          },
+          "death": true
         }
       },
       "events": {
@@ -102,44 +124,45 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stCingel.se5.c2",
-              "street": "Cingel",
-              "neighborhood": "agnesbuurt",
-              "unique id": 312
+              "section": "stDen Hof.se1.c2",
+              "street": "Den Hof",
+              "neighborhood": "denhof",
+              "unique id": 938
             }
+          }
+        ],
+        "1235": [
+          {
+            "topic": "new relationship",
+            "key": 21387,
+            "people": [
+              21111,
+              21382
+            ],
+            "people names": [
+              "Walburgis",
+              "Walramus"
+            ],
+            "label": "sibling",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1236": [
           {
-            "topic": "person died",
-            "person": {
-              "key": 20523,
-              "name": "Dodo Gilisszoon",
-              "age": 3,
-              "alive": false,
-              "sex": "m",
-              "parents": {
-                "mother": "Ymmekine (13553)",
-                "father": "Gilis (13170)"
-              }
-            },
-            "label": "sibling"
+            "topic": "neglected"
           }
         ],
-        "1239": [
+        "1237": [
           {
-            "topic": "new relationship",
-            "key": 22732,
-            "people": [
-              21111,
-              22727
-            ],
-            "people names": [
-              "Albertus",
-              "Jdir Gilisszoon"
-            ],
-            "label": "sibling",
-            "committed": false
+            "topic": "neglected"
+          }
+        ],
+        "1238": [
+          {
+            "topic": "neglected"
           }
         ]
       }
@@ -148,10 +171,10 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stCingel.se5.c2",
-      "street": "Cingel",
-      "neighborhood": "agnesbuurt",
-      "unique id": 312
+      "section": "stDen Hof.se1.c2",
+      "street": "Den Hof",
+      "neighborhood": "denhof",
+      "unique id": 938
     },
     "relationship status": {
       "taken": false,
@@ -159,7 +182,9 @@
       "relationships": [
         21114,
         21115,
-        22732
+        21181,
+        21182,
+        21387
       ]
     }
   }

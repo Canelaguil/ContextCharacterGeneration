@@ -1,77 +1,111 @@
 {
   "11636": {
     "alive": false,
-    "name": "Baua",
-    "surname": "Ulf",
-    "full name": "Baua Ulf",
+    "name": "Reynwi",
+    "surname": "Donevoet",
+    "full name": "Reynwi Donevoet",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.026,
-      "romantic interest": 0.459,
-      "sex interest": 0.65,
-      "gender expression": 0.315,
+      "sexuality": 0.045,
+      "romantic interest": 0.893,
+      "sex interest": 0.645,
+      "gender expression": 0.008,
       "sex": "f"
     },
-    "age": 23,
-    "birth year": 1181,
+    "age": 52,
+    "birth year": 1170,
     "sex": "f",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.91,
-      "nice-nasty": 0.566,
-      "honest-false": 0.608
+      "lawful-chaotic": 0.7,
+      "nice-nasty": 0.713,
+      "honest-false": 0.398
     },
     "attitude": {
-      "outgoing": 0.264,
-      "dream": 0.518
+      "outgoing": 0.029,
+      "dream": 0.363
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
         "flags": [
-          "starving"
+          "neglected"
         ]
       },
       "expression": {
-        "sexuality expression": 0.017,
-        "gender expression expression": 0.114
+        "sexuality expression": 0.039,
+        "gender expression expression": 0.002
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "15120": {
+          "key": 15120,
+          "name": "Wendelmodis Sifridussdochter",
+          "age": 42,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Reynwi (11636)",
+            "father": "Sifridus (11635)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11637
-        ]
+        ],
+        "child": {
+          "birth": [
+            15122
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.602,
+      "all_incomes": [
+        0.897,
+        0.928,
+        0.788,
+        0.651,
+        0.713,
+        0.726,
+        0.756,
+        0.754,
+        0.629,
+        0.679,
+        0.781,
+        0.602
+      ],
+      "job": {
+        "lawful": false,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 0,
-      "eye_color": "green",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "skin_color": 1,
+      "eye_color": "brown",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "C",
         "C"
       ],
-      "health": 0.293,
-      "fertility": 0.507,
+      "health": 0.0,
+      "fertility": 0.582,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -83,23 +117,47 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.631
+            "new_health": 0.545
           },
           "death": false
         },
-        "1202": {
+        "1209": {
           "health": {
             "change": true,
-            "value_change": -0.338,
-            "new_health": 0.293
+            "value_change": -0.271,
+            "new_health": 0.274
           },
           "death": false
         },
-        "1203": {
+        "1210": {
+          "health": {
+            "change": true,
+            "value_change": -0.146,
+            "new_health": 0.128
+          },
+          "death": false
+        },
+        "1211": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.293
+            "new_health": 0.128
+          },
+          "death": false
+        },
+        "1220": {
+          "health": {
+            "change": true,
+            "value_change": -0.101,
+            "new_health": 0.027
+          },
+          "death": false
+        },
+        "1221": {
+          "health": {
+            "change": true,
+            "value_change": -0.027,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -114,8 +172,8 @@
               11636
             ],
             "people names": [
-              "Nannekin Kint",
-              "Baua Ulf"
+              "Sifridus",
+              "Reynwi Donevoet"
             ],
             "label": "spouse",
             "committed": true
@@ -128,40 +186,138 @@
               "section": "stCorte gracht.se1.c2",
               "street": "Corte gracht",
               "neighborhood": "visbuurt",
-              "unique id": 732
+              "unique id": 727
             }
           }
         ],
-        "1201": [
+        "1207": [
+          {
+            "topic": "new relationship",
+            "key": 15122,
+            "people": [
+              11636,
+              15120
+            ],
+            "people names": [
+              "Reynwi Donevoet",
+              "Wendelmodis Sifridussdochter"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.897
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1211": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1212": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1213": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.651
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1214": [
           {
             "topic": "feelings change",
             "target": 11635,
-            "target name": "Nannekin Kint",
-            "state": "out of love",
+            "target name": "Sifridus",
+            "state": "infatuation",
             "relationship": 11637
+          },
+          {
+            "topic": "neglected"
           }
         ],
-        "1203": [
+        "1215": [
           {
-            "key": 11637,
-            "topic": "unmarried"
+            "topic": "feelings change",
+            "target": 11635,
+            "target name": "Sifridus",
+            "state": "solid love",
+            "relationship": 11637
           },
           {
-            "topic": "person died",
-            "person": {
-              "key": 11635,
-              "name": "Nannekin Kint",
-              "age": 30,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
+            "topic": "neglected"
+          }
+        ],
+        "1216": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1217": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1218": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.629
           },
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "neglected"
+          }
+        ],
+        "1219": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1220": [
+          {
+            "topic": "feelings change",
+            "target": 11635,
+            "target name": "Sifridus",
+            "state": "out of love",
+            "relationship": 11637
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1221": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.602
+          },
+          {
+            "topic": "neglected"
           }
         ]
       }
@@ -173,11 +329,11 @@
       "section": "stCorte gracht.se1.c2",
       "street": "Corte gracht",
       "neighborhood": "visbuurt",
-      "unique id": 732
+      "unique id": 727
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
         11637
       ]

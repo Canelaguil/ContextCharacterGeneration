@@ -1,75 +1,148 @@
 {
   "10349": {
     "alive": false,
-    "name": "Hodine",
+    "name": "Siburgis",
     "surname": "",
-    "full name": "Hodine",
+    "full name": "Siburgis",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.875,
-      "sex interest": 0.637,
-      "gender expression": 0.07,
+      "sexuality": 0.058,
+      "romantic interest": 0.747,
+      "sex interest": 0.877,
+      "gender expression": 0.0,
       "sex": "f"
     },
-    "age": 55,
-    "birth year": 1154,
+    "age": 33,
+    "birth year": 1179,
     "sex": "f",
     "income class": [
-      0,
-      "working class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.691,
-      "nice-nasty": 0.545,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.276,
+      "nice-nasty": 0.218,
+      "honest-false": 0.793
     },
     "attitude": {
-      "outgoing": 0.556,
-      "dream": 0.427
+      "outgoing": 0.431,
+      "dream": 0.371
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "neglected"
+        ]
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.003
+        "sexuality expression": 0.025,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12756": {
+          "key": 12756,
+          "name": "Bodekine Maerke",
+          "age": 48,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Siburgis (10349)",
+            "father": "Cesarius (10348)"
+          }
+        },
+        "13910": {
+          "key": 13910,
+          "name": "Woutermanne Maerke",
+          "age": 6,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Siburgis (10349)",
+            "father": "Cesarius (10348)"
+          }
+        },
+        "15974": {
+          "key": 15974,
+          "name": "Nellen Asscericsdochter",
+          "age": 14,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Siburgis (10349)",
+            "father": "Assceric (11941)"
+          }
+        },
+        "16233": {
+          "key": 16233,
+          "name": "Sanders Magnus",
+          "age": 38,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Siburgis (10349)",
+            "father": "Assceric (11941)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          10350
-        ]
+          10350,
+          15700
+        ],
+        "child": {
+          "birth": [
+            12758,
+            13912,
+            15976,
+            16235
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        0,
-        "working class"
+        1,
+        "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.687,
+      "all_incomes": [
+        1.043,
+        1.074,
+        0.958,
+        1.067,
+        0.849,
+        0.804,
+        1.106,
+        0.838,
+        0.78,
+        0.616,
+        0.416,
+        0.687
+      ],
+      "job": {
+        "lawful": false,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 4,
+      "skin_color": 5,
       "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
-        "C",
-        "S"
+        "S",
+        "C"
       ],
-      "health": 0.0,
-      "fertility": 0.518,
+      "health": 0.777,
+      "fertility": 0.795,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -81,53 +154,26 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.514
+            "new_health": 0.777
           },
           "death": false
         },
-        "1204": {
+        "1211": {
           "health": {
-            "change": true,
-            "value_change": -0.265,
-            "new_health": 0.249
-          },
-          "death": false
-        },
-        "1205": {
-          "health": {
-            "change": true,
-            "value_change": -0.215,
-            "new_health": 0.034
-          },
-          "death": false
-        },
-        "1206": {
-          "health": {
-            "change": true,
-            "value_change": -0.031,
-            "new_health": 0.003
-          },
-          "death": false
-        },
-        "1207": {
-          "health": {
-            "change": true,
-            "value_change": -0.002,
-            "new_health": 0.001
-          },
-          "death": false
-        },
-        "1208": {
-          "health": {
-            "change": true,
-            "value_change": -0.001,
-            "new_health": 0.0
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.777
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.043
+          },
           {
             "topic": "new relationship",
             "key": 10350,
@@ -136,8 +182,8 @@
               10349
             ],
             "people names": [
-              "Reynerus Spirinx",
-              "Hodine"
+              "Cesarius Maerke",
+              "Siburgis"
             ],
             "label": "spouse",
             "committed": true
@@ -145,49 +191,226 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stSt. Joris straet.se1.c0",
-              "street": "St. Joris straet",
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stMuelen straet.se3.c1",
+              "street": "Muelen straet",
               "neighborhood": "jorisbuurt",
-              "unique id": 142
+              "unique id": 158
             }
+          },
+          {
+            "topic": "feelings change",
+            "target": 10348,
+            "target name": "Cesarius Maerke",
+            "state": "out of love",
+            "relationship": 10350
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 12758,
+            "people": [
+              10349,
+              12756
+            ],
+            "people names": [
+              "Siburgis",
+              "Bodekine Maerke"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1202": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.067
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 13912,
+            "people": [
+              10349,
+              13910
+            ],
+            "people names": [
+              "Siburgis",
+              "Woutermanne Maerke"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1205": [
           {
-            "topic": "feelings change",
-            "target": 10348,
-            "target name": "Reynerus Spirinx",
-            "state": "infatuation",
-            "relationship": 10350
+            "topic": "neglected"
+          }
+        ],
+        "1206": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.106
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1207": [
           {
-            "topic": "feelings change",
-            "target": 10348,
-            "target name": "Reynerus Spirinx",
-            "state": "solid love",
-            "relationship": 10350
+            "key": 10350,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10348,
+              "name": "Cesarius Maerke",
+              "age": 53,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.616
+          },
+          {
+            "topic": "new relationship",
+            "key": 15700,
+            "people": [
+              11941,
+              10349
+            ],
+            "people names": [
+              "Assceric Magnus",
+              "Siburgis"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stDe Vyver.se3.c1",
+              "street": "De Vyver",
+              "neighborhood": "denhof",
+              "unique id": 865
+            }
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.416
+          },
+          {
+            "topic": "new relationship",
+            "key": 15976,
+            "people": [
+              10349,
+              15974
+            ],
+            "people names": [
+              "Siburgis",
+              "Nellen Asscericsdochter"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1211": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 13910,
+              "name": "Woutermanne Maerke",
+              "age": 6,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Siburgis (10349)",
+                "father": "Cesarius (10348)"
+              }
+            },
+            "label": "child"
+          },
+          {
+            "topic": "new relationship",
+            "key": 16235,
+            "people": [
+              10349,
+              16233
+            ],
+            "people names": [
+              "Siburgis",
+              "Sanders Magnus"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
           }
         ]
       }
     },
     "key": 10349,
     "home": {
-      "income class": 0,
-      "income class label": "working class",
-      "section": "stSt. Joris straet.se1.c0",
-      "street": "St. Joris straet",
-      "neighborhood": "jorisbuurt",
-      "unique id": 142
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stDe Vyver.se3.c1",
+      "street": "De Vyver",
+      "neighborhood": "denhof",
+      "unique id": 865
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        10350
+        10350,
+        15700
       ]
     }
   }

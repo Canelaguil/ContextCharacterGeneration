@@ -1,32 +1,32 @@
 {
   "10103": {
     "alive": false,
-    "name": "Ricmoden",
-    "surname": "Huuchals",
-    "full name": "Ricmoden Huuchals",
+    "name": "Lielde",
+    "surname": "",
+    "full name": "Lielde",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.028,
-      "romantic interest": 0.789,
-      "sex interest": 0.809,
-      "gender expression": 0.127,
+      "sexuality": 0.059,
+      "romantic interest": 0.654,
+      "sex interest": 0.585,
+      "gender expression": 0.213,
       "sex": "f"
     },
-    "age": 53,
-    "birth year": 1155,
+    "age": 48,
+    "birth year": 1163,
     "sex": "f",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.611,
-      "nice-nasty": 0.488,
-      "honest-false": 0.024
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.702,
+      "honest-false": 0.829
     },
     "attitude": {
-      "outgoing": 0.767,
-      "dream": 0.0
+      "outgoing": 0.422,
+      "dream": 0.223
     },
     "homsoc": {
       "means": {
@@ -34,42 +34,72 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving",
+          "neglected"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.021,
-        "gender expression expression": 0.096
+        "sexuality expression": 0.049,
+        "gender expression expression": 0.167
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13122": {
+          "key": 13122,
+          "name": "Diewiven",
+          "age": 38,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Lielde (10103)",
+            "father": "Gherung (10102)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          10104
-        ]
+          10104,
+          15927
+        ],
+        "child": {
+          "birth": [
+            13124
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         1,
         "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.127,
+      "all_incomes": [
+        0.84,
+        0.954,
+        0.862,
+        1.127
+      ],
+      "job": {
+        "lawful": true,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 2,
+      "skin_color": 0,
       "eye_color": "brown",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
         "S",
         "S"
       ],
-      "health": 0.0,
-      "fertility": 0.589,
+      "health": 0.675,
+      "fertility": 0.65,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -81,31 +111,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.632
+            "new_health": 0.675
           },
           "death": false
         },
-        "1205": {
+        "1210": {
           "health": {
-            "change": true,
-            "value_change": -0.198,
-            "new_health": 0.434
-          },
-          "death": false
-        },
-        "1206": {
-          "health": {
-            "change": true,
-            "value_change": -0.25,
-            "new_health": 0.184
-          },
-          "death": false
-        },
-        "1207": {
-          "health": {
-            "change": true,
-            "value_change": -0.184,
-            "new_health": 0.0
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.675
           },
           "death": true
         }
@@ -120,8 +134,8 @@
               10103
             ],
             "people names": [
-              "Harderico",
-              "Ricmoden Huuchals"
+              "Gherung",
+              "Lielde"
             ],
             "label": "spouse",
             "committed": true
@@ -131,11 +145,123 @@
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stSlyck straet.se1.c1",
+              "section": "stSlyck straet.se3.c1",
               "street": "Slyck straet",
               "neighborhood": "varkensbuurt",
-              "unique id": 37
+              "unique id": 46
             }
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 13124,
+            "people": [
+              10103,
+              13122
+            ],
+            "people names": [
+              "Lielde",
+              "Diewiven"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1206": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.84
+          },
+          {
+            "key": 10104,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10102,
+              "name": "Gherung",
+              "age": 52,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.127
+          },
+          {
+            "topic": "new relationship",
+            "key": 15927,
+            "people": [
+              11686,
+              10103
+            ],
+            "people names": [
+              "Heyman",
+              "Lielde"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stMooierstraet.se3.c1",
+              "street": "Mooierstraet",
+              "neighborhood": "visbuurt",
+              "unique id": 750
+            }
+          },
+          {
+            "topic": "neglected"
           }
         ]
       }
@@ -144,16 +270,17 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stSlyck straet.se1.c1",
-      "street": "Slyck straet",
-      "neighborhood": "varkensbuurt",
-      "unique id": 37
+      "section": "stMooierstraet.se3.c1",
+      "street": "Mooierstraet",
+      "neighborhood": "visbuurt",
+      "unique id": 750
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        10104
+        10104,
+        15927
       ]
     }
   }

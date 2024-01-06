@@ -1,53 +1,99 @@
 {
   "11623": {
     "alive": false,
-    "name": "Wicghard",
-    "surname": "Capoen",
-    "full name": "Wicghard Capoen",
+    "name": "Kerstiaen",
+    "surname": "Borlutte",
+    "full name": "Kerstiaen Borlutte",
     "born this way": {
-      "sexuality label": "bi",
-      "sexuality": 0.45,
-      "romantic interest": 0.317,
-      "sex interest": 0.78,
-      "gender expression": 0.203,
+      "sexuality label": "gay",
+      "sexuality": 0.999,
+      "romantic interest": 0.562,
+      "sex interest": 0.549,
+      "gender expression": 0.367,
       "sex": "m"
     },
-    "age": 55,
-    "birth year": 1151,
+    "age": 53,
+    "birth year": 1170,
     "sex": "m",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.734,
-      "nice-nasty": 0.516,
-      "honest-false": 0.261
+      "lawful-chaotic": 0.668,
+      "nice-nasty": 0.065,
+      "honest-false": 0.721
     },
     "attitude": {
-      "outgoing": 0.265,
-      "dream": 0.301
+      "outgoing": 0.4,
+      "dream": 0.261
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving",
+          "neglected"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.295,
-        "gender expression expression": 0.071
+        "sexuality expression": 0.596,
+        "gender expression expression": 0.232
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12962": {
+          "key": 12962,
+          "name": "Jacob Borlutte",
+          "age": 18,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Lelien (11624)",
+            "father": "Kerstiaen (11623)"
+          }
+        },
+        "13763": {
+          "key": 13763,
+          "name": "Ermegardis Borlutte",
+          "age": 26,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Lelien (11624)",
+            "father": "Kerstiaen (11623)"
+          }
+        },
+        "17371": {
+          "key": 17371,
+          "name": "Alene Borlutte",
+          "age": 32,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Marie (10694)",
+            "father": "Kerstiaen (11623)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          11625
-        ]
+          11625,
+          15436,
+          17028
+        ],
+        "child": {
+          "birth": [
+            12963,
+            13764,
+            17372
+          ]
+        }
       }
     },
     "occupation": {
@@ -56,32 +102,49 @@
         2,
         "middle class"
       ],
-      "income": 1.499,
+      "income": 0.234,
       "all_incomes": [
-        1.006,
-        1.499,
-        1.499,
-        1.499,
-        1.275,
-        0.977,
-        1.499
+        0.799,
+        0.62,
+        0.518,
+        0.332,
+        0.046,
+        0.027,
+        0.123,
+        0.281,
+        0.154,
+        0.423,
+        0.264,
+        0.174,
+        0.123,
+        0.114,
+        0.026,
+        0.0,
+        0.0,
+        0.17,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.234
       ],
       "job": {
-        "lawful": false,
+        "lawful": true,
         "honest": false
       }
     },
     "genetics": {
-      "skin_color": 5,
+      "skin_color": 1,
       "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
-        "C",
+        "S",
         "S"
       ],
       "health": 0.0,
-      "fertility": 0.707,
+      "fertility": 0.704,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -93,46 +156,30 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.732
+            "new_health": 0.659
           },
           "death": false
         },
-        "1201": {
+        "1220": {
           "health": {
             "change": true,
-            "value_change": -0.169,
-            "new_health": 0.563
+            "value_change": -0.287,
+            "new_health": 0.372
           },
           "death": false
         },
-        "1202": {
+        "1221": {
           "health": {
             "change": true,
-            "value_change": -0.306,
-            "new_health": 0.257
+            "value_change": -0.234,
+            "new_health": 0.138
           },
           "death": false
         },
-        "1203": {
+        "1222": {
           "health": {
             "change": true,
-            "value_change": -0.197,
-            "new_health": 0.06
-          },
-          "death": false
-        },
-        "1204": {
-          "health": {
-            "change": true,
-            "value_change": -0.047,
-            "new_health": 0.013
-          },
-          "death": false
-        },
-        "1205": {
-          "health": {
-            "change": true,
-            "value_change": -0.013,
+            "value_change": -0.138,
             "new_health": 0.0
           },
           "death": true
@@ -143,7 +190,12 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.006
+            "income": 0.799
+          },
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.62
           },
           {
             "topic": "new relationship",
@@ -153,8 +205,8 @@
               11624
             ],
             "people names": [
-              "Wicghard Capoen",
-              "Cecilia"
+              "Kerstiaen Borlutte",
+              "Lelien Bove"
             ],
             "label": "spouse",
             "committed": true
@@ -164,18 +216,304 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stCorte gracht.se1.c2",
-              "street": "Corte gracht",
+              "section": "stDie lange straet3.se9.c2",
+              "street": "Die lange straet3",
               "neighborhood": "visbuurt",
-              "unique id": 727
+              "unique id": 723
             }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 12963,
+            "people": [
+              11623,
+              12962
+            ],
+            "people names": [
+              "Kerstiaen Borlutte",
+              "Jacob Borlutte"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1202": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.332
+          }
+        ],
+        "1203": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.046
+          },
+          {
+            "topic": "new relationship",
+            "key": 13764,
+            "people": [
+              11623,
+              13763
+            ],
+            "people names": [
+              "Kerstiaen Borlutte",
+              "Ermegardis Borlutte"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.046,
+            "inhabitants": []
+          }
+        ],
+        "1204": [
+          {
+            "topic": "not enough income",
+            "income": 0.027,
+            "inhabitants": []
           }
         ],
         "1205": [
           {
+            "key": 11625,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11624,
+              "name": "Lelien Bove",
+              "age": 30,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.123,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0.281,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
             "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.499
+            "notice": "hardly any income",
+            "income": 0.154
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.154,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "new relationship",
+            "key": 15436,
+            "people": [
+              11623,
+              10019
+            ],
+            "people names": [
+              "Kerstiaen Borlutte",
+              "Rabburgis"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.423,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.264
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.264,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.174
+          },
+          {
+            "topic": "feelings change",
+            "target": 10019,
+            "target name": "Rabburgis",
+            "state": "solid love",
+            "relationship": 15436
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.174,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "key": 15436,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10019,
+              "name": "Rabburgis",
+              "age": 48,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.123,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0.114,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0.026,
+            "inhabitants": []
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1215": [
+          {
+            "topic": "new relationship",
+            "key": 17028,
+            "people": [
+              11623,
+              10694
+            ],
+            "people names": [
+              "Kerstiaen Borlutte",
+              "Marie Smicke"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1216": [
+          {
+            "topic": "feelings change",
+            "target": 10694,
+            "target name": "Marie Smicke",
+            "state": "solid love",
+            "relationship": 17028
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.17,
+            "inhabitants": []
+          }
+        ],
+        "1217": [
+          {
+            "topic": "new relationship",
+            "key": 17372,
+            "people": [
+              11623,
+              17371
+            ],
+            "people names": [
+              "Kerstiaen Borlutte",
+              "Alene Borlutte"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1218": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1219": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1220": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12962,
+              "name": "Jacob Borlutte",
+              "age": 18,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Lelien (11624)",
+                "father": "Kerstiaen (11623)"
+              }
+            },
+            "label": "child"
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1221": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1222": [
+          {
+            "topic": "neglected"
           }
         ]
       }
@@ -184,16 +522,18 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stCorte gracht.se1.c2",
-      "street": "Corte gracht",
+      "section": "stDie lange straet3.se9.c2",
+      "street": "Die lange straet3",
       "neighborhood": "visbuurt",
-      "unique id": 727
+      "unique id": 723
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        11625
+        11625,
+        15436,
+        17028
       ]
     }
   }

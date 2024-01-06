@@ -1,75 +1,108 @@
 {
   "12041": {
     "alive": false,
-    "name": "Vreile",
-    "surname": "Capoen",
-    "full name": "Vreile Capoen",
+    "name": "Iris",
+    "surname": "",
+    "full name": "Iris",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.093,
-      "romantic interest": 0.765,
-      "sex interest": 0.717,
-      "gender expression": 0.12,
+      "sexuality": 0.026,
+      "romantic interest": 0.934,
+      "sex interest": 0.456,
+      "gender expression": 0.186,
       "sex": "f"
     },
-    "age": 53,
-    "birth year": 1153,
+    "age": 44,
+    "birth year": 1173,
     "sex": "f",
     "income class": [
-      3,
-      "upper middle class"
+      2,
+      "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.397,
-      "nice-nasty": 0.15,
-      "honest-false": 0.353
+      "lawful-chaotic": 0.93,
+      "nice-nasty": 0.805,
+      "honest-false": 0.291
     },
     "attitude": {
-      "outgoing": 0.335,
-      "dream": 0.247
+      "outgoing": 0.476,
+      "dream": 0.216
     },
     "homsoc": {
       "means": {
         "independent": true,
-        "taken_care_of": false,
-        "caretaker": false,
+        "taken_care_of": true,
+        "caretaker": true,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving",
+          "caretaker",
+          "neglected"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.037,
-        "gender expression expression": 0.043
+        "sexuality expression": 0.014,
+        "gender expression expression": 0.061
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13473": {
+          "key": 13473,
+          "name": "Vandelghis Huntekin",
+          "age": 47,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Iris (12041)",
+            "father": "Geraldus (12040)"
+          }
+        },
+        "14214": {
+          "key": 14214,
+          "name": "Bertrade Huntekin",
+          "age": 0,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Iris (12041)",
+            "father": "Geraldus (12040)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           12042
-        ]
+        ],
+        "child": {
+          "birth": [
+            13475,
+            14216
+          ]
+        }
       }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        3,
-        "upper middle class"
+        2,
+        "middle class"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 9,
-      "eye_color": "brown",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "skin_color": 4,
+      "eye_color": "green",
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
       "hair_type": [
-        "C",
+        "S",
         "S"
       ],
-      "health": 0.0,
-      "fertility": 0.685,
+      "health": 0.777,
+      "fertility": 0.846,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -81,31 +114,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.625
+            "new_health": 0.777
           },
           "death": false
         },
-        "1203": {
+        "1216": {
           "health": {
-            "change": true,
-            "value_change": -0.253,
-            "new_health": 0.372
-          },
-          "death": false
-        },
-        "1204": {
-          "health": {
-            "change": true,
-            "value_change": -0.266,
-            "new_health": 0.106
-          },
-          "death": false
-        },
-        "1205": {
-          "health": {
-            "change": true,
-            "value_change": -0.106,
-            "new_health": 0.0
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.777
           },
           "death": true
         }
@@ -120,8 +137,8 @@
               12041
             ],
             "people names": [
-              "Eltetus",
-              "Vreile Capoen"
+              "Geraldus Huntekin",
+              "Iris"
             ],
             "label": "spouse",
             "committed": true
@@ -129,38 +146,231 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stCromme straet.se7.c3",
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stCromme straet.se5.c2",
               "street": "Cromme straet",
               "neighborhood": "denhof",
-              "unique id": 920
+              "unique id": 907
             }
           }
         ],
-        "1201": [
+        "1202": [
           {
-            "topic": "feelings change",
-            "target": 12040,
-            "target name": "Eltetus",
-            "state": "solid love",
-            "relationship": 12042
+            "topic": "new relationship",
+            "key": 13475,
+            "people": [
+              12041,
+              13473
+            ],
+            "people names": [
+              "Iris",
+              "Vandelghis Huntekin"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 14216,
+            "people": [
+              12041,
+              14214
+            ],
+            "people names": [
+              "Iris",
+              "Bertrade Huntekin"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1205": [
+          {
+            "key": 12042,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12040,
+              "name": "Geraldus Huntekin",
+              "age": 54,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 14214,
+              "name": "Bertrade Huntekin",
+              "age": 0,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Iris (12041)",
+                "father": "Geraldus (12040)"
+              }
+            },
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              18264,
+              19606
+            ]
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          },
+          {
+            "topic": "new caretaker",
+            "person": 12041
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              18264,
+              19606
+            ]
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              18264,
+              19606
+            ]
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              18264,
+              19606
+            ]
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              18264,
+              19606
+            ]
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              18264,
+              19606
+            ]
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              18264,
+              19606
+            ]
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              18264,
+              19606
+            ]
+          }
+        ],
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              18264,
+              19606
+            ]
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              18264,
+              19606
+            ]
+          }
+        ],
+        "1215": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              18264,
+              19606
+            ]
+          }
+        ],
+        "1216": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              18264,
+              19606
+            ]
           }
         ]
       }
     },
     "key": 12041,
     "home": {
-      "income class": 3,
-      "income class label": "upper middle class",
-      "section": "stCromme straet.se7.c3",
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stCromme straet.se5.c2",
       "street": "Cromme straet",
       "neighborhood": "denhof",
-      "unique id": 920
+      "unique id": 907
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         12042
       ]

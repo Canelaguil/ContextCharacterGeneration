@@ -1,75 +1,147 @@
 {
   "11405": {
     "alive": false,
-    "name": "Katerina",
-    "surname": "Borluet",
-    "full name": "Katerina Borluet",
+    "name": "Saswe",
+    "surname": "Stoerm",
+    "full name": "Saswe Stoerm",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.124,
-      "romantic interest": 0.731,
-      "sex interest": 0.647,
-      "gender expression": 0.018,
+      "sexuality label": "bi",
+      "sexuality": 0.28,
+      "romantic interest": 0.604,
+      "sex interest": 0.504,
+      "gender expression": 0.621,
       "sex": "f"
     },
-    "age": 49,
-    "birth year": 1153,
+    "age": 59,
+    "birth year": 1171,
     "sex": "f",
     "income class": [
-      2,
-      "middle class"
+      3,
+      "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.39,
-      "honest-false": 0.579
+      "lawful-chaotic": 0.379,
+      "nice-nasty": 0.606,
+      "honest-false": 0.915
     },
     "attitude": {
-      "outgoing": 0.18,
-      "dream": 0.386
+      "outgoing": 0.318,
+      "dream": 0.391
     },
     "homsoc": {
       "means": {
         "independent": true,
-        "taken_care_of": false,
-        "caretaker": false,
+        "taken_care_of": true,
+        "caretaker": true,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving",
+          "caretaker",
+          "neglected"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.041,
-        "gender expression expression": 0.008
+        "sexuality expression": 0.111,
+        "gender expression expression": 0.307
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12526": {
+          "key": 12526,
+          "name": "Ydier",
+          "age": 49,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Saswe (11405)",
+            "father": "Egbertus (11404)"
+          }
+        },
+        "13363": {
+          "key": 13363,
+          "name": "Aghata Egbertussdochter",
+          "age": 33,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Saswe (11405)",
+            "father": "Egbertus (11404)"
+          }
+        },
+        "15587": {
+          "key": 15587,
+          "name": "Wlfarde van Saswe",
+          "age": 40,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Saswe (11405)",
+            "father": "Egbertus (11404)"
+          }
+        },
+        "15834": {
+          "key": 15834,
+          "name": "Ebram Egbertusszoon",
+          "age": 39,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Saswe (11405)",
+            "father": "Egbertus (11404)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          11406
-        ]
+          11406,
+          17495
+        ],
+        "child": {
+          "birth": [
+            12528,
+            13365,
+            15589,
+            15836
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        2,
-        "middle class"
+        3,
+        "upper middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.01,
+      "all_incomes": [
+        1.19,
+        1.326,
+        1.155,
+        1.064,
+        0.993,
+        0.87,
+        0.899,
+        1.028,
+        1.01
+      ],
+      "job": {
+        "lawful": false,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 0,
+      "skin_color": 4,
       "eye_color": "brown",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
-        "C",
+        "S",
         "C"
       ],
-      "health": 0.618,
-      "fertility": 0.526,
+      "health": 0.77,
+      "fertility": 0.855,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -81,15 +153,31 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.618
+            "new_health": 0.872
           },
           "death": false
         },
-        "1201": {
+        "1227": {
+          "health": {
+            "change": true,
+            "value_change": -0.102,
+            "new_health": 0.77
+          },
+          "death": false
+        },
+        "1228": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.618
+            "new_health": 0.77
+          },
+          "death": false
+        },
+        "1229": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.77
           },
           "death": true
         }
@@ -104,8 +192,8 @@
               11405
             ],
             "people names": [
-              "Jurre Brebart",
-              "Katerina Borluet"
+              "Egbertus",
+              "Saswe Stoerm"
             ],
             "label": "spouse",
             "committed": true
@@ -113,31 +201,321 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stScherbier straet.se1.c2",
-              "street": "Scherbier straet",
+              "income class": 3,
+              "income class label": "upper middle class",
+              "section": "stDie lange straet2.se1.c3",
+              "street": "Die lange straet2",
               "neighborhood": "cingelzuid",
-              "unique id": 626
+              "unique id": 620
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12528,
+            "people": [
+              11405,
+              12526
+            ],
+            "people names": [
+              "Saswe Stoerm",
+              "Ydier"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1201": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 13365,
+            "people": [
+              11405,
+              13363
+            ],
+            "people names": [
+              "Saswe Stoerm",
+              "Aghata Egbertussdochter"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1206": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "new relationship",
+            "key": 15589,
+            "people": [
+              11405,
+              15587
+            ],
+            "people names": [
+              "Saswe Stoerm",
+              "Wlfarde van Saswe"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "new relationship",
+            "key": 15836,
+            "people": [
+              11405,
+              15834
+            ],
+            "people names": [
+              "Saswe Stoerm",
+              "Ebram Egbertusszoon"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1211": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1212": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1213": [
+          {
+            "key": 11406,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11404,
+              "name": "Egbertus",
+              "age": 54,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              12526,
+              18257,
+              19006,
+              19825,
+              15168,
+              22083,
+              23539,
+              17044,
+              24812,
+              20454,
+              25193
+            ]
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": [
+              22083,
+              23539,
+              24812,
+              25193
+            ]
+          },
+          {
+            "topic": "new caretaker",
+            "person": 11405
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              12526,
+              18257,
+              19006,
+              19825,
+              15168,
+              22083,
+              23539,
+              17044,
+              24812,
+              20454,
+              25193
+            ]
+          }
+        ],
+        "1215": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              12526,
+              18257,
+              19006,
+              19825,
+              15168,
+              22083,
+              23539,
+              17044,
+              24812,
+              20454,
+              25193
+            ]
+          }
+        ],
+        "1216": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              12526,
+              18257,
+              19006,
+              19825,
+              15168,
+              22083,
+              23539,
+              17044,
+              24812,
+              20454,
+              25193
+            ]
+          }
+        ],
+        "1217": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              12526,
+              18257,
+              19006,
+              19825,
+              15168,
+              22083,
+              23539,
+              17044,
+              24812,
+              20454,
+              25193
+            ]
+          }
+        ],
+        "1218": [
+          {
+            "topic": "new relationship",
+            "key": 17495,
+            "people": [
+              12151,
+              11405
+            ],
+            "people names": [
+              "Maelkin",
+              "Saswe Stoerm"
+            ],
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1221": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.19
+          },
+          {
+            "key": 17495,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12151,
+              "name": "Maelkin",
+              "age": 53,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          }
+        ],
+        "1228": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.028
           }
         ]
       }
     },
     "key": 11405,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stScherbier straet.se1.c2",
-      "street": "Scherbier straet",
+      "income class": 3,
+      "income class label": "upper middle class",
+      "section": "stDie lange straet2.se1.c3",
+      "street": "Die lange straet2",
       "neighborhood": "cingelzuid",
-      "unique id": 626
+      "unique id": 620
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
-        11406
+        11406,
+        17495
       ]
     }
   }

@@ -1,32 +1,32 @@
 {
   "11783": {
     "alive": false,
-    "name": "Verthwi",
-    "surname": "Mie",
-    "full name": "Verthwi Mie",
+    "name": "Bertrade",
+    "surname": "",
+    "full name": "Bertrade",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.088,
-      "romantic interest": 0.627,
-      "sex interest": 0.451,
-      "gender expression": 0.0,
+      "sexuality": 0.072,
+      "romantic interest": 0.497,
+      "sex interest": 0.514,
+      "gender expression": 0.089,
       "sex": "f"
     },
-    "age": 49,
-    "birth year": 1163,
+    "age": 53,
+    "birth year": 1170,
     "sex": "f",
     "income class": [
       4,
       "nobility"
     ],
     "personality": {
-      "lawful-chaotic": 0.063,
-      "nice-nasty": 0.314,
-      "honest-false": 0.522
+      "lawful-chaotic": 0.324,
+      "nice-nasty": 0.213,
+      "honest-false": 0.938
     },
     "attitude": {
-      "outgoing": 0.562,
-      "dream": 0.661
+      "outgoing": 0.742,
+      "dream": 0.364
     },
     "homsoc": {
       "means": {
@@ -34,20 +34,42 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving",
+          "neglected"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.051,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.035,
+        "gender expression expression": 0.036
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "16726": {
+          "key": 16726,
+          "name": "Moerseil Gole",
+          "age": 9,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Bertrade (11783)",
+            "father": "Rodolf (11347)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          11784
-        ]
+          11784,
+          15695,
+          16478
+        ],
+        "child": {
+          "birth": [
+            16728
+          ]
+        }
       }
     },
     "occupation": {
@@ -56,29 +78,26 @@
         4,
         "nobility"
       ],
-      "income": 1.025,
+      "income": 1.015,
       "all_incomes": [
-        1.051,
-        1.094,
-        1.006,
-        1.025
+        1.015
       ],
       "job": {
         "lawful": false,
-        "honest": true
+        "honest": false
       }
     },
     "genetics": {
-      "skin_color": 6,
+      "skin_color": 8,
       "eye_color": "blue",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
         "S",
-        "S"
+        "C"
       ],
-      "health": 0.679,
-      "fertility": 0.668,
+      "health": 0.0,
+      "fertility": 0.549,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -90,15 +109,31 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.679
+            "new_health": 0.518
           },
           "death": false
         },
-        "1211": {
+        "1220": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.679
+            "change": true,
+            "value_change": -0.388,
+            "new_health": 0.13
+          },
+          "death": false
+        },
+        "1221": {
+          "health": {
+            "change": true,
+            "value_change": -0.099,
+            "new_health": 0.031
+          },
+          "death": false
+        },
+        "1222": {
+          "health": {
+            "change": true,
+            "value_change": -0.031,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -113,8 +148,8 @@
               11783
             ],
             "people names": [
-              "Rembrecht Criec",
-              "Verthwi Mie"
+              "Lammekin Spirinc",
+              "Bertrade"
             ],
             "label": "spouse",
             "committed": true
@@ -127,34 +162,20 @@
               "section": "stMuurhuysen2.se1.c4",
               "street": "Muurhuysen2",
               "neighborhood": "cingelnoord",
-              "unique id": 800
+              "unique id": 795
             }
-          },
+          }
+        ],
+        "1202": [
           {
             "topic": "feelings change",
             "target": 11782,
-            "target name": "Rembrecht Criec",
+            "target name": "Lammekin Spirinc",
             "state": "out of love",
             "relationship": 11784
           }
         ],
-        "1208": [
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.051
-          }
-        ],
-        "1209": [
-          {
-            "topic": "feelings change",
-            "target": 11782,
-            "target name": "Rembrecht Criec",
-            "state": "infatuation",
-            "relationship": 11784
-          }
-        ],
-        "1211": [
+        "1206": [
           {
             "key": 11784,
             "topic": "unmarried"
@@ -163,13 +184,178 @@
             "topic": "person died",
             "person": {
               "key": 11782,
-              "name": "Rembrecht Criec",
-              "age": 44,
+              "name": "Lammekin Spirinc",
+              "age": 54,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
             },
             "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "new relationship",
+            "key": 15695,
+            "people": [
+              11344,
+              11783
+            ],
+            "people names": [
+              "Clais Alfsteen",
+              "Bertrade"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 4,
+              "income class label": "nobility",
+              "section": "stLievevrouwe kerch.se3.c4",
+              "street": "Lievevrouwe kerch",
+              "neighborhood": "olvbuurt",
+              "unique id": 592
+            }
+          }
+        ],
+        "1211": [
+          {
+            "key": 15695,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11344,
+              "name": "Clais Alfsteen",
+              "age": 59,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "new relationship",
+            "key": 16478,
+            "people": [
+              11347,
+              11783
+            ],
+            "people names": [
+              "Rodolf Gole",
+              "Bertrade"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 4,
+              "income class label": "nobility",
+              "section": "stLievevrouwe kerch.se3.c4",
+              "street": "Lievevrouwe kerch",
+              "neighborhood": "olvbuurt",
+              "unique id": 593
+            }
+          }
+        ],
+        "1213": [
+          {
+            "topic": "new relationship",
+            "key": 16728,
+            "people": [
+              11783,
+              16726
+            ],
+            "people names": [
+              "Bertrade",
+              "Moerseil Gole"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1214": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1215": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1216": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1217": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1218": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1219": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1220": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1221": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1222": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.015
+          },
+          {
+            "topic": "neglected"
           }
         ]
       }
@@ -178,16 +364,18 @@
     "home": {
       "income class": 4,
       "income class label": "nobility",
-      "section": "stMuurhuysen2.se1.c4",
-      "street": "Muurhuysen2",
-      "neighborhood": "cingelnoord",
-      "unique id": 800
+      "section": "stLievevrouwe kerch.se3.c4",
+      "street": "Lievevrouwe kerch",
+      "neighborhood": "olvbuurt",
+      "unique id": 593
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
-        11784
+        11784,
+        15695,
+        16478
       ]
     }
   }

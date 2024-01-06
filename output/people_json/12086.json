@@ -1,53 +1,87 @@
 {
   "12086": {
     "alive": false,
-    "name": "Yda",
+    "name": "Gisele",
     "surname": "",
-    "full name": "Yda",
+    "full name": "Gisele",
     "born this way": {
       "sexuality label": "bi",
-      "sexuality": 0.526,
-      "romantic interest": 0.562,
-      "sex interest": 0.846,
-      "gender expression": 0.562,
+      "sexuality": 0.465,
+      "romantic interest": 0.633,
+      "sex interest": 0.665,
+      "gender expression": 0.318,
       "sex": "f"
     },
-    "age": 37,
-    "birth year": 1170,
+    "age": 32,
+    "birth year": 1172,
     "sex": "f",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.436,
-      "nice-nasty": 0.941,
-      "honest-false": 0.792
+      "lawful-chaotic": 0.073,
+      "nice-nasty": 0.521,
+      "honest-false": 0.0
     },
     "attitude": {
-      "outgoing": 0.792,
-      "dream": 0.2
+      "outgoing": 0.577,
+      "dream": 0.723
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving",
+          "caretaker",
+          "neglected"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.306,
-        "gender expression expression": 0.553
+        "sexuality expression": 0.237,
+        "gender expression expression": 0.06
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12643": {
+          "key": 12643,
+          "name": "Dolf Duckar",
+          "age": 49,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Gisele (12086)",
+            "father": "Otto (12085)"
+          }
+        },
+        "13878": {
+          "key": 13878,
+          "name": "Moerseil Spirinc",
+          "age": 46,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Gisele (12086)",
+            "father": "Sylawert (11629)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          12087
-        ]
+          12087,
+          13515
+        ],
+        "child": {
+          "birth": [
+            12645,
+            13880
+          ]
+        }
       }
     },
     "occupation": {
@@ -60,16 +94,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 1,
+      "skin_color": 4,
       "eye_color": "green",
-      "hair_color": "red",
-      "hair_color_code": 3,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.784,
-      "fertility": 0.818,
+      "health": 0.958,
+      "fertility": 0.902,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -81,15 +115,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.784
+            "new_health": 0.958
           },
           "death": false
         },
-        "1206": {
+        "1203": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.784
+            "new_health": 0.958
           },
           "death": true
         }
@@ -104,8 +138,8 @@
               12086
             ],
             "people names": [
-              "Gheram",
-              "Yda"
+              "Otto Duckar",
+              "Gisele"
             ],
             "label": "spouse",
             "committed": true
@@ -115,11 +149,108 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stMarcktgang.se5.c2",
+              "section": "stMarcktgang.se1.c2",
               "street": "Marcktgang",
               "neighborhood": "denhof",
-              "unique id": 935
+              "unique id": 924
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12645,
+            "people": [
+              12086,
+              12643
+            ],
+            "people names": [
+              "Gisele",
+              "Dolf Duckar"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1201": [
+          {
+            "key": 12087,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12085,
+              "name": "Otto Duckar",
+              "age": 38,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          },
+          {
+            "topic": "new caretaker",
+            "person": 12086
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 13515,
+            "people": [
+              11629,
+              12086
+            ],
+            "people names": [
+              "Sylawert Spirinc",
+              "Gisele"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stDie lange straet3.se9.c2",
+              "street": "Die lange straet3",
+              "neighborhood": "visbuurt",
+              "unique id": 725
+            }
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 13880,
+            "people": [
+              12086,
+              13878
+            ],
+            "people names": [
+              "Gisele",
+              "Moerseil Spirinc"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
           }
         ]
       }
@@ -128,16 +259,17 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stMarcktgang.se5.c2",
-      "street": "Marcktgang",
-      "neighborhood": "denhof",
-      "unique id": 935
+      "section": "stDie lange straet3.se9.c2",
+      "street": "Die lange straet3",
+      "neighborhood": "visbuurt",
+      "unique id": 725
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        12087
+        12087,
+        13515
       ]
     }
   }

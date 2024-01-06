@@ -1,90 +1,96 @@
 {
   "11777": {
     "alive": false,
-    "name": "Sybillia",
-    "surname": "Cauwen",
-    "full name": "Sybillia Cauwen",
+    "name": "Vreile",
+    "surname": "Vaken",
+    "full name": "Vreile Vaken",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.063,
-      "romantic interest": 0.592,
-      "sex interest": 0.506,
-      "gender expression": 0.0,
+      "sexuality": 0.086,
+      "romantic interest": 0.554,
+      "sex interest": 0.69,
+      "gender expression": 0.045,
       "sex": "f"
     },
-    "age": 54,
-    "birth year": 1158,
+    "age": 50,
+    "birth year": 1159,
     "sex": "f",
     "income class": [
       4,
       "nobility"
     ],
     "personality": {
-      "lawful-chaotic": 0.237,
-      "nice-nasty": 0.0,
+      "lawful-chaotic": 0.561,
+      "nice-nasty": 0.761,
       "honest-false": 0.0
     },
     "attitude": {
-      "outgoing": 0.326,
-      "dream": 0.484
+      "outgoing": 0.531,
+      "dream": 0.554
     },
     "homsoc": {
       "means": {
-        "independent": false,
-        "taken_care_of": false,
-        "caretaker": false,
+        "independent": true,
+        "taken_care_of": true,
+        "caretaker": true,
         "needs_care": false,
         "flags": [
-          "starving"
+          "starving",
+          "caretaker",
+          "neglected"
         ]
       },
       "expression": {
-        "sexuality expression": 0.062,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.059,
+        "gender expression expression": 0.025
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12995": {
+          "key": 12995,
+          "name": "Passelin Weder",
+          "age": 35,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Vreile (11777)",
+            "father": "Passelin (11776)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11778
-        ]
+        ],
+        "child": {
+          "birth": [
+            12997
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
         4,
         "nobility"
       ],
-      "income": 0.781,
-      "all_incomes": [
-        0.847,
-        0.911,
-        0.776,
-        0.986,
-        1.192,
-        1.131,
-        0.788,
-        0.781
-      ],
-      "job": {
-        "lawful": false,
-        "honest": false
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 9,
+      "skin_color": 1,
       "eye_color": "brown",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
-        "S",
+        "C",
         "C"
       ],
-      "health": 0.0,
-      "fertility": 0.544,
+      "health": 0.757,
+      "fertility": 0.765,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -96,39 +102,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.625
+            "new_health": 0.757
           },
           "death": false
         },
         "1208": {
           "health": {
-            "change": true,
-            "value_change": -0.207,
-            "new_health": 0.418
-          },
-          "death": false
-        },
-        "1209": {
-          "health": {
-            "change": true,
-            "value_change": -0.327,
-            "new_health": 0.091
-          },
-          "death": false
-        },
-        "1210": {
-          "health": {
-            "change": true,
-            "value_change": -0.077,
-            "new_health": 0.014
-          },
-          "death": false
-        },
-        "1211": {
-          "health": {
-            "change": true,
-            "value_change": -0.014,
-            "new_health": 0.0
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.757
           },
           "death": true
         }
@@ -143,8 +125,8 @@
               11777
             ],
             "people names": [
-              "Wlfarde",
-              "Sybillia Cauwen"
+              "Passelin Weder",
+              "Vreile Vaken"
             ],
             "label": "spouse",
             "committed": true
@@ -157,39 +139,40 @@
               "section": "stMuurhuysen2.se1.c4",
               "street": "Muurhuysen2",
               "neighborhood": "cingelnoord",
-              "unique id": 798
+              "unique id": 793
             }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 12997,
+            "people": [
+              11777,
+              12995
+            ],
+            "people names": [
+              "Vreile Vaken",
+              "Passelin Weder"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1202": [
           {
-            "topic": "not enough income",
-            "income": 0.036,
-            "inhabitants": []
+            "topic": "neglected"
           }
         ],
         "1203": [
           {
-            "topic": "not enough income",
-            "income": 0.021,
-            "inhabitants": []
+            "topic": "neglected"
           }
         ],
         "1204": [
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.847
-          }
-        ],
-        "1208": [
-          {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.192
-          }
-        ],
-        "1211": [
           {
             "key": 11778,
             "topic": "unmarried"
@@ -198,13 +181,54 @@
             "topic": "person died",
             "person": {
               "key": 11776,
-              "name": "Wlfarde",
-              "age": 56,
+              "name": "Passelin Weder",
+              "age": 26,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
             },
             "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          },
+          {
+            "topic": "new caretaker",
+            "person": 11777
+          }
+        ],
+        "1205": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ]
       }
@@ -216,7 +240,7 @@
       "section": "stMuurhuysen2.se1.c4",
       "street": "Muurhuysen2",
       "neighborhood": "cingelnoord",
-      "unique id": 798
+      "unique id": 793
     },
     "relationship status": {
       "taken": false,

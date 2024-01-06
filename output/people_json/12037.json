@@ -1,32 +1,32 @@
 {
   "12037": {
     "alive": false,
-    "name": "Enekonus",
-    "surname": "",
-    "full name": "Enekonus",
+    "name": "Galo",
+    "surname": "Canis",
+    "full name": "Galo Canis",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.601,
-      "sex interest": 0.639,
-      "gender expression": 0.0,
+      "sexuality label": "gay",
+      "sexuality": 0.913,
+      "romantic interest": 0.522,
+      "sex interest": 0.832,
+      "gender expression": 0.108,
       "sex": "m"
     },
-    "age": 30,
-    "birth year": 1171,
+    "age": 53,
+    "birth year": 1153,
     "sex": "m",
     "income class": [
-      3,
-      "upper middle class"
+      2,
+      "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.66,
-      "nice-nasty": 0.636,
-      "honest-false": 0.0
+      "lawful-chaotic": 0.879,
+      "nice-nasty": 0.999,
+      "honest-false": 0.999
     },
     "attitude": {
-      "outgoing": 0.476,
-      "dream": 0.493
+      "outgoing": 0.541,
+      "dream": 0.48
     },
     "homsoc": {
       "means": {
@@ -34,49 +34,73 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "neglected"
+        ]
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.476,
+        "gender expression expression": 0.081
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13816": {
+          "key": 13816,
+          "name": "Clais Canis",
+          "age": 46,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Ghela (12038)",
+            "father": "Galo (12037)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           12039
-        ]
+        ],
+        "child": {
+          "birth": [
+            13817
+          ]
+        }
       }
     },
     "occupation": {
       "has job": true,
       "income class": [
-        3,
-        "upper middle class"
+        2,
+        "middle class"
       ],
-      "income": 1.079,
+      "income": 0.909,
       "all_incomes": [
-        1.499,
-        1.079
+        0.983,
+        1.025,
+        0.956,
+        0.927,
+        0.896,
+        0.873,
+        0.909
       ],
       "job": {
-        "lawful": false,
-        "honest": false
+        "lawful": true,
+        "honest": true
       }
     },
     "genetics": {
-      "skin_color": 3,
-      "eye_color": "blue",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 1,
+      "eye_color": "green",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
         "S",
         "C"
       ],
-      "health": 0.844,
-      "fertility": 0.783,
+      "health": 0.0,
+      "fertility": 0.493,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -88,7 +112,31 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.844
+            "new_health": 0.539
+          },
+          "death": false
+        },
+        "1203": {
+          "health": {
+            "change": true,
+            "value_change": -0.222,
+            "new_health": 0.317
+          },
+          "death": false
+        },
+        "1204": {
+          "health": {
+            "change": true,
+            "value_change": -0.217,
+            "new_health": 0.1
+          },
+          "death": false
+        },
+        "1205": {
+          "health": {
+            "change": true,
+            "value_change": -0.1,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -98,7 +146,12 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.499
+            "income": 0.983
+          },
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.025
           },
           {
             "topic": "new relationship",
@@ -108,8 +161,8 @@
               12038
             ],
             "people names": [
-              "Enekonus",
-              "Esa Burne"
+              "Galo Canis",
+              "Ghela"
             ],
             "label": "spouse",
             "committed": true
@@ -117,25 +170,61 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stCromme straet.se7.c3",
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stCromme straet.se5.c2",
               "street": "Cromme straet",
               "neighborhood": "denhof",
-              "unique id": 919
+              "unique id": 906
             }
+          },
+          {
+            "topic": "feelings change",
+            "target": 12038,
+            "target name": "Ghela",
+            "state": "solid love",
+            "relationship": 12039
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 13817,
+            "people": [
+              12037,
+              13816
+            ],
+            "people names": [
+              "Galo Canis",
+              "Clais Canis"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "neglected"
           }
         ]
       }
     },
     "key": 12037,
     "home": {
-      "income class": 3,
-      "income class label": "upper middle class",
-      "section": "stCromme straet.se7.c3",
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stCromme straet.se5.c2",
       "street": "Cromme straet",
       "neighborhood": "denhof",
-      "unique id": 919
+      "unique id": 906
     },
     "relationship status": {
       "taken": true,

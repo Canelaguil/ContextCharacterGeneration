@@ -1,78 +1,113 @@
 {
   "10037": {
     "alive": false,
-    "name": "Gloria",
-    "surname": "",
-    "full name": "Gloria",
+    "name": "Helyana",
+    "surname": "Verkins",
+    "full name": "Helyana Verkins",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.05,
-      "romantic interest": 0.741,
-      "sex interest": 0.61,
-      "gender expression": 0.0,
+      "sexuality": 0.089,
+      "romantic interest": 0.8,
+      "sex interest": 0.999,
+      "gender expression": 0.099,
       "sex": "f"
     },
-    "age": 54,
-    "birth year": 1153,
+    "age": 53,
+    "birth year": 1167,
     "sex": "f",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.738,
-      "nice-nasty": 0.688,
-      "honest-false": 0.517
+      "lawful-chaotic": 0.76,
+      "nice-nasty": 0.331,
+      "honest-false": 0.486
     },
     "attitude": {
-      "outgoing": 0.376,
-      "dream": 0.593
+      "outgoing": 0.413,
+      "dream": 0.182
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
         "flags": [
-          "starving"
+          "starving",
+          "caretaker",
+          "neglected"
         ]
       },
       "expression": {
-        "sexuality expression": 0.028,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.041,
+        "gender expression expression": 0.037
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12259": {
+          "key": 12259,
+          "name": "Fellen Donevoet",
+          "age": 49,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Helyana (10037)",
+            "father": "Bernero (10036)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10038,
-          14624
-        ]
+          15693,
+          16485
+        ],
+        "child": {
+          "birth": [
+            12261
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.219,
+      "all_incomes": [
+        0.975,
+        1.055,
+        1.077,
+        1.163,
+        1.217,
+        1.194,
+        1.23,
+        1.221,
+        1.201,
+        1.219
+      ],
+      "job": {
+        "lawful": true,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 6,
+      "skin_color": 1,
       "eye_color": "green",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
       "health": 0.0,
-      "fertility": 0.727,
+      "fertility": 0.72,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -84,38 +119,30 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.662
+            "new_health": 0.695
           },
           "death": false
         },
-        "1203": {
+        "1217": {
           "health": {
             "change": true,
-            "value_change": -0.256,
-            "new_health": 0.406
+            "value_change": -0.165,
+            "new_health": 0.53
           },
           "death": false
         },
-        "1204": {
+        "1218": {
           "health": {
             "change": true,
-            "value_change": -0.209,
-            "new_health": 0.197
+            "value_change": -0.314,
+            "new_health": 0.216
           },
           "death": false
         },
-        "1205": {
+        "1219": {
           "health": {
             "change": true,
-            "value_change": -0.145,
-            "new_health": 0.052
-          },
-          "death": false
-        },
-        "1206": {
-          "health": {
-            "change": true,
-            "value_change": -0.052,
+            "value_change": -0.216,
             "new_health": 0.0
           },
           "death": true
@@ -131,8 +158,8 @@
               10037
             ],
             "people names": [
-              "Segher",
-              "Gloria"
+              "Bernero Donevoet",
+              "Helyana Verkins"
             ],
             "label": "spouse",
             "committed": true
@@ -145,15 +172,40 @@
               "section": "stUterechse straet.se3.c2",
               "street": "Uterechse straet",
               "neighborhood": "varkensbuurt",
-              "unique id": 15
+              "unique id": 18
             }
           },
           {
-            "topic": "feelings change",
-            "target": 10036,
-            "target name": "Segher",
-            "state": "solid love",
-            "relationship": 10038
+            "topic": "new relationship",
+            "key": 12261,
+            "people": [
+              10037,
+              12259
+            ],
+            "people names": [
+              "Helyana Verkins",
+              "Fellen Donevoet"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1201": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1202": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "neglected"
           }
         ],
         "1204": [
@@ -165,8 +217,8 @@
             "topic": "person died",
             "person": {
               "key": 10036,
-              "name": "Segher",
-              "age": 24,
+              "name": "Bernero Donevoet",
+              "age": 39,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
@@ -177,29 +229,156 @@
             "topic": "not enough income",
             "income": 0,
             "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          },
+          {
+            "topic": "new caretaker",
+            "person": 10037
           }
         ],
         "1205": [
           {
-            "topic": "new relationship",
-            "key": 14624,
-            "people": [
-              11887,
-              10037
-            ],
-            "people names": [
-              "Wellinus Korte",
-              "Gloria"
-            ],
-            "label": "spouse",
-            "committed": true
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ],
         "1206": [
           {
             "topic": "not enough income",
-            "income": 0.0,
+            "income": 0,
             "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "new relationship",
+            "key": 15693,
+            "people": [
+              10711,
+              10037
+            ],
+            "people names": [
+              "Bartrarde Spiegel",
+              "Helyana Verkins"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stCingel.se5.c2",
+              "street": "Cingel",
+              "neighborhood": "agnesbuurt",
+              "unique id": 311
+            }
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.975
+          },
+          {
+            "key": 15693,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10711,
+              "name": "Bartrarde Spiegel",
+              "age": 54,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "new caretaker",
+            "person": 12810
+          }
+        ],
+        "1211": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.055
+          }
+        ],
+        "1212": [
+          {
+            "topic": "new relationship",
+            "key": 16485,
+            "people": [
+              10891,
+              10037
+            ],
+            "people names": [
+              "Maelkin Naghel",
+              "Helyana Verkins"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stDie Camp.se5.c2",
+              "street": "Die Camp",
+              "neighborhood": "kampbuurt",
+              "unique id": 391
+            }
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1213": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1214": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1215": [
+          {
+            "topic": "neglected"
           }
         ]
       }
@@ -208,17 +387,18 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stUterechse straet.se3.c2",
-      "street": "Uterechse straet",
-      "neighborhood": "varkensbuurt",
-      "unique id": 15
+      "section": "stDie Camp.se5.c2",
+      "street": "Die Camp",
+      "neighborhood": "kampbuurt",
+      "unique id": 391
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
         10038,
-        14624
+        15693,
+        16485
       ]
     }
   }

@@ -1,32 +1,32 @@
 {
   "11309": {
     "alive": false,
-    "name": "Marcibilia",
+    "name": "Aghata",
     "surname": "",
-    "full name": "Marcibilia",
+    "full name": "Aghata",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.892,
-      "romantic interest": 0.999,
-      "sex interest": 0.741,
-      "gender expression": 0.2,
+      "sexuality label": "straight",
+      "sexuality": 0.103,
+      "romantic interest": 0.825,
+      "sex interest": 0.915,
+      "gender expression": 0.212,
       "sex": "f"
     },
-    "age": 53,
-    "birth year": 1153,
+    "age": 52,
+    "birth year": 1160,
     "sex": "f",
     "income class": [
-      4,
-      "nobility"
+      3,
+      "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.274,
-      "honest-false": 0.157
+      "lawful-chaotic": 0.41,
+      "nice-nasty": 0.502,
+      "honest-false": 0.721
     },
     "attitude": {
-      "outgoing": 0.512,
-      "dream": 0.191
+      "outgoing": 0.32,
+      "dream": 0.095
     },
     "homsoc": {
       "means": {
@@ -34,42 +34,69 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "neglected"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.538,
-        "gender expression expression": 0.051
+        "sexuality expression": 0.078,
+        "gender expression expression": 0.084
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "15328": {
+          "key": 15328,
+          "name": "Aleydis Sifridussdochter",
+          "age": 4,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Aghata (11309)",
+            "father": "Sifridus (11308)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11310
-        ]
+        ],
+        "child": {
+          "birth": [
+            15330
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        4,
-        "nobility"
+        3,
+        "upper middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.254,
+      "all_incomes": [
+        1.279,
+        1.277,
+        1.254
+      ],
+      "job": {
+        "lawful": false,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 0,
+      "skin_color": 7,
       "eye_color": "brown",
       "hair_color": "strawberry blonde",
       "hair_color_code": 5,
       "hair_type": [
         "C",
-        "S"
+        "C"
       ],
-      "health": 0.103,
-      "fertility": 0.738,
+      "health": 0.135,
+      "fertility": 0.482,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -81,31 +108,23 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.762
+            "new_health": 0.576
           },
           "death": false
         },
-        "1203": {
+        "1210": {
           "health": {
             "change": true,
-            "value_change": -0.13,
-            "new_health": 0.632
+            "value_change": -0.228,
+            "new_health": 0.348
           },
           "death": false
         },
-        "1204": {
+        "1211": {
           "health": {
             "change": true,
-            "value_change": -0.297,
-            "new_health": 0.335
-          },
-          "death": false
-        },
-        "1205": {
-          "health": {
-            "change": true,
-            "value_change": -0.232,
-            "new_health": 0.103
+            "value_change": -0.213,
+            "new_health": 0.135
           },
           "death": true
         }
@@ -120,8 +139,8 @@
               11309
             ],
             "people names": [
-              "Harderico",
-              "Marcibilia"
+              "Sifridus Heurkint",
+              "Aghata"
             ],
             "label": "spouse",
             "committed": true
@@ -129,25 +148,73 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 4,
-              "income class label": "nobility",
-              "section": "stLievevrouwe kerch.se3.c4",
-              "street": "Lievevrouwe kerch",
+              "income class": 3,
+              "income class label": "upper middle class",
+              "section": "stBreestraat.se7.c3",
+              "street": "Breestraat",
               "neighborhood": "olvbuurt",
-              "unique id": 587
+              "unique id": 577
             }
+          }
+        ],
+        "1206": [
+          {
+            "topic": "feelings change",
+            "target": 11308,
+            "target name": "Sifridus Heurkint",
+            "state": "out of love",
+            "relationship": 11310
+          }
+        ],
+        "1208": [
+          {
+            "topic": "new relationship",
+            "key": 15330,
+            "people": [
+              11309,
+              15328
+            ],
+            "people names": [
+              "Aghata",
+              "Aleydis Sifridussdochter"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.279
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1211": [
+          {
+            "topic": "neglected"
           }
         ]
       }
     },
     "key": 11309,
     "home": {
-      "income class": 4,
-      "income class label": "nobility",
-      "section": "stLievevrouwe kerch.se3.c4",
-      "street": "Lievevrouwe kerch",
+      "income class": 3,
+      "income class label": "upper middle class",
+      "section": "stBreestraat.se7.c3",
+      "street": "Breestraat",
       "neighborhood": "olvbuurt",
-      "unique id": 587
+      "unique id": 577
     },
     "relationship status": {
       "taken": true,

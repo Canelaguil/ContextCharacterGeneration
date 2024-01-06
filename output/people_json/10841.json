@@ -1,18 +1,18 @@
 {
   "10841": {
     "alive": false,
-    "name": "Rycaldis",
-    "surname": "Stamelart",
-    "full name": "Rycaldis Stamelart",
+    "name": "Lutghardis",
+    "surname": "",
+    "full name": "Lutghardis",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.852,
-      "romantic interest": 0.687,
-      "sex interest": 0.522,
-      "gender expression": 0.0,
+      "sexuality label": "straight",
+      "sexuality": 0.039,
+      "romantic interest": 0.604,
+      "sex interest": 0.767,
+      "gender expression": 0.105,
       "sex": "f"
     },
-    "age": 53,
+    "age": 38,
     "birth year": 1174,
     "sex": "f",
     "income class": [
@@ -20,71 +20,78 @@
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.369,
-      "nice-nasty": 0.0,
-      "honest-false": 0.39
+      "lawful-chaotic": 0.692,
+      "nice-nasty": 0.634,
+      "honest-false": 0.0
     },
     "attitude": {
-      "outgoing": 0.404,
-      "dream": 0.411
+      "outgoing": 0.253,
+      "dream": 0.589
     },
     "homsoc": {
       "means": {
         "independent": true,
-        "taken_care_of": false,
-        "caretaker": false,
+        "taken_care_of": true,
+        "caretaker": true,
         "needs_care": false,
         "flags": [
-          "starving"
+          "starving",
+          "caretaker",
+          "neglected"
         ]
       },
       "expression": {
-        "sexuality expression": 0.724,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.017,
+        "gender expression expression": 0.041
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14400": {
+          "key": 14400,
+          "name": "Amelgeir Buc",
+          "age": 14,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Lutghardis (10841)",
+            "father": "Geldmaro (10840)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10842,
-          16306
-        ]
+          15952
+        ],
+        "child": {
+          "birth": [
+            14402
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 0.991,
-      "all_incomes": [
-        0.561,
-        0.914,
-        0.854,
-        1.167,
-        1.369,
-        1.498,
-        0.991
-      ],
-      "job": {
-        "lawful": false,
-        "honest": false
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 1,
+      "skin_color": 3,
       "eye_color": "brown",
       "hair_color": "dark brown",
       "hair_color_code": 1,
       "hair_type": [
-        "C",
+        "S",
         "C"
       ],
-      "health": 0.214,
-      "fertility": 0.86,
+      "health": 0.662,
+      "fertility": 0.614,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -96,31 +103,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.792
+            "new_health": 0.662
           },
           "death": false
         },
-        "1224": {
+        "1211": {
           "health": {
-            "change": true,
-            "value_change": -0.169,
-            "new_health": 0.623
-          },
-          "death": false
-        },
-        "1225": {
-          "health": {
-            "change": true,
-            "value_change": -0.188,
-            "new_health": 0.435
-          },
-          "death": false
-        },
-        "1226": {
-          "health": {
-            "change": true,
-            "value_change": -0.221,
-            "new_health": 0.214
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.662
           },
           "death": true
         }
@@ -135,8 +126,8 @@
               10841
             ],
             "people names": [
-              "Wigboldo Napbrekere",
-              "Rycaldis Stamelart"
+              "Geldmaro Buc",
+              "Lutghardis"
             ],
             "label": "spouse",
             "committed": true
@@ -149,65 +140,40 @@
               "section": "stDie Camp.se3.c2",
               "street": "Die Camp",
               "neighborhood": "kampbuurt",
-              "unique id": 376
+              "unique id": 369
             }
+          }
+        ],
+        "1205": [
+          {
+            "topic": "new relationship",
+            "key": 14402,
+            "people": [
+              10841,
+              14400
+            ],
+            "people names": [
+              "Lutghardis",
+              "Amelgeir Buc"
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
-          }
-        ],
-        "1201": [
-          {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
-          }
-        ],
-        "1202": [
-          {
-            "topic": "not enough income",
-            "income": 0.081,
-            "inhabitants": []
-          }
-        ],
-        "1203": [
-          {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
-          }
-        ],
-        "1204": [
-          {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
+            "topic": "neglected"
           }
         ],
         "1206": [
           {
-            "topic": "not enough income",
-            "income": 0.128,
-            "inhabitants": []
+            "topic": "neglected"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "neglected"
           }
         ],
         "1208": [
-          {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
-          }
-        ],
-        "1210": [
-          {
-            "topic": "not enough income",
-            "income": 0.054,
-            "inhabitants": []
-          }
-        ],
-        "1211": [
           {
             "key": 10842,
             "topic": "unmarried"
@@ -216,8 +182,8 @@
             "topic": "person died",
             "person": {
               "key": 10840,
-              "name": "Wigboldo Napbrekere",
-              "age": 46,
+              "name": "Geldmaro Buc",
+              "age": 52,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
@@ -228,19 +194,34 @@
             "topic": "not enough income",
             "income": 0,
             "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          },
+          {
+            "topic": "new caretaker",
+            "person": 10841
           }
         ],
-        "1212": [
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
           {
             "topic": "new relationship",
-            "key": 16306,
+            "key": 15952,
             "people": [
-              10483,
+              12034,
               10841
             ],
             "people names": [
-              "Lardies Masc",
-              "Rycaldis Stamelart"
+              "Yseboldus Zassen",
+              "Lutghardis"
             ],
             "label": "spouse",
             "committed": true
@@ -250,25 +231,23 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stOp 't Speuy.se1.c2",
-              "street": "Op 't Speuy",
-              "neighborhood": "jorisbuurt",
-              "unique id": 196
+              "section": "stCromme straet.se5.c2",
+              "street": "Cromme straet",
+              "neighborhood": "denhof",
+              "unique id": 905
             }
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.021,
+            "inhabitants": []
           }
         ],
-        "1220": [
+        "1211": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.561
-          }
-        ],
-        "1223": [
-          {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.167
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
           }
         ]
       }
@@ -277,17 +256,17 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stOp 't Speuy.se1.c2",
-      "street": "Op 't Speuy",
-      "neighborhood": "jorisbuurt",
-      "unique id": 196
+      "section": "stCromme straet.se5.c2",
+      "street": "Cromme straet",
+      "neighborhood": "denhof",
+      "unique id": 905
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
         10842,
-        16306
+        15952
       ]
     }
   }

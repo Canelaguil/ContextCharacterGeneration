@@ -1,32 +1,32 @@
 {
   "10058": {
     "alive": false,
-    "name": "Jute",
-    "surname": "Bloeme",
-    "full name": "Jute Bloeme",
+    "name": "Margareta",
+    "surname": "",
+    "full name": "Margareta",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.174,
-      "romantic interest": 0.733,
-      "sex interest": 0.795,
-      "gender expression": 0.113,
+      "sexuality label": "bi",
+      "sexuality": 0.479,
+      "romantic interest": 0.792,
+      "sex interest": 0.971,
+      "gender expression": 0.177,
       "sex": "f"
     },
-    "age": 37,
-    "birth year": 1170,
+    "age": 24,
+    "birth year": 1179,
     "sex": "f",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.729,
-      "honest-false": 0.507
+      "lawful-chaotic": 0.599,
+      "nice-nasty": 0.374,
+      "honest-false": 0.476
     },
     "attitude": {
-      "outgoing": 0.377,
-      "dream": 0.406
+      "outgoing": 0.328,
+      "dream": 0.273
     },
     "homsoc": {
       "means": {
@@ -34,36 +34,38 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "neglected"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.069,
-        "gender expression expression": 0.034
+        "sexuality expression": 0.353,
+        "gender expression expression": 0.079
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "13880": {
-          "key": 13880,
-          "name": "Victoria Vosseken",
-          "age": 45,
-          "alive": true,
-          "sex": "f",
-          "parents": {
-            "mother": "Jute (10058)",
-            "father": "Arnekin (10057)"
-          }
-        },
-        "14635": {
-          "key": 14635,
-          "name": "Flore Vosseken",
-          "age": 16,
+        "12686": {
+          "key": 12686,
+          "name": "Scilla Mourinsdochter",
+          "age": 0,
           "alive": false,
           "sex": "f",
           "parents": {
-            "mother": "Jute (10058)",
-            "father": "Arnekin (10057)"
+            "mother": "Margareta (10058)",
+            "father": "Mourin (10057)"
+          }
+        },
+        "13106": {
+          "key": 13106,
+          "name": "Hilduardis Mourinsdochter",
+          "age": 47,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Margareta (10058)",
+            "father": "Mourin (10057)"
           }
         }
       },
@@ -73,8 +75,8 @@
         ],
         "child": {
           "birth": [
-            13882,
-            14637
+            12688,
+            13108
           ]
         }
       }
@@ -89,16 +91,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 4,
+      "skin_color": 2,
       "eye_color": "brown",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "S",
-        "S"
+        "C",
+        "C"
       ],
-      "health": 0.766,
-      "fertility": 0.765,
+      "health": 0.691,
+      "fertility": 0.738,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -110,9 +112,17 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.766
+            "new_health": 0.691
           },
           "death": false
+        },
+        "1202": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.691
+          },
+          "death": true
         }
       },
       "events": {
@@ -125,8 +135,8 @@
               10058
             ],
             "people names": [
-              "Arnekin Vosseken",
-              "Jute Bloeme"
+              "Mourin",
+              "Margareta"
             ],
             "label": "spouse",
             "committed": true
@@ -139,49 +149,61 @@
               "section": "stVerckens merct.se1.c2",
               "street": "Verckens merct",
               "neighborhood": "varkensbuurt",
-              "unique id": 22
+              "unique id": 25
             }
           }
         ],
         "1201": [
           {
-            "topic": "feelings change",
-            "target": 10057,
-            "target name": "Arnekin Vosseken",
-            "state": "out of love",
-            "relationship": 10059
-          }
-        ],
-        "1204": [
-          {
             "topic": "new relationship",
-            "key": 13882,
+            "key": 12688,
             "people": [
               10058,
-              13880
+              12686
             ],
             "people names": [
-              "Jute Bloeme",
-              "Victoria Vosseken"
+              "Margareta",
+              "Scilla Mourinsdochter"
             ],
             "label": "parentchild",
             "committed": false
+          },
+          {
+            "topic": "neglected"
           }
         ],
-        "1206": [
+        "1202": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12686,
+              "name": "Scilla Mourinsdochter",
+              "age": 0,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Margareta (10058)",
+                "father": "Mourin (10057)"
+              }
+            },
+            "label": "child"
+          },
           {
             "topic": "new relationship",
-            "key": 14637,
+            "key": 13108,
             "people": [
               10058,
-              14635
+              13106
             ],
             "people names": [
-              "Jute Bloeme",
-              "Flore Vosseken"
+              "Margareta",
+              "Hilduardis Mourinsdochter"
             ],
             "label": "parentchild",
             "committed": false
+          },
+          {
+            "topic": "neglected"
           }
         ]
       }
@@ -193,7 +215,7 @@
       "section": "stVerckens merct.se1.c2",
       "street": "Verckens merct",
       "neighborhood": "varkensbuurt",
-      "unique id": 22
+      "unique id": 25
     },
     "relationship status": {
       "taken": true,

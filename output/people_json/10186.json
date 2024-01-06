@@ -1,65 +1,127 @@
 {
   "10186": {
     "alive": false,
-    "name": "Stoethoute",
-    "surname": "Cornute",
-    "full name": "Stoethoute Cornute",
+    "name": "Niels",
+    "surname": "",
+    "full name": "Niels",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.062,
-      "romantic interest": 0.768,
-      "sex interest": 0.719,
-      "gender expression": 0.047,
+      "sexuality": 0.041,
+      "romantic interest": 0.387,
+      "sex interest": 0.868,
+      "gender expression": 0.207,
       "sex": "m"
     },
-    "age": 23,
-    "birth year": 1178,
+    "age": 55,
+    "birth year": 1163,
     "sex": "m",
     "income class": [
-      0,
-      "working class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.721,
-      "nice-nasty": 0.577,
-      "honest-false": 0.992
+      "lawful-chaotic": 0.466,
+      "nice-nasty": 0.346,
+      "honest-false": 0.999
     },
     "attitude": {
-      "outgoing": 0.251,
-      "dream": 0.496
+      "outgoing": 0.414,
+      "dream": 0.446
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving",
+          "neglected"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.038,
-        "gender expression expression": 0.013
+        "sexuality expression": 0.021,
+        "gender expression expression": 0.073
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12280": {
+          "key": 12280,
+          "name": "Euffemia",
+          "age": 17,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Godeweris (10187)",
+            "father": "Niels (10186)"
+          }
+        },
+        "14605": {
+          "key": 14605,
+          "name": "Nellen Nielssdochter",
+          "age": 43,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Godeweris (10187)",
+            "father": "Niels (10186)"
+          }
+        },
+        "17365": {
+          "key": 17365,
+          "name": "Rembrecht van Niels",
+          "age": 32,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Diewiven (10214)",
+            "father": "Niels (10186)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          10188
-        ]
+          10188,
+          17005
+        ],
+        "child": {
+          "birth": [
+            12281,
+            14606,
+            17366
+          ]
+        }
       }
     },
     "occupation": {
       "has job": true,
       "income class": [
-        0,
-        "working class"
+        1,
+        "lower middle class"
       ],
-      "income": 1.101,
+      "income": 0.428,
       "all_incomes": [
-        1.049,
-        1.101
+        0.915,
+        0.834,
+        0.754,
+        0.674,
+        0.655,
+        0.661,
+        0.494,
+        0.478,
+        0.435,
+        0.43,
+        0.438,
+        0.47,
+        0.453,
+        0.559,
+        0.587,
+        0.574,
+        0.549,
+        0.534,
+        0.428
       ],
       "job": {
         "lawful": true,
@@ -67,16 +129,16 @@
       }
     },
     "genetics": {
-      "skin_color": 6,
-      "eye_color": "blue",
+      "skin_color": 3,
+      "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
         "S",
         "S"
       ],
-      "health": 0.69,
-      "fertility": 0.653,
+      "health": 0.0,
+      "fertility": 0.618,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -88,7 +150,47 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.69
+            "new_health": 0.596
+          },
+          "death": false
+        },
+        "1213": {
+          "health": {
+            "change": true,
+            "value_change": -0.263,
+            "new_health": 0.333
+          },
+          "death": false
+        },
+        "1214": {
+          "health": {
+            "change": true,
+            "value_change": -0.207,
+            "new_health": 0.126
+          },
+          "death": false
+        },
+        "1215": {
+          "health": {
+            "change": true,
+            "value_change": -0.107,
+            "new_health": 0.019
+          },
+          "death": false
+        },
+        "1216": {
+          "health": {
+            "change": true,
+            "value_change": -0.017,
+            "new_health": 0.002
+          },
+          "death": false
+        },
+        "1217": {
+          "health": {
+            "change": true,
+            "value_change": -0.002,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -98,7 +200,7 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.049
+            "income": 0.915
           },
           {
             "topic": "new relationship",
@@ -108,8 +210,8 @@
               10187
             ],
             "people names": [
-              "Stoethoute Cornute",
-              "Nimme Clinkart"
+              "Niels",
+              "Godeweris Moes"
             ],
             "label": "spouse",
             "committed": true
@@ -117,31 +219,295 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stIn den Haeg.se1.c0",
-              "street": "In den Haeg",
-              "neighborhood": "varkensbuurt",
-              "unique id": 70
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stHelle voet.se1.c1",
+              "street": "Helle voet",
+              "neighborhood": "jorisbuurt",
+              "unique id": 85
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12281,
+            "people": [
+              10186,
+              12280
+            ],
+            "people names": [
+              "Niels",
+              "Euffemia"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1201": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1202": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.674
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.494
+          }
+        ],
+        "1206": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.478
+          },
+          {
+            "topic": "new relationship",
+            "key": 14606,
+            "people": [
+              10186,
+              14605
+            ],
+            "people names": [
+              "Niels",
+              "Nellen Nielssdochter"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.478,
+            "inhabitants": [
+              14605,
+              12577,
+              20745,
+              22569,
+              23703,
+              19106
+            ]
+          }
+        ],
+        "1207": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.435
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.435,
+            "inhabitants": [
+              14605,
+              12577,
+              20745,
+              22569,
+              23703,
+              19106
+            ]
+          }
+        ],
+        "1208": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.43
+          },
+          {
+            "topic": "feelings change",
+            "target": 10187,
+            "target name": "Godeweris Moes",
+            "state": "out of love",
+            "relationship": 10188
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.43,
+            "inhabitants": [
+              14605,
+              12577,
+              20745,
+              22569,
+              23703,
+              19106
+            ]
+          }
+        ],
+        "1209": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.438
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.47
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1211": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.453
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1212": [
+          {
+            "key": 10188,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10187,
+              "name": "Godeweris Moes",
+              "age": 50,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1213": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1214": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1215": [
+          {
+            "topic": "new relationship",
+            "key": 17005,
+            "people": [
+              10186,
+              10214
+            ],
+            "people names": [
+              "Niels",
+              "Diewiven Pertshoeft"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.549,
+            "inhabitants": [
+              14605,
+              12577,
+              20745,
+              22569,
+              23703,
+              19106
+            ]
+          }
+        ],
+        "1216": [
+          {
+            "topic": "not enough income",
+            "income": 0.534,
+            "inhabitants": [
+              14605,
+              12577,
+              20745,
+              22569,
+              23703,
+              19106
+            ]
+          }
+        ],
+        "1217": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.428
+          },
+          {
+            "topic": "new relationship",
+            "key": 17366,
+            "people": [
+              10186,
+              17365
+            ],
+            "people names": [
+              "Niels",
+              "Rembrecht van Niels"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.428,
+            "inhabitants": [
+              14605,
+              12577,
+              20745,
+              22569,
+              23703,
+              19106
+            ]
           }
         ]
       }
     },
     "key": 10186,
     "home": {
-      "income class": 0,
-      "income class label": "working class",
-      "section": "stIn den Haeg.se1.c0",
-      "street": "In den Haeg",
-      "neighborhood": "varkensbuurt",
-      "unique id": 70
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stHelle voet.se1.c1",
+      "street": "Helle voet",
+      "neighborhood": "jorisbuurt",
+      "unique id": 85
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        10188
+        10188,
+        17005
       ]
     }
   }

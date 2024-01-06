@@ -1,32 +1,32 @@
 {
   "10061": {
     "alive": false,
-    "name": "Kerstine",
-    "surname": "Durcant",
-    "full name": "Kerstine Durcant",
+    "name": "Sybillia",
+    "surname": "",
+    "full name": "Sybillia",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.005,
-      "romantic interest": 0.661,
-      "sex interest": 0.728,
-      "gender expression": 0.053,
+      "sexuality label": "gay",
+      "sexuality": 0.887,
+      "romantic interest": 0.856,
+      "sex interest": 0.592,
+      "gender expression": 0.173,
       "sex": "f"
     },
-    "age": 55,
-    "birth year": 1158,
+    "age": 39,
+    "birth year": 1170,
     "sex": "f",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.261,
-      "nice-nasty": 0.0,
-      "honest-false": 0.476
+      "lawful-chaotic": 0.304,
+      "nice-nasty": 0.707,
+      "honest-false": 0.609
     },
     "attitude": {
-      "outgoing": 0.433,
-      "dream": 0.368
+      "outgoing": 0.404,
+      "dream": 0.435
     },
     "homsoc": {
       "means": {
@@ -35,21 +35,50 @@
         "caretaker": false,
         "needs_care": false,
         "flags": [
-          "starving"
+          "neglected"
         ]
       },
       "expression": {
-        "sexuality expression": 0.003,
-        "gender expression expression": 0.028
+        "sexuality expression": 0.711,
+        "gender expression expression": 0.067
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12268": {
+          "key": 12268,
+          "name": "Ghela Scinkel",
+          "age": 26,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Sybillia (10061)",
+            "father": "Hornekinga (10060)"
+          }
+        },
+        "13110": {
+          "key": 13110,
+          "name": "Linnea van Sybillia",
+          "age": 4,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Sybillia (10061)",
+            "father": "Hornekinga (10060)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10062
-        ]
+        ],
+        "child": {
+          "birth": [
+            12270,
+            13112
+          ]
+        }
       }
     },
     "occupation": {
@@ -62,16 +91,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 1,
-      "eye_color": "brown",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "skin_color": 5,
+      "eye_color": "blue",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "C",
-        "S"
+        "C"
       ],
-      "health": 0.0,
-      "fertility": 0.714,
+      "health": 0.593,
+      "fertility": 0.504,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -83,47 +112,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.748
+            "new_health": 0.593
           },
           "death": false
         },
         "1208": {
           "health": {
-            "change": true,
-            "value_change": -0.213,
-            "new_health": 0.535
-          },
-          "death": false
-        },
-        "1209": {
-          "health": {
-            "change": true,
-            "value_change": -0.312,
-            "new_health": 0.223
-          },
-          "death": false
-        },
-        "1210": {
-          "health": {
-            "change": true,
-            "value_change": -0.098,
-            "new_health": 0.125
-          },
-          "death": false
-        },
-        "1211": {
-          "health": {
-            "change": true,
-            "value_change": -0.032,
-            "new_health": 0.093
-          },
-          "death": false
-        },
-        "1212": {
-          "health": {
-            "change": true,
-            "value_change": -0.093,
-            "new_health": 0.0
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.593
           },
           "death": true
         }
@@ -138,8 +135,8 @@
               10061
             ],
             "people names": [
-              "Firiin Vromoeds",
-              "Kerstine Durcant"
+              "Hornekinga Scinkel",
+              "Sybillia"
             ],
             "label": "spouse",
             "committed": true
@@ -152,33 +149,108 @@
               "section": "stVerckens merct.se1.c2",
               "street": "Verckens merct",
               "neighborhood": "varkensbuurt",
-              "unique id": 23
+              "unique id": 26
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12270,
+            "people": [
+              10061,
+              12268
+            ],
+            "people names": [
+              "Sybillia",
+              "Ghela Scinkel"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1201": [
+          {
+            "topic": "feelings change",
+            "target": 10060,
+            "target name": "Hornekinga Scinkel",
+            "state": "infatuation",
+            "relationship": 10062
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1202": [
           {
+            "topic": "new relationship",
+            "key": 13112,
+            "people": [
+              10061,
+              13110
+            ],
+            "people names": [
+              "Sybillia",
+              "Linnea van Sybillia"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
             "topic": "feelings change",
             "target": 10060,
-            "target name": "Firiin Vromoeds",
+            "target name": "Hornekinga Scinkel",
             "state": "solid love",
             "relationship": 10062
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "neglected"
           }
         ],
         "1204": [
           {
-            "topic": "feelings change",
-            "target": 10060,
-            "target name": "Firiin Vromoeds",
-            "state": "out of love",
-            "relationship": 10062
+            "topic": "neglected"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "neglected"
           }
         ],
         "1206": [
           {
-            "topic": "not enough income",
-            "income": 0.169,
-            "inhabitants": []
+            "topic": "neglected"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 13110,
+              "name": "Linnea van Sybillia",
+              "age": 4,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Sybillia (10061)",
+                "father": "Hornekinga (10060)"
+              }
+            },
+            "label": "child"
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "neglected"
           }
         ]
       }
@@ -190,7 +262,7 @@
       "section": "stVerckens merct.se1.c2",
       "street": "Verckens merct",
       "neighborhood": "varkensbuurt",
-      "unique id": 23
+      "unique id": 26
     },
     "relationship status": {
       "taken": true,

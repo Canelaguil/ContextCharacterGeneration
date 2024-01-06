@@ -1,77 +1,97 @@
 {
   "11078": {
     "alive": false,
-    "name": "Iris",
-    "surname": "Vosseken",
-    "full name": "Iris Vosseken",
+    "name": "Myrthel",
+    "surname": "Loddernie",
+    "full name": "Myrthel Loddernie",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.07,
-      "romantic interest": 0.532,
-      "sex interest": 0.599,
-      "gender expression": 0.108,
+      "sexuality": 0.0,
+      "romantic interest": 0.669,
+      "sex interest": 0.747,
+      "gender expression": 0.264,
       "sex": "f"
     },
-    "age": 53,
-    "birth year": 1162,
+    "age": 46,
+    "birth year": 1168,
     "sex": "f",
     "income class": [
-      0,
-      "working class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.337,
-      "nice-nasty": 0.146,
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.811,
       "honest-false": 0.0
     },
     "attitude": {
-      "outgoing": 0.643,
-      "dream": 0.485
+      "outgoing": 0.509,
+      "dream": 0.403
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
         "flags": [
-          "starving"
+          "starving",
+          "caretaker",
+          "neglected"
         ]
       },
       "expression": {
-        "sexuality expression": 0.05,
-        "gender expression expression": 0.042
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.172
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14068": {
+          "key": 14068,
+          "name": "Baua",
+          "age": 16,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Myrthel (11078)",
+            "father": "Suam (11077)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          11079
-        ]
+          11079,
+          15446
+        ],
+        "child": {
+          "birth": [
+            14070
+          ]
+        }
       }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        0,
-        "working class"
+        1,
+        "lower middle class"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 6,
-      "eye_color": "brown",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "skin_color": 2,
+      "eye_color": "blue",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "S",
         "S"
       ],
-      "health": 0.0,
-      "fertility": 0.694,
+      "health": 0.777,
+      "fertility": 0.88,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -83,31 +103,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.772
-          },
-          "death": false
-        },
-        "1212": {
-          "health": {
-            "change": true,
-            "value_change": -0.222,
-            "new_health": 0.55
+            "new_health": 0.777
           },
           "death": false
         },
         "1213": {
           "health": {
-            "change": true,
-            "value_change": -0.257,
-            "new_health": 0.293
-          },
-          "death": false
-        },
-        "1214": {
-          "health": {
-            "change": true,
-            "value_change": -0.293,
-            "new_health": 0.0
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.777
           },
           "death": true
         }
@@ -122,8 +126,8 @@
               11078
             ],
             "people names": [
-              "Walwin Ruffo",
-              "Iris Vosseken"
+              "Suam",
+              "Myrthel Loddernie"
             ],
             "label": "spouse",
             "committed": true
@@ -131,16 +135,63 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stOly straetje.se3.c0",
-              "street": "Oly straetje",
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stDie Coninc straet.se9.c1",
+              "street": "Die Coninc straet",
               "neighborhood": "kampbuurt",
-              "unique id": 486
+              "unique id": 474
             }
           }
         ],
-        "1213": [
+        "1202": [
+          {
+            "topic": "feelings change",
+            "target": 11077,
+            "target name": "Suam",
+            "state": "out of love",
+            "relationship": 11079
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 14070,
+            "people": [
+              11078,
+              14068
+            ],
+            "people names": [
+              "Myrthel Loddernie",
+              "Baua"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 11077,
+            "target name": "Suam",
+            "state": "infatuation",
+            "relationship": 11079
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "feelings change",
+            "target": 11077,
+            "target name": "Suam",
+            "state": "out of love",
+            "relationship": 11079
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1207": [
           {
             "key": 11079,
             "topic": "unmarried"
@@ -149,8 +200,8 @@
             "topic": "person died",
             "person": {
               "key": 11077,
-              "name": "Walwin Ruffo",
-              "age": 56,
+              "name": "Suam",
+              "age": 33,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
@@ -161,31 +212,83 @@
             "topic": "not enough income",
             "income": 0,
             "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          },
+          {
+            "topic": "new caretaker",
+            "person": 11078
           }
         ],
-        "1214": [
+        "1208": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "new relationship",
+            "key": 15446,
+            "people": [
+              10255,
+              11078
+            ],
+            "people names": [
+              "Wigherus Hanen",
+              "Myrthel Loddernie"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stHelle voet.se5.c1",
+              "street": "Helle voet",
+              "neighborhood": "jorisbuurt",
+              "unique id": 115
+            }
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1211": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1212": [
+          {
+            "topic": "neglected"
           }
         ]
       }
     },
     "key": 11078,
     "home": {
-      "income class": 0,
-      "income class label": "working class",
-      "section": "stOly straetje.se3.c0",
-      "street": "Oly straetje",
-      "neighborhood": "kampbuurt",
-      "unique id": 486
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stHelle voet.se5.c1",
+      "street": "Helle voet",
+      "neighborhood": "jorisbuurt",
+      "unique id": 115
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
-        11079
+        11079,
+        15446
       ]
     }
   }

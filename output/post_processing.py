@@ -2,6 +2,24 @@ import json
 import os
 import shutil
 
+def get_person(p_key):
+    directory = 'output/people_json/'
+    f = f"{p_key}.json"
+    path = f"{directory}{f}"
+    with open(path) as json_data:
+        p = json.load(json_data)
+    return p[f"{p_key}"]
+
+def get_other_from_relationship(my_key, r_key):
+    directory = 'output/relationships_json/'
+    f = f"{r_key}.json"
+    path = f"{directory}{f}"
+    with open(path) as json_data:
+        r = json.load(json_data)
+    r = r[f"{r_key}"]
+    p = r['people'][0] if r['people'][0] != my_key else r['people'][1]
+    return get_person(p)
+
 def formatted(info, key=None):
     if key:
         return f'{key.upper()}: {info}\n'
@@ -21,11 +39,8 @@ if __name__ == '__main__':
         shutil.rmtree(target_directory)
     os.mkdir(target_directory)
     for f in os.listdir(directory):
-        path = f"{directory}{f}"
-        with open(path) as json_data:
-            p = json.load(json_data)
         key = f[0:-5]
-        p = p[key]
+        p = get_person(key)
         target = f"{target_directory}{key}.txt"
         with open(target, 'a') as d:
             # headline
@@ -38,8 +53,14 @@ if __name__ == '__main__':
 
             # basics
             write_to_file(d, f"{p['age']} ({'alive' if p['alive'] else 'dead'})", 'Age')
-            write_to_file(d, f"{len(p['network']['siblings'])}", 'siblings')
-            write_to_file(d, f"{len(p['network']['children']['birth'])}", 'children')
+            sbls = ''
+            if 'sibling' in p['network']['relationship keys']:
+                for sbl in p['network']['relationship keys']['sibling']:
+                    other = get_other_from_relationship(key, sbl)
+                    sbls += f"{other['full name']} ({other['key']}), "
+            write_to_file(d, sbls, 'siblings')
+            # write_to_file(d, f"{len(p['network']['siblings'])}", 'siblings')
+            # write_to_file(d, f"{len(p['network']['children']['birth'])}", 'children')
             if p['home']:
                 write_to_file(d, f"{p['home']['street']} in the {p['home']['neighborhood']} neighborhood", 'address')
             else:
@@ -91,10 +112,11 @@ if __name__ == '__main__':
                     elif topic == 'new child':
                         write_to_file(d, f"Child was born, {e['child name']}.")
                     elif topic == 'person died':
-                        write_to_file(d, f"{e['label'].title()} died.")
+                        write_to_file(d, f"{e['label'].title()} died: {e['person']['name']}")
                     elif topic == 'new relationship':
                         other = e['people names'][0] if p['key'] == e['people'][1] else e['people names'][1]
-                        write_to_file(d, f"New {e['label']}: {other}")
+                        label = e['label'] if e['label'] != 'parentchild' else 'child'
+                        write_to_file(d, f"New {label}: {other}")
                     elif topic == 'unmarried':
                         write_to_file(d, f"No longer married.")
                     elif topic == 'single':
@@ -105,6 +127,19 @@ if __name__ == '__main__':
                         write_to_file(d, "Not enough income in household.")
                     elif topic == 'job notice':
                         write_to_file(d, f"Income change: {e['notice']}, with income {e['income']}.")
+                    elif topic == 'neglected':
+                        write_to_file(d, "Neglected while needing care.")
+                    elif topic == 'now caretaker':
+                        ppl = ''
+                        for i in e['care dependants']:
+                            other = get_person(i)
+                            ppl += f"{other['full name']}"
+                        write_to_file(d, f"Now caretaker of: {ppl}")
+                    elif topic == 'new caretaker':
+                        other = get_person(e['person'])
+                        write_to_file(d, f"New caretaker in household: {other['full name']}.")
+                    elif topic == 'not caretaker':
+                        write_to_file(d, "No longer caretaker in household.")
                     else:
                         print(e)
 

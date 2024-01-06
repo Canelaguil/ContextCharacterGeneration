@@ -1,53 +1,96 @@
 {
   "10856": {
     "alive": false,
-    "name": "Truden",
+    "name": "Lisebette",
     "surname": "",
-    "full name": "Truden",
+    "full name": "Lisebette",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.101,
-      "romantic interest": 0.894,
-      "sex interest": 0.838,
-      "gender expression": 0.184,
+      "sexuality label": "gay",
+      "sexuality": 0.834,
+      "romantic interest": 0.679,
+      "sex interest": 0.87,
+      "gender expression": 0.138,
       "sex": "f"
     },
-    "age": 42,
-    "birth year": 1163,
+    "age": 29,
+    "birth year": 1178,
     "sex": "f",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.619,
-      "nice-nasty": 0.161,
-      "honest-false": 0.82
+      "lawful-chaotic": 0.643,
+      "nice-nasty": 0.398,
+      "honest-false": 0.0
     },
     "attitude": {
-      "outgoing": 0.64,
-      "dream": 0.614
+      "outgoing": 0.53,
+      "dream": 0.632
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "neglected"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.07,
-        "gender expression expression": 0.135
+        "sexuality expression": 0.442,
+        "gender expression expression": 0.125
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13274": {
+          "key": 13274,
+          "name": "Ase Scelwart",
+          "age": 19,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Lisebette (10856)",
+            "father": "Thezonus (10855)"
+          }
+        },
+        "14018": {
+          "key": 14018,
+          "name": "Bartrarde Scelwart",
+          "age": 7,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Lisebette (10856)",
+            "father": "Thezonus (10855)"
+          }
+        },
+        "14715": {
+          "key": 14715,
+          "name": "Hughe Scelwart",
+          "age": 26,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Lisebette (10856)",
+            "father": "Thezonus (10855)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10857
-        ]
+        ],
+        "child": {
+          "birth": [
+            13276,
+            14020,
+            14717
+          ]
+        }
       }
     },
     "occupation": {
@@ -56,28 +99,30 @@
         2,
         "middle class"
       ],
-      "income": 1.069,
+      "income": 0.661,
       "all_incomes": [
-        1.073,
-        1.124,
-        1.069
+        1.025,
+        0.651,
+        0.653,
+        0.586,
+        0.661
       ],
       "job": {
-        "lawful": false,
-        "honest": true
+        "lawful": true,
+        "honest": false
       }
     },
     "genetics": {
-      "skin_color": 0,
+      "skin_color": 1,
       "eye_color": "brown",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "S",
-        "S"
+        "C",
+        "C"
       ],
-      "health": 0.801,
-      "fertility": 0.788,
+      "health": 0.638,
+      "fertility": 0.636,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -89,15 +134,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.801
+            "new_health": 0.638
           },
           "death": false
         },
-        "1204": {
+        "1206": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.801
+            "new_health": 0.638
           },
           "death": true
         }
@@ -112,8 +157,8 @@
               10856
             ],
             "people names": [
-              "Passelin",
-              "Truden"
+              "Thezonus Scelwart",
+              "Lisebette"
             ],
             "label": "spouse",
             "committed": true
@@ -126,7 +171,7 @@
               "section": "stDie Camp.se3.c2",
               "street": "Die Camp",
               "neighborhood": "kampbuurt",
-              "unique id": 384
+              "unique id": 376
             }
           }
         ],
@@ -134,7 +179,77 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.073
+            "income": 1.025
+          },
+          {
+            "topic": "new relationship",
+            "key": 13276,
+            "people": [
+              10856,
+              13274
+            ],
+            "people names": [
+              "Lisebette",
+              "Ase Scelwart"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.651
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 14020,
+            "people": [
+              10856,
+              14018
+            ],
+            "people names": [
+              "Lisebette",
+              "Bartrarde Scelwart"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 14717,
+            "people": [
+              10856,
+              14715
+            ],
+            "people names": [
+              "Lisebette",
+              "Hughe Scelwart"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
           }
         ]
       }
@@ -146,7 +261,7 @@
       "section": "stDie Camp.se3.c2",
       "street": "Die Camp",
       "neighborhood": "kampbuurt",
-      "unique id": 384
+      "unique id": 376
     },
     "relationship status": {
       "taken": true,

@@ -57,7 +57,9 @@ class HomoSociologicus():
     def evolve(self, age, record, relationship_status):
         # check for disabilities
         if 'new_disability' in record['health']['health']:
-            self.needs_care = True
+            look_at_me_now = self.community.get_person(self.person_key)
+            addr = look_at_me_now['home']['unique id']
+            self.need_care(addr)
 
         # filter for age
         # print(self.independent_age)
@@ -104,7 +106,6 @@ class HomoSociologicus():
             if age != 0:
                 self.taken_care_of = False
                 self.flags.add('neglected')
-                print(self.person_key)
         elif change == 'need care':
             self.need_care = True
         elif change == 'not enough income':
@@ -120,6 +121,7 @@ class HomoSociologicus():
         if look_at_me_now['genetics']['disabilities'] == []:
             addr = look_at_me_now['home']['unique id']
             self.i_dont_need_care(addr)
+            # print('discharged')
 
     def need_care(self, home_key : int):
         self.needs_care = True
@@ -131,6 +133,7 @@ class HomoSociologicus():
 
     def i_dont_need_care(self, home_key : int):
         self.needs_care = False
+        self.taken_care_of = False
         msg = {
             'topic' : 'remove care dependant',
             'key' : self.person_key

@@ -1,18 +1,18 @@
 {
   "10034": {
     "alive": false,
-    "name": "Reynildis",
-    "surname": "",
-    "full name": "Reynildis",
+    "name": "Reymodis",
+    "surname": "Zonne",
+    "full name": "Reymodis Zonne",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.871,
-      "romantic interest": 0.632,
-      "sex interest": 0.582,
-      "gender expression": 0.061,
+      "sexuality label": "bi",
+      "sexuality": 0.563,
+      "romantic interest": 0.628,
+      "sex interest": 0.832,
+      "gender expression": 0.0,
       "sex": "f"
     },
-    "age": 53,
+    "age": 54,
     "birth year": 1165,
     "sex": "f",
     "income class": [
@@ -20,13 +20,13 @@
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.888,
-      "nice-nasty": 0.598,
-      "honest-false": 0.517
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.0,
+      "honest-false": 0.504
     },
     "attitude": {
-      "outgoing": 0.281,
-      "dream": 0.536
+      "outgoing": 0.476,
+      "dream": 0.268
     },
     "homsoc": {
       "means": {
@@ -35,61 +35,62 @@
         "caretaker": false,
         "needs_care": false,
         "flags": [
-          "starving"
+          "starving",
+          "neglected"
         ]
       },
       "expression": {
-        "sexuality expression": 0.614,
-        "gender expression expression": 0.03
+        "sexuality expression": 0.245,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13099": {
+          "key": 13099,
+          "name": "Nannen",
+          "age": 1,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Reymodis (10034)",
+            "father": "Remboldus (10033)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          10035
-        ]
+          10035,
+          15437
+        ],
+        "child": {
+          "birth": [
+            13101
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 0.969,
-      "all_incomes": [
-        1.004,
-        1.021,
-        0.98,
-        1.009,
-        0.993,
-        1.001,
-        0.984,
-        1.021,
-        0.946,
-        0.933,
-        0.979,
-        0.927,
-        0.969
-      ],
-      "job": {
-        "lawful": true,
-        "honest": true
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 2,
-      "eye_color": "blue",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "skin_color": 1,
+      "eye_color": "green",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
         "C",
         "S"
       ],
       "health": 0.0,
-      "fertility": 0.636,
+      "fertility": 0.771,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -101,30 +102,38 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.639
+            "new_health": 0.716
           },
           "death": false
         },
         "1215": {
           "health": {
             "change": true,
-            "value_change": -0.293,
-            "new_health": 0.346
+            "value_change": -0.157,
+            "new_health": 0.559
           },
           "death": false
         },
         "1216": {
           "health": {
             "change": true,
-            "value_change": -0.338,
-            "new_health": 0.008
+            "value_change": -0.371,
+            "new_health": 0.188
           },
           "death": false
         },
         "1217": {
           "health": {
             "change": true,
-            "value_change": -0.008,
+            "value_change": -0.151,
+            "new_health": 0.037
+          },
+          "death": false
+        },
+        "1218": {
+          "health": {
+            "change": true,
+            "value_change": -0.037,
             "new_health": 0.0
           },
           "death": true
@@ -140,8 +149,8 @@
               10034
             ],
             "people names": [
-              "Kerstiaen Buyc",
-              "Reynildis"
+              "Remboldus",
+              "Reymodis Zonne"
             ],
             "label": "spouse",
             "committed": true
@@ -154,48 +163,108 @@
               "section": "stUterechse straet.se3.c2",
               "street": "Uterechse straet",
               "neighborhood": "varkensbuurt",
-              "unique id": 14
+              "unique id": 17
             }
           }
         ],
         "1202": [
           {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
+            "topic": "new relationship",
+            "key": 13101,
+            "people": [
+              10034,
+              13099
+            ],
+            "people names": [
+              "Reymodis Zonne",
+              "Nannen"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
           }
         ],
-        "1205": [
+        "1203": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.004
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 13099,
+              "name": "Nannen",
+              "age": 1,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Reymodis (10034)",
+                "father": "Remboldus (10033)"
+              }
+            },
+            "label": "child"
+          }
+        ],
+        "1207": [
+          {
+            "key": 10035,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10033,
+              "name": "Remboldus",
+              "age": 44,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
           },
           {
             "topic": "not enough income",
-            "income": 0.0,
+            "income": 0,
             "inhabitants": []
           }
         ],
         "1208": [
           {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.009
+            "topic": "new relationship",
+            "key": 15437,
+            "people": [
+              10021,
+              10034
+            ],
+            "people names": [
+              "Ghisele Stoerm",
+              "Reymodis Zonne"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stUterechse straet.se3.c2",
+              "street": "Uterechse straet",
+              "neighborhood": "varkensbuurt",
+              "unique id": 12
+            }
           }
         ],
-        "1210": [
+        "1218": [
           {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.001
-          }
-        ],
-        "1212": [
-          {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.021
+            "topic": "feelings change",
+            "target": 10021,
+            "target name": "Ghisele Stoerm",
+            "state": "out of love",
+            "relationship": 15437
           }
         ]
       }
@@ -207,13 +276,14 @@
       "section": "stUterechse straet.se3.c2",
       "street": "Uterechse straet",
       "neighborhood": "varkensbuurt",
-      "unique id": 14
+      "unique id": 12
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        10035
+        10035,
+        15437
       ]
     }
   }

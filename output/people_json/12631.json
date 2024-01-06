@@ -1,61 +1,93 @@
 {
   "12631": {
     "alive": false,
-    "name": "Rembrandus",
-    "surname": "Innighe",
-    "full name": "Rembrandus Innighe",
+    "name": "Alretieren",
+    "surname": "Blomartsdochter",
+    "full name": "Alretieren Blomartsdochter",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.132,
-      "romantic interest": 0.633,
-      "sex interest": 0.763,
+      "sexuality": 0.104,
+      "romantic interest": 0.867,
+      "sex interest": 0.867,
       "gender expression": 0.0,
-      "sex": "m"
+      "sex": "f"
     },
-    "age": 4,
+    "age": 28,
     "birth year": 1200,
-    "sex": "m",
+    "sex": "f",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.875,
-      "nice-nasty": 0.0,
-      "honest-false": 0.0
+      "lawful-chaotic": 0.036,
+      "nice-nasty": 0.162,
+      "honest-false": 0.999
     },
     "attitude": {
-      "outgoing": 0.515,
-      "dream": 0.551
+      "outgoing": 0.719,
+      "dream": 0.426
     },
     "homsoc": {
       "means": {
         "independent": false,
         "taken_care_of": true,
         "caretaker": true,
-        "needs_care": true,
-        "flags": []
+        "needs_care": false,
+        "flags": [
+          "starving",
+          "neglected"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.103,
+        "sexuality expression": 0.072,
         "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": {
-        "mother": "Soeten (11960)",
-        "father": "Laurens (11959)"
+        "mother": "Katerina (12017)",
+        "father": "Blomart (12016)"
       },
-      "children": {},
+      "children": {
+        "17635": {
+          "key": 17635,
+          "name": "Tielen Suardt",
+          "age": 17,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Alretieren (12631)",
+            "father": "Brame (12832)"
+          }
+        },
+        "18709": {
+          "key": 18709,
+          "name": "Gerart",
+          "age": 24,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Alretieren (12631)",
+            "father": "Herlewin (14703)"
+          }
+        }
+      },
       "relationship keys": {
         "parent": [
           12632,
           12633
         ],
-        "sibling": [
-          12992,
-          13384
-        ]
+        "spouse": [
+          17318,
+          18354
+        ],
+        "child": {
+          "birth": [
+            17637,
+            18711
+          ]
+        }
       }
     },
     "occupation": {
@@ -69,15 +101,15 @@
     },
     "genetics": {
       "skin_color": 0,
-      "eye_color": "green",
+      "eye_color": "blue",
       "hair_color": "strawberry blonde",
       "hair_color_code": 5,
       "hair_type": [
-        "S",
-        "S"
+        "C",
+        "C"
       ],
-      "health": 0.707,
-      "fertility": 0.696,
+      "health": 0.462,
+      "fertility": 0.743,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -89,15 +121,47 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.707
+            "new_health": 0.763
           },
           "death": false
         },
-        "1204": {
+        "1208": {
+          "health": {
+            "change": true,
+            "value_change": -0.119,
+            "new_health": 0.644
+          },
+          "death": false
+        },
+        "1209": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.707
+            "new_health": 0.644
+          },
+          "death": false
+        },
+        "1215": {
+          "health": {
+            "change": true,
+            "value_change": -0.182,
+            "new_health": 0.462
+          },
+          "death": false
+        },
+        "1216": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.462
+          },
+          "death": false
+        },
+        "1228": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.462
           },
           "death": true
         }
@@ -109,43 +173,265 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stCromme straet.se3.c2",
+              "section": "stCromme straet.se5.c2",
               "street": "Cromme straet",
               "neighborhood": "denhof",
-              "unique id": 881
+              "unique id": 895
             }
           }
         ],
         "1201": [
           {
-            "topic": "new relationship",
-            "key": 12992,
-            "people": [
-              12631,
-              12989
-            ],
-            "people names": [
-              "Rembrandus Innighe",
-              "Richolfus Innighe"
-            ],
-            "label": "sibling",
-            "committed": false
+            "topic": "neglected"
           }
         ],
         "1202": [
           {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12016,
+              "name": "Blomart",
+              "age": 51,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "parent"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "new caretaker",
+            "person": 12017
+          }
+        ],
+        "1205": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stScherbier straet.se1.c2",
+              "street": "Scherbier straet",
+              "neighborhood": "cingelzuid",
+              "unique id": 633
+            }
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1211": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1212": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1213": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1214": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1215": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1217": [
+          {
             "topic": "new relationship",
-            "key": 13384,
+            "key": 17318,
             "people": [
-              12631,
-              13381
+              12832,
+              12631
             ],
             "people names": [
-              "Rembrandus Innighe",
-              "Heinkin Innighe"
+              "Brame Suardt",
+              "Alretieren Blomartsdochter"
             ],
-            "label": "sibling",
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1219": [
+          {
+            "topic": "new relationship",
+            "key": 17637,
+            "people": [
+              12631,
+              17635
+            ],
+            "people names": [
+              "Alretieren Blomartsdochter",
+              "Tielen Suardt"
+            ],
+            "label": "parentchild",
             "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1220": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1221": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1222": [
+          {
+            "key": 17318,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12832,
+              "name": "Brame Suardt",
+              "age": 20,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Mabelie (10832)",
+                "father": "Pieter (10831)"
+              }
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1223": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1224": [
+          {
+            "topic": "new relationship",
+            "key": 18354,
+            "people": [
+              14703,
+              12631
+            ],
+            "people names": [
+              "Herlewin Engelbertusszoon",
+              "Alretieren Blomartsdochter"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stDie Camp.se1.c2",
+              "street": "Die Camp",
+              "neighborhood": "kampbuurt",
+              "unique id": 356
+            }
+          }
+        ],
+        "1225": [
+          {
+            "topic": "new relationship",
+            "key": 18711,
+            "people": [
+              12631,
+              18709
+            ],
+            "people names": [
+              "Alretieren Blomartsdochter",
+              "Gerart"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 14703,
+            "target name": "Herlewin Engelbertusszoon",
+            "state": "solid love",
+            "relationship": 18354
+          }
+        ],
+        "1226": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12017,
+              "name": "Katerina Brebart",
+              "age": 57,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "label": "parent"
+          }
+        ],
+        "1227": [
+          {
+            "topic": "new caretaker",
+            "person": 12400
           }
         ]
       }
@@ -154,17 +440,17 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stCromme straet.se3.c2",
-      "street": "Cromme straet",
-      "neighborhood": "denhof",
-      "unique id": 881
+      "section": "stDie Camp.se1.c2",
+      "street": "Die Camp",
+      "neighborhood": "kampbuurt",
+      "unique id": 356
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
-        12992,
-        13384
+        17318,
+        18354
       ]
     }
   }

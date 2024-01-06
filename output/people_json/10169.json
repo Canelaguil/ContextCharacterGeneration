@@ -1,32 +1,32 @@
 {
   "10169": {
     "alive": false,
-    "name": "Segherarden",
-    "surname": "Cabelliau",
-    "full name": "Segherarden Cabelliau",
+    "name": "Sipper",
+    "surname": "Zieken",
+    "full name": "Sipper Zieken",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.081,
-      "romantic interest": 0.816,
-      "sex interest": 0.706,
-      "gender expression": 0.347,
+      "sexuality": 0.046,
+      "romantic interest": 0.998,
+      "sex interest": 0.739,
+      "gender expression": 0.143,
       "sex": "f"
     },
-    "age": 52,
-    "birth year": 1155,
+    "age": 40,
+    "birth year": 1166,
     "sex": "f",
     "income class": [
-      0,
-      "working class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.751,
-      "nice-nasty": 0.0,
-      "honest-false": 0.877
+      "lawful-chaotic": 0.462,
+      "nice-nasty": 0.795,
+      "honest-false": 0.838
     },
     "attitude": {
-      "outgoing": 0.419,
-      "dream": 0.621
+      "outgoing": 0.274,
+      "dream": 0.525
     },
     "homsoc": {
       "means": {
@@ -35,43 +35,72 @@
         "caretaker": false,
         "needs_care": false,
         "flags": [
-          "starving"
+          "neglected"
         ]
       },
       "expression": {
-        "sexuality expression": 0.057,
-        "gender expression expression": 0.111
+        "sexuality expression": 0.022,
+        "gender expression expression": 0.048
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12711": {
+          "key": 12711,
+          "name": "Emgelberna",
+          "age": 4,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Sipper (10169)",
+            "father": "Ghisele (10168)"
+          }
+        },
+        "13140": {
+          "key": 13140,
+          "name": "Laurens",
+          "age": 47,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Sipper (10169)",
+            "father": "Ghisele (10168)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10170
-        ]
+        ],
+        "child": {
+          "birth": [
+            12713,
+            13142
+          ]
+        }
       }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        0,
-        "working class"
+        1,
+        "lower middle class"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 8,
-      "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 2,
+      "eye_color": "green",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
-        "S",
+        "C",
         "C"
       ],
-      "health": 0.226,
-      "fertility": 0.724,
+      "health": 0.65,
+      "fertility": 0.553,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -83,23 +112,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.738
+            "new_health": 0.65
           },
           "death": false
         },
         "1205": {
           "health": {
-            "change": true,
-            "value_change": -0.296,
-            "new_health": 0.442
-          },
-          "death": false
-        },
-        "1206": {
-          "health": {
-            "change": true,
-            "value_change": -0.216,
-            "new_health": 0.226
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.65
           },
           "death": true
         }
@@ -114,8 +135,8 @@
               10169
             ],
             "people names": [
-              "Kornillis Cabellau",
-              "Segherarden Cabelliau"
+              "Ghisele",
+              "Sipper Zieken"
             ],
             "label": "spouse",
             "committed": true
@@ -123,46 +144,78 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stIn den Haeg.se1.c0",
-              "street": "In den Haeg",
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stMerrien hoof.se1.c1",
+              "street": "Merrien hoof",
               "neighborhood": "varkensbuurt",
-              "unique id": 64
+              "unique id": 78
             }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 12713,
+            "people": [
+              10169,
+              12711
+            ],
+            "people names": [
+              "Sipper Zieken",
+              "Emgelberna"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 13142,
+            "people": [
+              10169,
+              13140
+            ],
+            "people names": [
+              "Sipper Zieken",
+              "Laurens"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "neglected"
           }
         ],
         "1205": [
           {
-            "topic": "feelings change",
-            "target": 10168,
-            "target name": "Kornillis Cabellau",
-            "state": "infatuation",
-            "relationship": 10170
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.216,
-            "inhabitants": []
-          }
-        ],
-        "1206": [
-          {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
+            "topic": "neglected"
           }
         ]
       }
     },
     "key": 10169,
     "home": {
-      "income class": 0,
-      "income class label": "working class",
-      "section": "stIn den Haeg.se1.c0",
-      "street": "In den Haeg",
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stMerrien hoof.se1.c1",
+      "street": "Merrien hoof",
       "neighborhood": "varkensbuurt",
-      "unique id": 64
+      "unique id": 78
     },
     "relationship status": {
       "taken": true,
