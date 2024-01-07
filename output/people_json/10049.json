@@ -2,32 +2,32 @@
   "10049": {
     "alive": false,
     "name": "Oda",
-    "surname": "Ulf",
-    "full name": "Oda Ulf",
+    "surname": "Blome",
+    "full name": "Oda Blome",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.089,
-      "romantic interest": 0.804,
-      "sex interest": 0.698,
-      "gender expression": 0.0,
+      "sexuality": 0.077,
+      "romantic interest": 0.613,
+      "sex interest": 0.636,
+      "gender expression": 0.145,
       "sex": "f"
     },
-    "age": 28,
+    "age": 29,
     "birth year": 1173,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.937,
-      "nice-nasty": 0.92,
-      "honest-false": 0.63
+      "lawful-chaotic": 0.933,
+      "nice-nasty": 0.345,
+      "honest-false": 0.525
     },
     "attitude": {
-      "outgoing": 0.672,
-      "dream": 0.398
+      "outgoing": 0.588,
+      "dream": 0.361
     },
     "homsoc": {
       "means": {
@@ -35,61 +35,49 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": [
-          "neglected"
-        ]
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.037,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.053,
+        "gender expression expression": 0.08
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {
-        "12226": {
-          "key": 12226,
-          "name": "Godeweris",
-          "age": 2,
-          "alive": false,
-          "sex": "f",
-          "parents": {
-            "mother": "Oda (10049)",
-            "father": "Iacobus (10048)"
-          }
-        }
-      },
+      "children": {},
       "relationship keys": {
         "spouse": [
           10050
-        ],
-        "child": {
-          "birth": [
-            12228
-          ]
-        }
+        ]
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.992,
+      "all_incomes": [
+        1.147,
+        0.992
+      ],
+      "job": {
+        "lawful": true,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 2,
-      "eye_color": "brown",
-      "hair_color": "red",
-      "hair_color_code": 3,
+      "skin_color": 8,
+      "eye_color": "blue",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
-        "C",
-        "C"
+        "S",
+        "S"
       ],
-      "health": 0.619,
-      "fertility": 0.671,
+      "health": 0.676,
+      "fertility": 0.697,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -101,13 +89,26 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.619
+            "new_health": 0.676
+          },
+          "death": false
+        },
+        "1201": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.676
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.147
+          },
           {
             "topic": "new relationship",
             "key": 10050,
@@ -116,8 +117,8 @@
               10049
             ],
             "people names": [
-              "Iacobus",
-              "Oda Ulf"
+              "Mattheus",
+              "Oda Blome"
             ],
             "label": "spouse",
             "committed": true
@@ -130,25 +131,21 @@
               "section": "stVerckens merct.se1.c2",
               "street": "Verckens merct",
               "neighborhood": "varkensbuurt",
-              "unique id": 22
+              "unique id": 26
             }
           },
           {
-            "topic": "new relationship",
-            "key": 12228,
-            "people": [
-              10049,
-              12226
-            ],
-            "people names": [
-              "Oda Ulf",
-              "Godeweris"
-            ],
-            "label": "parentchild",
-            "committed": false
-          },
+            "topic": "feelings change",
+            "target": 10048,
+            "target name": "Mattheus",
+            "state": "solid love",
+            "relationship": 10050
+          }
+        ],
+        "1201": [
           {
-            "topic": "neglected"
+            "topic": "death",
+            "cause": "illness"
           }
         ]
       }
@@ -160,7 +157,7 @@
       "section": "stVerckens merct.se1.c2",
       "street": "Verckens merct",
       "neighborhood": "varkensbuurt",
-      "unique id": 22
+      "unique id": 26
     },
     "relationship status": {
       "taken": true,

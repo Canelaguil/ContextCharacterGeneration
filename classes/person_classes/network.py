@@ -1,5 +1,9 @@
 from ..utils import *
 
+def get_other(my_key, update):
+    # has to be done like this because of python var referencing
+    return update['people'][0] if update['people'][0] != my_key else update['people'][1]
+
 class Network():
     def __init__(self, person, community, mother, father, parents={}) -> None:
         self.community = community
@@ -39,6 +43,9 @@ class Network():
             self.relationship_types[label] = []
         self.relationship_types[label].append(update['key'])
 
+        if label == 'spouse':
+            self.new_marriage(update)
+
     def process_parent_child(self, notice, age, kind='birth'):
         if age == 0: # meaning, these are their parents
             label = 'parent'
@@ -51,7 +58,7 @@ class Network():
             # also add to list of children to keep track of
             try:
                 # has to be done like this because of python var referencing
-                child = notice['people'][0] if notice['people'][0] != self.person_key else notice['people'][1]
+                child = get_other(self.person_key, notice) #notice['people'][0] if notice['people'][0] != self.person_key else notice['people'][1]
                 self.children_keys.append(child)
             except:
                 log_error('cannot find child', notice)
@@ -72,6 +79,23 @@ class Network():
             if not self.community.we_know_each_other(ch, new_child):
                 self.community.create_relationship(ch, new_child, 'half-sibling', True)
                 # log_error('half siblings', self.community.create_relationship(ch, new_child, 'half-sibling', True))
+
+    """
+    UTILS 
+    """
+    def new_marriage(self, update):
+        msg = {
+            'topic' : 'update',
+            'update' : 'parent married',
+            'parent' : self.person_key,
+            'new partner' : get_other(self.person_key, update)
+        }
+        self.message_children(msg)
+
+    def message_children(self, msg):
+        for ch in self.children_keys:
+            self.community.message_person(ch, msg)
+
 
     """
     INFO FUNCTIONS

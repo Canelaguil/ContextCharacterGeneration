@@ -1,76 +1,109 @@
 {
   "12119": {
     "alive": false,
-    "name": "Yda",
+    "name": "Soeten",
     "surname": "",
-    "full name": "Yda",
+    "full name": "Soeten",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.931,
-      "sex interest": 0.955,
-      "gender expression": 0.072,
+      "sexuality": 0.148,
+      "romantic interest": 0.728,
+      "sex interest": 0.591,
+      "gender expression": 0.228,
       "sex": "f"
     },
-    "age": 39,
-    "birth year": 1162,
+    "age": 41,
+    "birth year": 1175,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "Dogmatists",
     "income class": [
-      3,
-      "upper middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.788,
-      "nice-nasty": 0.811,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.139,
+      "nice-nasty": 0.233,
+      "honest-false": 0.03
     },
     "attitude": {
-      "outgoing": 0.696,
-      "dream": 0.489
+      "outgoing": 0.368,
+      "dream": 0.388
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "caretaker",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.033
+        "sexuality expression": 0.093,
+        "gender expression expression": 0.113
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14102": {
+          "key": 14102,
+          "name": "Gelmarus Croic",
+          "age": 1,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Soeten (12119)",
+            "father": "Egbertus (12118)"
+          }
+        },
+        "14703": {
+          "key": 14703,
+          "name": "Nellen Croic",
+          "age": 15,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Soeten (12119)",
+            "father": "Egbertus (12118)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          12120
-        ]
+          12120,
+          20014
+        ],
+        "child": {
+          "birth": [
+            14104,
+            14705
+          ]
+        }
       }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        3,
-        "upper middle class"
+        1,
+        "lower middle class"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 0,
+      "skin_color": 6,
       "eye_color": "brown",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "S",
-        "C"
+        "S"
       ],
-      "health": 0.649,
-      "fertility": 0.611,
+      "health": 0.699,
+      "fertility": 0.666,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -82,9 +115,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.649
+            "new_health": 0.699
           },
-          "death": true
+          "death": false
         }
       },
       "events": {
@@ -97,8 +130,8 @@
               12119
             ],
             "people names": [
-              "Elyas\u0430 Ziele",
-              "Yda"
+              "Egbertus Croic",
+              "Soeten"
             ],
             "label": "spouse",
             "committed": true
@@ -106,31 +139,217 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stDen Hof.se5.c3",
-              "street": "Den Hof",
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stAppel Marckt.se1.c1",
+              "street": "Appel Marckt",
               "neighborhood": "denhof",
-              "unique id": 954
+              "unique id": 967
             }
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 14104,
+            "people": [
+              12119,
+              14102
+            ],
+            "people names": [
+              "Soeten",
+              "Gelmarus Croic"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 14705,
+            "people": [
+              12119,
+              14703
+            ],
+            "people names": [
+              "Soeten",
+              "Nellen Croic"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1204": [
+          {
+            "key": 12120,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12118,
+              "name": "Egbertus Croic",
+              "age": 53,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 14102,
+              "name": "Gelmarus Croic",
+              "age": 1,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Soeten (12119)",
+                "father": "Egbertus (12118)"
+              }
+            },
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1214": [
+          {
+            "topic": "new relationship",
+            "key": 20014,
+            "people": [
+              11638,
+              12119
+            ],
+            "people names": [
+              "Ulrici",
+              "Soeten"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stMooierstraet.se1.c1",
+              "street": "Mooierstraet",
+              "neighborhood": "visbuurt",
+              "unique id": 748
+            }
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.266,
+            "inhabitants": []
+          },
+          {
+            "topic": "death",
+            "cause": "starvation"
           }
         ]
       }
     },
     "key": 12119,
     "home": {
-      "income class": 3,
-      "income class label": "upper middle class",
-      "section": "stDen Hof.se5.c3",
-      "street": "Den Hof",
-      "neighborhood": "denhof",
-      "unique id": 954
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stMooierstraet.se1.c1",
+      "street": "Mooierstraet",
+      "neighborhood": "visbuurt",
+      "unique id": 748
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        12120
+        12120,
+        20014
       ]
     }
   }

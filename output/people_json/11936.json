@@ -1,19 +1,19 @@
 {
   "11936": {
     "alive": false,
-    "name": "Hadewigis",
-    "surname": "Zonne",
-    "full name": "Hadewigis Zonne",
+    "name": "Verthwi",
+    "surname": "Curthals",
+    "full name": "Verthwi Curthals",
     "born this way": {
       "sexuality label": "straight",
       "sexuality": 0.0,
-      "romantic interest": 0.601,
-      "sex interest": 0.603,
-      "gender expression": 0.0,
+      "romantic interest": 0.866,
+      "sex interest": 0.606,
+      "gender expression": 0.256,
       "sex": "f"
     },
-    "age": 36,
-    "birth year": 1172,
+    "age": 51,
+    "birth year": 1180,
     "sex": "f",
     "faction": "No religion",
     "income class": [
@@ -22,12 +22,12 @@
     ],
     "personality": {
       "lawful-chaotic": 0.0,
-      "nice-nasty": 0.304,
-      "honest-false": 0.627
+      "nice-nasty": 0.012,
+      "honest-false": 0.564
     },
     "attitude": {
-      "outgoing": 0.332,
-      "dream": 0.418
+      "outgoing": 0.494,
+      "dream": 0.399
     },
     "homsoc": {
       "means": {
@@ -36,51 +36,86 @@
         "caretaker": false,
         "needs_care": false,
         "flags": [
-          "neglected"
+          "caretaker",
+          "starving"
         ]
       },
       "expression": {
         "sexuality expression": -0.001,
-        "gender expression expression": -0.001
+        "gender expression expression": 0.216
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "14268": {
-          "key": 14268,
-          "name": "Trueb",
-          "age": 10,
+        "15954": {
+          "key": 15954,
+          "name": "Myrthel Gilissdochter",
+          "age": 22,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Verthwi (11936)",
+            "father": "Gilis (11935)"
+          }
+        },
+        "18416": {
+          "key": 18416,
+          "name": "Sibrando van Verthwi",
+          "age": 3,
           "alive": false,
           "sex": "m",
           "parents": {
-            "mother": "Hadewigis (11936)",
-            "father": "Voghel (11935)"
+            "mother": "Verthwi (11936)",
+            "father": "Gilis (11935)"
           }
         }
       },
       "relationship keys": {
         "spouse": [
-          11937
+          11937,
+          22734
         ],
         "child": {
           "birth": [
-            14270
+            15956,
+            18418
           ]
         }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.972,
+      "all_incomes": [
+        0.0,
+        0.278,
+        0.342,
+        0.308,
+        0.223,
+        0.395,
+        0.593,
+        0.738,
+        1.232,
+        1.3,
+        1.271,
+        1.499,
+        1.499,
+        1.088,
+        0.813,
+        0.972
+      ],
+      "job": {
+        "lawful": false,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 6,
+      "skin_color": 3,
       "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
@@ -88,8 +123,8 @@
         "C",
         "C"
       ],
-      "health": 0.614,
-      "fertility": 0.58,
+      "health": 0.481,
+      "fertility": 0.697,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -101,15 +136,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.614
+            "new_health": 0.626
           },
           "death": false
         },
-        "1207": {
+        "1230": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.614
+            "change": true,
+            "value_change": -0.145,
+            "new_health": 0.481
           },
           "death": true
         }
@@ -124,8 +159,8 @@
               11936
             ],
             "people names": [
-              "Voghel",
-              "Hadewigis Zonne"
+              "Gilis",
+              "Verthwi Curthals"
             ],
             "label": "spouse",
             "committed": true
@@ -138,42 +173,251 @@
               "section": "stCromme straet.se3.c2",
               "street": "Cromme straet",
               "neighborhood": "denhof",
-              "unique id": 878
+              "unique id": 882
             }
           }
         ],
-        "1204": [
+        "1205": [
           {
             "topic": "new relationship",
-            "key": 14270,
+            "key": 15956,
             "people": [
               11936,
-              14268
+              15954
             ],
             "people names": [
-              "Hadewigis Zonne",
-              "Trueb"
+              "Verthwi Curthals",
+              "Myrthel Gilissdochter"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1210": [
+          {
+            "topic": "new relationship",
+            "key": 18418,
+            "people": [
+              11936,
+              18416
+            ],
+            "people names": [
+              "Verthwi Curthals",
+              "Sibrando van Verthwi"
             ],
             "label": "parentchild",
             "committed": false
           },
           {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0.336,
+            "inhabitants": []
           }
         ],
-        "1205": [
+        "1211": [
           {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0.014,
+            "inhabitants": []
           }
         ],
-        "1206": [
+        "1212": [
           {
-            "topic": "neglected"
+            "key": 11937,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11935,
+              "name": "Gilis",
+              "age": 53,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
           }
         ],
-        "1207": [
+        "1213": [
           {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1214": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 18416,
+              "name": "Sibrando van Verthwi",
+              "age": 3,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Verthwi (11936)",
+                "father": "Gilis (11935)"
+              }
+            },
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1215": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.0
+          },
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1216": [
+          {
+            "topic": "event",
+            "event": "war",
+            "year": 1216
+          }
+        ],
+        "1217": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.342
+          }
+        ],
+        "1218": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.308
+          }
+        ],
+        "1219": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.223
+          }
+        ],
+        "1221": [
+          {
+            "topic": "not caretaker"
+          }
+        ],
+        "1223": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.232
+          }
+        ],
+        "1226": [
+          {
+            "topic": "new relationship",
+            "key": 22734,
+            "people": [
+              10897,
+              11936
+            ],
+            "people names": [
+              "Tijs",
+              "Verthwi Curthals"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stDie Camp.se7.c2",
+              "street": "Die Camp",
+              "neighborhood": "kampbuurt",
+              "unique id": 405
+            }
+          }
+        ],
+        "1227": [
+          {
+            "key": 22734,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10897,
+              "name": "Tijs",
+              "age": 52,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "event",
+            "event": "famine",
+            "year": 1227
+          }
+        ],
+        "1228": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 15954,
+              "name": "Myrthel Gilissdochter",
+              "age": 22,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Verthwi (11936)",
+                "father": "Gilis (11935)"
+              }
+            },
+            "label": "child"
+          },
+          {
+            "topic": "event",
+            "event": "famine",
+            "year": 1228
+          }
+        ],
+        "1229": [
+          {
+            "topic": "event",
+            "event": "faction upheaval",
+            "faction": "Zealots",
+            "year": 1229
+          }
+        ],
+        "1230": [
+          {
+            "topic": "death",
+            "cause": "old age"
           }
         ]
       }
@@ -182,16 +426,17 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stCromme straet.se3.c2",
-      "street": "Cromme straet",
-      "neighborhood": "denhof",
-      "unique id": 878
+      "section": "stDie Camp.se7.c2",
+      "street": "Die Camp",
+      "neighborhood": "kampbuurt",
+      "unique id": 405
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
-        11937
+        11937,
+        22734
       ]
     }
   }

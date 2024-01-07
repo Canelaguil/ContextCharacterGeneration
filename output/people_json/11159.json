@@ -1,33 +1,33 @@
 {
   "11159": {
     "alive": false,
-    "name": "Heile",
-    "surname": "Tuc",
-    "full name": "Heile Tuc",
+    "name": "Diewiven",
+    "surname": "Kriec",
+    "full name": "Diewiven Kriec",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.072,
-      "romantic interest": 0.826,
-      "sex interest": 0.475,
-      "gender expression": 0.146,
+      "sexuality": 0.011,
+      "romantic interest": 0.644,
+      "sex interest": 0.795,
+      "gender expression": 0.132,
       "sex": "f"
     },
-    "age": 50,
-    "birth year": 1151,
+    "age": 31,
+    "birth year": 1184,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "Zealots",
     "income class": [
-      1,
-      "lower middle class"
+      2,
+      "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.434,
-      "nice-nasty": 0.278,
-      "honest-false": 0.391
+      "lawful-chaotic": 0.297,
+      "nice-nasty": 0.554,
+      "honest-false": 0.306
     },
     "attitude": {
-      "outgoing": 0.399,
-      "dream": 0.795
+      "outgoing": 0.572,
+      "dream": 0.307
     },
     "homsoc": {
       "means": {
@@ -35,42 +35,85 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.04,
-        "gender expression expression": 0.101
+        "sexuality expression": 0.002,
+        "gender expression expression": 0.111
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12529": {
+          "key": 12529,
+          "name": "Wendelmodis",
+          "age": 21,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Diewiven (11159)",
+            "father": "Blomart (11158)"
+          }
+        },
+        "13169": {
+          "key": 13169,
+          "name": "Goneir",
+          "age": 47,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Diewiven (11159)",
+            "father": "Blomart (11158)"
+          }
+        },
+        "14417": {
+          "key": 14417,
+          "name": "Sophia van Blomart",
+          "age": 11,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Diewiven (11159)",
+            "father": "Blomart (11158)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11160
-        ]
+        ],
+        "child": {
+          "birth": [
+            12531,
+            13171,
+            14419
+          ]
+        }
       }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        1,
-        "lower middle class"
+        2,
+        "middle class"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 5,
+      "skin_color": 9,
       "eye_color": "blue",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
-        "C",
-        "C"
+        "S",
+        "S"
       ],
-      "health": 0.644,
-      "fertility": 0.756,
+      "health": 0.751,
+      "fertility": 0.686,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -82,7 +125,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.644
+            "new_health": 0.751
+          },
+          "death": false
+        },
+        "1214": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.751
           },
           "death": true
         }
@@ -97,8 +148,8 @@
               11159
             ],
             "people names": [
-              "Ghodscalc Reigher",
-              "Heile Tuc"
+              "Blomart",
+              "Diewiven Kriec"
             ],
             "label": "spouse",
             "committed": true
@@ -106,25 +157,210 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stPaternoster straetje.se3.c1",
-              "street": "Paternoster straetje",
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stBreestraat.se1.c2",
+              "street": "Breestraat",
               "neighborhood": "olvbuurt",
-              "unique id": 521
+              "unique id": 529
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12531,
+            "people": [
+              11159,
+              12529
+            ],
+            "people names": [
+              "Diewiven Kriec",
+              "Wendelmodis"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 13171,
+            "people": [
+              11159,
+              13169
+            ],
+            "people names": [
+              "Diewiven Kriec",
+              "Goneir"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 14419,
+            "people": [
+              11159,
+              14417
+            ],
+            "people names": [
+              "Diewiven Kriec",
+              "Sophia van Blomart"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1206": [
+          {
+            "topic": "feelings change",
+            "target": 11158,
+            "target name": "Blomart",
+            "state": "out of love",
+            "relationship": 11160
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.464,
+            "inhabitants": [
+              12724,
+              21554,
+              19639,
+              27248,
+              28020,
+              28675,
+              22131,
+              29876,
+              13074,
+              30653,
+              30958
+            ]
+          }
+        ],
+        "1207": [
+          {
+            "topic": "feelings change",
+            "target": 11158,
+            "target name": "Blomart",
+            "state": "infatuation",
+            "relationship": 11160
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.161,
+            "inhabitants": [
+              12724,
+              21554,
+              19639,
+              27248,
+              28020,
+              28675,
+              22131,
+              29876,
+              13074,
+              30653,
+              30958
+            ]
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0.129,
+            "inhabitants": [
+              12724,
+              21554,
+              19639,
+              27248,
+              28020,
+              28675,
+              22131,
+              29876,
+              13074,
+              30653,
+              30958
+            ]
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0.151,
+            "inhabitants": [
+              12724,
+              21554,
+              19639,
+              27248,
+              28020,
+              28675,
+              22131,
+              29876,
+              13074,
+              30653,
+              30958
+            ]
+          }
+        ],
+        "1210": [
+          {
+            "topic": "feelings change",
+            "target": 11158,
+            "target name": "Blomart",
+            "state": "solid love",
+            "relationship": 11160
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.148,
+            "inhabitants": [
+              12724,
+              21554,
+              19639,
+              27248,
+              28020,
+              28675,
+              22131,
+              29876,
+              13074,
+              30653,
+              30958
+            ]
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0.389,
+            "inhabitants": [
+              12724,
+              21554,
+              19639,
+              27248,
+              28020,
+              28675,
+              22131,
+              29876,
+              13074,
+              30653,
+              30958
+            ]
+          },
+          {
+            "topic": "death",
+            "cause": "illness"
           }
         ]
       }
     },
     "key": 11159,
     "home": {
-      "income class": 1,
-      "income class label": "lower middle class",
-      "section": "stPaternoster straetje.se3.c1",
-      "street": "Paternoster straetje",
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stBreestraat.se1.c2",
+      "street": "Breestraat",
       "neighborhood": "olvbuurt",
-      "unique id": 521
+      "unique id": 529
     },
     "relationship status": {
       "taken": true,

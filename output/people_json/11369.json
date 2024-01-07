@@ -1,67 +1,109 @@
 {
   "11369": {
     "alive": false,
-    "name": "Margareta",
-    "surname": "Vint",
-    "full name": "Margareta Vint",
+    "name": "Suaneka",
+    "surname": "Roden",
+    "full name": "Suaneka Roden",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.04,
-      "romantic interest": 0.648,
-      "sex interest": 0.694,
-      "gender expression": 0.157,
+      "sexuality": 0.062,
+      "romantic interest": 0.572,
+      "sex interest": 0.754,
+      "gender expression": 0.194,
       "sex": "f"
     },
-    "age": 35,
-    "birth year": 1173,
+    "age": 38,
+    "birth year": 1175,
     "sex": "f",
     "faction": "Dogmatists",
     "income class": [
-      3,
-      "upper middle class"
+      2,
+      "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.311,
-      "nice-nasty": 0.233,
-      "honest-false": 0.611
+      "lawful-chaotic": 0.324,
+      "nice-nasty": 0.7,
+      "honest-false": 0.738
     },
     "attitude": {
-      "outgoing": 0.323,
-      "dream": 0.399
+      "outgoing": 0.691,
+      "dream": 0.534
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": [
-          "starving"
-        ]
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.02,
-        "gender expression expression": 0.089
+        "sexuality expression": 0.028,
+        "gender expression expression": 0.118
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12589": {
+          "key": 12589,
+          "name": "Ymmekine Steenard",
+          "age": 49,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Suaneka (11369)",
+            "father": "Hetselo (11368)"
+          }
+        },
+        "19145": {
+          "key": 19145,
+          "name": "Wasseliin Steenard",
+          "age": 1,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Suaneka (11369)",
+            "father": "Hetselo (11368)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          11370,
-          15396
-        ]
+          11370
+        ],
+        "child": {
+          "birth": [
+            12591,
+            19147
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        3,
-        "upper middle class"
+        2,
+        "middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.74,
+      "all_incomes": [
+        1.032,
+        0.951,
+        0.945,
+        0.944,
+        0.955,
+        0.875,
+        0.842,
+        0.747,
+        0.755,
+        0.781,
+        0.74
+      ],
+      "job": {
+        "lawful": true,
+        "honest": true
+      }
     },
     "genetics": {
       "skin_color": 7,
@@ -69,11 +111,11 @@
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.63,
-      "fertility": 0.584,
+      "health": 0.515,
+      "fertility": 0.628,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -85,17 +127,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.63
+            "new_health": 0.515
           },
           "death": false
-        },
-        "1207": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.63
-          },
-          "death": true
         }
       },
       "events": {
@@ -108,8 +142,8 @@
               11369
             ],
             "people names": [
-              "Oudrauen Longus",
-              "Margareta Vint"
+              "Hetselo Steenard",
+              "Suaneka Roden"
             ],
             "label": "spouse",
             "committed": true
@@ -117,78 +151,84 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stDie lange straet1.se3.c3",
-              "street": "Die lange straet1",
-              "neighborhood": "olvbuurt",
-              "unique id": 612
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stScherbier straet.se1.c2",
+              "street": "Scherbier straet",
+              "neighborhood": "cingelzuid",
+              "unique id": 627
             }
-          }
-        ],
-        "1205": [
-          {
-            "key": 11370,
-            "topic": "unmarried"
           },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 11368,
-              "name": "Oudrauen Longus",
-              "age": 35,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1206": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1207": [
           {
             "topic": "new relationship",
-            "key": 15396,
+            "key": 12591,
             "people": [
-              11254,
-              11369
+              11369,
+              12589
             ],
             "people names": [
-              "Heideric",
-              "Margareta Vint"
+              "Suaneka Roden",
+              "Ymmekine Steenard"
             ],
-            "label": "spouse",
-            "committed": true
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1202": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.032
+          }
+        ],
+        "1209": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.747
+          }
+        ],
+        "1212": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.74
+          },
+          {
+            "topic": "new relationship",
+            "key": 19147,
+            "people": [
+              11369,
+              19145
+            ],
+            "people names": [
+              "Suaneka Roden",
+              "Wasseliin Steenard"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "death",
+            "cause": "childbirth"
           }
         ]
       }
     },
     "key": 11369,
     "home": {
-      "income class": 3,
-      "income class label": "upper middle class",
-      "section": "stDie lange straet1.se3.c3",
-      "street": "Die lange straet1",
-      "neighborhood": "olvbuurt",
-      "unique id": 612
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stScherbier straet.se1.c2",
+      "street": "Scherbier straet",
+      "neighborhood": "cingelzuid",
+      "unique id": 627
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        11370,
-        15396
+        11370
       ]
     }
   }

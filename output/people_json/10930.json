@@ -1,54 +1,85 @@
 {
   "10930": {
     "alive": false,
-    "name": "Philips",
-    "surname": "Catere",
-    "full name": "Philips Catere",
+    "name": "Jiusippus",
+    "surname": "",
+    "full name": "Jiusippus",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.059,
-      "romantic interest": 0.665,
-      "sex interest": 0.627,
-      "gender expression": 0.054,
+      "sexuality": 0.037,
+      "romantic interest": 0.846,
+      "sex interest": 0.489,
+      "gender expression": 0.037,
       "sex": "m"
     },
-    "age": 50,
-    "birth year": 1151,
+    "age": 43,
+    "birth year": 1165,
     "sex": "m",
-    "faction": "Dogmatists",
+    "faction": "No religion",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.486,
-      "nice-nasty": 0.292,
-      "honest-false": 0.248
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.193,
+      "honest-false": 0.12
     },
     "attitude": {
-      "outgoing": 0.49,
-      "dream": 0.82
+      "outgoing": 0.515,
+      "dream": 0.574
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.031,
-        "gender expression expression": 0.032
+        "sexuality expression": 0.017,
+        "gender expression expression": 0.015
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13721": {
+          "key": 13721,
+          "name": "Gerlacus",
+          "age": 26,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Ghoudekinen (10931)",
+            "father": "Jiusippus (10930)"
+          }
+        },
+        "14959": {
+          "key": 14959,
+          "name": "Nimme van Ghoudekinen",
+          "age": 4,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Ghoudekinen (10931)",
+            "father": "Jiusippus (10930)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10932
-        ]
+        ],
+        "child": {
+          "birth": [
+            13722,
+            14960
+          ]
+        }
       }
     },
     "occupation": {
@@ -57,27 +88,34 @@
         1,
         "lower middle class"
       ],
-      "income": 1.06,
+      "income": 0.322,
       "all_incomes": [
-        0.951,
-        1.06
+        0.669,
+        0.795,
+        0.809,
+        0.511,
+        0.525,
+        0.347,
+        0.241,
+        0.122,
+        0.322
       ],
       "job": {
-        "lawful": false,
+        "lawful": true,
         "honest": false
       }
     },
     "genetics": {
       "skin_color": 5,
       "eye_color": "green",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
-        "C",
-        "C"
+        "S",
+        "S"
       ],
-      "health": 0.633,
-      "fertility": 0.679,
+      "health": 0.758,
+      "fertility": 0.76,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -89,9 +127,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.633
+            "new_health": 0.758
           },
-          "death": true
+          "death": false
         }
       },
       "events": {
@@ -99,12 +137,7 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.951
-          },
-          {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.06
+            "income": 0.669
           },
           {
             "topic": "new relationship",
@@ -114,8 +147,8 @@
               10931
             ],
             "people names": [
-              "Philips Catere",
-              "Thedwi Crulleboye"
+              "Jiusippus",
+              "Ghoudekinen Vincs"
             ],
             "label": "spouse",
             "committed": true
@@ -125,18 +158,88 @@
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stSt. Ians straet.se5.c1",
+              "section": "stSt. Ians straet.se3.c1",
               "street": "St. Ians straet",
               "neighborhood": "kampbuurt",
-              "unique id": 427
+              "unique id": 417
             }
+          }
+        ],
+        "1202": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.511
           },
           {
-            "topic": "feelings change",
-            "target": 10931,
-            "target name": "Thedwi Crulleboye",
-            "state": "out of love",
-            "relationship": 10932
+            "topic": "new relationship",
+            "key": 13722,
+            "people": [
+              10930,
+              13721
+            ],
+            "people names": [
+              "Jiusippus",
+              "Gerlacus"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1204": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.347
+          },
+          {
+            "topic": "new relationship",
+            "key": 14960,
+            "people": [
+              10930,
+              14959
+            ],
+            "people names": [
+              "Jiusippus",
+              "Nimme van Ghoudekinen"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.347,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.241
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.241,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0.122,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0.322,
+            "inhabitants": []
+          },
+          {
+            "topic": "death",
+            "cause": "starvation"
           }
         ]
       }
@@ -145,10 +248,10 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stSt. Ians straet.se5.c1",
+      "section": "stSt. Ians straet.se3.c1",
       "street": "St. Ians straet",
       "neighborhood": "kampbuurt",
-      "unique id": 427
+      "unique id": 417
     },
     "relationship status": {
       "taken": true,

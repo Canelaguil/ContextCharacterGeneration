@@ -1,83 +1,97 @@
 {
   "11672": {
     "alive": false,
-    "name": "Amelgeir",
-    "surname": "Goude",
-    "full name": "Amelgeir Goude",
+    "name": "Gisele",
+    "surname": "Mey",
+    "full name": "Gisele Mey",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.109,
-      "romantic interest": 0.659,
-      "sex interest": 0.551,
-      "gender expression": 0.114,
+      "sexuality label": "gay",
+      "sexuality": 0.846,
+      "romantic interest": 0.601,
+      "sex interest": 0.397,
+      "gender expression": 0.223,
       "sex": "f"
     },
-    "age": 38,
-    "birth year": 1170,
+    "age": 30,
+    "birth year": 1183,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "Zealots",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.42,
-      "nice-nasty": 0.565,
-      "honest-false": 0.0
+      "lawful-chaotic": 0.0,
+      "nice-nasty": 0.999,
+      "honest-false": 0.793
     },
     "attitude": {
-      "outgoing": 0.685,
-      "dream": 0.4
+      "outgoing": 0.386,
+      "dream": 0.109
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
         "flags": [
-          "neglected"
+          "caretaker",
+          "starving"
         ]
       },
       "expression": {
-        "sexuality expression": 0.066,
-        "gender expression expression": 0.083
+        "sexuality expression": 0.482,
+        "gender expression expression": 0.093
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "13866": {
-          "key": 13866,
-          "name": "Riet",
-          "age": 43,
+        "14558": {
+          "key": 14558,
+          "name": "Bertoldus",
+          "age": 1,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Gisele (11672)",
+            "father": "Fays (11671)"
+          }
+        },
+        "17103": {
+          "key": 17103,
+          "name": "Siabbo",
+          "age": 42,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Gisele (11672)",
+            "father": "Laurens (11656)"
+          }
+        },
+        "18532": {
+          "key": 18532,
+          "name": "Hadewigis",
+          "age": 3,
           "alive": false,
           "sex": "f",
           "parents": {
-            "mother": "Amelgeir (11672)",
-            "father": "Oliuerus (11671)"
-          }
-        },
-        "14580": {
-          "key": 14580,
-          "name": "Brundonis",
-          "age": 44,
-          "alive": true,
-          "sex": "f",
-          "parents": {
-            "mother": "Amelgeir (11672)",
-            "father": "Oliuerus (11671)"
+            "mother": "Gisele (11672)",
+            "father": "Laurens (11656)"
           }
         }
       },
       "relationship keys": {
         "spouse": [
-          11673
+          11673,
+          16568
         ],
         "child": {
           "birth": [
-            13868,
-            14582
+            14560,
+            17105,
+            18534
           ]
         }
       }
@@ -92,16 +106,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 2,
+      "skin_color": 1,
       "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
       "hair_type": [
-        "S",
-        "C"
+        "C",
+        "S"
       ],
-      "health": 0.575,
-      "fertility": 0.748,
+      "health": 0.733,
+      "fertility": 0.763,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -113,31 +127,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.744
+            "new_health": 0.733
           },
           "death": false
         },
-        "1203": {
-          "health": {
-            "change": true,
-            "value_change": -0.169,
-            "new_health": 0.575
-          },
-          "death": false
-        },
-        "1204": {
+        "1212": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.575
-          },
-          "death": false
-        },
-        "1207": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.575
+            "new_health": 0.733
           },
           "death": true
         }
@@ -152,8 +150,116 @@
               11672
             ],
             "people names": [
-              "Oliuerus",
-              "Amelgeir Goude"
+              "Fays Loeuin",
+              "Gisele Mey"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stNieu straet.se3.c1",
+              "street": "Nieu straet",
+              "neighborhood": "visbuurt",
+              "unique id": 766
+            }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "feelings change",
+            "target": 11671,
+            "target name": "Fays Loeuin",
+            "state": "solid love",
+            "relationship": 11673
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 14560,
+            "people": [
+              11672,
+              14558
+            ],
+            "people names": [
+              "Gisele Mey",
+              "Bertoldus"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 11671,
+            "target name": "Fays Loeuin",
+            "state": "out of love",
+            "relationship": 11673
+          }
+        ],
+        "1204": [
+          {
+            "key": 11673,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11671,
+              "name": "Fays Loeuin",
+              "age": 26,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 14558,
+              "name": "Bertoldus",
+              "age": 1,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Gisele (11672)",
+                "father": "Fays (11671)"
+              }
+            },
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 16568,
+            "people": [
+              11656,
+              11672
+            ],
+            "people names": [
+              "Laurens",
+              "Gisele Mey"
             ],
             "label": "spouse",
             "committed": true
@@ -166,65 +272,107 @@
               "section": "stNieu straet.se1.c1",
               "street": "Nieu straet",
               "neighborhood": "visbuurt",
-              "unique id": 754
+              "unique id": 759
             }
-          }
-        ],
-        "1201": [
-          {
-            "topic": "feelings change",
-            "target": 11671,
-            "target name": "Oliuerus",
-            "state": "out of love",
-            "relationship": 11673
-          }
-        ],
-        "1203": [
-          {
-            "topic": "new relationship",
-            "key": 13868,
-            "people": [
-              11672,
-              13866
-            ],
-            "people names": [
-              "Amelgeir Goude",
-              "Riet"
-            ],
-            "label": "parentchild",
-            "committed": false
-          },
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1204": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1205": [
-          {
-            "topic": "new relationship",
-            "key": 14582,
-            "people": [
-              11672,
-              14580
-            ],
-            "people names": [
-              "Amelgeir Goude",
-              "Brundonis"
-            ],
-            "label": "parentchild",
-            "committed": false
-          },
-          {
-            "topic": "neglected"
           }
         ],
         "1207": [
           {
-            "topic": "neglected"
+            "topic": "new relationship",
+            "key": 17105,
+            "people": [
+              11672,
+              17103
+            ],
+            "people names": [
+              "Gisele Mey",
+              "Siabbo"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 11656,
+            "target name": "Laurens",
+            "state": "out of love",
+            "relationship": 16568
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.12,
+            "inhabitants": [
+              17103,
+              13769
+            ]
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0.325,
+            "inhabitants": [
+              17103,
+              13769
+            ]
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0.202,
+            "inhabitants": [
+              17103,
+              13769
+            ]
+          }
+        ],
+        "1210": [
+          {
+            "topic": "new relationship",
+            "key": 18534,
+            "people": [
+              11672,
+              18532
+            ],
+            "people names": [
+              "Gisele Mey",
+              "Hadewigis"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.22,
+            "inhabitants": [
+              17103,
+              13769
+            ]
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0.394,
+            "inhabitants": [
+              17103,
+              13769
+            ]
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0.519,
+            "inhabitants": [
+              17103,
+              13769
+            ]
+          },
+          {
+            "topic": "death",
+            "cause": "illness"
           }
         ]
       }
@@ -236,13 +384,14 @@
       "section": "stNieu straet.se1.c1",
       "street": "Nieu straet",
       "neighborhood": "visbuurt",
-      "unique id": 754
+      "unique id": 759
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        11673
+        11673,
+        16568
       ]
     }
   }

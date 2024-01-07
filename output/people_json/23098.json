@@ -1,56 +1,78 @@
 {
   "23098": {
-    "alive": true,
-    "name": "Aue",
-    "surname": "Borluet",
-    "full name": "Aue Borluet",
+    "alive": false,
+    "name": "Nimme",
+    "surname": "",
+    "full name": "Nimme",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.053,
-      "romantic interest": 0.89,
-      "sex interest": 0.734,
-      "gender expression": 0.146,
+      "sexuality": 0.078,
+      "romantic interest": 0.7,
+      "sex interest": 0.892,
+      "gender expression": 0.165,
       "sex": "f"
     },
-    "age": 11,
-    "birth year": 1238,
+    "age": 22,
+    "birth year": 1227,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
-      1,
-      "lower middle class"
+      2,
+      "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.832,
-      "nice-nasty": 0.306,
-      "honest-false": 0.187
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.938,
+      "honest-false": 0.473
     },
     "attitude": {
-      "outgoing": 0.316,
-      "dream": 0.999
+      "outgoing": 0.567,
+      "dream": 0.183
     },
     "homsoc": {
       "means": {
         "independent": false,
         "taken_care_of": false,
         "caretaker": true,
-        "needs_care": true,
+        "needs_care": false,
         "flags": [
-          "neglected",
-          "starving"
+          "neglected"
         ]
       },
       "expression": {
-        "sexuality expression": 0.03,
-        "gender expression expression": 0.02
+        "sexuality expression": 0.023,
+        "gender expression expression": 0.107
       }
     },
     "network": {
       "parents": {
-        "mother": "Victoria (14649)",
-        "father": "Ghisebrecht (12669)"
+        "mother": "Hilduardis (13688)",
+        "father": "Lambrecht (15240)"
       },
-      "children": {},
+      "children": {
+        "30320": {
+          "key": 30320,
+          "name": "Sara Ramontsdochter",
+          "age": 2,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Nimme (23098)",
+            "father": "Ramont (23128)"
+          }
+        },
+        "30954": {
+          "key": 30954,
+          "name": "Yoel van Ramont",
+          "age": 0,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Nimme (23098)",
+            "father": "Ramont (23128)"
+          }
+        }
+      },
       "relationship keys": {
         "parent": [
           23099,
@@ -59,21 +81,35 @@
         "sibling": [
           23101,
           23102,
-          23103
-        ]
+          23420,
+          24725,
+          25111,
+          26629,
+          27731,
+          28517
+        ],
+        "spouse": [
+          29444
+        ],
+        "child": {
+          "birth": [
+            30322,
+            30956
+          ]
+        }
       }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        1,
-        "lower middle class"
+        2,
+        "middle class"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 9,
+      "skin_color": 4,
       "eye_color": "blue",
       "hair_color": "black",
       "hair_color_code": 0,
@@ -81,8 +117,8 @@
         "C",
         "S"
       ],
-      "health": 0.602,
-      "fertility": 0.571,
+      "health": 0.77,
+      "fertility": 0.821,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -90,27 +126,155 @@
     },
     "memory": {
       "health": {
-        "1239": {
+        "1228": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.602
+            "new_health": 0.77
           },
           "death": false
+        },
+        "1249": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.77
+          },
+          "death": true
         }
       },
       "events": {
-        "1238": [
+        "1227": [
           {
             "topic": "new home",
             "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stPaternoster straetje.se1.c1",
-              "street": "Paternoster straetje",
-              "neighborhood": "olvbuurt",
-              "unique id": 519
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stGoetscalcstraet.se3.c2",
+              "street": "Goetscalcstraet",
+              "neighborhood": "visbuurt",
+              "unique id": 785
             }
+          }
+        ],
+        "1228": [
+          {
+            "topic": "event",
+            "event": "famine",
+            "year": 1228
+          },
+          {
+            "topic": "new relationship",
+            "key": 23420,
+            "people": [
+              23098,
+              23415
+            ],
+            "people names": [
+              "Nimme",
+              "Emgelberna Lambrechtsdochter"
+            ],
+            "label": "sibling",
+            "committed": false
+          }
+        ],
+        "1229": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 22595,
+              "name": "Gherolf van Hilduardis",
+              "age": 3,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Hilduardis (13688)",
+                "father": "Lambrecht (15240)"
+              }
+            },
+            "label": "sibling"
+          },
+          {
+            "topic": "event",
+            "event": "faction upheaval",
+            "faction": "Zealots",
+            "year": 1229
+          }
+        ],
+        "1232": [
+          {
+            "topic": "event",
+            "event": "war",
+            "year": 1232
+          },
+          {
+            "topic": "new relationship",
+            "key": 24725,
+            "people": [
+              23098,
+              24720
+            ],
+            "people names": [
+              "Nimme",
+              "Otto Lambrechtszoon"
+            ],
+            "label": "sibling",
+            "committed": false
+          }
+        ],
+        "1233": [
+          {
+            "topic": "new relationship",
+            "key": 25111,
+            "people": [
+              23098,
+              25106
+            ],
+            "people names": [
+              "Nimme",
+              "Heilsota Lambrechtsdochter"
+            ],
+            "label": "sibling",
+            "committed": false
+          }
+        ],
+        "1234": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1235": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1236": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1237": [
+          {
+            "topic": "new relationship",
+            "key": 26629,
+            "people": [
+              23098,
+              26624
+            ],
+            "people names": [
+              "Nimme",
+              "Marcibilia"
+            ],
+            "label": "sibling",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1238": [
+          {
+            "topic": "neglected"
           }
         ],
         "1239": [
@@ -120,19 +284,18 @@
         ],
         "1240": [
           {
-            "topic": "person died",
-            "person": {
-              "key": 14649,
-              "name": "Victoria Vrint",
-              "age": 34,
-              "alive": false,
-              "sex": "f",
-              "parents": {
-                "mother": "Ghoudekinen (11924)",
-                "father": "Wolcout (11923)"
-              }
-            },
-            "label": "parent"
+            "topic": "new relationship",
+            "key": 27731,
+            "people": [
+              23098,
+              27726
+            ],
+            "people names": [
+              "Nimme",
+              "Saswe"
+            ],
+            "label": "sibling",
+            "committed": false
           },
           {
             "topic": "neglected"
@@ -145,60 +308,124 @@
         ],
         "1242": [
           {
-            "topic": "neglected"
-          }
-        ],
-        "1243": [
+            "topic": "new relationship",
+            "key": 28517,
+            "people": [
+              23098,
+              28512
+            ],
+            "people names": [
+              "Nimme",
+              "Pietersen"
+            ],
+            "label": "sibling",
+            "committed": false
+          },
           {
             "topic": "neglected"
           }
         ],
         "1244": [
           {
-            "topic": "neglected"
+            "topic": "person died",
+            "person": {
+              "key": 15240,
+              "name": "Lambrecht Winardus\u0430szoon",
+              "age": 39,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Sybillia (11714)",
+                "father": "Winardus\u0430 (11713)"
+              }
+            },
+            "label": "parent"
           }
         ],
         "1245": [
           {
-            "topic": "neglected"
-          }
-        ],
-        "1246": [
+            "topic": "new relationship",
+            "key": 29444,
+            "people": [
+              23128,
+              23098
+            ],
+            "people names": [
+              "Ramont van Nannekin",
+              "Nimme"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
           {
-            "topic": "neglected"
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stStoof straet.se3.c1",
+              "street": "Stoof straet",
+              "neighborhood": "visbuurt",
+              "unique id": 779
+            }
+          },
+          {
+            "topic": "update",
+            "update": "parent married",
+            "parent": 13688,
+            "new partner": 17892
           }
         ],
         "1247": [
           {
-            "topic": "not enough income",
-            "income": 1.648,
-            "inhabitants": [
-              12669,
-              19443,
-              19814,
-              21647,
-              22338,
-              17916,
+            "topic": "new relationship",
+            "key": 30322,
+            "people": [
               23098,
-              14011,
-              24128,
-              25103,
-              12831,
-              20653,
-              22812,
-              16746,
-              22194
-            ]
+              30320
+            ],
+            "people names": [
+              "Nimme",
+              "Sara Ramontsdochter"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1248": [
           {
-            "topic": "neglected"
+            "topic": "person died",
+            "person": {
+              "key": 24720,
+              "name": "Otto Lambrechtszoon",
+              "age": 15,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Hilduardis (13688)",
+                "father": "Lambrecht (15240)"
+              }
+            },
+            "label": "sibling"
           }
         ],
         "1249": [
           {
-            "topic": "neglected"
+            "topic": "new relationship",
+            "key": 30956,
+            "people": [
+              23098,
+              30954
+            ],
+            "people names": [
+              "Nimme",
+              "Yoel van Ramont"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "death",
+            "cause": "illness"
           }
         ]
       }
@@ -207,18 +434,24 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stPaternoster straetje.se1.c1",
-      "street": "Paternoster straetje",
-      "neighborhood": "olvbuurt",
-      "unique id": 519
+      "section": "stStoof straet.se3.c1",
+      "street": "Stoof straet",
+      "neighborhood": "visbuurt",
+      "unique id": 779
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
         23101,
         23102,
-        23103
+        23420,
+        24725,
+        25111,
+        26629,
+        27731,
+        28517,
+        29444
       ]
     }
   }

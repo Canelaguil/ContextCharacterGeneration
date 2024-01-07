@@ -1,80 +1,119 @@
 {
   "10139": {
     "alive": false,
-    "name": "Eingeliadis",
-    "surname": "",
-    "full name": "Eingeliadis",
+    "name": "Ermegardis",
+    "surname": "Baligant",
+    "full name": "Ermegardis Baligant",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.062,
-      "romantic interest": 0.465,
-      "sex interest": 0.73,
-      "gender expression": 0.039,
+      "sexuality": 0.056,
+      "romantic interest": 0.582,
+      "sex interest": 0.749,
+      "gender expression": 0.095,
       "sex": "f"
     },
-    "age": 54,
-    "birth year": 1159,
+    "age": 38,
+    "birth year": 1178,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "Zealots",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.248,
-      "nice-nasty": 0.821,
-      "honest-false": 0.38
+      "lawful-chaotic": 0.593,
+      "nice-nasty": 0.578,
+      "honest-false": 0.0
     },
     "attitude": {
-      "outgoing": 0.571,
-      "dream": 0.155
+      "outgoing": 0.18,
+      "dream": 0.413
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
         "flags": [
+          "caretaker",
           "starving"
         ]
       },
       "expression": {
-        "sexuality expression": 0.043,
-        "gender expression expression": 0.024
+        "sexuality expression": 0.025,
+        "gender expression expression": 0.06
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12838": {
+          "key": 12838,
+          "name": "Pauels",
+          "age": 37,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Ermegardis (10139)",
+            "father": "Alebrando (10138)"
+          }
+        },
+        "18556": {
+          "key": 18556,
+          "name": "Swegero Clove",
+          "age": 14,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Ermegardis (10139)",
+            "father": "Yseboldus (10393)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10140,
-          15978,
-          16530
-        ]
+          18055
+        ],
+        "child": {
+          "birth": [
+            12840,
+            18558
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         1,
         "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.28,
+      "all_incomes": [
+        1.192,
+        1.056,
+        1.235,
+        1.391,
+        1.28
+      ],
+      "job": {
+        "lawful": true,
+        "honest": false
+      }
     },
     "genetics": {
       "skin_color": 7,
-      "eye_color": "green",
+      "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
         "C",
-        "S"
+        "C"
       ],
-      "health": 0.0,
-      "fertility": 0.57,
+      "health": 0.655,
+      "fertility": 0.702,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -86,41 +125,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.516
+            "new_health": 0.655
           },
           "death": false
-        },
-        "1209": {
-          "health": {
-            "change": true,
-            "value_change": -0.289,
-            "new_health": 0.227
-          },
-          "death": false
-        },
-        "1210": {
-          "health": {
-            "change": true,
-            "value_change": -0.174,
-            "new_health": 0.053
-          },
-          "death": false
-        },
-        "1211": {
-          "health": {
-            "change": true,
-            "value_change": -0.051,
-            "new_health": 0.002
-          },
-          "death": false
-        },
-        "1212": {
-          "health": {
-            "change": true,
-            "value_change": -0.002,
-            "new_health": 0.0
-          },
-          "death": true
         }
       },
       "events": {
@@ -133,8 +140,8 @@
               10139
             ],
             "people names": [
-              "Reymar Caen",
-              "Eingeliadis"
+              "Alebrando",
+              "Ermegardis Baligant"
             ],
             "label": "spouse",
             "committed": true
@@ -147,20 +154,27 @@
               "section": "stKoe straet.se1.c1",
               "street": "Koe straet",
               "neighborhood": "varkensbuurt",
-              "unique id": 56
+              "unique id": 61
             }
           }
         ],
         "1201": [
           {
-            "topic": "feelings change",
-            "target": 10138,
-            "target name": "Reymar Caen",
-            "state": "solid love",
-            "relationship": 10140
+            "topic": "new relationship",
+            "key": 12840,
+            "people": [
+              10139,
+              12838
+            ],
+            "people names": [
+              "Ermegardis Baligant",
+              "Pauels"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1208": [
+        "1207": [
           {
             "key": 10140,
             "topic": "unmarried"
@@ -169,14 +183,25 @@
             "topic": "person died",
             "person": {
               "key": 10138,
-              "name": "Reymar Caen",
-              "age": 36,
+              "name": "Alebrando",
+              "age": 54,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
             },
             "label": "spouse"
           },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          }
+        ],
+        "1208": [
           {
             "topic": "not enough income",
             "income": 0,
@@ -186,14 +211,14 @@
         "1209": [
           {
             "topic": "new relationship",
-            "key": 15978,
+            "key": 18055,
             "people": [
-              10723,
+              10393,
               10139
             ],
             "people names": [
-              "Hako Smiec",
-              "Eingeliadis"
+              "Yseboldus Clove",
+              "Ermegardis Baligant"
             ],
             "label": "spouse",
             "committed": true
@@ -203,73 +228,52 @@
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stCoppelstraet.se1.c1",
-              "street": "Coppelstraet",
-              "neighborhood": "agnesbuurt",
-              "unique id": 339
+              "section": "stMuelen straet.se3.c1",
+              "street": "Muelen straet",
+              "neighborhood": "jorisbuurt",
+              "unique id": 170
             }
           }
         ],
         "1210": [
           {
-            "key": 15978,
-            "topic": "unmarried"
+            "topic": "new relationship",
+            "key": 18558,
+            "people": [
+              10139,
+              18556
+            ],
+            "people names": [
+              "Ermegardis Baligant",
+              "Swegero Clove"
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
-            "topic": "person died",
-            "person": {
-              "key": 10723,
-              "name": "Hako Smiec",
-              "age": 53,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "feelings change",
+            "target": 10393,
+            "target name": "Yseboldus Clove",
+            "state": "out of love",
+            "relationship": 18055
           }
         ],
         "1211": [
           {
-            "topic": "new relationship",
-            "key": 16530,
-            "people": [
-              11716,
-              10139
-            ],
-            "people names": [
-              "Conrad Vinke",
-              "Eingeliadis"
-            ],
-            "label": "spouse",
-            "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stStoof straet.se1.c1",
-              "street": "Stoof straet",
-              "neighborhood": "visbuurt",
-              "unique id": 775
-            }
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.156,
-            "inhabitants": []
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.192
           }
         ],
-        "1212": [
+        "1215": [
           {
-            "topic": "not enough income",
-            "income": 0.536,
-            "inhabitants": []
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "topic": "death",
+            "cause": "plague"
           }
         ]
       }
@@ -278,18 +282,17 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stStoof straet.se1.c1",
-      "street": "Stoof straet",
-      "neighborhood": "visbuurt",
-      "unique id": 775
+      "section": "stMuelen straet.se3.c1",
+      "street": "Muelen straet",
+      "neighborhood": "jorisbuurt",
+      "unique id": 170
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
         10140,
-        15978,
-        16530
+        18055
       ]
     }
   }

@@ -1,33 +1,33 @@
 {
   "11503": {
     "alive": false,
-    "name": "Otger",
-    "surname": "Visc",
-    "full name": "Otger Visc",
+    "name": "Vroeden",
+    "surname": "Olipot",
+    "full name": "Vroeden Olipot",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.843,
-      "romantic interest": 0.671,
-      "sex interest": 0.56,
-      "gender expression": 0.584,
+      "sexuality label": "straight",
+      "sexuality": 0.088,
+      "romantic interest": 0.436,
+      "sex interest": 0.66,
+      "gender expression": 0.014,
       "sex": "m"
     },
-    "age": 48,
-    "birth year": 1165,
+    "age": 46,
+    "birth year": 1171,
     "sex": "m",
     "faction": "No religion",
     "income class": [
-      2,
-      "middle class"
+      3,
+      "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.773,
-      "honest-false": 0.558
+      "lawful-chaotic": 0.166,
+      "nice-nasty": 0.999,
+      "honest-false": 0.204
     },
     "attitude": {
-      "outgoing": 0.619,
-      "dream": 0.113
+      "outgoing": 0.504,
+      "dream": 0.253
     },
     "homsoc": {
       "means": {
@@ -40,58 +40,103 @@
         ]
       },
       "expression": {
-        "sexuality expression": 0.609,
-        "gender expression expression": 0.138
+        "sexuality expression": 0.018,
+        "gender expression expression": 0.003
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13266": {
+          "key": 13266,
+          "name": "Agota Olipot",
+          "age": 12,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Emmelina (11504)",
+            "father": "Vroeden (11503)"
+          }
+        },
+        "14515": {
+          "key": 14515,
+          "name": "Marcilius Olipot",
+          "age": 0,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Emmelina (11504)",
+            "father": "Vroeden (11503)"
+          }
+        },
+        "16338": {
+          "key": 16338,
+          "name": "Wein Olipot",
+          "age": 14,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Emmelina (11504)",
+            "father": "Vroeden (11503)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11505
-        ]
+        ],
+        "child": {
+          "birth": [
+            13267,
+            14516,
+            16339
+          ]
+        }
       }
     },
     "occupation": {
       "has job": true,
       "income class": [
-        2,
-        "middle class"
+        3,
+        "upper middle class"
       ],
-      "income": 0.0,
+      "income": 0.457,
       "all_incomes": [
-        0.865,
-        0.891,
-        0.813,
-        0.88,
-        0.762,
-        0.624,
-        0.433,
-        0.308,
-        0.171,
-        0.295,
-        0.076,
+        0.883,
+        0.719,
+        0.802,
+        0.414,
         0.0,
-        0.077,
-        0.0
+        0.561,
+        0.666,
+        0.023,
+        0.657,
+        0.348,
+        0.508,
+        0.775,
+        0.595,
+        0.398,
+        0.597,
+        0.638,
+        0.474,
+        0.457
       ],
       "job": {
-        "lawful": true,
+        "lawful": false,
         "honest": false
       }
     },
     "genetics": {
-      "skin_color": 0,
-      "eye_color": "brown",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "skin_color": 2,
+      "eye_color": "green",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "S",
         "S"
       ],
-      "health": 0.794,
-      "fertility": 0.866,
+      "health": 0.42,
+      "fertility": 0.65,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -103,17 +148,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.794
+            "new_health": 0.61
           },
           "death": false
         },
-        "1212": {
+        "1209": {
+          "health": {
+            "change": true,
+            "value_change": -0.19,
+            "new_health": 0.42
+          },
+          "death": false
+        },
+        "1210": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.794
+            "new_health": 0.42
           },
-          "death": true
+          "death": false
         }
       },
       "events": {
@@ -121,7 +174,12 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.865
+            "income": 0.883
+          },
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.719
           },
           {
             "topic": "new relationship",
@@ -131,8 +189,8 @@
               11504
             ],
             "people names": [
-              "Otger Visc",
-              "Iris Canis"
+              "Vroeden Olipot",
+              "Emmelina Panne"
             ],
             "label": "spouse",
             "committed": true
@@ -140,98 +198,192 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stDie lange straet3.se1.c2",
+              "income class": 3,
+              "income class label": "upper middle class",
+              "section": "stDie lange straet3.se3.c3",
               "street": "Die lange straet3",
               "neighborhood": "visbuurt",
-              "unique id": 672
+              "unique id": 686
             }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 13267,
+            "people": [
+              11503,
+              13266
+            ],
+            "people names": [
+              "Vroeden Olipot",
+              "Agota Olipot"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1202": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.414
+          }
+        ],
+        "1203": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.0
+          },
+          {
+            "topic": "new relationship",
+            "key": 14516,
+            "people": [
+              11503,
+              14515
+            ],
+            "people names": [
+              "Vroeden Olipot",
+              "Marcilius Olipot"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
           }
         ],
         "1204": [
           {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.624
-          }
-        ],
-        "1205": [
-          {
-            "topic": "job notice",
-            "notice": "earning very little",
-            "income": 0.433
+            "topic": "person died",
+            "person": {
+              "key": 14515,
+              "name": "Marcilius Olipot",
+              "age": 0,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Emmelina (11504)",
+                "father": "Vroeden (11503)"
+              }
+            },
+            "label": "child"
           }
         ],
         "1206": [
           {
             "topic": "job notice",
-            "notice": "earning very little",
-            "income": 0.308
+            "notice": "hardly any income",
+            "income": 0.023
+          },
+          {
+            "topic": "new relationship",
+            "key": 16339,
+            "people": [
+              11503,
+              16338
+            ],
+            "people names": [
+              "Vroeden Olipot",
+              "Wein Olipot"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.023,
+            "inhabitants": []
           }
         ],
         "1207": [
           {
-            "topic": "job notice",
-            "notice": "hardly any income",
-            "income": 0.171
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.171,
-            "inhabitants": []
-          }
-        ],
-        "1209": [
-          {
-            "topic": "job notice",
-            "notice": "hardly any income",
-            "income": 0.076
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.076,
-            "inhabitants": []
-          }
-        ],
-        "1210": [
-          {
             "topic": "feelings change",
             "target": 11504,
-            "target name": "Iris Canis",
+            "target name": "Emmelina Panne",
             "state": "out of love",
             "relationship": 11505
-          },
+          }
+        ],
+        "1208": [
           {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.348
           }
         ],
         "1211": [
           {
-            "topic": "not enough income",
-            "income": 0.077,
-            "inhabitants": []
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.595
           }
         ],
         "1212": [
           {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.398
+          }
+        ],
+        "1214": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 13266,
+              "name": "Agota Olipot",
+              "age": 12,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Emmelina (11504)",
+                "father": "Vroeden (11503)"
+              }
+            },
+            "label": "child"
+          }
+        ],
+        "1215": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.474
+          },
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          }
+        ],
+        "1216": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.457
+          },
+          {
+            "topic": "event",
+            "event": "war",
+            "year": 1216
+          },
+          {
+            "topic": "death",
+            "cause": "war"
           }
         ]
       }
     },
     "key": 11503,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stDie lange straet3.se1.c2",
+      "income class": 3,
+      "income class label": "upper middle class",
+      "section": "stDie lange straet3.se3.c3",
       "street": "Die lange straet3",
       "neighborhood": "visbuurt",
-      "unique id": 672
+      "unique id": 686
     },
     "relationship status": {
       "taken": true,

@@ -1,83 +1,73 @@
 {
   "10901": {
     "alive": false,
-    "name": "Heile",
-    "surname": "Bloeme",
-    "full name": "Heile Bloeme",
+    "name": "Hilduardis",
+    "surname": "Blonde",
+    "full name": "Hilduardis Blonde",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.045,
-      "romantic interest": 0.476,
-      "sex interest": 0.613,
-      "gender expression": 0.108,
+      "sexuality": 0.004,
+      "romantic interest": 0.921,
+      "sex interest": 0.601,
+      "gender expression": 0.087,
       "sex": "f"
     },
-    "age": 38,
-    "birth year": 1166,
+    "age": 45,
+    "birth year": 1168,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
-      1,
-      "lower middle class"
+      2,
+      "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.585,
-      "nice-nasty": 0.214,
-      "honest-false": 0.487
+      "lawful-chaotic": 0.0,
+      "nice-nasty": 0.44,
+      "honest-false": 0.761
     },
     "attitude": {
-      "outgoing": 0.169,
-      "dream": 0.27
+      "outgoing": 0.543,
+      "dream": 0.188
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
         "flags": [
-          "neglected"
+          "caretaker",
+          "starving"
         ]
       },
       "expression": {
-        "sexuality expression": 0.015,
-        "gender expression expression": 0.066
+        "sexuality expression": 0.002,
+        "gender expression expression": 0.017
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "12379": {
-          "key": 12379,
-          "name": "Walburgis",
-          "age": 49,
-          "alive": true,
-          "sex": "f",
-          "parents": {
-            "mother": "Heile (10901)",
-            "father": "Goeskin (10900)"
-          }
-        },
-        "13318": {
-          "key": 13318,
-          "name": "Heile Goeskinsdochter",
-          "age": 7,
+        "14938": {
+          "key": 14938,
+          "name": "Kybben Riken",
+          "age": 14,
           "alive": false,
-          "sex": "f",
+          "sex": "m",
           "parents": {
-            "mother": "Heile (10901)",
-            "father": "Goeskin (10900)"
+            "mother": "Hilduardis (10901)",
+            "father": "Blankard (10900)"
           }
         }
       },
       "relationship keys": {
         "spouse": [
-          10902
+          10902,
+          18932
         ],
         "child": {
           "birth": [
-            12381,
-            13320
+            14940
           ]
         }
       }
@@ -85,23 +75,23 @@
     "occupation": {
       "has job": false,
       "income class": [
-        1,
-        "lower middle class"
+        2,
+        "middle class"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
       "skin_color": 6,
-      "eye_color": "brown",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "eye_color": "blue",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.762,
-      "fertility": 0.786,
+      "health": 0.8,
+      "fertility": 0.79,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -113,17 +103,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.762
+            "new_health": 0.8
           },
           "death": false
-        },
-        "1203": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.762
-          },
-          "death": true
         }
       },
       "events": {
@@ -136,8 +118,8 @@
               10901
             ],
             "people names": [
-              "Goeskin",
-              "Heile Bloeme"
+              "Blankard Riken",
+              "Hilduardis Blonde"
             ],
             "label": "spouse",
             "committed": true
@@ -145,77 +127,158 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stSt. Ians straet.se3.c1",
-              "street": "St. Ians straet",
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stDie Camp.se7.c2",
+              "street": "Die Camp",
               "neighborhood": "kampbuurt",
-              "unique id": 415
+              "unique id": 406
             }
           },
           {
+            "topic": "feelings change",
+            "target": 10900,
+            "target name": "Blankard Riken",
+            "state": "solid love",
+            "relationship": 10902
+          }
+        ],
+        "1204": [
+          {
             "topic": "new relationship",
-            "key": 12381,
+            "key": 14940,
             "people": [
               10901,
-              12379
+              14938
             ],
             "people names": [
-              "Heile Bloeme",
-              "Walburgis"
+              "Hilduardis Blonde",
+              "Kybben Riken"
             ],
             "label": "parentchild",
             "committed": false
+          }
+        ],
+        "1209": [
+          {
+            "key": 10902,
+            "topic": "unmarried"
           },
           {
-            "topic": "neglected"
-          }
-        ],
-        "1201": [
+            "topic": "person died",
+            "person": {
+              "key": 10900,
+              "name": "Blankard Riken",
+              "age": 53,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
           {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
           }
         ],
-        "1202": [
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
           {
             "topic": "new relationship",
-            "key": 13320,
+            "key": 18932,
             "people": [
-              10901,
-              13318
+              10885,
+              10901
             ],
             "people names": [
-              "Heile Bloeme",
-              "Heile Goeskinsdochter"
+              "Lammekin",
+              "Hilduardis Blonde"
             ],
-            "label": "parentchild",
-            "committed": false
+            "label": "spouse",
+            "committed": true
           },
           {
-            "topic": "neglected"
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stDie Camp.se7.c2",
+              "street": "Die Camp",
+              "neighborhood": "kampbuurt",
+              "unique id": 401
+            }
           }
         ],
-        "1203": [
+        "1212": [
           {
-            "topic": "neglected"
+            "key": 18932,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10885,
+              "name": "Lammekin",
+              "age": 54,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              19318,
+              26497,
+              27563,
+              29836,
+              30516
+            ]
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": [
+              26497,
+              27563,
+              29836,
+              30516
+            ]
+          },
+          {
+            "topic": "death",
+            "cause": "starvation"
           }
         ]
       }
     },
     "key": 10901,
     "home": {
-      "income class": 1,
-      "income class label": "lower middle class",
-      "section": "stSt. Ians straet.se3.c1",
-      "street": "St. Ians straet",
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stDie Camp.se7.c2",
+      "street": "Die Camp",
       "neighborhood": "kampbuurt",
-      "unique id": 415
+      "unique id": 401
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
-        10902
+        10902,
+        18932
       ]
     }
   }

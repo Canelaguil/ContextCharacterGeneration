@@ -1,19 +1,19 @@
 {
   "11234": {
     "alive": false,
-    "name": "Aue",
-    "surname": "Visc",
-    "full name": "Aue Visc",
+    "name": "Baua",
+    "surname": "",
+    "full name": "Baua",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.039,
-      "romantic interest": 0.616,
-      "sex interest": 0.645,
+      "sexuality": 0.0,
+      "romantic interest": 0.559,
+      "sex interest": 0.593,
       "gender expression": 0.0,
       "sex": "f"
     },
-    "age": 17,
-    "birth year": 1184,
+    "age": 40,
+    "birth year": 1171,
     "sex": "f",
     "faction": "No religion",
     "income class": [
@@ -21,51 +21,53 @@
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.688,
-      "nice-nasty": 0.284,
-      "honest-false": 0.487
+      "lawful-chaotic": 0.924,
+      "nice-nasty": 0.226,
+      "honest-false": 0.0
     },
     "attitude": {
-      "outgoing": 0.529,
-      "dream": 0.302
+      "outgoing": 0.804,
+      "dream": 0.119
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
         "flags": [
-          "neglected"
+          "caretaker",
+          "starving"
         ]
       },
       "expression": {
-        "sexuality expression": 0.023,
+        "sexuality expression": -0.001,
         "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "12448": {
-          "key": 12448,
-          "name": "Woubbrecht",
-          "age": 36,
+        "14432": {
+          "key": 14432,
+          "name": "Snelle Mulart",
+          "age": 1,
           "alive": false,
           "sex": "m",
           "parents": {
-            "mother": "Aue (11234)",
-            "father": "Lardies (11233)"
+            "mother": "Baua (11234)",
+            "father": "Willibrando (11233)"
           }
         }
       },
       "relationship keys": {
         "spouse": [
-          11235
+          11235,
+          16034
         ],
         "child": {
           "birth": [
-            12450
+            14434
           ]
         }
       }
@@ -80,16 +82,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 8,
-      "eye_color": "blue",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 4,
+      "eye_color": "brown",
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
         "C",
-        "C"
+        "S"
       ],
-      "health": 0.55,
-      "fertility": 0.473,
+      "health": 0.774,
+      "fertility": 0.807,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -101,9 +103,17 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.55
+            "new_health": 0.774
           },
           "death": false
+        },
+        "1210": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.774
+          },
+          "death": true
         }
       },
       "events": {
@@ -116,8 +126,8 @@
               11234
             ],
             "people names": [
-              "Lardies",
-              "Aue Visc"
+              "Willibrando Mulart",
+              "Baua"
             ],
             "label": "spouse",
             "committed": true
@@ -127,46 +137,159 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stBreestraat.se1.c2",
+              "section": "stBreestraat.se5.c2",
               "street": "Breestraat",
               "neighborhood": "olvbuurt",
-              "unique id": 552
+              "unique id": 570
             }
-          },
+          }
+        ],
+        "1203": [
           {
             "topic": "new relationship",
-            "key": 12450,
+            "key": 14434,
             "people": [
               11234,
-              12448
+              14432
             ],
             "people names": [
-              "Aue Visc",
-              "Woubbrecht"
+              "Baua",
+              "Snelle Mulart"
             ],
             "label": "parentchild",
             "committed": false
+          }
+        ],
+        "1204": [
+          {
+            "key": 11235,
+            "topic": "unmarried"
           },
           {
-            "topic": "neglected"
+            "topic": "person died",
+            "person": {
+              "key": 11233,
+              "name": "Willibrando Mulart",
+              "age": 53,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 14432,
+              "name": "Snelle Mulart",
+              "age": 1,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Baua (11234)",
+                "father": "Willibrando (11233)"
+              }
+            },
+            "label": "child"
+          },
+          {
+            "topic": "new relationship",
+            "key": 16034,
+            "people": [
+              12139,
+              11234
+            ],
+            "people names": [
+              "Ysaac Virtichponde",
+              "Baua"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stPapenhofstede.se1.c1",
+              "street": "Papenhofstede",
+              "neighborhood": "denhof",
+              "unique id": 976
+            }
+          }
+        ],
+        "1209": [
+          {
+            "key": 16034,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12139,
+              "name": "Ysaac Virtichponde",
+              "age": 53,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              14432
+            ]
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": [
+              14432
+            ]
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              14432
+            ]
+          },
+          {
+            "topic": "death",
+            "cause": "illness"
           }
         ]
       }
     },
     "key": 11234,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stBreestraat.se1.c2",
-      "street": "Breestraat",
-      "neighborhood": "olvbuurt",
-      "unique id": 552
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stPapenhofstede.se1.c1",
+      "street": "Papenhofstede",
+      "neighborhood": "denhof",
+      "unique id": 976
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
-        11235
+        11235,
+        16034
       ]
     }
   }

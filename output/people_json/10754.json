@@ -1,33 +1,33 @@
 {
   "10754": {
     "alive": false,
-    "name": "Ermerut",
-    "surname": "",
-    "full name": "Ermerut",
+    "name": "Eingeliadis",
+    "surname": "Vromoeds",
+    "full name": "Eingeliadis Vromoeds",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.899,
-      "sex interest": 0.605,
-      "gender expression": 0.164,
+      "sexuality label": "gay",
+      "sexuality": 0.873,
+      "romantic interest": 0.7,
+      "sex interest": 0.842,
+      "gender expression": 0.34,
       "sex": "f"
     },
-    "age": 43,
-    "birth year": 1162,
+    "age": 22,
+    "birth year": 1183,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
-      2,
-      "middle class"
+      0,
+      "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.244,
-      "nice-nasty": 0.11,
-      "honest-false": 0.22
+      "lawful-chaotic": 0.524,
+      "nice-nasty": 0.483,
+      "honest-false": 0.968
     },
     "attitude": {
-      "outgoing": 0.814,
-      "dream": 0.601
+      "outgoing": 0.599,
+      "dream": 0.508
     },
     "homsoc": {
       "means": {
@@ -35,48 +35,73 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.027
+        "sexuality expression": 0.648,
+        "gender expression expression": 0.288
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12400": {
+          "key": 12400,
+          "name": "Tetta",
+          "age": 37,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Eingeliadis (10754)",
+            "father": "Eremboldus (10753)"
+          }
+        },
+        "14320": {
+          "key": 14320,
+          "name": "Mette",
+          "age": 5,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Eingeliadis (10754)",
+            "father": "Eremboldus (10753)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10755
-        ]
+        ],
+        "child": {
+          "birth": [
+            12402,
+            14322
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
-        2,
-        "middle class"
+        0,
+        "working class"
       ],
-      "income": 1.082,
-      "all_incomes": [
-        1.082
-      ],
-      "job": {
-        "lawful": false,
-        "honest": true
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 6,
-      "eye_color": "brown",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "skin_color": 4,
+      "eye_color": "blue",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "C",
         "S"
       ],
-      "health": 0.764,
-      "fertility": 0.74,
+      "health": 0.713,
+      "fertility": 0.747,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -88,17 +113,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.764
+            "new_health": 0.713
           },
           "death": false
-        },
-        "1204": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.764
-          },
-          "death": true
         }
       },
       "events": {
@@ -111,8 +128,8 @@
               10754
             ],
             "people names": [
-              "Rembrandus Blonde",
-              "Ermerut"
+              "Eremboldus",
+              "Eingeliadis Vromoeds"
             ],
             "label": "spouse",
             "committed": true
@@ -120,32 +137,80 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stDie Camp.se1.c2",
-              "street": "Die Camp",
+              "income class": 0,
+              "income class label": "working class",
+              "section": "stPotstraet.se1.c0",
+              "street": "Potstraet",
               "neighborhood": "kampbuurt",
-              "unique id": 354
+              "unique id": 343
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12402,
+            "people": [
+              10754,
+              12400
+            ],
+            "people names": [
+              "Eingeliadis Vromoeds",
+              "Tetta"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1202": [
+          {
+            "topic": "feelings change",
+            "target": 10753,
+            "target name": "Eremboldus",
+            "state": "out of love",
+            "relationship": 10755
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 14322,
+            "people": [
+              10754,
+              14320
+            ],
+            "people names": [
+              "Eingeliadis Vromoeds",
+              "Mette"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.763,
+            "inhabitants": []
           }
         ],
         "1204": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.082
+            "topic": "not enough income",
+            "income": 0.59,
+            "inhabitants": []
+          },
+          {
+            "topic": "death",
+            "cause": "starvation"
           }
         ]
       }
     },
     "key": 10754,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stDie Camp.se1.c2",
-      "street": "Die Camp",
+      "income class": 0,
+      "income class label": "working class",
+      "section": "stPotstraet.se1.c0",
+      "street": "Potstraet",
       "neighborhood": "kampbuurt",
-      "unique id": 354
+      "unique id": 343
     },
     "relationship status": {
       "taken": true,

@@ -308,7 +308,7 @@ class Home(Agent):
             self.model.message_person(i, msg)
 
     def notify_care_dependants(self, msg):
-        for i in self.inhabitants:
+        for i in self.care_dependants:
             self.model.message_person(i, msg)
     
     def address(self):

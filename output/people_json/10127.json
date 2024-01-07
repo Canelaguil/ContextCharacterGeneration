@@ -1,19 +1,19 @@
 {
   "10127": {
     "alive": false,
-    "name": "Aleberna",
-    "surname": "",
-    "full name": "Aleberna",
+    "name": "Lutghardis",
+    "surname": "Bloemart",
+    "full name": "Lutghardis Bloemart",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.061,
-      "romantic interest": 0.836,
-      "sex interest": 0.857,
-      "gender expression": 0.08,
+      "sexuality label": "gay",
+      "sexuality": 0.932,
+      "romantic interest": 0.542,
+      "sex interest": 0.816,
+      "gender expression": 0.31,
       "sex": "f"
     },
-    "age": 41,
-    "birth year": 1160,
+    "age": 35,
+    "birth year": 1180,
     "sex": "f",
     "faction": "No religion",
     "income class": [
@@ -21,13 +21,13 @@
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.465,
-      "nice-nasty": 0.529,
-      "honest-false": 0.898
+      "lawful-chaotic": 0.405,
+      "nice-nasty": 0.09,
+      "honest-false": 0.531
     },
     "attitude": {
-      "outgoing": 0.394,
-      "dream": 0.359
+      "outgoing": 0.572,
+      "dream": 0.421
     },
     "homsoc": {
       "means": {
@@ -38,17 +38,58 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.023,
-        "gender expression expression": 0.044
+        "sexuality expression": 0.699,
+        "gender expression expression": 0.154
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13505": {
+          "key": 13505,
+          "name": "Ysaac Tuc",
+          "age": 14,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Lutghardis (10127)",
+            "father": "Herlewin (10126)"
+          }
+        },
+        "14161": {
+          "key": 14161,
+          "name": "Splinter Tuc",
+          "age": 46,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Lutghardis (10127)",
+            "father": "Herlewin (10126)"
+          }
+        },
+        "18591": {
+          "key": 18591,
+          "name": "Breghtgherus Tuc",
+          "age": 26,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Lutghardis (10127)",
+            "father": "Herlewin (10126)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10128
-        ]
+        ],
+        "child": {
+          "birth": [
+            13507,
+            14163,
+            18593
+          ]
+        }
       }
     },
     "occupation": {
@@ -57,26 +98,39 @@
         1,
         "lower middle class"
       ],
-      "income": 0.624,
+      "income": 1.499,
       "all_incomes": [
-        0.624
+        1.026,
+        0.956,
+        0.996,
+        0.826,
+        0.671,
+        0.589,
+        0.724,
+        0.958,
+        1.158,
+        1.429,
+        1.439,
+        1.499,
+        1.446,
+        1.499
       ],
       "job": {
-        "lawful": false,
-        "honest": true
+        "lawful": true,
+        "honest": false
       }
     },
     "genetics": {
-      "skin_color": 1,
+      "skin_color": 4,
       "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
         "S",
-        "S"
+        "C"
       ],
-      "health": 0.655,
-      "fertility": 0.597,
+      "health": 0.729,
+      "fertility": 0.709,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -88,18 +142,21 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.655
+            "new_health": 0.729
+          },
+          "death": false
+        },
+        "1214": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.729
           },
           "death": true
         }
       },
       "events": {
         "1200": [
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.624
-          },
           {
             "topic": "new relationship",
             "key": 10128,
@@ -108,8 +165,8 @@
               10127
             ],
             "people names": [
-              "Vroeden Snauel",
-              "Aleberna"
+              "Herlewin Tuc",
+              "Lutghardis Bloemart"
             ],
             "label": "spouse",
             "committed": true
@@ -119,11 +176,86 @@
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stSlyck straet.se3.c1",
-              "street": "Slyck straet",
+              "section": "stKoe straet.se1.c1",
+              "street": "Koe straet",
               "neighborhood": "varkensbuurt",
-              "unique id": 51
+              "unique id": 56
             }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.026
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 13507,
+            "people": [
+              10127,
+              13505
+            ],
+            "people names": [
+              "Lutghardis Bloemart",
+              "Ysaac Tuc"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 14163,
+            "people": [
+              10127,
+              14161
+            ],
+            "people names": [
+              "Lutghardis Bloemart",
+              "Splinter Tuc"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1205": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.671
+          }
+        ],
+        "1209": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.158
+          }
+        ],
+        "1211": [
+          {
+            "topic": "new relationship",
+            "key": 18593,
+            "people": [
+              10127,
+              18591
+            ],
+            "people names": [
+              "Lutghardis Bloemart",
+              "Breghtgherus Tuc"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1214": [
+          {
+            "topic": "death",
+            "cause": "illness"
           }
         ]
       }
@@ -132,10 +264,10 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stSlyck straet.se3.c1",
-      "street": "Slyck straet",
+      "section": "stKoe straet.se1.c1",
+      "street": "Koe straet",
       "neighborhood": "varkensbuurt",
-      "unique id": 51
+      "unique id": 56
     },
     "relationship status": {
       "taken": true,

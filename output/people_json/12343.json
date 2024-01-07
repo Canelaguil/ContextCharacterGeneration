@@ -1,82 +1,122 @@
 {
   "12343": {
     "alive": false,
-    "name": "Remboldus",
-    "surname": "Crulleboye",
-    "full name": "Remboldus Crulleboye",
+    "name": "Hildebolding",
+    "surname": "",
+    "full name": "Hildebolding",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.092,
-      "romantic interest": 0.679,
-      "sex interest": 0.615,
-      "gender expression": 0.023,
+      "sexuality": 0.065,
+      "romantic interest": 0.823,
+      "sex interest": 0.793,
+      "gender expression": 0.309,
       "sex": "m"
     },
-    "age": 12,
+    "age": 42,
     "birth year": 1200,
     "sex": "m",
     "faction": "Zealots",
     "income class": [
-      1,
-      "lower middle class"
+      2,
+      "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.863,
-      "nice-nasty": 0.373,
-      "honest-false": 0.273
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.999,
+      "honest-false": 0.237
     },
     "attitude": {
-      "outgoing": 0.127,
-      "dream": 0.295
+      "outgoing": 0.645,
+      "dream": 0.623
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": true,
-        "needs_care": true,
+        "needs_care": false,
         "flags": [
-          "neglected"
+          "neglected",
+          "starving"
         ]
       },
       "expression": {
-        "sexuality expression": 0.069,
-        "gender expression expression": 0.022
+        "sexuality expression": 0.037,
+        "gender expression expression": 0.053
       }
     },
     "network": {
       "parents": {
-        "mother": "Marcibilia (10688)",
-        "father": "Rembrecht (10687)"
+        "mother": "Marie (10556)",
+        "father": "Batten (10555)"
       },
       "children": {},
       "relationship keys": {
         "parent": [
           12344,
           12345
+        ],
+        "sibling": [
+          14278
+        ],
+        "spouse": [
+          24665,
+          26937
         ]
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        1,
-        "lower middle class"
+        2,
+        "middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.264,
+      "all_incomes": [
+        1.045,
+        1.084,
+        1.066,
+        1.085,
+        1.195,
+        1.242,
+        1.206,
+        1.213,
+        1.194,
+        1.166,
+        1.187,
+        1.142,
+        1.114,
+        1.143,
+        1.156,
+        1.157,
+        1.163,
+        1.114,
+        1.165,
+        1.209,
+        1.261,
+        1.289,
+        1.309,
+        1.277,
+        1.284,
+        1.284,
+        1.264
+      ],
+      "job": {
+        "lawful": true,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 6,
-      "eye_color": "green",
+      "skin_color": 8,
+      "eye_color": "blue",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
-        "S",
-        "C"
+        "C",
+        "S"
       ],
-      "health": 0.668,
-      "fertility": 0.714,
+      "health": 0.381,
+      "fertility": 0.605,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -88,15 +128,23 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.668
+            "new_health": 0.683
           },
           "death": false
         },
-        "1212": {
+        "1241": {
+          "health": {
+            "change": true,
+            "value_change": -0.302,
+            "new_health": 0.381
+          },
+          "death": false
+        },
+        "1242": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.668
+            "new_health": 0.381
           },
           "death": true
         }
@@ -106,12 +154,12 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stTuytsteeg.se1.c1",
-              "street": "Tuytsteeg",
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stWaale straet.se1.c2",
+              "street": "Waale straet",
               "neighborhood": "agnesbuurt",
-              "unique id": 322
+              "unique id": 248
             }
           }
         ],
@@ -127,15 +175,66 @@
         ],
         "1203": [
           {
-            "topic": "neglected"
+            "topic": "new relationship",
+            "key": 14278,
+            "people": [
+              12343,
+              14275
+            ],
+            "people names": [
+              "Hildebolding",
+              "Trame"
+            ],
+            "label": "sibling",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.248,
+            "inhabitants": [
+              13958,
+              24443
+            ]
           }
         ],
         "1204": [
           {
-            "topic": "neglected"
+            "topic": "person died",
+            "person": {
+              "key": 14275,
+              "name": "Trame",
+              "age": 0,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Marie (10556)",
+                "father": "Batten (10555)"
+              }
+            },
+            "label": "sibling"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.129,
+            "inhabitants": [
+              13958,
+              24443
+            ]
           }
         ],
         "1205": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10556,
+              "name": "Marie",
+              "age": 36,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "label": "parent"
+          },
           {
             "topic": "neglected"
           }
@@ -157,39 +256,220 @@
         ],
         "1209": [
           {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0.39,
+            "inhabitants": [
+              13958,
+              24443
+            ]
+          },
+          {
+            "topic": "update",
+            "update": "parent married",
+            "parent": 10555,
+            "new partner": 11864
           }
         ],
         "1210": [
           {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0.262,
+            "inhabitants": [
+              13958,
+              24443
+            ]
           }
         ],
         "1211": [
           {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0.151,
+            "inhabitants": [
+              13958,
+              24443
+            ]
           }
         ],
         "1212": [
           {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              13958,
+              24443
+            ]
+          }
+        ],
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              13958,
+              24443
+            ]
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
             "topic": "neglected"
+          }
+        ],
+        "1216": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.045
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10555,
+              "name": "Batten",
+              "age": 53,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "parent"
+          },
+          {
+            "topic": "event",
+            "event": "war",
+            "year": 1216
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              13958,
+              24443
+            ]
+          }
+        ],
+        "1227": [
+          {
+            "topic": "event",
+            "event": "famine",
+            "year": 1227
+          }
+        ],
+        "1228": [
+          {
+            "topic": "event",
+            "event": "famine",
+            "year": 1228
+          }
+        ],
+        "1229": [
+          {
+            "topic": "event",
+            "event": "faction upheaval",
+            "faction": "Zealots",
+            "year": 1229
+          }
+        ],
+        "1232": [
+          {
+            "topic": "event",
+            "event": "war",
+            "year": 1232
+          },
+          {
+            "topic": "new relationship",
+            "key": 24665,
+            "people": [
+              12343,
+              11963
+            ],
+            "people names": [
+              "Hildebolding",
+              "Lisebette Cabellau"
+            ],
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1234": [
+          {
+            "topic": "feelings change",
+            "target": 11963,
+            "target name": "Lisebette Cabellau",
+            "state": "out of love",
+            "relationship": 24665
+          }
+        ],
+        "1235": [
+          {
+            "key": 24665,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11963,
+              "name": "Lisebette Cabellau",
+              "age": 53,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          }
+        ],
+        "1238": [
+          {
+            "topic": "new relationship",
+            "key": 26937,
+            "people": [
+              12343,
+              13958
+            ],
+            "people names": [
+              "Hildebolding",
+              "Saswe"
+            ],
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1242": [
+          {
+            "topic": "feelings change",
+            "target": 13958,
+            "target name": "Saswe",
+            "state": "out of love",
+            "relationship": 26937
+          },
+          {
+            "topic": "death",
+            "cause": "illness"
           }
         ]
       }
     },
     "key": 12343,
     "home": {
-      "income class": 1,
-      "income class label": "lower middle class",
-      "section": "stTuytsteeg.se1.c1",
-      "street": "Tuytsteeg",
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stWaale straet.se1.c2",
+      "street": "Waale straet",
       "neighborhood": "agnesbuurt",
-      "unique id": 322
+      "unique id": 248
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
-      "relationships": []
+      "taken": true,
+      "married": true,
+      "relationships": [
+        14278,
+        24665,
+        26937
+      ]
     }
   }
 }

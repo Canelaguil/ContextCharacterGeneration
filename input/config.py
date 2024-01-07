@@ -91,7 +91,7 @@ community = {
     'community_events' : ['war', 'famine', 'plague', 'faction upheaval'],
     'comunnity_events_yearly_chance' : 0.05,
     'community_events_distr' : [0.2, 0.2, 0.2, 0.4], # given that something will happen, what will?
-    'community_fixed_events' : [(), (), (), ()] # fixed years in which these events will happen
+    'community_fixed_events' : [[1232], [], [1215], []] # fixed years in which these events will happen
 }
 
 

@@ -1,19 +1,19 @@
 {
   "10223": {
     "alive": false,
-    "name": "Nannen",
+    "name": "Iris",
     "surname": "",
-    "full name": "Nannen",
+    "full name": "Iris",
     "born this way": {
       "sexuality label": "straight",
       "sexuality": 0.0,
-      "romantic interest": 0.48,
-      "sex interest": 0.481,
-      "gender expression": 0.029,
+      "romantic interest": 0.39,
+      "sex interest": 0.802,
+      "gender expression": 0.0,
       "sex": "f"
     },
-    "age": 48,
-    "birth year": 1163,
+    "age": 32,
+    "birth year": 1179,
     "sex": "f",
     "faction": "Zealots",
     "income class": [
@@ -21,13 +21,13 @@
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.998,
-      "honest-false": 0.5
+      "lawful-chaotic": 0.0,
+      "nice-nasty": 0.511,
+      "honest-false": 0.023
     },
     "attitude": {
-      "outgoing": 0.366,
-      "dream": 0.375
+      "outgoing": 0.117,
+      "dream": 0.419
     },
     "homsoc": {
       "means": {
@@ -39,16 +39,57 @@
       },
       "expression": {
         "sexuality expression": -0.001,
-        "gender expression expression": 0.023
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12259": {
+          "key": 12259,
+          "name": "Segherarden",
+          "age": 20,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Iris (10223)",
+            "father": "Yseboldus (10222)"
+          }
+        },
+        "14793": {
+          "key": 14793,
+          "name": "Jacomin",
+          "age": 1,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Iris (10223)",
+            "father": "Yseboldus (10222)"
+          }
+        },
+        "17155": {
+          "key": 17155,
+          "name": "Natelien",
+          "age": 41,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Iris (10223)",
+            "father": "Yseboldus (10222)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10224
-        ]
+        ],
+        "child": {
+          "birth": [
+            12261,
+            14795,
+            17157
+          ]
+        }
       }
     },
     "occupation": {
@@ -61,16 +102,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 7,
+      "skin_color": 2,
       "eye_color": "brown",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "S",
-        "S"
+        "C"
       ],
-      "health": 0.761,
-      "fertility": 0.698,
+      "health": 0.799,
+      "fertility": 0.79,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -82,7 +123,7 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.761
+            "new_health": 0.799
           },
           "death": false
         },
@@ -90,7 +131,7 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.761
+            "new_health": 0.799
           },
           "death": true
         }
@@ -105,8 +146,8 @@
               10223
             ],
             "people names": [
-              "Ludingus",
-              "Nannen"
+              "Yseboldus",
+              "Iris"
             ],
             "label": "spouse",
             "committed": true
@@ -116,47 +157,80 @@
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stHelle voet.se3.c1",
+              "section": "stHelle voet.se5.c1",
               "street": "Helle voet",
               "neighborhood": "jorisbuurt",
-              "unique id": 99
+              "unique id": 102
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12261,
+            "people": [
+              10223,
+              12259
+            ],
+            "people names": [
+              "Iris",
+              "Segherarden"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1201": [
+        "1204": [
           {
-            "topic": "feelings change",
-            "target": 10222,
-            "target name": "Ludingus",
-            "state": "infatuation",
-            "relationship": 10224
+            "topic": "new relationship",
+            "key": 14795,
+            "people": [
+              10223,
+              14793
+            ],
+            "people names": [
+              "Iris",
+              "Jacomin"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1202": [
+        "1206": [
           {
-            "topic": "feelings change",
-            "target": 10222,
-            "target name": "Ludingus",
-            "state": "out of love",
-            "relationship": 10224
+            "topic": "person died",
+            "person": {
+              "key": 14793,
+              "name": "Jacomin",
+              "age": 1,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Iris (10223)",
+                "father": "Yseboldus (10222)"
+              }
+            },
+            "label": "child"
           }
         ],
-        "1203": [
+        "1208": [
           {
-            "topic": "feelings change",
-            "target": 10222,
-            "target name": "Ludingus",
-            "state": "infatuation",
-            "relationship": 10224
+            "topic": "new relationship",
+            "key": 17157,
+            "people": [
+              10223,
+              17155
+            ],
+            "people names": [
+              "Iris",
+              "Natelien"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1205": [
+        "1210": [
           {
-            "topic": "feelings change",
-            "target": 10222,
-            "target name": "Ludingus",
-            "state": "solid love",
-            "relationship": 10224
+            "topic": "death",
+            "cause": "illness"
           }
         ]
       }
@@ -165,10 +239,10 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stHelle voet.se3.c1",
+      "section": "stHelle voet.se5.c1",
       "street": "Helle voet",
       "neighborhood": "jorisbuurt",
-      "unique id": 99
+      "unique id": 102
     },
     "relationship status": {
       "taken": true,

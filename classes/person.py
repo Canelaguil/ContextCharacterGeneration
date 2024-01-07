@@ -105,6 +105,8 @@ class Person(Agent):
     def die(self, cause=''):
         self.alive = False
         self.network.unravel()
+        if cause == '':
+            cause = self.body.death_cause
         i_died = {
             'topic' : 'person died', 
             'key' : self.unique_id,
@@ -113,6 +115,10 @@ class Person(Agent):
         if self.home != None:
             self.community.message_home(self.home['unique id'], i_died)
         self.community.report_death(self.unique_id)
+        self.memory.add_event({
+            'topic' : 'death',
+            'cause' : cause
+        })
 
     """
     PHASES / STEPS
@@ -160,9 +166,12 @@ class Person(Agent):
                 self.relationship_processing(msg)
             elif topic in ['relationship change', 'unmarried', 'single']: # relationship label
                 self.update_relationship_status(msg)
+                # TODO: notify network
                 self.memory.add_event(msg)
             elif topic == 'feelings change':
                 self.memory.add_event(msg)
+            elif topic == 'event':
+                self.process_event(msg)
             elif topic == 'person died': # or topic == 'sibling died':
                 self.memory.add_event(msg)
             elif topic == 'new home': 
@@ -183,6 +192,8 @@ class Person(Agent):
                 self.homsoc.situation_change(msg, self.age)
                 if self.age != 0:
                     self.memory.add_event(msg)
+            elif topic == 'update':
+                self.memory.add_event(msg)
             else:
                 log_error('person received unrecognized message', msg)
             msg = self.messages.get()
@@ -236,6 +247,14 @@ class Person(Agent):
 
     def process_event(self, info):
         self.memory.add_event(info)
+        event = info['event']
+        if event in ['famine', 'plague']:
+            self.body.trigger(event)
+        elif event == 'war':
+            if self.sex == 'm' and self.age > Body.adult_age:
+                self.body.trigger(event)
+        elif event == 'faction upheaval':
+            ...
 
 
     """

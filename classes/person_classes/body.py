@@ -43,6 +43,7 @@ class Body():
         self.communication_impaired = False
         self.mobility_impaired = False
         self.cognitive_impaired = False
+        self.death_cause = 'old age'
         self.trigger('birth')
 
     """
@@ -183,17 +184,23 @@ class Body():
         # to avoid random 200+ years olds given an old age of 50, eg
         max_age_this_year = (Body.old_age * 2) - rand_int(int(Body.old_age * 0.2), 0)
         if self.health == 0:
+            self.death_cause = 'sickness'
             chance = 1
         elif age < 12:
-            chance = (fair_mod(Body.child_mortality, - (0.075 * age))) * (1 - self.health)
+            self.death_cause = 'childhood illness'
+            chance = (fair_mod(Body.child_mortality * (1 - self.health), - (0.125 * age))) 
         elif age >= max_age_this_year:
+            self.death_cause = 'old age'
             return True
         elif age > Body.old_age:
+            self.death_cause = 'old age'
             chance = (0.05 + (0.01 * (age - Body.old_age))) * (1 - self.health)
-        elif age > 0.5 * Body.old_age:
+        elif age > 0.5 * Body.old_age:            
+            self.death_cause = 'illness'
             years = age - Body.adult_age
             chance = 0.025 * (1 - self.health) + (0.001 * years)
         else:
+            self.death_cause = 'illness'
             chance = 0.05 * (1 - self.health)
         
         if rand() < chance:
@@ -213,9 +220,20 @@ class Body():
         elif trigger == 'childbirth':
             ch = 0.1 * (1 - self.health)
             if rand() < ch:
+                self.death_cause = 'childbirth'
                 self.person.mark_for_death = True
-        elif trigger == 'starving':
-            ...
+        elif trigger == 'starving' or trigger == 'famine':
+            if rand() < 0.1 * (1 - self.health):
+                self.death_cause = 'starvation'
+                self.person.mark_for_death = True
+        elif trigger == 'war':             
+            if rand() < 0.1:
+                self.death_cause = 'war'
+                self.person.mark_for_death = True
+        elif trigger == 'plague':
+            if rand() < 0.1 * (1 - self.health):
+                self.death_cause = 'plague'
+                self.person.mark_for_death = True
 
     def health_change(self, modifier):
         """

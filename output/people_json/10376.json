@@ -1,19 +1,19 @@
 {
   "10376": {
     "alive": false,
-    "name": "Hadewigis",
-    "surname": "Buc",
-    "full name": "Hadewigis Buc",
+    "name": "Amelgeir",
+    "surname": "Huntekin",
+    "full name": "Amelgeir Huntekin",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.552,
-      "sex interest": 0.825,
-      "gender expression": 0.107,
+      "sexuality": 0.029,
+      "romantic interest": 0.777,
+      "sex interest": 0.628,
+      "gender expression": 0.129,
       "sex": "f"
     },
-    "age": 35,
-    "birth year": 1169,
+    "age": 42,
+    "birth year": 1177,
     "sex": "f",
     "faction": "No religion",
     "income class": [
@@ -21,41 +21,64 @@
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.284,
-      "nice-nasty": 0.685,
-      "honest-false": 0.0
+      "lawful-chaotic": 0.274,
+      "nice-nasty": 0.631,
+      "honest-false": 0.832
     },
     "attitude": {
-      "outgoing": 0.42,
-      "dream": 0.276
+      "outgoing": 0.51,
+      "dream": 0.295
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
         "flags": [
-          "neglected"
+          "caretaker",
+          "starving"
         ]
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.043
+        "sexuality expression": 0.015,
+        "gender expression expression": 0.1
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "13629": {
-          "key": 13629,
-          "name": "Eggerdus Justaesszoon",
-          "age": 7,
+        "12903": {
+          "key": 12903,
+          "name": "Beatrice",
+          "age": 15,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Amelgeir (10376)",
+            "father": "Veder (10375)"
+          }
+        },
+        "14815": {
+          "key": 14815,
+          "name": "Egbertus Storhem",
+          "age": 17,
           "alive": false,
           "sex": "m",
           "parents": {
-            "mother": "Hadewigis (10376)",
-            "father": "Justaes (10375)"
+            "mother": "Amelgeir (10376)",
+            "father": "Veder (10375)"
+          }
+        },
+        "19024": {
+          "key": 19024,
+          "name": "Emmelina Storhem",
+          "age": 37,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Amelgeir (10376)",
+            "father": "Veder (10375)"
           }
         }
       },
@@ -65,39 +88,33 @@
         ],
         "child": {
           "birth": [
-            13631
+            12905,
+            14817,
+            19026
           ]
         }
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
         1,
         "lower middle class"
       ],
-      "income": 0.0,
-      "all_incomes": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "job": {
-        "lawful": false,
-        "honest": false
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 6,
+      "skin_color": 4,
       "eye_color": "green",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
         "S",
-        "S"
+        "C"
       ],
-      "health": 0.702,
-      "fertility": 0.794,
+      "health": 0.592,
+      "fertility": 0.624,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -109,9 +126,17 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.702
+            "new_health": 0.592
           },
           "death": false
+        },
+        "1218": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.592
+          },
+          "death": true
         }
       },
       "events": {
@@ -124,8 +149,8 @@
               10376
             ],
             "people names": [
-              "Justaes",
-              "Hadewigis Buc"
+              "Veder Storhem",
+              "Amelgeir Huntekin"
             ],
             "label": "spouse",
             "committed": true
@@ -138,34 +163,220 @@
               "section": "stMuelen straet.se3.c1",
               "street": "Muelen straet",
               "neighborhood": "jorisbuurt",
-              "unique id": 170
+              "unique id": 163
             }
           }
         ],
         "1201": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.0
-          }
-        ],
-        "1203": [
-          {
             "topic": "new relationship",
-            "key": 13631,
+            "key": 12905,
             "people": [
               10376,
-              13629
+              12903
             ],
             "people names": [
-              "Hadewigis Buc",
-              "Eggerdus Justaesszoon"
+              "Amelgeir Huntekin",
+              "Beatrice"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 14817,
+            "people": [
+              10376,
+              14815
+            ],
+            "people names": [
+              "Amelgeir Huntekin",
+              "Egbertus Storhem"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0.489,
+            "inhabitants": [
+              19024,
+              18204,
+              25651,
+              28567,
+              28869,
+              29794
+            ]
+          }
+        ],
+        "1212": [
+          {
+            "topic": "new relationship",
+            "key": 19026,
+            "people": [
+              10376,
+              19024
+            ],
+            "people names": [
+              "Amelgeir Huntekin",
+              "Emmelina Storhem"
             ],
             "label": "parentchild",
             "committed": false
           },
           {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0.635,
+            "inhabitants": [
+              19024,
+              18204,
+              25651,
+              28567,
+              28869,
+              29794
+            ]
+          }
+        ],
+        "1213": [
+          {
+            "key": 10377,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10375,
+              "name": "Veder Storhem",
+              "age": 55,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              19024,
+              18204,
+              25651,
+              28567,
+              28869,
+              29794
+            ]
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": [
+              25651,
+              28567,
+              28869,
+              29794
+            ]
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              19024,
+              18204,
+              25651,
+              28567,
+              28869,
+              29794
+            ]
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              19024,
+              18204,
+              25651,
+              28567,
+              28869,
+              29794
+            ]
+          }
+        ],
+        "1216": [
+          {
+            "topic": "event",
+            "event": "war",
+            "year": 1216
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              19024,
+              18204,
+              25651,
+              28567,
+              28869,
+              29794
+            ]
+          }
+        ],
+        "1217": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12903,
+              "name": "Beatrice",
+              "age": 15,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Amelgeir (10376)",
+                "father": "Veder (10375)"
+              }
+            },
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              19024,
+              18204,
+              25651,
+              28567,
+              28869,
+              29794
+            ]
+          }
+        ],
+        "1218": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              19024,
+              18204,
+              25651,
+              28567,
+              28869,
+              29794
+            ]
+          },
+          {
+            "topic": "death",
+            "cause": "illness"
           }
         ]
       }
@@ -177,11 +388,11 @@
       "section": "stMuelen straet.se3.c1",
       "street": "Muelen straet",
       "neighborhood": "jorisbuurt",
-      "unique id": 170
+      "unique id": 163
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         10377
       ]

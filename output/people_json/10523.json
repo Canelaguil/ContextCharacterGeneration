@@ -1,33 +1,33 @@
 {
   "10523": {
     "alive": false,
-    "name": "Alretieren",
-    "surname": "Minneman",
-    "full name": "Alretieren Minneman",
+    "name": "Yda",
+    "surname": "Blauoets",
+    "full name": "Yda Blauoets",
     "born this way": {
       "sexuality label": "gay",
-      "sexuality": 0.877,
-      "romantic interest": 0.999,
-      "sex interest": 0.568,
-      "gender expression": 0.103,
+      "sexuality": 0.863,
+      "romantic interest": 0.722,
+      "sex interest": 0.697,
+      "gender expression": 0.0,
       "sex": "f"
     },
-    "age": 46,
-    "birth year": 1165,
+    "age": 37,
+    "birth year": 1171,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.878,
-      "nice-nasty": 0.916,
-      "honest-false": 0.048
+      "lawful-chaotic": 0.526,
+      "nice-nasty": 0.112,
+      "honest-false": 0.577
     },
     "attitude": {
-      "outgoing": 0.34,
-      "dream": 0.085
+      "outgoing": 0.572,
+      "dream": 0.698
     },
     "homsoc": {
       "means": {
@@ -40,18 +40,34 @@
         ]
       },
       "expression": {
-        "sexuality expression": 0.536,
-        "gender expression expression": 0.072
+        "sexuality expression": 0.5,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12951": {
+          "key": 12951,
+          "name": "Amilius",
+          "age": 48,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Yda (10523)",
+            "father": "Ulrici (10522)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          10524,
-          14709
-        ]
+          10524
+        ],
+        "child": {
+          "birth": [
+            12953
+          ]
+        }
       }
     },
     "occupation": {
@@ -64,16 +80,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 7,
-      "eye_color": "green",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "skin_color": 4,
+      "eye_color": "brown",
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
       "hair_type": [
         "C",
-        "C"
+        "S"
       ],
-      "health": 0.598,
-      "fertility": 0.518,
+      "health": 0.569,
+      "fertility": 0.498,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -85,17 +101,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.598
+            "new_health": 0.569
           },
           "death": false
-        },
-        "1210": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.598
-          },
-          "death": true
         }
       },
       "events": {
@@ -108,8 +116,8 @@
               10523
             ],
             "people names": [
-              "Riquardus Iude",
-              "Alretieren Minneman"
+              "Ulrici",
+              "Yda Blauoets"
             ],
             "label": "spouse",
             "committed": true
@@ -119,75 +127,86 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stBloemendaelse straet.se7.c2",
+              "section": "stBloemendaelse straet.se3.c2",
               "street": "Bloemendaelse straet",
               "neighborhood": "agnesbuurt",
-              "unique id": 242
+              "unique id": 229
             }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 12953,
+            "people": [
+              10523,
+              12951
+            ],
+            "people names": [
+              "Yda Blauoets",
+              "Amilius"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1202": [
           {
-            "key": 10524,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 10522,
-              "name": "Riquardus Iude",
-              "age": 49,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
+            "topic": "feelings change",
+            "target": 10522,
+            "target name": "Ulrici",
+            "state": "out of love",
+            "relationship": 10524
           },
           {
             "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1203": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1204": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "income": 0.221,
+            "inhabitants": [
+              12951,
+              12736,
+              24996,
+              25328
+            ]
           }
         ],
         "1205": [
           {
-            "topic": "new relationship",
-            "key": 14709,
-            "people": [
-              12001,
-              10523
-            ],
-            "people names": [
-              "Reymbernus",
-              "Alretieren Minneman"
-            ],
-            "label": "spouse",
-            "committed": true
+            "topic": "not enough income",
+            "income": 0.079,
+            "inhabitants": [
+              12951,
+              12736,
+              24996,
+              25328
+            ]
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0.205,
+            "inhabitants": [
+              12951,
+              12736,
+              24996,
+              25328
+            ]
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0.211,
+            "inhabitants": [
+              12951,
+              12736,
+              24996,
+              25328
+            ]
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stCromme straet.se5.c2",
-              "street": "Cromme straet",
-              "neighborhood": "denhof",
-              "unique id": 904
-            }
+            "topic": "death",
+            "cause": "starvation"
           }
         ]
       }
@@ -196,17 +215,16 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stCromme straet.se5.c2",
-      "street": "Cromme straet",
-      "neighborhood": "denhof",
-      "unique id": 904
+      "section": "stBloemendaelse straet.se3.c2",
+      "street": "Bloemendaelse straet",
+      "neighborhood": "agnesbuurt",
+      "unique id": 229
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        10524,
-        14709
+        10524
       ]
     }
   }

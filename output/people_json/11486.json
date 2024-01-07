@@ -1,56 +1,86 @@
 {
   "11486": {
     "alive": false,
-    "name": "Menoldis",
-    "surname": "Scoreel",
-    "full name": "Menoldis Scoreel",
+    "name": "Waldrada",
+    "surname": "",
+    "full name": "Waldrada",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.886,
-      "sex interest": 0.793,
-      "gender expression": 0.116,
+      "sexuality label": "bi",
+      "sexuality": 0.504,
+      "romantic interest": 0.94,
+      "sex interest": 0.6,
+      "gender expression": 0.129,
       "sex": "f"
     },
-    "age": 54,
-    "birth year": 1152,
+    "age": 28,
+    "birth year": 1184,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "Zealots",
     "income class": [
       3,
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.148,
-      "nice-nasty": 0.793,
-      "honest-false": 0.58
+      "lawful-chaotic": 0.274,
+      "nice-nasty": 0.25,
+      "honest-false": 0.629
     },
     "attitude": {
-      "outgoing": 0.815,
-      "dream": 0.319
+      "outgoing": 0.605,
+      "dream": 0.127
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
         "flags": [
+          "caretaker",
           "starving"
         ]
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.065
+        "sexuality expression": 0.238,
+        "gender expression expression": 0.053
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14509": {
+          "key": 14509,
+          "name": "Agnes Boec",
+          "age": 21,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Waldrada (11486)",
+            "father": "Gheldekin (11485)"
+          }
+        },
+        "17916": {
+          "key": 17916,
+          "name": "Marie Boec",
+          "age": 11,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Waldrada (11486)",
+            "father": "Gheldekin (11485)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11487
-        ]
+        ],
+        "child": {
+          "birth": [
+            14511,
+            17918
+          ]
+        }
       }
     },
     "occupation": {
@@ -63,16 +93,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 7,
+      "skin_color": 5,
       "eye_color": "blue",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.0,
-      "fertility": 0.844,
+      "health": 0.657,
+      "fertility": 0.664,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -84,41 +114,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.722
+            "new_health": 0.657
           },
           "death": false
-        },
-        "1202": {
-          "health": {
-            "change": true,
-            "value_change": -0.079,
-            "new_health": 0.643
-          },
-          "death": false
-        },
-        "1203": {
-          "health": {
-            "change": true,
-            "value_change": -0.292,
-            "new_health": 0.351
-          },
-          "death": false
-        },
-        "1204": {
-          "health": {
-            "change": true,
-            "value_change": -0.271,
-            "new_health": 0.08
-          },
-          "death": false
-        },
-        "1205": {
-          "health": {
-            "change": true,
-            "value_change": -0.08,
-            "new_health": 0.0
-          },
-          "death": true
         }
       },
       "events": {
@@ -131,8 +129,8 @@
               11486
             ],
             "people names": [
-              "Otger Hoesterlinc",
-              "Menoldis Scoreel"
+              "Gheldekin Boec",
+              "Waldrada"
             ],
             "label": "spouse",
             "committed": true
@@ -142,14 +140,46 @@
             "home": {
               "income class": 3,
               "income class label": "upper middle class",
-              "section": "stMuurhuysen1.se3.c3",
-              "street": "Muurhuysen1",
-              "neighborhood": "cingelzuid",
-              "unique id": 660
+              "section": "stDie lange straet3.se3.c3",
+              "street": "Die lange straet3",
+              "neighborhood": "visbuurt",
+              "unique id": 679
             }
           }
         ],
-        "1204": [
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 14511,
+            "people": [
+              11486,
+              14509
+            ],
+            "people names": [
+              "Waldrada",
+              "Agnes Boec"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1209": [
+          {
+            "topic": "new relationship",
+            "key": 17918,
+            "people": [
+              11486,
+              17916
+            ],
+            "people names": [
+              "Waldrada",
+              "Marie Boec"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1210": [
           {
             "key": 11487,
             "topic": "unmarried"
@@ -158,8 +188,8 @@
             "topic": "person died",
             "person": {
               "key": 11485,
-              "name": "Otger Hoesterlinc",
-              "age": 49,
+              "name": "Gheldekin Boec",
+              "age": 56,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
@@ -170,13 +200,21 @@
             "topic": "not enough income",
             "income": 0,
             "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
           }
         ],
-        "1205": [
+        "1211": [
           {
             "topic": "not enough income",
             "income": 0,
             "inhabitants": []
+          },
+          {
+            "topic": "death",
+            "cause": "starvation"
           }
         ]
       }
@@ -185,10 +223,10 @@
     "home": {
       "income class": 3,
       "income class label": "upper middle class",
-      "section": "stMuurhuysen1.se3.c3",
-      "street": "Muurhuysen1",
-      "neighborhood": "cingelzuid",
-      "unique id": 660
+      "section": "stDie lange straet3.se3.c3",
+      "street": "Die lange straet3",
+      "neighborhood": "visbuurt",
+      "unique id": 679
     },
     "relationship status": {
       "taken": false,

@@ -1,19 +1,19 @@
 {
   "12188": {
     "alive": false,
-    "name": "Clara",
-    "surname": "Bloemart",
-    "full name": "Clara Bloemart",
+    "name": "Iris",
+    "surname": "Naghel",
+    "full name": "Iris Naghel",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.105,
-      "romantic interest": 0.334,
-      "sex interest": 0.846,
-      "gender expression": 0.177,
+      "sexuality": 0.049,
+      "romantic interest": 0.947,
+      "sex interest": 0.752,
+      "gender expression": 0.0,
       "sex": "f"
     },
-    "age": 51,
-    "birth year": 1152,
+    "age": 33,
+    "birth year": 1183,
     "sex": "f",
     "faction": "Dogmatists",
     "income class": [
@@ -21,56 +21,107 @@
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.092,
-      "nice-nasty": 0.0,
-      "honest-false": 0.747
+      "lawful-chaotic": 0.227,
+      "nice-nasty": 0.084,
+      "honest-false": 0.714
     },
     "attitude": {
-      "outgoing": 0.815,
-      "dream": 0.508
+      "outgoing": 0.863,
+      "dream": 0.64
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.073,
-        "gender expression expression": 0.151
+        "sexuality expression": 0.041,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "17097": {
+          "key": 17097,
+          "name": "Cats Dicbir",
+          "age": 23,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Iris (12188)",
+            "father": "Wellinus (11023)"
+          }
+        },
+        "19318": {
+          "key": 19318,
+          "name": "Agota Dicbir",
+          "age": 37,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Iris (12188)",
+            "father": "Wellinus (11023)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          12189
-        ]
+          12189,
+          15356
+        ],
+        "child": {
+          "birth": [
+            17099,
+            19320
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         1,
         "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.467,
+      "all_incomes": [
+        0.829,
+        0.995,
+        0.978,
+        1.075,
+        1.404,
+        1.499,
+        1.433,
+        1.499,
+        1.457,
+        1.218,
+        1.049,
+        0.683,
+        0.635,
+        0.475,
+        0.455,
+        0.467
+      ],
+      "job": {
+        "lawful": false,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 4,
+      "skin_color": 0,
       "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
         "C",
-        "S"
+        "C"
       ],
-      "health": 0.368,
-      "fertility": 0.646,
+      "health": 0.689,
+      "fertility": 0.759,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -82,21 +133,18 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.619
+            "new_health": 0.689
           },
           "death": false
-        },
-        "1202": {
-          "health": {
-            "change": true,
-            "value_change": -0.251,
-            "new_health": 0.368
-          },
-          "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.829
+          },
           {
             "topic": "new relationship",
             "key": 12189,
@@ -105,8 +153,8 @@
               12188
             ],
             "people names": [
-              "Franse Kriec",
-              "Clara Bloemart"
+              "Suam",
+              "Iris Naghel"
             ],
             "label": "spouse",
             "committed": true
@@ -116,11 +164,139 @@
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stKerckstraet.se1.c1",
+              "section": "stKerckstraet.se5.c1",
               "street": "Kerckstraet",
               "neighborhood": "denhof",
-              "unique id": 982
+              "unique id": 995
             }
+          }
+        ],
+        "1202": [
+          {
+            "key": 12189,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12187,
+              "name": "Suam",
+              "age": 22,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.075
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 15356,
+            "people": [
+              11023,
+              12188
+            ],
+            "people names": [
+              "Wellinus Dicbir",
+              "Iris Naghel"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stDie Coninc straet.se7.c1",
+              "street": "Die Coninc straet",
+              "neighborhood": "kampbuurt",
+              "unique id": 466
+            }
+          }
+        ],
+        "1207": [
+          {
+            "topic": "new relationship",
+            "key": 17099,
+            "people": [
+              12188,
+              17097
+            ],
+            "people names": [
+              "Iris Naghel",
+              "Cats Dicbir"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1211": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.683
+          }
+        ],
+        "1212": [
+          {
+            "topic": "new relationship",
+            "key": 19320,
+            "people": [
+              12188,
+              19318
+            ],
+            "people names": [
+              "Iris Naghel",
+              "Agota Dicbir"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 11023,
+            "target name": "Wellinus Dicbir",
+            "state": "out of love",
+            "relationship": 15356
+          }
+        ],
+        "1213": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.475
+          }
+        ],
+        "1214": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.455
+          }
+        ],
+        "1215": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.467
+          },
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "topic": "death",
+            "cause": "plague"
           }
         ]
       }
@@ -129,16 +305,17 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stKerckstraet.se1.c1",
-      "street": "Kerckstraet",
-      "neighborhood": "denhof",
-      "unique id": 982
+      "section": "stDie Coninc straet.se7.c1",
+      "street": "Die Coninc straet",
+      "neighborhood": "kampbuurt",
+      "unique id": 466
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        12189
+        12189,
+        15356
       ]
     }
   }

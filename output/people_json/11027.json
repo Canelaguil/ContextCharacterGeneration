@@ -1,19 +1,19 @@
 {
   "11027": {
     "alive": false,
-    "name": "Agnes",
-    "surname": "Aec",
-    "full name": "Agnes Aec",
+    "name": "Amelgeir",
+    "surname": "Ziele",
+    "full name": "Amelgeir Ziele",
     "born this way": {
-      "sexuality label": "bi",
-      "sexuality": 0.593,
-      "romantic interest": 0.668,
-      "sex interest": 0.508,
-      "gender expression": 0.314,
+      "sexuality label": "straight",
+      "sexuality": 0.061,
+      "romantic interest": 0.578,
+      "sex interest": 0.748,
+      "gender expression": 0.364,
       "sex": "f"
     },
-    "age": 57,
-    "birth year": 1151,
+    "age": 44,
+    "birth year": 1166,
     "sex": "f",
     "faction": "Zealots",
     "income class": [
@@ -21,67 +21,76 @@
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.921,
-      "nice-nasty": 0.497,
-      "honest-false": 0.336
+      "lawful-chaotic": 0.704,
+      "nice-nasty": 0.46,
+      "honest-false": 0.999
     },
     "attitude": {
-      "outgoing": 0.496,
-      "dream": 0.414
+      "outgoing": 0.441,
+      "dream": 0.166
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "caretaker",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.19,
-        "gender expression expression": 0.162
+        "sexuality expression": 0.037,
+        "gender expression expression": 0.144
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13115": {
+          "key": 13115,
+          "name": "Lisebette Bonghe",
+          "age": 14,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Amelgeir (11027)",
+            "father": "Reynold (11026)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11028
-        ]
+        ],
+        "child": {
+          "birth": [
+            13117
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
         1,
         "lower middle class"
       ],
-      "income": 1.04,
-      "all_incomes": [
-        0.987,
-        0.759,
-        1.045,
-        0.914,
-        0.736,
-        1.04
-      ],
-      "job": {
-        "lawful": true,
-        "honest": false
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 1,
+      "skin_color": 3,
       "eye_color": "brown",
       "hair_color": "brown",
       "hair_color_code": 2,
       "hair_type": [
-        "S",
-        "C"
+        "C",
+        "S"
       ],
-      "health": 0.0,
-      "fertility": 0.87,
+      "health": 0.795,
+      "fertility": 0.772,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -93,65 +102,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.886
+            "new_health": 0.795
           },
           "death": false
-        },
-        "1201": {
-          "health": {
-            "change": true,
-            "value_change": -0.095,
-            "new_health": 0.791
-          },
-          "death": false
-        },
-        "1202": {
-          "health": {
-            "change": true,
-            "value_change": -0.177,
-            "new_health": 0.614
-          },
-          "death": false
-        },
-        "1203": {
-          "health": {
-            "change": true,
-            "value_change": -0.224,
-            "new_health": 0.39
-          },
-          "death": false
-        },
-        "1204": {
-          "health": {
-            "change": true,
-            "value_change": -0.324,
-            "new_health": 0.066
-          },
-          "death": false
-        },
-        "1205": {
-          "health": {
-            "change": true,
-            "value_change": -0.045,
-            "new_health": 0.021
-          },
-          "death": false
-        },
-        "1206": {
-          "health": {
-            "change": true,
-            "value_change": -0.02,
-            "new_health": 0.001
-          },
-          "death": false
-        },
-        "1207": {
-          "health": {
-            "change": true,
-            "value_change": -0.001,
-            "new_health": 0.0
-          },
-          "death": true
         }
       },
       "events": {
@@ -164,8 +117,8 @@
               11027
             ],
             "people names": [
-              "Alebrando Cornute",
-              "Agnes Aec"
+              "Reynold Bonghe",
+              "Amelgeir Ziele"
             ],
             "label": "spouse",
             "committed": true
@@ -178,36 +131,110 @@
               "section": "stDie Coninc straet.se7.c1",
               "street": "Die Coninc straet",
               "neighborhood": "kampbuurt",
-              "unique id": 470
+              "unique id": 468
             }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 13117,
+            "people": [
+              11027,
+              13115
+            ],
+            "people names": [
+              "Amelgeir Ziele",
+              "Lisebette Bonghe"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 11026,
+            "target name": "Reynold Bonghe",
+            "state": "infatuation",
+            "relationship": 11028
           }
         ],
         "1202": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.987
+            "topic": "feelings change",
+            "target": 11026,
+            "target name": "Reynold Bonghe",
+            "state": "out of love",
+            "relationship": 11028
           }
         ],
-        "1204": [
+        "1203": [
           {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.045
+            "topic": "feelings change",
+            "target": 11026,
+            "target name": "Reynold Bonghe",
+            "state": "infatuation",
+            "relationship": 11028
+          }
+        ],
+        "1205": [
+          {
+            "topic": "feelings change",
+            "target": 11026,
+            "target name": "Reynold Bonghe",
+            "state": "solid love",
+            "relationship": 11028
           }
         ],
         "1206": [
           {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.736
+            "key": 11028,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11026,
+              "name": "Reynold Bonghe",
+              "age": 52,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
           }
         ],
         "1207": [
           {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.04
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "death",
+            "cause": "starvation"
           }
         ]
       }
@@ -219,11 +246,11 @@
       "section": "stDie Coninc straet.se7.c1",
       "street": "Die Coninc straet",
       "neighborhood": "kampbuurt",
-      "unique id": 470
+      "unique id": 468
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         11028
       ]

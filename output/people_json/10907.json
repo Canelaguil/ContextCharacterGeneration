@@ -1,19 +1,19 @@
 {
   "10907": {
     "alive": false,
-    "name": "Cofte",
-    "surname": "Vosseken",
-    "full name": "Cofte Vosseken",
+    "name": "Marie",
+    "surname": "",
+    "full name": "Marie",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.757,
-      "sex interest": 0.67,
-      "gender expression": 0.146,
+      "sexuality": 0.039,
+      "romantic interest": 0.766,
+      "sex interest": 0.882,
+      "gender expression": 0.0,
       "sex": "f"
     },
-    "age": 53,
-    "birth year": 1159,
+    "age": 31,
+    "birth year": 1175,
     "sex": "f",
     "faction": "Zealots",
     "income class": [
@@ -21,34 +21,65 @@
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.924,
-      "nice-nasty": 0.284,
-      "honest-false": 0.462
+      "lawful-chaotic": 0.271,
+      "nice-nasty": 0.705,
+      "honest-false": 0.999
     },
     "attitude": {
-      "outgoing": 0.433,
-      "dream": 0.324
+      "outgoing": 0.716,
+      "dream": 0.506
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.137
+        "sexuality expression": 0.024,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13714": {
+          "key": 13714,
+          "name": "Mette Willekinesdochter",
+          "age": 25,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Marie (10907)",
+            "father": "Willekine (10906)"
+          }
+        },
+        "14352": {
+          "key": 14352,
+          "name": "Pieter",
+          "age": 1,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Marie (10907)",
+            "father": "Willekine (10906)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10908
-        ]
+        ],
+        "child": {
+          "birth": [
+            13716,
+            14354
+          ]
+        }
       }
     },
     "occupation": {
@@ -57,31 +88,28 @@
         1,
         "lower middle class"
       ],
-      "income": 0.331,
+      "income": 0.819,
       "all_incomes": [
-        0.0,
-        0.0,
-        0.07,
-        0.454,
-        0.341,
-        0.331
+        0.984,
+        0.929,
+        0.819
       ],
       "job": {
         "lawful": true,
-        "honest": false
+        "honest": true
       }
     },
     "genetics": {
-      "skin_color": 5,
-      "eye_color": "green",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "skin_color": 2,
+      "eye_color": "brown",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
-        "C",
+        "S",
         "C"
       ],
-      "health": 0.0,
-      "fertility": 0.657,
+      "health": 0.826,
+      "fertility": 0.939,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -93,31 +121,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.67
+            "new_health": 0.826
           },
           "death": false
         },
-        "1209": {
+        "1205": {
           "health": {
-            "change": true,
-            "value_change": -0.165,
-            "new_health": 0.505
-          },
-          "death": false
-        },
-        "1210": {
-          "health": {
-            "change": true,
-            "value_change": -0.213,
-            "new_health": 0.292
-          },
-          "death": false
-        },
-        "1211": {
-          "health": {
-            "change": true,
-            "value_change": -0.292,
-            "new_health": 0.0
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.826
           },
           "death": true
         }
@@ -132,8 +144,8 @@
               10907
             ],
             "people names": [
-              "Guido Virtichponde",
-              "Cofte Vosseken"
+              "Willekine",
+              "Marie"
             ],
             "label": "spouse",
             "committed": true
@@ -143,48 +155,95 @@
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stSt. Ians straet.se3.c1",
+              "section": "stSt. Ians straet.se1.c1",
               "street": "St. Ians straet",
               "neighborhood": "kampbuurt",
-              "unique id": 417
+              "unique id": 408
             }
           }
         ],
-        "1206": [
+        "1201": [
+          {
+            "topic": "feelings change",
+            "target": 10906,
+            "target name": "Willekine",
+            "state": "out of love",
+            "relationship": 10908
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 13716,
+            "people": [
+              10907,
+              13714
+            ],
+            "people names": [
+              "Marie",
+              "Mette Willekinesdochter"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.25,
+            "inhabitants": []
+          }
+        ],
+        "1203": [
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.0
-          }
-        ],
-        "1210": [
-          {
-            "topic": "job notice",
-            "notice": "earning very little",
-            "income": 0.341
-          }
-        ],
-        "1211": [
-          {
-            "topic": "job notice",
-            "notice": "earning very little",
-            "income": 0.331
+            "income": 0.984
           },
           {
-            "key": 10908,
-            "topic": "unmarried"
+            "topic": "new relationship",
+            "key": 14354,
+            "people": [
+              10907,
+              14352
+            ],
+            "people names": [
+              "Marie",
+              "Pieter"
+            ],
+            "label": "parentchild",
+            "committed": false
           },
+          {
+            "topic": "not enough income",
+            "income": 0.459,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
           {
             "topic": "person died",
             "person": {
-              "key": 10906,
-              "name": "Guido Virtichponde",
-              "age": 55,
+              "key": 14352,
+              "name": "Pieter",
+              "age": 1,
               "alive": false,
               "sex": "m",
-              "parents": "firstgen"
+              "parents": {
+                "mother": "Marie (10907)",
+                "father": "Willekine (10906)"
+              }
             },
-            "label": "spouse"
+            "label": "child"
+          },
+          {
+            "topic": "feelings change",
+            "target": 10906,
+            "target name": "Willekine",
+            "state": "infatuation",
+            "relationship": 10908
+          },
+          {
+            "topic": "death",
+            "cause": "illness"
           }
         ]
       }
@@ -193,14 +252,14 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stSt. Ians straet.se3.c1",
+      "section": "stSt. Ians straet.se1.c1",
       "street": "St. Ians straet",
       "neighborhood": "kampbuurt",
-      "unique id": 417
+      "unique id": 408
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
         10908
       ]

@@ -1,54 +1,86 @@
 {
   "11555": {
     "alive": false,
-    "name": "Hilduardis",
-    "surname": "",
-    "full name": "Hilduardis",
+    "name": "Atghardis",
+    "surname": "Codde",
+    "full name": "Atghardis Codde",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.046,
-      "romantic interest": 0.692,
-      "sex interest": 0.781,
-      "gender expression": 0.172,
+      "sexuality": 0.088,
+      "romantic interest": 0.82,
+      "sex interest": 0.591,
+      "gender expression": 0.329,
       "sex": "f"
     },
-    "age": 54,
-    "birth year": 1158,
+    "age": 48,
+    "birth year": 1163,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "Dogmatists",
     "income class": [
       3,
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.361,
-      "nice-nasty": 0.36,
-      "honest-false": 0.256
+      "lawful-chaotic": 0.096,
+      "nice-nasty": 0.914,
+      "honest-false": 0.585
     },
     "attitude": {
-      "outgoing": 0.157,
-      "dream": 0.55
+      "outgoing": 0.51,
+      "dream": 0.634
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "caretaker",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.027,
-        "gender expression expression": 0.056
+        "sexuality expression": 0.059,
+        "gender expression expression": 0.241
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13284": {
+          "key": 13284,
+          "name": "Vroeden Zonne",
+          "age": 44,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Atghardis (11555)",
+            "father": "Amelgeir (11554)"
+          }
+        },
+        "14525": {
+          "key": 14525,
+          "name": "Gisele Zonne",
+          "age": 1,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Atghardis (11555)",
+            "father": "Amelgeir (11554)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11556
-        ]
+        ],
+        "child": {
+          "birth": [
+            13286,
+            14527
+          ]
+        }
       }
     },
     "occupation": {
@@ -61,16 +93,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 2,
+      "skin_color": 1,
       "eye_color": "brown",
       "hair_color": "brown",
       "hair_color_code": 2,
       "hair_type": [
         "S",
-        "S"
+        "C"
       ],
-      "health": 0.0,
-      "fertility": 0.622,
+      "health": 0.833,
+      "fertility": 0.876,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -82,41 +114,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.649
+            "new_health": 0.833
           },
           "death": false
-        },
-        "1208": {
-          "health": {
-            "change": true,
-            "value_change": -0.188,
-            "new_health": 0.461
-          },
-          "death": false
-        },
-        "1209": {
-          "health": {
-            "change": true,
-            "value_change": -0.123,
-            "new_health": 0.338
-          },
-          "death": false
-        },
-        "1210": {
-          "health": {
-            "change": true,
-            "value_change": -0.244,
-            "new_health": 0.094
-          },
-          "death": false
-        },
-        "1211": {
-          "health": {
-            "change": true,
-            "value_change": -0.094,
-            "new_health": 0.0
-          },
-          "death": true
         }
       },
       "events": {
@@ -129,8 +129,8 @@
               11555
             ],
             "people names": [
-              "Wasseliin",
-              "Hilduardis"
+              "Amelgeir Zonne",
+              "Atghardis Codde"
             ],
             "label": "spouse",
             "committed": true
@@ -140,11 +140,198 @@
             "home": {
               "income class": 3,
               "income class label": "upper middle class",
-              "section": "stDie lange straet3.se5.c3",
+              "section": "stDie lange straet3.se7.c3",
               "street": "Die lange straet3",
               "neighborhood": "visbuurt",
-              "unique id": 694
+              "unique id": 711
             }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 13286,
+            "people": [
+              11555,
+              13284
+            ],
+            "people names": [
+              "Atghardis Codde",
+              "Vroeden Zonne"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              22357,
+              24453,
+              20875,
+              29957,
+              30577
+            ]
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 14527,
+            "people": [
+              11555,
+              14525
+            ],
+            "people names": [
+              "Atghardis Codde",
+              "Gisele Zonne"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              22357,
+              24453,
+              20875,
+              29957,
+              30577
+            ]
+          }
+        ],
+        "1204": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              22357,
+              24453,
+              20875,
+              29957,
+              30577
+            ]
+          }
+        ],
+        "1205": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 14525,
+              "name": "Gisele Zonne",
+              "age": 1,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Atghardis (11555)",
+                "father": "Amelgeir (11554)"
+              }
+            },
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              22357,
+              24453,
+              20875,
+              29957,
+              30577
+            ]
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              22357,
+              24453,
+              20875,
+              29957,
+              30577
+            ]
+          }
+        ],
+        "1207": [
+          {
+            "key": 11556,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11554,
+              "name": "Amelgeir Zonne",
+              "age": 53,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              22357,
+              24453,
+              20875,
+              29957,
+              30577
+            ]
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": [
+              29957,
+              30577
+            ]
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              22357,
+              24453,
+              20875,
+              29957,
+              30577
+            ]
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              22357,
+              24453,
+              20875,
+              29957,
+              30577
+            ]
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              22357,
+              24453,
+              20875,
+              29957,
+              30577
+            ]
+          },
+          {
+            "topic": "death",
+            "cause": "starvation"
           }
         ]
       }
@@ -153,14 +340,14 @@
     "home": {
       "income class": 3,
       "income class label": "upper middle class",
-      "section": "stDie lange straet3.se5.c3",
+      "section": "stDie lange straet3.se7.c3",
       "street": "Die lange straet3",
       "neighborhood": "visbuurt",
-      "unique id": 694
+      "unique id": 711
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         11556
       ]

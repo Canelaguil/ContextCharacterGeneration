@@ -1,19 +1,19 @@
 {
   "24102": {
     "alive": true,
-    "name": "Sophia",
-    "surname": "Durcant",
-    "full name": "Sophia Durcant",
+    "name": "Brundonis",
+    "surname": "Valant",
+    "full name": "Brundonis Valant",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.973,
-      "romantic interest": 0.776,
-      "sex interest": 0.809,
-      "gender expression": 0.367,
+      "sexuality label": "straight",
+      "sexuality": 0.052,
+      "romantic interest": 0.791,
+      "sex interest": 0.905,
+      "gender expression": 0.253,
       "sex": "f"
     },
-    "age": 9,
-    "birth year": 1240,
+    "age": 19,
+    "birth year": 1230,
     "sex": "f",
     "faction": "Zealots",
     "income class": [
@@ -21,33 +21,33 @@
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.17,
-      "nice-nasty": 0.552,
-      "honest-false": 0.501
+      "lawful-chaotic": 0.198,
+      "nice-nasty": 0.999,
+      "honest-false": 0.494
     },
     "attitude": {
-      "outgoing": 0.513,
-      "dream": 0.623
+      "outgoing": 0.421,
+      "dream": 0.0
     },
     "homsoc": {
       "means": {
         "independent": false,
         "taken_care_of": false,
         "caretaker": true,
-        "needs_care": true,
+        "needs_care": false,
         "flags": [
           "neglected"
         ]
       },
       "expression": {
-        "sexuality expression": 0.395,
-        "gender expression expression": 0.186
+        "sexuality expression": 0.051,
+        "gender expression expression": 0.169
       }
     },
     "network": {
       "parents": {
-        "mother": "Ermerut (17773)",
-        "father": "Andreas (18056)"
+        "mother": "Lutghardis (15193)",
+        "father": "Evergero (15358)"
       },
       "children": {},
       "relationship keys": {
@@ -55,8 +55,21 @@
           24103,
           24104
         ],
+        "sibling": [
+          24105,
+          24106,
+          24107,
+          24413
+        ],
         "half-sibling": [
-          26451
+          25749,
+          26556,
+          26905,
+          27625,
+          28086
+        ],
+        "spouse": [
+          29748
         ]
       }
     },
@@ -70,16 +83,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 5,
-      "eye_color": "blue",
+      "skin_color": 7,
+      "eye_color": "green",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
         "S",
-        "S"
+        "C"
       ],
-      "health": 0.392,
-      "fertility": 0.693,
+      "health": 0.879,
+      "fertility": 0.865,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -87,60 +100,239 @@
     },
     "memory": {
       "health": {
-        "1241": {
+        "1231": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.656
-          },
-          "death": false
-        },
-        "1246": {
-          "health": {
-            "change": true,
-            "value_change": -0.264,
-            "new_health": 0.392
-          },
-          "death": false
-        },
-        "1247": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.392
+            "new_health": 0.879
           },
           "death": false
         }
       },
       "events": {
-        "1240": [
+        "1230": [
           {
             "topic": "new home",
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stVerckens merct.se1.c2",
-              "street": "Verckens merct",
-              "neighborhood": "varkensbuurt",
-              "unique id": 26
+              "section": "stCorte gracht.se3.c2",
+              "street": "Corte gracht",
+              "neighborhood": "visbuurt",
+              "unique id": 737
             }
+          }
+        ],
+        "1231": [
+          {
+            "topic": "new relationship",
+            "key": 24413,
+            "people": [
+              24102,
+              24407
+            ],
+            "people names": [
+              "Brundonis Valant",
+              "Alretieren Valant"
+            ],
+            "label": "sibling",
+            "committed": false
+          }
+        ],
+        "1232": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 15358,
+              "name": "Evergero Valant",
+              "age": 27,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Beatrice (10448)",
+                "father": "Kolekinus (11608)"
+              }
+            },
+            "label": "parent"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 24407,
+              "name": "Alretieren Valant",
+              "age": 0,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Lutghardis (15193)",
+                "father": "Evergero (15358)"
+              }
+            },
+            "label": "sibling"
+          },
+          {
+            "topic": "event",
+            "event": "war",
+            "year": 1232
+          }
+        ],
+        "1233": [
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stDie lange straet3.se1.c2",
+              "street": "Die lange straet3",
+              "neighborhood": "visbuurt",
+              "unique id": 678
+            }
+          },
+          {
+            "topic": "neglected"
+          },
+          {
+            "topic": "update",
+            "update": "parent married",
+            "parent": 15193,
+            "new partner": 13597
+          }
+        ],
+        "1234": [
+          {
+            "topic": "neglected"
+          },
+          {
+            "topic": "new relationship",
+            "key": 25749,
+            "people": [
+              24102,
+              25711
+            ],
+            "people names": [
+              "Brundonis Valant",
+              "Siabbo"
+            ],
+            "label": "half-sibling",
+            "committed": false
+          }
+        ],
+        "1235": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1236": [
+          {
+            "topic": "neglected"
+          },
+          {
+            "topic": "new relationship",
+            "key": 26556,
+            "people": [
+              24102,
+              26467
+            ],
+            "people names": [
+              "Brundonis Valant",
+              "Woltwigis Eltetussdochter"
+            ],
+            "label": "half-sibling",
+            "committed": false
+          }
+        ],
+        "1237": [
+          {
+            "topic": "neglected"
+          },
+          {
+            "topic": "new relationship",
+            "key": 26905,
+            "people": [
+              24102,
+              26820
+            ],
+            "people names": [
+              "Brundonis Valant",
+              "Bernardus"
+            ],
+            "label": "half-sibling",
+            "committed": false
+          }
+        ],
+        "1238": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1239": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 26820,
+              "name": "Bernardus",
+              "age": 1,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Lutghardis (15193)",
+                "father": "Eltetus (13597)"
+              }
+            },
+            "label": "half-sibling"
+          },
+          {
+            "topic": "neglected"
+          },
+          {
+            "topic": "new relationship",
+            "key": 27625,
+            "people": [
+              24102,
+              27525
+            ],
+            "people names": [
+              "Brundonis Valant",
+              "Reynwi van Eltetus"
+            ],
+            "label": "half-sibling",
+            "committed": false
+          }
+        ],
+        "1240": [
+          {
+            "topic": "neglected"
+          },
+          {
+            "topic": "new relationship",
+            "key": 28086,
+            "people": [
+              24102,
+              27920
+            ],
+            "people names": [
+              "Brundonis Valant",
+              "Conzone van Eltetus"
+            ],
+            "label": "half-sibling",
+            "committed": false
           }
         ],
         "1241": [
           {
             "topic": "person died",
             "person": {
-              "key": 17773,
-              "name": "Ermerut Midach",
-              "age": 22,
+              "key": 27525,
+              "name": "Reynwi van Eltetus",
+              "age": 1,
               "alive": false,
               "sex": "f",
               "parents": {
-                "mother": "Victoria (12589)",
-                "father": "Vroeden (12821)"
+                "mother": "Lutghardis (15193)",
+                "father": "Eltetus (13597)"
               }
             },
-            "label": "parent"
+            "label": "half-sibling"
           },
           {
             "topic": "neglected"
@@ -168,54 +360,56 @@
         ],
         "1246": [
           {
-            "topic": "neglected"
-          }
-        ],
-        "1247": [
-          {
-            "topic": "neglected"
-          },
-          {
             "topic": "new relationship",
-            "key": 26451,
+            "key": 29748,
             "people": [
-              24102,
-              26401
+              24273,
+              24102
             ],
             "people names": [
-              "Sophia Durcant",
-              "Thitardo Durcant"
+              "Assceric van Ysewin",
+              "Brundonis Valant"
             ],
-            "label": "half-sibling",
-            "committed": false
-          }
-        ],
-        "1248": [
+            "label": "spouse",
+            "committed": true
+          },
           {
-            "topic": "neglected"
-          }
-        ],
-        "1249": [
-          {
-            "topic": "neglected"
+            "topic": "new home",
+            "home": {
+              "income class": 3,
+              "income class label": "upper middle class",
+              "section": "stDie lange straet3.se3.c3",
+              "street": "Die lange straet3",
+              "neighborhood": "visbuurt",
+              "unique id": 688
+            }
           }
         ]
       }
     },
     "key": 24102,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stVerckens merct.se1.c2",
-      "street": "Verckens merct",
-      "neighborhood": "varkensbuurt",
-      "unique id": 26
+      "income class": 3,
+      "income class label": "upper middle class",
+      "section": "stDie lange straet3.se3.c3",
+      "street": "Die lange straet3",
+      "neighborhood": "visbuurt",
+      "unique id": 688
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
-        26451
+        24105,
+        24106,
+        24107,
+        24413,
+        25749,
+        26556,
+        26905,
+        27625,
+        28086,
+        29748
       ]
     }
   }

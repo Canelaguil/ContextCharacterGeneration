@@ -113,6 +113,9 @@ class HomoSociologicus():
         else:
             log_error('Did not recognize that homsoc update.', update)
 
+    def trigger(self, trigger):
+        ...
+        
     """
     UTILS
     """

@@ -1,61 +1,72 @@
 {
   "11915": {
     "alive": false,
-    "name": "Nannen",
-    "surname": "Huuchals",
-    "full name": "Nannen Huuchals",
+    "name": "Reynildis",
+    "surname": "Omekine",
+    "full name": "Reynildis Omekine",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.122,
-      "romantic interest": 0.847,
-      "sex interest": 0.621,
-      "gender expression": 0.081,
+      "sexuality label": "gay",
+      "sexuality": 0.87,
+      "romantic interest": 0.999,
+      "sex interest": 0.515,
+      "gender expression": 0.486,
       "sex": "f"
     },
-    "age": 36,
-    "birth year": 1169,
+    "age": 41,
+    "birth year": 1178,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.605,
-      "nice-nasty": 0.277,
-      "honest-false": 0.0
+      "lawful-chaotic": 0.169,
+      "nice-nasty": 0.735,
+      "honest-false": 0.824
     },
     "attitude": {
-      "outgoing": 0.405,
-      "dream": 0.041
+      "outgoing": 0.543,
+      "dream": 0.214
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
         "flags": [
-          "neglected"
+          "starving"
         ]
       },
       "expression": {
-        "sexuality expression": 0.053,
-        "gender expression expression": 0.034
+        "sexuality expression": 0.45,
+        "gender expression expression": 0.078
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "14265": {
-          "key": 14265,
-          "name": "Wendelmodis Napbrekere",
-          "age": 6,
+        "14623": {
+          "key": 14623,
+          "name": "Conrad Spiegel",
+          "age": 22,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Reynildis (11915)",
+            "father": "Galo (11914)"
+          }
+        },
+        "16480": {
+          "key": 16480,
+          "name": "Hodine Spiegel",
+          "age": 3,
           "alive": false,
           "sex": "f",
           "parents": {
-            "mother": "Nannen (11915)",
-            "father": "Vesse (11914)"
+            "mother": "Reynildis (11915)",
+            "father": "Galo (11914)"
           }
         }
       },
@@ -65,31 +76,51 @@
         ],
         "child": {
           "birth": [
-            14267
+            14625,
+            16482
           ]
         }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         1,
         "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.0,
+      "all_incomes": [
+        0.856,
+        0.889,
+        0.563,
+        0.397,
+        0.429,
+        0.045,
+        0.043,
+        0.034,
+        0.0,
+        0.0,
+        0.042,
+        0.0,
+        0.165,
+        0.0
+      ],
+      "job": {
+        "lawful": false,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 3,
+      "skin_color": 7,
       "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
         "C",
-        "C"
+        "S"
       ],
-      "health": 0.544,
-      "fertility": 0.581,
+      "health": 0.799,
+      "fertility": 0.784,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -101,7 +132,7 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.544
+            "new_health": 0.799
           },
           "death": false
         }
@@ -116,8 +147,8 @@
               11915
             ],
             "people names": [
-              "Vesse Napbrekere",
-              "Nannen Huuchals"
+              "Galo Spiegel",
+              "Reynildis Omekine"
             ],
             "label": "spouse",
             "committed": true
@@ -127,30 +158,142 @@
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stDe Vyver.se3.c1",
-              "street": "De Vyver",
+              "section": "stCromme straet.se1.c1",
+              "street": "Cromme straet",
               "neighborhood": "denhof",
-              "unique id": 867
+              "unique id": 875
             }
           }
         ],
-        "1204": [
+        "1203": [
           {
             "topic": "new relationship",
-            "key": 14267,
+            "key": 14625,
             "people": [
               11915,
-              14265
+              14623
             ],
             "people names": [
-              "Nannen Huuchals",
-              "Wendelmodis Napbrekere"
+              "Reynildis Omekine",
+              "Conrad Spiegel"
             ],
             "label": "parentchild",
             "committed": false
+          }
+        ],
+        "1205": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.856
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 16482,
+            "people": [
+              11915,
+              16480
+            ],
+            "people names": [
+              "Reynildis Omekine",
+              "Hodine Spiegel"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1207": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.563
+          }
+        ],
+        "1208": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.397
+          }
+        ],
+        "1209": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.429
+          }
+        ],
+        "1210": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.045
           },
           {
-            "topic": "neglected"
+            "topic": "person died",
+            "person": {
+              "key": 16480,
+              "name": "Hodine Spiegel",
+              "age": 3,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Reynildis (11915)",
+                "father": "Galo (11914)"
+              }
+            },
+            "label": "child"
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.32599999999999996,
+            "inhabitants": []
+          }
+        ],
+        "1216": [
+          {
+            "topic": "event",
+            "event": "war",
+            "year": 1216
+          },
+          {
+            "topic": "feelings change",
+            "target": 11914,
+            "target name": "Galo Spiegel",
+            "state": "out of love",
+            "relationship": 11916
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.313,
+            "inhabitants": []
+          }
+        ],
+        "1217": [
+          {
+            "topic": "not enough income",
+            "income": 0.218,
+            "inhabitants": []
+          }
+        ],
+        "1218": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          },
+          {
+            "topic": "death",
+            "cause": "starvation"
           }
         ]
       }
@@ -159,10 +302,10 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stDe Vyver.se3.c1",
-      "street": "De Vyver",
+      "section": "stCromme straet.se1.c1",
+      "street": "Cromme straet",
       "neighborhood": "denhof",
-      "unique id": 867
+      "unique id": 875
     },
     "relationship status": {
       "taken": true,

@@ -1,33 +1,33 @@
 {
   "10664": {
     "alive": false,
-    "name": "Imsoete",
-    "surname": "Longus",
-    "full name": "Imsoete Longus",
+    "name": "Kerstine",
+    "surname": "Coquus",
+    "full name": "Kerstine Coquus",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.703,
-      "sex interest": 0.777,
-      "gender expression": 0.128,
+      "sexuality": 0.118,
+      "romantic interest": 0.7,
+      "sex interest": 0.712,
+      "gender expression": 0.125,
       "sex": "f"
     },
-    "age": 32,
-    "birth year": 1170,
+    "age": 31,
+    "birth year": 1175,
     "sex": "f",
     "faction": "Dogmatists",
     "income class": [
-      2,
-      "middle class"
+      0,
+      "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.494,
-      "nice-nasty": 0.326,
-      "honest-false": 0.44
+      "lawful-chaotic": 0.525,
+      "nice-nasty": 0.852,
+      "honest-false": 0.372
     },
     "attitude": {
-      "outgoing": 0.972,
-      "dream": 0.33
+      "outgoing": 0.467,
+      "dream": 0.191
     },
     "homsoc": {
       "means": {
@@ -35,42 +35,85 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.075
+        "sexuality expression": 0.07,
+        "gender expression expression": 0.067
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12999": {
+          "key": 12999,
+          "name": "Imsoete Storhem",
+          "age": 48,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Kerstine (10664)",
+            "father": "Macharius (10663)"
+          }
+        },
+        "14300": {
+          "key": 14300,
+          "name": "Firiin Storhem",
+          "age": 25,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Kerstine (10664)",
+            "father": "Macharius (10663)"
+          }
+        },
+        "15571": {
+          "key": 15571,
+          "name": "Jdir van Macharius",
+          "age": 12,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Kerstine (10664)",
+            "father": "Macharius (10663)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10665
-        ]
+        ],
+        "child": {
+          "birth": [
+            13001,
+            14302,
+            15573
+          ]
+        }
       }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        2,
-        "middle class"
+        0,
+        "working class"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 2,
-      "eye_color": "brown",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "skin_color": 0,
+      "eye_color": "green",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
         "S",
         "S"
       ],
-      "health": 0.413,
-      "fertility": 0.393,
+      "health": 0.863,
+      "fertility": 0.822,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -82,17 +125,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.413
+            "new_health": 0.863
           },
           "death": false
-        },
-        "1201": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.413
-          },
-          "death": true
         }
       },
       "events": {
@@ -105,8 +140,8 @@
               10664
             ],
             "people names": [
-              "Heinhoca Rouvoet",
-              "Imsoete Longus"
+              "Macharius Storhem",
+              "Kerstine Coquus"
             ],
             "label": "spouse",
             "committed": true
@@ -114,34 +149,120 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stCingel.se5.c2",
-              "street": "Cingel",
+              "income class": 0,
+              "income class label": "working class",
+              "section": "stDe Tuyt.se7.c0",
+              "street": "De Tuyt",
               "neighborhood": "agnesbuurt",
-              "unique id": 314
+              "unique id": 299
             }
+          },
+          {
+            "topic": "feelings change",
+            "target": 10663,
+            "target name": "Macharius Storhem",
+            "state": "out of love",
+            "relationship": 10665
           }
         ],
         "1201": [
           {
+            "topic": "new relationship",
+            "key": 13001,
+            "people": [
+              10664,
+              12999
+            ],
+            "people names": [
+              "Kerstine Coquus",
+              "Imsoete Storhem"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.723,
+            "inhabitants": []
+          }
+        ],
+        "1202": [
+          {
+            "topic": "not enough income",
+            "income": 0.552,
+            "inhabitants": []
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 14302,
+            "people": [
+              10664,
+              14300
+            ],
+            "people names": [
+              "Kerstine Coquus",
+              "Firiin Storhem"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
             "topic": "feelings change",
             "target": 10663,
-            "target name": "Heinhoca Rouvoet",
-            "state": "out of love",
+            "target name": "Macharius Storhem",
+            "state": "infatuation",
             "relationship": 10665
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.493,
+            "inhabitants": []
+          }
+        ],
+        "1204": [
+          {
+            "topic": "not enough income",
+            "income": 0.873,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "new relationship",
+            "key": 15573,
+            "people": [
+              10664,
+              15571
+            ],
+            "people names": [
+              "Kerstine Coquus",
+              "Jdir van Macharius"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.966,
+            "inhabitants": []
+          },
+          {
+            "topic": "death",
+            "cause": "childbirth"
           }
         ]
       }
     },
     "key": 10664,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stCingel.se5.c2",
-      "street": "Cingel",
+      "income class": 0,
+      "income class label": "working class",
+      "section": "stDe Tuyt.se7.c0",
+      "street": "De Tuyt",
       "neighborhood": "agnesbuurt",
-      "unique id": 314
+      "unique id": 299
     },
     "relationship status": {
       "taken": true,

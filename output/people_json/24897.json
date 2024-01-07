@@ -1,55 +1,68 @@
 {
   "24897": {
     "alive": true,
-    "name": "Wilmarus",
-    "surname": "Verkins",
-    "full name": "Wilmarus Verkins",
+    "name": "Vastraid",
+    "surname": "van Isbrandus",
+    "full name": "Vastraid van Isbrandus",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.051,
-      "romantic interest": 0.587,
-      "sex interest": 0.817,
-      "gender expression": 0.0,
+      "sexuality": 0.041,
+      "romantic interest": 0.6,
+      "sex interest": 0.794,
+      "gender expression": 0.038,
       "sex": "m"
     },
-    "age": 6,
-    "birth year": 1243,
+    "age": 17,
+    "birth year": 1232,
     "sex": "m",
     "faction": "Dogmatists",
     "income class": [
-      3,
-      "upper middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.036,
-      "nice-nasty": 0.303,
-      "honest-false": 0.0
+      "lawful-chaotic": 0.504,
+      "nice-nasty": 0.413,
+      "honest-false": 0.154
     },
     "attitude": {
-      "outgoing": 0.516,
-      "dream": 0.307
+      "outgoing": 0.499,
+      "dream": 0.39
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": true,
-        "needs_care": true,
+        "needs_care": false,
         "flags": [
-          "neglected"
+          "neglected",
+          "starving"
         ]
       },
       "expression": {
-        "sexuality expression": 0.025,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.023,
+        "gender expression expression": 0.014
       }
     },
     "network": {
       "parents": {
-        "mother": "Truden (14503)",
-        "father": "Wigherus (12928)"
+        "mother": "Thedwi (17339)",
+        "father": "Isbrandus (16401)"
       },
-      "children": {},
+      "children": {
+        "31022": {
+          "key": 31022,
+          "name": "Franse Vastraidszoon",
+          "age": 0,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Emmelina (24906)",
+            "father": "Vastraid (24897)"
+          }
+        }
+      },
       "relationship keys": {
         "parent": [
           24898,
@@ -57,37 +70,48 @@
         ],
         "sibling": [
           24900,
-          24901,
-          24902,
-          24903,
-          24904,
-          24905,
-          24906,
-          24907,
-          26162
-        ]
+          25593
+        ],
+        "half-sibling": [
+          26924
+        ],
+        "spouse": [
+          30378
+        ],
+        "child": {
+          "birth": [
+            31023
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        3,
-        "upper middle class"
+        1,
+        "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.928,
+      "all_incomes": [
+        0.828,
+        0.928
+      ],
+      "job": {
+        "lawful": false,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 8,
-      "eye_color": "blue",
+      "skin_color": 6,
+      "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
         "C",
         "C"
       ],
-      "health": 0.723,
-      "fertility": 0.71,
+      "health": 0.666,
+      "fertility": 0.643,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -95,27 +119,269 @@
     },
     "memory": {
       "health": {
-        "1244": {
+        "1233": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.723
+            "new_health": 0.666
           },
           "death": false
         }
       },
       "events": {
-        "1243": [
+        "1232": [
           {
             "topic": "new home",
             "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stLange gracht.se3.c3",
-              "street": "Lange gracht",
-              "neighborhood": "olvbuurt",
-              "unique id": 502
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stHelle voet.se9.c1",
+              "street": "Helle voet",
+              "neighborhood": "jorisbuurt",
+              "unique id": 125
             }
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.529,
+            "inhabitants": [
+              16401,
+              21995,
+              24897,
+              25589,
+              23026,
+              24906,
+              31022
+            ]
+          }
+        ],
+        "1233": [
+          {
+            "topic": "not enough income",
+            "income": 0.696,
+            "inhabitants": [
+              16401,
+              21995,
+              24897,
+              25589,
+              23026,
+              24906,
+              31022
+            ]
+          }
+        ],
+        "1234": [
+          {
+            "topic": "new relationship",
+            "key": 25593,
+            "people": [
+              24897,
+              25589
+            ],
+            "people names": [
+              "Vastraid van Isbrandus",
+              "Gisele"
+            ],
+            "label": "sibling",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.957,
+            "inhabitants": [
+              16401,
+              21995,
+              24897,
+              25589,
+              23026,
+              24906,
+              31022
+            ]
+          }
+        ],
+        "1235": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 17339,
+              "name": "Thedwi van Ivone",
+              "age": 26,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Sybillia (11006)",
+                "father": "Ivone (11005)"
+              }
+            },
+            "label": "parent"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.58,
+            "inhabitants": [
+              16401,
+              21995,
+              24897,
+              25589,
+              23026,
+              24906,
+              31022
+            ]
+          }
+        ],
+        "1236": [
+          {
+            "topic": "not enough income",
+            "income": 0.855,
+            "inhabitants": [
+              16401,
+              21995,
+              24897,
+              25589,
+              23026,
+              24906,
+              31022
+            ]
+          },
+          {
+            "topic": "update",
+            "update": "parent married",
+            "parent": 16401,
+            "new partner": 19213
+          }
+        ],
+        "1237": [
+          {
+            "topic": "not enough income",
+            "income": 0.326,
+            "inhabitants": [
+              16401,
+              21995,
+              24897,
+              25589,
+              23026,
+              24906,
+              31022
+            ]
+          },
+          {
+            "topic": "new relationship",
+            "key": 26924,
+            "people": [
+              24897,
+              26878
+            ],
+            "people names": [
+              "Vastraid van Isbrandus",
+              "Lielde"
+            ],
+            "label": "half-sibling",
+            "committed": false
+          }
+        ],
+        "1238": [
+          {
+            "topic": "not enough income",
+            "income": 0.423,
+            "inhabitants": [
+              16401,
+              21995,
+              24897,
+              25589,
+              23026,
+              24906,
+              31022
+            ]
+          }
+        ],
+        "1239": [
+          {
+            "topic": "not enough income",
+            "income": 0.599,
+            "inhabitants": [
+              16401,
+              21995,
+              24897,
+              25589,
+              23026,
+              24906,
+              31022
+            ]
+          }
+        ],
+        "1240": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 26878,
+              "name": "Lielde",
+              "age": 2,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Ryccie (19213)",
+                "father": "Isbrandus (16401)"
+              }
+            },
+            "label": "half-sibling"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.404,
+            "inhabitants": [
+              16401,
+              21995,
+              24897,
+              25589,
+              23026,
+              24906,
+              31022
+            ]
+          }
+        ],
+        "1241": [
+          {
+            "topic": "not enough income",
+            "income": 0.223,
+            "inhabitants": [
+              16401,
+              21995,
+              24897,
+              25589,
+              23026,
+              24906,
+              31022
+            ]
+          }
+        ],
+        "1242": [
+          {
+            "topic": "not enough income",
+            "income": 0.141,
+            "inhabitants": [
+              16401,
+              21995,
+              24897,
+              25589,
+              23026,
+              24906,
+              31022
+            ]
+          }
+        ],
+        "1243": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              16401,
+              21995,
+              24897,
+              25589,
+              23026,
+              24906,
+              31022
+            ]
           }
         ],
         "1244": [
@@ -135,57 +401,72 @@
         ],
         "1247": [
           {
-            "topic": "new relationship",
-            "key": 26162,
-            "people": [
-              24897,
-              26151
-            ],
-            "people names": [
-              "Wilmarus Verkins",
-              "Conrad Verkins"
-            ],
-            "label": "sibling",
-            "committed": false
-          },
-          {
             "topic": "neglected"
           }
         ],
         "1248": [
           {
-            "topic": "neglected"
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.828
+          },
+          {
+            "topic": "new relationship",
+            "key": 30378,
+            "people": [
+              24897,
+              24906
+            ],
+            "people names": [
+              "Vastraid van Isbrandus",
+              "Emmelina Bove"
+            ],
+            "label": "spouse",
+            "committed": true
           }
         ],
         "1249": [
           {
-            "topic": "neglected"
+            "topic": "new relationship",
+            "key": 31023,
+            "people": [
+              24897,
+              31022
+            ],
+            "people names": [
+              "Vastraid van Isbrandus",
+              "Franse Vastraidszoon"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 24906,
+            "target name": "Emmelina Bove",
+            "state": "out of love",
+            "relationship": 30378
           }
         ]
       }
     },
     "key": 24897,
     "home": {
-      "income class": 3,
-      "income class label": "upper middle class",
-      "section": "stLange gracht.se3.c3",
-      "street": "Lange gracht",
-      "neighborhood": "olvbuurt",
-      "unique id": 502
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stHelle voet.se9.c1",
+      "street": "Helle voet",
+      "neighborhood": "jorisbuurt",
+      "unique id": 125
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
         24900,
-        24901,
-        24902,
-        24903,
-        24904,
-        24905,
-        24906,
-        24907,
-        26162
+        25593,
+        26924,
+        30378
       ]
     }
   }

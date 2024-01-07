@@ -1,61 +1,62 @@
 {
   "11237": {
     "alive": false,
-    "name": "Auesoete",
-    "surname": "Die niene verloech",
-    "full name": "Auesoete Die niene verloech",
+    "name": "Kerstine",
+    "surname": "Rouer",
+    "full name": "Kerstine Rouer",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.091,
-      "romantic interest": 0.559,
-      "sex interest": 0.752,
-      "gender expression": 0.0,
+      "sexuality": 0.104,
+      "romantic interest": 0.543,
+      "sex interest": 0.911,
+      "gender expression": 0.125,
       "sex": "f"
     },
     "age": 36,
-    "birth year": 1165,
+    "birth year": 1168,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
-      3,
-      "upper middle class"
+      2,
+      "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.501,
-      "nice-nasty": 0.117,
-      "honest-false": 0.0
+      "lawful-chaotic": 0.558,
+      "nice-nasty": 0.546,
+      "honest-false": 0.836
     },
     "attitude": {
-      "outgoing": 0.595,
-      "dream": 0.243
+      "outgoing": 0.29,
+      "dream": 0.686
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
         "flags": [
-          "neglected"
+          "caretaker",
+          "starving"
         ]
       },
       "expression": {
-        "sexuality expression": 0.051,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.073,
+        "gender expression expression": 0.094
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "12451": {
-          "key": 12451,
-          "name": "Rembrecht Ghoede",
-          "age": 49,
-          "alive": true,
+        "12559": {
+          "key": 12559,
+          "name": "Hugheman Duker",
+          "age": 4,
+          "alive": false,
           "sex": "m",
           "parents": {
-            "mother": "Auesoete (11237)",
-            "father": "Franco (11236)"
+            "mother": "Kerstine (11237)",
+            "father": "Albertus (11236)"
           }
         }
       },
@@ -65,7 +66,7 @@
         ],
         "child": {
           "birth": [
-            12453
+            12561
           ]
         }
       }
@@ -73,23 +74,23 @@
     "occupation": {
       "has job": false,
       "income class": [
-        3,
-        "upper middle class"
+        2,
+        "middle class"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 9,
-      "eye_color": "blue",
+      "skin_color": 1,
+      "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
         "S",
         "C"
       ],
-      "health": 0.637,
-      "fertility": 0.661,
+      "health": 0.699,
+      "fertility": 0.702,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -101,9 +102,17 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.637
+            "new_health": 0.699
           },
           "death": false
+        },
+        "1203": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.699
+          },
+          "death": true
         }
       },
       "events": {
@@ -116,8 +125,8 @@
               11237
             ],
             "people names": [
-              "Franco Ghoede",
-              "Auesoete Die niene verloech"
+              "Albertus Duker",
+              "Kerstine Rouer"
             ],
             "label": "spouse",
             "committed": true
@@ -125,46 +134,88 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stBreestraat.se3.c3",
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stBreestraat.se5.c2",
               "street": "Breestraat",
               "neighborhood": "olvbuurt",
-              "unique id": 554
+              "unique id": 571
             }
           },
           {
             "topic": "new relationship",
-            "key": 12453,
+            "key": 12561,
             "people": [
               11237,
-              12451
+              12559
             ],
             "people names": [
-              "Auesoete Die niene verloech",
-              "Rembrecht Ghoede"
+              "Kerstine Rouer",
+              "Hugheman Duker"
             ],
             "label": "parentchild",
             "committed": false
+          }
+        ],
+        "1201": [
+          {
+            "key": 11238,
+            "topic": "unmarried"
           },
           {
-            "topic": "neglected"
+            "topic": "person died",
+            "person": {
+              "key": 11236,
+              "name": "Albertus Duker",
+              "age": 49,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          }
+        ],
+        "1202": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1203": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "death",
+            "cause": "illness"
           }
         ]
       }
     },
     "key": 11237,
     "home": {
-      "income class": 3,
-      "income class label": "upper middle class",
-      "section": "stBreestraat.se3.c3",
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stBreestraat.se5.c2",
       "street": "Breestraat",
       "neighborhood": "olvbuurt",
-      "unique id": 554
+      "unique id": 571
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         11238
       ]

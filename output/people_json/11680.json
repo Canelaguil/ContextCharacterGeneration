@@ -1,19 +1,19 @@
 {
   "11680": {
     "alive": false,
-    "name": "Everdey",
+    "name": "Walramus",
     "surname": "",
-    "full name": "Everdey",
+    "full name": "Walramus",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.021,
-      "romantic interest": 0.635,
-      "sex interest": 0.717,
-      "gender expression": 0.031,
+      "sexuality": 0.002,
+      "romantic interest": 0.558,
+      "sex interest": 0.677,
+      "gender expression": 0.079,
       "sex": "m"
     },
-    "age": 38,
-    "birth year": 1179,
+    "age": 57,
+    "birth year": 1153,
     "sex": "m",
     "faction": "Dogmatists",
     "income class": [
@@ -21,34 +21,77 @@
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": -0.0,
-      "nice-nasty": 0.855,
-      "honest-false": 0.47
+      "lawful-chaotic": 0.005,
+      "nice-nasty": 0.423,
+      "honest-false": 0.0
     },
     "attitude": {
-      "outgoing": 0.532,
-      "dream": 0.561
+      "outgoing": 0.534,
+      "dream": 0.093
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.015,
-        "gender expression expression": 0.012
+        "sexuality expression": 0.001,
+        "gender expression expression": 0.055
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13967": {
+          "key": 13967,
+          "name": "Ramont Walramusszoon",
+          "age": 24,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Lielde (11681)",
+            "father": "Walramus (11680)"
+          }
+        },
+        "15230": {
+          "key": 15230,
+          "name": "Lieuin van Walramus",
+          "age": 15,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Lielde (11681)",
+            "father": "Walramus (11680)"
+          }
+        },
+        "16401": {
+          "key": 16401,
+          "name": "Isbrandus Walramusszoon",
+          "age": 43,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Lielde (11681)",
+            "father": "Walramus (11680)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11682
-        ]
+        ],
+        "child": {
+          "birth": [
+            13968,
+            15231,
+            16402
+          ]
+        }
       }
     },
     "occupation": {
@@ -57,43 +100,36 @@
         1,
         "lower middle class"
       ],
-      "income": 1.315,
+      "income": 0.722,
       "all_incomes": [
-        0.785,
-        0.736,
-        0.84,
-        0.794,
-        0.886,
-        1.082,
-        1.323,
-        1.374,
-        1.145,
-        1.162,
-        1.181,
-        1.251,
-        1.066,
-        0.99,
-        0.927,
-        0.936,
-        1.081,
-        1.315
+        1.113,
+        1.218,
+        0.855,
+        0.323,
+        0.443,
+        0.853,
+        0.737,
+        0.897,
+        0.75,
+        0.542,
+        0.722
       ],
       "job": {
         "lawful": false,
-        "honest": true
+        "honest": false
       }
     },
     "genetics": {
-      "skin_color": 1,
-      "eye_color": "green",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "skin_color": 6,
+      "eye_color": "brown",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "S",
         "S"
       ],
-      "health": 0.622,
-      "fertility": 0.649,
+      "health": 0.0,
+      "fertility": 0.788,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -105,15 +141,47 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.622
+            "new_health": 0.701
           },
           "death": false
         },
-        "1216": {
+        "1205": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.622
+            "change": true,
+            "value_change": -0.207,
+            "new_health": 0.494
+          },
+          "death": false
+        },
+        "1206": {
+          "health": {
+            "change": true,
+            "value_change": -0.232,
+            "new_health": 0.262
+          },
+          "death": false
+        },
+        "1207": {
+          "health": {
+            "change": true,
+            "value_change": -0.182,
+            "new_health": 0.08
+          },
+          "death": false
+        },
+        "1208": {
+          "health": {
+            "change": true,
+            "value_change": -0.059,
+            "new_health": 0.021
+          },
+          "death": false
+        },
+        "1209": {
+          "health": {
+            "change": true,
+            "value_change": -0.021,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -123,12 +191,7 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.785
-          },
-          {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.736
+            "income": 1.113
           },
           {
             "topic": "new relationship",
@@ -138,8 +201,8 @@
               11681
             ],
             "people names": [
-              "Everdey",
-              "Alene"
+              "Walramus",
+              "Lielde"
             ],
             "label": "spouse",
             "committed": true
@@ -149,25 +212,94 @@
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stNieu straet.se1.c1",
-              "street": "Nieu straet",
+              "section": "stStoof straet.se1.c1",
+              "street": "Stoof straet",
               "neighborhood": "visbuurt",
-              "unique id": 758
+              "unique id": 771
             }
+          }
+        ],
+        "1202": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.323
+          },
+          {
+            "topic": "new relationship",
+            "key": 13968,
+            "people": [
+              11680,
+              13967
+            ],
+            "people names": [
+              "Walramus",
+              "Ramont Walramusszoon"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.323,
+            "inhabitants": []
+          }
+        ],
+        "1203": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.443
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.443,
+            "inhabitants": []
           }
         ],
         "1204": [
           {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.082
+            "topic": "new relationship",
+            "key": 15231,
+            "people": [
+              11680,
+              15230
+            ],
+            "people names": [
+              "Walramus",
+              "Lieuin van Walramus"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1215": [
+        "1205": [
           {
             "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.081
+            "notice": "low income",
+            "income": 0.737
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 16402,
+            "people": [
+              11680,
+              16401
+            ],
+            "people names": [
+              "Walramus",
+              "Isbrandus Walramusszoon"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1209": [
+          {
+            "topic": "death",
+            "cause": "sickness"
           }
         ]
       }
@@ -176,10 +308,10 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stNieu straet.se1.c1",
-      "street": "Nieu straet",
+      "section": "stStoof straet.se1.c1",
+      "street": "Stoof straet",
       "neighborhood": "visbuurt",
-      "unique id": 758
+      "unique id": 771
     },
     "relationship status": {
       "taken": true,

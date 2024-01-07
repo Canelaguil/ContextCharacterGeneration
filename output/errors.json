@@ -2,83 +2,107 @@
   "home remove error": [
     {
       "person": {
-        "alive": false,
-        "name": "Ricmoden",
-        "surname": "Lancgeroch",
-        "full name": "Ricmoden Lancgeroch",
+        "topic": "person died",
+        "key": 19348,
+        "cause": ""
+      },
+      "house": {
+        "income class": 1,
+        "income class label": "lower middle class",
+        "section": "stKoe straet.se1.c1",
+        "street": "Koe straet",
+        "neighborhood": "varkensbuurt",
+        "unique id": 58
+      }
+    },
+    {
+      "person": {
+        "alive": true,
+        "name": "Hildeburgis",
+        "surname": "Vosse",
+        "full name": "Hildeburgis Vosse",
         "born this way": {
           "sexuality label": "straight",
-          "sexuality": 0.034,
-          "romantic interest": 0.999,
-          "sex interest": 0.651,
-          "gender expression": 0.0,
+          "sexuality": 0.096,
+          "romantic interest": 0.725,
+          "sex interest": 0.55,
+          "gender expression": 0.31,
           "sex": "f"
         },
-        "age": 1,
-        "birth year": 1207,
+        "age": 16,
+        "birth year": 1202,
         "sex": "f",
-        "faction": "Zealots",
+        "faction": "No religion",
         "income class": [
-          1,
-          "lower middle class"
+          3,
+          "upper middle class"
         ],
         "personality": {
-          "lawful-chaotic": 0.46,
-          "nice-nasty": 0.632,
-          "honest-false": 0.477
+          "lawful-chaotic": 0.407,
+          "nice-nasty": 0.633,
+          "honest-false": 0.678
         },
         "attitude": {
-          "outgoing": 0.615,
-          "dream": 0.029
+          "outgoing": 0.523,
+          "dream": 0.443
         },
         "homsoc": {
           "means": {
             "independent": false,
-            "taken_care_of": true,
+            "taken_care_of": false,
             "caretaker": true,
-            "needs_care": true,
+            "needs_care": false,
             "flags": [
+              "neglected",
               "starving"
             ]
           },
           "expression": {
-            "sexuality expression": 0.013,
-            "gender expression expression": -0.001
+            "sexuality expression": 0.058,
+            "gender expression expression": 0.199
           }
         },
         "network": {
           "parents": {
-            "mother": "Sybillia (10718)",
-            "father": "Blomart (10717)"
+            "mother": "Lutghardis (11804)",
+            "father": "Hubrecht (11803)"
           },
           "children": {},
           "relationship keys": {
             "parent": [
-              15157,
-              15158
-            ]
+              14010,
+              14011
+            ],
+            "spouse": [
+              20963
+            ],
+            "child": {
+              "birth": [
+                21222
+              ]
+            }
           }
         },
         "occupation": {
           "has job": false,
           "income class": [
-            1,
-            "lower middle class"
+            3,
+            "upper middle class"
           ],
           "income": 0,
           "all_incomes": []
         },
         "genetics": {
-          "skin_color": 5,
-          "eye_color": "green",
-          "hair_color": "red",
-          "hair_color_code": 3,
+          "skin_color": 8,
+          "eye_color": "brown",
+          "hair_color": "brown",
+          "hair_color_code": 2,
           "hair_type": [
-            "S",
-            "C"
+            "C",
+            "S"
           ],
-          "health": 0.0,
-          "fertility": 0.309,
+          "health": 0.286,
+          "fertility": 0.517,
           "communication_impaired": false,
           "mobility_impaired": false,
           "cognitive_impaired": false,
@@ -86,35 +110,61 @@
         },
         "memory": {
           "health": {
-            "1208": {
+            "1203": {
+              "health": {
+                "change": false,
+                "value_change": 0.0,
+                "new_health": 0.519
+              },
+              "death": false
+            },
+            "1209": {
               "health": {
                 "change": true,
-                "value_change": -0.281,
-                "new_health": 0.0
+                "value_change": -0.233,
+                "new_health": 0.286
               },
-              "death": true
+              "death": false
+            },
+            "1210": {
+              "health": {
+                "change": false,
+                "value_change": 0.0,
+                "new_health": 0.286
+              },
+              "death": false
             }
           },
           "events": {
-            "1207": [
+            "1202": [
               {
                 "topic": "new home",
                 "home": {
-                  "income class": 1,
-                  "income class label": "lower middle class",
-                  "section": "stCoppelstraet.se1.c1",
-                  "street": "Coppelstraet",
-                  "neighborhood": "agnesbuurt",
-                  "unique id": 337
+                  "income class": 3,
+                  "income class label": "upper middle class",
+                  "section": "stMuurhuysen2.se7.c3",
+                  "street": "Muurhuysen2",
+                  "neighborhood": "cingelnoord",
+                  "unique id": 828
                 }
               }
             ],
-            "1208": [
+            "1203": [
+              {
+                "topic": "neglected"
+              }
+            ],
+            "1204": [
+              {
+                "topic": "neglected"
+              }
+            ],
+            "1205": [
               {
                 "topic": "person died",
                 "person": {
-                  "key": 10717,
-                  "name": "Blomart Lancgeroch",
+                  "key": 11803,
+                  "name": "Hubrecht Vosse",
                   "age": 53,
                   "alive": false,
                   "sex": "m",
@@ -129,65 +179,195 @@
               },
               {
                 "topic": "new caretaker",
-                "person": 10718
+                "person": 11804
+              }
+            ],
+            "1206": [
+              {
+                "topic": "not enough income",
+                "income": 0,
+                "inhabitants": []
+              }
+            ],
+            "1207": [
+              {
+                "topic": "not enough income",
+                "income": 0,
+                "inhabitants": []
+              }
+            ],
+            "1208": [
+              {
+                "topic": "not enough income",
+                "income": 0,
+                "inhabitants": []
+              }
+            ],
+            "1209": [
+              {
+                "topic": "not enough income",
+                "income": 0,
+                "inhabitants": []
+              }
+            ],
+            "1210": [
+              {
+                "topic": "not enough income",
+                "income": 0,
+                "inhabitants": []
+              }
+            ],
+            "1215": [
+              {
+                "topic": "event",
+                "event": "plague",
+                "year": 1215
+              }
+            ],
+            "1216": [
+              {
+                "topic": "event",
+                "event": "war",
+                "year": 1216
+              }
+            ],
+            "1218": [
+              {
+                "topic": "new home",
+                "home": {
+                  "income class": 3,
+                  "income class label": "upper middle class",
+                  "section": "stLange gracht.se3.c3",
+                  "street": "Lange gracht",
+                  "neighborhood": "olvbuurt",
+                  "unique id": 505
+                }
+              },
+              {
+                "topic": "new relationship",
+                "key": 20963,
+                "people": [
+                  13844,
+                  14009
+                ],
+                "people names": [
+                  "Goeskin van Ioris",
+                  "Hildeburgis Vosse"
+                ],
+                "label": "spouse",
+                "committed": true
+              },
+              {
+                "topic": "new home",
+                "home": {
+                  "income class": 3,
+                  "income class label": "upper middle class",
+                  "section": "stLievevrouwe kerch.se5.c3",
+                  "street": "Lievevrouwe kerch",
+                  "neighborhood": "olvbuurt",
+                  "unique id": 598
+                }
+              },
+              {
+                "topic": "update",
+                "update": "parent married",
+                "parent": 11804,
+                "new partner": 11107
+              }
+            ],
+            "1219": [
+              {
+                "topic": "new relationship",
+                "key": 21222,
+                "people": [
+                  14009,
+                  21220
+                ],
+                "people names": [
+                  "Hildeburgis Vosse",
+                  "Wilmarus"
+                ],
+                "label": "parentchild",
+                "committed": false
+              },
+              {
+                "topic": "death",
+                "cause": "childbirth"
               }
             ]
           }
         },
-        "key": 15156,
+        "key": 14009,
         "home": {
-          "income class": 1,
-          "income class label": "lower middle class",
-          "section": "stCoppelstraet.se1.c1",
-          "street": "Coppelstraet",
-          "neighborhood": "agnesbuurt",
-          "unique id": 337
+          "income class": 3,
+          "income class label": "upper middle class",
+          "section": "stMuurhuysen2.se7.c3",
+          "street": "Muurhuysen2",
+          "neighborhood": "cingelnoord",
+          "unique id": 828
         },
         "relationship status": {
-          "taken": false,
-          "married": false,
-          "relationships": []
+          "taken": true,
+          "married": true,
+          "relationships": [
+            20963
+          ]
         }
       },
       "house": {
-        "income class": 1,
-        "income class label": "lower middle class",
-        "section": "stCoppelstraet.se1.c1",
-        "street": "Coppelstraet",
+        "income class": 3,
+        "income class label": "upper middle class",
+        "section": "stMuurhuysen2.se7.c3",
+        "street": "Muurhuysen2",
+        "neighborhood": "cingelnoord",
+        "unique id": 828
+      }
+    },
+    {
+      "person": {
+        "topic": "person died",
+        "key": 15583,
+        "cause": ""
+      },
+      "house": {
+        "income class": 2,
+        "income class label": "middle class",
+        "section": "stBloemendaelse straet.se3.c2",
+        "street": "Bloemendaelse straet",
         "neighborhood": "agnesbuurt",
-        "unique id": 337
+        "unique id": 224
       }
     },
     {
       "person": {
         "alive": true,
-        "name": "Mattheus",
-        "surname": "Olipot",
-        "full name": "Mattheus Olipot",
+        "name": "Ghodelde",
+        "surname": "van Albertus",
+        "full name": "Ghodelde van Albertus",
         "born this way": {
-          "sexuality label": "straight",
-          "sexuality": 0.037,
-          "romantic interest": 0.911,
-          "sex interest": 0.445,
-          "gender expression": 0.138,
-          "sex": "m"
+          "sexuality label": "bi",
+          "sexuality": 0.556,
+          "romantic interest": 0.638,
+          "sex interest": 0.986,
+          "gender expression": 0.0,
+          "sex": "f"
         },
-        "age": 17,
-        "birth year": 1207,
-        "sex": "m",
-        "faction": "Dogmatists",
+        "age": 16,
+        "birth year": 1209,
+        "sex": "f",
+        "faction": "Zealots",
         "income class": [
-          2,
-          "middle class"
+          1,
+          "lower middle class"
         ],
         "personality": {
-          "lawful-chaotic": 0.0,
-          "nice-nasty": 0.772,
-          "honest-false": 0.282
+          "lawful-chaotic": 0.999,
+          "nice-nasty": 0.627,
+          "honest-false": 0.931
         },
         "attitude": {
-          "outgoing": 0.526,
-          "dream": 0.329
+          "outgoing": 0.234,
+          "dream": 0.254
         },
         "homsoc": {
           "means": {
@@ -196,99 +376,88 @@
             "caretaker": true,
             "needs_care": false,
             "flags": [
-              "neglected",
-              "starving"
+              "neglected"
             ]
           },
           "expression": {
-            "sexuality expression": 0.02,
-            "gender expression expression": 0.07
+            "sexuality expression": 0.407,
+            "gender expression expression": -0.001
           }
         },
         "network": {
           "parents": {
-            "mother": "Trame (12098)",
-            "father": "Arnst (12097)"
+            "mother": "Imma (10736)",
+            "father": "Albertus (10735)"
           },
           "children": {},
           "relationship keys": {
             "parent": [
-              15370,
-              15371
+              17781,
+              17782
             ],
             "sibling": [
-              15372,
-              15373,
-              15374,
-              15375,
-              17555
+              17783,
+              17784,
+              18676
             ],
             "spouse": [
-              18688,
-              26758
+              22459,
+              28769
             ],
             "child": {
               "birth": [
-                20060,
-                21304,
-                21621,
-                23574,
-                24319
+                22968,
+                23569,
+                23893,
+                24523,
+                24853,
+                30288
               ]
             }
           }
         },
         "occupation": {
-          "has job": true,
+          "has job": false,
           "income class": [
-            2,
-            "middle class"
+            1,
+            "lower middle class"
           ],
-          "income": 0.81,
+          "income": 0,
           "all_incomes": [
-            0.81,
-            1.334,
-            1.295,
-            1.499,
-            1.499,
-            1.246,
-            0.974,
-            1.377,
-            1.499,
-            1.499,
-            1.253,
-            0.966,
-            1.354,
-            1.2,
-            0.444,
-            0.386,
-            0.856,
-            0.901,
-            1.188,
-            1.499,
-            1.499,
-            1.482,
-            1.168,
-            0.736,
-            0.739,
-            0.466
-          ],
-          "job": {
-            "lawful": false,
-            "honest": false
-          }
+            0.986,
+            1.006,
+            0.975,
+            0.98,
+            1.007,
+            1.027,
+            1.016,
+            0.897,
+            0.789,
+            0.863,
+            0.851,
+            0.823,
+            0.846,
+            0.823,
+            0.781,
+            0.814,
+            0.792,
+            0.735,
+            0.722,
+            0.716,
+            0.615
+          ]
         },
         "genetics": {
-          "skin_color": 7,
-          "eye_color": "blue",
-          "hair_color": "brown",
-          "hair_color_code": 2,
+          "skin_color": 8,
+          "eye_color": "brown",
+          "hair_color": "black",
+          "hair_color_code": 0,
           "hair_type": [
-            "S",
+            "C",
             "S"
           ],
-          "health": 0.735,
-          "fertility": 0.723,
+          "health": 0.813,
+          "fertility": 0.797,
           "communication_impaired": false,
           "mobility_impaired": false,
           "cognitive_impaired": false,
@@ -296,196 +465,106 @@
         },
         "memory": {
           "health": {
-            "1208": {
+            "1210": {
               "health": {
                 "change": false,
                 "value_change": 0.0,
-                "new_health": 0.735
+                "new_health": 0.813
               },
               "death": false
             }
           },
           "events": {
-            "1207": [
+            "1209": [
               {
                 "topic": "new home",
                 "home": {
-                  "income class": 2,
-                  "income class label": "middle class",
-                  "section": "stDen Hof.se3.c2",
-                  "street": "Den Hof",
-                  "neighborhood": "denhof",
-                  "unique id": 943
+                  "income class": 1,
+                  "income class label": "lower middle class",
+                  "section": "stCoppelstraet.se1.c1",
+                  "street": "Coppelstraet",
+                  "neighborhood": "agnesbuurt",
+                  "unique id": 336
                 }
-              },
-              {
-                "topic": "not enough income",
-                "income": 0.467,
-                "inhabitants": [
-                  12619,
-                  13231,
-                  18732,
-                  21489,
-                  23448,
-                  24205
-                ]
-              }
-            ],
-            "1208": [
-              {
-                "topic": "not enough income",
-                "income": 0.414,
-                "inhabitants": [
-                  12619,
-                  13231,
-                  18732,
-                  21489,
-                  23448,
-                  24205
-                ]
-              }
-            ],
-            "1209": [
-              {
-                "topic": "not enough income",
-                "income": 0.266,
-                "inhabitants": [
-                  12619,
-                  13231,
-                  18732,
-                  21489,
-                  23448,
-                  24205
-                ]
               }
             ],
             "1210": [
               {
-                "topic": "not enough income",
-                "income": 0.075,
-                "inhabitants": [
-                  12619,
-                  13231,
-                  18732,
-                  21489,
-                  23448,
-                  24205
-                ]
+                "topic": "neglected"
               }
             ],
             "1211": [
               {
-                "topic": "not enough income",
-                "income": 0.118,
-                "inhabitants": [
-                  12619,
-                  13231,
-                  18732,
-                  21489,
-                  23448,
-                  24205
-                ]
+                "topic": "new relationship",
+                "key": 18676,
+                "people": [
+                  17780,
+                  18671
+                ],
+                "people names": [
+                  "Ghodelde van Albertus",
+                  "Radewijns van Albertus"
+                ],
+                "label": "sibling",
+                "committed": false
+              },
+              {
+                "topic": "neglected"
               }
             ],
             "1212": [
               {
-                "topic": "not enough income",
-                "income": 0.046,
-                "inhabitants": [
-                  12619,
-                  13231,
-                  18732,
-                  21489,
-                  23448,
-                  24205
-                ]
+                "topic": "neglected"
               }
             ],
             "1213": [
               {
-                "topic": "not enough income",
-                "income": 0.01,
-                "inhabitants": [
-                  12619,
-                  13231,
-                  18732,
-                  21489,
-                  23448,
-                  24205
-                ]
-              }
-            ],
-            "1214": [
-              {
-                "topic": "not enough income",
-                "income": 0.0,
-                "inhabitants": [
-                  12619,
-                  13231,
-                  18732,
-                  21489,
-                  23448,
-                  24205
-                ]
-              }
-            ],
-            "1215": [
-              {
-                "topic": "not enough income",
-                "income": 0.077,
-                "inhabitants": [
-                  12619,
-                  13231,
-                  18732,
-                  21489,
-                  23448,
-                  24205
-                ]
-              }
-            ],
-            "1216": [
-              {
-                "topic": "not enough income",
-                "income": 0.096,
-                "inhabitants": [
-                  12619,
-                  13231,
-                  18732,
-                  21489,
-                  23448,
-                  24205
-                ]
-              }
-            ],
-            "1217": [
-              {
-                "topic": "new relationship",
-                "key": 17555,
-                "people": [
-                  15369,
-                  17548
-                ],
-                "people names": [
-                  "Mattheus Olipot",
-                  "Gerrit Arnstszoon"
-                ],
-                "label": "sibling",
-                "committed": false
-              }
-            ],
-            "1218": [
-              {
                 "topic": "person died",
                 "person": {
-                  "key": 12097,
-                  "name": "Arnst Olipot",
-                  "age": 49,
+                  "key": 10735,
+                  "name": "Albertus Regis",
+                  "age": 35,
                   "alive": false,
                   "sex": "m",
                   "parents": "firstgen"
                 },
                 "label": "parent"
               },
+              {
+                "topic": "neglected"
+              }
+            ],
+            "1214": [
+              {
+                "topic": "neglected"
+              }
+            ],
+            "1215": [
+              {
+                "topic": "event",
+                "event": "plague",
+                "year": 1215
+              },
+              {
+                "topic": "neglected"
+              }
+            ],
+            "1216": [
+              {
+                "topic": "event",
+                "event": "war",
+                "year": 1216
+              },
+              {
+                "topic": "neglected"
+              }
+            ],
+            "1217": [
+              {
+                "topic": "neglected"
+              }
+            ],
+            "1218": [
               {
                 "topic": "neglected"
               }
@@ -517,31 +596,31 @@
             ],
             "1224": [
               {
-                "topic": "job notice",
-                "notice": "found job",
-                "income": 0.81
-              },
+                "topic": "neglected"
+              }
+            ],
+            "1225": [
               {
                 "topic": "new home",
                 "home": {
-                  "income class": 2,
-                  "income class label": "middle class",
-                  "section": "stDie Camp.se3.c2",
-                  "street": "Die Camp",
-                  "neighborhood": "kampbuurt",
-                  "unique id": 377
+                  "income class": 1,
+                  "income class label": "lower middle class",
+                  "section": "stWalker straet.se7.c1",
+                  "street": "Walker straet",
+                  "neighborhood": "agnesbuurt",
+                  "unique id": 275
                 }
               },
               {
                 "topic": "new relationship",
-                "key": 18688,
+                "key": 22459,
                 "people": [
-                  15369,
-                  14008
+                  16612,
+                  17780
                 ],
                 "people names": [
-                  "Mattheus Olipot",
-                  "Uergina Coninc"
+                  "Soi Moes",
+                  "Ghodelde van Albertus"
                 ],
                 "label": "spouse",
                 "committed": true
@@ -551,642 +630,449 @@
                 "home": {
                   "income class": 1,
                   "income class label": "lower middle class",
-                  "section": "stMuelen straet.se1.c1",
-                  "street": "Muelen straet",
-                  "neighborhood": "jorisbuurt",
-                  "unique id": 155
+                  "section": "stMerrien hoof.se1.c1",
+                  "street": "Merrien hoof",
+                  "neighborhood": "varkensbuurt",
+                  "unique id": 79
                 }
               },
               {
-                "topic": "neglected"
-              }
-            ],
-            "1225": [
-              {
-                "topic": "job notice",
-                "notice": "comfortable earnings",
-                "income": 1.334
-              },
-              {
-                "topic": "neglected"
+                "topic": "update",
+                "update": "parent married",
+                "parent": 10736,
+                "new partner": 10915
               }
             ],
             "1226": [
               {
-                "topic": "neglected"
+                "topic": "person died",
+                "person": {
+                  "key": 18671,
+                  "name": "Radewijns van Albertus",
+                  "age": 14,
+                  "alive": false,
+                  "sex": "m",
+                  "parents": {
+                    "mother": "Imma (10736)",
+                    "father": "Albertus (10735)"
+                  }
+                },
+                "label": "sibling"
+              },
+              {
+                "topic": "new relationship",
+                "key": 22968,
+                "people": [
+                  17780,
+                  22966
+                ],
+                "people names": [
+                  "Ghodelde van Albertus",
+                  "Snellard Moes"
+                ],
+                "label": "parentchild",
+                "committed": false
               }
             ],
             "1227": [
               {
-                "topic": "neglected"
+                "topic": "event",
+                "event": "famine",
+                "year": 1227
               }
             ],
             "1228": [
               {
-                "topic": "neglected"
+                "topic": "event",
+                "event": "famine",
+                "year": 1228
+              },
+              {
+                "topic": "new relationship",
+                "key": 23569,
+                "people": [
+                  17780,
+                  23567
+                ],
+                "people names": [
+                  "Ghodelde van Albertus",
+                  "Gloria Moes"
+                ],
+                "label": "parentchild",
+                "committed": false
               }
             ],
             "1229": [
               {
+                "topic": "job notice",
+                "notice": "found job",
+                "income": 0.986
+              },
+              {
+                "topic": "person died",
+                "person": {
+                  "key": 13671,
+                  "name": "Heinone Regis",
+                  "age": 26,
+                  "alive": false,
+                  "sex": "m",
+                  "parents": {
+                    "mother": "Imma (10736)",
+                    "father": "Albertus (10735)"
+                  }
+                },
+                "label": "sibling"
+              },
+              {
+                "topic": "event",
+                "event": "faction upheaval",
+                "faction": "Zealots",
+                "year": 1229
+              },
+              {
                 "topic": "new relationship",
-                "key": 20060,
+                "key": 23893,
                 "people": [
-                  15369,
-                  20059
+                  17780,
+                  23891
                 ],
                 "people names": [
-                  "Mattheus Olipot",
-                  "Segher Olipot"
+                  "Ghodelde van Albertus",
+                  "Linnea Soisdochter"
                 ],
                 "label": "parentchild",
                 "committed": false
-              },
-              {
-                "topic": "new caretaker",
-                "person": 14008
-              },
-              {
-                "topic": "neglected"
               }
             ],
             "1230": [
               {
-                "topic": "neglected"
+                "topic": "job notice",
+                "notice": "comfortable earnings",
+                "income": 1.006
               }
             ],
             "1231": [
               {
-                "topic": "job notice",
-                "notice": "comfortable earnings",
-                "income": 1.377
-              },
-              {
-                "topic": "neglected"
+                "topic": "new relationship",
+                "key": 24523,
+                "people": [
+                  17780,
+                  24521
+                ],
+                "people names": [
+                  "Ghodelde van Albertus",
+                  "Clementia Moes"
+                ],
+                "label": "parentchild",
+                "committed": false
               }
             ],
             "1232": [
               {
-                "topic": "neglected"
+                "topic": "event",
+                "event": "war",
+                "year": 1232
+              },
+              {
+                "topic": "new relationship",
+                "key": 24853,
+                "people": [
+                  17780,
+                  24851
+                ],
+                "people names": [
+                  "Ghodelde van Albertus",
+                  "Soi Moes"
+                ],
+                "label": "parentchild",
+                "committed": false
               }
             ],
             "1233": [
               {
-                "topic": "person died",
-                "person": {
-                  "key": 13078,
-                  "name": "Leanne Olipot",
-                  "age": 31,
-                  "alive": false,
-                  "sex": "f",
-                  "parents": {
-                    "mother": "Trame (12098)",
-                    "father": "Arnst (12097)"
-                  }
-                },
-                "label": "sibling"
-              },
-              {
-                "topic": "new relationship",
-                "key": 21304,
-                "people": [
-                  15369,
-                  21303
-                ],
-                "people names": [
-                  "Mattheus Olipot",
-                  "Snelle Olipot"
-                ],
-                "label": "parentchild",
-                "committed": false
-              },
-              {
-                "topic": "neglected"
+                "topic": "job notice",
+                "notice": "comfortable earnings",
+                "income": 1.007
               }
             ],
             "1234": [
               {
-                "topic": "new relationship",
-                "key": 21621,
-                "people": [
-                  15369,
-                  21620
-                ],
-                "people names": [
-                  "Mattheus Olipot",
-                  "Gerart Olipot"
-                ],
-                "label": "parentchild",
-                "committed": false
-              },
-              {
-                "topic": "neglected"
-              }
-            ],
-            "1235": [
-              {
-                "topic": "neglected"
-              }
-            ],
-            "1236": [
-              {
-                "topic": "job notice",
-                "notice": "comfortable earnings",
-                "income": 1.354
-              },
-              {
-                "topic": "neglected"
-              }
-            ],
-            "1237": [
-              {
-                "topic": "person died",
-                "person": {
-                  "key": 13925,
-                  "name": "Otger Olipot",
-                  "age": 33,
-                  "alive": false,
-                  "sex": "m",
-                  "parents": {
-                    "mother": "Trame (12098)",
-                    "father": "Arnst (12097)"
-                  }
-                },
-                "label": "sibling"
-              },
-              {
-                "topic": "neglected"
-              }
-            ],
-            "1238": [
-              {
-                "topic": "job notice",
-                "notice": "earning very little",
-                "income": 0.444
-              },
-              {
-                "topic": "not enough income",
-                "income": 0.444,
-                "inhabitants": [
-                  15369,
-                  20059,
-                  21303,
-                  21620,
-                  23573,
-                  20379,
-                  20535,
-                  12517,
-                  21733,
-                  22131,
-                  26949
-                ]
-              },
-              {
-                "topic": "neglected"
-              }
-            ],
-            "1239": [
-              {
-                "topic": "job notice",
-                "notice": "earning very little",
-                "income": 0.386
-              },
-              {
-                "topic": "new relationship",
-                "key": 23574,
-                "people": [
-                  15369,
-                  23573
-                ],
-                "people names": [
-                  "Mattheus Olipot",
-                  "Ricmoden Olipot"
-                ],
-                "label": "parentchild",
-                "committed": false
-              },
-              {
-                "topic": "not enough income",
-                "income": 0.386,
-                "inhabitants": [
-                  15369,
-                  20059,
-                  21303,
-                  21620,
-                  23573,
-                  20379,
-                  20535,
-                  12517,
-                  21733,
-                  22131,
-                  26949
-                ]
-              },
-              {
-                "topic": "neglected"
-              }
-            ],
-            "1240": [
-              {
-                "topic": "not enough income",
-                "income": 0.856,
-                "inhabitants": [
-                  15369,
-                  20059,
-                  21303,
-                  21620,
-                  23573,
-                  20379,
-                  20535,
-                  12517,
-                  21733,
-                  22131,
-                  26949
-                ]
-              },
-              {
-                "topic": "neglected"
-              }
-            ],
-            "1241": [
-              {
-                "topic": "new relationship",
-                "key": 24319,
-                "people": [
-                  15369,
-                  24318
-                ],
-                "people names": [
-                  "Mattheus Olipot",
-                  "Bertrade Olipot"
-                ],
-                "label": "parentchild",
-                "committed": false
-              },
-              {
-                "topic": "not enough income",
-                "income": 0.901,
-                "inhabitants": [
-                  15369,
-                  20059,
-                  21303,
-                  21620,
-                  23573,
-                  20379,
-                  20535,
-                  12517,
-                  21733,
-                  22131,
-                  26949
-                ]
-              },
-              {
-                "topic": "neglected"
-              }
-            ],
-            "1242": [
-              {
-                "topic": "job notice",
-                "notice": "comfortable earnings",
-                "income": 1.188
-              },
-              {
-                "topic": "neglected"
-              }
-            ],
-            "1243": [
-              {
-                "topic": "neglected"
-              }
-            ],
-            "1244": [
-              {
-                "topic": "neglected"
-              }
-            ],
-            "1245": [
-              {
-                "topic": "person died",
-                "person": {
-                  "key": 12098,
-                  "name": "Trame Cornute",
-                  "age": 62,
-                  "alive": false,
-                  "sex": "f",
-                  "parents": "firstgen"
-                },
-                "label": "parent"
-              },
-              {
-                "topic": "neglected"
-              }
-            ],
-            "1246": [
-              {
-                "topic": "not enough income",
-                "income": 1.168,
-                "inhabitants": [
-                  15369,
-                  20059,
-                  21303,
-                  21620,
-                  23573,
-                  20379,
-                  20535,
-                  12517,
-                  21733,
-                  22131,
-                  26949
-                ]
-              },
-              {
-                "topic": "neglected"
-              }
-            ],
-            "1247": [
-              {
-                "topic": "job notice",
-                "notice": "low income",
-                "income": 0.736
-              },
-              {
-                "key": 18688,
+                "key": 22459,
                 "topic": "unmarried"
               },
               {
                 "topic": "person died",
                 "person": {
-                  "key": 14008,
-                  "name": "Uergina Coninc",
-                  "age": 42,
-                  "alive": false,
-                  "sex": "f",
-                  "parents": {
-                    "mother": "Heile (10337)",
-                    "father": "Waldfridus (10336)"
-                  }
-                },
-                "label": "spouse"
-              },
-              {
-                "topic": "not enough income",
-                "income": 0.736,
-                "inhabitants": [
-                  15369,
-                  20059,
-                  21303,
-                  21620,
-                  23573,
-                  20379,
-                  20535,
-                  12517,
-                  21733,
-                  22131,
-                  26949
-                ]
-              },
-              {
-                "topic": "neglected"
-              }
-            ],
-            "1248": [
-              {
-                "topic": "not enough income",
-                "income": 0.739,
-                "inhabitants": [
-                  15369,
-                  20059,
-                  21303,
-                  21620,
-                  23573,
-                  20379,
-                  20535,
-                  12517,
-                  21733,
-                  22131,
-                  26949
-                ]
-              },
-              {
-                "topic": "neglected"
-              }
-            ],
-            "1249": [
-              {
-                "topic": "job notice",
-                "notice": "earning very little",
-                "income": 0.466
-              },
-              {
-                "topic": "person died",
-                "person": {
-                  "key": 17548,
-                  "name": "Gerrit Arnstszoon",
-                  "age": 31,
+                  "key": 16612,
+                  "name": "Soi Moes",
+                  "age": 26,
                   "alive": false,
                   "sex": "m",
                   "parents": {
-                    "mother": "Trame (12098)",
-                    "father": "Arnst (12097)"
+                    "mother": "Clementia (10178)",
+                    "father": "Mourin (10177)"
                   }
                 },
-                "label": "sibling"
-              },
+                "label": "spouse"
+              }
+            ],
+            "1236": [
               {
-                "topic": "person died",
-                "person": {
-                  "key": 24318,
-                  "name": "Bertrade Olipot",
-                  "age": 7,
-                  "alive": false,
-                  "sex": "f",
-                  "parents": {
-                    "mother": "Uergina (14008)",
-                    "father": "Mattheus (15369)"
-                  }
-                },
-                "label": "child"
-              },
+                "topic": "not enough income",
+                "income": 0.897,
+                "inhabitants": []
+              }
+            ],
+            "1237": [
+              {
+                "topic": "not enough income",
+                "income": 0.789,
+                "inhabitants": []
+              }
+            ],
+            "1238": [
+              {
+                "topic": "not enough income",
+                "income": 0.863,
+                "inhabitants": []
+              }
+            ],
+            "1239": [
+              {
+                "topic": "not enough income",
+                "income": 0.851,
+                "inhabitants": []
+              }
+            ],
+            "1240": [
+              {
+                "topic": "not enough income",
+                "income": 0.823,
+                "inhabitants": []
+              }
+            ],
+            "1241": [
+              {
+                "topic": "not enough income",
+                "income": 0.846,
+                "inhabitants": []
+              }
+            ],
+            "1242": [
+              {
+                "topic": "not enough income",
+                "income": 0.823,
+                "inhabitants": []
+              }
+            ],
+            "1243": [
               {
                 "topic": "new relationship",
-                "key": 26758,
+                "key": 28769,
                 "people": [
-                  15369,
-                  12517
+                  12391,
+                  17780
                 ],
                 "people names": [
-                  "Mattheus Olipot",
-                  "Folqui Stromsdochter"
+                  "Thieleman",
+                  "Ghodelde van Albertus"
                 ],
                 "label": "spouse",
                 "committed": true
               },
               {
-                "topic": "not enough income",
-                "income": 1.309,
-                "inhabitants": [
-                  15369,
-                  20059,
-                  21303,
-                  21620,
-                  23573,
-                  20379,
-                  20535,
-                  12517,
-                  21733,
-                  22131,
-                  26949
-                ]
+                "topic": "new home",
+                "home": {
+                  "income class": 1,
+                  "income class label": "lower middle class",
+                  "section": "stSt. Ians straet.se5.c1",
+                  "street": "St. Ians straet",
+                  "neighborhood": "kampbuurt",
+                  "unique id": 430
+                }
+              }
+            ],
+            "1246": [
+              {
+                "topic": "job notice",
+                "notice": "low income",
+                "income": 0.735
               },
               {
-                "topic": "neglected"
+                "topic": "not enough income",
+                "income": 0.527,
+                "inhabitants": [
+                  10736,
+                  17780,
+                  28672,
+                  16749,
+                  29374
+                ]
+              }
+            ],
+            "1247": [
+              {
+                "topic": "new relationship",
+                "key": 30288,
+                "people": [
+                  17780,
+                  30286
+                ],
+                "people names": [
+                  "Ghodelde van Albertus",
+                  "Emgelberna"
+                ],
+                "label": "parentchild",
+                "committed": false
+              }
+            ],
+            "1249": [
+              {
+                "topic": "person died",
+                "person": {
+                  "key": 17282,
+                  "name": "Deghen Regis",
+                  "age": 40,
+                  "alive": false,
+                  "sex": "m",
+                  "parents": {
+                    "mother": "Imma (10736)",
+                    "father": "Albertus (10735)"
+                  }
+                },
+                "label": "sibling"
               }
             ]
           }
         },
-        "key": 15369,
+        "key": 17780,
         "home": {
-          "income class": 2,
-          "income class label": "middle class",
-          "section": "stDen Hof.se3.c2",
-          "street": "Den Hof",
-          "neighborhood": "denhof",
-          "unique id": 943
+          "income class": 1,
+          "income class label": "lower middle class",
+          "section": "stCoppelstraet.se1.c1",
+          "street": "Coppelstraet",
+          "neighborhood": "agnesbuurt",
+          "unique id": 336
         },
         "relationship status": {
           "taken": true,
           "married": true,
           "relationships": [
-            15372,
-            15373,
-            15374,
-            15375,
-            17555,
-            18688,
-            26758
+            17783,
+            17784,
+            18676,
+            22459,
+            28769
           ]
         }
       },
       "house": {
-        "income class": 2,
-        "income class label": "middle class",
-        "section": "stDen Hof.se3.c2",
-        "street": "Den Hof",
-        "neighborhood": "denhof",
-        "unique id": 943
+        "income class": 1,
+        "income class label": "lower middle class",
+        "section": "stCoppelstraet.se1.c1",
+        "street": "Coppelstraet",
+        "neighborhood": "agnesbuurt",
+        "unique id": 336
       }
     },
     {
       "person": {
         "topic": "person died",
-        "key": 20204,
+        "key": 23688,
         "cause": ""
       },
       "house": {
-        "income class": 2,
-        "income class label": "middle class",
-        "section": "stCorte gracht.se3.c2",
-        "street": "Corte gracht",
-        "neighborhood": "visbuurt",
-        "unique id": 744
+        "income class": 3,
+        "income class label": "upper middle class",
+        "section": "stMuurhuysen1.se3.c3",
+        "street": "Muurhuysen1",
+        "neighborhood": "cingelzuid",
+        "unique id": 667
       }
     },
     {
       "person": {
-        "alive": true,
-        "name": "Hadewigis",
-        "surname": "van Ingel",
-        "full name": "Hadewigis van Ingel",
+        "alive": false,
+        "name": "Agnes",
+        "surname": "Duker",
+        "full name": "Agnes Duker",
         "born this way": {
           "sexuality label": "straight",
-          "sexuality": 0.0,
-          "romantic interest": 0.741,
-          "sex interest": 0.829,
-          "gender expression": 0.0,
+          "sexuality": 0.084,
+          "romantic interest": 0.564,
+          "sex interest": 0.706,
+          "gender expression": 0.141,
           "sex": "f"
         },
-        "age": 16,
-        "birth year": 1222,
+        "age": 5,
+        "birth year": 1229,
         "sex": "f",
         "faction": "Dogmatists",
         "income class": [
-          2,
-          "middle class"
+          3,
+          "upper middle class"
         ],
         "personality": {
-          "lawful-chaotic": 0.554,
-          "nice-nasty": 0.604,
-          "honest-false": 0.673
+          "lawful-chaotic": 0.678,
+          "nice-nasty": 0.917,
+          "honest-false": 0.999
         },
         "attitude": {
-          "outgoing": 0.35,
-          "dream": 0.237
+          "outgoing": 0.341,
+          "dream": 0.544
         },
         "homsoc": {
           "means": {
             "independent": false,
-            "taken_care_of": false,
+            "taken_care_of": true,
             "caretaker": true,
-            "needs_care": false,
-            "flags": [
-              "starving"
-            ]
+            "needs_care": true,
+            "flags": []
           },
           "expression": {
-            "sexuality expression": -0.001,
-            "gender expression expression": -0.001
+            "sexuality expression": 0.044,
+            "gender expression expression": 0.043
           }
         },
         "network": {
           "parents": {
-            "mother": "Heylewigis (12616)",
-            "father": "Ingel (12786)"
+            "mother": "Sophia (13863)",
+            "father": "Voghel (13917)"
           },
           "children": {},
           "relationship keys": {
             "parent": [
-              18377,
-              18378
+              23689,
+              23690
             ],
             "sibling": [
-              18379,
-              18571,
-              18951,
-              20191,
-              20499
-            ],
-            "spouse": [
-              23027
-            ],
-            "child": {
-              "birth": [
-                23802
-              ]
-            },
-            "half-sibling": [
-              24143
+              23691,
+              23692,
+              23693,
+              23694
             ]
           }
         },
         "occupation": {
           "has job": false,
           "income class": [
-            2,
-            "middle class"
+            3,
+            "upper middle class"
           ],
           "income": 0,
           "all_incomes": []
         },
         "genetics": {
           "skin_color": 3,
-          "eye_color": "brown",
-          "hair_color": "black",
-          "hair_color_code": 0,
+          "eye_color": "blue",
+          "hair_color": "red",
+          "hair_color_code": 3,
           "hair_type": [
-            "C",
-            "C"
+            "S",
+            "S"
           ],
-          "health": 0.731,
-          "fertility": 0.633,
+          "health": 0.722,
+          "fertility": 0.741,
           "communication_impaired": false,
           "mobility_impaired": false,
           "cognitive_impaired": false,
@@ -1194,269 +1080,126 @@
         },
         "memory": {
           "health": {
-            "1223": {
+            "1230": {
               "health": {
                 "change": false,
                 "value_change": 0.0,
-                "new_health": 0.731
+                "new_health": 0.722
               },
               "death": false
             },
-            "1240": {
+            "1234": {
               "health": {
                 "change": false,
                 "value_change": 0.0,
-                "new_health": 0.731
+                "new_health": 0.722
               },
               "death": true
             }
           },
           "events": {
-            "1222": [
+            "1229": [
               {
                 "topic": "new home",
                 "home": {
-                  "income class": 2,
-                  "income class label": "middle class",
-                  "section": "stCingel.se5.c2",
-                  "street": "Cingel",
-                  "neighborhood": "agnesbuurt",
-                  "unique id": 316
+                  "income class": 3,
+                  "income class label": "upper middle class",
+                  "section": "stMuurhuysen1.se3.c3",
+                  "street": "Muurhuysen1",
+                  "neighborhood": "cingelzuid",
+                  "unique id": 667
                 }
-              }
-            ],
-            "1223": [
-              {
-                "topic": "new relationship",
-                "key": 18571,
-                "people": [
-                  18376,
-                  18567
-                ],
-                "people names": [
-                  "Hadewigis van Ingel",
-                  "Wilmarus"
-                ],
-                "label": "sibling",
-                "committed": false
-              }
-            ],
-            "1225": [
-              {
-                "topic": "new relationship",
-                "key": 18951,
-                "people": [
-                  18376,
-                  18947
-                ],
-                "people names": [
-                  "Hadewigis van Ingel",
-                  "Gabriel"
-                ],
-                "label": "sibling",
-                "committed": false
-              }
-            ],
-            "1230": [
-              {
-                "topic": "new relationship",
-                "key": 20191,
-                "people": [
-                  18376,
-                  20187
-                ],
-                "people names": [
-                  "Hadewigis van Ingel",
-                  "Coclike van Ingel"
-                ],
-                "label": "sibling",
-                "committed": false
               }
             ],
             "1231": [
               {
-                "topic": "new relationship",
-                "key": 20499,
-                "people": [
-                  18376,
-                  20495
-                ],
-                "people names": [
-                  "Hadewigis van Ingel",
-                  "Menoldis"
-                ],
-                "label": "sibling",
-                "committed": false
-              }
-            ],
-            "1233": [
-              {
                 "topic": "person died",
                 "person": {
-                  "key": 12786,
-                  "name": "Ingel Hermanszoon",
-                  "age": 31,
+                  "key": 13863,
+                  "name": "Sophia Lancgeroch",
+                  "age": 28,
                   "alive": false,
-                  "sex": "m",
+                  "sex": "f",
                   "parents": {
-                    "mother": "Cofte (10670)",
-                    "father": "Herman (10669)"
+                    "mother": "Machtilden (11354)",
+                    "father": "Vais (11353)"
                   }
                 },
                 "label": "parent"
-              },
+              }
+            ],
+            "1232": [
               {
-                "topic": "not enough income",
-                "income": 0.645,
-                "inhabitants": []
+                "topic": "event",
+                "event": "war",
+                "year": 1232
               }
             ],
             "1234": [
               {
-                "topic": "not enough income",
-                "income": 0.584,
-                "inhabitants": []
-              }
-            ],
-            "1235": [
-              {
-                "topic": "not enough income",
-                "income": 0.585,
-                "inhabitants": []
-              }
-            ],
-            "1238": [
-              {
-                "topic": "new home",
-                "home": {
-                  "income class": 2,
-                  "income class label": "middle class",
-                  "section": "stUterechse straet.se3.c2",
-                  "street": "Uterechse straet",
-                  "neighborhood": "varkensbuurt",
-                  "unique id": 17
-                }
-              },
-              {
-                "topic": "new relationship",
-                "key": 23027,
-                "people": [
-                  18084,
-                  18376
-                ],
-                "people names": [
-                  "Didderic Pinart",
-                  "Hadewigis van Ingel"
-                ],
-                "label": "spouse",
-                "committed": true
-              },
-              {
-                "topic": "new home",
-                "home": {
-                  "income class": 1,
-                  "income class label": "lower middle class",
-                  "section": "stHelle voet.se5.c1",
-                  "street": "Helle voet",
-                  "neighborhood": "jorisbuurt",
-                  "unique id": 115
-                }
-              },
-              {
-                "topic": "neglected"
-              }
-            ],
-            "1239": [
-              {
-                "topic": "new relationship",
-                "key": 23802,
-                "people": [
-                  18376,
-                  23800
-                ],
-                "people names": [
-                  "Hadewigis van Ingel",
-                  "Marisseis Pinart"
-                ],
-                "label": "parentchild",
-                "committed": false
-              },
-              {
-                "topic": "neglected"
-              },
-              {
-                "topic": "neglected"
-              }
-            ],
-            "1240": [
-              {
-                "topic": "neglected"
-              },
-              {
-                "topic": "neglected"
-              },
-              {
-                "topic": "new relationship",
-                "key": 24143,
-                "people": [
-                  18376,
-                  24105
-                ],
-                "people names": [
-                  "Hadewigis van Ingel",
-                  "Godefridus Calvesnack"
-                ],
-                "label": "half-sibling",
-                "committed": false
+                "topic": "death",
+                "cause": "childhood illness"
               }
             ]
           }
         },
-        "key": 18376,
+        "key": 23688,
         "home": {
-          "income class": 2,
-          "income class label": "middle class",
-          "section": "stCingel.se5.c2",
-          "street": "Cingel",
-          "neighborhood": "agnesbuurt",
-          "unique id": 316
+          "income class": 3,
+          "income class label": "upper middle class",
+          "section": "stMuurhuysen1.se3.c3",
+          "street": "Muurhuysen1",
+          "neighborhood": "cingelzuid",
+          "unique id": 667
         },
         "relationship status": {
           "taken": false,
-          "married": true,
+          "married": false,
           "relationships": [
-            18379,
-            18571,
-            18951,
-            20191,
-            20499,
-            23027,
-            24143
+            23691,
+            23692,
+            23693,
+            23694
           ]
         }
       },
       "house": {
-        "income class": 2,
-        "income class label": "middle class",
-        "section": "stCingel.se5.c2",
-        "street": "Cingel",
-        "neighborhood": "agnesbuurt",
-        "unique id": 316
+        "income class": 3,
+        "income class label": "upper middle class",
+        "section": "stMuurhuysen1.se3.c3",
+        "street": "Muurhuysen1",
+        "neighborhood": "cingelzuid",
+        "unique id": 667
       }
     },
     {
       "person": {
         "topic": "person died",
-        "key": 19434,
+        "key": 25935,
         "cause": ""
       },
       "house": {
         "income class": 1,
         "income class label": "lower middle class",
-        "section": "stMerrien hoof.se3.c1",
-        "street": "Merrien hoof",
-        "neighborhood": "varkensbuurt",
-        "unique id": 81
+        "section": "stDe Tuyt.se5.c1",
+        "street": "De Tuyt",
+        "neighborhood": "agnesbuurt",
+        "unique id": 294
+      }
+    },
+    {
+      "person": {
+        "topic": "person died",
+        "key": 26413,
+        "cause": ""
+      },
+      "house": {
+        "income class": 2,
+        "income class label": "middle class",
+        "section": "stBloemendaelse straet.se1.c2",
+        "street": "Bloemendaelse straet",
+        "neighborhood": "agnesbuurt",
+        "unique id": 209
       }
     }
   ]

@@ -1,33 +1,33 @@
 {
   "10712": {
     "alive": false,
-    "name": "Erkenradis",
-    "surname": "Froes",
-    "full name": "Erkenradis Froes",
+    "name": "Alretieren",
+    "surname": "",
+    "full name": "Alretieren",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.059,
-      "romantic interest": 0.864,
-      "sex interest": 0.702,
-      "gender expression": 0.058,
+      "sexuality": 0.0,
+      "romantic interest": 0.796,
+      "sex interest": 0.648,
+      "gender expression": 0.037,
       "sex": "f"
     },
-    "age": 53,
-    "birth year": 1154,
+    "age": 29,
+    "birth year": 1176,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.773,
-      "nice-nasty": 0.999,
-      "honest-false": 0.096
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.662,
+      "honest-false": 0.228
     },
     "attitude": {
-      "outgoing": 0.75,
-      "dream": 0.422
+      "outgoing": 0.543,
+      "dream": 0.582
     },
     "homsoc": {
       "means": {
@@ -35,22 +35,37 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": [
-          "starving"
-        ]
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.04,
-        "gender expression expression": 0.009
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.01
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13668": {
+          "key": 13668,
+          "name": "Ermerut Cabellau",
+          "age": 40,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Alretieren (10712)",
+            "father": "Werenboud (10711)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10713
-        ]
+        ],
+        "child": {
+          "birth": [
+            13670
+          ]
+        }
       }
     },
     "occupation": {
@@ -65,14 +80,14 @@
     "genetics": {
       "skin_color": 4,
       "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
       "hair_type": [
-        "C",
-        "S"
+        "S",
+        "C"
       ],
-      "health": 0.0,
-      "fertility": 0.704,
+      "health": 0.561,
+      "fertility": 0.784,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -84,31 +99,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.676
+            "new_health": 0.732
           },
           "death": false
         },
         "1204": {
           "health": {
             "change": true,
-            "value_change": -0.285,
-            "new_health": 0.391
-          },
-          "death": false
-        },
-        "1205": {
-          "health": {
-            "change": true,
-            "value_change": -0.294,
-            "new_health": 0.097
-          },
-          "death": false
-        },
-        "1206": {
-          "health": {
-            "change": true,
-            "value_change": -0.097,
-            "new_health": 0.0
+            "value_change": -0.171,
+            "new_health": 0.561
           },
           "death": true
         }
@@ -123,8 +122,8 @@
               10712
             ],
             "people names": [
-              "Bartholomeus Aec",
-              "Erkenradis Froes"
+              "Werenboud Cabellau",
+              "Alretieren"
             ],
             "label": "spouse",
             "committed": true
@@ -134,60 +133,42 @@
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stCoppelstraet.se1.c1",
-              "street": "Coppelstraet",
+              "section": "stTuytsteeg.se1.c1",
+              "street": "Tuytsteeg",
               "neighborhood": "agnesbuurt",
-              "unique id": 335
+              "unique id": 328
             }
-          }
-        ],
-        "1201": [
-          {
-            "topic": "not enough income",
-            "income": 0.287,
-            "inhabitants": []
           }
         ],
         "1202": [
           {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
+            "topic": "new relationship",
+            "key": 13670,
+            "people": [
+              10712,
+              13668
+            ],
+            "people names": [
+              "Alretieren",
+              "Ermerut Cabellau"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1203": [
           {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
+            "topic": "feelings change",
+            "target": 10711,
+            "target name": "Werenboud Cabellau",
+            "state": "solid love",
+            "relationship": 10713
           }
         ],
         "1204": [
           {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
-          }
-        ],
-        "1205": [
-          {
-            "topic": "feelings change",
-            "target": 10711,
-            "target name": "Bartholomeus Aec",
-            "state": "out of love",
-            "relationship": 10713
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.222,
-            "inhabitants": []
-          }
-        ],
-        "1206": [
-          {
-            "topic": "not enough income",
-            "income": 0.141,
-            "inhabitants": []
+            "topic": "death",
+            "cause": "illness"
           }
         ]
       }
@@ -196,10 +177,10 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stCoppelstraet.se1.c1",
-      "street": "Coppelstraet",
+      "section": "stTuytsteeg.se1.c1",
+      "street": "Tuytsteeg",
       "neighborhood": "agnesbuurt",
-      "unique id": 335
+      "unique id": 328
     },
     "relationship status": {
       "taken": true,

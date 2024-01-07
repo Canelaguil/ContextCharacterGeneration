@@ -1,54 +1,86 @@
 {
   "10838": {
     "alive": false,
-    "name": "Volcwiif",
-    "surname": "",
-    "full name": "Volcwiif",
+    "name": "Cofte",
+    "surname": "Borlutte",
+    "full name": "Cofte Borlutte",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.036,
-      "romantic interest": 0.602,
-      "sex interest": 0.685,
-      "gender expression": 0.0,
+      "sexuality label": "gay",
+      "sexuality": 0.855,
+      "romantic interest": 0.513,
+      "sex interest": 0.744,
+      "gender expression": 0.161,
       "sex": "f"
     },
-    "age": 53,
-    "birth year": 1158,
+    "age": 55,
+    "birth year": 1176,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.556,
-      "honest-false": 0.436
+      "lawful-chaotic": 0.981,
+      "nice-nasty": 0.795,
+      "honest-false": 0.523
     },
     "attitude": {
-      "outgoing": 0.696,
-      "dream": 0.446
+      "outgoing": 0.61,
+      "dream": 0.436
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "caretaker",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.03,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.497,
+        "gender expression expression": 0.125
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12424": {
+          "key": 12424,
+          "name": "Remboldus",
+          "age": 32,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Cofte (10838)",
+            "father": "Lambrecht (10837)"
+          }
+        },
+        "16223": {
+          "key": 16223,
+          "name": "Poppo Lambrechtszoon",
+          "age": 43,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Cofte (10838)",
+            "father": "Lambrecht (10837)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10839
-        ]
+        ],
+        "child": {
+          "birth": [
+            12426,
+            16225
+          ]
+        }
       }
     },
     "occupation": {
@@ -57,36 +89,46 @@
         2,
         "middle class"
       ],
-      "income": 1.499,
+      "income": 1.249,
       "all_incomes": [
-        1.162,
-        1.445,
-        1.391,
-        1.285,
-        1.499,
-        1.044,
-        1.413,
-        1.499,
-        1.499,
-        1.499,
-        1.499
+        1.018,
+        0.946,
+        1.013,
+        1.016,
+        1.009,
+        1.073,
+        1.179,
+        1.118,
+        1.195,
+        1.176,
+        1.184,
+        1.136,
+        1.12,
+        1.182,
+        1.233,
+        1.23,
+        1.206,
+        1.203,
+        1.233,
+        1.219,
+        1.249
       ],
       "job": {
         "lawful": true,
-        "honest": false
+        "honest": true
       }
     },
     "genetics": {
-      "skin_color": 2,
+      "skin_color": 7,
       "eye_color": "green",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "C",
-        "C"
+        "S",
+        "S"
       ],
       "health": 0.0,
-      "fertility": 0.64,
+      "fertility": 0.632,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -98,30 +140,46 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.691
+            "new_health": 0.721
           },
           "death": false
         },
-        "1208": {
+        "1226": {
           "health": {
             "change": true,
-            "value_change": -0.188,
-            "new_health": 0.503
+            "value_change": -0.184,
+            "new_health": 0.537
           },
           "death": false
         },
-        "1209": {
+        "1227": {
           "health": {
             "change": true,
-            "value_change": -0.374,
-            "new_health": 0.129
+            "value_change": -0.242,
+            "new_health": 0.295
           },
           "death": false
         },
-        "1210": {
+        "1228": {
           "health": {
             "change": true,
-            "value_change": -0.129,
+            "value_change": -0.256,
+            "new_health": 0.039
+          },
+          "death": false
+        },
+        "1229": {
+          "health": {
+            "change": true,
+            "value_change": -0.032,
+            "new_health": 0.007
+          },
+          "death": false
+        },
+        "1230": {
+          "health": {
+            "change": true,
+            "value_change": -0.007,
             "new_health": 0.0
           },
           "death": true
@@ -130,11 +188,6 @@
       "events": {
         "1200": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.162
-          },
-          {
             "topic": "new relationship",
             "key": 10839,
             "people": [
@@ -142,8 +195,8 @@
               10838
             ],
             "people names": [
-              "Trueb Smout",
-              "Volcwiif"
+              "Lambrecht",
+              "Cofte Borlutte"
             ],
             "label": "spouse",
             "committed": true
@@ -153,11 +206,162 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stDie Camp.se5.c2",
+              "section": "stDie Camp.se3.c2",
               "street": "Die Camp",
               "neighborhood": "kampbuurt",
-              "unique id": 388
+              "unique id": 382
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12426,
+            "people": [
+              10838,
+              12424
+            ],
+            "people names": [
+              "Cofte Borlutte",
+              "Remboldus"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1202": [
+          {
+            "topic": "feelings change",
+            "target": 10837,
+            "target name": "Lambrecht",
+            "state": "out of love",
+            "relationship": 10839
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 16225,
+            "people": [
+              10838,
+              16223
+            ],
+            "people names": [
+              "Cofte Borlutte",
+              "Poppo Lambrechtszoon"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1208": [
+          {
+            "key": 10839,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10837,
+              "name": "Lambrecht",
+              "age": 53,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              21805,
+              22015,
+              19980,
+              26850
+            ]
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": [
+              26850
+            ]
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              21805,
+              22015,
+              19980,
+              26850
+            ]
+          }
+        ],
+        "1210": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.018
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              21805,
+              22015,
+              19980,
+              26850
+            ]
+          }
+        ],
+        "1212": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.013
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          }
+        ],
+        "1216": [
+          {
+            "topic": "event",
+            "event": "war",
+            "year": 1216
+          }
+        ],
+        "1227": [
+          {
+            "topic": "event",
+            "event": "famine",
+            "year": 1227
+          }
+        ],
+        "1228": [
+          {
+            "topic": "event",
+            "event": "famine",
+            "year": 1228
+          }
+        ],
+        "1229": [
+          {
+            "topic": "event",
+            "event": "faction upheaval",
+            "faction": "Zealots",
+            "year": 1229
+          }
+        ],
+        "1230": [
+          {
+            "topic": "death",
+            "cause": "sickness"
           }
         ]
       }
@@ -166,14 +370,14 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stDie Camp.se5.c2",
+      "section": "stDie Camp.se3.c2",
       "street": "Die Camp",
       "neighborhood": "kampbuurt",
-      "unique id": 388
+      "unique id": 382
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         10839
       ]

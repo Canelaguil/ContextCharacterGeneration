@@ -1,53 +1,55 @@
 {
   "15717": {
     "alive": false,
-    "name": "Waldfridus",
-    "surname": "",
-    "full name": "Waldfridus",
+    "name": "Margareta",
+    "surname": "Craye",
+    "full name": "Margareta Craye",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.128,
-      "romantic interest": 0.882,
-      "sex interest": 0.635,
-      "gender expression": 0.111,
-      "sex": "m"
+      "sexuality": 0.084,
+      "romantic interest": 0.642,
+      "sex interest": 0.809,
+      "gender expression": 0.21,
+      "sex": "f"
     },
-    "age": 23,
-    "birth year": 1208,
-    "sex": "m",
-    "faction": "Zealots",
+    "age": 32,
+    "birth year": 1205,
+    "sex": "f",
+    "faction": "No religion",
     "income class": [
       3,
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.223,
-      "nice-nasty": 0.445,
-      "honest-false": 0.123
+      "lawful-chaotic": 0.0,
+      "nice-nasty": 0.434,
+      "honest-false": 0.708
     },
     "attitude": {
-      "outgoing": 0.666,
-      "dream": 0.141
+      "outgoing": 0.38,
+      "dream": 0.146
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": true,
+        "caretaker": false,
         "needs_care": false,
         "flags": [
-          "neglected"
+          "caretaker",
+          "neglected",
+          "starving"
         ]
       },
       "expression": {
-        "sexuality expression": 0.102,
-        "gender expression expression": 0.046
+        "sexuality expression": 0.059,
+        "gender expression expression": 0.124
       }
     },
     "network": {
       "parents": {
-        "mother": "Saxiardis (11531)",
-        "father": "Evergero (11299)"
+        "mother": "Walburgis (11210)",
+        "father": "Hugheman (11209)"
       },
       "children": {},
       "relationship keys": {
@@ -55,12 +57,14 @@
           15718,
           15719
         ],
-        "half-sibling": [
-          15727,
-          15728
+        "sibling": [
+          15720,
+          15721,
+          16823,
+          20880
         ],
         "spouse": [
-          19323
+          25769
         ]
       }
     },
@@ -70,32 +74,28 @@
         3,
         "upper middle class"
       ],
-      "income": 1.009,
+      "income": 1.12,
       "all_incomes": [
-        1.019,
-        0.953,
-        1.214,
-        1.289,
-        0.788,
-        0.898,
-        1.009
+        0.79,
+        1.166,
+        1.12
       ],
       "job": {
         "lawful": false,
-        "honest": false
+        "honest": true
       }
     },
     "genetics": {
-      "skin_color": 5,
-      "eye_color": "blue",
+      "skin_color": 4,
+      "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
         "S",
         "S"
       ],
-      "health": 0.612,
-      "fertility": 0.642,
+      "health": 0.398,
+      "fertility": 0.663,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -103,35 +103,80 @@
     },
     "memory": {
       "health": {
+        "1206": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.642
+          },
+          "death": false
+        },
+        "1208": {
+          "health": {
+            "change": true,
+            "value_change": -0.244,
+            "new_health": 0.398
+          },
+          "death": false
+        },
         "1209": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.612
+            "new_health": 0.398
           },
           "death": false
         },
-        "1231": {
+        "1237": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.612
+            "new_health": 0.398
           },
           "death": true
         }
       },
       "events": {
-        "1208": [
+        "1205": [
           {
             "topic": "new home",
             "home": {
               "income class": 3,
               "income class label": "upper middle class",
-              "section": "stBreestraat.se7.c3",
+              "section": "stBreestraat.se3.c3",
               "street": "Breestraat",
               "neighborhood": "olvbuurt",
-              "unique id": 576
+              "unique id": 557
             }
+          }
+        ],
+        "1206": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "new relationship",
+            "key": 16823,
+            "people": [
+              15717,
+              16818
+            ],
+            "people names": [
+              "Margareta Craye",
+              "Ermerut Craye"
+            ],
+            "label": "sibling",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "neglected"
           }
         ],
         "1209": [
@@ -140,18 +185,6 @@
           }
         ],
         "1210": [
-          {
-            "topic": "person died",
-            "person": {
-              "key": 11531,
-              "name": "Saxiardis Scoreel",
-              "age": 35,
-              "alive": false,
-              "sex": "f",
-              "parents": "firstgen"
-            },
-            "label": "parent"
-          },
           {
             "topic": "neglected"
           }
@@ -178,10 +211,20 @@
         ],
         "1215": [
           {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
             "topic": "neglected"
           }
         ],
         "1216": [
+          {
+            "topic": "event",
+            "event": "war",
+            "year": 1216
+          },
           {
             "topic": "neglected"
           }
@@ -193,80 +236,159 @@
         ],
         "1218": [
           {
+            "topic": "new relationship",
+            "key": 20880,
+            "people": [
+              15717,
+              20875
+            ],
+            "people names": [
+              "Margareta Craye",
+              "Thitardo Hughemanszoon"
+            ],
+            "label": "sibling",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1219": [
+          {
             "topic": "neglected"
           }
         ],
         "1220": [
           {
-            "topic": "neglected"
-          }
-        ],
-        "1221": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1222": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1223": [
+            "topic": "person died",
+            "person": {
+              "key": 15070,
+              "name": "Sibrando Craye",
+              "age": 15,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Walburgis (11210)",
+                "father": "Hugheman (11209)"
+              }
+            },
+            "label": "sibling"
+          },
           {
             "topic": "neglected"
           }
         ],
         "1224": [
           {
-            "topic": "neglected"
-          }
-        ],
-        "1225": [
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.019
-          },
-          {
             "topic": "person died",
             "person": {
-              "key": 14176,
-              "name": "Jacobus",
-              "age": 20,
+              "key": 11210,
+              "name": "Walburgis Cauwen",
+              "age": 45,
               "alive": false,
-              "sex": "m",
-              "parents": {
-                "mother": "Saxiardis (11531)",
-                "father": "Fays (11530)"
-              }
+              "sex": "f",
+              "parents": "firstgen"
             },
-            "label": "half-sibling"
-          },
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1226": [
-          {
-            "topic": "neglected"
+            "label": "parent"
           }
         ],
         "1227": [
           {
+            "topic": "event",
+            "event": "famine",
+            "year": 1227
+          }
+        ],
+        "1228": [
+          {
+            "topic": "event",
+            "event": "famine",
+            "year": 1228
+          }
+        ],
+        "1229": [
+          {
+            "topic": "event",
+            "event": "faction upheaval",
+            "faction": "Zealots",
+            "year": 1229
+          }
+        ],
+        "1230": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11209,
+              "name": "Hugheman Craye",
+              "age": 55,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "parent"
+          }
+        ],
+        "1231": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12553,
+              "name": "Hildebolding Craye",
+              "age": 30,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Walburgis (11210)",
+                "father": "Hugheman (11209)"
+              }
+            },
+            "label": "sibling"
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          }
+        ],
+        "1232": [
+          {
+            "topic": "event",
+            "event": "war",
+            "year": 1232
+          }
+        ],
+        "1233": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1234": [
+          {
+            "topic": "not caretaker"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1235": [
+          {
             "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.214
+            "notice": "found job",
+            "income": 0.79
           },
           {
             "topic": "new relationship",
-            "key": 19323,
+            "key": 25769,
             "people": [
-              15717,
-              15860
+              16855,
+              15717
             ],
             "people names": [
-              "Waldfridus",
-              "Sara van Herlewin"
+              "Snellard Groete",
+              "Margareta Craye"
             ],
             "label": "spouse",
             "committed": true
@@ -276,51 +398,24 @@
             "home": {
               "income class": 3,
               "income class label": "upper middle class",
-              "section": "stLievevrouwe kerch.se7.c3",
-              "street": "Lievevrouwe kerch",
-              "neighborhood": "olvbuurt",
-              "unique id": 603
+              "section": "stMuurhuysen2.se5.c3",
+              "street": "Muurhuysen2",
+              "neighborhood": "cingelnoord",
+              "unique id": 811
             }
-          },
-          {
-            "topic": "neglected"
           }
         ],
-        "1228": [
-          {
-            "topic": "person died",
-            "person": {
-              "key": 11299,
-              "name": "Evergero Lozere",
-              "age": 55,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "label": "parent"
-          },
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1229": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1230": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1231": [
+        "1236": [
           {
             "topic": "job notice",
             "notice": "comfortable earnings",
-            "income": 1.009
-          },
+            "income": 1.166
+          }
+        ],
+        "1237": [
           {
-            "topic": "neglected"
+            "topic": "death",
+            "cause": "illness"
           }
         ]
       }
@@ -329,18 +424,20 @@
     "home": {
       "income class": 3,
       "income class label": "upper middle class",
-      "section": "stLievevrouwe kerch.se7.c3",
-      "street": "Lievevrouwe kerch",
-      "neighborhood": "olvbuurt",
-      "unique id": 603
+      "section": "stMuurhuysen2.se5.c3",
+      "street": "Muurhuysen2",
+      "neighborhood": "cingelnoord",
+      "unique id": 811
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        15727,
-        15728,
-        19323
+        15720,
+        15721,
+        16823,
+        20880,
+        25769
       ]
     }
   }

@@ -1,33 +1,33 @@
 {
   "10579": {
     "alive": false,
-    "name": "Bobone",
-    "surname": "Scarlaken",
-    "full name": "Bobone Scarlaken",
+    "name": "Rolekine",
+    "surname": "Rowerus",
+    "full name": "Rolekine Rowerus",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.909,
-      "romantic interest": 0.497,
-      "sex interest": 0.784,
-      "gender expression": 0.335,
+      "sexuality label": "straight",
+      "sexuality": 0.073,
+      "romantic interest": 0.468,
+      "sex interest": 0.809,
+      "gender expression": 0.148,
       "sex": "m"
     },
-    "age": 39,
-    "birth year": 1163,
+    "age": 52,
+    "birth year": 1153,
     "sex": "m",
-    "faction": "Dogmatists",
+    "faction": "No religion",
     "income class": [
-      0,
-      "working class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
+      "lawful-chaotic": 0.208,
       "nice-nasty": 0.0,
-      "honest-false": 0.205
+      "honest-false": 0.858
     },
     "attitude": {
-      "outgoing": 0.363,
-      "dream": 0.263
+      "outgoing": 0.453,
+      "dream": 0.597
     },
     "homsoc": {
       "means": {
@@ -38,30 +38,50 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.797,
-        "gender expression expression": 0.195
+        "sexuality expression": 0.054,
+        "gender expression expression": 0.032
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14279": {
+          "key": 14279,
+          "name": "Linnea Rowerus",
+          "age": 31,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Lisebette (10580)",
+            "father": "Rolekine (10579)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10581
-        ]
+        ],
+        "child": {
+          "birth": [
+            14280
+          ]
+        }
       }
     },
     "occupation": {
       "has job": true,
       "income class": [
-        0,
-        "working class"
+        1,
+        "lower middle class"
       ],
-      "income": 1.324,
+      "income": 1.499,
       "all_incomes": [
-        0.652,
-        0.993,
-        1.324
+        1.499,
+        1.499,
+        1.499,
+        1.469,
+        1.499,
+        1.499
       ],
       "job": {
         "lawful": false,
@@ -70,15 +90,15 @@
     },
     "genetics": {
       "skin_color": 8,
-      "eye_color": "brown",
+      "eye_color": "blue",
       "hair_color": "blonde",
       "hair_color_code": 4,
       "hair_type": [
         "C",
-        "S"
+        "C"
       ],
-      "health": 0.648,
-      "fertility": 0.529,
+      "health": 0.552,
+      "fertility": 0.904,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -90,15 +110,23 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.648
+            "new_health": 0.825
           },
           "death": false
         },
-        "1201": {
+        "1203": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.648
+            "change": true,
+            "value_change": -0.153,
+            "new_health": 0.672
+          },
+          "death": false
+        },
+        "1204": {
+          "health": {
+            "change": true,
+            "value_change": -0.12,
+            "new_health": 0.552
           },
           "death": true
         }
@@ -108,7 +136,7 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.652
+            "income": 1.499
           },
           {
             "topic": "new relationship",
@@ -118,8 +146,8 @@
               10580
             ],
             "people names": [
-              "Bobone Scarlaken",
-              "Menoldis Maerke"
+              "Rolekine Rowerus",
+              "Lisebette"
             ],
             "label": "spouse",
             "committed": true
@@ -127,32 +155,63 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stWalker straet.se3.c0",
-              "street": "Walker straet",
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stWaale straet.se3.c1",
+              "street": "Waale straet",
               "neighborhood": "agnesbuurt",
-              "unique id": 269
+              "unique id": 257
             }
+          },
+          {
+            "topic": "feelings change",
+            "target": 10580,
+            "target name": "Lisebette",
+            "state": "solid love",
+            "relationship": 10581
           }
         ],
         "1201": [
           {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.324
+            "topic": "feelings change",
+            "target": 10580,
+            "target name": "Lisebette",
+            "state": "out of love",
+            "relationship": 10581
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 14280,
+            "people": [
+              10579,
+              14279
+            ],
+            "people names": [
+              "Rolekine Rowerus",
+              "Linnea Rowerus"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1204": [
+          {
+            "topic": "death",
+            "cause": "old age"
           }
         ]
       }
     },
     "key": 10579,
     "home": {
-      "income class": 0,
-      "income class label": "working class",
-      "section": "stWalker straet.se3.c0",
-      "street": "Walker straet",
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stWaale straet.se3.c1",
+      "street": "Waale straet",
       "neighborhood": "agnesbuurt",
-      "unique id": 269
+      "unique id": 257
     },
     "relationship status": {
       "taken": true,

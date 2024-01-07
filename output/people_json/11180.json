@@ -1,38 +1,38 @@
 {
   "11180": {
     "alive": false,
-    "name": "Reynildis",
-    "surname": "Kint",
-    "full name": "Reynildis Kint",
+    "name": "Meynseth",
+    "surname": "Borluet",
+    "full name": "Meynseth Borluet",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.061,
-      "romantic interest": 0.483,
-      "sex interest": 0.804,
-      "gender expression": 0.003,
+      "sexuality": 0.074,
+      "romantic interest": 0.805,
+      "sex interest": 0.473,
+      "gender expression": 0.034,
       "sex": "f"
     },
-    "age": 57,
-    "birth year": 1162,
+    "age": 35,
+    "birth year": 1178,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.765,
-      "nice-nasty": 0.194,
-      "honest-false": 0.349
+      "lawful-chaotic": 0.447,
+      "nice-nasty": 0.452,
+      "honest-false": 0.831
     },
     "attitude": {
-      "outgoing": 0.349,
-      "dream": 0.435
+      "outgoing": 0.501,
+      "dream": 0.598
     },
     "homsoc": {
       "means": {
         "independent": true,
-        "taken_care_of": true,
+        "taken_care_of": false,
         "caretaker": true,
         "needs_care": false,
         "flags": [
@@ -41,20 +41,34 @@
         ]
       },
       "expression": {
-        "sexuality expression": 0.033,
-        "gender expression expression": 0.001
+        "sexuality expression": 0.044,
+        "gender expression expression": 0.012
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12541": {
+          "key": 12541,
+          "name": "Passelin Barvoet",
+          "age": 14,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Meynseth (11180)",
+            "father": "Splinter (11179)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          11181,
-          15681,
-          16520,
-          17710
-        ]
+          11181
+        ],
+        "child": {
+          "birth": [
+            12543
+          ]
+        }
       }
     },
     "occupation": {
@@ -63,28 +77,32 @@
         2,
         "middle class"
       ],
-      "income": 1.308,
+      "income": 1.132,
       "all_incomes": [
-        1.011,
-        1.096,
-        1.308
+        1.03,
+        1.005,
+        0.984,
+        0.879,
+        0.988,
+        1.029,
+        1.132
       ],
       "job": {
-        "lawful": false,
-        "honest": false
+        "lawful": true,
+        "honest": true
       }
     },
     "genetics": {
-      "skin_color": 1,
-      "eye_color": "brown",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "skin_color": 0,
+      "eye_color": "blue",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
-        "S",
+        "C",
         "C"
       ],
-      "health": 0.218,
-      "fertility": 0.846,
+      "health": 0.734,
+      "fertility": 0.705,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -96,31 +114,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.829
+            "new_health": 0.734
           },
           "death": false
         },
-        "1216": {
+        "1212": {
           "health": {
-            "change": true,
-            "value_change": -0.153,
-            "new_health": 0.676
-          },
-          "death": false
-        },
-        "1217": {
-          "health": {
-            "change": true,
-            "value_change": -0.312,
-            "new_health": 0.364
-          },
-          "death": false
-        },
-        "1218": {
-          "health": {
-            "change": true,
-            "value_change": -0.146,
-            "new_health": 0.218
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.734
           },
           "death": true
         }
@@ -135,8 +137,8 @@
               11180
             ],
             "people names": [
-              "Kornillis Minneman",
-              "Reynildis Kint"
+              "Splinter Barvoet",
+              "Meynseth Borluet"
             ],
             "label": "spouse",
             "committed": true
@@ -149,8 +151,22 @@
               "section": "stBreestraat.se1.c2",
               "street": "Breestraat",
               "neighborhood": "olvbuurt",
-              "unique id": 530
+              "unique id": 542
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12543,
+            "people": [
+              11180,
+              12541
+            ],
+            "people names": [
+              "Meynseth Borluet",
+              "Passelin Barvoet"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1204": [
@@ -162,86 +178,8 @@
             "topic": "person died",
             "person": {
               "key": 11179,
-              "name": "Kornillis Minneman",
-              "age": 53,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1205": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1206": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1207": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1208": [
-          {
-            "topic": "new relationship",
-            "key": 15681,
-            "people": [
-              10075,
-              11180
-            ],
-            "people names": [
-              "Elyas\u0430",
-              "Reynildis Kint"
-            ],
-            "label": "spouse",
-            "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stVerckens merct.se3.c2",
-              "street": "Verckens merct",
-              "neighborhood": "varkensbuurt",
-              "unique id": 32
-            }
-          }
-        ],
-        "1209": [
-          {
-            "topic": "not enough income",
-            "income": 0.249,
-            "inhabitants": []
-          }
-        ],
-        "1210": [
-          {
-            "key": 15681,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 10075,
-              "name": "Elyas\u0430",
-              "age": 53,
+              "name": "Splinter Barvoet",
+              "age": 43,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
@@ -256,121 +194,38 @@
           {
             "topic": "now caretaker",
             "care dependants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.03
           },
           {
-            "topic": "new caretaker",
-            "person": 11180
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ],
         "1211": [
           {
-            "topic": "new relationship",
-            "key": 16520,
-            "people": [
-              11617,
-              11180
-            ],
-            "people names": [
-              "Wilmarus Coquus",
-              "Reynildis Kint"
-            ],
-            "label": "spouse",
-            "committed": true
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.034,
-            "inhabitants": []
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.029
           }
         ],
         "1212": [
           {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
-          }
-        ],
-        "1213": [
-          {
-            "topic": "feelings change",
-            "target": 11617,
-            "target name": "Wilmarus Coquus",
-            "state": "solid love",
-            "relationship": 16520
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
-          }
-        ],
-        "1214": [
-          {
-            "key": 16520,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 11617,
-              "name": "Wilmarus Coquus",
-              "age": 58,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1215": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1216": [
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.011
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1218": [
-          {
-            "topic": "new relationship",
-            "key": 17710,
-            "people": [
-              10066,
-              11180
-            ],
-            "people names": [
-              "Wilmarus",
-              "Reynildis Kint"
-            ],
-            "label": "spouse",
-            "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stVerckens merct.se3.c2",
-              "street": "Verckens merct",
-              "neighborhood": "varkensbuurt",
-              "unique id": 29
-            }
+            "topic": "death",
+            "cause": "illness"
           }
         ]
       }
@@ -379,19 +234,16 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stVerckens merct.se3.c2",
-      "street": "Verckens merct",
-      "neighborhood": "varkensbuurt",
-      "unique id": 29
+      "section": "stBreestraat.se1.c2",
+      "street": "Breestraat",
+      "neighborhood": "olvbuurt",
+      "unique id": 542
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
-        11181,
-        15681,
-        16520,
-        17710
+        11181
       ]
     }
   }

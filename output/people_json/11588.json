@@ -1,82 +1,109 @@
 {
   "11588": {
     "alive": false,
-    "name": "Emgelberna",
-    "surname": "Zuakart",
-    "full name": "Emgelberna Zuakart",
+    "name": "Esa",
+    "surname": "Markolf",
+    "full name": "Esa Markolf",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.109,
-      "romantic interest": 0.598,
-      "sex interest": 0.716,
-      "gender expression": 0.058,
+      "sexuality": 0.0,
+      "romantic interest": 0.635,
+      "sex interest": 0.586,
+      "gender expression": 0.056,
       "sex": "f"
     },
-    "age": 55,
-    "birth year": 1164,
+    "age": 53,
+    "birth year": 1165,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "Dogmatists",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.707,
-      "nice-nasty": 0.73,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.632,
+      "nice-nasty": 0.0,
+      "honest-false": 0.213
     },
     "attitude": {
-      "outgoing": 0.333,
-      "dream": 0.315
+      "outgoing": 0.645,
+      "dream": 0.25
     },
     "homsoc": {
       "means": {
-        "independent": true,
-        "taken_care_of": true,
-        "caretaker": true,
+        "independent": false,
+        "taken_care_of": false,
+        "caretaker": false,
         "needs_care": false,
-        "flags": [
-          "caretaker",
-          "neglected",
-          "starving"
-        ]
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.074,
-        "gender expression expression": 0.023
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.005
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "15187": {
+          "key": 15187,
+          "name": "Zuanelt Heldecop",
+          "age": 0,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Esa (11588)",
+            "father": "Grote (11587)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          11589,
-          15038,
-          16712
-        ]
+          11589
+        ],
+        "child": {
+          "birth": [
+            15189
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.534,
+      "all_incomes": [
+        1.213,
+        1.06,
+        1.37,
+        1.377,
+        1.497,
+        1.466,
+        1.278,
+        1.092,
+        0.599,
+        0.373,
+        0.534
+      ],
+      "job": {
+        "lawful": true,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 6,
+      "skin_color": 0,
       "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
-        "C",
+        "S",
         "S"
       ],
-      "health": 0.599,
-      "fertility": 0.684,
+      "health": 0.0,
+      "fertility": 0.503,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -88,15 +115,31 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.763
+            "new_health": 0.538
           },
           "death": false
         },
-        "1218": {
+        "1215": {
           "health": {
             "change": true,
-            "value_change": -0.164,
-            "new_health": 0.599
+            "value_change": -0.314,
+            "new_health": 0.224
+          },
+          "death": false
+        },
+        "1216": {
+          "health": {
+            "change": true,
+            "value_change": -0.192,
+            "new_health": 0.032
+          },
+          "death": false
+        },
+        "1217": {
+          "health": {
+            "change": true,
+            "value_change": -0.032,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -111,8 +154,8 @@
               11588
             ],
             "people names": [
-              "Heyman Sloet",
-              "Emgelberna Zuakart"
+              "Grote Heldecop",
+              "Esa Markolf"
             ],
             "label": "spouse",
             "committed": true
@@ -122,23 +165,72 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stDie lange straet3.se9.c2",
-              "street": "Die lange straet3",
+              "section": "stCorte gracht.se1.c2",
+              "street": "Corte gracht",
               "neighborhood": "visbuurt",
-              "unique id": 715
+              "unique id": 727
             }
           }
         ],
-        "1202": [
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 15189,
+            "people": [
+              11588,
+              15187
+            ],
+            "people names": [
+              "Esa Markolf",
+              "Zuanelt Heldecop"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1205": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 15187,
+              "name": "Zuanelt Heldecop",
+              "age": 0,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Esa (11588)",
+                "father": "Grote (11587)"
+              }
+            },
+            "label": "child"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.213
+          }
+        ],
+        "1208": [
           {
             "topic": "feelings change",
             "target": 11587,
-            "target name": "Heyman Sloet",
+            "target name": "Grote Heldecop",
+            "state": "infatuation",
+            "relationship": 11589
+          }
+        ],
+        "1210": [
+          {
+            "topic": "feelings change",
+            "target": 11587,
+            "target name": "Grote Heldecop",
             "state": "out of love",
             "relationship": 11589
           }
         ],
-        "1205": [
+        "1212": [
           {
             "key": 11589,
             "topic": "unmarried"
@@ -147,128 +239,43 @@
             "topic": "person died",
             "person": {
               "key": 11587,
-              "name": "Heyman Sloet",
-              "age": 45,
+              "name": "Grote Heldecop",
+              "age": 49,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
             },
             "label": "spouse"
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
           }
         ],
-        "1206": [
+        "1215": [
           {
-            "topic": "new relationship",
-            "key": 15038,
-            "people": [
-              11401,
-              11588
-            ],
-            "people names": [
-              "Geykonis Snepore",
-              "Emgelberna Zuakart"
-            ],
-            "label": "spouse",
-            "committed": true
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.599
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stScherbier straet.se1.c2",
-              "street": "Scherbier straet",
-              "neighborhood": "cingelzuid",
-              "unique id": 626
-            }
-          },
-          {
-            "topic": "neglected"
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
           }
         ],
-        "1207": [
+        "1216": [
           {
-            "topic": "neglected"
-          }
-        ],
-        "1208": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1209": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1210": [
-          {
-            "key": 15038,
-            "topic": "unmarried"
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.373
           },
           {
-            "topic": "person died",
-            "person": {
-              "key": 11401,
-              "name": "Geykonis Snepore",
-              "age": 56,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          },
-          {
-            "topic": "now caretaker",
-            "care dependants": []
-          },
-          {
-            "topic": "new caretaker",
-            "person": 11588
+            "topic": "event",
+            "event": "war",
+            "year": 1216
           }
         ],
-        "1211": [
+        "1217": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1212": [
-          {
-            "topic": "new relationship",
-            "key": 16712,
-            "people": [
-              10420,
-              11588
-            ],
-            "people names": [
-              "Bertoldus Panne",
-              "Emgelberna Zuakart"
-            ],
-            "label": "spouse",
-            "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stOp 't Speuy.se1.c2",
-              "street": "Op 't Speuy",
-              "neighborhood": "jorisbuurt",
-              "unique id": 198
-            }
+            "topic": "death",
+            "cause": "sickness"
           }
         ]
       }
@@ -277,18 +284,16 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stOp 't Speuy.se1.c2",
-      "street": "Op 't Speuy",
-      "neighborhood": "jorisbuurt",
-      "unique id": 198
+      "section": "stCorte gracht.se1.c2",
+      "street": "Corte gracht",
+      "neighborhood": "visbuurt",
+      "unique id": 727
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
-        11589,
-        15038,
-        16712
+        11589
       ]
     }
   }

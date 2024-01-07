@@ -1,19 +1,19 @@
 {
   "11039": {
     "alive": false,
-    "name": "Aghata",
-    "surname": "Schille",
-    "full name": "Aghata Schille",
+    "name": "Lenildis",
+    "surname": "Neve",
+    "full name": "Lenildis Neve",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.043,
-      "romantic interest": 0.679,
-      "sex interest": 0.539,
-      "gender expression": 0.02,
+      "sexuality": 0.072,
+      "romantic interest": 0.727,
+      "sex interest": 0.847,
+      "gender expression": 0.249,
       "sex": "f"
     },
-    "age": 46,
-    "birth year": 1164,
+    "age": 32,
+    "birth year": 1182,
     "sex": "f",
     "faction": "Zealots",
     "income class": [
@@ -21,13 +21,13 @@
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.179,
-      "honest-false": 0.913
+      "lawful-chaotic": 0.843,
+      "nice-nasty": 0.141,
+      "honest-false": 0.994
     },
     "attitude": {
-      "outgoing": 0.392,
-      "dream": 0.372
+      "outgoing": 0.0,
+      "dream": 0.539
     },
     "homsoc": {
       "means": {
@@ -36,53 +36,84 @@
         "caretaker": false,
         "needs_care": false,
         "flags": [
-          "neglected"
+          "starving"
         ]
       },
       "expression": {
-        "sexuality expression": 0.023,
-        "gender expression expression": 0.011
+        "sexuality expression": 0.035,
+        "gender expression expression": 0.031
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12496": {
+          "key": 12496,
+          "name": "Waldrada Borlutte",
+          "age": 0,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Lenildis (11039)",
+            "father": "Herman (11038)"
+          }
+        },
+        "15669": {
+          "key": 15669,
+          "name": "Trove Borlutte",
+          "age": 12,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Lenildis (11039)",
+            "father": "Herman (11038)"
+          }
+        },
+        "16263": {
+          "key": 16263,
+          "name": "Sybillia Borlutte",
+          "age": 17,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Lenildis (11039)",
+            "father": "Herman (11038)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          11040,
-          15679
-        ]
+          11040
+        ],
+        "child": {
+          "birth": [
+            12498,
+            15671,
+            16265
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
         1,
         "lower middle class"
       ],
-      "income": 1.215,
-      "all_incomes": [
-        1.035,
-        1.088,
-        1.261,
-        1.215
-      ],
-      "job": {
-        "lawful": false,
-        "honest": true
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 6,
-      "eye_color": "blue",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 2,
+      "eye_color": "brown",
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
-        "S",
-        "C"
+        "C",
+        "S"
       ],
-      "health": 0.818,
-      "fertility": 0.715,
+      "health": 0.695,
+      "fertility": 0.738,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -94,15 +125,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.818
+            "new_health": 0.695
           },
           "death": false
         },
-        "1209": {
+        "1213": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.818
+            "new_health": 0.695
           },
           "death": true
         }
@@ -117,8 +148,8 @@
               11039
             ],
             "people names": [
-              "Heinkin Brede",
-              "Aghata Schille"
+              "Herman Borlutte",
+              "Lenildis Neve"
             ],
             "label": "spouse",
             "committed": true
@@ -128,69 +159,94 @@
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stDie Coninc straet.se9.c1",
+              "section": "stDie Coninc straet.se7.c1",
               "street": "Die Coninc straet",
               "neighborhood": "kampbuurt",
-              "unique id": 475
+              "unique id": 472
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12498,
+            "people": [
+              11039,
+              12496
+            ],
+            "people names": [
+              "Lenildis Neve",
+              "Waldrada Borlutte"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1205": [
+        "1201": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12496,
+              "name": "Waldrada Borlutte",
+              "age": 0,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Lenildis (11039)",
+                "father": "Herman (11038)"
+              }
+            },
+            "label": "child"
+          }
+        ],
+        "1203": [
           {
             "topic": "feelings change",
             "target": 11038,
-            "target name": "Heinkin Brede",
+            "target name": "Herman Borlutte",
             "state": "out of love",
             "relationship": 11040
           }
         ],
-        "1206": [
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.035
-          }
-        ],
-        "1207": [
-          {
-            "key": 11040,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 11038,
-              "name": "Heinkin Brede",
-              "age": 43,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
-          }
-        ],
-        "1208": [
+        "1205": [
           {
             "topic": "new relationship",
-            "key": 15679,
+            "key": 15671,
             "people": [
-              11023,
-              11039
+              11039,
+              15669
             ],
             "people names": [
-              "Yoel Mey",
-              "Aghata Schille"
+              "Lenildis Neve",
+              "Trove Borlutte"
             ],
-            "label": "spouse",
-            "committed": true
-          },
-          {
-            "topic": "neglected"
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1209": [
+        "1206": [
           {
-            "topic": "neglected"
+            "topic": "new relationship",
+            "key": 16265,
+            "people": [
+              11039,
+              16263
+            ],
+            "people names": [
+              "Lenildis Neve",
+              "Sybillia Borlutte"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.568,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
+          {
+            "topic": "death",
+            "cause": "illness"
           }
         ]
       }
@@ -199,17 +255,16 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stDie Coninc straet.se9.c1",
+      "section": "stDie Coninc straet.se7.c1",
       "street": "Die Coninc straet",
       "neighborhood": "kampbuurt",
-      "unique id": 475
+      "unique id": 472
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        11040,
-        15679
+        11040
       ]
     }
   }

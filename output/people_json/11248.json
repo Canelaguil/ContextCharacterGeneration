@@ -1,54 +1,86 @@
 {
   "11248": {
     "alive": false,
-    "name": "Helpriko",
-    "surname": "Buc",
-    "full name": "Helpriko Buc",
+    "name": "Wauthem",
+    "surname": "Blome",
+    "full name": "Wauthem Blome",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.079,
-      "romantic interest": 0.462,
-      "sex interest": 0.804,
-      "gender expression": 0.088,
+      "sexuality": 0.065,
+      "romantic interest": 0.553,
+      "sex interest": 0.86,
+      "gender expression": 0.202,
       "sex": "m"
     },
-    "age": 22,
-    "birth year": 1179,
+    "age": 40,
+    "birth year": 1167,
     "sex": "m",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
       3,
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.318,
+      "lawful-chaotic": 0.517,
       "nice-nasty": 0.999,
-      "honest-false": 0.999
+      "honest-false": 0.0
     },
     "attitude": {
-      "outgoing": 0.5,
-      "dream": 0.444
+      "outgoing": 0.261,
+      "dream": 0.542
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.063,
-        "gender expression expression": 0.038
+        "sexuality expression": 0.031,
+        "gender expression expression": 0.138
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13193": {
+          "key": 13193,
+          "name": "Mabelie Blome",
+          "age": 43,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Riet (11249)",
+            "father": "Wauthem (11248)"
+          }
+        },
+        "13829": {
+          "key": 13829,
+          "name": "Brundonis Wauthemsdochter",
+          "age": 38,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Riet (11249)",
+            "father": "Wauthem (11248)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          11250
-        ]
+          11250,
+          16574
+        ],
+        "child": {
+          "birth": [
+            13194,
+            13830
+          ]
+        }
       }
     },
     "occupation": {
@@ -57,10 +89,16 @@
         3,
         "upper middle class"
       ],
-      "income": 0.934,
+      "income": 0.0,
       "all_incomes": [
-        0.921,
-        0.934
+        1.073,
+        0.736,
+        0.154,
+        0.092,
+        0.04,
+        0.0,
+        0.0,
+        0.0
       ],
       "job": {
         "lawful": false,
@@ -68,16 +106,16 @@
       }
     },
     "genetics": {
-      "skin_color": 4,
+      "skin_color": 9,
       "eye_color": "brown",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "C",
-        "S"
+        "S",
+        "C"
       ],
-      "health": 0.712,
-      "fertility": 0.683,
+      "health": 0.72,
+      "fertility": 0.749,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -89,7 +127,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.712
+            "new_health": 0.72
+          },
+          "death": false
+        },
+        "1206": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.72
           },
           "death": true
         }
@@ -99,7 +145,12 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.921
+            "income": 1.073
+          },
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.736
           },
           {
             "topic": "new relationship",
@@ -109,8 +160,8 @@
               11249
             ],
             "people names": [
-              "Helpriko Buc",
-              "Marie Fierenblayse"
+              "Wauthem Blome",
+              "Riet Omekine"
             ],
             "label": "spouse",
             "committed": true
@@ -120,18 +171,115 @@
             "home": {
               "income class": 3,
               "income class label": "upper middle class",
-              "section": "stBreestraat.se3.c3",
+              "section": "stBreestraat.se7.c3",
               "street": "Breestraat",
               "neighborhood": "olvbuurt",
-              "unique id": 558
+              "unique id": 577
             }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.154
           },
           {
-            "topic": "feelings change",
-            "target": 11249,
-            "target name": "Marie Fierenblayse",
-            "state": "solid love",
-            "relationship": 11250
+            "topic": "new relationship",
+            "key": 13194,
+            "people": [
+              11248,
+              13193
+            ],
+            "people names": [
+              "Wauthem Blome",
+              "Mabelie Blome"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 13830,
+            "people": [
+              11248,
+              13829
+            ],
+            "people names": [
+              "Wauthem Blome",
+              "Brundonis Wauthemsdochter"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.092,
+            "inhabitants": []
+          }
+        ],
+        "1203": [
+          {
+            "topic": "not enough income",
+            "income": 0.04,
+            "inhabitants": []
+          }
+        ],
+        "1204": [
+          {
+            "key": 11250,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11249,
+              "name": "Riet Omekine",
+              "age": 22,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 16574,
+            "people": [
+              11248,
+              11450
+            ],
+            "people names": [
+              "Wauthem Blome",
+              "Hille Corbeel"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          },
+          {
+            "topic": "death",
+            "cause": "illness"
           }
         ]
       }
@@ -140,16 +288,17 @@
     "home": {
       "income class": 3,
       "income class label": "upper middle class",
-      "section": "stBreestraat.se3.c3",
+      "section": "stBreestraat.se7.c3",
       "street": "Breestraat",
       "neighborhood": "olvbuurt",
-      "unique id": 558
+      "unique id": 577
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        11250
+        11250,
+        16574
       ]
     }
   }

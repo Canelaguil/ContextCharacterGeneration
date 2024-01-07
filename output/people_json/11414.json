@@ -1,78 +1,108 @@
 {
   "11414": {
     "alive": false,
-    "name": "Hille",
-    "surname": "Brune",
-    "full name": "Hille Brune",
+    "name": "Geile",
+    "surname": "Commer",
+    "full name": "Geile Commer",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.013,
-      "romantic interest": 0.643,
-      "sex interest": 0.999,
-      "gender expression": 0.023,
+      "sexuality label": "bi",
+      "sexuality": 0.441,
+      "romantic interest": 0.947,
+      "sex interest": 0.558,
+      "gender expression": 0.467,
       "sex": "f"
     },
-    "age": 52,
-    "birth year": 1158,
+    "age": 39,
+    "birth year": 1173,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "Zealots",
     "income class": [
-      2,
-      "middle class"
+      3,
+      "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.216,
-      "nice-nasty": 0.438,
-      "honest-false": 0.68
+      "lawful-chaotic": 0.311,
+      "nice-nasty": 0.896,
+      "honest-false": 0.443
     },
     "attitude": {
-      "outgoing": 0.699,
-      "dream": 0.52
+      "outgoing": 0.387,
+      "dream": 0.394
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
         "flags": [
+          "caretaker",
           "starving"
         ]
       },
       "expression": {
-        "sexuality expression": 0.004,
-        "gender expression expression": 0.009
+        "sexuality expression": 0.197,
+        "gender expression expression": 0.202
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12598": {
+          "key": 12598,
+          "name": "Remsindis van Ioris",
+          "age": 48,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Geile (11414)",
+            "father": "Ioris (11413)"
+          }
+        },
+        "16323": {
+          "key": 16323,
+          "name": "Ase van Ioris",
+          "age": 15,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Geile (11414)",
+            "father": "Ioris (11413)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11415
-        ]
+        ],
+        "child": {
+          "birth": [
+            12600,
+            16325
+          ]
+        }
       }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        2,
-        "middle class"
+        3,
+        "upper middle class"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
       "skin_color": 5,
-      "eye_color": "green",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "eye_color": "brown",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
-        "C",
-        "S"
+        "S",
+        "C"
       ],
-      "health": 0.056,
-      "fertility": 0.453,
+      "health": 0.686,
+      "fertility": 0.703,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -84,23 +114,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.456
+            "new_health": 0.686
           },
           "death": false
         },
-        "1208": {
+        "1211": {
           "health": {
-            "change": true,
-            "value_change": -0.247,
-            "new_health": 0.209
-          },
-          "death": false
-        },
-        "1209": {
-          "health": {
-            "change": true,
-            "value_change": -0.153,
-            "new_health": 0.056
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.686
           },
           "death": true
         }
@@ -115,8 +137,8 @@
               11414
             ],
             "people names": [
-              "Anthonius",
-              "Hille Brune"
+              "Ioris",
+              "Geile Commer"
             ],
             "label": "spouse",
             "committed": true
@@ -124,25 +146,60 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stScherbier straet.se1.c2",
-              "street": "Scherbier straet",
+              "income class": 3,
+              "income class label": "upper middle class",
+              "section": "stMuurhuysen1.se1.c3",
+              "street": "Muurhuysen1",
               "neighborhood": "cingelzuid",
-              "unique id": 632
+              "unique id": 645
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12600,
+            "people": [
+              11414,
+              12598
+            ],
+            "people names": [
+              "Geile Commer",
+              "Remsindis van Ioris"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 16325,
+            "people": [
+              11414,
+              16323
+            ],
+            "people names": [
+              "Geile Commer",
+              "Ase van Ioris"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1208": [
           {
-            "topic": "feelings change",
-            "target": 11413,
-            "target name": "Anthonius",
-            "state": "out of love",
-            "relationship": 11415
+            "topic": "not enough income",
+            "income": 0.191,
+            "inhabitants": []
           }
         ],
         "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0.013,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
           {
             "key": 11415,
             "topic": "unmarried"
@@ -151,8 +208,8 @@
             "topic": "person died",
             "person": {
               "key": 11413,
-              "name": "Anthonius",
-              "age": 46,
+              "name": "Ioris",
+              "age": 45,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
@@ -163,18 +220,33 @@
             "topic": "not enough income",
             "income": 0,
             "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "death",
+            "cause": "illness"
           }
         ]
       }
     },
     "key": 11414,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stScherbier straet.se1.c2",
-      "street": "Scherbier straet",
+      "income class": 3,
+      "income class label": "upper middle class",
+      "section": "stMuurhuysen1.se1.c3",
+      "street": "Muurhuysen1",
       "neighborhood": "cingelzuid",
-      "unique id": 632
+      "unique id": 645
     },
     "relationship status": {
       "taken": false,

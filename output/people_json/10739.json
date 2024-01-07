@@ -1,33 +1,33 @@
 {
   "10739": {
     "alive": false,
-    "name": "Katrin",
-    "surname": "Pinart",
-    "full name": "Katrin Pinart",
+    "name": "Victoria",
+    "surname": "Paus",
+    "full name": "Victoria Paus",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": -0.0,
-      "romantic interest": 0.721,
-      "sex interest": 0.671,
-      "gender expression": 0.194,
+      "sexuality": 0.072,
+      "romantic interest": 0.607,
+      "sex interest": 0.708,
+      "gender expression": 0.176,
       "sex": "f"
     },
-    "age": 46,
-    "birth year": 1159,
+    "age": 27,
+    "birth year": 1176,
     "sex": "f",
     "faction": "No religion",
     "income class": [
-      0,
-      "working class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.739,
-      "nice-nasty": 0.287,
-      "honest-false": 0.206
+      "lawful-chaotic": 0.376,
+      "nice-nasty": 0.521,
+      "honest-false": 0.979
     },
     "attitude": {
-      "outgoing": 0.902,
-      "dream": 0.56
+      "outgoing": 0.36,
+      "dream": 0.494
     },
     "homsoc": {
       "means": {
@@ -38,49 +38,68 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.124
+        "sexuality expression": 0.033,
+        "gender expression expression": 0.076
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13012": {
+          "key": 13012,
+          "name": "Iris Vincs",
+          "age": 17,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Victoria (10739)",
+            "father": "Dolf (10738)"
+          }
+        },
+        "13674": {
+          "key": 13674,
+          "name": "Adam van Dolf",
+          "age": 5,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Victoria (10739)",
+            "father": "Dolf (10738)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10740
-        ]
+        ],
+        "child": {
+          "birth": [
+            13014,
+            13676
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
-        0,
-        "working class"
+        1,
+        "lower middle class"
       ],
-      "income": 0.857,
-      "all_incomes": [
-        1.238,
-        1.098,
-        0.856,
-        0.841,
-        0.857
-      ],
-      "job": {
-        "lawful": true,
-        "honest": false
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 5,
-      "eye_color": "brown",
-      "hair_color": "red",
-      "hair_color_code": 3,
+      "skin_color": 6,
+      "eye_color": "blue",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "C",
-        "C"
+        "S",
+        "S"
       ],
-      "health": 0.732,
-      "fertility": 0.713,
+      "health": 0.287,
+      "fertility": 0.466,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -92,26 +111,29 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.732
+            "new_health": 0.535
           },
           "death": false
         },
-        "1204": {
+        "1201": {
+          "health": {
+            "change": true,
+            "value_change": -0.248,
+            "new_health": 0.287
+          },
+          "death": false
+        },
+        "1202": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.732
+            "new_health": 0.287
           },
-          "death": true
+          "death": false
         }
       },
       "events": {
         "1200": [
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.238
-          },
           {
             "topic": "new relationship",
             "key": 10740,
@@ -120,8 +142,8 @@
               10739
             ],
             "people names": [
-              "Lennot Hoesterlinc",
-              "Katrin Pinart"
+              "Dolf Vincs",
+              "Victoria Paus"
             ],
             "label": "spouse",
             "committed": true
@@ -129,47 +151,72 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stPotstraet.se3.c0",
-              "street": "Potstraet",
-              "neighborhood": "kampbuurt",
-              "unique id": 346
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stCoppelstraet.se1.c1",
+              "street": "Coppelstraet",
+              "neighborhood": "agnesbuurt",
+              "unique id": 337
             }
           }
         ],
-        "1203": [
+        "1201": [
           {
-            "key": 10740,
-            "topic": "unmarried"
+            "topic": "new relationship",
+            "key": 13014,
+            "people": [
+              10739,
+              13012
+            ],
+            "people names": [
+              "Victoria Paus",
+              "Iris Vincs"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 13676,
+            "people": [
+              10739,
+              13674
+            ],
+            "people names": [
+              "Victoria Paus",
+              "Adam van Dolf"
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
-            "topic": "person died",
-            "person": {
-              "key": 10738,
-              "name": "Lennot Hoesterlinc",
-              "age": 30,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
+            "topic": "feelings change",
+            "target": 10738,
+            "target name": "Dolf Vincs",
+            "state": "infatuation",
+            "relationship": 10740
+          },
+          {
+            "topic": "death",
+            "cause": "childbirth"
           }
         ]
       }
     },
     "key": 10739,
     "home": {
-      "income class": 0,
-      "income class label": "working class",
-      "section": "stPotstraet.se3.c0",
-      "street": "Potstraet",
-      "neighborhood": "kampbuurt",
-      "unique id": 346
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stCoppelstraet.se1.c1",
+      "street": "Coppelstraet",
+      "neighborhood": "agnesbuurt",
+      "unique id": 337
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
         10740
       ]

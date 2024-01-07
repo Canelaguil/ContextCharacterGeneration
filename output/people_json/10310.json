@@ -1,33 +1,33 @@
 {
   "10310": {
     "alive": false,
-    "name": "Gloria",
-    "surname": "",
-    "full name": "Gloria",
+    "name": "Woltwigis",
+    "surname": "Lecker",
+    "full name": "Woltwigis Lecker",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.026,
-      "romantic interest": 0.53,
-      "sex interest": 0.71,
-      "gender expression": 0.047,
+      "sexuality": 0.067,
+      "romantic interest": 0.627,
+      "sex interest": 0.861,
+      "gender expression": 0.25,
       "sex": "f"
     },
     "age": 53,
-    "birth year": 1152,
+    "birth year": 1174,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "Zealots",
     "income class": [
       0,
       "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.56,
-      "nice-nasty": 0.585,
-      "honest-false": 0.21
+      "lawful-chaotic": 0.517,
+      "nice-nasty": 0.24,
+      "honest-false": 0.319
     },
     "attitude": {
-      "outgoing": 0.453,
-      "dream": 0.25
+      "outgoing": 0.281,
+      "dream": 0.268
     },
     "homsoc": {
       "means": {
@@ -35,20 +35,52 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "caretaker",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.018,
-        "gender expression expression": 0.029
+        "sexuality expression": 0.048,
+        "gender expression expression": 0.173
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14801": {
+          "key": 14801,
+          "name": "Amelgeir Hubrechtsdochter",
+          "age": 4,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Woltwigis (10310)",
+            "father": "Hubrecht (10309)"
+          }
+        },
+        "17175": {
+          "key": 17175,
+          "name": "Ydier van Hubrecht",
+          "age": 41,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Woltwigis (10310)",
+            "father": "Hubrecht (10309)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10311
-        ]
+        ],
+        "child": {
+          "birth": [
+            14803,
+            17177
+          ]
+        }
       }
     },
     "occupation": {
@@ -61,16 +93,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 7,
-      "eye_color": "green",
+      "skin_color": 1,
+      "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
-        "C",
-        "S"
+        "S",
+        "C"
       ],
-      "health": 0.037,
-      "fertility": 0.687,
+      "health": 0.812,
+      "fertility": 0.887,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -82,33 +114,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.682
+            "new_health": 0.812
           },
           "death": false
-        },
-        "1202": {
-          "health": {
-            "change": true,
-            "value_change": -0.269,
-            "new_health": 0.413
-          },
-          "death": false
-        },
-        "1203": {
-          "health": {
-            "change": true,
-            "value_change": -0.314,
-            "new_health": 0.099
-          },
-          "death": false
-        },
-        "1204": {
-          "health": {
-            "change": true,
-            "value_change": -0.062,
-            "new_health": 0.037
-          },
-          "death": true
         }
       },
       "events": {
@@ -121,8 +129,8 @@
               10310
             ],
             "people names": [
-              "Snellekine Spriet",
-              "Gloria"
+              "Hubrecht",
+              "Woltwigis Lecker"
             ],
             "label": "spouse",
             "committed": true
@@ -135,8 +143,261 @@
               "section": "stSt. Joris straet.se1.c0",
               "street": "St. Joris straet",
               "neighborhood": "jorisbuurt",
-              "unique id": 144
+              "unique id": 135
             }
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 14803,
+            "people": [
+              10310,
+              14801
+            ],
+            "people names": [
+              "Woltwigis Lecker",
+              "Amelgeir Hubrechtsdochter"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1208": [
+          {
+            "topic": "new relationship",
+            "key": 17177,
+            "people": [
+              10310,
+              17175
+            ],
+            "people names": [
+              "Woltwigis Lecker",
+              "Ydier van Hubrecht"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.703,
+            "inhabitants": [
+              17175
+            ]
+          }
+        ],
+        "1209": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 14801,
+              "name": "Amelgeir Hubrechtsdochter",
+              "age": 4,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Woltwigis (10310)",
+                "father": "Hubrecht (10309)"
+              }
+            },
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.656,
+            "inhabitants": [
+              17175
+            ]
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0.533,
+            "inhabitants": [
+              17175
+            ]
+          }
+        ],
+        "1211": [
+          {
+            "key": 10311,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10309,
+              "name": "Hubrecht",
+              "age": 39,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              17175
+            ]
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              17175
+            ]
+          }
+        ],
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              17175
+            ]
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              17175
+            ]
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              17175
+            ]
+          }
+        ],
+        "1216": [
+          {
+            "topic": "event",
+            "event": "war",
+            "year": 1216
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              17175
+            ]
+          }
+        ],
+        "1217": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              17175
+            ]
+          }
+        ],
+        "1218": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              17175
+            ]
+          }
+        ],
+        "1219": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              17175
+            ]
+          }
+        ],
+        "1220": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              17175
+            ]
+          }
+        ],
+        "1221": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              17175
+            ]
+          }
+        ],
+        "1222": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              17175
+            ]
+          }
+        ],
+        "1223": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              17175
+            ]
+          }
+        ],
+        "1224": [
+          {
+            "topic": "not caretaker"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              17175
+            ]
+          }
+        ],
+        "1225": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              17175
+            ]
+          }
+        ],
+        "1226": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              17175
+            ]
+          },
+          {
+            "topic": "death",
+            "cause": "starvation"
           }
         ]
       }
@@ -148,11 +409,11 @@
       "section": "stSt. Joris straet.se1.c0",
       "street": "St. Joris straet",
       "neighborhood": "jorisbuurt",
-      "unique id": 144
+      "unique id": 135
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         10311
       ]

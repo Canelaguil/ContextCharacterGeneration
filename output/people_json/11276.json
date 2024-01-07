@@ -1,33 +1,33 @@
 {
   "11276": {
     "alive": false,
-    "name": "Segherarden",
-    "surname": "Clove",
-    "full name": "Segherarden Clove",
+    "name": "Salome",
+    "surname": "Baers",
+    "full name": "Salome Baers",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.079,
-      "romantic interest": 0.865,
-      "sex interest": 0.541,
-      "gender expression": 0.059,
+      "sexuality": 0.147,
+      "romantic interest": 0.575,
+      "sex interest": 0.602,
+      "gender expression": 0.051,
       "sex": "f"
     },
-    "age": 53,
-    "birth year": 1158,
+    "age": 54,
+    "birth year": 1155,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
-      3,
-      "upper middle class"
+      4,
+      "nobility"
     ],
     "personality": {
-      "lawful-chaotic": 0.414,
-      "nice-nasty": 0.0,
-      "honest-false": 0.765
+      "lawful-chaotic": 0.709,
+      "nice-nasty": 0.151,
+      "honest-false": 0.441
     },
     "attitude": {
-      "outgoing": 0.521,
-      "dream": 0.153
+      "outgoing": 0.275,
+      "dream": 0.423
     },
     "homsoc": {
       "means": {
@@ -35,11 +35,13 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.06,
-        "gender expression expression": 0.032
+        "sexuality expression": 0.025,
+        "gender expression expression": 0.043
       }
     },
     "network": {
@@ -52,35 +54,25 @@
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
-        3,
-        "upper middle class"
+        4,
+        "nobility"
       ],
-      "income": 0.91,
-      "all_incomes": [
-        0.958,
-        0.767,
-        0.934,
-        0.823,
-        0.91
-      ],
-      "job": {
-        "lawful": false,
-        "honest": true
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 1,
-      "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 3,
+      "eye_color": "blue",
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
         "C",
         "S"
       ],
-      "health": 0.0,
-      "fertility": 0.554,
+      "health": 0.007,
+      "fertility": 0.666,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -92,31 +84,39 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.592
+            "new_health": 0.664
+          },
+          "death": false
+        },
+        "1205": {
+          "health": {
+            "change": true,
+            "value_change": -0.248,
+            "new_health": 0.416
+          },
+          "death": false
+        },
+        "1206": {
+          "health": {
+            "change": true,
+            "value_change": -0.262,
+            "new_health": 0.154
+          },
+          "death": false
+        },
+        "1207": {
+          "health": {
+            "change": true,
+            "value_change": -0.13,
+            "new_health": 0.024
           },
           "death": false
         },
         "1208": {
           "health": {
             "change": true,
-            "value_change": -0.337,
-            "new_health": 0.255
-          },
-          "death": false
-        },
-        "1209": {
-          "health": {
-            "change": true,
-            "value_change": -0.248,
+            "value_change": -0.017,
             "new_health": 0.007
-          },
-          "death": false
-        },
-        "1210": {
-          "health": {
-            "change": true,
-            "value_change": -0.007,
-            "new_health": 0.0
           },
           "death": true
         }
@@ -131,8 +131,8 @@
               11276
             ],
             "people names": [
-              "Sylawert",
-              "Segherarden Clove"
+              "Radewijns Huntekin",
+              "Salome Baers"
             ],
             "label": "spouse",
             "committed": true
@@ -140,23 +140,25 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stBreestraat.se3.c3",
-              "street": "Breestraat",
+              "income class": 4,
+              "income class label": "nobility",
+              "section": "stLievevrouwe kerch.se3.c4",
+              "street": "Lievevrouwe kerch",
               "neighborhood": "olvbuurt",
-              "unique id": 567
+              "unique id": 588
             }
           }
         ],
-        "1206": [
+        "1201": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.958
+            "topic": "feelings change",
+            "target": 11275,
+            "target name": "Radewijns Huntekin",
+            "state": "out of love",
+            "relationship": 11277
           }
         ],
-        "1209": [
+        "1206": [
           {
             "key": 11277,
             "topic": "unmarried"
@@ -165,25 +167,48 @@
             "topic": "person died",
             "person": {
               "key": 11275,
-              "name": "Sylawert",
-              "age": 45,
+              "name": "Radewijns Huntekin",
+              "age": 55,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
             },
             "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "death",
+            "cause": "old age"
           }
         ]
       }
     },
     "key": 11276,
     "home": {
-      "income class": 3,
-      "income class label": "upper middle class",
-      "section": "stBreestraat.se3.c3",
-      "street": "Breestraat",
+      "income class": 4,
+      "income class label": "nobility",
+      "section": "stLievevrouwe kerch.se3.c4",
+      "street": "Lievevrouwe kerch",
       "neighborhood": "olvbuurt",
-      "unique id": 567
+      "unique id": 588
     },
     "relationship status": {
       "taken": false,

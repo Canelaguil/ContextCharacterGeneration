@@ -1,61 +1,95 @@
 {
   "10946": {
     "alive": false,
-    "name": "Jacomin",
-    "surname": "Pluuier",
-    "full name": "Jacomin Pluuier",
+    "name": "Nellen",
+    "surname": "",
+    "full name": "Nellen",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.132,
-      "romantic interest": 0.636,
-      "sex interest": 0.217,
-      "gender expression": 0.103,
+      "sexuality": 0.075,
+      "romantic interest": 0.998,
+      "sex interest": 0.74,
+      "gender expression": 0.167,
       "sex": "f"
     },
-    "age": 28,
-    "birth year": 1178,
+    "age": 30,
+    "birth year": 1179,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.371,
-      "nice-nasty": 0.0,
-      "honest-false": 0.208
+      "lawful-chaotic": 0.881,
+      "nice-nasty": 0.999,
+      "honest-false": 0.305
     },
     "attitude": {
-      "outgoing": 0.568,
-      "dream": 0.3
+      "outgoing": 0.462,
+      "dream": 0.696
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
         "flags": [
-          "neglected"
+          "caretaker",
+          "starving"
         ]
       },
       "expression": {
-        "sexuality expression": 0.062,
-        "gender expression expression": 0.014
+        "sexuality expression": 0.035,
+        "gender expression expression": 0.095
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "12394": {
-          "key": 12394,
-          "name": "Menaures Godefridusszoon",
-          "age": 5,
+        "12466": {
+          "key": 12466,
+          "name": "Reymodis Caen",
+          "age": 12,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Nellen (10946)",
+            "father": "Gilis (10945)"
+          }
+        },
+        "13727": {
+          "key": 13727,
+          "name": "Cofte Caen",
+          "age": 18,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Nellen (10946)",
+            "father": "Gilis (10945)"
+          }
+        },
+        "14968": {
+          "key": 14968,
+          "name": "Tarun Caen",
+          "age": 45,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Nellen (10946)",
+            "father": "Gilis (10945)"
+          }
+        },
+        "16752": {
+          "key": 16752,
+          "name": "Kerolus Caen",
+          "age": 27,
           "alive": false,
           "sex": "m",
           "parents": {
-            "mother": "Jacomin (10946)",
-            "father": "Godefridus (10945)"
+            "mother": "Nellen (10946)",
+            "father": "Gilis (10945)"
           }
         }
       },
@@ -65,7 +99,10 @@
         ],
         "child": {
           "birth": [
-            12396
+            12468,
+            13729,
+            14970,
+            16754
           ]
         }
       }
@@ -80,7 +117,7 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 5,
+      "skin_color": 9,
       "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
@@ -88,8 +125,8 @@
         "C",
         "C"
       ],
-      "health": 0.742,
-      "fertility": 0.758,
+      "health": 0.708,
+      "fertility": 0.745,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -101,17 +138,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.742
+            "new_health": 0.708
           },
           "death": false
-        },
-        "1205": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.742
-          },
-          "death": true
         }
       },
       "events": {
@@ -124,8 +153,8 @@
               10946
             ],
             "people names": [
-              "Godefridus",
-              "Jacomin Pluuier"
+              "Gilis Caen",
+              "Nellen"
             ],
             "label": "spouse",
             "committed": true
@@ -135,67 +164,144 @@
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stSt. Ians straet.se5.c1",
+              "section": "stSt. Ians straet.se3.c1",
               "street": "St. Ians straet",
               "neighborhood": "kampbuurt",
-              "unique id": 432
+              "unique id": 424
             }
           },
           {
             "topic": "new relationship",
-            "key": 12396,
+            "key": 12468,
             "people": [
               10946,
-              12394
+              12466
             ],
             "people names": [
-              "Jacomin Pluuier",
-              "Menaures Godefridusszoon"
+              "Nellen",
+              "Reymodis Caen"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 13729,
+            "people": [
+              10946,
+              13727
+            ],
+            "people names": [
+              "Nellen",
+              "Cofte Caen"
             ],
             "label": "parentchild",
             "committed": false
           },
           {
-            "topic": "neglected"
-          }
-        ],
-        "1201": [
-          {
             "topic": "feelings change",
             "target": 10945,
-            "target name": "Godefridus",
-            "state": "infatuation",
+            "target name": "Gilis Caen",
+            "state": "out of love",
             "relationship": 10947
-          },
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1202": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1203": [
-          {
-            "topic": "feelings change",
-            "target": 10945,
-            "target name": "Godefridus",
-            "state": "solid love",
-            "relationship": 10947
-          },
-          {
-            "topic": "neglected"
           }
         ],
         "1204": [
           {
-            "topic": "neglected"
+            "topic": "new relationship",
+            "key": 14970,
+            "people": [
+              10946,
+              14968
+            ],
+            "people names": [
+              "Nellen",
+              "Tarun Caen"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1205": [
+        "1207": [
           {
-            "topic": "neglected"
+            "topic": "new relationship",
+            "key": 16754,
+            "people": [
+              10946,
+              16752
+            ],
+            "people names": [
+              "Nellen",
+              "Kerolus Caen"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1208": [
+          {
+            "key": 10947,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10945,
+              "name": "Gilis Caen",
+              "age": 53,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              14968,
+              15004,
+              16025,
+              21838,
+              22311,
+              23119,
+              23289,
+              23598,
+              18608,
+              23103,
+              24964,
+              26644,
+              21529,
+              22392,
+              28881,
+              29276,
+              29606,
+              29882,
+              24246,
+              23558,
+              30148,
+              24085,
+              30561,
+              24203
+            ]
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": [
+              26644,
+              28881,
+              29276,
+              29606,
+              29882,
+              30148,
+              30561
+            ]
+          },
+          {
+            "topic": "death",
+            "cause": "starvation"
           }
         ]
       }
@@ -204,14 +310,14 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stSt. Ians straet.se5.c1",
+      "section": "stSt. Ians straet.se3.c1",
       "street": "St. Ians straet",
       "neighborhood": "kampbuurt",
-      "unique id": 432
+      "unique id": 424
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         10947
       ]

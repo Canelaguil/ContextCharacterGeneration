@@ -10,15 +10,27 @@ def get_person(p_key):
         p = json.load(json_data)
     return p[f"{p_key}"]
 
-def get_other_from_relationship(my_key, r_key):
+def get_name(p_key):
+    p = get_person(p_key)
+    return p['full name']
+
+def get_other_from_relationship(my_key, r_key, output=False):
+    my_key = int(my_key) # important !
     directory = 'output/relationships_json/'
     f = f"{r_key}.json"
     path = f"{directory}{f}"
     with open(path) as json_data:
         r = json.load(json_data)
     r = r[f"{r_key}"]
-    p = r['people'][0] if r['people'][0] != my_key else r['people'][1]
-    return get_person(p)
+    if output:
+        print('---------')
+        print(r['people'])
+        print(my_key)
+        p2 = r['people'][0] if r['people'][1] == my_key else r['people'][1]
+        print(p2)
+    else:
+        p2 = r['people'][0] if r['people'][1] == my_key else r['people'][1]
+    return get_person(p2)
 
 def formatted(info, key=None):
     if key:
@@ -53,14 +65,20 @@ if __name__ == '__main__':
 
             # basics
             write_to_file(d, f"{p['age']} ({'alive' if p['alive'] else 'dead'})", 'Age')
-            sbls = ''
-            if 'sibling' in p['network']['relationship keys']:
-                for sbl in p['network']['relationship keys']['sibling']:
-                    other = get_other_from_relationship(key, sbl)
-                    sbls += f"{other['full name']} ({other['key']}), "
-            write_to_file(d, sbls, 'siblings')
-            # write_to_file(d, f"{len(p['network']['siblings'])}", 'siblings')
-            # write_to_file(d, f"{len(p['network']['children']['birth'])}", 'children')
+            for relation_type in p['network']['relationship keys']:
+                ppl = ''
+                
+                if relation_type == 'child':
+                    for c in p['network']['relationship keys']['child']['birth']:
+                        other = get_other_from_relationship(key, c)
+                        ppl += f"{other['full name']} ({other['key']}), "
+                        label_name = 'children'
+                else:
+                    for relation_keys in p['network']['relationship keys'][relation_type]:
+                        other = get_other_from_relationship(key, relation_keys)
+                        ppl += f"{other['full name']} ({other['key']}), "
+                        label_name = relation_type + 's'
+                write_to_file(d, ppl, label_name)
             if p['home']:
                 write_to_file(d, f"{p['home']['street']} in the {p['home']['neighborhood']} neighborhood", 'address')
             else:
@@ -99,7 +117,11 @@ if __name__ == '__main__':
 
             # events
             write_to_file(d, title('events'))
+            prev_year_neglected = False
             for y, events in p['memory']['events'].items():
+                # if the only event is being neglected and we're not gonna print that...
+                if any(e2['topic'] == 'neglected' for e2 in events) and prev_year_neglected == True and len(events) == 1:
+                    break
                 write_to_file(d, f"-~{y}~-")
                 for e in events:
                     topic = e['topic']
@@ -128,7 +150,8 @@ if __name__ == '__main__':
                     elif topic == 'job notice':
                         write_to_file(d, f"Income change: {e['notice']}, with income {e['income']}.")
                     elif topic == 'neglected':
-                        write_to_file(d, "Neglected while needing care.")
+                        if not prev_year_neglected:
+                            write_to_file(d, "Neglected while needing care.")
                     elif topic == 'now caretaker':
                         ppl = ''
                         for i in e['care dependants']:
@@ -140,6 +163,22 @@ if __name__ == '__main__':
                         write_to_file(d, f"New caretaker in household: {other['full name']}.")
                     elif topic == 'not caretaker':
                         write_to_file(d, "No longer caretaker in household.")
+                    elif topic == 'event':
+                        write_to_file(d, f"{e['event'].title()} of {e['year']}")
+                    elif topic == 'death':
+                        write_to_file(d, f"Died of {e['cause']}.")
+                    elif topic == 'update':
+                        if e['update'] == 'parent married':
+                            write_to_file(d, f"Parent {get_name(e['parent'])} remarried to {get_name(e['new partner'])}.")
                     else:
                         print(e)
+
+                    if any(e2['topic'] == 'neglected' for e2 in events):
+                        prev_year_neglected = True
+                    else:
+                        prev_year_neglected = False
+
+                    if not any(e2['topic'] == 'neglected' for e2 in events) and not p['alive']:
+                        # print(p)
+                        print('sdf')
 

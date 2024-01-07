@@ -1,86 +1,106 @@
 {
   "14629": {
     "alive": false,
-    "name": "Richolfus",
-    "surname": "van Lieuin",
-    "full name": "Richolfus van Lieuin",
+    "name": "Badeloghen",
+    "surname": "Midach",
+    "full name": "Badeloghen Midach",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.065,
-      "romantic interest": 0.739,
-      "sex interest": 0.822,
-      "gender expression": 0.163,
-      "sex": "m"
+      "sexuality label": "gay",
+      "sexuality": 0.941,
+      "romantic interest": 0.615,
+      "sex interest": 0.835,
+      "gender expression": 0.295,
+      "sex": "f"
     },
-    "age": 2,
-    "birth year": 1205,
-    "sex": "m",
-    "faction": "No religion",
+    "age": 26,
+    "birth year": 1203,
+    "sex": "f",
+    "faction": "Dogmatists",
     "income class": [
-      4,
-      "nobility"
+      2,
+      "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.978,
-      "nice-nasty": 0.621,
-      "honest-false": 0.8
+      "lawful-chaotic": 0.901,
+      "nice-nasty": 0.0,
+      "honest-false": 0.999
     },
     "attitude": {
-      "outgoing": 0.596,
-      "dream": 0.577
+      "outgoing": 0.255,
+      "dream": 0.34
     },
     "homsoc": {
       "means": {
         "independent": false,
         "taken_care_of": false,
         "caretaker": true,
-        "needs_care": true,
+        "needs_care": false,
         "flags": [
-          "neglected"
+          "neglected",
+          "starving"
         ]
       },
       "expression": {
-        "sexuality expression": 0.035,
-        "gender expression expression": 0.075
+        "sexuality expression": 0.517,
+        "gender expression expression": 0.045
       }
     },
     "network": {
       "parents": {
-        "mother": "Hildegardis (11858)",
-        "father": "Lieuin (11857)"
+        "mother": "Flore (11930)",
+        "father": "Wedeghe (11929)"
       },
-      "children": {},
+      "children": {
+        "23286": {
+          "key": 23286,
+          "name": "Karel Vrode",
+          "age": 17,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Badeloghen (14629)",
+            "father": "Lammekin (13042)"
+          }
+        }
+      },
       "relationship keys": {
         "parent": [
           14630,
           14631
         ],
         "sibling": [
-          14632,
-          14633
-        ]
+          16492
+        ],
+        "spouse": [
+          22749
+        ],
+        "child": {
+          "birth": [
+            23288
+          ]
+        }
       }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        4,
-        "nobility"
+        2,
+        "middle class"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 6,
+      "skin_color": 3,
       "eye_color": "green",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
       "hair_type": [
         "S",
         "C"
       ],
-      "health": 0.33,
-      "fertility": 0.535,
+      "health": 0.654,
+      "fertility": 0.739,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -88,38 +108,78 @@
     },
     "memory": {
       "health": {
-        "1206": {
+        "1204": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.601
+            "new_health": 0.756
           },
           "death": false
         },
-        "1207": {
+        "1220": {
           "health": {
             "change": true,
-            "value_change": -0.271,
-            "new_health": 0.33
+            "value_change": -0.102,
+            "new_health": 0.654
+          },
+          "death": false
+        },
+        "1221": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.654
+          },
+          "death": false
+        },
+        "1229": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.654
           },
           "death": true
         }
       },
       "events": {
-        "1205": [
+        "1203": [
           {
             "topic": "new home",
             "home": {
-              "income class": 4,
-              "income class label": "nobility",
-              "section": "stOp Havick1.se1.c4",
-              "street": "Op Havick1",
-              "neighborhood": "cingelnoord",
-              "unique id": 843
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stCromme straet.se3.c2",
+              "street": "Cromme straet",
+              "neighborhood": "denhof",
+              "unique id": 880
             }
           }
         ],
+        "1204": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "neglected"
+          }
+        ],
         "1206": [
+          {
+            "topic": "new relationship",
+            "key": 16492,
+            "people": [
+              14629,
+              16489
+            ],
+            "people names": [
+              "Badeloghen Midach",
+              "Riet Midach"
+            ],
+            "label": "sibling",
+            "committed": false
+          },
           {
             "topic": "neglected"
           }
@@ -128,24 +188,244 @@
           {
             "topic": "neglected"
           }
+        ],
+        "1208": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0.389,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0.202,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1215": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11929,
+              "name": "Wedeghe Midach",
+              "age": 45,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "parent"
+          },
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "new caretaker",
+            "person": 11930
+          }
+        ],
+        "1216": [
+          {
+            "topic": "event",
+            "event": "war",
+            "year": 1216
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1217": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1218": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1219": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1220": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1221": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1222": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1223": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1224": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1225": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1226": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11930,
+              "name": "Flore",
+              "age": 55,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "label": "parent"
+          },
+          {
+            "topic": "new relationship",
+            "key": 22749,
+            "people": [
+              13042,
+              14629
+            ],
+            "people names": [
+              "Lammekin Vrode",
+              "Badeloghen Midach"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stDie Camp.se5.c2",
+              "street": "Die Camp",
+              "neighborhood": "kampbuurt",
+              "unique id": 393
+            }
+          }
+        ],
+        "1227": [
+          {
+            "topic": "event",
+            "event": "famine",
+            "year": 1227
+          },
+          {
+            "topic": "new relationship",
+            "key": 23288,
+            "people": [
+              14629,
+              23286
+            ],
+            "people names": [
+              "Badeloghen Midach",
+              "Karel Vrode"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1228": [
+          {
+            "topic": "event",
+            "event": "famine",
+            "year": 1228
+          }
+        ],
+        "1229": [
+          {
+            "topic": "event",
+            "event": "faction upheaval",
+            "faction": "Zealots",
+            "year": 1229
+          },
+          {
+            "topic": "death",
+            "cause": "illness"
+          }
         ]
       }
     },
     "key": 14629,
     "home": {
-      "income class": 4,
-      "income class label": "nobility",
-      "section": "stOp Havick1.se1.c4",
-      "street": "Op Havick1",
-      "neighborhood": "cingelnoord",
-      "unique id": 843
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stDie Camp.se5.c2",
+      "street": "Die Camp",
+      "neighborhood": "kampbuurt",
+      "unique id": 393
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
-        14632,
-        14633
+        16492,
+        22749
       ]
     }
   }

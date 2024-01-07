@@ -1,84 +1,96 @@
 {
   "12083": {
     "alive": false,
-    "name": "Douwen",
-    "surname": "Raven",
-    "full name": "Douwen Raven",
+    "name": "Flore",
+    "surname": "",
+    "full name": "Flore",
     "born this way": {
-      "sexuality label": "bi",
-      "sexuality": 0.529,
-      "romantic interest": 0.55,
-      "sex interest": 0.629,
-      "gender expression": 0.718,
+      "sexuality label": "straight",
+      "sexuality": 0.011,
+      "romantic interest": 0.817,
+      "sex interest": 0.826,
+      "gender expression": 0.113,
       "sex": "f"
     },
-    "age": 52,
-    "birth year": 1173,
+    "age": 43,
+    "birth year": 1167,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
-      2,
-      "middle class"
+      3,
+      "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.094,
-      "nice-nasty": 0.802,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.624,
+      "nice-nasty": 0.999,
+      "honest-false": 0.008
     },
     "attitude": {
-      "outgoing": 0.547,
-      "dream": 0.614
+      "outgoing": 0.354,
+      "dream": 0.4
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
         "flags": [
+          "caretaker",
           "starving"
         ]
       },
       "expression": {
-        "sexuality expression": 0.388,
-        "gender expression expression": 0.154
+        "sexuality expression": 0.005,
+        "gender expression expression": 0.068
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "17046": {
+          "key": 17046,
+          "name": "Myrthel Hanen",
+          "age": 42,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Flore (12083)",
+            "father": "Snelgerus (12082)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           12084
-        ]
+        ],
+        "child": {
+          "birth": [
+            17048
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
-        2,
-        "middle class"
+        3,
+        "upper middle class"
       ],
-      "income": 1.145,
-      "all_incomes": [
-        1.145
-      ],
-      "job": {
-        "lawful": false,
-        "honest": true
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 2,
-      "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 0,
+      "eye_color": "green",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.102,
-      "fertility": 0.632,
+      "health": 0.786,
+      "fertility": 0.753,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -90,25 +102,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.632
+            "new_health": 0.786
           },
           "death": false
-        },
-        "1223": {
-          "health": {
-            "change": true,
-            "value_change": -0.411,
-            "new_health": 0.221
-          },
-          "death": false
-        },
-        "1224": {
-          "health": {
-            "change": true,
-            "value_change": -0.119,
-            "new_health": 0.102
-          },
-          "death": true
         }
       },
       "events": {
@@ -121,8 +117,8 @@
               12083
             ],
             "people names": [
-              "Walwin Panne",
-              "Douwen Raven"
+              "Snelgerus Hanen",
+              "Flore"
             ],
             "label": "spouse",
             "committed": true
@@ -130,16 +126,32 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stDen Hof.se1.c2",
+              "income class": 3,
+              "income class label": "upper middle class",
+              "section": "stDen Hof.se5.c3",
               "street": "Den Hof",
               "neighborhood": "denhof",
-              "unique id": 937
+              "unique id": 953
             }
           }
         ],
-        "1213": [
+        "1207": [
+          {
+            "topic": "new relationship",
+            "key": 17048,
+            "people": [
+              12083,
+              17046
+            ],
+            "people names": [
+              "Flore",
+              "Myrthel Hanen"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1208": [
           {
             "key": 12084,
             "topic": "unmarried"
@@ -148,8 +160,8 @@
             "topic": "person died",
             "person": {
               "key": 12082,
-              "name": "Walwin Panne",
-              "age": 55,
+              "name": "Snelgerus Hanen",
+              "age": 54,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
@@ -159,101 +171,46 @@
           {
             "topic": "not enough income",
             "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1214": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1215": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1216": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1217": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1218": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1219": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1220": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1221": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1222": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1223": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1224": [
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.145
+            "inhabitants": [
+              17046,
+              12622,
+              24978,
+              26409
+            ]
           },
           {
+            "topic": "now caretaker",
+            "care dependants": [
+              26409
+            ]
+          }
+        ],
+        "1209": [
+          {
             "topic": "not enough income",
             "income": 0,
-            "inhabitants": []
+            "inhabitants": [
+              17046,
+              12622,
+              24978,
+              26409
+            ]
+          },
+          {
+            "topic": "death",
+            "cause": "starvation"
           }
         ]
       }
     },
     "key": 12083,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stDen Hof.se1.c2",
+      "income class": 3,
+      "income class label": "upper middle class",
+      "section": "stDen Hof.se5.c3",
       "street": "Den Hof",
       "neighborhood": "denhof",
-      "unique id": 937
+      "unique id": 953
     },
     "relationship status": {
       "taken": false,

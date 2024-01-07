@@ -1,33 +1,33 @@
 {
   "11057": {
     "alive": false,
-    "name": "Remsindis",
+    "name": "Volcwiif",
     "surname": "",
-    "full name": "Remsindis",
+    "full name": "Volcwiif",
     "born this way": {
-      "sexuality label": "bi",
-      "sexuality": 0.603,
-      "romantic interest": 0.855,
-      "sex interest": 0.694,
-      "gender expression": 0.352,
+      "sexuality label": "straight",
+      "sexuality": 0.03,
+      "romantic interest": 0.702,
+      "sex interest": 0.503,
+      "gender expression": 0.151,
       "sex": "f"
     },
-    "age": 54,
-    "birth year": 1158,
+    "age": 21,
+    "birth year": 1183,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
-      0,
-      "working class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.166,
-      "nice-nasty": 0.57,
-      "honest-false": 0.0
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.764,
+      "honest-false": 0.498
     },
     "attitude": {
-      "outgoing": 0.615,
-      "dream": 0.281
+      "outgoing": 0.394,
+      "dream": 0.729
     },
     "homsoc": {
       "means": {
@@ -35,42 +35,67 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.435,
-        "gender expression expression": 0.351
+        "sexuality expression": 0.021,
+        "gender expression expression": 0.065
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13772": {
+          "key": 13772,
+          "name": "Vesse Woutersoetszoon",
+          "age": 19,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Volcwiif (11057)",
+            "father": "Woutersoet (11056)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11058
-        ]
+        ],
+        "child": {
+          "birth": [
+            13774
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        0,
-        "working class"
+        1,
+        "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.902,
+      "all_incomes": [
+        0.902
+      ],
+      "job": {
+        "lawful": true,
+        "honest": true
+      }
     },
     "genetics": {
       "skin_color": 6,
       "eye_color": "blue",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
-        "C",
-        "S"
+        "S",
+        "C"
       ],
-      "health": 0.0,
-      "fertility": 0.767,
+      "health": 0.755,
+      "fertility": 0.789,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -82,41 +107,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.745
+            "new_health": 0.755
           },
           "death": false
-        },
-        "1208": {
-          "health": {
-            "change": true,
-            "value_change": -0.228,
-            "new_health": 0.517
-          },
-          "death": false
-        },
-        "1209": {
-          "health": {
-            "change": true,
-            "value_change": -0.29,
-            "new_health": 0.227
-          },
-          "death": false
-        },
-        "1210": {
-          "health": {
-            "change": true,
-            "value_change": -0.136,
-            "new_health": 0.091
-          },
-          "death": false
-        },
-        "1211": {
-          "health": {
-            "change": true,
-            "value_change": -0.091,
-            "new_health": 0.0
-          },
-          "death": true
         }
       },
       "events": {
@@ -129,8 +122,8 @@
               11057
             ],
             "people names": [
-              "Henric",
-              "Remsindis"
+              "Woutersoet",
+              "Volcwiif"
             ],
             "label": "spouse",
             "committed": true
@@ -138,29 +131,86 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stOly straetje.se1.c0",
-              "street": "Oly straetje",
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stDie Coninc straet.se9.c1",
+              "street": "Die Coninc straet",
               "neighborhood": "kampbuurt",
-              "unique id": 481
+              "unique id": 480
             }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "feelings change",
+            "target": 11056,
+            "target name": "Woutersoet",
+            "state": "solid love",
+            "relationship": 11058
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 13774,
+            "people": [
+              11057,
+              13772
+            ],
+            "people names": [
+              "Volcwiif",
+              "Vesse Woutersoetszoon"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1203": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.902
+          },
+          {
+            "key": 11058,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11056,
+              "name": "Woutersoet",
+              "age": 32,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "death",
+            "cause": "starvation"
           }
         ]
       }
     },
     "key": 11057,
     "home": {
-      "income class": 0,
-      "income class label": "working class",
-      "section": "stOly straetje.se1.c0",
-      "street": "Oly straetje",
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stDie Coninc straet.se9.c1",
+      "street": "Die Coninc straet",
       "neighborhood": "kampbuurt",
-      "unique id": 481
+      "unique id": 480
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         11058
       ]

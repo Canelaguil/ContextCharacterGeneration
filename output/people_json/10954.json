@@ -1,61 +1,70 @@
 {
   "10954": {
     "alive": false,
-    "name": "Karis",
-    "surname": "Smiec",
-    "full name": "Karis Smiec",
+    "name": "Enekonus",
+    "surname": "",
+    "full name": "Enekonus",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.117,
-      "romantic interest": 0.706,
-      "sex interest": 0.623,
-      "gender expression": 0.088,
+      "sexuality": 0.017,
+      "romantic interest": 0.705,
+      "sex interest": 0.799,
+      "gender expression": 0.096,
       "sex": "m"
     },
-    "age": 47,
-    "birth year": 1155,
+    "age": 50,
+    "birth year": 1153,
     "sex": "m",
-    "faction": "Dogmatists",
+    "faction": "Zealots",
     "income class": [
-      0,
-      "working class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.362,
-      "nice-nasty": 0.398,
-      "honest-false": 0.456
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.396,
+      "honest-false": 0.664
     },
     "attitude": {
-      "outgoing": 0.311,
-      "dream": 0.468
+      "outgoing": 0.66,
+      "dream": 0.498
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": [
-          "neglected"
-        ]
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.106,
-        "gender expression expression": 0.04
+        "sexuality expression": 0.014,
+        "gender expression expression": 0.059
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "12841": {
-          "key": 12841,
-          "name": "Folqui Smiec",
-          "age": 12,
-          "alive": false,
+        "12469": {
+          "key": 12469,
+          "name": "Eylwardo",
+          "age": 49,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Berta (10955)",
+            "father": "Enekonus (10954)"
+          }
+        },
+        "13731": {
+          "key": 13731,
+          "name": "Victoria van Berta",
+          "age": 47,
+          "alive": true,
           "sex": "f",
           "parents": {
-            "mother": "Sipper (10955)",
-            "father": "Karis (10954)"
+            "mother": "Berta (10955)",
+            "father": "Enekonus (10954)"
           }
         }
       },
@@ -65,7 +74,8 @@
         ],
         "child": {
           "birth": [
-            12842
+            12470,
+            13732
           ]
         }
       }
@@ -73,14 +83,15 @@
     "occupation": {
       "has job": true,
       "income class": [
-        0,
-        "working class"
+        1,
+        "lower middle class"
       ],
-      "income": 1.378,
+      "income": 0.681,
       "all_incomes": [
-        1.433,
-        1.499,
-        1.378
+        0.684,
+        0.782,
+        0.614,
+        0.681
       ],
       "job": {
         "lawful": true,
@@ -89,15 +100,15 @@
     },
     "genetics": {
       "skin_color": 6,
-      "eye_color": "blue",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "eye_color": "brown",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
-        "S",
-        "C"
+        "C",
+        "S"
       ],
-      "health": 0.721,
-      "fertility": 0.686,
+      "health": 0.743,
+      "fertility": 0.687,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -109,15 +120,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.721
+            "new_health": 0.743
           },
           "death": false
         },
-        "1201": {
+        "1202": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.721
+            "new_health": 0.743
           },
           "death": true
         }
@@ -127,7 +138,7 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.433
+            "income": 0.684
           },
           {
             "topic": "new relationship",
@@ -137,8 +148,8 @@
               10955
             ],
             "people names": [
-              "Karis Smiec",
-              "Sipper Masc"
+              "Enekonus",
+              "Berta Tater"
             ],
             "label": "spouse",
             "committed": true
@@ -146,44 +157,66 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stTrysgens.se1.c0",
-              "street": "Trysgens",
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stSt. Ians straet.se5.c1",
+              "street": "St. Ians straet",
               "neighborhood": "kampbuurt",
-              "unique id": 438
+              "unique id": 429
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12470,
+            "people": [
+              10954,
+              12469
+            ],
+            "people names": [
+              "Enekonus",
+              "Eylwardo"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1201": [
           {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.614
+          }
+        ],
+        "1202": [
+          {
             "topic": "new relationship",
-            "key": 12842,
+            "key": 13732,
             "people": [
               10954,
-              12841
+              13731
             ],
             "people names": [
-              "Karis Smiec",
-              "Folqui Smiec"
+              "Enekonus",
+              "Victoria van Berta"
             ],
             "label": "parentchild",
             "committed": false
           },
           {
-            "topic": "neglected"
+            "topic": "death",
+            "cause": "illness"
           }
         ]
       }
     },
     "key": 10954,
     "home": {
-      "income class": 0,
-      "income class label": "working class",
-      "section": "stTrysgens.se1.c0",
-      "street": "Trysgens",
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stSt. Ians straet.se5.c1",
+      "street": "St. Ians straet",
       "neighborhood": "kampbuurt",
-      "unique id": 438
+      "unique id": 429
     },
     "relationship status": {
       "taken": true,

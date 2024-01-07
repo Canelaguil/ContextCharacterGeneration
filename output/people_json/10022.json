@@ -1,33 +1,33 @@
 {
   "10022": {
     "alive": false,
-    "name": "Clementia",
-    "surname": "Suardt",
-    "full name": "Clementia Suardt",
+    "name": "Helyana",
+    "surname": "",
+    "full name": "Helyana",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.565,
-      "sex interest": 0.829,
-      "gender expression": 0.176,
+      "sexuality": 0.042,
+      "romantic interest": 0.747,
+      "sex interest": 0.509,
+      "gender expression": 0.131,
       "sex": "f"
     },
-    "age": 58,
-    "birth year": 1162,
+    "age": 25,
+    "birth year": 1179,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.297,
-      "nice-nasty": 0.14,
-      "honest-false": 0.728
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.812,
+      "honest-false": 0.999
     },
     "attitude": {
-      "outgoing": 0.49,
-      "dream": 0.124
+      "outgoing": 0.57,
+      "dream": 0.368
     },
     "homsoc": {
       "means": {
@@ -35,59 +35,71 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": [
-          "starving"
-        ]
+        "flags": []
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.077
+        "sexuality expression": 0.023,
+        "gender expression expression": 0.024
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12799": {
+          "key": 12799,
+          "name": "Nellen",
+          "age": 12,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Helyana (10022)",
+            "father": "Didderic (10021)"
+          }
+        },
+        "14129": {
+          "key": 14129,
+          "name": "Reymodis Svarten",
+          "age": 5,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Helyana (10022)",
+            "father": "Didderic (10021)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10023
-        ]
+        ],
+        "child": {
+          "birth": [
+            12801,
+            14131
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 1.222,
-      "all_incomes": [
-        1.04,
-        1.016,
-        1.101,
-        1.111,
-        1.137,
-        1.109,
-        1.186,
-        1.17,
-        1.188,
-        1.222
-      ],
-      "job": {
-        "lawful": true,
-        "honest": true
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
       "skin_color": 2,
       "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
         "S",
-        "S"
+        "C"
       ],
-      "health": 0.0,
-      "fertility": 0.767,
+      "health": 0.635,
+      "fertility": 0.646,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -99,57 +111,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.717
+            "new_health": 0.635
           },
           "death": false
-        },
-        "1214": {
-          "health": {
-            "change": true,
-            "value_change": -0.162,
-            "new_health": 0.555
-          },
-          "death": false
-        },
-        "1215": {
-          "health": {
-            "change": true,
-            "value_change": -0.193,
-            "new_health": 0.362
-          },
-          "death": false
-        },
-        "1216": {
-          "health": {
-            "change": true,
-            "value_change": -0.24,
-            "new_health": 0.122
-          },
-          "death": false
-        },
-        "1217": {
-          "health": {
-            "change": true,
-            "value_change": -0.083,
-            "new_health": 0.039
-          },
-          "death": false
-        },
-        "1218": {
-          "health": {
-            "change": true,
-            "value_change": -0.037,
-            "new_health": 0.002
-          },
-          "death": false
-        },
-        "1219": {
-          "health": {
-            "change": true,
-            "value_change": -0.002,
-            "new_health": 0.0
-          },
-          "death": true
         }
       },
       "events": {
@@ -162,8 +126,8 @@
               10022
             ],
             "people names": [
-              "Tarun Viltkin",
-              "Clementia Suardt"
+              "Didderic Svarten",
+              "Helyana"
             ],
             "label": "spouse",
             "committed": true
@@ -173,39 +137,56 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stUterechse straet.se1.c2",
+              "section": "stUterechse straet.se3.c2",
               "street": "Uterechse straet",
               "neighborhood": "varkensbuurt",
-              "unique id": 9
+              "unique id": 14
             }
           }
         ],
-        "1210": [
+        "1201": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.04
+            "topic": "new relationship",
+            "key": 12801,
+            "people": [
+              10022,
+              12799
+            ],
+            "people names": [
+              "Helyana",
+              "Nellen"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1202": [
+          {
+            "topic": "feelings change",
+            "target": 10021,
+            "target name": "Didderic Svarten",
+            "state": "out of love",
+            "relationship": 10023
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 14131,
+            "people": [
+              10022,
+              14129
+            ],
+            "people names": [
+              "Helyana",
+              "Reymodis Svarten"
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
-            "key": 10023,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 10021,
-              "name": "Tarun Viltkin",
-              "age": 53,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "death",
+            "cause": "childbirth"
           }
         ]
       }
@@ -214,14 +195,14 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stUterechse straet.se1.c2",
+      "section": "stUterechse straet.se3.c2",
       "street": "Uterechse straet",
       "neighborhood": "varkensbuurt",
-      "unique id": 9
+      "unique id": 14
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
         10023
       ]

@@ -1,19 +1,19 @@
 {
   "10073": {
     "alive": false,
-    "name": "Oda",
+    "name": "Euffemia",
     "surname": "",
-    "full name": "Oda",
+    "full name": "Euffemia",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.105,
-      "romantic interest": 0.653,
-      "sex interest": 0.713,
-      "gender expression": 0.158,
+      "sexuality": 0.084,
+      "romantic interest": 0.754,
+      "sex interest": 0.752,
+      "gender expression": 0.0,
       "sex": "f"
     },
     "age": 54,
-    "birth year": 1152,
+    "birth year": 1178,
     "sex": "f",
     "faction": "Dogmatists",
     "income class": [
@@ -21,67 +21,101 @@
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.497,
-      "nice-nasty": 0.528,
-      "honest-false": 0.988
+      "lawful-chaotic": 0.598,
+      "nice-nasty": 0.259,
+      "honest-false": 0.003
     },
     "attitude": {
-      "outgoing": 0.571,
-      "dream": 0.672
+      "outgoing": 0.645,
+      "dream": 0.327
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "caretaker",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.064,
-        "gender expression expression": 0.008
+        "sexuality expression": 0.067,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12809": {
+          "key": 12809,
+          "name": "Esa",
+          "age": 12,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Euffemia (10073)",
+            "father": "Ase (10072)"
+          }
+        },
+        "17668": {
+          "key": 17668,
+          "name": "Rycaldis van Euffemia",
+          "age": 2,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Euffemia (10073)",
+            "father": "Ase (10072)"
+          }
+        },
+        "18986": {
+          "key": 18986,
+          "name": "Firiin",
+          "age": 3,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Euffemia (10073)",
+            "father": "Ase (10072)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          10074
-        ]
+          10074,
+          22981
+        ],
+        "child": {
+          "birth": [
+            12811,
+            17670,
+            18988
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 0.936,
-      "all_incomes": [
-        1.043,
-        1.008,
-        1.005,
-        0.965,
-        0.972,
-        0.936
-      ],
-      "job": {
-        "lawful": true,
-        "honest": true
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 6,
-      "eye_color": "brown",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "skin_color": 5,
+      "eye_color": "green",
+      "hair_color": "red",
+      "hair_color_code": 3,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.0,
-      "fertility": 0.658,
+      "health": 0.02,
+      "fertility": 0.703,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -93,50 +127,45 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.635
+            "new_health": 0.715
           },
           "death": false
         },
-        "1202": {
+        "1228": {
           "health": {
             "change": true,
-            "value_change": -0.291,
-            "new_health": 0.344
+            "value_change": -0.198,
+            "new_health": 0.517
           },
           "death": false
         },
-        "1203": {
+        "1229": {
           "health": {
             "change": true,
-            "value_change": -0.321,
-            "new_health": 0.023
+            "value_change": -0.24,
+            "new_health": 0.277
           },
           "death": false
         },
-        "1204": {
+        "1230": {
           "health": {
             "change": true,
-            "value_change": -0.015,
-            "new_health": 0.008
+            "value_change": -0.138,
+            "new_health": 0.139
           },
           "death": false
         },
-        "1205": {
+        "1231": {
           "health": {
             "change": true,
-            "value_change": -0.008,
-            "new_health": 0.0
+            "value_change": -0.119,
+            "new_health": 0.02
           },
           "death": true
         }
       },
       "events": {
         "1200": [
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.043
-          },
           {
             "topic": "new relationship",
             "key": 10074,
@@ -145,8 +174,8 @@
               10073
             ],
             "people names": [
-              "Egbertus Vosseken",
-              "Oda"
+              "Ase",
+              "Euffemia"
             ],
             "label": "spouse",
             "committed": true
@@ -156,29 +185,316 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stVerckens merct.se3.c2",
+              "section": "stVerckens merct.se5.c2",
               "street": "Verckens merct",
               "neighborhood": "varkensbuurt",
-              "unique id": 31
+              "unique id": 35
             }
           }
         ],
         "1201": [
           {
-            "topic": "feelings change",
-            "target": 10072,
-            "target name": "Egbertus Vosseken",
-            "state": "infatuation",
-            "relationship": 10074
+            "topic": "new relationship",
+            "key": 12811,
+            "people": [
+              10073,
+              12809
+            ],
+            "people names": [
+              "Euffemia",
+              "Esa"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1202": [
+        "1209": [
+          {
+            "topic": "new relationship",
+            "key": 17670,
+            "people": [
+              10073,
+              17668
+            ],
+            "people names": [
+              "Euffemia",
+              "Rycaldis van Euffemia"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.237,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0.018,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
           {
             "topic": "feelings change",
             "target": 10072,
-            "target name": "Egbertus Vosseken",
+            "target name": "Ase",
             "state": "out of love",
             "relationship": 10074
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.349,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 17668,
+              "name": "Rycaldis van Euffemia",
+              "age": 2,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Euffemia (10073)",
+                "father": "Ase (10072)"
+              }
+            },
+            "label": "child"
+          },
+          {
+            "topic": "new relationship",
+            "key": 18988,
+            "people": [
+              10073,
+              18986
+            ],
+            "people names": [
+              "Euffemia",
+              "Firiin"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1214": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12809,
+              "name": "Esa",
+              "age": 12,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Euffemia (10073)",
+                "father": "Ase (10072)"
+              }
+            },
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1215": [
+          {
+            "key": 10074,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10072,
+              "name": "Ase",
+              "age": 44,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          }
+        ],
+        "1216": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 18986,
+              "name": "Firiin",
+              "age": 3,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Euffemia (10073)",
+                "father": "Ase (10072)"
+              }
+            },
+            "label": "child"
+          },
+          {
+            "topic": "event",
+            "event": "war",
+            "year": 1216
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1217": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1218": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1219": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1220": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1221": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1222": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1223": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1224": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1225": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1226": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1227": [
+          {
+            "topic": "event",
+            "event": "famine",
+            "year": 1227
+          },
+          {
+            "topic": "new relationship",
+            "key": 22981,
+            "people": [
+              10069,
+              10073
+            ],
+            "people names": [
+              "Alwin Omekine",
+              "Euffemia"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stVerckens merct.se5.c2",
+              "street": "Verckens merct",
+              "neighborhood": "varkensbuurt",
+              "unique id": 34
+            }
+          }
+        ],
+        "1228": [
+          {
+            "topic": "event",
+            "event": "famine",
+            "year": 1228
+          }
+        ],
+        "1229": [
+          {
+            "topic": "event",
+            "event": "faction upheaval",
+            "faction": "Zealots",
+            "year": 1229
+          }
+        ],
+        "1231": [
+          {
+            "topic": "death",
+            "cause": "old age"
           }
         ]
       }
@@ -187,16 +503,17 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stVerckens merct.se3.c2",
+      "section": "stVerckens merct.se5.c2",
       "street": "Verckens merct",
       "neighborhood": "varkensbuurt",
-      "unique id": 31
+      "unique id": 34
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        10074
+        10074,
+        22981
       ]
     }
   }

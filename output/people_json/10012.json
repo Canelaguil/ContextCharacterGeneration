@@ -1,54 +1,95 @@
 {
   "10012": {
     "alive": false,
-    "name": "Nannekin",
-    "surname": "",
-    "full name": "Nannekin",
+    "name": "Ringot",
+    "surname": "Croic",
+    "full name": "Ringot Croic",
     "born this way": {
       "sexuality label": "straight",
       "sexuality": 0.061,
-      "romantic interest": 0.621,
-      "sex interest": 0.729,
-      "gender expression": 0.003,
+      "romantic interest": 0.999,
+      "sex interest": 0.536,
+      "gender expression": 0.025,
       "sex": "m"
     },
-    "age": 28,
-    "birth year": 1175,
+    "age": 56,
+    "birth year": 1153,
     "sex": "m",
-    "faction": "Zealots",
+    "faction": "Dogmatists",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.504,
-      "honest-false": 0.0
+      "lawful-chaotic": 0.697,
+      "nice-nasty": 0.753,
+      "honest-false": 0.353
     },
     "attitude": {
-      "outgoing": 0.0,
-      "dream": 0.208
+      "outgoing": 0.312,
+      "dream": 0.096
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.035,
-        "gender expression expression": 0.001
+        "sexuality expression": 0.038,
+        "gender expression expression": 0.015
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12796": {
+          "key": 12796,
+          "name": "Katrin Croic",
+          "age": 14,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Baua (10013)",
+            "father": "Ringot (10012)"
+          }
+        },
+        "13463": {
+          "key": 13463,
+          "name": "Martin Croic",
+          "age": 47,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Baua (10013)",
+            "father": "Ringot (10012)"
+          }
+        },
+        "14124": {
+          "key": 14124,
+          "name": "Gherbrandus",
+          "age": 46,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Baua (10013)",
+            "father": "Ringot (10012)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10014
-        ]
+        ],
+        "child": {
+          "birth": [
+            12797,
+            13464,
+            14125
+          ]
+        }
       }
     },
     "occupation": {
@@ -57,29 +98,35 @@
         2,
         "middle class"
       ],
-      "income": 0.791,
+      "income": 0.911,
       "all_incomes": [
-        0.884,
-        0.694,
-        0.504,
-        0.791
+        1.085,
+        1.297,
+        1.499,
+        1.499,
+        1.499,
+        1.499,
+        1.326,
+        1.297,
+        1.168,
+        0.911
       ],
       "job": {
         "lawful": false,
-        "honest": false
+        "honest": true
       }
     },
     "genetics": {
-      "skin_color": 5,
-      "eye_color": "blue",
+      "skin_color": 8,
+      "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
-        "S",
-        "S"
+        "C",
+        "C"
       ],
-      "health": 0.739,
-      "fertility": 0.784,
+      "health": 0.0,
+      "fertility": 0.709,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -91,15 +138,47 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.739
+            "new_health": 0.658
           },
           "death": false
         },
-        "1202": {
+        "1204": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.739
+            "change": true,
+            "value_change": -0.184,
+            "new_health": 0.474
+          },
+          "death": false
+        },
+        "1205": {
+          "health": {
+            "change": true,
+            "value_change": -0.138,
+            "new_health": 0.336
+          },
+          "death": false
+        },
+        "1206": {
+          "health": {
+            "change": true,
+            "value_change": -0.236,
+            "new_health": 0.1
+          },
+          "death": false
+        },
+        "1207": {
+          "health": {
+            "change": true,
+            "value_change": -0.086,
+            "new_health": 0.014
+          },
+          "death": false
+        },
+        "1208": {
+          "health": {
+            "change": true,
+            "value_change": -0.014,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -109,12 +188,7 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.884
-          },
-          {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.694
+            "income": 1.085
           },
           {
             "topic": "new relationship",
@@ -124,8 +198,8 @@
               10013
             ],
             "people names": [
-              "Nannekin",
-              "Sophia Hoen"
+              "Ringot Croic",
+              "Baua"
             ],
             "label": "spouse",
             "committed": true
@@ -138,15 +212,78 @@
               "section": "stUterechse straet.se1.c2",
               "street": "Uterechse straet",
               "neighborhood": "varkensbuurt",
-              "unique id": 5
+              "unique id": 7
             }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 12797,
+            "people": [
+              10012,
+              12796
+            ],
+            "people names": [
+              "Ringot Croic",
+              "Katrin Croic"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 13464,
+            "people": [
+              10012,
+              13463
+            ],
+            "people names": [
+              "Ringot Croic",
+              "Martin Croic"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 14125,
+            "people": [
+              10012,
+              14124
+            ],
+            "people names": [
+              "Ringot Croic",
+              "Gherbrandus"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1208": [
+          {
+            "key": 10014,
+            "topic": "unmarried"
           },
           {
-            "topic": "feelings change",
-            "target": 10013,
-            "target name": "Sophia Hoen",
-            "state": "out of love",
-            "relationship": 10014
+            "topic": "person died",
+            "person": {
+              "key": 10013,
+              "name": "Baua",
+              "age": 26,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "death",
+            "cause": "sickness"
           }
         ]
       }
@@ -158,11 +295,11 @@
       "section": "stUterechse straet.se1.c2",
       "street": "Uterechse straet",
       "neighborhood": "varkensbuurt",
-      "unique id": 5
+      "unique id": 7
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         10014
       ]

@@ -1,19 +1,19 @@
 {
   "10847": {
     "alive": false,
-    "name": "Ermerut",
-    "surname": "Spriet",
-    "full name": "Ermerut Spriet",
+    "name": "Siburgis",
+    "surname": "Mule",
+    "full name": "Siburgis Mule",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.06,
-      "romantic interest": 0.903,
-      "sex interest": 0.717,
-      "gender expression": 0.035,
+      "sexuality": 0.041,
+      "romantic interest": 0.824,
+      "sex interest": 0.676,
+      "gender expression": 0.116,
       "sex": "f"
     },
-    "age": 53,
-    "birth year": 1159,
+    "age": 28,
+    "birth year": 1182,
     "sex": "f",
     "faction": "Zealots",
     "income class": [
@@ -21,34 +21,63 @@
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.183,
-      "nice-nasty": 0.104,
-      "honest-false": 0.383
+      "lawful-chaotic": 0.916,
+      "nice-nasty": 0.265,
+      "honest-false": 0.221
     },
     "attitude": {
-      "outgoing": 0.64,
-      "dream": 0.426
+      "outgoing": 0.188,
+      "dream": 0.37
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.031,
-        "gender expression expression": 0.009
+        "sexuality expression": 0.018,
+        "gender expression expression": 0.0
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12427": {
+          "key": 12427,
+          "name": "Margareta Colueken",
+          "age": 15,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Siburgis (10847)",
+            "father": "Seukinus (10846)"
+          }
+        },
+        "13695": {
+          "key": 13695,
+          "name": "Kerolus Colueken",
+          "age": 11,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Siburgis (10847)",
+            "father": "Seukinus (10846)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10848
-        ]
+        ],
+        "child": {
+          "birth": [
+            12429,
+            13697
+          ]
+        }
       }
     },
     "occupation": {
@@ -57,35 +86,32 @@
         2,
         "middle class"
       ],
-      "income": 0.787,
+      "income": 1.027,
       "all_incomes": [
-        1.025,
-        0.597,
-        0.884,
-        0.705,
-        0.611,
-        0.629,
-        0.528,
-        0.44,
-        0.578,
-        0.787
+        0.993,
+        1.139,
+        1.271,
+        1.499,
+        1.499,
+        1.227,
+        1.027
       ],
       "job": {
-        "lawful": false,
+        "lawful": true,
         "honest": false
       }
     },
     "genetics": {
-      "skin_color": 1,
-      "eye_color": "brown",
+      "skin_color": 8,
+      "eye_color": "green",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.0,
-      "fertility": 0.817,
+      "health": 0.661,
+      "fertility": 0.663,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -97,31 +123,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.783
+            "new_health": 0.661
           },
           "death": false
         },
         "1209": {
           "health": {
-            "change": true,
-            "value_change": -0.203,
-            "new_health": 0.58
-          },
-          "death": false
-        },
-        "1210": {
-          "health": {
-            "change": true,
-            "value_change": -0.316,
-            "new_health": 0.264
-          },
-          "death": false
-        },
-        "1211": {
-          "health": {
-            "change": true,
-            "value_change": -0.264,
-            "new_health": 0.0
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.661
           },
           "death": true
         }
@@ -136,8 +146,8 @@
               10847
             ],
             "people names": [
-              "Wedeghe Stoc",
-              "Ermerut Spriet"
+              "Seukinus Colueken",
+              "Siburgis Mule"
             ],
             "label": "spouse",
             "committed": true
@@ -150,43 +160,58 @@
               "section": "stDie Camp.se5.c2",
               "street": "Die Camp",
               "neighborhood": "kampbuurt",
-              "unique id": 392
+              "unique id": 385
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12429,
+            "people": [
+              10847,
+              12427
+            ],
+            "people names": [
+              "Siburgis Mule",
+              "Margareta Colueken"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1202": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.025
+            "topic": "new relationship",
+            "key": 13697,
+            "people": [
+              10847,
+              13695
+            ],
+            "people names": [
+              "Siburgis Mule",
+              "Kerolus Colueken"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1203": [
           {
             "topic": "job notice",
-            "notice": "low income",
-            "income": 0.597
-          },
-          {
-            "topic": "feelings change",
-            "target": 10846,
-            "target name": "Wedeghe Stoc",
-            "state": "out of love",
-            "relationship": 10848
+            "notice": "found job",
+            "income": 0.993
           }
         ],
-        "1205": [
+        "1204": [
           {
             "topic": "job notice",
-            "notice": "low income",
-            "income": 0.705
+            "notice": "comfortable earnings",
+            "income": 1.139
           }
         ],
         "1209": [
           {
-            "topic": "job notice",
-            "notice": "earning very little",
-            "income": 0.44
+            "topic": "death",
+            "cause": "illness"
           }
         ]
       }
@@ -198,7 +223,7 @@
       "section": "stDie Camp.se5.c2",
       "street": "Die Camp",
       "neighborhood": "kampbuurt",
-      "unique id": 392
+      "unique id": 385
     },
     "relationship status": {
       "taken": true,

@@ -1,79 +1,106 @@
 {
   "13294": {
-    "alive": false,
-    "name": "Woutersoet",
-    "surname": "Coram",
-    "full name": "Woutersoet Coram",
+    "alive": true,
+    "name": "Meynseth",
+    "surname": "Mulart",
+    "full name": "Meynseth Mulart",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.058,
-      "romantic interest": 0.758,
-      "sex interest": 0.632,
-      "gender expression": 0.206,
-      "sex": "m"
+      "sexuality label": "bi",
+      "sexuality": 0.556,
+      "romantic interest": 0.81,
+      "sex interest": 0.979,
+      "gender expression": 0.308,
+      "sex": "f"
     },
-    "age": 6,
-    "birth year": 1202,
-    "sex": "m",
-    "faction": "Dogmatists",
+    "age": 48,
+    "birth year": 1201,
+    "sex": "f",
+    "faction": "No religion",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.638,
-      "honest-false": 0.663
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.999,
+      "honest-false": 0.415
     },
     "attitude": {
-      "outgoing": 0.071,
-      "dream": 0.215
+      "outgoing": 0.412,
+      "dream": 0.477
     },
     "homsoc": {
       "means": {
         "independent": false,
         "taken_care_of": false,
         "caretaker": true,
-        "needs_care": true,
+        "needs_care": false,
         "flags": [
-          "neglected"
+          "neglected",
+          "starving"
         ]
       },
       "expression": {
-        "sexuality expression": 0.039,
-        "gender expression expression": 0.087
+        "sexuality expression": 0.37,
+        "gender expression expression": 0.197
       }
     },
     "network": {
       "parents": {
-        "mother": "Hille (10790)",
-        "father": "Radulphus (10789)"
+        "mother": "Heilsota (11615)",
+        "father": "Walic (11614)"
       },
-      "children": {},
+      "children": {
+        "26844": {
+          "key": 26844,
+          "name": "Atghardis",
+          "age": 12,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Meynseth (13294)",
+            "father": "Ydier (18542)"
+          }
+        }
+      },
       "relationship keys": {
         "parent": [
           13295,
           13296
         ],
         "sibling": [
-          13297
+          13297,
+          15197
         ],
-        "half-sibling": [
-          15440
-        ]
+        "spouse": [
+          20972,
+          25759,
+          28768
+        ],
+        "child": {
+          "birth": [
+            26846
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.138,
+      "all_incomes": [
+        1.138
+      ],
+      "job": {
+        "lawful": true,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 2,
+      "skin_color": 7,
       "eye_color": "brown",
       "hair_color": "brown",
       "hair_color_code": 2,
@@ -81,8 +108,8 @@
         "S",
         "C"
       ],
-      "health": 0.732,
-      "fertility": 0.729,
+      "health": 0.772,
+      "fertility": 0.704,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -90,35 +117,32 @@
     },
     "memory": {
       "health": {
-        "1203": {
+        "1202": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.732
+            "new_health": 0.772
           },
           "death": false
-        },
-        "1208": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.732
-          },
-          "death": true
         }
       },
       "events": {
-        "1202": [
+        "1201": [
           {
             "topic": "new home",
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stDie Camp.se3.c2",
-              "street": "Die Camp",
-              "neighborhood": "kampbuurt",
-              "unique id": 369
+              "section": "stCorte gracht.se3.c2",
+              "street": "Corte gracht",
+              "neighborhood": "visbuurt",
+              "unique id": 739
             }
+          }
+        ],
+        "1202": [
+          {
+            "topic": "neglected"
           }
         ],
         "1203": [
@@ -128,13 +152,32 @@
         ],
         "1204": [
           {
+            "topic": "new relationship",
+            "key": 15197,
+            "people": [
+              13294,
+              15193
+            ],
+            "people names": [
+              "Meynseth Mulart",
+              "Lutghardis Mulart"
+            ],
+            "label": "sibling",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1205": [
+          {
             "topic": "person died",
             "person": {
-              "key": 10789,
-              "name": "Radulphus Coram",
-              "age": 30,
+              "key": 11615,
+              "name": "Heilsota Suardt",
+              "age": 21,
               "alive": false,
-              "sex": "m",
+              "sex": "f",
               "parents": "firstgen"
             },
             "label": "parent"
@@ -143,38 +186,7 @@
             "topic": "neglected"
           }
         ],
-        "1205": [
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stDie Camp.se3.c2",
-              "street": "Die Camp",
-              "neighborhood": "kampbuurt",
-              "unique id": 380
-            }
-          },
-          {
-            "topic": "neglected"
-          }
-        ],
         "1206": [
-          {
-            "topic": "person died",
-            "person": {
-              "key": 12358,
-              "name": "Justaes Coram",
-              "age": 5,
-              "alive": false,
-              "sex": "m",
-              "parents": {
-                "mother": "Hille (10790)",
-                "father": "Radulphus (10789)"
-              }
-            },
-            "label": "sibling"
-          },
           {
             "topic": "neglected"
           }
@@ -182,25 +194,306 @@
         "1207": [
           {
             "topic": "neglected"
-          },
-          {
-            "topic": "new relationship",
-            "key": 15440,
-            "people": [
-              13294,
-              15419
-            ],
-            "people names": [
-              "Woutersoet Coram",
-              "Folqui Slabbart"
-            ],
-            "label": "half-sibling",
-            "committed": false
           }
         ],
         "1208": [
           {
             "topic": "neglected"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11614,
+              "name": "Walic Mulart",
+              "age": 32,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "parent"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "new caretaker",
+            "person": 12658
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1215": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12658,
+              "name": "Scilla Mulart",
+              "age": 14,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Heilsota (11615)",
+                "father": "Walic (11614)"
+              }
+            },
+            "label": "sibling"
+          },
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1216": [
+          {
+            "topic": "event",
+            "event": "war",
+            "year": 1216
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1217": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1218": [
+          {
+            "topic": "new relationship",
+            "key": 20972,
+            "people": [
+              12208,
+              13294
+            ],
+            "people names": [
+              "Wilbord van Salome",
+              "Meynseth Mulart"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stUterechse straet.se3.c2",
+              "street": "Uterechse straet",
+              "neighborhood": "varkensbuurt",
+              "unique id": 21
+            }
+          }
+        ],
+        "1219": [
+          {
+            "topic": "feelings change",
+            "target": 12208,
+            "target name": "Wilbord van Salome",
+            "state": "solid love",
+            "relationship": 20972
+          }
+        ],
+        "1223": [
+          {
+            "key": 20972,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12208,
+              "name": "Wilbord van Salome",
+              "age": 22,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Salome (10034)",
+                "father": "Stemaers (10033)"
+              }
+            },
+            "label": "spouse"
+          }
+        ],
+        "1227": [
+          {
+            "topic": "event",
+            "event": "famine",
+            "year": 1227
+          }
+        ],
+        "1228": [
+          {
+            "topic": "event",
+            "event": "famine",
+            "year": 1228
+          }
+        ],
+        "1229": [
+          {
+            "topic": "event",
+            "event": "faction upheaval",
+            "faction": "Zealots",
+            "year": 1229
+          }
+        ],
+        "1232": [
+          {
+            "topic": "event",
+            "event": "war",
+            "year": 1232
+          }
+        ],
+        "1235": [
+          {
+            "topic": "new relationship",
+            "key": 25759,
+            "people": [
+              18542,
+              13294
+            ],
+            "people names": [
+              "Ydier van Michiel",
+              "Meynseth Mulart"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stDavids hof.se1.c2",
+              "street": "Davids hof",
+              "neighborhood": "jorisbuurt",
+              "unique id": 173
+            }
+          }
+        ],
+        "1237": [
+          {
+            "topic": "new relationship",
+            "key": 26846,
+            "people": [
+              13294,
+              26844
+            ],
+            "people names": [
+              "Meynseth Mulart",
+              "Atghardis"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1239": [
+          {
+            "key": 25759,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 18542,
+              "name": "Ydier van Michiel",
+              "age": 28,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Nimme (10457)",
+                "father": "Michiel (10402)"
+              }
+            },
+            "label": "spouse"
+          }
+        ],
+        "1243": [
+          {
+            "topic": "new relationship",
+            "key": 28768,
+            "people": [
+              15957,
+              13294
+            ],
+            "people names": [
+              "Trueb",
+              "Meynseth Mulart"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stDie lange straet3.se9.c2",
+              "street": "Die lange straet3",
+              "neighborhood": "visbuurt",
+              "unique id": 719
+            }
+          }
+        ],
+        "1248": [
+          {
+            "topic": "feelings change",
+            "target": 15957,
+            "target name": "Trueb",
+            "state": "solid love",
+            "relationship": 28768
+          }
+        ],
+        "1249": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.138
           }
         ]
       }
@@ -209,17 +502,20 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stDie Camp.se3.c2",
-      "street": "Die Camp",
-      "neighborhood": "kampbuurt",
-      "unique id": 380
+      "section": "stDie lange straet3.se9.c2",
+      "street": "Die lange straet3",
+      "neighborhood": "visbuurt",
+      "unique id": 719
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
         13297,
-        15440
+        15197,
+        20972,
+        25759,
+        28768
       ]
     }
   }

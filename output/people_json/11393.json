@@ -1,81 +1,130 @@
 {
   "11393": {
     "alive": false,
-    "name": "Badeloghen",
+    "name": "Lutghardis",
     "surname": "",
-    "full name": "Badeloghen",
+    "full name": "Lutghardis",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.025,
-      "romantic interest": 0.557,
-      "sex interest": 0.464,
-      "gender expression": 0.133,
+      "sexuality": 0.067,
+      "romantic interest": 0.722,
+      "sex interest": 0.856,
+      "gender expression": 0.008,
       "sex": "f"
     },
-    "age": 54,
-    "birth year": 1159,
+    "age": 29,
+    "birth year": 1179,
     "sex": "f",
     "faction": "No religion",
     "income class": [
-      3,
-      "upper middle class"
+      2,
+      "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.44,
-      "nice-nasty": 0.999,
-      "honest-false": 0.0
+      "lawful-chaotic": 0.0,
+      "nice-nasty": 0.733,
+      "honest-false": 0.597
     },
     "attitude": {
-      "outgoing": 0.736,
-      "dream": 0.16
+      "outgoing": 0.397,
+      "dream": 0.641
     },
     "homsoc": {
       "means": {
         "independent": true,
-        "taken_care_of": true,
-        "caretaker": true,
+        "taken_care_of": false,
+        "caretaker": false,
         "needs_care": false,
-        "flags": [
-          "caretaker",
-          "neglected",
-          "starving"
-        ]
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.009,
-        "gender expression expression": 0.02
+        "sexuality expression": 0.065,
+        "gender expression expression": 0.002
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13883": {
+          "key": 13883,
+          "name": "Snelgerus",
+          "age": 36,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Lutghardis (11393)",
+            "father": "Conzone (11392)"
+          }
+        },
+        "16313": {
+          "key": 16313,
+          "name": "Herbert van Conzone",
+          "age": 42,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Lutghardis (11393)",
+            "father": "Conzone (11392)"
+          }
+        },
+        "16884": {
+          "key": 16884,
+          "name": "Remsindis",
+          "age": 27,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Lutghardis (11393)",
+            "father": "Conzone (11392)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          11394,
-          15391
-        ]
+          11394
+        ],
+        "child": {
+          "birth": [
+            13885,
+            16315,
+            16886
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        3,
-        "upper middle class"
+        2,
+        "middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.119,
+      "all_incomes": [
+        0.692,
+        0.429,
+        0.491,
+        0.739,
+        1.005,
+        1.242,
+        0.623,
+        1.119
+      ],
+      "job": {
+        "lawful": false,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 1,
-      "eye_color": "brown",
+      "skin_color": 4,
+      "eye_color": "blue",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
         "C",
-        "C"
+        "S"
       ],
-      "health": 0.0,
-      "fertility": 0.543,
+      "health": 0.746,
+      "fertility": 0.773,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -87,45 +136,26 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.584
+            "new_health": 0.746
           },
           "death": false
         },
-        "1209": {
+        "1207": {
           "health": {
-            "change": true,
-            "value_change": -0.216,
-            "new_health": 0.368
-          },
-          "death": false
-        },
-        "1210": {
-          "health": {
-            "change": true,
-            "value_change": -0.325,
-            "new_health": 0.043
-          },
-          "death": false
-        },
-        "1211": {
-          "health": {
-            "change": true,
-            "value_change": -0.038,
-            "new_health": 0.005
-          },
-          "death": false
-        },
-        "1212": {
-          "health": {
-            "change": true,
-            "value_change": -0.005,
-            "new_health": 0.0
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.746
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.692
+          },
           {
             "topic": "new relationship",
             "key": 11394,
@@ -134,8 +164,8 @@
               11393
             ],
             "people names": [
-              "Heideric Widoeghe",
-              "Badeloghen"
+              "Conzone",
+              "Lutghardis"
             ],
             "label": "spouse",
             "committed": true
@@ -143,158 +173,128 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stDie lange straet2.se1.c3",
-              "street": "Die lange straet2",
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stScherbier straet.se3.c2",
+              "street": "Scherbier straet",
               "neighborhood": "cingelzuid",
-              "unique id": 622
+              "unique id": 637
             }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.429
+          }
+        ],
+        "1202": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.491
+          },
+          {
+            "topic": "new relationship",
+            "key": 13885,
+            "people": [
+              11393,
+              13883
+            ],
+            "people names": [
+              "Lutghardis",
+              "Snelgerus"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1204": [
           {
-            "key": 11394,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 11392,
-              "name": "Heideric Widoeghe",
-              "age": 53,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.005
           }
         ],
         "1205": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "feelings change",
+            "target": 11392,
+            "target name": "Conzone",
+            "state": "infatuation",
+            "relationship": 11394
           }
         ],
         "1206": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.623
+          },
+          {
+            "topic": "new relationship",
+            "key": 16315,
+            "people": [
+              11393,
+              16313
+            ],
+            "people names": [
+              "Lutghardis",
+              "Herbert van Conzone"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 11392,
+            "target name": "Conzone",
+            "state": "out of love",
+            "relationship": 11394
           }
         ],
         "1207": [
           {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.119
+          },
+          {
             "topic": "new relationship",
-            "key": 15391,
+            "key": 16886,
             "people": [
-              11236,
-              11393
+              11393,
+              16884
             ],
             "people names": [
-              "Franco Ghoede",
-              "Badeloghen"
+              "Lutghardis",
+              "Remsindis"
             ],
-            "label": "spouse",
-            "committed": true
+            "label": "parentchild",
+            "committed": false
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stBreestraat.se3.c3",
-              "street": "Breestraat",
-              "neighborhood": "olvbuurt",
-              "unique id": 554
-            }
-          },
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1208": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1209": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1210": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1211": [
-          {
-            "key": 15391,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 11236,
-              "name": "Franco Ghoede",
-              "age": 55,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": [
-              20052,
-              20214
-            ]
-          },
-          {
-            "topic": "now caretaker",
-            "care dependants": []
-          },
-          {
-            "topic": "new caretaker",
-            "person": 11393
-          }
-        ],
-        "1212": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": [
-              20052,
-              20214
-            ]
+            "topic": "death",
+            "cause": "illness"
           }
         ]
       }
     },
     "key": 11393,
     "home": {
-      "income class": 3,
-      "income class label": "upper middle class",
-      "section": "stBreestraat.se3.c3",
-      "street": "Breestraat",
-      "neighborhood": "olvbuurt",
-      "unique id": 554
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stScherbier straet.se3.c2",
+      "street": "Scherbier straet",
+      "neighborhood": "cingelzuid",
+      "unique id": 637
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
-        11394,
-        15391
+        11394
       ]
     }
   }

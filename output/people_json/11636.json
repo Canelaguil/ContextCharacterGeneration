@@ -1,33 +1,33 @@
 {
   "11636": {
     "alive": false,
-    "name": "Lisebette",
-    "surname": "Verkins",
-    "full name": "Lisebette Verkins",
+    "name": "Truden",
+    "surname": "Coquus",
+    "full name": "Truden Coquus",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.004,
-      "romantic interest": 0.519,
-      "sex interest": 0.519,
-      "gender expression": 0.068,
+      "sexuality": 0.036,
+      "romantic interest": 0.459,
+      "sex interest": 0.685,
+      "gender expression": 0.015,
       "sex": "f"
     },
-    "age": 48,
-    "birth year": 1154,
+    "age": 43,
+    "birth year": 1175,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
-      2,
-      "middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.488,
-      "honest-false": 0.397
+      "lawful-chaotic": 0.46,
+      "nice-nasty": 0.643,
+      "honest-false": 0.473
     },
     "attitude": {
-      "outgoing": 0.893,
-      "dream": 0.038
+      "outgoing": 0.745,
+      "dream": 0.627
     },
     "homsoc": {
       "means": {
@@ -38,39 +38,91 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.002,
-        "gender expression expression": 0.049
+        "sexuality expression": 0.027,
+        "gender expression expression": 0.008
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13305": {
+          "key": 13305,
+          "name": "Gheesen van Ebram",
+          "age": 15,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Truden (11636)",
+            "father": "Ebram (11635)"
+          }
+        },
+        "15215": {
+          "key": 15215,
+          "name": "Claward",
+          "age": 21,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Truden (11636)",
+            "father": "Ebram (11635)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11637
-        ]
+        ],
+        "child": {
+          "birth": [
+            13307,
+            15217
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        2,
-        "middle class"
+        1,
+        "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.103,
+      "all_incomes": [
+        0.996,
+        1.043,
+        1.032,
+        1.041,
+        1.078,
+        1.115,
+        1.094,
+        1.104,
+        1.141,
+        1.148,
+        1.19,
+        1.147,
+        1.137,
+        1.115,
+        1.15,
+        1.137,
+        1.147,
+        1.103
+      ],
+      "job": {
+        "lawful": true,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 3,
+      "skin_color": 1,
       "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
       "hair_type": [
-        "C",
+        "S",
         "C"
       ],
-      "health": 0.824,
-      "fertility": 0.774,
+      "health": 0.306,
+      "fertility": 0.647,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -82,21 +134,42 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.824
+            "new_health": 0.59
           },
           "death": false
         },
-        "1201": {
+        "1203": {
+          "health": {
+            "change": true,
+            "value_change": -0.284,
+            "new_health": 0.306
+          },
+          "death": false
+        },
+        "1204": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.824
+            "new_health": 0.306
+          },
+          "death": false
+        },
+        "1217": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.306
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.996
+          },
           {
             "topic": "new relationship",
             "key": 11637,
@@ -105,8 +178,8 @@
               11636
             ],
             "people names": [
-              "Sygerus Iude",
-              "Lisebette Verkins"
+              "Ebram",
+              "Truden Coquus"
             ],
             "label": "spouse",
             "committed": true
@@ -114,29 +187,119 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stCorte gracht.se3.c2",
-              "street": "Corte gracht",
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stMooierstraet.se1.c1",
+              "street": "Mooierstraet",
               "neighborhood": "visbuurt",
-              "unique id": 739
+              "unique id": 747
             }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.043
+          },
+          {
+            "topic": "new relationship",
+            "key": 13307,
+            "people": [
+              11636,
+              13305
+            ],
+            "people names": [
+              "Truden Coquus",
+              "Gheesen van Ebram"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 15217,
+            "people": [
+              11636,
+              15215
+            ],
+            "people names": [
+              "Truden Coquus",
+              "Claward"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1206": [
+          {
+            "key": 11637,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11635,
+              "name": "Ebram",
+              "age": 53,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          }
+        ],
+        "1216": [
+          {
+            "topic": "event",
+            "event": "war",
+            "year": 1216
+          }
+        ],
+        "1217": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 13305,
+              "name": "Gheesen van Ebram",
+              "age": 15,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Truden (11636)",
+                "father": "Ebram (11635)"
+              }
+            },
+            "label": "child"
+          },
+          {
+            "topic": "death",
+            "cause": "illness"
           }
         ]
       }
     },
     "key": 11636,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stCorte gracht.se3.c2",
-      "street": "Corte gracht",
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stMooierstraet.se1.c1",
+      "street": "Mooierstraet",
       "neighborhood": "visbuurt",
-      "unique id": 739
+      "unique id": 747
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         11637
       ]

@@ -94,7 +94,7 @@ class Community(Model):
         self.city = City(self, seed, community)
         self.factions = Factions(community)
         self.institutions = Institutions(institutions)
-        self.manager = CommunityEvents(self, community)
+        self.community_events = CommunityEvents(self, community)
         self.intention_manager = Intention_Manager(0, self)
         self.init_community(society, seed)
 
@@ -118,7 +118,7 @@ class Community(Model):
         faction = self.factions.assign_faction()
         man = Person(self.get_id(), self, self.year, income_class, faction,'firstgen', 
                      'm', man_age, True )
-        woman_age = rand_int(max_age, Person.adult_age_women)
+        woman_age = rand_int(man_age, Person.adult_age_women)
         woman = Person(self.get_id(), self, self.year, income_class, faction, 'firstgen',
                        'f', woman_age, True)
         self.add_person(man)
@@ -248,6 +248,11 @@ class Community(Model):
     def message_person(self, key, msg):
         self.people[key].receive_message(msg)
 
+    def message_all_living_people(self, msg):
+        for key, p in self.people.items():
+            if p.alive:
+                self.message_person(key, msg)
+
     def message_home(self, key, msg):
         self.homes[key].receive_message(msg)
 
@@ -263,6 +268,11 @@ class Community(Model):
     SIMULATION FUNCTIONS
     """
     def step(self):
+        # check if a historical event happens this year
+        happenings = self.community_events.something_happens(self.year)
+        if happenings != []:
+            print(f"Events in {self.year}: {happenings}.")
+
         self.schedule.step()
 
     def run(self, years, output=False):

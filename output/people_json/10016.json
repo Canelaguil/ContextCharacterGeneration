@@ -1,19 +1,19 @@
 {
   "10016": {
     "alive": false,
-    "name": "Esa",
-    "surname": "Lozere",
-    "full name": "Esa Lozere",
+    "name": "Oda",
+    "surname": "Stamelarit",
+    "full name": "Oda Stamelarit",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.039,
-      "romantic interest": 0.941,
-      "sex interest": 0.76,
-      "gender expression": 0.0,
+      "sexuality": 0.0,
+      "romantic interest": 0.841,
+      "sex interest": 0.469,
+      "gender expression": 0.126,
       "sex": "f"
     },
-    "age": 54,
-    "birth year": 1154,
+    "age": 31,
+    "birth year": 1174,
     "sex": "f",
     "faction": "Dogmatists",
     "income class": [
@@ -21,13 +21,13 @@
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.372,
-      "nice-nasty": 0.0,
-      "honest-false": 0.748
+      "lawful-chaotic": 0.352,
+      "nice-nasty": 0.138,
+      "honest-false": 0.662
     },
     "attitude": {
-      "outgoing": 0.518,
-      "dream": 0.051
+      "outgoing": 0.524,
+      "dream": 0.789
     },
     "homsoc": {
       "means": {
@@ -38,49 +38,56 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.025,
-        "gender expression expression": -0.001
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.067
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12202": {
+          "key": 12202,
+          "name": "Lubertus Spriet",
+          "age": 44,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Oda (10016)",
+            "father": "Everocker (10015)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10017
-        ]
+        ],
+        "child": {
+          "birth": [
+            12204
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 0.836,
-      "all_incomes": [
-        0.99,
-        0.956,
-        0.885,
-        0.863,
-        0.836
-      ],
-      "job": {
-        "lawful": true,
-        "honest": true
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 7,
+      "skin_color": 1,
       "eye_color": "green",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "S",
-        "C"
+        "C",
+        "S"
       ],
-      "health": 0.0,
-      "fertility": 0.72,
+      "health": 0.705,
+      "fertility": 0.665,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -92,39 +99,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.678
+            "new_health": 0.705
           },
           "death": false
         },
         "1204": {
           "health": {
-            "change": true,
-            "value_change": -0.229,
-            "new_health": 0.449
-          },
-          "death": false
-        },
-        "1205": {
-          "health": {
-            "change": true,
-            "value_change": -0.292,
-            "new_health": 0.157
-          },
-          "death": false
-        },
-        "1206": {
-          "health": {
-            "change": true,
-            "value_change": -0.153,
-            "new_health": 0.004
-          },
-          "death": false
-        },
-        "1207": {
-          "health": {
-            "change": true,
-            "value_change": -0.004,
-            "new_health": 0.0
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.705
           },
           "death": true
         }
@@ -139,8 +122,8 @@
               10016
             ],
             "people names": [
-              "Willibrando Baers",
-              "Esa Lozere"
+              "Everocker Spriet",
+              "Oda Stamelarit"
             ],
             "label": "spouse",
             "committed": true
@@ -153,15 +136,28 @@
               "section": "stUterechse straet.se1.c2",
               "street": "Uterechse straet",
               "neighborhood": "varkensbuurt",
-              "unique id": 6
+              "unique id": 8
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12204,
+            "people": [
+              10016,
+              12202
+            ],
+            "people names": [
+              "Oda Stamelarit",
+              "Lubertus Spriet"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1203": [
+        "1204": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.99
+            "topic": "death",
+            "cause": "illness"
           }
         ]
       }
@@ -173,7 +169,7 @@
       "section": "stUterechse straet.se1.c2",
       "street": "Uterechse straet",
       "neighborhood": "varkensbuurt",
-      "unique id": 6
+      "unique id": 8
     },
     "relationship status": {
       "taken": true,

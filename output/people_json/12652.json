@@ -1,19 +1,19 @@
 {
   "12652": {
     "alive": false,
-    "name": "Cecilia",
-    "surname": "Ziele",
-    "full name": "Cecilia Ziele",
+    "name": "Suaneka",
+    "surname": "Valant",
+    "full name": "Suaneka Valant",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.075,
-      "romantic interest": 0.604,
-      "sex interest": 0.819,
-      "gender expression": 0.132,
+      "sexuality label": "gay",
+      "sexuality": 0.888,
+      "romantic interest": 0.625,
+      "sex interest": 0.999,
+      "gender expression": 0.02,
       "sex": "f"
     },
-    "age": 1,
-    "birth year": 1201,
+    "age": 42,
+    "birth year": 1200,
     "sex": "f",
     "faction": "Zealots",
     "income class": [
@@ -21,43 +21,81 @@
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.527,
-      "nice-nasty": 0.233,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.0,
+      "nice-nasty": 0.453,
+      "honest-false": 0.05
     },
     "attitude": {
-      "outgoing": 0.623,
-      "dream": 0.666
+      "outgoing": 0.636,
+      "dream": 0.246
     },
     "homsoc": {
       "means": {
         "independent": false,
         "taken_care_of": false,
-        "caretaker": true,
-        "needs_care": true,
+        "caretaker": false,
+        "needs_care": false,
         "flags": [
-          "neglected"
+          "caretaker",
+          "neglected",
+          "starving"
         ]
       },
       "expression": {
-        "sexuality expression": 0.026,
-        "gender expression expression": 0.055
+        "sexuality expression": 0.478,
+        "gender expression expression": 0.005
       }
     },
     "network": {
       "parents": {
-        "mother": "Imsoete (10085)",
-        "father": "Gheram (10084)"
+        "mother": "Reynwi (11609)",
+        "father": "Kolekinus (11608)"
       },
-      "children": {},
+      "children": {
+        "21735": {
+          "key": 21735,
+          "name": "Reymodis Lancgeroch",
+          "age": 27,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Suaneka (12652)",
+            "father": "Hughe (12433)"
+          }
+        },
+        "22507": {
+          "key": 22507,
+          "name": "Siabbo Lancgeroch",
+          "age": 24,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Suaneka (12652)",
+            "father": "Hughe (12433)"
+          }
+        }
+      },
       "relationship keys": {
         "parent": [
           12653,
           12654
         ],
-        "sibling": [
-          12655
-        ]
+        "half-sibling": [
+          15361,
+          16046,
+          19404,
+          20091
+        ],
+        "spouse": [
+          20795,
+          26944
+        ],
+        "child": {
+          "birth": [
+            21737,
+            22509
+          ]
+        }
       }
     },
     "occupation": {
@@ -70,16 +108,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 5,
+      "skin_color": 3,
       "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
       "hair_type": [
-        "C",
+        "S",
         "S"
       ],
-      "health": 0.545,
-      "fertility": 0.629,
+      "health": 0.873,
+      "fertility": 0.877,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -87,32 +125,544 @@
     },
     "memory": {
       "health": {
-        "1202": {
+        "1201": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.545
+            "new_health": 0.873
+          },
+          "death": false
+        },
+        "1242": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.873
           },
           "death": true
         }
       },
       "events": {
-        "1201": [
+        "1200": [
           {
             "topic": "new home",
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stVerckens merct.se5.c2",
-              "street": "Verckens merct",
-              "neighborhood": "varkensbuurt",
-              "unique id": 35
+              "section": "stCorte gracht.se3.c2",
+              "street": "Corte gracht",
+              "neighborhood": "visbuurt",
+              "unique id": 737
             }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11609,
+              "name": "Reynwi Minne",
+              "age": 31,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "label": "parent"
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1202": [
           {
             "topic": "neglected"
+          },
+          {
+            "topic": "update",
+            "update": "parent married",
+            "parent": 11608,
+            "new partner": 10448
+          }
+        ],
+        "1203": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 15361,
+            "people": [
+              12652,
+              15358
+            ],
+            "people names": [
+              "Suaneka Valant",
+              "Evergero Valant"
+            ],
+            "label": "half-sibling",
+            "committed": false
+          }
+        ],
+        "1205": [
+          {
+            "topic": "new relationship",
+            "key": 16046,
+            "people": [
+              12652,
+              16042
+            ],
+            "people names": [
+              "Suaneka Valant",
+              "Menoldis Valant"
+            ],
+            "label": "half-sibling",
+            "committed": false
+          }
+        ],
+        "1206": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1211": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1212": [
+          {
+            "topic": "neglected"
+          },
+          {
+            "topic": "new relationship",
+            "key": 19404,
+            "people": [
+              12652,
+              19313
+            ],
+            "people names": [
+              "Suaneka Valant",
+              "Lisebette Valant"
+            ],
+            "label": "half-sibling",
+            "committed": false
+          }
+        ],
+        "1213": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1214": [
+          {
+            "topic": "new relationship",
+            "key": 20091,
+            "people": [
+              12652,
+              20020
+            ],
+            "people names": [
+              "Suaneka Valant",
+              "Katerina Valant"
+            ],
+            "label": "half-sibling",
+            "committed": false
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          }
+        ],
+        "1216": [
+          {
+            "topic": "event",
+            "event": "war",
+            "year": 1216
+          }
+        ],
+        "1217": [
+          {
+            "topic": "new relationship",
+            "key": 20795,
+            "people": [
+              12433,
+              12652
+            ],
+            "people names": [
+              "Hughe Lancgeroch",
+              "Suaneka Valant"
+            ],
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1221": [
+          {
+            "topic": "update",
+            "update": "parent married",
+            "parent": 11608,
+            "new partner": 12065
+          }
+        ],
+        "1222": [
+          {
+            "topic": "new relationship",
+            "key": 21737,
+            "people": [
+              12652,
+              21735
+            ],
+            "people names": [
+              "Suaneka Valant",
+              "Reymodis Lancgeroch"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.268,
+            "inhabitants": [
+              22507,
+              19619,
+              23041,
+              29368,
+              30598,
+              30889
+            ]
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": [
+              29368,
+              30598,
+              30889
+            ]
+          }
+        ],
+        "1225": [
+          {
+            "topic": "new relationship",
+            "key": 22509,
+            "people": [
+              12652,
+              22507
+            ],
+            "people names": [
+              "Suaneka Valant",
+              "Siabbo Lancgeroch"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1226": [
+          {
+            "topic": "not enough income",
+            "income": 0.327,
+            "inhabitants": [
+              22507,
+              19619,
+              23041,
+              29368,
+              30598,
+              30889
+            ]
+          }
+        ],
+        "1227": [
+          {
+            "key": 20795,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12433,
+              "name": "Hughe Lancgeroch",
+              "age": 26,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Jute (10859)",
+                "father": "Amisius (10858)"
+              }
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "event",
+            "event": "famine",
+            "year": 1227
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              22507,
+              19619,
+              23041,
+              29368,
+              30598,
+              30889
+            ]
+          }
+        ],
+        "1228": [
+          {
+            "topic": "event",
+            "event": "famine",
+            "year": 1228
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              22507,
+              19619,
+              23041,
+              29368,
+              30598,
+              30889
+            ]
+          }
+        ],
+        "1229": [
+          {
+            "topic": "event",
+            "event": "faction upheaval",
+            "faction": "Zealots",
+            "year": 1229
+          }
+        ],
+        "1232": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 15358,
+              "name": "Evergero Valant",
+              "age": 27,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Beatrice (10448)",
+                "father": "Kolekinus (11608)"
+              }
+            },
+            "label": "half-sibling"
+          },
+          {
+            "topic": "event",
+            "event": "war",
+            "year": 1232
+          }
+        ],
+        "1233": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11608,
+              "name": "Kolekinus Valant",
+              "age": 65,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "parent"
+          }
+        ],
+        "1234": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              22507,
+              19619,
+              23041,
+              29368,
+              30598,
+              30889
+            ]
+          }
+        ],
+        "1235": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              22507,
+              19619,
+              23041,
+              29368,
+              30598,
+              30889
+            ]
+          }
+        ],
+        "1236": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              22507,
+              19619,
+              23041,
+              29368,
+              30598,
+              30889
+            ]
+          }
+        ],
+        "1237": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 20020,
+              "name": "Katerina Valant",
+              "age": 22,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Beatrice (10448)",
+                "father": "Kolekinus (11608)"
+              }
+            },
+            "label": "half-sibling"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              22507,
+              19619,
+              23041,
+              29368,
+              30598,
+              30889
+            ]
+          }
+        ],
+        "1238": [
+          {
+            "topic": "new relationship",
+            "key": 26944,
+            "people": [
+              19619,
+              12652
+            ],
+            "people names": [
+              "Segher",
+              "Suaneka Valant"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.218,
+            "inhabitants": [
+              22507,
+              19619,
+              23041,
+              29368,
+              30598,
+              30889
+            ]
+          }
+        ],
+        "1239": [
+          {
+            "topic": "not enough income",
+            "income": 0.097,
+            "inhabitants": [
+              22507,
+              19619,
+              23041,
+              29368,
+              30598,
+              30889
+            ]
+          }
+        ],
+        "1240": [
+          {
+            "topic": "feelings change",
+            "target": 19619,
+            "target name": "Segher",
+            "state": "out of love",
+            "relationship": 26944
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              22507,
+              19619,
+              23041,
+              29368,
+              30598,
+              30889
+            ]
+          }
+        ],
+        "1241": [
+          {
+            "topic": "not caretaker"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.097,
+            "inhabitants": [
+              22507,
+              19619,
+              23041,
+              29368,
+              30598,
+              30889
+            ]
+          }
+        ],
+        "1242": [
+          {
+            "topic": "not enough income",
+            "income": 0.048,
+            "inhabitants": [
+              22507,
+              19619,
+              23041,
+              29368,
+              30598,
+              30889
+            ]
+          },
+          {
+            "topic": "death",
+            "cause": "illness"
           }
         ]
       }
@@ -121,16 +671,21 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stVerckens merct.se5.c2",
-      "street": "Verckens merct",
-      "neighborhood": "varkensbuurt",
-      "unique id": 35
+      "section": "stCorte gracht.se3.c2",
+      "street": "Corte gracht",
+      "neighborhood": "visbuurt",
+      "unique id": 737
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
-        12655
+        15361,
+        16046,
+        19404,
+        20091,
+        20795,
+        26944
       ]
     }
   }

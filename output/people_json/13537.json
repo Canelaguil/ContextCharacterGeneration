@@ -1,121 +1,103 @@
 {
   "13537": {
     "alive": false,
-    "name": "Laurens",
-    "surname": "Dukinghe",
-    "full name": "Laurens Dukinghe",
+    "name": "Waldrada",
+    "surname": "van Denijs",
+    "full name": "Waldrada van Denijs",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.016,
-      "romantic interest": 0.573,
-      "sex interest": 0.626,
-      "gender expression": 0.054,
-      "sex": "m"
+      "sexuality": 0.06,
+      "romantic interest": 0.785,
+      "sex interest": 0.766,
+      "gender expression": 0.194,
+      "sex": "f"
     },
-    "age": 42,
+    "age": 23,
     "birth year": 1202,
-    "sex": "m",
+    "sex": "f",
     "faction": "Zealots",
     "income class": [
-      3,
-      "upper middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.465,
-      "honest-false": 0.541
+      "lawful-chaotic": 0.913,
+      "nice-nasty": 0.829,
+      "honest-false": 0.155
     },
     "attitude": {
-      "outgoing": 0.777,
-      "dream": 0.319
+      "outgoing": 0.476,
+      "dream": 0.367
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": true,
         "needs_care": false,
         "flags": [
-          "neglected"
+          "neglected",
+          "starving"
         ]
       },
       "expression": {
-        "sexuality expression": 0.008,
-        "gender expression expression": 0.029
+        "sexuality expression": 0.042,
+        "gender expression expression": 0.051
       }
     },
     "network": {
       "parents": {
-        "mother": "Woltwigis (12128)",
-        "father": "Herlewin (12127)"
+        "mother": "Pietersen (10229)",
+        "father": "Denijs (10228)"
       },
-      "children": {},
+      "children": {
+        "22651": {
+          "key": 22651,
+          "name": "Lisebette Vessesdochter",
+          "age": 2,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Waldrada (13537)",
+            "father": "Vesse (16094)"
+          }
+        }
+      },
       "relationship keys": {
         "parent": [
           13538,
           13539
         ],
-        "sibling": [
-          13540,
-          13934,
-          16710
-        ],
         "spouse": [
-          21442
-        ]
+          21680
+        ],
+        "child": {
+          "birth": [
+            22653
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
-        3,
-        "upper middle class"
+        1,
+        "lower middle class"
       ],
-      "income": 1.132,
-      "all_incomes": [
-        1.074,
-        1.08,
-        1.121,
-        1.096,
-        1.097,
-        0.912,
-        0.887,
-        0.875,
-        0.869,
-        0.852,
-        0.806,
-        0.876,
-        0.892,
-        0.939,
-        1.022,
-        1.075,
-        1.127,
-        1.095,
-        1.116,
-        1.164,
-        1.155,
-        1.097,
-        1.172,
-        1.153,
-        1.181,
-        1.132
-      ],
-      "job": {
-        "lawful": true,
-        "honest": true
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 6,
-      "eye_color": "green",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "skin_color": 2,
+      "eye_color": "brown",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "C",
+        "S",
         "S"
       ],
-      "health": 0.71,
-      "fertility": 0.764,
+      "health": 0.675,
+      "fertility": 0.748,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -127,17 +109,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.71
+            "new_health": 0.675
           },
           "death": false
-        },
-        "1244": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.71
-          },
-          "death": true
         }
       },
       "events": {
@@ -145,30 +119,21 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stDen Hof.se7.c3",
-              "street": "Den Hof",
-              "neighborhood": "denhof",
-              "unique id": 957
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stHelle voet.se5.c1",
+              "street": "Helle voet",
+              "neighborhood": "jorisbuurt",
+              "unique id": 104
             }
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
           }
         ],
         "1203": [
-          {
-            "topic": "new relationship",
-            "key": 13934,
-            "people": [
-              13537,
-              13930
-            ],
-            "people names": [
-              "Laurens Dukinghe",
-              "Wouter Dukinghe"
-            ],
-            "label": "sibling",
-            "committed": false
-          },
           {
             "topic": "neglected"
           }
@@ -195,6 +160,18 @@
         ],
         "1208": [
           {
+            "topic": "person died",
+            "person": {
+              "key": 10228,
+              "name": "Denijs",
+              "age": 50,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "parent"
+          },
+          {
             "topic": "neglected"
           }
         ],
@@ -206,6 +183,12 @@
         "1210": [
           {
             "topic": "neglected"
+          },
+          {
+            "topic": "update",
+            "update": "parent married",
+            "parent": 10229,
+            "new partner": 10927
           }
         ],
         "1211": [
@@ -214,20 +197,6 @@
           }
         ],
         "1212": [
-          {
-            "topic": "new relationship",
-            "key": 16710,
-            "people": [
-              13537,
-              16706
-            ],
-            "people names": [
-              "Laurens Dukinghe",
-              "Ysaac Dukinghe"
-            ],
-            "label": "sibling",
-            "committed": false
-          },
           {
             "topic": "neglected"
           }
@@ -244,24 +213,19 @@
         ],
         "1215": [
           {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
             "topic": "neglected"
           }
         ],
         "1216": [
           {
-            "topic": "person died",
-            "person": {
-              "key": 13930,
-              "name": "Wouter Dukinghe",
-              "age": 12,
-              "alive": false,
-              "sex": "m",
-              "parents": {
-                "mother": "Woltwigis (12128)",
-                "father": "Herlewin (12127)"
-              }
-            },
-            "label": "sibling"
+            "topic": "event",
+            "event": "war",
+            "year": 1216
           },
           {
             "topic": "neglected"
@@ -272,232 +236,83 @@
             "topic": "neglected"
           }
         ],
-        "1218": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1219": [
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.074
-          },
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1220": [
-          {
-            "topic": "neglected"
-          }
-        ],
         "1221": [
           {
-            "topic": "neglected"
-          }
-        ],
-        "1222": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1223": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1224": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1225": [
-          {
             "topic": "person died",
             "person": {
-              "key": 12127,
-              "name": "Herlewin Dukinghe",
-              "age": 56,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "label": "parent"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 12128,
-              "name": "Woltwigis Crulleboye",
-              "age": 52,
+              "key": 10229,
+              "name": "Pietersen",
+              "age": 55,
               "alive": false,
               "sex": "f",
               "parents": "firstgen"
             },
             "label": "parent"
-          },
-          {
-            "topic": "neglected"
           }
         ],
-        "1226": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1227": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1228": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1229": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1230": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1231": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1232": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1233": [
-          {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.022
-          },
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1234": [
+        "1222": [
           {
             "topic": "new relationship",
-            "key": 21442,
+            "key": 21680,
             "people": [
-              13537,
-              15860
+              16094,
+              13537
             ],
             "people names": [
-              "Laurens Dukinghe",
-              "Sara van Herlewin"
+              "Vesse Gheramszoon",
+              "Waldrada van Denijs"
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "neglected"
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stHelle voet.se9.c1",
+              "street": "Helle voet",
+              "neighborhood": "jorisbuurt",
+              "unique id": 126
+            }
           }
         ],
-        "1235": [
+        "1225": [
           {
-            "topic": "neglected"
-          }
-        ],
-        "1236": [
-          {
-            "topic": "feelings change",
-            "target": 15860,
-            "target name": "Sara van Herlewin",
-            "state": "out of love",
-            "relationship": 21442
+            "topic": "new relationship",
+            "key": 22653,
+            "people": [
+              13537,
+              22651
+            ],
+            "people names": [
+              "Waldrada van Denijs",
+              "Lisebette Vessesdochter"
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
-            "topic": "neglected"
-          }
-        ],
-        "1237": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1238": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1239": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1240": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1241": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1242": [
-          {
-            "topic": "person died",
-            "person": {
-              "key": 13082,
-              "name": "Hornekinga Dukinghe",
-              "age": 40,
-              "alive": false,
-              "sex": "m",
-              "parents": {
-                "mother": "Woltwigis (12128)",
-                "father": "Herlewin (12127)"
-              }
-            },
-            "label": "sibling"
-          },
-          {
-            "topic": "feelings change",
-            "target": 15860,
-            "target name": "Sara van Herlewin",
-            "state": "infatuation",
-            "relationship": 21442
-          },
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1243": [
-          {
-            "topic": "neglected"
+            "topic": "death",
+            "cause": "childbirth"
           }
         ]
       }
     },
     "key": 13537,
     "home": {
-      "income class": 3,
-      "income class label": "upper middle class",
-      "section": "stDen Hof.se7.c3",
-      "street": "Den Hof",
-      "neighborhood": "denhof",
-      "unique id": 957
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stHelle voet.se9.c1",
+      "street": "Helle voet",
+      "neighborhood": "jorisbuurt",
+      "unique id": 126
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        13540,
-        13934,
-        16710,
-        21442
+        21680
       ]
     }
   }

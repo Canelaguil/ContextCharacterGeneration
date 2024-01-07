@@ -1,19 +1,19 @@
 {
   "10346": {
     "alive": false,
-    "name": "Yda",
+    "name": "Esa",
     "surname": "",
-    "full name": "Yda",
+    "full name": "Esa",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.102,
-      "romantic interest": 0.799,
-      "sex interest": 0.95,
-      "gender expression": 0.222,
+      "sexuality label": "gay",
+      "sexuality": 0.999,
+      "romantic interest": 0.787,
+      "sex interest": 0.57,
+      "gender expression": 0.287,
       "sex": "f"
     },
-    "age": 53,
-    "birth year": 1152,
+    "age": 28,
+    "birth year": 1179,
     "sex": "f",
     "faction": "Dogmatists",
     "income class": [
@@ -21,13 +21,13 @@
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.195,
-      "nice-nasty": 0.646,
-      "honest-false": 0.229
+      "lawful-chaotic": 0.0,
+      "nice-nasty": 0.787,
+      "honest-false": 0.466
     },
     "attitude": {
-      "outgoing": 0.384,
-      "dream": 0.371
+      "outgoing": 0.714,
+      "dream": 0.603
     },
     "homsoc": {
       "means": {
@@ -38,17 +38,58 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.059,
-        "gender expression expression": 0.098
+        "sexuality expression": 0.613,
+        "gender expression expression": 0.111
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14808": {
+          "key": 14808,
+          "name": "Nannen Jude",
+          "age": 24,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Esa (10346)",
+            "father": "Heinone (10345)"
+          }
+        },
+        "15439": {
+          "key": 15439,
+          "name": "Thezonus Jude",
+          "age": 3,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Esa (10346)",
+            "father": "Heinone (10345)"
+          }
+        },
+        "16109": {
+          "key": 16109,
+          "name": "Folqui Jude",
+          "age": 43,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Esa (10346)",
+            "father": "Heinone (10345)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10347
-        ]
+        ],
+        "child": {
+          "birth": [
+            14810,
+            15441,
+            16111
+          ]
+        }
       }
     },
     "occupation": {
@@ -61,16 +102,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 7,
-      "eye_color": "blue",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "skin_color": 9,
+      "eye_color": "green",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "C",
         "S"
       ],
-      "health": 0.0,
-      "fertility": 0.538,
+      "health": 0.772,
+      "fertility": 0.742,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -82,31 +123,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.636
+            "new_health": 0.772
           },
           "death": false
         },
-        "1202": {
+        "1206": {
           "health": {
-            "change": true,
-            "value_change": -0.269,
-            "new_health": 0.367
-          },
-          "death": false
-        },
-        "1203": {
-          "health": {
-            "change": true,
-            "value_change": -0.225,
-            "new_health": 0.142
-          },
-          "death": false
-        },
-        "1204": {
-          "health": {
-            "change": true,
-            "value_change": -0.142,
-            "new_health": 0.0
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.772
           },
           "death": true
         }
@@ -121,8 +146,8 @@
               10346
             ],
             "people names": [
-              "Robbrecht",
-              "Yda"
+              "Heinone Jude",
+              "Esa"
             ],
             "label": "spouse",
             "committed": true
@@ -132,11 +157,63 @@
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stMuelen straet.se3.c1",
+              "section": "stMuelen straet.se1.c1",
               "street": "Muelen straet",
               "neighborhood": "jorisbuurt",
-              "unique id": 159
+              "unique id": 152
             }
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 14810,
+            "people": [
+              10346,
+              14808
+            ],
+            "people names": [
+              "Esa",
+              "Nannen Jude"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1205": [
+          {
+            "topic": "new relationship",
+            "key": 15441,
+            "people": [
+              10346,
+              15439
+            ],
+            "people names": [
+              "Esa",
+              "Thezonus Jude"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 16111,
+            "people": [
+              10346,
+              16109
+            ],
+            "people names": [
+              "Esa",
+              "Folqui Jude"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "death",
+            "cause": "illness"
           }
         ]
       }
@@ -145,10 +222,10 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stMuelen straet.se3.c1",
+      "section": "stMuelen straet.se1.c1",
       "street": "Muelen straet",
       "neighborhood": "jorisbuurt",
-      "unique id": 159
+      "unique id": 152
     },
     "relationship status": {
       "taken": true,

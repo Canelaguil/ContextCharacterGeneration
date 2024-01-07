@@ -1,64 +1,129 @@
 {
   "12008": {
     "alive": false,
-    "name": "Douwen",
-    "surname": "Hyseriin",
-    "full name": "Douwen Hyseriin",
+    "name": "Brundonis",
+    "surname": "Borlutte",
+    "full name": "Brundonis Borlutte",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.062,
-      "romantic interest": 0.614,
-      "sex interest": 0.808,
-      "gender expression": 0.211,
+      "sexuality": 0.15,
+      "romantic interest": 0.757,
+      "sex interest": 0.377,
+      "gender expression": 0.181,
       "sex": "f"
     },
-    "age": 52,
-    "birth year": 1164,
+    "age": 54,
+    "birth year": 1170,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
-      2,
-      "middle class"
+      3,
+      "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.91,
-      "honest-false": 0.823
+      "lawful-chaotic": 0.737,
+      "nice-nasty": 0.991,
+      "honest-false": 0.121
     },
     "attitude": {
-      "outgoing": 0.156,
-      "dream": 0.616
+      "outgoing": 0.418,
+      "dream": 0.821
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "caretaker",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.045,
-        "gender expression expression": 0.136
+        "sexuality expression": 0.077,
+        "gender expression expression": 0.093
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12751": {
+          "key": 12751,
+          "name": "Duker Rolantszoon",
+          "age": 32,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Brundonis (12008)",
+            "father": "Rolant (12007)"
+          }
+        },
+        "13414": {
+          "key": 13414,
+          "name": "Thedwi Gole",
+          "age": 35,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Brundonis (12008)",
+            "father": "Rolant (12007)"
+          }
+        },
+        "14672": {
+          "key": 14672,
+          "name": "Arnulphus Gole",
+          "age": 12,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Brundonis (12008)",
+            "father": "Rolant (12007)"
+          }
+        },
+        "16523": {
+          "key": 16523,
+          "name": "Ramont Gole",
+          "age": 33,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Brundonis (12008)",
+            "father": "Rolant (12007)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          12009
-        ]
+          12009,
+          18509
+        ],
+        "child": {
+          "birth": [
+            12753,
+            13416,
+            14674,
+            16525
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        2,
-        "middle class"
+        3,
+        "upper middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.193,
+      "all_incomes": [
+        1.238,
+        1.139,
+        1.193
+      ],
+      "job": {
+        "lawful": true,
+        "honest": false
+      }
     },
     "genetics": {
       "skin_color": 0,
@@ -66,11 +131,11 @@
       "hair_color": "strawberry blonde",
       "hair_color_code": 5,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.464,
-      "fertility": 0.827,
+      "health": 0.01,
+      "fertility": 0.88,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -82,23 +147,39 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.849
+            "new_health": 0.81
           },
           "death": false
         },
-        "1214": {
+        "1220": {
+          "health": {
+            "change": true,
+            "value_change": -0.123,
+            "new_health": 0.687
+          },
+          "death": false
+        },
+        "1221": {
+          "health": {
+            "change": true,
+            "value_change": -0.205,
+            "new_health": 0.482
+          },
+          "death": false
+        },
+        "1222": {
+          "health": {
+            "change": true,
+            "value_change": -0.303,
+            "new_health": 0.179
+          },
+          "death": false
+        },
+        "1223": {
           "health": {
             "change": true,
             "value_change": -0.169,
-            "new_health": 0.68
-          },
-          "death": false
-        },
-        "1215": {
-          "health": {
-            "change": true,
-            "value_change": -0.216,
-            "new_health": 0.464
+            "new_health": 0.01
           },
           "death": true
         }
@@ -113,8 +194,145 @@
               12008
             ],
             "people names": [
-              "Albertus Hyseriin",
-              "Douwen Hyseriin"
+              "Rolant Gole",
+              "Brundonis Borlutte"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 3,
+              "income class label": "upper middle class",
+              "section": "stCromme straet.se7.c3",
+              "street": "Cromme straet",
+              "neighborhood": "denhof",
+              "unique id": 914
+            }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12753,
+            "people": [
+              12008,
+              12751
+            ],
+            "people names": [
+              "Brundonis Borlutte",
+              "Duker Rolantszoon"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 12007,
+            "target name": "Rolant Gole",
+            "state": "solid love",
+            "relationship": 12009
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 13416,
+            "people": [
+              12008,
+              13414
+            ],
+            "people names": [
+              "Brundonis Borlutte",
+              "Thedwi Gole"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 14674,
+            "people": [
+              12008,
+              14672
+            ],
+            "people names": [
+              "Brundonis Borlutte",
+              "Arnulphus Gole"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 16525,
+            "people": [
+              12008,
+              16523
+            ],
+            "people names": [
+              "Brundonis Borlutte",
+              "Ramont Gole"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1207": [
+          {
+            "key": 12009,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12007,
+              "name": "Rolant Gole",
+              "age": 56,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "new relationship",
+            "key": 18509,
+            "people": [
+              10522,
+              12008
+            ],
+            "people names": [
+              "Ulrici",
+              "Brundonis Borlutte"
             ],
             "label": "spouse",
             "committed": true
@@ -124,20 +342,152 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stCromme straet.se5.c2",
-              "street": "Cromme straet",
-              "neighborhood": "denhof",
-              "unique id": 906
+              "section": "stBloemendaelse straet.se3.c2",
+              "street": "Bloemendaelse straet",
+              "neighborhood": "agnesbuurt",
+              "unique id": 229
             }
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.351,
+            "inhabitants": [
+              12951,
+              12736,
+              24996,
+              25328
+            ]
           }
         ],
-        "1203": [
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              12951,
+              12736,
+              24996,
+              25328
+            ]
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              12951,
+              12736,
+              24996,
+              25328
+            ]
+          }
+        ],
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              12951,
+              12736,
+              24996,
+              25328
+            ]
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              12951,
+              12736,
+              24996,
+              25328
+            ]
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.1,
+            "inhabitants": [
+              12951,
+              12736,
+              24996,
+              25328
+            ]
+          }
+        ],
+        "1216": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 14672,
+              "name": "Arnulphus Gole",
+              "age": 12,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Brundonis (12008)",
+                "father": "Rolant (12007)"
+              }
+            },
+            "label": "child"
+          },
+          {
+            "topic": "event",
+            "event": "war",
+            "year": 1216
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.146,
+            "inhabitants": [
+              12951,
+              12736,
+              24996,
+              25328
+            ]
+          }
+        ],
+        "1217": [
+          {
+            "topic": "not enough income",
+            "income": 0.045,
+            "inhabitants": [
+              12951,
+              12736,
+              24996,
+              25328
+            ]
+          }
+        ],
+        "1220": [
           {
             "topic": "feelings change",
-            "target": 12007,
-            "target name": "Albertus Hyseriin",
+            "target": 10522,
+            "target name": "Ulrici",
             "state": "out of love",
-            "relationship": 12009
+            "relationship": 18509
+          }
+        ],
+        "1221": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.238
+          }
+        ],
+        "1223": [
+          {
+            "topic": "death",
+            "cause": "old age"
           }
         ]
       }
@@ -146,16 +496,17 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stCromme straet.se5.c2",
-      "street": "Cromme straet",
-      "neighborhood": "denhof",
-      "unique id": 906
+      "section": "stBloemendaelse straet.se3.c2",
+      "street": "Bloemendaelse straet",
+      "neighborhood": "agnesbuurt",
+      "unique id": 229
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        12009
+        12009,
+        18509
       ]
     }
   }

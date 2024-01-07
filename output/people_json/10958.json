@@ -1,78 +1,109 @@
 {
   "10958": {
     "alive": false,
-    "name": "Reynwi",
-    "surname": "Scakart",
-    "full name": "Reynwi Scakart",
+    "name": "Saswe",
+    "surname": "",
+    "full name": "Saswe",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.054,
-      "romantic interest": 0.839,
-      "sex interest": 0.717,
-      "gender expression": 0.008,
+      "sexuality label": "bi",
+      "sexuality": 0.5,
+      "romantic interest": 0.962,
+      "sex interest": 0.573,
+      "gender expression": 0.295,
       "sex": "f"
     },
-    "age": 52,
-    "birth year": 1161,
+    "age": 64,
+    "birth year": 1176,
     "sex": "f",
     "faction": "Zealots",
     "income class": [
-      0,
-      "working class"
+      1,
+      "lower middle class"
     ],
     "personality": {
       "lawful-chaotic": 0.0,
-      "nice-nasty": 0.298,
-      "honest-false": 0.109
+      "nice-nasty": 0.729,
+      "honest-false": 0.782
     },
     "attitude": {
-      "outgoing": 0.42,
-      "dream": 0.719
+      "outgoing": 0.461,
+      "dream": 0.485
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
         "flags": [
+          "caretaker",
           "starving"
         ]
       },
       "expression": {
-        "sexuality expression": 0.024,
-        "gender expression expression": 0.004
+        "sexuality expression": 0.43,
+        "gender expression expression": 0.107
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12472": {
+          "key": 12472,
+          "name": "Gheram Tant",
+          "age": 32,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Saswe (10958)",
+            "father": "Gisekin (10957)"
+          }
+        },
+        "13074": {
+          "key": 13074,
+          "name": "Heilsota",
+          "age": 48,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Saswe (10958)",
+            "father": "Gisekin (10957)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          10959
-        ]
+          10959,
+          26946
+        ],
+        "child": {
+          "birth": [
+            12474,
+            13076
+          ]
+        }
       }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        0,
-        "working class"
+        1,
+        "lower middle class"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 6,
+      "skin_color": 1,
       "eye_color": "brown",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.188,
-      "fertility": 0.588,
+      "health": 0.494,
+      "fertility": 0.915,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -84,23 +115,31 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.566
+            "new_health": 0.906
           },
           "death": false
         },
-        "1211": {
+        "1237": {
           "health": {
             "change": true,
-            "value_change": -0.242,
-            "new_health": 0.324
+            "value_change": -0.092,
+            "new_health": 0.814
           },
           "death": false
         },
-        "1212": {
+        "1238": {
           "health": {
             "change": true,
-            "value_change": -0.136,
-            "new_health": 0.188
+            "value_change": -0.152,
+            "new_health": 0.662
+          },
+          "death": false
+        },
+        "1239": {
+          "health": {
+            "change": true,
+            "value_change": -0.168,
+            "new_health": 0.494
           },
           "death": true
         }
@@ -115,8 +154,8 @@
               10958
             ],
             "people names": [
-              "Amisius",
-              "Reynwi Scakart"
+              "Gisekin Tant",
+              "Saswe"
             ],
             "label": "spouse",
             "committed": true
@@ -124,73 +163,340 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stTrysgens.se1.c0",
-              "street": "Trysgens",
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stSt. Ians straet.se5.c1",
+              "street": "St. Ians straet",
               "neighborhood": "kampbuurt",
-              "unique id": 439
+              "unique id": 430
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12474,
+            "people": [
+              10958,
+              12472
+            ],
+            "people names": [
+              "Saswe",
+              "Gheram Tant"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 10957,
+            "target name": "Gisekin Tant",
+            "state": "solid love",
+            "relationship": 10959
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 13076,
+            "people": [
+              10958,
+              13074
+            ],
+            "people names": [
+              "Saswe",
+              "Heilsota"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1207": [
           {
-            "topic": "not enough income",
-            "income": 0.418,
-            "inhabitants": []
+            "topic": "feelings change",
+            "target": 10957,
+            "target name": "Gisekin Tant",
+            "state": "out of love",
+            "relationship": 10959
           }
         ],
-        "1208": [
+        "1213": [
+          {
+            "key": 10959,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10957,
+              "name": "Gisekin Tant",
+              "age": 54,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          },
           {
             "topic": "not enough income",
-            "income": 0.262,
-            "inhabitants": []
+            "income": 0,
+            "inhabitants": [
+              12391,
+              17780,
+              24851,
+              30286
+            ]
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": [
+              30286
+            ]
           }
         ],
-        "1209": [
+        "1214": [
           {
             "topic": "not enough income",
-            "income": 0.014,
-            "inhabitants": []
+            "income": 0,
+            "inhabitants": [
+              12391,
+              17780,
+              24851,
+              30286
+            ]
           }
         ],
-        "1210": [
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
           {
             "topic": "not enough income",
-            "income": 0.08,
-            "inhabitants": []
+            "income": 0,
+            "inhabitants": [
+              12391,
+              17780,
+              24851,
+              30286
+            ]
           }
         ],
-        "1211": [
+        "1216": [
+          {
+            "topic": "event",
+            "event": "war",
+            "year": 1216
+          },
           {
             "topic": "not enough income",
-            "income": 0.025,
-            "inhabitants": []
+            "income": 0,
+            "inhabitants": [
+              12391,
+              17780,
+              24851,
+              30286
+            ]
           }
         ],
-        "1212": [
+        "1225": [
           {
             "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
+            "income": 0.571,
+            "inhabitants": [
+              12391,
+              17780,
+              24851,
+              30286
+            ]
+          }
+        ],
+        "1227": [
+          {
+            "topic": "event",
+            "event": "famine",
+            "year": 1227
+          }
+        ],
+        "1228": [
+          {
+            "topic": "event",
+            "event": "famine",
+            "year": 1228
+          }
+        ],
+        "1229": [
+          {
+            "topic": "event",
+            "event": "faction upheaval",
+            "faction": "Zealots",
+            "year": 1229
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              12391,
+              17780,
+              24851,
+              30286
+            ]
+          }
+        ],
+        "1230": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              12391,
+              17780,
+              24851,
+              30286
+            ]
+          }
+        ],
+        "1231": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              12391,
+              17780,
+              24851,
+              30286
+            ]
+          }
+        ],
+        "1232": [
+          {
+            "topic": "event",
+            "event": "war",
+            "year": 1232
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              12391,
+              17780,
+              24851,
+              30286
+            ]
+          }
+        ],
+        "1233": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12472,
+              "name": "Gheram Tant",
+              "age": 32,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Saswe (10958)",
+                "father": "Gisekin (10957)"
+              }
+            },
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              12391,
+              17780,
+              24851,
+              30286
+            ]
+          }
+        ],
+        "1234": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              12391,
+              17780,
+              24851,
+              30286
+            ]
+          }
+        ],
+        "1235": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              12391,
+              17780,
+              24851,
+              30286
+            ]
+          }
+        ],
+        "1236": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              12391,
+              17780,
+              24851,
+              30286
+            ]
+          }
+        ],
+        "1237": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              12391,
+              17780,
+              24851,
+              30286
+            ]
+          }
+        ],
+        "1238": [
+          {
+            "topic": "new relationship",
+            "key": 26946,
+            "people": [
+              12391,
+              10958
+            ],
+            "people names": [
+              "Thieleman",
+              "Saswe"
+            ],
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1239": [
+          {
+            "topic": "death",
+            "cause": "old age"
           }
         ]
       }
     },
     "key": 10958,
     "home": {
-      "income class": 0,
-      "income class label": "working class",
-      "section": "stTrysgens.se1.c0",
-      "street": "Trysgens",
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stSt. Ians straet.se5.c1",
+      "street": "St. Ians straet",
       "neighborhood": "kampbuurt",
-      "unique id": 439
+      "unique id": 430
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        10959
+        10959,
+        26946
       ]
     }
   }

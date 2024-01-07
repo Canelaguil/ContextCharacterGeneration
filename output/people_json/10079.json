@@ -1,81 +1,97 @@
 {
   "10079": {
     "alive": false,
-    "name": "Ghela",
-    "surname": "Ulf",
-    "full name": "Ghela Ulf",
+    "name": "Cofte",
+    "surname": "",
+    "full name": "Cofte",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.075,
-      "romantic interest": 0.809,
-      "sex interest": 0.556,
-      "gender expression": 0.161,
+      "sexuality": 0.037,
+      "romantic interest": 0.908,
+      "sex interest": 0.388,
+      "gender expression": 0.163,
       "sex": "f"
     },
-    "age": 52,
-    "birth year": 1164,
+    "age": 48,
+    "birth year": 1167,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "No religion",
     "income class": [
-      2,
-      "middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.937,
-      "nice-nasty": 0.307,
-      "honest-false": 0.325
+      "lawful-chaotic": 0.299,
+      "nice-nasty": 0.518,
+      "honest-false": 0.6
     },
     "attitude": {
-      "outgoing": 0.428,
-      "dream": 0.603
+      "outgoing": 0.418,
+      "dream": 0.308
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
         "flags": [
+          "caretaker",
           "starving"
         ]
       },
       "expression": {
         "sexuality expression": 0.021,
-        "gender expression expression": 0.116
+        "gender expression expression": 0.052
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12220": {
+          "key": 12220,
+          "name": "Wilbord Jurreszoon",
+          "age": 4,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Cofte (10079)",
+            "father": "Jurre (10078)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10080,
-          14700,
-          15967,
-          17255
-        ]
+          16036
+        ],
+        "child": {
+          "birth": [
+            12222
+          ]
+        }
       }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        2,
-        "middle class"
+        1,
+        "lower middle class"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 4,
+      "skin_color": 3,
       "eye_color": "brown",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "C",
         "S"
       ],
-      "health": 0.233,
-      "fertility": 0.608,
+      "health": 0.549,
+      "fertility": 0.524,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -87,25 +103,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.579
+            "new_health": 0.549
           },
           "death": false
-        },
-        "1214": {
-          "health": {
-            "change": true,
-            "value_change": -0.185,
-            "new_health": 0.394
-          },
-          "death": false
-        },
-        "1215": {
-          "health": {
-            "change": true,
-            "value_change": -0.161,
-            "new_health": 0.233
-          },
-          "death": true
         }
       },
       "events": {
@@ -118,8 +118,8 @@
               10079
             ],
             "people names": [
-              "Sygerus Dicbir",
-              "Ghela Ulf"
+              "Jurre",
+              "Cofte"
             ],
             "label": "spouse",
             "committed": true
@@ -127,16 +127,30 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stVerckens merct.se5.c2",
-              "street": "Verckens merct",
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stSlyck straet.se1.c1",
+              "street": "Slyck straet",
               "neighborhood": "varkensbuurt",
-              "unique id": 33
+              "unique id": 38
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12222,
+            "people": [
+              10079,
+              12220
+            ],
+            "people names": [
+              "Cofte",
+              "Wilbord Jurreszoon"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1202": [
+        "1204": [
           {
             "key": 10080,
             "topic": "unmarried"
@@ -145,8 +159,8 @@
             "topic": "person died",
             "person": {
               "key": 10078,
-              "name": "Sygerus Dicbir",
-              "age": 50,
+              "name": "Jurre",
+              "age": 41,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
@@ -157,33 +171,38 @@
             "topic": "not enough income",
             "income": 0,
             "inhabitants": []
-          }
-        ],
-        "1203": [
+          },
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1204": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "now caretaker",
+            "care dependants": []
           }
         ],
         "1205": [
           {
+            "topic": "person died",
+            "person": {
+              "key": 12220,
+              "name": "Wilbord Jurreszoon",
+              "age": 4,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Cofte (10079)",
+                "father": "Jurre (10078)"
+              }
+            },
+            "label": "child"
+          },
+          {
             "topic": "new relationship",
-            "key": 14700,
+            "key": 16036,
             "people": [
-              11938,
+              10105,
               10079
             ],
             "people names": [
-              "Soi Craiman",
-              "Ghela Ulf"
+              "Dilane Snauel",
+              "Cofte"
             ],
             "label": "spouse",
             "committed": true
@@ -191,84 +210,26 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stCromme straet.se3.c2",
-              "street": "Cromme straet",
-              "neighborhood": "denhof",
-              "unique id": 879
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stSlyck straet.se3.c1",
+              "street": "Slyck straet",
+              "neighborhood": "varkensbuurt",
+              "unique id": 48
             }
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
-          }
-        ],
-        "1206": [
-          {
-            "topic": "not enough income",
-            "income": 0.172,
-            "inhabitants": []
-          }
-        ],
-        "1207": [
-          {
-            "topic": "not enough income",
-            "income": 0.121,
-            "inhabitants": []
-          }
-        ],
-        "1208": [
-          {
-            "key": 14700,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 11938,
-              "name": "Soi Craiman",
-              "age": 47,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
           }
         ],
         "1209": [
           {
-            "topic": "new relationship",
-            "key": 15967,
-            "people": [
-              10087,
-              10079
-            ],
-            "people names": [
-              "Folpertus",
-              "Ghela Ulf"
-            ],
-            "label": "spouse",
-            "committed": true
-          }
-        ],
-        "1214": [
-          {
-            "key": 15967,
+            "key": 16036,
             "topic": "unmarried"
           },
           {
             "topic": "person died",
             "person": {
-              "key": 10087,
-              "name": "Folpertus",
-              "age": 60,
+              "key": 10105,
+              "name": "Dilane Snauel",
+              "age": 44,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
@@ -278,55 +239,83 @@
           {
             "topic": "not enough income",
             "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1215": [
-          {
-            "topic": "new relationship",
-            "key": 17255,
-            "people": [
-              10453,
-              10079
-            ],
-            "people names": [
-              "Alard Pannekins",
-              "Ghela Ulf"
-            ],
-            "label": "spouse",
-            "committed": true
+            "inhabitants": [
+              12220
+            ]
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stBloemendaelse straet.se1.c2",
-              "street": "Bloemendaelse straet",
-              "neighborhood": "agnesbuurt",
-              "unique id": 212
-            }
+            "topic": "now caretaker",
+            "care dependants": [
+              12220
+            ]
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              12220
+            ]
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              12220
+            ]
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              12220
+            ]
+          }
+        ],
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              12220
+            ]
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              12220
+            ]
+          },
+          {
+            "topic": "death",
+            "cause": "starvation"
           }
         ]
       }
     },
     "key": 10079,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stBloemendaelse straet.se1.c2",
-      "street": "Bloemendaelse straet",
-      "neighborhood": "agnesbuurt",
-      "unique id": 212
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stSlyck straet.se3.c1",
+      "street": "Slyck straet",
+      "neighborhood": "varkensbuurt",
+      "unique id": 48
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         10080,
-        14700,
-        15967,
-        17255
+        16036
       ]
     }
   }

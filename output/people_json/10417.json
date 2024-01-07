@@ -1,61 +1,105 @@
 {
   "10417": {
     "alive": false,
-    "name": "Mauricius",
-    "surname": "Canne",
-    "full name": "Mauricius Canne",
+    "name": "Wybel",
+    "surname": "",
+    "full name": "Wybel",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.937,
-      "romantic interest": 0.545,
-      "sex interest": 0.575,
-      "gender expression": 0.677,
+      "sexuality label": "bi",
+      "sexuality": 0.577,
+      "romantic interest": 0.999,
+      "sex interest": 0.945,
+      "gender expression": 0.518,
       "sex": "m"
     },
-    "age": 45,
-    "birth year": 1168,
+    "age": 44,
+    "birth year": 1172,
     "sex": "m",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.731,
-      "nice-nasty": 0.028,
-      "honest-false": 0.434
+      "lawful-chaotic": 0.441,
+      "nice-nasty": 0.688,
+      "honest-false": 0.472
     },
     "attitude": {
-      "outgoing": 0.506,
-      "dream": 0.618
+      "outgoing": 0.416,
+      "dream": 0.656
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
         "flags": [
-          "neglected"
+          "starving"
         ]
       },
       "expression": {
-        "sexuality expression": 0.594,
-        "gender expression expression": 0.31
+        "sexuality expression": 0.317,
+        "gender expression expression": 0.359
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "12295": {
-          "key": 12295,
-          "name": "Thedwi Canne",
-          "age": 31,
+        "14238": {
+          "key": 14238,
+          "name": "Sylof van Liudburgis",
+          "age": 46,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Liudburgis (10418)",
+            "father": "Wybel (10417)"
+          }
+        },
+        "14827": {
+          "key": 14827,
+          "name": "Ghodelde Wybelsdochter",
+          "age": 45,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Liudburgis (10418)",
+            "father": "Wybel (10417)"
+          }
+        },
+        "15475": {
+          "key": 15475,
+          "name": "Geraldus Wybelszoon",
+          "age": 20,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Liudburgis (10418)",
+            "father": "Wybel (10417)"
+          }
+        },
+        "16114": {
+          "key": 16114,
+          "name": "Leanne",
+          "age": 19,
           "alive": false,
           "sex": "f",
           "parents": {
-            "mother": "Lelien (10418)",
-            "father": "Mauricius (10417)"
+            "mother": "Liudburgis (10418)",
+            "father": "Wybel (10417)"
+          }
+        },
+        "19036": {
+          "key": 19036,
+          "name": "Radewijns",
+          "age": 37,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Liudburgis (10418)",
+            "father": "Wybel (10417)"
           }
         }
       },
@@ -65,7 +109,11 @@
         ],
         "child": {
           "birth": [
-            12296
+            14239,
+            14828,
+            15476,
+            16115,
+            19037
           ]
         }
       }
@@ -76,39 +124,42 @@
         2,
         "middle class"
       ],
-      "income": 1.478,
+      "income": 0.658,
       "all_incomes": [
-        1.027,
-        0.631,
-        0.606,
-        0.605,
-        0.758,
-        0.675,
-        0.68,
-        1.2,
-        1.079,
-        1.104,
-        1.369,
-        1.369,
-        1.499,
-        1.478
+        0.965,
+        0.943,
+        0.99,
+        0.97,
+        1.028,
+        0.875,
+        0.901,
+        0.88,
+        0.759,
+        0.73,
+        0.737,
+        0.729,
+        0.683,
+        0.593,
+        0.667,
+        0.642,
+        0.658
       ],
       "job": {
         "lawful": true,
-        "honest": false
+        "honest": true
       }
     },
     "genetics": {
-      "skin_color": 5,
+      "skin_color": 6,
       "eye_color": "green",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
       "hair_type": [
         "C",
-        "S"
+        "C"
       ],
-      "health": 0.822,
-      "fertility": 0.822,
+      "health": 0.835,
+      "fertility": 0.8,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -120,17 +171,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.822
+            "new_health": 0.835
           },
           "death": false
-        },
-        "1212": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.822
-          },
-          "death": true
         }
       },
       "events": {
@@ -138,12 +181,7 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.027
-          },
-          {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.631
+            "income": 0.965
           },
           {
             "topic": "new relationship",
@@ -153,8 +191,8 @@
               10418
             ],
             "people names": [
-              "Mauricius Canne",
-              "Lelien Blonde"
+              "Wybel",
+              "Liudburgis Slabbart"
             ],
             "label": "spouse",
             "committed": true
@@ -164,81 +202,149 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stOp 't Speuy.se1.c2",
-              "street": "Op 't Speuy",
+              "section": "stDavids hof.se1.c2",
+              "street": "Davids hof",
               "neighborhood": "jorisbuurt",
-              "unique id": 196
+              "unique id": 181
             }
           },
           {
+            "topic": "feelings change",
+            "target": 10418,
+            "target name": "Liudburgis Slabbart",
+            "state": "out of love",
+            "relationship": 10419
+          }
+        ],
+        "1203": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.028
+          },
+          {
             "topic": "new relationship",
-            "key": 12296,
+            "key": 14239,
             "people": [
               10417,
-              12295
+              14238
             ],
             "people names": [
-              "Mauricius Canne",
-              "Thedwi Canne"
+              "Wybel",
+              "Sylof van Liudburgis"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 14828,
+            "people": [
+              10417,
+              14827
+            ],
+            "people names": [
+              "Wybel",
+              "Ghodelde Wybelsdochter"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1205": [
+          {
+            "topic": "new relationship",
+            "key": 15476,
+            "people": [
+              10417,
+              15475
+            ],
+            "people names": [
+              "Wybel",
+              "Geraldus Wybelszoon"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 16115,
+            "people": [
+              10417,
+              16114
+            ],
+            "people names": [
+              "Wybel",
+              "Leanne"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1208": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.73
+          }
+        ],
+        "1209": [
+          {
+            "topic": "feelings change",
+            "target": 10418,
+            "target name": "Liudburgis Slabbart",
+            "state": "infatuation",
+            "relationship": 10419
+          }
+        ],
+        "1210": [
+          {
+            "topic": "feelings change",
+            "target": 10418,
+            "target name": "Liudburgis Slabbart",
+            "state": "out of love",
+            "relationship": 10419
+          }
+        ],
+        "1212": [
+          {
+            "topic": "new relationship",
+            "key": 19037,
+            "people": [
+              10417,
+              19036
+            ],
+            "people names": [
+              "Wybel",
+              "Radewijns"
             ],
             "label": "parentchild",
             "committed": false
           },
           {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0.593,
+            "inhabitants": [
+              14238,
+              19036,
+              14051,
+              23743,
+              25669,
+              25820,
+              23815,
+              25521,
+              25873,
+              27031,
+              27757,
+              30745
+            ]
           }
         ],
-        "1201": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1202": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1203": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1204": [
-          {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.675
-          },
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1205": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1206": [
-          {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.2
-          },
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1207": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1208": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1209": [
+        "1213": [
           {
             "key": 10419,
             "topic": "unmarried"
@@ -247,31 +353,24 @@
             "topic": "person died",
             "person": {
               "key": 10418,
-              "name": "Lelien Blonde",
-              "age": 49,
+              "name": "Liudburgis Slabbart",
+              "age": 30,
               "alive": false,
               "sex": "f",
               "parents": "firstgen"
             },
             "label": "spouse"
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
           },
           {
-            "topic": "neglected"
-          }
-        ],
-        "1210": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1211": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1212": [
-          {
-            "topic": "neglected"
+            "topic": "death",
+            "cause": "plague"
           }
         ]
       }
@@ -280,10 +379,10 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stOp 't Speuy.se1.c2",
-      "street": "Op 't Speuy",
+      "section": "stDavids hof.se1.c2",
+      "street": "Davids hof",
       "neighborhood": "jorisbuurt",
-      "unique id": 196
+      "unique id": 181
     },
     "relationship status": {
       "taken": false,

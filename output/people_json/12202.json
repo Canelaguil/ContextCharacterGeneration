@@ -1,71 +1,94 @@
 {
   "12202": {
     "alive": false,
-    "name": "Seukinus",
-    "surname": "Crulleboye",
-    "full name": "Seukinus Crulleboye",
+    "name": "Lubertus",
+    "surname": "Spriet",
+    "full name": "Lubertus Spriet",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.079,
-      "romantic interest": 0.951,
-      "sex interest": 0.646,
-      "gender expression": 0.02,
+      "sexuality": 0.1,
+      "romantic interest": 0.765,
+      "sex interest": 0.896,
+      "gender expression": 0.104,
       "sex": "m"
     },
     "age": 44,
-    "birth year": 1171,
+    "birth year": 1200,
     "sex": "m",
     "faction": "Dogmatists",
     "income class": [
-      1,
-      "lower middle class"
+      2,
+      "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.821,
-      "nice-nasty": 0.148,
+      "lawful-chaotic": 0.125,
+      "nice-nasty": 0.425,
       "honest-false": 0.999
     },
     "attitude": {
-      "outgoing": 0.858,
-      "dream": 0.539
+      "outgoing": 0.46,
+      "dream": 0.482
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
         "flags": [
-          "neglected"
+          "caretaker",
+          "neglected",
+          "starving"
         ]
       },
       "expression": {
-        "sexuality expression": 0.051,
-        "gender expression expression": 0.011
+        "sexuality expression": 0.027,
+        "gender expression expression": 0.072
       }
     },
     "network": {
-      "parents": "firstgen",
+      "parents": {
+        "mother": "Oda (10016)",
+        "father": "Everocker (10015)"
+      },
       "children": {
-        "13555": {
-          "key": 13555,
-          "name": "Walic Crulleboye",
-          "age": 1,
-          "alive": false,
-          "sex": "m",
+        "21773": {
+          "key": 21773,
+          "name": "Imsoete Spriet",
+          "age": 27,
+          "alive": true,
+          "sex": "f",
           "parents": {
-            "mother": "Oda (12203)",
-            "father": "Seukinus (12202)"
+            "mother": "Katerina (13183)",
+            "father": "Lubertus (12202)"
+          }
+        },
+        "22244": {
+          "key": 22244,
+          "name": "Mabelie Spriet",
+          "age": 3,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Katerina (13183)",
+            "father": "Lubertus (12202)"
           }
         }
       },
       "relationship keys": {
-        "spouse": [
+        "parent": [
+          12203,
           12204
+        ],
+        "spouse": [
+          21155,
+          25757,
+          27648
         ],
         "child": {
           "birth": [
-            13556
+            21774,
+            22245
           ]
         }
       }
@@ -73,44 +96,56 @@
     "occupation": {
       "has job": true,
       "income class": [
-        1,
-        "lower middle class"
+        2,
+        "middle class"
       ],
-      "income": 1.076,
+      "income": 0.039,
       "all_incomes": [
-        1.059,
-        1.036,
-        1.057,
-        1.027,
-        1.026,
-        1.042,
-        0.937,
-        0.945,
-        0.973,
-        0.901,
-        0.905,
-        0.973,
-        0.987,
-        0.992,
-        1.009,
-        1.076
+        1.222,
+        0.955,
+        0.955,
+        0.69,
+        0.617,
+        0.435,
+        0.468,
+        0.206,
+        0.266,
+        0.44,
+        0.411,
+        0.234,
+        0.3,
+        0.343,
+        0.195,
+        0.205,
+        0.136,
+        0.0,
+        0.21,
+        0.192,
+        0.0,
+        0.163,
+        0.324,
+        0.197,
+        0.087,
+        0.269,
+        0.211,
+        0.039
       ],
       "job": {
-        "lawful": true,
+        "lawful": false,
         "honest": true
       }
     },
     "genetics": {
-      "skin_color": 7,
-      "eye_color": "brown",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "skin_color": 4,
+      "eye_color": "green",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "S",
         "S"
       ],
-      "health": 0.771,
-      "fertility": 0.747,
+      "health": 0.539,
+      "fertility": 0.807,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -118,71 +153,51 @@
     },
     "memory": {
       "health": {
-        "1200": {
+        "1201": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.771
+            "new_health": 0.73
           },
           "death": false
         },
-        "1214": {
+        "1217": {
+          "health": {
+            "change": true,
+            "value_change": -0.191,
+            "new_health": 0.539
+          },
+          "death": false
+        },
+        "1218": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.771
+            "new_health": 0.539
           },
-          "death": true
+          "death": false
         }
       },
       "events": {
         "1200": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.059
-          },
-          {
-            "topic": "new relationship",
-            "key": 12204,
-            "people": [
-              12202,
-              12203
-            ],
-            "people names": [
-              "Seukinus Crulleboye",
-              "Oda"
-            ],
-            "label": "spouse",
-            "committed": true
-          },
-          {
             "topic": "new home",
             "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stKerckstraet.se3.c1",
-              "street": "Kerckstraet",
-              "neighborhood": "denhof",
-              "unique id": 989
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stUterechse straet.se1.c2",
+              "street": "Uterechse straet",
+              "neighborhood": "varkensbuurt",
+              "unique id": 8
             }
           }
         ],
-        "1202": [
+        "1201": [
           {
-            "topic": "new relationship",
-            "key": 13556,
-            "people": [
-              12202,
-              13555
-            ],
-            "people names": [
-              "Seukinus Crulleboye",
-              "Walic Crulleboye"
-            ],
-            "label": "parentchild",
-            "committed": false
-          },
+            "topic": "neglected"
+          }
+        ],
+        "1202": [
           {
             "topic": "neglected"
           }
@@ -194,26 +209,413 @@
         ],
         "1204": [
           {
+            "topic": "neglected"
+          }
+        ],
+        "1205": [
+          {
             "topic": "person died",
             "person": {
-              "key": 13555,
-              "name": "Walic Crulleboye",
-              "age": 1,
+              "key": 10016,
+              "name": "Oda Stamelarit",
+              "age": 31,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "label": "parent"
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1206": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "neglected"
+          },
+          {
+            "topic": "update",
+            "update": "parent married",
+            "parent": 10015,
+            "new partner": 10688
+          }
+        ],
+        "1209": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10015,
+              "name": "Everocker Spriet",
+              "age": 43,
               "alive": false,
               "sex": "m",
+              "parents": "firstgen"
+            },
+            "label": "parent"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          },
+          {
+            "topic": "new caretaker",
+            "person": 12202
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          }
+        ],
+        "1216": [
+          {
+            "topic": "event",
+            "event": "war",
+            "year": 1216
+          },
+          {
+            "topic": "not caretaker"
+          }
+        ],
+        "1217": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.222
+          }
+        ],
+        "1219": [
+          {
+            "topic": "new relationship",
+            "key": 21155,
+            "people": [
+              12202,
+              13183
+            ],
+            "people names": [
+              "Lubertus Spriet",
+              "Katerina Craiman"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stBreestraat.se1.c2",
+              "street": "Breestraat",
+              "neighborhood": "olvbuurt",
+              "unique id": 548
+            }
+          }
+        ],
+        "1220": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.69
+          }
+        ],
+        "1222": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.435
+          },
+          {
+            "topic": "new relationship",
+            "key": 21774,
+            "people": [
+              12202,
+              21773
+            ],
+            "people names": [
+              "Lubertus Spriet",
+              "Imsoete Spriet"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1223": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.468
+          }
+        ],
+        "1224": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.206
+          },
+          {
+            "topic": "new relationship",
+            "key": 22245,
+            "people": [
+              12202,
+              22244
+            ],
+            "people names": [
+              "Lubertus Spriet",
+              "Mabelie Spriet"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1226": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.44
+          },
+          {
+            "key": 21155,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 13183,
+              "name": "Katerina Craiman",
+              "age": 24,
+              "alive": false,
+              "sex": "f",
               "parents": {
-                "mother": "Oda (12203)",
-                "father": "Seukinus (12202)"
+                "mother": "Machtilden (11189)",
+                "father": "Rissewint (11188)"
+              }
+            },
+            "label": "spouse"
+          }
+        ],
+        "1227": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.411
+          },
+          {
+            "topic": "event",
+            "event": "famine",
+            "year": 1227
+          }
+        ],
+        "1228": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.234
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 22244,
+              "name": "Mabelie Spriet",
+              "age": 3,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Katerina (13183)",
+                "father": "Lubertus (12202)"
               }
             },
             "label": "child"
+          },
+          {
+            "topic": "event",
+            "event": "famine",
+            "year": 1228
           }
         ],
-        "1213": [
+        "1229": [
+          {
+            "topic": "event",
+            "event": "faction upheaval",
+            "faction": "Zealots",
+            "year": 1229
+          }
+        ],
+        "1230": [
           {
             "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.009
+            "notice": "earning very little",
+            "income": 0.343
+          }
+        ],
+        "1231": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.195
+          }
+        ],
+        "1232": [
+          {
+            "topic": "event",
+            "event": "war",
+            "year": 1232
+          }
+        ],
+        "1235": [
+          {
+            "topic": "new relationship",
+            "key": 25757,
+            "people": [
+              12202,
+              10904
+            ],
+            "people names": [
+              "Lubertus Spriet",
+              "Ryccie Fierenblayse"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stDie Camp.se7.c2",
+              "street": "Die Camp",
+              "neighborhood": "kampbuurt",
+              "unique id": 407
+            }
+          }
+        ],
+        "1237": [
+          {
+            "topic": "feelings change",
+            "target": 10904,
+            "target name": "Ryccie Fierenblayse",
+            "state": "solid love",
+            "relationship": 25757
+          }
+        ],
+        "1238": [
+          {
+            "key": 25757,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10904,
+              "name": "Ryccie Fierenblayse",
+              "age": 54,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "label": "spouse"
+          }
+        ],
+        "1240": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.197
+          },
+          {
+            "topic": "new relationship",
+            "key": 27648,
+            "people": [
+              12202,
+              13169
+            ],
+            "people names": [
+              "Lubertus Spriet",
+              "Goneir"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stCromme straet.se1.c1",
+              "street": "Cromme straet",
+              "neighborhood": "denhof",
+              "unique id": 873
+            }
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.197,
+            "inhabitants": []
+          }
+        ],
+        "1241": [
+          {
+            "topic": "feelings change",
+            "target": 13169,
+            "target name": "Goneir",
+            "state": "out of love",
+            "relationship": 27648
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.087,
+            "inhabitants": []
+          }
+        ],
+        "1242": [
+          {
+            "topic": "not enough income",
+            "income": 0.269,
+            "inhabitants": []
+          }
+        ],
+        "1243": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.211
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.211,
+            "inhabitants": []
+          }
+        ],
+        "1244": [
+          {
+            "topic": "not enough income",
+            "income": 0.039,
+            "inhabitants": []
+          },
+          {
+            "topic": "death",
+            "cause": "starvation"
           }
         ]
       }
@@ -222,16 +624,18 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stKerckstraet.se3.c1",
-      "street": "Kerckstraet",
+      "section": "stCromme straet.se1.c1",
+      "street": "Cromme straet",
       "neighborhood": "denhof",
-      "unique id": 989
+      "unique id": 873
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        12204
+        21155,
+        25757,
+        27648
       ]
     }
   }
