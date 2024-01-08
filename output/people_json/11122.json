@@ -1,54 +1,83 @@
 {
   "11122": {
     "alive": false,
-    "name": "Martin",
-    "surname": "Coluen",
-    "full name": "Martin Coluen",
+    "name": "Samuel",
+    "surname": "Masc",
+    "full name": "Samuel Masc",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.142,
-      "romantic interest": 0.751,
-      "sex interest": 0.975,
-      "gender expression": 0.106,
+      "sexuality": 0.0,
+      "romantic interest": 0.593,
+      "sex interest": 0.545,
+      "gender expression": 0.0,
       "sex": "m"
     },
-    "age": 49,
-    "birth year": 1156,
+    "age": 30,
+    "birth year": 1180,
     "sex": "m",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.699,
-      "nice-nasty": 0.476,
-      "honest-false": 0.513
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.836,
+      "honest-false": 0.519
     },
     "attitude": {
-      "outgoing": 0.256,
-      "dream": 0.398
+      "outgoing": 0.443,
+      "dream": 0.367
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.08,
-        "gender expression expression": 0.042
+        "sexuality expression": -0.001,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14414": {
+          "key": 14414,
+          "name": "Gherbaren Masc",
+          "age": 46,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Heilsota (11123)",
+            "father": "Samuel (11122)"
+          }
+        },
+        "18012": {
+          "key": 18012,
+          "name": "Gherolf Masc",
+          "age": 23,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Heilsota (11123)",
+            "father": "Samuel (11122)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11124
-        ]
+        ],
+        "child": {
+          "birth": [
+            14415,
+            18013
+          ]
+        }
       }
     },
     "occupation": {
@@ -57,31 +86,36 @@
         1,
         "lower middle class"
       ],
-      "income": 0.647,
+      "income": 0.926,
       "all_incomes": [
-        0.96,
-        0.885,
-        1.076,
-        1.1,
-        0.805,
-        0.647
+        1.009,
+        0.938,
+        0.998,
+        0.934,
+        0.806,
+        0.895,
+        0.85,
+        0.855,
+        0.873,
+        0.884,
+        0.926
       ],
       "job": {
-        "lawful": false,
-        "honest": false
+        "lawful": true,
+        "honest": true
       }
     },
     "genetics": {
-      "skin_color": 8,
+      "skin_color": 3,
       "eye_color": "brown",
       "hair_color": "blonde",
       "hair_color_code": 4,
       "hair_type": [
-        "S",
+        "C",
         "C"
       ],
-      "health": 0.847,
-      "fertility": 0.813,
+      "health": 0.701,
+      "fertility": 0.711,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -93,15 +127,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.847
+            "new_health": 0.701
           },
           "death": false
         },
-        "1204": {
+        "1209": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.847
+            "new_health": 0.701
           },
           "death": true
         }
@@ -111,7 +145,7 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.96
+            "income": 1.009
           },
           {
             "topic": "new relationship",
@@ -121,8 +155,8 @@
               11123
             ],
             "people names": [
-              "Martin Coluen",
-              "Trame Visevase"
+              "Samuel Masc",
+              "Heilsota Blonde"
             ],
             "label": "spouse",
             "committed": true
@@ -135,22 +169,54 @@
               "section": "stPaternoster straetje.se1.c1",
               "street": "Paternoster straetje",
               "neighborhood": "olvbuurt",
-              "unique id": 513
+              "unique id": 512
             }
+          },
+          {
+            "topic": "feelings change",
+            "target": 11123,
+            "target name": "Heilsota Blonde",
+            "state": "out of love",
+            "relationship": 11124
           }
         ],
-        "1201": [
+        "1203": [
           {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.076
+            "topic": "new relationship",
+            "key": 14415,
+            "people": [
+              11122,
+              14414
+            ],
+            "people names": [
+              "Samuel Masc",
+              "Gherbaren Masc"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1204": [
+        "1205": [
           {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.647
+            "topic": "event",
+            "event": "plague",
+            "year": 1205
+          }
+        ],
+        "1209": [
+          {
+            "topic": "new relationship",
+            "key": 18013,
+            "people": [
+              11122,
+              18012
+            ],
+            "people names": [
+              "Samuel Masc",
+              "Gherolf Masc"
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
             "topic": "death",
@@ -166,7 +232,7 @@
       "section": "stPaternoster straetje.se1.c1",
       "street": "Paternoster straetje",
       "neighborhood": "olvbuurt",
-      "unique id": 513
+      "unique id": 512
     },
     "relationship status": {
       "taken": true,

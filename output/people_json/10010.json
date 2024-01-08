@@ -1,33 +1,33 @@
 {
   "10010": {
     "alive": false,
-    "name": "Machtilden",
-    "surname": "Hoesterlinc",
-    "full name": "Machtilden Hoesterlinc",
+    "name": "Waldrada",
+    "surname": "Vint",
+    "full name": "Waldrada Vint",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.639,
-      "sex interest": 0.627,
-      "gender expression": 0.023,
+      "sexuality": 0.08,
+      "romantic interest": 0.697,
+      "sex interest": 0.64,
+      "gender expression": 0.049,
       "sex": "f"
     },
-    "age": 33,
-    "birth year": 1170,
+    "age": 22,
+    "birth year": 1183,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "Dogmatists",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.802,
-      "nice-nasty": 0.728,
-      "honest-false": 0.0
+      "lawful-chaotic": 0.655,
+      "nice-nasty": 0.983,
+      "honest-false": 0.635
     },
     "attitude": {
-      "outgoing": 0.496,
-      "dream": 0.205
+      "outgoing": 0.372,
+      "dream": 0.648
     },
     "homsoc": {
       "means": {
@@ -38,22 +38,33 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.005
+        "sexuality expression": 0.065,
+        "gender expression expression": 0.009
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "13460": {
-          "key": 13460,
-          "name": "Loduicus Senum",
-          "age": 30,
-          "alive": false,
+        "12811": {
+          "key": 12811,
+          "name": "Franse Durcant",
+          "age": 48,
+          "alive": true,
           "sex": "m",
           "parents": {
-            "mother": "Machtilden (10010)",
-            "father": "Gheynekine (10009)"
+            "mother": "Waldrada (10010)",
+            "father": "Vroeden (10009)"
+          }
+        },
+        "14765": {
+          "key": 14765,
+          "name": "Godeweris Durcant",
+          "age": 14,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Waldrada (10010)",
+            "father": "Vroeden (10009)"
           }
         }
       },
@@ -63,7 +74,8 @@
         ],
         "child": {
           "birth": [
-            13462
+            12813,
+            14767
           ]
         }
       }
@@ -78,16 +90,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 1,
+      "skin_color": 4,
       "eye_color": "green",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "C",
         "S"
       ],
-      "health": 0.729,
-      "fertility": 0.76,
+      "health": 0.689,
+      "fertility": 0.695,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -99,17 +111,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.729
+            "new_health": 0.689
           },
           "death": false
-        },
-        "1202": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.729
-          },
-          "death": true
         }
       },
       "events": {
@@ -122,8 +126,8 @@
               10010
             ],
             "people names": [
-              "Gheynekine Senum",
-              "Machtilden Hoesterlinc"
+              "Vroeden Durcant",
+              "Waldrada Vint"
             ],
             "label": "spouse",
             "committed": true
@@ -136,28 +140,44 @@
               "section": "stUterechse straet.se1.c2",
               "street": "Uterechse straet",
               "neighborhood": "varkensbuurt",
-              "unique id": 5
+              "unique id": 6
             }
           }
         ],
-        "1202": [
+        "1201": [
           {
             "topic": "new relationship",
-            "key": 13462,
+            "key": 12813,
             "people": [
               10010,
-              13460
+              12811
             ],
             "people names": [
-              "Machtilden Hoesterlinc",
-              "Loduicus Senum"
+              "Waldrada Vint",
+              "Franse Durcant"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 14767,
+            "people": [
+              10010,
+              14765
+            ],
+            "people names": [
+              "Waldrada Vint",
+              "Godeweris Durcant"
             ],
             "label": "parentchild",
             "committed": false
           },
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "childbirth"
           }
         ]
       }
@@ -169,7 +189,7 @@
       "section": "stUterechse straet.se1.c2",
       "street": "Uterechse straet",
       "neighborhood": "varkensbuurt",
-      "unique id": 5
+      "unique id": 6
     },
     "relationship status": {
       "taken": true,

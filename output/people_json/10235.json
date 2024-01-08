@@ -1,33 +1,33 @@
 {
   "10235": {
     "alive": false,
-    "name": "Erkenradis",
-    "surname": "Buyc",
-    "full name": "Erkenradis Buyc",
+    "name": "Rycaldis",
+    "surname": "",
+    "full name": "Rycaldis",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.097,
-      "romantic interest": 0.606,
-      "sex interest": 0.836,
-      "gender expression": 0.005,
+      "sexuality": 0.066,
+      "romantic interest": 0.796,
+      "sex interest": 0.863,
+      "gender expression": 0.136,
       "sex": "f"
     },
-    "age": 50,
-    "birth year": 1157,
+    "age": 26,
+    "birth year": 1178,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "Zealots",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.074,
-      "honest-false": 0.438
+      "lawful-chaotic": 0.348,
+      "nice-nasty": 0.141,
+      "honest-false": 0.171
     },
     "attitude": {
-      "outgoing": 0.209,
-      "dream": 0.147
+      "outgoing": 0.207,
+      "dream": 0.64
     },
     "homsoc": {
       "means": {
@@ -38,17 +38,34 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.028,
-        "gender expression expression": 0.003
+        "sexuality expression": 0.041,
+        "gender expression expression": 0.018
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14174": {
+          "key": 14174,
+          "name": "Godelief Slabbart",
+          "age": 12,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Rycaldis (10235)",
+            "father": "Otger (10234)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10236
-        ]
+        ],
+        "child": {
+          "birth": [
+            14176
+          ]
+        }
       }
     },
     "occupation": {
@@ -61,16 +78,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 2,
+      "skin_color": 4,
       "eye_color": "brown",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
-        "C",
+        "S",
         "C"
       ],
-      "health": 0.738,
-      "fertility": 0.728,
+      "health": 0.484,
+      "fertility": 0.683,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -80,19 +97,19 @@
       "health": {
         "1200": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.738
+            "change": true,
+            "value_change": -0.207,
+            "new_health": 0.484
           },
           "death": false
         },
-        "1206": {
+        "1201": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.738
+            "new_health": 0.484
           },
-          "death": true
+          "death": false
         }
       },
       "events": {
@@ -105,8 +122,8 @@
               10235
             ],
             "people names": [
-              "Everocker Hoghen",
-              "Erkenradis Buyc"
+              "Otger Slabbart",
+              "Rycaldis"
             ],
             "label": "spouse",
             "committed": true
@@ -119,21 +136,28 @@
               "section": "stHelle voet.se5.c1",
               "street": "Helle voet",
               "neighborhood": "jorisbuurt",
-              "unique id": 106
+              "unique id": 109
             }
-          },
-          {
-            "topic": "feelings change",
-            "target": 10234,
-            "target name": "Everocker Hoghen",
-            "state": "out of love",
-            "relationship": 10236
           }
         ],
-        "1206": [
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 14176,
+            "people": [
+              10235,
+              14174
+            ],
+            "people names": [
+              "Rycaldis",
+              "Godelief Slabbart"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "childbirth"
           }
         ]
       }
@@ -145,7 +169,7 @@
       "section": "stHelle voet.se5.c1",
       "street": "Helle voet",
       "neighborhood": "jorisbuurt",
-      "unique id": 106
+      "unique id": 109
     },
     "relationship status": {
       "taken": true,

@@ -1,19 +1,19 @@
 {
   "10552": {
     "alive": false,
-    "name": "Karel",
-    "surname": "",
-    "full name": "Karel",
+    "name": "Segher",
+    "surname": "Panne",
+    "full name": "Segher Panne",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.092,
-      "romantic interest": 0.697,
-      "sex interest": 0.661,
-      "gender expression": 0.039,
+      "sexuality": 0.06,
+      "romantic interest": 0.67,
+      "sex interest": 0.495,
+      "gender expression": 0.203,
       "sex": "m"
     },
-    "age": 29,
-    "birth year": 1177,
+    "age": 52,
+    "birth year": 1167,
     "sex": "m",
     "faction": "No religion",
     "income class": [
@@ -21,34 +21,63 @@
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.869,
-      "nice-nasty": 0.185,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.0,
+      "nice-nasty": 0.678,
+      "honest-false": 0.832
     },
     "attitude": {
-      "outgoing": 0.337,
-      "dream": 0.42
+      "outgoing": 0.728,
+      "dream": 0.262
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.064,
-        "gender expression expression": 0.016
+        "sexuality expression": 0.037,
+        "gender expression expression": 0.052
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12370": {
+          "key": 12370,
+          "name": "Iacobus Panne",
+          "age": 38,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Rabburgis (10553)",
+            "father": "Segher (10552)"
+          }
+        },
+        "15543": {
+          "key": 15543,
+          "name": "Esa Panne",
+          "age": 0,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Rabburgis (10553)",
+            "father": "Segher (10552)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10554
-        ]
+        ],
+        "child": {
+          "birth": [
+            12371,
+            15544
+          ]
+        }
       }
     },
     "occupation": {
@@ -57,32 +86,45 @@
         2,
         "middle class"
       ],
-      "income": 0.945,
+      "income": 0.432,
       "all_incomes": [
-        1.063,
-        1.041,
-        1.054,
-        1.008,
-        0.994,
-        0.993,
-        0.945
+        0.785,
+        0.596,
+        0.596,
+        0.572,
+        0.582,
+        0.638,
+        0.641,
+        0.751,
+        0.73,
+        0.672,
+        0.603,
+        0.682,
+        0.646,
+        0.464,
+        0.529,
+        0.422,
+        0.316,
+        0.456,
+        0.359,
+        0.432
       ],
       "job": {
-        "lawful": true,
+        "lawful": false,
         "honest": true
       }
     },
     "genetics": {
-      "skin_color": 3,
-      "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 4,
+      "eye_color": "green",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
         "S",
-        "C"
+        "S"
       ],
-      "health": 0.56,
-      "fertility": 0.46,
+      "health": 0.041,
+      "fertility": 0.713,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -94,15 +136,39 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.56
+            "new_health": 0.728
           },
           "death": false
         },
-        "1205": {
+        "1212": {
+          "health": {
+            "change": true,
+            "value_change": -0.198,
+            "new_health": 0.53
+          },
+          "death": false
+        },
+        "1213": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.56
+            "new_health": 0.53
+          },
+          "death": false
+        },
+        "1217": {
+          "health": {
+            "change": true,
+            "value_change": -0.403,
+            "new_health": 0.127
+          },
+          "death": false
+        },
+        "1218": {
+          "health": {
+            "change": true,
+            "value_change": -0.086,
+            "new_health": 0.041
           },
           "death": true
         }
@@ -112,7 +178,12 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.063
+            "income": 0.785
+          },
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.596
           },
           {
             "topic": "new relationship",
@@ -122,8 +193,8 @@
               10553
             ],
             "people names": [
-              "Karel",
-              "Gertrudis Cockine"
+              "Segher Panne",
+              "Rabburgis Kriec"
             ],
             "label": "spouse",
             "committed": true
@@ -136,14 +207,164 @@
               "section": "stWaale straet.se1.c2",
               "street": "Waale straet",
               "neighborhood": "agnesbuurt",
-              "unique id": 247
+              "unique id": 250
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12371,
+            "people": [
+              10552,
+              12370
+            ],
+            "people names": [
+              "Segher Panne",
+              "Iacobus Panne"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1205": [
           {
+            "topic": "event",
+            "event": "plague",
+            "year": 1205
+          },
+          {
+            "topic": "new relationship",
+            "key": 15544,
+            "people": [
+              10552,
+              15543
+            ],
+            "people names": [
+              "Segher Panne",
+              "Esa Panne"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 10553,
+            "target name": "Rabburgis Kriec",
+            "state": "solid love",
+            "relationship": 10554
+          }
+        ],
+        "1206": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 15543,
+              "name": "Esa Panne",
+              "age": 0,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Rabburgis (10553)",
+                "father": "Segher (10552)"
+              }
+            },
+            "cause": "childbirth",
+            "label": "child"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.73
+          }
+        ],
+        "1212": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.464
+          },
+          {
+            "topic": "feelings change",
+            "target": 10553,
+            "target name": "Rabburgis Kriec",
+            "state": "out of love",
+            "relationship": 10554
+          }
+        ],
+        "1214": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.422
+          }
+        ],
+        "1215": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.316
+          },
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          }
+        ],
+        "1216": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.456
+          },
+          {
+            "topic": "feelings change",
+            "target": 10553,
+            "target name": "Rabburgis Kriec",
+            "state": "infatuation",
+            "relationship": 10554
+          }
+        ],
+        "1217": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.359
+          },
+          {
+            "topic": "feelings change",
+            "target": 10553,
+            "target name": "Rabburgis Kriec",
+            "state": "out of love",
+            "relationship": 10554
+          }
+        ],
+        "1218": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.432
+          },
+          {
+            "key": 10554,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10553,
+              "name": "Rabburgis Kriec",
+              "age": 49,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "spouse"
+          },
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "old age"
           }
         ]
       }
@@ -155,11 +376,11 @@
       "section": "stWaale straet.se1.c2",
       "street": "Waale straet",
       "neighborhood": "agnesbuurt",
-      "unique id": 247
+      "unique id": 250
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         10554
       ]

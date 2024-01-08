@@ -1,33 +1,33 @@
 {
   "10802": {
     "alive": false,
-    "name": "Tetta",
-    "surname": "Storhem",
-    "full name": "Tetta Storhem",
+    "name": "Marisseis",
+    "surname": "Stael",
+    "full name": "Marisseis Stael",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.068,
-      "romantic interest": 0.635,
-      "sex interest": 0.723,
-      "gender expression": 0.044,
+      "sexuality": 0.1,
+      "romantic interest": 0.816,
+      "sex interest": 0.661,
+      "gender expression": 0.126,
       "sex": "f"
     },
-    "age": 39,
-    "birth year": 1162,
+    "age": 54,
+    "birth year": 1177,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "Zealots",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.474,
-      "nice-nasty": 0.308,
-      "honest-false": 0.494
+      "lawful-chaotic": 0.268,
+      "nice-nasty": 0.641,
+      "honest-false": 0.699
     },
     "attitude": {
-      "outgoing": 0.64,
-      "dream": 0.406
+      "outgoing": 0.404,
+      "dream": 0.365
     },
     "homsoc": {
       "means": {
@@ -38,22 +38,66 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.055,
-        "gender expression expression": 0.03
+        "sexuality expression": 0.048,
+        "gender expression expression": 0.042
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "12415": {
-          "key": 12415,
-          "name": "Helyana Snepore",
-          "age": 14,
+        "13040": {
+          "key": 13040,
+          "name": "Alebrando",
+          "age": 31,
           "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Marisseis (10802)",
+            "father": "Stephanus (10801)"
+          }
+        },
+        "14977": {
+          "key": 14977,
+          "name": "Ludingus Stephanusszoon",
+          "age": 36,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Marisseis (10802)",
+            "father": "Stephanus (10801)"
+          }
+        },
+        "16823": {
+          "key": 16823,
+          "name": "Sybillia van Marisseis",
+          "age": 42,
+          "alive": true,
           "sex": "f",
           "parents": {
-            "mother": "Tetta (10802)",
-            "father": "Mattheus (10801)"
+            "mother": "Marisseis (10802)",
+            "father": "Stephanus (10801)"
+          }
+        },
+        "17930": {
+          "key": 17930,
+          "name": "Vastraid",
+          "age": 40,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Marisseis (10802)",
+            "father": "Stephanus (10801)"
+          }
+        },
+        "18929": {
+          "key": 18929,
+          "name": "Helyana",
+          "age": 38,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Marisseis (10802)",
+            "father": "Stephanus (10801)"
           }
         }
       },
@@ -63,7 +107,11 @@
         ],
         "child": {
           "birth": [
-            12417
+            13042,
+            14979,
+            16825,
+            17932,
+            18931
           ]
         }
       }
@@ -78,16 +126,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 8,
-      "eye_color": "blue",
-      "hair_color": "red",
-      "hair_color_code": 3,
+      "skin_color": 2,
+      "eye_color": "brown",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "C",
         "C"
       ],
-      "health": 0.627,
-      "fertility": 0.632,
+      "health": 0.026,
+      "fertility": 0.7,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -99,9 +147,41 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.627
+            "new_health": 0.688
           },
           "death": false
+        },
+        "1227": {
+          "health": {
+            "change": true,
+            "value_change": -0.144,
+            "new_health": 0.544
+          },
+          "death": false
+        },
+        "1228": {
+          "health": {
+            "change": true,
+            "value_change": -0.214,
+            "new_health": 0.33
+          },
+          "death": false
+        },
+        "1229": {
+          "health": {
+            "change": true,
+            "value_change": -0.18,
+            "new_health": 0.15
+          },
+          "death": false
+        },
+        "1230": {
+          "health": {
+            "change": true,
+            "value_change": -0.124,
+            "new_health": 0.026
+          },
+          "death": true
         }
       },
       "events": {
@@ -114,8 +194,8 @@
               10802
             ],
             "people names": [
-              "Mattheus Snepore",
-              "Tetta Storhem"
+              "Stephanus",
+              "Marisseis Stael"
             ],
             "label": "spouse",
             "committed": true
@@ -125,29 +205,151 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stDie Camp.se3.c2",
+              "section": "stDie Camp.se1.c2",
               "street": "Die Camp",
               "neighborhood": "kampbuurt",
-              "unique id": 367
+              "unique id": 366
             }
           },
           {
+            "topic": "feelings change",
+            "target": 10801,
+            "target name": "Stephanus",
+            "state": "out of love",
+            "relationship": 10803
+          }
+        ],
+        "1201": [
+          {
             "topic": "new relationship",
-            "key": 12417,
+            "key": 13042,
             "people": [
               10802,
-              12415
+              13040
             ],
             "people names": [
-              "Tetta Storhem",
-              "Helyana Snepore"
+              "Marisseis Stael",
+              "Alebrando"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 14979,
+            "people": [
+              10802,
+              14977
+            ],
+            "people names": [
+              "Marisseis Stael",
+              "Ludingus Stephanusszoon"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1205": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1205
+          }
+        ],
+        "1206": [
+          {
+            "topic": "feelings change",
+            "target": 10801,
+            "target name": "Stephanus",
+            "state": "infatuation",
+            "relationship": 10803
+          }
+        ],
+        "1207": [
+          {
+            "topic": "new relationship",
+            "key": 16825,
+            "people": [
+              10802,
+              16823
+            ],
+            "people names": [
+              "Marisseis Stael",
+              "Sybillia van Marisseis"
             ],
             "label": "parentchild",
             "committed": false
           },
           {
+            "topic": "feelings change",
+            "target": 10801,
+            "target name": "Stephanus",
+            "state": "solid love",
+            "relationship": 10803
+          }
+        ],
+        "1209": [
+          {
+            "topic": "new relationship",
+            "key": 17932,
+            "people": [
+              10802,
+              17930
+            ],
+            "people names": [
+              "Marisseis Stael",
+              "Vastraid"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1211": [
+          {
+            "topic": "new relationship",
+            "key": 18931,
+            "people": [
+              10802,
+              18929
+            ],
+            "people names": [
+              "Marisseis Stael",
+              "Helyana"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          }
+        ],
+        "1217": [
+          {
+            "topic": "feelings change",
+            "target": 10801,
+            "target name": "Stephanus",
+            "state": "out of love",
+            "relationship": 10803
+          }
+        ],
+        "1223": [
+          {
+            "topic": "event",
+            "event": "faction upheaval",
+            "faction": "Dogmatists",
+            "year": 1223
+          }
+        ],
+        "1230": [
+          {
             "topic": "death",
-            "cause": "childbirth"
+            "cause": "old age"
           }
         ]
       }
@@ -156,10 +358,10 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stDie Camp.se3.c2",
+      "section": "stDie Camp.se1.c2",
       "street": "Die Camp",
       "neighborhood": "kampbuurt",
-      "unique id": 367
+      "unique id": 366
     },
     "relationship status": {
       "taken": true,

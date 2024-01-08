@@ -1,33 +1,33 @@
 {
   "12948": {
     "alive": false,
-    "name": "Sarre",
-    "surname": "Riken",
-    "full name": "Sarre Riken",
+    "name": "Myrthel",
+    "surname": "",
+    "full name": "Myrthel",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.053,
-      "romantic interest": 0.395,
-      "sex interest": 0.463,
-      "gender expression": 0.18,
+      "sexuality": 0.084,
+      "romantic interest": 0.705,
+      "sex interest": 0.392,
+      "gender expression": 0.158,
       "sex": "f"
     },
-    "age": 16,
+    "age": 23,
     "birth year": 1201,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "Dogmatists",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.799,
-      "nice-nasty": 0.171,
-      "honest-false": 0.403
+      "lawful-chaotic": 0.12,
+      "nice-nasty": 0.999,
+      "honest-false": 0.183
     },
     "attitude": {
-      "outgoing": 0.64,
-      "dream": 0.471
+      "outgoing": 0.385,
+      "dream": 0.446
     },
     "homsoc": {
       "means": {
@@ -41,24 +41,44 @@
         ]
       },
       "expression": {
-        "sexuality expression": 0.024,
-        "gender expression expression": 0.021
+        "sexuality expression": 0.064,
+        "gender expression expression": 0.086
       }
     },
     "network": {
       "parents": {
-        "mother": "Breghlent (10517)",
-        "father": "Eremboldus (10516)"
+        "mother": "Leanne (10439)",
+        "father": "Sollen (10438)"
       },
-      "children": {},
+      "children": {
+        "23154": {
+          "key": 23154,
+          "name": "Voghel van Myrthel",
+          "age": 25,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Myrthel (12948)",
+            "father": "Godelief (15692)"
+          }
+        }
+      },
       "relationship keys": {
         "parent": [
           12949,
           12950
         ],
-        "half-sibling": [
-          20069
-        ]
+        "sibling": [
+          16205
+        ],
+        "spouse": [
+          22320
+        ],
+        "child": {
+          "birth": [
+            23156
+          ]
+        }
       }
     },
     "occupation": {
@@ -71,16 +91,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 4,
-      "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 2,
+      "eye_color": "green",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
         "S",
-        "S"
+        "C"
       ],
-      "health": 0.267,
-      "fertility": 0.486,
+      "health": 0.528,
+      "fertility": 0.666,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -90,27 +110,19 @@
       "health": {
         "1202": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.521
-          },
-          "death": false
-        },
-        "1216": {
-          "health": {
             "change": true,
-            "value_change": -0.254,
-            "new_health": 0.267
+            "value_change": -0.165,
+            "new_health": 0.528
           },
           "death": false
         },
-        "1217": {
+        "1203": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.267
+            "new_health": 0.528
           },
-          "death": true
+          "death": false
         }
       },
       "events": {
@@ -120,10 +132,10 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stBloemendaelse straet.se3.c2",
-              "street": "Bloemendaelse straet",
-              "neighborhood": "agnesbuurt",
-              "unique id": 227
+              "section": "stOp 't Speuy.se1.c2",
+              "street": "Op 't Speuy",
+              "neighborhood": "jorisbuurt",
+              "unique id": 200
             }
           }
         ],
@@ -144,20 +156,60 @@
         ],
         "1205": [
           {
+            "topic": "event",
+            "event": "plague",
+            "year": 1205
+          },
+          {
             "topic": "neglected"
           }
         ],
         "1206": [
           {
+            "topic": "new relationship",
+            "key": 16205,
+            "people": [
+              12948,
+              16202
+            ],
+            "people names": [
+              "Myrthel",
+              "Deghen Croic"
+            ],
+            "label": "sibling",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1210": [
+          {
             "topic": "person died",
             "person": {
-              "key": 10516,
-              "name": "Eremboldus Riken",
-              "age": 49,
+              "key": 10438,
+              "name": "Sollen Croic",
+              "age": 53,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
             },
+            "cause": "sickness",
             "label": "parent"
           },
           {
@@ -167,35 +219,7 @@
           },
           {
             "topic": "new caretaker",
-            "person": 10517
-          }
-        ],
-        "1207": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1208": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1209": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1210": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "person": 10439
           }
         ],
         "1211": [
@@ -207,14 +231,21 @@
         ],
         "1212": [
           {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
+          {
             "topic": "new home",
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stOp Havick2.se1.c2",
-              "street": "Op Havick2",
-              "neighborhood": "denhof",
-              "unique id": 854
+              "section": "stOp 't Speuy.se1.c2",
+              "street": "Op 't Speuy",
+              "neighborhood": "jorisbuurt",
+              "unique id": 199
             }
           },
           {
@@ -223,32 +254,13 @@
           {
             "topic": "update",
             "update": "parent married",
-            "parent": 10517,
-            "new partner": 11857
-          }
-        ],
-        "1213": [
-          {
-            "topic": "neglected"
+            "parent": 10439,
+            "new partner": 10435
           }
         ],
         "1214": [
           {
             "topic": "neglected"
-          },
-          {
-            "topic": "new relationship",
-            "key": 20069,
-            "people": [
-              12948,
-              20046
-            ],
-            "people names": [
-              "Sarre Riken",
-              "Ymmekine Kiekin"
-            ],
-            "label": "half-sibling",
-            "committed": false
           }
         ],
         "1215": [
@@ -263,18 +275,62 @@
         ],
         "1216": [
           {
-            "topic": "event",
-            "event": "war",
-            "year": 1216
-          },
-          {
             "topic": "neglected"
           }
         ],
-        "1217": [
+        "1222": [
+          {
+            "topic": "new relationship",
+            "key": 22320,
+            "people": [
+              15692,
+              12948
+            ],
+            "people names": [
+              "Godelief van Salome",
+              "Myrthel"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stBreestraat.se1.c2",
+              "street": "Breestraat",
+              "neighborhood": "olvbuurt",
+              "unique id": 533
+            }
+          }
+        ],
+        "1223": [
+          {
+            "topic": "event",
+            "event": "faction upheaval",
+            "faction": "Dogmatists",
+            "year": 1223
+          }
+        ],
+        "1224": [
+          {
+            "topic": "new relationship",
+            "key": 23156,
+            "people": [
+              12948,
+              23154
+            ],
+            "people names": [
+              "Myrthel",
+              "Voghel van Myrthel"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "childbirth"
           }
         ]
       }
@@ -283,16 +339,17 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stOp Havick2.se1.c2",
-      "street": "Op Havick2",
-      "neighborhood": "denhof",
-      "unique id": 854
+      "section": "stBreestraat.se1.c2",
+      "street": "Breestraat",
+      "neighborhood": "olvbuurt",
+      "unique id": 533
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
-        20069
+        16205,
+        22320
       ]
     }
   }

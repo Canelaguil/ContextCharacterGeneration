@@ -1,33 +1,33 @@
 {
   "11453": {
     "alive": false,
-    "name": "Scilla",
+    "name": "Brundonis",
     "surname": "",
-    "full name": "Scilla",
+    "full name": "Brundonis",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.917,
-      "romantic interest": 0.474,
-      "sex interest": 0.674,
-      "gender expression": 0.215,
+      "sexuality label": "bi",
+      "sexuality": 0.236,
+      "romantic interest": 0.754,
+      "sex interest": 0.697,
+      "gender expression": 0.329,
       "sex": "f"
     },
-    "age": 36,
-    "birth year": 1169,
+    "age": 45,
+    "birth year": 1161,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
       3,
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.662,
-      "nice-nasty": 0.193,
-      "honest-false": 0.674
+      "lawful-chaotic": 0.144,
+      "nice-nasty": 0.749,
+      "honest-false": 0.17
     },
     "attitude": {
-      "outgoing": 0.548,
-      "dream": 0.459
+      "outgoing": 0.441,
+      "dream": 0.632
     },
     "homsoc": {
       "means": {
@@ -35,50 +35,59 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": [
-          "starving"
-        ]
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.636,
-        "gender expression expression": 0.114
+        "sexuality expression": 0.079,
+        "gender expression expression": 0.0
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13869": {
+          "key": 13869,
+          "name": "Alretieren",
+          "age": 0,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Brundonis (11453)",
+            "father": "Haghen (11452)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11454
-        ]
+        ],
+        "child": {
+          "birth": [
+            13871
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
         3,
         "upper middle class"
       ],
-      "income": 0.845,
-      "all_incomes": [
-        0.845
-      ],
-      "job": {
-        "lawful": true,
-        "honest": true
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 1,
+      "skin_color": 2,
       "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.697,
-      "fertility": 0.658,
+      "health": 0.745,
+      "fertility": 0.763,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -90,17 +99,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.697
+            "new_health": 0.745
           },
           "death": false
-        },
-        "1204": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.697
-          },
-          "death": true
         }
       },
       "events": {
@@ -113,8 +114,8 @@
               11453
             ],
             "people names": [
-              "Ydier Butziel",
-              "Scilla"
+              "Haghen",
+              "Brundonis"
             ],
             "label": "spouse",
             "committed": true
@@ -124,64 +125,63 @@
             "home": {
               "income class": 3,
               "income class label": "upper middle class",
-              "section": "stMuurhuysen1.se3.c3",
+              "section": "stMuurhuysen1.se1.c3",
               "street": "Muurhuysen1",
               "neighborhood": "cingelzuid",
-              "unique id": 664
+              "unique id": 657
             }
-          }
-        ],
-        "1201": [
-          {
-            "key": 11454,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 11452,
-              "name": "Ydier Butziel",
-              "age": 44,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
           }
         ],
         "1202": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "new relationship",
+            "key": 13871,
+            "people": [
+              11453,
+              13869
+            ],
+            "people names": [
+              "Brundonis",
+              "Alretieren"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1203": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1204": [
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.845
+            "topic": "person died",
+            "person": {
+              "key": 13869,
+              "name": "Alretieren",
+              "age": 0,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Brundonis (11453)",
+                "father": "Haghen (11452)"
+              }
+            },
+            "cause": "childbirth",
+            "label": "child"
           },
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "feelings change",
+            "target": 11452,
+            "target name": "Haghen",
+            "state": "out of love",
+            "relationship": 11454
+          }
+        ],
+        "1205": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1205
           },
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "plague"
           }
         ]
       }
@@ -190,14 +190,14 @@
     "home": {
       "income class": 3,
       "income class label": "upper middle class",
-      "section": "stMuurhuysen1.se3.c3",
+      "section": "stMuurhuysen1.se1.c3",
       "street": "Muurhuysen1",
       "neighborhood": "cingelzuid",
-      "unique id": 664
+      "unique id": 657
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
         11454
       ]

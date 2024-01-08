@@ -1,61 +1,66 @@
 {
   "25298": {
-    "alive": true,
-    "name": "Andreas",
-    "surname": "Wedegheszoon",
-    "full name": "Andreas Wedegheszoon",
+    "alive": false,
+    "name": "Gloria",
+    "surname": "",
+    "full name": "Gloria",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.052,
-      "romantic interest": 0.59,
-      "sex interest": 0.46,
-      "gender expression": 0.198,
-      "sex": "m"
+      "sexuality label": "bi",
+      "sexuality": 0.499,
+      "romantic interest": 0.689,
+      "sex interest": 0.799,
+      "gender expression": 0.518,
+      "sex": "f"
     },
     "age": 16,
-    "birth year": 1233,
-    "sex": "m",
-    "faction": "Dogmatists",
+    "birth year": 1231,
+    "sex": "f",
+    "faction": "No religion",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.912,
-      "nice-nasty": 0.517,
-      "honest-false": 0.666
+      "lawful-chaotic": 0.939,
+      "nice-nasty": 0.935,
+      "honest-false": 0.245
     },
     "attitude": {
-      "outgoing": 0.13,
-      "dream": 0.461
+      "outgoing": 0.617,
+      "dream": 0.398
     },
     "homsoc": {
       "means": {
         "independent": false,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
         "flags": [
-          "caretaker",
-          "neglected",
-          "starving"
+          "neglected"
         ]
       },
       "expression": {
-        "sexuality expression": 0.039,
-        "gender expression expression": 0.13
+        "sexuality expression": 0.308,
+        "gender expression expression": 0.517
       }
     },
     "network": {
       "parents": {
-        "mother": "Mette (18087)",
-        "father": "Wedeghe (19842)"
+        "mother": "Reymodis (12355)",
+        "father": "Eltetus (12751)"
       },
       "children": {},
       "relationship keys": {
         "parent": [
           25299,
           25300
+        ],
+        "sibling": [
+          25301,
+          25302,
+          25303,
+          26645,
+          30076
         ]
       }
     },
@@ -69,16 +74,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 4,
+      "skin_color": 7,
       "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
         "C",
-        "C"
+        "S"
       ],
-      "health": 0.709,
-      "fertility": 0.607,
+      "health": 0.425,
+      "fertility": 0.651,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -86,30 +91,83 @@
     },
     "memory": {
       "health": {
-        "1234": {
+        "1232": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.709
+            "new_health": 0.632
           },
           "death": false
+        },
+        "1242": {
+          "health": {
+            "change": true,
+            "value_change": -0.207,
+            "new_health": 0.425
+          },
+          "death": false
+        },
+        "1243": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.425
+          },
+          "death": false
+        },
+        "1247": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.425
+          },
+          "death": true
         }
       },
       "events": {
-        "1233": [
+        "1231": [
           {
             "topic": "new home",
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stDie Camp.se5.c2",
-              "street": "Die Camp",
-              "neighborhood": "kampbuurt",
-              "unique id": 390
+              "section": "stCromme straet.se3.c2",
+              "street": "Cromme straet",
+              "neighborhood": "denhof",
+              "unique id": 885
             }
           }
         ],
+        "1232": [
+          {
+            "topic": "event",
+            "event": "war",
+            "year": 1232
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1233": [
+          {
+            "topic": "neglected"
+          }
+        ],
         "1234": [
+          {
+            "topic": "new relationship",
+            "key": 26645,
+            "people": [
+              25298,
+              26639
+            ],
+            "people names": [
+              "Gloria",
+              "Siburgis van Eltetus"
+            ],
+            "label": "sibling",
+            "committed": false
+          },
           {
             "topic": "neglected"
           }
@@ -121,25 +179,15 @@
         ],
         "1236": [
           {
+            "topic": "event",
+            "event": "plague",
+            "year": 1236
+          },
+          {
             "topic": "neglected"
           }
         ],
         "1237": [
-          {
-            "topic": "person died",
-            "person": {
-              "key": 18087,
-              "name": "Mette",
-              "age": 26,
-              "alive": false,
-              "sex": "f",
-              "parents": {
-                "mother": "Heile (10061)",
-                "father": "Boidin (10060)"
-              }
-            },
-            "label": "parent"
-          },
           {
             "topic": "neglected"
           }
@@ -161,109 +209,52 @@
         ],
         "1241": [
           {
-            "topic": "person died",
-            "person": {
-              "key": 19842,
-              "name": "Wedeghe Lancgeroch",
-              "age": 26,
-              "alive": false,
-              "sex": "m",
-              "parents": {
-                "mother": "Jute (10859)",
-                "father": "Amisius (10858)"
-              }
-            },
-            "label": "parent"
+            "topic": "new relationship",
+            "key": 30076,
+            "people": [
+              25298,
+              30070
+            ],
+            "people names": [
+              "Gloria",
+              "Pieter"
+            ],
+            "label": "sibling",
+            "committed": false
           },
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": [
-              25298
-            ]
+            "topic": "neglected"
           }
         ],
         "1242": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": [
-              25298
-            ]
-          },
-          {
-            "topic": "now caretaker",
-            "care dependants": []
-          },
-          {
-            "topic": "new caretaker",
-            "person": 25298
+            "topic": "neglected"
           }
         ],
         "1243": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": [
-              25298
-            ]
+            "topic": "neglected"
           }
         ],
         "1244": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": [
-              25298
-            ]
+            "topic": "neglected"
           }
         ],
         "1245": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": [
-              25298
-            ]
+            "topic": "neglected"
           }
         ],
         "1246": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": [
-              25298
-            ]
+            "topic": "neglected"
           }
         ],
         "1247": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": [
-              25298
-            ]
-          }
-        ],
-        "1248": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": [
-              25298
-            ]
-          }
-        ],
-        "1249": [
-          {
-            "topic": "not caretaker"
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": [
-              25298
-            ]
+            "topic": "death",
+            "cause": "illness"
           }
         ]
       }
@@ -272,15 +263,21 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stDie Camp.se5.c2",
-      "street": "Die Camp",
-      "neighborhood": "kampbuurt",
-      "unique id": 390
+      "section": "stCromme straet.se3.c2",
+      "street": "Cromme straet",
+      "neighborhood": "denhof",
+      "unique id": 885
     },
     "relationship status": {
       "taken": false,
       "married": false,
-      "relationships": []
+      "relationships": [
+        25301,
+        25302,
+        25303,
+        26645,
+        30076
+      ]
     }
   }
 }

@@ -1,76 +1,117 @@
 {
   "10313": {
     "alive": false,
-    "name": "Menoldis",
-    "surname": "Neve",
-    "full name": "Menoldis Neve",
+    "name": "Bertrade",
+    "surname": "Strument",
+    "full name": "Bertrade Strument",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.903,
-      "romantic interest": 0.999,
-      "sex interest": 0.691,
-      "gender expression": 0.518,
+      "sexuality label": "bi",
+      "sexuality": 0.524,
+      "romantic interest": 0.623,
+      "sex interest": 0.695,
+      "gender expression": 0.605,
       "sex": "f"
     },
-    "age": 21,
-    "birth year": 1181,
+    "age": 39,
+    "birth year": 1175,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "Zealots",
     "income class": [
       0,
       "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.323,
-      "honest-false": 0.442
+      "lawful-chaotic": 0.068,
+      "nice-nasty": 0.375,
+      "honest-false": 0.0
     },
     "attitude": {
-      "outgoing": 0.449,
-      "dream": 0.513
+      "outgoing": 0.628,
+      "dream": 0.445
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving",
+          "caretaker"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.619,
-        "gender expression expression": 0.099
+        "sexuality expression": 0.308,
+        "gender expression expression": 0.604
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "15486": {
+          "key": 15486,
+          "name": "Jonghen Sanseszoon",
+          "age": 44,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Bertrade (10313)",
+            "father": "Sanse (10312)"
+          }
+        },
+        "16151": {
+          "key": 16151,
+          "name": "Ghodelde van Sanse",
+          "age": 0,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Bertrade (10313)",
+            "father": "Sanse (10312)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          10314
-        ]
+          10314,
+          19551
+        ],
+        "child": {
+          "birth": [
+            15488,
+            16153
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         0,
         "working class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.202,
+      "all_incomes": [
+        1.36,
+        1.257,
+        1.202
+      ],
+      "job": {
+        "lawful": false,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 0,
+      "skin_color": 5,
       "eye_color": "brown",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
-        "C",
+        "S",
         "C"
       ],
-      "health": 0.498,
-      "fertility": 0.828,
+      "health": 0.662,
+      "fertility": 0.637,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -82,15 +123,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.701
+            "new_health": 0.662
           },
           "death": false
         },
-        "1201": {
+        "1213": {
           "health": {
-            "change": true,
-            "value_change": -0.203,
-            "new_health": 0.498
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.662
           },
           "death": true
         }
@@ -105,8 +146,8 @@
               10313
             ],
             "people names": [
-              "Herman",
-              "Menoldis Neve"
+              "Sanse",
+              "Bertrade Strument"
             ],
             "label": "spouse",
             "committed": true
@@ -119,18 +160,144 @@
               "section": "stSt. Joris straet.se1.c0",
               "street": "St. Joris straet",
               "neighborhood": "jorisbuurt",
-              "unique id": 137
+              "unique id": 140
             }
-          },
+          }
+        ],
+        "1204": [
           {
             "topic": "feelings change",
             "target": 10312,
-            "target name": "Herman",
-            "state": "out of love",
+            "target name": "Sanse",
+            "state": "solid love",
             "relationship": 10314
           }
         ],
-        "1201": [
+        "1205": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1205
+          },
+          {
+            "topic": "new relationship",
+            "key": 15488,
+            "people": [
+              10313,
+              15486
+            ],
+            "people names": [
+              "Bertrade Strument",
+              "Jonghen Sanseszoon"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 16153,
+            "people": [
+              10313,
+              16151
+            ],
+            "people names": [
+              "Bertrade Strument",
+              "Ghodelde van Sanse"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1207": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 16151,
+              "name": "Ghodelde van Sanse",
+              "age": 0,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Bertrade (10313)",
+                "father": "Sanse (10312)"
+              }
+            },
+            "cause": "childbirth",
+            "label": "child"
+          }
+        ],
+        "1209": [
+          {
+            "key": 10314,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10312,
+              "name": "Sanse",
+              "age": 54,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              15486
+            ]
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              15486
+            ]
+          }
+        ],
+        "1211": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.36
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              15486
+            ]
+          }
+        ],
+        "1212": [
+          {
+            "topic": "new relationship",
+            "key": 19551,
+            "people": [
+              11029,
+              10313
+            ],
+            "people names": [
+              "Eremboldus",
+              "Bertrade Strument"
+            ],
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1213": [
           {
             "topic": "death",
             "cause": "illness"
@@ -145,13 +312,14 @@
       "section": "stSt. Joris straet.se1.c0",
       "street": "St. Joris straet",
       "neighborhood": "jorisbuurt",
-      "unique id": 137
+      "unique id": 140
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        10314
+        10314,
+        19551
       ]
     }
   }

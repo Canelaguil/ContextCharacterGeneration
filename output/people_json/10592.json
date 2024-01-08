@@ -1,93 +1,135 @@
 {
   "10592": {
     "alive": false,
-    "name": "Hilduardis",
-    "surname": "Crick",
-    "full name": "Hilduardis Crick",
+    "name": "Liedelde",
+    "surname": "",
+    "full name": "Liedelde",
     "born this way": {
-      "sexuality label": "bi",
-      "sexuality": 0.498,
-      "romantic interest": 0.733,
-      "sex interest": 0.999,
-      "gender expression": 0.284,
+      "sexuality label": "gay",
+      "sexuality": 0.926,
+      "romantic interest": 0.773,
+      "sex interest": 0.595,
+      "gender expression": 0.242,
       "sex": "f"
     },
-    "age": 24,
-    "birth year": 1179,
+    "age": 46,
+    "birth year": 1178,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "Zealots",
     "income class": [
       0,
       "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.331,
-      "nice-nasty": 0.148,
-      "honest-false": 0.905
+      "lawful-chaotic": 0.595,
+      "nice-nasty": 0.462,
+      "honest-false": 0.999
     },
     "attitude": {
-      "outgoing": 0.33,
-      "dream": 0.302
+      "outgoing": 0.77,
+      "dream": 0.858
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving",
+          "caretaker"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.226,
-        "gender expression expression": 0.196
+        "sexuality expression": 0.683,
+        "gender expression expression": 0.169
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "13646": {
-          "key": 13646,
-          "name": "Gheuardus Roede",
-          "age": 5,
+        "12382": {
+          "key": 12382,
+          "name": "Oda Mulart",
+          "age": 26,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Liedelde (10592)",
+            "father": "Gobel (10591)"
+          }
+        },
+        "12995": {
+          "key": 12995,
+          "name": "Lammekin Mulart",
+          "age": 12,
           "alive": false,
           "sex": "m",
           "parents": {
-            "mother": "Hilduardis (10592)",
-            "father": "Adam (10591)"
+            "mother": "Liedelde (10592)",
+            "father": "Gobel (10591)"
+          }
+        },
+        "17894": {
+          "key": 17894,
+          "name": "Jacob Mulart",
+          "age": 16,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Liedelde (10592)",
+            "father": "Gobel (10591)"
           }
         }
       },
       "relationship keys": {
         "spouse": [
-          10593
+          10593,
+          21811
         ],
         "child": {
           "birth": [
-            13648
+            12384,
+            12997,
+            17896
           ]
         }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         0,
         "working class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.87,
+      "all_incomes": [
+        0.867,
+        0.904,
+        0.784,
+        0.847,
+        0.854,
+        0.855,
+        0.859,
+        0.901,
+        0.87
+      ],
+      "job": {
+        "lawful": true,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 3,
+      "skin_color": 6,
       "eye_color": "brown",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
       "hair_type": [
         "S",
-        "S"
+        "C"
       ],
-      "health": 0.688,
-      "fertility": 0.769,
+      "health": 0.581,
+      "fertility": 0.608,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -99,9 +141,17 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.688
+            "new_health": 0.581
           },
           "death": false
+        },
+        "1223": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.581
+          },
+          "death": true
         }
       },
       "events": {
@@ -114,8 +164,8 @@
               10592
             ],
             "people names": [
-              "Adam Roede",
-              "Hilduardis Crick"
+              "Gobel Mulart",
+              "Liedelde"
             ],
             "label": "spouse",
             "committed": true
@@ -128,28 +178,236 @@
               "section": "stWalker straet.se1.c0",
               "street": "Walker straet",
               "neighborhood": "agnesbuurt",
-              "unique id": 264
+              "unique id": 266
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12384,
+            "people": [
+              10592,
+              12382
+            ],
+            "people names": [
+              "Liedelde",
+              "Oda Mulart"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 12997,
+            "people": [
+              10592,
+              12995
+            ],
+            "people names": [
+              "Liedelde",
+              "Lammekin Mulart"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1202": [
           {
+            "topic": "not enough income",
+            "income": 0.979,
+            "inhabitants": []
+          }
+        ],
+        "1204": [
+          {
+            "topic": "not enough income",
+            "income": 0.974,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1205
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0.988,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0.965,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0.924,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
             "topic": "new relationship",
-            "key": 13648,
+            "key": 17896,
             "people": [
               10592,
-              13646
+              17894
             ],
             "people names": [
-              "Hilduardis Crick",
-              "Gheuardus Roede"
+              "Liedelde",
+              "Jacob Mulart"
             ],
             "label": "parentchild",
             "committed": false
           },
           {
+            "topic": "not enough income",
+            "income": 0.967,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0.978,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0.975,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0.96,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
+          {
+            "key": 10593,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10591,
+              "name": "Gobel Mulart",
+              "age": 50,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "starvation",
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          }
+        ],
+        "1214": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12995,
+              "name": "Lammekin Mulart",
+              "age": 12,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Liedelde (10592)",
+                "father": "Gobel (10591)"
+              }
+            },
+            "cause": "starvation",
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1215": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.867
+          },
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1220": [
+          {
+            "topic": "new relationship",
+            "key": 21811,
+            "people": [
+              10762,
+              10592
+            ],
+            "people names": [
+              "Elyas\u0430",
+              "Liedelde"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 0,
+              "income class label": "working class",
+              "section": "stPotstraet.se3.c0",
+              "street": "Potstraet",
+              "neighborhood": "kampbuurt",
+              "unique id": 348
+            }
+          }
+        ],
+        "1223": [
+          {
+            "topic": "event",
+            "event": "faction upheaval",
+            "faction": "Dogmatists",
+            "year": 1223
+          },
+          {
+            "topic": "feelings change",
+            "target": 10762,
+            "target name": "Elyas\u0430",
+            "state": "out of love",
+            "relationship": 21811
+          },
+          {
             "topic": "death",
-            "cause": "childbirth"
+            "cause": "illness"
           }
         ]
       }
@@ -158,16 +416,17 @@
     "home": {
       "income class": 0,
       "income class label": "working class",
-      "section": "stWalker straet.se1.c0",
-      "street": "Walker straet",
-      "neighborhood": "agnesbuurt",
-      "unique id": 264
+      "section": "stPotstraet.se3.c0",
+      "street": "Potstraet",
+      "neighborhood": "kampbuurt",
+      "unique id": 348
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        10593
+        10593,
+        21811
       ]
     }
   }

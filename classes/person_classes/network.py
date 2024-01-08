@@ -15,14 +15,15 @@ class Network():
         self.children_keys = []
         self.relationship_types = {}
 
-    def unravel(self):
+    def unravel(self, cause=''):
         """
         Person dies, network ends and relationships & people are notified
         """
         about_me = self.community.get_person_short(self.person_key)
         relation_message = {
             'topic' : 'person died', 
-            'person' : about_me
+            'person' : about_me,
+            'cause' : cause
         }
         for l in self.relationship_types.values():
             # for children subcategories

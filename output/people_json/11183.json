@@ -1,19 +1,19 @@
 {
   "11183": {
     "alive": false,
-    "name": "Jacomin",
-    "surname": "Korte",
-    "full name": "Jacomin Korte",
+    "name": "Lielde",
+    "surname": "Scenkel",
+    "full name": "Lielde Scenkel",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.091,
-      "romantic interest": 0.67,
-      "sex interest": 0.567,
-      "gender expression": 0.0,
+      "sexuality": 0.0,
+      "romantic interest": 0.672,
+      "sex interest": 0.566,
+      "gender expression": 0.058,
       "sex": "f"
     },
-    "age": 54,
-    "birth year": 1157,
+    "age": 56,
+    "birth year": 1154,
     "sex": "f",
     "faction": "Dogmatists",
     "income class": [
@@ -21,13 +21,13 @@
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.629,
-      "nice-nasty": 0.683,
-      "honest-false": 0.482
+      "lawful-chaotic": 0.0,
+      "nice-nasty": 0.428,
+      "honest-false": 0.826
     },
     "attitude": {
-      "outgoing": 0.414,
-      "dream": 0.873
+      "outgoing": 0.606,
+      "dream": 0.379
     },
     "homsoc": {
       "means": {
@@ -35,11 +35,13 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.051,
-        "gender expression expression": -0.001
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.029
       }
     },
     "network": {
@@ -47,39 +49,31 @@
       "children": {},
       "relationship keys": {
         "spouse": [
-          11184
+          11184,
+          17721
         ]
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 1.128,
-      "all_incomes": [
-        1.04,
-        1.045,
-        1.121,
-        1.128
-      ],
-      "job": {
-        "lawful": true,
-        "honest": true
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 6,
+      "skin_color": 8,
       "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
         "C",
-        "S"
+        "C"
       ],
-      "health": 0.0,
-      "fertility": 0.63,
+      "health": 0.003,
+      "fertility": 0.725,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -91,39 +85,47 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.569
+            "new_health": 0.715
+          },
+          "death": false
+        },
+        "1205": {
+          "health": {
+            "change": true,
+            "value_change": -0.131,
+            "new_health": 0.584
+          },
+          "death": false
+        },
+        "1206": {
+          "health": {
+            "change": true,
+            "value_change": -0.313,
+            "new_health": 0.271
           },
           "death": false
         },
         "1207": {
           "health": {
             "change": true,
-            "value_change": -0.154,
-            "new_health": 0.415
+            "value_change": -0.137,
+            "new_health": 0.134
           },
           "death": false
         },
         "1208": {
           "health": {
             "change": true,
-            "value_change": -0.282,
-            "new_health": 0.133
+            "value_change": -0.12,
+            "new_health": 0.014
           },
           "death": false
         },
         "1209": {
           "health": {
             "change": true,
-            "value_change": -0.087,
-            "new_health": 0.046
-          },
-          "death": false
-        },
-        "1210": {
-          "health": {
-            "change": true,
-            "value_change": -0.046,
-            "new_health": 0.0
+            "value_change": -0.011,
+            "new_health": 0.003
           },
           "death": true
         }
@@ -138,8 +140,8 @@
               11183
             ],
             "people names": [
-              "Reuro Screvel",
-              "Jacomin Korte"
+              "Conrad Jserine",
+              "Lielde Scenkel"
             ],
             "label": "spouse",
             "committed": true
@@ -152,27 +154,11 @@
               "section": "stBreestraat.se1.c2",
               "street": "Breestraat",
               "neighborhood": "olvbuurt",
-              "unique id": 543
+              "unique id": 534
             }
           }
         ],
-        "1202": [
-          {
-            "topic": "feelings change",
-            "target": 11182,
-            "target name": "Reuro Screvel",
-            "state": "solid love",
-            "relationship": 11184
-          }
-        ],
-        "1207": [
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.04
-          }
-        ],
-        "1210": [
+        "1205": [
           {
             "key": 11184,
             "topic": "unmarried"
@@ -181,17 +167,71 @@
             "topic": "person died",
             "person": {
               "key": 11182,
-              "name": "Reuro Screvel",
-              "age": 56,
+              "name": "Conrad Jserine",
+              "age": 53,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
             },
+            "cause": "sickness",
             "label": "spouse"
           },
           {
+            "topic": "event",
+            "event": "plague",
+            "year": 1205
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "new relationship",
+            "key": 17721,
+            "people": [
+              11212,
+              11183
+            ],
+            "people names": [
+              "Alem Vinke",
+              "Lielde Scenkel"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stBreestraat.se1.c2",
+              "street": "Breestraat",
+              "neighborhood": "olvbuurt",
+              "unique id": 546
+            }
+          }
+        ],
+        "1209": [
+          {
             "topic": "death",
-            "cause": "sickness"
+            "cause": "old age"
           }
         ]
       }
@@ -203,13 +243,14 @@
       "section": "stBreestraat.se1.c2",
       "street": "Breestraat",
       "neighborhood": "olvbuurt",
-      "unique id": 543
+      "unique id": 546
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
-        11184
+        11184,
+        17721
       ]
     }
   }

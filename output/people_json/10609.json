@@ -1,54 +1,86 @@
 {
   "10609": {
     "alive": false,
-    "name": "Wedeghe",
-    "surname": "Colsebyle",
-    "full name": "Wedeghe Colsebyle",
+    "name": "Passelin",
+    "surname": "Quic",
+    "full name": "Passelin Quic",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.073,
-      "romantic interest": 0.791,
-      "sex interest": 0.782,
-      "gender expression": 0.0,
+      "sexuality": 0.043,
+      "romantic interest": 0.999,
+      "sex interest": 0.758,
+      "gender expression": 0.068,
       "sex": "m"
     },
-    "age": 54,
-    "birth year": 1151,
+    "age": 46,
+    "birth year": 1158,
     "sex": "m",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.506,
-      "nice-nasty": 0.465,
-      "honest-false": 0.577
+      "lawful-chaotic": 0.528,
+      "nice-nasty": 0.505,
+      "honest-false": 0.334
     },
     "attitude": {
-      "outgoing": 0.411,
-      "dream": 0.66
+      "outgoing": 0.44,
+      "dream": 0.406
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.037,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.026,
+        "gender expression expression": 0.021
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12391": {
+          "key": 12391,
+          "name": "Emgelberna Passelinsdochter",
+          "age": 16,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Heilsota (10610)",
+            "father": "Passelin (10609)"
+          }
+        },
+        "14753": {
+          "key": 14753,
+          "name": "Tielekine Quic",
+          "age": 46,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Aghata (10925)",
+            "father": "Passelin (10609)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          10611
-        ]
+          10611,
+          14104
+        ],
+        "child": {
+          "birth": [
+            12392,
+            14754
+          ]
+        }
       }
     },
     "occupation": {
@@ -57,14 +89,13 @@
         1,
         "lower middle class"
       ],
-      "income": 1.12,
+      "income": 0.425,
       "all_incomes": [
-        1.026,
-        1.499,
-        1.499,
-        1.499,
-        1.223,
-        1.12
+        0.0,
+        0.0,
+        0.0,
+        0.401,
+        0.425
       ],
       "job": {
         "lawful": false,
@@ -72,16 +103,16 @@
       }
     },
     "genetics": {
-      "skin_color": 8,
+      "skin_color": 9,
       "eye_color": "blue",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
         "S",
         "S"
       ],
-      "health": 0.0,
-      "fertility": 0.527,
+      "health": 0.519,
+      "fertility": 0.523,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -93,39 +124,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.511
-          },
-          "death": false
-        },
-        "1201": {
-          "health": {
-            "change": true,
-            "value_change": -0.23,
-            "new_health": 0.281
-          },
-          "death": false
-        },
-        "1202": {
-          "health": {
-            "change": true,
-            "value_change": -0.203,
-            "new_health": 0.078
+            "new_health": 0.519
           },
           "death": false
         },
         "1203": {
           "health": {
-            "change": true,
-            "value_change": -0.037,
-            "new_health": 0.041
-          },
-          "death": false
-        },
-        "1204": {
-          "health": {
-            "change": true,
-            "value_change": -0.041,
-            "new_health": 0.0
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.519
           },
           "death": true
         }
@@ -135,7 +142,7 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.026
+            "income": 0.0
           },
           {
             "topic": "new relationship",
@@ -145,8 +152,8 @@
               10610
             ],
             "people names": [
-              "Wedeghe Colsebyle",
-              "Katerina lucrose"
+              "Passelin Quic",
+              "Heilsota Minneman"
             ],
             "label": "spouse",
             "committed": true
@@ -159,14 +166,102 @@
               "section": "stWalker straet.se7.c1",
               "street": "Walker straet",
               "neighborhood": "agnesbuurt",
-              "unique id": 275
+              "unique id": 276
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12392,
+            "people": [
+              10609,
+              12391
+            ],
+            "people names": [
+              "Passelin Quic",
+              "Emgelberna Passelinsdochter"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
           }
         ],
-        "1204": [
+        "1201": [
+          {
+            "key": 10611,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10610,
+              "name": "Heilsota Minneman",
+              "age": 20,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 14104,
+            "people": [
+              10609,
+              10925
+            ],
+            "people names": [
+              "Passelin Quic",
+              "Aghata"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.401,
+            "inhabitants": []
+          }
+        ],
+        "1203": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.425
+          },
+          {
+            "topic": "new relationship",
+            "key": 14754,
+            "people": [
+              10609,
+              14753
+            ],
+            "people names": [
+              "Passelin Quic",
+              "Tielekine Quic"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.425,
+            "inhabitants": []
+          },
           {
             "topic": "death",
-            "cause": "sickness"
+            "cause": "illness"
           }
         ]
       }
@@ -178,13 +273,14 @@
       "section": "stWalker straet.se7.c1",
       "street": "Walker straet",
       "neighborhood": "agnesbuurt",
-      "unique id": 275
+      "unique id": 276
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        10611
+        10611,
+        14104
       ]
     }
   }

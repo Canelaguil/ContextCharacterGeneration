@@ -1,33 +1,33 @@
 {
   "10673": {
     "alive": false,
-    "name": "Soeten",
-    "surname": "Steenard",
-    "full name": "Soeten Steenard",
+    "name": "Cofte",
+    "surname": "",
+    "full name": "Cofte",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.021,
-      "romantic interest": 0.803,
-      "sex interest": 0.349,
-      "gender expression": 0.218,
+      "sexuality label": "bi",
+      "sexuality": 0.499,
+      "romantic interest": 0.872,
+      "sex interest": 0.679,
+      "gender expression": 0.213,
       "sex": "f"
     },
-    "age": 31,
-    "birth year": 1172,
+    "age": 32,
+    "birth year": 1180,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "Zealots",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.974,
-      "nice-nasty": 0.548,
-      "honest-false": 0.155
+      "lawful-chaotic": 0.291,
+      "nice-nasty": 0.0,
+      "honest-false": 0.765
     },
     "attitude": {
-      "outgoing": 0.463,
-      "dream": 0.054
+      "outgoing": 0.062,
+      "dream": 0.21
     },
     "homsoc": {
       "means": {
@@ -38,39 +38,91 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.019,
-        "gender expression expression": 0.079
+        "sexuality expression": 0.12,
+        "gender expression expression": 0.038
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12415": {
+          "key": 12415,
+          "name": "Wybel van Cofte",
+          "age": 27,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Cofte (10673)",
+            "father": "Brame (10672)"
+          }
+        },
+        "14266": {
+          "key": 14266,
+          "name": "Oderada Strument",
+          "age": 33,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Cofte (10673)",
+            "father": "Brame (10672)"
+          }
+        },
+        "18912": {
+          "key": 18912,
+          "name": "Henric Strument",
+          "age": 31,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Cofte (10673)",
+            "father": "Brame (10672)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10674
-        ]
+        ],
+        "child": {
+          "birth": [
+            12417,
+            14268,
+            18914
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.828,
+      "all_incomes": [
+        0.95,
+        0.9,
+        0.923,
+        0.868,
+        0.813,
+        0.828
+      ],
+      "job": {
+        "lawful": true,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 8,
-      "eye_color": "green",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "skin_color": 4,
+      "eye_color": "brown",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "S",
-        "S"
+        "C"
       ],
-      "health": 0.541,
-      "fertility": 0.683,
+      "health": 0.771,
+      "fertility": 0.763,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -82,15 +134,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.541
+            "new_health": 0.771
           },
           "death": false
         },
-        "1202": {
+        "1211": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.541
+            "new_health": 0.771
           },
           "death": true
         }
@@ -105,8 +157,8 @@
               10673
             ],
             "people names": [
-              "Falco",
-              "Soeten Steenard"
+              "Brame Strument",
+              "Cofte"
             ],
             "label": "spouse",
             "committed": true
@@ -119,11 +171,76 @@
               "section": "stCingel.se1.c2",
               "street": "Cingel",
               "neighborhood": "agnesbuurt",
-              "unique id": 305
+              "unique id": 303
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12417,
+            "people": [
+              10673,
+              12415
+            ],
+            "people names": [
+              "Cofte",
+              "Wybel van Cofte"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1202": [
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 14268,
+            "people": [
+              10673,
+              14266
+            ],
+            "people names": [
+              "Cofte",
+              "Oderada Strument"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1205": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1205
+          }
+        ],
+        "1206": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.95
+          },
+          {
+            "topic": "feelings change",
+            "target": 10672,
+            "target name": "Brame Strument",
+            "state": "out of love",
+            "relationship": 10674
+          }
+        ],
+        "1211": [
+          {
+            "topic": "new relationship",
+            "key": 18914,
+            "people": [
+              10673,
+              18912
+            ],
+            "people names": [
+              "Cofte",
+              "Henric Strument"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
           {
             "topic": "death",
             "cause": "illness"
@@ -138,7 +255,7 @@
       "section": "stCingel.se1.c2",
       "street": "Cingel",
       "neighborhood": "agnesbuurt",
-      "unique id": 305
+      "unique id": 303
     },
     "relationship status": {
       "taken": true,

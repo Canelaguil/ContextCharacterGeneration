@@ -1,86 +1,135 @@
 {
   "14036": {
     "alive": false,
-    "name": "Meynolphus",
-    "surname": "Raven",
-    "full name": "Meynolphus Raven",
+    "name": "Siburgis",
+    "surname": "Coquus",
+    "full name": "Siburgis Coquus",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.654,
-      "sex interest": 0.687,
-      "gender expression": 0.102,
-      "sex": "m"
+      "sexuality": 0.112,
+      "romantic interest": 0.59,
+      "sex interest": 0.746,
+      "gender expression": 0.14,
+      "sex": "f"
     },
-    "age": 7,
+    "age": 33,
     "birth year": 1202,
-    "sex": "m",
-    "faction": "No religion",
+    "sex": "f",
+    "faction": "Zealots",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.471,
-      "nice-nasty": 0.365,
-      "honest-false": 0.522
+      "lawful-chaotic": 0.926,
+      "nice-nasty": 0.0,
+      "honest-false": 0.669
     },
     "attitude": {
-      "outgoing": 0.839,
-      "dream": 0.109
+      "outgoing": 0.746,
+      "dream": 0.276
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": true,
-        "needs_care": true,
+        "needs_care": false,
         "flags": [
-          "neglected"
+          "neglected",
+          "starving"
         ]
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.082
+        "sexuality expression": 0.067,
+        "gender expression expression": 0.115
       }
     },
     "network": {
       "parents": {
-        "mother": "Verthwi (11888)",
-        "father": "Snelgerus (11887)"
+        "mother": "Ghodelde (11927)",
+        "father": "Richolfus (11926)"
       },
-      "children": {},
+      "children": {
+        "23922": {
+          "key": 23922,
+          "name": "Evergero",
+          "age": 22,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Siburgis (14036)",
+            "father": "Ivone (12853)"
+          }
+        },
+        "25387": {
+          "key": 25387,
+          "name": "Amelgeir",
+          "age": 18,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Siburgis (14036)",
+            "father": "Ivone (12853)"
+          }
+        }
+      },
       "relationship keys": {
         "parent": [
           14037,
           14038
         ],
         "sibling": [
-          14039,
-          14040
-        ]
+          15917,
+          17140,
+          18173,
+          19500
+        ],
+        "spouse": [
+          21600
+        ],
+        "child": {
+          "birth": [
+            23924,
+            25389
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         1,
         "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.977,
+      "all_incomes": [
+        0.951,
+        0.926,
+        0.936,
+        0.883,
+        0.871,
+        0.899,
+        0.926,
+        0.955,
+        0.977
+      ],
+      "job": {
+        "lawful": true,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 1,
-      "eye_color": "brown",
-      "hair_color": "red",
-      "hair_color_code": 3,
+      "skin_color": 5,
+      "eye_color": "green",
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
       "hair_type": [
         "C",
         "C"
       ],
-      "health": 0.668,
-      "fertility": 0.662,
+      "health": 0.682,
+      "fertility": 0.67,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -92,15 +141,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.668
+            "new_health": 0.682
           },
           "death": false
         },
-        "1209": {
+        "1235": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.668
+            "new_health": 0.682
           },
           "death": true
         }
@@ -112,39 +161,45 @@
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stDe Vyver.se3.c1",
+              "section": "stDe Vyver.se1.c1",
               "street": "De Vyver",
               "neighborhood": "denhof",
-              "unique id": 865
+              "unique id": 860
             }
           }
         ],
-        "1204": [
+        "1203": [
           {
-            "topic": "person died",
-            "person": {
-              "key": 11888,
-              "name": "Verthwi Spirinc",
-              "age": 23,
-              "alive": false,
-              "sex": "f",
-              "parents": "firstgen"
-            },
-            "label": "parent"
-          },
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
           {
             "topic": "neglected"
           }
         ],
         "1205": [
           {
-            "topic": "neglected"
+            "topic": "event",
+            "event": "plague",
+            "year": 1205
           },
           {
-            "topic": "update",
-            "update": "parent married",
-            "parent": 11887,
-            "new partner": 10709
+            "topic": "new relationship",
+            "key": 15917,
+            "people": [
+              14036,
+              15914
+            ],
+            "people names": [
+              "Siburgis Coquus",
+              "Clara Coquus"
+            ],
+            "label": "sibling",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1206": [
@@ -153,6 +208,20 @@
           }
         ],
         "1207": [
+          {
+            "topic": "new relationship",
+            "key": 17140,
+            "people": [
+              14036,
+              17137
+            ],
+            "people names": [
+              "Siburgis Coquus",
+              "Katrin Coquus"
+            ],
+            "label": "sibling",
+            "committed": false
+          },
           {
             "topic": "neglected"
           }
@@ -164,11 +233,258 @@
         ],
         "1209": [
           {
-            "topic": "neglected"
+            "topic": "new relationship",
+            "key": 18173,
+            "people": [
+              14036,
+              18170
+            ],
+            "people names": [
+              "Siburgis Coquus",
+              "Woltwigis Coquus"
+            ],
+            "label": "sibling",
+            "committed": false
           },
           {
+            "topic": "neglected"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1211": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1212": [
+          {
+            "topic": "new relationship",
+            "key": 19500,
+            "people": [
+              14036,
+              19497
+            ],
+            "people names": [
+              "Siburgis Coquus",
+              "Segherarden Coquus"
+            ],
+            "label": "sibling",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1213": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 19497,
+              "name": "Segherarden Coquus",
+              "age": 0,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Ghodelde (11927)",
+                "father": "Richolfus (11926)"
+              }
+            },
+            "cause": "childbirth",
+            "label": "sibling"
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1214": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1216": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1217": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1219": [
+          {
+            "topic": "new relationship",
+            "key": 21600,
+            "people": [
+              12853,
+              14036
+            ],
+            "people names": [
+              "Ivone",
+              "Siburgis Coquus"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stKoe straet.se1.c1",
+              "street": "Koe straet",
+              "neighborhood": "varkensbuurt",
+              "unique id": 55
+            }
+          },
+          {
+            "topic": "not enough income",
+            "income": 1.018,
+            "inhabitants": [
+              23922,
+              23247,
+              33434
+            ]
+          }
+        ],
+        "1221": [
+          {
+            "topic": "feelings change",
+            "target": 12853,
+            "target name": "Ivone",
+            "state": "solid love",
+            "relationship": 21600
+          }
+        ],
+        "1223": [
+          {
+            "topic": "event",
+            "event": "faction upheaval",
+            "faction": "Dogmatists",
+            "year": 1223
+          }
+        ],
+        "1224": [
+          {
+            "topic": "feelings change",
+            "target": 12853,
+            "target name": "Ivone",
+            "state": "out of love",
+            "relationship": 21600
+          }
+        ],
+        "1226": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11926,
+              "name": "Richolfus Coquus",
+              "age": 55,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "label": "parent"
+          }
+        ],
+        "1227": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.951
+          },
+          {
+            "topic": "new relationship",
+            "key": 23924,
+            "people": [
+              14036,
+              23922
+            ],
+            "people names": [
+              "Siburgis Coquus",
+              "Evergero"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1231": [
+          {
+            "topic": "new relationship",
+            "key": 25389,
+            "people": [
+              14036,
+              25387
+            ],
+            "people names": [
+              "Siburgis Coquus",
+              "Amelgeir"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1232": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11927,
+              "name": "Ghodelde Clinkart",
+              "age": 54,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "label": "parent"
+          },
+          {
+            "topic": "event",
+            "event": "war",
+            "year": 1232
+          }
+        ],
+        "1233": [
+          {
+            "key": 21600,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12853,
+              "name": "Ivone",
+              "age": 31,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Reynildis (10136)",
+                "father": "Wybel (10135)"
+              }
+            },
+            "cause": "war",
+            "label": "spouse"
+          }
+        ],
+        "1235": [
+          {
             "topic": "death",
-            "cause": "childhood illness"
+            "cause": "illness"
           }
         ]
       }
@@ -177,17 +493,20 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stDe Vyver.se3.c1",
-      "street": "De Vyver",
-      "neighborhood": "denhof",
-      "unique id": 865
+      "section": "stKoe straet.se1.c1",
+      "street": "Koe straet",
+      "neighborhood": "varkensbuurt",
+      "unique id": 55
     },
     "relationship status": {
       "taken": false,
       "married": false,
       "relationships": [
-        14039,
-        14040
+        15917,
+        17140,
+        18173,
+        19500,
+        21600
       ]
     }
   }

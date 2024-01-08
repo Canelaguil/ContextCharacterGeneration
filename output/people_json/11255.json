@@ -1,19 +1,19 @@
 {
   "11255": {
     "alive": false,
-    "name": "Brundonis",
-    "surname": "Gole",
-    "full name": "Brundonis Gole",
+    "name": "Lielde",
+    "surname": "Dicbier",
+    "full name": "Lielde Dicbier",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.081,
-      "romantic interest": 0.936,
-      "sex interest": 0.775,
-      "gender expression": 0.216,
+      "sexuality": 0.07,
+      "romantic interest": 0.999,
+      "sex interest": 0.639,
+      "gender expression": 0.134,
       "sex": "f"
     },
-    "age": 42,
-    "birth year": 1160,
+    "age": 27,
+    "birth year": 1184,
     "sex": "f",
     "faction": "Zealots",
     "income class": [
@@ -21,34 +21,66 @@
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.763,
-      "nice-nasty": 0.584,
-      "honest-false": 0.457
+      "lawful-chaotic": 0.433,
+      "nice-nasty": 0.466,
+      "honest-false": 0.932
     },
     "attitude": {
-      "outgoing": 0.763,
-      "dream": 0.424
+      "outgoing": 0.298,
+      "dream": 0.716
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving",
+          "caretaker"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.077,
-        "gender expression expression": 0.064
+        "sexuality expression": 0.038,
+        "gender expression expression": 0.088
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13799": {
+          "key": 13799,
+          "name": "Waldrada Vint",
+          "age": 13,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Lielde (11255)",
+            "father": "Hildebolding (11254)"
+          }
+        },
+        "14457": {
+          "key": 14457,
+          "name": "Goneir",
+          "age": 4,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Lielde (11255)",
+            "father": "Hildebolding (11254)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11256
-        ]
+        ],
+        "child": {
+          "birth": [
+            13801,
+            14459
+          ]
+        }
       }
     },
     "occupation": {
@@ -61,16 +93,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 3,
+      "skin_color": 8,
       "eye_color": "brown",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "C",
-        "S"
+        "C"
       ],
-      "health": 0.817,
-      "fertility": 0.743,
+      "health": 0.813,
+      "fertility": 0.688,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -82,15 +114,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.817
+            "new_health": 0.813
           },
           "death": false
         },
-        "1201": {
+        "1210": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.817
+            "new_health": 0.813
           },
           "death": true
         }
@@ -105,8 +137,8 @@
               11255
             ],
             "people names": [
-              "Guido Blome",
-              "Brundonis Gole"
+              "Hildebolding Vint",
+              "Lielde Dicbier"
             ],
             "label": "spouse",
             "committed": true
@@ -116,14 +148,130 @@
             "home": {
               "income class": 3,
               "income class label": "upper middle class",
-              "section": "stBreestraat.se7.c3",
+              "section": "stBreestraat.se3.c3",
               "street": "Breestraat",
               "neighborhood": "olvbuurt",
-              "unique id": 579
+              "unique id": 564
             }
           }
         ],
-        "1201": [
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 13801,
+            "people": [
+              11255,
+              13799
+            ],
+            "people names": [
+              "Lielde Dicbier",
+              "Waldrada Vint"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 11254,
+            "target name": "Hildebolding Vint",
+            "state": "out of love",
+            "relationship": 11256
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 14459,
+            "people": [
+              11255,
+              14457
+            ],
+            "people names": [
+              "Lielde Dicbier",
+              "Goneir"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1205": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1205
+          }
+        ],
+        "1206": [
+          {
+            "key": 11256,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11254,
+              "name": "Hildebolding Vint",
+              "age": 46,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 14457,
+              "name": "Goneir",
+              "age": 4,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Lielde (11255)",
+                "father": "Hildebolding (11254)"
+              }
+            },
+            "cause": "starvation",
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
           {
             "topic": "death",
             "cause": "illness"
@@ -135,14 +283,14 @@
     "home": {
       "income class": 3,
       "income class label": "upper middle class",
-      "section": "stBreestraat.se7.c3",
+      "section": "stBreestraat.se3.c3",
       "street": "Breestraat",
       "neighborhood": "olvbuurt",
-      "unique id": 579
+      "unique id": 564
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         11256
       ]

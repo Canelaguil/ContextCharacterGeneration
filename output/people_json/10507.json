@@ -1,54 +1,83 @@
 {
   "10507": {
     "alive": false,
-    "name": "Godelief",
-    "surname": "",
-    "full name": "Godelief",
+    "name": "Walramus",
+    "surname": "Commer",
+    "full name": "Walramus Commer",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.043,
-      "romantic interest": 0.761,
-      "sex interest": 0.717,
-      "gender expression": 0.0,
+      "sexuality": 0.0,
+      "romantic interest": 0.661,
+      "sex interest": 0.58,
+      "gender expression": 0.019,
       "sex": "m"
     },
-    "age": 34,
-    "birth year": 1167,
+    "age": 24,
+    "birth year": 1179,
     "sex": "m",
-    "faction": "Zealots",
+    "faction": "Dogmatists",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.746,
-      "nice-nasty": 0.694,
-      "honest-false": 0.745
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.164,
+      "honest-false": 0.297
     },
     "attitude": {
-      "outgoing": 0.256,
-      "dream": 0.353
+      "outgoing": 0.322,
+      "dream": 0.062
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.016,
-        "gender expression expression": -0.001
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.012
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12355": {
+          "key": 12355,
+          "name": "Reymodis Commer",
+          "age": 49,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Ermegardis (10508)",
+            "father": "Walramus (10507)"
+          }
+        },
+        "13543": {
+          "key": 13543,
+          "name": "Bartholomeus Commer",
+          "age": 34,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Ermegardis (10508)",
+            "father": "Walramus (10507)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10509
-        ]
+        ],
+        "child": {
+          "birth": [
+            12356,
+            13544
+          ]
+        }
       }
     },
     "occupation": {
@@ -57,27 +86,29 @@
         2,
         "middle class"
       ],
-      "income": 1.114,
+      "income": 0.791,
       "all_incomes": [
-        1.105,
-        1.114
+        0.937,
+        1.114,
+        0.896,
+        0.791
       ],
       "job": {
         "lawful": true,
-        "honest": true
+        "honest": false
       }
     },
     "genetics": {
-      "skin_color": 0,
+      "skin_color": 6,
       "eye_color": "green",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "S",
-        "S"
+        "C",
+        "C"
       ],
-      "health": 0.642,
-      "fertility": 0.579,
+      "health": 0.803,
+      "fertility": 0.77,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -89,7 +120,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.642
+            "new_health": 0.803
+          },
+          "death": false
+        },
+        "1202": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.803
           },
           "death": true
         }
@@ -99,7 +138,12 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.105
+            "income": 0.937
+          },
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.114
           },
           {
             "topic": "new relationship",
@@ -109,8 +153,8 @@
               10508
             ],
             "people names": [
-              "Godelief",
-              "Sara Vlieghe"
+              "Walramus Commer",
+              "Ermegardis"
             ],
             "label": "spouse",
             "committed": true
@@ -123,8 +167,38 @@
               "section": "stBloemendaelse straet.se3.c2",
               "street": "Bloemendaelse straet",
               "neighborhood": "agnesbuurt",
-              "unique id": 223
+              "unique id": 232
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12356,
+            "people": [
+              10507,
+              12355
+            ],
+            "people names": [
+              "Walramus Commer",
+              "Reymodis Commer"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 13544,
+            "people": [
+              10507,
+              13543
+            ],
+            "people names": [
+              "Walramus Commer",
+              "Bartholomeus Commer"
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
             "topic": "death",
@@ -140,7 +214,7 @@
       "section": "stBloemendaelse straet.se3.c2",
       "street": "Bloemendaelse straet",
       "neighborhood": "agnesbuurt",
-      "unique id": 223
+      "unique id": 232
     },
     "relationship status": {
       "taken": true,

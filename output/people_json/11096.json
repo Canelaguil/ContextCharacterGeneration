@@ -1,19 +1,19 @@
 {
   "11096": {
     "alive": false,
-    "name": "Jute",
+    "name": "Lutghardis",
     "surname": "",
-    "full name": "Jute",
+    "full name": "Lutghardis",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.669,
-      "sex interest": 0.703,
-      "gender expression": 0.189,
+      "sexuality": 0.054,
+      "romantic interest": 0.88,
+      "sex interest": 0.641,
+      "gender expression": 0.311,
       "sex": "f"
     },
-    "age": 21,
-    "birth year": 1181,
+    "age": 46,
+    "birth year": 1172,
     "sex": "f",
     "faction": "Zealots",
     "income class": [
@@ -21,34 +21,66 @@
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.731,
-      "nice-nasty": 0.406,
-      "honest-false": 0.677
+      "lawful-chaotic": 0.345,
+      "nice-nasty": 0.999,
+      "honest-false": 0.0
     },
     "attitude": {
-      "outgoing": 0.103,
-      "dream": 0.317
+      "outgoing": 0.687,
+      "dream": 0.346
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving",
+          "caretaker"
+        ]
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.076
+        "sexuality expression": 0.022,
+        "gender expression expression": 0.215
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "16335": {
+          "key": 16335,
+          "name": "Helpriko van Hardenbernus",
+          "age": 10,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Lutghardis (11096)",
+            "father": "Hardenbernus (11095)"
+          }
+        },
+        "17438": {
+          "key": 17438,
+          "name": "Arnekin Weder",
+          "age": 41,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Lutghardis (11096)",
+            "father": "Hardenbernus (11095)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11097
-        ]
+        ],
+        "child": {
+          "birth": [
+            16337,
+            17440
+          ]
+        }
       }
     },
     "occupation": {
@@ -61,16 +93,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 8,
+      "skin_color": 9,
       "eye_color": "brown",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.572,
-      "fertility": 0.624,
+      "health": 0.908,
+      "fertility": 0.956,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -82,15 +114,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.572
+            "new_health": 0.908
           },
           "death": false
         },
-        "1201": {
+        "1217": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.572
+            "new_health": 0.908
           },
           "death": true
         }
@@ -105,8 +137,8 @@
               11096
             ],
             "people names": [
-              "Egbertus",
-              "Jute"
+              "Hardenbernus Weder",
+              "Lutghardis"
             ],
             "label": "spouse",
             "committed": true
@@ -116,14 +148,187 @@
             "home": {
               "income class": 3,
               "income class label": "upper middle class",
-              "section": "stLange gracht.se1.c3",
+              "section": "stLange gracht.se3.c3",
               "street": "Lange gracht",
               "neighborhood": "olvbuurt",
-              "unique id": 498
+              "unique id": 500
             }
           }
         ],
-        "1201": [
+        "1205": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1205
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 16337,
+            "people": [
+              11096,
+              16335
+            ],
+            "people names": [
+              "Lutghardis",
+              "Helpriko van Hardenbernus"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1208": [
+          {
+            "topic": "new relationship",
+            "key": 17440,
+            "people": [
+              11096,
+              17438
+            ],
+            "people names": [
+              "Lutghardis",
+              "Arnekin Weder"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1211": [
+          {
+            "key": 11097,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11095,
+              "name": "Hardenbernus Weder",
+              "age": 48,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              17438,
+              12787,
+              23021,
+              29965,
+              30834
+            ]
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": [
+              29965,
+              30834
+            ]
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              17438,
+              12787,
+              23021,
+              29965,
+              30834
+            ]
+          }
+        ],
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              17438,
+              12787,
+              23021,
+              29965,
+              30834
+            ]
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              17438,
+              12787,
+              23021,
+              29965,
+              30834
+            ]
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              17438,
+              12787,
+              23021,
+              29965,
+              30834
+            ]
+          }
+        ],
+        "1216": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              17438,
+              12787,
+              23021,
+              29965,
+              30834
+            ]
+          }
+        ],
+        "1217": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 16335,
+              "name": "Helpriko van Hardenbernus",
+              "age": 10,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Lutghardis (11096)",
+                "father": "Hardenbernus (11095)"
+              }
+            },
+            "cause": "starvation",
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              17438,
+              12787,
+              23021,
+              29965,
+              30834
+            ]
+          },
           {
             "topic": "death",
             "cause": "illness"
@@ -135,14 +340,14 @@
     "home": {
       "income class": 3,
       "income class label": "upper middle class",
-      "section": "stLange gracht.se1.c3",
+      "section": "stLange gracht.se3.c3",
       "street": "Lange gracht",
       "neighborhood": "olvbuurt",
-      "unique id": 498
+      "unique id": 500
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         11097
       ]

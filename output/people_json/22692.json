@@ -1,85 +1,120 @@
 {
   "22692": {
-    "alive": false,
-    "name": "Remsindis",
-    "surname": "van Andreas",
-    "full name": "Remsindis van Andreas",
+    "alive": true,
+    "name": "Sygerus",
+    "surname": "van Eingeliadis",
+    "full name": "Sygerus van Eingeliadis",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.032,
-      "romantic interest": 0.655,
-      "sex interest": 0.704,
-      "gender expression": 0.181,
-      "sex": "f"
+      "sexuality": 0.056,
+      "romantic interest": 0.705,
+      "sex interest": 0.841,
+      "gender expression": 0.011,
+      "sex": "m"
     },
-    "age": 2,
-    "birth year": 1225,
-    "sex": "f",
-    "faction": "No religion",
+    "age": 26,
+    "birth year": 1223,
+    "sex": "m",
+    "faction": "Dogmatists",
     "income class": [
-      2,
-      "middle class"
+      0,
+      "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.734,
-      "nice-nasty": 0.826,
-      "honest-false": 0.528
+      "lawful-chaotic": 0.748,
+      "nice-nasty": 0.363,
+      "honest-false": 0.842
     },
     "attitude": {
-      "outgoing": 0.97,
-      "dream": 0.355
+      "outgoing": 0.86,
+      "dream": 0.323
     },
     "homsoc": {
       "means": {
         "independent": false,
-        "taken_care_of": true,
+        "taken_care_of": false,
         "caretaker": true,
-        "needs_care": true,
-        "flags": []
+        "needs_care": false,
+        "flags": [
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.016,
-        "gender expression expression": 0.116
+        "sexuality expression": 0.033,
+        "gender expression expression": 0.002
       }
     },
     "network": {
       "parents": {
-        "mother": "Clara (15790)",
-        "father": "Andreas (12655)"
+        "mother": "Eingeliadis (12508)",
+        "father": "Bollarde (13597)"
       },
-      "children": {},
+      "children": {
+        "32734": {
+          "key": 32734,
+          "name": "Nannen",
+          "age": 0,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Reymodis (22239)",
+            "father": "Sygerus (22692)"
+          }
+        }
+      },
       "relationship keys": {
         "parent": [
           22693,
           22694
         ],
-        "half-sibling": [
-          22717,
-          22718,
-          22719
-        ]
+        "sibling": [
+          22695
+        ],
+        "spouse": [
+          31757
+        ],
+        "child": {
+          "birth": [
+            32735
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        2,
-        "middle class"
+        0,
+        "working class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.0,
+      "all_incomes": [
+        0.839,
+        0.751,
+        0.464,
+        0.396,
+        0.385,
+        0.517,
+        0.479,
+        0.097,
+        0.0
+      ],
+      "job": {
+        "lawful": false,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 7,
-      "eye_color": "brown",
+      "skin_color": 4,
+      "eye_color": "green",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
-        "C",
-        "C"
+        "S",
+        "S"
       ],
-      "health": 0.396,
-      "fertility": 0.481,
+      "health": 0.745,
+      "fertility": 0.699,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -87,66 +122,261 @@
     },
     "memory": {
       "health": {
-        "1226": {
+        "1224": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.396
+            "new_health": 0.745
           },
           "death": false
-        },
-        "1227": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.396
-          },
-          "death": true
         }
       },
       "events": {
-        "1225": [
+        "1223": [
           {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stCingel.se1.c2",
-              "street": "Cingel",
+              "income class": 0,
+              "income class label": "working class",
+              "section": "stDe Tuyt.se3.c0",
+              "street": "De Tuyt",
               "neighborhood": "agnesbuurt",
-              "unique id": 305
+              "unique id": 291
             }
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.871,
+            "inhabitants": [
+              13597,
+              22692,
+              22239,
+              15398,
+              29760,
+              30187,
+              30619
+            ]
+          }
+        ],
+        "1224": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12508,
+              "name": "Eingeliadis Dronkine",
+              "age": 23,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Mette (11078)",
+                "father": "Hubrecht (11077)"
+              }
+            },
+            "cause": "starvation",
+            "label": "parent"
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1225": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1226": [
+          {
+            "topic": "neglected"
           }
         ],
         "1227": [
           {
+            "topic": "neglected"
+          }
+        ],
+        "1228": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1229": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1230": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1231": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1232": [
+          {
             "topic": "event",
-            "event": "famine",
-            "year": 1227
+            "event": "war",
+            "year": 1232
           },
           {
-            "topic": "death",
-            "cause": "childhood illness"
+            "topic": "neglected"
+          }
+        ],
+        "1233": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1234": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1235": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1236": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1236
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1237": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1238": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1241": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.839
+          }
+        ],
+        "1243": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.464
+          }
+        ],
+        "1244": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.396
+          }
+        ],
+        "1245": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.385
+          },
+          {
+            "topic": "new relationship",
+            "key": 31757,
+            "people": [
+              22692,
+              22239
+            ],
+            "people names": [
+              "Sygerus van Eingeliadis",
+              "Reymodis"
+            ],
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1247": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.479
+          },
+          {
+            "topic": "new relationship",
+            "key": 32735,
+            "people": [
+              22692,
+              32734
+            ],
+            "people names": [
+              "Sygerus van Eingeliadis",
+              "Nannen"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1248": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.097
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 32734,
+              "name": "Nannen",
+              "age": 0,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Reymodis (22239)",
+                "father": "Sygerus (22692)"
+              }
+            },
+            "cause": "childbirth",
+            "label": "child"
+          },
+          {
+            "topic": "feelings change",
+            "target": 22239,
+            "target name": "Reymodis",
+            "state": "out of love",
+            "relationship": 31757
+          }
+        ],
+        "1249": [
+          {
+            "topic": "update",
+            "update": "parent married",
+            "parent": 13597,
+            "new partner": 15398
           }
         ]
       }
     },
     "key": 22692,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stCingel.se1.c2",
-      "street": "Cingel",
+      "income class": 0,
+      "income class label": "working class",
+      "section": "stDe Tuyt.se3.c0",
+      "street": "De Tuyt",
       "neighborhood": "agnesbuurt",
-      "unique id": 305
+      "unique id": 291
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
-        22717,
-        22718,
-        22719
+        22695,
+        31757
       ]
     }
   }

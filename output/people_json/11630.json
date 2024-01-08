@@ -1,56 +1,86 @@
 {
   "11630": {
     "alive": false,
-    "name": "Scilla",
-    "surname": "Durcant",
-    "full name": "Scilla Durcant",
+    "name": "Heylewigis",
+    "surname": "Iude",
+    "full name": "Heylewigis Iude",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.937,
-      "romantic interest": 0.54,
-      "sex interest": 0.751,
-      "gender expression": 0.45,
+      "sexuality label": "straight",
+      "sexuality": 0.067,
+      "romantic interest": 0.712,
+      "sex interest": 0.999,
+      "gender expression": 0.151,
       "sex": "f"
     },
-    "age": 40,
-    "birth year": 1162,
+    "age": 54,
+    "birth year": 1163,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "Dogmatists",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.328,
-      "nice-nasty": 0.843,
-      "honest-false": 0.0
+      "lawful-chaotic": 0.008,
+      "nice-nasty": 0.999,
+      "honest-false": 0.355
     },
     "attitude": {
-      "outgoing": 0.517,
-      "dream": 0.173
+      "outgoing": 0.413,
+      "dream": 0.36
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
         "flags": [
-          "starving"
+          "starving",
+          "caretaker"
         ]
       },
       "expression": {
-        "sexuality expression": 0.608,
-        "gender expression expression": 0.081
+        "sexuality expression": 0.029,
+        "gender expression expression": 0.03
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13242": {
+          "key": 13242,
+          "name": "Heilsota Maerke",
+          "age": 14,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Heylewigis (11630)",
+            "father": "Philips (11629)"
+          }
+        },
+        "13937": {
+          "key": 13937,
+          "name": "Suaneka Maerke",
+          "age": 12,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Heylewigis (11630)",
+            "father": "Philips (11629)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11631
-        ]
+        ],
+        "child": {
+          "birth": [
+            13244,
+            13939
+          ]
+        }
       }
     },
     "occupation": {
@@ -63,16 +93,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 4,
-      "eye_color": "blue",
+      "skin_color": 8,
+      "eye_color": "brown",
       "hair_color": "blonde",
       "hair_color_code": 4,
       "hair_type": [
-        "C",
+        "S",
         "S"
       ],
-      "health": 0.456,
-      "fertility": 0.507,
+      "health": 0.0,
+      "fertility": 0.58,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -84,9 +114,41 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.456
+            "new_health": 0.635
           },
           "death": false
+        },
+        "1213": {
+          "health": {
+            "change": true,
+            "value_change": -0.241,
+            "new_health": 0.394
+          },
+          "death": false
+        },
+        "1214": {
+          "health": {
+            "change": true,
+            "value_change": -0.314,
+            "new_health": 0.08
+          },
+          "death": false
+        },
+        "1215": {
+          "health": {
+            "change": true,
+            "value_change": -0.054,
+            "new_health": 0.026
+          },
+          "death": false
+        },
+        "1216": {
+          "health": {
+            "change": true,
+            "value_change": -0.026,
+            "new_health": 0.0
+          },
+          "death": true
         }
       },
       "events": {
@@ -99,8 +161,8 @@
               11630
             ],
             "people names": [
-              "Lucas Schelewart",
-              "Scilla Durcant"
+              "Philips Maerke",
+              "Heylewigis Iude"
             ],
             "label": "spouse",
             "committed": true
@@ -110,22 +172,182 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stCorte gracht.se3.c2",
+              "section": "stCorte gracht.se1.c2",
               "street": "Corte gracht",
               "neighborhood": "visbuurt",
-              "unique id": 744
+              "unique id": 731
             }
           }
         ],
         "1201": [
           {
+            "topic": "new relationship",
+            "key": 13244,
+            "people": [
+              11630,
+              13242
+            ],
+            "people names": [
+              "Heylewigis Iude",
+              "Heilsota Maerke"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 13939,
+            "people": [
+              11630,
+              13937
+            ],
+            "people names": [
+              "Heylewigis Iude",
+              "Suaneka Maerke"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1205": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1205
+          }
+        ],
+        "1207": [
+          {
+            "key": 11631,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11629,
+              "name": "Philips Maerke",
+              "age": 45,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "spouse"
+          },
+          {
             "topic": "not enough income",
-            "income": 0.0,
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1215": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 13937,
+              "name": "Suaneka Maerke",
+              "age": 12,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Heylewigis (11630)",
+                "father": "Philips (11629)"
+              }
+            },
+            "cause": "starvation",
+            "label": "child"
+          },
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1216": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 13242,
+              "name": "Heilsota Maerke",
+              "age": 14,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Heylewigis (11630)",
+                "father": "Philips (11629)"
+              }
+            },
+            "cause": "starvation",
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
             "inhabitants": []
           },
           {
             "topic": "death",
-            "cause": "starvation"
+            "cause": "sickness"
           }
         ]
       }
@@ -134,14 +356,14 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stCorte gracht.se3.c2",
+      "section": "stCorte gracht.se1.c2",
       "street": "Corte gracht",
       "neighborhood": "visbuurt",
-      "unique id": 744
+      "unique id": 731
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         11631
       ]

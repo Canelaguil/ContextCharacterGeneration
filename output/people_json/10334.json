@@ -1,33 +1,33 @@
 {
   "10334": {
     "alive": false,
-    "name": "Natelien",
-    "surname": "Crul",
-    "full name": "Natelien Crul",
+    "name": "Lelien",
+    "surname": "",
+    "full name": "Lelien",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.809,
-      "sex interest": 0.559,
-      "gender expression": 0.149,
+      "sexuality": 0.075,
+      "romantic interest": 0.516,
+      "sex interest": 0.58,
+      "gender expression": 0.0,
       "sex": "f"
     },
-    "age": 44,
-    "birth year": 1173,
+    "age": 58,
+    "birth year": 1168,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "No religion",
     "income class": [
       0,
       "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.721,
-      "nice-nasty": 0.083,
-      "honest-false": 0.326
+      "lawful-chaotic": 0.138,
+      "nice-nasty": 0.393,
+      "honest-false": 0.46
     },
     "attitude": {
-      "outgoing": 0.343,
-      "dream": 0.42
+      "outgoing": 0.532,
+      "dream": 0.82
     },
     "homsoc": {
       "means": {
@@ -36,23 +36,39 @@
         "caretaker": true,
         "needs_care": false,
         "flags": [
-          "caretaker",
-          "starving"
+          "starving",
+          "caretaker"
         ]
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.017
+        "sexuality expression": 0.048,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12905": {
+          "key": 12905,
+          "name": "Menzone Hoeuedekin",
+          "age": 15,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Lelien (10334)",
+            "father": "Jurre (10333)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          10335,
-          18925
-        ]
+          10335
+        ],
+        "child": {
+          "birth": [
+            12907
+          ]
+        }
       }
     },
     "occupation": {
@@ -65,16 +81,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 5,
-      "eye_color": "blue",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "skin_color": 0,
+      "eye_color": "brown",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
-        "S",
-        "S"
+        "C",
+        "C"
       ],
-      "health": 0.601,
-      "fertility": 0.547,
+      "health": 0.0,
+      "fertility": 0.833,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -86,9 +102,57 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.601
+            "new_health": 0.762
           },
           "death": false
+        },
+        "1220": {
+          "health": {
+            "change": true,
+            "value_change": -0.188,
+            "new_health": 0.574
+          },
+          "death": false
+        },
+        "1221": {
+          "health": {
+            "change": true,
+            "value_change": -0.249,
+            "new_health": 0.325
+          },
+          "death": false
+        },
+        "1222": {
+          "health": {
+            "change": true,
+            "value_change": -0.203,
+            "new_health": 0.122
+          },
+          "death": false
+        },
+        "1223": {
+          "health": {
+            "change": true,
+            "value_change": -0.086,
+            "new_health": 0.036
+          },
+          "death": false
+        },
+        "1224": {
+          "health": {
+            "change": true,
+            "value_change": -0.024,
+            "new_health": 0.012
+          },
+          "death": false
+        },
+        "1225": {
+          "health": {
+            "change": true,
+            "value_change": -0.012,
+            "new_health": 0.0
+          },
+          "death": true
         }
       },
       "events": {
@@ -101,8 +165,8 @@
               10334
             ],
             "people names": [
-              "Lieuin",
-              "Natelien Crul"
+              "Jurre Hoeuedekin",
+              "Lelien"
             ],
             "label": "spouse",
             "committed": true
@@ -115,20 +179,55 @@
               "section": "stSt. Joris straet.se3.c0",
               "street": "St. Joris straet",
               "neighborhood": "jorisbuurt",
-              "unique id": 148
+              "unique id": 149
             }
           }
         ],
-        "1202": [
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 12907,
+            "people": [
+              10334,
+              12905
+            ],
+            "people names": [
+              "Lelien",
+              "Menzone Hoeuedekin"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1204": [
+          {
+            "topic": "not enough income",
+            "income": 0.742,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1205
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.735,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
           {
             "topic": "feelings change",
             "target": 10333,
-            "target name": "Lieuin",
+            "target name": "Jurre Hoeuedekin",
             "state": "out of love",
             "relationship": 10335
           }
         ],
-        "1203": [
+        "1209": [
           {
             "key": 10335,
             "topic": "unmarried"
@@ -137,60 +236,23 @@
             "topic": "person died",
             "person": {
               "key": 10333,
-              "name": "Lieuin",
-              "age": 37,
+              "name": "Jurre Hoeuedekin",
+              "age": 53,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
             },
+            "cause": "sickness",
             "label": "spouse"
           },
           {
             "topic": "not enough income",
             "income": 0,
             "inhabitants": []
-          }
-        ],
-        "1204": [
+          },
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1205": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1206": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1207": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1208": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1209": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "now caretaker",
+            "care dependants": []
           }
         ],
         "1210": [
@@ -202,54 +264,29 @@
         ],
         "1211": [
           {
-            "topic": "new relationship",
-            "key": 18925,
-            "people": [
-              10648,
-              10334
-            ],
-            "people names": [
-              "Ingel",
-              "Natelien Crul"
-            ],
-            "label": "spouse",
-            "committed": true
-          },
-          {
             "topic": "not enough income",
-            "income": 0.559,
+            "income": 0,
             "inhabitants": []
-          },
-          {
-            "topic": "now caretaker",
-            "care dependants": []
           }
         ],
         "1212": [
           {
-            "topic": "feelings change",
-            "target": 10648,
-            "target name": "Ingel",
-            "state": "out of love",
-            "relationship": 18925
-          },
-          {
             "topic": "not enough income",
-            "income": 0.53,
+            "income": 0,
             "inhabitants": []
           }
         ],
         "1213": [
           {
             "topic": "not enough income",
-            "income": 0.461,
+            "income": 0,
             "inhabitants": []
           }
         ],
         "1214": [
           {
             "topic": "not enough income",
-            "income": 0.56,
+            "income": 0,
             "inhabitants": []
           }
         ],
@@ -261,32 +298,96 @@
           },
           {
             "topic": "not enough income",
-            "income": 0.986,
+            "income": 0,
             "inhabitants": []
           }
         ],
         "1216": [
           {
-            "key": 18925,
-            "topic": "unmarried"
-          },
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1217": [
           {
             "topic": "person died",
             "person": {
-              "key": 10648,
-              "name": "Ingel",
-              "age": 53,
+              "key": 12905,
+              "name": "Menzone Hoeuedekin",
+              "age": 15,
               "alive": false,
               "sex": "m",
-              "parents": "firstgen"
+              "parents": {
+                "mother": "Lelien (10334)",
+                "father": "Jurre (10333)"
+              }
             },
-            "label": "spouse"
+            "cause": "starvation",
+            "label": "child"
           },
           {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1218": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1219": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1220": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1221": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1222": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1223": [
+          {
             "topic": "event",
-            "event": "war",
-            "year": 1216
+            "event": "faction upheaval",
+            "faction": "Dogmatists",
+            "year": 1223
           },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1224": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1225": [
           {
             "topic": "not enough income",
             "income": 0,
@@ -294,7 +395,7 @@
           },
           {
             "topic": "death",
-            "cause": "starvation"
+            "cause": "sickness"
           }
         ]
       }
@@ -306,14 +407,13 @@
       "section": "stSt. Joris straet.se3.c0",
       "street": "St. Joris straet",
       "neighborhood": "jorisbuurt",
-      "unique id": 148
+      "unique id": 149
     },
     "relationship status": {
       "taken": false,
       "married": false,
       "relationships": [
-        10335,
-        18925
+        10335
       ]
     }
   }

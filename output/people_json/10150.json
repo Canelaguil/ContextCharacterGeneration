@@ -1,91 +1,120 @@
 {
   "10150": {
     "alive": false,
-    "name": "Ase",
-    "surname": "Butziel",
-    "full name": "Ase Butziel",
+    "name": "Deghen",
+    "surname": "Bart",
+    "full name": "Deghen Bart",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.927,
-      "romantic interest": 0.787,
-      "sex interest": 0.651,
-      "gender expression": 0.538,
+      "sexuality label": "straight",
+      "sexuality": 0.074,
+      "romantic interest": 0.914,
+      "sex interest": 0.874,
+      "gender expression": 0.061,
       "sex": "m"
     },
-    "age": 48,
-    "birth year": 1161,
+    "age": 36,
+    "birth year": 1171,
     "sex": "m",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
-      0,
-      "working class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.474,
-      "honest-false": 0.409
+      "lawful-chaotic": 0.623,
+      "nice-nasty": 0.338,
+      "honest-false": 0.154
     },
     "attitude": {
-      "outgoing": 0.644,
-      "dream": 0.328
+      "outgoing": 0.411,
+      "dream": 0.401
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.895,
-        "gender expression expression": 0.296
+        "sexuality expression": 0.024,
+        "gender expression expression": 0.049
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12253": {
+          "key": 12253,
+          "name": "Eghenonis Bart",
+          "age": 2,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Hildegardis (10151)",
+            "father": "Deghen (10150)"
+          }
+        },
+        "13460": {
+          "key": 13460,
+          "name": "Baua Bart",
+          "age": 47,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Hildegardis (10151)",
+            "father": "Deghen (10150)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10152
-        ]
+        ],
+        "child": {
+          "birth": [
+            12254,
+            13461
+          ]
+        }
       }
     },
     "occupation": {
       "has job": true,
       "income class": [
-        0,
-        "working class"
+        1,
+        "lower middle class"
       ],
-      "income": 1.345,
+      "income": 0.0,
       "all_incomes": [
-        1.071,
-        0.918,
-        1.067,
-        0.836,
-        0.836,
-        0.949,
-        1.137,
-        1.271,
-        1.353,
-        1.345
+        0.832,
+        0.087,
+        0.0,
+        0.0,
+        0.209,
+        0.012,
+        0.0,
+        0.0
       ],
       "job": {
-        "lawful": true,
+        "lawful": false,
         "honest": false
       }
     },
     "genetics": {
       "skin_color": 4,
-      "eye_color": "brown",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "eye_color": "green",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.785,
-      "fertility": 0.674,
+      "health": 0.462,
+      "fertility": 0.542,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -97,17 +126,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.785
+            "new_health": 0.462
           },
           "death": false
-        },
-        "1208": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.785
-          },
-          "death": true
         }
       },
       "events": {
@@ -115,7 +136,12 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.071
+            "income": 0.832
+          },
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.087
           },
           {
             "topic": "new relationship",
@@ -125,8 +151,8 @@
               10151
             ],
             "people names": [
-              "Ase Butziel",
-              "Imma Duker"
+              "Deghen Bart",
+              "Hildegardis Bastart"
             ],
             "label": "spouse",
             "committed": true
@@ -134,61 +160,127 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stIn den Haeg.se1.c0",
-              "street": "In den Haeg",
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stKoe straet.se1.c1",
+              "street": "Koe straet",
               "neighborhood": "varkensbuurt",
-              "unique id": 65
+              "unique id": 61
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12254,
+            "people": [
+              10150,
+              12253
+            ],
+            "people names": [
+              "Deghen Bart",
+              "Eghenonis Bart"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1201": [
           {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.067
-          },
-          {
             "topic": "feelings change",
             "target": 10151,
-            "target name": "Imma Duker",
+            "target name": "Hildegardis Bastart",
             "state": "solid love",
             "relationship": 10152
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 13461,
+            "people": [
+              10150,
+              13460
+            ],
+            "people names": [
+              "Deghen Bart",
+              "Baua Bart"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1203": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12253,
+              "name": "Eghenonis Bart",
+              "age": 2,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Hildegardis (10151)",
+                "father": "Deghen (10150)"
+              }
+            },
+            "cause": "starvation",
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.209,
+            "inhabitants": []
+          }
+        ],
+        "1204": [
+          {
+            "topic": "not enough income",
+            "income": 0.012,
+            "inhabitants": []
           }
         ],
         "1205": [
           {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.137
+            "topic": "event",
+            "event": "plague",
+            "year": 1205
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
           }
         ],
         "1206": [
           {
-            "topic": "feelings change",
-            "target": 10151,
-            "target name": "Imma Duker",
-            "state": "out of love",
-            "relationship": 10152
-          }
-        ],
-        "1208": [
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          },
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "starvation"
           }
         ]
       }
     },
     "key": 10150,
     "home": {
-      "income class": 0,
-      "income class label": "working class",
-      "section": "stIn den Haeg.se1.c0",
-      "street": "In den Haeg",
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stKoe straet.se1.c1",
+      "street": "Koe straet",
       "neighborhood": "varkensbuurt",
-      "unique id": 65
+      "unique id": 61
     },
     "relationship status": {
       "taken": true,

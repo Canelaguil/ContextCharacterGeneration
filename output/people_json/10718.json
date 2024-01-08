@@ -1,54 +1,99 @@
 {
   "10718": {
     "alive": false,
-    "name": "Agota",
-    "surname": "",
-    "full name": "Agota",
+    "name": "Gertrudis",
+    "surname": "Minne",
+    "full name": "Gertrudis Minne",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.113,
-      "romantic interest": 0.589,
-      "sex interest": 0.512,
-      "gender expression": 0.12,
+      "sexuality": 0.0,
+      "romantic interest": 0.511,
+      "sex interest": 0.59,
+      "gender expression": 0.0,
       "sex": "f"
     },
-    "age": 45,
-    "birth year": 1164,
+    "age": 38,
+    "birth year": 1184,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.118,
-      "nice-nasty": 0.443,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.634,
+      "nice-nasty": 0.0,
+      "honest-false": 0.472
     },
     "attitude": {
-      "outgoing": 0.366,
-      "dream": 0.561
+      "outgoing": 0.266,
+      "dream": 0.475
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving",
+          "caretaker"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.043,
-        "gender expression expression": 0.021
+        "sexuality expression": -0.001,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13628": {
+          "key": 13628,
+          "name": "Enekonus Ruffo",
+          "age": 35,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Gertrudis (10718)",
+            "father": "Eelbout (10717)"
+          }
+        },
+        "15587": {
+          "key": 15587,
+          "name": "Reymodis Ruffo",
+          "age": 25,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Gertrudis (10718)",
+            "father": "Eelbout (10717)"
+          }
+        },
+        "17908": {
+          "key": 17908,
+          "name": "Daniel Ruffo",
+          "age": 40,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Gertrudis (10718)",
+            "father": "Eelbout (10717)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          10719
-        ]
+          10719,
+          20650
+        ],
+        "child": {
+          "birth": [
+            13630,
+            15589,
+            17910
+          ]
+        }
       }
     },
     "occupation": {
@@ -57,32 +102,32 @@
         1,
         "lower middle class"
       ],
-      "income": 1.12,
+      "income": 0.936,
       "all_incomes": [
-        1.042,
-        0.891,
-        0.826,
-        0.724,
-        1.158,
-        1.153,
-        1.12
+        0.933,
+        0.929,
+        0.994,
+        1.004,
+        0.978,
+        0.946,
+        0.936
       ],
       "job": {
-        "lawful": false,
+        "lawful": true,
         "honest": true
       }
     },
     "genetics": {
-      "skin_color": 1,
-      "eye_color": "green",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 9,
+      "eye_color": "blue",
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
-        "C",
+        "S",
         "C"
       ],
-      "health": 0.644,
-      "fertility": 0.622,
+      "health": 0.778,
+      "fertility": 0.793,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -94,15 +139,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.644
+            "new_health": 0.778
           },
           "death": false
         },
-        "1208": {
+        "1221": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.644
+            "new_health": 0.778
           },
           "death": true
         }
@@ -117,8 +162,8 @@
               10718
             ],
             "people names": [
-              "Thomas Moes",
-              "Agota"
+              "Eelbout Ruffo",
+              "Gertrudis Minne"
             ],
             "label": "spouse",
             "committed": true
@@ -128,26 +173,74 @@
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stTuytsteeg.se3.c1",
+              "section": "stTuytsteeg.se1.c1",
               "street": "Tuytsteeg",
               "neighborhood": "agnesbuurt",
-              "unique id": 330
+              "unique id": 325
             }
           }
         ],
         "1202": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.042
+            "topic": "new relationship",
+            "key": 13630,
+            "people": [
+              10718,
+              13628
+            ],
+            "people names": [
+              "Gertrudis Minne",
+              "Enekonus Ruffo"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1205": [
           {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.724
+            "topic": "event",
+            "event": "plague",
+            "year": 1205
           },
+          {
+            "topic": "new relationship",
+            "key": 15589,
+            "people": [
+              10718,
+              15587
+            ],
+            "people names": [
+              "Gertrudis Minne",
+              "Reymodis Ruffo"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1209": [
+          {
+            "topic": "new relationship",
+            "key": 17910,
+            "people": [
+              10718,
+              17908
+            ],
+            "people names": [
+              "Gertrudis Minne",
+              "Daniel Ruffo"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 10717,
+            "target name": "Eelbout Ruffo",
+            "state": "out of love",
+            "relationship": 10719
+          }
+        ],
+        "1213": [
           {
             "key": 10719,
             "topic": "unmarried"
@@ -156,23 +249,77 @@
             "topic": "person died",
             "person": {
               "key": 10717,
-              "name": "Thomas Moes",
-              "age": 53,
+              "name": "Eelbout Ruffo",
+              "age": 51,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
             },
+            "cause": "old age",
             "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
           }
         ],
-        "1206": [
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1215": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.933
+          },
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "topic": "new relationship",
+            "key": 20650,
+            "people": [
+              10336,
+              10718
+            ],
+            "people names": [
+              "Bartholomeus Brede",
+              "Gertrudis Minne"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 0,
+              "income class label": "working class",
+              "section": "stSt. Joris straet.se3.c0",
+              "street": "St. Joris straet",
+              "neighborhood": "jorisbuurt",
+              "unique id": 150
+            }
+          }
+        ],
+        "1218": [
           {
             "topic": "job notice",
             "notice": "comfortable earnings",
-            "income": 1.158
+            "income": 1.004
           }
         ],
-        "1208": [
+        "1221": [
           {
             "topic": "death",
             "cause": "illness"
@@ -182,18 +329,19 @@
     },
     "key": 10718,
     "home": {
-      "income class": 1,
-      "income class label": "lower middle class",
-      "section": "stTuytsteeg.se3.c1",
-      "street": "Tuytsteeg",
-      "neighborhood": "agnesbuurt",
-      "unique id": 330
+      "income class": 0,
+      "income class label": "working class",
+      "section": "stSt. Joris straet.se3.c0",
+      "street": "St. Joris straet",
+      "neighborhood": "jorisbuurt",
+      "unique id": 150
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
-        10719
+        10719,
+        20650
       ]
     }
   }

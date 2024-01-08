@@ -1,19 +1,19 @@
 {
   "10205": {
     "alive": false,
-    "name": "Truden",
-    "surname": "Snepore",
-    "full name": "Truden Snepore",
+    "name": "Ghela",
+    "surname": "Zuakart",
+    "full name": "Ghela Zuakart",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.064,
-      "romantic interest": 0.851,
-      "sex interest": 0.888,
-      "gender expression": 0.142,
+      "sexuality": 0.052,
+      "romantic interest": 0.662,
+      "sex interest": 0.645,
+      "gender expression": 0.144,
       "sex": "f"
     },
-    "age": 26,
-    "birth year": 1184,
+    "age": 51,
+    "birth year": 1156,
     "sex": "f",
     "faction": "No religion",
     "income class": [
@@ -21,17 +21,17 @@
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.251,
-      "honest-false": 0.958
+      "lawful-chaotic": 0.141,
+      "nice-nasty": 0.78,
+      "honest-false": 0.32
     },
     "attitude": {
-      "outgoing": 0.632,
-      "dream": 0.128
+      "outgoing": 0.587,
+      "dream": 0.404
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
@@ -41,67 +41,47 @@
       },
       "expression": {
         "sexuality expression": 0.041,
-        "gender expression expression": 0.043
+        "gender expression expression": 0.04
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {
-        "17152": {
-          "key": 17152,
-          "name": "Amilius Cleine",
-          "age": 9,
-          "alive": false,
-          "sex": "m",
-          "parents": {
-            "mother": "Truden (10205)",
-            "father": "Pauels (10204)"
-          }
-        },
-        "17691": {
-          "key": 17691,
-          "name": "Hildeburgis Cleine",
-          "age": 12,
-          "alive": false,
-          "sex": "f",
-          "parents": {
-            "mother": "Truden (10205)",
-            "father": "Pauels (10204)"
-          }
-        }
-      },
+      "children": {},
       "relationship keys": {
         "spouse": [
           10206
-        ],
-        "child": {
-          "birth": [
-            17154,
-            17693
-          ]
-        }
+        ]
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         1,
         "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.0,
+      "all_incomes": [
+        0.575,
+        0.429,
+        0.109,
+        0.0
+      ],
+      "job": {
+        "lawful": false,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 1,
-      "eye_color": "blue",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "skin_color": 3,
+      "eye_color": "brown",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "C",
         "C"
       ],
-      "health": 0.862,
-      "fertility": 0.866,
+      "health": 0.357,
+      "fertility": 0.642,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -113,9 +93,17 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.862
+            "new_health": 0.571
           },
           "death": false
+        },
+        "1206": {
+          "health": {
+            "change": true,
+            "value_change": -0.214,
+            "new_health": 0.357
+          },
+          "death": true
         }
       },
       "events": {
@@ -128,8 +116,8 @@
               10205
             ],
             "people names": [
-              "Pauels Cleine",
-              "Truden Snepore"
+              "Breghtgherus",
+              "Ghela Zuakart"
             ],
             "label": "spouse",
             "committed": true
@@ -142,28 +130,60 @@
               "section": "stHelle voet.se3.c1",
               "street": "Helle voet",
               "neighborhood": "jorisbuurt",
-              "unique id": 94
+              "unique id": 91
             }
           }
         ],
         "1203": [
           {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.575
+          },
+          {
+            "key": 10206,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10204,
+              "name": "Breghtgherus",
+              "age": 51,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "old age",
+            "label": "spouse"
+          },
+          {
             "topic": "not enough income",
-            "income": 0.0,
+            "income": 0,
             "inhabitants": []
           }
         ],
         "1204": [
           {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.429
           }
         ],
         "1205": [
           {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.109
+          },
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1205
+          },
+          {
             "topic": "not enough income",
-            "income": 0.0,
+            "income": 0.109,
             "inhabitants": []
           }
         ],
@@ -172,59 +192,10 @@
             "topic": "not enough income",
             "income": 0.0,
             "inhabitants": []
-          }
-        ],
-        "1207": [
-          {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
-          }
-        ],
-        "1208": [
-          {
-            "topic": "new relationship",
-            "key": 17154,
-            "people": [
-              10205,
-              17152
-            ],
-            "people names": [
-              "Truden Snepore",
-              "Amilius Cleine"
-            ],
-            "label": "parentchild",
-            "committed": false
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
-          }
-        ],
-        "1209": [
-          {
-            "topic": "new relationship",
-            "key": 17693,
-            "people": [
-              10205,
-              17691
-            ],
-            "people names": [
-              "Truden Snepore",
-              "Hildeburgis Cleine"
-            ],
-            "label": "parentchild",
-            "committed": false
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.434,
-            "inhabitants": []
           },
           {
             "topic": "death",
-            "cause": "starvation"
+            "cause": "old age"
           }
         ]
       }
@@ -236,11 +207,11 @@
       "section": "stHelle voet.se3.c1",
       "street": "Helle voet",
       "neighborhood": "jorisbuurt",
-      "unique id": 94
+      "unique id": 91
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         10206
       ]

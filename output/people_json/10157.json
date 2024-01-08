@@ -1,117 +1,80 @@
 {
   "10157": {
     "alive": false,
-    "name": "Heilsota",
+    "name": "Sywi",
     "surname": "",
-    "full name": "Heilsota",
+    "full name": "Sywi",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.025,
-      "romantic interest": 0.712,
-      "sex interest": 0.412,
-      "gender expression": 0.0,
+      "sexuality label": "bi",
+      "sexuality": 0.381,
+      "romantic interest": 0.625,
+      "sex interest": 0.935,
+      "gender expression": 0.473,
       "sex": "f"
     },
-    "age": 44,
-    "birth year": 1184,
+    "age": 50,
+    "birth year": 1164,
     "sex": "f",
     "faction": "Zealots",
     "income class": [
-      0,
-      "working class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.406,
-      "nice-nasty": 0.0,
-      "honest-false": 0.655
+      "lawful-chaotic": 0.866,
+      "nice-nasty": 0.526,
+      "honest-false": 0.411
     },
     "attitude": {
-      "outgoing": 0.585,
-      "dream": 0.211
+      "outgoing": 0.81,
+      "dream": 0.42
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
-        "caretaker": true,
+        "caretaker": false,
         "needs_care": false,
         "flags": [
-          "caretaker",
           "starving"
         ]
       },
       "expression": {
-        "sexuality expression": 0.016,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.251,
+        "gender expression expression": 0.219
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {
-        "20295": {
-          "key": 20295,
-          "name": "Jois",
-          "age": 31,
-          "alive": false,
-          "sex": "m",
-          "parents": {
-            "mother": "Heilsota (10157)",
-            "father": "Duker (11008)"
-          }
-        }
-      },
+      "children": {},
       "relationship keys": {
         "spouse": [
           10158,
-          18052
-        ],
-        "child": {
-          "birth": [
-            20297
-          ]
-        }
+          15389,
+          17213
+        ]
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
-        0,
-        "working class"
+        1,
+        "lower middle class"
       ],
-      "income": 0.649,
-      "all_incomes": [
-        0.988,
-        0.895,
-        0.936,
-        0.964,
-        0.942,
-        0.902,
-        0.813,
-        0.81,
-        0.789,
-        0.731,
-        0.706,
-        0.671,
-        0.698,
-        0.691,
-        0.649
-      ],
-      "job": {
-        "lawful": true,
-        "honest": true
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 0,
+      "skin_color": 5,
       "eye_color": "brown",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "S",
         "C"
       ],
-      "health": 0.578,
-      "fertility": 0.517,
+      "health": 0.743,
+      "fertility": 0.691,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -123,9 +86,17 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.578
+            "new_health": 0.743
           },
           "death": false
+        },
+        "1213": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.743
+          },
+          "death": true
         }
       },
       "events": {
@@ -138,8 +109,8 @@
               10157
             ],
             "people names": [
-              "Hatebrandus",
-              "Heilsota"
+              "Stemaers Vraet",
+              "Sywi"
             ],
             "label": "spouse",
             "committed": true
@@ -147,16 +118,23 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stIn den Haeg.se1.c0",
-              "street": "In den Haeg",
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stKoe straet.se3.c1",
+              "street": "Koe straet",
               "neighborhood": "varkensbuurt",
-              "unique id": 68
+              "unique id": 63
             }
+          },
+          {
+            "topic": "feelings change",
+            "target": 10156,
+            "target name": "Stemaers Vraet",
+            "state": "solid love",
+            "relationship": 10158
           }
         ],
-        "1204": [
+        "1203": [
           {
             "key": 10158,
             "topic": "unmarried"
@@ -165,289 +143,119 @@
             "topic": "person died",
             "person": {
               "key": 10156,
-              "name": "Hatebrandus",
-              "age": 24,
+              "name": "Stemaers Vraet",
+              "age": 42,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
             },
+            "cause": "illness",
             "label": "spouse"
           },
           {
             "topic": "not enough income",
             "income": 0,
-            "inhabitants": [
-              29371,
-              29995
-            ]
+            "inhabitants": []
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 15389,
+            "people": [
+              10228,
+              10157
+            ],
+            "people names": [
+              "Lammekin",
+              "Sywi"
+            ],
+            "label": "spouse",
+            "committed": true
           }
         ],
         "1205": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": [
-              29371,
-              29995
-            ]
+            "topic": "event",
+            "event": "plague",
+            "year": 1205
           }
         ],
         "1206": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": [
-              29371,
-              29995
-            ]
-          }
-        ],
-        "1207": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": [
-              29371,
-              29995
-            ]
-          }
-        ],
-        "1208": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": [
-              29371,
-              29995
-            ]
-          }
-        ],
-        "1209": [
-          {
-            "topic": "new relationship",
-            "key": 18052,
-            "people": [
-              11008,
-              10157
-            ],
-            "people names": [
-              "Duker Steneken",
-              "Heilsota"
-            ],
-            "label": "spouse",
-            "committed": true
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.481,
-            "inhabitants": [
-              29371,
-              29995
-            ]
-          },
-          {
-            "topic": "now caretaker",
-            "care dependants": [
-              29371,
-              29995
-            ]
-          }
-        ],
-        "1210": [
-          {
-            "topic": "feelings change",
-            "target": 11008,
-            "target name": "Duker Steneken",
-            "state": "out of love",
-            "relationship": 18052
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.279,
-            "inhabitants": [
-              29371,
-              29995
-            ]
-          }
-        ],
-        "1211": [
-          {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": [
-              29371,
-              29995
-            ]
-          }
-        ],
-        "1212": [
-          {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": [
-              29371,
-              29995
-            ]
-          }
-        ],
-        "1213": [
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.988
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": [
-              29371,
-              29995
-            ]
-          }
-        ],
-        "1215": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1215
-          },
-          {
-            "topic": "new relationship",
-            "key": 20297,
-            "people": [
-              10157,
-              20295
-            ],
-            "people names": [
-              "Heilsota",
-              "Jois"
-            ],
-            "label": "parentchild",
-            "committed": false
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.936,
-            "inhabitants": [
-              29371,
-              29995
-            ]
-          }
-        ],
-        "1216": [
-          {
-            "topic": "event",
-            "event": "war",
-            "year": 1216
-          }
-        ],
-        "1217": [
-          {
-            "topic": "feelings change",
-            "target": 11008,
-            "target name": "Duker Steneken",
-            "state": "infatuation",
-            "relationship": 18052
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.942,
-            "inhabitants": [
-              29371,
-              29995
-            ]
-          }
-        ],
-        "1219": [
-          {
-            "topic": "feelings change",
-            "target": 11008,
-            "target name": "Duker Steneken",
-            "state": "out of love",
-            "relationship": 18052
-          }
-        ],
-        "1220": [
-          {
-            "topic": "not enough income",
-            "income": 0.9730000000000001,
-            "inhabitants": [
-              29371,
-              29995
-            ]
-          }
-        ],
-        "1221": [
-          {
-            "topic": "not enough income",
-            "income": 0.789,
-            "inhabitants": [
-              29371,
-              29995
-            ]
-          }
-        ],
-        "1222": [
-          {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.731
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.732,
-            "inhabitants": [
-              29371,
-              29995
-            ]
-          }
-        ],
-        "1225": [
-          {
-            "key": 18052,
+            "key": 15389,
             "topic": "unmarried"
           },
           {
             "topic": "person died",
             "person": {
-              "key": 11008,
-              "name": "Duker Steneken",
+              "key": 10228,
+              "name": "Lammekin",
               "age": 55,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
             },
+            "cause": "sickness",
             "label": "spouse"
-          }
-        ],
-        "1227": [
-          {
-            "topic": "event",
-            "event": "famine",
-            "year": 1227
           },
           {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "new relationship",
+            "key": 17213,
+            "people": [
+              11149,
+              10157
+            ],
+            "people names": [
+              "Eelbout Magnus",
+              "Sywi"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stPaternoster straetje.se3.c1",
+              "street": "Paternoster straetje",
+              "neighborhood": "olvbuurt",
+              "unique id": 522
+            }
+          }
+        ],
+        "1213": [
+          {
             "topic": "death",
-            "cause": "starvation"
+            "cause": "illness"
           }
         ]
       }
     },
     "key": 10157,
     "home": {
-      "income class": 0,
-      "income class label": "working class",
-      "section": "stIn den Haeg.se1.c0",
-      "street": "In den Haeg",
-      "neighborhood": "varkensbuurt",
-      "unique id": 68
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stPaternoster straetje.se3.c1",
+      "street": "Paternoster straetje",
+      "neighborhood": "olvbuurt",
+      "unique id": 522
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
         10158,
-        18052
+        15389,
+        17213
       ]
     }
   }

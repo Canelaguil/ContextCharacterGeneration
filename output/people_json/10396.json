@@ -1,19 +1,19 @@
 {
   "10396": {
     "alive": false,
-    "name": "Gherung",
-    "surname": "Suardt",
-    "full name": "Gherung Suardt",
+    "name": "Wlfarde",
+    "surname": "Roede",
+    "full name": "Wlfarde Roede",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.066,
-      "romantic interest": 0.684,
-      "sex interest": 0.984,
-      "gender expression": 0.04,
+      "sexuality": 0.085,
+      "romantic interest": 0.605,
+      "sex interest": 0.578,
+      "gender expression": 0.301,
       "sex": "m"
     },
-    "age": 49,
-    "birth year": 1153,
+    "age": 52,
+    "birth year": 1175,
     "sex": "m",
     "faction": "Dogmatists",
     "income class": [
@@ -21,13 +21,13 @@
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.197,
-      "nice-nasty": 0.666,
-      "honest-false": 0.576
+      "lawful-chaotic": 0.526,
+      "nice-nasty": 0.0,
+      "honest-false": 0.0
     },
     "attitude": {
-      "outgoing": 0.356,
-      "dream": 0.54
+      "outgoing": 0.396,
+      "dream": 0.001
     },
     "homsoc": {
       "means": {
@@ -35,37 +35,23 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.022,
-        "gender expression expression": 0.018
+        "sexuality expression": 0.039,
+        "gender expression expression": 0.227
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {
-        "12316": {
-          "key": 12316,
-          "name": "Jonas Suardt",
-          "age": 49,
-          "alive": true,
-          "sex": "m",
-          "parents": {
-            "mother": "Ermerut (10397)",
-            "father": "Gherung (10396)"
-          }
-        }
-      },
+      "children": {},
       "relationship keys": {
         "spouse": [
-          10398
-        ],
-        "child": {
-          "birth": [
-            12317
-          ]
-        }
+          10398,
+          16650
+        ]
       }
     },
     "occupation": {
@@ -74,11 +60,36 @@
         2,
         "middle class"
       ],
-      "income": 0.474,
+      "income": 0.0,
       "all_incomes": [
-        0.669,
-        0.496,
-        0.474
+        1.173,
+        1.109,
+        1.26,
+        1.134,
+        1.499,
+        1.499,
+        1.354,
+        1.499,
+        1.499,
+        1.289,
+        1.405,
+        1.499,
+        1.405,
+        1.499,
+        1.431,
+        1.303,
+        1.499,
+        1.499,
+        0.762,
+        0.875,
+        0.934,
+        0.902,
+        0.921,
+        1.097,
+        0.843,
+        0.45,
+        0.147,
+        0.0
       ],
       "job": {
         "lawful": false,
@@ -86,16 +97,16 @@
       }
     },
     "genetics": {
-      "skin_color": 8,
+      "skin_color": 4,
       "eye_color": "green",
-      "hair_color": "red",
-      "hair_color_code": 3,
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
-        "C",
-        "S"
+        "S",
+        "C"
       ],
-      "health": 0.722,
-      "fertility": 0.795,
+      "health": 0.228,
+      "fertility": 0.482,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -107,17 +118,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.722
+            "new_health": 0.591
           },
           "death": false
         },
-        "1201": {
+        "1225": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.722
+            "change": true,
+            "value_change": -0.244,
+            "new_health": 0.347
           },
-          "death": true
+          "death": false
+        },
+        "1226": {
+          "health": {
+            "change": true,
+            "value_change": -0.119,
+            "new_health": 0.228
+          },
+          "death": false
         }
       },
       "events": {
@@ -125,12 +144,7 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.669
-          },
-          {
-            "topic": "job notice",
-            "notice": "earning very little",
-            "income": 0.496
+            "income": 1.173
           },
           {
             "topic": "new relationship",
@@ -140,8 +154,8 @@
               10397
             ],
             "people names": [
-              "Gherung Suardt",
-              "Ermerut"
+              "Wlfarde Roede",
+              "Berta"
             ],
             "label": "spouse",
             "committed": true
@@ -154,58 +168,158 @@
               "section": "stDavids hof.se1.c2",
               "street": "Davids hof",
               "neighborhood": "jorisbuurt",
-              "unique id": 171
+              "unique id": 180
             }
-          },
-          {
-            "topic": "new relationship",
-            "key": 12317,
-            "people": [
-              10396,
-              12316
-            ],
-            "people names": [
-              "Gherung Suardt",
-              "Jonas Suardt"
-            ],
-            "label": "parentchild",
-            "committed": false
           }
         ],
         "1201": [
           {
-            "topic": "job notice",
-            "notice": "earning very little",
-            "income": 0.474
+            "key": 10398,
+            "topic": "unmarried"
           },
           {
+            "topic": "person died",
+            "person": {
+              "key": 10397,
+              "name": "Berta",
+              "age": 23,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "spouse"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1205
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 16650,
+            "people": [
+              10396,
+              10889
+            ],
+            "people names": [
+              "Wlfarde Roede",
+              "Hille Pannekins"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stSt. Ians straet.se1.c1",
+              "street": "St. Ians straet",
+              "neighborhood": "kampbuurt",
+              "unique id": 409
+            }
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          }
+        ],
+        "1219": [
+          {
             "topic": "feelings change",
-            "target": 10397,
-            "target name": "Ermerut",
+            "target": 10889,
+            "target name": "Hille Pannekins",
             "state": "out of love",
-            "relationship": 10398
+            "relationship": 16650
+          }
+        ],
+        "1222": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.097
+          },
+          {
+            "key": 16650,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10889,
+              "name": "Hille Pannekins",
+              "age": 58,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "label": "spouse"
+          }
+        ],
+        "1223": [
+          {
+            "topic": "event",
+            "event": "faction upheaval",
+            "faction": "Dogmatists",
+            "year": 1223
+          }
+        ],
+        "1224": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.45
+          }
+        ],
+        "1225": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.147
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.147,
+            "inhabitants": []
+          }
+        ],
+        "1226": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
           },
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "starvation"
           }
         ]
       }
     },
     "key": 10396,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stDavids hof.se1.c2",
-      "street": "Davids hof",
-      "neighborhood": "jorisbuurt",
-      "unique id": 171
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stSt. Ians straet.se1.c1",
+      "street": "St. Ians straet",
+      "neighborhood": "kampbuurt",
+      "unique id": 409
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
-        10398
+        10398,
+        16650
       ]
     }
   }

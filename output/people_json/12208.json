@@ -1,101 +1,113 @@
 {
   "12208": {
     "alive": false,
-    "name": "Wilbord",
-    "surname": "van Salome",
-    "full name": "Wilbord van Salome",
+    "name": "Gherbaren",
+    "surname": "Keghelaere",
+    "full name": "Gherbaren Keghelaere",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.076,
-      "romantic interest": 0.793,
-      "sex interest": 0.522,
-      "gender expression": 0.094,
+      "sexuality": 0.05,
+      "romantic interest": 0.514,
+      "sex interest": 0.596,
+      "gender expression": 0.026,
       "sex": "m"
     },
-    "age": 22,
-    "birth year": 1200,
+    "age": 43,
+    "birth year": 1159,
     "sex": "m",
     "faction": "Dogmatists",
     "income class": [
-      2,
-      "middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.543,
-      "nice-nasty": 0.0,
-      "honest-false": 0.982
+      "lawful-chaotic": 0.735,
+      "nice-nasty": 0.595,
+      "honest-false": 0.0
     },
     "attitude": {
-      "outgoing": 0.498,
-      "dream": 0.354
+      "outgoing": 0.675,
+      "dream": 0.558
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": true,
+        "caretaker": false,
         "needs_care": false,
-        "flags": [
-          "neglected",
-          "starving"
-        ]
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.054,
-        "gender expression expression": 0.011
+        "sexuality expression": 0.022,
+        "gender expression expression": 0.006
       }
     },
     "network": {
-      "parents": {
-        "mother": "Salome (10034)",
-        "father": "Stemaers (10033)"
+      "parents": "firstgen",
+      "children": {
+        "12805": {
+          "key": 12805,
+          "name": "Siwa Keghelaere",
+          "age": 45,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Cofte (12209)",
+            "father": "Gherbaren (12208)"
+          }
+        },
+        "13416": {
+          "key": 13416,
+          "name": "Elberino Keghelaere",
+          "age": 43,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Cofte (12209)",
+            "father": "Gherbaren (12208)"
+          }
+        }
       },
-      "children": {},
       "relationship keys": {
-        "parent": [
-          12209,
+        "spouse": [
           12210
         ],
-        "sibling": [
-          13473,
-          16584
-        ],
-        "spouse": [
-          20972
-        ]
+        "child": {
+          "birth": [
+            12806,
+            13417
+          ]
+        }
       }
     },
     "occupation": {
       "has job": true,
       "income class": [
-        2,
-        "middle class"
+        1,
+        "lower middle class"
       ],
-      "income": 0.861,
+      "income": 0.955,
       "all_incomes": [
-        0.974,
-        0.933,
-        0.942,
-        0.892,
-        0.926,
-        0.861
+        0.807,
+        1.013,
+        0.955
       ],
       "job": {
         "lawful": true,
-        "honest": true
+        "honest": false
       }
     },
     "genetics": {
-      "skin_color": 4,
-      "eye_color": "green",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 1,
+      "eye_color": "brown",
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
         "C",
-        "S"
+        "C"
       ],
-      "health": 0.0,
-      "fertility": 0.635,
+      "health": 0.864,
+      "fertility": 0.786,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -103,51 +115,19 @@
     },
     "memory": {
       "health": {
+        "1200": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.864
+          },
+          "death": false
+        },
         "1201": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.642
-          },
-          "death": false
-        },
-        "1202": {
-          "health": {
-            "change": true,
-            "value_change": -0.297,
-            "new_health": 0.345
-          },
-          "death": false
-        },
-        "1203": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.345
-          },
-          "death": false
-        },
-        "1204": {
-          "health": {
-            "change": true,
-            "value_change": -0.26,
-            "new_health": 0.085
-          },
-          "death": false
-        },
-        "1205": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.085
-          },
-          "death": false
-        },
-        "1222": {
-          "health": {
-            "change": true,
-            "value_change": -0.085,
-            "new_health": 0.0
+            "new_health": 0.864
           },
           "death": true
         }
@@ -155,217 +135,91 @@
       "events": {
         "1200": [
           {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.807
+          },
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.013
+          },
+          {
+            "topic": "new relationship",
+            "key": 12210,
+            "people": [
+              12208,
+              12209
+            ],
+            "people names": [
+              "Gherbaren Keghelaere",
+              "Cofte"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stUterechse straet.se3.c2",
-              "street": "Uterechse straet",
-              "neighborhood": "varkensbuurt",
-              "unique id": 21
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stKerckstraet.se5.c1",
+              "street": "Kerckstraet",
+              "neighborhood": "denhof",
+              "unique id": 997
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12806,
+            "people": [
+              12208,
+              12805
+            ],
+            "people names": [
+              "Gherbaren Keghelaere",
+              "Siwa Keghelaere"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1201": [
           {
-            "topic": "neglected"
-          }
-        ],
-        "1202": [
-          {
             "topic": "new relationship",
-            "key": 13473,
+            "key": 13417,
             "people": [
               12208,
-              13470
+              13416
             ],
             "people names": [
-              "Wilbord van Salome",
-              "Weitijn Stemaersszoon"
+              "Gherbaren Keghelaere",
+              "Elberino Keghelaere"
             ],
-            "label": "sibling",
+            "label": "parentchild",
             "committed": false
           },
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1203": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1204": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1205": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1206": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1207": [
-          {
-            "topic": "new relationship",
-            "key": 16584,
-            "people": [
-              12208,
-              16581
-            ],
-            "people names": [
-              "Wilbord van Salome",
-              "Woutermanne"
-            ],
-            "label": "sibling",
-            "committed": false
-          },
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1208": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1209": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1210": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1215": [
-          {
-            "topic": "person died",
-            "person": {
-              "key": 10033,
-              "name": "Stemaers",
-              "age": 54,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "label": "parent"
-          },
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1215
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": [
-              16581,
-              19765,
-              25708,
-              28308,
-              30199
-            ]
-          },
-          {
-            "topic": "new caretaker",
-            "person": 10034
-          }
-        ],
-        "1216": [
-          {
-            "topic": "event",
-            "event": "war",
-            "year": 1216
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": [
-              16581,
-              19765,
-              25708,
-              28308,
-              30199
-            ]
-          }
-        ],
-        "1217": [
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.974
-          }
-        ],
-        "1218": [
-          {
-            "topic": "new relationship",
-            "key": 20972,
-            "people": [
-              12208,
-              13294
-            ],
-            "people names": [
-              "Wilbord van Salome",
-              "Meynseth Mulart"
-            ],
-            "label": "spouse",
-            "committed": true
-          }
-        ],
-        "1220": [
-          {
-            "topic": "feelings change",
-            "target": 13294,
-            "target name": "Meynseth Mulart",
-            "state": "solid love",
-            "relationship": 20972
-          }
-        ],
-        "1221": [
-          {
-            "topic": "person died",
-            "person": {
-              "key": 10034,
-              "name": "Salome Longus",
-              "age": 54,
-              "alive": false,
-              "sex": "f",
-              "parents": "firstgen"
-            },
-            "label": "parent"
-          }
-        ],
-        "1222": [
           {
             "topic": "death",
-            "cause": "sickness"
+            "cause": "illness"
           }
         ]
       }
     },
     "key": 12208,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stUterechse straet.se3.c2",
-      "street": "Uterechse straet",
-      "neighborhood": "varkensbuurt",
-      "unique id": 21
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stKerckstraet.se5.c1",
+      "street": "Kerckstraet",
+      "neighborhood": "denhof",
+      "unique id": 997
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        13473,
-        16584,
-        20972
+        12210
       ]
     }
   }

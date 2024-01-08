@@ -1,33 +1,33 @@
 {
   "10391": {
     "alive": false,
-    "name": "Badeloghen",
-    "surname": "Lettele",
-    "full name": "Badeloghen Lettele",
+    "name": "Gheesen",
+    "surname": "Sage",
+    "full name": "Gheesen Sage",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.036,
-      "romantic interest": 0.765,
-      "sex interest": 0.489,
-      "gender expression": 0.021,
+      "sexuality label": "gay",
+      "sexuality": 0.954,
+      "romantic interest": 0.815,
+      "sex interest": 0.728,
+      "gender expression": 0.158,
       "sex": "f"
     },
-    "age": 55,
-    "birth year": 1164,
+    "age": 33,
+    "birth year": 1182,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "Zealots",
     "income class": [
-      1,
-      "lower middle class"
+      2,
+      "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.648,
-      "nice-nasty": 0.979,
-      "honest-false": 0.753
+      "lawful-chaotic": 0.109,
+      "nice-nasty": 0.756,
+      "honest-false": 0.009
     },
     "attitude": {
-      "outgoing": 0.503,
-      "dream": 0.243
+      "outgoing": 0.523,
+      "dream": 0.458
     },
     "homsoc": {
       "means": {
@@ -35,66 +35,73 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.026,
-        "gender expression expression": 0.01
+        "sexuality expression": 0.495,
+        "gender expression expression": 0.069
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14212": {
+          "key": 14212,
+          "name": "Brame van Gheesen",
+          "age": 46,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Gheesen (10391)",
+            "father": "Richolfus (10390)"
+          }
+        },
+        "19673": {
+          "key": 19673,
+          "name": "Hadewigis",
+          "age": 18,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Gheesen (10391)",
+            "father": "Richolfus (10390)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10392
-        ]
+        ],
+        "child": {
+          "birth": [
+            14214,
+            19675
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
-        1,
-        "lower middle class"
+        2,
+        "middle class"
       ],
-      "income": 1.499,
-      "all_incomes": [
-        0.908,
-        1.025,
-        1.116,
-        1.288,
-        1.241,
-        1.139,
-        0.996,
-        0.91,
-        1.137,
-        1.143,
-        1.226,
-        1.097,
-        1.354,
-        1.346,
-        1.461,
-        1.304,
-        1.473,
-        1.499,
-        1.499
-      ],
-      "job": {
-        "lawful": false,
-        "honest": true
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 2,
-      "eye_color": "brown",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "skin_color": 9,
+      "eye_color": "blue",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.0,
-      "fertility": 0.769,
+      "health": 0.711,
+      "fertility": 0.726,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -106,58 +113,21 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.701
+            "new_health": 0.711
           },
           "death": false
         },
         "1214": {
           "health": {
-            "change": true,
-            "value_change": -0.14,
-            "new_health": 0.561
-          },
-          "death": false
-        },
-        "1215": {
-          "health": {
-            "change": true,
-            "value_change": -0.27,
-            "new_health": 0.291
-          },
-          "death": false
-        },
-        "1216": {
-          "health": {
-            "change": true,
-            "value_change": -0.274,
-            "new_health": 0.017
-          },
-          "death": false
-        },
-        "1217": {
-          "health": {
-            "change": true,
-            "value_change": -0.016,
-            "new_health": 0.001
-          },
-          "death": false
-        },
-        "1218": {
-          "health": {
-            "change": true,
-            "value_change": -0.001,
-            "new_health": 0.0
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.711
           },
           "death": true
         }
       },
       "events": {
         "1200": [
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.908
-          },
           {
             "topic": "new relationship",
             "key": 10392,
@@ -166,8 +136,8 @@
               10391
             ],
             "people names": [
-              "Seukinus Lozere",
-              "Badeloghen Lettele"
+              "Richolfus",
+              "Gheesen Sage"
             ],
             "label": "spouse",
             "committed": true
@@ -175,81 +145,155 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stMuelen straet.se3.c1",
-              "street": "Muelen straet",
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stDavids hof.se1.c2",
+              "street": "Davids hof",
               "neighborhood": "jorisbuurt",
-              "unique id": 168
+              "unique id": 178
             }
           }
         ],
-        "1201": [
+        "1203": [
           {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.025
+            "topic": "new relationship",
+            "key": 14214,
+            "people": [
+              10391,
+              14212
+            ],
+            "people names": [
+              "Gheesen Sage",
+              "Brame van Gheesen"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1208": [
+        "1205": [
           {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.137
+            "topic": "event",
+            "event": "plague",
+            "year": 1205
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0.298,
+            "inhabitants": [
+              14212,
+              25766,
+              27607,
+              31361,
+              13666,
+              27087,
+              27580,
+              23915,
+              33485
+            ]
           }
         ],
         "1211": [
           {
-            "key": 10392,
-            "topic": "unmarried"
+            "topic": "not enough income",
+            "income": 0.007,
+            "inhabitants": [
+              14212,
+              25766,
+              27607,
+              31361,
+              13666,
+              27087,
+              27580,
+              23915,
+              33485
+            ]
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              14212,
+              25766,
+              27607,
+              31361,
+              13666,
+              27087,
+              27580,
+              23915,
+              33485
+            ]
+          }
+        ],
+        "1213": [
+          {
+            "topic": "new relationship",
+            "key": 19675,
+            "people": [
+              10391,
+              19673
+            ],
+            "people names": [
+              "Gheesen Sage",
+              "Hadewigis"
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
-            "topic": "person died",
-            "person": {
-              "key": 10390,
-              "name": "Seukinus Lozere",
-              "age": 55,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              14212,
+              25766,
+              27607,
+              31361,
+              13666,
+              27087,
+              27580,
+              23915,
+              33485
+            ]
           }
         ],
-        "1215": [
+        "1214": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1215
-          }
-        ],
-        "1216": [
-          {
-            "topic": "event",
-            "event": "war",
-            "year": 1216
-          }
-        ],
-        "1218": [
+            "topic": "not enough income",
+            "income": 0.04,
+            "inhabitants": [
+              14212,
+              25766,
+              27607,
+              31361,
+              13666,
+              27087,
+              27580,
+              23915,
+              33485
+            ]
+          },
           {
             "topic": "death",
-            "cause": "sickness"
+            "cause": "illness"
           }
         ]
       }
     },
     "key": 10391,
     "home": {
-      "income class": 1,
-      "income class label": "lower middle class",
-      "section": "stMuelen straet.se3.c1",
-      "street": "Muelen straet",
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stDavids hof.se1.c2",
+      "street": "Davids hof",
       "neighborhood": "jorisbuurt",
-      "unique id": 168
+      "unique id": 178
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
         10392
       ]

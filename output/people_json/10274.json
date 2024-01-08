@@ -1,56 +1,74 @@
 {
   "10274": {
     "alive": false,
-    "name": "Euffemia",
-    "surname": "Hoghen",
-    "full name": "Euffemia Hoghen",
+    "name": "Emmelina",
+    "surname": "Breede",
+    "full name": "Emmelina Breede",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.074,
-      "romantic interest": 0.651,
-      "sex interest": 0.666,
-      "gender expression": 0.023,
+      "sexuality": -0.0,
+      "romantic interest": 0.691,
+      "sex interest": 0.719,
+      "gender expression": 0.013,
       "sex": "f"
     },
     "age": 55,
-    "birth year": 1152,
+    "birth year": 1163,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
       0,
       "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.948,
-      "nice-nasty": 0.306,
+      "lawful-chaotic": 0.173,
+      "nice-nasty": 0.443,
       "honest-false": 0.999
     },
     "attitude": {
-      "outgoing": 0.177,
-      "dream": 0.89
+      "outgoing": 0.373,
+      "dream": 0.337
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
         "flags": [
-          "starving"
+          "starving",
+          "caretaker"
         ]
       },
       "expression": {
-        "sexuality expression": 0.043,
-        "gender expression expression": 0.002
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.003
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13479": {
+          "key": 13479,
+          "name": "Clemmam Auonde",
+          "age": 47,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Emmelina (10274)",
+            "father": "Ebram (10273)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10275
-        ]
+        ],
+        "child": {
+          "birth": [
+            13481
+          ]
+        }
       }
     },
     "occupation": {
@@ -63,16 +81,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 5,
+      "skin_color": 4,
       "eye_color": "blue",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
         "S",
-        "S"
+        "C"
       ],
       "health": 0.0,
-      "fertility": 0.658,
+      "fertility": 0.842,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -84,46 +102,46 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.633
+            "new_health": 0.799
           },
           "death": false
         },
-        "1202": {
+        "1213": {
           "health": {
             "change": true,
-            "value_change": -0.302,
-            "new_health": 0.331
+            "value_change": -0.173,
+            "new_health": 0.626
           },
           "death": false
         },
-        "1203": {
+        "1214": {
           "health": {
             "change": true,
-            "value_change": -0.135,
-            "new_health": 0.196
+            "value_change": -0.264,
+            "new_health": 0.362
           },
           "death": false
         },
-        "1204": {
+        "1215": {
           "health": {
             "change": true,
-            "value_change": -0.16,
-            "new_health": 0.036
+            "value_change": -0.223,
+            "new_health": 0.139
           },
           "death": false
         },
-        "1205": {
+        "1216": {
           "health": {
             "change": true,
-            "value_change": -0.03,
-            "new_health": 0.006
+            "value_change": -0.068,
+            "new_health": 0.071
           },
           "death": false
         },
-        "1206": {
+        "1217": {
           "health": {
             "change": true,
-            "value_change": -0.006,
+            "value_change": -0.071,
             "new_health": 0.0
           },
           "death": true
@@ -139,8 +157,8 @@
               10274
             ],
             "people names": [
-              "Riuum",
-              "Euffemia Hoghen"
+              "Ebram Auonde",
+              "Emmelina Breede"
             ],
             "label": "spouse",
             "committed": true
@@ -153,11 +171,34 @@
               "section": "stHelle voet.se7.c0",
               "street": "Helle voet",
               "neighborhood": "jorisbuurt",
-              "unique id": 121
+              "unique id": 123
             }
           }
         ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 13481,
+            "people": [
+              10274,
+              13479
+            ],
+            "people names": [
+              "Emmelina Breede",
+              "Clemmam Auonde"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
         "1205": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1205
+          }
+        ],
+        "1213": [
           {
             "key": 10275,
             "topic": "unmarried"
@@ -166,25 +207,78 @@
             "topic": "person died",
             "person": {
               "key": 10273,
-              "name": "Riuum",
-              "age": 54,
+              "name": "Ebram Auonde",
+              "age": 53,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
             },
+            "cause": "sickness",
             "label": "spouse"
           },
           {
             "topic": "not enough income",
             "income": 0,
-            "inhabitants": []
+            "inhabitants": [
+              13479,
+              14925,
+              31102
+            ]
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": [
+              31102
+            ]
           }
         ],
-        "1206": [
+        "1214": [
           {
             "topic": "not enough income",
             "income": 0,
-            "inhabitants": []
+            "inhabitants": [
+              13479,
+              14925,
+              31102
+            ]
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              13479,
+              14925,
+              31102
+            ]
+          }
+        ],
+        "1216": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              13479,
+              14925,
+              31102
+            ]
+          }
+        ],
+        "1217": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              13479,
+              14925,
+              31102
+            ]
           },
           {
             "topic": "death",
@@ -200,7 +294,7 @@
       "section": "stHelle voet.se7.c0",
       "street": "Helle voet",
       "neighborhood": "jorisbuurt",
-      "unique id": 121
+      "unique id": 123
     },
     "relationship status": {
       "taken": false,

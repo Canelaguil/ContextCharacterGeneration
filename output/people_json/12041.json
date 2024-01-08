@@ -1,19 +1,19 @@
 {
   "12041": {
     "alive": false,
-    "name": "Linnea",
-    "surname": "Rowerus",
-    "full name": "Linnea Rowerus",
+    "name": "Lutghardis",
+    "surname": "",
+    "full name": "Lutghardis",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.799,
-      "sex interest": 0.707,
-      "gender expression": 0.247,
+      "sexuality": 0.092,
+      "romantic interest": 0.907,
+      "sex interest": 0.755,
+      "gender expression": 0.231,
       "sex": "f"
     },
-    "age": 36,
-    "birth year": 1169,
+    "age": 22,
+    "birth year": 1182,
     "sex": "f",
     "faction": "No religion",
     "income class": [
@@ -21,13 +21,13 @@
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.703,
-      "nice-nasty": 0.436,
-      "honest-false": 0.661
+      "lawful-chaotic": 0.544,
+      "nice-nasty": 0.704,
+      "honest-false": 0.241
     },
     "attitude": {
-      "outgoing": 0.452,
-      "dream": 0.162
+      "outgoing": 0.363,
+      "dream": 0.141
     },
     "homsoc": {
       "means": {
@@ -35,22 +35,49 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": [
-          "starving"
-        ]
+        "flags": []
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.129
+        "sexuality expression": 0.062,
+        "gender expression expression": 0.076
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12766": {
+          "key": 12766,
+          "name": "Victoria Spriet",
+          "age": 41,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Lutghardis (12041)",
+            "father": "Rampe (12040)"
+          }
+        },
+        "14691": {
+          "key": 14691,
+          "name": "Brun Spriet",
+          "age": 29,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Lutghardis (12041)",
+            "father": "Rampe (12040)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           12042
-        ]
+        ],
+        "child": {
+          "birth": [
+            12768,
+            14693
+          ]
+        }
       }
     },
     "occupation": {
@@ -65,14 +92,14 @@
     "genetics": {
       "skin_color": 2,
       "eye_color": "brown",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.556,
-      "fertility": 0.544,
+      "health": 0.634,
+      "fertility": 0.59,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -84,17 +111,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.556
+            "new_health": 0.634
           },
           "death": false
-        },
-        "1204": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.556
-          },
-          "death": true
         }
       },
       "events": {
@@ -107,8 +126,8 @@
               12041
             ],
             "people names": [
-              "Dammas Blaubloeme",
-              "Linnea Rowerus"
+              "Rampe Spriet",
+              "Lutghardis"
             ],
             "label": "spouse",
             "committed": true
@@ -118,52 +137,45 @@
             "home": {
               "income class": 3,
               "income class label": "upper middle class",
-              "section": "stMarcktgang.se3.c3",
-              "street": "Marcktgang",
+              "section": "stCromme straet.se7.c3",
+              "street": "Cromme straet",
               "neighborhood": "denhof",
-              "unique id": 928
+              "unique id": 920
             }
-          }
-        ],
-        "1202": [
-          {
-            "key": 12042,
-            "topic": "unmarried"
           },
           {
-            "topic": "person died",
-            "person": {
-              "key": 12040,
-              "name": "Dammas Blaubloeme",
-              "age": 39,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "new relationship",
+            "key": 12768,
+            "people": [
+              12041,
+              12766
+            ],
+            "people names": [
+              "Lutghardis",
+              "Victoria Spriet"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1203": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1204": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "new relationship",
+            "key": 14693,
+            "people": [
+              12041,
+              14691
+            ],
+            "people names": [
+              "Lutghardis",
+              "Brun Spriet"
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "childbirth"
           }
         ]
       }
@@ -172,14 +184,14 @@
     "home": {
       "income class": 3,
       "income class label": "upper middle class",
-      "section": "stMarcktgang.se3.c3",
-      "street": "Marcktgang",
+      "section": "stCromme straet.se7.c3",
+      "street": "Cromme straet",
       "neighborhood": "denhof",
-      "unique id": 928
+      "unique id": 920
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
         12042
       ]

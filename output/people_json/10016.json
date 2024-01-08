@@ -1,19 +1,19 @@
 {
   "10016": {
     "alive": false,
-    "name": "Oda",
-    "surname": "Stamelarit",
-    "full name": "Oda Stamelarit",
+    "name": "Waldrada",
+    "surname": "Sonderland",
+    "full name": "Waldrada Sonderland",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.841,
-      "sex interest": 0.469,
-      "gender expression": 0.126,
+      "sexuality": 0.128,
+      "romantic interest": 0.874,
+      "sex interest": 0.556,
+      "gender expression": 0.142,
       "sex": "f"
     },
-    "age": 31,
-    "birth year": 1174,
+    "age": 35,
+    "birth year": 1182,
     "sex": "f",
     "faction": "Dogmatists",
     "income class": [
@@ -21,73 +21,121 @@
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.352,
-      "nice-nasty": 0.138,
-      "honest-false": 0.662
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.331,
+      "honest-false": 0.0
     },
     "attitude": {
-      "outgoing": 0.524,
-      "dream": 0.789
+      "outgoing": 0.541,
+      "dream": 0.384
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving",
+          "caretaker"
+        ]
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.067
+        "sexuality expression": 0.08,
+        "gender expression expression": 0.04
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "12202": {
-          "key": 12202,
-          "name": "Lubertus Spriet",
-          "age": 44,
+        "12211": {
+          "key": 12211,
+          "name": "Jacomin Screvel",
+          "age": 45,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Waldrada (10016)",
+            "father": "Ghisele (10015)"
+          }
+        },
+        "14113": {
+          "key": 14113,
+          "name": "Sywi Screvel",
+          "age": 1,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Waldrada (10016)",
+            "father": "Ghisele (10015)"
+          }
+        },
+        "20330": {
+          "key": 20330,
+          "name": "Lutgeri Wouterszoon",
+          "age": 5,
           "alive": false,
           "sex": "m",
           "parents": {
-            "mother": "Oda (10016)",
-            "father": "Everocker (10015)"
+            "mother": "Waldrada (10016)",
+            "father": "Wouter (10432)"
+          }
+        },
+        "20673": {
+          "key": 20673,
+          "name": "Ivone Scamps",
+          "age": 16,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Waldrada (10016)",
+            "father": "Wouter (10432)"
           }
         }
       },
       "relationship keys": {
         "spouse": [
-          10017
+          10017,
+          19547
         ],
         "child": {
           "birth": [
-            12204
+            12213,
+            14115,
+            20332,
+            20675
           ]
         }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.179,
+      "all_incomes": [
+        0.837,
+        0.842,
+        1.179
+      ],
+      "job": {
+        "lawful": true,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 1,
-      "eye_color": "green",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 4,
+      "eye_color": "brown",
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
       "hair_type": [
         "C",
         "S"
       ],
       "health": 0.705,
-      "fertility": 0.665,
+      "fertility": 0.755,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -103,7 +151,7 @@
           },
           "death": false
         },
-        "1204": {
+        "1216": {
           "health": {
             "change": false,
             "value_change": 0.0,
@@ -122,8 +170,8 @@
               10016
             ],
             "people names": [
-              "Everocker Spriet",
-              "Oda Stamelarit"
+              "Ghisele Screvel",
+              "Waldrada Sonderland"
             ],
             "label": "spouse",
             "committed": true
@@ -141,20 +189,208 @@
           },
           {
             "topic": "new relationship",
-            "key": 12204,
+            "key": 12213,
             "people": [
               10016,
-              12202
+              12211
             ],
             "people names": [
-              "Oda Stamelarit",
-              "Lubertus Spriet"
+              "Waldrada Sonderland",
+              "Jacomin Screvel"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 14115,
+            "people": [
+              10016,
+              14113
+            ],
+            "people names": [
+              "Waldrada Sonderland",
+              "Sywi Screvel"
             ],
             "label": "parentchild",
             "committed": false
           }
         ],
         "1204": [
+          {
+            "key": 10017,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10015,
+              "name": "Ghisele Screvel",
+              "age": 52,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "old age",
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 14113,
+              "name": "Sywi Screvel",
+              "age": 1,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Waldrada (10016)",
+                "father": "Ghisele (10015)"
+              }
+            },
+            "cause": "starvation",
+            "label": "child"
+          },
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1205
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "new relationship",
+            "key": 19547,
+            "people": [
+              10432,
+              10016
+            ],
+            "people names": [
+              "Wouter Scamps",
+              "Waldrada Sonderland"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stOp 't Speuy.se1.c2",
+              "street": "Op 't Speuy",
+              "neighborhood": "jorisbuurt",
+              "unique id": 198
+            }
+          }
+        ],
+        "1214": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.837
+          },
+          {
+            "topic": "new relationship",
+            "key": 20332,
+            "people": [
+              10016,
+              20330
+            ],
+            "people names": [
+              "Waldrada Sonderland",
+              "Lutgeri Wouterszoon"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "topic": "new relationship",
+            "key": 20675,
+            "people": [
+              10016,
+              20673
+            ],
+            "people names": [
+              "Waldrada Sonderland",
+              "Ivone Scamps"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1216": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.179
+          },
           {
             "topic": "death",
             "cause": "illness"
@@ -166,16 +402,17 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stUterechse straet.se1.c2",
-      "street": "Uterechse straet",
-      "neighborhood": "varkensbuurt",
-      "unique id": 8
+      "section": "stOp 't Speuy.se1.c2",
+      "street": "Op 't Speuy",
+      "neighborhood": "jorisbuurt",
+      "unique id": 198
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        10017
+        10017,
+        19547
       ]
     }
   }

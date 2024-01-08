@@ -1,108 +1,97 @@
 {
   "11174": {
     "alive": false,
-    "name": "Hadewigis",
-    "surname": "",
-    "full name": "Hadewigis",
+    "name": "Leanne",
+    "surname": "Goude",
+    "full name": "Leanne Goude",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.069,
-      "romantic interest": 0.619,
-      "sex interest": 0.544,
-      "gender expression": 0.084,
+      "sexuality label": "gay",
+      "sexuality": 0.907,
+      "romantic interest": 0.892,
+      "sex interest": 0.887,
+      "gender expression": 0.354,
       "sex": "f"
     },
-    "age": 55,
-    "birth year": 1171,
+    "age": 34,
+    "birth year": 1172,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "Dogmatists",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.567,
-      "nice-nasty": 0.0,
-      "honest-false": 0.66
+      "lawful-chaotic": 0.071,
+      "nice-nasty": 0.609,
+      "honest-false": 0.843
     },
     "attitude": {
-      "outgoing": 0.444,
-      "dream": 0.596
+      "outgoing": 0.397,
+      "dream": 0.124
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving",
+          "caretaker"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.06,
-        "gender expression expression": 0.03
+        "sexuality expression": 0.508,
+        "gender expression expression": 0.188
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14428": {
+          "key": 14428,
+          "name": "Alebaren",
+          "age": 18,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Leanne (11174)",
+            "father": "Coclike (11173)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11175,
-          17639
-        ]
+          16018
+        ],
+        "child": {
+          "birth": [
+            14430
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 0.776,
-      "all_incomes": [
-        1.283,
-        1.247,
-        1.159,
-        1.247,
-        1.207,
-        1.424,
-        1.428,
-        1.499,
-        1.499,
-        1.462,
-        1.499,
-        1.307,
-        1.418,
-        1.261,
-        1.362,
-        1.45,
-        1.122,
-        1.183,
-        1.029,
-        0.843,
-        0.937,
-        0.8,
-        0.612,
-        0.758,
-        0.897,
-        0.776
-      ],
-      "job": {
-        "lawful": true,
-        "honest": false
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 0,
+      "skin_color": 3,
       "eye_color": "brown",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "C",
         "C"
       ],
-      "health": 0.002,
-      "fertility": 0.748,
+      "health": 0.647,
+      "fertility": 0.667,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -114,58 +103,13 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.783
+            "new_health": 0.647
           },
           "death": false
-        },
-        "1221": {
-          "health": {
-            "change": true,
-            "value_change": -0.138,
-            "new_health": 0.645
-          },
-          "death": false
-        },
-        "1222": {
-          "health": {
-            "change": true,
-            "value_change": -0.268,
-            "new_health": 0.377
-          },
-          "death": false
-        },
-        "1223": {
-          "health": {
-            "change": true,
-            "value_change": -0.245,
-            "new_health": 0.132
-          },
-          "death": false
-        },
-        "1224": {
-          "health": {
-            "change": true,
-            "value_change": -0.111,
-            "new_health": 0.021
-          },
-          "death": false
-        },
-        "1225": {
-          "health": {
-            "change": true,
-            "value_change": -0.019,
-            "new_health": 0.002
-          },
-          "death": true
         }
       },
       "events": {
         "1200": [
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.283
-          },
           {
             "topic": "new relationship",
             "key": 11175,
@@ -174,8 +118,8 @@
               11174
             ],
             "people names": [
-              "Amisius Tuc",
-              "Hadewigis"
+              "Coclike",
+              "Leanne Goude"
             ],
             "label": "spouse",
             "committed": true
@@ -188,11 +132,34 @@
               "section": "stBreestraat.se1.c2",
               "street": "Breestraat",
               "neighborhood": "olvbuurt",
-              "unique id": 537
+              "unique id": 530
             }
+          },
+          {
+            "topic": "feelings change",
+            "target": 11173,
+            "target name": "Coclike",
+            "state": "solid love",
+            "relationship": 11175
           }
         ],
         "1203": [
+          {
+            "topic": "new relationship",
+            "key": 14430,
+            "people": [
+              11174,
+              14428
+            ],
+            "people names": [
+              "Leanne Goude",
+              "Alebaren"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1204": [
           {
             "key": 11175,
             "topic": "unmarried"
@@ -201,26 +168,41 @@
             "topic": "person died",
             "person": {
               "key": 11173,
-              "name": "Amisius Tuc",
-              "age": 42,
+              "name": "Coclike",
+              "age": 36,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
             },
+            "cause": "illness",
             "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
           }
         ],
-        "1208": [
+        "1205": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1205
+          },
           {
             "topic": "new relationship",
-            "key": 17639,
+            "key": 16018,
             "people": [
-              10666,
+              11611,
               11174
             ],
             "people names": [
-              "Bernardus Minne",
-              "Hadewigis"
+              "Gabriel Vogel",
+              "Leanne Goude"
             ],
             "label": "spouse",
             "committed": true
@@ -230,65 +212,15 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stCingel.se1.c2",
-              "street": "Cingel",
-              "neighborhood": "agnesbuurt",
-              "unique id": 302
+              "section": "stDie lange straet3.se9.c2",
+              "street": "Die lange straet3",
+              "neighborhood": "visbuurt",
+              "unique id": 724
             }
-          }
-        ],
-        "1210": [
-          {
-            "topic": "feelings change",
-            "target": 10666,
-            "target name": "Bernardus Minne",
-            "state": "out of love",
-            "relationship": 17639
-          }
-        ],
-        "1213": [
-          {
-            "key": 17639,
-            "topic": "unmarried"
           },
           {
-            "topic": "person died",
-            "person": {
-              "key": 10666,
-              "name": "Bernardus Minne",
-              "age": 57,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
-          }
-        ],
-        "1215": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1215
-          }
-        ],
-        "1216": [
-          {
-            "topic": "event",
-            "event": "war",
-            "year": 1216
-          }
-        ],
-        "1222": [
-          {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.612
-          }
-        ],
-        "1225": [
-          {
             "topic": "death",
-            "cause": "old age"
+            "cause": "plague"
           }
         ]
       }
@@ -297,17 +229,17 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stCingel.se1.c2",
-      "street": "Cingel",
-      "neighborhood": "agnesbuurt",
-      "unique id": 302
+      "section": "stDie lange straet3.se9.c2",
+      "street": "Die lange straet3",
+      "neighborhood": "visbuurt",
+      "unique id": 724
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
         11175,
-        17639
+        16018
       ]
     }
   }

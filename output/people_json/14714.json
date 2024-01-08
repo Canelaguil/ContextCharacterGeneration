@@ -1,18 +1,18 @@
 {
   "14714": {
     "alive": false,
-    "name": "Clementia",
-    "surname": "Boec",
-    "full name": "Clementia Boec",
+    "name": "Sophia",
+    "surname": "Blideleuen",
+    "full name": "Sophia Blideleuen",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.002,
-      "romantic interest": 0.889,
-      "sex interest": 0.712,
-      "gender expression": 0.083,
+      "sexuality": 0.121,
+      "romantic interest": 0.868,
+      "sex interest": 0.716,
+      "gender expression": 0.053,
       "sex": "f"
     },
-    "age": 0,
+    "age": 8,
     "birth year": 1203,
     "sex": "f",
     "faction": "Zealots",
@@ -21,13 +21,13 @@
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.31,
-      "nice-nasty": 0.323,
-      "honest-false": 0.208
+      "lawful-chaotic": 0.292,
+      "nice-nasty": 0.588,
+      "honest-false": 0.335
     },
     "attitude": {
-      "outgoing": 0.295,
-      "dream": 0.397
+      "outgoing": 0.723,
+      "dream": 0.597
     },
     "homsoc": {
       "means": {
@@ -35,23 +35,29 @@
         "taken_care_of": true,
         "caretaker": true,
         "needs_care": true,
-        "flags": []
+        "flags": [
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.001,
-        "gender expression expression": 0.033
+        "sexuality expression": 0.077,
+        "gender expression expression": 0.022
       }
     },
     "network": {
       "parents": {
-        "mother": "Lielde (12131)",
-        "father": "Thitardo (12130)"
+        "mother": "Amelgeir (12143)",
+        "father": "Raso (12142)"
       },
       "children": {},
       "relationship keys": {
         "parent": [
           14715,
           14716
+        ],
+        "sibling": [
+          14717
         ]
       }
     },
@@ -65,23 +71,32 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 5,
-      "eye_color": "green",
+      "skin_color": 6,
+      "eye_color": "brown",
       "hair_color": "dark brown",
       "hair_color_code": 1,
       "hair_type": [
-        "C",
+        "S",
         "S"
       ],
-      "health": 0.589,
-      "fertility": 0.498,
+      "health": 0.674,
+      "fertility": 0.69,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
       "disabilities": []
     },
     "memory": {
-      "health": {},
+      "health": {
+        "1204": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.674
+          },
+          "death": false
+        }
+      },
       "events": {
         "1203": [
           {
@@ -89,32 +104,141 @@
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stPapenhofstede.se1.c1",
-              "street": "Papenhofstede",
+              "section": "stAppel Marckt.se1.c1",
+              "street": "Appel Marckt",
               "neighborhood": "denhof",
-              "unique id": 973
+              "unique id": 967
             }
           },
           {
+            "topic": "not enough income",
+            "income": 0.436,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1205
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1206": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12142,
+              "name": "Raso Blideleuen",
+              "age": 30,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "plague",
+            "label": "parent"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "new caretaker",
+            "person": 12143
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 0,
+              "income class label": "working class",
+              "section": "stTrysgens.se1.c0",
+              "street": "Trysgens",
+              "neighborhood": "kampbuurt",
+              "unique id": 435
+            }
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.836,
+            "inhabitants": [
+              26542,
+              26988
+            ]
+          },
+          {
+            "topic": "update",
+            "update": "parent married",
+            "parent": 12143,
+            "new partner": 10939
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0.938,
+            "inhabitants": [
+              26542,
+              26988
+            ]
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0.786,
+            "inhabitants": [
+              26542,
+              26988
+            ]
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              26542,
+              26988
+            ]
+          },
+          {
+            "topic": "new caretaker",
+            "person": 12143
+          },
+          {
             "topic": "death",
-            "cause": "childbirth"
+            "cause": "starvation"
           }
         ]
       }
     },
     "key": 14714,
     "home": {
-      "income class": 1,
-      "income class label": "lower middle class",
-      "section": "stPapenhofstede.se1.c1",
-      "street": "Papenhofstede",
-      "neighborhood": "denhof",
-      "unique id": 973
+      "income class": 0,
+      "income class label": "working class",
+      "section": "stTrysgens.se1.c0",
+      "street": "Trysgens",
+      "neighborhood": "kampbuurt",
+      "unique id": 435
     },
     "relationship status": {
       "taken": false,
       "married": false,
-      "relationships": []
+      "relationships": [
+        14717
+      ]
     }
   }
 }

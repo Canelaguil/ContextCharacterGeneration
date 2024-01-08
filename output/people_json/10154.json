@@ -1,33 +1,33 @@
 {
   "10154": {
     "alive": false,
-    "name": "Hilduardis",
-    "surname": "Bier",
-    "full name": "Hilduardis Bier",
+    "name": "Mabelie",
+    "surname": "Euer",
+    "full name": "Mabelie Euer",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.109,
-      "romantic interest": 0.796,
-      "sex interest": 0.766,
-      "gender expression": 0.026,
+      "sexuality": 0.08,
+      "romantic interest": 0.663,
+      "sex interest": 0.922,
+      "gender expression": 0.124,
       "sex": "f"
     },
-    "age": 48,
-    "birth year": 1161,
+    "age": 45,
+    "birth year": 1162,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
-      0,
-      "working class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.175,
-      "nice-nasty": 0.422,
-      "honest-false": 0.207
+      "lawful-chaotic": 0.651,
+      "nice-nasty": 0.595,
+      "honest-false": 0.999
     },
     "attitude": {
-      "outgoing": 0.614,
-      "dream": 0.749
+      "outgoing": 0.211,
+      "dream": 0.471
     },
     "homsoc": {
       "means": {
@@ -35,44 +35,59 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": [
-          "starving"
-        ]
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.056,
-        "gender expression expression": 0.013
+        "sexuality expression": 0.064,
+        "gender expression expression": 0.047
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12860": {
+          "key": 12860,
+          "name": "Raso",
+          "age": 48,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Mabelie (10154)",
+            "father": "Franco (10153)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10155
-        ]
+        ],
+        "child": {
+          "birth": [
+            12862
+          ]
+        }
       }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        0,
-        "working class"
+        1,
+        "lower middle class"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 6,
-      "eye_color": "green",
+      "skin_color": 5,
+      "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
         "S",
-        "C"
+        "S"
       ],
-      "health": 0.642,
-      "fertility": 0.6,
+      "health": 0.709,
+      "fertility": 0.648,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -84,9 +99,17 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.642
+            "new_health": 0.709
           },
           "death": false
+        },
+        "1206": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.709
+          },
+          "death": true
         }
       },
       "events": {
@@ -99,8 +122,8 @@
               10154
             ],
             "people names": [
-              "Ingel Lettele",
-              "Hilduardis Bier"
+              "Franco",
+              "Mabelie Euer"
             ],
             "label": "spouse",
             "committed": true
@@ -108,84 +131,65 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stIn den Haeg.se1.c0",
-              "street": "In den Haeg",
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stKoe straet.se3.c1",
+              "street": "Koe straet",
               "neighborhood": "varkensbuurt",
-              "unique id": 67
+              "unique id": 62
             }
           }
         ],
-        "1204": [
+        "1201": [
           {
-            "topic": "not enough income",
-            "income": 0.17,
-            "inhabitants": []
+            "topic": "new relationship",
+            "key": 12862,
+            "people": [
+              10154,
+              12860
+            ],
+            "people names": [
+              "Mabelie Euer",
+              "Raso"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 10153,
+            "target name": "Franco",
+            "state": "solid love",
+            "relationship": 10155
           }
         ],
         "1205": [
           {
-            "key": 10155,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 10153,
-              "name": "Ingel Lettele",
-              "age": 54,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "event",
+            "event": "plague",
+            "year": 1205
           }
         ],
         "1206": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1207": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1208": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          },
-          {
             "topic": "death",
-            "cause": "starvation"
+            "cause": "illness"
           }
         ]
       }
     },
     "key": 10154,
     "home": {
-      "income class": 0,
-      "income class label": "working class",
-      "section": "stIn den Haeg.se1.c0",
-      "street": "In den Haeg",
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stKoe straet.se3.c1",
+      "street": "Koe straet",
       "neighborhood": "varkensbuurt",
-      "unique id": 67
+      "unique id": 62
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
         10155
       ]

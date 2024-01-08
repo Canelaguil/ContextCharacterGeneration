@@ -1,33 +1,33 @@
 {
   "11092": {
     "alive": false,
-    "name": "Iordanus",
-    "surname": "Vos",
-    "full name": "Iordanus Vos",
+    "name": "Gilis",
+    "surname": "Coluen",
+    "full name": "Gilis Coluen",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.057,
-      "romantic interest": 0.921,
-      "sex interest": 0.372,
-      "gender expression": 0.185,
+      "sexuality": 0.118,
+      "romantic interest": 0.659,
+      "sex interest": 0.864,
+      "gender expression": 0.188,
       "sex": "m"
     },
-    "age": 46,
+    "age": 53,
     "birth year": 1158,
     "sex": "m",
-    "faction": "Dogmatists",
+    "faction": "Zealots",
     "income class": [
       3,
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.641,
-      "nice-nasty": 0.999,
+      "lawful-chaotic": 0.0,
+      "nice-nasty": 0.124,
       "honest-false": 0.999
     },
     "attitude": {
-      "outgoing": 0.472,
-      "dream": 0.103
+      "outgoing": 0.491,
+      "dream": 0.359
     },
     "homsoc": {
       "means": {
@@ -38,34 +38,18 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.03,
-        "gender expression expression": 0.059
+        "sexuality expression": 0.067,
+        "gender expression expression": 0.104
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {
-        "13791": {
-          "key": 13791,
-          "name": "Jonghen Vos",
-          "age": 15,
-          "alive": false,
-          "sex": "m",
-          "parents": {
-            "mother": "Agota (11093)",
-            "father": "Iordanus (11092)"
-          }
-        }
-      },
+      "children": {},
       "relationship keys": {
         "spouse": [
-          11094
-        ],
-        "child": {
-          "birth": [
-            13792
-          ]
-        }
+          11094,
+          18247
+        ]
       }
     },
     "occupation": {
@@ -74,30 +58,37 @@
         3,
         "upper middle class"
       ],
-      "income": 0.861,
+      "income": 0.848,
       "all_incomes": [
-        1.005,
-        0.96,
-        0.912,
-        0.896,
-        0.861
+        0.956,
+        1.027,
+        1.103,
+        1.036,
+        1.153,
+        1.344,
+        1.39,
+        1.364,
+        0.938,
+        0.838,
+        0.961,
+        0.848
       ],
       "job": {
-        "lawful": true,
+        "lawful": false,
         "honest": true
       }
     },
     "genetics": {
-      "skin_color": 8,
-      "eye_color": "green",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "skin_color": 2,
+      "eye_color": "brown",
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
-        "C",
-        "C"
+        "S",
+        "S"
       ],
-      "health": 0.605,
-      "fertility": 0.587,
+      "health": 0.0,
+      "fertility": 0.573,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -109,15 +100,31 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.605
+            "new_health": 0.643
           },
           "death": false
         },
-        "1203": {
+        "1208": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.605
+            "change": true,
+            "value_change": -0.23,
+            "new_health": 0.413
+          },
+          "death": false
+        },
+        "1209": {
+          "health": {
+            "change": true,
+            "value_change": -0.328,
+            "new_health": 0.085
+          },
+          "death": false
+        },
+        "1210": {
+          "health": {
+            "change": true,
+            "value_change": -0.085,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -127,7 +134,12 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.005
+            "income": 0.956
+          },
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.027
           },
           {
             "topic": "new relationship",
@@ -137,8 +149,8 @@
               11093
             ],
             "people names": [
-              "Iordanus Vos",
-              "Agota Borsdraghere"
+              "Gilis Coluen",
+              "Reymodis"
             ],
             "label": "spouse",
             "committed": true
@@ -151,37 +163,56 @@
               "section": "stLange gracht.se1.c3",
               "street": "Lange gracht",
               "neighborhood": "olvbuurt",
-              "unique id": 497
+              "unique id": 499
             }
+          }
+        ],
+        "1201": [
+          {
+            "key": 11094,
+            "topic": "unmarried"
           },
           {
-            "topic": "feelings change",
-            "target": 11093,
-            "target name": "Agota Borsdraghere",
-            "state": "solid love",
-            "relationship": 11094
+            "topic": "person died",
+            "person": {
+              "key": 11093,
+              "name": "Reymodis",
+              "age": 38,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "spouse"
           }
         ],
-        "1202": [
+        "1205": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1205
+          }
+        ],
+        "1209": [
           {
             "topic": "new relationship",
-            "key": 13792,
+            "key": 18247,
             "people": [
               11092,
-              13791
+              11369
             ],
             "people names": [
-              "Iordanus Vos",
-              "Jonghen Vos"
+              "Gilis Coluen",
+              "Nellen"
             ],
-            "label": "parentchild",
-            "committed": false
+            "label": "spouse",
+            "committed": true
           }
         ],
-        "1203": [
+        "1210": [
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "sickness"
           }
         ]
       }
@@ -193,13 +224,14 @@
       "section": "stLange gracht.se1.c3",
       "street": "Lange gracht",
       "neighborhood": "olvbuurt",
-      "unique id": 497
+      "unique id": 499
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        11094
+        11094,
+        18247
       ]
     }
   }

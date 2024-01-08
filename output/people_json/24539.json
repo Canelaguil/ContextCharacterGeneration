@@ -1,19 +1,19 @@
 {
   "24539": {
     "alive": false,
-    "name": "Grote",
-    "surname": "van Dilane",
-    "full name": "Grote van Dilane",
+    "name": "Niels",
+    "surname": "Duvel",
+    "full name": "Niels Duvel",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.1,
-      "romantic interest": 0.378,
-      "sex interest": 0.62,
-      "gender expression": 0.012,
+      "sexuality label": "gay",
+      "sexuality": 0.986,
+      "romantic interest": 0.654,
+      "sex interest": 0.704,
+      "gender expression": 0.541,
       "sex": "m"
     },
-    "age": 12,
-    "birth year": 1231,
+    "age": 8,
+    "birth year": 1229,
     "sex": "m",
     "faction": "No religion",
     "income class": [
@@ -21,33 +21,33 @@
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.015,
-      "nice-nasty": 0.527,
-      "honest-false": 0.333
+      "lawful-chaotic": 0.544,
+      "nice-nasty": 0.0,
+      "honest-false": 0.999
     },
     "attitude": {
-      "outgoing": 0.293,
-      "dream": 0.492
+      "outgoing": 0.555,
+      "dream": 0.669
     },
     "homsoc": {
       "means": {
         "independent": false,
-        "taken_care_of": false,
+        "taken_care_of": true,
         "caretaker": true,
         "needs_care": true,
         "flags": [
-          "neglected"
+          "starving"
         ]
       },
       "expression": {
-        "sexuality expression": 0.095,
-        "gender expression expression": 0.008
+        "sexuality expression": 0.416,
+        "gender expression expression": 0.479
       }
     },
     "network": {
       "parents": {
-        "mother": "Hilduardis (16657)",
-        "father": "Dilane (15628)"
+        "mother": "Ricmoden (13066)",
+        "father": "Passelin (13121)"
       },
       "children": {},
       "relationship keys": {
@@ -57,11 +57,9 @@
         ],
         "sibling": [
           24542,
-          24543
-        ],
-        "half-sibling": [
-          24658,
-          28454
+          24543,
+          24544,
+          24936
         ]
       }
     },
@@ -75,16 +73,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 5,
-      "eye_color": "green",
+      "skin_color": 4,
+      "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
         "C",
         "C"
       ],
-      "health": 0.673,
-      "fertility": 0.661,
+      "health": 0.414,
+      "fertility": 0.663,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -92,52 +90,133 @@
     },
     "memory": {
       "health": {
+        "1230": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.647
+          },
+          "death": false
+        },
+        "1231": {
+          "health": {
+            "change": true,
+            "value_change": -0.233,
+            "new_health": 0.414
+          },
+          "death": false
+        },
         "1232": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.673
+            "new_health": 0.414
           },
           "death": false
-        },
-        "1243": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.673
-          },
-          "death": true
         }
       },
       "events": {
-        "1231": [
+        "1229": [
           {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stDavids hof.se1.c2",
-              "street": "Davids hof",
-              "neighborhood": "jorisbuurt",
-              "unique id": 173
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stPaternoster straetje.se1.c1",
+              "street": "Paternoster straetje",
+              "neighborhood": "olvbuurt",
+              "unique id": 513
             }
+          }
+        ],
+        "1230": [
+          {
+            "topic": "new relationship",
+            "key": 24936,
+            "people": [
+              24539,
+              24930
+            ],
+            "people names": [
+              "Niels Duvel",
+              "Mewekinus Duvel"
+            ],
+            "label": "sibling",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.807,
+            "inhabitants": [
+              24930,
+              13024,
+              29983
+            ]
+          }
+        ],
+        "1231": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 13121,
+              "name": "Passelin Duvel",
+              "age": 29,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Nellen (11126)",
+                "father": "Poppo (11125)"
+              }
+            },
+            "cause": "starvation",
+            "label": "parent"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              24930,
+              13024,
+              29983
+            ]
+          },
+          {
+            "topic": "new caretaker",
+            "person": 13066
           }
         ],
         "1232": [
           {
             "topic": "person died",
             "person": {
-              "key": 16657,
-              "name": "Hilduardis Salm",
-              "age": 24,
+              "key": 21444,
+              "name": "Yda Duvel",
+              "age": 13,
               "alive": false,
               "sex": "f",
               "parents": {
-                "mother": "Hilduardis (10436)",
-                "father": "Lutgeri (10435)"
+                "mother": "Ricmoden (13066)",
+                "father": "Passelin (13121)"
               }
             },
-            "label": "parent"
+            "cause": "starvation",
+            "label": "sibling"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 21624,
+              "name": "Mattheus Passelinszoon",
+              "age": 12,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Ricmoden (13066)",
+                "father": "Passelin (13121)"
+              }
+            },
+            "cause": "starvation",
+            "label": "sibling"
           },
           {
             "topic": "event",
@@ -145,98 +224,105 @@
             "year": 1232
           },
           {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              24930,
+              13024,
+              29983
+            ]
           }
         ],
         "1233": [
           {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              24930,
+              13024,
+              29983
+            ]
           }
         ],
         "1234": [
           {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              24930,
+              13024,
+              29983
+            ]
           }
         ],
         "1235": [
           {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              24930,
+              13024,
+              29983
+            ]
           }
         ],
         "1236": [
           {
-            "topic": "neglected"
+            "topic": "event",
+            "event": "plague",
+            "year": 1236
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              24930,
+              13024,
+              29983
+            ]
           }
         ],
         "1237": [
           {
-            "topic": "neglected"
-          }
-        ],
-        "1238": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1239": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1240": [
-          {
-            "topic": "neglected"
+            "topic": "person died",
+            "person": {
+              "key": 22354,
+              "name": "Arnoud Duvel",
+              "age": 14,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Ricmoden (13066)",
+                "father": "Passelin (13121)"
+              }
+            },
+            "cause": "starvation",
+            "label": "sibling"
           },
           {
-            "topic": "update",
-            "update": "parent married",
-            "parent": 15628,
-            "new partner": 12310
-          }
-        ],
-        "1241": [
-          {
-            "topic": "neglected"
-          },
-          {
-            "topic": "new relationship",
-            "key": 28454,
-            "people": [
-              24539,
-              28422
-            ],
-            "people names": [
-              "Grote van Dilane",
-              "Reynwi"
-            ],
-            "label": "half-sibling",
-            "committed": false
-          }
-        ],
-        "1242": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1243": [
-          {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              24930,
+              13024,
+              29983
+            ]
           },
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "starvation"
           }
         ]
       }
     },
     "key": 24539,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stDavids hof.se1.c2",
-      "street": "Davids hof",
-      "neighborhood": "jorisbuurt",
-      "unique id": 173
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stPaternoster straetje.se1.c1",
+      "street": "Paternoster straetje",
+      "neighborhood": "olvbuurt",
+      "unique id": 513
     },
     "relationship status": {
       "taken": false,
@@ -244,8 +330,8 @@
       "relationships": [
         24542,
         24543,
-        24658,
-        28454
+        24544,
+        24936
       ]
     }
   }

@@ -1,85 +1,89 @@
 {
   "13569": {
     "alive": false,
-    "name": "Dolf",
-    "surname": "",
-    "full name": "Dolf",
+    "name": "Brame",
+    "surname": "van Elberino",
+    "full name": "Brame van Elberino",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.083,
-      "romantic interest": 0.743,
-      "sex interest": 0.893,
+      "sexuality": 0.084,
+      "romantic interest": 0.852,
+      "sex interest": 0.689,
       "gender expression": 0.0,
       "sex": "m"
     },
-    "age": 11,
+    "age": 17,
     "birth year": 1202,
     "sex": "m",
-    "faction": "Zealots",
+    "faction": "Dogmatists",
     "income class": [
       0,
       "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.73,
-      "nice-nasty": 0.455,
-      "honest-false": 0.009
+      "lawful-chaotic": 0.032,
+      "nice-nasty": 0.19,
+      "honest-false": 0.24
     },
     "attitude": {
-      "outgoing": 0.55,
-      "dream": 0.594
+      "outgoing": 0.429,
+      "dream": 0.777
     },
     "homsoc": {
       "means": {
         "independent": false,
         "taken_care_of": false,
         "caretaker": true,
-        "needs_care": true,
+        "needs_care": false,
         "flags": [
-          "neglected"
+          "neglected",
+          "starving"
         ]
       },
       "expression": {
-        "sexuality expression": 0.071,
+        "sexuality expression": 0.044,
         "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": {
-        "mother": "Sybillia (10331)",
-        "father": "Folcard (10330)"
+        "mother": "Nimme (10583)",
+        "father": "Elberino (10582)"
       },
       "children": {},
       "relationship keys": {
         "parent": [
           13570,
           13571
-        ],
-        "sibling": [
-          16108
         ]
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         0,
         "working class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.609,
+      "all_incomes": [
+        0.609
+      ],
+      "job": {
+        "lawful": false,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 9,
-      "eye_color": "green",
+      "skin_color": 2,
+      "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
-        "S",
-        "C"
+        "C",
+        "S"
       ],
-      "health": 0.0,
-      "fertility": 0.68,
+      "health": 0.062,
+      "fertility": 0.574,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -91,39 +95,63 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.652
+            "new_health": 0.616
+          },
+          "death": false
+        },
+        "1205": {
+          "health": {
+            "change": true,
+            "value_change": -0.253,
+            "new_health": 0.363
+          },
+          "death": false
+        },
+        "1206": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.363
           },
           "death": false
         },
         "1209": {
           "health": {
             "change": true,
-            "value_change": -0.272,
-            "new_health": 0.38
+            "value_change": -0.233,
+            "new_health": 0.13
           },
           "death": false
         },
         "1210": {
           "health": {
-            "change": true,
-            "value_change": -0.224,
-            "new_health": 0.156
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.13
           },
           "death": false
         },
         "1211": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.156
+            "change": true,
+            "value_change": -0.068,
+            "new_health": 0.062
           },
           "death": false
         },
-        "1213": {
+        "1212": {
           "health": {
-            "change": true,
-            "value_change": -0.156,
-            "new_health": 0.0
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.062
+          },
+          "death": false
+        },
+        "1219": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.062
           },
           "death": true
         }
@@ -135,10 +163,10 @@
             "home": {
               "income class": 0,
               "income class label": "working class",
-              "section": "stSt. Joris straet.se3.c0",
-              "street": "St. Joris straet",
-              "neighborhood": "jorisbuurt",
-              "unique id": 147
+              "section": "stWalker straet.se1.c0",
+              "street": "Walker straet",
+              "neighborhood": "agnesbuurt",
+              "unique id": 262
             }
           }
         ],
@@ -154,80 +182,91 @@
         ],
         "1205": [
           {
+            "topic": "event",
+            "event": "plague",
+            "year": 1205
+          },
+          {
             "topic": "neglected"
           }
         ],
         "1206": [
-          {
-            "topic": "new relationship",
-            "key": 16108,
-            "people": [
-              13569,
-              16105
-            ],
-            "people names": [
-              "Dolf",
-              "Gloria"
-            ],
-            "label": "sibling",
-            "committed": false
-          },
           {
             "topic": "neglected"
           }
         ],
         "1207": [
           {
-            "topic": "neglected"
+            "topic": "person died",
+            "person": {
+              "key": 10582,
+              "name": "Elberino",
+              "age": 53,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "label": "parent"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "new caretaker",
+            "person": 10583
           }
         ],
         "1208": [
           {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ],
         "1209": [
           {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ],
-        "1210": [
+        "1215": [
           {
-            "topic": "neglected"
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
           }
         ],
-        "1211": [
+        "1219": [
           {
-            "topic": "neglected"
-          }
-        ],
-        "1212": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1213": [
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.609
+          },
           {
             "topic": "person died",
             "person": {
-              "key": 16105,
-              "name": "Gloria",
-              "age": 6,
+              "key": 10583,
+              "name": "Nimme Mol",
+              "age": 52,
               "alive": false,
               "sex": "f",
-              "parents": {
-                "mother": "Sybillia (10331)",
-                "father": "Folcard (10330)"
-              }
+              "parents": "firstgen"
             },
-            "label": "sibling"
+            "cause": "old age",
+            "label": "parent"
           },
           {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           },
           {
             "topic": "death",
-            "cause": "sickness"
+            "cause": "illness"
           }
         ]
       }
@@ -236,17 +275,15 @@
     "home": {
       "income class": 0,
       "income class label": "working class",
-      "section": "stSt. Joris straet.se3.c0",
-      "street": "St. Joris straet",
-      "neighborhood": "jorisbuurt",
-      "unique id": 147
+      "section": "stWalker straet.se1.c0",
+      "street": "Walker straet",
+      "neighborhood": "agnesbuurt",
+      "unique id": 262
     },
     "relationship status": {
       "taken": false,
       "married": false,
-      "relationships": [
-        16108
-      ]
+      "relationships": []
     }
   }
 }

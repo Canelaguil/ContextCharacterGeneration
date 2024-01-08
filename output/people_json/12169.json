@@ -1,19 +1,19 @@
 {
   "12169": {
     "alive": false,
-    "name": "Everocker",
-    "surname": "Ulf",
-    "full name": "Everocker Ulf",
+    "name": "Bartrarde",
+    "surname": "Sonderland",
+    "full name": "Bartrarde Sonderland",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.069,
-      "romantic interest": 0.656,
-      "sex interest": 0.646,
-      "gender expression": 0.131,
+      "sexuality": 0.005,
+      "romantic interest": 0.797,
+      "sex interest": 0.901,
+      "gender expression": 0.308,
       "sex": "m"
     },
-    "age": 49,
-    "birth year": 1157,
+    "age": 48,
+    "birth year": 1158,
     "sex": "m",
     "faction": "No religion",
     "income class": [
@@ -21,34 +21,65 @@
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.375,
-      "nice-nasty": 0.999,
-      "honest-false": 0.404
+      "lawful-chaotic": 0.0,
+      "nice-nasty": 0.505,
+      "honest-false": 0.603
     },
     "attitude": {
-      "outgoing": 0.605,
-      "dream": 0.36
+      "outgoing": 0.163,
+      "dream": 0.585
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.051,
-        "gender expression expression": 0.056
+        "sexuality expression": 0.002,
+        "gender expression expression": 0.055
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14089": {
+          "key": 14089,
+          "name": "Vesse Sonderland",
+          "age": 3,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Ghoudekinen (12170)",
+            "father": "Bartrarde (12169)"
+          }
+        },
+        "15377": {
+          "key": 15377,
+          "name": "Wlfarde Bartrardeszoon",
+          "age": 2,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Ghoudekinen (12170)",
+            "father": "Bartrarde (12169)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           12171
-        ]
+        ],
+        "child": {
+          "birth": [
+            14090,
+            15378
+          ]
+        }
       }
     },
     "occupation": {
@@ -57,32 +88,32 @@
         1,
         "lower middle class"
       ],
-      "income": 1.256,
+      "income": 0.034,
       "all_incomes": [
-        1.082,
-        1.286,
-        0.972,
-        0.861,
-        1.026,
-        1.203,
-        1.256
+        1.078,
+        0.64,
+        0.134,
+        0.113,
+        0.0,
+        0.0,
+        0.034
       ],
       "job": {
-        "lawful": true,
+        "lawful": false,
         "honest": false
       }
     },
     "genetics": {
-      "skin_color": 0,
+      "skin_color": 4,
       "eye_color": "brown",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "C",
-        "C"
+        "S",
+        "S"
       ],
-      "health": 0.624,
-      "fertility": 0.64,
+      "health": 0.714,
+      "fertility": 0.706,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -94,7 +125,7 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.624
+            "new_health": 0.714
           },
           "death": false
         },
@@ -102,7 +133,7 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.624
+            "new_health": 0.714
           },
           "death": true
         }
@@ -112,7 +143,12 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.082
+            "income": 1.078
+          },
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.64
           },
           {
             "topic": "new relationship",
@@ -122,8 +158,8 @@
               12170
             ],
             "people names": [
-              "Everocker Ulf",
-              "Sara Vrint"
+              "Bartrarde Sonderland",
+              "Ghoudekinen Durcant"
             ],
             "label": "spouse",
             "committed": true
@@ -133,27 +169,84 @@
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stKerckstraet.se1.c1",
-              "street": "Kerckstraet",
+              "section": "stPapenhofstede.se3.c1",
+              "street": "Papenhofstede",
               "neighborhood": "denhof",
-              "unique id": 986
+              "unique id": 978
             }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.134
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.134,
+            "inhabitants": []
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 14090,
+            "people": [
+              12169,
+              14089
+            ],
+            "people names": [
+              "Bartrarde Sonderland",
+              "Vesse Sonderland"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.113,
+            "inhabitants": []
           }
         ],
         "1203": [
           {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.026
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 15378,
+            "people": [
+              12169,
+              15377
+            ],
+            "people names": [
+              "Bartrarde Sonderland",
+              "Wlfarde Bartrardeszoon"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
           }
         ],
         "1205": [
           {
-            "topic": "feelings change",
-            "target": 12170,
-            "target name": "Sara Vrint",
-            "state": "out of love",
-            "relationship": 12171
+            "topic": "event",
+            "event": "plague",
+            "year": 1205
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.034,
+            "inhabitants": []
           },
           {
             "topic": "death",
@@ -166,10 +259,10 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stKerckstraet.se1.c1",
-      "street": "Kerckstraet",
+      "section": "stPapenhofstede.se3.c1",
+      "street": "Papenhofstede",
       "neighborhood": "denhof",
-      "unique id": 986
+      "unique id": 978
     },
     "relationship status": {
       "taken": true,

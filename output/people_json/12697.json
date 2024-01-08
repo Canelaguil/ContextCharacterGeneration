@@ -1,85 +1,127 @@
 {
   "12697": {
-    "alive": false,
-    "name": "Didderic",
-    "surname": "lucrose",
-    "full name": "Didderic lucrose",
+    "alive": true,
+    "name": "Clara",
+    "surname": "Vroede",
+    "full name": "Clara Vroede",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.091,
-      "romantic interest": 0.591,
-      "sex interest": 0.604,
-      "gender expression": 0.194,
-      "sex": "m"
+      "sexuality": 0.125,
+      "romantic interest": 0.855,
+      "sex interest": 0.738,
+      "gender expression": 0.083,
+      "sex": "f"
     },
-    "age": 4,
+    "age": 49,
     "birth year": 1200,
-    "sex": "m",
-    "faction": "Dogmatists",
+    "sex": "f",
+    "faction": "Zealots",
     "income class": [
-      3,
-      "upper middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.43,
-      "nice-nasty": 0.384,
-      "honest-false": 0.0
+      "lawful-chaotic": 0.682,
+      "nice-nasty": 0.041,
+      "honest-false": 0.594
     },
     "attitude": {
-      "outgoing": 0.329,
-      "dream": 0.39
+      "outgoing": 0.364,
+      "dream": 0.037
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": true,
-        "needs_care": true,
+        "needs_care": false,
         "flags": [
-          "neglected"
+          "neglected",
+          "starving"
         ]
       },
       "expression": {
-        "sexuality expression": 0.053,
-        "gender expression expression": 0.033
+        "sexuality expression": 0.069,
+        "gender expression expression": 0.047
       }
     },
     "network": {
       "parents": {
-        "mother": "Gerburgis (11771)",
-        "father": "Lutbrandus (11770)"
+        "mother": "Saxiardis (11741)",
+        "father": "Deghen (11740)"
       },
-      "children": {},
+      "children": {
+        "23519": {
+          "key": 23519,
+          "name": "Eingeliadis Buyc",
+          "age": 23,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Clara (12697)",
+            "father": "Yseboldus (12505)"
+          }
+        },
+        "23857": {
+          "key": 23857,
+          "name": "Albertus Buyc",
+          "age": 22,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Clara (12697)",
+            "father": "Yseboldus (12505)"
+          }
+        }
+      },
       "relationship keys": {
         "parent": [
           12698,
           12699
         ],
         "sibling": [
-          13997
-        ]
+          13272,
+          14607
+        ],
+        "spouse": [
+          21408
+        ],
+        "child": {
+          "birth": [
+            23521,
+            23859
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        3,
-        "upper middle class"
+        1,
+        "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.066,
+      "all_incomes": [
+        0.998,
+        1.076,
+        1.066
+      ],
+      "job": {
+        "lawful": true,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 1,
-      "eye_color": "brown",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "skin_color": 6,
+      "eye_color": "blue",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "C",
+        "S",
         "C"
       ],
-      "health": 0.527,
-      "fertility": 0.545,
+      "health": 0.648,
+      "fertility": 0.794,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -91,17 +133,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.527
+            "new_health": 0.762
           },
           "death": false
         },
-        "1204": {
+        "1221": {
+          "health": {
+            "change": true,
+            "value_change": -0.114,
+            "new_health": 0.648
+          },
+          "death": false
+        },
+        "1222": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.527
+            "new_health": 0.648
           },
-          "death": true
+          "death": false
         }
       },
       "events": {
@@ -109,31 +159,26 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stMuurhuysen2.se5.c3",
-              "street": "Muurhuysen2",
-              "neighborhood": "cingelnoord",
-              "unique id": 813
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stStoof straet.se3.c1",
+              "street": "Stoof straet",
+              "neighborhood": "visbuurt",
+              "unique id": 781
             }
           }
         ],
         "1201": [
           {
-            "topic": "neglected"
-          }
-        ],
-        "1202": [
-          {
             "topic": "new relationship",
-            "key": 13997,
+            "key": 13272,
             "people": [
               12697,
-              13994
+              13269
             ],
             "people names": [
-              "Didderic lucrose",
-              "Jute lucrose"
+              "Clara Vroede",
+              "Weitijn Vroede"
             ],
             "label": "sibling",
             "committed": false
@@ -144,49 +189,306 @@
         ],
         "1203": [
           {
+            "topic": "new relationship",
+            "key": 14607,
+            "people": [
+              12697,
+              14604
+            ],
+            "people names": [
+              "Clara Vroede",
+              "Agota Vroede"
+            ],
+            "label": "sibling",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.482,
+            "inhabitants": []
+          }
+        ],
+        "1204": [
+          {
+            "topic": "not enough income",
+            "income": 0.547,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1205
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1206": [
+          {
             "topic": "person died",
             "person": {
-              "key": 13994,
-              "name": "Jute lucrose",
-              "age": 0,
+              "key": 11740,
+              "name": "Deghen Vroede",
+              "age": 29,
               "alive": false,
-              "sex": "f",
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "parent"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1211": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1212": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1213": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1214": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 13269,
+              "name": "Weitijn Vroede",
+              "age": 12,
+              "alive": false,
+              "sex": "m",
               "parents": {
-                "mother": "Gerburgis (11771)",
-                "father": "Lutbrandus (11770)"
+                "mother": "Saxiardis (11741)",
+                "father": "Deghen (11740)"
               }
             },
+            "cause": "illness",
             "label": "sibling"
           },
           {
             "topic": "neglected"
           }
         ],
-        "1204": [
+        "1215": [
           {
-            "topic": "neglected"
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
           },
           {
-            "topic": "death",
-            "cause": "childhood illness"
+            "topic": "not enough income",
+            "income": 0.373,
+            "inhabitants": []
+          }
+        ],
+        "1218": [
+          {
+            "topic": "new relationship",
+            "key": 21408,
+            "people": [
+              12505,
+              12697
+            ],
+            "people names": [
+              "Yseboldus Buyc",
+              "Clara Vroede"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stOly straetje.se5.c1",
+              "street": "Oly straetje",
+              "neighborhood": "kampbuurt",
+              "unique id": 488
+            }
+          }
+        ],
+        "1219": [
+          {
+            "topic": "feelings change",
+            "target": 12505,
+            "target name": "Yseboldus Buyc",
+            "state": "out of love",
+            "relationship": 21408
+          }
+        ],
+        "1223": [
+          {
+            "topic": "event",
+            "event": "faction upheaval",
+            "faction": "Dogmatists",
+            "year": 1223
+          }
+        ],
+        "1226": [
+          {
+            "topic": "new relationship",
+            "key": 23521,
+            "people": [
+              12697,
+              23519
+            ],
+            "people names": [
+              "Clara Vroede",
+              "Eingeliadis Buyc"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1227": [
+          {
+            "topic": "new relationship",
+            "key": 23859,
+            "people": [
+              12697,
+              23857
+            ],
+            "people names": [
+              "Clara Vroede",
+              "Albertus Buyc"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1232": [
+          {
+            "topic": "event",
+            "event": "war",
+            "year": 1232
+          }
+        ],
+        "1234": [
+          {
+            "topic": "update",
+            "update": "parent married",
+            "parent": 11741,
+            "new partner": 12319
+          }
+        ],
+        "1236": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1236
+          }
+        ],
+        "1237": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 14604,
+              "name": "Agota Vroede",
+              "age": 33,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Saxiardis (11741)",
+                "father": "Deghen (11740)"
+              }
+            },
+            "cause": "starvation",
+            "label": "sibling"
+          }
+        ],
+        "1238": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11741,
+              "name": "Saxiardis Strument",
+              "age": 57,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "label": "parent"
+          }
+        ],
+        "1245": [
+          {
+            "topic": "feelings change",
+            "target": 12505,
+            "target name": "Yseboldus Buyc",
+            "state": "infatuation",
+            "relationship": 21408
+          }
+        ],
+        "1246": [
+          {
+            "topic": "feelings change",
+            "target": 12505,
+            "target name": "Yseboldus Buyc",
+            "state": "out of love",
+            "relationship": 21408
+          }
+        ],
+        "1247": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.998
+          }
+        ],
+        "1248": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.076
           }
         ]
       }
     },
     "key": 12697,
     "home": {
-      "income class": 3,
-      "income class label": "upper middle class",
-      "section": "stMuurhuysen2.se5.c3",
-      "street": "Muurhuysen2",
-      "neighborhood": "cingelnoord",
-      "unique id": 813
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stOly straetje.se5.c1",
+      "street": "Oly straetje",
+      "neighborhood": "kampbuurt",
+      "unique id": 488
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
-        13997
+        13272,
+        14607,
+        21408
       ]
     }
   }

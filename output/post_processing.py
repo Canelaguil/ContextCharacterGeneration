@@ -50,6 +50,7 @@ if __name__ == '__main__':
     if os.path.exists(target_directory):
         shutil.rmtree(target_directory)
     os.mkdir(target_directory)
+    count = 0
     for f in os.listdir(directory):
         key = f[0:-5]
         p = get_person(key)
@@ -118,6 +119,7 @@ if __name__ == '__main__':
             # events
             write_to_file(d, title('events'))
             prev_year_neglected = False
+            recorded = False
             for y, events in p['memory']['events'].items():
                 # if the only event is being neglected and we're not gonna print that...
                 if any(e2['topic'] == 'neglected' for e2 in events) and prev_year_neglected == True and len(events) == 1:
@@ -134,7 +136,12 @@ if __name__ == '__main__':
                     elif topic == 'new child':
                         write_to_file(d, f"Child was born, {e['child name']}.")
                     elif topic == 'person died':
-                        write_to_file(d, f"{e['label'].title()} died: {e['person']['name']}")
+                        if 'cause' in e and e['cause'] != '':
+                            cause = f" of {e['cause']}"
+                        else:
+                            cause = ''
+                            print(key)
+                        write_to_file(d, f"{e['label'].title()} died{cause}: {e['person']['name']}")
                     elif topic == 'new relationship':
                         other = e['people names'][0] if p['key'] == e['people'][1] else e['people names'][1]
                         label = e['label'] if e['label'] != 'parentchild' else 'child'
@@ -166,6 +173,7 @@ if __name__ == '__main__':
                     elif topic == 'event':
                         write_to_file(d, f"{e['event'].title()} of {e['year']}")
                     elif topic == 'death':
+                        recorded = True
                         write_to_file(d, f"Died of {e['cause']}.")
                     elif topic == 'update':
                         if e['update'] == 'parent married':
@@ -178,7 +186,11 @@ if __name__ == '__main__':
                     else:
                         prev_year_neglected = False
 
-                    if not any(e2['topic'] == 'neglected' for e2 in events) and not p['alive']:
-                        # print(p)
-                        print('sdf')
+                # if not any(e2['topic'] == 'death' for e2 in events) and not p['alive']:
+                #     death = False
+            
+            # if p['alive'] == False and recorded == False:
+            #     print(p['key'])
+            #     count += 1
+    print(count)
 

@@ -1,33 +1,33 @@
 {
   "13392": {
     "alive": false,
-    "name": "Kerstine",
-    "surname": "Wittebroet",
-    "full name": "Kerstine Wittebroet",
+    "name": "Lielde",
+    "surname": "Strich",
+    "full name": "Lielde Strich",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.859,
-      "romantic interest": 0.551,
-      "sex interest": 0.547,
-      "gender expression": 0.406,
+      "sexuality label": "straight",
+      "sexuality": 0.108,
+      "romantic interest": 0.788,
+      "sex interest": 0.847,
+      "gender expression": 0.164,
       "sex": "f"
     },
-    "age": 21,
+    "age": 36,
     "birth year": 1201,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "Dogmatists",
     "income class": [
-      1,
-      "lower middle class"
+      3,
+      "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.504,
-      "nice-nasty": 0.999,
-      "honest-false": 0.223
+      "lawful-chaotic": 0.484,
+      "nice-nasty": 0.0,
+      "honest-false": 0.0
     },
     "attitude": {
-      "outgoing": 0.153,
-      "dream": 0.187
+      "outgoing": 0.635,
+      "dream": 0.688
     },
     "homsoc": {
       "means": {
@@ -36,51 +36,86 @@
         "caretaker": false,
         "needs_care": false,
         "flags": [
-          "caretaker",
-          "starving"
+          "neglected",
+          "starving",
+          "caretaker"
         ]
       },
       "expression": {
-        "sexuality expression": 0.318,
-        "gender expression expression": 0.131
+        "sexuality expression": 0.063,
+        "gender expression expression": 0.11
       }
     },
     "network": {
       "parents": {
-        "mother": "Ricmoden (11909)",
-        "father": "Clemmam (11908)"
+        "mother": "Gertrudis (12131)",
+        "father": "Bernero (12130)"
       },
-      "children": {},
+      "children": {
+        "25612": {
+          "key": 25612,
+          "name": "Agota",
+          "age": 18,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Lielde (13392)",
+            "father": "Heinhoca (16217)"
+          }
+        }
+      },
       "relationship keys": {
         "parent": [
           13393,
           13394
         ],
         "spouse": [
-          21672
-        ]
+          23822
+        ],
+        "child": {
+          "birth": [
+            25614
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        1,
-        "lower middle class"
+        3,
+        "upper middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.727,
+      "all_incomes": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.151,
+        0.111,
+        0.0,
+        0.476,
+        0.549,
+        0.798,
+        1.129,
+        0.727
+      ],
+      "job": {
+        "lawful": false,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 6,
-      "eye_color": "blue",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 2,
+      "eye_color": "brown",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
-        "C",
-        "C"
+        "S",
+        "S"
       ],
-      "health": 0.693,
-      "fertility": 0.691,
+      "health": 0.758,
+      "fertility": 0.763,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -92,9 +127,17 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.693
+            "new_health": 0.758
           },
           "death": false
+        },
+        "1237": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.758
+          },
+          "death": true
         }
       },
       "events": {
@@ -102,12 +145,12 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stCromme straet.se1.c1",
-              "street": "Cromme straet",
+              "income class": 3,
+              "income class label": "upper middle class",
+              "section": "stDen Hof.se7.c3",
+              "street": "Den Hof",
               "neighborhood": "denhof",
-              "unique id": 873
+              "unique id": 960
             }
           }
         ],
@@ -115,87 +158,84 @@
           {
             "topic": "person died",
             "person": {
-              "key": 11908,
-              "name": "Clemmam Wittebroet",
-              "age": 46,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "label": "parent"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 11909,
-              "name": "Ricmoden",
-              "age": 30,
+              "key": 12131,
+              "name": "Gertrudis",
+              "age": 22,
               "alive": false,
               "sex": "f",
               "parents": "firstgen"
             },
+            "cause": "illness",
+            "label": "parent"
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 3,
+              "income class label": "upper middle class",
+              "section": "stBreestraat.se7.c3",
+              "street": "Breestraat",
+              "neighborhood": "olvbuurt",
+              "unique id": 578
+            }
+          },
+          {
+            "topic": "update",
+            "update": "parent married",
+            "parent": 12130,
+            "new partner": 11288
+          }
+        ],
+        "1205": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1205
+          }
+        ],
+        "1209": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12130,
+              "name": "Bernero Strich",
+              "age": 57,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
             "label": "parent"
           },
           {
             "topic": "not enough income",
             "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1203": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1204": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1205": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1206": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1207": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1208": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1209": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "inhabitants": [
+              25612
+            ]
           }
         ],
         "1210": [
           {
             "topic": "not enough income",
             "income": 0,
-            "inhabitants": []
+            "inhabitants": [
+              25612
+            ]
+          }
+        ],
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              25612
+            ]
           },
           {
             "topic": "now caretaker",
@@ -206,32 +246,13 @@
             "person": 13392
           }
         ],
-        "1211": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1212": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1213": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
         "1214": [
           {
             "topic": "not enough income",
             "income": 0,
-            "inhabitants": []
+            "inhabitants": [
+              25612
+            ]
           }
         ],
         "1215": [
@@ -243,19 +264,18 @@
           {
             "topic": "not enough income",
             "income": 0,
-            "inhabitants": []
+            "inhabitants": [
+              25612
+            ]
           }
         ],
         "1216": [
           {
-            "topic": "event",
-            "event": "war",
-            "year": 1216
-          },
-          {
             "topic": "not enough income",
             "income": 0,
-            "inhabitants": []
+            "inhabitants": [
+              25612
+            ]
           }
         ],
         "1217": [
@@ -265,78 +285,203 @@
           {
             "topic": "not enough income",
             "income": 0,
-            "inhabitants": []
+            "inhabitants": [
+              25612
+            ]
           }
         ],
         "1218": [
           {
             "topic": "not enough income",
             "income": 0,
-            "inhabitants": []
+            "inhabitants": [
+              25612
+            ]
           }
         ],
         "1219": [
           {
             "topic": "not enough income",
             "income": 0,
-            "inhabitants": []
+            "inhabitants": [
+              25612
+            ]
           }
         ],
         "1220": [
           {
             "topic": "not enough income",
             "income": 0,
-            "inhabitants": []
+            "inhabitants": [
+              25612
+            ]
           }
         ],
         "1221": [
           {
             "topic": "not enough income",
             "income": 0,
-            "inhabitants": []
+            "inhabitants": [
+              25612
+            ]
           }
         ],
         "1222": [
           {
-            "topic": "new relationship",
-            "key": 21672,
-            "people": [
-              15698,
-              13392
-            ],
-            "people names": [
-              "Alwar van Wigboldo",
-              "Kerstine Wittebroet"
-            ],
-            "label": "spouse",
-            "committed": true
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              25612
+            ]
+          }
+        ],
+        "1223": [
+          {
+            "topic": "event",
+            "event": "faction upheaval",
+            "faction": "Dogmatists",
+            "year": 1223
           },
           {
             "topic": "not enough income",
             "income": 0,
-            "inhabitants": []
+            "inhabitants": [
+              25612
+            ]
+          }
+        ],
+        "1224": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              25612
+            ]
+          }
+        ],
+        "1225": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              25612
+            ]
+          }
+        ],
+        "1226": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.0
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              25612
+            ]
+          }
+        ],
+        "1227": [
+          {
+            "topic": "new relationship",
+            "key": 23822,
+            "people": [
+              16217,
+              13392
+            ],
+            "people names": [
+              "Heinhoca",
+              "Lielde Strich"
+            ],
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1231": [
+          {
+            "topic": "new relationship",
+            "key": 25614,
+            "people": [
+              13392,
+              25612
+            ],
+            "people names": [
+              "Lielde Strich",
+              "Agota"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1232": [
+          {
+            "topic": "event",
+            "event": "war",
+            "year": 1232
+          }
+        ],
+        "1233": [
+          {
+            "key": 23822,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 16217,
+              "name": "Heinhoca",
+              "age": 26,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Verthwi (10502)",
+                "father": "Oliuerus (10501)"
+              }
+            },
+            "cause": "war",
+            "label": "spouse"
+          }
+        ],
+        "1236": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.129
+          },
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1236
+          }
+        ],
+        "1237": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.727
           },
           {
             "topic": "death",
-            "cause": "starvation"
+            "cause": "illness"
           }
         ]
       }
     },
     "key": 13392,
     "home": {
-      "income class": 1,
-      "income class label": "lower middle class",
-      "section": "stCromme straet.se1.c1",
-      "street": "Cromme straet",
-      "neighborhood": "denhof",
-      "unique id": 873
+      "income class": 3,
+      "income class label": "upper middle class",
+      "section": "stBreestraat.se7.c3",
+      "street": "Breestraat",
+      "neighborhood": "olvbuurt",
+      "unique id": 578
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
-        21672
+        23822
       ]
     }
   }

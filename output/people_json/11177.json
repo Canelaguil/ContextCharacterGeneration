@@ -1,19 +1,19 @@
 {
   "11177": {
     "alive": false,
-    "name": "Beatrice",
-    "surname": "Coquus",
-    "full name": "Beatrice Coquus",
+    "name": "Katerina",
+    "surname": "Markolf",
+    "full name": "Katerina Markolf",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.06,
-      "romantic interest": 0.451,
-      "sex interest": 0.42,
-      "gender expression": 0.0,
+      "sexuality label": "gay",
+      "sexuality": 0.878,
+      "romantic interest": 0.823,
+      "sex interest": 0.795,
+      "gender expression": 0.6,
       "sex": "f"
     },
-    "age": 52,
-    "birth year": 1164,
+    "age": 40,
+    "birth year": 1176,
     "sex": "f",
     "faction": "Zealots",
     "income class": [
@@ -21,13 +21,13 @@
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.119,
-      "nice-nasty": 0.478,
-      "honest-false": 0.436
+      "lawful-chaotic": 0.997,
+      "nice-nasty": 0.999,
+      "honest-false": 0.225
     },
     "attitude": {
-      "outgoing": 0.356,
-      "dream": 0.31
+      "outgoing": 0.483,
+      "dream": 0.491
     },
     "homsoc": {
       "means": {
@@ -40,17 +40,71 @@
         ]
       },
       "expression": {
-        "sexuality expression": 0.059,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.83,
+        "gender expression expression": 0.297
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "17233": {
+          "key": 17233,
+          "name": "Loduicus Valkenszoon",
+          "age": 6,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Katerina (11177)",
+            "father": "Valken (10831)"
+          }
+        },
+        "18258": {
+          "key": 18258,
+          "name": "Guido Valkenszoon",
+          "age": 40,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Katerina (11177)",
+            "father": "Valken (10831)"
+          }
+        },
+        "19176": {
+          "key": 19176,
+          "name": "Emgelberna",
+          "age": 38,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Katerina (11177)",
+            "father": "Valken (10831)"
+          }
+        },
+        "19910": {
+          "key": 19910,
+          "name": "Alwin",
+          "age": 36,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Katerina (11177)",
+            "father": "Valken (10831)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          11178
-        ]
+          11178,
+          16015
+        ],
+        "child": {
+          "birth": [
+            17235,
+            18260,
+            19178,
+            19912
+          ]
+        }
       }
     },
     "occupation": {
@@ -63,16 +117,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 8,
-      "eye_color": "green",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "skin_color": 2,
+      "eye_color": "brown",
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
       "hair_type": [
         "S",
-        "S"
+        "C"
       ],
-      "health": 0.044,
-      "fertility": 0.553,
+      "health": 0.584,
+      "fertility": 0.789,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -84,25 +138,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.555
+            "new_health": 0.793
+          },
+          "death": false
+        },
+        "1213": {
+          "health": {
+            "change": true,
+            "value_change": -0.209,
+            "new_health": 0.584
           },
           "death": false
         },
         "1214": {
           "health": {
-            "change": true,
-            "value_change": -0.355,
-            "new_health": 0.2
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.584
           },
           "death": false
-        },
-        "1215": {
-          "health": {
-            "change": true,
-            "value_change": -0.156,
-            "new_health": 0.044
-          },
-          "death": true
         }
       },
       "events": {
@@ -115,8 +169,8 @@
               11177
             ],
             "people names": [
-              "Oliuerus",
-              "Beatrice Coquus"
+              "Veder Stamelarit",
+              "Katerina Markolf"
             ],
             "label": "spouse",
             "committed": true
@@ -129,43 +183,176 @@
               "section": "stBreestraat.se1.c2",
               "street": "Breestraat",
               "neighborhood": "olvbuurt",
-              "unique id": 538
+              "unique id": 532
             }
+          }
+        ],
+        "1201": [
+          {
+            "key": 11178,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11176,
+              "name": "Veder Stamelarit",
+              "age": 28,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1202": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1203": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1204": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1205
+          },
+          {
+            "topic": "new relationship",
+            "key": 16015,
+            "people": [
+              10831,
+              11177
+            ],
+            "people names": [
+              "Valken",
+              "Katerina Markolf"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stDie Camp.se3.c2",
+              "street": "Die Camp",
+              "neighborhood": "kampbuurt",
+              "unique id": 381
+            }
+          }
+        ],
+        "1207": [
+          {
+            "topic": "new relationship",
+            "key": 17235,
+            "people": [
+              11177,
+              17233
+            ],
+            "people names": [
+              "Katerina Markolf",
+              "Loduicus Valkenszoon"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1209": [
+          {
+            "topic": "new relationship",
+            "key": 18260,
+            "people": [
+              11177,
+              18258
+            ],
+            "people names": [
+              "Katerina Markolf",
+              "Guido Valkenszoon"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1211": [
           {
-            "topic": "feelings change",
-            "target": 11176,
-            "target name": "Oliuerus",
-            "state": "out of love",
-            "relationship": 11178
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
+            "topic": "new relationship",
+            "key": 19178,
+            "people": [
+              11177,
+              19176
+            ],
+            "people names": [
+              "Katerina Markolf",
+              "Emgelberna"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1212": [
           {
-            "topic": "not enough income",
-            "income": 0.024,
-            "inhabitants": []
+            "topic": "feelings change",
+            "target": 10831,
+            "target name": "Valken",
+            "state": "out of love",
+            "relationship": 16015
           }
         ],
         "1213": [
           {
-            "topic": "not enough income",
-            "income": 0.107,
-            "inhabitants": []
+            "topic": "new relationship",
+            "key": 19912,
+            "people": [
+              11177,
+              19910
+            ],
+            "people names": [
+              "Katerina Markolf",
+              "Alwin"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1214": [
           {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
+            "topic": "person died",
+            "person": {
+              "key": 17233,
+              "name": "Loduicus Valkenszoon",
+              "age": 6,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Katerina (11177)",
+                "father": "Valken (10831)"
+              }
+            },
+            "cause": "childhood illness",
+            "label": "child"
           }
         ],
         "1215": [
@@ -175,13 +362,8 @@
             "year": 1215
           },
           {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
-          },
-          {
             "topic": "death",
-            "cause": "starvation"
+            "cause": "plague"
           }
         ]
       }
@@ -190,16 +372,17 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stBreestraat.se1.c2",
-      "street": "Breestraat",
-      "neighborhood": "olvbuurt",
-      "unique id": 538
+      "section": "stDie Camp.se3.c2",
+      "street": "Die Camp",
+      "neighborhood": "kampbuurt",
+      "unique id": 381
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        11178
+        11178,
+        16015
       ]
     }
   }

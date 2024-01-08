@@ -1,33 +1,33 @@
 {
   "10562": {
     "alive": false,
-    "name": "Nimme",
+    "name": "Lutghardis",
     "surname": "",
-    "full name": "Nimme",
+    "full name": "Lutghardis",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.155,
-      "romantic interest": 0.52,
-      "sex interest": 0.723,
-      "gender expression": 0.0,
+      "sexuality": 0.0,
+      "romantic interest": 0.812,
+      "sex interest": 0.878,
+      "gender expression": 0.185,
       "sex": "f"
     },
-    "age": 20,
-    "birth year": 1183,
+    "age": 22,
+    "birth year": 1180,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
-      2,
-      "middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.073,
-      "nice-nasty": 0.78,
-      "honest-false": 0.824
+      "lawful-chaotic": 0.0,
+      "nice-nasty": 0.512,
+      "honest-false": 0.338
     },
     "attitude": {
-      "outgoing": 0.476,
-      "dream": 0.181
+      "outgoing": 0.673,
+      "dream": 0.554
     },
     "homsoc": {
       "means": {
@@ -38,39 +38,68 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.083,
-        "gender expression expression": -0.001
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.17
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12373": {
+          "key": 12373,
+          "name": "Clara",
+          "age": 36,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Lutghardis (10562)",
+            "father": "Folpertus (10561)"
+          }
+        },
+        "12988": {
+          "key": 12988,
+          "name": "Reynerus",
+          "age": 48,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Lutghardis (10562)",
+            "father": "Folpertus (10561)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10563
-        ]
+        ],
+        "child": {
+          "birth": [
+            12375,
+            12990
+          ]
+        }
       }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        2,
-        "middle class"
+        1,
+        "lower middle class"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 1,
+      "skin_color": 9,
       "eye_color": "brown",
       "hair_color": "blonde",
       "hair_color_code": 4,
       "hair_type": [
-        "S",
-        "C"
+        "C",
+        "S"
       ],
-      "health": 0.533,
-      "fertility": 0.597,
+      "health": 0.757,
+      "fertility": 0.77,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -82,17 +111,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.533
+            "new_health": 0.757
           },
           "death": false
-        },
-        "1202": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.533
-          },
-          "death": true
         }
       },
       "events": {
@@ -105,8 +126,8 @@
               10562
             ],
             "people names": [
-              "Fays",
-              "Nimme"
+              "Folpertus",
+              "Lutghardis"
             ],
             "label": "spouse",
             "committed": true
@@ -114,38 +135,59 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stWaale straet.se1.c2",
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stWaale straet.se3.c1",
               "street": "Waale straet",
               "neighborhood": "agnesbuurt",
-              "unique id": 250
+              "unique id": 253
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12375,
+            "people": [
+              10562,
+              12373
+            ],
+            "people names": [
+              "Lutghardis",
+              "Clara"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1202": [
+        "1201": [
           {
-            "topic": "feelings change",
-            "target": 10561,
-            "target name": "Fays",
-            "state": "infatuation",
-            "relationship": 10563
+            "topic": "new relationship",
+            "key": 12990,
+            "people": [
+              10562,
+              12988
+            ],
+            "people names": [
+              "Lutghardis",
+              "Reynerus"
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "childbirth"
           }
         ]
       }
     },
     "key": 10562,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stWaale straet.se1.c2",
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stWaale straet.se3.c1",
       "street": "Waale straet",
       "neighborhood": "agnesbuurt",
-      "unique id": 250
+      "unique id": 253
     },
     "relationship status": {
       "taken": true,

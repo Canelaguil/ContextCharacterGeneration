@@ -1,19 +1,19 @@
 {
   "10880": {
     "alive": false,
-    "name": "Hildeburgis",
-    "surname": "Quade",
-    "full name": "Hildeburgis Quade",
+    "name": "Agota",
+    "surname": "Aec",
+    "full name": "Agota Aec",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.923,
-      "romantic interest": 0.999,
-      "sex interest": 0.77,
-      "gender expression": 0.122,
+      "sexuality label": "straight",
+      "sexuality": 0.007,
+      "romantic interest": 0.777,
+      "sex interest": 0.867,
+      "gender expression": 0.069,
       "sex": "f"
     },
-    "age": 24,
-    "birth year": 1184,
+    "age": 53,
+    "birth year": 1165,
     "sex": "f",
     "faction": "Zealots",
     "income class": [
@@ -21,94 +21,58 @@
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.505,
-      "honest-false": 0.401
+      "lawful-chaotic": 0.648,
+      "nice-nasty": 0.366,
+      "honest-false": 0.264
     },
     "attitude": {
-      "outgoing": 0.613,
-      "dream": 0.694
+      "outgoing": 0.482,
+      "dream": 0.479
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": true,
+        "caretaker": false,
         "needs_care": false,
         "flags": [
-          "caretaker",
           "starving"
         ]
       },
       "expression": {
-        "sexuality expression": 0.476,
-        "gender expression expression": 0.035
+        "sexuality expression": 0.004,
+        "gender expression expression": 0.036
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {
-        "12442": {
-          "key": 12442,
-          "name": "Franco Neve",
-          "age": 27,
-          "alive": false,
-          "sex": "m",
-          "parents": {
-            "mother": "Hildeburgis (10880)",
-            "father": "Richolfus (10879)"
-          }
-        },
-        "13049": {
-          "key": 13049,
-          "name": "Ino Neve",
-          "age": 17,
-          "alive": false,
-          "sex": "m",
-          "parents": {
-            "mother": "Hildeburgis (10880)",
-            "father": "Richolfus (10879)"
-          }
-        }
-      },
+      "children": {},
       "relationship keys": {
         "spouse": [
           10881
-        ],
-        "child": {
-          "birth": [
-            12444,
-            13051
-          ]
-        }
+        ]
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 1.087,
-      "all_incomes": [
-        1.087
-      ],
-      "job": {
-        "lawful": true,
-        "honest": true
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 4,
+      "skin_color": 2,
       "eye_color": "brown",
       "hair_color": "blonde",
       "hair_color_code": 4,
       "hair_type": [
-        "C",
-        "C"
+        "S",
+        "S"
       ],
-      "health": 0.701,
-      "fertility": 0.763,
+      "health": 0.0,
+      "fertility": 0.782,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -120,9 +84,33 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.701
+            "new_health": 0.746
           },
           "death": false
+        },
+        "1215": {
+          "health": {
+            "change": true,
+            "value_change": -0.225,
+            "new_health": 0.521
+          },
+          "death": false
+        },
+        "1216": {
+          "health": {
+            "change": true,
+            "value_change": -0.312,
+            "new_health": 0.209
+          },
+          "death": false
+        },
+        "1217": {
+          "health": {
+            "change": true,
+            "value_change": -0.209,
+            "new_health": 0.0
+          },
+          "death": true
         }
       },
       "events": {
@@ -135,8 +123,8 @@
               10880
             ],
             "people names": [
-              "Richolfus Neve",
-              "Hildeburgis Quade"
+              "Woubbrecht",
+              "Agota Aec"
             ],
             "label": "spouse",
             "committed": true
@@ -149,41 +137,25 @@
               "section": "stDie Camp.se7.c2",
               "street": "Die Camp",
               "neighborhood": "kampbuurt",
-              "unique id": 399
+              "unique id": 402
             }
-          },
-          {
-            "topic": "new relationship",
-            "key": 12444,
-            "people": [
-              10880,
-              12442
-            ],
-            "people names": [
-              "Hildeburgis Quade",
-              "Franco Neve"
-            ],
-            "label": "parentchild",
-            "committed": false
           }
         ],
-        "1201": [
+        "1205": [
           {
-            "topic": "new relationship",
-            "key": 13051,
-            "people": [
-              10880,
-              13049
-            ],
-            "people names": [
-              "Hildeburgis Quade",
-              "Ino Neve"
-            ],
-            "label": "parentchild",
-            "committed": false
+            "topic": "event",
+            "event": "plague",
+            "year": 1205
           }
         ],
-        "1203": [
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          }
+        ],
+        "1216": [
           {
             "key": 10881,
             "topic": "unmarried"
@@ -192,51 +164,22 @@
             "topic": "person died",
             "person": {
               "key": 10879,
-              "name": "Richolfus Neve",
-              "age": 37,
+              "name": "Woubbrecht",
+              "age": 57,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
             },
+            "cause": "sickness",
             "label": "spouse"
           },
           {
             "topic": "not enough income",
             "income": 0,
             "inhabitants": []
-          },
-          {
-            "topic": "now caretaker",
-            "care dependants": []
           }
         ],
-        "1204": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1205": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1206": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1207": [
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.087
-          },
+        "1217": [
           {
             "topic": "not enough income",
             "income": 0,
@@ -244,7 +187,7 @@
           },
           {
             "topic": "death",
-            "cause": "starvation"
+            "cause": "sickness"
           }
         ]
       }
@@ -256,7 +199,7 @@
       "section": "stDie Camp.se7.c2",
       "street": "Die Camp",
       "neighborhood": "kampbuurt",
-      "unique id": 399
+      "unique id": 402
     },
     "relationship status": {
       "taken": false,

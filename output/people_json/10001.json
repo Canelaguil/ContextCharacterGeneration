@@ -1,19 +1,19 @@
 {
   "10001": {
     "alive": false,
-    "name": "Sara",
-    "surname": "Croenekin",
-    "full name": "Sara Croenekin",
+    "name": "Ermegardis",
+    "surname": "Regis",
+    "full name": "Ermegardis Regis",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.022,
-      "romantic interest": 0.793,
-      "sex interest": 0.681,
-      "gender expression": 0.0,
+      "sexuality": 0.0,
+      "romantic interest": 0.755,
+      "sex interest": 0.826,
+      "gender expression": 0.098,
       "sex": "f"
     },
-    "age": 25,
-    "birth year": 1178,
+    "age": 34,
+    "birth year": 1173,
     "sex": "f",
     "faction": "Dogmatists",
     "income class": [
@@ -21,39 +21,50 @@
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.78,
+      "lawful-chaotic": 0.376,
       "nice-nasty": 0.0,
-      "honest-false": 0.138
+      "honest-false": 0.58
     },
     "attitude": {
-      "outgoing": 0.633,
-      "dream": 0.47
+      "outgoing": 0.621,
+      "dream": 0.181
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.019,
-        "gender expression expression": -0.001
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.024
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "13457": {
-          "key": 13457,
-          "name": "Bel",
-          "age": 14,
+        "14762": {
+          "key": 14762,
+          "name": "Aghata",
+          "age": 6,
           "alive": false,
-          "sex": "m",
+          "sex": "f",
           "parents": {
-            "mother": "Sara (10001)",
-            "father": "Sollen (10000)"
+            "mother": "Ermegardis (10001)",
+            "father": "Oudrauen (10000)"
+          }
+        },
+        "16044": {
+          "key": 16044,
+          "name": "Truden",
+          "age": 31,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Ermegardis (10001)",
+            "father": "Oudrauen (10000)"
           }
         }
       },
@@ -63,39 +74,32 @@
         ],
         "child": {
           "birth": [
-            13459
+            14764,
+            16046
           ]
         }
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 0.316,
-      "all_incomes": [
-        0.696,
-        0.312,
-        0.316
-      ],
-      "job": {
-        "lawful": true,
-        "honest": false
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 3,
-      "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 9,
+      "eye_color": "blue",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
         "C",
-        "C"
+        "S"
       ],
-      "health": 0.605,
-      "fertility": 0.569,
+      "health": 0.772,
+      "fertility": 0.72,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -107,26 +111,21 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.605
+            "new_health": 0.772
           },
           "death": false
         },
-        "1202": {
+        "1206": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.605
+            "new_health": 0.772
           },
           "death": true
         }
       },
       "events": {
         "1200": [
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.696
-          },
           {
             "topic": "new relationship",
             "key": 10002,
@@ -135,8 +134,8 @@
               10001
             ],
             "people names": [
-              "Sollen Maerke",
-              "Sara Croenekin"
+              "Oudrauen",
+              "Ermegardis Regis"
             ],
             "label": "spouse",
             "committed": true
@@ -149,33 +148,44 @@
               "section": "stUterechse straet.se1.c2",
               "street": "Uterechse straet",
               "neighborhood": "varkensbuurt",
-              "unique id": 2
+              "unique id": 1
             }
           }
         ],
-        "1201": [
-          {
-            "topic": "job notice",
-            "notice": "earning very little",
-            "income": 0.312
-          }
-        ],
-        "1202": [
-          {
-            "topic": "job notice",
-            "notice": "earning very little",
-            "income": 0.316
-          },
+        "1204": [
           {
             "topic": "new relationship",
-            "key": 13459,
+            "key": 14764,
             "people": [
               10001,
-              13457
+              14762
             ],
             "people names": [
-              "Sara Croenekin",
-              "Bel"
+              "Ermegardis Regis",
+              "Aghata"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1205": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1205
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 16046,
+            "people": [
+              10001,
+              16044
+            ],
+            "people names": [
+              "Ermegardis Regis",
+              "Truden"
             ],
             "label": "parentchild",
             "committed": false
@@ -194,7 +204,7 @@
       "section": "stUterechse straet.se1.c2",
       "street": "Uterechse straet",
       "neighborhood": "varkensbuurt",
-      "unique id": 2
+      "unique id": 1
     },
     "relationship status": {
       "taken": true,

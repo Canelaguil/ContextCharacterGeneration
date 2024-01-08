@@ -1,33 +1,33 @@
 {
   "24071": {
-    "alive": true,
-    "name": "Sipper",
-    "surname": "van Geykonis",
-    "full name": "Sipper van Geykonis",
+    "alive": false,
+    "name": "Nannen",
+    "surname": "",
+    "full name": "Nannen",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.033,
-      "romantic interest": 0.802,
-      "sex interest": 0.514,
-      "gender expression": 0.0,
+      "sexuality": 0.0,
+      "romantic interest": 0.86,
+      "sex interest": 0.704,
+      "gender expression": 0.097,
       "sex": "f"
     },
-    "age": 19,
-    "birth year": 1230,
+    "age": 17,
+    "birth year": 1227,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
-      2,
-      "middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.413,
-      "nice-nasty": 0.381,
-      "honest-false": 0.803
+      "lawful-chaotic": 0.16,
+      "nice-nasty": 0.244,
+      "honest-false": 0.632
     },
     "attitude": {
-      "outgoing": 0.27,
-      "dream": 0.518
+      "outgoing": 0.465,
+      "dream": 0.429
     },
     "homsoc": {
       "means": {
@@ -36,18 +36,19 @@
         "caretaker": true,
         "needs_care": false,
         "flags": [
-          "neglected"
+          "neglected",
+          "starving"
         ]
       },
       "expression": {
-        "sexuality expression": 0.016,
-        "gender expression expression": -0.001
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.053
       }
     },
     "network": {
       "parents": {
-        "mother": "Sywi (14641)",
-        "father": "Geykonis (14067)"
+        "mother": "Hilduardis (18274)",
+        "father": "Vroeden (17278)"
       },
       "children": {},
       "relationship keys": {
@@ -55,35 +56,37 @@
           24072,
           24073
         ],
-        "sibling": [
-          25468,
-          26615
+        "half-sibling": [
+          26593,
+          27517,
+          28651,
+          30923
         ],
         "spouse": [
-          30080
+          30951
         ]
       }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        2,
-        "middle class"
+        1,
+        "lower middle class"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 5,
-      "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 2,
+      "eye_color": "blue",
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
       "hair_type": [
-        "C",
+        "S",
         "C"
       ],
-      "health": 0.015,
-      "fertility": 0.546,
+      "health": 0.714,
+      "fertility": 0.694,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -91,67 +94,85 @@
     },
     "memory": {
       "health": {
-        "1231": {
+        "1228": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.579
+            "new_health": 0.714
           },
           "death": false
         },
-        "1237": {
-          "health": {
-            "change": true,
-            "value_change": -0.273,
-            "new_health": 0.306
-          },
-          "death": false
-        },
-        "1238": {
+        "1244": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.306
+            "new_health": 0.714
           },
-          "death": false
-        },
-        "1240": {
-          "health": {
-            "change": true,
-            "value_change": -0.25,
-            "new_health": 0.056
-          },
-          "death": false
-        },
-        "1241": {
-          "health": {
-            "change": true,
-            "value_change": -0.041,
-            "new_health": 0.015
-          },
-          "death": false
-        },
-        "1242": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.015
-          },
-          "death": false
+          "death": true
         }
       },
       "events": {
-        "1230": [
+        "1227": [
           {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stCromme straet.se5.c2",
-              "street": "Cromme straet",
-              "neighborhood": "denhof",
-              "unique id": 887
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stSlyck straet.se1.c1",
+              "street": "Slyck straet",
+              "neighborhood": "varkensbuurt",
+              "unique id": 42
             }
+          }
+        ],
+        "1228": [
+          {
+            "topic": "not enough income",
+            "income": 0.437,
+            "inhabitants": []
+          }
+        ],
+        "1230": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 17278,
+              "name": "Vroeden",
+              "age": 21,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Verthwi (10100)",
+                "father": "Yoel (10099)"
+              }
+            },
+            "cause": "illness",
+            "label": "parent"
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1231": [
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stTuytsteeg.se1.c1",
+              "street": "Tuytsteeg",
+              "neighborhood": "agnesbuurt",
+              "unique id": 324
+            }
+          },
+          {
+            "topic": "neglected"
+          },
+          {
+            "topic": "update",
+            "update": "parent married",
+            "parent": 18274,
+            "new partner": 20060
           }
         ],
         "1232": [
@@ -159,38 +180,112 @@
             "topic": "event",
             "event": "war",
             "year": 1232
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1233": [
+          {
+            "topic": "neglected"
+          },
+          {
+            "topic": "new relationship",
+            "key": 26593,
+            "people": [
+              24071,
+              26523
+            ],
+            "people names": [
+              "Nannen",
+              "Esa Burne"
+            ],
+            "label": "half-sibling",
+            "committed": false
           }
         ],
         "1234": [
           {
+            "topic": "neglected"
+          }
+        ],
+        "1235": [
+          {
+            "topic": "neglected"
+          },
+          {
             "topic": "new relationship",
-            "key": 25468,
+            "key": 27517,
             "people": [
               24071,
-              25465
+              27443
             ],
             "people names": [
-              "Sipper van Geykonis",
-              "Bartrarde"
+              "Nannen",
+              "Gloria Burne"
             ],
-            "label": "sibling",
+            "label": "half-sibling",
             "committed": false
+          }
+        ],
+        "1236": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1236
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1237": [
           {
+            "topic": "person died",
+            "person": {
+              "key": 26523,
+              "name": "Esa Burne",
+              "age": 3,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Hilduardis (18274)",
+                "father": "Heideric (20060)"
+              }
+            },
+            "cause": "plague",
+            "label": "half-sibling"
+          },
+          {
+            "topic": "neglected"
+          },
+          {
             "topic": "new relationship",
-            "key": 26615,
+            "key": 28651,
             "people": [
               24071,
-              26612
+              28510
             ],
             "people names": [
-              "Sipper van Geykonis",
-              "Otto Geykonisszoon"
+              "Nannen",
+              "Beatrice Burne"
             ],
-            "label": "sibling",
+            "label": "half-sibling",
             "committed": false
+          }
+        ],
+        "1238": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1239": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1240": [
+          {
+            "topic": "neglected"
           }
         ],
         "1241": [
@@ -201,68 +296,64 @@
         "1242": [
           {
             "topic": "neglected"
+          },
+          {
+            "topic": "new relationship",
+            "key": 30923,
+            "people": [
+              24071,
+              30711
+            ],
+            "people names": [
+              "Nannen",
+              "Heinkin Burne"
+            ],
+            "label": "half-sibling",
+            "committed": false
           }
         ],
         "1243": [
           {
-            "topic": "neglected"
+            "topic": "new relationship",
+            "key": 30951,
+            "people": [
+              24046,
+              24071
+            ],
+            "people names": [
+              "Gobel Maerke",
+              "Nannen"
+            ],
+            "label": "spouse",
+            "committed": true
           }
         ],
         "1244": [
           {
-            "topic": "neglected"
-          }
-        ],
-        "1245": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1247": [
-          {
-            "topic": "new relationship",
-            "key": 30080,
-            "people": [
-              24242,
-              24071
-            ],
-            "people names": [
-              "Stemaers Cnif",
-              "Sipper van Geykonis"
-            ],
-            "label": "spouse",
-            "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stVerckens merct.se5.c2",
-              "street": "Verckens merct",
-              "neighborhood": "varkensbuurt",
-              "unique id": 34
-            }
+            "topic": "death",
+            "cause": "illness"
           }
         ]
       }
     },
     "key": 24071,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stVerckens merct.se5.c2",
-      "street": "Verckens merct",
-      "neighborhood": "varkensbuurt",
-      "unique id": 34
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stTuytsteeg.se1.c1",
+      "street": "Tuytsteeg",
+      "neighborhood": "agnesbuurt",
+      "unique id": 324
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        25468,
-        26615,
-        30080
+        26593,
+        27517,
+        28651,
+        30923,
+        30951
       ]
     }
   }

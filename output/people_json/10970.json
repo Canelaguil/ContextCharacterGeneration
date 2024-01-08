@@ -1,54 +1,87 @@
 {
   "10970": {
     "alive": false,
-    "name": "Agnes",
-    "surname": "",
-    "full name": "Agnes",
+    "name": "Clementia",
+    "surname": "Scamel",
+    "full name": "Clementia Scamel",
     "born this way": {
       "sexuality label": "gay",
-      "sexuality": 0.822,
-      "romantic interest": 0.621,
-      "sex interest": 0.475,
-      "gender expression": 0.092,
+      "sexuality": 0.904,
+      "romantic interest": 0.376,
+      "sex interest": 0.648,
+      "gender expression": 0.422,
       "sex": "f"
     },
-    "age": 29,
-    "birth year": 1172,
+    "age": 40,
+    "birth year": 1173,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "Dogmatists",
     "income class": [
       0,
       "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.296,
-      "honest-false": 0.578
+      "lawful-chaotic": 0.89,
+      "nice-nasty": 0.589,
+      "honest-false": 0.999
     },
     "attitude": {
-      "outgoing": 0.474,
-      "dream": 0.399
+      "outgoing": 0.0,
+      "dream": 0.321
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving",
+          "caretaker"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.572,
-        "gender expression expression": 0.018
+        "sexuality expression": 0.561,
+        "gender expression expression": 0.22
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13700": {
+          "key": 13700,
+          "name": "Lenildis Hanen",
+          "age": 14,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Clementia (10970)",
+            "father": "Hornekinga (10969)"
+          }
+        },
+        "14356": {
+          "key": 14356,
+          "name": "Gheesen Hanen",
+          "age": 7,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Clementia (10970)",
+            "father": "Hornekinga (10969)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          10971
-        ]
+          10971,
+          19553
+        ],
+        "child": {
+          "birth": [
+            13702,
+            14358
+          ]
+        }
       }
     },
     "occupation": {
@@ -61,16 +94,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 9,
-      "eye_color": "blue",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 7,
+      "eye_color": "brown",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
         "C",
-        "C"
+        "S"
       ],
-      "health": 0.529,
-      "fertility": 0.619,
+      "health": 0.738,
+      "fertility": 0.697,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -82,9 +115,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.529
+            "new_health": 0.738
           },
-          "death": true
+          "death": false
         }
       },
       "events": {
@@ -97,8 +130,8 @@
               10970
             ],
             "people names": [
-              "Ivone Wittebart",
-              "Agnes"
+              "Hornekinga Hanen",
+              "Clementia Scamel"
             ],
             "label": "spouse",
             "committed": true
@@ -111,30 +144,210 @@
               "section": "stDie Coninc straet.se1.c0",
               "street": "Die Coninc straet",
               "neighborhood": "kampbuurt",
-              "unique id": 440
+              "unique id": 448
+            }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "not enough income",
+            "income": 0.013,
+            "inhabitants": []
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 13702,
+            "people": [
+              10970,
+              13700
+            ],
+            "people names": [
+              "Clementia Scamel",
+              "Lenildis Hanen"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.022,
+            "inhabitants": []
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 14358,
+            "people": [
+              10970,
+              14356
+            ],
+            "people names": [
+              "Clementia Scamel",
+              "Gheesen Hanen"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1204": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "key": 10971,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10969,
+              "name": "Hornekinga Hanen",
+              "age": 47,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "spouse"
+          },
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1205
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 14356,
+              "name": "Gheesen Hanen",
+              "age": 7,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Clementia (10970)",
+                "father": "Hornekinga (10969)"
+              }
+            },
+            "cause": "starvation",
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "new relationship",
+            "key": 19553,
+            "people": [
+              12187,
+              10970
+            ],
+            "people names": [
+              "Otger Olipot",
+              "Clementia Scamel"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stKerckstraet.se1.c1",
+              "street": "Kerckstraet",
+              "neighborhood": "denhof",
+              "unique id": 984
             }
           },
           {
+            "topic": "not enough income",
+            "income": 0.979,
+            "inhabitants": []
+          },
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "starvation"
           }
         ]
       }
     },
     "key": 10970,
     "home": {
-      "income class": 0,
-      "income class label": "working class",
-      "section": "stDie Coninc straet.se1.c0",
-      "street": "Die Coninc straet",
-      "neighborhood": "kampbuurt",
-      "unique id": 440
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stKerckstraet.se1.c1",
+      "street": "Kerckstraet",
+      "neighborhood": "denhof",
+      "unique id": 984
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        10971
+        10971,
+        19553
       ]
     }
   }

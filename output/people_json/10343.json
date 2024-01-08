@@ -1,56 +1,86 @@
 {
   "10343": {
     "alive": false,
-    "name": "Marie",
-    "surname": "",
-    "full name": "Marie",
+    "name": "Riet",
+    "surname": "Crul",
+    "full name": "Riet Crul",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.051,
-      "romantic interest": 0.541,
-      "sex interest": 0.908,
-      "gender expression": 0.242,
+      "sexuality": 0.0,
+      "romantic interest": 0.517,
+      "sex interest": 0.715,
+      "gender expression": 0.052,
       "sex": "f"
     },
-    "age": 51,
-    "birth year": 1166,
+    "age": 27,
+    "birth year": 1178,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "Dogmatists",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.313,
-      "nice-nasty": 0.921,
-      "honest-false": -0.0
+      "lawful-chaotic": 0.457,
+      "nice-nasty": 0.513,
+      "honest-false": 0.589
     },
     "attitude": {
-      "outgoing": 0.281,
-      "dream": 0.579
+      "outgoing": 0.437,
+      "dream": 0.261
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
         "flags": [
-          "starving"
+          "starving",
+          "caretaker"
         ]
       },
       "expression": {
-        "sexuality expression": 0.026,
-        "gender expression expression": 0.101
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.026
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12316": {
+          "key": 12316,
+          "name": "Truden van Riet",
+          "age": 2,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Riet (10343)",
+            "father": "Herbert (10342)"
+          }
+        },
+        "12911": {
+          "key": 12911,
+          "name": "Rodolf Herbertszoon",
+          "age": 11,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Riet (10343)",
+            "father": "Herbert (10342)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10344
-        ]
+        ],
+        "child": {
+          "birth": [
+            12318,
+            12913
+          ]
+        }
       }
     },
     "occupation": {
@@ -63,16 +93,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 2,
-      "eye_color": "brown",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "skin_color": 9,
+      "eye_color": "green",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "S",
         "C"
       ],
-      "health": 0.369,
-      "fertility": 0.681,
+      "health": 0.581,
+      "fertility": 0.575,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -84,15 +114,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.641
+            "new_health": 0.581
           },
           "death": false
         },
-        "1216": {
+        "1204": {
           "health": {
-            "change": true,
-            "value_change": -0.272,
-            "new_health": 0.369
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.581
           },
           "death": true
         }
@@ -107,8 +137,8 @@
               10343
             ],
             "people names": [
-              "Bartrarde Baligant",
-              "Marie"
+              "Herbert",
+              "Riet Crul"
             ],
             "label": "spouse",
             "committed": true
@@ -121,11 +151,41 @@
               "section": "stMuelen straet.se1.c1",
               "street": "Muelen straet",
               "neighborhood": "jorisbuurt",
-              "unique id": 151
+              "unique id": 154
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12318,
+            "people": [
+              10343,
+              12316
+            ],
+            "people names": [
+              "Riet Crul",
+              "Truden van Riet"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1207": [
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 12913,
+            "people": [
+              10343,
+              12911
+            ],
+            "people names": [
+              "Riet Crul",
+              "Rodolf Herbertszoon"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1202": [
           {
             "key": 10344,
             "topic": "unmarried"
@@ -134,74 +194,41 @@
             "topic": "person died",
             "person": {
               "key": 10342,
-              "name": "Bartrarde Baligant",
-              "age": 53,
+              "name": "Herbert",
+              "age": 39,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
             },
+            "cause": "illness",
             "label": "spouse"
           },
           {
             "topic": "not enough income",
             "income": 0,
             "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
           }
         ],
-        "1208": [
+        "1203": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1209": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1210": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1211": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1212": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1213": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1214": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1215": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1215
+            "topic": "person died",
+            "person": {
+              "key": 12316,
+              "name": "Truden van Riet",
+              "age": 2,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Riet (10343)",
+                "father": "Herbert (10342)"
+              }
+            },
+            "cause": "starvation",
+            "label": "child"
           },
           {
             "topic": "not enough income",
@@ -209,12 +236,7 @@
             "inhabitants": []
           }
         ],
-        "1216": [
-          {
-            "topic": "event",
-            "event": "war",
-            "year": 1216
-          },
+        "1204": [
           {
             "topic": "not enough income",
             "income": 0,
@@ -222,7 +244,7 @@
           },
           {
             "topic": "death",
-            "cause": "old age"
+            "cause": "starvation"
           }
         ]
       }
@@ -234,7 +256,7 @@
       "section": "stMuelen straet.se1.c1",
       "street": "Muelen straet",
       "neighborhood": "jorisbuurt",
-      "unique id": 151
+      "unique id": 154
     },
     "relationship status": {
       "taken": false,

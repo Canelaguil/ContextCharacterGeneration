@@ -1,33 +1,33 @@
 {
   "10304": {
     "alive": false,
-    "name": "Oderada",
-    "surname": "",
-    "full name": "Oderada",
+    "name": "Ghoudekinen",
+    "surname": "Baers",
+    "full name": "Ghoudekinen Baers",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.054,
-      "romantic interest": 0.577,
-      "sex interest": 0.652,
-      "gender expression": 0.075,
+      "sexuality": 0.021,
+      "romantic interest": 0.684,
+      "sex interest": 0.551,
+      "gender expression": 0.224,
       "sex": "f"
     },
-    "age": 32,
-    "birth year": 1184,
+    "age": 44,
+    "birth year": 1169,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "No religion",
     "income class": [
-      1,
-      "lower middle class"
+      0,
+      "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.156,
-      "nice-nasty": 0.27,
-      "honest-false": 0.824
+      "lawful-chaotic": 0.937,
+      "nice-nasty": 0.536,
+      "honest-false": 0.932
     },
     "attitude": {
-      "outgoing": 0.367,
-      "dream": 0.499
+      "outgoing": 0.662,
+      "dream": 0.232
     },
     "homsoc": {
       "means": {
@@ -40,51 +40,80 @@
         ]
       },
       "expression": {
-        "sexuality expression": 0.043,
-        "gender expression expression": 0.021
+        "sexuality expression": 0.008,
+        "gender expression expression": 0.081
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12307": {
+          "key": 12307,
+          "name": "Herardus Sluke",
+          "age": 30,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Ghoudekinen (10304)",
+            "father": "Gherbaren (10303)"
+          }
+        },
+        "12888": {
+          "key": 12888,
+          "name": "Didderic Sluke",
+          "age": 48,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Ghoudekinen (10304)",
+            "father": "Gherbaren (10303)"
+          }
+        },
+        "15481": {
+          "key": 15481,
+          "name": "Ydier Sluke",
+          "age": 10,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Ghoudekinen (10304)",
+            "father": "Gherbaren (10303)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          10305,
-          19680
-        ]
+          10305
+        ],
+        "child": {
+          "birth": [
+            12309,
+            12890,
+            15483
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
-        1,
-        "lower middle class"
+        0,
+        "working class"
       ],
-      "income": 1.368,
-      "all_incomes": [
-        1.154,
-        1.064,
-        1.25,
-        1.376,
-        1.192,
-        1.368
-      ],
-      "job": {
-        "lawful": false,
-        "honest": true
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 3,
-      "eye_color": "green",
+      "skin_color": 8,
+      "eye_color": "blue",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
         "C",
         "C"
       ],
-      "health": 0.683,
-      "fertility": 0.588,
+      "health": 0.836,
+      "fertility": 0.758,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -96,7 +125,7 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.683
+            "new_health": 0.836
           },
           "death": false
         }
@@ -111,8 +140,8 @@
               10304
             ],
             "people names": [
-              "Valken",
-              "Oderada"
+              "Gherbaren Sluke",
+              "Ghoudekinen Baers"
             ],
             "label": "spouse",
             "committed": true
@@ -120,151 +149,224 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stHelle voet.se9.c1",
-              "street": "Helle voet",
+              "income class": 0,
+              "income class label": "working class",
+              "section": "stSt. Joris straet.se1.c0",
+              "street": "St. Joris straet",
               "neighborhood": "jorisbuurt",
-              "unique id": 133
+              "unique id": 137
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12309,
+            "people": [
+              10304,
+              12307
+            ],
+            "people names": [
+              "Ghoudekinen Baers",
+              "Herardus Sluke"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1204": [
+        "1201": [
           {
-            "topic": "feelings change",
-            "target": 10303,
-            "target name": "Valken",
-            "state": "infatuation",
-            "relationship": 10305
+            "topic": "new relationship",
+            "key": 12890,
+            "people": [
+              10304,
+              12888
+            ],
+            "people names": [
+              "Ghoudekinen Baers",
+              "Didderic Sluke"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1205": [
           {
-            "key": 10305,
-            "topic": "unmarried"
+            "topic": "event",
+            "event": "plague",
+            "year": 1205
           },
           {
-            "topic": "person died",
-            "person": {
-              "key": 10303,
-              "name": "Valken",
-              "age": 31,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "label": "spouse"
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1206": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "new relationship",
+            "key": 15483,
+            "people": [
+              10304,
+              15481
+            ],
+            "people names": [
+              "Ghoudekinen Baers",
+              "Ydier Sluke"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1207": [
           {
             "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "income": 0.899,
+            "inhabitants": [
+              12888,
+              23129,
+              24322,
+              25464,
+              24484,
+              24854,
+              23780,
+              31681,
+              14399,
+              25997,
+              24722,
+              32699,
+              33004,
+              33109,
+              33372
+            ]
           }
         ],
         "1208": [
           {
             "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "income": 1.017,
+            "inhabitants": [
+              12888,
+              23129,
+              24322,
+              25464,
+              24484,
+              24854,
+              23780,
+              31681,
+              14399,
+              25997,
+              24722,
+              32699,
+              33004,
+              33109,
+              33372
+            ]
           }
         ],
         "1209": [
           {
             "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "income": 0.899,
+            "inhabitants": [
+              12888,
+              23129,
+              24322,
+              25464,
+              24484,
+              24854,
+              23780,
+              31681,
+              14399,
+              25997,
+              24722,
+              32699,
+              33004,
+              33109,
+              33372
+            ]
           }
         ],
         "1210": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.154
-          },
+            "topic": "not enough income",
+            "income": 0.51,
+            "inhabitants": [
+              12888,
+              23129,
+              24322,
+              25464,
+              24484,
+              24854,
+              23780,
+              31681,
+              14399,
+              25997,
+              24722,
+              32699,
+              33004,
+              33109,
+              33372
+            ]
+          }
+        ],
+        "1211": [
           {
             "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "income": 0.805,
+            "inhabitants": [
+              12888,
+              23129,
+              24322,
+              25464,
+              24484,
+              24854,
+              23780,
+              31681,
+              14399,
+              25997,
+              24722,
+              32699,
+              33004,
+              33109,
+              33372
+            ]
           }
         ],
-        "1213": [
+        "1212": [
           {
-            "topic": "new relationship",
-            "key": 19680,
-            "people": [
-              10915,
-              10304
-            ],
-            "people names": [
-              "Florens Crick",
-              "Oderada"
-            ],
-            "label": "spouse",
-            "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stWalker straet.se7.c1",
-              "street": "Walker straet",
-              "neighborhood": "agnesbuurt",
-              "unique id": 275
-            }
-          }
-        ],
-        "1214": [
-          {
-            "topic": "feelings change",
-            "target": 10915,
-            "target name": "Florens Crick",
-            "state": "out of love",
-            "relationship": 19680
-          }
-        ],
-        "1215": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1215
+            "topic": "not enough income",
+            "income": 0.589,
+            "inhabitants": [
+              12888,
+              23129,
+              24322,
+              25464,
+              24484,
+              24854,
+              23780,
+              31681,
+              14399,
+              25997,
+              24722,
+              32699,
+              33004,
+              33109,
+              33372
+            ]
           },
           {
             "topic": "death",
-            "cause": "plague"
+            "cause": "starvation"
           }
         ]
       }
     },
     "key": 10304,
     "home": {
-      "income class": 1,
-      "income class label": "lower middle class",
-      "section": "stWalker straet.se7.c1",
-      "street": "Walker straet",
-      "neighborhood": "agnesbuurt",
-      "unique id": 275
+      "income class": 0,
+      "income class label": "working class",
+      "section": "stSt. Joris straet.se1.c0",
+      "street": "St. Joris straet",
+      "neighborhood": "jorisbuurt",
+      "unique id": 137
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        10305,
-        19680
+        10305
       ]
     }
   }

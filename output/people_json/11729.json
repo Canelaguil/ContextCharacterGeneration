@@ -1,78 +1,120 @@
 {
   "11729": {
     "alive": false,
-    "name": "Katerina",
-    "surname": "Olipot",
-    "full name": "Katerina Olipot",
+    "name": "Ermerut",
+    "surname": "Steenard",
+    "full name": "Ermerut Steenard",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.105,
-      "romantic interest": 0.265,
-      "sex interest": 0.624,
-      "gender expression": 0.052,
+      "sexuality": 0.018,
+      "romantic interest": 0.762,
+      "sex interest": 0.905,
+      "gender expression": 0.0,
       "sex": "f"
     },
-    "age": 37,
-    "birth year": 1177,
+    "age": 36,
+    "birth year": 1175,
     "sex": "f",
     "faction": "No religion",
     "income class": [
-      4,
-      "nobility"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.642,
-      "nice-nasty": 0.517,
-      "honest-false": 0.752
+      "lawful-chaotic": 0.499,
+      "nice-nasty": 0.46,
+      "honest-false": 0.329
     },
     "attitude": {
-      "outgoing": 0.65,
-      "dream": 0.54
+      "outgoing": 0.842,
+      "dream": 0.347
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
         "flags": [
-          "starving"
+          "starving",
+          "caretaker"
         ]
       },
       "expression": {
-        "sexuality expression": 0.067,
-        "gender expression expression": 0.017
+        "sexuality expression": 0.009,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14598": {
+          "key": 14598,
+          "name": "Cecilia Scelwart",
+          "age": 1,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Ermerut (11729)",
+            "father": "Havix (11728)"
+          }
+        },
+        "18267": {
+          "key": 18267,
+          "name": "Michiel Crulleken",
+          "age": 14,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Ermerut (11729)",
+            "father": "Wilbord (11047)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          11730
-        ]
+          11730,
+          16024
+        ],
+        "child": {
+          "birth": [
+            14600,
+            18269
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        4,
-        "nobility"
+        1,
+        "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.032,
+      "all_incomes": [
+        1.0,
+        0.978,
+        0.96,
+        1.01,
+        1.155,
+        1.032
+      ],
+      "job": {
+        "lawful": true,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 8,
+      "skin_color": 6,
       "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
       "hair_type": [
         "C",
-        "S"
+        "C"
       ],
-      "health": 0.66,
-      "fertility": 0.549,
+      "health": 0.812,
+      "fertility": 0.768,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -84,9 +126,17 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.66
+            "new_health": 0.812
           },
           "death": false
+        },
+        "1210": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.812
+          },
+          "death": true
         }
       },
       "events": {
@@ -99,8 +149,8 @@
               11729
             ],
             "people names": [
-              "Geldmaro",
-              "Katerina Olipot"
+              "Havix Scelwart",
+              "Ermerut Steenard"
             ],
             "label": "spouse",
             "committed": true
@@ -108,65 +158,166 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 4,
-              "income class label": "nobility",
-              "section": "stMuurhuysen2.se1.c4",
-              "street": "Muurhuysen2",
-              "neighborhood": "cingelnoord",
-              "unique id": 792
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stStoof straet.se1.c1",
+              "street": "Stoof straet",
+              "neighborhood": "visbuurt",
+              "unique id": 777
             }
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 14600,
+            "people": [
+              11729,
+              14598
+            ],
+            "people names": [
+              "Ermerut Steenard",
+              "Cecilia Scelwart"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.301,
+            "inhabitants": []
           }
         ],
         "1204": [
           {
-            "topic": "feelings change",
-            "target": 11728,
-            "target name": "Geldmaro",
-            "state": "out of love",
-            "relationship": 11730
-          }
-        ],
-        "1211": [
+            "key": 11730,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11728,
+              "name": "Havix Scelwart",
+              "age": 53,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "starvation",
+            "label": "spouse"
+          },
           {
             "topic": "not enough income",
-            "income": 0.022,
-            "inhabitants": []
-          }
-        ],
-        "1212": [
-          {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
-          }
-        ],
-        "1213": [
-          {
-            "topic": "not enough income",
-            "income": 0.0,
+            "income": 0,
             "inhabitants": []
           },
           {
+            "topic": "now caretaker",
+            "care dependants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.0
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 14598,
+              "name": "Cecilia Scelwart",
+              "age": 1,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Ermerut (11729)",
+                "father": "Havix (11728)"
+              }
+            },
+            "cause": "starvation",
+            "label": "child"
+          },
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1205
+          },
+          {
+            "topic": "new relationship",
+            "key": 16024,
+            "people": [
+              11047,
+              11729
+            ],
+            "people names": [
+              "Wilbord Crulleken",
+              "Ermerut Steenard"
+            ],
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1208": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.01
+          },
+          {
+            "topic": "feelings change",
+            "target": 11047,
+            "target name": "Wilbord Crulleken",
+            "state": "out of love",
+            "relationship": 16024
+          }
+        ],
+        "1209": [
+          {
+            "topic": "new relationship",
+            "key": 18269,
+            "people": [
+              11729,
+              18267
+            ],
+            "people names": [
+              "Ermerut Steenard",
+              "Michiel Crulleken"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1210": [
+          {
+            "topic": "feelings change",
+            "target": 11047,
+            "target name": "Wilbord Crulleken",
+            "state": "infatuation",
+            "relationship": 16024
+          },
+          {
             "topic": "death",
-            "cause": "starvation"
+            "cause": "illness"
           }
         ]
       }
     },
     "key": 11729,
     "home": {
-      "income class": 4,
-      "income class label": "nobility",
-      "section": "stMuurhuysen2.se1.c4",
-      "street": "Muurhuysen2",
-      "neighborhood": "cingelnoord",
-      "unique id": 792
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stStoof straet.se1.c1",
+      "street": "Stoof straet",
+      "neighborhood": "visbuurt",
+      "unique id": 777
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        11730
+        11730,
+        16024
       ]
     }
   }

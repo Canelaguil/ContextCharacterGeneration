@@ -1,53 +1,54 @@
 {
   "29064": {
-    "alive": false,
-    "name": "Sanse",
-    "surname": "van Clais",
-    "full name": "Sanse van Clais",
+    "alive": true,
+    "name": "Imsoete",
+    "surname": "Kriec",
+    "full name": "Imsoete Kriec",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.046,
-      "romantic interest": 0.619,
-      "sex interest": 0.999,
-      "gender expression": 0.18,
-      "sex": "m"
+      "sexuality": 0.047,
+      "romantic interest": 0.655,
+      "sex interest": 0.925,
+      "gender expression": 0.074,
+      "sex": "f"
     },
-    "age": 1,
-    "birth year": 1243,
-    "sex": "m",
+    "age": 11,
+    "birth year": 1238,
+    "sex": "f",
     "faction": "No religion",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.393,
-      "nice-nasty": 0.284,
-      "honest-false": 0.218
+      "lawful-chaotic": 0.701,
+      "nice-nasty": 0.262,
+      "honest-false": 0.776
     },
     "attitude": {
-      "outgoing": 0.059,
-      "dream": 0.805
+      "outgoing": 0.251,
+      "dream": 0.243
     },
     "homsoc": {
       "means": {
         "independent": false,
-        "taken_care_of": false,
+        "taken_care_of": true,
         "caretaker": true,
         "needs_care": true,
         "flags": [
-          "neglected"
+          "neglected",
+          "starving"
         ]
       },
       "expression": {
-        "sexuality expression": 0.027,
-        "gender expression expression": 0.042
+        "sexuality expression": 0.024,
+        "gender expression expression": 0.037
       }
     },
     "network": {
       "parents": {
-        "mother": "Trame (21585)",
-        "father": "Clais (21770)"
+        "mother": "Liedelde (20765)",
+        "father": "Kerstiaen (19799)"
       },
       "children": {},
       "relationship keys": {
@@ -56,7 +57,7 @@
           29066
         ],
         "sibling": [
-          29364
+          31512
         ]
       }
     },
@@ -70,16 +71,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 1,
+      "skin_color": 2,
       "eye_color": "brown",
       "hair_color": "brown",
       "hair_color_code": 2,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.778,
-      "fertility": 0.832,
+      "health": 0.337,
+      "fertility": 0.772,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -87,50 +88,142 @@
     },
     "memory": {
       "health": {
-        "1244": {
+        "1239": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.778
+            "new_health": 0.763
           },
-          "death": true
+          "death": false
+        },
+        "1247": {
+          "health": {
+            "change": true,
+            "value_change": -0.267,
+            "new_health": 0.496
+          },
+          "death": false
+        },
+        "1248": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.496
+          },
+          "death": false
+        },
+        "1249": {
+          "health": {
+            "change": true,
+            "value_change": -0.159,
+            "new_health": 0.337
+          },
+          "death": false
         }
       },
       "events": {
-        "1243": [
+        "1238": [
           {
             "topic": "new home",
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stBloemendaelse straet.se1.c2",
-              "street": "Bloemendaelse straet",
-              "neighborhood": "agnesbuurt",
-              "unique id": 212
+              "section": "stDie lange straet3.se1.c2",
+              "street": "Die lange straet3",
+              "neighborhood": "visbuurt",
+              "unique id": 676
             }
+          }
+        ],
+        "1239": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1240": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1241": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1242": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1243": [
+          {
+            "topic": "neglected"
           }
         ],
         "1244": [
           {
             "topic": "new relationship",
-            "key": 29364,
+            "key": 31512,
             "people": [
               29064,
-              29361
+              31509
             ],
             "people names": [
-              "Sanse van Clais",
-              "Reymodis Claissdochter"
+              "Imsoete Kriec",
+              "Atghardis Kriec"
             ],
             "label": "sibling",
             "committed": false
           },
           {
             "topic": "neglected"
+          }
+        ],
+        "1245": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1246": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 19799,
+              "name": "Kerstiaen Kriec",
+              "age": 32,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Esa (11495)",
+                "father": "Stephanus (11494)"
+              }
+            },
+            "cause": "illness",
+            "label": "parent"
           },
           {
-            "topic": "death",
-            "cause": "childhood illness"
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              20765,
+              29064,
+              31509
+            ]
+          },
+          {
+            "topic": "new caretaker",
+            "person": 20765
+          }
+        ],
+        "1247": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              20765,
+              29064,
+              31509
+            ]
           }
         ]
       }
@@ -139,16 +232,16 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stBloemendaelse straet.se1.c2",
-      "street": "Bloemendaelse straet",
-      "neighborhood": "agnesbuurt",
-      "unique id": 212
+      "section": "stDie lange straet3.se1.c2",
+      "street": "Die lange straet3",
+      "neighborhood": "visbuurt",
+      "unique id": 676
     },
     "relationship status": {
       "taken": false,
       "married": false,
       "relationships": [
-        29364
+        31512
       ]
     }
   }

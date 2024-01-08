@@ -1,59 +1,73 @@
 {
   "10106": {
     "alive": false,
-    "name": "Euffemia",
-    "surname": "Borluet",
-    "full name": "Euffemia Borluet",
+    "name": "Nimme",
+    "surname": "Bier",
+    "full name": "Nimme Bier",
     "born this way": {
       "sexuality label": "straight",
       "sexuality": 0.0,
-      "romantic interest": 0.736,
-      "sex interest": 0.694,
-      "gender expression": 0.0,
+      "romantic interest": 0.744,
+      "sex interest": 0.582,
+      "gender expression": 0.179,
       "sex": "f"
     },
-    "age": 25,
-    "birth year": 1176,
+    "age": 42,
+    "birth year": 1167,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.419,
-      "nice-nasty": 0.332,
-      "honest-false": 0.35
+      "lawful-chaotic": 0.771,
+      "nice-nasty": 0.966,
+      "honest-false": 0.548
     },
     "attitude": {
-      "outgoing": 0.583,
-      "dream": 0.323
+      "outgoing": 0.38,
+      "dream": 0.502
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving",
+          "caretaker"
+        ]
       },
       "expression": {
         "sexuality expression": -0.001,
-        "gender expression expression": -0.001
+        "gender expression expression": 0.138
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "12229": {
-          "key": 12229,
-          "name": "Everdey Snauel",
-          "age": 1,
+        "12235": {
+          "key": 12235,
+          "name": "Saswe Gole",
+          "age": 13,
           "alive": false,
-          "sex": "m",
+          "sex": "f",
           "parents": {
-            "mother": "Euffemia (10106)",
-            "father": "Dilane (10105)"
+            "mother": "Nimme (10106)",
+            "father": "Falco (10105)"
+          }
+        },
+        "13448": {
+          "key": 13448,
+          "name": "Wijfgode Gole",
+          "age": 20,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Nimme (10106)",
+            "father": "Falco (10105)"
           }
         }
       },
@@ -63,7 +77,8 @@
         ],
         "child": {
           "birth": [
-            12231
+            12237,
+            13450
           ]
         }
       }
@@ -78,16 +93,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 0,
+      "skin_color": 3,
       "eye_color": "brown",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "S",
-        "C"
+        "C",
+        "S"
       ],
-      "health": 0.535,
-      "fertility": 0.523,
+      "health": 0.752,
+      "fertility": 0.792,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -99,9 +114,17 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.535
+            "new_health": 0.752
           },
           "death": false
+        },
+        "1208": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.752
+          },
+          "death": true
         }
       },
       "events": {
@@ -114,8 +137,8 @@
               10106
             ],
             "people names": [
-              "Dilane Snauel",
-              "Euffemia Borluet"
+              "Falco Gole",
+              "Nimme Bier"
             ],
             "label": "spouse",
             "committed": true
@@ -125,29 +148,99 @@
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stSlyck straet.se3.c1",
+              "section": "stSlyck straet.se1.c1",
               "street": "Slyck straet",
               "neighborhood": "varkensbuurt",
-              "unique id": 48
+              "unique id": 44
             }
           },
           {
             "topic": "new relationship",
-            "key": 12231,
+            "key": 12237,
             "people": [
               10106,
-              12229
+              12235
             ],
             "people names": [
-              "Euffemia Borluet",
-              "Everdey Snauel"
+              "Nimme Bier",
+              "Saswe Gole"
             ],
             "label": "parentchild",
             "committed": false
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 13450,
+            "people": [
+              10106,
+              13448
+            ],
+            "people names": [
+              "Nimme Bier",
+              "Wijfgode Gole"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1205": [
+          {
+            "key": 10107,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10105,
+              "name": "Falco Gole",
+              "age": 43,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "spouse"
+          },
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1205
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           },
           {
             "topic": "death",
-            "cause": "childbirth"
+            "cause": "starvation"
           }
         ]
       }
@@ -156,14 +249,14 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stSlyck straet.se3.c1",
+      "section": "stSlyck straet.se1.c1",
       "street": "Slyck straet",
       "neighborhood": "varkensbuurt",
-      "unique id": 48
+      "unique id": 44
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         10107
       ]

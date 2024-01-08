@@ -1,59 +1,63 @@
 {
   "14457": {
     "alive": false,
-    "name": "Wybel",
-    "surname": "Snepore",
-    "full name": "Wybel Snepore",
+    "name": "Goneir",
+    "surname": "",
+    "full name": "Goneir",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.861,
-      "romantic interest": 0.549,
-      "sex interest": 0.643,
-      "gender expression": 0.155,
-      "sex": "m"
+      "sexuality label": "straight",
+      "sexuality": 0.0,
+      "romantic interest": 0.596,
+      "sex interest": 0.868,
+      "gender expression": 0.162,
+      "sex": "f"
     },
-    "age": 2,
+    "age": 4,
     "birth year": 1203,
-    "sex": "m",
+    "sex": "f",
     "faction": "Zealots",
     "income class": [
       3,
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.393,
-      "nice-nasty": 0.479,
-      "honest-false": 0.202
+      "lawful-chaotic": 0.138,
+      "nice-nasty": 0.419,
+      "honest-false": 0.39
     },
     "attitude": {
-      "outgoing": 0.463,
-      "dream": 0.604
+      "outgoing": 0.326,
+      "dream": 0.39
     },
     "homsoc": {
       "means": {
         "independent": false,
-        "taken_care_of": false,
+        "taken_care_of": true,
         "caretaker": true,
         "needs_care": true,
         "flags": [
-          "neglected"
+          "neglected",
+          "starving"
         ]
       },
       "expression": {
-        "sexuality expression": 0.339,
-        "gender expression expression": 0.089
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.003
       }
     },
     "network": {
       "parents": {
-        "mother": "Scilla (11327)",
-        "father": "Franse (11326)"
+        "mother": "Lielde (11255)",
+        "father": "Hildebolding (11254)"
       },
       "children": {},
       "relationship keys": {
         "parent": [
           14458,
           14459
+        ],
+        "sibling": [
+          14460
         ]
       }
     },
@@ -67,16 +71,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 4,
-      "eye_color": "green",
+      "skin_color": 6,
+      "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
-        "S",
-        "C"
+        "C",
+        "S"
       ],
-      "health": 0.59,
-      "fertility": 0.52,
+      "health": 0.439,
+      "fertility": 0.652,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -88,17 +92,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.59
+            "new_health": 0.637
           },
           "death": false
         },
-        "1205": {
+        "1206": {
+          "health": {
+            "change": true,
+            "value_change": -0.198,
+            "new_health": 0.439
+          },
+          "death": false
+        },
+        "1207": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.59
+            "new_health": 0.439
           },
-          "death": true
+          "death": false
         }
       },
       "events": {
@@ -108,10 +120,10 @@
             "home": {
               "income class": 3,
               "income class label": "upper middle class",
-              "section": "stDie lange straet1.se3.c3",
-              "street": "Die lange straet1",
+              "section": "stBreestraat.se3.c3",
+              "street": "Breestraat",
               "neighborhood": "olvbuurt",
-              "unique id": 611
+              "unique id": 564
             }
           }
         ],
@@ -122,11 +134,47 @@
         ],
         "1205": [
           {
+            "topic": "event",
+            "event": "plague",
+            "year": 1205
+          },
+          {
             "topic": "neglected"
+          }
+        ],
+        "1206": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11254,
+              "name": "Hildebolding Vint",
+              "age": 46,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "parent"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "new caretaker",
+            "person": 11255
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           },
           {
             "topic": "death",
-            "cause": "childhood illness"
+            "cause": "starvation"
           }
         ]
       }
@@ -135,15 +183,17 @@
     "home": {
       "income class": 3,
       "income class label": "upper middle class",
-      "section": "stDie lange straet1.se3.c3",
-      "street": "Die lange straet1",
+      "section": "stBreestraat.se3.c3",
+      "street": "Breestraat",
       "neighborhood": "olvbuurt",
-      "unique id": 611
+      "unique id": 564
     },
     "relationship status": {
       "taken": false,
       "married": false,
-      "relationships": []
+      "relationships": [
+        14460
+      ]
     }
   }
 }

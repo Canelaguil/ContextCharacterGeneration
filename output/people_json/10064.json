@@ -1,33 +1,33 @@
 {
   "10064": {
     "alive": false,
-    "name": "Reynwi",
-    "surname": "Huntekin",
-    "full name": "Reynwi Huntekin",
+    "name": "Erkenradis",
+    "surname": "Rin",
+    "full name": "Erkenradis Rin",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.994,
-      "romantic interest": 0.605,
-      "sex interest": 0.739,
-      "gender expression": 0.263,
+      "sexuality label": "straight",
+      "sexuality": 0.068,
+      "romantic interest": 0.654,
+      "sex interest": 0.769,
+      "gender expression": 0.067,
       "sex": "f"
     },
-    "age": 27,
-    "birth year": 1182,
+    "age": 38,
+    "birth year": 1172,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "Zealots",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.561,
-      "nice-nasty": 0.849,
-      "honest-false": 0.9
+      "lawful-chaotic": 0.167,
+      "nice-nasty": 0.712,
+      "honest-false": 0.999
     },
     "attitude": {
-      "outgoing": 0.457,
-      "dream": 0.222
+      "outgoing": 0.542,
+      "dream": 0.429
     },
     "homsoc": {
       "means": {
@@ -35,20 +35,63 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.617,
-        "gender expression expression": 0.135
+        "sexuality expression": 0.061,
+        "gender expression expression": 0.047
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13441": {
+          "key": 13441,
+          "name": "Syuardus Sluke",
+          "age": 9,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Erkenradis (10064)",
+            "father": "Conrad (10063)"
+          }
+        },
+        "16077": {
+          "key": 16077,
+          "name": "Euerocker Sluke",
+          "age": 11,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Erkenradis (10064)",
+            "father": "Conrad (10063)"
+          }
+        },
+        "17812": {
+          "key": 17812,
+          "name": "Saxiardis Sluke",
+          "age": 40,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Erkenradis (10064)",
+            "father": "Conrad (10063)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10065
-        ]
+        ],
+        "child": {
+          "birth": [
+            13443,
+            16079,
+            17814
+          ]
+        }
       }
     },
     "occupation": {
@@ -61,16 +104,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 2,
-      "eye_color": "brown",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "skin_color": 4,
+      "eye_color": "green",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "C",
+        "S",
         "S"
       ],
-      "health": 0.555,
-      "fertility": 0.543,
+      "health": 0.669,
+      "fertility": 0.641,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -82,17 +125,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.555
+            "new_health": 0.669
           },
           "death": false
-        },
-        "1208": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.555
-          },
-          "death": true
         }
       },
       "events": {
@@ -105,8 +140,8 @@
               10064
             ],
             "people names": [
-              "Wolcout",
-              "Reynwi Huntekin"
+              "Conrad Sluke",
+              "Erkenradis Rin"
             ],
             "label": "spouse",
             "committed": true
@@ -119,14 +154,86 @@
               "section": "stVerckens merct.se3.c2",
               "street": "Verckens merct",
               "neighborhood": "varkensbuurt",
-              "unique id": 32
+              "unique id": 27
             }
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 13443,
+            "people": [
+              10064,
+              13441
+            ],
+            "people names": [
+              "Erkenradis Rin",
+              "Syuardus Sluke"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1205": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1205
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 16079,
+            "people": [
+              10064,
+              16077
+            ],
+            "people names": [
+              "Erkenradis Rin",
+              "Euerocker Sluke"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0.257,
+            "inhabitants": []
           }
         ],
         "1208": [
           {
+            "topic": "not enough income",
+            "income": 0.214,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "new relationship",
+            "key": 17814,
+            "people": [
+              10064,
+              17812
+            ],
+            "people names": [
+              "Erkenradis Rin",
+              "Saxiardis Sluke"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.236,
+            "inhabitants": []
+          },
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "childbirth"
           }
         ]
       }
@@ -138,7 +245,7 @@
       "section": "stVerckens merct.se3.c2",
       "street": "Verckens merct",
       "neighborhood": "varkensbuurt",
-      "unique id": 32
+      "unique id": 27
     },
     "relationship status": {
       "taken": true,

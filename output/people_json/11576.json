@@ -1,33 +1,33 @@
 {
   "11576": {
     "alive": false,
-    "name": "Cecilia",
-    "surname": "Spiker",
-    "full name": "Cecilia Spiker",
+    "name": "Reynildis",
+    "surname": "Hoghen",
+    "full name": "Reynildis Hoghen",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.329,
-      "sex interest": 0.706,
-      "gender expression": 0.084,
+      "sexuality": 0.077,
+      "romantic interest": 0.859,
+      "sex interest": 0.756,
+      "gender expression": 0.104,
       "sex": "f"
     },
-    "age": 49,
-    "birth year": 1162,
+    "age": 37,
+    "birth year": 1178,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "Dogmatists",
     "income class": [
-      2,
-      "middle class"
+      3,
+      "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.477,
-      "honest-false": 0.855
+      "lawful-chaotic": 0.862,
+      "nice-nasty": 0.805,
+      "honest-false": 0.366
     },
     "attitude": {
-      "outgoing": 0.241,
-      "dream": 0.029
+      "outgoing": 0.526,
+      "dream": 0.582
     },
     "homsoc": {
       "means": {
@@ -35,33 +35,52 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.05
+        "sexuality expression": 0.05,
+        "gender expression expression": 0.045
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12646": {
+          "key": 12646,
+          "name": "Gheram Hyseriin",
+          "age": 1,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Reynildis (11576)",
+            "father": "Curdiin (11575)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11577
-        ]
+        ],
+        "child": {
+          "birth": [
+            12648
+          ]
+        }
       }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        2,
-        "middle class"
+        3,
+        "upper middle class"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 1,
+      "skin_color": 2,
       "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
@@ -69,8 +88,8 @@
         "S",
         "S"
       ],
-      "health": 0.819,
-      "fertility": 0.807,
+      "health": 0.164,
+      "fertility": 0.647,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -82,15 +101,47 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.819
+            "new_health": 0.684
+          },
+          "death": false
+        },
+        "1207": {
+          "health": {
+            "change": true,
+            "value_change": -0.173,
+            "new_health": 0.511
+          },
+          "death": false
+        },
+        "1208": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.511
           },
           "death": false
         },
         "1210": {
           "health": {
+            "change": true,
+            "value_change": -0.347,
+            "new_health": 0.164
+          },
+          "death": false
+        },
+        "1211": {
+          "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.819
+            "new_health": 0.164
+          },
+          "death": false
+        },
+        "1214": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.164
           },
           "death": true
         }
@@ -105,8 +156,8 @@
               11576
             ],
             "people names": [
-              "Arnst Zieken",
-              "Cecilia Spiker"
+              "Curdiin Hyseriin",
+              "Reynildis Hoghen"
             ],
             "label": "spouse",
             "committed": true
@@ -114,25 +165,112 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stDie lange straet3.se9.c2",
+              "income class": 3,
+              "income class label": "upper middle class",
+              "section": "stDie lange straet3.se7.c3",
               "street": "Die lange straet3",
               "neighborhood": "visbuurt",
-              "unique id": 722
+              "unique id": 708
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12648,
+            "people": [
+              11576,
+              12646
+            ],
+            "people names": [
+              "Reynildis Hoghen",
+              "Gheram Hyseriin"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1209": [
+        "1202": [
           {
-            "topic": "feelings change",
-            "target": 11575,
-            "target name": "Arnst Zieken",
-            "state": "out of love",
-            "relationship": 11577
+            "topic": "person died",
+            "person": {
+              "key": 12646,
+              "name": "Gheram Hyseriin",
+              "age": 1,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Reynildis (11576)",
+                "father": "Curdiin (11575)"
+              }
+            },
+            "cause": "childhood illness",
+            "label": "child"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1205
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0.072,
+            "inhabitants": []
           }
         ],
         "1210": [
+          {
+            "key": 11577,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11575,
+              "name": "Curdiin Hyseriin",
+              "age": 40,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
           {
             "topic": "death",
             "cause": "illness"
@@ -142,16 +280,16 @@
     },
     "key": 11576,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stDie lange straet3.se9.c2",
+      "income class": 3,
+      "income class label": "upper middle class",
+      "section": "stDie lange straet3.se7.c3",
       "street": "Die lange straet3",
       "neighborhood": "visbuurt",
-      "unique id": 722
+      "unique id": 708
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         11577
       ]

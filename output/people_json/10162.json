@@ -1,33 +1,33 @@
 {
   "10162": {
     "alive": false,
-    "name": "Willai",
-    "surname": "Bove",
-    "full name": "Willai Bove",
+    "name": "Heyman",
+    "surname": "Bards",
+    "full name": "Heyman Bards",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.128,
-      "romantic interest": 0.937,
-      "sex interest": 0.525,
-      "gender expression": 0.119,
+      "sexuality": 0.096,
+      "romantic interest": 0.662,
+      "sex interest": 0.363,
+      "gender expression": 0.0,
       "sex": "m"
     },
-    "age": 32,
-    "birth year": 1170,
+    "age": 54,
+    "birth year": 1154,
     "sex": "m",
-    "faction": "Dogmatists",
+    "faction": "No religion",
     "income class": [
       0,
       "working class"
     ],
     "personality": {
       "lawful-chaotic": 0.0,
-      "nice-nasty": 0.944,
-      "honest-false": 0.299
+      "nice-nasty": 0.757,
+      "honest-false": 0.0
     },
     "attitude": {
-      "outgoing": 0.264,
-      "dream": 0.33
+      "outgoing": 0.391,
+      "dream": 0.169
     },
     "homsoc": {
       "means": {
@@ -40,34 +40,17 @@
         ]
       },
       "expression": {
-        "sexuality expression": 0.073,
-        "gender expression expression": 0.021
+        "sexuality expression": 0.07,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {
-        "12244": {
-          "key": 12244,
-          "name": "Ysewin Bove",
-          "age": 2,
-          "alive": false,
-          "sex": "m",
-          "parents": {
-            "mother": "Aleydis (10163)",
-            "father": "Willai (10162)"
-          }
-        }
-      },
+      "children": {},
       "relationship keys": {
         "spouse": [
           10164
-        ],
-        "child": {
-          "birth": [
-            12245
-          ]
-        }
+        ]
       }
     },
     "occupation": {
@@ -76,11 +59,17 @@
         0,
         "working class"
       ],
-      "income": 0.378,
+      "income": 0.508,
       "all_incomes": [
-        0.927,
-        0.626,
-        0.378
+        0.0,
+        0.0,
+        0.0,
+        0.37,
+        0.0,
+        0.0,
+        0.0,
+        0.125,
+        0.508
       ],
       "job": {
         "lawful": false,
@@ -96,8 +85,8 @@
         "S",
         "C"
       ],
-      "health": 0.683,
-      "fertility": 0.683,
+      "health": 0.0,
+      "fertility": 0.745,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -109,9 +98,41 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.683
+            "new_health": 0.733
           },
           "death": false
+        },
+        "1204": {
+          "health": {
+            "change": true,
+            "value_change": -0.21,
+            "new_health": 0.523
+          },
+          "death": false
+        },
+        "1205": {
+          "health": {
+            "change": true,
+            "value_change": -0.306,
+            "new_health": 0.217
+          },
+          "death": false
+        },
+        "1206": {
+          "health": {
+            "change": true,
+            "value_change": -0.115,
+            "new_health": 0.102
+          },
+          "death": false
+        },
+        "1207": {
+          "health": {
+            "change": true,
+            "value_change": -0.102,
+            "new_health": 0.0
+          },
+          "death": true
         }
       },
       "events": {
@@ -119,12 +140,7 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.927
-          },
-          {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.626
+            "income": 0.0
           },
           {
             "topic": "new relationship",
@@ -134,8 +150,8 @@
               10163
             ],
             "people names": [
-              "Willai Bove",
-              "Aleydis Kenode"
+              "Heyman Bards",
+              "Pietersen Tater"
             ],
             "label": "spouse",
             "committed": true
@@ -148,38 +164,83 @@
               "section": "stIn den Haeg.se1.c0",
               "street": "In den Haeg",
               "neighborhood": "varkensbuurt",
-              "unique id": 71
+              "unique id": 68
             }
           },
           {
-            "topic": "new relationship",
-            "key": 12245,
-            "people": [
-              10162,
-              12244
-            ],
-            "people names": [
-              "Willai Bove",
-              "Ysewin Bove"
-            ],
-            "label": "parentchild",
-            "committed": false
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
           }
         ],
         "1201": [
           {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1202": [
+          {
+            "key": 10164,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10163,
+              "name": "Pietersen Tater",
+              "age": 33,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "starvation",
+            "label": "spouse"
+          }
+        ],
+        "1203": [
+          {
             "topic": "job notice",
-            "notice": "earning very little",
-            "income": 0.378
+            "notice": "hardly any income",
+            "income": 0.0
           },
           {
             "topic": "not enough income",
-            "income": 0.378,
+            "income": 0.0,
             "inhabitants": []
+          }
+        ],
+        "1204": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1205
           },
           {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0.125,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
             "topic": "death",
-            "cause": "starvation"
+            "cause": "sickness"
           }
         ]
       }
@@ -191,11 +252,11 @@
       "section": "stIn den Haeg.se1.c0",
       "street": "In den Haeg",
       "neighborhood": "varkensbuurt",
-      "unique id": 71
+      "unique id": 68
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         10164
       ]

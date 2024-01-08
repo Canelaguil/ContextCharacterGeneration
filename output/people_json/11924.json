@@ -1,76 +1,97 @@
 {
   "11924": {
     "alive": false,
-    "name": "Truden",
-    "surname": "Snauel",
-    "full name": "Truden Snauel",
+    "name": "Rycaldis",
+    "surname": "Coninc",
+    "full name": "Rycaldis Coninc",
     "born this way": {
-      "sexuality label": "bi",
-      "sexuality": 0.353,
-      "romantic interest": 0.762,
-      "sex interest": 0.585,
-      "gender expression": 0.351,
+      "sexuality label": "straight",
+      "sexuality": 0.067,
+      "romantic interest": 0.746,
+      "sex interest": 0.719,
+      "gender expression": 0.0,
       "sex": "f"
     },
     "age": 53,
-    "birth year": 1155,
+    "birth year": 1163,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
-      2,
-      "middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.222,
-      "nice-nasty": 0.826,
-      "honest-false": 0.691
+      "lawful-chaotic": 0.684,
+      "nice-nasty": 0.369,
+      "honest-false": 0.999
     },
     "attitude": {
-      "outgoing": 0.545,
-      "dream": 0.372
+      "outgoing": 0.512,
+      "dream": 0.709
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving",
+          "caretaker"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.182,
-        "gender expression expression": 0.281
+        "sexuality expression": 0.029,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13319": {
+          "key": 13319,
+          "name": "Ymmekine Sluke",
+          "age": 14,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Rycaldis (11924)",
+            "father": "Sibrando (11923)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          11925
-        ]
+          11925,
+          18734
+        ],
+        "child": {
+          "birth": [
+            13321
+          ]
+        }
       }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        2,
-        "middle class"
+        1,
+        "lower middle class"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 4,
-      "eye_color": "green",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "skin_color": 7,
+      "eye_color": "brown",
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
         "C",
-        "S"
+        "C"
       ],
-      "health": 0.0,
-      "fertility": 0.693,
+      "health": 0.064,
+      "fertility": 0.695,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -82,31 +103,31 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.69
+            "new_health": 0.745
           },
           "death": false
         },
-        "1205": {
+        "1213": {
           "health": {
             "change": true,
-            "value_change": -0.198,
-            "new_health": 0.492
+            "value_change": -0.186,
+            "new_health": 0.559
           },
           "death": false
         },
-        "1206": {
+        "1214": {
           "health": {
             "change": true,
-            "value_change": -0.193,
-            "new_health": 0.299
+            "value_change": -0.228,
+            "new_health": 0.331
           },
           "death": false
         },
-        "1207": {
+        "1215": {
           "health": {
             "change": true,
-            "value_change": -0.299,
-            "new_health": 0.0
+            "value_change": -0.267,
+            "new_health": 0.064
           },
           "death": true
         }
@@ -121,8 +142,100 @@
               11924
             ],
             "people names": [
-              "Thomas Stoc",
-              "Truden Snauel"
+              "Sibrando Sluke",
+              "Rycaldis Coninc"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stDe Vyver.se1.c1",
+              "street": "De Vyver",
+              "neighborhood": "denhof",
+              "unique id": 859
+            }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 13321,
+            "people": [
+              11924,
+              13319
+            ],
+            "people names": [
+              "Rycaldis Coninc",
+              "Ymmekine Sluke"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1205": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1205
+          }
+        ],
+        "1207": [
+          {
+            "key": 11925,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11923,
+              "name": "Sibrando Sluke",
+              "age": 54,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "new relationship",
+            "key": 18734,
+            "people": [
+              12079,
+              11924
+            ],
+            "people names": [
+              "Lubertus",
+              "Rycaldis Coninc"
             ],
             "label": "spouse",
             "committed": true
@@ -132,26 +245,117 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stCromme straet.se3.c2",
-              "street": "Cromme straet",
+              "section": "stDen Hof.se1.c2",
+              "street": "Den Hof",
               "neighborhood": "denhof",
-              "unique id": 878
+              "unique id": 939
             }
           }
         ],
-        "1201": [
+        "1212": [
           {
-            "topic": "feelings change",
-            "target": 11923,
-            "target name": "Thomas Stoc",
-            "state": "solid love",
-            "relationship": 11925
+            "key": 18734,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12079,
+              "name": "Lubertus",
+              "age": 32,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              13365,
+              15351,
+              26208,
+              12226,
+              23515,
+              25726,
+              22464,
+              31283,
+              32991,
+              25979
+            ]
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": [
+              25726,
+              31283,
+              32991
+            ]
           }
         ],
-        "1207": [
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              13365,
+              15351,
+              26208,
+              12226,
+              23515,
+              25726,
+              22464,
+              31283,
+              32991,
+              25979
+            ]
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              13365,
+              15351,
+              26208,
+              12226,
+              23515,
+              25726,
+              22464,
+              31283,
+              32991,
+              25979
+            ]
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              13365,
+              15351,
+              26208,
+              12226,
+              23515,
+              25726,
+              22464,
+              31283,
+              32991,
+              25979
+            ]
+          },
           {
             "topic": "death",
-            "cause": "sickness"
+            "cause": "old age"
           }
         ]
       }
@@ -160,16 +364,17 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stCromme straet.se3.c2",
-      "street": "Cromme straet",
+      "section": "stDen Hof.se1.c2",
+      "street": "Den Hof",
       "neighborhood": "denhof",
-      "unique id": 878
+      "unique id": 939
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
-        11925
+        11925,
+        18734
       ]
     }
   }

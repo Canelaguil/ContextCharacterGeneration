@@ -1,54 +1,71 @@
 {
   "10207": {
     "alive": false,
-    "name": "Ghodekin",
-    "surname": "Blaubloeme",
-    "full name": "Ghodekin Blaubloeme",
+    "name": "Firiin",
+    "surname": "",
+    "full name": "Firiin",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.076,
-      "romantic interest": 0.655,
-      "sex interest": 0.706,
-      "gender expression": 0.118,
+      "sexuality label": "gay",
+      "sexuality": 0.846,
+      "romantic interest": 0.81,
+      "sex interest": 0.798,
+      "gender expression": 0.192,
       "sex": "m"
     },
-    "age": 55,
-    "birth year": 1155,
+    "age": 47,
+    "birth year": 1157,
     "sex": "m",
-    "faction": "Zealots",
+    "faction": "Dogmatists",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.506,
-      "nice-nasty": 0.002,
-      "honest-false": 0.983
+      "lawful-chaotic": 0.337,
+      "nice-nasty": 0.692,
+      "honest-false": 0.526
     },
     "attitude": {
-      "outgoing": 0.347,
-      "dream": 0.145
+      "outgoing": 0.486,
+      "dream": 0.412
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.032,
-        "gender expression expression": 0.045
+        "sexuality expression": 0.607,
+        "gender expression expression": 0.059
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12268": {
+          "key": 12268,
+          "name": "Suaneka",
+          "age": 20,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Agnes (10208)",
+            "father": "Firiin (10207)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10209
-        ]
+        ],
+        "child": {
+          "birth": [
+            12269
+          ]
+        }
       }
     },
     "occupation": {
@@ -57,36 +74,30 @@
         1,
         "lower middle class"
       ],
-      "income": 0.786,
+      "income": 0.959,
       "all_incomes": [
-        1.073,
-        1.073,
-        1.027,
-        0.917,
-        0.913,
         0.877,
-        0.852,
-        0.817,
-        0.686,
-        0.801,
-        0.786
+        0.837,
+        1.008,
+        0.97,
+        0.959
       ],
       "job": {
-        "lawful": true,
+        "lawful": false,
         "honest": true
       }
     },
     "genetics": {
-      "skin_color": 9,
-      "eye_color": "brown",
-      "hair_color": "red",
-      "hair_color_code": 3,
+      "skin_color": 8,
+      "eye_color": "green",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
-        "C",
-        "C"
+        "S",
+        "S"
       ],
-      "health": 0.0,
-      "fertility": 0.719,
+      "health": 0.694,
+      "fertility": 0.758,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -98,39 +109,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.745
+            "new_health": 0.694
           },
           "death": false
         },
-        "1206": {
+        "1203": {
           "health": {
-            "change": true,
-            "value_change": -0.237,
-            "new_health": 0.508
-          },
-          "death": false
-        },
-        "1207": {
-          "health": {
-            "change": true,
-            "value_change": -0.276,
-            "new_health": 0.232
-          },
-          "death": false
-        },
-        "1208": {
-          "health": {
-            "change": true,
-            "value_change": -0.169,
-            "new_health": 0.063
-          },
-          "death": false
-        },
-        "1209": {
-          "health": {
-            "change": true,
-            "value_change": -0.063,
-            "new_health": 0.0
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.694
           },
           "death": true
         }
@@ -140,7 +127,7 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.073
+            "income": 0.877
           },
           {
             "topic": "new relationship",
@@ -150,8 +137,8 @@
               10208
             ],
             "people names": [
-              "Ghodekin Blaubloeme",
-              "Scilla Rouvoet"
+              "Firiin",
+              "Agnes Scamps"
             ],
             "label": "spouse",
             "committed": true
@@ -164,21 +151,35 @@
               "section": "stHelle voet.se3.c1",
               "street": "Helle voet",
               "neighborhood": "jorisbuurt",
-              "unique id": 95
+              "unique id": 92
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12269,
+            "people": [
+              10207,
+              12268
+            ],
+            "people names": [
+              "Firiin",
+              "Suaneka"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1207": [
+        "1201": [
           {
             "topic": "job notice",
-            "notice": "low income",
-            "income": 0.686
+            "notice": "comfortable earnings",
+            "income": 1.008
           }
         ],
-        "1209": [
+        "1203": [
           {
             "topic": "death",
-            "cause": "sickness"
+            "cause": "illness"
           }
         ]
       }
@@ -190,7 +191,7 @@
       "section": "stHelle voet.se3.c1",
       "street": "Helle voet",
       "neighborhood": "jorisbuurt",
-      "unique id": 95
+      "unique id": 92
     },
     "relationship status": {
       "taken": true,

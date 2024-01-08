@@ -1,53 +1,55 @@
 {
   "22872": {
-    "alive": false,
-    "name": "Waldfridus",
-    "surname": "Cabelliau",
-    "full name": "Waldfridus Cabelliau",
+    "alive": true,
+    "name": "Gloria",
+    "surname": "Panne",
+    "full name": "Gloria Panne",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.009,
-      "romantic interest": 0.759,
-      "sex interest": 0.432,
-      "gender expression": 0.132,
-      "sex": "m"
+      "sexuality": 0.037,
+      "romantic interest": 0.791,
+      "sex interest": 0.761,
+      "gender expression": 0.01,
+      "sex": "f"
     },
-    "age": 19,
-    "birth year": 1226,
-    "sex": "m",
-    "faction": "Dogmatists",
+    "age": 25,
+    "birth year": 1224,
+    "sex": "f",
+    "faction": "No religion",
     "income class": [
-      1,
-      "lower middle class"
+      4,
+      "nobility"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.483,
-      "honest-false": 0.482
+      "lawful-chaotic": 0.27,
+      "nice-nasty": 0.999,
+      "honest-false": 0.913
     },
     "attitude": {
-      "outgoing": 0.765,
-      "dream": 0.311
+      "outgoing": 0.506,
+      "dream": 0.414
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
-        "caretaker": true,
+        "caretaker": false,
         "needs_care": false,
         "flags": [
-          "neglected"
+          "neglected",
+          "starving",
+          "caretaker"
         ]
       },
       "expression": {
-        "sexuality expression": 0.006,
-        "gender expression expression": 0.083
+        "sexuality expression": 0.016,
+        "gender expression expression": 0.005
       }
     },
     "network": {
       "parents": {
-        "mother": "Salome (14152)",
-        "father": "Walramus (14041)"
+        "mother": "Bertrade (11885)",
+        "father": "Boidin (11884)"
       },
       "children": {},
       "relationship keys": {
@@ -57,41 +59,30 @@
         ],
         "sibling": [
           22875,
-          22876,
-          23480,
-          24772,
-          25510,
-          26674
+          22876
         ]
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
-        1,
-        "lower middle class"
+        4,
+        "nobility"
       ],
-      "income": 0.937,
-      "all_incomes": [
-        1.07,
-        0.937
-      ],
-      "job": {
-        "lawful": false,
-        "honest": false
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 8,
-      "eye_color": "green",
+      "skin_color": 7,
+      "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
-        "C",
+        "S",
         "S"
       ],
-      "health": 0.693,
-      "fertility": 0.849,
+      "health": 0.406,
+      "fertility": 0.41,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -99,87 +90,108 @@
     },
     "memory": {
       "health": {
-        "1227": {
+        "1225": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.798
+            "new_health": 0.406
           },
           "death": false
-        },
-        "1235": {
-          "health": {
-            "change": true,
-            "value_change": -0.105,
-            "new_health": 0.693
-          },
-          "death": false
-        },
-        "1236": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.693
-          },
-          "death": false
-        },
-        "1245": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.693
-          },
-          "death": true
         }
       },
       "events": {
-        "1226": [
+        "1224": [
           {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stCromme straet.se3.c2",
-              "street": "Cromme straet",
-              "neighborhood": "denhof",
-              "unique id": 879
+              "income class": 4,
+              "income class label": "nobility",
+              "section": "stOp Havick1.se1.c4",
+              "street": "Op Havick1",
+              "neighborhood": "cingelnoord",
+              "unique id": 844
             }
+          }
+        ],
+        "1225": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11885,
+              "name": "Bertrade Ghoede",
+              "age": 43,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "parent"
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1226": [
+          {
+            "topic": "neglected"
           }
         ],
         "1227": [
           {
-            "topic": "event",
-            "event": "famine",
-            "year": 1227
+            "topic": "neglected"
           }
         ],
         "1228": [
           {
-            "topic": "event",
-            "event": "famine",
-            "year": 1228
+            "topic": "person died",
+            "person": {
+              "key": 11884,
+              "name": "Boidin Panne",
+              "age": 54,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "label": "parent"
           },
           {
-            "topic": "new relationship",
-            "key": 23480,
-            "people": [
-              22872,
-              23475
-            ],
-            "people names": [
-              "Waldfridus Cabelliau",
-              "Siccone Walramusszoon"
-            ],
-            "label": "sibling",
-            "committed": false
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              22872
+            ]
           }
         ],
         "1229": [
           {
-            "topic": "event",
-            "event": "faction upheaval",
-            "faction": "Zealots",
-            "year": 1229
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              22872
+            ]
+          }
+        ],
+        "1230": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              22872
+            ]
+          },
+          {
+            "topic": "new caretaker",
+            "person": 21990
+          }
+        ],
+        "1231": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              22872
+            ]
           }
         ],
         "1232": [
@@ -189,122 +201,215 @@
             "year": 1232
           },
           {
-            "topic": "new relationship",
-            "key": 24772,
-            "people": [
-              22872,
-              24767
-            ],
-            "people names": [
-              "Waldfridus Cabelliau",
-              "Aghata Cabelliau"
-            ],
-            "label": "sibling",
-            "committed": false
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              22872
+            ]
+          }
+        ],
+        "1233": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              22872
+            ]
           }
         ],
         "1234": [
           {
-            "topic": "new relationship",
-            "key": 25510,
-            "people": [
-              22872,
-              25505
-            ],
-            "people names": [
-              "Waldfridus Cabelliau",
-              "Agnes Cabelliau"
-            ],
-            "label": "sibling",
-            "committed": false
-          },
-          {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              22872
+            ]
           }
         ],
         "1235": [
           {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              22872
+            ]
           }
         ],
         "1236": [
           {
-            "topic": "neglected"
+            "topic": "event",
+            "event": "plague",
+            "year": 1236
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              22872
+            ]
           }
         ],
         "1237": [
           {
-            "topic": "new relationship",
-            "key": 26674,
-            "people": [
-              22872,
-              26669
-            ],
-            "people names": [
-              "Waldfridus Cabelliau",
-              "Aghete Cabelliau"
-            ],
-            "label": "sibling",
-            "committed": false
-          },
-          {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              22872
+            ]
           }
         ],
         "1238": [
           {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              22872
+            ]
           }
         ],
         "1239": [
           {
-            "topic": "neglected"
+            "topic": "person died",
+            "person": {
+              "key": 21990,
+              "name": "Harderico Panne",
+              "age": 17,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Bertrade (11885)",
+                "father": "Boidin (11884)"
+              }
+            },
+            "cause": "illness",
+            "label": "sibling"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              22872
+            ]
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          },
+          {
+            "topic": "new caretaker",
+            "person": 22872
           }
         ],
         "1240": [
           {
-            "topic": "neglected"
+            "topic": "not caretaker"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              22872
+            ]
           }
         ],
         "1241": [
           {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              22872
+            ]
+          }
+        ],
+        "1242": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              22872
+            ]
+          }
+        ],
+        "1243": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              22872
+            ]
           }
         ],
         "1244": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.07
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              22872
+            ]
           }
         ],
         "1245": [
           {
-            "topic": "death",
-            "cause": "illness"
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              22872
+            ]
+          }
+        ],
+        "1246": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              22872
+            ]
+          }
+        ],
+        "1247": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              22872
+            ]
+          }
+        ],
+        "1248": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              22872
+            ]
+          }
+        ],
+        "1249": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              22872
+            ]
           }
         ]
       }
     },
     "key": 22872,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stCromme straet.se3.c2",
-      "street": "Cromme straet",
-      "neighborhood": "denhof",
-      "unique id": 879
+      "income class": 4,
+      "income class label": "nobility",
+      "section": "stOp Havick1.se1.c4",
+      "street": "Op Havick1",
+      "neighborhood": "cingelnoord",
+      "unique id": 844
     },
     "relationship status": {
       "taken": false,
       "married": false,
       "relationships": [
         22875,
-        22876,
-        23480,
-        24772,
-        25510,
-        26674
+        22876
       ]
     }
   }

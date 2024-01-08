@@ -1,33 +1,33 @@
 {
   "12011": {
     "alive": false,
-    "name": "Aleydis",
-    "surname": "Stuucs",
-    "full name": "Aleydis Stuucs",
+    "name": "Siburgis",
+    "surname": "",
+    "full name": "Siburgis",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.07,
-      "romantic interest": 0.863,
-      "sex interest": 0.573,
-      "gender expression": 0.061,
+      "sexuality": 0.0,
+      "romantic interest": 0.734,
+      "sex interest": 0.999,
+      "gender expression": 0.0,
       "sex": "f"
     },
-    "age": 25,
-    "birth year": 1176,
+    "age": 35,
+    "birth year": 1177,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "No religion",
     "income class": [
-      3,
-      "upper middle class"
+      2,
+      "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.639,
-      "nice-nasty": 0.0,
-      "honest-false": 0.301
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.749,
+      "honest-false": 0.437
     },
     "attitude": {
-      "outgoing": 0.877,
-      "dream": 0.617
+      "outgoing": 0.696,
+      "dream": 0.662
     },
     "homsoc": {
       "means": {
@@ -35,65 +35,46 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.058,
-        "gender expression expression": 0.016
+        "sexuality expression": -0.001,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {
-        "12754": {
-          "key": 12754,
-          "name": "Aleberna Compere",
-          "age": 48,
-          "alive": false,
-          "sex": "f",
-          "parents": {
-            "mother": "Aleydis (12011)",
-            "father": "Reynerus (12010)"
-          }
-        }
-      },
+      "children": {},
       "relationship keys": {
         "spouse": [
-          12012
-        ],
-        "child": {
-          "birth": [
-            12756
-          ]
-        }
+          12012,
+          16017,
+          18738
+        ]
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
-        3,
-        "upper middle class"
+        2,
+        "middle class"
       ],
-      "income": 0.917,
-      "all_incomes": [
-        0.917
-      ],
-      "job": {
-        "lawful": true,
-        "honest": false
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 9,
-      "eye_color": "green",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 3,
+      "eye_color": "brown",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
         "C",
-        "C"
+        "S"
       ],
-      "health": 0.787,
-      "fertility": 0.866,
+      "health": 0.143,
+      "fertility": 0.453,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -105,18 +86,29 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.787
+            "new_health": 0.503
+          },
+          "death": false
+        },
+        "1207": {
+          "health": {
+            "change": true,
+            "value_change": -0.36,
+            "new_health": 0.143
+          },
+          "death": false
+        },
+        "1208": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.143
           },
           "death": false
         }
       },
       "events": {
         "1200": [
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.917
-          },
           {
             "topic": "new relationship",
             "key": 12012,
@@ -125,8 +117,8 @@
               12011
             ],
             "people names": [
-              "Reynerus Compere",
-              "Aleydis Stuucs"
+              "Didderic Reigher",
+              "Siburgis"
             ],
             "label": "spouse",
             "committed": true
@@ -134,49 +126,187 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stCromme straet.se7.c3",
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stCromme straet.se5.c2",
               "street": "Cromme straet",
               "neighborhood": "denhof",
-              "unique id": 915
+              "unique id": 905
             }
+          }
+        ],
+        "1202": [
+          {
+            "key": 12012,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12010,
+              "name": "Didderic Reigher",
+              "age": 49,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1203": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1204": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1205
           },
           {
             "topic": "new relationship",
-            "key": 12756,
+            "key": 16017,
             "people": [
-              12011,
-              12754
+              10780,
+              12011
             ],
             "people names": [
-              "Aleydis Stuucs",
-              "Aleberna Compere"
+              "Wicghard",
+              "Siburgis"
             ],
-            "label": "parentchild",
-            "committed": false
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1206": [
+          {
+            "key": 16017,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10780,
+              "name": "Wicghard",
+              "age": 34,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "plague",
+            "label": "spouse"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "new relationship",
+            "key": 18738,
+            "people": [
+              10000,
+              12011
+            ],
+            "people names": [
+              "Oudrauen",
+              "Siburgis"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stUterechse straet.se1.c2",
+              "street": "Uterechse straet",
+              "neighborhood": "varkensbuurt",
+              "unique id": 1
+            }
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.295,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "feelings change",
+            "target": 10000,
+            "target name": "Oudrauen",
+            "state": "out of love",
+            "relationship": 18738
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.187,
+            "inhabitants": []
           },
           {
             "topic": "death",
-            "cause": "childbirth"
+            "cause": "starvation"
           }
         ]
       }
     },
     "key": 12011,
     "home": {
-      "income class": 3,
-      "income class label": "upper middle class",
-      "section": "stCromme straet.se7.c3",
-      "street": "Cromme straet",
-      "neighborhood": "denhof",
-      "unique id": 915
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stUterechse straet.se1.c2",
+      "street": "Uterechse straet",
+      "neighborhood": "varkensbuurt",
+      "unique id": 1
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        12012
+        12012,
+        16017,
+        18738
       ]
     }
   }

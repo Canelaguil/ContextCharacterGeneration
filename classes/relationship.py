@@ -96,12 +96,12 @@ class Relationship(Agent):
         }
         self.update_people(notify_people_msg)
 
-    def end(self, cause, context={}):
+    def end(self, end_cause, context={}):
         # if relationship already done for
         if not self.active:
             return
         
-        if cause == 'person died':
+        if end_cause == 'person died':
             self.end_year = self.model.get_year()
             self.end_cause = f"{context['person']['name']} died"
             self.keys.remove(context['person']['key'])
@@ -139,12 +139,13 @@ class Relationship(Agent):
             death_note = {
                 'topic' : 'person died',
                 'person' : context['person'],
+                'cause' : context['cause'],
                 'label' : descriptor
             }
             self.model.message_person(self.keys[0], death_note)
             
         else:
-            self.end_cause = cause
+            self.end_cause = end_cause
         
         self.active = False
 
@@ -225,7 +226,7 @@ class Relationship(Agent):
         while task != None:
             topic = task['topic']
             if topic == 'person died':
-                self.end(task['topic'], {'person' : task['person']})
+                self.end('person died', {'person' : task['person'], 'cause' : task['cause']})
             task = self.tasks.get()
     
     """

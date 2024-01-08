@@ -1,19 +1,19 @@
 {
   "10109": {
     "alive": false,
-    "name": "Reynildis",
-    "surname": "Neue",
-    "full name": "Reynildis Neue",
+    "name": "Linnea",
+    "surname": "Turc",
+    "full name": "Linnea Turc",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.017,
-      "romantic interest": 0.617,
-      "sex interest": 0.868,
-      "gender expression": 0.0,
+      "sexuality": 0.018,
+      "romantic interest": 0.891,
+      "sex interest": 0.709,
+      "gender expression": 0.193,
       "sex": "f"
     },
-    "age": 41,
-    "birth year": 1166,
+    "age": 33,
+    "birth year": 1182,
     "sex": "f",
     "faction": "Zealots",
     "income class": [
@@ -21,13 +21,13 @@
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.175,
-      "nice-nasty": 0.622,
-      "honest-false": 0.907
+      "lawful-chaotic": 0.394,
+      "nice-nasty": 0.505,
+      "honest-false": 0.43
     },
     "attitude": {
-      "outgoing": 0.483,
-      "dream": 0.384
+      "outgoing": 0.191,
+      "dream": 0.067
     },
     "homsoc": {
       "means": {
@@ -35,44 +35,103 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": [
-          "starving"
-        ]
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.014,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.008,
+        "gender expression expression": 0.112
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12238": {
+          "key": 12238,
+          "name": "Amelgeir",
+          "age": 3,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Linnea (10109)",
+            "father": "Eghenonis (10108)"
+          }
+        },
+        "14152": {
+          "key": 14152,
+          "name": "Gherung Groete",
+          "age": 33,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Linnea (10109)",
+            "father": "Eghenonis (10108)"
+          }
+        },
+        "18833": {
+          "key": 18833,
+          "name": "Ioris Groete",
+          "age": 38,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Linnea (10109)",
+            "father": "Eghenonis (10108)"
+          }
+        },
+        "20015": {
+          "key": 20015,
+          "name": "Alene Groete",
+          "age": 3,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Linnea (10109)",
+            "father": "Eghenonis (10108)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10110
-        ]
+        ],
+        "child": {
+          "birth": [
+            12240,
+            14154,
+            18835,
+            20017
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         1,
         "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.308,
+      "all_incomes": [
+        0.989,
+        1.362,
+        1.308
+      ],
+      "job": {
+        "lawful": false,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 6,
+      "skin_color": 1,
       "eye_color": "blue",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "S",
         "S"
       ],
-      "health": 0.768,
-      "fertility": 0.877,
+      "health": 0.775,
+      "fertility": 0.733,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -84,17 +143,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.768
+            "new_health": 0.775
           },
           "death": false
-        },
-        "1206": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.768
-          },
-          "death": true
         }
       },
       "events": {
@@ -107,8 +158,8 @@
               10109
             ],
             "people names": [
-              "Oudrauen",
-              "Reynildis Neue"
+              "Eghenonis Groete",
+              "Linnea Turc"
             ],
             "label": "spouse",
             "committed": true
@@ -121,19 +172,149 @@
               "section": "stSlyck straet.se3.c1",
               "street": "Slyck straet",
               "neighborhood": "varkensbuurt",
-              "unique id": 49
+              "unique id": 45
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12240,
+            "people": [
+              10109,
+              12238
+            ],
+            "people names": [
+              "Linnea Turc",
+              "Amelgeir"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1201": [
+          {
+            "topic": "feelings change",
+            "target": 10108,
+            "target name": "Eghenonis Groete",
+            "state": "solid love",
+            "relationship": 10110
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 14154,
+            "people": [
+              10109,
+              14152
+            ],
+            "people names": [
+              "Linnea Turc",
+              "Gherung Groete"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1204": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12238,
+              "name": "Amelgeir",
+              "age": 3,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Linnea (10109)",
+                "father": "Eghenonis (10108)"
+              }
+            },
+            "cause": "childhood illness",
+            "label": "child"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1205
           }
         ],
         "1206": [
           {
-            "topic": "not enough income",
-            "income": 0.212,
-            "inhabitants": []
+            "topic": "feelings change",
+            "target": 10108,
+            "target name": "Eghenonis Groete",
+            "state": "out of love",
+            "relationship": 10110
+          }
+        ],
+        "1208": [
+          {
+            "topic": "feelings change",
+            "target": 10108,
+            "target name": "Eghenonis Groete",
+            "state": "infatuation",
+            "relationship": 10110
+          }
+        ],
+        "1210": [
+          {
+            "topic": "feelings change",
+            "target": 10108,
+            "target name": "Eghenonis Groete",
+            "state": "solid love",
+            "relationship": 10110
+          }
+        ],
+        "1211": [
+          {
+            "topic": "new relationship",
+            "key": 18835,
+            "people": [
+              10109,
+              18833
+            ],
+            "people names": [
+              "Linnea Turc",
+              "Ioris Groete"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1212": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.989
+          }
+        ],
+        "1213": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.362
+          }
+        ],
+        "1214": [
+          {
+            "topic": "new relationship",
+            "key": 20017,
+            "people": [
+              10109,
+              20015
+            ],
+            "people names": [
+              "Linnea Turc",
+              "Alene Groete"
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "childbirth"
           }
         ]
       }
@@ -145,7 +326,7 @@
       "section": "stSlyck straet.se3.c1",
       "street": "Slyck straet",
       "neighborhood": "varkensbuurt",
-      "unique id": 49
+      "unique id": 45
     },
     "relationship status": {
       "taken": true,

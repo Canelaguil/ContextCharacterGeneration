@@ -1,54 +1,73 @@
 {
   "10208": {
     "alive": false,
-    "name": "Scilla",
-    "surname": "Rouvoet",
-    "full name": "Scilla Rouvoet",
+    "name": "Agnes",
+    "surname": "Scamps",
+    "full name": "Agnes Scamps",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.019,
-      "romantic interest": 0.816,
-      "sex interest": 0.78,
-      "gender expression": 0.254,
+      "sexuality": 0.025,
+      "romantic interest": 0.835,
+      "sex interest": 0.808,
+      "gender expression": 0.161,
       "sex": "f"
     },
-    "age": 55,
-    "birth year": 1159,
+    "age": 53,
+    "birth year": 1179,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "Dogmatists",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.164,
-      "honest-false": 0.955
+      "lawful-chaotic": 0.719,
+      "nice-nasty": 0.688,
+      "honest-false": 0.889
     },
     "attitude": {
-      "outgoing": 0.89,
-      "dream": 0.094
+      "outgoing": 0.702,
+      "dream": 0.491
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
         "sexuality expression": 0.014,
-        "gender expression expression": 0.122
+        "gender expression expression": 0.134
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12268": {
+          "key": 12268,
+          "name": "Suaneka",
+          "age": 20,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Agnes (10208)",
+            "father": "Firiin (10207)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10209
-        ]
+        ],
+        "child": {
+          "birth": [
+            12270
+          ]
+        }
       }
     },
     "occupation": {
@@ -57,22 +76,41 @@
         1,
         "lower middle class"
       ],
-      "income": 1.356,
+      "income": 0.609,
       "all_incomes": [
-        1.064,
-        1.152,
-        1.175,
-        1.135,
-        1.212,
-        1.285,
-        1.333,
-        1.327,
-        1.339,
-        1.296,
-        1.356
+        0.823,
+        0.834,
+        0.544,
+        0.645,
+        0.553,
+        0.501,
+        0.575,
+        0.539,
+        0.503,
+        0.403,
+        0.348,
+        0.144,
+        0.0,
+        0.0,
+        0.0,
+        0.009,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.099,
+        0.055,
+        0.169,
+        0.432,
+        0.515,
+        0.436,
+        0.609
       ],
       "job": {
-        "lawful": true,
+        "lawful": false,
         "honest": true
       }
     },
@@ -83,10 +121,10 @@
       "hair_color_code": 0,
       "hair_type": [
         "C",
-        "C"
+        "S"
       ],
-      "health": 0.0,
-      "fertility": 0.739,
+      "health": 0.351,
+      "fertility": 0.878,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -98,47 +136,31 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.705
+            "new_health": 0.897
           },
           "death": false
         },
-        "1209": {
+        "1229": {
           "health": {
             "change": true,
-            "value_change": -0.288,
-            "new_health": 0.417
+            "value_change": -0.108,
+            "new_health": 0.789
           },
           "death": false
         },
-        "1210": {
+        "1230": {
           "health": {
             "change": true,
-            "value_change": -0.27,
-            "new_health": 0.147
+            "value_change": -0.215,
+            "new_health": 0.574
           },
           "death": false
         },
-        "1211": {
+        "1231": {
           "health": {
             "change": true,
-            "value_change": -0.083,
-            "new_health": 0.064
-          },
-          "death": false
-        },
-        "1212": {
-          "health": {
-            "change": true,
-            "value_change": -0.043,
-            "new_health": 0.021
-          },
-          "death": false
-        },
-        "1213": {
-          "health": {
-            "change": true,
-            "value_change": -0.021,
-            "new_health": 0.0
+            "value_change": -0.223,
+            "new_health": 0.351
           },
           "death": true
         }
@@ -153,8 +175,8 @@
               10208
             ],
             "people names": [
-              "Ghodekin Blaubloeme",
-              "Scilla Rouvoet"
+              "Firiin",
+              "Agnes Scamps"
             ],
             "label": "spouse",
             "committed": true
@@ -167,18 +189,37 @@
               "section": "stHelle voet.se3.c1",
               "street": "Helle voet",
               "neighborhood": "jorisbuurt",
-              "unique id": 95
+              "unique id": 92
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12270,
+            "people": [
+              10208,
+              12268
+            ],
+            "people names": [
+              "Agnes Scamps",
+              "Suaneka"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1203": [
+        "1202": [
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.064
+            "income": 0.823
           }
         ],
-        "1210": [
+        "1204": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.544
+          },
           {
             "key": 10209,
             "topic": "unmarried"
@@ -187,19 +228,178 @@
             "topic": "person died",
             "person": {
               "key": 10207,
-              "name": "Ghodekin Blaubloeme",
-              "age": 55,
+              "name": "Firiin",
+              "age": 47,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
             },
+            "cause": "illness",
             "label": "spouse"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1205
+          }
+        ],
+        "1211": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.403
+          }
+        ],
+        "1212": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.348
           }
         ],
         "1213": [
           {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.144
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.144,
+            "inhabitants": []
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1216": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1217": [
+          {
+            "topic": "not enough income",
+            "income": 0.009,
+            "inhabitants": []
+          }
+        ],
+        "1218": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1219": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1220": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1221": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12268,
+              "name": "Suaneka",
+              "age": 20,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Agnes (10208)",
+                "father": "Firiin (10207)"
+              }
+            },
+            "cause": "illness",
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1222": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1223": [
+          {
+            "topic": "event",
+            "event": "faction upheaval",
+            "faction": "Dogmatists",
+            "year": 1223
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1224": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1225": [
+          {
+            "topic": "not enough income",
+            "income": 0.099,
+            "inhabitants": []
+          }
+        ],
+        "1226": [
+          {
+            "topic": "not enough income",
+            "income": 0.055,
+            "inhabitants": []
+          }
+        ],
+        "1230": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.436
+          }
+        ],
+        "1231": [
+          {
             "topic": "death",
-            "cause": "sickness"
+            "cause": "old age"
           }
         ]
       }
@@ -211,7 +411,7 @@
       "section": "stHelle voet.se3.c1",
       "street": "Helle voet",
       "neighborhood": "jorisbuurt",
-      "unique id": 95
+      "unique id": 92
     },
     "relationship status": {
       "taken": false,

@@ -1,33 +1,33 @@
 {
   "10415": {
     "alive": false,
-    "name": "Woltwigis",
-    "surname": "Smout",
-    "full name": "Woltwigis Smout",
+    "name": "Marie",
+    "surname": "Lettele",
+    "full name": "Marie Lettele",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.003,
-      "romantic interest": 0.984,
-      "sex interest": 0.716,
-      "gender expression": 0.135,
+      "sexuality": 0.058,
+      "romantic interest": 0.5,
+      "sex interest": 0.668,
+      "gender expression": 0.0,
       "sex": "f"
     },
-    "age": 45,
-    "birth year": 1158,
+    "age": 40,
+    "birth year": 1166,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
-      2,
-      "middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.033,
-      "nice-nasty": 0.195,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.723,
+      "nice-nasty": 0.74,
+      "honest-false": 0.646
     },
     "attitude": {
-      "outgoing": 0.507,
-      "dream": 0.242
+      "outgoing": 0.484,
+      "dream": 0.512
     },
     "homsoc": {
       "means": {
@@ -38,39 +38,68 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.002,
-        "gender expression expression": 0.122
+        "sexuality expression": 0.036,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12938": {
+          "key": 12938,
+          "name": "Aghata Barlebaens",
+          "age": 14,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Marie (10415)",
+            "father": "Florens (10414)"
+          }
+        },
+        "15506": {
+          "key": 15506,
+          "name": "Clementia",
+          "age": 34,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Marie (10415)",
+            "father": "Florens (10414)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10416
-        ]
+        ],
+        "child": {
+          "birth": [
+            12940,
+            15508
+          ]
+        }
       }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        2,
-        "middle class"
+        1,
+        "lower middle class"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 2,
-      "eye_color": "green",
-      "hair_color": "red",
-      "hair_color_code": 3,
+      "skin_color": 3,
+      "eye_color": "brown",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "C",
-        "S"
+        "C"
       ],
-      "health": 0.834,
-      "fertility": 0.83,
+      "health": 0.923,
+      "fertility": 0.966,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -82,17 +111,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.834
+            "new_health": 0.923
           },
           "death": false
-        },
-        "1202": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.834
-          },
-          "death": true
         }
       },
       "events": {
@@ -105,8 +126,8 @@
               10415
             ],
             "people names": [
-              "Everdey Bart",
-              "Woltwigis Smout"
+              "Florens Barlebaens",
+              "Marie Lettele"
             ],
             "label": "spouse",
             "committed": true
@@ -114,31 +135,75 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stDavids hof.se1.c2",
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stDavids hof.se3.c1",
               "street": "Davids hof",
               "neighborhood": "jorisbuurt",
-              "unique id": 180
+              "unique id": 190
             }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 12940,
+            "people": [
+              10415,
+              12938
+            ],
+            "people names": [
+              "Marie Lettele",
+              "Aghata Barlebaens"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1202": [
           {
+            "topic": "feelings change",
+            "target": 10414,
+            "target name": "Florens Barlebaens",
+            "state": "out of love",
+            "relationship": 10416
+          }
+        ],
+        "1205": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1205
+          },
+          {
+            "topic": "new relationship",
+            "key": 15508,
+            "people": [
+              10415,
+              15506
+            ],
+            "people names": [
+              "Marie Lettele",
+              "Clementia"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "plague"
           }
         ]
       }
     },
     "key": 10415,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stDavids hof.se1.c2",
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stDavids hof.se3.c1",
       "street": "Davids hof",
       "neighborhood": "jorisbuurt",
-      "unique id": 180
+      "unique id": 190
     },
     "relationship status": {
       "taken": true,

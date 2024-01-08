@@ -104,7 +104,7 @@ class Person(Agent):
 
     def die(self, cause=''):
         self.alive = False
-        self.network.unravel()
+        self.network.unravel(cause)
         if cause == '':
             cause = self.body.death_cause
         i_died = {
@@ -200,7 +200,7 @@ class Person(Agent):
         
         # only die after everything else is processed this year
         if self.mark_for_death:
-            self.die()
+            self.die(self.body.death_cause)
 
     """
     UTIL FUNCTIONS
