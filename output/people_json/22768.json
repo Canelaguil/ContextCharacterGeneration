@@ -1,65 +1,66 @@
 {
   "22768": {
-    "alive": false,
-    "name": "Wijfgode",
-    "surname": "Valant",
-    "full name": "Wijfgode Valant",
+    "alive": true,
+    "name": "Sipper",
+    "surname": "van Vroeden",
+    "full name": "Sipper van Vroeden",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.096,
-      "romantic interest": 0.586,
-      "sex interest": 0.561,
-      "gender expression": 0.066,
+      "sexuality": 0.076,
+      "romantic interest": 0.733,
+      "sex interest": 0.647,
+      "gender expression": 0.013,
       "sex": "f"
     },
-    "age": 22,
-    "birth year": 1223,
+    "age": 28,
+    "birth year": 1221,
     "sex": "f",
     "faction": "No religion",
     "income class": [
-      2,
-      "middle class"
+      3,
+      "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.916,
-      "nice-nasty": 0.639,
-      "honest-false": 0.674
+      "lawful-chaotic": 0.735,
+      "nice-nasty": 0.999,
+      "honest-false": 0.198
     },
     "attitude": {
-      "outgoing": 0.353,
-      "dream": 0.321
+      "outgoing": 0.549,
+      "dream": 0.101
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
-        "caretaker": true,
+        "caretaker": false,
         "needs_care": false,
         "flags": [
+          "starving",
           "neglected",
-          "starving"
+          "caretaker"
         ]
       },
       "expression": {
-        "sexuality expression": 0.053,
-        "gender expression expression": 0.01
+        "sexuality expression": 0.037,
+        "gender expression expression": 0.004
       }
     },
     "network": {
       "parents": {
-        "mother": "Reynildis (12951)",
-        "father": "Ingel (14888)"
+        "mother": "Euffemia (11597)",
+        "father": "Vroeden (11596)"
       },
       "children": {
-        "30479": {
-          "key": 30479,
-          "name": "Hildeburgis Firenbrais",
-          "age": 8,
+        "35341": {
+          "key": 35341,
+          "name": "Adolfus Salomonszoon",
+          "age": 0,
           "alive": true,
-          "sex": "f",
+          "sex": "m",
           "parents": {
-            "mother": "Wijfgode (22768)",
-            "father": "Thomas (23176)"
+            "mother": "Sipper (22768)",
+            "father": "Salomon (19978)"
           }
         }
       },
@@ -70,41 +71,50 @@
         ],
         "sibling": [
           22771,
-          23064,
-          23328,
-          24682,
-          25434
+          22772,
+          22773,
+          22774
         ],
         "spouse": [
-          29618
+          34646
         ],
         "child": {
           "birth": [
-            30481
+            35343
           ]
         }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        2,
-        "middle class"
+        3,
+        "upper middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.412,
+      "all_incomes": [
+        0.985,
+        1.049,
+        1.189,
+        0.925,
+        1.412
+      ],
+      "job": {
+        "lawful": true,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 6,
-      "eye_color": "blue",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 5,
+      "eye_color": "brown",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
-        "C",
-        "S"
+        "S",
+        "C"
       ],
-      "health": 0.813,
-      "fertility": 0.756,
+      "health": 0.412,
+      "fertility": 0.513,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -112,147 +122,153 @@
     },
     "memory": {
       "health": {
-        "1224": {
+        "1222": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.813
+            "new_health": 0.412
           },
           "death": false
-        },
-        "1245": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.813
-          },
-          "death": true
         }
       },
       "events": {
-        "1223": [
+        "1221": [
           {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stBloemendaelse straet.se1.c2",
-              "street": "Bloemendaelse straet",
-              "neighborhood": "agnesbuurt",
-              "unique id": 214
+              "income class": 3,
+              "income class label": "upper middle class",
+              "section": "stDie lange straet3.se7.c3",
+              "street": "Die lange straet3",
+              "neighborhood": "visbuurt",
+              "unique id": 700
             }
+          }
+        ],
+        "1222": [
+          {
+            "topic": "new caretaker",
+            "person": 11597
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11596,
+              "name": "Vroeden",
+              "age": 44,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "parent"
+          }
+        ],
+        "1223": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ],
         "1224": [
           {
-            "topic": "new relationship",
-            "key": 23064,
-            "people": [
-              22768,
-              23060
-            ],
-            "people names": [
-              "Wijfgode Valant",
-              "Passelin Valant"
-            ],
-            "label": "sibling",
-            "committed": false
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           },
           {
-            "topic": "neglected"
+            "topic": "person died",
+            "person": {
+              "key": 19495,
+              "name": "Alretieren Vroedensdochter",
+              "age": 13,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Euffemia (11597)",
+                "father": "Vroeden (11596)"
+              }
+            },
+            "cause": "illness",
+            "label": "sibling"
           }
         ],
         "1225": [
           {
-            "topic": "new relationship",
-            "key": 23328,
-            "people": [
-              22768,
-              23324
-            ],
-            "people names": [
-              "Wijfgode Valant",
-              "Agnes Valant"
-            ],
-            "label": "sibling",
-            "committed": false
-          },
-          {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ],
         "1226": [
           {
-            "topic": "neglected"
-          }
-        ],
-        "1227": [
-          {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ],
         "1228": [
           {
             "topic": "neglected"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11597,
+              "name": "Euffemia",
+              "age": 49,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "parent"
           }
         ],
         "1229": [
           {
-            "topic": "new relationship",
-            "key": 24682,
-            "people": [
-              22768,
-              24678
-            ],
-            "people names": [
-              "Wijfgode Valant",
-              "Wendelmodis Valant"
-            ],
-            "label": "sibling",
-            "committed": false
-          },
-          {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ],
         "1230": [
           {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          },
+          {
+            "topic": "new caretaker",
+            "person": 22768
+          },
+          {
             "topic": "person died",
             "person": {
-              "key": 24678,
-              "name": "Wendelmodis Valant",
-              "age": 0,
+              "key": 12984,
+              "name": "Wendelmodis Vroedensdochter",
+              "age": 29,
               "alive": false,
               "sex": "f",
               "parents": {
-                "mother": "Reynildis (12951)",
-                "father": "Ingel (14888)"
+                "mother": "Euffemia (11597)",
+                "father": "Vroeden (11596)"
               }
             },
-            "cause": "childbirth",
+            "cause": "illness",
             "label": "sibling"
-          },
-          {
-            "topic": "neglected"
           }
         ],
         "1231": [
           {
-            "topic": "new relationship",
-            "key": 25434,
-            "people": [
-              22768,
-              25430
-            ],
-            "people names": [
-              "Wijfgode Valant",
-              "Aleydis Valant"
-            ],
-            "label": "sibling",
-            "committed": false
-          },
-          {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ],
         "1232": [
@@ -262,90 +278,139 @@
             "year": 1232
           },
           {
-            "topic": "neglected"
+            "topic": "event",
+            "event": "famine",
+            "year": 1232
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ],
         "1233": [
           {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ],
         "1234": [
           {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ],
         "1235": [
           {
-            "topic": "person died",
-            "person": {
-              "key": 14888,
-              "name": "Ingel Valant",
-              "age": 30,
-              "alive": false,
-              "sex": "m",
-              "parents": {
-                "mother": "Alene (10466)",
-                "father": "Niels (10465)"
-              }
-            },
-            "cause": "illness",
-            "label": "parent"
+            "topic": "event",
+            "event": "faction upheaval",
+            "faction": "Zealots",
+            "year": 1235
           },
           {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ],
         "1236": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1236
-          },
-          {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ],
         "1237": [
           {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stBloemendaelse straet.se1.c2",
-              "street": "Bloemendaelse straet",
-              "neighborhood": "agnesbuurt",
-              "unique id": 211
-            }
+            "topic": "not caretaker"
           },
           {
             "topic": "not enough income",
-            "income": 0.709,
-            "inhabitants": [
-              16769,
-              24040,
-              12951,
-              24487
-            ]
-          },
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1238": [
           {
-            "topic": "update",
-            "update": "parent married",
-            "parent": 12951,
-            "new partner": 16769
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1239": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ],
         "1240": [
           {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1241": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1242": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1243": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1244": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1245": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.985
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1246": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.049
+          }
+        ],
+        "1247": [
+          {
             "topic": "new relationship",
-            "key": 29618,
+            "key": 34646,
             "people": [
-              23176,
+              19978,
               22768
             ],
             "people names": [
-              "Thomas Firenbrais",
-              "Wijfgode Valant"
+              "Salomon",
+              "Sipper van Vroeden"
             ],
             "label": "spouse",
             "committed": true
@@ -353,65 +418,56 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stScherbier straet.se1.c2",
-              "street": "Scherbier straet",
-              "neighborhood": "cingelzuid",
-              "unique id": 627
+              "income class": 3,
+              "income class label": "upper middle class",
+              "section": "stDen Hof.se7.c3",
+              "street": "Den Hof",
+              "neighborhood": "denhof",
+              "unique id": 959
             }
           }
         ],
-        "1241": [
+        "1249": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.412
+          },
           {
             "topic": "new relationship",
-            "key": 30481,
+            "key": 35343,
             "people": [
               22768,
-              30479
+              35341
             ],
             "people names": [
-              "Wijfgode Valant",
-              "Hildeburgis Firenbrais"
+              "Sipper van Vroeden",
+              "Adolfus Salomonszoon"
             ],
             "label": "parentchild",
             "committed": false
-          },
-          {
-            "topic": "feelings change",
-            "target": 23176,
-            "target name": "Thomas Firenbrais",
-            "state": "out of love",
-            "relationship": 29618
-          }
-        ],
-        "1245": [
-          {
-            "topic": "death",
-            "cause": "illness"
           }
         ]
       }
     },
     "key": 22768,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stScherbier straet.se1.c2",
-      "street": "Scherbier straet",
-      "neighborhood": "cingelzuid",
-      "unique id": 627
+      "income class": 3,
+      "income class label": "upper middle class",
+      "section": "stDen Hof.se7.c3",
+      "street": "Den Hof",
+      "neighborhood": "denhof",
+      "unique id": 959
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
         22771,
-        23064,
-        23328,
-        24682,
-        25434,
-        29618
+        22772,
+        22773,
+        22774,
+        34646
       ]
     }
   }

@@ -23,8 +23,8 @@ class Home(Agent):
         self.no_inhabitants = 0
         self.inhabitant_tracking = []
         self.inhabitants = []
-        self.people_to_add_this_round = []
-        self.people_to_remove_this_round = []
+        self.people_to_remove = []
+        self.people_to_add = []
         self.caretakers = []
         self.care_dependants = []
 
@@ -43,24 +43,36 @@ class Home(Agent):
     PHASES / STEPS
     """
     def people(self):
-        return        
+        self.people_to_remove = []
+        self.people_to_add = []
 
-    def relationships(self): 
+    def lovedeathbirth(self): 
         return
     
     def houses(self):
         if self.no_inhabitants == 0:
             return
+        
+        # update inhabitants
+        # print('-------')
+        # print(self.inhabitants)
+        # print(self.people_to_add)
+        # print(self.people_to_remove)
+        for p in self.people_to_add:
+            self.add_person(p)
+        for p2 in self.people_to_remove:
+            self.remove_person(p2)
+
         msg = self.tasks.get()
         while msg != None:
             task = msg['topic']
-            if task == 'new person':
-                self.add_person(msg)
-            elif task == 'person died':
-                self.remove_person(msg)
-            elif task == 'person moved':
-                self.remove_person(msg)
-            elif task == 'new care dependant':
+            # if task == 'new person':
+            #     self.add_person(msg)
+            # elif task == 'person died':
+            #     self.remove_person(msg)
+            # elif task == 'person moved':
+            #     self.remove_person(msg)
+            if task == 'new care dependant':
                 self.add_care_dependant(msg['key'])
             elif task == 'remove care dependant':
                 self.remove_care_dependants(msg['key'])
@@ -94,14 +106,9 @@ class Home(Agent):
             self.log.add_log(log)
             self.find_caretaker()
 
-    def post_processing(self):
-        
-
+    def post_processing(self):      
         self.inhabitant_tracking.append((self.no_inhabitants, self.inhabitants))
-        # for p in self.people_to_add_this_round:
-        #     self.add_person(p)
-        # for p2 in self.people_to_remove_this_round:
-        #     self.remove_person(p2)
+        
 
     """
     UPDATE FUNCTIONS 
@@ -134,6 +141,7 @@ class Home(Agent):
             elif person_info['key'] in self.caretakers:
                 self.caretakers.remove(person_info['key'])
         else:
+            
             log_error('home remove error', {'person' : person_info, 'house' : self.address()})
 
     def add_care_dependant(self, key):
@@ -160,8 +168,13 @@ class Home(Agent):
             self.caretakers = []
 
     def receive_message(self, msg):
-        if msg['topic'] == 'income report':
+        topic = msg['topic']
+        if topic == 'income report':
             self.income_reports.append(msg)
+        elif topic in ['person died', 'person moved']:
+            self.people_to_remove.append(msg)
+        elif topic in ['new person']:
+            self.people_to_add.append(msg)
         else:
             self.tasks.add(msg)
 

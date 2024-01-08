@@ -142,6 +142,9 @@ class Person(Agent):
         }
         if self.home != None:
             self.community.message_home(self.home['unique id'], home_msg)
+        else:
+            ...
+            # log_error('no home', self.description())
 
         record = {
             'health' : health_report,
@@ -152,8 +155,9 @@ class Person(Agent):
         record['homsoc'] = homsoc_report
         self.memory.add_record(record)
 
-    def relationships(self): 
-        return
+    def lovedeathbirth(self): 
+        if self.mark_for_death:
+            self.die(self.body.death_cause)
     
     def houses(self):
         return
@@ -170,8 +174,8 @@ class Person(Agent):
                 self.memory.add_event(msg)
             elif topic == 'feelings change':
                 self.memory.add_event(msg)
-            elif topic == 'event':
-                self.process_event(msg)
+            # elif topic == 'event':
+            #     self.process_event(msg)
             elif topic == 'person died': # or topic == 'sibling died':
                 self.memory.add_event(msg)
             elif topic == 'new home': 
@@ -185,8 +189,8 @@ class Person(Agent):
                 self.occupation.find_job(self.age)
             elif topic == 'job notice':
                 self.memory.add_event(msg)
-            elif topic == 'die':
-                self.mark_for_death = True
+            # elif topic == 'die':
+            #     self.mark_for_death = True
             elif topic in ['now caretaker', 'not caretaker', 'new caretaker', 
                            'neglected', 'need care']:
                 self.homsoc.situation_change(msg, self.age)
@@ -198,23 +202,18 @@ class Person(Agent):
                 log_error('person received unrecognized message', msg)
             msg = self.messages.get()
         
-        # only die after everything else is processed this year
-        if self.mark_for_death:
-            self.die(self.body.death_cause)
+        
 
     """
     UTIL FUNCTIONS
     """        
     def receive_message(self, msg):
-        if self.alive:
-            self.messages.add(msg)
-        else:
-            # if person not alive, add only certain info and add directly
-            posthumous_info = ['new sibling']
-            topic = msg['topic']
-            if topic in posthumous_info:         
-                if topic == 'new sibling' :    
-                    self.network.add_sibling(msg['child key'], msg['kind'])
+        if not self.alive:
+            return
+        if msg['topic'] == 'event':
+            self.process_event(msg)
+            return
+        self.messages.add(msg)
 
     def relationship_processing(self, msg):
         if msg['label'] == 'parentchild':

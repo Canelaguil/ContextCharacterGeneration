@@ -1,81 +1,97 @@
 {
   "10553": {
     "alive": false,
-    "name": "Rabburgis",
-    "surname": "Kriec",
-    "full name": "Rabburgis Kriec",
+    "name": "Sywi",
+    "surname": "",
+    "full name": "Sywi",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.079,
-      "romantic interest": 0.845,
-      "sex interest": 0.832,
-      "gender expression": 0.036,
+      "sexuality": 0.064,
+      "romantic interest": 0.782,
+      "sex interest": 0.582,
+      "gender expression": 0.191,
       "sex": "f"
     },
-    "age": 49,
-    "birth year": 1169,
+    "age": 45,
+    "birth year": 1176,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
-      2,
-      "middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.942,
-      "nice-nasty": 0.149,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.441,
+      "nice-nasty": 0.429,
+      "honest-false": 0.59
     },
     "attitude": {
-      "outgoing": 0.524,
-      "dream": 0.377
+      "outgoing": 0.472,
+      "dream": 0.043
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving",
+          "caretaker"
+        ]
       },
       "expression": {
         "sexuality expression": 0.03,
-        "gender expression expression": 0.029
+        "gender expression expression": 0.136
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "12370": {
-          "key": 12370,
-          "name": "Iacobus Panne",
-          "age": 38,
+        "17638": {
+          "key": 17638,
+          "name": "Folcard Tay",
+          "age": 3,
           "alive": false,
           "sex": "m",
           "parents": {
-            "mother": "Rabburgis (10553)",
-            "father": "Segher (10552)"
+            "mother": "Sywi (10553)",
+            "father": "Enekonus (10387)"
           }
         },
-        "15543": {
-          "key": 15543,
-          "name": "Esa Panne",
-          "age": 0,
+        "18455": {
+          "key": 18455,
+          "name": "Marie Tay",
+          "age": 40,
           "alive": false,
           "sex": "f",
           "parents": {
-            "mother": "Rabburgis (10553)",
-            "father": "Segher (10552)"
+            "mother": "Sywi (10553)",
+            "father": "Enekonus (10387)"
+          }
+        },
+        "20289": {
+          "key": 20289,
+          "name": "Lenildis Tay",
+          "age": 36,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Sywi (10553)",
+            "father": "Enekonus (10387)"
           }
         }
       },
       "relationship keys": {
         "spouse": [
-          10554
+          10554,
+          17617
         ],
         "child": {
           "birth": [
-            12372,
-            15545
+            17640,
+            18457,
+            20291
           ]
         }
       }
@@ -83,23 +99,23 @@
     "occupation": {
       "has job": false,
       "income class": [
-        2,
-        "middle class"
+        1,
+        "lower middle class"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 4,
-      "eye_color": "green",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 9,
+      "eye_color": "brown",
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
-        "C",
-        "S"
+        "S",
+        "C"
       ],
-      "health": 0.641,
-      "fertility": 0.67,
+      "health": 0.752,
+      "fertility": 0.759,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -111,17 +127,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.641
+            "new_health": 0.752
           },
           "death": false
-        },
-        "1217": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.641
-          },
-          "death": true
         }
       },
       "events": {
@@ -134,8 +142,8 @@
               10553
             ],
             "people names": [
-              "Segher Panne",
-              "Rabburgis Kriec"
+              "Elberino Hoen",
+              "Sywi"
             ],
             "label": "spouse",
             "committed": true
@@ -143,73 +151,177 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stWaale straet.se1.c2",
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stWaale straet.se3.c1",
               "street": "Waale straet",
               "neighborhood": "agnesbuurt",
-              "unique id": 250
+              "unique id": 256
             }
+          }
+        ],
+        "1202": [
+          {
+            "key": 10554,
+            "topic": "unmarried"
           },
           {
-            "topic": "new relationship",
-            "key": 12372,
-            "people": [
-              10553,
-              12370
-            ],
-            "people names": [
-              "Rabburgis Kriec",
-              "Iacobus Panne"
-            ],
-            "label": "parentchild",
-            "committed": false
-          },
+            "topic": "person died",
+            "person": {
+              "key": 10552,
+              "name": "Elberino Hoen",
+              "age": 34,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "spouse"
+          }
+        ],
+        "1203": [
           {
-            "topic": "feelings change",
-            "target": 10552,
-            "target name": "Segher Panne",
-            "state": "solid love",
-            "relationship": 10554
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1204": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ],
         "1205": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1205
-          },
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
           {
             "topic": "new relationship",
-            "key": 15545,
+            "key": 17617,
             "people": [
-              10553,
-              15543
+              10387,
+              10553
             ],
             "people names": [
-              "Rabburgis Kriec",
-              "Esa Panne"
+              "Enekonus Tay",
+              "Sywi"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stDavids hof.se3.c1",
+              "street": "Davids hof",
+              "neighborhood": "jorisbuurt",
+              "unique id": 185
+            }
+          }
+        ],
+        "1208": [
+          {
+            "topic": "new relationship",
+            "key": 17640,
+            "people": [
+              10553,
+              17638
+            ],
+            "people names": [
+              "Sywi",
+              "Folcard Tay"
             ],
             "label": "parentchild",
             "committed": false
           }
         ],
-        "1206": [
+        "1209": [
+          {
+            "topic": "new relationship",
+            "key": 18457,
+            "people": [
+              10553,
+              18455
+            ],
+            "people names": [
+              "Sywi",
+              "Marie Tay"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.491,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0.377,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
           {
             "topic": "person died",
             "person": {
-              "key": 15543,
-              "name": "Esa Panne",
-              "age": 0,
+              "key": 17638,
+              "name": "Folcard Tay",
+              "age": 3,
               "alive": false,
-              "sex": "f",
+              "sex": "m",
               "parents": {
-                "mother": "Rabburgis (10553)",
-                "father": "Segher (10552)"
+                "mother": "Sywi (10553)",
+                "father": "Enekonus (10387)"
               }
             },
-            "cause": "childbirth",
+            "cause": "childhood illness",
             "label": "child"
+          }
+        ],
+        "1213": [
+          {
+            "topic": "new relationship",
+            "key": 20291,
+            "people": [
+              10553,
+              20289
+            ],
+            "people names": [
+              "Sywi",
+              "Lenildis Tay"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.103,
+            "inhabitants": []
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0.029,
+            "inhabitants": []
           }
         ],
         "1215": [
@@ -217,9 +329,68 @@
             "topic": "event",
             "event": "plague",
             "year": 1215
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1216": [
+          {
+            "topic": "not enough income",
+            "income": 0.084,
+            "inhabitants": []
           }
         ],
         "1217": [
+          {
+            "topic": "not enough income",
+            "income": 0.162,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          },
+          {
+            "key": 17617,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10387,
+              "name": "Enekonus Tay",
+              "age": 55,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "label": "spouse"
+          }
+        ],
+        "1218": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1219": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1220": [
+          {
+            "topic": "event",
+            "event": "famine",
+            "year": 1220
+          },
           {
             "topic": "death",
             "cause": "illness"
@@ -229,18 +400,19 @@
     },
     "key": 10553,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stWaale straet.se1.c2",
-      "street": "Waale straet",
-      "neighborhood": "agnesbuurt",
-      "unique id": 250
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stDavids hof.se3.c1",
+      "street": "Davids hof",
+      "neighborhood": "jorisbuurt",
+      "unique id": 185
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
-        10554
+        10554,
+        17617
       ]
     }
   }

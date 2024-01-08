@@ -1,59 +1,73 @@
 {
   "11054": {
     "alive": false,
-    "name": "Esa",
-    "surname": "Borlut",
-    "full name": "Esa Borlut",
+    "name": "Zuanelt",
+    "surname": "Stamelart",
+    "full name": "Zuanelt Stamelart",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.9,
-      "sex interest": 0.6,
-      "gender expression": 0.269,
+      "sexuality": 0.111,
+      "romantic interest": 0.644,
+      "sex interest": 0.588,
+      "gender expression": 0.072,
       "sex": "f"
     },
-    "age": 24,
+    "age": 26,
     "birth year": 1179,
     "sex": "f",
     "faction": "Zealots",
     "income class": [
-      0,
-      "working class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.655,
-      "nice-nasty": 0.413,
-      "honest-false": 0.291
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.706,
+      "honest-false": 0.21
     },
     "attitude": {
-      "outgoing": 0.866,
-      "dream": 0.257
+      "outgoing": 0.432,
+      "dream": 0.273
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving",
+          "caretaker"
+        ]
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.17
+        "sexuality expression": 0.102,
+        "gender expression expression": 0.009
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "13731": {
-          "key": 13731,
-          "name": "Enekonus Blonde",
-          "age": 13,
+        "12933": {
+          "key": 12933,
+          "name": "Eghenonis Raven",
+          "age": 6,
           "alive": false,
           "sex": "m",
           "parents": {
-            "mother": "Esa (11054)",
-            "father": "Assceric (11053)"
+            "mother": "Zuanelt (11054)",
+            "father": "Thezonus (11053)"
+          }
+        },
+        "13666": {
+          "key": 13666,
+          "name": "Brundonis Raven",
+          "age": 23,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Zuanelt (11054)",
+            "father": "Thezonus (11053)"
           }
         }
       },
@@ -63,7 +77,8 @@
         ],
         "child": {
           "birth": [
-            13733
+            12935,
+            13668
           ]
         }
       }
@@ -71,8 +86,8 @@
     "occupation": {
       "has job": false,
       "income class": [
-        0,
-        "working class"
+        1,
+        "lower middle class"
       ],
       "income": 0,
       "all_incomes": []
@@ -80,14 +95,14 @@
     "genetics": {
       "skin_color": 6,
       "eye_color": "blue",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "C",
+        "S",
         "C"
       ],
-      "health": 0.647,
-      "fertility": 0.722,
+      "health": 0.696,
+      "fertility": 0.655,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -99,15 +114,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.647
+            "new_health": 0.696
           },
           "death": false
         },
-        "1202": {
+        "1204": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.647
+            "new_health": 0.696
           },
           "death": true
         }
@@ -122,8 +137,8 @@
               11054
             ],
             "people names": [
-              "Assceric Blonde",
-              "Esa Borlut"
+              "Thezonus Raven",
+              "Zuanelt Stamelart"
             ],
             "label": "spouse",
             "committed": true
@@ -131,30 +146,99 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stOly straetje.se1.c0",
-              "street": "Oly straetje",
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stDie Coninc straet.se7.c1",
+              "street": "Die Coninc straet",
               "neighborhood": "kampbuurt",
-              "unique id": 482
+              "unique id": 466
             }
+          },
+          {
+            "topic": "feelings change",
+            "target": 11053,
+            "target name": "Thezonus Raven",
+            "state": "solid love",
+            "relationship": 11055
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 12935,
+            "people": [
+              11054,
+              12933
+            ],
+            "people names": [
+              "Zuanelt Stamelart",
+              "Eghenonis Raven"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1202": [
           {
             "topic": "new relationship",
-            "key": 13733,
+            "key": 13668,
             "people": [
               11054,
-              13731
+              13666
             ],
             "people names": [
-              "Esa Borlut",
-              "Enekonus Blonde"
+              "Zuanelt Stamelart",
+              "Brundonis Raven"
             ],
             "label": "parentchild",
             "committed": false
           },
+          {
+            "topic": "now caretaker",
+            "care dependants": [
+              27882,
+              32608,
+              33825,
+              34599
+            ]
+          },
+          {
+            "key": 11055,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11053,
+              "name": "Thezonus Raven",
+              "age": 48,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "spouse"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              13563,
+              23071,
+              23788,
+              18910,
+              27882,
+              23704,
+              32608,
+              24642,
+              33825,
+              34599
+            ]
+          }
+        ],
+        "1204": [
           {
             "topic": "death",
             "cause": "illness"
@@ -164,16 +248,16 @@
     },
     "key": 11054,
     "home": {
-      "income class": 0,
-      "income class label": "working class",
-      "section": "stOly straetje.se1.c0",
-      "street": "Oly straetje",
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stDie Coninc straet.se7.c1",
+      "street": "Die Coninc straet",
       "neighborhood": "kampbuurt",
-      "unique id": 482
+      "unique id": 466
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         11055
       ]

@@ -1,33 +1,33 @@
 {
   "10625": {
     "alive": false,
-    "name": "Wendelmodis",
-    "surname": "Ickbier",
-    "full name": "Wendelmodis Ickbier",
+    "name": "Katrin",
+    "surname": "Mol",
+    "full name": "Katrin Mol",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.067,
-      "romantic interest": 0.5,
-      "sex interest": 0.627,
-      "gender expression": 0.106,
+      "sexuality": 0.062,
+      "romantic interest": 0.867,
+      "sex interest": 0.691,
+      "gender expression": 0.0,
       "sex": "f"
     },
-    "age": 30,
-    "birth year": 1173,
+    "age": 23,
+    "birth year": 1181,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "Zealots",
     "income class": [
       0,
       "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.376,
-      "nice-nasty": 0.903,
-      "honest-false": 0.422
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.701,
+      "honest-false": 0.597
     },
     "attitude": {
-      "outgoing": 0.551,
-      "dream": 0.682
+      "outgoing": 0.545,
+      "dream": 0.151
     },
     "homsoc": {
       "means": {
@@ -40,22 +40,33 @@
         ]
       },
       "expression": {
-        "sexuality expression": 0.027,
-        "gender expression expression": 0.095
+        "sexuality expression": 0.021,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "13590": {
-          "key": 13590,
-          "name": "Iacobus Dybbenszoon",
-          "age": 47,
-          "alive": true,
-          "sex": "m",
+        "12951": {
+          "key": 12951,
+          "name": "Sarre",
+          "age": 1,
+          "alive": false,
+          "sex": "f",
           "parents": {
-            "mother": "Wendelmodis (10625)",
-            "father": "Dybben (10624)"
+            "mother": "Katrin (10625)",
+            "father": "Eustacius (10624)"
+          }
+        },
+        "13948": {
+          "key": 13948,
+          "name": "Lielde van Eustacius",
+          "age": 3,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Katrin (10625)",
+            "father": "Eustacius (10624)"
           }
         }
       },
@@ -65,7 +76,8 @@
         ],
         "child": {
           "birth": [
-            13592
+            12953,
+            13950
           ]
         }
       }
@@ -80,16 +92,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 7,
-      "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 5,
+      "eye_color": "blue",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
-        "S",
-        "S"
+        "C",
+        "C"
       ],
-      "health": 0.66,
-      "fertility": 0.595,
+      "health": 0.717,
+      "fertility": 0.713,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -101,9 +113,17 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.66
+            "new_health": 0.717
           },
           "death": false
+        },
+        "1203": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.717
+          },
+          "death": true
         }
       },
       "events": {
@@ -116,8 +136,8 @@
               10625
             ],
             "people names": [
-              "Dybben",
-              "Wendelmodis Ickbier"
+              "Eustacius",
+              "Katrin Mol"
             ],
             "label": "spouse",
             "committed": true
@@ -130,38 +150,67 @@
               "section": "stDe Tuyt.se1.c0",
               "street": "De Tuyt",
               "neighborhood": "agnesbuurt",
-              "unique id": 283
+              "unique id": 287
             }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 12953,
+            "people": [
+              10625,
+              12951
+            ],
+            "people names": [
+              "Katrin Mol",
+              "Sarre"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1202": [
           {
             "topic": "new relationship",
-            "key": 13592,
+            "key": 13950,
             "people": [
               10625,
-              13590
+              13948
             ],
             "people names": [
-              "Wendelmodis Ickbier",
-              "Iacobus Dybbenszoon"
+              "Katrin Mol",
+              "Lielde van Eustacius"
             ],
             "label": "parentchild",
             "committed": false
           },
           {
             "topic": "not enough income",
-            "income": 0.526,
-            "inhabitants": [
-              13590,
-              22458,
-              20037,
-              33450
-            ]
+            "income": 0.715,
+            "inhabitants": []
           },
           {
+            "topic": "person died",
+            "person": {
+              "key": 12951,
+              "name": "Sarre",
+              "age": 1,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Katrin (10625)",
+                "father": "Eustacius (10624)"
+              }
+            },
+            "cause": "childhood illness",
+            "label": "child"
+          }
+        ],
+        "1203": [
+          {
             "topic": "death",
-            "cause": "childbirth"
+            "cause": "illness"
           }
         ]
       }
@@ -173,7 +222,7 @@
       "section": "stDe Tuyt.se1.c0",
       "street": "De Tuyt",
       "neighborhood": "agnesbuurt",
-      "unique id": 283
+      "unique id": 287
     },
     "relationship status": {
       "taken": true,

@@ -1,19 +1,19 @@
 {
   "10229": {
     "alive": false,
-    "name": "Sara",
-    "surname": "",
-    "full name": "Sara",
+    "name": "Emgelberna",
+    "surname": "Stamelart",
+    "full name": "Emgelberna Stamelart",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.162,
-      "romantic interest": 0.536,
-      "sex interest": 0.645,
-      "gender expression": 0.041,
+      "sexuality": 0.104,
+      "romantic interest": 0.801,
+      "sex interest": 0.628,
+      "gender expression": 0.17,
       "sex": "f"
     },
-    "age": 43,
-    "birth year": 1158,
+    "age": 52,
+    "birth year": 1169,
     "sex": "f",
     "faction": "Zealots",
     "income class": [
@@ -21,13 +21,13 @@
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.187,
-      "honest-false": 0.685
+      "lawful-chaotic": 0.58,
+      "nice-nasty": 0.0,
+      "honest-false": 0.306
     },
     "attitude": {
-      "outgoing": 0.635,
-      "dream": 0.484
+      "outgoing": 0.403,
+      "dream": 0.386
     },
     "homsoc": {
       "means": {
@@ -38,39 +38,94 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.097,
-        "gender expression expression": 0.035
+        "sexuality expression": 0.039,
+        "gender expression expression": 0.16
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13184": {
+          "key": 13184,
+          "name": "Lenildis Snauel",
+          "age": 30,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Emgelberna (10229)",
+            "father": "Duker (10228)"
+          }
+        },
+        "14290": {
+          "key": 14290,
+          "name": "Kolekinus Snauel",
+          "age": 17,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Emgelberna (10229)",
+            "father": "Duker (10228)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10230
-        ]
+        ],
+        "child": {
+          "birth": [
+            13186,
+            14292
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         1,
         "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.858,
+      "all_incomes": [
+        0.994,
+        0.996,
+        1.021,
+        0.917,
+        0.932,
+        0.937,
+        0.936,
+        0.87,
+        0.823,
+        0.814,
+        0.757,
+        0.75,
+        0.812,
+        0.82,
+        0.895,
+        0.958,
+        0.947,
+        0.96,
+        0.914,
+        0.895,
+        0.858
+      ],
+      "job": {
+        "lawful": true,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 0,
-      "eye_color": "brown",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "skin_color": 1,
+      "eye_color": "blue",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.73,
-      "fertility": 0.757,
+      "health": 0.0,
+      "fertility": 0.717,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -82,13 +137,50 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.73
+            "new_health": 0.612
+          },
+          "death": false
+        },
+        "1206": {
+          "health": {
+            "change": true,
+            "value_change": -0.218,
+            "new_health": 0.394
+          },
+          "death": false
+        },
+        "1207": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.394
+          },
+          "death": false
+        },
+        "1219": {
+          "health": {
+            "change": true,
+            "value_change": -0.259,
+            "new_health": 0.135
+          },
+          "death": false
+        },
+        "1220": {
+          "health": {
+            "change": true,
+            "value_change": -0.135,
+            "new_health": 0.0
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.994
+          },
           {
             "topic": "new relationship",
             "key": 10230,
@@ -97,8 +189,8 @@
               10229
             ],
             "people names": [
-              "Lammekin",
-              "Sara"
+              "Duker Snauel",
+              "Emgelberna Stamelart"
             ],
             "label": "spouse",
             "committed": true
@@ -111,12 +203,84 @@
               "section": "stHelle voet.se5.c1",
               "street": "Helle voet",
               "neighborhood": "jorisbuurt",
-              "unique id": 107
+              "unique id": 108
             }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 13186,
+            "people": [
+              10229,
+              13184
+            ],
+            "people names": [
+              "Emgelberna Stamelart",
+              "Lenildis Snauel"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1202": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.021
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 14292,
+            "people": [
+              10229,
+              14290
+            ],
+            "people names": [
+              "Emgelberna Stamelart",
+              "Kolekinus Snauel"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          }
+        ],
+        "1218": [
+          {
+            "key": 10230,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10228,
+              "name": "Duker Snauel",
+              "age": 54,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "label": "spouse"
+          }
+        ],
+        "1220": [
+          {
+            "topic": "event",
+            "event": "famine",
+            "year": 1220
           },
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "sickness"
           }
         ]
       }
@@ -128,11 +292,11 @@
       "section": "stHelle voet.se5.c1",
       "street": "Helle voet",
       "neighborhood": "jorisbuurt",
-      "unique id": 107
+      "unique id": 108
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         10230
       ]

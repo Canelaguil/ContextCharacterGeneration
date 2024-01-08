@@ -1,80 +1,120 @@
 {
   "12011": {
     "alive": false,
-    "name": "Siburgis",
+    "name": "Pietersen",
     "surname": "",
-    "full name": "Siburgis",
+    "full name": "Pietersen",
     "born this way": {
       "sexuality label": "straight",
       "sexuality": 0.0,
-      "romantic interest": 0.734,
-      "sex interest": 0.999,
-      "gender expression": 0.0,
+      "romantic interest": 0.946,
+      "sex interest": 0.686,
+      "gender expression": 0.1,
       "sex": "f"
     },
-    "age": 35,
-    "birth year": 1177,
+    "age": 47,
+    "birth year": 1170,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
-      2,
-      "middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.749,
-      "honest-false": 0.437
+      "lawful-chaotic": 0.693,
+      "nice-nasty": 0.084,
+      "honest-false": 0.0
     },
     "attitude": {
-      "outgoing": 0.696,
-      "dream": 0.662
+      "outgoing": 0.678,
+      "dream": 0.509
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
         "flags": [
-          "starving"
+          "starving",
+          "caretaker"
         ]
       },
       "expression": {
         "sexuality expression": -0.001,
-        "gender expression expression": -0.001
+        "gender expression expression": 0.048
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "16200": {
+          "key": 16200,
+          "name": "Godeuert van Abelkijn",
+          "age": 19,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Pietersen (12011)",
+            "father": "Abelkijn (12010)"
+          }
+        },
+        "17584": {
+          "key": 17584,
+          "name": "Lutghardis Schille",
+          "age": 19,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Pietersen (12011)",
+            "father": "Abelkijn (12010)"
+          }
+        },
+        "17788": {
+          "key": 17788,
+          "name": "Wissen van Abelkijn",
+          "age": 3,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Pietersen (12011)",
+            "father": "Abelkijn (12010)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          12012,
-          16017,
-          18738
-        ]
+          12012
+        ],
+        "child": {
+          "birth": [
+            16202,
+            17586,
+            17790
+          ]
+        }
       }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        2,
-        "middle class"
+        1,
+        "lower middle class"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 3,
-      "eye_color": "brown",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "skin_color": 8,
+      "eye_color": "blue",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "C",
+        "S",
         "S"
       ],
-      "health": 0.143,
-      "fertility": 0.453,
+      "health": 0.449,
+      "fertility": 0.435,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -86,25 +126,17 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.503
+            "new_health": 0.449
           },
           "death": false
         },
-        "1207": {
-          "health": {
-            "change": true,
-            "value_change": -0.36,
-            "new_health": 0.143
-          },
-          "death": false
-        },
-        "1208": {
+        "1216": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.143
+            "new_health": 0.449
           },
-          "death": false
+          "death": true
         }
       },
       "events": {
@@ -117,8 +149,8 @@
               12011
             ],
             "people names": [
-              "Didderic Reigher",
-              "Siburgis"
+              "Abelkijn Schille",
+              "Pietersen"
             ],
             "label": "spouse",
             "committed": true
@@ -126,16 +158,95 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stCromme straet.se5.c2",
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stCromme straet.se1.c1",
               "street": "Cromme straet",
               "neighborhood": "denhof",
-              "unique id": 905
+              "unique id": 875
             }
           }
         ],
-        "1202": [
+        "1201": [
+          {
+            "topic": "feelings change",
+            "target": 12010,
+            "target name": "Abelkijn Schille",
+            "state": "solid love",
+            "relationship": 12012
+          }
+        ],
+        "1205": [
+          {
+            "topic": "new relationship",
+            "key": 16202,
+            "people": [
+              12011,
+              16200
+            ],
+            "people names": [
+              "Pietersen",
+              "Godeuert van Abelkijn"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1207": [
+          {
+            "topic": "new relationship",
+            "key": 17586,
+            "people": [
+              12011,
+              17584
+            ],
+            "people names": [
+              "Pietersen",
+              "Lutghardis Schille"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1208": [
+          {
+            "topic": "new relationship",
+            "key": 17790,
+            "people": [
+              12011,
+              17788
+            ],
+            "people names": [
+              "Pietersen",
+              "Wissen van Abelkijn"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1211": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 17788,
+              "name": "Wissen van Abelkijn",
+              "age": 3,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Pietersen (12011)",
+                "father": "Abelkijn (12010)"
+              }
+            },
+            "cause": "childhood illness",
+            "label": "child"
+          }
+        ],
+        "1213": [
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          },
           {
             "key": 12012,
             "topic": "unmarried"
@@ -144,73 +255,28 @@
             "topic": "person died",
             "person": {
               "key": 12010,
-              "name": "Didderic Reigher",
-              "age": 49,
+              "name": "Abelkijn Schille",
+              "age": 55,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
             },
-            "cause": "illness",
+            "cause": "sickness",
             "label": "spouse"
-          },
+          }
+        ],
+        "1214": [
           {
             "topic": "not enough income",
             "income": 0,
             "inhabitants": []
           }
         ],
-        "1203": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1204": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1205": [
+        "1215": [
           {
             "topic": "event",
             "event": "plague",
-            "year": 1205
-          },
-          {
-            "topic": "new relationship",
-            "key": 16017,
-            "people": [
-              10780,
-              12011
-            ],
-            "people names": [
-              "Wicghard",
-              "Siburgis"
-            ],
-            "label": "spouse",
-            "committed": true
-          }
-        ],
-        "1206": [
-          {
-            "key": 16017,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 10780,
-              "name": "Wicghard",
-              "age": 34,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "cause": "plague",
-            "label": "spouse"
+            "year": 1215
           },
           {
             "topic": "not enough income",
@@ -218,95 +284,28 @@
             "inhabitants": []
           }
         ],
-        "1207": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1208": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1209": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1210": [
-          {
-            "topic": "new relationship",
-            "key": 18738,
-            "people": [
-              10000,
-              12011
-            ],
-            "people names": [
-              "Oudrauen",
-              "Siburgis"
-            ],
-            "label": "spouse",
-            "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stUterechse straet.se1.c2",
-              "street": "Uterechse straet",
-              "neighborhood": "varkensbuurt",
-              "unique id": 1
-            }
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.295,
-            "inhabitants": []
-          }
-        ],
-        "1211": [
-          {
-            "topic": "feelings change",
-            "target": 10000,
-            "target name": "Oudrauen",
-            "state": "out of love",
-            "relationship": 18738
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.187,
-            "inhabitants": []
-          },
+        "1216": [
           {
             "topic": "death",
-            "cause": "starvation"
+            "cause": "illness"
           }
         ]
       }
     },
     "key": 12011,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stUterechse straet.se1.c2",
-      "street": "Uterechse straet",
-      "neighborhood": "varkensbuurt",
-      "unique id": 1
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stCromme straet.se1.c1",
+      "street": "Cromme straet",
+      "neighborhood": "denhof",
+      "unique id": 875
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
-        12012,
-        16017,
-        18738
+        12012
       ]
     }
   }

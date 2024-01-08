@@ -1,85 +1,59 @@
 {
   "11192": {
     "alive": false,
-    "name": "Remsindis",
-    "surname": "Pannekins",
-    "full name": "Remsindis Pannekins",
+    "name": "Gloria",
+    "surname": "Zassen",
+    "full name": "Gloria Zassen",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.742,
-      "sex interest": 0.795,
-      "gender expression": 0.095,
+      "sexuality": 0.05,
+      "romantic interest": 0.596,
+      "sex interest": 0.509,
+      "gender expression": 0.008,
       "sex": "f"
     },
-    "age": 25,
-    "birth year": 1182,
+    "age": 53,
+    "birth year": 1159,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "Zealots",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.787,
-      "nice-nasty": 0.978,
-      "honest-false": 0.0
+      "lawful-chaotic": 0.784,
+      "nice-nasty": 0.297,
+      "honest-false": 0.901
     },
     "attitude": {
-      "outgoing": 0.4,
-      "dream": 0.399
+      "outgoing": 0.389,
+      "dream": 0.589
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
         "flags": [
-          "starving"
+          "starving",
+          "caretaker"
         ]
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.057
+        "sexuality expression": 0.032,
+        "gender expression expression": 0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {
-        "13131": {
-          "key": 13131,
-          "name": "Amelgeir",
-          "age": 25,
-          "alive": false,
-          "sex": "f",
-          "parents": {
-            "mother": "Remsindis (11192)",
-            "father": "Thidboldus (11191)"
-          }
-        },
-        "16351": {
-          "key": 16351,
-          "name": "Bartrarde",
-          "age": 39,
-          "alive": false,
-          "sex": "m",
-          "parents": {
-            "mother": "Remsindis (11192)",
-            "father": "Thidboldus (11191)"
-          }
-        }
-      },
+      "children": {},
       "relationship keys": {
         "spouse": [
-          11193
-        ],
-        "child": {
-          "birth": [
-            13133,
-            16353
-          ]
-        }
+          11193,
+          16243,
+          19255
+        ]
       }
     },
     "occupation": {
@@ -92,16 +66,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 5,
-      "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 3,
+      "eye_color": "green",
+      "hair_color": "red",
+      "hair_color_code": 3,
       "hair_type": [
         "S",
         "C"
       ],
-      "health": 0.676,
-      "fertility": 0.709,
+      "health": 0.215,
+      "fertility": 0.665,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -113,9 +87,33 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.676
+            "new_health": 0.694
           },
           "death": false
+        },
+        "1209": {
+          "health": {
+            "change": true,
+            "value_change": -0.099,
+            "new_health": 0.595
+          },
+          "death": false
+        },
+        "1210": {
+          "health": {
+            "change": true,
+            "value_change": -0.274,
+            "new_health": 0.321
+          },
+          "death": false
+        },
+        "1211": {
+          "health": {
+            "change": true,
+            "value_change": -0.106,
+            "new_health": 0.215
+          },
+          "death": true
         }
       },
       "events": {
@@ -128,8 +126,8 @@
               11192
             ],
             "people names": [
-              "Thidboldus",
-              "Remsindis Pannekins"
+              "Dauid Coc",
+              "Gloria Zassen"
             ],
             "label": "spouse",
             "committed": true
@@ -142,93 +140,162 @@
               "section": "stBreestraat.se1.c2",
               "street": "Breestraat",
               "neighborhood": "olvbuurt",
-              "unique id": 538
+              "unique id": 535
             }
-          }
-        ],
-        "1201": [
-          {
-            "topic": "new relationship",
-            "key": 13133,
-            "people": [
-              11192,
-              13131
-            ],
-            "people names": [
-              "Remsindis Pannekins",
-              "Amelgeir"
-            ],
-            "label": "parentchild",
-            "committed": false
           }
         ],
         "1203": [
           {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
+            "key": 11193,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11191,
+              "name": "Dauid Coc",
+              "age": 49,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "spouse"
           }
         ],
         "1204": [
           {
             "topic": "not enough income",
-            "income": 0.183,
+            "income": 0,
             "inhabitants": []
           }
         ],
         "1205": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1205
+            "topic": "new relationship",
+            "key": 16243,
+            "people": [
+              10690,
+              11192
+            ],
+            "people names": [
+              "Helpriko Durcant",
+              "Gloria Zassen"
+            ],
+            "label": "spouse",
+            "committed": true
           },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          }
+        ],
+        "1206": [
           {
             "topic": "not enough income",
             "income": 0.0,
             "inhabitants": []
           }
         ],
-        "1206": [
+        "1207": [
           {
-            "topic": "new relationship",
-            "key": 16353,
-            "people": [
-              11192,
-              16351
-            ],
-            "people names": [
-              "Remsindis Pannekins",
-              "Bartrarde"
-            ],
-            "label": "parentchild",
-            "committed": false
-          },
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0.139,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
           {
             "topic": "not enough income",
             "income": 0.0,
             "inhabitants": []
           },
           {
+            "key": 16243,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10690,
+              "name": "Helpriko Durcant",
+              "age": 56,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "label": "spouse"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "new relationship",
+            "key": 19255,
+            "people": [
+              11773,
+              11192
+            ],
+            "people names": [
+              "Eylwardo Compere",
+              "Gloria Zassen"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stNieu straet.se3.c1",
+              "street": "Nieu straet",
+              "neighborhood": "visbuurt",
+              "unique id": 768
+            }
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.853,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
             "topic": "death",
-            "cause": "starvation"
+            "cause": "old age"
           }
         ]
       }
     },
     "key": 11192,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stBreestraat.se1.c2",
-      "street": "Breestraat",
-      "neighborhood": "olvbuurt",
-      "unique id": 538
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stNieu straet.se3.c1",
+      "street": "Nieu straet",
+      "neighborhood": "visbuurt",
+      "unique id": 768
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        11193
+        11193,
+        16243,
+        19255
       ]
     }
   }

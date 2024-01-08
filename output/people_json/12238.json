@@ -1,85 +1,108 @@
 {
   "12238": {
     "alive": false,
-    "name": "Amelgeir",
-    "surname": "",
-    "full name": "Amelgeir",
+    "name": "Gheldekin",
+    "surname": "Busseel",
+    "full name": "Gheldekin Busseel",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.074,
-      "romantic interest": 0.849,
-      "sex interest": 0.964,
-      "gender expression": 0.179,
+      "sexuality": 0.099,
+      "romantic interest": 0.819,
+      "sex interest": 0.728,
+      "gender expression": 0.159,
       "sex": "m"
     },
-    "age": 3,
-    "birth year": 1200,
+    "age": 36,
+    "birth year": 1171,
     "sex": "m",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.553,
-      "nice-nasty": 0.655,
-      "honest-false": 0.914
+      "lawful-chaotic": 0.321,
+      "nice-nasty": 0.999,
+      "honest-false": 0.664
     },
     "attitude": {
-      "outgoing": 0.35,
-      "dream": 0.556
+      "outgoing": 0.505,
+      "dream": 0.0
     },
     "homsoc": {
       "means": {
         "independent": false,
         "taken_care_of": false,
-        "caretaker": true,
-        "needs_care": true,
+        "caretaker": false,
+        "needs_care": false,
         "flags": [
-          "neglected"
+          "starving"
         ]
       },
       "expression": {
-        "sexuality expression": 0.063,
-        "gender expression expression": 0.161
+        "sexuality expression": 0.078,
+        "gender expression expression": 0.08
       }
     },
     "network": {
-      "parents": {
-        "mother": "Linnea (10109)",
-        "father": "Eghenonis (10108)"
+      "parents": "firstgen",
+      "children": {
+        "13376": {
+          "key": 13376,
+          "name": "Veder Busseel",
+          "age": 48,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Sywi (12239)",
+            "father": "Gheldekin (12238)"
+          }
+        }
       },
-      "children": {},
       "relationship keys": {
-        "parent": [
-          12239,
+        "spouse": [
           12240
         ],
-        "sibling": [
-          14155
-        ]
+        "child": {
+          "birth": [
+            13377
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         1,
         "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.559,
+      "all_incomes": [
+        1.096,
+        0.632,
+        0.592,
+        0.095,
+        0.134,
+        0.547,
+        0.478,
+        0.559
+      ],
+      "job": {
+        "lawful": false,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 0,
-      "eye_color": "brown",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "skin_color": 7,
+      "eye_color": "blue",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "S",
-        "C"
+        "C",
+        "S"
       ],
-      "health": 0.762,
-      "fertility": 0.73,
+      "health": 0.625,
+      "fertility": 0.668,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -87,19 +110,19 @@
     },
     "memory": {
       "health": {
-        "1201": {
+        "1200": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.762
+            "new_health": 0.625
           },
           "death": false
         },
-        "1203": {
+        "1206": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.762
+            "new_health": 0.625
           },
           "death": true
         }
@@ -107,48 +130,87 @@
       "events": {
         "1200": [
           {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.096
+          },
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.632
+          },
+          {
+            "topic": "new relationship",
+            "key": 12240,
+            "people": [
+              12238,
+              12239
+            ],
+            "people names": [
+              "Gheldekin Busseel",
+              "Sywi Spiker"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
             "topic": "new home",
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stSlyck straet.se3.c1",
-              "street": "Slyck straet",
-              "neighborhood": "varkensbuurt",
-              "unique id": 45
+              "section": "stAppel Marckt.se3.c1",
+              "street": "Appel Marckt",
+              "neighborhood": "denhof",
+              "unique id": 972
             }
           }
         ],
         "1201": [
           {
-            "topic": "neglected"
+            "topic": "new relationship",
+            "key": 13377,
+            "people": [
+              12238,
+              13376
+            ],
+            "people names": [
+              "Gheldekin Busseel",
+              "Veder Busseel"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1202": [
           {
-            "topic": "neglected"
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.095
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.095,
+            "inhabitants": []
           }
         ],
         "1203": [
           {
-            "topic": "new relationship",
-            "key": 14155,
-            "people": [
-              12238,
-              14152
-            ],
-            "people names": [
-              "Amelgeir",
-              "Gherung Groete"
-            ],
-            "label": "sibling",
-            "committed": false
-          },
+            "topic": "not enough income",
+            "income": 0.134,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
           {
-            "topic": "neglected"
-          },
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.478
+          }
+        ],
+        "1206": [
           {
             "topic": "death",
-            "cause": "childhood illness"
+            "cause": "illness"
           }
         ]
       }
@@ -157,16 +219,16 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stSlyck straet.se3.c1",
-      "street": "Slyck straet",
-      "neighborhood": "varkensbuurt",
-      "unique id": 45
+      "section": "stAppel Marckt.se3.c1",
+      "street": "Appel Marckt",
+      "neighborhood": "denhof",
+      "unique id": 972
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
-        14155
+        12240
       ]
     }
   }

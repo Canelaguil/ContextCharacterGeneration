@@ -1,33 +1,33 @@
 {
   "10166": {
     "alive": false,
-    "name": "Moerseil",
-    "surname": "Putoc",
-    "full name": "Moerseil Putoc",
+    "name": "Woltwigis",
+    "surname": "Quistwater",
+    "full name": "Woltwigis Quistwater",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.144,
-      "romantic interest": 0.893,
-      "sex interest": 0.57,
-      "gender expression": 0.021,
+      "sexuality": 0.008,
+      "romantic interest": 0.789,
+      "sex interest": 0.451,
+      "gender expression": 0.023,
       "sex": "f"
     },
-    "age": 21,
-    "birth year": 1180,
+    "age": 55,
+    "birth year": 1168,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "No religion",
     "income class": [
       0,
       "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.614,
-      "nice-nasty": 0.94,
-      "honest-false": 0.144
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.384,
+      "honest-false": 0.906
     },
     "attitude": {
-      "outgoing": 0.317,
-      "dream": 0.592
+      "outgoing": 0.504,
+      "dream": 0.211
     },
     "homsoc": {
       "means": {
@@ -35,25 +35,39 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving",
+          "caretaker"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.074,
-        "gender expression expression": 0.008
+        "sexuality expression": 0.005,
+        "gender expression expression": 0.011
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "12256": {
-          "key": 12256,
-          "name": "Thedwi Cnode",
-          "age": 4,
+        "14995": {
+          "key": 14995,
+          "name": "Folcard Masc",
+          "age": 16,
           "alive": false,
-          "sex": "f",
+          "sex": "m",
           "parents": {
-            "mother": "Moerseil (10166)",
-            "father": "Winrechus (10165)"
+            "mother": "Woltwigis (10166)",
+            "father": "Wein (10165)"
+          }
+        },
+        "15760": {
+          "key": 15760,
+          "name": "Willibrando Masc",
+          "age": 44,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Woltwigis (10166)",
+            "father": "Wein (10165)"
           }
         }
       },
@@ -63,7 +77,8 @@
         ],
         "child": {
           "birth": [
-            12258
+            14997,
+            15762
           ]
         }
       }
@@ -78,7 +93,7 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 0,
+      "skin_color": 9,
       "eye_color": "blue",
       "hair_color": "strawberry blonde",
       "hair_color_code": 5,
@@ -86,8 +101,8 @@
         "C",
         "S"
       ],
-      "health": 0.644,
-      "fertility": 0.609,
+      "health": 0.0,
+      "fertility": 0.661,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -99,9 +114,49 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.644
+            "new_health": 0.73
           },
           "death": false
+        },
+        "1218": {
+          "health": {
+            "change": true,
+            "value_change": -0.171,
+            "new_health": 0.559
+          },
+          "death": false
+        },
+        "1219": {
+          "health": {
+            "change": true,
+            "value_change": -0.176,
+            "new_health": 0.383
+          },
+          "death": false
+        },
+        "1220": {
+          "health": {
+            "change": true,
+            "value_change": -0.3,
+            "new_health": 0.083
+          },
+          "death": false
+        },
+        "1221": {
+          "health": {
+            "change": true,
+            "value_change": -0.082,
+            "new_health": 0.001
+          },
+          "death": false
+        },
+        "1222": {
+          "health": {
+            "change": true,
+            "value_change": -0.001,
+            "new_health": 0.0
+          },
+          "death": true
         }
       },
       "events": {
@@ -114,8 +169,8 @@
               10166
             ],
             "people names": [
-              "Winrechus Cnode",
-              "Moerseil Putoc"
+              "Wein Masc",
+              "Woltwigis Quistwater"
             ],
             "label": "spouse",
             "committed": true
@@ -125,29 +180,306 @@
             "home": {
               "income class": 0,
               "income class label": "working class",
-              "section": "stIn den Haeg.se1.c0",
+              "section": "stIn den Haeg.se3.c0",
               "street": "In den Haeg",
               "neighborhood": "varkensbuurt",
-              "unique id": 69
+              "unique id": 75
             }
-          },
+          }
+        ],
+        "1204": [
           {
             "topic": "new relationship",
-            "key": 12258,
+            "key": 14997,
             "people": [
               10166,
-              12256
+              14995
             ],
             "people names": [
-              "Moerseil Putoc",
-              "Thedwi Cnode"
+              "Woltwigis Quistwater",
+              "Folcard Masc"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1205": [
+          {
+            "topic": "new relationship",
+            "key": 15762,
+            "people": [
+              10166,
+              15760
+            ],
+            "people names": [
+              "Woltwigis Quistwater",
+              "Willibrando Masc"
             ],
             "label": "parentchild",
             "committed": false
           },
           {
+            "topic": "not enough income",
+            "income": 0.888,
+            "inhabitants": [
+              15760,
+              19840,
+              29801,
+              34293
+            ]
+          }
+        ],
+        "1206": [
+          {
+            "topic": "feelings change",
+            "target": 10165,
+            "target name": "Wein Masc",
+            "state": "out of love",
+            "relationship": 10167
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.97,
+            "inhabitants": [
+              15760,
+              19840,
+              29801,
+              34293
+            ]
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0.913,
+            "inhabitants": [
+              15760,
+              19840,
+              29801,
+              34293
+            ]
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0.901,
+            "inhabitants": [
+              15760,
+              19840,
+              29801,
+              34293
+            ]
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0.671,
+            "inhabitants": [
+              15760,
+              19840,
+              29801,
+              34293
+            ]
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0.554,
+            "inhabitants": [
+              15760,
+              19840,
+              29801,
+              34293
+            ]
+          }
+        ],
+        "1212": [
+          {
+            "topic": "feelings change",
+            "target": 10165,
+            "target name": "Wein Masc",
+            "state": "solid love",
+            "relationship": 10167
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.649,
+            "inhabitants": [
+              15760,
+              19840,
+              29801,
+              34293
+            ]
+          }
+        ],
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0.483,
+            "inhabitants": [
+              15760,
+              19840,
+              29801,
+              34293
+            ]
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0.045,
+            "inhabitants": [
+              15760,
+              19840,
+              29801,
+              34293
+            ]
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.016,
+            "inhabitants": [
+              15760,
+              19840,
+              29801,
+              34293
+            ]
+          }
+        ],
+        "1216": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              15760,
+              19840,
+              29801,
+              34293
+            ]
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": [
+              29801,
+              34293
+            ]
+          },
+          {
+            "key": 10167,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10165,
+              "name": "Wein Masc",
+              "age": 53,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "label": "spouse"
+          }
+        ],
+        "1217": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              15760,
+              19840,
+              29801,
+              34293
+            ]
+          }
+        ],
+        "1218": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              15760,
+              19840,
+              29801,
+              34293
+            ]
+          }
+        ],
+        "1219": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              15760,
+              19840,
+              29801,
+              34293
+            ]
+          }
+        ],
+        "1220": [
+          {
+            "topic": "event",
+            "event": "famine",
+            "year": 1220
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              15760,
+              19840,
+              29801,
+              34293
+            ]
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 14995,
+              "name": "Folcard Masc",
+              "age": 16,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Woltwigis (10166)",
+                "father": "Wein (10165)"
+              }
+            },
+            "cause": "illness",
+            "label": "child"
+          }
+        ],
+        "1221": [
+          {
+            "topic": "not caretaker"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              15760,
+              19840,
+              29801,
+              34293
+            ]
+          }
+        ],
+        "1222": [
+          {
             "topic": "death",
-            "cause": "childbirth"
+            "cause": "sickness"
           }
         ]
       }
@@ -156,14 +488,14 @@
     "home": {
       "income class": 0,
       "income class label": "working class",
-      "section": "stIn den Haeg.se1.c0",
+      "section": "stIn den Haeg.se3.c0",
       "street": "In den Haeg",
       "neighborhood": "varkensbuurt",
-      "unique id": 69
+      "unique id": 75
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         10167
       ]

@@ -1,90 +1,108 @@
 {
   "12229": {
     "alive": false,
-    "name": "Amisius",
-    "surname": "Lozere",
-    "full name": "Amisius Lozere",
+    "name": "Sanders",
+    "surname": "Pratre",
+    "full name": "Sanders Pratre",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.027,
-      "romantic interest": 0.656,
-      "sex interest": 0.502,
-      "gender expression": 0.194,
+      "sexuality": 0.014,
+      "romantic interest": 0.777,
+      "sex interest": 0.433,
+      "gender expression": 0.16,
       "sex": "m"
     },
-    "age": 15,
-    "birth year": 1200,
+    "age": 53,
+    "birth year": 1156,
     "sex": "m",
-    "faction": "Dogmatists",
+    "faction": "No religion",
     "income class": [
-      2,
-      "middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.339,
-      "nice-nasty": 0.562,
-      "honest-false": 0.692
+      "lawful-chaotic": 0.0,
+      "nice-nasty": 0.445,
+      "honest-false": 0.764
     },
     "attitude": {
-      "outgoing": 0.287,
-      "dream": 0.408
+      "outgoing": 0.502,
+      "dream": 0.853
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
-        "caretaker": true,
-        "needs_care": true,
-        "flags": [
-          "neglected",
-          "starving"
-        ]
+        "caretaker": false,
+        "needs_care": false,
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.017,
-        "gender expression expression": 0.076
+        "sexuality expression": 0.006,
+        "gender expression expression": 0.09
       }
     },
     "network": {
-      "parents": {
-        "mother": "Nannen (10079)",
-        "father": "Fellen (10078)"
+      "parents": "firstgen",
+      "children": {
+        "15099": {
+          "key": 15099,
+          "name": "Saxiardis Pratre",
+          "age": 25,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Wendelmodis (12230)",
+            "father": "Sanders (12229)"
+          }
+        }
       },
-      "children": {},
       "relationship keys": {
-        "parent": [
-          12230,
+        "spouse": [
           12231
         ],
-        "sibling": [
-          12837,
-          14789,
-          16094,
-          16705,
-          18825
-        ]
+        "child": {
+          "birth": [
+            15100
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        2,
-        "middle class"
+        1,
+        "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.499,
+      "all_incomes": [
+        1.294,
+        0.983,
+        1.256,
+        1.147,
+        1.499,
+        1.366,
+        1.499,
+        1.412,
+        1.499,
+        1.499
+      ],
+      "job": {
+        "lawful": false,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 7,
-      "eye_color": "blue",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 4,
+      "eye_color": "green",
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
-        "S",
-        "C"
+        "C",
+        "S"
       ],
-      "health": 0.587,
-      "fertility": 0.776,
+      "health": 0.0,
+      "fertility": 0.755,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -92,249 +110,124 @@
     },
     "memory": {
       "health": {
-        "1201": {
+        "1200": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.715
+            "new_health": 0.706
+          },
+          "death": false
+        },
+        "1206": {
+          "health": {
+            "change": true,
+            "value_change": -0.227,
+            "new_health": 0.479
           },
           "death": false
         },
         "1207": {
           "health": {
             "change": true,
-            "value_change": -0.128,
-            "new_health": 0.587
+            "value_change": -0.308,
+            "new_health": 0.171
           },
           "death": false
         },
         "1208": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.587
+            "change": true,
+            "value_change": -0.171,
+            "new_health": 0.0
           },
-          "death": false
+          "death": true
         }
       },
       "events": {
         "1200": [
           {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.294
+          },
+          {
+            "topic": "new relationship",
+            "key": 12231,
+            "people": [
+              12229,
+              12230
+            ],
+            "people names": [
+              "Sanders Pratre",
+              "Wendelmodis Valecappe"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stVerckens merct.se5.c2",
-              "street": "Verckens merct",
-              "neighborhood": "varkensbuurt",
-              "unique id": 33
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stAppel Marckt.se3.c1",
+              "street": "Appel Marckt",
+              "neighborhood": "denhof",
+              "unique id": 969
             }
+          },
+          {
+            "topic": "feelings change",
+            "target": 12230,
+            "target name": "Wendelmodis Valecappe",
+            "state": "out of love",
+            "relationship": 12231
           }
         ],
         "1201": [
           {
-            "topic": "new relationship",
-            "key": 12837,
-            "people": [
-              12229,
-              12834
-            ],
-            "people names": [
-              "Amisius Lozere",
-              "Zuanelt Lozere"
-            ],
-            "label": "sibling",
-            "committed": false
-          },
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1202": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1203": [
-          {
-            "topic": "neglected"
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.256
           }
         ],
         "1204": [
           {
             "topic": "new relationship",
-            "key": 14789,
+            "key": 15100,
             "people": [
               12229,
-              14786
+              15099
             ],
             "people names": [
-              "Amisius Lozere",
-              "Salome Lozere"
+              "Sanders Pratre",
+              "Saxiardis Pratre"
             ],
-            "label": "sibling",
+            "label": "parentchild",
             "committed": false
-          },
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1205": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1205
-          },
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1206": [
-          {
-            "topic": "new relationship",
-            "key": 16094,
-            "people": [
-              12229,
-              16091
-            ],
-            "people names": [
-              "Amisius Lozere",
-              "Poppo Lozere"
-            ],
-            "label": "sibling",
-            "committed": false
-          },
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1207": [
-          {
-            "topic": "new relationship",
-            "key": 16705,
-            "people": [
-              12229,
-              16702
-            ],
-            "people names": [
-              "Amisius Lozere",
-              "Lenildis Lozere"
-            ],
-            "label": "sibling",
-            "committed": false
-          },
-          {
-            "topic": "neglected"
           }
         ],
         "1208": [
           {
-            "topic": "neglected"
-          }
-        ],
-        "1209": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1210": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1211": [
-          {
-            "topic": "new relationship",
-            "key": 18825,
-            "people": [
-              12229,
-              18822
-            ],
-            "people names": [
-              "Amisius Lozere",
-              "Lotijn Lozere"
-            ],
-            "label": "sibling",
-            "committed": false
-          },
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1212": [
-          {
-            "topic": "not enough income",
-            "income": 0.607,
-            "inhabitants": [
-              18822,
-              17062,
-              25605,
-              27363,
-              25525,
-              33460
-            ]
-          }
-        ],
-        "1213": [
-          {
-            "topic": "person died",
-            "person": {
-              "key": 16702,
-              "name": "Lenildis Lozere",
-              "age": 5,
-              "alive": false,
-              "sex": "f",
-              "parents": {
-                "mother": "Nannen (10079)",
-                "father": "Fellen (10078)"
-              }
-            },
-            "cause": "starvation",
-            "label": "sibling"
-          },
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1214": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1215": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1215
-          },
-          {
-            "topic": "neglected"
-          },
-          {
             "topic": "death",
-            "cause": "plague"
+            "cause": "sickness"
           }
         ]
       }
     },
     "key": 12229,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stVerckens merct.se5.c2",
-      "street": "Verckens merct",
-      "neighborhood": "varkensbuurt",
-      "unique id": 33
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stAppel Marckt.se3.c1",
+      "street": "Appel Marckt",
+      "neighborhood": "denhof",
+      "unique id": 969
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
-        12837,
-        14789,
-        16094,
-        16705,
-        18825
+        12231
       ]
     }
   }

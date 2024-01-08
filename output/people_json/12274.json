@@ -1,89 +1,140 @@
 {
   "12274": {
     "alive": false,
-    "name": "Waldrada",
-    "surname": "Sloet",
-    "full name": "Waldrada Sloet",
+    "name": "Woutermanne",
+    "surname": "Vriend",
+    "full name": "Woutermanne Vriend",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.075,
-      "romantic interest": 0.755,
-      "sex interest": 0.946,
-      "gender expression": 0.065,
-      "sex": "f"
+      "sexuality": 0.105,
+      "romantic interest": 0.69,
+      "sex interest": 0.601,
+      "gender expression": 0.124,
+      "sex": "m"
     },
-    "age": 10,
-    "birth year": 1200,
-    "sex": "f",
+    "age": 55,
+    "birth year": 1159,
+    "sex": "m",
     "faction": "Zealots",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.367,
-      "nice-nasty": 0.951,
-      "honest-false": 0.73
+      "lawful-chaotic": 0.966,
+      "nice-nasty": 0.413,
+      "honest-false": 0.124
     },
     "attitude": {
-      "outgoing": 0.922,
-      "dream": 0.457
+      "outgoing": 0.458,
+      "dream": 0.323
     },
     "homsoc": {
       "means": {
         "independent": false,
-        "taken_care_of": true,
-        "caretaker": true,
-        "needs_care": true,
+        "taken_care_of": false,
+        "caretaker": false,
+        "needs_care": false,
         "flags": [
-          "neglected",
           "starving"
         ]
       },
       "expression": {
-        "sexuality expression": 0.054,
-        "gender expression expression": 0.031
+        "sexuality expression": 0.074,
+        "gender expression expression": 0.086
       }
     },
     "network": {
-      "parents": {
-        "mother": "Walburgis (10214)",
-        "father": "Clemmam (10213)"
+      "parents": "firstgen",
+      "children": {
+        "12841": {
+          "key": 12841,
+          "name": "Ermerut Vriend",
+          "age": 25,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Rycaldis (12275)",
+            "father": "Woutermanne (12274)"
+          }
+        },
+        "18969": {
+          "key": 18969,
+          "name": "Vreile Vriend",
+          "age": 39,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Thedwi (10088)",
+            "father": "Woutermanne (12274)"
+          }
+        },
+        "20069": {
+          "key": 20069,
+          "name": "Katrin Vriend",
+          "age": 23,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Thedwi (10088)",
+            "father": "Woutermanne (12274)"
+          }
+        }
       },
-      "children": {},
       "relationship keys": {
-        "parent": [
-          12275,
-          12276
+        "spouse": [
+          12276,
+          18747
         ],
-        "sibling": [
-          16728
-        ],
-        "half-sibling": [
-          18782
-        ]
+        "child": {
+          "birth": [
+            12842,
+            18970,
+            20070
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         1,
         "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.0,
+      "all_incomes": [
+        0.913,
+        0.831,
+        0.862,
+        1.054,
+        0.89,
+        0.723,
+        0.917,
+        1.059,
+        0.961,
+        0.522,
+        0.193,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "job": {
+        "lawful": true,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 1,
-      "eye_color": "brown",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "skin_color": 9,
+      "eye_color": "green",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "S",
         "S"
       ],
-      "health": 0.881,
-      "fertility": 0.938,
+      "health": 0.0,
+      "fertility": 0.553,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -91,174 +142,251 @@
     },
     "memory": {
       "health": {
-        "1201": {
+        "1200": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.881
+            "new_health": 0.606
           },
           "death": false
+        },
+        "1209": {
+          "health": {
+            "change": true,
+            "value_change": -0.187,
+            "new_health": 0.419
+          },
+          "death": false
+        },
+        "1210": {
+          "health": {
+            "change": true,
+            "value_change": -0.28,
+            "new_health": 0.139
+          },
+          "death": false
+        },
+        "1211": {
+          "health": {
+            "change": true,
+            "value_change": -0.109,
+            "new_health": 0.03
+          },
+          "death": false
+        },
+        "1212": {
+          "health": {
+            "change": true,
+            "value_change": -0.029,
+            "new_health": 0.001
+          },
+          "death": false
+        },
+        "1213": {
+          "health": {
+            "change": true,
+            "value_change": -0.001,
+            "new_health": 0.0
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
           {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.913
+          },
+          {
+            "topic": "new relationship",
+            "key": 12276,
+            "people": [
+              12274,
+              12275
+            ],
+            "people names": [
+              "Woutermanne Vriend",
+              "Rycaldis Craye"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
             "topic": "new home",
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stHelle voet.se3.c1",
-              "street": "Helle voet",
-              "neighborhood": "jorisbuurt",
-              "unique id": 97
+              "section": "stKerckstraet.se5.c1",
+              "street": "Kerckstraet",
+              "neighborhood": "denhof",
+              "unique id": 990
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12842,
+            "people": [
+              12274,
+              12841
+            ],
+            "people names": [
+              "Woutermanne Vriend",
+              "Ermerut Vriend"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1201": [
           {
-            "topic": "neglected"
+            "topic": "feelings change",
+            "target": 12275,
+            "target name": "Rycaldis Craye",
+            "state": "solid love",
+            "relationship": 12276
           }
         ],
         "1202": [
           {
-            "topic": "neglected"
-          }
-        ],
-        "1203": [
-          {
-            "topic": "neglected"
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.054
           }
         ],
         "1204": [
           {
-            "topic": "neglected"
-          }
-        ],
-        "1205": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1205
-          },
-          {
-            "topic": "neglected"
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.723
           }
         ],
         "1206": [
           {
-            "topic": "neglected"
-          }
-        ],
-        "1207": [
-          {
-            "topic": "new relationship",
-            "key": 16728,
-            "people": [
-              12274,
-              16725
-            ],
-            "people names": [
-              "Waldrada Sloet",
-              "Gerburgis"
-            ],
-            "label": "sibling",
-            "committed": false
-          },
-          {
-            "topic": "neglected"
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.059
           }
         ],
         "1208": [
           {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.522
+          },
+          {
+            "key": 12276,
+            "topic": "unmarried"
+          },
+          {
             "topic": "person died",
             "person": {
-              "key": 10213,
-              "name": "Clemmam Sloet",
-              "age": 44,
+              "key": 12275,
+              "name": "Rycaldis Craye",
+              "age": 37,
               "alive": false,
-              "sex": "m",
+              "sex": "f",
               "parents": "firstgen"
             },
             "cause": "illness",
-            "label": "parent"
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          },
-          {
-            "topic": "new caretaker",
-            "person": 10214
+            "label": "spouse"
           }
         ],
         "1209": [
           {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stAppel Marckt.se1.c1",
-              "street": "Appel Marckt",
-              "neighborhood": "denhof",
-              "unique id": 964
-            }
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.193
           },
           {
-            "topic": "update",
-            "update": "parent married",
-            "parent": 10214,
-            "new partner": 12136
+            "topic": "new relationship",
+            "key": 18747,
+            "people": [
+              12274,
+              10088
+            ],
+            "people names": [
+              "Woutermanne Vriend",
+              "Thedwi Rowerus"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.193,
+            "inhabitants": [
+              10948,
+              24725,
+              26275
+            ]
           }
         ],
         "1210": [
           {
-            "topic": "not enough income",
-            "income": 0.924,
-            "inhabitants": [
-              13395,
-              18777,
-              19585,
-              21456,
-              22370,
-              26526,
-              26632,
-              27557,
-              12466,
-              29080,
-              29641,
-              29929,
-              23269,
-              22789,
-              30390,
-              30793,
-              20141,
-              31635,
-              32291,
-              32347,
-              22154,
-              15959,
-              25962,
-              33325
-            ]
-          },
-          {
             "topic": "new relationship",
-            "key": 18782,
+            "key": 18970,
             "people": [
               12274,
-              18777
+              18969
             ],
             "people names": [
-              "Waldrada Sloet",
-              "Thezonus Battenman"
+              "Woutermanne Vriend",
+              "Vreile Vriend"
             ],
-            "label": "half-sibling",
+            "label": "parentchild",
             "committed": false
           },
           {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              10948,
+              24725,
+              26275
+            ]
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              10948,
+              24725,
+              26275
+            ]
+          }
+        ],
+        "1212": [
+          {
+            "topic": "new relationship",
+            "key": 20070,
+            "people": [
+              12274,
+              20069
+            ],
+            "people names": [
+              "Woutermanne Vriend",
+              "Katrin Vriend"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              10948,
+              24725,
+              26275
+            ]
+          }
+        ],
+        "1213": [
+          {
             "topic": "death",
-            "cause": "starvation"
+            "cause": "sickness"
           }
         ]
       }
@@ -267,17 +395,17 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stAppel Marckt.se1.c1",
-      "street": "Appel Marckt",
+      "section": "stKerckstraet.se5.c1",
+      "street": "Kerckstraet",
       "neighborhood": "denhof",
-      "unique id": 964
+      "unique id": 990
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
-        16728,
-        18782
+        12276,
+        18747
       ]
     }
   }

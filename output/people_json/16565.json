@@ -1,55 +1,69 @@
 {
   "16565": {
     "alive": false,
-    "name": "Nellen",
-    "surname": "Soisdochter",
-    "full name": "Nellen Soisdochter",
+    "name": "Gherelm",
+    "surname": "van Strom",
+    "full name": "Gherelm van Strom",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.056,
-      "romantic interest": 0.791,
-      "sex interest": 0.999,
-      "gender expression": 0.195,
-      "sex": "f"
+      "sexuality": 0.026,
+      "romantic interest": 0.51,
+      "sex interest": 0.921,
+      "gender expression": 0.357,
+      "sex": "m"
     },
-    "age": 12,
+    "age": 26,
     "birth year": 1206,
-    "sex": "f",
-    "faction": "Zealots",
+    "sex": "m",
+    "faction": "Dogmatists",
     "income class": [
-      1,
-      "lower middle class"
+      3,
+      "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.784,
-      "nice-nasty": 0.43,
-      "honest-false": 0.856
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.836,
+      "honest-false": 0.579
     },
     "attitude": {
-      "outgoing": 0.392,
-      "dream": 0.235
+      "outgoing": 0.634,
+      "dream": 0.497
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
-        "caretaker": true,
-        "needs_care": true,
+        "caretaker": false,
+        "needs_care": false,
         "flags": [
-          "neglected"
+          "starving",
+          "neglected",
+          "caretaker"
         ]
       },
       "expression": {
-        "sexuality expression": 0.02,
-        "gender expression expression": 0.105
+        "sexuality expression": 0.012,
+        "gender expression expression": 0.173
       }
     },
     "network": {
       "parents": {
-        "mother": "Reynildis (11930)",
-        "father": "Soi (11929)"
+        "mother": "Waldrada (12104)",
+        "father": "Strom (12103)"
       },
-      "children": {},
+      "children": {
+        "24853": {
+          "key": 24853,
+          "name": "Waldrada",
+          "age": 3,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Soeten (17255)",
+            "father": "Gherelm (16565)"
+          }
+        }
+      },
       "relationship keys": {
         "parent": [
           16566,
@@ -57,31 +71,54 @@
         ],
         "sibling": [
           16568,
-          17647,
-          18638
-        ]
+          16569,
+          18530
+        ],
+        "spouse": [
+          23872
+        ],
+        "child": {
+          "birth": [
+            24854
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        1,
-        "lower middle class"
+        3,
+        "upper middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.085,
+      "all_incomes": [
+        1.091,
+        1.199,
+        1.246,
+        1.029,
+        1.113,
+        1.228,
+        1.055,
+        0.925,
+        0.889,
+        1.085
+      ],
+      "job": {
+        "lawful": true,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 1,
+      "skin_color": 6,
       "eye_color": "brown",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
       "hair_type": [
         "S",
         "C"
       ],
-      "health": 0.44,
-      "fertility": 0.72,
+      "health": 0.588,
+      "fertility": 0.792,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -93,33 +130,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.728
-          },
-          "death": false
-        },
-        "1212": {
-          "health": {
-            "change": true,
-            "value_change": -0.288,
-            "new_health": 0.44
+            "new_health": 0.791
           },
           "death": false
         },
         "1213": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.44
+            "change": true,
+            "value_change": -0.203,
+            "new_health": 0.588
           },
           "death": false
         },
-        "1218": {
+        "1214": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.44
+            "new_health": 0.588
           },
-          "death": true
+          "death": false
         }
       },
       "events": {
@@ -127,12 +156,12 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stDe Vyver.se1.c1",
-              "street": "De Vyver",
+              "income class": 3,
+              "income class label": "upper middle class",
+              "section": "stCromme straet.se7.c3",
+              "street": "Cromme straet",
               "neighborhood": "denhof",
-              "unique id": 861
+              "unique id": 918
             }
           }
         ],
@@ -143,43 +172,29 @@
         ],
         "1208": [
           {
-            "topic": "new relationship",
-            "key": 17647,
-            "people": [
-              16565,
-              17643
-            ],
-            "people names": [
-              "Nellen Soisdochter",
-              "Winrechus"
-            ],
-            "label": "sibling",
-            "committed": false
-          },
-          {
             "topic": "neglected"
           }
         ],
         "1209": [
           {
-            "topic": "neglected"
-          }
-        ],
-        "1210": [
-          {
             "topic": "new relationship",
-            "key": 18638,
+            "key": 18530,
             "people": [
               16565,
-              18634
+              18525
             ],
             "people names": [
-              "Nellen Soisdochter",
-              "Hughe Soiszoon"
+              "Gherelm van Strom",
+              "Florens"
             ],
             "label": "sibling",
             "committed": false
           },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1210": [
           {
             "topic": "neglected"
           }
@@ -211,22 +226,288 @@
             "year": 1215
           },
           {
-            "topic": "neglected"
+            "topic": "new caretaker",
+            "person": 12104
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12103,
+              "name": "Strom",
+              "age": 50,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "parent"
           }
         ],
         "1216": [
           {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              18525,
+              17824,
+              26904,
+              28150,
+              29655,
+              30156,
+              34560
+            ]
           }
         ],
         "1217": [
           {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              18525,
+              17824,
+              26904,
+              28150,
+              29655,
+              30156,
+              34560
+            ]
           }
         ],
         "1218": [
           {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              18525,
+              17824,
+              26904,
+              28150,
+              29655,
+              30156,
+              34560
+            ]
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 14041,
+              "name": "Iris",
+              "age": 16,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Waldrada (12104)",
+                "father": "Strom (12103)"
+              }
+            },
+            "cause": "illness",
+            "label": "sibling"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 14516,
+              "name": "Eylwardo",
+              "age": 15,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Waldrada (12104)",
+                "father": "Strom (12103)"
+              }
+            },
+            "cause": "illness",
+            "label": "sibling"
+          }
+        ],
+        "1219": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              18525,
+              17824,
+              26904,
+              28150,
+              29655,
+              30156,
+              34560
+            ]
+          }
+        ],
+        "1220": [
+          {
+            "topic": "event",
+            "event": "famine",
+            "year": 1220
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              18525,
+              17824,
+              26904,
+              28150,
+              29655,
+              30156,
+              34560
+            ]
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": [
+              28150,
+              29655,
+              30156,
+              34560
+            ]
+          },
+          {
+            "topic": "new caretaker",
+            "person": 16565
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12104,
+              "name": "Waldrada Duckar",
+              "age": 46,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "parent"
+          }
+        ],
+        "1221": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              18525,
+              17824,
+              26904,
+              28150,
+              29655,
+              30156,
+              34560
+            ]
+          }
+        ],
+        "1222": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              18525,
+              17824,
+              26904,
+              28150,
+              29655,
+              30156,
+              34560
+            ]
+          }
+        ],
+        "1223": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.091
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              18525,
+              17824,
+              26904,
+              28150,
+              29655,
+              30156,
+              34560
+            ]
+          }
+        ],
+        "1224": [
+          {
+            "topic": "new relationship",
+            "key": 23872,
+            "people": [
+              16565,
+              17255
+            ],
+            "people names": [
+              "Gherelm van Strom",
+              "Soeten Schille"
+            ],
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1225": [
+          {
+            "topic": "feelings change",
+            "target": 17255,
+            "target name": "Soeten Schille",
+            "state": "solid love",
+            "relationship": 23872
+          },
+          {
+            "topic": "not caretaker"
+          }
+        ],
+        "1227": [
+          {
+            "topic": "new relationship",
+            "key": 24854,
+            "people": [
+              16565,
+              24853
+            ],
+            "people names": [
+              "Gherelm van Strom",
+              "Waldrada"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1230": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 24853,
+              "name": "Waldrada",
+              "age": 3,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Soeten (17255)",
+                "father": "Gherelm (16565)"
+              }
+            },
+            "cause": "childhood illness",
+            "label": "child"
+          }
+        ],
+        "1232": [
+          {
+            "topic": "event",
+            "event": "war",
+            "year": 1232
+          },
+          {
+            "topic": "event",
+            "event": "famine",
+            "year": 1232
+          },
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.085
           },
           {
             "topic": "death",
@@ -237,20 +518,21 @@
     },
     "key": 16565,
     "home": {
-      "income class": 1,
-      "income class label": "lower middle class",
-      "section": "stDe Vyver.se1.c1",
-      "street": "De Vyver",
+      "income class": 3,
+      "income class label": "upper middle class",
+      "section": "stCromme straet.se7.c3",
+      "street": "Cromme straet",
       "neighborhood": "denhof",
-      "unique id": 861
+      "unique id": 918
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
         16568,
-        17647,
-        18638
+        16569,
+        18530,
+        23872
       ]
     }
   }

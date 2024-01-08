@@ -1,33 +1,33 @@
 {
   "10442": {
     "alive": false,
-    "name": "Iris",
-    "surname": "",
-    "full name": "Iris",
+    "name": "Victoria",
+    "surname": "Crulleken",
+    "full name": "Victoria Crulleken",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.092,
-      "romantic interest": 0.558,
-      "sex interest": 0.534,
-      "gender expression": 0.069,
+      "sexuality": 0.0,
+      "romantic interest": 0.999,
+      "sex interest": 0.649,
+      "gender expression": 0.045,
       "sex": "f"
     },
-    "age": 28,
-    "birth year": 1174,
+    "age": 31,
+    "birth year": 1178,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.591,
+      "lawful-chaotic": 0.781,
       "nice-nasty": 0.999,
-      "honest-false": 0.68
+      "honest-false": 0.778
     },
     "attitude": {
-      "outgoing": 0.275,
-      "dream": 0.586
+      "outgoing": 0.602,
+      "dream": 0.187
     },
     "homsoc": {
       "means": {
@@ -38,22 +38,33 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.052,
-        "gender expression expression": 0.005
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.002
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "12951": {
-          "key": 12951,
-          "name": "Reynildis Boel",
-          "age": 48,
-          "alive": true,
+        "13223": {
+          "key": 13223,
+          "name": "Aghata",
+          "age": 1,
+          "alive": false,
           "sex": "f",
           "parents": {
-            "mother": "Iris (10442)",
-            "father": "Siccone (10441)"
+            "mother": "Victoria (10442)",
+            "father": "Ancelmus (10441)"
+          }
+        },
+        "17107": {
+          "key": 17107,
+          "name": "Aleberna",
+          "age": 33,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Victoria (10442)",
+            "father": "Ancelmus (10441)"
           }
         }
       },
@@ -63,31 +74,44 @@
         ],
         "child": {
           "birth": [
-            12953
+            13225,
+            17109
           ]
         }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.984,
+      "all_incomes": [
+        0.999,
+        0.989,
+        1.053,
+        1.048,
+        1.02,
+        1.051,
+        0.984
+      ],
+      "job": {
+        "lawful": true,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 2,
-      "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 6,
+      "eye_color": "green",
+      "hair_color": "red",
+      "hair_color_code": 3,
       "hair_type": [
         "C",
         "S"
       ],
-      "health": 0.751,
-      "fertility": 0.729,
+      "health": 0.652,
+      "fertility": 0.626,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -99,9 +123,17 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.751
+            "new_health": 0.652
           },
           "death": false
+        },
+        "1208": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.652
+          },
+          "death": true
         }
       },
       "events": {
@@ -114,8 +146,8 @@
               10442
             ],
             "people names": [
-              "Siccone Boel",
-              "Iris"
+              "Ancelmus",
+              "Victoria Crulleken"
             ],
             "label": "spouse",
             "committed": true
@@ -125,31 +157,79 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stOp 't Speuy.se1.c2",
-              "street": "Op 't Speuy",
-              "neighborhood": "jorisbuurt",
-              "unique id": 201
+              "section": "stBloemendaelse straet.se1.c2",
+              "street": "Bloemendaelse straet",
+              "neighborhood": "agnesbuurt",
+              "unique id": 211
             }
           }
         ],
         "1201": [
           {
             "topic": "new relationship",
-            "key": 12953,
+            "key": 13225,
             "people": [
               10442,
-              12951
+              13223
             ],
             "people names": [
-              "Iris",
-              "Reynildis Boel"
+              "Victoria Crulleken",
+              "Aghata"
             ],
             "label": "parentchild",
             "committed": false
+          }
+        ],
+        "1202": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.999
           },
           {
+            "topic": "person died",
+            "person": {
+              "key": 13223,
+              "name": "Aghata",
+              "age": 1,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Victoria (10442)",
+                "father": "Ancelmus (10441)"
+              }
+            },
+            "cause": "childhood illness",
+            "label": "child"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.053
+          }
+        ],
+        "1207": [
+          {
+            "topic": "new relationship",
+            "key": 17109,
+            "people": [
+              10442,
+              17107
+            ],
+            "people names": [
+              "Victoria Crulleken",
+              "Aleberna"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1208": [
+          {
             "topic": "death",
-            "cause": "childbirth"
+            "cause": "illness"
           }
         ]
       }
@@ -158,10 +238,10 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stOp 't Speuy.se1.c2",
-      "street": "Op 't Speuy",
-      "neighborhood": "jorisbuurt",
-      "unique id": 201
+      "section": "stBloemendaelse straet.se1.c2",
+      "street": "Bloemendaelse straet",
+      "neighborhood": "agnesbuurt",
+      "unique id": 211
     },
     "relationship status": {
       "taken": true,

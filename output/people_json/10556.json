@@ -1,33 +1,33 @@
 {
   "10556": {
     "alive": false,
-    "name": "Alretieren",
-    "surname": "Putocke",
-    "full name": "Alretieren Putocke",
+    "name": "Marie",
+    "surname": "Salm",
+    "full name": "Marie Salm",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.6,
-      "sex interest": 0.851,
-      "gender expression": 0.131,
+      "sexuality label": "gay",
+      "sexuality": 0.927,
+      "romantic interest": 0.704,
+      "sex interest": 0.486,
+      "gender expression": 0.405,
       "sex": "f"
     },
-    "age": 41,
-    "birth year": 1163,
+    "age": 36,
+    "birth year": 1172,
     "sex": "f",
     "faction": "Zealots",
     "income class": [
-      2,
-      "middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.475,
-      "nice-nasty": 0.816,
-      "honest-false": 0.047
+      "lawful-chaotic": 0.65,
+      "nice-nasty": 0.999,
+      "honest-false": 0.797
     },
     "attitude": {
-      "outgoing": 0.513,
-      "dream": 0.338
+      "outgoing": 0.34,
+      "dream": 0.585
     },
     "homsoc": {
       "means": {
@@ -40,39 +40,68 @@
         ]
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.076
+        "sexuality expression": 0.437,
+        "gender expression expression": 0.203
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13077": {
+          "key": 13077,
+          "name": "Gheuardus",
+          "age": 4,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Marie (10556)",
+            "father": "Pieter (10555)"
+          }
+        },
+        "16345": {
+          "key": 16345,
+          "name": "Aleydis Hoghen",
+          "age": 26,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Marie (10556)",
+            "father": "Pieter (10555)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10557
-        ]
+        ],
+        "child": {
+          "birth": [
+            13079,
+            16347
+          ]
+        }
       }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        2,
-        "middle class"
+        1,
+        "lower middle class"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 1,
-      "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 8,
+      "eye_color": "blue",
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.661,
-      "fertility": 0.747,
+      "health": 0.505,
+      "fertility": 0.538,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -84,15 +113,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.661
+            "new_health": 0.505
           },
           "death": false
         },
-        "1203": {
+        "1207": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.661
+            "new_health": 0.505
           },
           "death": true
         }
@@ -107,8 +136,8 @@
               10556
             ],
             "people names": [
-              "Pelegrim Aec",
-              "Alretieren Putocke"
+              "Pieter Hoghen",
+              "Marie Salm"
             ],
             "label": "spouse",
             "committed": true
@@ -116,33 +145,80 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stWaale straet.se1.c2",
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stWaale straet.se3.c1",
               "street": "Waale straet",
               "neighborhood": "agnesbuurt",
-              "unique id": 251
+              "unique id": 257
             }
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
           }
         ],
         "1201": [
           {
+            "topic": "new relationship",
+            "key": 13079,
+            "people": [
+              10556,
+              13077
+            ],
+            "people names": [
+              "Marie Salm",
+              "Gheuardus"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1204": [
+          {
+            "topic": "feelings change",
+            "target": 10555,
+            "target name": "Pieter Hoghen",
+            "state": "out of love",
+            "relationship": 10557
+          },
+          {
             "topic": "not enough income",
-            "income": 0.0,
+            "income": 0.07,
             "inhabitants": []
           }
         ],
-        "1203": [
+        "1205": [
           {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
-          },
+            "topic": "person died",
+            "person": {
+              "key": 13077,
+              "name": "Gheuardus",
+              "age": 4,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Marie (10556)",
+                "father": "Pieter (10555)"
+              }
+            },
+            "cause": "childhood illness",
+            "label": "child"
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 16347,
+            "people": [
+              10556,
+              16345
+            ],
+            "people names": [
+              "Marie Salm",
+              "Aleydis Hoghen"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1207": [
           {
             "topic": "death",
             "cause": "illness"
@@ -152,12 +228,12 @@
     },
     "key": 10556,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stWaale straet.se1.c2",
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stWaale straet.se3.c1",
       "street": "Waale straet",
       "neighborhood": "agnesbuurt",
-      "unique id": 251
+      "unique id": 257
     },
     "relationship status": {
       "taken": true,

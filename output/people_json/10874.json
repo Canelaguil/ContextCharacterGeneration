@@ -1,33 +1,33 @@
 {
   "10874": {
     "alive": false,
-    "name": "Hodine",
-    "surname": "Spiegel",
-    "full name": "Hodine Spiegel",
+    "name": "Marie",
+    "surname": "",
+    "full name": "Marie",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.011,
-      "romantic interest": 0.568,
-      "sex interest": 0.692,
-      "gender expression": 0.051,
+      "sexuality": 0.0,
+      "romantic interest": 0.754,
+      "sex interest": 0.788,
+      "gender expression": 0.146,
       "sex": "f"
     },
-    "age": 54,
-    "birth year": 1153,
+    "age": 21,
+    "birth year": 1183,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
       "lawful-chaotic": 0.0,
-      "nice-nasty": 0.763,
-      "honest-false": 0.811
+      "nice-nasty": 0.039,
+      "honest-false": 0.875
     },
     "attitude": {
-      "outgoing": 0.233,
-      "dream": 0.576
+      "outgoing": 0.329,
+      "dream": 0.0
     },
     "homsoc": {
       "means": {
@@ -35,22 +35,49 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": [
-          "starving"
-        ]
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.005,
-        "gender expression expression": 0.029
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.095
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12310": {
+          "key": 12310,
+          "name": "Woutersoet Ghodekinszoon",
+          "age": 37,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Marie (10874)",
+            "father": "Ghodekin (10873)"
+          }
+        },
+        "13284": {
+          "key": 13284,
+          "name": "Mabelie",
+          "age": 33,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Marie (10874)",
+            "father": "Ghodekin (10873)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10875
-        ]
+        ],
+        "child": {
+          "birth": [
+            12312,
+            13286
+          ]
+        }
       }
     },
     "occupation": {
@@ -63,7 +90,7 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 6,
+      "skin_color": 5,
       "eye_color": "blue",
       "hair_color": "black",
       "hair_color_code": 0,
@@ -71,8 +98,8 @@
         "C",
         "S"
       ],
-      "health": 0.0,
-      "fertility": 0.415,
+      "health": 0.487,
+      "fertility": 0.462,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -84,39 +111,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.501
+            "new_health": 0.487
           },
           "death": false
         },
         "1203": {
           "health": {
-            "change": true,
-            "value_change": -0.406,
-            "new_health": 0.095
-          },
-          "death": false
-        },
-        "1204": {
-          "health": {
-            "change": true,
-            "value_change": -0.084,
-            "new_health": 0.011
-          },
-          "death": false
-        },
-        "1205": {
-          "health": {
-            "change": true,
-            "value_change": -0.01,
-            "new_health": 0.001
-          },
-          "death": false
-        },
-        "1206": {
-          "health": {
-            "change": true,
-            "value_change": -0.001,
-            "new_health": 0.0
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.487
           },
           "death": true
         }
@@ -131,8 +134,8 @@
               10874
             ],
             "people names": [
-              "Waldfridus Compere",
-              "Hodine Spiegel"
+              "Ghodekin",
+              "Marie"
             ],
             "label": "spouse",
             "committed": true
@@ -142,55 +145,47 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stDie Camp.se7.c2",
+              "section": "stDie Camp.se5.c2",
               "street": "Die Camp",
               "neighborhood": "kampbuurt",
-              "unique id": 399
+              "unique id": 385
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12312,
+            "people": [
+              10874,
+              12310
+            ],
+            "people names": [
+              "Marie",
+              "Woutersoet Ghodekinszoon"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1201": [
           {
-            "topic": "not enough income",
-            "income": 0.189,
-            "inhabitants": []
+            "topic": "new relationship",
+            "key": 13286,
+            "people": [
+              10874,
+              13284
+            ],
+            "people names": [
+              "Marie",
+              "Mabelie"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1203": [
           {
-            "topic": "not enough income",
-            "income": 0.191,
-            "inhabitants": []
-          }
-        ],
-        "1204": [
-          {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
-          }
-        ],
-        "1205": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1205
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
-          }
-        ],
-        "1206": [
-          {
-            "topic": "not enough income",
-            "income": 0.107,
-            "inhabitants": []
-          },
-          {
             "topic": "death",
-            "cause": "sickness"
+            "cause": "illness"
           }
         ]
       }
@@ -199,10 +194,10 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stDie Camp.se7.c2",
+      "section": "stDie Camp.se5.c2",
       "street": "Die Camp",
       "neighborhood": "kampbuurt",
-      "unique id": 399
+      "unique id": 385
     },
     "relationship status": {
       "taken": true,

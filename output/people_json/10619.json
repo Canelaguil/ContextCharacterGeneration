@@ -1,19 +1,19 @@
 {
   "10619": {
     "alive": false,
-    "name": "Reynwi",
-    "surname": "Junghe",
-    "full name": "Reynwi Junghe",
+    "name": "Margareta",
+    "surname": "Panne",
+    "full name": "Margareta Panne",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.011,
-      "romantic interest": 0.663,
-      "sex interest": 0.807,
-      "gender expression": 0.274,
+      "sexuality": 0.105,
+      "romantic interest": 0.773,
+      "sex interest": 0.611,
+      "gender expression": 0.172,
       "sex": "f"
     },
-    "age": 54,
-    "birth year": 1161,
+    "age": 33,
+    "birth year": 1179,
     "sex": "f",
     "faction": "Zealots",
     "income class": [
@@ -21,37 +21,91 @@
       "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.939,
-      "nice-nasty": 0.41,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.398,
+      "nice-nasty": 0.693,
+      "honest-false": 0.235
     },
     "attitude": {
-      "outgoing": 0.358,
-      "dream": 0.369
+      "outgoing": 0.682,
+      "dream": 0.53
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
         "flags": [
-          "starving"
+          "starving",
+          "caretaker"
         ]
       },
       "expression": {
-        "sexuality expression": 0.007,
-        "gender expression expression": 0.273
+        "sexuality expression": 0.048,
+        "gender expression expression": 0.099
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13385": {
+          "key": 13385,
+          "name": "Deghen Muil",
+          "age": 20,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Margareta (10619)",
+            "father": "Godino (10618)"
+          }
+        },
+        "15797": {
+          "key": 15797,
+          "name": "Mabelie Quade",
+          "age": 1,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Margareta (10619)",
+            "father": "Haghen (11092)"
+          }
+        },
+        "17549": {
+          "key": 17549,
+          "name": "Baua Quade",
+          "age": 35,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Margareta (10619)",
+            "father": "Haghen (11092)"
+          }
+        },
+        "19003": {
+          "key": 19003,
+          "name": "Jacomin",
+          "age": 39,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Margareta (10619)",
+            "father": "Haghen (11092)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10620,
-          15390
-        ]
+          15624
+        ],
+        "child": {
+          "birth": [
+            13387,
+            15799,
+            17551,
+            19005
+          ]
+        }
       }
     },
     "occupation": {
@@ -64,7 +118,7 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 3,
+      "skin_color": 4,
       "eye_color": "brown",
       "hair_color": "brown",
       "hair_color_code": 2,
@@ -72,8 +126,8 @@
         "S",
         "S"
       ],
-      "health": 0.0,
-      "fertility": 0.649,
+      "health": 0.674,
+      "fertility": 0.693,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -85,41 +139,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.607
+            "new_health": 0.674
           },
           "death": false
-        },
-        "1211": {
-          "health": {
-            "change": true,
-            "value_change": -0.328,
-            "new_health": 0.279
-          },
-          "death": false
-        },
-        "1212": {
-          "health": {
-            "change": true,
-            "value_change": -0.181,
-            "new_health": 0.098
-          },
-          "death": false
-        },
-        "1213": {
-          "health": {
-            "change": true,
-            "value_change": -0.061,
-            "new_health": 0.037
-          },
-          "death": false
-        },
-        "1214": {
-          "health": {
-            "change": true,
-            "value_change": -0.037,
-            "new_health": 0.0
-          },
-          "death": true
         }
       },
       "events": {
@@ -132,8 +154,8 @@
               10619
             ],
             "people names": [
-              "Sibrando",
-              "Reynwi Junghe"
+              "Godino Muil",
+              "Margareta Panne"
             ],
             "label": "spouse",
             "committed": true
@@ -146,25 +168,43 @@
               "section": "stDe Tuyt.se1.c0",
               "street": "De Tuyt",
               "neighborhood": "agnesbuurt",
-              "unique id": 280
+              "unique id": 284
             }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 13387,
+            "people": [
+              10619,
+              13385
+            ],
+            "people names": [
+              "Margareta Panne",
+              "Deghen Muil"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1202": [
           {
-            "topic": "feelings change",
-            "target": 10618,
-            "target name": "Sibrando",
-            "state": "solid love",
-            "relationship": 10620
-          },
-          {
             "topic": "not enough income",
-            "income": 0.215,
+            "income": 0.374,
             "inhabitants": []
           }
         ],
         "1203": [
+          {
+            "topic": "not enough income",
+            "income": 0.353,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          },
           {
             "key": 10620,
             "topic": "unmarried"
@@ -173,97 +213,208 @@
             "topic": "person died",
             "person": {
               "key": 10618,
-              "name": "Sibrando",
-              "age": 51,
+              "name": "Godino Muil",
+              "age": 28,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
             },
-            "cause": "old age",
+            "cause": "illness",
             "label": "spouse"
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
           }
         ],
         "1204": [
           {
             "topic": "new relationship",
-            "key": 15390,
+            "key": 15624,
             "people": [
-              10765,
+              11092,
               10619
             ],
             "people names": [
-              "Trove Vos",
-              "Reynwi Junghe"
+              "Haghen Quade",
+              "Margareta Panne"
             ],
             "label": "spouse",
             "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 0,
+              "income class label": "working class",
+              "section": "stOly straetje.se1.c0",
+              "street": "Oly straetje",
+              "neighborhood": "kampbuurt",
+              "unique id": 484
+            }
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.959,
+            "inhabitants": [
+              12337,
+              25133,
+              27174,
+              30412,
+              31807,
+              23353
+            ]
           }
         ],
         "1205": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1205
+            "topic": "new relationship",
+            "key": 15799,
+            "people": [
+              10619,
+              15797
+            ],
+            "people names": [
+              "Margareta Panne",
+              "Mabelie Quade"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.855,
+            "inhabitants": [
+              12337,
+              25133,
+              27174,
+              30412,
+              31807,
+              23353
+            ]
           }
         ],
         "1206": [
           {
             "topic": "feelings change",
-            "target": 10765,
-            "target name": "Trove Vos",
-            "state": "out of love",
-            "relationship": 15390
+            "target": 11092,
+            "target name": "Haghen Quade",
+            "state": "solid love",
+            "relationship": 15624
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.729,
+            "inhabitants": [
+              12337,
+              25133,
+              27174,
+              30412,
+              31807,
+              23353
+            ]
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 15797,
+              "name": "Mabelie Quade",
+              "age": 1,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Margareta (10619)",
+                "father": "Haghen (11092)"
+              }
+            },
+            "cause": "childhood illness",
+            "label": "child"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "new relationship",
+            "key": 17551,
+            "people": [
+              10619,
+              17549
+            ],
+            "people names": [
+              "Margareta Panne",
+              "Baua Quade"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.467,
+            "inhabitants": [
+              12337,
+              25133,
+              27174,
+              30412,
+              31807,
+              23353
+            ]
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0.104,
+            "inhabitants": [
+              12337,
+              25133,
+              27174,
+              30412,
+              31807,
+              23353
+            ]
           }
         ],
         "1209": [
           {
             "topic": "not enough income",
-            "income": 0.192,
-            "inhabitants": []
+            "income": 0.0,
+            "inhabitants": [
+              12337,
+              25133,
+              27174,
+              30412,
+              31807,
+              23353
+            ]
           }
         ],
         "1210": [
           {
+            "topic": "new relationship",
+            "key": 19005,
+            "people": [
+              10619,
+              19003
+            ],
+            "people names": [
+              "Margareta Panne",
+              "Jacomin"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
             "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
+            "income": 0.271,
+            "inhabitants": [
+              12337,
+              25133,
+              27174,
+              30412,
+              31807,
+              23353
+            ]
           }
         ],
         "1211": [
           {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
-          }
-        ],
-        "1212": [
-          {
-            "topic": "not enough income",
-            "income": 0.072,
-            "inhabitants": []
-          }
-        ],
-        "1213": [
-          {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
-          }
-        ],
-        "1214": [
-          {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
-          },
-          {
             "topic": "death",
-            "cause": "sickness"
+            "cause": "illness"
           }
         ]
       }
@@ -272,17 +423,17 @@
     "home": {
       "income class": 0,
       "income class label": "working class",
-      "section": "stDe Tuyt.se1.c0",
-      "street": "De Tuyt",
-      "neighborhood": "agnesbuurt",
-      "unique id": 280
+      "section": "stOly straetje.se1.c0",
+      "street": "Oly straetje",
+      "neighborhood": "kampbuurt",
+      "unique id": 484
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
         10620,
-        15390
+        15624
       ]
     }
   }

@@ -1,85 +1,120 @@
 {
   "10373": {
     "alive": false,
-    "name": "Mette",
-    "surname": "Mulart",
-    "full name": "Mette Mulart",
+    "name": "Zuanelt",
+    "surname": "",
+    "full name": "Zuanelt",
     "born this way": {
-      "sexuality label": "bi",
-      "sexuality": 0.583,
-      "romantic interest": 0.738,
-      "sex interest": 0.712,
-      "gender expression": 0.249,
+      "sexuality label": "gay",
+      "sexuality": 0.963,
+      "romantic interest": 0.591,
+      "sex interest": 0.887,
+      "gender expression": 0.277,
       "sex": "f"
     },
-    "age": 33,
-    "birth year": 1171,
+    "age": 41,
+    "birth year": 1174,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "Zealots",
     "income class": [
-      1,
-      "lower middle class"
+      2,
+      "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.642,
-      "nice-nasty": 0.157,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.668,
+      "nice-nasty": 0.62,
+      "honest-false": 0.199
     },
     "attitude": {
-      "outgoing": 0.382,
-      "dream": 0.385
+      "outgoing": 0.179,
+      "dream": 0.041
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.311,
-        "gender expression expression": 0.075
+        "sexuality expression": 0.394,
+        "gender expression expression": 0.276
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14531": {
+          "key": 14531,
+          "name": "Liedelde Zalm",
+          "age": 25,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Zuanelt (10373)",
+            "father": "Woutgerus (10372)"
+          }
+        },
+        "15962": {
+          "key": 15962,
+          "name": "Waldrada Zalm",
+          "age": 15,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Zuanelt (10373)",
+            "father": "Woutgerus (10372)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          10374
-        ]
+          10374,
+          20671
+        ],
+        "child": {
+          "birth": [
+            14533,
+            15964
+          ]
+        }
       }
     },
     "occupation": {
       "has job": true,
       "income class": [
-        1,
-        "lower middle class"
+        2,
+        "middle class"
       ],
-      "income": 0.985,
+      "income": 0.0,
       "all_incomes": [
-        0.992,
-        0.766,
-        0.843,
-        0.985
+        0.866,
+        0.339,
+        0.0,
+        0.0,
+        0.138,
+        0.0,
+        0.0
       ],
       "job": {
         "lawful": false,
-        "honest": true
+        "honest": false
       }
     },
     "genetics": {
       "skin_color": 8,
       "eye_color": "green",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.673,
-      "fertility": 0.706,
+      "health": 0.567,
+      "fertility": 0.602,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -91,26 +126,21 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.673
+            "new_health": 0.567
           },
           "death": false
         },
-        "1203": {
+        "1214": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.673
+            "new_health": 0.567
           },
           "death": true
         }
       },
       "events": {
         "1200": [
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.992
-          },
           {
             "topic": "new relationship",
             "key": 10374,
@@ -119,8 +149,8 @@
               10373
             ],
             "people names": [
-              "Ase Vosseken",
-              "Mette Mulart"
+              "Woutgerus Zalm",
+              "Zuanelt"
             ],
             "label": "spouse",
             "committed": true
@@ -128,25 +158,127 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stMuelen straet.se3.c1",
-              "street": "Muelen straet",
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stDavids hof.se1.c2",
+              "street": "Davids hof",
               "neighborhood": "jorisbuurt",
-              "unique id": 169
+              "unique id": 175
             }
           }
         ],
-        "1201": [
+        "1203": [
           {
-            "topic": "feelings change",
-            "target": 10372,
-            "target name": "Ase Vosseken",
-            "state": "out of love",
-            "relationship": 10374
+            "topic": "new relationship",
+            "key": 14533,
+            "people": [
+              10373,
+              14531
+            ],
+            "people names": [
+              "Zuanelt",
+              "Liedelde Zalm"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1203": [
+        "1205": [
+          {
+            "topic": "new relationship",
+            "key": 15964,
+            "people": [
+              10373,
+              15962
+            ],
+            "people names": [
+              "Zuanelt",
+              "Waldrada Zalm"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1208": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.866
+          }
+        ],
+        "1209": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.339
+          }
+        ],
+        "1210": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.0
+          }
+        ],
+        "1211": [
+          {
+            "key": 10374,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10372,
+              "name": "Woutgerus Zalm",
+              "age": 40,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "spouse"
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0.138,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
+          {
+            "topic": "new relationship",
+            "key": 20671,
+            "people": [
+              11893,
+              10373
+            ],
+            "people names": [
+              "Wicghard Svaif",
+              "Zuanelt"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 3,
+              "income class label": "upper middle class",
+              "section": "stMuurhuysen2.se7.c3",
+              "street": "Muurhuysen2",
+              "neighborhood": "cingelnoord",
+              "unique id": 823
+            }
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1214": [
           {
             "topic": "death",
             "cause": "illness"
@@ -156,18 +288,19 @@
     },
     "key": 10373,
     "home": {
-      "income class": 1,
-      "income class label": "lower middle class",
-      "section": "stMuelen straet.se3.c1",
-      "street": "Muelen straet",
-      "neighborhood": "jorisbuurt",
-      "unique id": 169
+      "income class": 3,
+      "income class label": "upper middle class",
+      "section": "stMuurhuysen2.se7.c3",
+      "street": "Muurhuysen2",
+      "neighborhood": "cingelnoord",
+      "unique id": 823
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        10374
+        10374,
+        20671
       ]
     }
   }

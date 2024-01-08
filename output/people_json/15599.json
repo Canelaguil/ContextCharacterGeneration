@@ -1,87 +1,136 @@
 {
   "15599": {
     "alive": false,
-    "name": "Euerardus",
-    "surname": "Moes",
-    "full name": "Euerardus Moes",
+    "name": "Wilmarus",
+    "surname": "Zieken",
+    "full name": "Wilmarus Zieken",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.082,
-      "romantic interest": 0.588,
-      "sex interest": 0.515,
-      "gender expression": 0.0,
+      "sexuality": 0.091,
+      "romantic interest": 0.999,
+      "sex interest": 0.781,
+      "gender expression": 0.08,
       "sex": "m"
     },
-    "age": 13,
-    "birth year": 1205,
+    "age": 26,
+    "birth year": 1204,
     "sex": "m",
-    "faction": "Dogmatists",
+    "faction": "No religion",
     "income class": [
-      2,
-      "middle class"
+      4,
+      "nobility"
     ],
     "personality": {
-      "lawful-chaotic": 0.216,
-      "nice-nasty": 0.529,
-      "honest-false": 0.166
+      "lawful-chaotic": 0.945,
+      "nice-nasty": 0.702,
+      "honest-false": 0.117
     },
     "attitude": {
-      "outgoing": 0.5,
-      "dream": 0.064
+      "outgoing": 0.495,
+      "dream": 0.211
     },
     "homsoc": {
       "means": {
-        "independent": false,
-        "taken_care_of": true,
-        "caretaker": true,
-        "needs_care": true,
+        "independent": true,
+        "taken_care_of": false,
+        "caretaker": false,
+        "needs_care": false,
         "flags": [
+          "starving",
           "neglected",
-          "starving"
+          "caretaker"
         ]
       },
       "expression": {
         "sexuality expression": 0.049,
-        "gender expression expression": -0.001
+        "gender expression expression": 0.057
       }
     },
     "network": {
       "parents": {
-        "mother": "Sywi (10844)",
-        "father": "Wauthem (10843)"
+        "mother": "Margareta (11861)",
+        "father": "Claward (11860)"
       },
-      "children": {},
+      "children": {
+        "24811": {
+          "key": 24811,
+          "name": "Herbert Zieken",
+          "age": 22,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Marie (18256)",
+            "father": "Wilmarus (15599)"
+          }
+        },
+        "25121": {
+          "key": 25121,
+          "name": "Cesarius Zieken",
+          "age": 5,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Marie (18256)",
+            "father": "Wilmarus (15599)"
+          }
+        }
+      },
       "relationship keys": {
         "parent": [
           15600,
           15601
         ],
         "sibling": [
-          15602,
-          18432
-        ]
+          16591,
+          19026
+        ],
+        "spouse": [
+          24597
+        ],
+        "child": {
+          "birth": [
+            24812,
+            25122
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        2,
-        "middle class"
+        4,
+        "nobility"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.869,
+      "all_incomes": [
+        0.898,
+        0.618,
+        0.728,
+        0.8,
+        1.117,
+        0.957,
+        1.075,
+        1.285,
+        1.014,
+        0.993,
+        0.869
+      ],
+      "job": {
+        "lawful": true,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 3,
+      "skin_color": 1,
       "eye_color": "brown",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
-        "S",
-        "C"
+        "C",
+        "S"
       ],
-      "health": 0.773,
-      "fertility": 0.835,
+      "health": 0.574,
+      "fertility": 0.708,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -89,38 +138,73 @@
     },
     "memory": {
       "health": {
-        "1206": {
+        "1205": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.773
+            "new_health": 0.779
           },
           "death": false
         },
-        "1218": {
+        "1212": {
+          "health": {
+            "change": true,
+            "value_change": -0.205,
+            "new_health": 0.574
+          },
+          "death": false
+        },
+        "1213": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.773
+            "new_health": 0.574
+          },
+          "death": false
+        },
+        "1230": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.574
           },
           "death": true
         }
       },
       "events": {
-        "1205": [
+        "1204": [
           {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stDie Camp.se5.c2",
-              "street": "Die Camp",
-              "neighborhood": "kampbuurt",
-              "unique id": 387
+              "income class": 4,
+              "income class label": "nobility",
+              "section": "stMuurhuysen2.se1.c4",
+              "street": "Muurhuysen2",
+              "neighborhood": "cingelnoord",
+              "unique id": 804
             }
           }
         ],
+        "1205": [
+          {
+            "topic": "neglected"
+          }
+        ],
         "1206": [
+          {
+            "topic": "new relationship",
+            "key": 16591,
+            "people": [
+              15599,
+              16588
+            ],
+            "people names": [
+              "Wilmarus Zieken",
+              "Ever Zieken"
+            ],
+            "label": "sibling",
+            "committed": false
+          },
           {
             "topic": "neglected"
           }
@@ -143,14 +227,14 @@
         "1210": [
           {
             "topic": "new relationship",
-            "key": 18432,
+            "key": 19026,
             "people": [
               15599,
-              18428
+              19023
             ],
             "people names": [
-              "Euerardus Moes",
-              "Dodo Moes"
+              "Wilmarus Zieken",
+              "Woutersoet Zieken"
             ],
             "label": "sibling",
             "committed": false
@@ -161,63 +245,22 @@
         ],
         "1211": [
           {
-            "topic": "person died",
-            "person": {
-              "key": 10843,
-              "name": "Wauthem Moes",
-              "age": 54,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "cause": "sickness",
-            "label": "parent"
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          },
-          {
-            "topic": "new caretaker",
-            "person": 10844
+            "topic": "neglected"
           }
         ],
         "1212": [
           {
-            "topic": "person died",
-            "person": {
-              "key": 14316,
-              "name": "Coppesoeten van Wauthem",
-              "age": 8,
-              "alive": false,
-              "sex": "m",
-              "parents": {
-                "mother": "Sywi (10844)",
-                "father": "Wauthem (10843)"
-              }
-            },
-            "cause": "starvation",
-            "label": "sibling"
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "neglected"
           }
         ],
         "1213": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "neglected"
           }
         ],
         "1214": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "neglected"
           }
         ],
         "1215": [
@@ -227,31 +270,205 @@
             "year": 1215
           },
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "neglected"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11861,
+              "name": "Margareta Cnijf",
+              "age": 47,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "parent"
           }
         ],
         "1216": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "now caretaker",
+            "care dependants": [
+              29540,
+              35005,
+              35408
+            ]
+          },
+          {
+            "topic": "new caretaker",
+            "person": 15599
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11860,
+              "name": "Claward Zieken",
+              "age": 53,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "label": "parent"
           }
         ],
         "1217": [
           {
             "topic": "not enough income",
             "income": 0,
-            "inhabitants": []
+            "inhabitants": [
+              19023,
+              29540,
+              22257,
+              35005,
+              35408
+            ]
           }
         ],
         "1218": [
           {
             "topic": "not enough income",
             "income": 0,
-            "inhabitants": []
+            "inhabitants": [
+              19023,
+              29540,
+              22257,
+              35005,
+              35408
+            ]
           },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 16588,
+              "name": "Ever Zieken",
+              "age": 12,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Margareta (11861)",
+                "father": "Claward (11860)"
+              }
+            },
+            "cause": "illness",
+            "label": "sibling"
+          }
+        ],
+        "1219": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              19023,
+              29540,
+              22257,
+              35005,
+              35408
+            ]
+          }
+        ],
+        "1220": [
+          {
+            "topic": "event",
+            "event": "famine",
+            "year": 1220
+          },
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.898
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              19023,
+              29540,
+              22257,
+              35005,
+              35408
+            ]
+          }
+        ],
+        "1221": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.618
+          }
+        ],
+        "1224": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.117
+          }
+        ],
+        "1226": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.075
+          },
+          {
+            "topic": "new relationship",
+            "key": 24597,
+            "people": [
+              15599,
+              18256
+            ],
+            "people names": [
+              "Wilmarus Zieken",
+              "Marie Boel"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "not caretaker"
+          }
+        ],
+        "1227": [
+          {
+            "topic": "new relationship",
+            "key": 24812,
+            "people": [
+              15599,
+              24811
+            ],
+            "people names": [
+              "Wilmarus Zieken",
+              "Herbert Zieken"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1228": [
+          {
+            "topic": "new relationship",
+            "key": 25122,
+            "people": [
+              15599,
+              25121
+            ],
+            "people names": [
+              "Wilmarus Zieken",
+              "Cesarius Zieken"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 18256,
+            "target name": "Marie Boel",
+            "state": "solid love",
+            "relationship": 24597
+          }
+        ],
+        "1230": [
           {
             "topic": "death",
             "cause": "illness"
@@ -261,19 +478,20 @@
     },
     "key": 15599,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stDie Camp.se5.c2",
-      "street": "Die Camp",
-      "neighborhood": "kampbuurt",
-      "unique id": 387
+      "income class": 4,
+      "income class label": "nobility",
+      "section": "stMuurhuysen2.se1.c4",
+      "street": "Muurhuysen2",
+      "neighborhood": "cingelnoord",
+      "unique id": 804
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
-        15602,
-        18432
+        16591,
+        19026,
+        24597
       ]
     }
   }

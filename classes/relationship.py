@@ -166,9 +166,6 @@ class Relationship(Agent):
     PHASES / STEPS
     """
     def people(self):
-        return       
-
-    def relationships(self): 
         if not self.active:
             return
         change = False
@@ -216,18 +213,21 @@ class Relationship(Agent):
                 'conceived' : conceived
             }}
         if change:
-            self.logs.add_log(report)
+            self.logs.add_log(report)       
+
+    def lovedeathbirth(self): 
+        return
         
     def houses(self):
-        return
-
-    def post_processing(self):
         task = self.tasks.get()
         while task != None:
             topic = task['topic']
             if topic == 'person died':
                 self.end('person died', {'person' : task['person'], 'cause' : task['cause']})
             task = self.tasks.get()
+
+    def post_processing(self):
+        return
     
     """
     UTILS

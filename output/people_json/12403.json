@@ -1,82 +1,158 @@
 {
   "12403": {
     "alive": false,
-    "name": "Hersewindis",
-    "surname": "Bara",
-    "full name": "Hersewindis Bara",
+    "name": "Dolf",
+    "surname": "Peteman",
+    "full name": "Dolf Peteman",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.055,
-      "romantic interest": 0.631,
-      "sex interest": 0.871,
+      "sexuality": 0.104,
+      "romantic interest": 0.721,
+      "sex interest": 0.559,
       "gender expression": 0.0,
-      "sex": "f"
+      "sex": "m"
     },
-    "age": 6,
+    "age": 33,
     "birth year": 1200,
-    "sex": "f",
-    "faction": "No religion",
+    "sex": "m",
+    "faction": "Dogmatists",
     "income class": [
-      0,
-      "working class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.302,
-      "nice-nasty": 0.822,
-      "honest-false": 0.0
+      "lawful-chaotic": 0.338,
+      "nice-nasty": 0.999,
+      "honest-false": 0.938
     },
     "attitude": {
-      "outgoing": 0.405,
-      "dream": 0.397
+      "outgoing": 0.601,
+      "dream": 0.131
     },
     "homsoc": {
       "means": {
-        "independent": false,
-        "taken_care_of": true,
-        "caretaker": true,
-        "needs_care": true,
+        "independent": true,
+        "taken_care_of": false,
+        "caretaker": false,
+        "needs_care": false,
         "flags": [
-          "starving"
+          "starving",
+          "neglected",
+          "caretaker"
         ]
       },
       "expression": {
-        "sexuality expression": 0.03,
+        "sexuality expression": 0.036,
         "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": {
-        "mother": "Siwa (10634)",
-        "father": "Walramus (10633)"
+        "mother": "Lutghardis (10274)",
+        "father": "Karel (10273)"
       },
-      "children": {},
+      "children": {
+        "22459": {
+          "key": 22459,
+          "name": "Trame Peteman",
+          "age": 1,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Gloria (12433)",
+            "father": "Dolf (12403)"
+          }
+        },
+        "23097": {
+          "key": 23097,
+          "name": "Sara Peteman",
+          "age": 1,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Gloria (12433)",
+            "father": "Dolf (12403)"
+          }
+        },
+        "24049": {
+          "key": 24049,
+          "name": "Oda Peteman",
+          "age": 24,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Gloria (12433)",
+            "father": "Dolf (12403)"
+          }
+        }
+      },
       "relationship keys": {
         "parent": [
           12404,
           12405
-        ]
+        ],
+        "sibling": [
+          13170,
+          13635,
+          14508,
+          16749,
+          17407
+        ],
+        "spouse": [
+          22044
+        ],
+        "child": {
+          "birth": [
+            22460,
+            23098,
+            24050
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        0,
-        "working class"
+        1,
+        "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.499,
+      "all_incomes": [
+        0.99,
+        1.078,
+        1.246,
+        1.358,
+        1.499,
+        1.499,
+        1.409,
+        1.485,
+        1.361,
+        1.499,
+        1.411,
+        1.499,
+        1.499,
+        1.499,
+        1.499,
+        1.499,
+        1.499,
+        1.499
+      ],
+      "job": {
+        "lawful": false,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 4,
+      "skin_color": 5,
       "eye_color": "blue",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
         "S",
         "S"
       ],
-      "health": 0.643,
-      "fertility": 0.636,
+      "health": 0.404,
+      "fertility": 0.76,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -88,9 +164,41 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.643
+            "new_health": 0.765
           },
           "death": false
+        },
+        "1202": {
+          "health": {
+            "change": true,
+            "value_change": -0.129,
+            "new_health": 0.636
+          },
+          "death": false
+        },
+        "1203": {
+          "health": {
+            "change": true,
+            "value_change": -0.232,
+            "new_health": 0.404
+          },
+          "death": false
+        },
+        "1204": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.404
+          },
+          "death": false
+        },
+        "1233": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.404
+          },
+          "death": true
         }
       },
       "events": {
@@ -98,98 +206,509 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stDe Tuyt.se1.c0",
-              "street": "De Tuyt",
-              "neighborhood": "agnesbuurt",
-              "unique id": 287
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stHelle voet.se9.c1",
+              "street": "Helle voet",
+              "neighborhood": "jorisbuurt",
+              "unique id": 129
             }
           }
         ],
         "1201": [
           {
+            "topic": "new relationship",
+            "key": 13170,
+            "people": [
+              12403,
+              13167
+            ],
+            "people names": [
+              "Dolf Peteman",
+              "Bernardus van Lutghardis"
+            ],
+            "label": "sibling",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 13635,
+            "people": [
+              12403,
+              13632
+            ],
+            "people names": [
+              "Dolf Peteman",
+              "Ghela Peteman"
+            ],
+            "label": "sibling",
+            "committed": false
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 14508,
+            "people": [
+              12403,
+              14505
+            ],
+            "people names": [
+              "Dolf Peteman",
+              "Myrthel Peteman"
+            ],
+            "label": "sibling",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.893,
+            "inhabitants": [
+              12415,
+              27352,
+              28169,
+              31652,
+              26493
+            ]
+          }
+        ],
+        "1204": [
+          {
+            "topic": "not enough income",
+            "income": 0.881,
+            "inhabitants": [
+              12415,
+              27352,
+              28169,
+              31652,
+              26493
+            ]
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 16749,
+            "people": [
+              12403,
+              16746
+            ],
+            "people names": [
+              "Dolf Peteman",
+              "Marie Peteman"
+            ],
+            "label": "sibling",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.881,
+            "inhabitants": [
+              12415,
+              27352,
+              28169,
+              31652,
+              26493
+            ]
+          }
+        ],
+        "1207": [
+          {
+            "topic": "new relationship",
+            "key": 17407,
+            "people": [
+              12403,
+              17404
+            ],
+            "people names": [
+              "Dolf Peteman",
+              "Sybillia Peteman"
+            ],
+            "label": "sibling",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.959,
+            "inhabitants": [
+              12415,
+              27352,
+              28169,
+              31652,
+              26493
+            ]
+          },
+          {
             "topic": "person died",
             "person": {
-              "key": 10633,
-              "name": "Walramus Bara",
-              "age": 28,
+              "key": 10274,
+              "name": "Lutghardis Cnode",
+              "age": 26,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "parent"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0.888,
+            "inhabitants": [
+              12415,
+              27352,
+              28169,
+              31652,
+              26493
+            ]
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0.889,
+            "inhabitants": [
+              12415,
+              27352,
+              28169,
+              31652,
+              26493
+            ]
+          }
+        ],
+        "1210": [
+          {
+            "topic": "now caretaker",
+            "care dependants": [
+              28169,
+              31652
+            ]
+          },
+          {
+            "topic": "new caretaker",
+            "person": 12403
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10273,
+              "name": "Karel Peteman",
+              "age": 38,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
             },
             "cause": "illness",
             "label": "parent"
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              12415,
+              27352,
+              28169,
+              31652,
+              26493
+            ]
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              12415,
+              27352,
+              28169,
+              31652,
+              26493
+            ]
+          }
+        ],
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              12415,
+              27352,
+              28169,
+              31652,
+              26493
+            ]
           },
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          },
-          {
-            "topic": "new caretaker",
-            "person": 10634
+            "topic": "person died",
+            "person": {
+              "key": 16746,
+              "name": "Marie Peteman",
+              "age": 7,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Lutghardis (10274)",
+                "father": "Karel (10273)"
+              }
+            },
+            "cause": "childhood illness",
+            "label": "sibling"
           }
         ],
-        "1202": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1203": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1204": [
+        "1214": [
           {
             "topic": "not enough income",
             "income": 0,
-            "inhabitants": []
+            "inhabitants": [
+              12415,
+              27352,
+              28169,
+              31652,
+              26493
+            ]
           }
         ],
-        "1205": [
+        "1215": [
           {
             "topic": "event",
             "event": "plague",
-            "year": 1205
+            "year": 1215
           },
           {
             "topic": "not enough income",
             "income": 0,
-            "inhabitants": []
+            "inhabitants": [
+              12415,
+              27352,
+              28169,
+              31652,
+              26493
+            ]
           }
         ],
-        "1206": [
+        "1216": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.99
+          },
           {
             "topic": "not enough income",
             "income": 0,
-            "inhabitants": []
+            "inhabitants": [
+              12415,
+              27352,
+              28169,
+              31652,
+              26493
+            ]
+          }
+        ],
+        "1217": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.078
           },
           {
+            "topic": "new relationship",
+            "key": 22044,
+            "people": [
+              12403,
+              12433
+            ],
+            "people names": [
+              "Dolf Peteman",
+              "Gloria Stael"
+            ],
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1219": [
+          {
+            "topic": "new relationship",
+            "key": 22460,
+            "people": [
+              12403,
+              22459
+            ],
+            "people names": [
+              "Dolf Peteman",
+              "Trame Peteman"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1220": [
+          {
+            "topic": "event",
+            "event": "famine",
+            "year": 1220
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 22459,
+              "name": "Trame Peteman",
+              "age": 1,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Gloria (12433)",
+                "father": "Dolf (12403)"
+              }
+            },
+            "cause": "childhood illness",
+            "label": "child"
+          }
+        ],
+        "1222": [
+          {
+            "topic": "new relationship",
+            "key": 23098,
+            "people": [
+              12403,
+              23097
+            ],
+            "people names": [
+              "Dolf Peteman",
+              "Sara Peteman"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1223": [
+          {
+            "topic": "feelings change",
+            "target": 12433,
+            "target name": "Gloria Stael",
+            "state": "out of love",
+            "relationship": 22044
+          },
+          {
+            "topic": "not caretaker"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 23097,
+              "name": "Sara Peteman",
+              "age": 1,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Gloria (12433)",
+                "father": "Dolf (12403)"
+              }
+            },
+            "cause": "childhood illness",
+            "label": "child"
+          }
+        ],
+        "1225": [
+          {
+            "topic": "new relationship",
+            "key": 24050,
+            "people": [
+              12403,
+              24049
+            ],
+            "people names": [
+              "Dolf Peteman",
+              "Oda Peteman"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 13167,
+              "name": "Bernardus van Lutghardis",
+              "age": 24,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Lutghardis (10274)",
+                "father": "Karel (10273)"
+              }
+            },
+            "cause": "illness",
+            "label": "sibling"
+          },
+          {
+            "key": 22044,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12433,
+              "name": "Gloria Stael",
+              "age": 25,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Berta (10400)",
+                "father": "Euerocker (10399)"
+              }
+            },
+            "cause": "illness",
+            "label": "spouse"
+          }
+        ],
+        "1232": [
+          {
+            "topic": "event",
+            "event": "war",
+            "year": 1232
+          },
+          {
+            "topic": "event",
+            "event": "famine",
+            "year": 1232
+          }
+        ],
+        "1233": [
+          {
             "topic": "death",
-            "cause": "starvation"
+            "cause": "illness"
           }
         ]
       }
     },
     "key": 12403,
     "home": {
-      "income class": 0,
-      "income class label": "working class",
-      "section": "stDe Tuyt.se1.c0",
-      "street": "De Tuyt",
-      "neighborhood": "agnesbuurt",
-      "unique id": 287
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stMuelen straet.se3.c1",
+      "street": "Muelen straet",
+      "neighborhood": "jorisbuurt",
+      "unique id": 169
     },
     "relationship status": {
       "taken": false,
       "married": false,
-      "relationships": []
+      "relationships": [
+        13170,
+        13635,
+        14508,
+        16749,
+        17407,
+        22044
+      ]
     }
   }
 }

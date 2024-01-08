@@ -1,85 +1,109 @@
 {
   "12191": {
     "alive": false,
-    "name": "Walburgis",
-    "surname": "Bara",
-    "full name": "Walburgis Bara",
+    "name": "Imma",
+    "surname": "Blauoets",
+    "full name": "Imma Blauoets",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.086,
-      "romantic interest": 0.789,
-      "sex interest": 0.743,
-      "gender expression": 0.264,
+      "sexuality": 0.004,
+      "romantic interest": 0.635,
+      "sex interest": 0.606,
+      "gender expression": 0.209,
       "sex": "f"
     },
-    "age": 43,
-    "birth year": 1168,
+    "age": 39,
+    "birth year": 1177,
     "sex": "f",
     "faction": "No religion",
     "income class": [
-      1,
-      "lower middle class"
+      3,
+      "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.824,
-      "nice-nasty": 0.601,
-      "honest-false": 0.144
+      "lawful-chaotic": 0.0,
+      "nice-nasty": 0.386,
+      "honest-false": 0.674
     },
     "attitude": {
-      "outgoing": 0.415,
-      "dream": 0.573
+      "outgoing": 0.286,
+      "dream": 0.811
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
         "flags": [
-          "starving"
+          "starving",
+          "caretaker"
         ]
       },
       "expression": {
-        "sexuality expression": 0.043,
-        "gender expression expression": 0.099
+        "sexuality expression": 0.001,
+        "gender expression expression": 0.065
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12622": {
+          "key": 12622,
+          "name": "Hille Makerreel",
+          "age": 49,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Imma (12191)",
+            "father": "Reuro (12190)"
+          }
+        },
+        "19561": {
+          "key": 19561,
+          "name": "Itsburgis Bara",
+          "age": 31,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Imma (12191)",
+            "father": "Arnst (10066)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          12192
-        ]
+          12192,
+          18745
+        ],
+        "child": {
+          "birth": [
+            12624,
+            19563
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
-        1,
-        "lower middle class"
+        3,
+        "upper middle class"
       ],
-      "income": 1.052,
-      "all_incomes": [
-        1.137,
-        1.052
-      ],
-      "job": {
-        "lawful": true,
-        "honest": false
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 3,
+      "skin_color": 4,
       "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
         "C",
         "S"
       ],
-      "health": 0.801,
-      "fertility": 0.825,
+      "health": 0.702,
+      "fertility": 0.729,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -91,15 +115,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.801
+            "new_health": 0.702
           },
           "death": false
         },
-        "1210": {
+        "1215": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.801
+            "new_health": 0.702
           },
           "death": true
         }
@@ -114,8 +138,8 @@
               12191
             ],
             "people names": [
-              "Harderico Schelewart",
-              "Walburgis Bara"
+              "Reuro Makerreel",
+              "Imma Blauoets"
             ],
             "label": "spouse",
             "committed": true
@@ -123,27 +147,33 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stKerckstraet.se1.c1",
-              "street": "Kerckstraet",
+              "income class": 3,
+              "income class label": "upper middle class",
+              "section": "stDen Hof.se5.c3",
+              "street": "Den Hof",
               "neighborhood": "denhof",
-              "unique id": 985
+              "unique id": 953
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12624,
+            "people": [
+              12191,
+              12622
+            ],
+            "people names": [
+              "Imma Blauoets",
+              "Hille Makerreel"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1205": [
+        "1206": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1205
-          }
-        ],
-        "1209": [
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.137
+            "topic": "now caretaker",
+            "care dependants": []
           },
           {
             "key": 12192,
@@ -153,22 +183,108 @@
             "topic": "person died",
             "person": {
               "key": 12190,
-              "name": "Harderico Schelewart",
-              "age": 54,
+              "name": "Reuro Makerreel",
+              "age": 47,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
             },
-            "cause": "old age",
+            "cause": "illness",
             "label": "spouse"
-          },
+          }
+        ],
+        "1207": [
           {
             "topic": "not enough income",
             "income": 0,
             "inhabitants": []
           }
         ],
-        "1210": [
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "new relationship",
+            "key": 18745,
+            "people": [
+              10066,
+              12191
+            ],
+            "people names": [
+              "Arnst Bara",
+              "Imma Blauoets"
+            ],
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1211": [
+          {
+            "topic": "new relationship",
+            "key": 19563,
+            "people": [
+              12191,
+              19561
+            ],
+            "people names": [
+              "Imma Blauoets",
+              "Itsburgis Bara"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 10066,
+            "target name": "Arnst Bara",
+            "state": "solid love",
+            "relationship": 18745
+          }
+        ],
+        "1212": [
+          {
+            "key": 18745,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10066,
+              "name": "Arnst Bara",
+              "age": 53,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "old age",
+            "label": "spouse"
+          }
+        ],
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
           {
             "topic": "death",
             "cause": "illness"
@@ -178,18 +294,19 @@
     },
     "key": 12191,
     "home": {
-      "income class": 1,
-      "income class label": "lower middle class",
-      "section": "stKerckstraet.se1.c1",
-      "street": "Kerckstraet",
+      "income class": 3,
+      "income class label": "upper middle class",
+      "section": "stDen Hof.se5.c3",
+      "street": "Den Hof",
       "neighborhood": "denhof",
-      "unique id": 985
+      "unique id": 953
     },
     "relationship status": {
       "taken": false,
       "married": false,
       "relationships": [
-        12192
+        12192,
+        18745
       ]
     }
   }

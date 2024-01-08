@@ -1,19 +1,19 @@
 {
   "10187": {
     "alive": false,
-    "name": "Brundonis",
-    "surname": "",
-    "full name": "Brundonis",
+    "name": "Nellen",
+    "surname": "Jserine",
+    "full name": "Nellen Jserine",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.155,
-      "romantic interest": 0.651,
-      "sex interest": 0.91,
-      "gender expression": 0.351,
+      "sexuality": 0.048,
+      "romantic interest": 0.788,
+      "sex interest": 0.943,
+      "gender expression": 0.232,
       "sex": "f"
     },
-    "age": 42,
-    "birth year": 1171,
+    "age": 49,
+    "birth year": 1174,
     "sex": "f",
     "faction": "Zealots",
     "income class": [
@@ -21,75 +21,77 @@
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.323,
-      "nice-nasty": 0.794,
-      "honest-false": 0.0
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.0,
+      "honest-false": 0.724
     },
     "attitude": {
-      "outgoing": 0.441,
-      "dream": 0.257
+      "outgoing": 0.846,
+      "dream": 0.402
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving",
+          "caretaker"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.121,
-        "gender expression expression": 0.258
+        "sexuality expression": 0.028,
+        "gender expression expression": 0.131
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "16634": {
+          "key": 16634,
+          "name": "Leanne van Nellen",
+          "age": 35,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Nellen (10187)",
+            "father": "Wybel (10186)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10188,
-          17705
-        ]
+          20173
+        ],
+        "child": {
+          "birth": [
+            16636
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
         1,
         "lower middle class"
       ],
-      "income": 0.826,
-      "all_incomes": [
-        1.033,
-        0.793,
-        0.975,
-        1.021,
-        1.087,
-        1.019,
-        0.916,
-        1.044,
-        0.817,
-        1.256,
-        1.173,
-        1.042,
-        0.826
-      ],
-      "job": {
-        "lawful": true,
-        "honest": false
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 1,
-      "eye_color": "brown",
+      "skin_color": 0,
+      "eye_color": "green",
       "hair_color": "strawberry blonde",
       "hair_color_code": 5,
       "hair_type": [
         "C",
         "C"
       ],
-      "health": 0.733,
-      "fertility": 0.691,
+      "health": 0.663,
+      "fertility": 0.66,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -101,26 +103,13 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.733
+            "new_health": 0.663
           },
           "death": false
-        },
-        "1212": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.733
-          },
-          "death": true
         }
       },
       "events": {
         "1200": [
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.033
-          },
           {
             "topic": "new relationship",
             "key": 10188,
@@ -129,8 +118,8 @@
               10187
             ],
             "people names": [
-              "Daniel",
-              "Brundonis"
+              "Wybel",
+              "Nellen Jserine"
             ],
             "label": "spouse",
             "committed": true
@@ -140,21 +129,41 @@
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stMerrien hoof.se3.c1",
-              "street": "Merrien hoof",
-              "neighborhood": "varkensbuurt",
-              "unique id": 82
+              "section": "stHelle voet.se1.c1",
+              "street": "Helle voet",
+              "neighborhood": "jorisbuurt",
+              "unique id": 87
             }
-          }
-        ],
-        "1203": [
+          },
           {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.021
+            "topic": "feelings change",
+            "target": 10186,
+            "target name": "Wybel",
+            "state": "out of love",
+            "relationship": 10188
           }
         ],
-        "1205": [
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 16636,
+            "people": [
+              10187,
+              16634
+            ],
+            "people names": [
+              "Nellen Jserine",
+              "Leanne van Nellen"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1210": [
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          },
           {
             "key": 10188,
             "topic": "unmarried"
@@ -163,52 +172,190 @@
             "topic": "person died",
             "person": {
               "key": 10186,
-              "name": "Daniel",
-              "age": 42,
+              "name": "Wybel",
+              "age": 56,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
             },
-            "cause": "illness",
+            "cause": "sickness",
             "label": "spouse"
-          },
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1205
           }
         ],
-        "1207": [
+        "1211": [
           {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.044
-          }
-        ],
-        "1208": [
-          {
-            "topic": "new relationship",
-            "key": 17705,
-            "people": [
-              11134,
-              10187
-            ],
-            "people names": [
-              "Coppesoeten Buc",
-              "Brundonis"
-            ],
-            "label": "spouse",
-            "committed": true
-          }
-        ],
-        "1209": [
-          {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.256
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ],
         "1212": [
+          {
+            "topic": "new relationship",
+            "key": 20173,
+            "people": [
+              11155,
+              10187
+            ],
+            "people names": [
+              "Maelkin Napbrekere",
+              "Nellen Jserine"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stPaternoster straetje.se1.c1",
+              "street": "Paternoster straetje",
+              "neighborhood": "olvbuurt",
+              "unique id": 514
+            }
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.626,
+            "inhabitants": [
+              15232,
+              25792,
+              13777
+            ]
+          }
+        ],
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0.557,
+            "inhabitants": [
+              15232,
+              25792,
+              13777
+            ]
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0.467,
+            "inhabitants": [
+              15232,
+              25792,
+              13777
+            ]
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.492,
+            "inhabitants": [
+              15232,
+              25792,
+              13777
+            ]
+          }
+        ],
+        "1216": [
+          {
+            "topic": "not enough income",
+            "income": 0.515,
+            "inhabitants": [
+              15232,
+              25792,
+              13777
+            ]
+          }
+        ],
+        "1217": [
+          {
+            "topic": "not enough income",
+            "income": 0.538,
+            "inhabitants": [
+              15232,
+              25792,
+              13777
+            ]
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          },
+          {
+            "key": 20173,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11155,
+              "name": "Maelkin Napbrekere",
+              "age": 52,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "old age",
+            "label": "spouse"
+          }
+        ],
+        "1218": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              15232,
+              25792,
+              13777
+            ]
+          }
+        ],
+        "1219": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              15232,
+              25792,
+              13777
+            ]
+          }
+        ],
+        "1220": [
+          {
+            "topic": "event",
+            "event": "famine",
+            "year": 1220
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              15232,
+              25792,
+              13777
+            ]
+          }
+        ],
+        "1221": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              15232,
+              25792,
+              13777
+            ]
+          }
+        ],
+        "1222": [
           {
             "topic": "death",
             "cause": "illness"
@@ -220,17 +367,17 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stMerrien hoof.se3.c1",
-      "street": "Merrien hoof",
-      "neighborhood": "varkensbuurt",
-      "unique id": 82
+      "section": "stPaternoster straetje.se1.c1",
+      "street": "Paternoster straetje",
+      "neighborhood": "olvbuurt",
+      "unique id": 514
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         10188,
-        17705
+        20173
       ]
     }
   }

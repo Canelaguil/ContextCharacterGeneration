@@ -1,93 +1,107 @@
 {
   "10499": {
     "alive": false,
-    "name": "Myrthel",
-    "surname": "",
-    "full name": "Myrthel",
+    "name": "Imsoete",
+    "surname": "Firenbrais",
+    "full name": "Imsoete Firenbrais",
     "born this way": {
       "sexuality label": "straight",
       "sexuality": 0.069,
-      "romantic interest": 0.477,
-      "sex interest": 0.754,
-      "gender expression": 0.016,
+      "romantic interest": 0.583,
+      "sex interest": 0.68,
+      "gender expression": 0.04,
       "sex": "f"
     },
-    "age": 18,
-    "birth year": 1183,
+    "age": 51,
+    "birth year": 1173,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
       "lawful-chaotic": 0.0,
-      "nice-nasty": 0.744,
-      "honest-false": 0.56
+      "nice-nasty": 0.019,
+      "honest-false": 0.162
     },
     "attitude": {
-      "outgoing": 0.404,
-      "dream": 0.447
+      "outgoing": 0.176,
+      "dream": 0.29
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.027,
-        "gender expression expression": 0.012
+        "sexuality expression": 0.028,
+        "gender expression expression": 0.039
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {
-        "12352": {
-          "key": 12352,
-          "name": "Herbert",
-          "age": 42,
-          "alive": false,
-          "sex": "m",
-          "parents": {
-            "mother": "Myrthel (10499)",
-            "father": "Gilis (10498)"
-          }
-        }
-      },
+      "children": {},
       "relationship keys": {
         "spouse": [
           10500
-        ],
-        "child": {
-          "birth": [
-            12354
-          ]
-        }
+        ]
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.0,
+      "all_incomes": [
+        1.381,
+        1.499,
+        1.091,
+        0.725,
+        0.638,
+        0.854,
+        0.5,
+        0.213,
+        0.347,
+        0.264,
+        0.39,
+        0.056,
+        0.095,
+        0.0,
+        0.046,
+        0.0,
+        0.4,
+        0.475,
+        0.291,
+        0.011,
+        0.549,
+        0.247,
+        0.0,
+        0.0
+      ],
+      "job": {
+        "lawful": false,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 3,
+      "skin_color": 1,
       "eye_color": "brown",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
         "S",
         "C"
       ],
-      "health": 0.758,
-      "fertility": 0.68,
+      "health": 0.379,
+      "fertility": 0.709,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -99,13 +113,26 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.758
+            "new_health": 0.619
+          },
+          "death": false
+        },
+        "1223": {
+          "health": {
+            "change": true,
+            "value_change": -0.24,
+            "new_health": 0.379
           },
           "death": false
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.381
+          },
           {
             "topic": "new relationship",
             "key": 10500,
@@ -114,8 +141,8 @@
               10499
             ],
             "people names": [
-              "Gilis Masc",
-              "Myrthel"
+              "Erenboede Barvoet",
+              "Imsoete Firenbrais"
             ],
             "label": "spouse",
             "committed": true
@@ -125,29 +152,153 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stBloemendaelse straet.se3.c2",
+              "section": "stBloemendaelse straet.se5.c2",
               "street": "Bloemendaelse straet",
               "neighborhood": "agnesbuurt",
-              "unique id": 226
+              "unique id": 233
             }
+          }
+        ],
+        "1203": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.725
           },
           {
-            "topic": "new relationship",
-            "key": 12354,
-            "people": [
-              10499,
-              12352
-            ],
-            "people names": [
-              "Myrthel",
-              "Herbert"
-            ],
-            "label": "parentchild",
-            "committed": false
+            "topic": "feelings change",
+            "target": 10498,
+            "target name": "Erenboede Barvoet",
+            "state": "infatuation",
+            "relationship": 10500
+          }
+        ],
+        "1204": [
+          {
+            "topic": "feelings change",
+            "target": 10498,
+            "target name": "Erenboede Barvoet",
+            "state": "solid love",
+            "relationship": 10500
+          }
+        ],
+        "1206": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.5
+          }
+        ],
+        "1207": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.213
+          }
+        ],
+        "1209": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.264
+          }
+        ],
+        "1210": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.39
+          }
+        ],
+        "1211": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.056
+          }
+        ],
+        "1214": [
+          {
+            "key": 10500,
+            "topic": "unmarried"
           },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10498,
+              "name": "Erenboede Barvoet",
+              "age": 53,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "label": "spouse"
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1217": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.475
+          }
+        ],
+        "1218": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.291
+          }
+        ],
+        "1219": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.011
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.011,
+            "inhabitants": []
+          }
+        ],
+        "1220": [
+          {
+            "topic": "event",
+            "event": "famine",
+            "year": 1220
+          }
+        ],
+        "1221": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.247
+          }
+        ],
+        "1222": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1223": [
           {
             "topic": "death",
-            "cause": "childbirth"
+            "cause": "old age"
           }
         ]
       }
@@ -156,14 +307,14 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stBloemendaelse straet.se3.c2",
+      "section": "stBloemendaelse straet.se5.c2",
       "street": "Bloemendaelse straet",
       "neighborhood": "agnesbuurt",
-      "unique id": 226
+      "unique id": 233
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         10500
       ]

@@ -1,33 +1,33 @@
 {
   "10480": {
     "alive": false,
-    "name": "Franse",
-    "surname": "",
-    "full name": "Franse",
+    "name": "Eylwardo",
+    "surname": "Kics",
+    "full name": "Eylwardo Kics",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.143,
-      "romantic interest": 0.763,
-      "sex interest": 0.67,
-      "gender expression": 0.072,
+      "sexuality": 0.0,
+      "romantic interest": 0.353,
+      "sex interest": 0.416,
+      "gender expression": 0.001,
       "sex": "m"
     },
-    "age": 54,
-    "birth year": 1152,
+    "age": 45,
+    "birth year": 1160,
     "sex": "m",
-    "faction": "Dogmatists",
+    "faction": "Zealots",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.8,
-      "honest-false": 0.649
+      "lawful-chaotic": 0.567,
+      "nice-nasty": 0.118,
+      "honest-false": 0.218
     },
     "attitude": {
-      "outgoing": 0.438,
-      "dream": 0.352
+      "outgoing": 0.449,
+      "dream": 0.474
     },
     "homsoc": {
       "means": {
@@ -38,17 +38,34 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.068,
-        "gender expression expression": 0.033
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.0
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13551": {
+          "key": 13551,
+          "name": "Rodolf Kics",
+          "age": 3,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Reynwi (10481)",
+            "father": "Eylwardo (10480)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10482
-        ]
+        ],
+        "child": {
+          "birth": [
+            13552
+          ]
+        }
       }
     },
     "occupation": {
@@ -57,32 +74,31 @@
         2,
         "middle class"
       ],
-      "income": 1.244,
+      "income": 1.163,
       "all_incomes": [
-        1.302,
-        1.499,
-        0.795,
-        1.005,
-        1.278,
-        1.362,
-        1.244
+        1.275,
+        1.32,
+        1.263,
+        1.185,
+        1.198,
+        1.163
       ],
       "job": {
-        "lawful": false,
+        "lawful": true,
         "honest": false
       }
     },
     "genetics": {
-      "skin_color": 7,
+      "skin_color": 0,
       "eye_color": "green",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
-        "S",
-        "S"
+        "C",
+        "C"
       ],
-      "health": 0.064,
-      "fertility": 0.788,
+      "health": 0.693,
+      "fertility": 0.749,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -94,31 +110,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.711
-          },
-          "death": false
-        },
-        "1203": {
-          "health": {
-            "change": true,
-            "value_change": -0.241,
-            "new_health": 0.47
+            "new_health": 0.693
           },
           "death": false
         },
         "1204": {
           "health": {
-            "change": true,
-            "value_change": -0.272,
-            "new_health": 0.198
-          },
-          "death": false
-        },
-        "1205": {
-          "health": {
-            "change": true,
-            "value_change": -0.134,
-            "new_health": 0.064
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.693
           },
           "death": true
         }
@@ -128,7 +128,7 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.302
+            "income": 1.275
           },
           {
             "topic": "new relationship",
@@ -138,8 +138,8 @@
               10481
             ],
             "people names": [
-              "Franse",
-              "Ghodelde Scinkel"
+              "Eylwardo Kics",
+              "Reynwi Vosseken"
             ],
             "label": "spouse",
             "committed": true
@@ -152,33 +152,56 @@
               "section": "stBloemendaelse straet.se3.c2",
               "street": "Bloemendaelse straet",
               "neighborhood": "agnesbuurt",
-              "unique id": 219
+              "unique id": 226
             }
-          },
+          }
+        ],
+        "1201": [
           {
-            "topic": "feelings change",
-            "target": 10481,
-            "target name": "Ghodelde Scinkel",
-            "state": "solid love",
-            "relationship": 10482
+            "topic": "new relationship",
+            "key": 13552,
+            "people": [
+              10480,
+              13551
+            ],
+            "people names": [
+              "Eylwardo Kics",
+              "Rodolf Kics"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1202": [
           {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.005
-          }
-        ],
-        "1205": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1205
+            "topic": "feelings change",
+            "target": 10481,
+            "target name": "Reynwi Vosseken",
+            "state": "out of love",
+            "relationship": 10482
           },
           {
+            "key": 10482,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10481,
+              "name": "Reynwi Vosseken",
+              "age": 34,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "spouse"
+          }
+        ],
+        "1204": [
+          {
             "topic": "death",
-            "cause": "old age"
+            "cause": "illness"
           }
         ]
       }
@@ -190,11 +213,11 @@
       "section": "stBloemendaelse straet.se3.c2",
       "street": "Bloemendaelse straet",
       "neighborhood": "agnesbuurt",
-      "unique id": 219
+      "unique id": 226
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         10482
       ]

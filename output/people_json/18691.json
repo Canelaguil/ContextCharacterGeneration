@@ -1,55 +1,90 @@
 {
   "18691": {
     "alive": false,
-    "name": "Kybben",
-    "surname": "",
-    "full name": "Kybben",
+    "name": "Alretieren",
+    "surname": "van Bartrarde",
+    "full name": "Alretieren van Bartrarde",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.082,
-      "romantic interest": 0.485,
-      "sex interest": 0.824,
-      "gender expression": 0.147,
-      "sex": "m"
+      "sexuality": 0.046,
+      "romantic interest": 0.81,
+      "sex interest": 0.605,
+      "gender expression": 0.075,
+      "sex": "f"
     },
-    "age": 1,
-    "birth year": 1210,
-    "sex": "m",
+    "age": 33,
+    "birth year": 1209,
+    "sex": "f",
     "faction": "No religion",
     "income class": [
-      2,
-      "middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.756,
-      "nice-nasty": 0.531,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.522,
+      "nice-nasty": 0.108,
+      "honest-false": 0.0
     },
     "attitude": {
-      "outgoing": 0.372,
-      "dream": 0.614
+      "outgoing": 0.474,
+      "dream": 0.327
     },
     "homsoc": {
       "means": {
         "independent": false,
         "taken_care_of": false,
         "caretaker": true,
-        "needs_care": true,
+        "needs_care": false,
         "flags": [
+          "starving",
           "neglected"
         ]
       },
       "expression": {
-        "sexuality expression": 0.051,
-        "gender expression expression": 0.079
+        "sexuality expression": 0.02,
+        "gender expression expression": 0.031
       }
     },
     "network": {
       "parents": {
-        "mother": "Eingeliadis (12089)",
-        "father": "Enekonus (12088)"
+        "mother": "Scilla (10076)",
+        "father": "Bartrarde (10075)"
       },
-      "children": {},
+      "children": {
+        "25720": {
+          "key": 25720,
+          "name": "Snellard Onlost",
+          "age": 20,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Alretieren (18691)",
+            "father": "Scoutekiin (19588)"
+          }
+        },
+        "30748": {
+          "key": 30748,
+          "name": "Hardenbernus Onlost",
+          "age": 10,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Alretieren (18691)",
+            "father": "Scoutekiin (19588)"
+          }
+        },
+        "31113": {
+          "key": 31113,
+          "name": "Enekonus Onlost",
+          "age": 9,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Alretieren (18691)",
+            "father": "Scoutekiin (19588)"
+          }
+        }
+      },
       "relationship keys": {
         "parent": [
           18692,
@@ -57,30 +92,43 @@
         ],
         "sibling": [
           18694,
-          18695
-        ]
+          18695,
+          18696,
+          18697,
+          19215
+        ],
+        "spouse": [
+          24948
+        ],
+        "child": {
+          "birth": [
+            25722,
+            30750,
+            31115
+          ]
+        }
       }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        2,
-        "middle class"
+        1,
+        "lower middle class"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 7,
-      "eye_color": "green",
+      "skin_color": 5,
+      "eye_color": "blue",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
         "C",
         "S"
       ],
-      "health": 0.307,
-      "fertility": 0.518,
+      "health": 0.713,
+      "fertility": 0.675,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -88,55 +136,399 @@
     },
     "memory": {
       "health": {
-        "1211": {
+        "1210": {
           "health": {
-            "change": true,
-            "value_change": -0.161,
-            "new_health": 0.307
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.713
+          },
+          "death": false
+        },
+        "1242": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.713
           },
           "death": true
         }
       },
       "events": {
-        "1210": [
+        "1209": [
           {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stDen Hof.se3.c2",
-              "street": "Den Hof",
-              "neighborhood": "denhof",
-              "unique id": 945
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stSlyck straet.se1.c1",
+              "street": "Slyck straet",
+              "neighborhood": "varkensbuurt",
+              "unique id": 38
             }
           }
         ],
-        "1211": [
+        "1210": [
+          {
+            "topic": "new relationship",
+            "key": 19215,
+            "people": [
+              18691,
+              19208
+            ],
+            "people names": [
+              "Alretieren van Bartrarde",
+              "Costan Bartrardeszoon"
+            ],
+            "label": "sibling",
+            "committed": false
+          }
+        ],
+        "1213": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10076,
+              "name": "Scilla",
+              "age": 32,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "parent"
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1216": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1217": [
           {
             "topic": "neglected"
           },
           {
+            "topic": "update",
+            "update": "parent married",
+            "parent": 10075,
+            "new partner": 10247
+          }
+        ],
+        "1218": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1219": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1220": [
+          {
+            "topic": "event",
+            "event": "famine",
+            "year": 1220
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1222": [
+          {
+            "topic": "new caretaker",
+            "person": 10247
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10075,
+              "name": "Bartrarde",
+              "age": 43,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "parent"
+          }
+        ],
+        "1223": [
+          {
+            "topic": "not enough income",
+            "income": 0.734,
+            "inhabitants": [
+              24205,
+              25008,
+              25531,
+              28987,
+              24772,
+              34148,
+              34980,
+              26498,
+              35347,
+              26855
+            ]
+          },
+          {
+            "topic": "new caretaker",
+            "person": 12739
+          }
+        ],
+        "1224": [
+          {
+            "topic": "not enough income",
+            "income": 0.543,
+            "inhabitants": [
+              24205,
+              25008,
+              25531,
+              28987,
+              24772,
+              34148,
+              34980,
+              26498,
+              35347,
+              26855
+            ]
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 14244,
+              "name": "Alene Bartrardesdochter",
+              "age": 21,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Scilla (10076)",
+                "father": "Bartrarde (10075)"
+              }
+            },
+            "cause": "illness",
+            "label": "sibling"
+          }
+        ],
+        "1225": [
+          {
+            "topic": "not enough income",
+            "income": 0.639,
+            "inhabitants": [
+              24205,
+              25008,
+              25531,
+              28987,
+              24772,
+              34148,
+              34980,
+              26498,
+              35347,
+              26855
+            ]
+          }
+        ],
+        "1226": [
+          {
+            "topic": "not enough income",
+            "income": 0.65,
+            "inhabitants": [
+              24205,
+              25008,
+              25531,
+              28987,
+              24772,
+              34148,
+              34980,
+              26498,
+              35347,
+              26855
+            ]
+          }
+        ],
+        "1227": [
+          {
+            "topic": "new relationship",
+            "key": 24948,
+            "people": [
+              19588,
+              18691
+            ],
+            "people names": [
+              "Scoutekiin Onlost",
+              "Alretieren van Bartrarde"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stNieu straet.se3.c1",
+              "street": "Nieu straet",
+              "neighborhood": "visbuurt",
+              "unique id": 765
+            }
+          }
+        ],
+        "1228": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 19208,
+              "name": "Costan Bartrardeszoon",
+              "age": 18,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Scilla (10076)",
+                "father": "Bartrarde (10075)"
+              }
+            },
+            "cause": "illness",
+            "label": "sibling"
+          }
+        ],
+        "1229": [
+          {
+            "topic": "new relationship",
+            "key": 25722,
+            "people": [
+              18691,
+              25720
+            ],
+            "people names": [
+              "Alretieren van Bartrarde",
+              "Snellard Onlost"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1232": [
+          {
+            "topic": "event",
+            "event": "war",
+            "year": 1232
+          },
+          {
+            "topic": "event",
+            "event": "famine",
+            "year": 1232
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 15289,
+              "name": "Clara Bartrardesdochter",
+              "age": 28,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Scilla (10076)",
+                "father": "Bartrarde (10075)"
+              }
+            },
+            "cause": "illness",
+            "label": "sibling"
+          }
+        ],
+        "1234": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 13681,
+              "name": "Siburgis",
+              "age": 32,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Scilla (10076)",
+                "father": "Bartrarde (10075)"
+              }
+            },
+            "cause": "illness",
+            "label": "sibling"
+          }
+        ],
+        "1235": [
+          {
+            "topic": "event",
+            "event": "faction upheaval",
+            "faction": "Zealots",
+            "year": 1235
+          }
+        ],
+        "1239": [
+          {
+            "topic": "new relationship",
+            "key": 30750,
+            "people": [
+              18691,
+              30748
+            ],
+            "people names": [
+              "Alretieren van Bartrarde",
+              "Hardenbernus Onlost"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1240": [
+          {
+            "topic": "new relationship",
+            "key": 31115,
+            "people": [
+              18691,
+              31113
+            ],
+            "people names": [
+              "Alretieren van Bartrarde",
+              "Enekonus Onlost"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1242": [
+          {
             "topic": "death",
-            "cause": "childhood illness"
+            "cause": "illness"
           }
         ]
       }
     },
     "key": 18691,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stDen Hof.se3.c2",
-      "street": "Den Hof",
-      "neighborhood": "denhof",
-      "unique id": 945
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stNieu straet.se3.c1",
+      "street": "Nieu straet",
+      "neighborhood": "visbuurt",
+      "unique id": 765
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
         18694,
-        18695
+        18695,
+        18696,
+        18697,
+        19215,
+        24948
       ]
     }
   }

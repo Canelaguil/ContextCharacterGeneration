@@ -1,33 +1,33 @@
 {
   "11156": {
     "alive": false,
-    "name": "Esa",
+    "name": "Agnes",
     "surname": "",
-    "full name": "Esa",
+    "full name": "Agnes",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.638,
-      "sex interest": 0.669,
-      "gender expression": 0.0,
+      "sexuality": 0.056,
+      "romantic interest": 0.775,
+      "sex interest": 0.84,
+      "gender expression": 0.123,
       "sex": "f"
     },
-    "age": 50,
-    "birth year": 1159,
+    "age": 30,
+    "birth year": 1176,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "Zealots",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.856,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.287,
+      "nice-nasty": 0.14,
+      "honest-false": 0.0
     },
     "attitude": {
-      "outgoing": 0.572,
-      "dream": 0.398
+      "outgoing": 0.717,
+      "dream": 0.999
     },
     "homsoc": {
       "means": {
@@ -35,22 +35,49 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": [
-          "starving"
-        ]
+        "flags": []
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.038,
+        "gender expression expression": 0.084
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12460": {
+          "key": 12460,
+          "name": "Hugheman Napbrekere",
+          "age": 1,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Agnes (11156)",
+            "father": "Maelkin (11155)"
+          }
+        },
+        "15232": {
+          "key": 15232,
+          "name": "Sylof Napbrekere",
+          "age": 45,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Agnes (11156)",
+            "father": "Maelkin (11155)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11157
-        ]
+        ],
+        "child": {
+          "birth": [
+            12462,
+            15234
+          ]
+        }
       }
     },
     "occupation": {
@@ -63,16 +90,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 8,
-      "eye_color": "blue",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 2,
+      "eye_color": "brown",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
-        "C",
+        "S",
         "C"
       ],
-      "health": 0.843,
-      "fertility": 0.956,
+      "health": 0.646,
+      "fertility": 0.725,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -84,9 +111,17 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.843
+            "new_health": 0.646
           },
           "death": false
+        },
+        "1205": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.646
+          },
+          "death": true
         }
       },
       "events": {
@@ -99,8 +134,8 @@
               11156
             ],
             "people names": [
-              "Eelbout",
-              "Esa"
+              "Maelkin Napbrekere",
+              "Agnes"
             ],
             "label": "spouse",
             "committed": true
@@ -110,65 +145,65 @@
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stPaternoster straetje.se3.c1",
+              "section": "stPaternoster straetje.se1.c1",
               "street": "Paternoster straetje",
               "neighborhood": "olvbuurt",
-              "unique id": 524
+              "unique id": 514
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12462,
+            "people": [
+              11156,
+              12460
+            ],
+            "people names": [
+              "Agnes",
+              "Hugheman Napbrekere"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1201": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12460,
+              "name": "Hugheman Napbrekere",
+              "age": 1,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Agnes (11156)",
+                "father": "Maelkin (11155)"
+              }
+            },
+            "cause": "childhood illness",
+            "label": "child"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 15234,
+            "people": [
+              11156,
+              15232
+            ],
+            "people names": [
+              "Agnes",
+              "Sylof Napbrekere"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1205": [
           {
-            "key": 11157,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 11155,
-              "name": "Eelbout",
-              "age": 47,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "cause": "illness",
-            "label": "spouse"
-          },
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1205
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1206": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1207": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1208": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          },
-          {
             "topic": "death",
-            "cause": "starvation"
+            "cause": "illness"
           }
         ]
       }
@@ -177,14 +212,14 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stPaternoster straetje.se3.c1",
+      "section": "stPaternoster straetje.se1.c1",
       "street": "Paternoster straetje",
       "neighborhood": "olvbuurt",
-      "unique id": 524
+      "unique id": 514
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
         11157
       ]

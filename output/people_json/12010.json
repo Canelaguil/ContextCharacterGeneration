@@ -1,33 +1,33 @@
 {
   "12010": {
     "alive": false,
-    "name": "Didderic",
-    "surname": "Reigher",
-    "full name": "Didderic Reigher",
+    "name": "Abelkijn",
+    "surname": "Schille",
+    "full name": "Abelkijn Schille",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.057,
-      "romantic interest": 0.694,
-      "sex interest": 0.974,
-      "gender expression": 0.129,
+      "sexuality": 0.018,
+      "romantic interest": 0.727,
+      "sex interest": 0.678,
+      "gender expression": 0.144,
       "sex": "m"
     },
-    "age": 49,
-    "birth year": 1153,
+    "age": 55,
+    "birth year": 1159,
     "sex": "m",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
-      2,
-      "middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.584,
-      "nice-nasty": 0.724,
-      "honest-false": 0.442
+      "lawful-chaotic": 0.295,
+      "nice-nasty": 0.353,
+      "honest-false": 0.558
     },
     "attitude": {
-      "outgoing": 0.461,
-      "dream": 0.18
+      "outgoing": 0.612,
+      "dream": 0.728
     },
     "homsoc": {
       "means": {
@@ -38,47 +38,100 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.025,
-        "gender expression expression": 0.049
+        "sexuality expression": 0.015,
+        "gender expression expression": 0.08
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "16200": {
+          "key": 16200,
+          "name": "Godeuert van Abelkijn",
+          "age": 19,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Pietersen (12011)",
+            "father": "Abelkijn (12010)"
+          }
+        },
+        "17584": {
+          "key": 17584,
+          "name": "Lutghardis Schille",
+          "age": 19,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Pietersen (12011)",
+            "father": "Abelkijn (12010)"
+          }
+        },
+        "17788": {
+          "key": 17788,
+          "name": "Wissen van Abelkijn",
+          "age": 3,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Pietersen (12011)",
+            "father": "Abelkijn (12010)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           12012
-        ]
+        ],
+        "child": {
+          "birth": [
+            16201,
+            17585,
+            17789
+          ]
+        }
       }
     },
     "occupation": {
       "has job": true,
       "income class": [
-        2,
-        "middle class"
+        1,
+        "lower middle class"
       ],
       "income": 1.499,
       "all_incomes": [
-        1.306,
-        1.441,
+        1.199,
+        0.997,
+        1.165,
+        1.499,
+        1.499,
+        1.499,
+        1.466,
+        1.386,
+        1.377,
+        1.45,
+        1.431,
+        1.42,
+        1.367,
+        1.499,
         1.499
       ],
       "job": {
         "lawful": false,
-        "honest": false
+        "honest": true
       }
     },
     "genetics": {
-      "skin_color": 9,
-      "eye_color": "blue",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 5,
+      "eye_color": "brown",
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
-        "C",
+        "S",
         "C"
       ],
-      "health": 0.459,
-      "fertility": 0.41,
+      "health": 0.0,
+      "fertility": 0.511,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -90,15 +143,47 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.459
+            "new_health": 0.568
           },
           "death": false
         },
-        "1201": {
+        "1209": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.459
+            "change": true,
+            "value_change": -0.145,
+            "new_health": 0.423
+          },
+          "death": false
+        },
+        "1210": {
+          "health": {
+            "change": true,
+            "value_change": -0.235,
+            "new_health": 0.188
+          },
+          "death": false
+        },
+        "1211": {
+          "health": {
+            "change": true,
+            "value_change": -0.128,
+            "new_health": 0.06
+          },
+          "death": false
+        },
+        "1212": {
+          "health": {
+            "change": true,
+            "value_change": -0.056,
+            "new_health": 0.004
+          },
+          "death": false
+        },
+        "1213": {
+          "health": {
+            "change": true,
+            "value_change": -0.004,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -108,7 +193,7 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.306
+            "income": 1.199
           },
           {
             "topic": "new relationship",
@@ -118,8 +203,8 @@
               12011
             ],
             "people names": [
-              "Didderic Reigher",
-              "Siburgis"
+              "Abelkijn Schille",
+              "Pietersen"
             ],
             "label": "spouse",
             "committed": true
@@ -127,31 +212,136 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stCromme straet.se5.c2",
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stCromme straet.se1.c1",
               "street": "Cromme straet",
               "neighborhood": "denhof",
-              "unique id": 905
+              "unique id": 875
             }
+          },
+          {
+            "topic": "feelings change",
+            "target": 12011,
+            "target name": "Pietersen",
+            "state": "solid love",
+            "relationship": 12012
           }
         ],
         "1201": [
           {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.165
+          }
+        ],
+        "1205": [
+          {
+            "topic": "new relationship",
+            "key": 16201,
+            "people": [
+              12010,
+              16200
+            ],
+            "people names": [
+              "Abelkijn Schille",
+              "Godeuert van Abelkijn"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1206": [
+          {
+            "topic": "feelings change",
+            "target": 12011,
+            "target name": "Pietersen",
+            "state": "out of love",
+            "relationship": 12012
+          }
+        ],
+        "1207": [
+          {
+            "topic": "new relationship",
+            "key": 17585,
+            "people": [
+              12010,
+              17584
+            ],
+            "people names": [
+              "Abelkijn Schille",
+              "Lutghardis Schille"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1208": [
+          {
+            "topic": "new relationship",
+            "key": 17789,
+            "people": [
+              12010,
+              17788
+            ],
+            "people names": [
+              "Abelkijn Schille",
+              "Wissen van Abelkijn"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 12011,
+            "target name": "Pietersen",
+            "state": "infatuation",
+            "relationship": 12012
+          }
+        ],
+        "1209": [
+          {
+            "topic": "feelings change",
+            "target": 12011,
+            "target name": "Pietersen",
+            "state": "solid love",
+            "relationship": 12012
+          }
+        ],
+        "1211": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 17788,
+              "name": "Wissen van Abelkijn",
+              "age": 3,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Pietersen (12011)",
+                "father": "Abelkijn (12010)"
+              }
+            },
+            "cause": "childhood illness",
+            "label": "child"
+          }
+        ],
+        "1213": [
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "sickness"
           }
         ]
       }
     },
     "key": 12010,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stCromme straet.se5.c2",
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stCromme straet.se1.c1",
       "street": "Cromme straet",
       "neighborhood": "denhof",
-      "unique id": 905
+      "unique id": 875
     },
     "relationship status": {
       "taken": true,

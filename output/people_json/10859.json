@@ -1,33 +1,33 @@
 {
   "10859": {
     "alive": false,
-    "name": "Trame",
-    "surname": "",
-    "full name": "Trame",
+    "name": "Oderada",
+    "surname": "Crul",
+    "full name": "Oderada Crul",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.065,
-      "romantic interest": 0.518,
-      "sex interest": 0.911,
-      "gender expression": 0.001,
+      "sexuality label": "gay",
+      "sexuality": 0.881,
+      "romantic interest": 0.875,
+      "sex interest": 0.394,
+      "gender expression": 0.404,
       "sex": "f"
     },
-    "age": 32,
-    "birth year": 1169,
+    "age": 41,
+    "birth year": 1167,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.443,
-      "nice-nasty": 0.0,
-      "honest-false": 0.961
+      "lawful-chaotic": 0.352,
+      "nice-nasty": 0.901,
+      "honest-false": 0.143
     },
     "attitude": {
-      "outgoing": 0.613,
-      "dream": 0.339
+      "outgoing": 0.543,
+      "dream": 0.392
     },
     "homsoc": {
       "means": {
@@ -38,39 +38,81 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.031,
-        "gender expression expression": -0.0
+        "sexuality expression": 0.464,
+        "gender expression expression": 0.33
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13207": {
+          "key": 13207,
+          "name": "Brundonis",
+          "age": 30,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Oderada (10859)",
+            "father": "Sander (10858)"
+          }
+        },
+        "16814": {
+          "key": 16814,
+          "name": "Natelien Sandersdochter",
+          "age": 43,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Oderada (10859)",
+            "father": "Sander (10858)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10860
-        ]
+        ],
+        "child": {
+          "birth": [
+            13209,
+            16816
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.066,
+      "all_incomes": [
+        0.999,
+        1.285,
+        1.323,
+        1.372,
+        1.333,
+        1.419,
+        1.499,
+        1.066
+      ],
+      "job": {
+        "lawful": false,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 0,
+      "skin_color": 6,
       "eye_color": "brown",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "C",
-        "C"
+        "S"
       ],
-      "health": 0.577,
-      "fertility": 0.543,
+      "health": 0.789,
+      "fertility": 0.767,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -82,13 +124,26 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.577
+            "new_health": 0.789
+          },
+          "death": false
+        },
+        "1207": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.789
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.999
+          },
           {
             "topic": "new relationship",
             "key": 10860,
@@ -97,8 +152,8 @@
               10859
             ],
             "people names": [
-              "Geraldus",
-              "Trame"
+              "Sander",
+              "Oderada Crul"
             ],
             "label": "spouse",
             "committed": true
@@ -108,12 +163,77 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stDie Camp.se5.c2",
+              "section": "stDie Camp.se3.c2",
               "street": "Die Camp",
               "neighborhood": "kampbuurt",
-              "unique id": 393
+              "unique id": 379
             }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.285
           },
+          {
+            "topic": "new relationship",
+            "key": 13209,
+            "people": [
+              10859,
+              13207
+            ],
+            "people names": [
+              "Oderada Crul",
+              "Brundonis"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1204": [
+          {
+            "topic": "feelings change",
+            "target": 10858,
+            "target name": "Sander",
+            "state": "out of love",
+            "relationship": 10860
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 16816,
+            "people": [
+              10859,
+              16814
+            ],
+            "people names": [
+              "Oderada Crul",
+              "Natelien Sandersdochter"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "key": 10860,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10858,
+              "name": "Sander",
+              "age": 53,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "label": "spouse"
+          }
+        ],
+        "1207": [
           {
             "topic": "death",
             "cause": "illness"
@@ -125,14 +245,14 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stDie Camp.se5.c2",
+      "section": "stDie Camp.se3.c2",
       "street": "Die Camp",
       "neighborhood": "kampbuurt",
-      "unique id": 393
+      "unique id": 379
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         10860
       ]

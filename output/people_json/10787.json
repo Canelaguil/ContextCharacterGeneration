@@ -1,56 +1,98 @@
 {
   "10787": {
     "alive": false,
-    "name": "Flore",
-    "surname": "Barlebaens",
-    "full name": "Flore Barlebaens",
+    "name": "Lenildis",
+    "surname": "Weder",
+    "full name": "Lenildis Weder",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.027,
-      "romantic interest": 0.817,
-      "sex interest": 0.786,
-      "gender expression": 0.075,
+      "sexuality": 0.014,
+      "romantic interest": 0.467,
+      "sex interest": 0.768,
+      "gender expression": 0.042,
       "sex": "f"
     },
-    "age": 54,
-    "birth year": 1157,
+    "age": 33,
+    "birth year": 1179,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "Dogmatists",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
       "lawful-chaotic": 0.999,
-      "nice-nasty": 0.506,
-      "honest-false": 0.787
+      "nice-nasty": 0.555,
+      "honest-false": 0.374
     },
     "attitude": {
-      "outgoing": 0.745,
-      "dream": 0.68
+      "outgoing": 0.684,
+      "dream": 0.399
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
         "flags": [
-          "starving"
+          "starving",
+          "caretaker"
         ]
       },
       "expression": {
-        "sexuality expression": 0.017,
-        "gender expression expression": 0.033
+        "sexuality expression": 0.008,
+        "gender expression expression": 0.027
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13409": {
+          "key": 13409,
+          "name": "Sywi Brune",
+          "age": 5,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Lenildis (10787)",
+            "father": "Mattheus (10786)"
+          }
+        },
+        "13670": {
+          "key": 13670,
+          "name": "Alene Brune",
+          "age": 47,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Lenildis (10787)",
+            "father": "Mattheus (10786)"
+          }
+        },
+        "14557": {
+          "key": 14557,
+          "name": "Lubertus Brune",
+          "age": 14,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Lenildis (10787)",
+            "father": "Mattheus (10786)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10788
-        ]
+        ],
+        "child": {
+          "birth": [
+            13411,
+            13672,
+            14559
+          ]
+        }
       }
     },
     "occupation": {
@@ -63,16 +105,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 0,
+      "skin_color": 2,
       "eye_color": "brown",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
-        "C",
+        "S",
         "C"
       ],
-      "health": 0.0,
-      "fertility": 0.746,
+      "health": 0.622,
+      "fertility": 0.636,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -84,41 +126,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.752
+            "new_health": 0.622
           },
           "death": false
-        },
-        "1207": {
-          "health": {
-            "change": true,
-            "value_change": -0.141,
-            "new_health": 0.611
-          },
-          "death": false
-        },
-        "1208": {
-          "health": {
-            "change": true,
-            "value_change": -0.202,
-            "new_health": 0.409
-          },
-          "death": false
-        },
-        "1209": {
-          "health": {
-            "change": true,
-            "value_change": -0.224,
-            "new_health": 0.185
-          },
-          "death": false
-        },
-        "1210": {
-          "health": {
-            "change": true,
-            "value_change": -0.185,
-            "new_health": 0.0
-          },
-          "death": true
         }
       },
       "events": {
@@ -131,8 +141,8 @@
               10787
             ],
             "people names": [
-              "Jdir Thuin",
-              "Flore Barlebaens"
+              "Mattheus Brune",
+              "Lenildis Weder"
             ],
             "label": "spouse",
             "committed": true
@@ -145,27 +155,64 @@
               "section": "stDie Camp.se1.c2",
               "street": "Die Camp",
               "neighborhood": "kampbuurt",
-              "unique id": 359
+              "unique id": 351
             }
           }
         ],
-        "1205": [
+        "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1205
+            "topic": "new relationship",
+            "key": 13411,
+            "people": [
+              10787,
+              13409
+            ],
+            "people names": [
+              "Lenildis Weder",
+              "Sywi Brune"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1206": [
+        "1202": [
           {
-            "topic": "feelings change",
-            "target": 10786,
-            "target name": "Jdir Thuin",
-            "state": "infatuation",
-            "relationship": 10788
+            "topic": "new relationship",
+            "key": 13672,
+            "people": [
+              10787,
+              13670
+            ],
+            "people names": [
+              "Lenildis Weder",
+              "Alene Brune"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1210": [
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 14559,
+            "people": [
+              10787,
+              14557
+            ],
+            "people names": [
+              "Lenildis Weder",
+              "Lubertus Brune"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": [
+              29371,
+              34117
+            ]
+          },
           {
             "key": 10788,
             "topic": "unmarried"
@@ -174,23 +221,162 @@
             "topic": "person died",
             "person": {
               "key": 10786,
-              "name": "Jdir Thuin",
-              "age": 55,
+              "name": "Mattheus Brune",
+              "age": 38,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
             },
-            "cause": "old age",
+            "cause": "illness",
             "label": "spouse"
-          },
+          }
+        ],
+        "1204": [
           {
             "topic": "not enough income",
             "income": 0,
-            "inhabitants": []
+            "inhabitants": [
+              13670,
+              12397,
+              24210,
+              24890,
+              25139,
+              25379,
+              29371,
+              24362,
+              34117,
+              26828
+            ]
+          }
+        ],
+        "1205": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              13670,
+              12397,
+              24210,
+              24890,
+              25139,
+              25379,
+              29371,
+              24362,
+              34117,
+              26828
+            ]
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              13670,
+              12397,
+              24210,
+              24890,
+              25139,
+              25379,
+              29371,
+              24362,
+              34117,
+              26828
+            ]
           },
           {
+            "topic": "person died",
+            "person": {
+              "key": 13409,
+              "name": "Sywi Brune",
+              "age": 5,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Lenildis (10787)",
+                "father": "Mattheus (10786)"
+              }
+            },
+            "cause": "childhood illness",
+            "label": "child"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              13670,
+              12397,
+              24210,
+              24890,
+              25139,
+              25379,
+              29371,
+              24362,
+              34117,
+              26828
+            ]
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              13670,
+              12397,
+              24210,
+              24890,
+              25139,
+              25379,
+              29371,
+              24362,
+              34117,
+              26828
+            ]
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              13670,
+              12397,
+              24210,
+              24890,
+              25139,
+              25379,
+              29371,
+              24362,
+              34117,
+              26828
+            ]
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              13670,
+              12397,
+              24210,
+              24890,
+              25139,
+              25379,
+              29371,
+              24362,
+              34117,
+              26828
+            ]
+          }
+        ],
+        "1211": [
+          {
             "topic": "death",
-            "cause": "sickness"
+            "cause": "illness"
           }
         ]
       }
@@ -202,7 +388,7 @@
       "section": "stDie Camp.se1.c2",
       "street": "Die Camp",
       "neighborhood": "kampbuurt",
-      "unique id": 359
+      "unique id": 351
     },
     "relationship status": {
       "taken": false,

@@ -1,33 +1,33 @@
 {
   "11009": {
     "alive": false,
-    "name": "Flore",
-    "surname": "",
-    "full name": "Flore",
+    "name": "Trame",
+    "surname": "Wittebloem",
+    "full name": "Trame Wittebloem",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.682,
-      "sex interest": 0.684,
-      "gender expression": 0.08,
+      "sexuality": 0.031,
+      "romantic interest": 0.48,
+      "sex interest": 0.999,
+      "gender expression": 0.139,
       "sex": "f"
     },
-    "age": 25,
-    "birth year": 1182,
+    "age": 36,
+    "birth year": 1179,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "Dogmatists",
     "income class": [
-      1,
-      "lower middle class"
+      0,
+      "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.854,
-      "nice-nasty": 0.488,
-      "honest-false": 0.0
+      "lawful-chaotic": 0.876,
+      "nice-nasty": 0.127,
+      "honest-false": 0.415
     },
     "attitude": {
-      "outgoing": 0.533,
-      "dream": 0.281
+      "outgoing": 0.738,
+      "dream": 0.39
     },
     "homsoc": {
       "means": {
@@ -40,22 +40,44 @@
         ]
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.055
+        "sexuality expression": 0.019,
+        "gender expression expression": 0.063
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "16307": {
-          "key": 16307,
-          "name": "Saswe Ickbier",
-          "age": 30,
+        "12883": {
+          "key": 12883,
+          "name": "Splinter",
+          "age": 1,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Trame (11009)",
+            "father": "Gherbrandus (11008)"
+          }
+        },
+        "14219": {
+          "key": 14219,
+          "name": "Remsindis Gherbrandussdochter",
+          "age": 2,
           "alive": false,
           "sex": "f",
           "parents": {
-            "mother": "Flore (11009)",
-            "father": "Willem (11008)"
+            "mother": "Trame (11009)",
+            "father": "Gherbrandus (11008)"
+          }
+        },
+        "17715": {
+          "key": 17715,
+          "name": "Guido Gherbrandusszoon",
+          "age": 17,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Trame (11009)",
+            "father": "Gherbrandus (11008)"
           }
         }
       },
@@ -65,31 +87,40 @@
         ],
         "child": {
           "birth": [
-            16309
+            12885,
+            14221,
+            17717
           ]
         }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        1,
-        "lower middle class"
+        0,
+        "working class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.973,
+      "all_incomes": [
+        0.999,
+        0.973
+      ],
+      "job": {
+        "lawful": true,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 5,
+      "skin_color": 8,
       "eye_color": "blue",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
-        "C",
-        "S"
+        "S",
+        "C"
       ],
-      "health": 0.711,
-      "fertility": 0.696,
+      "health": 0.596,
+      "fertility": 0.562,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -101,15 +132,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.711
+            "new_health": 0.596
           },
           "death": false
         },
-        "1206": {
+        "1214": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.711
+            "new_health": 0.596
           },
           "death": true
         }
@@ -124,8 +155,8 @@
               11009
             ],
             "people names": [
-              "Willem Ickbier",
-              "Flore"
+              "Gherbrandus",
+              "Trame Wittebloem"
             ],
             "label": "spouse",
             "committed": true
@@ -133,56 +164,134 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stDie Coninc straet.se7.c1",
+              "income class": 0,
+              "income class label": "working class",
+              "section": "stDie Coninc straet.se1.c0",
               "street": "Die Coninc straet",
               "neighborhood": "kampbuurt",
-              "unique id": 466
+              "unique id": 442
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12885,
+            "people": [
+              11009,
+              12883
+            ],
+            "people names": [
+              "Trame Wittebloem",
+              "Splinter"
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
             "topic": "feelings change",
             "target": 11008,
-            "target name": "Willem Ickbier",
+            "target name": "Gherbrandus",
             "state": "solid love",
             "relationship": 11010
-          }
-        ],
-        "1205": [
+          },
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1205
+            "topic": "not enough income",
+            "income": 0.715,
+            "inhabitants": []
           }
         ],
-        "1206": [
+        "1201": [
+          {
+            "topic": "not enough income",
+            "income": 0.421,
+            "inhabitants": []
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12883,
+              "name": "Splinter",
+              "age": 1,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Trame (11009)",
+                "father": "Gherbrandus (11008)"
+              }
+            },
+            "cause": "childhood illness",
+            "label": "child"
+          }
+        ],
+        "1202": [
           {
             "topic": "new relationship",
-            "key": 16309,
+            "key": 14221,
             "people": [
               11009,
-              16307
+              14219
             ],
             "people names": [
-              "Flore",
-              "Saswe Ickbier"
+              "Trame Wittebloem",
+              "Remsindis Gherbrandussdochter"
             ],
             "label": "parentchild",
             "committed": false
           },
           {
             "topic": "not enough income",
-            "income": 0.397,
-            "inhabitants": [
-              16493,
-              24739,
-              24892,
-              21911,
-              33047,
-              33392
-            ]
+            "income": 0.538,
+            "inhabitants": []
+          }
+        ],
+        "1204": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 14219,
+              "name": "Remsindis Gherbrandussdochter",
+              "age": 2,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Trame (11009)",
+                "father": "Gherbrandus (11008)"
+              }
+            },
+            "cause": "childhood illness",
+            "label": "child"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "new relationship",
+            "key": 17717,
+            "people": [
+              11009,
+              17715
+            ],
+            "people names": [
+              "Trame Wittebloem",
+              "Guido Gherbrandusszoon"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1213": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.999
           },
+          {
+            "topic": "feelings change",
+            "target": 11008,
+            "target name": "Gherbrandus",
+            "state": "out of love",
+            "relationship": 11010
+          }
+        ],
+        "1214": [
           {
             "topic": "death",
             "cause": "illness"
@@ -192,12 +301,12 @@
     },
     "key": 11009,
     "home": {
-      "income class": 1,
-      "income class label": "lower middle class",
-      "section": "stDie Coninc straet.se7.c1",
+      "income class": 0,
+      "income class label": "working class",
+      "section": "stDie Coninc straet.se1.c0",
       "street": "Die Coninc straet",
       "neighborhood": "kampbuurt",
-      "unique id": 466
+      "unique id": 442
     },
     "relationship status": {
       "taken": true,

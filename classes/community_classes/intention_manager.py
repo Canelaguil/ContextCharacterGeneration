@@ -114,7 +114,7 @@ class Intention_Manager(Agent):
     def people(self):
         pass
 
-    def relationships(self):
+    def lovedeathbirth(self):
         self.bachelors.append(len(self.male_marriage_intentions.candidate_list))
         self.bachelorettes.append(len(self.female_marriage_intentions.candidate_list))
         # print(f'number of bachelors : {len(self.male_marriage_intentions.candidate_list)}')

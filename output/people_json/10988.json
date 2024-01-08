@@ -1,37 +1,37 @@
 {
   "10988": {
     "alive": false,
-    "name": "Rabburgis",
-    "surname": "Vaken",
-    "full name": "Rabburgis Vaken",
+    "name": "Soeten",
+    "surname": "Quade",
+    "full name": "Soeten Quade",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.792,
-      "romantic interest": 0.673,
-      "sex interest": 0.606,
-      "gender expression": 0.137,
+      "sexuality label": "straight",
+      "sexuality": 0.069,
+      "romantic interest": 0.739,
+      "sex interest": 0.88,
+      "gender expression": 0.003,
       "sex": "f"
     },
-    "age": 55,
-    "birth year": 1163,
+    "age": 53,
+    "birth year": 1162,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "Zealots",
     "income class": [
-      0,
-      "working class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.819,
-      "nice-nasty": 0.3,
-      "honest-false": 0.0
+      "lawful-chaotic": 0.479,
+      "nice-nasty": 0.419,
+      "honest-false": 0.557
     },
     "attitude": {
-      "outgoing": 0.484,
-      "dream": 0.399
+      "outgoing": 0.597,
+      "dream": 0.788
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
@@ -40,40 +40,77 @@
         ]
       },
       "expression": {
-        "sexuality expression": 0.701,
-        "gender expression expression": 0.081
+        "sexuality expression": 0.042,
+        "gender expression expression": -0.0
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13397": {
+          "key": 13397,
+          "name": "Adolfus Voet",
+          "age": 22,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Soeten (10988)",
+            "father": "Wasseliin (10987)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10989,
-          20910
-        ]
+          15629
+        ],
+        "child": {
+          "birth": [
+            13399
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        0,
-        "working class"
+        1,
+        "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.651,
+      "all_incomes": [
+        0.95,
+        0.91,
+        0.884,
+        1.037,
+        0.736,
+        0.603,
+        0.529,
+        0.316,
+        0.388,
+        0.424,
+        0.547,
+        0.649,
+        0.584,
+        0.722,
+        0.651
+      ],
+      "job": {
+        "lawful": false,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 0,
-      "eye_color": "green",
+      "skin_color": 8,
+      "eye_color": "brown",
       "hair_color": "strawberry blonde",
       "hair_color_code": 5,
       "hair_type": [
         "S",
-        "C"
+        "S"
       ],
       "health": 0.0,
-      "fertility": 0.868,
+      "fertility": 0.591,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -85,38 +122,30 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.788
+            "new_health": 0.637
+          },
+          "death": false
+        },
+        "1212": {
+          "health": {
+            "change": true,
+            "value_change": -0.144,
+            "new_health": 0.493
+          },
+          "death": false
+        },
+        "1213": {
+          "health": {
+            "change": true,
+            "value_change": -0.396,
+            "new_health": 0.097
           },
           "death": false
         },
         "1214": {
           "health": {
             "change": true,
-            "value_change": -0.215,
-            "new_health": 0.573
-          },
-          "death": false
-        },
-        "1215": {
-          "health": {
-            "change": true,
-            "value_change": -0.316,
-            "new_health": 0.257
-          },
-          "death": false
-        },
-        "1216": {
-          "health": {
-            "change": true,
-            "value_change": -0.22,
-            "new_health": 0.037
-          },
-          "death": false
-        },
-        "1217": {
-          "health": {
-            "change": true,
-            "value_change": -0.037,
+            "value_change": -0.097,
             "new_health": 0.0
           },
           "death": true
@@ -125,6 +154,11 @@
       "events": {
         "1200": [
           {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.95
+          },
+          {
             "topic": "new relationship",
             "key": 10989,
             "people": [
@@ -132,8 +166,8 @@
               10988
             ],
             "people names": [
-              "Brandekijn",
-              "Rabburgis Vaken"
+              "Wasseliin Voet",
+              "Soeten Quade"
             ],
             "label": "spouse",
             "committed": true
@@ -141,23 +175,44 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stDie Coninc straet.se3.c0",
-              "street": "Die Coninc straet",
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stSt. Ians straet.se5.c1",
+              "street": "St. Ians straet",
               "neighborhood": "kampbuurt",
-              "unique id": 456
+              "unique id": 430
             }
-          }
-        ],
-        "1205": [
+          },
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1205
+            "topic": "feelings change",
+            "target": 10987,
+            "target name": "Wasseliin Voet",
+            "state": "solid love",
+            "relationship": 10989
           }
         ],
-        "1206": [
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 13399,
+            "people": [
+              10988,
+              13397
+            ],
+            "people names": [
+              "Soeten Quade",
+              "Adolfus Voet"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1203": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.037
+          },
           {
             "key": 10989,
             "topic": "unmarried"
@@ -166,138 +221,111 @@
             "topic": "person died",
             "person": {
               "key": 10987,
-              "name": "Brandekijn",
-              "age": 51,
+              "name": "Wasseliin Voet",
+              "age": 52,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
             },
-            "cause": "old age",
+            "cause": "sickness",
             "label": "spouse"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.736
           },
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "new relationship",
+            "key": 15629,
+            "people": [
+              10873,
+              10988
+            ],
+            "people names": [
+              "Ghodekin",
+              "Soeten Quade"
+            ],
+            "label": "spouse",
+            "committed": true
           }
         ],
         "1207": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.316
           }
         ],
         "1208": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.388
           }
         ],
         "1209": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1210": [
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.424
+          },
           {
             "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "income": 0.738,
+            "inhabitants": [
+              13713,
+              24471,
+              27147,
+              29490,
+              35152
+            ]
           }
         ],
         "1211": [
           {
             "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "income": 0.649,
+            "inhabitants": [
+              13713,
+              24471,
+              27147,
+              29490,
+              35152
+            ]
           }
         ],
         "1212": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "feelings change",
+            "target": 10873,
+            "target name": "Ghodekin",
+            "state": "out of love",
+            "relationship": 15629
           }
         ],
         "1213": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "key": 15629,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10873,
+              "name": "Ghodekin",
+              "age": 54,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "label": "spouse"
           }
         ],
         "1214": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1215": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1215
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1216": [
-          {
-            "topic": "new relationship",
-            "key": 20910,
-            "people": [
-              10303,
-              10988
-            ],
-            "people names": [
-              "Gherbaren Sluke",
-              "Rabburgis Vaken"
-            ],
-            "label": "spouse",
-            "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stSt. Joris straet.se1.c0",
-              "street": "St. Joris straet",
-              "neighborhood": "jorisbuurt",
-              "unique id": 137
-            }
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.271,
-            "inhabitants": [
-              12888,
-              23129,
-              24322,
-              25464,
-              24484,
-              24854,
-              23780,
-              31681,
-              14399,
-              25997,
-              24722,
-              32699,
-              33004,
-              33109,
-              33372
-            ]
-          }
-        ],
-        "1217": [
           {
             "topic": "death",
             "cause": "sickness"
@@ -307,19 +335,19 @@
     },
     "key": 10988,
     "home": {
-      "income class": 0,
-      "income class label": "working class",
-      "section": "stSt. Joris straet.se1.c0",
-      "street": "St. Joris straet",
-      "neighborhood": "jorisbuurt",
-      "unique id": 137
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stSt. Ians straet.se5.c1",
+      "street": "St. Ians straet",
+      "neighborhood": "kampbuurt",
+      "unique id": 430
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         10989,
-        20910
+        15629
       ]
     }
   }

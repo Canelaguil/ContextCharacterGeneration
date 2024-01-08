@@ -1,19 +1,19 @@
 {
   "10534": {
     "alive": false,
-    "name": "Ioris",
-    "surname": "",
-    "full name": "Ioris",
+    "name": "Dilane",
+    "surname": "Rape",
+    "full name": "Dilane Rape",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.07,
-      "romantic interest": 0.525,
-      "sex interest": 0.606,
-      "gender expression": 0.015,
+      "sexuality": 0.006,
+      "romantic interest": 0.537,
+      "sex interest": 0.66,
+      "gender expression": 0.04,
       "sex": "m"
     },
-    "age": 51,
-    "birth year": 1151,
+    "age": 55,
+    "birth year": 1160,
     "sex": "m",
     "faction": "No religion",
     "income class": [
@@ -21,34 +21,89 @@
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.284,
-      "nice-nasty": 0.0,
-      "honest-false": 0.471
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.999,
+      "honest-false": 0.537
     },
     "attitude": {
-      "outgoing": 0.91,
-      "dream": 0.363
+      "outgoing": 0.647,
+      "dream": 0.634
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.053,
-        "gender expression expression": 0.008
+        "sexuality expression": 0.004,
+        "gender expression expression": 0.013
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13452": {
+          "key": 13452,
+          "name": "Albertus Rape",
+          "age": 16,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Wijfgode (10535)",
+            "father": "Dilane (10534)"
+          }
+        },
+        "16161": {
+          "key": 16161,
+          "name": "Everocker Rape",
+          "age": 44,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Wijfgode (10535)",
+            "father": "Dilane (10534)"
+          }
+        },
+        "19775": {
+          "key": 19775,
+          "name": "Marisseis Rape",
+          "age": 4,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Wijfgode (10535)",
+            "father": "Dilane (10534)"
+          }
+        },
+        "19824": {
+          "key": 19824,
+          "name": "Snellekine Rape",
+          "age": 37,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Wijfgode (10535)",
+            "father": "Dilane (10534)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10536
-        ]
+        ],
+        "child": {
+          "birth": [
+            13453,
+            16162,
+            19776,
+            19825
+          ]
+        }
       }
     },
     "occupation": {
@@ -57,28 +112,41 @@
         2,
         "middle class"
       ],
-      "income": 1.21,
+      "income": 0.62,
       "all_incomes": [
-        0.996,
-        1.139,
-        1.21
+        0.788,
+        0.823,
+        0.78,
+        0.375,
+        0.381,
+        0.404,
+        0.426,
+        0.342,
+        0.597,
+        0.568,
+        0.701,
+        0.787,
+        0.94,
+        0.683,
+        0.543,
+        0.62
       ],
       "job": {
-        "lawful": false,
+        "lawful": true,
         "honest": false
       }
     },
     "genetics": {
-      "skin_color": 0,
-      "eye_color": "green",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "skin_color": 2,
+      "eye_color": "brown",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
-        "S",
-        "S"
+        "C",
+        "C"
       ],
-      "health": 0.527,
-      "fertility": 0.769,
+      "health": 0.0,
+      "fertility": 0.792,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -90,15 +158,47 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.744
+            "new_health": 0.827
           },
           "death": false
         },
-        "1201": {
+        "1210": {
           "health": {
             "change": true,
-            "value_change": -0.217,
-            "new_health": 0.527
+            "value_change": -0.177,
+            "new_health": 0.65
+          },
+          "death": false
+        },
+        "1211": {
+          "health": {
+            "change": true,
+            "value_change": -0.205,
+            "new_health": 0.445
+          },
+          "death": false
+        },
+        "1212": {
+          "health": {
+            "change": true,
+            "value_change": -0.266,
+            "new_health": 0.179
+          },
+          "death": false
+        },
+        "1213": {
+          "health": {
+            "change": true,
+            "value_change": -0.146,
+            "new_health": 0.033
+          },
+          "death": false
+        },
+        "1214": {
+          "health": {
+            "change": true,
+            "value_change": -0.033,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -108,12 +208,7 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.996
-          },
-          {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.139
+            "income": 0.788
           },
           {
             "topic": "new relationship",
@@ -123,8 +218,8 @@
               10535
             ],
             "people names": [
-              "Ioris",
-              "Esa Weis"
+              "Dilane Rape",
+              "Wijfgode"
             ],
             "label": "spouse",
             "committed": true
@@ -134,17 +229,165 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stBloemendaelse straet.se7.c2",
-              "street": "Bloemendaelse straet",
+              "section": "stWaale straet.se1.c2",
+              "street": "Waale straet",
               "neighborhood": "agnesbuurt",
-              "unique id": 242
+              "unique id": 248
             }
+          },
+          {
+            "topic": "feelings change",
+            "target": 10535,
+            "target name": "Wijfgode",
+            "state": "solid love",
+            "relationship": 10536
           }
         ],
         "1201": [
           {
+            "topic": "new relationship",
+            "key": 13453,
+            "people": [
+              10534,
+              13452
+            ],
+            "people names": [
+              "Dilane Rape",
+              "Albertus Rape"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1202": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.375
+          }
+        ],
+        "1203": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.381
+          }
+        ],
+        "1204": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.404
+          }
+        ],
+        "1205": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.426
+          },
+          {
+            "topic": "new relationship",
+            "key": 16162,
+            "people": [
+              10534,
+              16161
+            ],
+            "people names": [
+              "Dilane Rape",
+              "Everocker Rape"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1206": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.342
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.342,
+            "inhabitants": [
+              16161,
+              25544,
+              24747,
+              24041,
+              33138,
+              34385,
+              34584,
+              35042
+            ]
+          }
+        ],
+        "1209": [
+          {
+            "topic": "feelings change",
+            "target": 10535,
+            "target name": "Wijfgode",
+            "state": "out of love",
+            "relationship": 10536
+          }
+        ],
+        "1211": [
+          {
+            "topic": "new relationship",
+            "key": 19776,
+            "people": [
+              10534,
+              19775
+            ],
+            "people names": [
+              "Dilane Rape",
+              "Marisseis Rape"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1212": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.683
+          },
+          {
+            "topic": "new relationship",
+            "key": 19825,
+            "people": [
+              10534,
+              19824
+            ],
+            "people names": [
+              "Dilane Rape",
+              "Snellekine Rape"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0.543,
+            "inhabitants": [
+              16161,
+              25544,
+              24747,
+              24041,
+              33138,
+              34385,
+              34584,
+              35042
+            ]
+          }
+        ],
+        "1214": [
+          {
             "topic": "death",
-            "cause": "old age"
+            "cause": "sickness"
           }
         ]
       }
@@ -153,10 +396,10 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stBloemendaelse straet.se7.c2",
-      "street": "Bloemendaelse straet",
+      "section": "stWaale straet.se1.c2",
+      "street": "Waale straet",
       "neighborhood": "agnesbuurt",
-      "unique id": 242
+      "unique id": 248
     },
     "relationship status": {
       "taken": true,

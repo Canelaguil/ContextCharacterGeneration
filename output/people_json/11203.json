@@ -1,33 +1,33 @@
 {
   "11203": {
     "alive": false,
-    "name": "Pieter",
-    "surname": "Vekenstyl",
-    "full name": "Pieter Vekenstyl",
+    "name": "Didderic",
+    "surname": "Zuakart",
+    "full name": "Didderic Zuakart",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.109,
-      "romantic interest": 0.703,
-      "sex interest": 0.948,
-      "gender expression": 0.187,
+      "sexuality": 0.08,
+      "romantic interest": 0.581,
+      "sex interest": 0.915,
+      "gender expression": 0.129,
       "sex": "m"
     },
-    "age": 47,
-    "birth year": 1155,
+    "age": 24,
+    "birth year": 1180,
     "sex": "m",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.676,
-      "nice-nasty": 0.348,
-      "honest-false": 0.365
+      "lawful-chaotic": 0.784,
+      "nice-nasty": 0.422,
+      "honest-false": 0.813
     },
     "attitude": {
-      "outgoing": 0.839,
-      "dream": 0.0
+      "outgoing": 0.53,
+      "dream": 0.411
     },
     "homsoc": {
       "means": {
@@ -38,17 +38,34 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.078,
-        "gender expression expression": 0.156
+        "sexuality expression": 0.069,
+        "gender expression expression": 0.057
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12772": {
+          "key": 12772,
+          "name": "Folcard Zuakart",
+          "age": 49,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Segherarden (11204)",
+            "father": "Didderic (11203)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11205
-        ]
+        ],
+        "child": {
+          "birth": [
+            12773
+          ]
+        }
       }
     },
     "occupation": {
@@ -57,28 +74,30 @@
         2,
         "middle class"
       ],
-      "income": 1.499,
+      "income": 1.343,
       "all_incomes": [
-        0.921,
-        0.974,
-        1.499
+        1.002,
+        1.074,
+        1.26,
+        1.251,
+        1.343
       ],
       "job": {
-        "lawful": true,
-        "honest": false
+        "lawful": false,
+        "honest": true
       }
     },
     "genetics": {
-      "skin_color": 4,
+      "skin_color": 2,
       "eye_color": "brown",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
       "hair_type": [
         "S",
-        "C"
+        "S"
       ],
-      "health": 0.689,
-      "fertility": 0.684,
+      "health": 0.682,
+      "fertility": 0.628,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -90,15 +109,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.689
+            "new_health": 0.682
           },
           "death": false
         },
-        "1201": {
+        "1203": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.689
+            "new_health": 0.682
           },
           "death": true
         }
@@ -108,7 +127,7 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.921
+            "income": 1.002
           },
           {
             "topic": "new relationship",
@@ -118,8 +137,8 @@
               11204
             ],
             "people names": [
-              "Pieter Vekenstyl",
-              "Sara"
+              "Didderic Zuakart",
+              "Segherarden Zassen"
             ],
             "label": "spouse",
             "committed": true
@@ -134,14 +153,23 @@
               "neighborhood": "olvbuurt",
               "unique id": 542
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12773,
+            "people": [
+              11203,
+              12772
+            ],
+            "people names": [
+              "Didderic Zuakart",
+              "Folcard Zuakart"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1201": [
-          {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.499
-          },
+        "1203": [
           {
             "topic": "death",
             "cause": "illness"

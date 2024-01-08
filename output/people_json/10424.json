@@ -1,19 +1,19 @@
 {
   "10424": {
     "alive": false,
-    "name": "Ghodelde",
+    "name": "Emmelina",
     "surname": "",
-    "full name": "Ghodelde",
+    "full name": "Emmelina",
     "born this way": {
       "sexuality label": "bi",
-      "sexuality": 0.621,
-      "romantic interest": 0.578,
-      "sex interest": 0.544,
-      "gender expression": 0.378,
+      "sexuality": 0.658,
+      "romantic interest": 0.548,
+      "sex interest": 0.95,
+      "gender expression": 0.317,
       "sex": "f"
     },
-    "age": 34,
-    "birth year": 1177,
+    "age": 27,
+    "birth year": 1182,
     "sex": "f",
     "faction": "No religion",
     "income class": [
@@ -21,36 +21,54 @@
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.181,
-      "nice-nasty": 0.572,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.532,
+      "nice-nasty": 0.396,
+      "honest-false": 0.222
     },
     "attitude": {
-      "outgoing": 0.625,
-      "dream": 0.118
+      "outgoing": 0.644,
+      "dream": 0.429
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
         "flags": [
-          "starving"
+          "starving",
+          "caretaker"
         ]
       },
       "expression": {
-        "sexuality expression": 0.548,
-        "gender expression expression": 0.306
+        "sexuality expression": 0.367,
+        "gender expression expression": 0.11
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12475": {
+          "key": 12475,
+          "name": "Havix Duue",
+          "age": 18,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Emmelina (10424)",
+            "father": "Gerart (10423)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10425
-        ]
+        ],
+        "child": {
+          "birth": [
+            12477
+          ]
+        }
       }
     },
     "occupation": {
@@ -63,16 +81,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 8,
-      "eye_color": "green",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "skin_color": 2,
+      "eye_color": "brown",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "S",
-        "C"
+        "C",
+        "S"
       ],
-      "health": 0.499,
-      "fertility": 0.504,
+      "health": 0.843,
+      "fertility": 0.781,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -84,9 +102,17 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.499
+            "new_health": 0.843
           },
           "death": false
+        },
+        "1208": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.843
+          },
+          "death": true
         }
       },
       "events": {
@@ -99,8 +125,8 @@
               10424
             ],
             "people names": [
-              "Euerocker",
-              "Ghodelde"
+              "Gerart Duue",
+              "Emmelina"
             ],
             "label": "spouse",
             "committed": true
@@ -113,25 +139,29 @@
               "section": "stOp 't Speuy.se1.c2",
               "street": "Op 't Speuy",
               "neighborhood": "jorisbuurt",
-              "unique id": 195
+              "unique id": 202
             }
-          }
-        ],
-        "1205": [
+          },
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1205
+            "topic": "new relationship",
+            "key": 12477,
+            "people": [
+              10424,
+              12475
+            ],
+            "people names": [
+              "Emmelina",
+              "Havix Duue"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1207": [
+        "1202": [
           {
-            "topic": "not enough income",
-            "income": 0.106,
-            "inhabitants": []
-          }
-        ],
-        "1210": [
+            "topic": "now caretaker",
+            "care dependants": []
+          },
           {
             "key": 10425,
             "topic": "unmarried"
@@ -140,23 +170,55 @@
             "topic": "person died",
             "person": {
               "key": 10423,
-              "name": "Euerocker",
-              "age": 45,
+              "name": "Gerart Duue",
+              "age": 26,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
             },
             "cause": "illness",
             "label": "spouse"
-          },
+          }
+        ],
+        "1203": [
           {
             "topic": "not enough income",
             "income": 0,
             "inhabitants": []
-          },
+          }
+        ],
+        "1204": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
           {
             "topic": "death",
-            "cause": "starvation"
+            "cause": "illness"
           }
         ]
       }
@@ -168,7 +230,7 @@
       "section": "stOp 't Speuy.se1.c2",
       "street": "Op 't Speuy",
       "neighborhood": "jorisbuurt",
-      "unique id": 195
+      "unique id": 202
     },
     "relationship status": {
       "taken": false,

@@ -1,94 +1,82 @@
 {
   "10330": {
     "alive": false,
-    "name": "Godino",
-    "surname": "Dronkine",
-    "full name": "Godino Dronkine",
+    "name": "Abben",
+    "surname": "Froes",
+    "full name": "Abben Froes",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.03,
-      "romantic interest": 0.882,
-      "sex interest": 0.816,
-      "gender expression": 0.13,
+      "sexuality": 0.037,
+      "romantic interest": 0.393,
+      "sex interest": 0.567,
+      "gender expression": 0.154,
       "sex": "m"
     },
-    "age": 24,
-    "birth year": 1180,
+    "age": 44,
+    "birth year": 1163,
     "sex": "m",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
-      0,
-      "working class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.86,
-      "honest-false": 0.245
+      "lawful-chaotic": 0.441,
+      "nice-nasty": 0.0,
+      "honest-false": 0.574
     },
     "attitude": {
-      "outgoing": 0.78,
-      "dream": 0.615
+      "outgoing": 0.795,
+      "dream": 0.295
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.007,
-        "gender expression expression": 0.12
+        "sexuality expression": 0.02,
+        "gender expression expression": 0.148
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {
-        "14196": {
-          "key": 14196,
-          "name": "Truden Dronkine",
-          "age": 12,
-          "alive": false,
-          "sex": "f",
-          "parents": {
-            "mother": "Reynwi (10331)",
-            "father": "Godino (10330)"
-          }
-        }
-      },
+      "children": {},
       "relationship keys": {
         "spouse": [
           10332
-        ],
-        "child": {
-          "birth": [
-            14197
-          ]
-        }
+        ]
       }
     },
     "occupation": {
       "has job": true,
       "income class": [
-        0,
-        "working class"
+        1,
+        "lower middle class"
       ],
-      "income": 1.499,
+      "income": 0.0,
       "all_incomes": [
-        1.108,
-        1.402,
-        1.353,
-        1.238,
-        1.499
+        0.951,
+        0.629,
+        0.591,
+        0.995,
+        0.731,
+        0.427,
+        0.034,
+        0.0
       ],
       "job": {
-        "lawful": false,
+        "lawful": true,
         "honest": false
       }
     },
     "genetics": {
-      "skin_color": 9,
+      "skin_color": 7,
       "eye_color": "blue",
       "hair_color": "black",
       "hair_color_code": 0,
@@ -96,8 +84,8 @@
         "C",
         "S"
       ],
-      "health": 0.852,
-      "fertility": 0.813,
+      "health": 0.77,
+      "fertility": 0.762,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -109,17 +97,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.852
+            "new_health": 0.77
           },
           "death": false
-        },
-        "1203": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.852
-          },
-          "death": true
         }
       },
       "events": {
@@ -127,7 +107,12 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.108
+            "income": 0.951
+          },
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.629
           },
           {
             "topic": "new relationship",
@@ -137,8 +122,8 @@
               10331
             ],
             "people names": [
-              "Godino Dronkine",
-              "Reynwi Vrie"
+              "Abben Froes",
+              "Ricmoden Hyseriin"
             ],
             "label": "spouse",
             "committed": true
@@ -146,37 +131,51 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stSt. Joris straet.se3.c0",
-              "street": "St. Joris straet",
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stMuelen straet.se1.c1",
+              "street": "Muelen straet",
               "neighborhood": "jorisbuurt",
-              "unique id": 148
+              "unique id": 156
             }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "feelings change",
+            "target": 10331,
+            "target name": "Ricmoden Hyseriin",
+            "state": "out of love",
+            "relationship": 10332
           }
         ],
         "1203": [
           {
-            "topic": "new relationship",
-            "key": 14197,
-            "people": [
-              10330,
-              14196
-            ],
-            "people names": [
-              "Godino Dronkine",
-              "Truden Dronkine"
-            ],
-            "label": "parentchild",
-            "committed": false
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.731
+          }
+        ],
+        "1204": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.427
+          }
+        ],
+        "1205": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.034
           },
           {
-            "topic": "feelings change",
-            "target": 10331,
-            "target name": "Reynwi Vrie",
-            "state": "out of love",
-            "relationship": 10332
-          },
+            "topic": "not enough income",
+            "income": 0.034,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
           {
             "topic": "death",
             "cause": "illness"
@@ -186,12 +185,12 @@
     },
     "key": 10330,
     "home": {
-      "income class": 0,
-      "income class label": "working class",
-      "section": "stSt. Joris straet.se3.c0",
-      "street": "St. Joris straet",
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stMuelen straet.se1.c1",
+      "street": "Muelen straet",
       "neighborhood": "jorisbuurt",
-      "unique id": 148
+      "unique id": 156
     },
     "relationship status": {
       "taken": true,

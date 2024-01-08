@@ -1,19 +1,19 @@
 {
   "10051": {
     "alive": false,
-    "name": "Sanders",
-    "surname": "Steenard",
-    "full name": "Sanders Steenard",
+    "name": "Samuel",
+    "surname": "",
+    "full name": "Samuel",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.881,
-      "sex interest": 0.854,
-      "gender expression": 0.186,
+      "sexuality": 0.027,
+      "romantic interest": 0.777,
+      "sex interest": 0.59,
+      "gender expression": 0.039,
       "sex": "m"
     },
-    "age": 50,
-    "birth year": 1152,
+    "age": 52,
+    "birth year": 1160,
     "sex": "m",
     "faction": "No religion",
     "income class": [
@@ -21,13 +21,13 @@
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.136,
-      "nice-nasty": 0.814,
-      "honest-false": 0.397
+      "lawful-chaotic": 0.326,
+      "nice-nasty": 0.2,
+      "honest-false": 0.655
     },
     "attitude": {
-      "outgoing": 0.343,
-      "dream": 0.191
+      "outgoing": 0.389,
+      "dream": 0.382
     },
     "homsoc": {
       "means": {
@@ -35,25 +35,38 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.112
+        "sexuality expression": 0.02,
+        "gender expression expression": 0.019
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "12223": {
-          "key": 12223,
-          "name": "Alene Steenard",
-          "age": 15,
+        "13326": {
+          "key": 13326,
+          "name": "Franse Samuelszoon",
+          "age": 13,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Saswe (10052)",
+            "father": "Samuel (10051)"
+          }
+        },
+        "14050": {
+          "key": 14050,
+          "name": "Zuanelt Samuelsdochter",
+          "age": 1,
           "alive": false,
           "sex": "f",
           "parents": {
-            "mother": "Marisseis (10052)",
-            "father": "Sanders (10051)"
+            "mother": "Saswe (10052)",
+            "father": "Samuel (10051)"
           }
         }
       },
@@ -63,7 +76,8 @@
         ],
         "child": {
           "birth": [
-            12224
+            13327,
+            14051
           ]
         }
       }
@@ -74,11 +88,21 @@
         2,
         "middle class"
       ],
-      "income": 1.193,
+      "income": 0.972,
       "all_incomes": [
-        1.25,
-        1.09,
-        1.193
+        1.091,
+        1.147,
+        1.288,
+        1.204,
+        1.31,
+        1.443,
+        1.499,
+        1.309,
+        0.662,
+        0.151,
+        0.877,
+        0.695,
+        0.972
       ],
       "job": {
         "lawful": false,
@@ -86,16 +110,16 @@
       }
     },
     "genetics": {
-      "skin_color": 2,
-      "eye_color": "green",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "skin_color": 0,
+      "eye_color": "brown",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.483,
-      "fertility": 0.522,
+      "health": 0.0,
+      "fertility": 0.443,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -107,15 +131,23 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.483
+            "new_health": 0.522
           },
           "death": false
         },
-        "1201": {
+        "1210": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.483
+            "change": true,
+            "value_change": -0.345,
+            "new_health": 0.177
+          },
+          "death": false
+        },
+        "1211": {
+          "health": {
+            "change": true,
+            "value_change": -0.177,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -125,7 +157,7 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.25
+            "income": 1.091
           },
           {
             "topic": "new relationship",
@@ -135,8 +167,8 @@
               10052
             ],
             "people names": [
-              "Sanders Steenard",
-              "Marisseis Hons"
+              "Samuel",
+              "Saswe Valke"
             ],
             "label": "spouse",
             "committed": true
@@ -146,31 +178,112 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stVerckens merct.se1.c2",
+              "section": "stVerckens merct.se3.c2",
               "street": "Verckens merct",
               "neighborhood": "varkensbuurt",
-              "unique id": 22
+              "unique id": 28
             }
-          },
+          }
+        ],
+        "1201": [
           {
             "topic": "new relationship",
-            "key": 12224,
+            "key": 13327,
             "people": [
               10051,
-              12223
+              13326
             ],
             "people names": [
-              "Sanders Steenard",
-              "Alene Steenard"
+              "Samuel",
+              "Franse Samuelszoon"
             ],
             "label": "parentchild",
             "committed": false
           }
         ],
-        "1201": [
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 14051,
+            "people": [
+              10051,
+              14050
+            ],
+            "people names": [
+              "Samuel",
+              "Zuanelt Samuelsdochter"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1203": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 14050,
+              "name": "Zuanelt Samuelsdochter",
+              "age": 1,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Saswe (10052)",
+                "father": "Samuel (10051)"
+              }
+            },
+            "cause": "childhood illness",
+            "label": "child"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.662
+          }
+        ],
+        "1208": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.151
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.151,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "key": 10053,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10052,
+              "name": "Saswe Valke",
+              "age": 35,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "spouse"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.695
+          }
+        ],
+        "1211": [
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "sickness"
           }
         ]
       }
@@ -179,14 +292,14 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stVerckens merct.se1.c2",
+      "section": "stVerckens merct.se3.c2",
       "street": "Verckens merct",
       "neighborhood": "varkensbuurt",
-      "unique id": 22
+      "unique id": 28
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         10053
       ]

@@ -1,72 +1,72 @@
 {
   "10796": {
     "alive": false,
-    "name": "Gloria",
-    "surname": "Heylighevrouwe",
-    "full name": "Gloria Heylighevrouwe",
+    "name": "Lisebette",
+    "surname": "",
+    "full name": "Lisebette",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.121,
-      "romantic interest": 0.926,
-      "sex interest": 0.692,
-      "gender expression": 0.09,
+      "sexuality": 0.027,
+      "romantic interest": 0.896,
+      "sex interest": 0.846,
+      "gender expression": 0.215,
       "sex": "f"
     },
-    "age": 43,
-    "birth year": 1183,
+    "age": 52,
+    "birth year": 1167,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.087,
-      "nice-nasty": 0.0,
-      "honest-false": 0.469
+      "lawful-chaotic": 0.844,
+      "nice-nasty": 0.956,
+      "honest-false": 0.578
     },
     "attitude": {
-      "outgoing": 0.515,
-      "dream": 0.49
+      "outgoing": 0.79,
+      "dream": 0.572
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
         "flags": [
-          "starving"
+          "starving",
+          "caretaker"
         ]
       },
       "expression": {
-        "sexuality expression": 0.067,
-        "gender expression expression": 0.041
+        "sexuality expression": 0.009,
+        "gender expression expression": 0.09
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "13033": {
-          "key": 13033,
-          "name": "Willai Blome",
-          "age": 4,
+        "17234": {
+          "key": 17234,
+          "name": "Sara Dreet",
+          "age": 9,
           "alive": false,
-          "sex": "m",
+          "sex": "f",
           "parents": {
-            "mother": "Gloria (10796)",
-            "father": "Snellard (10795)"
+            "mother": "Lisebette (10796)",
+            "father": "Jiusippus (10795)"
           }
         }
       },
       "relationship keys": {
         "spouse": [
-          10797,
-          22299
+          10797
         ],
         "child": {
           "birth": [
-            13035
+            17236
           ]
         }
       }
@@ -81,16 +81,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 2,
-      "eye_color": "brown",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "skin_color": 5,
+      "eye_color": "blue",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "S",
         "C"
       ],
-      "health": 0.691,
-      "fertility": 0.728,
+      "health": 0.121,
+      "fertility": 0.611,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -102,17 +102,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.691
+            "new_health": 0.643
           },
           "death": false
         },
-        "1225": {
+        "1217": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.691
+            "change": true,
+            "value_change": -0.193,
+            "new_health": 0.45
           },
-          "death": true
+          "death": false
+        },
+        "1218": {
+          "health": {
+            "change": true,
+            "value_change": -0.329,
+            "new_health": 0.121
+          },
+          "death": false
         }
       },
       "events": {
@@ -125,8 +133,8 @@
               10796
             ],
             "people names": [
-              "Snellard Blome",
-              "Gloria Heylighevrouwe"
+              "Jiusippus Dreet",
+              "Lisebette"
             ],
             "label": "spouse",
             "committed": true
@@ -139,34 +147,49 @@
               "section": "stDie Camp.se1.c2",
               "street": "Die Camp",
               "neighborhood": "kampbuurt",
-              "unique id": 364
+              "unique id": 354
             }
           }
         ],
-        "1201": [
+        "1202": [
+          {
+            "topic": "feelings change",
+            "target": 10795,
+            "target name": "Jiusippus Dreet",
+            "state": "infatuation",
+            "relationship": 10797
+          }
+        ],
+        "1204": [
+          {
+            "topic": "feelings change",
+            "target": 10795,
+            "target name": "Jiusippus Dreet",
+            "state": "solid love",
+            "relationship": 10797
+          }
+        ],
+        "1207": [
           {
             "topic": "new relationship",
-            "key": 13035,
+            "key": 17236,
             "people": [
               10796,
-              13033
+              17234
             ],
             "people names": [
-              "Gloria Heylighevrouwe",
-              "Willai Blome"
+              "Lisebette",
+              "Sara Dreet"
             ],
             "label": "parentchild",
             "committed": false
           }
         ],
-        "1205": [
+        "1212": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1205
-          }
-        ],
-        "1206": [
+            "topic": "now caretaker",
+            "care dependants": []
+          },
           {
             "key": 10797,
             "topic": "unmarried"
@@ -175,77 +198,14 @@
             "topic": "person died",
             "person": {
               "key": 10795,
-              "name": "Snellard Blome",
-              "age": 29,
+              "name": "Jiusippus Dreet",
+              "age": 52,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
             },
-            "cause": "plague",
+            "cause": "sickness",
             "label": "spouse"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 13033,
-              "name": "Willai Blome",
-              "age": 4,
-              "alive": false,
-              "sex": "m",
-              "parents": {
-                "mother": "Gloria (10796)",
-                "father": "Snellard (10795)"
-              }
-            },
-            "cause": "childhood illness",
-            "label": "child"
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1207": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1208": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1209": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1210": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1211": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1212": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
           }
         ],
         "1213": [
@@ -279,6 +239,22 @@
             "topic": "not enough income",
             "income": 0,
             "inhabitants": []
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 17234,
+              "name": "Sara Dreet",
+              "age": 9,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Lisebette (10796)",
+                "father": "Jiusippus (10795)"
+              }
+            },
+            "cause": "childhood illness",
+            "label": "child"
           }
         ],
         "1217": [
@@ -290,71 +266,8 @@
         ],
         "1218": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1219": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1220": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1221": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1222": [
-          {
-            "topic": "new relationship",
-            "key": 22299,
-            "people": [
-              10012,
-              10796
-            ],
-            "people names": [
-              "Hubrecht Stael",
-              "Gloria Heylighevrouwe"
-            ],
-            "label": "spouse",
-            "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stGoetscalcstraet.se1.c2",
-              "street": "Goetscalcstraet",
-              "neighborhood": "visbuurt",
-              "unique id": 784
-            }
-          }
-        ],
-        "1223": [
-          {
-            "topic": "event",
-            "event": "faction upheaval",
-            "faction": "Dogmatists",
-            "year": 1223
-          }
-        ],
-        "1225": [
-          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "old age"
           }
         ]
       }
@@ -363,17 +276,16 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stGoetscalcstraet.se1.c2",
-      "street": "Goetscalcstraet",
-      "neighborhood": "visbuurt",
-      "unique id": 784
+      "section": "stDie Camp.se1.c2",
+      "street": "Die Camp",
+      "neighborhood": "kampbuurt",
+      "unique id": 354
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
-        10797,
-        22299
+        10797
       ]
     }
   }

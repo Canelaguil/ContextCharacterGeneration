@@ -1,78 +1,108 @@
 {
   "10781": {
     "alive": false,
-    "name": "Brundonis",
+    "name": "Victoria",
     "surname": "",
-    "full name": "Brundonis",
+    "full name": "Victoria",
     "born this way": {
       "sexuality label": "gay",
-      "sexuality": 0.911,
-      "romantic interest": 0.519,
-      "sex interest": 0.703,
-      "gender expression": 0.062,
+      "sexuality": 0.913,
+      "romantic interest": 0.773,
+      "sex interest": 0.701,
+      "gender expression": 0.359,
       "sex": "f"
     },
-    "age": 28,
-    "birth year": 1176,
+    "age": 36,
+    "birth year": 1180,
     "sex": "f",
     "faction": "Dogmatists",
     "income class": [
-      2,
-      "middle class"
+      0,
+      "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.543,
-      "honest-false": 0.047
+      "lawful-chaotic": 0.098,
+      "nice-nasty": 0.89,
+      "honest-false": 0.631
     },
     "attitude": {
-      "outgoing": 0.372,
-      "dream": 0.188
+      "outgoing": 0.845,
+      "dream": 0.384
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
         "flags": [
-          "starving"
+          "starving",
+          "caretaker"
         ]
       },
       "expression": {
-        "sexuality expression": 0.374,
-        "gender expression expression": 0.044
+        "sexuality expression": 0.573,
+        "gender expression expression": 0.223
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13538": {
+          "key": 13538,
+          "name": "Ripperti Euer",
+          "age": 5,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Victoria (10781)",
+            "father": "Folcard (10780)"
+          }
+        },
+        "14231": {
+          "key": 14231,
+          "name": "Curdiin Euer",
+          "age": 6,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Victoria (10781)",
+            "father": "Folcard (10780)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10782
-        ]
+        ],
+        "child": {
+          "birth": [
+            13540,
+            14233
+          ]
+        }
       }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        2,
-        "middle class"
+        0,
+        "working class"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 3,
-      "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 5,
+      "eye_color": "green",
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
       "hair_type": [
         "S",
         "C"
       ],
-      "health": 0.38,
-      "fertility": 0.531,
+      "health": 0.738,
+      "fertility": 0.724,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -84,23 +114,7 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.594
-          },
-          "death": false
-        },
-        "1202": {
-          "health": {
-            "change": true,
-            "value_change": -0.214,
-            "new_health": 0.38
-          },
-          "death": false
-        },
-        "1203": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.38
+            "new_health": 0.738
           },
           "death": false
         }
@@ -115,8 +129,8 @@
               10781
             ],
             "people names": [
-              "Wicghard",
-              "Brundonis"
+              "Folcard Euer",
+              "Victoria"
             ],
             "label": "spouse",
             "committed": true
@@ -124,49 +138,214 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stDie Camp.se1.c2",
-              "street": "Die Camp",
+              "income class": 0,
+              "income class label": "working class",
+              "section": "stPotstraet.se3.c0",
+              "street": "Potstraet",
               "neighborhood": "kampbuurt",
-              "unique id": 356
+              "unique id": 349
             }
           }
         ],
         "1201": [
           {
-            "topic": "feelings change",
-            "target": 10780,
-            "target name": "Wicghard",
-            "state": "out of love",
-            "relationship": 10782
+            "topic": "new relationship",
+            "key": 13540,
+            "people": [
+              10781,
+              13538
+            ],
+            "people names": [
+              "Victoria",
+              "Ripperti Euer"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.343,
+            "inhabitants": []
+          }
+        ],
+        "1202": [
+          {
+            "topic": "not enough income",
+            "income": 0.478,
+            "inhabitants": []
           }
         ],
         "1203": [
           {
+            "topic": "new relationship",
+            "key": 14233,
+            "people": [
+              10781,
+              14231
+            ],
+            "people names": [
+              "Victoria",
+              "Curdiin Euer"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
             "topic": "not enough income",
-            "income": 0.056,
+            "income": 0.613,
+            "inhabitants": []
+          }
+        ],
+        "1204": [
+          {
+            "topic": "not enough income",
+            "income": 0.797,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "not enough income",
+            "income": 0.912,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          },
+          {
+            "key": 10782,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10780,
+              "name": "Folcard Euer",
+              "age": 30,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "spouse"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 13538,
+              "name": "Ripperti Euer",
+              "age": 5,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Victoria (10781)",
+                "father": "Folcard (10780)"
+              }
+            },
+            "cause": "childhood illness",
+            "label": "child"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0,
             "inhabitants": []
           },
           {
+            "topic": "person died",
+            "person": {
+              "key": 14231,
+              "name": "Curdiin Euer",
+              "age": 6,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Victoria (10781)",
+                "father": "Folcard (10780)"
+              }
+            },
+            "cause": "childhood illness",
+            "label": "child"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
             "topic": "death",
-            "cause": "starvation"
+            "cause": "illness"
           }
         ]
       }
     },
     "key": 10781,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stDie Camp.se1.c2",
-      "street": "Die Camp",
+      "income class": 0,
+      "income class label": "working class",
+      "section": "stPotstraet.se3.c0",
+      "street": "Potstraet",
       "neighborhood": "kampbuurt",
-      "unique id": 356
+      "unique id": 349
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         10782
       ]

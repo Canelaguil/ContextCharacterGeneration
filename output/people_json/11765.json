@@ -1,76 +1,120 @@
 {
   "11765": {
     "alive": false,
-    "name": "Siburgis",
-    "surname": "Pipe",
-    "full name": "Siburgis Pipe",
+    "name": "Katrin",
+    "surname": "Snauel",
+    "full name": "Katrin Snauel",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.068,
-      "romantic interest": 0.651,
-      "sex interest": 0.669,
-      "gender expression": 0.353,
+      "sexuality": 0.063,
+      "romantic interest": 0.767,
+      "sex interest": 0.675,
+      "gender expression": 0.284,
       "sex": "f"
     },
-    "age": 20,
+    "age": 30,
     "birth year": 1184,
     "sex": "f",
     "faction": "Zealots",
     "income class": [
-      2,
-      "middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.453,
-      "nice-nasty": 0.315,
-      "honest-false": 0.379
+      "lawful-chaotic": 0.387,
+      "nice-nasty": 0.12,
+      "honest-false": 0.976
     },
     "attitude": {
-      "outgoing": 0.648,
-      "dream": 0.281
+      "outgoing": 0.636,
+      "dream": 0.395
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving",
+          "caretaker"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.041,
-        "gender expression expression": 0.352
+        "sexuality expression": 0.032,
+        "gender expression expression": 0.117
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13051": {
+          "key": 13051,
+          "name": "Iacobus Brune",
+          "age": 28,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Katrin (11765)",
+            "father": "Rase (11764)"
+          }
+        },
+        "16049": {
+          "key": 16049,
+          "name": "Ghodelde Brune",
+          "age": 1,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Katrin (11765)",
+            "father": "Rase (11764)"
+          }
+        },
+        "18231": {
+          "key": 18231,
+          "name": "Amelgeir Brune",
+          "age": 10,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Katrin (11765)",
+            "father": "Rase (11764)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11766
-        ]
+        ],
+        "child": {
+          "birth": [
+            13053,
+            16051,
+            18233
+          ]
+        }
       }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        2,
-        "middle class"
+        1,
+        "lower middle class"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 5,
+      "skin_color": 9,
       "eye_color": "brown",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
-        "S",
-        "C"
+        "C",
+        "S"
       ],
-      "health": 0.543,
-      "fertility": 0.519,
+      "health": 0.666,
+      "fertility": 0.641,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -82,15 +126,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.543
+            "new_health": 0.666
           },
           "death": false
         },
-        "1203": {
+        "1213": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.543
+            "new_health": 0.666
           },
           "death": true
         }
@@ -105,8 +149,8 @@
               11765
             ],
             "people names": [
-              "Coclike Capoen",
-              "Siburgis Pipe"
+              "Rase Brune",
+              "Katrin Snauel"
             ],
             "label": "spouse",
             "committed": true
@@ -114,16 +158,148 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stGoetscalcstraet.se3.c2",
-              "street": "Goetscalcstraet",
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stNieu straet.se3.c1",
+              "street": "Nieu straet",
               "neighborhood": "visbuurt",
-              "unique id": 789
+              "unique id": 764
             }
           }
         ],
-        "1203": [
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 13053,
+            "people": [
+              11765,
+              13051
+            ],
+            "people names": [
+              "Katrin Snauel",
+              "Iacobus Brune"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1205": [
+          {
+            "topic": "new relationship",
+            "key": 16051,
+            "people": [
+              11765,
+              16049
+            ],
+            "people names": [
+              "Katrin Snauel",
+              "Ghodelde Brune"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0.302,
+            "inhabitants": []
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 16049,
+              "name": "Ghodelde Brune",
+              "age": 1,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Katrin (11765)",
+                "father": "Rase (11764)"
+              }
+            },
+            "cause": "childhood illness",
+            "label": "child"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "new relationship",
+            "key": 18233,
+            "people": [
+              11765,
+              18231
+            ],
+            "people names": [
+              "Katrin Snauel",
+              "Amelgeir Brune"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.525,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0.298,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          },
+          {
+            "key": 11766,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11764,
+              "name": "Rase Brune",
+              "age": 36,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "spouse"
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
           {
             "topic": "death",
             "cause": "illness"
@@ -133,16 +309,16 @@
     },
     "key": 11765,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stGoetscalcstraet.se3.c2",
-      "street": "Goetscalcstraet",
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stNieu straet.se3.c1",
+      "street": "Nieu straet",
       "neighborhood": "visbuurt",
-      "unique id": 789
+      "unique id": 764
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         11766
       ]

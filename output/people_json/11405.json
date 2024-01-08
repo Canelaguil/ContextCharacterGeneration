@@ -1,33 +1,33 @@
 {
   "11405": {
     "alive": false,
-    "name": "Imma",
-    "surname": "Innighe",
-    "full name": "Imma Innighe",
+    "name": "Aleydis",
+    "surname": "Haec",
+    "full name": "Aleydis Haec",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.091,
-      "romantic interest": 0.956,
-      "sex interest": 0.715,
-      "gender expression": 0.13,
+      "sexuality": 0.128,
+      "romantic interest": 0.578,
+      "sex interest": 0.814,
+      "gender expression": 0.128,
       "sex": "f"
     },
     "age": 39,
-    "birth year": 1167,
+    "birth year": 1172,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
-      2,
-      "middle class"
+      3,
+      "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.917,
-      "nice-nasty": 0.042,
-      "honest-false": 0.199
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.522,
+      "honest-false": 0.818
     },
     "attitude": {
-      "outgoing": 0.565,
-      "dream": 0.019
+      "outgoing": 0.128,
+      "dream": 0.462
     },
     "homsoc": {
       "means": {
@@ -35,44 +35,83 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": [
-          "starving"
-        ]
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.056,
-        "gender expression expression": 0.073
+        "sexuality expression": 0.08,
+        "gender expression expression": 0.087
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12391": {
+          "key": 12391,
+          "name": "Alretieren van Aleydis",
+          "age": 1,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Aleydis (11405)",
+            "father": "Mense (11404)"
+          }
+        },
+        "15713": {
+          "key": 15713,
+          "name": "Ricmoden",
+          "age": 28,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Aleydis (11405)",
+            "father": "Mense (11404)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          11406
-        ]
+          11406,
+          17614
+        ],
+        "child": {
+          "birth": [
+            12393,
+            15715
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        2,
-        "middle class"
+        3,
+        "upper middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.057,
+      "all_incomes": [
+        0.991,
+        0.93,
+        0.985,
+        1.028,
+        1.031,
+        1.057
+      ],
+      "job": {
+        "lawful": true,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 7,
+      "skin_color": 2,
       "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
-        "S",
-        "S"
+        "C",
+        "C"
       ],
-      "health": 0.686,
-      "fertility": 0.725,
+      "health": 0.724,
+      "fertility": 0.707,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -84,9 +123,17 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.686
+            "new_health": 0.724
           },
           "death": false
+        },
+        "1210": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.724
+          },
+          "death": true
         }
       },
       "events": {
@@ -99,8 +146,8 @@
               11405
             ],
             "people names": [
-              "Marcilius",
-              "Imma Innighe"
+              "Mense Svancken",
+              "Aleydis Haec"
             ],
             "label": "spouse",
             "committed": true
@@ -108,16 +155,67 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stScherbier straet.se1.c2",
-              "street": "Scherbier straet",
+              "income class": 3,
+              "income class label": "upper middle class",
+              "section": "stDie lange straet2.se1.c3",
+              "street": "Die lange straet2",
               "neighborhood": "cingelzuid",
-              "unique id": 634
+              "unique id": 624
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12393,
+            "people": [
+              11405,
+              12391
+            ],
+            "people names": [
+              "Aleydis Haec",
+              "Alretieren van Aleydis"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1204": [
+        "1201": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12391,
+              "name": "Alretieren van Aleydis",
+              "age": 1,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Aleydis (11405)",
+                "father": "Mense (11404)"
+              }
+            },
+            "cause": "childhood illness",
+            "label": "child"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.991
+          },
+          {
+            "topic": "new relationship",
+            "key": 15715,
+            "people": [
+              11405,
+              15713
+            ],
+            "people names": [
+              "Aleydis Haec",
+              "Ricmoden"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
           {
             "key": 11406,
             "topic": "unmarried"
@@ -126,53 +224,73 @@
             "topic": "person died",
             "person": {
               "key": 11404,
-              "name": "Marcilius",
-              "age": 45,
+              "name": "Mense Svancken",
+              "age": 43,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
             },
             "cause": "illness",
             "label": "spouse"
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
           }
         ],
-        "1205": [
+        "1207": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1205
+            "topic": "new relationship",
+            "key": 17614,
+            "people": [
+              11467,
+              11405
+            ],
+            "people names": [
+              "Gheynekine Strument",
+              "Aleydis Haec"
+            ],
+            "label": "spouse",
+            "committed": true
           },
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          },
+            "topic": "new home",
+            "home": {
+              "income class": 3,
+              "income class label": "upper middle class",
+              "section": "stMuurhuysen1.se1.c3",
+              "street": "Muurhuysen1",
+              "neighborhood": "cingelzuid",
+              "unique id": 651
+            }
+          }
+        ],
+        "1208": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.028
+          }
+        ],
+        "1210": [
           {
             "topic": "death",
-            "cause": "plague"
+            "cause": "illness"
           }
         ]
       }
     },
     "key": 11405,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stScherbier straet.se1.c2",
-      "street": "Scherbier straet",
+      "income class": 3,
+      "income class label": "upper middle class",
+      "section": "stMuurhuysen1.se1.c3",
+      "street": "Muurhuysen1",
       "neighborhood": "cingelzuid",
-      "unique id": 634
+      "unique id": 651
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
-        11406
+        11406,
+        17614
       ]
     }
   }

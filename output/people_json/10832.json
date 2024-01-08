@@ -1,59 +1,84 @@
 {
   "10832": {
     "alive": false,
-    "name": "Erkenradis",
-    "surname": "Wittebloem",
-    "full name": "Erkenradis Wittebloem",
+    "name": "Yda",
+    "surname": "Coe",
+    "full name": "Yda Coe",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.062,
-      "romantic interest": 0.796,
-      "sex interest": 0.787,
-      "gender expression": 0.077,
+      "sexuality": 0.0,
+      "romantic interest": 0.712,
+      "sex interest": 0.492,
+      "gender expression": 0.183,
       "sex": "f"
     },
-    "age": 22,
-    "birth year": 1181,
+    "age": 36,
+    "birth year": 1184,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.108,
-      "nice-nasty": 0.424,
-      "honest-false": 0.043
+      "lawful-chaotic": 0.0,
+      "nice-nasty": 0.383,
+      "honest-false": 0.999
     },
     "attitude": {
-      "outgoing": 0.613,
-      "dream": 0.221
+      "outgoing": 0.624,
+      "dream": 0.596
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving",
+          "caretaker"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.029,
-        "gender expression expression": 0.059
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.155
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "13659": {
-          "key": 13659,
-          "name": "Clementia",
-          "age": 46,
+        "12397": {
+          "key": 12397,
+          "name": "Riuum Rike",
+          "age": 49,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Yda (10832)",
+            "father": "Harderico (10831)"
+          }
+        },
+        "14919": {
+          "key": 14919,
+          "name": "Douwen Rike",
+          "age": 13,
           "alive": false,
           "sex": "f",
           "parents": {
-            "mother": "Erkenradis (10832)",
-            "father": "Valken (10831)"
+            "mother": "Yda (10832)",
+            "father": "Harderico (10831)"
+          }
+        },
+        "15413": {
+          "key": 15413,
+          "name": "Hildegardis Rike",
+          "age": 45,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Yda (10832)",
+            "father": "Harderico (10831)"
           }
         }
       },
@@ -63,7 +88,9 @@
         ],
         "child": {
           "birth": [
-            13661
+            12399,
+            14921,
+            15415
           ]
         }
       }
@@ -79,15 +106,15 @@
     },
     "genetics": {
       "skin_color": 9,
-      "eye_color": "green",
+      "eye_color": "blue",
       "hair_color": "blonde",
       "hair_color_code": 4,
       "hair_type": [
         "S",
-        "S"
+        "C"
       ],
-      "health": 0.609,
-      "fertility": 0.601,
+      "health": 0.872,
+      "fertility": 0.896,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -99,9 +126,17 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.609
+            "new_health": 0.872
           },
           "death": false
+        },
+        "1219": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.872
+          },
+          "death": true
         }
       },
       "events": {
@@ -114,8 +149,8 @@
               10832
             ],
             "people names": [
-              "Valken",
-              "Erkenradis Wittebloem"
+              "Harderico Rike",
+              "Yda Coe"
             ],
             "label": "spouse",
             "committed": true
@@ -128,28 +163,193 @@
               "section": "stDie Camp.se3.c2",
               "street": "Die Camp",
               "neighborhood": "kampbuurt",
-              "unique id": 381
+              "unique id": 368
             }
-          }
-        ],
-        "1202": [
+          },
           {
             "topic": "new relationship",
-            "key": 13661,
+            "key": 12399,
             "people": [
               10832,
-              13659
+              12397
             ],
             "people names": [
-              "Erkenradis Wittebloem",
-              "Clementia"
+              "Yda Coe",
+              "Riuum Rike"
             ],
             "label": "parentchild",
             "committed": false
           },
           {
+            "topic": "feelings change",
+            "target": 10831,
+            "target name": "Harderico Rike",
+            "state": "out of love",
+            "relationship": 10833
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 14921,
+            "people": [
+              10832,
+              14919
+            ],
+            "people names": [
+              "Yda Coe",
+              "Douwen Rike"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 15415,
+            "people": [
+              10832,
+              15413
+            ],
+            "people names": [
+              "Yda Coe",
+              "Hildegardis Rike"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          },
+          {
+            "key": 10833,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10831,
+              "name": "Harderico Rike",
+              "age": 34,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "spouse"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1216": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 14919,
+              "name": "Douwen Rike",
+              "age": 13,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Yda (10832)",
+                "father": "Harderico (10831)"
+              }
+            },
+            "cause": "illness",
+            "label": "child"
+          }
+        ],
+        "1219": [
+          {
             "topic": "death",
-            "cause": "childbirth"
+            "cause": "illness"
           }
         ]
       }
@@ -161,11 +361,11 @@
       "section": "stDie Camp.se3.c2",
       "street": "Die Camp",
       "neighborhood": "kampbuurt",
-      "unique id": 381
+      "unique id": 368
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         10833
       ]

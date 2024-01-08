@@ -1,87 +1,93 @@
 {
   "10205": {
     "alive": false,
-    "name": "Ghela",
-    "surname": "Zuakart",
-    "full name": "Ghela Zuakart",
+    "name": "Douwen",
+    "surname": "",
+    "full name": "Douwen",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.052,
-      "romantic interest": 0.662,
-      "sex interest": 0.645,
-      "gender expression": 0.144,
+      "sexuality": 0.075,
+      "romantic interest": 0.674,
+      "sex interest": 0.873,
+      "gender expression": 0.196,
       "sex": "f"
     },
-    "age": 51,
-    "birth year": 1156,
+    "age": 24,
+    "birth year": 1179,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.141,
-      "nice-nasty": 0.78,
-      "honest-false": 0.32
+      "lawful-chaotic": 0.485,
+      "nice-nasty": 0.342,
+      "honest-false": 0.229
     },
     "attitude": {
-      "outgoing": 0.587,
-      "dream": 0.404
+      "outgoing": 0.92,
+      "dream": 0.291
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": [
-          "starving"
-        ]
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.041,
-        "gender expression expression": 0.04
+        "sexuality expression": 0.055,
+        "gender expression expression": 0.087
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12901": {
+          "key": 12901,
+          "name": "Bartrarde Janszoon",
+          "age": 24,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Douwen (10205)",
+            "father": "Jan (10204)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10206
-        ]
+        ],
+        "child": {
+          "birth": [
+            12903
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
         1,
         "lower middle class"
       ],
-      "income": 0.0,
-      "all_incomes": [
-        0.575,
-        0.429,
-        0.109,
-        0.0
-      ],
-      "job": {
-        "lawful": false,
-        "honest": false
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 3,
-      "eye_color": "brown",
+      "skin_color": 9,
+      "eye_color": "blue",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
         "C",
         "C"
       ],
-      "health": 0.357,
-      "fertility": 0.642,
+      "health": 0.526,
+      "fertility": 0.562,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -93,17 +99,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.571
+            "new_health": 0.526
           },
           "death": false
-        },
-        "1206": {
-          "health": {
-            "change": true,
-            "value_change": -0.214,
-            "new_health": 0.357
-          },
-          "death": true
         }
       },
       "events": {
@@ -116,8 +114,8 @@
               10205
             ],
             "people names": [
-              "Breghtgherus",
-              "Ghela Zuakart"
+              "Jan",
+              "Douwen"
             ],
             "label": "spouse",
             "committed": true
@@ -130,72 +128,30 @@
               "section": "stHelle voet.se3.c1",
               "street": "Helle voet",
               "neighborhood": "jorisbuurt",
-              "unique id": 91
+              "unique id": 94
             }
           }
         ],
-        "1203": [
+        "1201": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.575
-          },
-          {
-            "key": 10206,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 10204,
-              "name": "Breghtgherus",
-              "age": 51,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "cause": "old age",
-            "label": "spouse"
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "new relationship",
+            "key": 12903,
+            "people": [
+              10205,
+              12901
+            ],
+            "people names": [
+              "Douwen",
+              "Bartrarde Janszoon"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1204": [
-          {
-            "topic": "job notice",
-            "notice": "earning very little",
-            "income": 0.429
-          }
-        ],
-        "1205": [
-          {
-            "topic": "job notice",
-            "notice": "hardly any income",
-            "income": 0.109
-          },
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1205
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.109,
-            "inhabitants": []
-          }
-        ],
-        "1206": [
-          {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
-          },
+        "1202": [
           {
             "topic": "death",
-            "cause": "old age"
+            "cause": "illness"
           }
         ]
       }
@@ -207,11 +163,11 @@
       "section": "stHelle voet.se3.c1",
       "street": "Helle voet",
       "neighborhood": "jorisbuurt",
-      "unique id": 91
+      "unique id": 94
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
         10206
       ]

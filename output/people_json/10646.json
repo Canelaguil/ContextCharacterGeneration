@@ -1,78 +1,96 @@
 {
   "10646": {
     "alive": false,
-    "name": "Victoria",
-    "surname": "BieBye",
-    "full name": "Victoria BieBye",
+    "name": "Nellen",
+    "surname": "Vinke",
+    "full name": "Nellen Vinke",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.039,
-      "romantic interest": 0.999,
-      "sex interest": 0.669,
-      "gender expression": 0.087,
+      "sexuality": 0.035,
+      "romantic interest": 0.502,
+      "sex interest": 0.676,
+      "gender expression": 0.042,
       "sex": "f"
     },
-    "age": 54,
-    "birth year": 1162,
+    "age": 46,
+    "birth year": 1168,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "No religion",
     "income class": [
-      0,
-      "working class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.013,
-      "nice-nasty": 0.647,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.464,
+      "nice-nasty": 0.999,
+      "honest-false": 0.389
     },
     "attitude": {
-      "outgoing": 0.288,
-      "dream": 0.377
+      "outgoing": 0.589,
+      "dream": 0.465
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
         "flags": [
-          "starving"
+          "starving",
+          "caretaker"
         ]
       },
       "expression": {
-        "sexuality expression": 0.019,
-        "gender expression expression": 0.025
+        "sexuality expression": 0.027,
+        "gender expression expression": 0.027
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13433": {
+          "key": 13433,
+          "name": "Moerseil Blideleuen",
+          "age": 25,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Nellen (10646)",
+            "father": "Hubrecht (10645)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10647
-        ]
+        ],
+        "child": {
+          "birth": [
+            13435
+          ]
+        }
       }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        0,
-        "working class"
+        1,
+        "lower middle class"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 3,
-      "eye_color": "brown",
+      "skin_color": 2,
+      "eye_color": "green",
       "hair_color": "brown",
       "hair_color_code": 2,
       "hair_type": [
         "S",
-        "S"
+        "C"
       ],
-      "health": 0.0,
-      "fertility": 0.689,
+      "health": 0.329,
+      "fertility": 0.549,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -84,41 +102,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.68
+            "new_health": 0.594
           },
           "death": false
         },
-        "1212": {
+        "1208": {
           "health": {
             "change": true,
-            "value_change": -0.168,
-            "new_health": 0.512
+            "value_change": -0.265,
+            "new_health": 0.329
           },
           "death": false
         },
-        "1213": {
+        "1209": {
           "health": {
-            "change": true,
-            "value_change": -0.25,
-            "new_health": 0.262
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.329
           },
           "death": false
-        },
-        "1214": {
-          "health": {
-            "change": true,
-            "value_change": -0.128,
-            "new_health": 0.134
-          },
-          "death": false
-        },
-        "1215": {
-          "health": {
-            "change": true,
-            "value_change": -0.134,
-            "new_health": 0.0
-          },
-          "death": true
         }
       },
       "events": {
@@ -131,8 +133,8 @@
               10646
             ],
             "people names": [
-              "Karel Jserine",
-              "Victoria BieBye"
+              "Hubrecht Blideleuen",
+              "Nellen Vinke"
             ],
             "label": "spouse",
             "committed": true
@@ -140,23 +142,41 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stDe Tuyt.se3.c0",
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stDe Tuyt.se5.c1",
               "street": "De Tuyt",
               "neighborhood": "agnesbuurt",
-              "unique id": 292
+              "unique id": 296
             }
           }
         ],
-        "1205": [
+        "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1205
+            "topic": "new relationship",
+            "key": 13435,
+            "people": [
+              10646,
+              13433
+            ],
+            "people names": [
+              "Nellen Vinke",
+              "Moerseil Blideleuen"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1211": [
+        "1203": [
+          {
+            "topic": "now caretaker",
+            "care dependants": [
+              29512,
+              30632,
+              31319,
+              33488
+            ]
+          },
           {
             "key": 10647,
             "topic": "unmarried"
@@ -165,68 +185,158 @@
             "topic": "person died",
             "person": {
               "key": 10645,
-              "name": "Karel Jserine",
-              "age": 55,
+              "name": "Hubrecht Blideleuen",
+              "age": 53,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
             },
             "cause": "sickness",
             "label": "spouse"
-          },
+          }
+        ],
+        "1204": [
           {
             "topic": "not enough income",
             "income": 0,
-            "inhabitants": []
+            "inhabitants": [
+              13017,
+              17558,
+              29512,
+              30632,
+              31319,
+              33488
+            ]
+          }
+        ],
+        "1205": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              13017,
+              17558,
+              29512,
+              30632,
+              31319,
+              33488
+            ]
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              13017,
+              17558,
+              29512,
+              30632,
+              31319,
+              33488
+            ]
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              13017,
+              17558,
+              29512,
+              30632,
+              31319,
+              33488
+            ]
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              13017,
+              17558,
+              29512,
+              30632,
+              31319,
+              33488
+            ]
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              13017,
+              17558,
+              29512,
+              30632,
+              31319,
+              33488
+            ]
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              13017,
+              17558,
+              29512,
+              30632,
+              31319,
+              33488
+            ]
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              13017,
+              17558,
+              29512,
+              30632,
+              31319,
+              33488
+            ]
           }
         ],
         "1212": [
           {
             "topic": "not enough income",
             "income": 0,
-            "inhabitants": []
+            "inhabitants": [
+              13017,
+              17558,
+              29512,
+              30632,
+              31319,
+              33488
+            ]
           }
         ],
         "1213": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1214": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1215": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1215
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          },
-          {
             "topic": "death",
-            "cause": "sickness"
+            "cause": "illness"
           }
         ]
       }
     },
     "key": 10646,
     "home": {
-      "income class": 0,
-      "income class label": "working class",
-      "section": "stDe Tuyt.se3.c0",
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stDe Tuyt.se5.c1",
       "street": "De Tuyt",
       "neighborhood": "agnesbuurt",
-      "unique id": 292
+      "unique id": 296
     },
     "relationship status": {
       "taken": false,

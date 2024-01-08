@@ -1,33 +1,33 @@
 {
   "11939": {
     "alive": false,
-    "name": "Katrin",
-    "surname": "Neue",
-    "full name": "Katrin Neue",
+    "name": "Hilduardis",
+    "surname": "Weis",
+    "full name": "Hilduardis Weis",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.059,
-      "romantic interest": 0.713,
-      "sex interest": 0.733,
-      "gender expression": 0.0,
+      "sexuality label": "gay",
+      "sexuality": 0.892,
+      "romantic interest": 0.654,
+      "sex interest": 0.643,
+      "gender expression": 0.468,
       "sex": "f"
     },
-    "age": 48,
-    "birth year": 1162,
+    "age": 30,
+    "birth year": 1177,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
-      1,
-      "lower middle class"
+      4,
+      "nobility"
     ],
     "personality": {
-      "lawful-chaotic": 0.423,
-      "nice-nasty": 0.431,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.737,
+      "nice-nasty": 0.0,
+      "honest-false": 0.868
     },
     "attitude": {
-      "outgoing": 0.513,
-      "dream": 0.106
+      "outgoing": 0.273,
+      "dream": 0.276
     },
     "homsoc": {
       "means": {
@@ -35,42 +35,73 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.037,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.725,
+        "gender expression expression": 0.269
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13161": {
+          "key": 13161,
+          "name": "Nannen Jdirsdochter",
+          "age": 48,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Hilduardis (11939)",
+            "father": "Jdir (11938)"
+          }
+        },
+        "14697": {
+          "key": 14697,
+          "name": "Ryccie Jdirsdochter",
+          "age": 13,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Hilduardis (11939)",
+            "father": "Jdir (11938)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11940
-        ]
+        ],
+        "child": {
+          "birth": [
+            13163,
+            14699
+          ]
+        }
       }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        1,
-        "lower middle class"
+        4,
+        "nobility"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 1,
-      "eye_color": "brown",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "skin_color": 5,
+      "eye_color": "blue",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
         "C",
-        "S"
+        "C"
       ],
-      "health": 0.832,
-      "fertility": 0.81,
+      "health": 0.502,
+      "fertility": 0.472,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -82,17 +113,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.832
+            "new_health": 0.502
           },
           "death": false
-        },
-        "1209": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.832
-          },
-          "death": true
         }
       },
       "events": {
@@ -105,8 +128,8 @@
               11939
             ],
             "people names": [
-              "Wellinus",
-              "Katrin Neue"
+              "Jdir",
+              "Hilduardis Weis"
             ],
             "label": "spouse",
             "committed": true
@@ -114,48 +137,80 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stDe Vyver.se3.c1",
-              "street": "De Vyver",
-              "neighborhood": "denhof",
-              "unique id": 866
+              "income class": 4,
+              "income class label": "nobility",
+              "section": "stOp Havick1.se1.c4",
+              "street": "Op Havick1",
+              "neighborhood": "cingelnoord",
+              "unique id": 839
             }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 13163,
+            "people": [
+              11939,
+              13161
+            ],
+            "people names": [
+              "Hilduardis Weis",
+              "Nannen Jdirsdochter"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 14699,
+            "people": [
+              11939,
+              14697
+            ],
+            "people names": [
+              "Hilduardis Weis",
+              "Ryccie Jdirsdochter"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1204": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              13161,
+              12373,
+              22578,
+              23996,
+              25589,
+              28683,
+              29428,
+              29714
+            ]
           }
         ],
         "1205": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1205
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              13161,
+              12373,
+              22578,
+              23996,
+              25589,
+              28683,
+              29428,
+              29714
+            ]
           }
         ],
-        "1207": [
-          {
-            "topic": "feelings change",
-            "target": 11938,
-            "target name": "Wellinus",
-            "state": "infatuation",
-            "relationship": 11940
-          }
-        ],
-        "1208": [
-          {
-            "topic": "feelings change",
-            "target": 11938,
-            "target name": "Wellinus",
-            "state": "solid love",
-            "relationship": 11940
-          }
-        ],
-        "1209": [
-          {
-            "topic": "feelings change",
-            "target": 11938,
-            "target name": "Wellinus",
-            "state": "out of love",
-            "relationship": 11940
-          },
+        "1206": [
           {
             "topic": "death",
             "cause": "illness"
@@ -165,12 +220,12 @@
     },
     "key": 11939,
     "home": {
-      "income class": 1,
-      "income class label": "lower middle class",
-      "section": "stDe Vyver.se3.c1",
-      "street": "De Vyver",
-      "neighborhood": "denhof",
-      "unique id": 866
+      "income class": 4,
+      "income class label": "nobility",
+      "section": "stOp Havick1.se1.c4",
+      "street": "Op Havick1",
+      "neighborhood": "cingelnoord",
+      "unique id": 839
     },
     "relationship status": {
       "taken": true,

@@ -82,7 +82,7 @@ class Community(Model):
         self.marriages = 0
         self.people_alive = 0
 
-        self.schedule = StagedActivation(self, ["people", "relationships", "houses", 
+        self.schedule = StagedActivation(self, ["people", "lovedeathbirth", "houses", 
                                                 "post_processing"], True)
         self.year = year
         self.people = {}
@@ -158,6 +158,8 @@ class Community(Model):
         except:
             log_error('could not move person', [house_key, person_info])
         self.homes[house_key].add_person(person_info)
+        house_info = self.homes[house_key].address()
+        self.people[person_key].move(house_info)
 
     def add_relationship(self, relat : Agent):
         a, b = relat.keys
@@ -170,11 +172,11 @@ class Community(Model):
         self.relationships[relat.unique_id] = relat 
         self.schedule.add(relat)
 
-    def marry(self, keyA, keyB, type='arranged'):
+    def marry(self, keyA, keyB, type='spouse'):
         self.marriages += 1
         personA = self.get_person(keyA)
         personB = self.get_person(keyB)
-        marriage = Relationship(self.get_id(), self, personA, personB, 'spouse')
+        marriage = Relationship(self.get_id(), self, personA, personB, type)
         self.add_relationship(marriage)
 
         # TODO : could be moved to community events?
@@ -183,7 +185,7 @@ class Community(Model):
         wife = personA if personA['sex'] == 'f' else personB
 
         ch = rand()
-        if (ch < 0.8 or wife['home'] == None) and husband['home'] != None:
+        if (husband['home'] != None and ch < 0.8) or wife['home'] == None :
             couple_home = husband['home']
             try:
                 if wife['home']['unique id'] == None:
@@ -205,8 +207,10 @@ class Community(Model):
 
             self.move_person_to_home(couple_home['unique id'], husband['key'])
         else:
+            log_error('no home found in couple', [keyA, keyB])
             # if either or both of the houses are not available (because person died this year, eg)
             return
+        
         marriage.set_home(couple_home['unique id'])
         for person in care_dependants:
             self.move_person_to_home(couple_home['unique id'], person)
