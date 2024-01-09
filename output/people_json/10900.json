@@ -1,33 +1,33 @@
 {
   "10900": {
     "alive": false,
-    "name": "Diddekin",
-    "surname": "",
-    "full name": "Diddekin",
+    "name": "Hardenbernus",
+    "surname": "Canne",
+    "full name": "Hardenbernus Canne",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.116,
-      "romantic interest": 0.999,
-      "sex interest": 0.962,
-      "gender expression": 0.176,
+      "sexuality": 0.062,
+      "romantic interest": 0.531,
+      "sex interest": 0.847,
+      "gender expression": 0.0,
       "sex": "m"
     },
-    "age": 29,
-    "birth year": 1175,
+    "age": 53,
+    "birth year": 1156,
     "sex": "m",
-    "faction": "Dogmatists",
+    "faction": "Zealots",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.99,
-      "honest-false": 0.887
+      "lawful-chaotic": 0.568,
+      "nice-nasty": 0.0,
+      "honest-false": 0.711
     },
     "attitude": {
-      "outgoing": 0.444,
-      "dream": 0.548
+      "outgoing": 0.989,
+      "dream": 0.516
     },
     "homsoc": {
       "means": {
@@ -38,17 +38,46 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.045,
-        "gender expression expression": 0.101
+        "sexuality expression": 0.027,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13241": {
+          "key": 13241,
+          "name": "Marcibilia Canne",
+          "age": 38,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Folqui (10901)",
+            "father": "Hardenbernus (10900)"
+          }
+        },
+        "16326": {
+          "key": 16326,
+          "name": "Sipper Canne",
+          "age": 8,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Folqui (10901)",
+            "father": "Hardenbernus (10900)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10902
-        ]
+        ],
+        "child": {
+          "birth": [
+            13242,
+            16327
+          ]
+        }
       }
     },
     "occupation": {
@@ -57,30 +86,35 @@
         2,
         "middle class"
       ],
-      "income": 0.927,
+      "income": 1.145,
       "all_incomes": [
-        1.044,
-        1.109,
-        1.183,
-        1.116,
-        0.927
+        0.919,
+        0.849,
+        0.903,
+        0.835,
+        0.767,
+        1.008,
+        1.206,
+        1.2,
+        1.34,
+        1.145
       ],
       "job": {
         "lawful": false,
-        "honest": true
+        "honest": false
       }
     },
     "genetics": {
-      "skin_color": 1,
-      "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 3,
+      "eye_color": "green",
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
         "S",
-        "C"
+        "S"
       ],
-      "health": 0.566,
-      "fertility": 0.545,
+      "health": 0.0,
+      "fertility": 0.704,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -92,15 +126,31 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.566
+            "new_health": 0.641
           },
           "death": false
         },
-        "1203": {
+        "1206": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.566
+            "change": true,
+            "value_change": -0.259,
+            "new_health": 0.382
+          },
+          "death": false
+        },
+        "1207": {
+          "health": {
+            "change": true,
+            "value_change": -0.32,
+            "new_health": 0.062
+          },
+          "death": false
+        },
+        "1208": {
+          "health": {
+            "change": true,
+            "value_change": -0.062,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -110,7 +160,7 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.044
+            "income": 0.919
           },
           {
             "topic": "new relationship",
@@ -120,8 +170,8 @@
               10901
             ],
             "people names": [
-              "Diddekin",
-              "Rabburgis"
+              "Hardenbernus Canne",
+              "Folqui Kint"
             ],
             "label": "spouse",
             "committed": true
@@ -134,23 +184,67 @@
               "section": "stDie Camp.se7.c2",
               "street": "Die Camp",
               "neighborhood": "kampbuurt",
-              "unique id": 397
+              "unique id": 404
             }
           }
         ],
         "1201": [
           {
+            "topic": "new relationship",
+            "key": 13242,
+            "people": [
+              10900,
+              13241
+            ],
+            "people names": [
+              "Hardenbernus Canne",
+              "Marcibilia Canne"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
             "topic": "feelings change",
             "target": 10901,
-            "target name": "Rabburgis",
+            "target name": "Folqui Kint",
             "state": "solid love",
             "relationship": 10902
           }
         ],
-        "1203": [
+        "1204": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.008
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 16327,
+            "people": [
+              10900,
+              16326
+            ],
+            "people names": [
+              "Hardenbernus Canne",
+              "Sipper Canne"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1207": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1207
+          }
+        ],
+        "1208": [
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "sickness"
           }
         ]
       }
@@ -162,7 +256,7 @@
       "section": "stDie Camp.se7.c2",
       "street": "Die Camp",
       "neighborhood": "kampbuurt",
-      "unique id": 397
+      "unique id": 404
     },
     "relationship status": {
       "taken": true,

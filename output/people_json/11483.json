@@ -1,33 +1,33 @@
 {
   "11483": {
     "alive": false,
-    "name": "Agnes",
-    "surname": "Heylighevrouwe",
-    "full name": "Agnes Heylighevrouwe",
+    "name": "Breghlent",
+    "surname": "",
+    "full name": "Breghlent",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.047,
-      "romantic interest": 0.435,
-      "sex interest": 0.522,
-      "gender expression": 0.021,
+      "sexuality label": "gay",
+      "sexuality": 0.778,
+      "romantic interest": 0.801,
+      "sex interest": 0.951,
+      "gender expression": 0.436,
       "sex": "f"
     },
-    "age": 41,
-    "birth year": 1163,
+    "age": 42,
+    "birth year": 1171,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "Dogmatists",
     "income class": [
       3,
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.331,
-      "nice-nasty": 0.662,
-      "honest-false": 0.351
+      "lawful-chaotic": 0.741,
+      "nice-nasty": 0.999,
+      "honest-false": 0.769
     },
     "attitude": {
-      "outgoing": 0.301,
-      "dream": 0.538
+      "outgoing": 0.675,
+      "dream": 0.344
     },
     "homsoc": {
       "means": {
@@ -35,20 +35,39 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.023,
-        "gender expression expression": 0.013
+        "sexuality expression": 0.526,
+        "gender expression expression": 0.336
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13336": {
+          "key": 13336,
+          "name": "Reynwi Mol",
+          "age": 11,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Breghlent (11483)",
+            "father": "Harlo (11482)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11484
-        ]
+        ],
+        "child": {
+          "birth": [
+            13338
+          ]
+        }
       }
     },
     "occupation": {
@@ -61,16 +80,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 3,
-      "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 0,
+      "eye_color": "green",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
-        "C",
+        "S",
         "S"
       ],
-      "health": 0.63,
-      "fertility": 0.648,
+      "health": 0.661,
+      "fertility": 0.697,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -82,15 +101,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.63
+            "new_health": 0.661
           },
           "death": false
         },
-        "1203": {
+        "1212": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.63
+            "new_health": 0.661
           },
           "death": true
         }
@@ -105,8 +124,8 @@
               11483
             ],
             "people names": [
-              "Passelin Colsebyle",
-              "Agnes Heylighevrouwe"
+              "Harlo Mol",
+              "Breghlent"
             ],
             "label": "spouse",
             "committed": true
@@ -123,7 +142,70 @@
             }
           }
         ],
-        "1203": [
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 13338,
+            "people": [
+              11483,
+              13336
+            ],
+            "people names": [
+              "Breghlent",
+              "Reynwi Mol"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1207": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1207
+          }
+        ],
+        "1208": [
+          {
+            "key": 11484,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11482,
+              "name": "Harlo Mol",
+              "age": 45,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "spouse"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
           {
             "topic": "death",
             "cause": "illness"
@@ -141,8 +223,8 @@
       "unique id": 656
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         11484
       ]

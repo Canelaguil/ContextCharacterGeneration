@@ -1,58 +1,107 @@
 {
   "11168": {
     "alive": false,
-    "name": "Hildegardis",
-    "surname": "Hoen",
-    "full name": "Hildegardis Hoen",
+    "name": "Sophia",
+    "surname": "Mie",
+    "full name": "Sophia Mie",
     "born this way": {
-      "sexuality label": "bi",
-      "sexuality": 0.39,
-      "romantic interest": 0.574,
-      "sex interest": 0.798,
-      "gender expression": 0.357,
+      "sexuality label": "straight",
+      "sexuality": 0.105,
+      "romantic interest": 0.854,
+      "sex interest": 0.649,
+      "gender expression": 0.199,
       "sex": "f"
     },
-    "age": 48,
-    "birth year": 1174,
+    "age": 25,
+    "birth year": 1183,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.194,
-      "honest-false": 0.607
+      "lawful-chaotic": 0.544,
+      "nice-nasty": 0.384,
+      "honest-false": 0.999
     },
     "attitude": {
-      "outgoing": 0.403,
-      "dream": 0.273
+      "outgoing": 0.235,
+      "dream": 0.229
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": true,
+        "caretaker": false,
         "needs_care": false,
-        "flags": [
-          "starving",
-          "caretaker"
-        ]
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.251,
-        "gender expression expression": 0.226
+        "sexuality expression": 0.053,
+        "gender expression expression": 0.076
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12688": {
+          "key": 12688,
+          "name": "Ghela",
+          "age": 49,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Sophia (11168)",
+            "father": "Gherelm (11167)"
+          }
+        },
+        "13095": {
+          "key": 13095,
+          "name": "Herardus",
+          "age": 48,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Sophia (11168)",
+            "father": "Gherelm (11167)"
+          }
+        },
+        "15058": {
+          "key": 15058,
+          "name": "Vreile",
+          "age": 18,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Sophia (11168)",
+            "father": "Gherelm (11167)"
+          }
+        },
+        "16719": {
+          "key": 16719,
+          "name": "Soeten",
+          "age": 25,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Sophia (11168)",
+            "father": "Gherelm (11167)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          11169,
-          21416
-        ]
+          11169
+        ],
+        "child": {
+          "birth": [
+            12690,
+            13097,
+            15060,
+            16721
+          ]
+        }
       }
     },
     "occupation": {
@@ -65,16 +114,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 1,
+      "skin_color": 2,
       "eye_color": "brown",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
       "hair_type": [
-        "C",
-        "C"
+        "S",
+        "S"
       ],
-      "health": 0.72,
-      "fertility": 0.796,
+      "health": 0.61,
+      "fertility": 0.659,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -86,17 +135,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.72
+            "new_health": 0.61
           },
           "death": false
-        },
-        "1221": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.72
-          },
-          "death": true
         }
       },
       "events": {
@@ -109,8 +150,8 @@
               11168
             ],
             "people names": [
-              "Mauricius",
-              "Hildegardis Hoen"
+              "Gherelm",
+              "Sophia Mie"
             ],
             "label": "spouse",
             "committed": true
@@ -123,218 +164,78 @@
               "section": "stPaternoster straetje.se1.c1",
               "street": "Paternoster straetje",
               "neighborhood": "olvbuurt",
-              "unique id": 519
+              "unique id": 517
             }
-          }
-        ],
-        "1202": [
-          {
-            "topic": "feelings change",
-            "target": 11167,
-            "target name": "Mauricius",
-            "state": "out of love",
-            "relationship": 11169
-          }
-        ],
-        "1205": [
-          {
-            "key": 11169,
-            "topic": "unmarried"
           },
           {
-            "topic": "person died",
-            "person": {
-              "key": 11167,
-              "name": "Mauricius",
-              "age": 40,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "cause": "illness",
-            "label": "spouse"
+            "topic": "new relationship",
+            "key": 12690,
+            "people": [
+              11168,
+              12688
+            ],
+            "people names": [
+              "Sophia Mie",
+              "Ghela"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 13097,
+            "people": [
+              11168,
+              13095
+            ],
+            "people names": [
+              "Sophia Mie",
+              "Herardus"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 15060,
+            "people": [
+              11168,
+              15058
+            ],
+            "people names": [
+              "Sophia Mie",
+              "Vreile"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1206": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": [
-              15144,
-              26658,
-              30322,
-              30951
-            ]
+            "topic": "new relationship",
+            "key": 16721,
+            "people": [
+              11168,
+              16719
+            ],
+            "people names": [
+              "Sophia Mie",
+              "Soeten"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1207": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": [
-              15144,
-              26658,
-              30322,
-              30951
-            ]
-          }
-        ],
-        "1208": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": [
-              15144,
-              26658,
-              30322,
-              30951
-            ]
-          }
-        ],
-        "1209": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": [
-              15144,
-              26658,
-              30322,
-              30951
-            ]
-          }
-        ],
-        "1210": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": [
-              15144,
-              26658,
-              30322,
-              30951
-            ]
-          }
-        ],
-        "1211": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": [
-              15144,
-              26658,
-              30322,
-              30951
-            ]
-          }
-        ],
-        "1212": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": [
-              15144,
-              26658,
-              30322,
-              30951
-            ]
-          }
-        ],
-        "1213": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": [
-              15144,
-              26658,
-              30322,
-              30951
-            ]
-          }
-        ],
-        "1214": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": [
-              15144,
-              26658,
-              30322,
-              30951
-            ]
-          }
-        ],
-        "1215": [
-          {
             "topic": "event",
             "event": "plague",
-            "year": 1215
+            "year": 1207
           },
-          {
-            "topic": "new relationship",
-            "key": 21416,
-            "people": [
-              12232,
-              11168
-            ],
-            "people names": [
-              "Rodolf Goude",
-              "Hildegardis Hoen"
-            ],
-            "label": "spouse",
-            "committed": true
-          },
-          {
-            "topic": "now caretaker",
-            "care dependants": [
-              30322,
-              30951
-            ]
-          }
-        ],
-        "1217": [
-          {
-            "topic": "not enough income",
-            "income": 0.394,
-            "inhabitants": [
-              15144,
-              26658,
-              30322,
-              30951
-            ]
-          }
-        ],
-        "1218": [
-          {
-            "topic": "not enough income",
-            "income": 0.279,
-            "inhabitants": [
-              15144,
-              26658,
-              30322,
-              30951
-            ]
-          }
-        ],
-        "1219": [
-          {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": [
-              15144,
-              26658,
-              30322,
-              30951
-            ]
-          }
-        ],
-        "1220": [
-          {
-            "topic": "event",
-            "event": "famine",
-            "year": 1220
-          }
-        ],
-        "1221": [
           {
             "topic": "death",
             "cause": "illness"
@@ -349,14 +250,13 @@
       "section": "stPaternoster straetje.se1.c1",
       "street": "Paternoster straetje",
       "neighborhood": "olvbuurt",
-      "unique id": 519
+      "unique id": 517
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        11169,
-        21416
+        11169
       ]
     }
   }

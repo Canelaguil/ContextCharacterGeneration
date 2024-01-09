@@ -1,19 +1,19 @@
 {
   "10685": {
     "alive": false,
-    "name": "Ermerut",
+    "name": "Pietersen",
     "surname": "",
-    "full name": "Ermerut",
+    "full name": "Pietersen",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.886,
-      "sex interest": 0.629,
-      "gender expression": 0.013,
+      "sexuality": 0.064,
+      "romantic interest": 0.441,
+      "sex interest": 0.704,
+      "gender expression": 0.148,
       "sex": "f"
     },
-    "age": 33,
-    "birth year": 1170,
+    "age": 40,
+    "birth year": 1184,
     "sex": "f",
     "faction": "Dogmatists",
     "income class": [
@@ -21,13 +21,13 @@
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.335,
+      "lawful-chaotic": 0.631,
+      "nice-nasty": 0.999,
       "honest-false": 0.999
     },
     "attitude": {
-      "outgoing": 0.452,
-      "dream": 0.099
+      "outgoing": 0.62,
+      "dream": 0.417
     },
     "homsoc": {
       "means": {
@@ -35,35 +35,50 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.008
+        "sexuality expression": 0.028,
+        "gender expression expression": 0.093
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "13074": {
-          "key": 13074,
-          "name": "Wolcout Croic",
-          "age": 1,
-          "alive": false,
+        "21757": {
+          "key": 21757,
+          "name": "Gherung Criec",
+          "age": 33,
+          "alive": true,
           "sex": "m",
           "parents": {
-            "mother": "Ermerut (10685)",
-            "father": "Alard (10684)"
+            "mother": "Pietersen (10685)",
+            "father": "Bertoldus (10870)"
+          }
+        },
+        "23458": {
+          "key": 23458,
+          "name": "Gosuinus Criec",
+          "age": 27,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Pietersen (10685)",
+            "father": "Bertoldus (10870)"
           }
         }
       },
       "relationship keys": {
         "spouse": [
-          10686
+          10686,
+          20919
         ],
         "child": {
           "birth": [
-            13076
+            21759,
+            23460
           ]
         }
       }
@@ -78,16 +93,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 9,
+      "skin_color": 0,
       "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
-        "C",
-        "S"
+        "S",
+        "C"
       ],
-      "health": 0.735,
-      "fertility": 0.692,
+      "health": 0.506,
+      "fertility": 0.467,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -99,17 +114,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.735
+            "new_health": 0.506
           },
           "death": false
-        },
-        "1202": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.735
-          },
-          "death": true
         }
       },
       "events": {
@@ -122,8 +129,8 @@
               10685
             ],
             "people names": [
-              "Alard Croic",
-              "Ermerut"
+              "Jurre Vetten",
+              "Pietersen"
             ],
             "label": "spouse",
             "committed": true
@@ -133,37 +140,219 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stCingel.se5.c2",
+              "section": "stCingel.se1.c2",
               "street": "Cingel",
               "neighborhood": "agnesbuurt",
-              "unique id": 311
+              "unique id": 304
             }
-          },
-          {
-            "topic": "feelings change",
-            "target": 10684,
-            "target name": "Alard Croic",
-            "state": "solid love",
-            "relationship": 10686
           }
         ],
         "1201": [
           {
+            "topic": "feelings change",
+            "target": 10684,
+            "target name": "Jurre Vetten",
+            "state": "infatuation",
+            "relationship": 10686
+          }
+        ],
+        "1202": [
+          {
+            "topic": "feelings change",
+            "target": 10684,
+            "target name": "Jurre Vetten",
+            "state": "solid love",
+            "relationship": 10686
+          }
+        ],
+        "1205": [
+          {
+            "topic": "feelings change",
+            "target": 10684,
+            "target name": "Jurre Vetten",
+            "state": "out of love",
+            "relationship": 10686
+          }
+        ],
+        "1207": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1207
+          },
+          {
+            "key": 10686,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10684,
+              "name": "Jurre Vetten",
+              "age": 36,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "spouse"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
+          {
             "topic": "new relationship",
-            "key": 13076,
+            "key": 20919,
             "people": [
-              10685,
-              13074
+              10870,
+              10685
             ],
             "people names": [
-              "Ermerut",
-              "Wolcout Croic"
+              "Bertoldus Criec",
+              "Pietersen"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stDie Camp.se5.c2",
+              "street": "Die Camp",
+              "neighborhood": "kampbuurt",
+              "unique id": 392
+            }
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.258,
+            "inhabitants": [
+              21757,
+              23458,
+              26955,
+              28588,
+              30269,
+              25137,
+              36008,
+              36883
+            ]
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              21757,
+              23458,
+              26955,
+              28588,
+              30269,
+              25137,
+              36008,
+              36883
+            ]
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          }
+        ],
+        "1216": [
+          {
+            "topic": "new relationship",
+            "key": 21759,
+            "people": [
+              10685,
+              21757
+            ],
+            "people names": [
+              "Pietersen",
+              "Gherung Criec"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.353,
+            "inhabitants": [
+              21757,
+              23458,
+              26955,
+              28588,
+              30269,
+              25137,
+              36008,
+              36883
+            ]
+          }
+        ],
+        "1221": [
+          {
+            "topic": "feelings change",
+            "target": 10870,
+            "target name": "Bertoldus Criec",
+            "state": "out of love",
+            "relationship": 20919
+          }
+        ],
+        "1222": [
+          {
+            "topic": "new relationship",
+            "key": 23460,
+            "people": [
+              10685,
+              23458
+            ],
+            "people names": [
+              "Pietersen",
+              "Gosuinus Criec"
             ],
             "label": "parentchild",
             "committed": false
           }
         ],
-        "1202": [
+        "1223": [
           {
             "topic": "death",
             "cause": "illness"
@@ -175,16 +364,17 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stCingel.se5.c2",
-      "street": "Cingel",
-      "neighborhood": "agnesbuurt",
-      "unique id": 311
+      "section": "stDie Camp.se5.c2",
+      "street": "Die Camp",
+      "neighborhood": "kampbuurt",
+      "unique id": 392
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        10686
+        10686,
+        20919
       ]
     }
   }

@@ -1,33 +1,33 @@
 {
   "11911": {
     "alive": false,
-    "name": "Mattheus",
-    "surname": "Zalm",
-    "full name": "Mattheus Zalm",
+    "name": "Riuum",
+    "surname": "Mie",
+    "full name": "Riuum Mie",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.673,
-      "sex interest": 0.908,
-      "gender expression": 0.066,
+      "sexuality": 0.088,
+      "romantic interest": 0.753,
+      "sex interest": 0.595,
+      "gender expression": 0.174,
       "sex": "m"
     },
-    "age": 48,
-    "birth year": 1153,
+    "age": 39,
+    "birth year": 1169,
     "sex": "m",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
       4,
       "nobility"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.333,
-      "honest-false": 0.225
+      "lawful-chaotic": 0.355,
+      "nice-nasty": 0.584,
+      "honest-false": 0.641
     },
     "attitude": {
-      "outgoing": 0.427,
-      "dream": 0.23
+      "outgoing": 0.263,
+      "dream": 0.699
     },
     "homsoc": {
       "means": {
@@ -38,14 +38,35 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.022
+        "sexuality expression": 0.041,
+        "gender expression expression": 0.127
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
-      "relationship keys": {}
+      "children": {
+        "14943": {
+          "key": 14943,
+          "name": "Eingeliadis Mie",
+          "age": 38,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Hille (11912)",
+            "father": "Riuum (11911)"
+          }
+        }
+      },
+      "relationship keys": {
+        "spouse": [
+          11913
+        ],
+        "child": {
+          "birth": [
+            14944
+          ]
+        }
+      }
     },
     "occupation": {
       "has job": true,
@@ -53,27 +74,34 @@
         4,
         "nobility"
       ],
-      "income": 1.063,
+      "income": 1.321,
       "all_incomes": [
-        0.968,
-        1.063
+        1.143,
+        1.104,
+        1.06,
+        1.099,
+        1.003,
+        1.088,
+        1.275,
+        1.326,
+        1.321
       ],
       "job": {
         "lawful": false,
-        "honest": false
+        "honest": true
       }
     },
     "genetics": {
-      "skin_color": 3,
+      "skin_color": 5,
       "eye_color": "brown",
-      "hair_color": "red",
-      "hair_color_code": 3,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "S",
         "S"
       ],
-      "health": 0.613,
-      "fertility": 0.566,
+      "health": 0.713,
+      "fertility": 0.711,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -85,9 +113,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.613
+            "new_health": 0.713
           },
-          "death": true
+          "death": false
         }
       },
       "events": {
@@ -95,12 +123,62 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.968
+            "income": 1.143
           },
           {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.063
+            "topic": "new relationship",
+            "key": 11913,
+            "people": [
+              11911,
+              11912
+            ],
+            "people names": [
+              "Riuum Mie",
+              "Hille Kiekin"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 4,
+              "income class label": "nobility",
+              "section": "stOp Havick1.se1.c4",
+              "street": "Op Havick1",
+              "neighborhood": "cingelnoord",
+              "unique id": 835
+            }
+          },
+          {
+            "topic": "feelings change",
+            "target": 11912,
+            "target name": "Hille Kiekin",
+            "state": "solid love",
+            "relationship": 11913
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 14944,
+            "people": [
+              11911,
+              14943
+            ],
+            "people names": [
+              "Riuum Mie",
+              "Eingeliadis Mie"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1207": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1207
           },
           {
             "topic": "death",
@@ -110,11 +188,20 @@
       }
     },
     "key": 11911,
-    "home": null,
+    "home": {
+      "income class": 4,
+      "income class label": "nobility",
+      "section": "stOp Havick1.se1.c4",
+      "street": "Op Havick1",
+      "neighborhood": "cingelnoord",
+      "unique id": 835
+    },
     "relationship status": {
       "taken": true,
       "married": true,
-      "relationships": []
+      "relationships": [
+        11913
+      ]
     }
   }
 }

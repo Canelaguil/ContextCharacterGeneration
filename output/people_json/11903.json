@@ -1,33 +1,33 @@
 {
   "11903": {
     "alive": false,
-    "name": "Bertrade",
-    "surname": "Rape",
-    "full name": "Bertrade Rape",
+    "name": "Auesoete",
+    "surname": "",
+    "full name": "Auesoete",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.01,
-      "romantic interest": 0.772,
-      "sex interest": 0.761,
-      "gender expression": 0.044,
+      "sexuality label": "bi",
+      "sexuality": 0.474,
+      "romantic interest": 0.716,
+      "sex interest": 0.783,
+      "gender expression": 0.279,
       "sex": "f"
     },
-    "age": 17,
-    "birth year": 1184,
+    "age": 27,
+    "birth year": 1180,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
-      3,
-      "upper middle class"
+      4,
+      "nobility"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.26,
+      "lawful-chaotic": 0.258,
+      "nice-nasty": 0.811,
       "honest-false": 0.999
     },
     "attitude": {
-      "outgoing": 0.602,
-      "dream": 0.22
+      "outgoing": 0.515,
+      "dream": 0.6
     },
     "homsoc": {
       "means": {
@@ -38,35 +38,67 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.009,
-        "gender expression expression": 0.033
+        "sexuality expression": 0.333,
+        "gender expression expression": 0.184
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
-      "relationship keys": {}
+      "children": {
+        "13987": {
+          "key": 13987,
+          "name": "Raso",
+          "age": 30,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Auesoete (11903)",
+            "father": "Florens (11902)"
+          }
+        }
+      },
+      "relationship keys": {
+        "spouse": [
+          11904
+        ],
+        "child": {
+          "birth": [
+            13989
+          ]
+        }
+      }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        3,
-        "upper middle class"
+        4,
+        "nobility"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.828,
+      "all_incomes": [
+        0.915,
+        1.103,
+        1.21,
+        1.075,
+        0.83,
+        0.828
+      ],
+      "job": {
+        "lawful": false,
+        "honest": true
+      }
     },
     "genetics": {
       "skin_color": 7,
-      "eye_color": "green",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "eye_color": "brown",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "C",
         "C"
       ],
-      "health": 0.563,
-      "fertility": 0.545,
+      "health": 0.748,
+      "fertility": 0.751,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -78,13 +110,76 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.563
+            "new_health": 0.748
+          },
+          "death": false
+        },
+        "1206": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.748
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "new relationship",
+            "key": 11904,
+            "people": [
+              11902,
+              11903
+            ],
+            "people names": [
+              "Florens",
+              "Auesoete"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 4,
+              "income class label": "nobility",
+              "section": "stOp Havick1.se1.c4",
+              "street": "Op Havick1",
+              "neighborhood": "cingelnoord",
+              "unique id": 831
+            }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.915
+          }
+        ],
+        "1202": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.103
+          },
+          {
+            "topic": "new relationship",
+            "key": 13989,
+            "people": [
+              11903,
+              13987
+            ],
+            "people names": [
+              "Auesoete",
+              "Raso"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1206": [
           {
             "topic": "death",
             "cause": "illness"
@@ -93,11 +188,20 @@
       }
     },
     "key": 11903,
-    "home": null,
+    "home": {
+      "income class": 4,
+      "income class label": "nobility",
+      "section": "stOp Havick1.se1.c4",
+      "street": "Op Havick1",
+      "neighborhood": "cingelnoord",
+      "unique id": 831
+    },
     "relationship status": {
       "taken": true,
       "married": true,
-      "relationships": []
+      "relationships": [
+        11904
+      ]
     }
   }
 }

@@ -1,86 +1,85 @@
 {
   "12256": {
     "alive": false,
-    "name": "Hatebrandus",
-    "surname": "",
-    "full name": "Hatebrandus",
+    "name": "Wolfraem",
+    "surname": "Donevoet",
+    "full name": "Wolfraem Donevoet",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.043,
-      "romantic interest": 0.827,
-      "sex interest": 0.773,
-      "gender expression": 0.114,
+      "sexuality label": "gay",
+      "sexuality": 0.88,
+      "romantic interest": 0.882,
+      "sex interest": 0.499,
+      "gender expression": 0.536,
       "sex": "m"
     },
-    "age": 49,
-    "birth year": 1155,
+    "age": 14,
+    "birth year": 1200,
     "sex": "m",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
-      1,
-      "lower middle class"
+      2,
+      "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.322,
-      "nice-nasty": 0.999,
-      "honest-false": 0.01
+      "lawful-chaotic": 0.775,
+      "nice-nasty": 0.998,
+      "honest-false": 0.979
     },
     "attitude": {
-      "outgoing": 0.316,
-      "dream": 0.55
+      "outgoing": 0.284,
+      "dream": 0.623
     },
     "homsoc": {
       "means": {
-        "independent": true,
-        "taken_care_of": false,
-        "caretaker": false,
-        "needs_care": false,
-        "flags": []
+        "independent": false,
+        "taken_care_of": true,
+        "caretaker": true,
+        "needs_care": true,
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.021,
-        "gender expression expression": 0.085
+        "sexuality expression": 0.533,
+        "gender expression expression": 0.314
       }
     },
     "network": {
-      "parents": "firstgen",
+      "parents": {
+        "mother": "Breghlent (10004)",
+        "father": "Sander (10003)"
+      },
       "children": {},
       "relationship keys": {
-        "spouse": [
+        "parent": [
+          12257,
           12258
+        ],
+        "sibling": [
+          13326
         ]
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
-        1,
-        "lower middle class"
+        2,
+        "middle class"
       ],
-      "income": 1.499,
-      "all_incomes": [
-        1.218,
-        1.277,
-        1.499,
-        1.499,
-        1.499
-      ],
-      "job": {
-        "lawful": false,
-        "honest": false
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 8,
-      "eye_color": "blue",
+      "skin_color": 2,
+      "eye_color": "brown",
       "hair_color": "dark brown",
       "hair_color_code": 1,
       "hair_type": [
-        "S",
-        "C"
+        "C",
+        "S"
       ],
-      "health": 0.566,
-      "fertility": 0.801,
+      "health": 0.507,
+      "fertility": 0.617,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -88,80 +87,149 @@
     },
     "memory": {
       "health": {
-        "1200": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.799
-          },
-          "death": false
-        },
         "1201": {
           "health": {
-            "change": true,
-            "value_change": -0.233,
-            "new_health": 0.566
-          },
-          "death": false
-        },
-        "1202": {
-          "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.566
+            "new_health": 0.507
           },
           "death": false
-        },
-        "1203": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.566
-          },
-          "death": true
         }
       },
       "events": {
         "1200": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.218
-          },
-          {
-            "topic": "new relationship",
-            "key": 12258,
-            "people": [
-              12256,
-              12257
-            ],
-            "people names": [
-              "Hatebrandus",
-              "Bertrade Korte"
-            ],
-            "label": "spouse",
-            "committed": true
-          },
-          {
             "topic": "new home",
             "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stKerckstraet.se1.c1",
-              "street": "Kerckstraet",
-              "neighborhood": "denhof",
-              "unique id": 983
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stUterechse straet.se1.c2",
+              "street": "Uterechse straet",
+              "neighborhood": "varkensbuurt",
+              "unique id": 2
             }
-          },
+          }
+        ],
+        "1201": [
           {
-            "topic": "feelings change",
-            "target": 12257,
-            "target name": "Bertrade Korte",
-            "state": "solid love",
-            "relationship": 12258
+            "topic": "new relationship",
+            "key": 13326,
+            "people": [
+              12256,
+              13323
+            ],
+            "people names": [
+              "Wolfraem Donevoet",
+              "Tijs Donevoet"
+            ],
+            "label": "sibling",
+            "committed": false
           }
         ],
         "1203": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10003,
+              "name": "Sander Donevoet",
+              "age": 48,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "parent"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10004,
+              "name": "Breghlent Smout",
+              "age": 39,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "parent"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1207
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1214": [
           {
             "topic": "death",
             "cause": "illness"
@@ -171,18 +239,18 @@
     },
     "key": 12256,
     "home": {
-      "income class": 1,
-      "income class label": "lower middle class",
-      "section": "stKerckstraet.se1.c1",
-      "street": "Kerckstraet",
-      "neighborhood": "denhof",
-      "unique id": 983
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stUterechse straet.se1.c2",
+      "street": "Uterechse straet",
+      "neighborhood": "varkensbuurt",
+      "unique id": 2
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
-        12258
+        13326
       ]
     }
   }

@@ -1,19 +1,19 @@
 {
   "11354": {
     "alive": false,
-    "name": "Lielde",
-    "surname": "",
-    "full name": "Lielde",
+    "name": "Salome",
+    "surname": "Canis",
+    "full name": "Salome Canis",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.594,
-      "sex interest": 0.606,
-      "gender expression": 0.207,
+      "sexuality": 0.026,
+      "romantic interest": 0.567,
+      "sex interest": 0.812,
+      "gender expression": 0.0,
       "sex": "f"
     },
-    "age": 32,
-    "birth year": 1173,
+    "age": 52,
+    "birth year": 1183,
     "sex": "f",
     "faction": "No religion",
     "income class": [
@@ -21,13 +21,13 @@
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.617,
-      "nice-nasty": 0.302,
-      "honest-false": 0.324
+      "lawful-chaotic": 0.985,
+      "nice-nasty": 0.439,
+      "honest-false": 0.983
     },
     "attitude": {
-      "outgoing": 0.805,
-      "dream": 0.375
+      "outgoing": 0.414,
+      "dream": 0.251
     },
     "homsoc": {
       "means": {
@@ -40,17 +40,47 @@
         ]
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.188
+        "sexuality expression": 0.021,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13868": {
+          "key": 13868,
+          "name": "Gheynekine Snep",
+          "age": 25,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Salome (11354)",
+            "father": "Remdo (11353)"
+          }
+        },
+        "17352": {
+          "key": 17352,
+          "name": "Kerolus Snep",
+          "age": 25,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Salome (11354)",
+            "father": "Remdo (11353)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          11355
-        ]
+          11355,
+          22786
+        ],
+        "child": {
+          "birth": [
+            13870,
+            17354
+          ]
+        }
       }
     },
     "occupation": {
@@ -63,16 +93,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 8,
-      "eye_color": "blue",
+      "skin_color": 6,
+      "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
         "C",
-        "C"
+        "S"
       ],
-      "health": 0.726,
-      "fertility": 0.714,
+      "health": 0.0,
+      "fertility": 0.58,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -84,9 +114,41 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.726
+            "new_health": 0.528
           },
           "death": false
+        },
+        "1216": {
+          "health": {
+            "change": true,
+            "value_change": -0.289,
+            "new_health": 0.239
+          },
+          "death": false
+        },
+        "1217": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.239
+          },
+          "death": false
+        },
+        "1233": {
+          "health": {
+            "change": true,
+            "value_change": -0.176,
+            "new_health": 0.063
+          },
+          "death": false
+        },
+        "1234": {
+          "health": {
+            "change": true,
+            "value_change": -0.063,
+            "new_health": 0.0
+          },
+          "death": true
         }
       },
       "events": {
@@ -99,8 +161,8 @@
               11354
             ],
             "people names": [
-              "Albertus Blessard",
-              "Lielde"
+              "Remdo Snep",
+              "Salome Canis"
             ],
             "label": "spouse",
             "committed": true
@@ -113,28 +175,215 @@
               "section": "stLievevrouwe kerch.se7.c3",
               "street": "Lievevrouwe kerch",
               "neighborhood": "olvbuurt",
-              "unique id": 602
+              "unique id": 605
             }
+          },
+          {
+            "topic": "feelings change",
+            "target": 11353,
+            "target name": "Remdo Snep",
+            "state": "infatuation",
+            "relationship": 11355
           }
         ],
         "1202": [
           {
-            "topic": "not enough income",
-            "income": 0.059,
-            "inhabitants": []
+            "topic": "new relationship",
+            "key": 13870,
+            "people": [
+              11354,
+              13868
+            ],
+            "people names": [
+              "Salome Canis",
+              "Gheynekine Snep"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1203": [
+        "1205": [
+          {
+            "topic": "feelings change",
+            "target": 11353,
+            "target name": "Remdo Snep",
+            "state": "solid love",
+            "relationship": 11355
+          }
+        ],
+        "1207": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1207
+          },
+          {
+            "topic": "new relationship",
+            "key": 17354,
+            "people": [
+              11354,
+              17352
+            ],
+            "people names": [
+              "Salome Canis",
+              "Kerolus Snep"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1212": [
+          {
+            "topic": "feelings change",
+            "target": 11353,
+            "target name": "Remdo Snep",
+            "state": "out of love",
+            "relationship": 11355
+          }
+        ],
+        "1214": [
+          {
+            "key": 11355,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11353,
+              "name": "Remdo Snep",
+              "age": 52,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "old age",
+            "label": "spouse"
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
           {
             "topic": "not enough income",
-            "income": 0.0,
+            "income": 0,
             "inhabitants": []
           }
         ],
-        "1204": [
+        "1216": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1217": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1218": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1219": [
+          {
+            "topic": "new relationship",
+            "key": 22786,
+            "people": [
+              11464,
+              11354
+            ],
+            "people names": [
+              "Assceric",
+              "Salome Canis"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 3,
+              "income class label": "upper middle class",
+              "section": "stMuurhuysen1.se1.c3",
+              "street": "Muurhuysen1",
+              "neighborhood": "cingelzuid",
+              "unique id": 649
+            }
+          }
+        ],
+        "1225": [
+          {
+            "key": 22786,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11464,
+              "name": "Assceric",
+              "age": 56,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "label": "spouse"
+          }
+        ],
+        "1227": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 13868,
+              "name": "Gheynekine Snep",
+              "age": 25,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Salome (11354)",
+                "father": "Remdo (11353)"
+              }
+            },
+            "cause": "illness",
+            "label": "child"
+          }
+        ],
+        "1232": [
+          {
+            "topic": "event",
+            "event": "war",
+            "year": 1232
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 17352,
+              "name": "Kerolus Snep",
+              "age": 25,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Salome (11354)",
+                "father": "Remdo (11353)"
+              }
+            },
+            "cause": "illness",
+            "label": "child"
+          }
+        ],
+        "1234": [
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "sickness"
           }
         ]
       }
@@ -143,16 +392,17 @@
     "home": {
       "income class": 3,
       "income class label": "upper middle class",
-      "section": "stLievevrouwe kerch.se7.c3",
-      "street": "Lievevrouwe kerch",
-      "neighborhood": "olvbuurt",
-      "unique id": 602
+      "section": "stMuurhuysen1.se1.c3",
+      "street": "Muurhuysen1",
+      "neighborhood": "cingelzuid",
+      "unique id": 649
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
-        11355
+        11355,
+        22786
       ]
     }
   }

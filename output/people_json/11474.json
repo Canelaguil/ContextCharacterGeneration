@@ -1,33 +1,33 @@
 {
   "11474": {
     "alive": false,
-    "name": "Riet",
-    "surname": "Vogel",
-    "full name": "Riet Vogel",
+    "name": "Aghata",
+    "surname": "Regis",
+    "full name": "Aghata Regis",
     "born this way": {
-      "sexuality label": "bi",
-      "sexuality": 0.362,
-      "romantic interest": 0.708,
-      "sex interest": 0.483,
-      "gender expression": 0.363,
+      "sexuality label": "straight",
+      "sexuality": 0.121,
+      "romantic interest": 0.363,
+      "sex interest": 0.651,
+      "gender expression": 0.0,
       "sex": "f"
     },
-    "age": 23,
-    "birth year": 1180,
+    "age": 51,
+    "birth year": 1181,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "Zealots",
     "income class": [
       3,
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.114,
-      "nice-nasty": 0.454,
-      "honest-false": 0.92
+      "lawful-chaotic": 0.326,
+      "nice-nasty": 0.438,
+      "honest-false": 0.999
     },
     "attitude": {
-      "outgoing": 0.565,
-      "dream": 0.145
+      "outgoing": 0.787,
+      "dream": 0.272
     },
     "homsoc": {
       "means": {
@@ -35,20 +35,52 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.261,
-        "gender expression expression": 0.229
+        "sexuality expression": 0.1,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14118": {
+          "key": 14118,
+          "name": "Reymar Calvesnack",
+          "age": 34,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Aghata (11474)",
+            "father": "Bodekine (11473)"
+          }
+        },
+        "15808": {
+          "key": 15808,
+          "name": "Pietersen Calvesnack",
+          "age": 44,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Aghata (11474)",
+            "father": "Bodekine (11473)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          11475
-        ]
+          11475,
+          24531
+        ],
+        "child": {
+          "birth": [
+            14120,
+            15810
+          ]
+        }
       }
     },
     "occupation": {
@@ -57,11 +89,26 @@
         3,
         "upper middle class"
       ],
-      "income": 0.994,
+      "income": 1.225,
       "all_incomes": [
-        0.983,
-        0.988,
-        0.994
+        1.087,
+        1.08,
+        0.99,
+        0.964,
+        0.855,
+        0.933,
+        0.88,
+        0.966,
+        0.936,
+        0.996,
+        1.045,
+        1.163,
+        1.169,
+        1.186,
+        1.251,
+        1.229,
+        1.235,
+        1.225
       ],
       "job": {
         "lawful": true,
@@ -69,16 +116,16 @@
       }
     },
     "genetics": {
-      "skin_color": 0,
-      "eye_color": "brown",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "skin_color": 9,
+      "eye_color": "blue",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "C",
-        "C"
+        "S"
       ],
-      "health": 0.603,
-      "fertility": 0.571,
+      "health": 0.179,
+      "fertility": 0.643,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -90,26 +137,37 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.603
+            "new_health": 0.67
           },
           "death": false
         },
-        "1202": {
+        "1218": {
+          "health": {
+            "change": true,
+            "value_change": -0.182,
+            "new_health": 0.488
+          },
+          "death": false
+        },
+        "1219": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.603
+            "new_health": 0.488
+          },
+          "death": false
+        },
+        "1231": {
+          "health": {
+            "change": true,
+            "value_change": -0.309,
+            "new_health": 0.179
           },
           "death": true
         }
       },
       "events": {
         "1200": [
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.983
-          },
           {
             "topic": "new relationship",
             "key": 11475,
@@ -118,8 +176,8 @@
               11474
             ],
             "people names": [
-              "Herman Compere",
-              "Riet Vogel"
+              "Bodekine Calvesnack",
+              "Aghata Regis"
             ],
             "label": "spouse",
             "committed": true
@@ -138,8 +196,134 @@
         ],
         "1202": [
           {
+            "topic": "new relationship",
+            "key": 14120,
+            "people": [
+              11474,
+              14118
+            ],
+            "people names": [
+              "Aghata Regis",
+              "Reymar Calvesnack"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1205": [
+          {
+            "topic": "new relationship",
+            "key": 15810,
+            "people": [
+              11474,
+              15808
+            ],
+            "people names": [
+              "Aghata Regis",
+              "Pietersen Calvesnack"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1207": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1207
+          }
+        ],
+        "1213": [
+          {
+            "key": 11475,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11473,
+              "name": "Bodekine Calvesnack",
+              "age": 37,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "spouse"
+          }
+        ],
+        "1214": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.087
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              17733,
+              24482,
+              25468,
+              27977,
+              25033
+            ]
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          }
+        ],
+        "1224": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.045
+          }
+        ],
+        "1225": [
+          {
+            "topic": "new relationship",
+            "key": 24531,
+            "people": [
+              11881,
+              11474
+            ],
+            "people names": [
+              "Alvericus Strich",
+              "Aghata Regis"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 3,
+              "income class label": "upper middle class",
+              "section": "stMuurhuysen2.se7.c3",
+              "street": "Muurhuysen2",
+              "neighborhood": "cingelnoord",
+              "unique id": 823
+            }
+          }
+        ],
+        "1227": [
+          {
+            "topic": "feelings change",
+            "target": 11881,
+            "target name": "Alvericus Strich",
+            "state": "out of love",
+            "relationship": 24531
+          }
+        ],
+        "1231": [
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "old age"
           }
         ]
       }
@@ -148,16 +332,17 @@
     "home": {
       "income class": 3,
       "income class label": "upper middle class",
-      "section": "stMuurhuysen1.se1.c3",
-      "street": "Muurhuysen1",
-      "neighborhood": "cingelzuid",
-      "unique id": 653
+      "section": "stMuurhuysen2.se7.c3",
+      "street": "Muurhuysen2",
+      "neighborhood": "cingelnoord",
+      "unique id": 823
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        11475
+        11475,
+        24531
       ]
     }
   }

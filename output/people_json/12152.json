@@ -1,33 +1,33 @@
 {
   "12152": {
     "alive": false,
-    "name": "Breghlent",
+    "name": "Marisseis",
     "surname": "",
-    "full name": "Breghlent",
+    "full name": "Marisseis",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.035,
-      "romantic interest": 0.56,
-      "sex interest": 0.465,
-      "gender expression": 0.179,
+      "sexuality": 0.042,
+      "romantic interest": 0.699,
+      "sex interest": 0.999,
+      "gender expression": 0.1,
       "sex": "f"
     },
-    "age": 25,
-    "birth year": 1178,
+    "age": 50,
+    "birth year": 1172,
     "sex": "f",
     "faction": "Zealots",
     "income class": [
-      2,
-      "middle class"
+      3,
+      "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.067,
-      "nice-nasty": 0.999,
-      "honest-false": 0.051
+      "lawful-chaotic": 0.728,
+      "nice-nasty": 0.376,
+      "honest-false": 0.999
     },
     "attitude": {
-      "outgoing": 0.444,
-      "dream": 0.626
+      "outgoing": 0.764,
+      "dream": 0.59
     },
     "homsoc": {
       "means": {
@@ -38,39 +38,91 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.023,
-        "gender expression expression": 0.099
+        "sexuality expression": 0.029,
+        "gender expression expression": 0.078
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14646": {
+          "key": 14646,
+          "name": "Oda",
+          "age": 1,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Marisseis (12152)",
+            "father": "Willekine (12151)"
+          }
+        },
+        "15247": {
+          "key": 15247,
+          "name": "Nellen",
+          "age": 45,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Marisseis (12152)",
+            "father": "Willekine (12151)"
+          }
+        },
+        "17260": {
+          "key": 17260,
+          "name": "Hubrecht",
+          "age": 16,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Marisseis (12152)",
+            "father": "Willekine (12151)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           12153
-        ]
+        ],
+        "child": {
+          "birth": [
+            14648,
+            15249,
+            17262
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        2,
-        "middle class"
+        3,
+        "upper middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.141,
+      "all_incomes": [
+        1.203,
+        1.075,
+        0.926,
+        0.97,
+        1.006,
+        1.141
+      ],
+      "job": {
+        "lawful": false,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 5,
+      "skin_color": 3,
       "eye_color": "brown",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.714,
-      "fertility": 0.777,
+      "health": 0.357,
+      "fertility": 0.568,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -82,7 +134,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.714
+            "new_health": 0.649
+          },
+          "death": false
+        },
+        "1201": {
+          "health": {
+            "change": true,
+            "value_change": -0.292,
+            "new_health": 0.357
           },
           "death": false
         },
@@ -90,7 +150,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.714
+            "new_health": 0.357
+          },
+          "death": false
+        },
+        "1221": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.357
           },
           "death": true
         }
@@ -105,8 +173,8 @@
               12152
             ],
             "people names": [
-              "Willai Fierenblayse",
-              "Breghlent"
+              "Willekine",
+              "Marisseis"
             ],
             "label": "spouse",
             "committed": true
@@ -114,23 +182,120 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stDen Hof.se1.c2",
+              "income class": 3,
+              "income class label": "upper middle class",
+              "section": "stDen Hof.se5.c3",
               "street": "Den Hof",
               "neighborhood": "denhof",
-              "unique id": 938
+              "unique id": 954
             }
           },
           {
             "topic": "feelings change",
             "target": 12151,
-            "target name": "Willai Fierenblayse",
+            "target name": "Willekine",
             "state": "infatuation",
             "relationship": 12153
           }
         ],
-        "1202": [
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 14648,
+            "people": [
+              12152,
+              14646
+            ],
+            "people names": [
+              "Marisseis",
+              "Oda"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 12151,
+            "target name": "Willekine",
+            "state": "out of love",
+            "relationship": 12153
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 15249,
+            "people": [
+              12152,
+              15247
+            ],
+            "people names": [
+              "Marisseis",
+              "Nellen"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 14646,
+              "name": "Oda",
+              "age": 1,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Marisseis (12152)",
+                "father": "Willekine (12151)"
+              }
+            },
+            "cause": "childhood illness",
+            "label": "child"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1207
+          },
+          {
+            "topic": "new relationship",
+            "key": 17262,
+            "people": [
+              12152,
+              17260
+            ],
+            "people names": [
+              "Marisseis",
+              "Hubrecht"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          }
+        ],
+        "1216": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.203
+          }
+        ],
+        "1220": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.006
+          }
+        ],
+        "1221": [
           {
             "topic": "death",
             "cause": "illness"
@@ -140,12 +305,12 @@
     },
     "key": 12152,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stDen Hof.se1.c2",
+      "income class": 3,
+      "income class label": "upper middle class",
+      "section": "stDen Hof.se5.c3",
       "street": "Den Hof",
       "neighborhood": "denhof",
-      "unique id": 938
+      "unique id": 954
     },
     "relationship status": {
       "taken": true,

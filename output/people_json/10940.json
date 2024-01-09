@@ -1,33 +1,33 @@
 {
   "10940": {
     "alive": false,
-    "name": "Erkenradis",
-    "surname": "Kics",
-    "full name": "Erkenradis Kics",
+    "name": "Hadewigis",
+    "surname": "Bier",
+    "full name": "Hadewigis Bier",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.049,
-      "romantic interest": 0.903,
-      "sex interest": 0.525,
-      "gender expression": 0.185,
+      "sexuality": 0.107,
+      "romantic interest": 0.574,
+      "sex interest": 0.658,
+      "gender expression": 0.068,
       "sex": "f"
     },
-    "age": 26,
-    "birth year": 1175,
+    "age": 50,
+    "birth year": 1176,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "Dogmatists",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.734,
-      "nice-nasty": 0.621,
-      "honest-false": 0.09
+      "lawful-chaotic": 0.803,
+      "nice-nasty": 0.478,
+      "honest-false": 0.45
     },
     "attitude": {
-      "outgoing": 0.466,
-      "dream": 0.546
+      "outgoing": 0.659,
+      "dream": 0.283
     },
     "homsoc": {
       "means": {
@@ -35,38 +35,82 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.033,
-        "gender expression expression": 0.055
+        "sexuality expression": 0.071,
+        "gender expression expression": 0.011
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
-      "relationship keys": {}
+      "children": {
+        "14073": {
+          "key": 14073,
+          "name": "Godelief Svaif",
+          "age": 5,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Hadewigis (10940)",
+            "father": "Harlo (10939)"
+          }
+        }
+      },
+      "relationship keys": {
+        "spouse": [
+          10941,
+          19399
+        ],
+        "child": {
+          "birth": [
+            14075
+          ]
+        }
+      }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         1,
         "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.165,
+      "all_incomes": [
+        0.719,
+        0.841,
+        1.01,
+        0.892,
+        0.988,
+        0.853,
+        1.334,
+        1.389,
+        1.151,
+        1.346,
+        1.004,
+        0.946,
+        0.919,
+        0.794,
+        1.165
+      ],
+      "job": {
+        "lawful": true,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 1,
-      "eye_color": "blue",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 7,
+      "eye_color": "brown",
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
         "S",
         "S"
       ],
-      "health": 0.645,
-      "fertility": 0.694,
+      "health": 0.651,
+      "fertility": 0.653,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -78,13 +122,228 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.645
+            "new_health": 0.651
+          },
+          "death": false
+        },
+        "1225": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.651
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "new relationship",
+            "key": 10941,
+            "people": [
+              10939,
+              10940
+            ],
+            "people names": [
+              "Harlo Svaif",
+              "Hadewigis Bier"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stSt. Ians straet.se3.c1",
+              "street": "St. Ians straet",
+              "neighborhood": "kampbuurt",
+              "unique id": 418
+            }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "feelings change",
+            "target": 10939,
+            "target name": "Harlo Svaif",
+            "state": "solid love",
+            "relationship": 10941
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 14075,
+            "people": [
+              10940,
+              14073
+            ],
+            "people names": [
+              "Hadewigis Bier",
+              "Godelief Svaif"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1203": [
+          {
+            "topic": "feelings change",
+            "target": 10939,
+            "target name": "Harlo Svaif",
+            "state": "out of love",
+            "relationship": 10941
+          },
+          {
+            "key": 10941,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10939,
+              "name": "Harlo Svaif",
+              "age": 52,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "old age",
+            "label": "spouse"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1207
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 14073,
+              "name": "Godelief Svaif",
+              "age": 5,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Hadewigis (10940)",
+                "father": "Harlo (10939)"
+              }
+            },
+            "cause": "childhood illness",
+            "label": "child"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "new relationship",
+            "key": 19399,
+            "people": [
+              11077,
+              10940
+            ],
+            "people names": [
+              "Rembrecht",
+              "Hadewigis Bier"
+            ],
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1211": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.719
+          }
+        ],
+        "1213": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.01
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          }
+        ],
+        "1217": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.334
+          },
+          {
+            "key": 19399,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11077,
+              "name": "Rembrecht",
+              "age": 54,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "label": "spouse"
+          }
+        ],
+        "1225": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.165
+          },
           {
             "topic": "death",
             "cause": "illness"
@@ -93,11 +352,21 @@
       }
     },
     "key": 10940,
-    "home": null,
+    "home": {
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stSt. Ians straet.se3.c1",
+      "street": "St. Ians straet",
+      "neighborhood": "kampbuurt",
+      "unique id": 418
+    },
     "relationship status": {
-      "taken": true,
-      "married": true,
-      "relationships": []
+      "taken": false,
+      "married": false,
+      "relationships": [
+        10941,
+        19399
+      ]
     }
   }
 }

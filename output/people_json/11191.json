@@ -1,54 +1,71 @@
 {
   "11191": {
     "alive": false,
-    "name": "Dauid",
-    "surname": "Coc",
-    "full name": "Dauid Coc",
+    "name": "Willem",
+    "surname": "Battenman",
+    "full name": "Willem Battenman",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.053,
-      "romantic interest": 0.568,
-      "sex interest": 0.829,
-      "gender expression": 0.035,
+      "sexuality": 0.158,
+      "romantic interest": 0.686,
+      "sex interest": 0.63,
+      "gender expression": 0.115,
       "sex": "m"
     },
-    "age": 49,
-    "birth year": 1155,
+    "age": 40,
+    "birth year": 1169,
     "sex": "m",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
       "lawful-chaotic": 0.0,
-      "nice-nasty": 0.937,
-      "honest-false": 0.269
+      "nice-nasty": 0.851,
+      "honest-false": 0.0
     },
     "attitude": {
-      "outgoing": 0.463,
-      "dream": 0.274
+      "outgoing": 0.498,
+      "dream": 0.168
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.028,
-        "gender expression expression": 0.0
+        "sexuality expression": 0.072,
+        "gender expression expression": 0.114
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12938": {
+          "key": 12938,
+          "name": "Margareta Battenman",
+          "age": 48,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Goneir (11192)",
+            "father": "Willem (11191)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11193
-        ]
+        ],
+        "child": {
+          "birth": [
+            12939
+          ]
+        }
       }
     },
     "occupation": {
@@ -57,30 +74,35 @@
         2,
         "middle class"
       ],
-      "income": 1.195,
+      "income": 0.275,
       "all_incomes": [
-        0.907,
-        1.083,
-        1.381,
-        1.411,
-        1.195
+        0.699,
+        1.222,
+        0.839,
+        0.971,
+        0.975,
+        0.534,
+        0.606,
+        0.486,
+        0.312,
+        0.275
       ],
       "job": {
         "lawful": false,
-        "honest": true
+        "honest": false
       }
     },
     "genetics": {
-      "skin_color": 6,
+      "skin_color": 0,
       "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
-        "S",
-        "S"
+        "C",
+        "C"
       ],
-      "health": 0.686,
-      "fertility": 0.65,
+      "health": 0.727,
+      "fertility": 0.728,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -92,15 +114,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.686
+            "new_health": 0.727
           },
           "death": false
         },
-        "1203": {
+        "1208": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.686
+            "new_health": 0.727
           },
           "death": true
         }
@@ -110,12 +132,12 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.907
+            "income": 0.699
           },
           {
             "topic": "job notice",
             "notice": "comfortable earnings",
-            "income": 1.083
+            "income": 1.222
           },
           {
             "topic": "new relationship",
@@ -125,8 +147,8 @@
               11192
             ],
             "people names": [
-              "Dauid Coc",
-              "Gloria Zassen"
+              "Willem Battenman",
+              "Goneir Minne"
             ],
             "label": "spouse",
             "committed": true
@@ -139,11 +161,74 @@
               "section": "stBreestraat.se1.c2",
               "street": "Breestraat",
               "neighborhood": "olvbuurt",
-              "unique id": 535
+              "unique id": 528
             }
+          },
+          {
+            "topic": "feelings change",
+            "target": 11192,
+            "target name": "Goneir Minne",
+            "state": "solid love",
+            "relationship": 11193
           }
         ],
-        "1203": [
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 12939,
+            "people": [
+              11191,
+              12938
+            ],
+            "people names": [
+              "Willem Battenman",
+              "Margareta Battenman"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1204": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.534
+          }
+        ],
+        "1205": [
+          {
+            "topic": "feelings change",
+            "target": 11192,
+            "target name": "Goneir Minne",
+            "state": "out of love",
+            "relationship": 11193
+          }
+        ],
+        "1206": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.486
+          }
+        ],
+        "1207": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1207
+          },
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.312
+          }
+        ],
+        "1208": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.275
+          },
           {
             "topic": "death",
             "cause": "illness"
@@ -158,7 +243,7 @@
       "section": "stBreestraat.se1.c2",
       "street": "Breestraat",
       "neighborhood": "olvbuurt",
-      "unique id": 535
+      "unique id": 528
     },
     "relationship status": {
       "taken": true,

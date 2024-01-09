@@ -1,33 +1,33 @@
 {
   "10025": {
     "alive": false,
-    "name": "Folqui",
-    "surname": "Paue",
-    "full name": "Folqui Paue",
+    "name": "Salome",
+    "surname": "Bruneel",
+    "full name": "Salome Bruneel",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.046,
-      "romantic interest": 0.911,
-      "sex interest": 0.858,
-      "gender expression": 0.013,
+      "sexuality": 0.079,
+      "romantic interest": 0.674,
+      "sex interest": 0.678,
+      "gender expression": 0.015,
       "sex": "f"
     },
-    "age": 37,
-    "birth year": 1174,
+    "age": 53,
+    "birth year": 1183,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "Dogmatists",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.592,
-      "nice-nasty": 0.896,
-      "honest-false": 0.737
+      "lawful-chaotic": 0.0,
+      "nice-nasty": 0.705,
+      "honest-false": 0.534
     },
     "attitude": {
-      "outgoing": 0.446,
-      "dream": 0.018
+      "outgoing": 0.774,
+      "dream": 0.732
     },
     "homsoc": {
       "means": {
@@ -35,42 +35,139 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.031,
-        "gender expression expression": 0.006
+        "sexuality expression": 0.035,
+        "gender expression expression": 0.005
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "16743": {
+          "key": 16743,
+          "name": "Michiel Zassen",
+          "age": 43,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Salome (10025)",
+            "father": "Iacobus (10024)"
+          }
+        },
+        "19438": {
+          "key": 19438,
+          "name": "Heinone",
+          "age": 38,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Salome (10025)",
+            "father": "Iacobus (10024)"
+          }
+        },
+        "20106": {
+          "key": 20106,
+          "name": "Brame Zassen",
+          "age": 37,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Salome (10025)",
+            "father": "Iacobus (10024)"
+          }
+        },
+        "20632": {
+          "key": 20632,
+          "name": "Ramont Zassen",
+          "age": 23,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Salome (10025)",
+            "father": "Iacobus (10024)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          10026
-        ]
+          10026,
+          23908
+        ],
+        "child": {
+          "birth": [
+            16745,
+            19440,
+            20108,
+            20634
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.499,
+      "all_incomes": [
+        1.029,
+        0.772,
+        0.817,
+        0.596,
+        0.0,
+        0.0,
+        0.0,
+        0.042,
+        0.056,
+        0.261,
+        0.0,
+        0.393,
+        0.004,
+        0.154,
+        0.0,
+        0.11,
+        0.281,
+        0.239,
+        0.0,
+        0.0,
+        0.0,
+        0.286,
+        0.839,
+        0.982,
+        0.51,
+        0.92,
+        0.718,
+        1.381,
+        1.39,
+        1.499,
+        1.499,
+        1.306,
+        1.499,
+        1.499,
+        1.499,
+        1.499
+      ],
+      "job": {
+        "lawful": false,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 4,
-      "eye_color": "green",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "skin_color": 0,
+      "eye_color": "brown",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
-        "S",
-        "S"
+        "C",
+        "C"
       ],
-      "health": 0.707,
-      "fertility": 0.653,
+      "health": 0.076,
+      "fertility": 0.666,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -82,21 +179,42 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.707
+            "new_health": 0.581
           },
           "death": false
         },
-        "1210": {
+        "1233": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.707
+            "change": true,
+            "value_change": -0.25,
+            "new_health": 0.331
+          },
+          "death": false
+        },
+        "1234": {
+          "health": {
+            "change": true,
+            "value_change": -0.191,
+            "new_health": 0.14
+          },
+          "death": false
+        },
+        "1235": {
+          "health": {
+            "change": true,
+            "value_change": -0.064,
+            "new_health": 0.076
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.029
+          },
           {
             "topic": "new relationship",
             "key": 10026,
@@ -105,8 +223,8 @@
               10025
             ],
             "people names": [
-              "Godelief Bec",
-              "Folqui Paue"
+              "Iacobus Zassen",
+              "Salome Bruneel"
             ],
             "label": "spouse",
             "committed": true
@@ -119,14 +237,263 @@
               "section": "stUterechse straet.se3.c2",
               "street": "Uterechse straet",
               "neighborhood": "varkensbuurt",
-              "unique id": 16
+              "unique id": 11
             }
+          }
+        ],
+        "1203": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.596
+          }
+        ],
+        "1204": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.0
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 16745,
+            "people": [
+              10025,
+              16743
+            ],
+            "people names": [
+              "Salome Bruneel",
+              "Michiel Zassen"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1207": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1207
           }
         ],
         "1210": [
           {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.0
+          }
+        ],
+        "1211": [
+          {
+            "topic": "new relationship",
+            "key": 19440,
+            "people": [
+              10025,
+              19438
+            ],
+            "people names": [
+              "Salome Bruneel",
+              "Heinone"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1212": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.004
+          },
+          {
+            "topic": "new relationship",
+            "key": 20108,
+            "people": [
+              10025,
+              20106
+            ],
+            "people names": [
+              "Salome Bruneel",
+              "Brame Zassen"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1213": [
+          {
+            "topic": "new relationship",
+            "key": 20634,
+            "people": [
+              10025,
+              20632
+            ],
+            "people names": [
+              "Salome Bruneel",
+              "Ramont Zassen"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1214": [
+          {
+            "topic": "feelings change",
+            "target": 10024,
+            "target name": "Iacobus Zassen",
+            "state": "solid love",
+            "relationship": 10026
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "key": 10026,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10024,
+              "name": "Iacobus Zassen",
+              "age": 48,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "spouse"
+          }
+        ],
+        "1216": [
+          {
+            "topic": "not enough income",
+            "income": 0.281,
+            "inhabitants": []
+          }
+        ],
+        "1217": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.239
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.239,
+            "inhabitants": []
+          }
+        ],
+        "1218": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1219": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1220": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1221": [
+          {
+            "topic": "not enough income",
+            "income": 0.286,
+            "inhabitants": []
+          }
+        ],
+        "1223": [
+          {
+            "topic": "new relationship",
+            "key": 23908,
+            "people": [
+              11185,
+              10025
+            ],
+            "people names": [
+              "Coekea Craye",
+              "Salome Bruneel"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stBreestraat.se1.c2",
+              "street": "Breestraat",
+              "neighborhood": "olvbuurt",
+              "unique id": 526
+            }
+          }
+        ],
+        "1224": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.51
+          },
+          {
+            "key": 23908,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11185,
+              "name": "Coekea Craye",
+              "age": 55,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "label": "spouse"
+          }
+        ],
+        "1226": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.718
+          }
+        ],
+        "1227": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.381
+          }
+        ],
+        "1232": [
+          {
+            "topic": "event",
+            "event": "war",
+            "year": 1232
+          }
+        ],
+        "1235": [
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "old age"
           }
         ]
       }
@@ -135,16 +502,17 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stUterechse straet.se3.c2",
-      "street": "Uterechse straet",
-      "neighborhood": "varkensbuurt",
-      "unique id": 16
+      "section": "stBreestraat.se1.c2",
+      "street": "Breestraat",
+      "neighborhood": "olvbuurt",
+      "unique id": 526
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
-        10026
+        10026,
+        23908
       ]
     }
   }

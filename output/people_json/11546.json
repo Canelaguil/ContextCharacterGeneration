@@ -1,33 +1,33 @@
 {
   "11546": {
     "alive": false,
-    "name": "Gerburgis",
-    "surname": "Hoeghen",
-    "full name": "Gerburgis Hoeghen",
+    "name": "Nannen",
+    "surname": "Reigher",
+    "full name": "Nannen Reigher",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.953,
-      "romantic interest": 0.709,
-      "sex interest": 0.788,
-      "gender expression": 0.116,
+      "sexuality label": "straight",
+      "sexuality": 0.091,
+      "romantic interest": 0.924,
+      "sex interest": 0.702,
+      "gender expression": 0.157,
       "sex": "f"
     },
-    "age": 20,
-    "birth year": 1183,
+    "age": 53,
+    "birth year": 1166,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
       3,
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.66,
-      "nice-nasty": 0.829,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.33,
+      "nice-nasty": 0.503,
+      "honest-false": 0.675
     },
     "attitude": {
-      "outgoing": 0.689,
-      "dream": 0.241
+      "outgoing": 0.013,
+      "dream": 0.729
     },
     "homsoc": {
       "means": {
@@ -35,37 +35,22 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.543,
-        "gender expression expression": 0.0
+        "sexuality expression": 0.064,
+        "gender expression expression": 0.11
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {
-        "13471": {
-          "key": 13471,
-          "name": "Meinoldo van Alwar",
-          "age": 48,
-          "alive": true,
-          "sex": "m",
-          "parents": {
-            "mother": "Gerburgis (11546)",
-            "father": "Alwar (11545)"
-          }
-        }
-      },
+      "children": {},
       "relationship keys": {
         "spouse": [
           11547
-        ],
-        "child": {
-          "birth": [
-            13473
-          ]
-        }
+        ]
       }
     },
     "occupation": {
@@ -78,16 +63,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 9,
+      "skin_color": 8,
       "eye_color": "green",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
         "S",
         "S"
       ],
-      "health": 0.711,
-      "fertility": 0.712,
+      "health": 0.316,
+      "fertility": 0.818,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -99,9 +84,33 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.711
+            "new_health": 0.834
           },
           "death": false
+        },
+        "1216": {
+          "health": {
+            "change": true,
+            "value_change": -0.129,
+            "new_health": 0.705
+          },
+          "death": false
+        },
+        "1217": {
+          "health": {
+            "change": true,
+            "value_change": -0.159,
+            "new_health": 0.546
+          },
+          "death": false
+        },
+        "1218": {
+          "health": {
+            "change": true,
+            "value_change": -0.23,
+            "new_health": 0.316
+          },
+          "death": true
         }
       },
       "events": {
@@ -114,8 +123,8 @@
               11546
             ],
             "people names": [
-              "Alwar Jude",
-              "Gerburgis Hoeghen"
+              "Sylof",
+              "Nannen Reigher"
             ],
             "label": "spouse",
             "committed": true
@@ -128,30 +137,98 @@
               "section": "stDie lange straet3.se3.c3",
               "street": "Die lange straet3",
               "neighborhood": "visbuurt",
-              "unique id": 679
+              "unique id": 685
             }
           }
         ],
-        "1201": [
+        "1203": [
           {
-            "topic": "new relationship",
-            "key": 13473,
-            "people": [
-              11546,
-              13471
-            ],
-            "people names": [
-              "Gerburgis Hoeghen",
-              "Meinoldo van Alwar"
-            ],
-            "label": "parentchild",
-            "committed": false
+            "topic": "feelings change",
+            "target": 11545,
+            "target name": "Sylof",
+            "state": "solid love",
+            "relationship": 11547
           }
         ],
-        "1202": [
+        "1207": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1207
+          }
+        ],
+        "1210": [
+          {
+            "topic": "feelings change",
+            "target": 11545,
+            "target name": "Sylof",
+            "state": "out of love",
+            "relationship": 11547
+          }
+        ],
+        "1212": [
+          {
+            "key": 11547,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11545,
+              "name": "Sylof",
+              "age": 54,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "label": "spouse"
+          }
+        ],
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1216": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1217": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1218": [
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "old age"
           }
         ]
       }
@@ -163,11 +240,11 @@
       "section": "stDie lange straet3.se3.c3",
       "street": "Die lange straet3",
       "neighborhood": "visbuurt",
-      "unique id": 679
+      "unique id": 685
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         11547
       ]

@@ -143,8 +143,7 @@ class Person(Agent):
         if self.home != None:
             self.community.message_home(self.home['unique id'], home_msg)
         else:
-            ...
-            # log_error('no home', self.description())
+            log_error('no home', self.description())
 
         record = {
             'health' : health_report,
@@ -179,7 +178,7 @@ class Person(Agent):
             elif topic == 'person died': # or topic == 'sibling died':
                 self.memory.add_event(msg)
             elif topic == 'new home': 
-                self.move(msg['home'])
+                # self.move(msg['home'])
                 self.memory.add_event(msg)
             elif topic == 'not enough income':
                 self.body.trigger('starving')

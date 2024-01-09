@@ -1,19 +1,19 @@
 {
   "11372": {
     "alive": false,
-    "name": "Pietersen",
-    "surname": "",
-    "full name": "Pietersen",
+    "name": "Aleberna",
+    "surname": "Sonderland",
+    "full name": "Aleberna Sonderland",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.071,
-      "romantic interest": 0.62,
-      "sex interest": 0.714,
-      "gender expression": 0.026,
+      "sexuality": 0.099,
+      "romantic interest": 0.678,
+      "sex interest": 0.577,
+      "gender expression": 0.0,
       "sex": "f"
     },
-    "age": 47,
-    "birth year": 1172,
+    "age": 25,
+    "birth year": 1183,
     "sex": "f",
     "faction": "No religion",
     "income class": [
@@ -21,65 +21,73 @@
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.556,
-      "nice-nasty": 0.536,
-      "honest-false": 0.48
+      "lawful-chaotic": 0.0,
+      "nice-nasty": 0.999,
+      "honest-false": 0.999
     },
     "attitude": {
-      "outgoing": 0.527,
-      "dream": 0.512
+      "outgoing": 0.623,
+      "dream": 0.561
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
-        "caretaker": true,
+        "caretaker": false,
         "needs_care": false,
-        "flags": [
-          "starving",
-          "caretaker"
-        ]
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.036,
-        "gender expression expression": 0.011
+        "sexuality expression": 0.05,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "12550": {
-          "key": 12550,
-          "name": "Hille Langhe",
+        "12613": {
+          "key": 12613,
+          "name": "Rampe Wicghardszoon",
           "age": 49,
           "alive": true,
           "sex": "m",
           "parents": {
-            "mother": "Pietersen (11372)",
-            "father": "Godefridus (11371)"
+            "mother": "Aleberna (11372)",
+            "father": "Wicghard (11371)"
           }
         },
-        "14964": {
-          "key": 14964,
-          "name": "Ebram Langhe",
-          "age": 13,
+        "13468": {
+          "key": 13468,
+          "name": "Aue Wicghardsdochter",
+          "age": 1,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Aleberna (11372)",
+            "father": "Wicghard (11371)"
+          }
+        },
+        "15599": {
+          "key": 15599,
+          "name": "Godefridus",
+          "age": 21,
           "alive": false,
           "sex": "m",
           "parents": {
-            "mother": "Pietersen (11372)",
-            "father": "Godefridus (11371)"
+            "mother": "Aleberna (11372)",
+            "father": "Wicghard (11371)"
           }
         }
       },
       "relationship keys": {
         "spouse": [
-          11373,
-          16249
+          11373
         ],
         "child": {
           "birth": [
-            12552,
-            14966
+            12615,
+            13470,
+            15601
           ]
         }
       }
@@ -90,37 +98,27 @@
         3,
         "upper middle class"
       ],
-      "income": 0.665,
+      "income": 1.308,
       "all_incomes": [
-        0.969,
-        0.974,
-        1.029,
-        0.952,
-        0.941,
-        0.879,
-        0.754,
-        0.813,
-        0.754,
-        0.673,
-        0.647,
-        0.665
+        1.454,
+        1.308
       ],
       "job": {
-        "lawful": true,
+        "lawful": false,
         "honest": true
       }
     },
     "genetics": {
-      "skin_color": 7,
-      "eye_color": "blue",
-      "hair_color": "red",
-      "hair_color_code": 3,
+      "skin_color": 4,
+      "eye_color": "brown",
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
         "S",
         "C"
       ],
-      "health": 0.565,
-      "fertility": 0.494,
+      "health": 0.505,
+      "fertility": 0.609,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -132,17 +130,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.565
+            "new_health": 0.701
           },
           "death": false
         },
-        "1218": {
+        "1205": {
+          "health": {
+            "change": true,
+            "value_change": -0.196,
+            "new_health": 0.505
+          },
+          "death": false
+        },
+        "1206": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.565
+            "new_health": 0.505
           },
-          "death": true
+          "death": false
         }
       },
       "events": {
@@ -155,8 +161,8 @@
               11372
             ],
             "people names": [
-              "Godefridus Langhe",
-              "Pietersen"
+              "Wicghard",
+              "Aleberna Sonderland"
             ],
             "label": "spouse",
             "committed": true
@@ -169,155 +175,87 @@
               "section": "stDie lange straet1.se3.c3",
               "street": "Die lange straet1",
               "neighborhood": "olvbuurt",
-              "unique id": 611
+              "unique id": 615
             }
           },
           {
             "topic": "new relationship",
-            "key": 12552,
+            "key": 12615,
             "people": [
               11372,
-              12550
+              12613
             ],
             "people names": [
-              "Pietersen",
-              "Hille Langhe"
+              "Aleberna Sonderland",
+              "Rampe Wicghardszoon"
             ],
             "label": "parentchild",
             "committed": false
           }
         ],
-        "1203": [
+        "1201": [
           {
             "topic": "new relationship",
-            "key": 14966,
+            "key": 13470,
             "people": [
               11372,
-              14964
+              13468
             ],
             "people names": [
-              "Pietersen",
-              "Ebram Langhe"
+              "Aleberna Sonderland",
+              "Aue Wicghardsdochter"
             ],
             "label": "parentchild",
             "committed": false
-          },
-          {
-            "topic": "now caretaker",
-            "care dependants": [
-              33868
-            ]
-          },
-          {
-            "key": 11373,
-            "topic": "unmarried"
-          },
+          }
+        ],
+        "1202": [
           {
             "topic": "person died",
             "person": {
-              "key": 11371,
-              "name": "Godefridus Langhe",
-              "age": 48,
+              "key": 13468,
+              "name": "Aue Wicghardsdochter",
+              "age": 1,
               "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
+              "sex": "f",
+              "parents": {
+                "mother": "Aleberna (11372)",
+                "father": "Wicghard (11371)"
+              }
             },
-            "cause": "illness",
-            "label": "spouse"
+            "cause": "childhood illness",
+            "label": "child"
           }
         ],
         "1204": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": [
-              12550,
-              12439,
-              22656,
-              27101,
-              23938,
-              33868
-            ]
-          }
-        ],
-        "1205": [
-          {
             "topic": "new relationship",
-            "key": 16249,
+            "key": 15601,
             "people": [
-              11884,
-              11372
+              11372,
+              15599
             ],
             "people names": [
-              "Otto Heurkint",
-              "Pietersen"
+              "Aleberna Sonderland",
+              "Godefridus"
             ],
-            "label": "spouse",
-            "committed": true
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1206": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.454
           }
         ],
         "1207": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.969
-          }
-        ],
-        "1209": [
-          {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.029
-          },
-          {
-            "key": 16249,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 11884,
-              "name": "Otto Heurkint",
-              "age": 43,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "cause": "illness",
-            "label": "spouse"
-          }
-        ],
-        "1215": [
-          {
             "topic": "event",
             "event": "plague",
-            "year": 1215
-          }
-        ],
-        "1216": [
-          {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.673
+            "year": 1207
           },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 14964,
-              "name": "Ebram Langhe",
-              "age": 13,
-              "alive": false,
-              "sex": "m",
-              "parents": {
-                "mother": "Pietersen (11372)",
-                "father": "Godefridus (11371)"
-              }
-            },
-            "cause": "illness",
-            "label": "child"
-          }
-        ],
-        "1218": [
           {
             "topic": "death",
             "cause": "illness"
@@ -332,14 +270,13 @@
       "section": "stDie lange straet1.se3.c3",
       "street": "Die lange straet1",
       "neighborhood": "olvbuurt",
-      "unique id": 611
+      "unique id": 615
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
-        11373,
-        16249
+        11373
       ]
     }
   }

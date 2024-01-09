@@ -109,8 +109,10 @@ class Community(Model):
             if rand() < seed['percentage_inhabited_houses']: 
                 income_class = h.income_class
                 m, w = self.make_couple(income_class, h.address())
-                self.add_person_to_home(hk, m)
-                self.add_person_to_home(hk, w)
+                self.move_person_to_home(hk, m)
+                self.move_person_to_home(hk, w)
+                # self.add_person_to_home(hk, m)
+                # self.add_person_to_home(hk, w)
 
     def make_couple(self, income_class, home_address):
         max_age = Body.old_age # Person.adult_age_men + int((Body.old_age - Person.adult_age_men) * 0.6)
@@ -126,6 +128,7 @@ class Community(Model):
         marriage = Relationship(self.get_id(), self, man.description(),
                                 woman.description(), 'spouse')
         marriage.set_home(home_address['unique id'])
+
         self.add_relationship(marriage)
         return (man.unique_id, woman.unique_id)
 

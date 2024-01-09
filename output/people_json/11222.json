@@ -1,19 +1,19 @@
 {
   "11222": {
     "alive": false,
-    "name": "Clara",
-    "surname": "Pipe",
-    "full name": "Clara Pipe",
+    "name": "Ymmekine",
+    "surname": "",
+    "full name": "Ymmekine",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.097,
-      "romantic interest": 0.716,
-      "sex interest": 0.699,
-      "gender expression": 0.0,
+      "sexuality": 0.047,
+      "romantic interest": 0.796,
+      "sex interest": 0.623,
+      "gender expression": 0.005,
       "sex": "f"
     },
-    "age": 56,
-    "birth year": 1171,
+    "age": 55,
+    "birth year": 1170,
     "sex": "f",
     "faction": "Dogmatists",
     "income class": [
@@ -22,36 +22,62 @@
     ],
     "personality": {
       "lawful-chaotic": 0.999,
-      "nice-nasty": 0.646,
-      "honest-false": 0.114
+      "nice-nasty": 0.0,
+      "honest-false": 0.67
     },
     "attitude": {
-      "outgoing": 0.558,
-      "dream": 0.501
+      "outgoing": 0.596,
+      "dream": 0.562
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": [
-          "starving"
-        ]
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.073,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.03,
+        "gender expression expression": 0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12604": {
+          "key": 12604,
+          "name": "Albertus Strich",
+          "age": 31,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Ymmekine (11222)",
+            "father": "Tiuri (11221)"
+          }
+        },
+        "13798": {
+          "key": 13798,
+          "name": "Winrechus Strich",
+          "age": 47,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Ymmekine (11222)",
+            "father": "Tiuri (11221)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          11223,
-          22294
-        ]
+          11223
+        ],
+        "child": {
+          "birth": [
+            12606,
+            13800
+          ]
+        }
       }
     },
     "occupation": {
@@ -60,46 +86,40 @@
         2,
         "middle class"
       ],
-      "income": 0.0,
+      "income": 1.487,
       "all_incomes": [
-        0.964,
-        0.817,
-        1.176,
-        1.249,
-        1.257,
-        1.157,
-        1.066,
-        1.096,
-        0.981,
-        0.814,
-        0.745,
-        0.569,
-        0.518,
-        0.569,
-        0.063,
-        0.0,
-        0.096,
-        0.182,
-        0.316,
-        0.103,
-        0.0
+        1.05,
+        1.095,
+        1.11,
+        1.159,
+        1.265,
+        1.252,
+        1.233,
+        1.341,
+        1.297,
+        1.391,
+        1.414,
+        1.373,
+        1.499,
+        1.472,
+        1.487
       ],
       "job": {
         "lawful": true,
-        "honest": false
+        "honest": true
       }
     },
     "genetics": {
-      "skin_color": 3,
+      "skin_color": 2,
       "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
-        "S",
-        "C"
+        "C",
+        "S"
       ],
-      "health": 0.949,
-      "fertility": 0.948,
+      "health": 0.0,
+      "fertility": 0.772,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -111,15 +131,39 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.949
+            "new_health": 0.787
           },
           "death": false
         },
-        "1226": {
+        "1221": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.949
+            "change": true,
+            "value_change": -0.204,
+            "new_health": 0.583
+          },
+          "death": false
+        },
+        "1222": {
+          "health": {
+            "change": true,
+            "value_change": -0.298,
+            "new_health": 0.285
+          },
+          "death": false
+        },
+        "1223": {
+          "health": {
+            "change": true,
+            "value_change": -0.278,
+            "new_health": 0.007
+          },
+          "death": false
+        },
+        "1224": {
+          "health": {
+            "change": true,
+            "value_change": -0.007,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -134,8 +178,8 @@
               11222
             ],
             "people names": [
-              "Martin Compere",
-              "Clara Pipe"
+              "Tiuri Strich",
+              "Ymmekine"
             ],
             "label": "spouse",
             "committed": true
@@ -148,41 +192,59 @@
               "section": "stBreestraat.se1.c2",
               "street": "Breestraat",
               "neighborhood": "olvbuurt",
-              "unique id": 549
+              "unique id": 542
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12606,
+            "people": [
+              11222,
+              12604
+            ],
+            "people names": [
+              "Ymmekine",
+              "Albertus Strich"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 11221,
+            "target name": "Tiuri Strich",
+            "state": "out of love",
+            "relationship": 11223
           }
         ],
-        "1206": [
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 13800,
+            "people": [
+              11222,
+              13798
+            ],
+            "people names": [
+              "Ymmekine",
+              "Winrechus Strich"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1207": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1207
+          }
+        ],
+        "1210": [
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.964
-          }
-        ],
-        "1208": [
-          {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.176
-          }
-        ],
-        "1214": [
-          {
-            "key": 11223,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 11221,
-              "name": "Martin Compere",
-              "age": 56,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "cause": "sickness",
-            "label": "spouse"
+            "income": 1.05
           }
         ],
         "1215": [
@@ -192,172 +254,29 @@
             "year": 1215
           }
         ],
-        "1216": [
-          {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.745
-          }
-        ],
-        "1218": [
-          {
-            "topic": "new relationship",
-            "key": 22294,
-            "people": [
-              10021,
-              11222
-            ],
-            "people names": [
-              "Sollen Blome",
-              "Clara Pipe"
-            ],
-            "label": "spouse",
-            "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stUterechse straet.se3.c2",
-              "street": "Uterechse straet",
-              "neighborhood": "varkensbuurt",
-              "unique id": 14
-            }
-          }
-        ],
         "1219": [
           {
-            "topic": "not enough income",
-            "income": 0.569,
-            "inhabitants": [
-              16693,
-              13750,
-              14320,
-              25568,
-              26231,
-              27191,
-              27534,
-              28480,
-              28812,
-              29068,
-              23806,
-              34571,
-              24790,
-              27668
-            ]
-          }
-        ],
-        "1220": [
-          {
-            "topic": "event",
-            "event": "famine",
-            "year": 1220
+            "key": 11223,
+            "topic": "unmarried"
           },
           {
-            "topic": "job notice",
-            "notice": "hardly any income",
-            "income": 0.063
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.063,
-            "inhabitants": [
-              16693,
-              13750,
-              14320,
-              25568,
-              26231,
-              27191,
-              27534,
-              28480,
-              28812,
-              29068,
-              23806,
-              34571,
-              24790,
-              27668
-            ]
-          }
-        ],
-        "1221": [
-          {
-            "topic": "feelings change",
-            "target": 10021,
-            "target name": "Sollen Blome",
-            "state": "out of love",
-            "relationship": 22294
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": [
-              16693,
-              13750,
-              14320,
-              25568,
-              26231,
-              27191,
-              27534,
-              28480,
-              28812,
-              29068,
-              23806,
-              34571,
-              24790,
-              27668
-            ]
-          }
-        ],
-        "1222": [
-          {
-            "topic": "not enough income",
-            "income": 0.096,
-            "inhabitants": [
-              16693,
-              13750,
-              14320,
-              25568,
-              26231,
-              27191,
-              27534,
-              28480,
-              28812,
-              29068,
-              23806,
-              34571,
-              24790,
-              27668
-            ]
+            "topic": "person died",
+            "person": {
+              "key": 11221,
+              "name": "Tiuri Strich",
+              "age": 52,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "old age",
+            "label": "spouse"
           }
         ],
         "1224": [
           {
-            "topic": "feelings change",
-            "target": 10021,
-            "target name": "Sollen Blome",
-            "state": "infatuation",
-            "relationship": 22294
-          }
-        ],
-        "1225": [
-          {
-            "topic": "job notice",
-            "notice": "hardly any income",
-            "income": 0.103
-          },
-          {
-            "topic": "feelings change",
-            "target": 10021,
-            "target name": "Sollen Blome",
-            "state": "out of love",
-            "relationship": 22294
-          }
-        ],
-        "1226": [
-          {
             "topic": "death",
-            "cause": "old age"
+            "cause": "sickness"
           }
         ]
       }
@@ -366,17 +285,16 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stUterechse straet.se3.c2",
-      "street": "Uterechse straet",
-      "neighborhood": "varkensbuurt",
-      "unique id": 14
+      "section": "stBreestraat.se1.c2",
+      "street": "Breestraat",
+      "neighborhood": "olvbuurt",
+      "unique id": 542
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
-        11223,
-        22294
+        11223
       ]
     }
   }

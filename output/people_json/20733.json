@@ -1,55 +1,89 @@
 {
   "20733": {
-    "alive": false,
-    "name": "Dodo",
-    "surname": "Die niene verloech",
-    "full name": "Dodo Die niene verloech",
+    "alive": true,
+    "name": "Yda",
+    "surname": "Firenbrais",
+    "full name": "Yda Firenbrais",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.114,
-      "romantic interest": 0.5,
-      "sex interest": 0.683,
-      "gender expression": 0.128,
-      "sex": "m"
+      "sexuality": 0.047,
+      "romantic interest": 0.561,
+      "sex interest": 0.788,
+      "gender expression": 0.032,
+      "sex": "f"
     },
-    "age": 4,
-    "birth year": 1214,
-    "sex": "m",
-    "faction": "Dogmatists",
+    "age": 36,
+    "birth year": 1213,
+    "sex": "f",
+    "faction": "No religion",
     "income class": [
-      1,
-      "lower middle class"
+      2,
+      "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.142,
-      "nice-nasty": 0.0,
-      "honest-false": 0.815
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.747,
+      "honest-false": 0.491
     },
     "attitude": {
-      "outgoing": 0.284,
-      "dream": 0.749
+      "outgoing": 0.281,
+      "dream": 0.485
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": true,
-        "needs_care": true,
+        "needs_care": false,
         "flags": [
-          "neglected"
+          "starving"
         ]
       },
       "expression": {
-        "sexuality expression": 0.085,
-        "gender expression expression": 0.12
+        "sexuality expression": 0.03,
+        "gender expression expression": 0.017
       }
     },
     "network": {
       "parents": {
-        "mother": "Gheesen (10169)",
-        "father": "Gerart (10168)"
+        "mother": "Aghete (12044)",
+        "father": "Herlewin (12043)"
       },
-      "children": {},
+      "children": {
+        "31104": {
+          "key": 31104,
+          "name": "Imsoete Borsdraghere",
+          "age": 5,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Yda (20733)",
+            "father": "Gherbrandus (19492)"
+          }
+        },
+        "31439": {
+          "key": 31439,
+          "name": "Wolcout Borsdraghere",
+          "age": 10,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Yda (20733)",
+            "father": "Gherbrandus (19492)"
+          }
+        },
+        "32488": {
+          "key": 32488,
+          "name": "Heyman Borsdraghere",
+          "age": 9,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Yda (20733)",
+            "father": "Gherbrandus (19492)"
+          }
+        }
+      },
       "relationship keys": {
         "parent": [
           20734,
@@ -58,29 +92,53 @@
         "sibling": [
           20736,
           20737
-        ]
+        ],
+        "spouse": [
+          28289
+        ],
+        "child": {
+          "birth": [
+            31106,
+            31441,
+            32490
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        1,
-        "lower middle class"
+        2,
+        "middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.499,
+      "all_incomes": [
+        0.987,
+        1.395,
+        1.361,
+        1.243,
+        1.499,
+        1.499,
+        1.499,
+        1.404,
+        1.499
+      ],
+      "job": {
+        "lawful": true,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 1,
-      "eye_color": "brown",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "skin_color": 5,
+      "eye_color": "green",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "S",
+        "C",
         "C"
       ],
-      "health": 0.49,
-      "fertility": 0.428,
+      "health": 0.671,
+      "fertility": 0.724,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -88,34 +146,26 @@
     },
     "memory": {
       "health": {
-        "1215": {
+        "1214": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.49
+            "new_health": 0.671
           },
           "death": false
-        },
-        "1218": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.49
-          },
-          "death": true
         }
       },
       "events": {
-        "1214": [
+        "1213": [
           {
             "topic": "new home",
             "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stMerrien hoof.se1.c1",
-              "street": "Merrien hoof",
-              "neighborhood": "varkensbuurt",
-              "unique id": 78
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stCromme straet.se5.c2",
+              "street": "Cromme straet",
+              "neighborhood": "denhof",
+              "unique id": 904
             }
           }
         ],
@@ -124,60 +174,219 @@
             "topic": "event",
             "event": "plague",
             "year": 1215
-          },
-          {
-            "topic": "neglected"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 15654,
-              "name": "Assceric Die niene verloech",
-              "age": 10,
-              "alive": false,
-              "sex": "m",
-              "parents": {
-                "mother": "Gheesen (10169)",
-                "father": "Gerart (10168)"
-              }
-            },
-            "cause": "childhood illness",
-            "label": "sibling"
-          }
-        ],
-        "1216": [
-          {
-            "topic": "neglected"
           }
         ],
         "1217": [
           {
-            "topic": "neglected"
+            "topic": "person died",
+            "person": {
+              "key": 12044,
+              "name": "Aghete Vincs",
+              "age": 42,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "parent"
           }
         ],
         "1218": [
           {
-            "topic": "death",
-            "cause": "childhood illness"
+            "topic": "person died",
+            "person": {
+              "key": 12043,
+              "name": "Herlewin Firenbrais",
+              "age": 55,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "label": "parent"
+          }
+        ],
+        "1219": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              13317,
+              17277,
+              27788
+            ]
+          }
+        ],
+        "1225": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 14903,
+              "name": "Dauid Firenbrais",
+              "age": 22,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Aghete (12044)",
+                "father": "Herlewin (12043)"
+              }
+            },
+            "cause": "illness",
+            "label": "sibling"
+          }
+        ],
+        "1232": [
+          {
+            "topic": "event",
+            "event": "war",
+            "year": 1232
+          }
+        ],
+        "1233": [
+          {
+            "topic": "new relationship",
+            "key": 28289,
+            "people": [
+              19492,
+              20733
+            ],
+            "people names": [
+              "Gherbrandus Borsdraghere",
+              "Yda Firenbrais"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stBloemendaelse straet.se1.c2",
+              "street": "Bloemendaelse straet",
+              "neighborhood": "agnesbuurt",
+              "unique id": 206
+            }
+          }
+        ],
+        "1238": [
+          {
+            "topic": "new relationship",
+            "key": 31106,
+            "people": [
+              20733,
+              31104
+            ],
+            "people names": [
+              "Yda Firenbrais",
+              "Imsoete Borsdraghere"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1239": [
+          {
+            "topic": "new relationship",
+            "key": 31441,
+            "people": [
+              20733,
+              31439
+            ],
+            "people names": [
+              "Yda Firenbrais",
+              "Wolcout Borsdraghere"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1240": [
+          {
+            "topic": "new relationship",
+            "key": 32490,
+            "people": [
+              20733,
+              32488
+            ],
+            "people names": [
+              "Yda Firenbrais",
+              "Heyman Borsdraghere"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1241": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.987
+          }
+        ],
+        "1242": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.395
+          },
+          {
+            "key": 28289,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 19492,
+              "name": "Gherbrandus Borsdraghere",
+              "age": 31,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Auesoete (10463)",
+                "father": "Ripperti (10462)"
+              }
+            },
+            "cause": "illness",
+            "label": "spouse"
+          }
+        ],
+        "1243": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 31104,
+              "name": "Imsoete Borsdraghere",
+              "age": 5,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Yda (20733)",
+                "father": "Gherbrandus (19492)"
+              }
+            },
+            "cause": "childhood illness",
+            "label": "child"
           }
         ]
       }
     },
     "key": 20733,
     "home": {
-      "income class": 1,
-      "income class label": "lower middle class",
-      "section": "stMerrien hoof.se1.c1",
-      "street": "Merrien hoof",
-      "neighborhood": "varkensbuurt",
-      "unique id": 78
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stBloemendaelse straet.se1.c2",
+      "street": "Bloemendaelse straet",
+      "neighborhood": "agnesbuurt",
+      "unique id": 206
     },
     "relationship status": {
       "taken": false,
       "married": false,
       "relationships": [
         20736,
-        20737
+        20737,
+        28289
       ]
     }
   }

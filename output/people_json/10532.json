@@ -1,59 +1,72 @@
 {
   "10532": {
     "alive": false,
-    "name": "Cecilia",
-    "surname": "Froes",
-    "full name": "Cecilia Froes",
+    "name": "Gerburgis",
+    "surname": "",
+    "full name": "Gerburgis",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.086,
-      "romantic interest": 0.637,
-      "sex interest": 0.511,
-      "gender expression": 0.271,
+      "sexuality": 0.161,
+      "romantic interest": 0.813,
+      "sex interest": 0.535,
+      "gender expression": 0.066,
       "sex": "f"
     },
     "age": 30,
-    "birth year": 1180,
+    "birth year": 1181,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "No religion",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.827,
-      "nice-nasty": 0.529,
-      "honest-false": 0.365
+      "lawful-chaotic": 0.31,
+      "nice-nasty": 0.999,
+      "honest-false": 0.0
     },
     "attitude": {
-      "outgoing": 0.705,
-      "dream": 0.4
+      "outgoing": 0.644,
+      "dream": 0.366
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.052,
-        "gender expression expression": 0.178
+        "sexuality expression": 0.114,
+        "gender expression expression": 0.031
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "13178": {
-          "key": 13178,
-          "name": "Vreile Regis",
-          "age": 19,
+        "15995": {
+          "key": 15995,
+          "name": "Emgelberna van Gerburgis",
+          "age": 44,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Gerburgis (10532)",
+            "father": "Gherbaren (10531)"
+          }
+        },
+        "17879": {
+          "key": 17879,
+          "name": "Sipper van Gherbaren",
+          "age": 7,
           "alive": false,
           "sex": "f",
           "parents": {
-            "mother": "Cecilia (10532)",
-            "father": "Eghenonis (10531)"
+            "mother": "Gerburgis (10532)",
+            "father": "Gherbaren (10531)"
           }
         }
       },
@@ -63,31 +76,40 @@
         ],
         "child": {
           "birth": [
-            13180
+            15997,
+            17881
           ]
         }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.208,
+      "all_incomes": [
+        0.585,
+        0.283,
+        0.208
+      ],
+      "job": {
+        "lawful": false,
+        "honest": false
+      }
     },
     "genetics": {
       "skin_color": 9,
-      "eye_color": "blue",
+      "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
-        "C",
+        "S",
         "S"
       ],
-      "health": 0.564,
-      "fertility": 0.692,
+      "health": 0.839,
+      "fertility": 0.831,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -99,33 +121,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.674
+            "new_health": 0.839
           },
           "death": false
-        },
-        "1205": {
-          "health": {
-            "change": true,
-            "value_change": -0.11,
-            "new_health": 0.564
-          },
-          "death": false
-        },
-        "1206": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.564
-          },
-          "death": false
-        },
-        "1209": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.564
-          },
-          "death": true
         }
       },
       "events": {
@@ -138,8 +136,8 @@
               10532
             ],
             "people names": [
-              "Eghenonis Regis",
-              "Cecilia Froes"
+              "Gherbaren",
+              "Gerburgis"
             ],
             "label": "spouse",
             "committed": true
@@ -149,30 +147,92 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stWaale straet.se1.c2",
-              "street": "Waale straet",
+              "section": "stBloemendaelse straet.se5.c2",
+              "street": "Bloemendaelse straet",
               "neighborhood": "agnesbuurt",
-              "unique id": 247
+              "unique id": 233
             }
           }
         ],
-        "1201": [
+        "1205": [
           {
             "topic": "new relationship",
-            "key": 13180,
+            "key": 15997,
             "people": [
               10532,
-              13178
+              15995
             ],
             "people names": [
-              "Cecilia Froes",
-              "Vreile Regis"
+              "Gerburgis",
+              "Emgelberna van Gerburgis"
             ],
             "label": "parentchild",
             "committed": false
           }
         ],
+        "1207": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1207
+          }
+        ],
+        "1208": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.585
+          },
+          {
+            "topic": "new relationship",
+            "key": 17881,
+            "people": [
+              10532,
+              17879
+            ],
+            "people names": [
+              "Gerburgis",
+              "Sipper van Gherbaren"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "key": 10533,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10531,
+              "name": "Gherbaren",
+              "age": 35,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "spouse"
+          }
+        ],
         "1209": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.283
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.283,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.208
+          },
           {
             "topic": "death",
             "cause": "illness"
@@ -184,14 +244,14 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stWaale straet.se1.c2",
-      "street": "Waale straet",
+      "section": "stBloemendaelse straet.se5.c2",
+      "street": "Bloemendaelse straet",
       "neighborhood": "agnesbuurt",
-      "unique id": 247
+      "unique id": 233
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         10533
       ]

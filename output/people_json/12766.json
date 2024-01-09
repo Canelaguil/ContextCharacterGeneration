@@ -1,84 +1,100 @@
 {
   "12766": {
     "alive": false,
-    "name": "Trame",
-    "surname": "Pauwe",
-    "full name": "Trame Pauwe",
+    "name": "Hylonus",
+    "surname": "Toreel",
+    "full name": "Hylonus Toreel",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.029,
-      "romantic interest": 0.778,
-      "sex interest": 0.597,
-      "gender expression": 0.372,
-      "sex": "f"
+      "sexuality": 0.085,
+      "romantic interest": 0.624,
+      "sex interest": 0.644,
+      "gender expression": 0.01,
+      "sex": "m"
     },
-    "age": 20,
+    "age": 22,
     "birth year": 1200,
-    "sex": "f",
-    "faction": "Dogmatists",
+    "sex": "m",
+    "faction": "No religion",
     "income class": [
-      3,
-      "upper middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.641,
-      "nice-nasty": 0.797,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.447,
+      "nice-nasty": 0.612,
+      "honest-false": 0.959
     },
     "attitude": {
-      "outgoing": 0.398,
-      "dream": 0.391
+      "outgoing": 0.137,
+      "dream": 0.385
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
         "flags": [
-          "starving",
-          "neglected",
-          "caretaker"
+          "starving"
         ]
       },
       "expression": {
-        "sexuality expression": 0.013,
-        "gender expression expression": 0.149
+        "sexuality expression": 0.063,
+        "gender expression expression": 0.002
       }
     },
     "network": {
       "parents": {
-        "mother": "Menoldis (11393)",
-        "father": "Eltetus (11392)"
+        "mother": "Ghodelde (11717)",
+        "father": "Amelgeir (11716)"
       },
       "children": {},
       "relationship keys": {
         "parent": [
           12767,
           12768
+        ],
+        "sibling": [
+          16177
+        ],
+        "spouse": [
+          23316
         ]
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        3,
-        "upper middle class"
+        1,
+        "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.303,
+      "all_incomes": [
+        1.046,
+        1.408,
+        1.263,
+        1.314,
+        1.362,
+        1.419,
+        1.303
+      ],
+      "job": {
+        "lawful": false,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 7,
+      "skin_color": 3,
       "eye_color": "green",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
-        "C",
-        "S"
+        "S",
+        "C"
       ],
-      "health": 0.727,
-      "fertility": 0.799,
+      "health": 0.121,
+      "fertility": 0.585,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -90,9 +106,49 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.727
+            "new_health": 0.553
           },
           "death": false
+        },
+        "1203": {
+          "health": {
+            "change": true,
+            "value_change": -0.159,
+            "new_health": 0.394
+          },
+          "death": false
+        },
+        "1204": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.394
+          },
+          "death": false
+        },
+        "1206": {
+          "health": {
+            "change": true,
+            "value_change": -0.273,
+            "new_health": 0.121
+          },
+          "death": false
+        },
+        "1207": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.121
+          },
+          "death": false
+        },
+        "1222": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.121
+          },
+          "death": true
         }
       },
       "events": {
@@ -100,24 +156,76 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stDie lange straet2.se1.c3",
-              "street": "Die lange straet2",
-              "neighborhood": "cingelzuid",
-              "unique id": 619
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stNieu straet.se1.c1",
+              "street": "Nieu straet",
+              "neighborhood": "visbuurt",
+              "unique id": 755
             }
           }
         ],
-        "1201": [
+        "1205": [
           {
-            "topic": "neglected"
+            "topic": "new relationship",
+            "key": 16177,
+            "people": [
+              12766,
+              16174
+            ],
+            "people names": [
+              "Hylonus Toreel",
+              "Paradanus Toreel"
+            ],
+            "label": "sibling",
+            "committed": false
+          }
+        ],
+        "1207": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1207
           },
           {
             "topic": "person died",
             "person": {
-              "key": 11393,
-              "name": "Menoldis Buyc",
+              "key": 11716,
+              "name": "Amelgeir Toreel",
+              "age": 37,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "parent"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stStoof straet.se3.c1",
+              "street": "Stoof straet",
+              "neighborhood": "visbuurt",
+              "unique id": 781
+            }
+          },
+          {
+            "topic": "update",
+            "update": "parent married",
+            "parent": 11717,
+            "new partner": 11779
+          }
+        ],
+        "1209": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11717,
+              "name": "Ghodelde",
               "age": 31,
               "alive": false,
               "sex": "f",
@@ -127,88 +235,10 @@
             "label": "parent"
           }
         ],
-        "1202": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1203": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1204": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1205": [
-          {
-            "topic": "neglected"
-          },
-          {
-            "topic": "update",
-            "update": "parent married",
-            "parent": 11392,
-            "new partner": 11477
-          }
-        ],
-        "1206": [
-          {
-            "topic": "neglected"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 11392,
-              "name": "Eltetus Pauwe",
-              "age": 54,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "cause": "sickness",
-            "label": "parent"
-          }
-        ],
-        "1207": [
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1208": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1209": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          },
-          {
-            "topic": "now caretaker",
-            "care dependants": []
-          },
-          {
-            "topic": "new caretaker",
-            "person": 12766
-          }
-        ],
         "1210": [
           {
             "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1211": [
-          {
-            "topic": "not enough income",
-            "income": 0,
+            "income": 0.725,
             "inhabitants": []
           }
         ],
@@ -247,7 +277,9 @@
         ],
         "1216": [
           {
-            "topic": "not caretaker"
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.046
           },
           {
             "topic": "not enough income",
@@ -255,33 +287,23 @@
             "inhabitants": []
           }
         ],
-        "1217": [
+        "1221": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "new relationship",
+            "key": 23316,
+            "people": [
+              12766,
+              14889
+            ],
+            "people names": [
+              "Hylonus Toreel",
+              "Hadewigis Napbrekere"
+            ],
+            "label": "spouse",
+            "committed": true
           }
         ],
-        "1218": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1219": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1220": [
-          {
-            "topic": "event",
-            "event": "famine",
-            "year": 1220
-          },
+        "1222": [
           {
             "topic": "death",
             "cause": "illness"
@@ -291,17 +313,20 @@
     },
     "key": 12766,
     "home": {
-      "income class": 3,
-      "income class label": "upper middle class",
-      "section": "stDie lange straet2.se1.c3",
-      "street": "Die lange straet2",
-      "neighborhood": "cingelzuid",
-      "unique id": 619
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stStoof straet.se3.c1",
+      "street": "Stoof straet",
+      "neighborhood": "visbuurt",
+      "unique id": 781
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
-      "relationships": []
+      "taken": true,
+      "married": true,
+      "relationships": [
+        16177,
+        23316
+      ]
     }
   }
 }

@@ -1,72 +1,70 @@
 {
   "12071": {
     "alive": false,
-    "name": "Cecilia",
-    "surname": "",
-    "full name": "Cecilia",
+    "name": "Siwa",
+    "surname": "Pinart",
+    "full name": "Siwa Pinart",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.023,
-      "romantic interest": 0.857,
-      "sex interest": 0.782,
-      "gender expression": 0.0,
+      "sexuality": 0.141,
+      "romantic interest": 0.785,
+      "sex interest": 0.691,
+      "gender expression": 0.146,
       "sex": "f"
     },
-    "age": 29,
-    "birth year": 1180,
+    "age": 25,
+    "birth year": 1179,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
-      2,
-      "middle class"
+      3,
+      "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.669,
-      "nice-nasty": 0.999,
-      "honest-false": 0.435
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.615,
+      "honest-false": 0.0
     },
     "attitude": {
-      "outgoing": 0.585,
-      "dream": 0.565
+      "outgoing": 0.357,
+      "dream": 0.309
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": [
-          "starving"
-        ]
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.015,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.096,
+        "gender expression expression": 0.105
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "12442": {
-          "key": 12442,
-          "name": "Atghardis",
-          "age": 27,
+        "12616": {
+          "key": 12616,
+          "name": "Brun van Siwa",
+          "age": 2,
           "alive": false,
-          "sex": "f",
+          "sex": "m",
           "parents": {
-            "mother": "Cecilia (12071)",
-            "father": "Godefridus (12070)"
+            "mother": "Siwa (12071)",
+            "father": "Jonas (12070)"
           }
         },
-        "13754": {
-          "key": 13754,
-          "name": "Itsburgis Godefridussdochter",
-          "age": 9,
+        "13414": {
+          "key": 13414,
+          "name": "Stoethoute Jonasszoon",
+          "age": 31,
           "alive": false,
-          "sex": "f",
+          "sex": "m",
           "parents": {
-            "mother": "Cecilia (12071)",
-            "father": "Godefridus (12070)"
+            "mother": "Siwa (12071)",
+            "father": "Jonas (12070)"
           }
         }
       },
@@ -76,32 +74,40 @@
         ],
         "child": {
           "birth": [
-            12444,
-            13756
+            12618,
+            13416
           ]
         }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        2,
-        "middle class"
+        3,
+        "upper middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.643,
+      "all_incomes": [
+        0.852,
+        0.711,
+        0.643
+      ],
+      "job": {
+        "lawful": true,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 1,
+      "skin_color": 4,
       "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
         "S",
         "S"
       ],
-      "health": 0.485,
-      "fertility": 0.433,
+      "health": 0.707,
+      "fertility": 0.67,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -113,9 +119,17 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.485
+            "new_health": 0.707
           },
           "death": false
+        },
+        "1203": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.707
+          },
+          "death": true
         }
       },
       "events": {
@@ -128,8 +142,8 @@
               12071
             ],
             "people names": [
-              "Godefridus",
-              "Cecilia"
+              "Jonas",
+              "Siwa Pinart"
             ],
             "label": "spouse",
             "committed": true
@@ -137,24 +151,24 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stCromme straet.se5.c2",
+              "income class": 3,
+              "income class label": "upper middle class",
+              "section": "stCromme straet.se7.c3",
               "street": "Cromme straet",
               "neighborhood": "denhof",
-              "unique id": 904
+              "unique id": 917
             }
           },
           {
             "topic": "new relationship",
-            "key": 12444,
+            "key": 12618,
             "people": [
               12071,
-              12442
+              12616
             ],
             "people names": [
-              "Cecilia",
-              "Atghardis"
+              "Siwa Pinart",
+              "Brun van Siwa"
             ],
             "label": "parentchild",
             "committed": false
@@ -162,103 +176,49 @@
         ],
         "1201": [
           {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": [
-              21994,
-              23210,
-              31919,
-              34344
-            ]
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.852
+          },
+          {
+            "topic": "new relationship",
+            "key": 13416,
+            "people": [
+              12071,
+              13414
+            ],
+            "people names": [
+              "Siwa Pinart",
+              "Stoethoute Jonasszoon"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1202": [
           {
-            "topic": "new relationship",
-            "key": 13756,
-            "people": [
-              12071,
-              13754
-            ],
-            "people names": [
-              "Cecilia",
-              "Itsburgis Godefridussdochter"
-            ],
-            "label": "parentchild",
-            "committed": false
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.711
           },
           {
-            "topic": "not enough income",
-            "income": 0.03,
-            "inhabitants": [
-              21994,
-              23210,
-              31919,
-              34344
-            ]
+            "topic": "person died",
+            "person": {
+              "key": 12616,
+              "name": "Brun van Siwa",
+              "age": 2,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Siwa (12071)",
+                "father": "Jonas (12070)"
+              }
+            },
+            "cause": "childhood illness",
+            "label": "child"
           }
         ],
         "1203": [
-          {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": [
-              21994,
-              23210,
-              31919,
-              34344
-            ]
-          }
-        ],
-        "1204": [
-          {
-            "topic": "not enough income",
-            "income": 0.01,
-            "inhabitants": [
-              21994,
-              23210,
-              31919,
-              34344
-            ]
-          }
-        ],
-        "1205": [
-          {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": [
-              21994,
-              23210,
-              31919,
-              34344
-            ]
-          }
-        ],
-        "1206": [
-          {
-            "topic": "not enough income",
-            "income": 0.148,
-            "inhabitants": [
-              21994,
-              23210,
-              31919,
-              34344
-            ]
-          }
-        ],
-        "1207": [
-          {
-            "topic": "not enough income",
-            "income": 0.281,
-            "inhabitants": [
-              21994,
-              23210,
-              31919,
-              34344
-            ]
-          }
-        ],
-        "1208": [
           {
             "topic": "death",
             "cause": "illness"
@@ -268,12 +228,12 @@
     },
     "key": 12071,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stCromme straet.se5.c2",
+      "income class": 3,
+      "income class label": "upper middle class",
+      "section": "stCromme straet.se7.c3",
       "street": "Cromme straet",
       "neighborhood": "denhof",
-      "unique id": 904
+      "unique id": 917
     },
     "relationship status": {
       "taken": true,

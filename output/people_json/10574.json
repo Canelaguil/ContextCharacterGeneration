@@ -2,32 +2,32 @@
   "10574": {
     "alive": false,
     "name": "Segherarden",
-    "surname": "",
-    "full name": "Segherarden",
+    "surname": "Mues",
+    "full name": "Segherarden Mues",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.066,
-      "romantic interest": 0.575,
-      "sex interest": 0.762,
-      "gender expression": 0.028,
+      "sexuality": 0.101,
+      "romantic interest": 0.605,
+      "sex interest": 0.463,
+      "gender expression": 0.0,
       "sex": "f"
     },
-    "age": 34,
-    "birth year": 1172,
+    "age": 42,
+    "birth year": 1174,
     "sex": "f",
     "faction": "No religion",
     "income class": [
-      0,
-      "working class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.17,
-      "nice-nasty": 0.67,
-      "honest-false": 0.993
+      "lawful-chaotic": 0.405,
+      "nice-nasty": 0.325,
+      "honest-false": 0.357
     },
     "attitude": {
-      "outgoing": 0.597,
-      "dream": 0.429
+      "outgoing": 0.641,
+      "dream": 0.523
     },
     "homsoc": {
       "means": {
@@ -35,44 +35,71 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": [
-          "starving"
-        ]
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.028,
-        "gender expression expression": 0.018
+        "sexuality expression": 0.046,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14058": {
+          "key": 14058,
+          "name": "Blankard Busseel",
+          "age": 47,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Segherarden (10574)",
+            "father": "Segher (10573)"
+          }
+        },
+        "15118": {
+          "key": 15118,
+          "name": "Reuro Busseel",
+          "age": 45,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Segherarden (10574)",
+            "father": "Segher (10573)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10575
-        ]
+        ],
+        "child": {
+          "birth": [
+            14060,
+            15120
+          ]
+        }
       }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        0,
-        "working class"
+        1,
+        "lower middle class"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 4,
+      "skin_color": 9,
       "eye_color": "brown",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
         "S",
         "S"
       ],
-      "health": 0.642,
-      "fertility": 0.587,
+      "health": 0.712,
+      "fertility": 0.745,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -84,7 +111,7 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.642
+            "new_health": 0.712
           },
           "death": false
         }
@@ -99,8 +126,8 @@
               10574
             ],
             "people names": [
-              "Willekine Vetten",
-              "Segherarden"
+              "Segher Busseel",
+              "Segherarden Mues"
             ],
             "label": "spouse",
             "committed": true
@@ -108,49 +135,85 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stWalker straet.se1.c0",
-              "street": "Walker straet",
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stWaale straet.se3.c1",
+              "street": "Waale straet",
               "neighborhood": "agnesbuurt",
-              "unique id": 266
+              "unique id": 253
             }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "feelings change",
+            "target": 10573,
+            "target name": "Segher Busseel",
+            "state": "out of love",
+            "relationship": 10575
           }
         ],
         "1202": [
           {
-            "key": 10575,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 10573,
-              "name": "Willekine Vetten",
-              "age": 43,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "cause": "illness",
-            "label": "spouse"
-          }
-        ],
-        "1203": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "new relationship",
+            "key": 14060,
+            "people": [
+              10574,
+              14058
+            ],
+            "people names": [
+              "Segherarden Mues",
+              "Blankard Busseel"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1204": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "new relationship",
+            "key": 15120,
+            "people": [
+              10574,
+              15118
+            ],
+            "people names": [
+              "Segherarden Mues",
+              "Reuro Busseel"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 10573,
+            "target name": "Segher Busseel",
+            "state": "infatuation",
+            "relationship": 10575
           }
         ],
-        "1205": [
+        "1207": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1207
+          }
+        ],
+        "1210": [
+          {
+            "topic": "feelings change",
+            "target": 10573,
+            "target name": "Segher Busseel",
+            "state": "out of love",
+            "relationship": 10575
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
           {
             "topic": "death",
             "cause": "illness"
@@ -160,16 +223,16 @@
     },
     "key": 10574,
     "home": {
-      "income class": 0,
-      "income class label": "working class",
-      "section": "stWalker straet.se1.c0",
-      "street": "Walker straet",
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stWaale straet.se3.c1",
+      "street": "Waale straet",
       "neighborhood": "agnesbuurt",
-      "unique id": 266
+      "unique id": 253
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
         10575
       ]

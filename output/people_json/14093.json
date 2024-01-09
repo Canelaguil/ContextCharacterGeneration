@@ -1,82 +1,97 @@
 {
   "14093": {
     "alive": false,
-    "name": "Samuel",
-    "surname": "Manghenus",
-    "full name": "Samuel Manghenus",
+    "name": "Ioris",
+    "surname": "Stuucs",
+    "full name": "Ioris Stuucs",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.011,
-      "romantic interest": 0.675,
-      "sex interest": 0.715,
-      "gender expression": 0.126,
+      "sexuality": 0.002,
+      "romantic interest": 0.383,
+      "sex interest": 0.848,
+      "gender expression": 0.075,
       "sex": "m"
     },
-    "age": 8,
+    "age": 20,
     "birth year": 1202,
     "sex": "m",
     "faction": "No religion",
     "income class": [
-      2,
-      "middle class"
+      0,
+      "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.195,
-      "nice-nasty": 0.23,
-      "honest-false": 0.597
+      "lawful-chaotic": 0.293,
+      "nice-nasty": 0.875,
+      "honest-false": 0.076
     },
     "attitude": {
-      "outgoing": 0.445,
-      "dream": 0.344
+      "outgoing": 0.493,
+      "dream": 0.412
     },
     "homsoc": {
       "means": {
         "independent": false,
-        "taken_care_of": true,
+        "taken_care_of": false,
         "caretaker": true,
-        "needs_care": true,
+        "needs_care": false,
         "flags": [
           "starving"
         ]
       },
       "expression": {
-        "sexuality expression": 0.009,
-        "gender expression expression": 0.052
+        "sexuality expression": 0.001,
+        "gender expression expression": 0.025
       }
     },
     "network": {
       "parents": {
-        "mother": "Vreile (12077)",
-        "father": "Alvericus (12076)"
+        "mother": "Agota (10169)",
+        "father": "Mewekinus (10168)"
       },
       "children": {},
       "relationship keys": {
         "parent": [
           14094,
           14095
+        ],
+        "sibling": [
+          14096,
+          15276,
+          15752
         ]
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        2,
-        "middle class"
+        0,
+        "working class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.782,
+      "all_incomes": [
+        1.043,
+        0.89,
+        0.843,
+        0.983,
+        0.782
+      ],
+      "job": {
+        "lawful": false,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 5,
-      "eye_color": "green",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 6,
+      "eye_color": "brown",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
-        "C",
+        "S",
         "C"
       ],
-      "health": 0.593,
-      "fertility": 0.577,
+      "health": 0.656,
+      "fertility": 0.629,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -88,9 +103,17 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.593
+            "new_health": 0.656
           },
           "death": false
+        },
+        "1222": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.656
+          },
+          "death": true
         }
       },
       "events": {
@@ -98,26 +121,93 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stCromme straet.se5.c2",
-              "street": "Cromme straet",
-              "neighborhood": "denhof",
-              "unique id": 906
+              "income class": 0,
+              "income class label": "working class",
+              "section": "stIn den Haeg.se1.c0",
+              "street": "In den Haeg",
+              "neighborhood": "varkensbuurt",
+              "unique id": 70
             }
           }
         ],
-        "1203": [
+        "1204": [
           {
-            "topic": "new caretaker",
-            "person": 12077
+            "topic": "new relationship",
+            "key": 15276,
+            "people": [
+              14093,
+              15272
+            ],
+            "people names": [
+              "Ioris Stuucs",
+              "Dilane van Agota"
+            ],
+            "label": "sibling",
+            "committed": false
+          }
+        ],
+        "1205": [
+          {
+            "topic": "new relationship",
+            "key": 15752,
+            "people": [
+              14093,
+              15748
+            ],
+            "people names": [
+              "Ioris Stuucs",
+              "Florens Stuucs"
+            ],
+            "label": "sibling",
+            "committed": false
           },
           {
             "topic": "person died",
             "person": {
-              "key": 12076,
-              "name": "Alvericus Manghenus",
-              "age": 53,
+              "key": 13248,
+              "name": "Firiin Stuucs",
+              "age": 4,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Agota (10169)",
+                "father": "Mewekinus (10168)"
+              }
+            },
+            "cause": "childhood illness",
+            "label": "sibling"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 15272,
+              "name": "Dilane van Agota",
+              "age": 1,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Agota (10169)",
+                "father": "Mewekinus (10168)"
+              }
+            },
+            "cause": "childhood illness",
+            "label": "sibling"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1207
+          }
+        ],
+        "1214": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10168,
+              "name": "Mewekinus Stuucs",
+              "age": 55,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
@@ -126,69 +216,102 @@
             "label": "parent"
           }
         ],
-        "1204": [
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
           {
             "topic": "not enough income",
             "income": 0,
             "inhabitants": []
           }
         ],
-        "1205": [
+        "1216": [
           {
             "topic": "not enough income",
             "income": 0,
             "inhabitants": []
           }
         ],
-        "1206": [
+        "1217": [
           {
             "topic": "not enough income",
             "income": 0,
             "inhabitants": []
           }
         ],
-        "1207": [
+        "1218": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.043
+          },
           {
             "topic": "not enough income",
             "income": 0,
             "inhabitants": []
           }
         ],
-        "1208": [
+        "1219": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "person died",
+            "person": {
+              "key": 15748,
+              "name": "Florens Stuucs",
+              "age": 14,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Agota (10169)",
+                "father": "Mewekinus (10168)"
+              }
+            },
+            "cause": "illness",
+            "label": "sibling"
           }
         ],
-        "1209": [
+        "1220": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "person died",
+            "person": {
+              "key": 10169,
+              "name": "Agota Rin",
+              "age": 46,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "parent"
           }
         ],
-        "1210": [
+        "1222": [
           {
             "topic": "death",
-            "cause": "childhood illness"
+            "cause": "illness"
           }
         ]
       }
     },
     "key": 14093,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stCromme straet.se5.c2",
-      "street": "Cromme straet",
-      "neighborhood": "denhof",
-      "unique id": 906
+      "income class": 0,
+      "income class label": "working class",
+      "section": "stIn den Haeg.se1.c0",
+      "street": "In den Haeg",
+      "neighborhood": "varkensbuurt",
+      "unique id": 70
     },
     "relationship status": {
       "taken": false,
       "married": false,
-      "relationships": []
+      "relationships": [
+        14096,
+        15276,
+        15752
+      ]
     }
   }
 }

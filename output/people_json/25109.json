@@ -1,66 +1,105 @@
 {
   "25109": {
-    "alive": false,
-    "name": "Linnea",
-    "surname": "Borlut",
-    "full name": "Linnea Borlut",
+    "alive": true,
+    "name": "Clara",
+    "surname": "",
+    "full name": "Clara",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.1,
-      "romantic interest": 0.696,
-      "sex interest": 0.729,
-      "gender expression": 0.096,
+      "sexuality": 0.018,
+      "romantic interest": 0.736,
+      "sex interest": 0.653,
+      "gender expression": 0.127,
       "sex": "f"
     },
-    "age": 5,
-    "birth year": 1228,
+    "age": 22,
+    "birth year": 1227,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "Dogmatists",
     "income class": [
       3,
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.329,
-      "nice-nasty": 0.436,
-      "honest-false": 0.0
+      "lawful-chaotic": 0.466,
+      "nice-nasty": 0.827,
+      "honest-false": 0.89
     },
     "attitude": {
-      "outgoing": 0.088,
-      "dream": 0.432
+      "outgoing": 0.464,
+      "dream": 0.218
     },
     "homsoc": {
       "means": {
         "independent": false,
         "taken_care_of": false,
         "caretaker": true,
-        "needs_care": true,
-        "flags": [
-          "neglected"
-        ]
+        "needs_care": false,
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.046,
-        "gender expression expression": 0.055
+        "sexuality expression": 0.013,
+        "gender expression expression": 0.0
       }
     },
     "network": {
       "parents": {
-        "mother": "Pietersen (17785)",
-        "father": "Hornekinga (18260)"
+        "mother": "Marisseis (18719)",
+        "father": "Helpriko (18490)"
       },
-      "children": {},
+      "children": {
+        "35411": {
+          "key": 35411,
+          "name": "Swegero Enekonusszoon",
+          "age": 3,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Clara (25109)",
+            "father": "Enekonus (23234)"
+          }
+        },
+        "36036": {
+          "key": 36036,
+          "name": "Oudrauen Boghart",
+          "age": 2,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Clara (25109)",
+            "father": "Enekonus (23234)"
+          }
+        },
+        "36765": {
+          "key": 36765,
+          "name": "Hadewigis Boghart",
+          "age": 0,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Clara (25109)",
+            "father": "Enekonus (23234)"
+          }
+        }
+      },
       "relationship keys": {
         "parent": [
           25110,
           25111
         ],
         "sibling": [
-          25112
+          26428
         ],
-        "half-sibling": [
-          27296
-        ]
+        "spouse": [
+          34761
+        ],
+        "child": {
+          "birth": [
+            35413,
+            36038,
+            36767
+          ]
+        }
       }
     },
     "occupation": {
@@ -79,10 +118,10 @@
       "hair_color_code": 0,
       "hair_type": [
         "S",
-        "C"
+        "S"
       ],
-      "health": 0.461,
-      "fertility": 0.511,
+      "health": 0.358,
+      "fertility": 0.425,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -90,62 +129,59 @@
     },
     "memory": {
       "health": {
-        "1229": {
+        "1228": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.461
+            "new_health": 0.358
           },
           "death": false
-        },
-        "1233": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.461
-          },
-          "death": true
         }
       },
       "events": {
-        "1228": [
+        "1227": [
           {
             "topic": "new home",
             "home": {
               "income class": 3,
               "income class label": "upper middle class",
-              "section": "stDie lange straet3.se7.c3",
-              "street": "Die lange straet3",
-              "neighborhood": "visbuurt",
-              "unique id": 703
+              "section": "stDen Hof.se5.c3",
+              "street": "Den Hof",
+              "neighborhood": "denhof",
+              "unique id": 947
             }
           }
         ],
         "1230": [
           {
-            "topic": "new home",
-            "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stDie lange straet2.se1.c3",
-              "street": "Die lange straet2",
-              "neighborhood": "cingelzuid",
-              "unique id": 625
-            }
+            "topic": "new relationship",
+            "key": 26428,
+            "people": [
+              25109,
+              26425
+            ],
+            "people names": [
+              "Clara",
+              "Thidboldus Helprikoszoon"
+            ],
+            "label": "sibling",
+            "committed": false
           },
           {
-            "topic": "neglected"
-          },
-          {
-            "topic": "update",
-            "update": "parent married",
-            "parent": 17785,
-            "new partner": 13577
-          }
-        ],
-        "1231": [
-          {
-            "topic": "neglected"
+            "topic": "person died",
+            "person": {
+              "key": 18490,
+              "name": "Helpriko",
+              "age": 21,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Soeten (12134)",
+                "father": "Grote (12133)"
+              }
+            },
+            "cause": "illness",
+            "label": "parent"
           }
         ],
         "1232": [
@@ -153,34 +189,81 @@
             "topic": "event",
             "event": "war",
             "year": 1232
-          },
-          {
-            "topic": "event",
-            "event": "famine",
-            "year": 1232
-          },
-          {
-            "topic": "neglected"
-          },
+          }
+        ],
+        "1244": [
           {
             "topic": "new relationship",
-            "key": 27296,
+            "key": 34761,
             "people": [
-              25109,
-              26950
+              23234,
+              25109
             ],
             "people names": [
-              "Linnea Borlut",
-              "Menoldis van Pietersen"
+              "Enekonus Boghart",
+              "Clara"
             ],
-            "label": "half-sibling",
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 3,
+              "income class label": "upper middle class",
+              "section": "stMuurhuysen1.se1.c3",
+              "street": "Muurhuysen1",
+              "neighborhood": "cingelzuid",
+              "unique id": 658
+            }
+          }
+        ],
+        "1246": [
+          {
+            "topic": "new relationship",
+            "key": 35413,
+            "people": [
+              25109,
+              35411
+            ],
+            "people names": [
+              "Clara",
+              "Swegero Enekonusszoon"
+            ],
+            "label": "parentchild",
             "committed": false
           }
         ],
-        "1233": [
+        "1247": [
           {
-            "topic": "death",
-            "cause": "childhood illness"
+            "topic": "new relationship",
+            "key": 36038,
+            "people": [
+              25109,
+              36036
+            ],
+            "people names": [
+              "Clara",
+              "Oudrauen Boghart"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1249": [
+          {
+            "topic": "new relationship",
+            "key": 36767,
+            "people": [
+              25109,
+              36765
+            ],
+            "people names": [
+              "Clara",
+              "Hadewigis Boghart"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ]
       }
@@ -189,17 +272,17 @@
     "home": {
       "income class": 3,
       "income class label": "upper middle class",
-      "section": "stDie lange straet2.se1.c3",
-      "street": "Die lange straet2",
+      "section": "stMuurhuysen1.se1.c3",
+      "street": "Muurhuysen1",
       "neighborhood": "cingelzuid",
-      "unique id": 625
+      "unique id": 658
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
-        25112,
-        27296
+        26428,
+        34761
       ]
     }
   }

@@ -1,68 +1,116 @@
 {
   "10552": {
     "alive": false,
-    "name": "Elberino",
-    "surname": "Hoen",
-    "full name": "Elberino Hoen",
+    "name": "Albertus",
+    "surname": "",
+    "full name": "Albertus",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.025,
-      "romantic interest": 0.568,
-      "sex interest": 0.624,
-      "gender expression": 0.19,
+      "sexuality label": "bi",
+      "sexuality": 0.42,
+      "romantic interest": 0.511,
+      "sex interest": 0.387,
+      "gender expression": 0.416,
       "sex": "m"
     },
-    "age": 34,
-    "birth year": 1169,
+    "age": 45,
+    "birth year": 1163,
     "sex": "m",
-    "faction": "Dogmatists",
+    "faction": "No religion",
     "income class": [
-      1,
-      "lower middle class"
+      2,
+      "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.365,
-      "nice-nasty": 0.399,
-      "honest-false": 0.159
+      "lawful-chaotic": 0.084,
+      "nice-nasty": 0.999,
+      "honest-false": 0.908
     },
     "attitude": {
-      "outgoing": 0.293,
-      "dream": 0.0
+      "outgoing": 0.298,
+      "dream": 0.474
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.014,
-        "gender expression expression": 0.086
+        "sexuality expression": 0.114,
+        "gender expression expression": 0.074
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13027": {
+          "key": 13027,
+          "name": "Alene Albertussdochter",
+          "age": 16,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Alretieren (10553)",
+            "father": "Albertus (10552)"
+          }
+        },
+        "15858": {
+          "key": 15858,
+          "name": "Hildeburgis van Albertus",
+          "age": 3,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Alretieren (10553)",
+            "father": "Albertus (10552)"
+          }
+        },
+        "16504": {
+          "key": 16504,
+          "name": "Michiel",
+          "age": 16,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Alretieren (10553)",
+            "father": "Albertus (10552)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10554
-        ]
+        ],
+        "child": {
+          "birth": [
+            13028,
+            15859,
+            16505
+          ]
+        }
       }
     },
     "occupation": {
       "has job": true,
       "income class": [
-        1,
-        "lower middle class"
+        2,
+        "middle class"
       ],
-      "income": 1.218,
+      "income": 0.407,
       "all_incomes": [
-        1.152,
-        1.236,
-        0.996,
-        1.218
+        0.851,
+        0.338,
+        0.15,
+        0.509,
+        0.479,
+        0.249,
+        0.138,
+        0.381,
+        0.407
       ],
       "job": {
         "lawful": false,
@@ -70,16 +118,16 @@
       }
     },
     "genetics": {
-      "skin_color": 0,
-      "eye_color": "brown",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "skin_color": 1,
+      "eye_color": "green",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "C",
+        "S",
         "S"
       ],
-      "health": 0.765,
-      "fertility": 0.83,
+      "health": 0.264,
+      "fertility": 0.658,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -91,15 +139,31 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.765
+            "new_health": 0.558
           },
           "death": false
         },
         "1202": {
           "health": {
+            "change": true,
+            "value_change": -0.294,
+            "new_health": 0.264
+          },
+          "death": false
+        },
+        "1203": {
+          "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.765
+            "new_health": 0.264
+          },
+          "death": false
+        },
+        "1207": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.264
           },
           "death": true
         }
@@ -109,7 +173,12 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.152
+            "income": 0.851
+          },
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.338
           },
           {
             "topic": "new relationship",
@@ -119,8 +188,8 @@
               10553
             ],
             "people names": [
-              "Elberino Hoen",
-              "Sywi"
+              "Albertus",
+              "Alretieren"
             ],
             "label": "spouse",
             "committed": true
@@ -128,27 +197,135 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stWaale straet.se3.c1",
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stWaale straet.se1.c2",
               "street": "Waale straet",
               "neighborhood": "agnesbuurt",
-              "unique id": 256
+              "unique id": 244
             }
           },
           {
             "topic": "feelings change",
             "target": 10553,
-            "target name": "Sywi",
-            "state": "solid love",
+            "target name": "Alretieren",
+            "state": "out of love",
             "relationship": 10554
+          }
+        ],
+        "1201": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.15
+          },
+          {
+            "topic": "new relationship",
+            "key": 13028,
+            "people": [
+              10552,
+              13027
+            ],
+            "people names": [
+              "Albertus",
+              "Alene Albertussdochter"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.15,
+            "inhabitants": []
           }
         ],
         "1202": [
           {
+            "topic": "feelings change",
+            "target": 10553,
+            "target name": "Alretieren",
+            "state": "infatuation",
+            "relationship": 10554
+          }
+        ],
+        "1203": [
+          {
             "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.218
+            "notice": "earning very little",
+            "income": 0.479
+          }
+        ],
+        "1204": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.249
+          },
+          {
+            "topic": "feelings change",
+            "target": 10553,
+            "target name": "Alretieren",
+            "state": "solid love",
+            "relationship": 10554
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.249,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "new relationship",
+            "key": 15859,
+            "people": [
+              10552,
+              15858
+            ],
+            "people names": [
+              "Albertus",
+              "Hildeburgis van Albertus"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.138,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 16505,
+            "people": [
+              10552,
+              16504
+            ],
+            "people names": [
+              "Albertus",
+              "Michiel"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.381,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1207
+          },
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.407
           },
           {
             "topic": "death",
@@ -159,12 +336,12 @@
     },
     "key": 10552,
     "home": {
-      "income class": 1,
-      "income class label": "lower middle class",
-      "section": "stWaale straet.se3.c1",
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stWaale straet.se1.c2",
       "street": "Waale straet",
       "neighborhood": "agnesbuurt",
-      "unique id": 256
+      "unique id": 244
     },
     "relationship status": {
       "taken": true,

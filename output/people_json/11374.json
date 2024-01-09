@@ -1,19 +1,19 @@
 {
   "11374": {
     "alive": false,
-    "name": "Geraldus",
-    "surname": "Jude",
-    "full name": "Geraldus Jude",
+    "name": "Woubbrecht",
+    "surname": "",
+    "full name": "Woubbrecht",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.846,
-      "sex interest": 0.723,
-      "gender expression": 0.0,
+      "sexuality label": "gay",
+      "sexuality": 0.999,
+      "romantic interest": 0.511,
+      "sex interest": 0.454,
+      "gender expression": 0.604,
       "sex": "m"
     },
-    "age": 54,
-    "birth year": 1153,
+    "age": 43,
+    "birth year": 1163,
     "sex": "m",
     "faction": "Zealots",
     "income class": [
@@ -21,34 +21,51 @@
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.046,
-      "nice-nasty": 0.529,
-      "honest-false": 0.448
+      "lawful-chaotic": 0.784,
+      "nice-nasty": 0.191,
+      "honest-false": 0.362
     },
     "attitude": {
-      "outgoing": 0.695,
-      "dream": 0.16
+      "outgoing": 0.462,
+      "dream": 0.34
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
         "flags": []
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.616,
+        "gender expression expression": 0.383
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14907": {
+          "key": 14907,
+          "name": "Marcibilia Woubbrechtsdochter",
+          "age": 12,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Lielde (11375)",
+            "father": "Woubbrecht (11374)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11376
-        ]
+        ],
+        "child": {
+          "birth": [
+            14908
+          ]
+        }
       }
     },
     "occupation": {
@@ -57,33 +74,32 @@
         3,
         "upper middle class"
       ],
-      "income": 1.099,
+      "income": 0.434,
       "all_incomes": [
-        1.059,
-        1.212,
-        1.03,
-        1.486,
-        1.499,
-        1.353,
-        1.342,
-        1.099
+        0.981,
+        0.877,
+        0.951,
+        0.85,
+        0.607,
+        0.6,
+        0.434
       ],
       "job": {
-        "lawful": false,
+        "lawful": true,
         "honest": false
       }
     },
     "genetics": {
-      "skin_color": 2,
+      "skin_color": 5,
       "eye_color": "brown",
       "hair_color": "blonde",
       "hair_color_code": 4,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.0,
-      "fertility": 0.676,
+      "health": 0.877,
+      "fertility": 0.872,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -95,31 +111,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.719
-          },
-          "death": false
-        },
-        "1204": {
-          "health": {
-            "change": true,
-            "value_change": -0.25,
-            "new_health": 0.469
+            "new_health": 0.877
           },
           "death": false
         },
         "1205": {
           "health": {
-            "change": true,
-            "value_change": -0.345,
-            "new_health": 0.124
-          },
-          "death": false
-        },
-        "1206": {
-          "health": {
-            "change": true,
-            "value_change": -0.124,
-            "new_health": 0.0
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.877
           },
           "death": true
         }
@@ -129,7 +129,7 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.059
+            "income": 0.981
           },
           {
             "topic": "new relationship",
@@ -139,8 +139,8 @@
               11375
             ],
             "people names": [
-              "Geraldus Jude",
-              "Heile Dicbier"
+              "Woubbrecht",
+              "Lielde Bruus"
             ],
             "label": "spouse",
             "committed": true
@@ -153,17 +153,29 @@
               "section": "stDie lange straet1.se3.c3",
               "street": "Die lange straet1",
               "neighborhood": "olvbuurt",
-              "unique id": 613
+              "unique id": 616
             }
           }
         ],
         "1203": [
           {
-            "topic": "feelings change",
-            "target": 11375,
-            "target name": "Heile Dicbier",
-            "state": "out of love",
-            "relationship": 11376
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.607
+          },
+          {
+            "topic": "new relationship",
+            "key": 14908,
+            "people": [
+              11374,
+              14907
+            ],
+            "people names": [
+              "Woubbrecht",
+              "Marcibilia Woubbrechtsdochter"
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1204": [
@@ -175,8 +187,8 @@
             "topic": "person died",
             "person": {
               "key": 11375,
-              "name": "Heile Dicbier",
-              "age": 49,
+              "name": "Lielde Bruus",
+              "age": 22,
               "alive": false,
               "sex": "f",
               "parents": "firstgen"
@@ -185,10 +197,15 @@
             "label": "spouse"
           }
         ],
-        "1206": [
+        "1205": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.434
+          },
           {
             "topic": "death",
-            "cause": "sickness"
+            "cause": "illness"
           }
         ]
       }
@@ -200,7 +217,7 @@
       "section": "stDie lange straet1.se3.c3",
       "street": "Die lange straet1",
       "neighborhood": "olvbuurt",
-      "unique id": 613
+      "unique id": 616
     },
     "relationship status": {
       "taken": false,

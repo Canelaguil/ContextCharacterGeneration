@@ -17,7 +17,7 @@ class MarriageCandidates():
     
     def find_match(self, seeker):
         # TODO : check for motivation
-        sample_size = 400
+        sample_size = 500
         no_candidates = len(self.candidate_list)
         if no_candidates < sample_size:
             size = no_candidates
@@ -30,6 +30,8 @@ class MarriageCandidates():
         # best_age_match = 
         for op in options:
             this_option = False
+
+            # TODO : add faction
 
             # check if these two already know each other (siblings, eg)
             if self.owner.model.we_know_each_other(op['source'], seeker['source']):

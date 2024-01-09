@@ -1,81 +1,71 @@
 {
   "10295": {
     "alive": false,
-    "name": "Atghardis",
-    "surname": "Tunne",
-    "full name": "Atghardis Tunne",
+    "name": "Waldrada",
+    "surname": "Duvel",
+    "full name": "Waldrada Duvel",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.106,
-      "romantic interest": 0.571,
-      "sex interest": 0.564,
-      "gender expression": 0.119,
+      "sexuality label": "bi",
+      "sexuality": 0.366,
+      "romantic interest": 0.823,
+      "sex interest": 0.925,
+      "gender expression": 0.368,
       "sex": "f"
     },
-    "age": 25,
-    "birth year": 1181,
+    "age": 42,
+    "birth year": 1172,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
-      0,
-      "working class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.74,
-      "nice-nasty": 0.65,
-      "honest-false": 0.416
+      "lawful-chaotic": 0.509,
+      "nice-nasty": 0.0,
+      "honest-false": 0.759
     },
     "attitude": {
-      "outgoing": 0.494,
-      "dream": 0.394
+      "outgoing": 0.621,
+      "dream": 0.351
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.034,
-        "gender expression expression": 0.085
+        "sexuality expression": 0.174,
+        "gender expression expression": 0.079
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "14901": {
-          "key": 14901,
-          "name": "Seukinus Ledeghe",
-          "age": 34,
+        "17237": {
+          "key": 17237,
+          "name": "Hollander Canis",
+          "age": 7,
           "alive": false,
           "sex": "m",
           "parents": {
-            "mother": "Atghardis (10295)",
-            "father": "Ebram (10294)"
-          }
-        },
-        "15574": {
-          "key": 15574,
-          "name": "Rolekine Ledeghe",
-          "age": 28,
-          "alive": false,
-          "sex": "m",
-          "parents": {
-            "mother": "Atghardis (10295)",
-            "father": "Ebram (10294)"
+            "mother": "Waldrada (10295)",
+            "father": "Weitijn (10366)"
           }
         }
       },
       "relationship keys": {
         "spouse": [
-          10296
+          10296,
+          14920,
+          18813
         ],
         "child": {
           "birth": [
-            14903,
-            15576
+            17239
           ]
         }
       }
@@ -83,31 +73,33 @@
     "occupation": {
       "has job": true,
       "income class": [
-        0,
-        "working class"
+        1,
+        "lower middle class"
       ],
-      "income": 0.01,
+      "income": 1.433,
       "all_incomes": [
-        0.0,
-        0.0,
-        0.01
+        1.006,
+        1.2,
+        1.454,
+        1.358,
+        1.433
       ],
       "job": {
-        "lawful": true,
-        "honest": false
+        "lawful": false,
+        "honest": true
       }
     },
     "genetics": {
-      "skin_color": 5,
-      "eye_color": "green",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 0,
+      "eye_color": "blue",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
         "S",
         "C"
       ],
-      "health": 0.621,
-      "fertility": 0.563,
+      "health": 0.673,
+      "fertility": 0.73,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -119,9 +111,17 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.621
+            "new_health": 0.673
           },
           "death": false
+        },
+        "1213": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.673
+          },
+          "death": true
         }
       },
       "events": {
@@ -134,8 +134,8 @@
               10295
             ],
             "people names": [
-              "Ebram Ledeghe",
-              "Atghardis Tunne"
+              "Amilius",
+              "Waldrada Duvel"
             ],
             "label": "spouse",
             "committed": true
@@ -143,60 +143,143 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stSt. Joris straet.se1.c0",
-              "street": "St. Joris straet",
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stHelle voet.se9.c1",
+              "street": "Helle voet",
               "neighborhood": "jorisbuurt",
-              "unique id": 136
+              "unique id": 127
             }
-          },
+          }
+        ],
+        "1201": [
           {
             "topic": "feelings change",
             "target": 10294,
-            "target name": "Ebram Ledeghe",
+            "target name": "Amilius",
             "state": "out of love",
             "relationship": 10296
           }
         ],
+        "1202": [
+          {
+            "key": 10296,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10294,
+              "name": "Amilius",
+              "age": 52,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "label": "spouse"
+          }
+        ],
         "1203": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.0
+            "topic": "new relationship",
+            "key": 14920,
+            "people": [
+              10366,
+              10295
+            ],
+            "people names": [
+              "Weitijn Canis",
+              "Waldrada Duvel"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stMuelen straet.se3.c1",
+              "street": "Muelen straet",
+              "neighborhood": "jorisbuurt",
+              "unique id": 160
+            }
+          }
+        ],
+        "1207": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1207
           },
           {
             "topic": "new relationship",
-            "key": 14903,
+            "key": 17239,
             "people": [
               10295,
-              14901
+              17237
             ],
             "people names": [
-              "Atghardis Tunne",
-              "Seukinus Ledeghe"
+              "Waldrada Duvel",
+              "Hollander Canis"
             ],
             "label": "parentchild",
             "committed": false
           }
         ],
-        "1204": [
+        "1208": [
+          {
+            "key": 14920,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10366,
+              "name": "Weitijn Canis",
+              "age": 57,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "label": "spouse"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.006
+          },
           {
             "topic": "new relationship",
-            "key": 15576,
+            "key": 18813,
             "people": [
-              10295,
-              15574
+              10111,
+              10295
             ],
             "people names": [
-              "Atghardis Tunne",
-              "Rolekine Ledeghe"
+              "Brame",
+              "Waldrada Duvel"
             ],
-            "label": "parentchild",
-            "committed": false
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stSlyck straet.se3.c1",
+              "street": "Slyck straet",
+              "neighborhood": "varkensbuurt",
+              "unique id": 46
+            }
           }
         ],
-        "1205": [
+        "1213": [
           {
             "topic": "death",
             "cause": "illness"
@@ -206,18 +289,20 @@
     },
     "key": 10295,
     "home": {
-      "income class": 0,
-      "income class label": "working class",
-      "section": "stSt. Joris straet.se1.c0",
-      "street": "St. Joris straet",
-      "neighborhood": "jorisbuurt",
-      "unique id": 136
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stSlyck straet.se3.c1",
+      "street": "Slyck straet",
+      "neighborhood": "varkensbuurt",
+      "unique id": 46
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        10296
+        10296,
+        14920,
+        18813
       ]
     }
   }

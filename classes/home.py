@@ -80,6 +80,10 @@ class Home(Agent):
                 log_error('did not recognize home task', msg)
             msg = self.tasks.get()
         
+        # self.no_inhabitants = len(self.inhabitants)
+        if self.no_inhabitants == 0:
+            return
+        
         self.income = self.process_income_reports()
         self.income_needed = self.no_inhabitants * self.person_percentage
         if self.income_needed > self.income:
@@ -106,15 +110,17 @@ class Home(Agent):
             self.log.add_log(log)
             self.find_caretaker()
 
-    def post_processing(self):      
         self.inhabitant_tracking.append((self.no_inhabitants, self.inhabitants))
+
+    def post_processing(self):      
+        ...
         
 
     """
     UPDATE FUNCTIONS 
     """
     def add_person(self, person_info): 
-        self.no_inhabitants += 1
+        # self.no_inhabitants += 1
         self.inhabitants.append(person_info['key'])
         move_notice = {
             'topic' : 'new home',
@@ -127,22 +133,26 @@ class Home(Agent):
         }
         self.model.message_person(person_info['key'], move_notice)
         self.income_reports.append(ic)
-
-        if person_info['age'] < 14:
-            self.add_care_dependant(person_info['key'])
+        self.no_inhabitants = len(self.inhabitants)
+        # if person_info['age'] < 16 and person_info['key'] not in self.care_dependants:
+        #     self.add_care_dependant(person_info['key'])
 
     def remove_person(self, person_info):
         if person_info['key'] in self.inhabitants:
-            # print('here')
-            self.no_inhabitants -= 1
+            # self.no_inhabitants -= 1
+            # print(self.inhabitants)
             self.inhabitants.remove(person_info['key'])
+            # if self.inhabitants == []:
+            #     print('-----------------------')
             if person_info['key'] in self.care_dependants:
                 self.care_dependants.remove(person_info['key'])
             elif person_info['key'] in self.caretakers:
                 self.caretakers.remove(person_info['key'])
-        else:
-            
-            log_error('home remove error', {'person' : person_info, 'house' : self.address()})
+            self.no_inhabitants = len(self.inhabitants)
+        else:            
+            log_error('home remove error', {'person' : person_info, 
+                                            'house' : self.address(), 
+                                            'year' : self.model.get_year()})
 
     def add_care_dependant(self, key):
         if key not in self.care_dependants:

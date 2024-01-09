@@ -1,19 +1,19 @@
 {
   "11480": {
     "alive": false,
-    "name": "Aue",
-    "surname": "Zalm",
-    "full name": "Aue Zalm",
+    "name": "Yda",
+    "surname": "",
+    "full name": "Yda",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.091,
-      "romantic interest": 0.662,
-      "sex interest": 0.442,
-      "gender expression": 0.178,
+      "sexuality label": "gay",
+      "sexuality": 0.906,
+      "romantic interest": 0.823,
+      "sex interest": 0.895,
+      "gender expression": 0.328,
       "sex": "f"
     },
-    "age": 48,
-    "birth year": 1164,
+    "age": 54,
+    "birth year": 1172,
     "sex": "f",
     "faction": "Zealots",
     "income class": [
@@ -21,13 +21,13 @@
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.107,
-      "honest-false": 0.926
+      "lawful-chaotic": 0.497,
+      "nice-nasty": 0.588,
+      "honest-false": 0.277
     },
     "attitude": {
-      "outgoing": 0.774,
-      "dream": 0.722
+      "outgoing": 0.507,
+      "dream": 0.591
     },
     "homsoc": {
       "means": {
@@ -38,65 +38,68 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.053,
-        "gender expression expression": 0.064
+        "sexuality expression": 0.484,
+        "gender expression expression": 0.123
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "12484": {
-          "key": 12484,
-          "name": "Coclike Viltkin",
-          "age": 4,
+        "12283": {
+          "key": 12283,
+          "name": "Ghodelde Coluen",
+          "age": 48,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Yda (11480)",
+            "father": "Pieter (11479)"
+          }
+        },
+        "16767": {
+          "key": 16767,
+          "name": "Didderic Coluen",
+          "age": 1,
           "alive": false,
           "sex": "m",
           "parents": {
-            "mother": "Aue (11480)",
-            "father": "Alvericus (11479)"
+            "mother": "Yda (11480)",
+            "father": "Pieter (11479)"
           }
         }
       },
       "relationship keys": {
         "spouse": [
-          11481,
-          18750
+          11481
         ],
         "child": {
           "birth": [
-            12486
+            12285,
+            16769
           ]
         }
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
         3,
         "upper middle class"
       ],
-      "income": 1.059,
-      "all_incomes": [
-        1.153,
-        1.177,
-        1.059
-      ],
-      "job": {
-        "lawful": false,
-        "honest": true
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 7,
-      "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 4,
+      "eye_color": "green",
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
       "hair_type": [
-        "C",
-        "S"
+        "S",
+        "C"
       ],
-      "health": 0.748,
-      "fertility": 0.827,
+      "health": 0.041,
+      "fertility": 0.668,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -108,15 +111,31 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.748
+            "new_health": 0.645
           },
           "death": false
         },
-        "1211": {
+        "1223": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.748
+            "change": true,
+            "value_change": -0.209,
+            "new_health": 0.436
+          },
+          "death": false
+        },
+        "1224": {
+          "health": {
+            "change": true,
+            "value_change": -0.25,
+            "new_health": 0.186
+          },
+          "death": false
+        },
+        "1225": {
+          "health": {
+            "change": true,
+            "value_change": -0.145,
+            "new_health": 0.041
           },
           "death": true
         }
@@ -131,8 +150,8 @@
               11480
             ],
             "people names": [
-              "Alvericus Viltkin",
-              "Aue Zalm"
+              "Pieter Coluen",
+              "Yda"
             ],
             "label": "spouse",
             "committed": true
@@ -150,81 +169,78 @@
           },
           {
             "topic": "new relationship",
-            "key": 12486,
+            "key": 12285,
             "people": [
               11480,
-              12484
+              12283
             ],
             "people names": [
-              "Aue Zalm",
-              "Coclike Viltkin"
+              "Yda",
+              "Ghodelde Coluen"
             ],
             "label": "parentchild",
             "committed": false
           }
         ],
-        "1204": [
+        "1202": [
+          {
+            "topic": "feelings change",
+            "target": 11479,
+            "target name": "Pieter Coluen",
+            "state": "out of love",
+            "relationship": 11481
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 16769,
+            "people": [
+              11480,
+              16767
+            ],
+            "people names": [
+              "Yda",
+              "Didderic Coluen"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1207": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1207
+          },
           {
             "topic": "person died",
             "person": {
-              "key": 12484,
-              "name": "Coclike Viltkin",
-              "age": 4,
+              "key": 16767,
+              "name": "Didderic Coluen",
+              "age": 1,
               "alive": false,
               "sex": "m",
               "parents": {
-                "mother": "Aue (11480)",
-                "father": "Alvericus (11479)"
+                "mother": "Yda (11480)",
+                "father": "Pieter (11479)"
               }
             },
             "cause": "childhood illness",
             "label": "child"
           }
         ],
-        "1208": [
+        "1215": [
           {
-            "key": 11481,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 11479,
-              "name": "Alvericus Viltkin",
-              "age": 47,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "cause": "illness",
-            "label": "spouse"
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
           }
         ],
-        "1209": [
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.153
-          },
-          {
-            "topic": "new relationship",
-            "key": 18750,
-            "people": [
-              11302,
-              11480
-            ],
-            "people names": [
-              "Herbert",
-              "Aue Zalm"
-            ],
-            "label": "spouse",
-            "committed": true
-          }
-        ],
-        "1211": [
+        "1225": [
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "old age"
           }
         ]
       }
@@ -242,8 +258,7 @@
       "taken": true,
       "married": true,
       "relationships": [
-        11481,
-        18750
+        11481
       ]
     }
   }

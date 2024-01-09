@@ -1,33 +1,33 @@
 {
   "11438": {
     "alive": false,
-    "name": "Scilla",
-    "surname": "Tay",
-    "full name": "Scilla Tay",
+    "name": "Helyana",
+    "surname": "Cnode",
+    "full name": "Helyana Cnode",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.086,
-      "romantic interest": 0.626,
-      "sex interest": 0.701,
-      "gender expression": 0.0,
+      "sexuality": 0.057,
+      "romantic interest": 0.711,
+      "sex interest": 0.514,
+      "gender expression": 0.111,
       "sex": "f"
     },
-    "age": 29,
-    "birth year": 1184,
+    "age": 36,
+    "birth year": 1174,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.549,
-      "nice-nasty": 0.61,
-      "honest-false": 0.193
+      "lawful-chaotic": 0.018,
+      "nice-nasty": 0.97,
+      "honest-false": 0.443
     },
     "attitude": {
-      "outgoing": 0.402,
-      "dream": 0.0
+      "outgoing": 0.522,
+      "dream": 0.668
     },
     "homsoc": {
       "means": {
@@ -35,25 +35,38 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.046,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.045,
+        "gender expression expression": 0.055
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "13436": {
-          "key": 13436,
-          "name": "Agota Eustaciussdochter",
-          "age": 12,
+        "13674": {
+          "key": 13674,
+          "name": "Willekine",
+          "age": 17,
           "alive": false,
-          "sex": "f",
+          "sex": "m",
           "parents": {
-            "mother": "Scilla (11438)",
-            "father": "Eustacius (11437)"
+            "mother": "Helyana (11438)",
+            "father": "Eremboldus (11437)"
+          }
+        },
+        "14468": {
+          "key": 14468,
+          "name": "Yseboldus Vriend",
+          "age": 46,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Helyana (11438)",
+            "father": "Eremboldus (11437)"
           }
         }
       },
@@ -63,45 +76,32 @@
         ],
         "child": {
           "birth": [
-            13438
+            13676,
+            14470
           ]
         }
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 1.113,
-      "all_incomes": [
-        0.774,
-        0.694,
-        0.889,
-        0.894,
-        1.409,
-        1.441,
-        1.38,
-        1.191,
-        1.113
-      ],
-      "job": {
-        "lawful": true,
-        "honest": false
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 7,
-      "eye_color": "green",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 4,
+      "eye_color": "brown",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
         "S",
         "C"
       ],
-      "health": 0.563,
-      "fertility": 0.559,
+      "health": 0.643,
+      "fertility": 0.623,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -113,15 +113,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.563
+            "new_health": 0.643
           },
           "death": false
         },
-        "1212": {
+        "1209": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.563
+            "new_health": 0.643
           },
           "death": true
         }
@@ -136,8 +136,8 @@
               11438
             ],
             "people names": [
-              "Eustacius",
-              "Scilla Tay"
+              "Eremboldus Vriend",
+              "Helyana Cnode"
             ],
             "label": "spouse",
             "committed": true
@@ -154,37 +154,110 @@
             }
           }
         ],
-        "1201": [
+        "1202": [
           {
             "topic": "new relationship",
-            "key": 13438,
+            "key": 13676,
             "people": [
               11438,
-              13436
+              13674
             ],
             "people names": [
-              "Scilla Tay",
-              "Agota Eustaciussdochter"
+              "Helyana Cnode",
+              "Willekine"
             ],
             "label": "parentchild",
             "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 11437,
+            "target name": "Eremboldus Vriend",
+            "state": "infatuation",
+            "relationship": 11439
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 14470,
+            "people": [
+              11438,
+              14468
+            ],
+            "people names": [
+              "Helyana Cnode",
+              "Yseboldus Vriend"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.166,
+            "inhabitants": [
+              14468,
+              24167,
+              27458,
+              28670,
+              29903,
+              12472,
+              27185,
+              28257,
+              29016,
+              25648
+            ]
           }
         ],
         "1204": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.774
+            "topic": "not enough income",
+            "income": 0.008,
+            "inhabitants": [
+              14468,
+              24167,
+              27458,
+              28670,
+              29903,
+              12472,
+              27185,
+              28257,
+              29016,
+              25648
+            ]
           }
         ],
         "1205": [
           {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.694
+            "topic": "not enough income",
+            "income": 0.155,
+            "inhabitants": [
+              14468,
+              24167,
+              27458,
+              28670,
+              29903,
+              12472,
+              27185,
+              28257,
+              29016,
+              25648
+            ]
           }
         ],
         "1207": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1207
+          },
+          {
+            "topic": "feelings change",
+            "target": 11437,
+            "target name": "Eremboldus Vriend",
+            "state": "out of love",
+            "relationship": 11439
+          },
           {
             "key": 11439,
             "topic": "unmarried"
@@ -193,8 +266,8 @@
             "topic": "person died",
             "person": {
               "key": 11437,
-              "name": "Eustacius",
-              "age": 37,
+              "name": "Eremboldus Vriend",
+              "age": 39,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
@@ -205,12 +278,23 @@
         ],
         "1208": [
           {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.409
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              14468,
+              24167,
+              27458,
+              28670,
+              29903,
+              12472,
+              27185,
+              28257,
+              29016,
+              25648
+            ]
           }
         ],
-        "1212": [
+        "1209": [
           {
             "topic": "death",
             "cause": "illness"
@@ -222,10 +306,10 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stVerckens merct.se5.c2",
-      "street": "Verckens merct",
-      "neighborhood": "varkensbuurt",
-      "unique id": 33
+      "section": "stScherbier straet.se3.c2",
+      "street": "Scherbier straet",
+      "neighborhood": "cingelzuid",
+      "unique id": 639
     },
     "relationship status": {
       "taken": false,

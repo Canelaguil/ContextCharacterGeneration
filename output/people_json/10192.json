@@ -1,54 +1,84 @@
 {
   "10192": {
     "alive": false,
-    "name": "Blankard",
-    "surname": "Neve",
-    "full name": "Blankard Neve",
+    "name": "Hetselo",
+    "surname": "Quic",
+    "full name": "Hetselo Quic",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.031,
-      "romantic interest": 0.586,
-      "sex interest": 0.597,
-      "gender expression": 0.039,
+      "sexuality": 0.0,
+      "romantic interest": 0.673,
+      "sex interest": 0.525,
+      "gender expression": 0.038,
       "sex": "m"
     },
-    "age": 43,
-    "birth year": 1161,
+    "age": 44,
+    "birth year": 1167,
     "sex": "m",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.73,
-      "nice-nasty": 0.447,
-      "honest-false": 0.729
+      "lawful-chaotic": 0.076,
+      "nice-nasty": 0.694,
+      "honest-false": 0.723
     },
     "attitude": {
-      "outgoing": 0.539,
-      "dream": 0.474
+      "outgoing": 0.625,
+      "dream": 0.462
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.025,
-        "gender expression expression": 0.025
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.011
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12442": {
+          "key": 12442,
+          "name": "Siabbo Quic",
+          "age": 12,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Volcwiif (10193)",
+            "father": "Hetselo (10192)"
+          }
+        },
+        "13898": {
+          "key": 13898,
+          "name": "Otger Quic",
+          "age": 5,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Volcwiif (10193)",
+            "father": "Hetselo (10192)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          10194
-        ]
+          10194,
+          16270
+        ],
+        "child": {
+          "birth": [
+            12443,
+            13899
+          ]
+        }
       }
     },
     "occupation": {
@@ -57,13 +87,20 @@
         1,
         "lower middle class"
       ],
-      "income": 0.69,
+      "income": 1.029,
       "all_incomes": [
-        0.795,
-        0.531,
-        0.68,
-        0.856,
-        0.69
+        1.025,
+        1.076,
+        1.193,
+        1.049,
+        1.084,
+        0.945,
+        1.08,
+        0.947,
+        0.955,
+        0.991,
+        1.131,
+        1.029
       ],
       "job": {
         "lawful": false,
@@ -71,16 +108,16 @@
       }
     },
     "genetics": {
-      "skin_color": 0,
-      "eye_color": "green",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "skin_color": 3,
+      "eye_color": "brown",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "S",
-        "C"
+        "C",
+        "S"
       ],
-      "health": 0.811,
-      "fertility": 0.845,
+      "health": 0.71,
+      "fertility": 0.711,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -92,15 +129,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.811
+            "new_health": 0.71
           },
           "death": false
         },
-        "1203": {
+        "1210": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.811
+            "new_health": 0.71
           },
           "death": true
         }
@@ -110,12 +147,7 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.795
-          },
-          {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.531
+            "income": 1.025
           },
           {
             "topic": "new relationship",
@@ -125,8 +157,8 @@
               10193
             ],
             "people names": [
-              "Blankard Neve",
-              "Geile"
+              "Hetselo Quic",
+              "Volcwiif Scamps"
             ],
             "label": "spouse",
             "committed": true
@@ -136,19 +168,132 @@
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stHelle voet.se1.c1",
+              "section": "stMerrien hoof.se3.c1",
+              "street": "Merrien hoof",
+              "neighborhood": "varkensbuurt",
+              "unique id": 81
+            }
+          },
+          {
+            "topic": "new relationship",
+            "key": 12443,
+            "people": [
+              10192,
+              12442
+            ],
+            "people names": [
+              "Hetselo Quic",
+              "Siabbo Quic"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 13899,
+            "people": [
+              10192,
+              13898
+            ],
+            "people names": [
+              "Hetselo Quic",
+              "Otger Quic"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1204": [
+          {
+            "topic": "feelings change",
+            "target": 10193,
+            "target name": "Volcwiif Scamps",
+            "state": "out of love",
+            "relationship": 10194
+          },
+          {
+            "key": 10194,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10193,
+              "name": "Volcwiif Scamps",
+              "age": 34,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "spouse"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.08
+          },
+          {
+            "topic": "new relationship",
+            "key": 16270,
+            "people": [
+              10192,
+              10253
+            ],
+            "people names": [
+              "Hetselo Quic",
+              "Ermerut Rape"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stHelle voet.se5.c1",
               "street": "Helle voet",
               "neighborhood": "jorisbuurt",
-              "unique id": 89
+              "unique id": 109
             }
           }
         ],
-        "1203": [
+        "1207": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1207
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 13898,
+              "name": "Otger Quic",
+              "age": 5,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Volcwiif (10193)",
+                "father": "Hetselo (10192)"
+              }
+            },
+            "cause": "childhood illness",
+            "label": "child"
+          }
+        ],
+        "1209": [
           {
             "topic": "job notice",
-            "notice": "low income",
-            "income": 0.69
-          },
+            "notice": "comfortable earnings",
+            "income": 1.131
+          }
+        ],
+        "1210": [
           {
             "topic": "death",
             "cause": "illness"
@@ -160,16 +305,17 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stHelle voet.se1.c1",
+      "section": "stHelle voet.se5.c1",
       "street": "Helle voet",
       "neighborhood": "jorisbuurt",
-      "unique id": 89
+      "unique id": 109
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        10194
+        10194,
+        16270
       ]
     }
   }

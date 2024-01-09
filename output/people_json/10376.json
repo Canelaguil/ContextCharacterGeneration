@@ -1,33 +1,33 @@
 {
   "10376": {
     "alive": false,
-    "name": "Yda",
-    "surname": "Broem",
-    "full name": "Yda Broem",
+    "name": "Clara",
+    "surname": "Kiekin",
+    "full name": "Clara Kiekin",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.032,
-      "romantic interest": 0.499,
-      "sex interest": 0.547,
-      "gender expression": 0.104,
+      "sexuality": 0.002,
+      "romantic interest": 0.689,
+      "sex interest": 0.708,
+      "gender expression": 0.226,
       "sex": "f"
     },
-    "age": 17,
-    "birth year": 1184,
+    "age": 38,
+    "birth year": 1172,
     "sex": "f",
     "faction": "Zealots",
     "income class": [
-      2,
-      "middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.688,
-      "nice-nasty": 0.0,
-      "honest-false": 0.816
+      "lawful-chaotic": 0.287,
+      "nice-nasty": 0.455,
+      "honest-false": 0.999
     },
     "attitude": {
-      "outgoing": 0.514,
-      "dream": 0.507
+      "outgoing": 0.609,
+      "dream": 0.279
     },
     "homsoc": {
       "means": {
@@ -38,35 +38,56 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.019,
-        "gender expression expression": 0.021
+        "sexuality expression": 0.001,
+        "gender expression expression": 0.06
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
-      "relationship keys": {}
+      "children": {
+        "16164": {
+          "key": 16164,
+          "name": "Geile",
+          "age": 29,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Clara (10376)",
+            "father": "Bartrarde (10375)"
+          }
+        }
+      },
+      "relationship keys": {
+        "spouse": [
+          10377
+        ],
+        "child": {
+          "birth": [
+            16166
+          ]
+        }
+      }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        2,
-        "middle class"
+        1,
+        "lower middle class"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 0,
-      "eye_color": "brown",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "skin_color": 8,
+      "eye_color": "blue",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
         "S",
         "S"
       ],
-      "health": 0.667,
-      "fertility": 0.688,
+      "health": 0.823,
+      "fertility": 0.85,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -78,13 +99,90 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.667
+            "new_health": 0.823
+          },
+          "death": false
+        },
+        "1209": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.823
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "new relationship",
+            "key": 10377,
+            "people": [
+              10375,
+              10376
+            ],
+            "people names": [
+              "Bartrarde",
+              "Clara Kiekin"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stMuelen straet.se3.c1",
+              "street": "Muelen straet",
+              "neighborhood": "jorisbuurt",
+              "unique id": 166
+            }
+          }
+        ],
+        "1205": [
+          {
+            "topic": "new relationship",
+            "key": 16166,
+            "people": [
+              10376,
+              16164
+            ],
+            "people names": [
+              "Clara Kiekin",
+              "Geile"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1207": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1207
+          }
+        ],
+        "1208": [
+          {
+            "key": 10377,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10375,
+              "name": "Bartrarde",
+              "age": 55,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "old age",
+            "label": "spouse"
+          }
+        ],
+        "1209": [
           {
             "topic": "death",
             "cause": "illness"
@@ -93,11 +191,20 @@
       }
     },
     "key": 10376,
-    "home": null,
+    "home": {
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stHelle voet.se3.c1",
+      "street": "Helle voet",
+      "neighborhood": "jorisbuurt",
+      "unique id": 94
+    },
     "relationship status": {
-      "taken": true,
-      "married": true,
-      "relationships": []
+      "taken": false,
+      "married": false,
+      "relationships": [
+        10377
+      ]
     }
   }
 }

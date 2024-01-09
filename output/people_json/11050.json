@@ -1,19 +1,19 @@
 {
   "11050": {
     "alive": false,
-    "name": "Nannekin",
+    "name": "Betten",
     "surname": "",
-    "full name": "Nannekin",
+    "full name": "Betten",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.021,
-      "romantic interest": 0.789,
-      "sex interest": 0.594,
-      "gender expression": 0.301,
+      "sexuality": 0.119,
+      "romantic interest": 0.56,
+      "sex interest": 0.871,
+      "gender expression": 0.225,
       "sex": "m"
     },
-    "age": 52,
-    "birth year": 1151,
+    "age": 55,
+    "birth year": 1173,
     "sex": "m",
     "faction": "Zealots",
     "income class": [
@@ -21,34 +21,78 @@
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.131,
-      "nice-nasty": 0.938,
-      "honest-false": 0.303
+      "lawful-chaotic": 0.679,
+      "nice-nasty": 0.355,
+      "honest-false": 0.513
     },
     "attitude": {
-      "outgoing": 0.482,
-      "dream": 0.41
+      "outgoing": 0.43,
+      "dream": 0.336
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.016,
-        "gender expression expression": 0.269
+        "sexuality expression": 0.031,
+        "gender expression expression": 0.034
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "15477": {
+          "key": 15477,
+          "name": "Euffemia van Lutghardis",
+          "age": 45,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Lutghardis (11051)",
+            "father": "Betten (11050)"
+          }
+        },
+        "19307": {
+          "key": 19307,
+          "name": "Katerina",
+          "age": 34,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Lutghardis (11051)",
+            "father": "Betten (11050)"
+          }
+        },
+        "20022": {
+          "key": 20022,
+          "name": "Marcibilia",
+          "age": 1,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Lutghardis (11051)",
+            "father": "Betten (11050)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          11052
-        ]
+          11052,
+          23336
+        ],
+        "child": {
+          "birth": [
+            15478,
+            19308,
+            20023
+          ]
+        }
       }
     },
     "occupation": {
@@ -57,29 +101,54 @@
         1,
         "lower middle class"
       ],
-      "income": 1.197,
+      "income": 0.331,
       "all_incomes": [
-        1.058,
-        1.271,
-        1.215,
-        1.197
+        0.781,
+        0.721,
+        0.85,
+        0.973,
+        1.059,
+        0.974,
+        0.786,
+        0.856,
+        0.924,
+        0.822,
+        0.672,
+        0.701,
+        1.001,
+        0.984,
+        0.873,
+        0.565,
+        0.593,
+        0.515,
+        0.695,
+        0.597,
+        0.367,
+        0.167,
+        0.167,
+        0.158,
+        0.0,
+        0.269,
+        0.389,
+        0.354,
+        0.331
       ],
       "job": {
-        "lawful": false,
-        "honest": true
+        "lawful": true,
+        "honest": false
       }
     },
     "genetics": {
-      "skin_color": 9,
+      "skin_color": 6,
       "eye_color": "blue",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
       "hair_type": [
         "S",
-        "C"
+        "S"
       ],
-      "health": 0.279,
-      "fertility": 0.659,
+      "health": 0.0,
+      "fertility": 0.741,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -91,23 +160,47 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.738
+            "new_health": 0.76
           },
           "death": false
         },
-        "1201": {
+        "1223": {
           "health": {
             "change": true,
             "value_change": -0.221,
-            "new_health": 0.517
+            "new_health": 0.539
           },
           "death": false
         },
-        "1202": {
+        "1224": {
           "health": {
             "change": true,
-            "value_change": -0.238,
-            "new_health": 0.279
+            "value_change": -0.232,
+            "new_health": 0.307
+          },
+          "death": false
+        },
+        "1225": {
+          "health": {
+            "change": true,
+            "value_change": -0.216,
+            "new_health": 0.091
+          },
+          "death": false
+        },
+        "1226": {
+          "health": {
+            "change": true,
+            "value_change": -0.079,
+            "new_health": 0.012
+          },
+          "death": false
+        },
+        "1227": {
+          "health": {
+            "change": true,
+            "value_change": -0.012,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -117,7 +210,12 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.058
+            "income": 0.781
+          },
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.721
           },
           {
             "topic": "new relationship",
@@ -127,8 +225,8 @@
               11051
             ],
             "people names": [
-              "Nannekin",
-              "Salome Steneken"
+              "Betten",
+              "Lutghardis"
             ],
             "label": "spouse",
             "committed": true
@@ -143,12 +241,221 @@
               "neighborhood": "kampbuurt",
               "unique id": 465
             }
+          },
+          {
+            "topic": "feelings change",
+            "target": 11051,
+            "target name": "Lutghardis",
+            "state": "out of love",
+            "relationship": 11052
           }
         ],
-        "1202": [
+        "1203": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.059
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 15478,
+            "people": [
+              11050,
+              15477
+            ],
+            "people names": [
+              "Betten",
+              "Euffemia van Lutghardis"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1207": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1207
+          }
+        ],
+        "1209": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.672
+          }
+        ],
+        "1210": [
+          {
+            "topic": "new relationship",
+            "key": 19308,
+            "people": [
+              11050,
+              19307
+            ],
+            "people names": [
+              "Betten",
+              "Katerina"
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1211": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.001
+          }
+        ],
+        "1212": [
+          {
+            "topic": "new relationship",
+            "key": 20023,
+            "people": [
+              11050,
+              20022
+            ],
+            "people names": [
+              "Betten",
+              "Marcibilia"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 11051,
+            "target name": "Lutghardis",
+            "state": "infatuation",
+            "relationship": 11052
+          }
+        ],
+        "1213": [
+          {
+            "key": 11052,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11051,
+              "name": "Lutghardis",
+              "age": 37,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "spouse"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 20022,
+              "name": "Marcibilia",
+              "age": 1,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Lutghardis (11051)",
+                "father": "Betten (11050)"
+              }
+            },
+            "cause": "childhood illness",
+            "label": "child"
+          }
+        ],
+        "1214": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.565
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          }
+        ],
+        "1219": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.367
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.367,
+            "inhabitants": []
+          }
+        ],
+        "1220": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.167
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.167,
+            "inhabitants": []
+          }
+        ],
+        "1221": [
+          {
+            "topic": "new relationship",
+            "key": 23336,
+            "people": [
+              11050,
+              10616
+            ],
+            "people names": [
+              "Betten",
+              "Amalburga"
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stDie Coninc straet.se5.c1",
+              "street": "Die Coninc straet",
+              "neighborhood": "kampbuurt",
+              "unique id": 462
+            }
+          }
+        ],
+        "1225": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.389
+          }
+        ],
+        "1226": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.354
+          }
+        ],
+        "1227": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.331
+          },
           {
             "topic": "death",
-            "cause": "old age"
+            "cause": "sickness"
           }
         ]
       }
@@ -157,16 +464,17 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stDie Coninc straet.se7.c1",
+      "section": "stDie Coninc straet.se5.c1",
       "street": "Die Coninc straet",
       "neighborhood": "kampbuurt",
-      "unique id": 465
+      "unique id": 462
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        11052
+        11052,
+        23336
       ]
     }
   }

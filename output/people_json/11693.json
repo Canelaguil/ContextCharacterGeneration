@@ -1,33 +1,33 @@
 {
   "11693": {
     "alive": false,
-    "name": "Siburgis",
-    "surname": "Dukinghe",
-    "full name": "Siburgis Dukinghe",
+    "name": "Segherarden",
+    "surname": "Kics",
+    "full name": "Segherarden Kics",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.538,
-      "sex interest": 0.778,
-      "gender expression": 0.085,
+      "sexuality": 0.045,
+      "romantic interest": 0.646,
+      "sex interest": 0.621,
+      "gender expression": 0.138,
       "sex": "f"
     },
     "age": 28,
-    "birth year": 1179,
+    "birth year": 1180,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.081,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.449,
+      "nice-nasty": 0.087,
+      "honest-false": 0.0
     },
     "attitude": {
-      "outgoing": 0.213,
-      "dream": 0.283
+      "outgoing": 0.456,
+      "dream": 0.322
     },
     "homsoc": {
       "means": {
@@ -40,18 +40,70 @@
         ]
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.084
+        "sexuality expression": 0.019,
+        "gender expression expression": 0.046
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14055": {
+          "key": 14055,
+          "name": "Trueb Moes",
+          "age": 47,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Segherarden (11693)",
+            "father": "Folcard (11692)"
+          }
+        },
+        "15539": {
+          "key": 15539,
+          "name": "Oda Moes",
+          "age": 15,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Segherarden (11693)",
+            "father": "Folcard (11692)"
+          }
+        },
+        "16050": {
+          "key": 16050,
+          "name": "Ioris",
+          "age": 44,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Segherarden (11693)",
+            "father": "Folcard (11692)"
+          }
+        },
+        "16316": {
+          "key": 16316,
+          "name": "Douwen Moes",
+          "age": 26,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Segherarden (11693)",
+            "father": "Folcard (11692)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          11694,
-          15628
-        ]
+          11694
+        ],
+        "child": {
+          "birth": [
+            14057,
+            15541,
+            16052,
+            16318
+          ]
+        }
       }
     },
     "occupation": {
@@ -64,16 +116,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 2,
+      "skin_color": 0,
       "eye_color": "green",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
         "S",
         "S"
       ],
-      "health": 0.766,
-      "fertility": 0.771,
+      "health": 0.789,
+      "fertility": 0.84,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -85,17 +137,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.766
+            "new_health": 0.789
           },
           "death": false
-        },
-        "1206": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.766
-          },
-          "death": true
         }
       },
       "events": {
@@ -108,8 +152,8 @@
               11693
             ],
             "people names": [
-              "Kerolus Bruneel",
-              "Siburgis Dukinghe"
+              "Folcard Moes",
+              "Segherarden Kics"
             ],
             "label": "spouse",
             "committed": true
@@ -122,78 +166,114 @@
               "section": "stCorte gracht.se3.c2",
               "street": "Corte gracht",
               "neighborhood": "visbuurt",
-              "unique id": 737
+              "unique id": 745
             }
           },
           {
             "topic": "feelings change",
             "target": 11692,
-            "target name": "Kerolus Bruneel",
+            "target name": "Folcard Moes",
             "state": "out of love",
             "relationship": 11694
           }
         ],
-        "1201": [
-          {
-            "key": 11694,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 11692,
-              "name": "Kerolus Bruneel",
-              "age": 30,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "cause": "illness",
-            "label": "spouse"
-          }
-        ],
         "1202": [
           {
+            "topic": "new relationship",
+            "key": 14057,
+            "people": [
+              11693,
+              14055
+            ],
+            "people names": [
+              "Segherarden Kics",
+              "Trueb Moes"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
             "topic": "not enough income",
-            "income": 0,
+            "income": 0.29,
             "inhabitants": []
           }
         ],
         "1203": [
           {
             "topic": "not enough income",
-            "income": 0,
+            "income": 0.037,
             "inhabitants": []
           }
         ],
         "1204": [
           {
             "topic": "new relationship",
-            "key": 15628,
+            "key": 15541,
             "people": [
-              12151,
-              11693
+              11693,
+              15539
             ],
             "people names": [
-              "Willai Fierenblayse",
-              "Siburgis Dukinghe"
+              "Segherarden Kics",
+              "Oda Moes"
             ],
-            "label": "spouse",
-            "committed": true
+            "label": "parentchild",
+            "committed": false
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stDen Hof.se1.c2",
-              "street": "Den Hof",
-              "neighborhood": "denhof",
-              "unique id": 938
-            }
+            "topic": "not enough income",
+            "income": 0.029,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "new relationship",
+            "key": 16052,
+            "people": [
+              11693,
+              16050
+            ],
+            "people names": [
+              "Segherarden Kics",
+              "Ioris"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
           }
         ],
         "1206": [
+          {
+            "topic": "new relationship",
+            "key": 16318,
+            "people": [
+              11693,
+              16316
+            ],
+            "people names": [
+              "Segherarden Kics",
+              "Douwen Moes"
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.338,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1207
+          },
           {
             "topic": "death",
             "cause": "illness"
@@ -205,17 +285,16 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stDen Hof.se1.c2",
-      "street": "Den Hof",
-      "neighborhood": "denhof",
-      "unique id": 938
+      "section": "stCorte gracht.se3.c2",
+      "street": "Corte gracht",
+      "neighborhood": "visbuurt",
+      "unique id": 745
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        11694,
-        15628
+        11694
       ]
     }
   }
