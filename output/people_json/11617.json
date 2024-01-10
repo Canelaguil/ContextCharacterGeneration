@@ -1,33 +1,33 @@
 {
   "11617": {
     "alive": false,
-    "name": "Cesarius",
-    "surname": "Croppes",
-    "full name": "Cesarius Croppes",
+    "name": "Hughekine",
+    "surname": "Sloet",
+    "full name": "Hughekine Sloet",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.863,
-      "romantic interest": 0.67,
-      "sex interest": 0.987,
-      "gender expression": 0.148,
+      "sexuality label": "straight",
+      "sexuality": 0.082,
+      "romantic interest": 0.413,
+      "sex interest": 0.4,
+      "gender expression": 0.207,
       "sex": "m"
     },
-    "age": 25,
-    "birth year": 1180,
+    "age": 53,
+    "birth year": 1163,
     "sex": "m",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.999,
-      "honest-false": 0.788
+      "lawful-chaotic": 0.465,
+      "nice-nasty": 0.0,
+      "honest-false": 0.105
     },
     "attitude": {
-      "outgoing": 0.673,
-      "dream": 0.464
+      "outgoing": 0.289,
+      "dream": 0.523
     },
     "homsoc": {
       "means": {
@@ -35,20 +35,52 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.575,
-        "gender expression expression": 0.023
+        "sexuality expression": 0.061,
+        "gender expression expression": 0.158
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14823": {
+          "key": 14823,
+          "name": "Berta Sloet",
+          "age": 15,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Walburgis (11618)",
+            "father": "Hughekine (11617)"
+          }
+        },
+        "16340": {
+          "key": 16340,
+          "name": "Meynseth Sloet",
+          "age": 11,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Walburgis (11618)",
+            "father": "Hughekine (11617)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          11619
-        ]
+          11619,
+          20106
+        ],
+        "child": {
+          "birth": [
+            14824,
+            16341
+          ]
+        }
       }
     },
     "occupation": {
@@ -57,31 +89,42 @@
         2,
         "middle class"
       ],
-      "income": 1.4,
+      "income": 1.289,
       "all_incomes": [
-        1.181,
-        1.067,
-        1.254,
-        1.444,
-        1.443,
-        1.4
+        0.683,
+        0.252,
+        0.555,
+        0.148,
+        0.030000000000000002,
+        0.08,
+        0.158,
+        0.025,
+        0.025,
+        0.16999999999999998,
+        0.214,
+        0.636,
+        0.42400000000000004,
+        0.843,
+        0.722,
+        0.996,
+        1.289
       ],
       "job": {
         "lawful": false,
-        "honest": true
+        "honest": false
       }
     },
     "genetics": {
-      "skin_color": 5,
-      "eye_color": "green",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "skin_color": 6,
+      "eye_color": "brown",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.835,
-      "fertility": 0.787,
+      "health": 0.0,
+      "fertility": 0.75,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -93,15 +136,31 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.835
+            "new_health": 0.789
           },
           "death": false
         },
-        "1204": {
+        "1213": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.835
+            "change": true,
+            "value_change": -0.194,
+            "new_health": 0.595
+          },
+          "death": false
+        },
+        "1214": {
+          "health": {
+            "change": true,
+            "value_change": -0.275,
+            "new_health": 0.32
+          },
+          "death": false
+        },
+        "1215": {
+          "health": {
+            "change": true,
+            "value_change": -0.32,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -111,7 +170,12 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.181
+            "income": 0.683
+          },
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.252
           },
           {
             "topic": "new relationship",
@@ -121,8 +185,12 @@
               11618
             ],
             "people names": [
-              "Cesarius Croppes",
-              "Suaneka Blauoets"
+              "Hughekine Sloet",
+              "Walburgis Quade"
+            ],
+            "people ages": [
+              37,
+              22
             ],
             "label": "spouse",
             "committed": true
@@ -132,26 +200,217 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stDie lange straet3.se9.c2",
-              "street": "Die lange straet3",
-              "neighborhood": "visbuurt",
-              "unique id": 714
+              "section": "stBreestraat.se5.c2",
+              "street": "Breestraat",
+              "neighborhood": "olvbuurt",
+              "unique id": 571
             }
+          },
+          {
+            "topic": "feelings change",
+            "target": 11618,
+            "target name": "Walburgis Quade",
+            "state": "solid love",
+            "relationship": 11619
+          }
+        ],
+        "1201": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1201
           }
         ],
         "1202": [
           {
-            "topic": "feelings change",
-            "target": 11618,
-            "target name": "Suaneka Blauoets",
-            "state": "out of love",
-            "relationship": 11619
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.148
+          },
+          {
+            "topic": "new relationship",
+            "key": 14824,
+            "people": [
+              11617,
+              14823
+            ],
+            "people names": [
+              "Hughekine Sloet",
+              "Berta Sloet"
+            ],
+            "people ages": [
+              39,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.148,
+            "inhabitants": [
+              11057
+            ]
+          }
+        ],
+        "1203": [
+          {
+            "topic": "not enough income",
+            "income": 0.030000000000000002,
+            "inhabitants": [
+              11057
+            ]
           }
         ],
         "1204": [
           {
+            "topic": "new relationship",
+            "key": 16341,
+            "people": [
+              11617,
+              16340
+            ],
+            "people names": [
+              "Hughekine Sloet",
+              "Meynseth Sloet"
+            ],
+            "people ages": [
+              42,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.08,
+            "inhabitants": [
+              11057
+            ]
+          }
+        ],
+        "1205": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 16341
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.158,
+            "inhabitants": [
+              11057
+            ]
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0.025,
+            "inhabitants": [
+              11057
+            ]
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0.025,
+            "inhabitants": [
+              11057
+            ]
+          },
+          {
+            "key": 11619,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11618,
+              "name": "Walburgis Quade",
+              "age": 30,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "spouse"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0.16999999999999998,
+            "inhabitants": [
+              11057
+            ]
+          }
+        ],
+        "1209": [
+          {
+            "topic": "new relationship",
+            "key": 20106,
+            "people": [
+              11617,
+              11057
+            ],
+            "people names": [
+              "Hughekine Sloet",
+              "Victoria"
+            ],
+            "people ages": [
+              47,
+              54
+            ],
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1211": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.42400000000000004
+          },
+          {
+            "topic": "feelings change",
+            "target": 11057,
+            "target name": "Victoria",
+            "state": "out of love",
+            "relationship": 20106
+          }
+        ],
+        "1213": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.722
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 16341
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.289
+          },
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "sickness"
           }
         ]
       }
@@ -160,16 +419,17 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stDie lange straet3.se9.c2",
-      "street": "Die lange straet3",
-      "neighborhood": "visbuurt",
-      "unique id": 714
+      "section": "stBreestraat.se5.c2",
+      "street": "Breestraat",
+      "neighborhood": "olvbuurt",
+      "unique id": 571
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        11619
+        11619,
+        20106
       ]
     }
   }

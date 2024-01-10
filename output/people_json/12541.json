@@ -1,80 +1,118 @@
 {
   "12541": {
     "alive": false,
-    "name": "Soi",
-    "surname": "",
-    "full name": "Soi",
+    "name": "Coclike",
+    "surname": "Cabellau",
+    "full name": "Coclike Cabellau",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.15,
-      "romantic interest": 0.828,
-      "sex interest": 0.605,
-      "gender expression": 0.097,
+      "sexuality": 0.026,
+      "romantic interest": 0.737,
+      "sex interest": 0.604,
+      "gender expression": 0.048,
       "sex": "m"
     },
-    "age": 7,
-    "birth year": 1200,
+    "age": 42,
+    "birth year": 1165,
     "sex": "m",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.09,
-      "nice-nasty": 0.587,
-      "honest-false": 0.0
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.193,
+      "honest-false": 0.419
     },
     "attitude": {
-      "outgoing": 0.722,
-      "dream": 0.041
+      "outgoing": 0.599,
+      "dream": 0.649
     },
     "homsoc": {
       "means": {
-        "independent": false,
-        "taken_care_of": true,
-        "caretaker": true,
-        "needs_care": true,
+        "independent": true,
+        "taken_care_of": false,
+        "caretaker": false,
+        "needs_care": false,
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.078,
-        "gender expression expression": 0.061
+        "sexuality expression": 0.018,
+        "gender expression expression": 0.019
       }
     },
     "network": {
-      "parents": {
-        "mother": "Waldrada (11522)",
-        "father": "Gabriel (11521)"
+      "parents": "firstgen",
+      "children": {
+        "14378": {
+          "key": 14378,
+          "name": "Geile",
+          "age": 55,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Hilduardis (12542)",
+            "father": "Coclike (12541)"
+          }
+        },
+        "15687": {
+          "key": 15687,
+          "name": "Tiedeman",
+          "age": 42,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Hilduardis (12542)",
+            "father": "Coclike (12541)"
+          }
+        }
       },
-      "children": {},
       "relationship keys": {
-        "parent": [
-          12542,
+        "spouse": [
           12543
-        ]
+        ],
+        "child": {
+          "birth": [
+            14379,
+            15688
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.139,
+      "all_incomes": [
+        1.03,
+        0.989,
+        0.73,
+        0.47900000000000004,
+        0.598,
+        0.916,
+        1.196,
+        1.139
+      ],
+      "job": {
+        "lawful": true,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 4,
-      "eye_color": "green",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "skin_color": 7,
+      "eye_color": "blue",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "C",
-        "S"
+        "S",
+        "C"
       ],
-      "health": 0.693,
-      "fertility": 0.66,
+      "health": 0.674,
+      "fertility": 0.679,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -82,72 +120,142 @@
     },
     "memory": {
       "health": {
-        "1201": {
+        "1200": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.693
+            "new_health": 0.674
           },
           "death": false
+        },
+        "1206": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.674
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
           {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.03
+          },
+          {
+            "topic": "new relationship",
+            "key": 12543,
+            "people": [
+              12541,
+              12542
+            ],
+            "people names": [
+              "Coclike Cabellau",
+              "Hilduardis"
+            ],
+            "people ages": [
+              35,
+              19
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
             "topic": "new home",
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stDie lange straet3.se1.c2",
-              "street": "Die lange straet3",
-              "neighborhood": "visbuurt",
-              "unique id": 677
+              "section": "stCromme straet.se5.c2",
+              "street": "Cromme straet",
+              "neighborhood": "denhof",
+              "unique id": 891
             }
           }
         ],
         "1201": [
           {
-            "topic": "person died",
-            "person": {
-              "key": 11522,
-              "name": "Waldrada Commer",
-              "age": 39,
-              "alive": false,
-              "sex": "f",
-              "parents": "firstgen"
-            },
-            "cause": "illness",
-            "label": "parent"
+            "topic": "event",
+            "event": "plague",
+            "year": 1201
+          },
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.73
+          },
+          {
+            "topic": "new relationship",
+            "key": 14379,
+            "people": [
+              12541,
+              14378
+            ],
+            "people names": [
+              "Coclike Cabellau",
+              "Geile"
+            ],
+            "people ages": [
+              36,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1202": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.47900000000000004
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "indifferent",
+            "relationship": 12543
+          },
+          {
+            "topic": "feelings change",
+            "target": 12542,
+            "target name": "Hilduardis",
+            "state": "out of love",
+            "relationship": 12543
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 15688,
+            "people": [
+              12541,
+              15687
+            ],
+            "people names": [
+              "Coclike Cabellau",
+              "Tiedeman"
+            ],
+            "people ages": [
+              38,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1205": [
           {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stBreestraat.se1.c2",
-              "street": "Breestraat",
-              "neighborhood": "olvbuurt",
-              "unique id": 547
-            }
-          },
-          {
-            "topic": "update",
-            "update": "parent married",
-            "parent": 11521,
-            "new partner": 11237
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.196
           }
         ],
-        "1207": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1207
-          },
+        "1206": [
           {
             "topic": "death",
-            "cause": "childhood illness"
+            "cause": "illness"
           }
         ]
       }
@@ -156,15 +264,17 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stBreestraat.se1.c2",
-      "street": "Breestraat",
-      "neighborhood": "olvbuurt",
-      "unique id": 547
+      "section": "stCromme straet.se5.c2",
+      "street": "Cromme straet",
+      "neighborhood": "denhof",
+      "unique id": 891
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
-      "relationships": []
+      "taken": true,
+      "married": true,
+      "relationships": [
+        12543
+      ]
     }
   }
 }

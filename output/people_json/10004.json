@@ -1,33 +1,33 @@
 {
   "10004": {
     "alive": false,
-    "name": "Breghlent",
-    "surname": "Smout",
-    "full name": "Breghlent Smout",
+    "name": "Marisseis",
+    "surname": "Cleine",
+    "full name": "Marisseis Cleine",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.035,
-      "romantic interest": 0.57,
-      "sex interest": 0.999,
-      "gender expression": 0.18,
+      "sexuality": 0.1,
+      "romantic interest": 0.674,
+      "sex interest": 0.566,
+      "gender expression": 0.0,
       "sex": "f"
     },
-    "age": 39,
-    "birth year": 1165,
+    "age": 42,
+    "birth year": 1161,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "No religion",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.307,
-      "nice-nasty": 0.166,
-      "honest-false": 0.939
+      "lawful-chaotic": 0.0,
+      "nice-nasty": 0.303,
+      "honest-false": 0.811
     },
     "attitude": {
-      "outgoing": 0.5,
-      "dream": 0.488
+      "outgoing": 0.474,
+      "dream": 0.377
     },
     "homsoc": {
       "means": {
@@ -38,46 +38,17 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.015,
-        "gender expression expression": 0.071
+        "sexuality expression": 0.032,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {
-        "12256": {
-          "key": 12256,
-          "name": "Wolfraem Donevoet",
-          "age": 14,
-          "alive": false,
-          "sex": "m",
-          "parents": {
-            "mother": "Breghlent (10004)",
-            "father": "Sander (10003)"
-          }
-        },
-        "13323": {
-          "key": 13323,
-          "name": "Tijs Donevoet",
-          "age": 15,
-          "alive": false,
-          "sex": "m",
-          "parents": {
-            "mother": "Breghlent (10004)",
-            "father": "Sander (10003)"
-          }
-        }
-      },
+      "children": {},
       "relationship keys": {
         "spouse": [
           10005
-        ],
-        "child": {
-          "birth": [
-            12258,
-            13325
-          ]
-        }
+        ]
       }
     },
     "occupation": {
@@ -95,11 +66,11 @@
       "hair_color": "strawberry blonde",
       "hair_color_code": 5,
       "hair_type": [
-        "C",
+        "S",
         "C"
       ],
-      "health": 0.47,
-      "fertility": 0.371,
+      "health": 0.588,
+      "fertility": 0.711,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -111,15 +82,23 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.47
+            "new_health": 0.778
           },
           "death": false
         },
-        "1203": {
+        "1201": {
+          "health": {
+            "change": true,
+            "value_change": -0.19,
+            "new_health": 0.588
+          },
+          "death": false
+        },
+        "1202": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.47
+            "new_health": 0.588
           },
           "death": true
         }
@@ -134,8 +113,12 @@
               10004
             ],
             "people names": [
-              "Sander Donevoet",
-              "Breghlent Smout"
+              "Wolfraem Cockine",
+              "Marisseis Cleine"
+            ],
+            "people ages": [
+              40,
+              39
             ],
             "label": "spouse",
             "committed": true
@@ -152,37 +135,21 @@
             }
           },
           {
-            "topic": "new relationship",
-            "key": 12258,
-            "people": [
-              10004,
-              12256
-            ],
-            "people names": [
-              "Breghlent Smout",
-              "Wolfraem Donevoet"
-            ],
-            "label": "parentchild",
-            "committed": false
+            "topic": "feelings change",
+            "target": 10003,
+            "target name": "Wolfraem Cockine",
+            "state": "out of love",
+            "relationship": 10005
           }
         ],
         "1201": [
           {
-            "topic": "new relationship",
-            "key": 13325,
-            "people": [
-              10004,
-              13323
-            ],
-            "people names": [
-              "Breghlent Smout",
-              "Tijs Donevoet"
-            ],
-            "label": "parentchild",
-            "committed": false
+            "topic": "event",
+            "event": "plague",
+            "year": 1201
           }
         ],
-        "1203": [
+        "1202": [
           {
             "topic": "death",
             "cause": "illness"

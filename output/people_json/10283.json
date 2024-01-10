@@ -1,114 +1,78 @@
 {
   "10283": {
     "alive": false,
-    "name": "Yda",
-    "surname": "Steneken",
-    "full name": "Yda Steneken",
+    "name": "Sybillia",
+    "surname": "",
+    "full name": "Sybillia",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.126,
-      "romantic interest": 0.646,
-      "sex interest": 0.756,
-      "gender expression": 0.109,
+      "sexuality": 0.028,
+      "romantic interest": 0.593,
+      "sex interest": 0.999,
+      "gender expression": 0.152,
       "sex": "f"
     },
-    "age": 52,
-    "birth year": 1164,
+    "age": 48,
+    "birth year": 1165,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "Zealots",
     "income class": [
-      0,
-      "working class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.719,
-      "nice-nasty": 0.409,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.543,
+      "honest-false": 0.067
     },
     "attitude": {
-      "outgoing": 0.254,
-      "dream": 0.475
+      "outgoing": 0.632,
+      "dream": 0.602
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.099,
-        "gender expression expression": 0.089
+        "sexuality expression": 0.023,
+        "gender expression expression": 0.046
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {
-        "12972": {
-          "key": 12972,
-          "name": "Wolcout Breede",
-          "age": 13,
-          "alive": false,
-          "sex": "m",
-          "parents": {
-            "mother": "Yda (10283)",
-            "father": "Woubbrecht (10282)"
-          }
-        }
-      },
+      "children": {},
       "relationship keys": {
         "spouse": [
           10284
-        ],
-        "child": {
-          "birth": [
-            12974
-          ]
-        }
+        ]
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
-        0,
-        "working class"
+        1,
+        "lower middle class"
       ],
-      "income": 0.662,
-      "all_incomes": [
-        0.984,
-        0.981,
-        0.912,
-        0.944,
-        0.873,
-        0.815,
-        0.869,
-        0.892,
-        0.847,
-        0.863,
-        0.836,
-        0.838,
-        0.77,
-        0.779,
-        0.744,
-        0.662
-      ],
-      "job": {
-        "lawful": true,
-        "honest": true
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 9,
-      "eye_color": "blue",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "skin_color": 4,
+      "eye_color": "green",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "C",
-        "C"
+        "S",
+        "S"
       ],
-      "health": 0.345,
-      "fertility": 0.651,
+      "health": 0.655,
+      "fertility": 0.673,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -120,34 +84,13 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.683
+            "new_health": 0.655
           },
           "death": false
-        },
-        "1214": {
-          "health": {
-            "change": true,
-            "value_change": -0.113,
-            "new_health": 0.57
-          },
-          "death": false
-        },
-        "1215": {
-          "health": {
-            "change": true,
-            "value_change": -0.225,
-            "new_health": 0.345
-          },
-          "death": true
         }
       },
       "events": {
         "1200": [
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.984
-          },
           {
             "topic": "new relationship",
             "key": 10284,
@@ -156,8 +99,12 @@
               10283
             ],
             "people names": [
-              "Woubbrecht Breede",
-              "Yda Steneken"
+              "Heillam Paue",
+              "Sybillia"
+            ],
+            "people ages": [
+              39,
+              35
             ],
             "label": "spouse",
             "committed": true
@@ -165,48 +112,37 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stHelle voet.se7.c0",
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stHelle voet.se5.c1",
               "street": "Helle voet",
               "neighborhood": "jorisbuurt",
-              "unique id": 121
+              "unique id": 102
             }
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "indifferent",
+            "relationship": 10284
           }
         ],
         "1201": [
           {
-            "topic": "new relationship",
-            "key": 12974,
-            "people": [
-              10283,
-              12972
-            ],
-            "people names": [
-              "Yda Steneken",
-              "Wolcout Breede"
-            ],
-            "label": "parentchild",
-            "committed": false
+            "topic": "event",
+            "event": "plague",
+            "year": 1201
           }
         ],
-        "1204": [
+        "1206": [
           {
             "topic": "feelings change",
             "target": 10282,
-            "target name": "Woubbrecht Breede",
+            "target name": "Heillam Paue",
             "state": "out of love",
             "relationship": 10284
-          }
-        ],
-        "1207": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1207
-          }
-        ],
-        "1209": [
+          },
           {
             "key": 10284,
             "topic": "unmarried"
@@ -215,8 +151,8 @@
             "topic": "person died",
             "person": {
               "key": 10282,
-              "name": "Woubbrecht Breede",
-              "age": 47,
+              "name": "Heillam Paue",
+              "age": 46,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
@@ -225,50 +161,57 @@
             "label": "spouse"
           }
         ],
-        "1214": [
+        "1207": [
           {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.744
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 12972,
-              "name": "Wolcout Breede",
-              "age": 13,
-              "alive": false,
-              "sex": "m",
-              "parents": {
-                "mother": "Yda (10283)",
-                "father": "Woubbrecht (10282)"
-              }
-            },
-            "cause": "illness",
-            "label": "child"
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ],
-        "1215": [
+        "1208": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1215
-          },
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
           {
             "topic": "death",
-            "cause": "old age"
+            "cause": "illness"
           }
         ]
       }
     },
     "key": 10283,
     "home": {
-      "income class": 0,
-      "income class label": "working class",
-      "section": "stIn den Haeg.se1.c0",
-      "street": "In den Haeg",
-      "neighborhood": "varkensbuurt",
-      "unique id": 64
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stHelle voet.se5.c1",
+      "street": "Helle voet",
+      "neighborhood": "jorisbuurt",
+      "unique id": 102
     },
     "relationship status": {
       "taken": false,

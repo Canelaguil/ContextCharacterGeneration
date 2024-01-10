@@ -1,33 +1,33 @@
 {
   "11807": {
     "alive": false,
-    "name": "Sywi",
-    "surname": "Caen",
-    "full name": "Sywi Caen",
+    "name": "Hildegardis",
+    "surname": "Durcant",
+    "full name": "Hildegardis Durcant",
     "born this way": {
       "sexuality label": "bi",
-      "sexuality": 0.498,
-      "romantic interest": 0.648,
-      "sex interest": 0.56,
-      "gender expression": 0.182,
+      "sexuality": 0.577,
+      "romantic interest": 0.629,
+      "sex interest": 0.722,
+      "gender expression": 0.0,
       "sex": "f"
     },
-    "age": 35,
-    "birth year": 1166,
+    "age": 31,
+    "birth year": 1183,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
-      4,
-      "nobility"
+      2,
+      "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.321,
-      "honest-false": 0.0
+      "lawful-chaotic": 0.531,
+      "nice-nasty": 0.0,
+      "honest-false": 0.487
     },
     "attitude": {
-      "outgoing": 0.434,
-      "dream": 0.567
+      "outgoing": 0.384,
+      "dream": 0.439
     },
     "homsoc": {
       "means": {
@@ -35,38 +35,86 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.261,
-        "gender expression expression": 0.078
+        "sexuality expression": 0.412,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
-      "relationship keys": {}
+      "children": {
+        "13773": {
+          "key": 13773,
+          "name": "Bartrarde Pipe",
+          "age": 31,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Hildegardis (11807)",
+            "father": "Wauthem (11806)"
+          }
+        },
+        "14956": {
+          "key": 14956,
+          "name": "Geile Wauthemsdochter",
+          "age": 54,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Hildegardis (11807)",
+            "father": "Wauthem (11806)"
+          }
+        },
+        "21722": {
+          "key": 21722,
+          "name": "Aue Vogel",
+          "age": 53,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Hildegardis (11807)",
+            "father": "Ino (12064)"
+          }
+        }
+      },
+      "relationship keys": {
+        "spouse": [
+          11808,
+          19547
+        ],
+        "child": {
+          "birth": [
+            13775,
+            14958,
+            21724
+          ]
+        }
+      }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        4,
-        "nobility"
+        2,
+        "middle class"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 6,
-      "eye_color": "green",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "skin_color": 8,
+      "eye_color": "blue",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "S",
         "C"
       ],
-      "health": 0.625,
-      "fertility": 0.604,
+      "health": 0.597,
+      "fertility": 0.668,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -78,13 +126,326 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.625
+            "new_health": 0.597
           },
-          "death": true
+          "death": false
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "new relationship",
+            "key": 11808,
+            "people": [
+              11806,
+              11807
+            ],
+            "people names": [
+              "Wauthem Pipe",
+              "Hildegardis Durcant"
+            ],
+            "people ages": [
+              21,
+              17
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stScherbier straet.se1.c2",
+              "street": "Scherbier straet",
+              "neighborhood": "cingelzuid",
+              "unique id": 634
+            }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1201
+          },
+          {
+            "topic": "new relationship",
+            "key": 13775,
+            "people": [
+              11807,
+              13773
+            ],
+            "people names": [
+              "Hildegardis Durcant",
+              "Bartrarde Pipe"
+            ],
+            "people ages": [
+              18,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 14958,
+            "people": [
+              11807,
+              14956
+            ],
+            "people names": [
+              "Hildegardis Durcant",
+              "Geile Wauthemsdochter"
+            ],
+            "people ages": [
+              20,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "key": 11808,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11806,
+              "name": "Wauthem Pipe",
+              "age": 24,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "spouse"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              37608,
+              36542,
+              63836,
+              65394,
+              47911,
+              50008,
+              77814,
+              49964,
+              80568,
+              80826,
+              83964,
+              87291,
+              63840
+            ]
+          }
+        ],
+        "1204": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "disliked",
+            "relationship": 14958
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              37608,
+              36542,
+              63836,
+              65394,
+              47911,
+              50008,
+              77814,
+              49964,
+              80568,
+              80826,
+              83964,
+              87291,
+              63840
+            ]
+          }
+        ],
+        "1205": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              37608,
+              36542,
+              63836,
+              65394,
+              47911,
+              50008,
+              77814,
+              49964,
+              80568,
+              80826,
+              83964,
+              87291,
+              63840
+            ]
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              37608,
+              36542,
+              63836,
+              65394,
+              47911,
+              50008,
+              77814,
+              49964,
+              80568,
+              80826,
+              83964,
+              87291,
+              63840
+            ]
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              37608,
+              36542,
+              63836,
+              65394,
+              47911,
+              50008,
+              77814,
+              49964,
+              80568,
+              80826,
+              83964,
+              87291,
+              63840
+            ]
+          }
+        ],
+        "1208": [
+          {
+            "topic": "new relationship",
+            "key": 19547,
+            "people": [
+              12064,
+              11807
+            ],
+            "people names": [
+              "Ino Vogel",
+              "Hildegardis Durcant"
+            ],
+            "people ages": [
+              31,
+              26
+            ],
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0.453,
+            "inhabitants": [
+              37608,
+              36542,
+              63836,
+              65394,
+              47911,
+              50008,
+              77814,
+              49964,
+              80568,
+              80826,
+              83964,
+              87291,
+              63840
+            ]
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0.373,
+            "inhabitants": [
+              37608,
+              36542,
+              63836,
+              65394,
+              47911,
+              50008,
+              77814,
+              49964,
+              80568,
+              80826,
+              83964,
+              87291,
+              63840
+            ]
+          }
+        ],
+        "1212": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "friend",
+            "relationship": 19547
+          },
+          {
+            "topic": "new relationship",
+            "key": 21724,
+            "people": [
+              11807,
+              21722
+            ],
+            "people names": [
+              "Hildegardis Durcant",
+              "Aue Vogel"
+            ],
+            "people ages": [
+              30,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.248,
+            "inhabitants": [
+              37608,
+              36542,
+              63836,
+              65394,
+              47911,
+              50008,
+              77814,
+              49964,
+              80568,
+              80826,
+              83964,
+              87291,
+              63840
+            ]
+          }
+        ],
+        "1213": [
           {
             "topic": "death",
             "cause": "illness"
@@ -94,17 +455,20 @@
     },
     "key": 11807,
     "home": {
-      "income class": 4,
-      "income class label": "nobility",
-      "section": "stMuurhuysen2.se1.c4",
-      "street": "Muurhuysen2",
-      "neighborhood": "cingelnoord",
-      "unique id": 791
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stScherbier straet.se1.c2",
+      "street": "Scherbier straet",
+      "neighborhood": "cingelzuid",
+      "unique id": 634
     },
     "relationship status": {
       "taken": true,
       "married": true,
-      "relationships": []
+      "relationships": [
+        11808,
+        19547
+      ]
     }
   }
 }

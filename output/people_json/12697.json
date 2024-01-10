@@ -1,62 +1,55 @@
 {
   "12697": {
     "alive": false,
-    "name": "Kerstiaen",
-    "surname": "Arnulphusszoon",
-    "full name": "Kerstiaen Arnulphusszoon",
+    "name": "Mattheus",
+    "surname": "",
+    "full name": "Mattheus",
     "born this way": {
-      "sexuality label": "bi",
-      "sexuality": 0.399,
-      "romantic interest": 0.539,
-      "sex interest": 0.696,
+      "sexuality label": "straight",
+      "sexuality": 0.094,
+      "romantic interest": 0.442,
+      "sex interest": 0.769,
       "gender expression": 0.0,
       "sex": "m"
     },
-    "age": 36,
-    "birth year": 1200,
+    "age": 53,
+    "birth year": 1156,
     "sex": "m",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.947,
-      "nice-nasty": 0.0,
-      "honest-false": 0.294
+      "lawful-chaotic": 0.047,
+      "nice-nasty": 0.194,
+      "honest-false": 0.683
     },
     "attitude": {
-      "outgoing": 0.489,
-      "dream": 0.534
+      "outgoing": 0.398,
+      "dream": 0.118
     },
     "homsoc": {
       "means": {
         "independent": false,
         "taken_care_of": false,
-        "caretaker": true,
+        "caretaker": false,
         "needs_care": false,
         "flags": [
           "starving"
         ]
       },
       "expression": {
-        "sexuality expression": 0.224,
+        "sexuality expression": 0.037,
         "gender expression expression": -0.001
       }
     },
     "network": {
-      "parents": {
-        "mother": "Alene (10514)",
-        "father": "Arnulphus (10513)"
-      },
+      "parents": "firstgen",
       "children": {},
       "relationship keys": {
-        "parent": [
-          12698,
+        "spouse": [
           12699
-        ],
-        "sibling": [
-          16478
         ]
       }
     },
@@ -66,46 +59,35 @@
         2,
         "middle class"
       ],
-      "income": 0.703,
+      "income": 0.321,
       "all_incomes": [
-        0.971,
-        1.095,
-        1.136,
-        1.052,
-        0.894,
-        0.953,
-        0.849,
-        0.911,
-        1.141,
-        1.156,
-        0.959,
-        0.882,
-        0.787,
-        0.917,
-        1.022,
-        1.178,
-        0.849,
-        0.8,
-        0.706,
-        0.664,
-        0.703
+        0.988,
+        0.761,
+        0.546,
+        0.42200000000000004,
+        0.16999999999999998,
+        0.391,
+        0.025,
+        0.025,
+        0.025,
+        0.321
       ],
       "job": {
         "lawful": false,
-        "honest": true
+        "honest": false
       }
     },
     "genetics": {
-      "skin_color": 9,
-      "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 5,
+      "eye_color": "blue",
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.738,
-      "fertility": 0.75,
+      "health": 0.011,
+      "fertility": 0.444,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -113,19 +95,35 @@
     },
     "memory": {
       "health": {
-        "1201": {
+        "1200": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.738
+            "new_health": 0.483
           },
           "death": false
         },
-        "1236": {
+        "1206": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.738
+            "change": true,
+            "value_change": -0.239,
+            "new_health": 0.244
+          },
+          "death": false
+        },
+        "1207": {
+          "health": {
+            "change": true,
+            "value_change": -0.192,
+            "new_health": 0.052
+          },
+          "death": false
+        },
+        "1208": {
+          "health": {
+            "change": true,
+            "value_change": -0.041,
+            "new_health": 0.011
           },
           "death": true
         }
@@ -133,198 +131,128 @@
       "events": {
         "1200": [
           {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.988
+          },
+          {
+            "topic": "new relationship",
+            "key": 12699,
+            "people": [
+              12697,
+              12698
+            ],
+            "people names": [
+              "Mattheus",
+              "Marie"
+            ],
+            "people ages": [
+              44,
+              38
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
             "topic": "new home",
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stBloemendaelse straet.se3.c2",
-              "street": "Bloemendaelse straet",
-              "neighborhood": "agnesbuurt",
-              "unique id": 226
+              "section": "stDen Hof.se3.c2",
+              "street": "Den Hof",
+              "neighborhood": "denhof",
+              "unique id": 945
             }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1201
+          },
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.546
+          }
+        ],
+        "1202": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.42200000000000004
+          }
+        ],
+        "1203": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.16999999999999998
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.16999999999999998,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.025
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.025,
+            "inhabitants": []
           }
         ],
         "1206": [
           {
-            "topic": "new relationship",
-            "key": 16478,
-            "people": [
-              12697,
-              16475
-            ],
-            "people names": [
-              "Kerstiaen Arnulphusszoon",
-              "Dilane Snauel"
-            ],
-            "label": "sibling",
-            "committed": false
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "indifferent",
+            "relationship": 12699
           },
           {
-            "topic": "person died",
-            "person": {
-              "key": 10513,
-              "name": "Arnulphus Snauel",
-              "age": 40,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "cause": "illness",
-            "label": "parent"
+            "topic": "not enough income",
+            "income": 0.025,
+            "inhabitants": []
           }
         ],
         "1207": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1207
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "feelings change",
+            "target": 12698,
+            "target name": "Marie",
+            "state": "out of love",
+            "relationship": 12699
           }
         ],
         "1208": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1209": [
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stCoppelstraet.se1.c1",
-              "street": "Coppelstraet",
-              "neighborhood": "agnesbuurt",
-              "unique id": 339
-            }
-          },
-          {
-            "topic": "update",
-            "update": "parent married",
-            "parent": 10514,
-            "new partner": 10759
-          }
-        ],
-        "1212": [
-          {
-            "topic": "person died",
-            "person": {
-              "key": 10514,
-              "name": "Alene Borlut",
-              "age": 43,
-              "alive": false,
-              "sex": "f",
-              "parents": "firstgen"
-            },
-            "cause": "illness",
-            "label": "parent"
-          }
-        ],
-        "1215": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1215
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": [
-              19186,
-              29968,
-              33453,
-              35056,
-              35527,
-              35741,
-              14168,
-              28921
-            ]
-          }
-        ],
-        "1216": [
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.971
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": [
-              19186,
-              29968,
-              33453,
-              35056,
-              35527,
-              35741,
-              14168,
-              28921
-            ]
-          }
-        ],
-        "1217": [
-          {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.095
-          }
-        ],
-        "1224": [
-          {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.141
-          }
-        ],
-        "1230": [
-          {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.022
-          }
-        ],
-        "1232": [
-          {
-            "topic": "event",
-            "event": "war",
-            "year": 1232
-          }
-        ],
-        "1234": [
-          {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.706
-          }
-        ],
-        "1236": [
-          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "old age"
           }
         ]
       }
     },
     "key": 12697,
     "home": {
-      "income class": 1,
-      "income class label": "lower middle class",
-      "section": "stCoppelstraet.se1.c1",
-      "street": "Coppelstraet",
-      "neighborhood": "agnesbuurt",
-      "unique id": 339
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stDen Hof.se3.c2",
+      "street": "Den Hof",
+      "neighborhood": "denhof",
+      "unique id": 945
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
-        16478
+        12699
       ]
     }
   }

@@ -1,85 +1,111 @@
 {
   "12361": {
     "alive": false,
-    "name": "Zuanelt",
-    "surname": "Tuc",
-    "full name": "Zuanelt Tuc",
+    "name": "Helpriko",
+    "surname": "Duvel",
+    "full name": "Helpriko Duvel",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.054,
-      "romantic interest": 0.531,
-      "sex interest": 0.784,
-      "gender expression": 0.152,
-      "sex": "f"
+      "sexuality label": "gay",
+      "sexuality": 0.93,
+      "romantic interest": 0.84,
+      "sex interest": 0.556,
+      "gender expression": 0.362,
+      "sex": "m"
     },
-    "age": 13,
-    "birth year": 1200,
-    "sex": "f",
-    "faction": "No religion",
+    "age": 53,
+    "birth year": 1159,
+    "sex": "m",
+    "faction": "Dogmatists",
     "income class": [
       3,
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.602,
-      "nice-nasty": 0.899,
-      "honest-false": 0.17
+      "lawful-chaotic": 0.765,
+      "nice-nasty": 0.158,
+      "honest-false": 0.385
     },
     "attitude": {
-      "outgoing": 0.447,
-      "dream": 0.336
+      "outgoing": 0.261,
+      "dream": 0.6
     },
     "homsoc": {
       "means": {
-        "independent": false,
-        "taken_care_of": true,
-        "caretaker": true,
-        "needs_care": true,
-        "flags": [
-          "starving"
-        ]
+        "independent": true,
+        "taken_care_of": false,
+        "caretaker": false,
+        "needs_care": false,
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.039,
-        "gender expression expression": 0.093
+        "sexuality expression": 0.85,
+        "gender expression expression": 0.116
       }
     },
     "network": {
-      "parents": {
-        "mother": "Hodine (11264)",
-        "father": "Arnst (11263)"
+      "parents": "firstgen",
+      "children": {
+        "13243": {
+          "key": 13243,
+          "name": "Gerrit Duvel",
+          "age": 20,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Gertrudis (12362)",
+            "father": "Helpriko (12361)"
+          }
+        }
       },
-      "children": {},
       "relationship keys": {
-        "parent": [
-          12362,
+        "spouse": [
           12363
         ],
-        "sibling": [
-          15103
-        ]
+        "child": {
+          "birth": [
+            13244
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         3,
         "upper middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.5490000000000002,
+      "all_incomes": [
+        1.133,
+        1.21,
+        1.2810000000000001,
+        1.342,
+        1.456,
+        1.5490000000000002,
+        1.3760000000000001,
+        1.5490000000000002,
+        1.5490000000000002,
+        1.5490000000000002,
+        1.389,
+        1.5490000000000002,
+        1.5490000000000002
+      ],
+      "job": {
+        "lawful": true,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 1,
-      "eye_color": "green",
-      "hair_color": "red",
-      "hair_color_code": 3,
+      "skin_color": 5,
+      "eye_color": "brown",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
         "C",
         "C"
       ],
-      "health": 0.61,
-      "fertility": 0.518,
+      "health": 0.065,
+      "fertility": 0.63,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -87,19 +113,35 @@
     },
     "memory": {
       "health": {
-        "1201": {
+        "1200": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.61
+            "new_health": 0.651
           },
           "death": false
         },
-        "1213": {
+        "1209": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.61
+            "change": true,
+            "value_change": -0.22,
+            "new_health": 0.431
+          },
+          "death": false
+        },
+        "1210": {
+          "health": {
+            "change": true,
+            "value_change": -0.184,
+            "new_health": 0.247
+          },
+          "death": false
+        },
+        "1211": {
+          "health": {
+            "change": true,
+            "value_change": -0.182,
+            "new_health": 0.065
           },
           "death": true
         }
@@ -107,92 +149,78 @@
       "events": {
         "1200": [
           {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.133
+          },
+          {
+            "topic": "new relationship",
+            "key": 12363,
+            "people": [
+              12361,
+              12362
+            ],
+            "people names": [
+              "Helpriko Duvel",
+              "Gertrudis Vrint"
+            ],
+            "people ages": [
+              41,
+              30
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
             "topic": "new home",
             "home": {
               "income class": 3,
               "income class label": "upper middle class",
-              "section": "stBreestraat.se3.c3",
-              "street": "Breestraat",
-              "neighborhood": "olvbuurt",
-              "unique id": 558
+              "section": "stMuurhuysen2.se7.c3",
+              "street": "Muurhuysen2",
+              "neighborhood": "cingelnoord",
+              "unique id": 828
             }
-          }
-        ],
-        "1204": [
+          },
           {
             "topic": "new relationship",
-            "key": 15103,
+            "key": 13244,
             "people": [
               12361,
-              15100
+              13243
             ],
             "people names": [
-              "Zuanelt Tuc",
-              "Evergero Tuc"
+              "Helpriko Duvel",
+              "Gerrit Duvel"
             ],
-            "label": "sibling",
+            "people ages": [
+              41,
+              0
+            ],
+            "label": "parentchild",
             "committed": false
           }
         ],
-        "1207": [
+        "1201": [
           {
             "topic": "event",
             "event": "plague",
-            "year": 1207
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 11263,
-              "name": "Arnst Tuc",
-              "age": 54,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "cause": "sickness",
-            "label": "parent"
-          }
-        ],
-        "1208": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1209": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "year": 1201
           }
         ],
         "1210": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 13244
           }
         ],
         "1211": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1212": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1213": [
-          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "old age"
           }
         ]
       }
@@ -201,16 +229,16 @@
     "home": {
       "income class": 3,
       "income class label": "upper middle class",
-      "section": "stBreestraat.se3.c3",
-      "street": "Breestraat",
-      "neighborhood": "olvbuurt",
-      "unique id": 558
+      "section": "stMuurhuysen2.se7.c3",
+      "street": "Muurhuysen2",
+      "neighborhood": "cingelnoord",
+      "unique id": 828
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
-        15103
+        12363
       ]
     }
   }

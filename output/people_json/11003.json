@@ -1,33 +1,33 @@
 {
   "11003": {
     "alive": false,
-    "name": "Vreile",
-    "surname": "Mol",
-    "full name": "Vreile Mol",
+    "name": "Reynildis",
+    "surname": "Commer",
+    "full name": "Reynildis Commer",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.045,
-      "romantic interest": 0.674,
-      "sex interest": 0.548,
-      "gender expression": 0.037,
+      "sexuality": 0.082,
+      "romantic interest": 0.675,
+      "sex interest": 0.649,
+      "gender expression": 0.04,
       "sex": "f"
     },
-    "age": 34,
-    "birth year": 1169,
+    "age": 30,
+    "birth year": 1176,
     "sex": "f",
     "faction": "Dogmatists",
     "income class": [
-      0,
-      "working class"
+      2,
+      "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.902,
-      "nice-nasty": 0.99,
-      "honest-false": 0.692
+      "lawful-chaotic": 0.479,
+      "nice-nasty": 0.124,
+      "honest-false": 0.594
     },
     "attitude": {
-      "outgoing": 0.609,
-      "dream": 0.165
+      "outgoing": 0.0,
+      "dream": 0.38
     },
     "homsoc": {
       "means": {
@@ -35,44 +35,59 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": [
-          "starving"
-        ]
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.032,
-        "gender expression expression": 0.034
+        "sexuality expression": 0.073,
+        "gender expression expression": 0.017
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14658": {
+          "key": 14658,
+          "name": "Helyana Rissewintsdochter",
+          "age": 1,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Reynildis (11003)",
+            "father": "Rissewint (11002)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11004
-        ]
+        ],
+        "child": {
+          "birth": [
+            14660
+          ]
+        }
       }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        0,
-        "working class"
+        2,
+        "middle class"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 9,
-      "eye_color": "green",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "skin_color": 3,
+      "eye_color": "brown",
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
       "hair_type": [
-        "C",
-        "S"
+        "S",
+        "C"
       ],
-      "health": 0.75,
-      "fertility": 0.767,
+      "health": 0.673,
+      "fertility": 0.604,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -84,9 +99,17 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.75
+            "new_health": 0.673
           },
           "death": false
+        },
+        "1205": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.673
+          },
+          "death": true
         }
       },
       "events": {
@@ -99,8 +122,12 @@
               11003
             ],
             "people names": [
-              "Hubrecht",
-              "Vreile Mol"
+              "Rissewint",
+              "Reynildis Commer"
+            ],
+            "people ages": [
+              39,
+              24
             ],
             "label": "spouse",
             "committed": true
@@ -108,23 +135,61 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stDie Coninc straet.se3.c0",
-              "street": "Die Coninc straet",
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stDie Camp.se1.c2",
+              "street": "Die Camp",
               "neighborhood": "kampbuurt",
-              "unique id": 449
+              "unique id": 354
             }
           }
         ],
         "1201": [
           {
-            "topic": "not enough income",
-            "income": 0.457,
-            "inhabitants": []
+            "topic": "event",
+            "event": "plague",
+            "year": 1201
           }
         ],
         "1202": [
+          {
+            "topic": "new relationship",
+            "key": 14660,
+            "people": [
+              11003,
+              14658
+            ],
+            "people names": [
+              "Reynildis Commer",
+              "Helyana Rissewintsdochter"
+            ],
+            "people ages": [
+              26,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1203": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 14658,
+              "name": "Helyana Rissewintsdochter",
+              "age": 1,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Reynildis (11003)",
+                "father": "Rissewint (11002)"
+              }
+            },
+            "cause": "childhood illness",
+            "label": "child"
+          }
+        ],
+        "1205": [
           {
             "topic": "death",
             "cause": "illness"
@@ -134,12 +199,12 @@
     },
     "key": 11003,
     "home": {
-      "income class": 0,
-      "income class label": "working class",
-      "section": "stDie Coninc straet.se3.c0",
-      "street": "Die Coninc straet",
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stDie Camp.se1.c2",
+      "street": "Die Camp",
       "neighborhood": "kampbuurt",
-      "unique id": 449
+      "unique id": 354
     },
     "relationship status": {
       "taken": true,

@@ -1,19 +1,19 @@
 {
   "10859": {
     "alive": false,
-    "name": "Sarre",
-    "surname": "",
-    "full name": "Sarre",
+    "name": "Agota",
+    "surname": "Clove",
+    "full name": "Agota Clove",
     "born this way": {
       "sexuality label": "gay",
-      "sexuality": 0.878,
-      "romantic interest": 0.644,
-      "sex interest": 0.539,
-      "gender expression": 0.411,
+      "sexuality": 0.881,
+      "romantic interest": 0.84,
+      "sex interest": 0.648,
+      "gender expression": 0.256,
       "sex": "f"
     },
-    "age": 29,
-    "birth year": 1173,
+    "age": 52,
+    "birth year": 1162,
     "sex": "f",
     "faction": "Dogmatists",
     "income class": [
@@ -21,13 +21,13 @@
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.808,
-      "nice-nasty": 0.373,
-      "honest-false": 0.0
+      "lawful-chaotic": 0.0,
+      "nice-nasty": 0.0,
+      "honest-false": 0.06
     },
     "attitude": {
-      "outgoing": 0.255,
-      "dream": 0.715
+      "outgoing": 0.277,
+      "dream": 0.191
     },
     "homsoc": {
       "means": {
@@ -35,37 +35,23 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.544,
-        "gender expression expression": 0.22
+        "sexuality expression": 0.528,
+        "gender expression expression": 0.153
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {
-        "12277": {
-          "key": 12277,
-          "name": "Reynildis Colsebyle",
-          "age": 16,
-          "alive": false,
-          "sex": "f",
-          "parents": {
-            "mother": "Sarre (10859)",
-            "father": "Ringot (10858)"
-          }
-        }
-      },
+      "children": {},
       "relationship keys": {
         "spouse": [
-          10860
-        ],
-        "child": {
-          "birth": [
-            12279
-          ]
-        }
+          10860,
+          17504
+        ]
       }
     },
     "occupation": {
@@ -78,16 +64,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 5,
+      "skin_color": 7,
       "eye_color": "blue",
       "hair_color": "strawberry blonde",
       "hair_color_code": 5,
       "hair_type": [
         "S",
-        "C"
+        "S"
       ],
-      "health": 0.544,
-      "fertility": 0.52,
+      "health": 0.275,
+      "fertility": 0.685,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -99,9 +85,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.544
+            "new_health": 0.702
           },
           "death": false
+        },
+        "1212": {
+          "health": {
+            "change": true,
+            "value_change": -0.304,
+            "new_health": 0.398
+          },
+          "death": false
+        },
+        "1213": {
+          "health": {
+            "change": true,
+            "value_change": -0.123,
+            "new_health": 0.275
+          },
+          "death": true
         }
       },
       "events": {
@@ -114,8 +116,12 @@
               10859
             ],
             "people names": [
-              "Ringot Colsebyle",
-              "Sarre"
+              "Ludolphus",
+              "Agota Clove"
+            ],
+            "people ages": [
+              40,
+              38
             ],
             "label": "spouse",
             "committed": true
@@ -125,31 +131,154 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stDie Camp.se5.c2",
-              "street": "Die Camp",
-              "neighborhood": "kampbuurt",
-              "unique id": 387
+              "section": "stCingel.se1.c2",
+              "street": "Cingel",
+              "neighborhood": "agnesbuurt",
+              "unique id": 304
             }
-          },
-          {
-            "topic": "new relationship",
-            "key": 12279,
-            "people": [
-              10859,
-              12277
-            ],
-            "people names": [
-              "Sarre",
-              "Reynildis Colsebyle"
-            ],
-            "label": "parentchild",
-            "committed": false
           }
         ],
         "1201": [
           {
+            "topic": "event",
+            "event": "plague",
+            "year": 1201
+          }
+        ],
+        "1203": [
+          {
+            "topic": "feelings change",
+            "target": 10858,
+            "target name": "Ludolphus",
+            "state": "out of love",
+            "relationship": 10860
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.025,
+            "inhabitants": []
+          }
+        ],
+        "1204": [
+          {
+            "topic": "not enough income",
+            "income": 0.025,
+            "inhabitants": []
+          },
+          {
+            "key": 10860,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10858,
+              "name": "Ludolphus",
+              "age": 45,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "spouse"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "new relationship",
+            "key": 17504,
+            "people": [
+              12121,
+              10859
+            ],
+            "people names": [
+              "Gheeneman Screvel",
+              "Agota Clove"
+            ],
+            "people ages": [
+              52,
+              44
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stCorte gracht.se3.c2",
+              "street": "Corte gracht",
+              "neighborhood": "visbuurt",
+              "unique id": 743
+            }
+          }
+        ],
+        "1207": [
+          {
+            "topic": "feelings change",
+            "target": 12121,
+            "target name": "Gheeneman Screvel",
+            "state": "solid love",
+            "relationship": 17504
+          },
+          {
+            "key": 17504,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12121,
+              "name": "Gheeneman Screvel",
+              "age": 54,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "label": "spouse"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "old age"
           }
         ]
       }
@@ -158,16 +287,17 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stDie Camp.se5.c2",
-      "street": "Die Camp",
-      "neighborhood": "kampbuurt",
-      "unique id": 387
+      "section": "stCorte gracht.se3.c2",
+      "street": "Corte gracht",
+      "neighborhood": "visbuurt",
+      "unique id": 743
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
-        10860
+        10860,
+        17504
       ]
     }
   }

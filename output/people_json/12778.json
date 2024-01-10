@@ -1,82 +1,128 @@
 {
   "12778": {
     "alive": false,
-    "name": "Ghoudekinen",
-    "surname": "Regis",
-    "full name": "Ghoudekinen Regis",
+    "name": "Wlfarde",
+    "surname": "",
+    "full name": "Wlfarde",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.058,
-      "romantic interest": 0.587,
-      "sex interest": 0.592,
-      "gender expression": 0.016,
-      "sex": "f"
+      "sexuality": 0.126,
+      "romantic interest": 0.772,
+      "sex interest": 0.847,
+      "gender expression": 0.248,
+      "sex": "m"
     },
-    "age": 2,
-    "birth year": 1200,
-    "sex": "f",
-    "faction": "Zealots",
+    "age": 28,
+    "birth year": 1177,
+    "sex": "m",
+    "faction": "Dogmatists",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.22,
-      "nice-nasty": 0.905,
-      "honest-false": 0.379
+      "lawful-chaotic": 0.065,
+      "nice-nasty": 0.117,
+      "honest-false": 0.16
     },
     "attitude": {
-      "outgoing": 0.351,
-      "dream": 0.551
+      "outgoing": 0.696,
+      "dream": 0.43
     },
     "homsoc": {
       "means": {
-        "independent": false,
-        "taken_care_of": true,
-        "caretaker": true,
-        "needs_care": true,
-        "flags": [
-          "starving"
-        ]
+        "independent": true,
+        "taken_care_of": false,
+        "caretaker": false,
+        "needs_care": false,
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.042,
-        "gender expression expression": 0.004
+        "sexuality expression": 0.078,
+        "gender expression expression": 0.113
       }
     },
     "network": {
-      "parents": {
-        "mother": "Menoldis (11171)",
-        "father": "Huwardo (11170)"
+      "parents": "firstgen",
+      "children": {
+        "14262": {
+          "key": 14262,
+          "name": "Esa Wlfardesdochter",
+          "age": 33,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Jute (12779)",
+            "father": "Wlfarde (12778)"
+          }
+        },
+        "14942": {
+          "key": 14942,
+          "name": "Godeweris Wlfardesdochter",
+          "age": 33,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Jute (12779)",
+            "father": "Wlfarde (12778)"
+          }
+        },
+        "15348": {
+          "key": 15348,
+          "name": "Amelgeir",
+          "age": 35,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Jute (12779)",
+            "father": "Wlfarde (12778)"
+          }
+        }
       },
-      "children": {},
       "relationship keys": {
-        "parent": [
-          12779,
+        "spouse": [
           12780
-        ]
+        ],
+        "child": {
+          "birth": [
+            14263,
+            14943,
+            15349
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         1,
         "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.185,
+      "all_incomes": [
+        0.686,
+        0.314,
+        0.464,
+        0.803,
+        1.187,
+        1.185
+      ],
+      "job": {
+        "lawful": true,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 7,
+      "skin_color": 4,
       "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.699,
-      "fertility": 0.729,
+      "health": 0.775,
+      "fertility": 0.776,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -84,19 +130,19 @@
     },
     "memory": {
       "health": {
-        "1201": {
+        "1200": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.699
+            "new_health": 0.775
           },
           "death": false
         },
-        "1202": {
+        "1204": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.699
+            "new_health": 0.775
           },
           "death": true
         }
@@ -104,28 +150,131 @@
       "events": {
         "1200": [
           {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.686
+          },
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.314
+          },
+          {
+            "topic": "new relationship",
+            "key": 12780,
+            "people": [
+              12778,
+              12779
+            ],
+            "people names": [
+              "Wlfarde",
+              "Jute"
+            ],
+            "people ages": [
+              23,
+              20
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
             "topic": "new home",
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stPaternoster straetje.se1.c1",
-              "street": "Paternoster straetje",
-              "neighborhood": "olvbuurt",
-              "unique id": 518
+              "section": "stPapenhofstede.se1.c1",
+              "street": "Papenhofstede",
+              "neighborhood": "denhof",
+              "unique id": 974
             }
           }
         ],
         "1201": [
           {
-            "topic": "not enough income",
-            "income": 0.429,
-            "inhabitants": []
+            "topic": "event",
+            "event": "plague",
+            "year": 1201
+          },
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.464
+          },
+          {
+            "topic": "new relationship",
+            "key": 14263,
+            "people": [
+              12778,
+              14262
+            ],
+            "people names": [
+              "Wlfarde",
+              "Esa Wlfardesdochter"
+            ],
+            "people ages": [
+              25,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1202": [
           {
+            "topic": "new relationship",
+            "key": 14943,
+            "people": [
+              12778,
+              14942
+            ],
+            "people names": [
+              "Wlfarde",
+              "Godeweris Wlfardesdochter"
+            ],
+            "people ages": [
+              26,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1203": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.187
+          },
+          {
+            "topic": "new relationship",
+            "key": 15349,
+            "people": [
+              12778,
+              15348
+            ],
+            "people names": [
+              "Wlfarde",
+              "Amelgeir"
+            ],
+            "people ages": [
+              26,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 12779,
+            "target name": "Jute",
+            "state": "out of love",
+            "relationship": 12780
+          }
+        ],
+        "1204": [
+          {
             "topic": "death",
-            "cause": "childhood illness"
+            "cause": "illness"
           }
         ]
       }
@@ -134,15 +283,17 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stPaternoster straetje.se1.c1",
-      "street": "Paternoster straetje",
-      "neighborhood": "olvbuurt",
-      "unique id": 518
+      "section": "stPapenhofstede.se1.c1",
+      "street": "Papenhofstede",
+      "neighborhood": "denhof",
+      "unique id": 974
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
-      "relationships": []
+      "taken": true,
+      "married": true,
+      "relationships": [
+        12780
+      ]
     }
   }
 }

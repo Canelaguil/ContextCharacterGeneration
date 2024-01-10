@@ -22,13 +22,14 @@ def income_adjusted_for_age(age, income, previously_employed=False):
 
 
 class Occupation():
-    def __init__(self, person, model, income_class, personality, lawful=None, honest=None, 
-                 hereditary=False) -> None:
+    def __init__(self, person, model, income_class : tuple, personality : dict, 
+                 lawful=None, honest=None, hereditary=False) -> None:
         self.person = person
         self.community = model
         self.personality = personality
         self.has_job = False
         self.income_class = income_class
+        self.passive_income = Occupation.passive_income[self.income_class[0]]
         self.income = 0
         self.all_incomes = []
         self.hereditary = hereditary # not implemented
@@ -71,6 +72,7 @@ class Occupation():
             if age < Occupation.adult_age:
                 self.income += income_adjusted_for_age(age, self.income, True)
             self.income = normal_in_range(self.income, scale, 1.5, 0)
+            self.income += self.passive_income # for higher classes
             self.all_incomes.append(self.income)
             if self.income < 0.25 and old_income > 0.25:
                 self.notify('hardly any income')

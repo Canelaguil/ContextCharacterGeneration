@@ -1,54 +1,109 @@
 {
   "10294": {
     "alive": false,
-    "name": "Amilius",
-    "surname": "",
-    "full name": "Amilius",
+    "name": "Isbrandus",
+    "surname": "Bier",
+    "full name": "Isbrandus Bier",
     "born this way": {
-      "sexuality label": "bi",
-      "sexuality": 0.325,
-      "romantic interest": 0.802,
-      "sex interest": 0.439,
-      "gender expression": 0.2,
+      "sexuality label": "straight",
+      "sexuality": 0.034,
+      "romantic interest": 0.556,
+      "sex interest": 0.745,
+      "gender expression": 0.0,
       "sex": "m"
     },
-    "age": 52,
-    "birth year": 1151,
+    "age": 37,
+    "birth year": 1170,
     "sex": "m",
-    "faction": "Zealots",
+    "faction": "Dogmatists",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.851,
-      "nice-nasty": 0.523,
-      "honest-false": 0.0
+      "lawful-chaotic": 0.547,
+      "nice-nasty": 0.591,
+      "honest-false": 0.318
     },
     "attitude": {
-      "outgoing": 0.554,
-      "dream": 0.309
+      "outgoing": 0.688,
+      "dream": 0.367
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.195,
-        "gender expression expression": 0.123
+        "sexuality expression": 0.016,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13195": {
+          "key": 13195,
+          "name": "Heinkin Bier",
+          "age": 56,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Aleydis (10295)",
+            "father": "Isbrandus (10294)"
+          }
+        },
+        "14561": {
+          "key": 14561,
+          "name": "Eltetus Bier",
+          "age": 55,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Aleydis (10295)",
+            "father": "Isbrandus (10294)"
+          }
+        },
+        "15353": {
+          "key": 15353,
+          "name": "Rembrandus",
+          "age": 54,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Aleydis (10295)",
+            "father": "Isbrandus (10294)"
+          }
+        },
+        "16261": {
+          "key": 16261,
+          "name": "Menoldis Bier",
+          "age": 25,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Aleydis (10295)",
+            "father": "Isbrandus (10294)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10296
-        ]
+        ],
+        "child": {
+          "birth": [
+            13196,
+            14562,
+            15354,
+            16262
+          ]
+        }
       }
     },
     "occupation": {
@@ -57,12 +112,16 @@
         1,
         "lower middle class"
       ],
-      "income": 1.499,
+      "income": 0.1,
       "all_incomes": [
-        1.222,
-        1.499,
-        1.499,
-        1.499
+        0.975,
+        0.602,
+        0.8,
+        0.821,
+        0.739,
+        0.544,
+        0.347,
+        0.1
       ],
       "job": {
         "lawful": true,
@@ -70,16 +129,16 @@
       }
     },
     "genetics": {
-      "skin_color": 8,
-      "eye_color": "green",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "skin_color": 3,
+      "eye_color": "brown",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "S",
         "C"
       ],
-      "health": 0.0,
-      "fertility": 0.504,
+      "health": 0.647,
+      "fertility": 0.79,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -91,23 +150,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.531
+            "new_health": 0.647
           },
           "death": false
         },
-        "1201": {
+        "1206": {
           "health": {
-            "change": true,
-            "value_change": -0.213,
-            "new_health": 0.318
-          },
-          "death": false
-        },
-        "1202": {
-          "health": {
-            "change": true,
-            "value_change": -0.318,
-            "new_health": 0.0
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.647
           },
           "death": true
         }
@@ -117,7 +168,12 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.222
+            "income": 0.975
+          },
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.602
           },
           {
             "topic": "new relationship",
@@ -127,8 +183,12 @@
               10295
             ],
             "people names": [
-              "Amilius",
-              "Waldrada Duvel"
+              "Isbrandus Bier",
+              "Aleydis Smout"
+            ],
+            "people ages": [
+              30,
+              16
             ],
             "label": "spouse",
             "committed": true
@@ -138,17 +198,141 @@
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stHelle voet.se9.c1",
+              "section": "stHelle voet.se5.c1",
               "street": "Helle voet",
               "neighborhood": "jorisbuurt",
-              "unique id": 127
+              "unique id": 106
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 13196,
+            "people": [
+              10294,
+              13195
+            ],
+            "people names": [
+              "Isbrandus Bier",
+              "Heinkin Bier"
+            ],
+            "people ages": [
+              30,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1201": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1201
           }
         ],
         "1202": [
           {
+            "topic": "new relationship",
+            "key": 14562,
+            "people": [
+              10294,
+              14561
+            ],
+            "people names": [
+              "Isbrandus Bier",
+              "Eltetus Bier"
+            ],
+            "people ages": [
+              32,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 10295,
+            "target name": "Aleydis Smout",
+            "state": "solid love",
+            "relationship": 10296
+          }
+        ],
+        "1203": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.739
+          },
+          {
+            "topic": "new relationship",
+            "key": 15354,
+            "people": [
+              10294,
+              15353
+            ],
+            "people names": [
+              "Isbrandus Bier",
+              "Rembrandus"
+            ],
+            "people ages": [
+              33,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.739,
+            "inhabitants": []
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 16262,
+            "people": [
+              10294,
+              16261
+            ],
+            "people names": [
+              "Isbrandus Bier",
+              "Menoldis Bier"
+            ],
+            "people ages": [
+              34,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.544,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.347
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.347,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.1
+          },
+          {
             "topic": "death",
-            "cause": "sickness"
+            "cause": "illness"
           }
         ]
       }
@@ -157,10 +341,10 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stHelle voet.se9.c1",
+      "section": "stHelle voet.se5.c1",
       "street": "Helle voet",
       "neighborhood": "jorisbuurt",
-      "unique id": 127
+      "unique id": 106
     },
     "relationship status": {
       "taken": true,

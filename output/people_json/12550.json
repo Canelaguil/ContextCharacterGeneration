@@ -1,80 +1,89 @@
 {
   "12550": {
     "alive": false,
-    "name": "Linnea",
-    "surname": "",
-    "full name": "Linnea",
+    "name": "Eghenonis",
+    "surname": "Zieken",
+    "full name": "Eghenonis Zieken",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.026,
-      "romantic interest": 0.496,
-      "sex interest": 0.447,
-      "gender expression": 0.039,
-      "sex": "f"
+      "sexuality label": "gay",
+      "sexuality": 0.884,
+      "romantic interest": 0.67,
+      "sex interest": 0.999,
+      "gender expression": 0.215,
+      "sex": "m"
     },
-    "age": 2,
-    "birth year": 1200,
-    "sex": "f",
-    "faction": "Zealots",
+    "age": 53,
+    "birth year": 1154,
+    "sex": "m",
+    "faction": "Dogmatists",
     "income class": [
-      3,
-      "upper middle class"
+      2,
+      "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.497,
-      "nice-nasty": 0.075,
-      "honest-false": 0.496
+      "lawful-chaotic": 0.382,
+      "nice-nasty": 0.364,
+      "honest-false": 0.0
     },
     "attitude": {
-      "outgoing": 0.098,
-      "dream": 0.659
+      "outgoing": 0.239,
+      "dream": 0.279
     },
     "homsoc": {
       "means": {
-        "independent": false,
-        "taken_care_of": true,
-        "caretaker": true,
-        "needs_care": true,
+        "independent": true,
+        "taken_care_of": false,
+        "caretaker": false,
+        "needs_care": false,
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.018,
-        "gender expression expression": 0.015
+        "sexuality expression": 0.723,
+        "gender expression expression": 0.126
       }
     },
     "network": {
-      "parents": {
-        "mother": "Hille (11444)",
-        "father": "Jacob (11443)"
-      },
+      "parents": "firstgen",
       "children": {},
       "relationship keys": {
-        "parent": [
-          12551,
+        "spouse": [
           12552
         ]
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        3,
-        "upper middle class"
+        2,
+        "middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.524,
+      "all_incomes": [
+        1.499,
+        1.524,
+        1.524,
+        1.474,
+        1.524,
+        1.524,
+        1.524,
+        1.524
+      ],
+      "job": {
+        "lawful": false,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 4,
-      "eye_color": "green",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "skin_color": 3,
+      "eye_color": "blue",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
-        "C",
+        "S",
         "S"
       ],
-      "health": 0.744,
-      "fertility": 0.862,
+      "health": 0.212,
+      "fertility": 0.679,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -82,19 +91,35 @@
     },
     "memory": {
       "health": {
-        "1201": {
+        "1200": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.744
+            "new_health": 0.773
           },
           "death": false
         },
-        "1202": {
+        "1204": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.744
+            "change": true,
+            "value_change": -0.169,
+            "new_health": 0.604
+          },
+          "death": false
+        },
+        "1205": {
+          "health": {
+            "change": true,
+            "value_change": -0.191,
+            "new_health": 0.413
+          },
+          "death": false
+        },
+        "1206": {
+          "health": {
+            "change": true,
+            "value_change": -0.201,
+            "new_health": 0.212
           },
           "death": true
         }
@@ -102,38 +127,93 @@
       "events": {
         "1200": [
           {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.499
+          },
+          {
+            "topic": "new relationship",
+            "key": 12552,
+            "people": [
+              12550,
+              12551
+            ],
+            "people names": [
+              "Eghenonis Zieken",
+              "Rabburgis Neue"
+            ],
+            "people ages": [
+              46,
+              44
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
             "topic": "new home",
             "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stMuurhuysen1.se1.c3",
-              "street": "Muurhuysen1",
-              "neighborhood": "cingelzuid",
-              "unique id": 642
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stCromme straet.se5.c2",
+              "street": "Cromme straet",
+              "neighborhood": "denhof",
+              "unique id": 894
             }
+          },
+          {
+            "topic": "feelings change",
+            "target": 12551,
+            "target name": "Rabburgis Neue",
+            "state": "out of love",
+            "relationship": 12552
           }
         ],
-        "1202": [
+        "1201": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1201
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "indifferent",
+            "relationship": 12552
+          }
+        ],
+        "1203": [
+          {
+            "topic": "feelings change",
+            "target": 12551,
+            "target name": "Rabburgis Neue",
+            "state": "infatuation",
+            "relationship": 12552
+          }
+        ],
+        "1206": [
           {
             "topic": "death",
-            "cause": "childhood illness"
+            "cause": "old age"
           }
         ]
       }
     },
     "key": 12550,
     "home": {
-      "income class": 3,
-      "income class label": "upper middle class",
-      "section": "stMuurhuysen1.se1.c3",
-      "street": "Muurhuysen1",
-      "neighborhood": "cingelzuid",
-      "unique id": 642
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stCromme straet.se5.c2",
+      "street": "Cromme straet",
+      "neighborhood": "denhof",
+      "unique id": 894
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
-      "relationships": []
+      "taken": true,
+      "married": true,
+      "relationships": [
+        12552
+      ]
     }
   }
 }

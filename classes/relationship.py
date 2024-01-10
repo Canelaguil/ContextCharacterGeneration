@@ -12,23 +12,23 @@ class Relationship(Agent):
         self.personA = personA
         self.personB = personB
         self.keys = [personA['key'], personB['key']]
+        self.ages = [personA['age'], personB['age']]
         self.proximity_score = 1 # for testing
         self.children = []
         self.adopted_children = []
         self.tasks = MessageInbox(self)
         self.logs = Log(model)
 
-        if not isinstance(personA, dict):            
-            print('sdfsf')
-            fatal_error(personA)
-
         # don't allow for romance or sexual angle (w/ family e.g.)
         self.platonic_only = platonic_only
 
         if label == 'spouse':
             self.arranged_marriage_init()
-        elif label in ['parentchild', 'sibling', 'half-sibling']:
+        elif label in ['parentchild', 'sibling', 'half-sibling', 
+                       'grandparentchild', 'aunclenibling', 'cousin']:
             self.family_init()
+        elif label == 'friend':
+            self.friendship_init()
         else:
             self.platonic_init()
         
@@ -38,6 +38,7 @@ class Relationship(Agent):
             'key' : self.unique_id, 
             'people' : [self.personA['key'], self.personB['key']], 
             'people names' : [self.personA['full name'], self.personB['full name']],
+            'people ages' : self.ages,
             'label' : self.label,
             'committed' : True if self.label in ['spouse', 'partner'] else False
         }
@@ -50,7 +51,7 @@ class Relationship(Agent):
         parameter.
         """
         # print('arrangingggg')
-        friendship_seed = normal_in_range(0.7, 0.3)
+        friendship_seed = normal_in_range(1.1, 0.3)
         self.friendship_aspect = Friendship(self, self.personA, self.personB, 
                                             False, friendship_seed)
 
@@ -65,13 +66,20 @@ class Relationship(Agent):
         self.romance_aspect = Romance(self, self.model, self.personA, self.personB, 
                                       initA, initB)
 
+    def friendship_init(self):
+        friendship_seed = normal_in_range(0.7, 0.2)
+        self.friendship_aspect = Friendship(self, self.personA, self.personB, 
+                                            False, friendship_seed)
+        self.sexual_aspect = BirdsAndBees(self, self.personA, self.personB, False)
+        self.romance_aspect = Romance(self, self.model, self.personA, self.personB)
+
     def platonic_init(self):
         friendship_seed = normal_in_range(0.7, 0.3)
         self.friendship_aspect = Friendship(self, self.personA, self.personB, 
                                             False, friendship_seed)
 
     def family_init(self):
-        friendship_seed = normal_in_range(0.7, 0.3)
+        friendship_seed = normal_in_range(0.7, 0.2)
         self.friendship_aspect = Friendship(self, self.personA, self.personB, 
                                             True, friendship_seed)
 
@@ -153,11 +161,13 @@ class Relationship(Agent):
         label_hierarchy = [
             'sibling',
             'half-sibling',
+            'aunclenibling', 
             'parentchild',
+            'grandparentchild', 
+            'greatgrandparentchild', 
             'spouse',
             'partner', 
-            'friend', 
-            'acquaintance'
+            'unrelated'
         ]
         if label_hierarchy.index(new_label) < label_hierarchy.index(self.label):
             self.label = new_label
@@ -173,6 +183,18 @@ class Relationship(Agent):
         report = {
             'friendship' : friend_report,
         }
+
+        if report['friendship']['label change']:
+            # update people on new friendship change
+            friend_update = {
+                'topic' : 'update', 
+                'update' : 'new friendship label', 
+                'relationship label' : self.label,
+                'friendship label' : friend_report['label'], 
+                'relationship' : self.unique_id
+            }
+            self.update_people(friend_update)
+       
         change = report['friendship']['change']
         if not self.platonic_only:
             romance_report = self.romance_aspect.evolve()

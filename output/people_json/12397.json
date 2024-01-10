@@ -1,71 +1,112 @@
 {
   "12397": {
     "alive": false,
-    "name": "Ricmoden",
-    "surname": "Cornute",
-    "full name": "Ricmoden Cornute",
+    "name": "Ioris",
+    "surname": "",
+    "full name": "Ioris",
     "born this way": {
-      "sexuality label": "bi",
-      "sexuality": 0.477,
-      "romantic interest": 0.856,
-      "sex interest": 0.637,
-      "gender expression": 0.095,
-      "sex": "f"
+      "sexuality label": "straight",
+      "sexuality": 0.048,
+      "romantic interest": 0.758,
+      "sex interest": 0.713,
+      "gender expression": 0.0,
+      "sex": "m"
     },
-    "age": 1,
-    "birth year": 1200,
-    "sex": "f",
-    "faction": "No religion",
+    "age": 54,
+    "birth year": 1156,
+    "sex": "m",
+    "faction": "Dogmatists",
     "income class": [
-      1,
-      "lower middle class"
+      4,
+      "nobility"
     ],
     "personality": {
-      "lawful-chaotic": 0.286,
-      "nice-nasty": 0.218,
-      "honest-false": 0.939
+      "lawful-chaotic": 0.554,
+      "nice-nasty": 0.0,
+      "honest-false": 0.737
     },
     "attitude": {
-      "outgoing": 0.676,
-      "dream": 0.879
+      "outgoing": 0.243,
+      "dream": 0.291
     },
     "homsoc": {
       "means": {
-        "independent": false,
-        "taken_care_of": true,
-        "caretaker": true,
-        "needs_care": true,
+        "independent": true,
+        "taken_care_of": false,
+        "caretaker": false,
+        "needs_care": false,
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.401,
-        "gender expression expression": 0.052
+        "sexuality expression": 0.026,
+        "gender expression expression": -0.001
       }
     },
     "network": {
-      "parents": {
-        "mother": "Lisebette (10721)",
-        "father": "Dybben (10720)"
+      "parents": "firstgen",
+      "children": {
+        "16403": {
+          "key": 16403,
+          "name": "Segher van Ioris",
+          "age": 14,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Lisebette (12398)",
+            "father": "Ioris (12397)"
+          }
+        },
+        "18643": {
+          "key": 18643,
+          "name": "Thedwi van Ioris",
+          "age": 18,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Lisebette (12398)",
+            "father": "Ioris (12397)"
+          }
+        }
       },
-      "children": {},
       "relationship keys": {
-        "parent": [
-          12398,
+        "spouse": [
           12399
-        ]
+        ],
+        "child": {
+          "birth": [
+            16404,
+            18644
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        1,
-        "lower middle class"
+        4,
+        "nobility"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.5250000000000001,
+      "all_incomes": [
+        1.142,
+        1.238,
+        1.4600000000000002,
+        1.5990000000000002,
+        1.5990000000000002,
+        1.5850000000000002,
+        1.5990000000000002,
+        1.5990000000000002,
+        1.5990000000000002,
+        1.5990000000000002,
+        1.5250000000000001
+      ],
+      "job": {
+        "lawful": true,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 4,
+      "skin_color": 1,
       "eye_color": "green",
       "hair_color": "black",
       "hair_color_code": 0,
@@ -73,8 +114,8 @@
         "S",
         "S"
       ],
-      "health": 0.708,
-      "fertility": 0.73,
+      "health": 0.0,
+      "fertility": 0.618,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -82,50 +123,170 @@
     },
     "memory": {
       "health": {
-        "1201": {
+        "1200": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.708
+            "new_health": 0.574
           },
           "death": false
+        },
+        "1206": {
+          "health": {
+            "change": true,
+            "value_change": -0.307,
+            "new_health": 0.267
+          },
+          "death": false
+        },
+        "1207": {
+          "health": {
+            "change": true,
+            "value_change": -0.169,
+            "new_health": 0.098
+          },
+          "death": false
+        },
+        "1208": {
+          "health": {
+            "change": true,
+            "value_change": -0.073,
+            "new_health": 0.025
+          },
+          "death": false
+        },
+        "1209": {
+          "health": {
+            "change": true,
+            "value_change": -0.025,
+            "new_health": 0.0
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
           {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.142
+          },
+          {
+            "topic": "new relationship",
+            "key": 12399,
+            "people": [
+              12397,
+              12398
+            ],
+            "people names": [
+              "Ioris",
+              "Lisebette Blonde"
+            ],
+            "people ages": [
+              44,
+              23
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
             "topic": "new home",
             "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stSt. Aechten straet.se1.c1",
-              "street": "St. Aechten straet",
-              "neighborhood": "agnesbuurt",
-              "unique id": 318
+              "income class": 4,
+              "income class label": "nobility",
+              "section": "stOp Havick1.se1.c4",
+              "street": "Op Havick1",
+              "neighborhood": "cingelnoord",
+              "unique id": 841
             }
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "friend",
+            "relationship": 12399
           }
         ],
         "1201": [
           {
+            "topic": "event",
+            "event": "plague",
+            "year": 1201
+          }
+        ],
+        "1203": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "friend",
+            "relationship": 12399
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 16404,
+            "people": [
+              12397,
+              16403
+            ],
+            "people names": [
+              "Ioris",
+              "Segher van Ioris"
+            ],
+            "people ages": [
+              48,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1207": [
+          {
+            "topic": "new relationship",
+            "key": 18644,
+            "people": [
+              12397,
+              18643
+            ],
+            "people names": [
+              "Ioris",
+              "Thedwi van Ioris"
+            ],
+            "people ages": [
+              52,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1209": [
+          {
             "topic": "death",
-            "cause": "childhood illness"
+            "cause": "sickness"
           }
         ]
       }
     },
     "key": 12397,
     "home": {
-      "income class": 1,
-      "income class label": "lower middle class",
-      "section": "stSt. Aechten straet.se1.c1",
-      "street": "St. Aechten straet",
-      "neighborhood": "agnesbuurt",
-      "unique id": 318
+      "income class": 4,
+      "income class label": "nobility",
+      "section": "stOp Havick1.se1.c4",
+      "street": "Op Havick1",
+      "neighborhood": "cingelnoord",
+      "unique id": 841
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
-      "relationships": []
+      "taken": true,
+      "married": true,
+      "relationships": [
+        12399
+      ]
     }
   }
 }

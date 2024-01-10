@@ -5,7 +5,7 @@ def get_other(my_key, update):
     return update['people'][0] if update['people'][0] != my_key else update['people'][1]
 
 class Network():
-    def __init__(self, person, community, mother, father, parents={}) -> None:
+    def __init__(self, person, community, mother, father) -> None:
         self.community = community
         self.person = person
         self.person_key = person.unique_id
@@ -47,14 +47,14 @@ class Network():
         if label == 'spouse':
             self.new_marriage(update)
 
-    def process_parent_child(self, notice, age, kind='birth'):
-        if age == 0: # meaning, these are their parents
-            label = 'parent'
+    def process_parent_child(self, notice, my_age, kind='birth', grand=False):        
+        if my_age == 0: # meaning, this person is the child and the other is a parent
+            label = 'parent' if not grand else 'grandparent'
             if label not in self.relationship_types:
                 self.relationship_types[label] = []
             self.relationship_types[label].append(notice['key'])
-        else: # they are the parent
-            label = 'child'
+        else: # this person is the parent
+            label = 'child' if not grand else 'grandchild'
 
             # also add to list of children to keep track of
             try:
@@ -64,22 +64,92 @@ class Network():
             except:
                 log_error('cannot find child', notice)
 
+            # add to relationships
             if label not in self.relationship_types:
                 self.relationship_types[label] = {}
             if kind not in self.relationship_types[label]:
                 self.relationship_types[label][kind] = []
             self.relationship_types[label][kind].append(notice['key'])
 
-            self.introduce_children(child)
+            # introduce to rest of the family
+            if label == 'child':
+                # introduce to children (full siblings have already been introduced by relationship)
+                self.introduce_children(child, 'half-sibling')
 
-    def introduce_children(self, new_child):
+                # introduce to parents if they have them
+                if self.mother != {} or self.mother == None: # check if firstgen
+                    self.introduce_parents(child)
+            elif label == 'grandchild':
+                # introduce to children as family
+                self.introduce_children(child, 'aunclenibling')
+
+                # introduce to parents if they have them
+                if self.mother != {} or self.mother == None: # check if firstgen
+                    self.introduce_parents(child, 'greatgrandparentchild')
+
+    def process_other_family(self, notice):
+        my_index = notice['people'].index(self.person_key)
+        # if notice['people ages'] == [1, 1]:
+        #     print(notice)
+        # print(notice['people ages'])
+        if notice['label'] == 'aunclenibling':
+            if my_index == 0:
+                label = 'nibling'
+                self.introduce_children(notice['people'][1], 'cousin')
+            else:
+                label = 'auncle'
+        elif notice['label'] == 'greatgrandparentchild':
+            # print(self.person_key)
+            if notice['people ages'][my_index] > notice['people ages'][int(not my_index)]:
+                print('my_index')
+                label = 'greatgrandchild'
+            else:
+                label = 'greatgrandparent'
+
+        # if notice['people ages'][my_index] > notice['people ages'][int(not my_index)]: # if I'm the supposedly older person here
+        #     if notice['label'] == 'aunclenibling':
+        #         label = 'nibling'
+
+        #         # introduce my own children
+        #         other = get_other(self.person_key, notice)
+        #         self.introduce_children(other, 'cousin')
+        #     elif notice['label'] == 'greatgrandparentchild':
+        #         print(my_index)
+        #         label = 'greatgrandchild'
+        #     else:
+        #         log_error('we dont have this label yet', notice)
+        # else: # if I'm the supposedly younger person here
+        #     if notice['label'] == 'aunclenibling':
+        #         label = 'auncle'
+        #     elif notice['label'] == 'greatgrandparentchild':
+        #         label = 'greatgrandparent'
+        #     else:
+        #         log_error('we dont have this label yet', notice)
+        # add to network
+        notice['label'] = label
+        self.add_relationship(notice)
+
+    def introduce_children(self, new_child, label):
         """
         
         """
+        # label = 'half-sibling' if not family else 'family'
         for ch in self.children_keys:
             if not self.community.we_know_each_other(ch, new_child):
-                self.community.create_relationship(ch, new_child, 'half-sibling', True)
+                self.community.create_relationship(ch, new_child, label, True)
                 # log_error('half siblings', self.community.create_relationship(ch, new_child, 'half-sibling', True))
+
+    def introduce_parents(self, new_person, label='grandparentchild', platonic_only=True):
+        other_key = new_person
+        # update parents to check if they're alive
+        self.mother = self.community.get_person(self.mother['key'])
+        self.father = self.community.get_person(self.father['key'])
+
+        # create relationship if alive
+        if self.mother['alive']:
+            self.community.create_relationship(self.mother['key'], other_key, label, platonic_only)
+        if self.father['alive']:
+            self.community.create_relationship(self.father['key'], other_key, label, platonic_only)
 
     """
     UTILS 

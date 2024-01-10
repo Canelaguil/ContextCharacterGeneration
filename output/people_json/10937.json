@@ -1,19 +1,19 @@
 {
   "10937": {
     "alive": false,
-    "name": "Aghata",
-    "surname": "",
-    "full name": "Aghata",
+    "name": "Salome",
+    "surname": "Bier",
+    "full name": "Salome Bier",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.879,
-      "sex interest": 0.653,
-      "gender expression": 0.207,
+      "sexuality": 0.068,
+      "romantic interest": 0.719,
+      "sex interest": 0.543,
+      "gender expression": 0.078,
       "sex": "f"
     },
-    "age": 32,
-    "birth year": 1181,
+    "age": 33,
+    "birth year": 1173,
     "sex": "f",
     "faction": "Zealots",
     "income class": [
@@ -21,13 +21,13 @@
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.619,
-      "nice-nasty": 0.578,
-      "honest-false": 0.666
+      "lawful-chaotic": 0.427,
+      "nice-nasty": 0.0,
+      "honest-false": 0.757
     },
     "attitude": {
-      "outgoing": 0.0,
-      "dream": 0.431
+      "outgoing": 0.42,
+      "dream": 0.49
     },
     "homsoc": {
       "means": {
@@ -35,27 +35,25 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": [
-          "starving"
-        ]
+        "flags": []
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.086
+        "sexuality expression": 0.031,
+        "gender expression expression": 0.066
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "14000": {
-          "key": 14000,
-          "name": "Waldrada Strument",
-          "age": 9,
+        "13414": {
+          "key": 13414,
+          "name": "Bobone",
+          "age": 53,
           "alive": false,
-          "sex": "f",
+          "sex": "m",
           "parents": {
-            "mother": "Aghata (10937)",
-            "father": "Brandekijn (10936)"
+            "mother": "Salome (10937)",
+            "father": "Ever (10936)"
           }
         }
       },
@@ -65,31 +63,41 @@
         ],
         "child": {
           "birth": [
-            14002
+            13416
           ]
         }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         1,
         "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.083,
+      "all_incomes": [
+        1.149,
+        0.96,
+        1.165,
+        1.24,
+        1.083
+      ],
+      "job": {
+        "lawful": true,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 0,
+      "skin_color": 8,
       "eye_color": "green",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
         "S",
         "C"
       ],
-      "health": 0.539,
-      "fertility": 0.598,
+      "health": 0.813,
+      "fertility": 0.787,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -101,9 +109,17 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.539
+            "new_health": 0.813
           },
           "death": false
+        },
+        "1205": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.813
+          },
+          "death": true
         }
       },
       "events": {
@@ -116,8 +132,12 @@
               10937
             ],
             "people names": [
-              "Brandekijn Strument",
-              "Aghata"
+              "Ever",
+              "Salome Bier"
+            ],
+            "people ages": [
+              31,
+              27
             ],
             "label": "spouse",
             "committed": true
@@ -127,105 +147,67 @@
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stSt. Ians straet.se3.c1",
-              "street": "St. Ians straet",
-              "neighborhood": "kampbuurt",
-              "unique id": 416
+              "section": "stTuytsteeg.se3.c1",
+              "street": "Tuytsteeg",
+              "neighborhood": "agnesbuurt",
+              "unique id": 332
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 13416,
+            "people": [
+              10937,
+              13414
+            ],
+            "people names": [
+              "Salome Bier",
+              "Bobone"
+            ],
+            "people ages": [
+              27,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 10936,
+            "target name": "Ever",
+            "state": "out of love",
+            "relationship": 10938
+          }
+        ],
+        "1201": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1201
+          },
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.149
           }
         ],
         "1202": [
           {
-            "topic": "new relationship",
-            "key": 14002,
-            "people": [
-              10937,
-              14000
-            ],
-            "people names": [
-              "Aghata",
-              "Waldrada Strument"
-            ],
-            "label": "parentchild",
-            "committed": false
+            "topic": "feelings change",
+            "target": 10936,
+            "target name": "Ever",
+            "state": "infatuation",
+            "relationship": 10938
           }
         ],
         "1203": [
           {
-            "topic": "not enough income",
-            "income": 0.416,
-            "inhabitants": []
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.165
           }
         ],
-        "1207": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1207
-          },
-          {
-            "key": 10938,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 10936,
-              "name": "Brandekijn Strument",
-              "age": 35,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "cause": "illness",
-            "label": "spouse"
-          }
-        ],
-        "1208": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1209": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1210": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1211": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 14000,
-              "name": "Waldrada Strument",
-              "age": 9,
-              "alive": false,
-              "sex": "f",
-              "parents": {
-                "mother": "Aghata (10937)",
-                "father": "Brandekijn (10936)"
-              }
-            },
-            "cause": "childhood illness",
-            "label": "child"
-          }
-        ],
-        "1212": [
+        "1205": [
           {
             "topic": "death",
             "cause": "illness"
@@ -237,14 +219,14 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stSt. Ians straet.se3.c1",
-      "street": "St. Ians straet",
-      "neighborhood": "kampbuurt",
-      "unique id": 416
+      "section": "stTuytsteeg.se3.c1",
+      "street": "Tuytsteeg",
+      "neighborhood": "agnesbuurt",
+      "unique id": 332
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
         10938
       ]

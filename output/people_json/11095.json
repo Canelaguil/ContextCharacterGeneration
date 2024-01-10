@@ -1,33 +1,33 @@
 {
   "11095": {
     "alive": false,
-    "name": "Hughe",
-    "surname": "",
-    "full name": "Hughe",
+    "name": "Iordanus",
+    "surname": "Haec",
+    "full name": "Iordanus Haec",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.088,
-      "romantic interest": 0.999,
-      "sex interest": 0.748,
-      "gender expression": 0.171,
+      "sexuality": 0.0,
+      "romantic interest": 0.747,
+      "sex interest": 0.762,
+      "gender expression": 0.0,
       "sex": "m"
     },
-    "age": 43,
-    "birth year": 1158,
+    "age": 54,
+    "birth year": 1152,
     "sex": "m",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
-      0,
-      "working class"
+      2,
+      "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.799,
-      "nice-nasty": 0.466,
-      "honest-false": 0.398
+      "lawful-chaotic": 0.144,
+      "nice-nasty": 0.372,
+      "honest-false": 0.615
     },
     "attitude": {
-      "outgoing": 0.476,
-      "dream": 0.099
+      "outgoing": 0.544,
+      "dream": 0.416
     },
     "homsoc": {
       "means": {
@@ -38,42 +38,68 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.032,
-        "gender expression expression": 0.109
+        "sexuality expression": -0.001,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
-      "relationship keys": {}
+      "children": {
+        "14422": {
+          "key": 14422,
+          "name": "Hardenbernus Haec",
+          "age": 6,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Myrthel (11096)",
+            "father": "Iordanus (11095)"
+          }
+        }
+      },
+      "relationship keys": {
+        "spouse": [
+          11097
+        ],
+        "child": {
+          "birth": [
+            14423
+          ]
+        }
+      }
     },
     "occupation": {
       "has job": true,
       "income class": [
-        0,
-        "working class"
+        2,
+        "middle class"
       ],
-      "income": 1.035,
+      "income": 1.522,
       "all_incomes": [
-        1.148,
-        1.035
+        1.124,
+        1.222,
+        0.984,
+        1.524,
+        1.524,
+        1.4969999999999999,
+        1.522
       ],
       "job": {
-        "lawful": true,
+        "lawful": false,
         "honest": false
       }
     },
     "genetics": {
-      "skin_color": 8,
-      "eye_color": "green",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "skin_color": 5,
+      "eye_color": "brown",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
         "S",
         "C"
       ],
-      "health": 0.602,
-      "fertility": 0.597,
+      "health": 0.024,
+      "fertility": 0.722,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -85,7 +111,39 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.602
+            "new_health": 0.749
+          },
+          "death": false
+        },
+        "1202": {
+          "health": {
+            "change": true,
+            "value_change": -0.225,
+            "new_health": 0.524
+          },
+          "death": false
+        },
+        "1203": {
+          "health": {
+            "change": true,
+            "value_change": -0.124,
+            "new_health": 0.4
+          },
+          "death": false
+        },
+        "1204": {
+          "health": {
+            "change": true,
+            "value_change": -0.326,
+            "new_health": 0.074
+          },
+          "death": false
+        },
+        "1205": {
+          "health": {
+            "change": true,
+            "value_change": -0.05,
+            "new_health": 0.024
           },
           "death": true
         }
@@ -95,28 +153,93 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.148
+            "income": 1.124
           },
           {
+            "topic": "new relationship",
+            "key": 11097,
+            "people": [
+              11095,
+              11096
+            ],
+            "people names": [
+              "Iordanus Haec",
+              "Myrthel"
+            ],
+            "people ages": [
+              48,
+              37
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stDie Camp.se5.c2",
+              "street": "Die Camp",
+              "neighborhood": "kampbuurt",
+              "unique id": 386
+            }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1201
+          },
+          {
+            "topic": "new relationship",
+            "key": 14423,
+            "people": [
+              11095,
+              14422
+            ],
+            "people names": [
+              "Iordanus Haec",
+              "Hardenbernus Haec"
+            ],
+            "people ages": [
+              50,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1202": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.524
+          }
+        ],
+        "1205": [
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "old age"
           }
         ]
       }
     },
     "key": 11095,
     "home": {
-      "income class": 0,
-      "income class label": "working class",
-      "section": "stOly straetje.se1.c0",
-      "street": "Oly straetje",
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stDie Camp.se5.c2",
+      "street": "Die Camp",
       "neighborhood": "kampbuurt",
-      "unique id": 484
+      "unique id": 386
     },
     "relationship status": {
       "taken": true,
       "married": true,
-      "relationships": []
+      "relationships": [
+        11097
+      ]
     }
   }
 }

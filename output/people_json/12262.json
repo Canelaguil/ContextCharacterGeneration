@@ -1,83 +1,114 @@
 {
   "12262": {
     "alive": false,
-    "name": "Marisseis",
-    "surname": "Screvel",
-    "full name": "Marisseis Screvel",
+    "name": "Rase",
+    "surname": "Kriec",
+    "full name": "Rase Kriec",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.084,
-      "romantic interest": 0.765,
-      "sex interest": 0.662,
-      "gender expression": 0.191,
-      "sex": "f"
+      "sexuality label": "gay",
+      "sexuality": 0.944,
+      "romantic interest": 0.241,
+      "sex interest": 0.762,
+      "gender expression": 0.291,
+      "sex": "m"
     },
-    "age": 20,
-    "birth year": 1200,
-    "sex": "f",
-    "faction": "Zealots",
+    "age": 31,
+    "birth year": 1172,
+    "sex": "m",
+    "faction": "No religion",
     "income class": [
-      3,
-      "upper middle class"
+      4,
+      "nobility"
     ],
     "personality": {
-      "lawful-chaotic": 0.518,
-      "nice-nasty": 0.462,
-      "honest-false": 0.558
+      "lawful-chaotic": 0.509,
+      "nice-nasty": 0.061,
+      "honest-false": 0.043
     },
     "attitude": {
-      "outgoing": 0.558,
-      "dream": 0.092
+      "outgoing": 0.597,
+      "dream": 0.615
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
-        "caretaker": true,
+        "caretaker": false,
         "needs_care": false,
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.024,
-        "gender expression expression": 0.128
+        "sexuality expression": 0.233,
+        "gender expression expression": 0.076
       }
     },
     "network": {
-      "parents": {
-        "mother": "Trame (11447)",
-        "father": "Deghen (11446)"
+      "parents": "firstgen",
+      "children": {
+        "13033": {
+          "key": 13033,
+          "name": "Reinardus Raseszoon",
+          "age": 19,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Nannen (12263)",
+            "father": "Rase (12262)"
+          }
+        },
+        "14155": {
+          "key": 14155,
+          "name": "Reymodis Kriec",
+          "age": 49,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Nannen (12263)",
+            "father": "Rase (12262)"
+          }
+        }
       },
-      "children": {},
       "relationship keys": {
-        "parent": [
-          12263,
+        "spouse": [
           12264
         ],
-        "sibling": [
-          20373
-        ]
+        "child": {
+          "birth": [
+            13034,
+            14156
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        3,
-        "upper middle class"
+        4,
+        "nobility"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.169,
+      "all_incomes": [
+        0.863,
+        0.824,
+        1.04,
+        1.169
+      ],
+      "job": {
+        "lawful": true,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 8,
-      "eye_color": "blue",
+      "skin_color": 6,
+      "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
-        "C",
+        "S",
         "C"
       ],
-      "health": 0.667,
-      "fertility": 0.641,
+      "health": 0.76,
+      "fertility": 0.764,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -85,19 +116,19 @@
     },
     "memory": {
       "health": {
-        "1201": {
+        "1200": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.667
+            "new_health": 0.76
           },
           "death": false
         },
-        "1220": {
+        "1202": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.667
+            "new_health": 0.76
           },
           "death": true
         }
@@ -105,87 +136,89 @@
       "events": {
         "1200": [
           {
-            "topic": "new home",
-            "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stMuurhuysen1.se1.c3",
-              "street": "Muurhuysen1",
-              "neighborhood": "cingelzuid",
-              "unique id": 643
-            }
-          }
-        ],
-        "1207": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1207
-          }
-        ],
-        "1212": [
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.863
+          },
           {
             "topic": "new relationship",
-            "key": 20373,
+            "key": 12264,
             "people": [
               12262,
-              20370
+              12263
             ],
             "people names": [
-              "Marisseis Screvel",
-              "Hughekine Screvel"
+              "Rase Kriec",
+              "Nannen Butziel"
             ],
-            "label": "sibling",
+            "people ages": [
+              28,
+              20
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 4,
+              "income class label": "nobility",
+              "section": "stMuurhuysen2.se1.c4",
+              "street": "Muurhuysen2",
+              "neighborhood": "cingelnoord",
+              "unique id": 792
+            }
+          },
+          {
+            "topic": "new relationship",
+            "key": 13034,
+            "people": [
+              12262,
+              13033
+            ],
+            "people names": [
+              "Rase Kriec",
+              "Reinardus Raseszoon"
+            ],
+            "people ages": [
+              28,
+              0
+            ],
+            "label": "parentchild",
             "committed": false
           }
         ],
-        "1213": [
-          {
-            "topic": "person died",
-            "person": {
-              "key": 11447,
-              "name": "Trame Pratre",
-              "age": 44,
-              "alive": false,
-              "sex": "f",
-              "parents": "firstgen"
-            },
-            "cause": "illness",
-            "label": "parent"
-          }
-        ],
-        "1215": [
+        "1201": [
           {
             "topic": "event",
             "event": "plague",
-            "year": 1215
+            "year": 1201
           },
           {
-            "topic": "person died",
-            "person": {
-              "key": 20370,
-              "name": "Hughekine Screvel",
-              "age": 3,
-              "alive": false,
-              "sex": "m",
-              "parents": {
-                "mother": "Trame (11447)",
-                "father": "Deghen (11446)"
-              }
-            },
-            "cause": "childhood illness",
-            "label": "sibling"
-          }
-        ],
-        "1217": [
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.04
+          },
           {
-            "topic": "update",
-            "update": "parent married",
-            "parent": 11446,
-            "new partner": 11492
+            "topic": "new relationship",
+            "key": 14156,
+            "people": [
+              12262,
+              14155
+            ],
+            "people names": [
+              "Rase Kriec",
+              "Reymodis Kriec"
+            ],
+            "people ages": [
+              30,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1220": [
+        "1202": [
           {
             "topic": "death",
             "cause": "illness"
@@ -195,18 +228,18 @@
     },
     "key": 12262,
     "home": {
-      "income class": 3,
-      "income class label": "upper middle class",
-      "section": "stMuurhuysen1.se1.c3",
-      "street": "Muurhuysen1",
-      "neighborhood": "cingelzuid",
-      "unique id": 643
+      "income class": 4,
+      "income class label": "nobility",
+      "section": "stMuurhuysen2.se1.c4",
+      "street": "Muurhuysen2",
+      "neighborhood": "cingelnoord",
+      "unique id": 792
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
-        20373
+        12264
       ]
     }
   }

@@ -1,80 +1,84 @@
 {
   "12646": {
     "alive": false,
-    "name": "Godelief",
-    "surname": "",
-    "full name": "Godelief",
+    "name": "Wouter",
+    "surname": "Commer",
+    "full name": "Wouter Commer",
     "born this way": {
-      "sexuality label": "bi",
-      "sexuality": 0.361,
-      "romantic interest": 0.785,
-      "sex interest": 0.588,
-      "gender expression": 0.251,
+      "sexuality label": "straight",
+      "sexuality": 0.0,
+      "romantic interest": 0.648,
+      "sex interest": 0.593,
+      "gender expression": 0.05,
       "sex": "m"
     },
-    "age": 2,
-    "birth year": 1200,
+    "age": 38,
+    "birth year": 1164,
     "sex": "m",
     "faction": "Zealots",
     "income class": [
-      2,
-      "middle class"
+      3,
+      "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.723,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.286,
+      "nice-nasty": 0.545,
+      "honest-false": 0.343
     },
     "attitude": {
-      "outgoing": 0.529,
-      "dream": 0.356
+      "outgoing": 0.256,
+      "dream": 0.206
     },
     "homsoc": {
       "means": {
-        "independent": false,
-        "taken_care_of": true,
-        "caretaker": true,
-        "needs_care": true,
+        "independent": true,
+        "taken_care_of": false,
+        "caretaker": false,
+        "needs_care": false,
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.121,
-        "gender expression expression": 0.122
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.031
       }
     },
     "network": {
-      "parents": {
-        "mother": "Hodine (10397)",
-        "father": "Breghtgherus (10396)"
-      },
+      "parents": "firstgen",
       "children": {},
       "relationship keys": {
-        "parent": [
-          12647,
+        "spouse": [
           12648
         ]
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        2,
-        "middle class"
+        3,
+        "upper middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.027,
+      "all_incomes": [
+        0.88,
+        1.109,
+        1.027
+      ],
+      "job": {
+        "lawful": true,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 0,
-      "eye_color": "brown",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "skin_color": 2,
+      "eye_color": "green",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
-        "C",
+        "S",
         "C"
       ],
-      "health": 0.744,
-      "fertility": 0.664,
+      "health": 0.73,
+      "fertility": 0.736,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -82,19 +86,19 @@
     },
     "memory": {
       "health": {
+        "1200": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.73
+          },
+          "death": false
+        },
         "1201": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.744
-          },
-          "death": false
-        },
-        "1202": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.744
+            "new_health": 0.73
           },
           "death": true
         }
@@ -102,38 +106,73 @@
       "events": {
         "1200": [
           {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.88
+          },
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.109
+          },
+          {
+            "topic": "new relationship",
+            "key": 12648,
+            "people": [
+              12646,
+              12647
+            ],
+            "people names": [
+              "Wouter Commer",
+              "Aleydis Makerreel"
+            ],
+            "people ages": [
+              36,
+              30
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stDavids hof.se1.c2",
-              "street": "Davids hof",
-              "neighborhood": "jorisbuurt",
-              "unique id": 174
+              "income class": 3,
+              "income class label": "upper middle class",
+              "section": "stMarcktgang.se3.c3",
+              "street": "Marcktgang",
+              "neighborhood": "denhof",
+              "unique id": 928
             }
           }
         ],
-        "1202": [
+        "1201": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1201
+          },
           {
             "topic": "death",
-            "cause": "childhood illness"
+            "cause": "illness"
           }
         ]
       }
     },
     "key": 12646,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stDavids hof.se1.c2",
-      "street": "Davids hof",
-      "neighborhood": "jorisbuurt",
-      "unique id": 174
+      "income class": 3,
+      "income class label": "upper middle class",
+      "section": "stMarcktgang.se3.c3",
+      "street": "Marcktgang",
+      "neighborhood": "denhof",
+      "unique id": 928
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
-      "relationships": []
+      "taken": true,
+      "married": true,
+      "relationships": [
+        12648
+      ]
     }
   }
 }

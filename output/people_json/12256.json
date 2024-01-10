@@ -1,85 +1,132 @@
 {
   "12256": {
     "alive": false,
-    "name": "Wolfraem",
-    "surname": "Donevoet",
-    "full name": "Wolfraem Donevoet",
+    "name": "Walramus",
+    "surname": "Cornute",
+    "full name": "Walramus Cornute",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.88,
-      "romantic interest": 0.882,
-      "sex interest": 0.499,
-      "gender expression": 0.536,
+      "sexuality label": "straight",
+      "sexuality": 0.126,
+      "romantic interest": 0.795,
+      "sex interest": 0.767,
+      "gender expression": 0.123,
       "sex": "m"
     },
-    "age": 14,
-    "birth year": 1200,
+    "age": 54,
+    "birth year": 1155,
     "sex": "m",
     "faction": "Dogmatists",
     "income class": [
-      2,
-      "middle class"
+      4,
+      "nobility"
     ],
     "personality": {
-      "lawful-chaotic": 0.775,
-      "nice-nasty": 0.998,
-      "honest-false": 0.979
+      "lawful-chaotic": 0.833,
+      "nice-nasty": 0.838,
+      "honest-false": 0.599
     },
     "attitude": {
-      "outgoing": 0.284,
-      "dream": 0.623
+      "outgoing": 0.485,
+      "dream": 0.38
     },
     "homsoc": {
       "means": {
-        "independent": false,
-        "taken_care_of": true,
-        "caretaker": true,
-        "needs_care": true,
-        "flags": [
-          "starving"
-        ]
+        "independent": true,
+        "taken_care_of": false,
+        "caretaker": false,
+        "needs_care": false,
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.533,
-        "gender expression expression": 0.314
+        "sexuality expression": 0.051,
+        "gender expression expression": 0.072
       }
     },
     "network": {
-      "parents": {
-        "mother": "Breghlent (10004)",
-        "father": "Sander (10003)"
+      "parents": "firstgen",
+      "children": {
+        "13333": {
+          "key": 13333,
+          "name": "Cofte Cornute",
+          "age": 1,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Scilla (12257)",
+            "father": "Walramus (12256)"
+          }
+        },
+        "17025": {
+          "key": 17025,
+          "name": "Wernerus Cornute",
+          "age": 23,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Scilla (12257)",
+            "father": "Walramus (12256)"
+          }
+        },
+        "17831": {
+          "key": 17831,
+          "name": "Badeloghen Cornute",
+          "age": 30,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Scilla (12257)",
+            "father": "Walramus (12256)"
+          }
+        }
       },
-      "children": {},
       "relationship keys": {
-        "parent": [
-          12257,
+        "spouse": [
           12258
         ],
-        "sibling": [
-          13326
-        ]
+        "child": {
+          "birth": [
+            13334,
+            17026,
+            17832
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        2,
-        "middle class"
+        4,
+        "nobility"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.3110000000000002,
+      "all_incomes": [
+        1.25,
+        1.5070000000000001,
+        1.5790000000000002,
+        1.5990000000000002,
+        1.5990000000000002,
+        1.2770000000000001,
+        1.3250000000000002,
+        1.4500000000000002,
+        1.5990000000000002,
+        1.3110000000000002
+      ],
+      "job": {
+        "lawful": true,
+        "honest": false
+      }
     },
     "genetics": {
       "skin_color": 2,
       "eye_color": "brown",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
-        "C",
+        "S",
         "S"
       ],
-      "health": 0.507,
-      "fertility": 0.617,
+      "health": 0.0,
+      "fertility": 0.584,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -87,170 +134,196 @@
     },
     "memory": {
       "health": {
-        "1201": {
+        "1200": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.507
+            "new_health": 0.64
           },
           "death": false
+        },
+        "1205": {
+          "health": {
+            "change": true,
+            "value_change": -0.211,
+            "new_health": 0.429
+          },
+          "death": false
+        },
+        "1206": {
+          "health": {
+            "change": true,
+            "value_change": -0.111,
+            "new_health": 0.318
+          },
+          "death": false
+        },
+        "1207": {
+          "health": {
+            "change": true,
+            "value_change": -0.223,
+            "new_health": 0.095
+          },
+          "death": false
+        },
+        "1208": {
+          "health": {
+            "change": true,
+            "value_change": -0.095,
+            "new_health": 0.0
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
           {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.25
+          },
+          {
+            "topic": "new relationship",
+            "key": 12258,
+            "people": [
+              12256,
+              12257
+            ],
+            "people names": [
+              "Walramus Cornute",
+              "Scilla"
+            ],
+            "people ages": [
+              45,
+              27
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stUterechse straet.se1.c2",
-              "street": "Uterechse straet",
-              "neighborhood": "varkensbuurt",
-              "unique id": 2
+              "income class": 4,
+              "income class label": "nobility",
+              "section": "stMuurhuysen2.se1.c4",
+              "street": "Muurhuysen2",
+              "neighborhood": "cingelnoord",
+              "unique id": 790
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 13334,
+            "people": [
+              12256,
+              13333
+            ],
+            "people names": [
+              "Walramus Cornute",
+              "Cofte Cornute"
+            ],
+            "people ages": [
+              46,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1201": [
           {
-            "topic": "new relationship",
-            "key": 13326,
-            "people": [
-              12256,
-              13323
-            ],
-            "people names": [
-              "Wolfraem Donevoet",
-              "Tijs Donevoet"
-            ],
-            "label": "sibling",
-            "committed": false
+            "topic": "event",
+            "event": "plague",
+            "year": 1201
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 13333,
+              "name": "Cofte Cornute",
+              "age": 1,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Scilla (12257)",
+                "father": "Walramus (12256)"
+              }
+            },
+            "cause": "childhood illness",
+            "label": "child"
           }
         ],
         "1203": [
           {
-            "topic": "person died",
-            "person": {
-              "key": 10003,
-              "name": "Sander Donevoet",
-              "age": 48,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "cause": "illness",
-            "label": "parent"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 10004,
-              "name": "Breghlent Smout",
-              "age": 39,
-              "alive": false,
-              "sex": "f",
-              "parents": "firstgen"
-            },
-            "cause": "illness",
-            "label": "parent"
-          }
-        ],
-        "1204": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "feelings change",
+            "target": 12257,
+            "target name": "Scilla",
+            "state": "solid love",
+            "relationship": 12258
           }
         ],
         "1205": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "new relationship",
+            "key": 17026,
+            "people": [
+              12256,
+              17025
+            ],
+            "people names": [
+              "Walramus Cornute",
+              "Wernerus Cornute"
+            ],
+            "people ages": [
+              50,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1206": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1207": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1207
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "new relationship",
+            "key": 17832,
+            "people": [
+              12256,
+              17831
+            ],
+            "people names": [
+              "Walramus Cornute",
+              "Badeloghen Cornute"
+            ],
+            "people ages": [
+              51,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1208": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1209": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1210": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1211": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1212": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1213": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1214": [
-          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "sickness"
           }
         ]
       }
     },
     "key": 12256,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stUterechse straet.se1.c2",
-      "street": "Uterechse straet",
-      "neighborhood": "varkensbuurt",
-      "unique id": 2
+      "income class": 4,
+      "income class label": "nobility",
+      "section": "stMuurhuysen2.se1.c4",
+      "street": "Muurhuysen2",
+      "neighborhood": "cingelnoord",
+      "unique id": 790
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
-        13326
+        12258
       ]
     }
   }

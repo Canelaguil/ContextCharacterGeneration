@@ -1,33 +1,33 @@
 {
   "10636": {
     "alive": false,
-    "name": "Salomon",
-    "surname": "Buk",
-    "full name": "Salomon Buk",
+    "name": "Sollen",
+    "surname": "Boel",
+    "full name": "Sollen Boel",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.064,
-      "romantic interest": 0.747,
-      "sex interest": 0.705,
-      "gender expression": 0.275,
+      "sexuality label": "gay",
+      "sexuality": 0.914,
+      "romantic interest": 0.79,
+      "sex interest": 0.963,
+      "gender expression": 0.351,
       "sex": "m"
     },
-    "age": 48,
-    "birth year": 1153,
+    "age": 54,
+    "birth year": 1152,
     "sex": "m",
-    "faction": "Dogmatists",
+    "faction": "Zealots",
     "income class": [
-      0,
-      "working class"
+      2,
+      "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.377,
-      "nice-nasty": 0.797,
-      "honest-false": 0.852
+      "lawful-chaotic": 0.459,
+      "nice-nasty": 0.627,
+      "honest-false": 0.999
     },
     "attitude": {
-      "outgoing": 0.605,
-      "dream": 0.007
+      "outgoing": 0.699,
+      "dream": 0.822
     },
     "homsoc": {
       "means": {
@@ -38,42 +38,51 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.024,
-        "gender expression expression": 0.13
+        "sexuality expression": 0.635,
+        "gender expression expression": 0.211
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {},
-      "relationship keys": {}
+      "relationship keys": {
+        "spouse": [
+          10638
+        ]
+      }
     },
     "occupation": {
       "has job": true,
       "income class": [
-        0,
-        "working class"
+        2,
+        "middle class"
       ],
-      "income": 0.953,
+      "income": 1.0259999999999998,
       "all_incomes": [
-        0.94,
-        0.953
+        1.102,
+        1.073,
+        1.16,
+        1.178,
+        1.145,
+        0.9510000000000001,
+        1.0259999999999998
       ],
       "job": {
-        "lawful": true,
+        "lawful": false,
         "honest": true
       }
     },
     "genetics": {
-      "skin_color": 2,
-      "eye_color": "blue",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "skin_color": 7,
+      "eye_color": "green",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
-        "S",
-        "S"
+        "C",
+        "C"
       ],
-      "health": 0.78,
-      "fertility": 0.779,
+      "health": 0.0,
+      "fertility": 0.788,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -85,7 +94,39 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.78
+            "new_health": 0.668
+          },
+          "death": false
+        },
+        "1202": {
+          "health": {
+            "change": true,
+            "value_change": -0.265,
+            "new_health": 0.403
+          },
+          "death": false
+        },
+        "1203": {
+          "health": {
+            "change": true,
+            "value_change": -0.129,
+            "new_health": 0.274
+          },
+          "death": false
+        },
+        "1204": {
+          "health": {
+            "change": true,
+            "value_change": -0.22,
+            "new_health": 0.054
+          },
+          "death": false
+        },
+        "1205": {
+          "health": {
+            "change": true,
+            "value_change": -0.054,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -95,28 +136,97 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.94
+            "income": 1.102
+          },
+          {
+            "topic": "new relationship",
+            "key": 10638,
+            "people": [
+              10636,
+              10637
+            ],
+            "people names": [
+              "Sollen Boel",
+              "Heylewigis"
+            ],
+            "people ages": [
+              48,
+              27
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stBloemendaelse straet.se3.c2",
+              "street": "Bloemendaelse straet",
+              "neighborhood": "agnesbuurt",
+              "unique id": 223
+            }
+          },
+          {
+            "topic": "feelings change",
+            "target": 10637,
+            "target name": "Heylewigis",
+            "state": "solid love",
+            "relationship": 10638
+          }
+        ],
+        "1201": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1201
+          },
+          {
+            "key": 10638,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10637,
+              "name": "Heylewigis",
+              "age": 29,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "spouse"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.0259999999999998
           },
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "sickness"
           }
         ]
       }
     },
     "key": 10636,
     "home": {
-      "income class": 0,
-      "income class label": "working class",
-      "section": "stDe Tuyt.se1.c0",
-      "street": "De Tuyt",
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stBloemendaelse straet.se3.c2",
+      "street": "Bloemendaelse straet",
       "neighborhood": "agnesbuurt",
-      "unique id": 284
+      "unique id": 223
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
-      "relationships": []
+      "taken": false,
+      "married": false,
+      "relationships": [
+        10638
+      ]
     }
   }
 }

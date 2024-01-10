@@ -1,82 +1,88 @@
 {
   "12703": {
     "alive": false,
-    "name": "Siwa",
-    "surname": "Vosse",
-    "full name": "Siwa Vosse",
+    "name": "Wederic",
+    "surname": "Coram",
+    "full name": "Wederic Coram",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.046,
-      "romantic interest": 0.547,
-      "sex interest": 0.594,
-      "gender expression": 0.0,
-      "sex": "f"
+      "sexuality": 0.05,
+      "romantic interest": 0.661,
+      "sex interest": 0.784,
+      "gender expression": 0.148,
+      "sex": "m"
     },
-    "age": 4,
-    "birth year": 1200,
-    "sex": "f",
-    "faction": "No religion",
+    "age": 51,
+    "birth year": 1155,
+    "sex": "m",
+    "faction": "Dogmatists",
     "income class": [
-      0,
-      "working class"
+      3,
+      "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.089,
-      "nice-nasty": 0.469,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.658,
+      "honest-false": 0.139
     },
     "attitude": {
-      "outgoing": 0.22,
-      "dream": 0.437
+      "outgoing": 0.152,
+      "dream": 0.608
     },
     "homsoc": {
       "means": {
-        "independent": false,
-        "taken_care_of": true,
-        "caretaker": true,
-        "needs_care": true,
-        "flags": [
-          "starving"
-        ]
+        "independent": true,
+        "taken_care_of": false,
+        "caretaker": false,
+        "needs_care": false,
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.01,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.026,
+        "gender expression expression": 0.084
       }
     },
     "network": {
-      "parents": {
-        "mother": "Eingeliadis (10178)",
-        "father": "Kerstiaen (10177)"
-      },
+      "parents": "firstgen",
       "children": {},
       "relationship keys": {
-        "parent": [
-          12704,
+        "spouse": [
           12705
         ]
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        0,
-        "working class"
+        3,
+        "upper middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.43,
+      "all_incomes": [
+        0.867,
+        0.902,
+        0.9450000000000001,
+        1.202,
+        1.2690000000000001,
+        1.4200000000000002,
+        1.43
+      ],
+      "job": {
+        "lawful": true,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 4,
+      "skin_color": 2,
       "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
         "C",
         "S"
       ],
-      "health": 0.754,
-      "fertility": 0.773,
+      "health": 0.446,
+      "fertility": 0.69,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -84,19 +90,19 @@
     },
     "memory": {
       "health": {
-        "1201": {
+        "1200": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.754
+            "new_health": 0.694
           },
           "death": false
         },
-        "1204": {
+        "1205": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.754
+            "change": true,
+            "value_change": -0.248,
+            "new_health": 0.446
           },
           "death": true
         }
@@ -104,67 +110,84 @@
       "events": {
         "1200": [
           {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.867
+          },
+          {
+            "topic": "new relationship",
+            "key": 12705,
+            "people": [
+              12703,
+              12704
+            ],
+            "people names": [
+              "Wederic Coram",
+              "Aleydis Craye"
+            ],
+            "people ages": [
+              45,
+              29
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
             "topic": "new home",
             "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stIn den Haeg.se3.c0",
-              "street": "In den Haeg",
-              "neighborhood": "varkensbuurt",
-              "unique id": 74
+              "income class": 3,
+              "income class label": "upper middle class",
+              "section": "stDen Hof.se5.c3",
+              "street": "Den Hof",
+              "neighborhood": "denhof",
+              "unique id": 947
             }
           }
         ],
         "1201": [
           {
-            "topic": "person died",
-            "person": {
-              "key": 10177,
-              "name": "Kerstiaen Vosse",
-              "age": 43,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "cause": "illness",
-            "label": "parent"
+            "topic": "event",
+            "event": "plague",
+            "year": 1201
           }
         ],
         "1202": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1203": [
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.202
+          },
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "feelings change",
+            "target": 12704,
+            "target name": "Aleydis Craye",
+            "state": "out of love",
+            "relationship": 12705
           }
         ],
-        "1204": [
+        "1205": [
           {
             "topic": "death",
-            "cause": "childhood illness"
+            "cause": "old age"
           }
         ]
       }
     },
     "key": 12703,
     "home": {
-      "income class": 1,
-      "income class label": "lower middle class",
-      "section": "stHelle voet.se5.c1",
-      "street": "Helle voet",
-      "neighborhood": "jorisbuurt",
-      "unique id": 111
+      "income class": 3,
+      "income class label": "upper middle class",
+      "section": "stDen Hof.se5.c3",
+      "street": "Den Hof",
+      "neighborhood": "denhof",
+      "unique id": 947
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
-      "relationships": []
+      "taken": true,
+      "married": true,
+      "relationships": [
+        12705
+      ]
     }
   }
 }

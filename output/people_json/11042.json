@@ -1,93 +1,96 @@
 {
   "11042": {
     "alive": false,
-    "name": "Hille",
-    "surname": "Bobel",
-    "full name": "Hille Bobel",
+    "name": "Scilla",
+    "surname": "Caen",
+    "full name": "Scilla Caen",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.037,
-      "romantic interest": 0.819,
-      "sex interest": 0.835,
-      "gender expression": 0.082,
+      "sexuality": 0.019,
+      "romantic interest": 0.756,
+      "sex interest": 0.722,
+      "gender expression": 0.135,
       "sex": "f"
     },
-    "age": 33,
-    "birth year": 1173,
+    "age": 44,
+    "birth year": 1169,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
-      1,
-      "lower middle class"
+      2,
+      "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.464,
-      "nice-nasty": 0.619,
-      "honest-false": 0.385
+      "lawful-chaotic": 0.258,
+      "nice-nasty": 0.325,
+      "honest-false": 0.45
     },
     "attitude": {
-      "outgoing": 0.563,
-      "dream": 0.185
+      "outgoing": 0.595,
+      "dream": 0.592
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.021,
-        "gender expression expression": 0.07
+        "sexuality expression": 0.013,
+        "gender expression expression": 0.065
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {
-        "13847": {
-          "key": 13847,
-          "name": "Bertrade Paue",
-          "age": 17,
-          "alive": false,
-          "sex": "f",
-          "parents": {
-            "mother": "Hille (11042)",
-            "father": "Radulphus (11041)"
-          }
-        }
-      },
+      "children": {},
       "relationship keys": {
         "spouse": [
-          11043
-        ],
-        "child": {
-          "birth": [
-            13849
-          ]
-        }
+          11043,
+          16770
+        ]
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        1,
-        "lower middle class"
+        2,
+        "middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.623,
+      "all_incomes": [
+        0.0,
+        0.025,
+        0.025,
+        0.025,
+        0.339,
+        0.025,
+        0.025,
+        0.025,
+        0.025,
+        0.34,
+        0.729,
+        0.623
+      ],
+      "job": {
+        "lawful": false,
+        "honest": false
+      }
     },
     "genetics": {
       "skin_color": 5,
-      "eye_color": "brown",
+      "eye_color": "green",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
         "C",
         "C"
       ],
-      "health": 0.669,
-      "fertility": 0.751,
+      "health": 0.74,
+      "fertility": 0.728,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -99,15 +102,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.669
+            "new_health": 0.74
           },
           "death": false
         },
-        "1205": {
+        "1212": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.669
+            "new_health": 0.74
           },
           "death": true
         }
@@ -122,8 +125,12 @@
               11042
             ],
             "people names": [
-              "Radulphus Paue",
-              "Hille Bobel"
+              "Clemmam Boghart",
+              "Scilla Caen"
+            ],
+            "people ages": [
+              32,
+              31
             ],
             "label": "spouse",
             "committed": true
@@ -131,32 +138,92 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stDie Coninc straet.se5.c1",
-              "street": "Die Coninc straet",
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stDie Camp.se3.c2",
+              "street": "Die Camp",
               "neighborhood": "kampbuurt",
-              "unique id": 462
+              "unique id": 367
             }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1201
+          },
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.0
           }
         ],
         "1202": [
           {
-            "topic": "new relationship",
-            "key": 13849,
-            "people": [
-              11042,
-              13847
-            ],
-            "people names": [
-              "Hille Bobel",
-              "Bertrade Paue"
-            ],
-            "label": "parentchild",
-            "committed": false
+            "key": 11043,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11041,
+              "name": "Clemmam Boghart",
+              "age": 35,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "spouse"
           }
         ],
-        "1205": [
+        "1203": [
+          {
+            "topic": "not enough income",
+            "income": 0.025,
+            "inhabitants": []
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 16770,
+            "people": [
+              10030,
+              11042
+            ],
+            "people names": [
+              "Dieuel Suardt",
+              "Scilla Caen"
+            ],
+            "people ages": [
+              46,
+              36
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stUterechse straet.se3.c2",
+              "street": "Uterechse straet",
+              "neighborhood": "varkensbuurt",
+              "unique id": 11
+            }
+          }
+        ],
+        "1206": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.025
+          }
+        ],
+        "1212": [
           {
             "topic": "death",
             "cause": "illness"
@@ -166,18 +233,19 @@
     },
     "key": 11042,
     "home": {
-      "income class": 1,
-      "income class label": "lower middle class",
-      "section": "stDie Coninc straet.se5.c1",
-      "street": "Die Coninc straet",
-      "neighborhood": "kampbuurt",
-      "unique id": 462
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stUterechse straet.se3.c2",
+      "street": "Uterechse straet",
+      "neighborhood": "varkensbuurt",
+      "unique id": 11
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        11043
+        11043,
+        16770
       ]
     }
   }

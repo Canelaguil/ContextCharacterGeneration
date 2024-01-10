@@ -28,3 +28,7 @@ Alternative implementation: university, sect, cult
 - Houses:           1-999
 - People:           1000 - 10 000
 - Relationships:    10 000 - 2 000 000 -->
+
+### TO DO's
+- Introduce siblings born after children are born to children
+- Proper family tree

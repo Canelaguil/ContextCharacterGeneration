@@ -52,6 +52,7 @@ def set_globals(health_stats, aesthetic_seed, names, society, community):
         HomoSociologicus.male_for_indepenence = society['male_meant_for_independence']
         HomoSociologicus.female_for_indepenence = society['female_meant_for_independence']
         Occupation.adult_age = society['male_meant_for_independence']
+        Occupation.passive_income = community['class_passive_income']
         Home.person_income_percentage = community['class_person_household_percentage']
         
         # relationships
@@ -220,8 +221,19 @@ class Community(Model):
 
     def create_relationship(self, personA_key, personB_key, label, 
                             platonic_only=False):
+        # check if we already know each other
+        if self.we_know_each_other(personA_key, personB_key):
+            log_error('We already know each other', [personA_key, personB_key])
+            return False
+        
         personA = self.get_person(personA_key)
         personB = self.get_person(personB_key)
+
+        # check if they're both alive
+        if not personA['alive'] or not personB['alive']:
+            
+            return False
+        
         u_id = self.get_id()
         r = Relationship(u_id, self, personA, personB, label, platonic_only)
         self.add_relationship(r)

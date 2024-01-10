@@ -1,86 +1,105 @@
 {
   "12760": {
     "alive": false,
-    "name": "Oderada",
-    "surname": "van Reynerus",
-    "full name": "Oderada van Reynerus",
+    "name": "Riquardus",
+    "surname": "Loeuin",
+    "full name": "Riquardus Loeuin",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.177,
-      "romantic interest": 0.671,
-      "sex interest": 0.801,
-      "gender expression": 0.106,
-      "sex": "f"
+      "sexuality": 0.037,
+      "romantic interest": 0.862,
+      "sex interest": 0.623,
+      "gender expression": 0.028,
+      "sex": "m"
     },
-    "age": 16,
-    "birth year": 1200,
-    "sex": "f",
-    "faction": "No religion",
+    "age": 45,
+    "birth year": 1160,
+    "sex": "m",
+    "faction": "Zealots",
     "income class": [
-      2,
-      "middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
+      "lawful-chaotic": 0.534,
       "nice-nasty": 0.0,
-      "honest-false": 0.195
+      "honest-false": 0.917
     },
     "attitude": {
-      "outgoing": 0.392,
-      "dream": 0.198
+      "outgoing": 0.363,
+      "dream": 0.609
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
-        "caretaker": true,
+        "caretaker": false,
         "needs_care": false,
-        "flags": [
-          "starving"
-        ]
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.14,
-        "gender expression expression": 0.05
+        "sexuality expression": 0.033,
+        "gender expression expression": 0.016
       }
     },
     "network": {
-      "parents": {
-        "mother": "Kerstine (10523)",
-        "father": "Reynerus (10522)"
+      "parents": "firstgen",
+      "children": {
+        "13228": {
+          "key": 13228,
+          "name": "Lutghardis Loeuin",
+          "age": 46,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Remsindis (12761)",
+            "father": "Riquardus (12760)"
+          }
+        }
       },
-      "children": {},
       "relationship keys": {
-        "parent": [
-          12761,
-          12762
+        "spouse": [
+          12762,
+          15950
         ],
-        "sibling": [
-          16044,
-          18221
-        ]
+        "child": {
+          "birth": [
+            13229
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        2,
-        "middle class"
+        1,
+        "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.826,
+      "all_incomes": [
+        0.957,
+        0.966,
+        0.951,
+        0.919,
+        0.875,
+        0.826
+      ],
+      "job": {
+        "lawful": true,
+        "honest": true
+      }
     },
     "genetics": {
       "skin_color": 3,
       "eye_color": "brown",
-      "hair_color": "red",
-      "hair_color_code": 3,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "S",
+        "C",
         "C"
       ],
-      "health": 0.524,
-      "fertility": 0.761,
+      "health": 0.74,
+      "fertility": 0.757,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -88,35 +107,19 @@
     },
     "memory": {
       "health": {
-        "1201": {
+        "1200": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.738
+            "new_health": 0.74
           },
           "death": false
         },
         "1204": {
           "health": {
-            "change": true,
-            "value_change": -0.214,
-            "new_health": 0.524
-          },
-          "death": false
-        },
-        "1205": {
-          "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.524
-          },
-          "death": false
-        },
-        "1216": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.524
+            "new_health": 0.74
           },
           "death": true
         }
@@ -124,123 +127,103 @@
       "events": {
         "1200": [
           {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stBloemendaelse straet.se3.c2",
-              "street": "Bloemendaelse straet",
-              "neighborhood": "agnesbuurt",
-              "unique id": 229
-            }
-          }
-        ],
-        "1205": [
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.957
+          },
           {
             "topic": "new relationship",
-            "key": 16044,
+            "key": 12762,
             "people": [
               12760,
-              16041
+              12761
             ],
             "people names": [
-              "Oderada van Reynerus",
-              "Walburgis Reynerussdochter"
+              "Riquardus Loeuin",
+              "Remsindis"
             ],
-            "label": "sibling",
+            "people ages": [
+              40,
+              32
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stAppel Marckt.se3.c1",
+              "street": "Appel Marckt",
+              "neighborhood": "denhof",
+              "unique id": 968
+            }
+          },
+          {
+            "topic": "new relationship",
+            "key": 13229,
+            "people": [
+              12760,
+              13228
+            ],
+            "people names": [
+              "Riquardus Loeuin",
+              "Lutghardis Loeuin"
+            ],
+            "people ages": [
+              41,
+              0
+            ],
+            "label": "parentchild",
             "committed": false
           }
         ],
-        "1207": [
+        "1201": [
           {
             "topic": "event",
             "event": "plague",
-            "year": 1207
+            "year": 1201
+          },
+          {
+            "key": 12762,
+            "topic": "unmarried"
           },
           {
             "topic": "person died",
             "person": {
-              "key": 16041,
-              "name": "Walburgis Reynerussdochter",
-              "age": 2,
+              "key": 12761,
+              "name": "Remsindis",
+              "age": 34,
               "alive": false,
               "sex": "f",
-              "parents": {
-                "mother": "Kerstine (10523)",
-                "father": "Reynerus (10522)"
-              }
-            },
-            "cause": "childhood illness",
-            "label": "sibling"
-          }
-        ],
-        "1208": [
-          {
-            "topic": "new relationship",
-            "key": 18221,
-            "people": [
-              12760,
-              18218
-            ],
-            "people names": [
-              "Oderada van Reynerus",
-              "Esa Reynerussdochter"
-            ],
-            "label": "sibling",
-            "committed": false
-          }
-        ],
-        "1213": [
-          {
-            "topic": "person died",
-            "person": {
-              "key": 10522,
-              "name": "Reynerus",
-              "age": 50,
-              "alive": false,
-              "sex": "m",
               "parents": "firstgen"
             },
             "cause": "illness",
-            "label": "parent"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 18218,
-              "name": "Esa Reynerussdochter",
-              "age": 5,
-              "alive": false,
-              "sex": "f",
-              "parents": {
-                "mother": "Kerstine (10523)",
-                "father": "Reynerus (10522)"
-              }
-            },
-            "cause": "childhood illness",
-            "label": "sibling"
+            "label": "spouse"
           }
         ],
-        "1214": [
+        "1203": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "new relationship",
+            "key": 15950,
+            "people": [
+              12760,
+              10535
+            ],
+            "people names": [
+              "Riquardus Loeuin",
+              "Salome"
+            ],
+            "people ages": [
+              44,
+              33
+            ],
+            "label": "spouse",
+            "committed": true
           }
         ],
-        "1215": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1215
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1216": [
+        "1204": [
           {
             "topic": "death",
             "cause": "illness"
@@ -250,19 +233,19 @@
     },
     "key": 12760,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stBloemendaelse straet.se3.c2",
-      "street": "Bloemendaelse straet",
-      "neighborhood": "agnesbuurt",
-      "unique id": 229
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stAppel Marckt.se3.c1",
+      "street": "Appel Marckt",
+      "neighborhood": "denhof",
+      "unique id": 968
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
-        16044,
-        18221
+        12762,
+        15950
       ]
     }
   }

@@ -1,85 +1,110 @@
 {
   "12487": {
     "alive": false,
-    "name": "Goeskin",
-    "surname": "Vogel",
-    "full name": "Goeskin Vogel",
+    "name": "Conrad",
+    "surname": "Pipe",
+    "full name": "Conrad Pipe",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.08,
-      "romantic interest": 0.999,
-      "sex interest": 0.425,
-      "gender expression": 0.168,
+      "sexuality": 0.078,
+      "romantic interest": 0.708,
+      "sex interest": 0.668,
+      "gender expression": 0.284,
       "sex": "m"
     },
-    "age": 12,
-    "birth year": 1200,
+    "age": 54,
+    "birth year": 1155,
     "sex": "m",
     "faction": "No religion",
     "income class": [
-      0,
-      "working class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.928,
-      "honest-false": 0.235
+      "lawful-chaotic": 0.08,
+      "nice-nasty": 0.976,
+      "honest-false": 0.986
     },
     "attitude": {
-      "outgoing": 0.438,
-      "dream": 0.27
+      "outgoing": 0.386,
+      "dream": 0.405
     },
     "homsoc": {
       "means": {
         "independent": false,
-        "taken_care_of": true,
-        "caretaker": true,
-        "needs_care": true,
+        "taken_care_of": false,
+        "caretaker": false,
+        "needs_care": false,
         "flags": [
           "starving"
         ]
       },
       "expression": {
-        "sexuality expression": 0.034,
-        "gender expression expression": 0.069
+        "sexuality expression": 0.038,
+        "gender expression expression": 0.19
       }
     },
     "network": {
-      "parents": {
-        "mother": "Sara (10280)",
-        "father": "Ysaac (10279)"
+      "parents": "firstgen",
+      "children": {
+        "13643": {
+          "key": 13643,
+          "name": "Reynwi Pipe",
+          "age": 54,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Wendelmodis (12488)",
+            "father": "Conrad (12487)"
+          }
+        }
       },
-      "children": {},
       "relationship keys": {
-        "parent": [
-          12488,
+        "spouse": [
           12489
         ],
-        "sibling": [
-          13036
-        ]
+        "child": {
+          "birth": [
+            13644
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        0,
-        "working class"
+        1,
+        "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.399,
+      "all_incomes": [
+        0.835,
+        0.877,
+        0.772,
+        0.39,
+        0.515,
+        0.112,
+        0.101,
+        0.226,
+        0.357,
+        0.399
+      ],
+      "job": {
+        "lawful": false,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 5,
-      "eye_color": "green",
-      "hair_color": "red",
-      "hair_color_code": 3,
+      "skin_color": 0,
+      "eye_color": "blue",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
         "S",
-        "S"
+        "C"
       ],
-      "health": 0.676,
-      "fertility": 0.704,
+      "health": 0.0,
+      "fertility": 0.551,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -87,189 +112,188 @@
     },
     "memory": {
       "health": {
-        "1201": {
+        "1200": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.676
+            "new_health": 0.543
           },
           "death": false
+        },
+        "1205": {
+          "health": {
+            "change": true,
+            "value_change": -0.212,
+            "new_health": 0.331
+          },
+          "death": false
+        },
+        "1206": {
+          "health": {
+            "change": true,
+            "value_change": -0.26,
+            "new_health": 0.071
+          },
+          "death": false
+        },
+        "1207": {
+          "health": {
+            "change": true,
+            "value_change": -0.064,
+            "new_health": 0.007
+          },
+          "death": false
+        },
+        "1208": {
+          "health": {
+            "change": true,
+            "value_change": -0.007,
+            "new_health": 0.0
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
           {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.835
+          },
+          {
+            "topic": "new relationship",
+            "key": 12489,
+            "people": [
+              12487,
+              12488
+            ],
+            "people names": [
+              "Conrad Pipe",
+              "Wendelmodis Valke"
+            ],
+            "people ages": [
+              45,
+              23
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
             "topic": "new home",
             "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stHelle voet.se7.c0",
-              "street": "Helle voet",
-              "neighborhood": "jorisbuurt",
-              "unique id": 120
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stCromme straet.se1.c1",
+              "street": "Cromme straet",
+              "neighborhood": "denhof",
+              "unique id": 872
             }
           }
         ],
         "1201": [
           {
-            "topic": "new relationship",
-            "key": 13036,
-            "people": [
-              12487,
-              13033
-            ],
-            "people names": [
-              "Goeskin Vogel",
-              "Thedwi"
-            ],
-            "label": "sibling",
-            "committed": false
+            "topic": "event",
+            "event": "plague",
+            "year": 1201
           },
           {
-            "topic": "not enough income",
-            "income": 0.391,
-            "inhabitants": []
+            "topic": "new relationship",
+            "key": 13644,
+            "people": [
+              12487,
+              13643
+            ],
+            "people names": [
+              "Conrad Pipe",
+              "Reynwi Pipe"
+            ],
+            "people ages": [
+              46,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1202": [
           {
-            "topic": "not enough income",
-            "income": 0.491,
-            "inhabitants": []
-          }
-        ],
-        "1203": [
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.39
+          },
           {
             "topic": "not enough income",
-            "income": 0.185,
+            "income": 0.39,
             "inhabitants": []
           }
         ],
         "1204": [
           {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.112
+          },
+          {
             "topic": "not enough income",
-            "income": 0.457,
+            "income": 0.112,
             "inhabitants": []
           }
         ],
         "1205": [
           {
-            "topic": "not enough income",
-            "income": 0.035,
-            "inhabitants": []
+            "topic": "feelings change",
+            "target": 12488,
+            "target name": "Wendelmodis Valke",
+            "state": "out of love",
+            "relationship": 12489
           },
           {
-            "topic": "person died",
-            "person": {
-              "key": 10279,
-              "name": "Ysaac Vogel",
-              "age": 44,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "cause": "illness",
-            "label": "parent"
+            "topic": "not enough income",
+            "income": 0.101,
+            "inhabitants": []
           }
         ],
         "1206": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1207": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1207
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "indifferent",
+            "relationship": 12489
           },
           {
             "topic": "not enough income",
-            "income": 0,
+            "income": 0.226,
             "inhabitants": []
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 13033,
-              "name": "Thedwi",
-              "age": 6,
-              "alive": false,
-              "sex": "f",
-              "parents": {
-                "mother": "Sara (10280)",
-                "father": "Ysaac (10279)"
-              }
-            },
-            "cause": "childhood illness",
-            "label": "sibling"
           }
         ],
         "1208": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1209": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1210": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.399
           },
           {
-            "topic": "person died",
-            "person": {
-              "key": 10280,
-              "name": "Sara Kics",
-              "age": 33,
-              "alive": false,
-              "sex": "f",
-              "parents": "firstgen"
-            },
-            "cause": "illness",
-            "label": "parent"
-          }
-        ],
-        "1211": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1212": [
-          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "sickness"
           }
         ]
       }
     },
     "key": 12487,
     "home": {
-      "income class": 0,
-      "income class label": "working class",
-      "section": "stHelle voet.se7.c0",
-      "street": "Helle voet",
-      "neighborhood": "jorisbuurt",
-      "unique id": 120
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stCromme straet.se1.c1",
+      "street": "Cromme straet",
+      "neighborhood": "denhof",
+      "unique id": 872
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
-        13036
+        12489
       ]
     }
   }

@@ -1,33 +1,33 @@
 {
   "11207": {
     "alive": false,
-    "name": "Mette",
-    "surname": "",
-    "full name": "Mette",
+    "name": "Amelgeir",
+    "surname": "Neue",
+    "full name": "Amelgeir Neue",
     "born this way": {
       "sexuality label": "bi",
-      "sexuality": 0.574,
-      "romantic interest": 0.68,
-      "sex interest": 0.527,
-      "gender expression": 0.318,
+      "sexuality": 0.506,
+      "romantic interest": 0.71,
+      "sex interest": 0.282,
+      "gender expression": 0.0,
       "sex": "f"
     },
-    "age": 20,
-    "birth year": 1181,
+    "age": 45,
+    "birth year": 1165,
     "sex": "f",
     "faction": "Dogmatists",
     "income class": [
-      2,
-      "middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.501,
-      "nice-nasty": 0.237,
-      "honest-false": 0.91
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.414,
+      "honest-false": 0.524
     },
     "attitude": {
-      "outgoing": 0.657,
-      "dream": 0.36
+      "outgoing": 0.209,
+      "dream": 0.204
     },
     "homsoc": {
       "means": {
@@ -38,23 +38,55 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.326,
-        "gender expression expression": 0.046
+        "sexuality expression": 0.401,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
-      "relationship keys": {}
+      "children": {
+        "15328": {
+          "key": 15328,
+          "name": "Eremboldus Reigher",
+          "age": 12,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Amelgeir (11207)",
+            "father": "Samuel (11206)"
+          }
+        }
+      },
+      "relationship keys": {
+        "spouse": [
+          11208
+        ],
+        "child": {
+          "birth": [
+            15330
+          ]
+        }
+      }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        2,
-        "middle class"
+        1,
+        "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.874,
+      "all_incomes": [
+        0.987,
+        1.043,
+        0.938,
+        0.961,
+        0.908,
+        0.874
+      ],
+      "job": {
+        "lawful": true,
+        "honest": true
+      }
     },
     "genetics": {
       "skin_color": 3,
@@ -63,10 +95,10 @@
       "hair_color_code": 4,
       "hair_type": [
         "C",
-        "S"
+        "C"
       ],
-      "health": 0.667,
-      "fertility": 0.774,
+      "health": 0.483,
+      "fertility": 0.559,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -78,13 +110,109 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.667
+            "new_health": 0.483
+          },
+          "death": false
+        },
+        "1209": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.483
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "new relationship",
+            "key": 11208,
+            "people": [
+              11206,
+              11207
+            ],
+            "people names": [
+              "Samuel Reigher",
+              "Amelgeir Neue"
+            ],
+            "people ages": [
+              38,
+              35
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stSt. Ians straet.se3.c1",
+              "street": "St. Ians straet",
+              "neighborhood": "kampbuurt",
+              "unique id": 424
+            }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1201
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "indifferent",
+            "relationship": 11208
+          }
+        ],
+        "1202": [
+          {
+            "topic": "feelings change",
+            "target": 11206,
+            "target name": "Samuel Reigher",
+            "state": "out of love",
+            "relationship": 11208
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 15330,
+            "people": [
+              11207,
+              15328
+            ],
+            "people names": [
+              "Amelgeir Neue",
+              "Eremboldus Reigher"
+            ],
+            "people ages": [
+              38,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1204": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.987
+          }
+        ],
+        "1205": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.043
+          }
+        ],
+        "1209": [
           {
             "topic": "death",
             "cause": "illness"
@@ -94,17 +222,19 @@
     },
     "key": 11207,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stBreestraat.se1.c2",
-      "street": "Breestraat",
-      "neighborhood": "olvbuurt",
-      "unique id": 535
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stSt. Ians straet.se3.c1",
+      "street": "St. Ians straet",
+      "neighborhood": "kampbuurt",
+      "unique id": 424
     },
     "relationship status": {
       "taken": true,
       "married": true,
-      "relationships": []
+      "relationships": [
+        11208
+      ]
     }
   }
 }

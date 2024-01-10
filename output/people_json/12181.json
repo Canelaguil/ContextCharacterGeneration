@@ -1,51 +1,86 @@
 {
   "12181": {
     "alive": false,
-    "name": "Thitardo",
-    "surname": "Vromoeds",
-    "full name": "Thitardo Vromoeds",
+    "name": "Fellen",
+    "surname": "Calvesnack",
+    "full name": "Fellen Calvesnack",
     "born this way": {
-      "sexuality label": "bi",
-      "sexuality": 0.514,
-      "romantic interest": 0.543,
-      "sex interest": 0.745,
-      "gender expression": 0.182,
+      "sexuality label": "straight",
+      "sexuality": 0.141,
+      "romantic interest": 0.692,
+      "sex interest": 0.552,
+      "gender expression": 0.048,
       "sex": "m"
     },
-    "age": 49,
-    "birth year": 1152,
+    "age": 48,
+    "birth year": 1158,
     "sex": "m",
-    "faction": "Dogmatists",
+    "faction": "Zealots",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.402,
-      "nice-nasty": 0.616,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.317,
+      "nice-nasty": 0.103,
+      "honest-false": 0.268
     },
     "attitude": {
-      "outgoing": 0.748,
-      "dream": 0.65
+      "outgoing": 0.617,
+      "dream": 0.403
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.218,
-        "gender expression expression": 0.098
+        "sexuality expression": 0.129,
+        "gender expression expression": 0.041
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
-      "relationship keys": {}
+      "children": {
+        "14649": {
+          "key": 14649,
+          "name": "Hubrecht Calvesnack",
+          "age": 33,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Jute (12182)",
+            "father": "Fellen (12181)"
+          }
+        },
+        "16653": {
+          "key": 16653,
+          "name": "Yda Calvesnack",
+          "age": 40,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Jute (12182)",
+            "father": "Fellen (12181)"
+          }
+        }
+      },
+      "relationship keys": {
+        "spouse": [
+          12183
+        ],
+        "child": {
+          "birth": [
+            14650,
+            16654
+          ]
+        }
+      }
     },
     "occupation": {
       "has job": true,
@@ -53,27 +88,32 @@
         1,
         "lower middle class"
       ],
-      "income": 0.996,
+      "income": 0.074,
       "all_incomes": [
-        1.018,
-        0.996
+        1.23,
+        0.584,
+        0.372,
+        0.675,
+        0.316,
+        0.415,
+        0.074
       ],
       "job": {
-        "lawful": true,
-        "honest": true
+        "lawful": false,
+        "honest": false
       }
     },
     "genetics": {
-      "skin_color": 4,
-      "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 2,
+      "eye_color": "blue",
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
         "C",
-        "C"
+        "S"
       ],
-      "health": 0.723,
-      "fertility": 0.741,
+      "health": 0.705,
+      "fertility": 0.619,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -85,9 +125,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.723
+            "new_health": 0.705
           },
-          "death": true
+          "death": false
         }
       },
       "events": {
@@ -95,7 +135,129 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.018
+            "income": 1.23
+          },
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.584
+          },
+          {
+            "topic": "new relationship",
+            "key": 12183,
+            "people": [
+              12181,
+              12182
+            ],
+            "people names": [
+              "Fellen Calvesnack",
+              "Jute Peteman"
+            ],
+            "people ages": [
+              42,
+              23
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stNieu straet.se3.c1",
+              "street": "Nieu straet",
+              "neighborhood": "visbuurt",
+              "unique id": 764
+            }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1201
+          },
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.372
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 14650,
+            "people": [
+              12181,
+              14649
+            ],
+            "people names": [
+              "Fellen Calvesnack",
+              "Hubrecht Calvesnack"
+            ],
+            "people ages": [
+              44,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1203": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.316
+          },
+          {
+            "topic": "feelings change",
+            "target": 12182,
+            "target name": "Jute Peteman",
+            "state": "solid love",
+            "relationship": 12183
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.316,
+            "inhabitants": []
+          }
+        ],
+        "1204": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.415
+          },
+          {
+            "topic": "new relationship",
+            "key": 16654,
+            "people": [
+              12181,
+              16653
+            ],
+            "people names": [
+              "Fellen Calvesnack",
+              "Yda Calvesnack"
+            ],
+            "people ages": [
+              47,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.415,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.074
           },
           {
             "topic": "death",
@@ -108,15 +270,17 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stAppel Marckt.se1.c1",
-      "street": "Appel Marckt",
-      "neighborhood": "denhof",
-      "unique id": 967
+      "section": "stNieu straet.se3.c1",
+      "street": "Nieu straet",
+      "neighborhood": "visbuurt",
+      "unique id": 764
     },
     "relationship status": {
       "taken": true,
       "married": true,
-      "relationships": []
+      "relationships": [
+        12183
+      ]
     }
   }
 }

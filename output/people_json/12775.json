@@ -1,80 +1,116 @@
 {
   "12775": {
     "alive": false,
-    "name": "Ancelmus",
-    "surname": "",
-    "full name": "Ancelmus",
+    "name": "Raso",
+    "surname": "Minne",
+    "full name": "Raso Minne",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.838,
-      "romantic interest": 0.767,
-      "sex interest": 0.933,
-      "gender expression": 0.564,
+      "sexuality label": "straight",
+      "sexuality": 0.116,
+      "romantic interest": 0.687,
+      "sex interest": 0.605,
+      "gender expression": 0.073,
       "sex": "m"
     },
-    "age": 1,
-    "birth year": 1200,
+    "age": 53,
+    "birth year": 1152,
     "sex": "m",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
-      2,
-      "middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.325,
-      "nice-nasty": 0.907,
-      "honest-false": 0.742
+      "lawful-chaotic": 0.553,
+      "nice-nasty": 0.376,
+      "honest-false": 0.299
     },
     "attitude": {
-      "outgoing": 0.721,
-      "dream": 0.275
+      "outgoing": 0.492,
+      "dream": 0.204
     },
     "homsoc": {
       "means": {
-        "independent": false,
-        "taken_care_of": true,
-        "caretaker": true,
-        "needs_care": true,
+        "independent": true,
+        "taken_care_of": false,
+        "caretaker": false,
+        "needs_care": false,
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.453,
-        "gender expression expression": 0.185
+        "sexuality expression": 0.111,
+        "gender expression expression": 0.028
       }
     },
     "network": {
-      "parents": {
-        "mother": "Reymodis (10409)",
-        "father": "Reymar (10408)"
+      "parents": "firstgen",
+      "children": {
+        "14964": {
+          "key": 14964,
+          "name": "Saswe Minne",
+          "age": 1,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Meynseth (12776)",
+            "father": "Raso (12775)"
+          }
+        },
+        "15319": {
+          "key": 15319,
+          "name": "Volcwiif Minne",
+          "age": 8,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Meynseth (12776)",
+            "father": "Raso (12775)"
+          }
+        }
       },
-      "children": {},
       "relationship keys": {
-        "parent": [
-          12776,
+        "spouse": [
           12777
-        ]
+        ],
+        "child": {
+          "birth": [
+            14965,
+            15320
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        2,
-        "middle class"
+        1,
+        "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.072,
+      "all_incomes": [
+        0.972,
+        0.891,
+        0.861,
+        0.942,
+        1.002,
+        1.072
+      ],
+      "job": {
+        "lawful": false,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 7,
-      "eye_color": "green",
-      "hair_color": "red",
-      "hair_color_code": 3,
+      "skin_color": 8,
+      "eye_color": "brown",
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
       "hair_type": [
         "C",
-        "S"
+        "C"
       ],
-      "health": 0.755,
-      "fertility": 0.761,
+      "health": 0.009,
+      "fertility": 0.594,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -82,11 +118,35 @@
     },
     "memory": {
       "health": {
-        "1201": {
+        "1200": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.755
+            "new_health": 0.574
+          },
+          "death": false
+        },
+        "1202": {
+          "health": {
+            "change": true,
+            "value_change": -0.275,
+            "new_health": 0.299
+          },
+          "death": false
+        },
+        "1203": {
+          "health": {
+            "change": true,
+            "value_change": -0.274,
+            "new_health": 0.025
+          },
+          "death": false
+        },
+        "1204": {
+          "health": {
+            "change": true,
+            "value_change": -0.016,
+            "new_health": 0.009
           },
           "death": true
         }
@@ -94,38 +154,131 @@
       "events": {
         "1200": [
           {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.972
+          },
+          {
+            "topic": "new relationship",
+            "key": 12777,
+            "people": [
+              12775,
+              12776
+            ],
+            "people names": [
+              "Raso Minne",
+              "Meynseth Panne"
+            ],
+            "people ages": [
+              48,
+              25
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stDavids hof.se1.c2",
-              "street": "Davids hof",
-              "neighborhood": "jorisbuurt",
-              "unique id": 179
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stPapenhofstede.se1.c1",
+              "street": "Papenhofstede",
+              "neighborhood": "denhof",
+              "unique id": 973
             }
           }
         ],
         "1201": [
           {
+            "topic": "event",
+            "event": "plague",
+            "year": 1201
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 14965,
+            "people": [
+              12775,
+              14964
+            ],
+            "people names": [
+              "Raso Minne",
+              "Saswe Minne"
+            ],
+            "people ages": [
+              50,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1203": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.002
+          },
+          {
+            "topic": "new relationship",
+            "key": 15320,
+            "people": [
+              12775,
+              15319
+            ],
+            "people names": [
+              "Raso Minne",
+              "Volcwiif Minne"
+            ],
+            "people ages": [
+              52,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 14964,
+              "name": "Saswe Minne",
+              "age": 1,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Meynseth (12776)",
+                "father": "Raso (12775)"
+              }
+            },
+            "cause": "childhood illness",
+            "label": "child"
+          }
+        ],
+        "1204": [
+          {
             "topic": "death",
-            "cause": "childhood illness"
+            "cause": "old age"
           }
         ]
       }
     },
     "key": 12775,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stDavids hof.se1.c2",
-      "street": "Davids hof",
-      "neighborhood": "jorisbuurt",
-      "unique id": 179
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stPapenhofstede.se1.c1",
+      "street": "Papenhofstede",
+      "neighborhood": "denhof",
+      "unique id": 973
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
-      "relationships": []
+      "taken": true,
+      "married": true,
+      "relationships": [
+        12777
+      ]
     }
   }
 }

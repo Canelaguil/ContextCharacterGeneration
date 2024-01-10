@@ -1,77 +1,99 @@
 {
   "12655": {
     "alive": false,
-    "name": "Gherbaren",
-    "surname": "Segherszoon",
-    "full name": "Gherbaren Segherszoon",
+    "name": "Maelkin",
+    "surname": "",
+    "full name": "Maelkin",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.032,
-      "romantic interest": 0.765,
-      "sex interest": 0.589,
-      "gender expression": 0.081,
+      "sexuality": 0.043,
+      "romantic interest": 0.518,
+      "sex interest": 0.642,
+      "gender expression": 0.065,
       "sex": "m"
     },
-    "age": 18,
-    "birth year": 1200,
+    "age": 56,
+    "birth year": 1161,
     "sex": "m",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
-      2,
-      "middle class"
+      3,
+      "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.413,
-      "nice-nasty": 0.431,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.145,
+      "nice-nasty": 0.0,
+      "honest-false": 0.89
     },
     "attitude": {
-      "outgoing": 0.65,
-      "dream": 0.789
+      "outgoing": 0.482,
+      "dream": 0.603
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
-        "caretaker": true,
+        "caretaker": false,
         "needs_care": false,
-        "flags": [
-          "starving"
-        ]
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.016,
-        "gender expression expression": 0.042
+        "sexuality expression": 0.019,
+        "gender expression expression": 0.021
       }
     },
     "network": {
-      "parents": {
-        "mother": "Sophia (10703)",
-        "father": "Segher (10702)"
+      "parents": "firstgen",
+      "children": {
+        "13387": {
+          "key": 13387,
+          "name": "Badeloghen",
+          "age": 55,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Jacomin (12656)",
+            "father": "Maelkin (12655)"
+          }
+        }
       },
-      "children": {},
       "relationship keys": {
-        "parent": [
-          12656,
+        "spouse": [
           12657
         ],
-        "sibling": [
-          16558,
-          17692,
-          19391,
-          19826
-        ]
+        "child": {
+          "birth": [
+            13388
+          ]
+        }
       }
     },
     "occupation": {
       "has job": true,
       "income class": [
-        2,
-        "middle class"
+        3,
+        "upper middle class"
       ],
-      "income": 0.912,
+      "income": 1.5490000000000002,
       "all_incomes": [
-        0.912
+        1.044,
+        1.053,
+        1.099,
+        1.203,
+        1.445,
+        1.334,
+        1.317,
+        1.472,
+        1.342,
+        1.3800000000000001,
+        1.36,
+        1.3960000000000001,
+        1.5490000000000002,
+        1.5490000000000002,
+        1.348,
+        1.5490000000000002,
+        1.5490000000000002,
+        1.5490000000000002
       ],
       "job": {
         "lawful": false,
@@ -79,16 +101,16 @@
       }
     },
     "genetics": {
-      "skin_color": 2,
+      "skin_color": 8,
       "eye_color": "brown",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.779,
-      "fertility": 0.716,
+      "health": 0.0,
+      "fertility": 0.766,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -96,153 +118,139 @@
     },
     "memory": {
       "health": {
-        "1201": {
+        "1200": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.779
+            "new_health": 0.764
           },
           "death": false
+        },
+        "1211": {
+          "health": {
+            "change": true,
+            "value_change": -0.137,
+            "new_health": 0.627
+          },
+          "death": false
+        },
+        "1212": {
+          "health": {
+            "change": true,
+            "value_change": -0.188,
+            "new_health": 0.439
+          },
+          "death": false
+        },
+        "1213": {
+          "health": {
+            "change": true,
+            "value_change": -0.247,
+            "new_health": 0.192
+          },
+          "death": false
+        },
+        "1214": {
+          "health": {
+            "change": true,
+            "value_change": -0.164,
+            "new_health": 0.028
+          },
+          "death": false
+        },
+        "1215": {
+          "health": {
+            "change": true,
+            "value_change": -0.024,
+            "new_health": 0.004
+          },
+          "death": false
+        },
+        "1216": {
+          "health": {
+            "change": true,
+            "value_change": -0.004,
+            "new_health": 0.0
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
           {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.044
+          },
+          {
+            "topic": "new relationship",
+            "key": 12657,
+            "people": [
+              12655,
+              12656
+            ],
+            "people names": [
+              "Maelkin",
+              "Jacomin"
+            ],
+            "people ages": [
+              39,
+              34
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stCingel.se5.c2",
-              "street": "Cingel",
-              "neighborhood": "agnesbuurt",
-              "unique id": 310
+              "income class": 3,
+              "income class label": "upper middle class",
+              "section": "stMarcktgang.se3.c3",
+              "street": "Marcktgang",
+              "neighborhood": "denhof",
+              "unique id": 931
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 13388,
+            "people": [
+              12655,
+              13387
+            ],
+            "people names": [
+              "Maelkin",
+              "Badeloghen"
+            ],
+            "people ages": [
+              40,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 12656,
+            "target name": "Jacomin",
+            "state": "solid love",
+            "relationship": 12657
+          }
+        ],
+        "1201": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1201
           }
         ],
         "1206": [
           {
-            "topic": "new relationship",
-            "key": 16558,
-            "people": [
-              12655,
-              16555
-            ],
-            "people names": [
-              "Gherbaren Segherszoon",
-              "Saxiardis Seghersdochter"
-            ],
-            "label": "sibling",
-            "committed": false
-          }
-        ],
-        "1207": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1207
-          }
-        ],
-        "1208": [
-          {
-            "topic": "new relationship",
-            "key": 17692,
-            "people": [
-              12655,
-              17689
-            ],
-            "people names": [
-              "Gherbaren Segherszoon",
-              "Havix Segherszoon"
-            ],
-            "label": "sibling",
-            "committed": false
-          }
-        ],
-        "1210": [
-          {
-            "topic": "new relationship",
-            "key": 19391,
-            "people": [
-              12655,
-              19388
-            ],
-            "people names": [
-              "Gherbaren Segherszoon",
-              "Heilsota Seghersdochter"
-            ],
-            "label": "sibling",
-            "committed": false
-          }
-        ],
-        "1211": [
-          {
-            "topic": "new relationship",
-            "key": 19826,
-            "people": [
-              12655,
-              19823
-            ],
-            "people names": [
-              "Gherbaren Segherszoon",
-              "Philips Segherszoon"
-            ],
-            "label": "sibling",
-            "committed": false
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.577,
-            "inhabitants": []
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 10702,
-              "name": "Segher",
-              "age": 55,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "cause": "sickness",
-            "label": "parent"
-          }
-        ],
-        "1212": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 19823,
-              "name": "Philips Segherszoon",
-              "age": 1,
-              "alive": false,
-              "sex": "m",
-              "parents": {
-                "mother": "Sophia (10703)",
-                "father": "Segher (10702)"
-              }
-            },
-            "cause": "childhood illness",
-            "label": "sibling"
-          }
-        ],
-        "1213": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1214": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "friend",
+            "relationship": 12657
           }
         ],
         "1215": [
@@ -250,57 +258,30 @@
             "topic": "event",
             "event": "plague",
             "year": 1215
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
           }
         ],
         "1216": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1217": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1218": [
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.912
-          },
-          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "sickness"
           }
         ]
       }
     },
     "key": 12655,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stCingel.se5.c2",
-      "street": "Cingel",
-      "neighborhood": "agnesbuurt",
-      "unique id": 310
+      "income class": 3,
+      "income class label": "upper middle class",
+      "section": "stMarcktgang.se3.c3",
+      "street": "Marcktgang",
+      "neighborhood": "denhof",
+      "unique id": 931
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
-        16558,
-        17692,
-        19391,
-        19826
+        12657
       ]
     }
   }

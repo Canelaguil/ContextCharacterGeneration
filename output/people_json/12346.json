@@ -1,85 +1,91 @@
 {
   "12346": {
     "alive": false,
-    "name": "Gilis",
-    "surname": "",
-    "full name": "Gilis",
+    "name": "Anselmi",
+    "surname": "Cnode",
+    "full name": "Anselmi Cnode",
     "born this way": {
       "sexuality label": "bi",
-      "sexuality": 0.538,
-      "romantic interest": 0.799,
-      "sex interest": 0.872,
-      "gender expression": 0.01,
+      "sexuality": 0.462,
+      "romantic interest": 0.753,
+      "sex interest": 0.867,
+      "gender expression": 0.356,
       "sex": "m"
     },
-    "age": 13,
-    "birth year": 1200,
+    "age": 52,
+    "birth year": 1156,
     "sex": "m",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
-      1,
-      "lower middle class"
+      3,
+      "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.835,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.283,
+      "nice-nasty": 0.853,
+      "honest-false": 0.794
     },
     "attitude": {
-      "outgoing": 0.638,
-      "dream": 0.332
+      "outgoing": 0.013,
+      "dream": 0.471
     },
     "homsoc": {
       "means": {
-        "independent": false,
-        "taken_care_of": true,
-        "caretaker": true,
-        "needs_care": true,
-        "flags": [
-          "starving"
-        ]
+        "independent": true,
+        "taken_care_of": false,
+        "caretaker": false,
+        "needs_care": false,
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.258,
-        "gender expression expression": 0.003
+        "sexuality expression": 0.354,
+        "gender expression expression": 0.112
       }
     },
     "network": {
-      "parents": {
-        "mother": "Remsindis (10256)",
-        "father": "Deghen (10255)"
-      },
+      "parents": "firstgen",
       "children": {},
       "relationship keys": {
-        "parent": [
-          12347,
-          12348
-        ],
-        "sibling": [
-          14040
+        "spouse": [
+          12348,
+          15947
         ]
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        1,
-        "lower middle class"
+        3,
+        "upper middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.5490000000000002,
+      "all_incomes": [
+        0.872,
+        0.8260000000000001,
+        1.102,
+        1.2790000000000001,
+        1.067,
+        1.098,
+        1.214,
+        1.363,
+        1.5490000000000002
+      ],
+      "job": {
+        "lawful": false,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 4,
+      "skin_color": 9,
       "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
-        "S",
+        "C",
         "C"
       ],
-      "health": 0.747,
-      "fertility": 0.849,
+      "health": 0.105,
+      "fertility": 0.609,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -87,19 +93,27 @@
     },
     "memory": {
       "health": {
-        "1201": {
+        "1200": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.747
+            "new_health": 0.646
           },
           "death": false
         },
-        "1213": {
+        "1206": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.747
+            "change": true,
+            "value_change": -0.295,
+            "new_health": 0.351
+          },
+          "death": false
+        },
+        "1207": {
+          "health": {
+            "change": true,
+            "value_change": -0.246,
+            "new_health": 0.105
           },
           "death": true
         }
@@ -107,195 +121,146 @@
       "events": {
         "1200": [
           {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.872
+          },
+          {
+            "topic": "new relationship",
+            "key": 12348,
+            "people": [
+              12346,
+              12347
+            ],
+            "people names": [
+              "Anselmi Cnode",
+              "Rycaldis Lozere"
+            ],
+            "people ages": [
+              44,
+              32
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
             "topic": "new home",
             "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stHelle voet.se5.c1",
-              "street": "Helle voet",
-              "neighborhood": "jorisbuurt",
-              "unique id": 110
+              "income class": 3,
+              "income class label": "upper middle class",
+              "section": "stMuurhuysen2.se7.c3",
+              "street": "Muurhuysen2",
+              "neighborhood": "cingelnoord",
+              "unique id": 823
             }
+          },
+          {
+            "topic": "feelings change",
+            "target": 12347,
+            "target name": "Rycaldis Lozere",
+            "state": "out of love",
+            "relationship": 12348
+          }
+        ],
+        "1201": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1201
+          },
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.102
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "indifferent",
+            "relationship": 12348
           }
         ],
         "1202": [
           {
-            "topic": "new relationship",
-            "key": 14040,
-            "people": [
-              12346,
-              14037
-            ],
-            "people names": [
-              "Gilis",
-              "Godefridus"
-            ],
-            "label": "sibling",
-            "committed": false
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.468,
-            "inhabitants": []
-          }
-        ],
-        "1203": [
-          {
-            "topic": "not enough income",
-            "income": 0.08,
-            "inhabitants": []
-          }
-        ],
-        "1204": [
-          {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
-          }
-        ],
-        "1205": [
-          {
-            "topic": "not enough income",
-            "income": 0.093,
-            "inhabitants": []
-          }
-        ],
-        "1206": [
-          {
-            "topic": "not enough income",
-            "income": 0.107,
-            "inhabitants": []
+            "key": 12348,
+            "topic": "unmarried"
           },
           {
             "topic": "person died",
             "person": {
-              "key": 10255,
-              "name": "Deghen",
-              "age": 50,
+              "key": 12347,
+              "name": "Rycaldis Lozere",
+              "age": 35,
               "alive": false,
-              "sex": "m",
+              "sex": "f",
               "parents": "firstgen"
             },
             "cause": "illness",
-            "label": "parent"
+            "label": "spouse"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 15947,
+            "people": [
+              12346,
+              11756
+            ],
+            "people names": [
+              "Anselmi Cnode",
+              "Siburgis Moes"
+            ],
+            "people ages": [
+              48,
+              37
+            ],
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1204": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "friend",
+            "relationship": 15947
+          }
+        ],
+        "1205": [
+          {
+            "topic": "feelings change",
+            "target": 11756,
+            "target name": "Siburgis Moes",
+            "state": "solid love",
+            "relationship": 15947
           }
         ],
         "1207": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1207
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1208": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1209": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1210": [
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stStoof straet.se1.c1",
-              "street": "Stoof straet",
-              "neighborhood": "visbuurt",
-              "unique id": 773
-            }
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": [
-              23538,
-              25610,
-              35127,
-              35395,
-              26619,
-              26462,
-              36300,
-              36594,
-              25191
-            ]
-          },
-          {
-            "topic": "update",
-            "update": "parent married",
-            "parent": 10256,
-            "new partner": 11755
-          }
-        ],
-        "1211": [
-          {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": [
-              23538,
-              25610,
-              35127,
-              35395,
-              26619,
-              26462,
-              36300,
-              36594,
-              25191
-            ]
-          }
-        ],
-        "1212": [
-          {
-            "topic": "not enough income",
-            "income": 0.175,
-            "inhabitants": [
-              23538,
-              25610,
-              35127,
-              35395,
-              26619,
-              26462,
-              36300,
-              36594,
-              25191
-            ]
-          }
-        ],
-        "1213": [
-          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "old age"
           }
         ]
       }
     },
     "key": 12346,
     "home": {
-      "income class": 1,
-      "income class label": "lower middle class",
-      "section": "stStoof straet.se1.c1",
-      "street": "Stoof straet",
-      "neighborhood": "visbuurt",
-      "unique id": 773
+      "income class": 3,
+      "income class label": "upper middle class",
+      "section": "stMuurhuysen2.se7.c3",
+      "street": "Muurhuysen2",
+      "neighborhood": "cingelnoord",
+      "unique id": 823
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
-        14040
+        12348,
+        15947
       ]
     }
   }

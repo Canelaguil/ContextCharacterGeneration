@@ -1,83 +1,88 @@
 {
   "12616": {
     "alive": false,
-    "name": "Brun",
-    "surname": "van Siwa",
-    "full name": "Brun van Siwa",
+    "name": "Eylwardo",
+    "surname": "Smiec",
+    "full name": "Eylwardo Smiec",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.002,
-      "romantic interest": 0.769,
-      "sex interest": 0.965,
-      "gender expression": 0.0,
+      "sexuality": 0.007,
+      "romantic interest": 0.875,
+      "sex interest": 0.568,
+      "gender expression": 0.069,
       "sex": "m"
     },
-    "age": 2,
-    "birth year": 1200,
+    "age": 52,
+    "birth year": 1154,
     "sex": "m",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
       3,
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.368,
-      "nice-nasty": 0.224,
-      "honest-false": 0.285
+      "lawful-chaotic": 0.0,
+      "nice-nasty": 0.529,
+      "honest-false": 0.332
     },
     "attitude": {
-      "outgoing": 0.358,
-      "dream": 0.3
+      "outgoing": 0.462,
+      "dream": 0.408
     },
     "homsoc": {
       "means": {
-        "independent": false,
-        "taken_care_of": true,
-        "caretaker": true,
-        "needs_care": true,
+        "independent": true,
+        "taken_care_of": false,
+        "caretaker": false,
+        "needs_care": false,
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.001,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.005,
+        "gender expression expression": 0.026
       }
     },
     "network": {
-      "parents": {
-        "mother": "Siwa (12071)",
-        "father": "Jonas (12070)"
-      },
+      "parents": "firstgen",
       "children": {},
       "relationship keys": {
-        "parent": [
-          12617,
+        "spouse": [
           12618
-        ],
-        "sibling": [
-          13417
         ]
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         3,
         "upper middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.9380000000000001,
+      "all_incomes": [
+        0.899,
+        1.194,
+        1.185,
+        1.258,
+        0.883,
+        0.643,
+        0.9380000000000001
+      ],
+      "job": {
+        "lawful": false,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 6,
+      "skin_color": 9,
       "eye_color": "brown",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
         "S",
         "C"
       ],
-      "health": 0.73,
-      "fertility": 0.669,
+      "health": 0.0,
+      "fertility": 0.751,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -85,11 +90,19 @@
     },
     "memory": {
       "health": {
-        "1201": {
+        "1200": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.73
+            "new_health": 0.674
+          },
+          "death": false
+        },
+        "1201": {
+          "health": {
+            "change": true,
+            "value_change": -0.315,
+            "new_health": 0.359
           },
           "death": false
         },
@@ -97,13 +110,65 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.73
+            "new_health": 0.359
+          },
+          "death": false
+        },
+        "1203": {
+          "health": {
+            "change": true,
+            "value_change": -0.144,
+            "new_health": 0.215
+          },
+          "death": false
+        },
+        "1204": {
+          "health": {
+            "change": true,
+            "value_change": -0.201,
+            "new_health": 0.014
+          },
+          "death": false
+        },
+        "1205": {
+          "health": {
+            "change": true,
+            "value_change": -0.014,
+            "new_health": 0.0
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.899
+          },
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.194
+          },
+          {
+            "topic": "new relationship",
+            "key": 12618,
+            "people": [
+              12616,
+              12617
+            ],
+            "people names": [
+              "Eylwardo Smiec",
+              "Linnea Capoen"
+            ],
+            "people ages": [
+              46,
+              37
+            ],
+            "label": "spouse",
+            "committed": true
+          },
           {
             "topic": "new home",
             "home": {
@@ -118,24 +183,22 @@
         ],
         "1201": [
           {
-            "topic": "new relationship",
-            "key": 13417,
-            "people": [
-              12616,
-              13414
-            ],
-            "people names": [
-              "Brun van Siwa",
-              "Stoethoute Jonasszoon"
-            ],
-            "label": "sibling",
-            "committed": false
+            "topic": "event",
+            "event": "plague",
+            "year": 1201
           }
         ],
-        "1202": [
+        "1204": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.643
+          }
+        ],
+        "1205": [
           {
             "topic": "death",
-            "cause": "childhood illness"
+            "cause": "sickness"
           }
         ]
       }
@@ -150,10 +213,10 @@
       "unique id": 917
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
-        13417
+        12618
       ]
     }
   }

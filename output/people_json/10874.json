@@ -1,19 +1,19 @@
 {
   "10874": {
     "alive": false,
-    "name": "Yda",
+    "name": "Erkenradis",
     "surname": "",
-    "full name": "Yda",
+    "full name": "Erkenradis",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.13,
-      "romantic interest": 0.868,
-      "sex interest": 0.59,
-      "gender expression": 0.079,
+      "sexuality": 0.174,
+      "romantic interest": 0.731,
+      "sex interest": 0.532,
+      "gender expression": 0.051,
       "sex": "f"
     },
-    "age": 24,
-    "birth year": 1184,
+    "age": 26,
+    "birth year": 1182,
     "sex": "f",
     "faction": "Zealots",
     "income class": [
@@ -21,13 +21,13 @@
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.791,
-      "nice-nasty": 0.999,
-      "honest-false": 0.57
+      "lawful-chaotic": 0.54,
+      "nice-nasty": 0.464,
+      "honest-false": 0.525
     },
     "attitude": {
-      "outgoing": 0.254,
-      "dream": 0.587
+      "outgoing": 0.498,
+      "dream": 0.282
     },
     "homsoc": {
       "means": {
@@ -35,47 +35,38 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.056,
-        "gender expression expression": 0.035
+        "sexuality expression": 0.111,
+        "gender expression expression": 0.026
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "13396": {
-          "key": 13396,
-          "name": "Blankard Lubertusszoon",
-          "age": 48,
-          "alive": true,
-          "sex": "m",
-          "parents": {
-            "mother": "Yda (10874)",
-            "father": "Lubertus (10873)"
-          }
-        },
-        "15683": {
-          "key": 15683,
-          "name": "Nellen van Lubertus",
-          "age": 44,
-          "alive": true,
+        "18082": {
+          "key": 18082,
+          "name": "Hildegardis Dicbier",
+          "age": 56,
+          "alive": false,
           "sex": "f",
           "parents": {
-            "mother": "Yda (10874)",
-            "father": "Lubertus (10873)"
+            "mother": "Erkenradis (10874)",
+            "father": "Wigboldo (11797)"
           }
         }
       },
       "relationship keys": {
         "spouse": [
-          10875
+          10875,
+          16771
         ],
         "child": {
           "birth": [
-            13398,
-            15685
+            18084
           ]
         }
       }
@@ -90,16 +81,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 0,
-      "eye_color": "brown",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "skin_color": 5,
+      "eye_color": "blue",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
         "S",
         "S"
       ],
-      "health": 0.666,
-      "fertility": 0.693,
+      "health": 0.763,
+      "fertility": 0.711,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -111,7 +102,7 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.666
+            "new_health": 0.763
           },
           "death": false
         }
@@ -126,8 +117,12 @@
               10874
             ],
             "people names": [
-              "Lubertus",
-              "Yda"
+              "Boidin Weis",
+              "Erkenradis"
+            ],
+            "people ages": [
+              23,
+              18
             ],
             "label": "spouse",
             "committed": true
@@ -137,51 +132,103 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stDie Camp.se5.c2",
-              "street": "Die Camp",
-              "neighborhood": "kampbuurt",
-              "unique id": 393
+              "section": "stCingel.se5.c2",
+              "street": "Cingel",
+              "neighborhood": "agnesbuurt",
+              "unique id": 310
             }
           }
         ],
         "1201": [
           {
-            "topic": "new relationship",
-            "key": 13398,
-            "people": [
-              10874,
-              13396
-            ],
-            "people names": [
-              "Yda",
-              "Blankard Lubertusszoon"
-            ],
-            "label": "parentchild",
-            "committed": false
+            "topic": "event",
+            "event": "plague",
+            "year": 1201
+          },
+          {
+            "key": 10875,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10873,
+              "name": "Boidin Weis",
+              "age": 25,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "spouse"
           }
         ],
-        "1205": [
+        "1202": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1203": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1204": [
           {
             "topic": "new relationship",
-            "key": 15685,
+            "key": 16771,
             "people": [
-              10874,
-              15683
+              11797,
+              10874
             ],
             "people names": [
-              "Yda",
-              "Nellen van Lubertus"
+              "Wigboldo Dicbier",
+              "Erkenradis"
+            ],
+            "people ages": [
+              31,
+              23
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stScherbier straet.se1.c2",
+              "street": "Scherbier straet",
+              "neighborhood": "cingelzuid",
+              "unique id": 631
+            }
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 18084,
+            "people": [
+              10874,
+              18082
+            ],
+            "people names": [
+              "Erkenradis",
+              "Hildegardis Dicbier"
+            ],
+            "people ages": [
+              25,
+              0
             ],
             "label": "parentchild",
             "committed": false
           }
         ],
         "1207": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1207
-          },
           {
             "topic": "death",
             "cause": "illness"
@@ -193,16 +240,17 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stDie Camp.se5.c2",
-      "street": "Die Camp",
-      "neighborhood": "kampbuurt",
-      "unique id": 393
+      "section": "stScherbier straet.se1.c2",
+      "street": "Scherbier straet",
+      "neighborhood": "cingelzuid",
+      "unique id": 631
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        10875
+        10875,
+        16771
       ]
     }
   }

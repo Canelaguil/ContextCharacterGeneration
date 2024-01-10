@@ -1,33 +1,33 @@
 {
   "10298": {
     "alive": false,
-    "name": "Helyana",
-    "surname": "",
-    "full name": "Helyana",
+    "name": "Nellen",
+    "surname": "Sloet",
+    "full name": "Nellen Sloet",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.141,
-      "romantic interest": 0.521,
-      "sex interest": 0.593,
-      "gender expression": 0.027,
+      "sexuality": 0.161,
+      "romantic interest": 0.875,
+      "sex interest": 0.855,
+      "gender expression": 0.04,
       "sex": "f"
     },
-    "age": 19,
-    "birth year": 1182,
+    "age": 54,
+    "birth year": 1162,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "Dogmatists",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.251,
-      "nice-nasty": 0.204,
-      "honest-false": 0.372
+      "lawful-chaotic": 0.0,
+      "nice-nasty": 0.836,
+      "honest-false": 0.999
     },
     "attitude": {
-      "outgoing": 0.586,
-      "dream": 0.471
+      "outgoing": 0.658,
+      "dream": 0.499
     },
     "homsoc": {
       "means": {
@@ -38,26 +38,48 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.124,
-        "gender expression expression": 0.009
+        "sexuality expression": 0.133,
+        "gender expression expression": 0.014
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {},
-      "relationship keys": {}
+      "relationship keys": {
+        "spouse": [
+          10299
+        ]
+      }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         1,
         "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.158,
+      "all_incomes": [
+        0.823,
+        1.027,
+        1.012,
+        1.01,
+        0.987,
+        0.931,
+        1.03,
+        1.338,
+        1.385,
+        1.369,
+        1.155,
+        1.26,
+        1.158
+      ],
+      "job": {
+        "lawful": false,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 1,
+      "skin_color": 4,
       "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
@@ -65,8 +87,8 @@
         "S",
         "C"
       ],
-      "health": 0.627,
-      "fertility": 0.64,
+      "health": 0.0,
+      "fertility": 0.554,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -78,7 +100,39 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.627
+            "new_health": 0.607
+          },
+          "death": false
+        },
+        "1212": {
+          "health": {
+            "change": true,
+            "value_change": -0.283,
+            "new_health": 0.324
+          },
+          "death": false
+        },
+        "1213": {
+          "health": {
+            "change": true,
+            "value_change": -0.195,
+            "new_health": 0.129
+          },
+          "death": false
+        },
+        "1214": {
+          "health": {
+            "change": true,
+            "value_change": -0.128,
+            "new_health": 0.001
+          },
+          "death": false
+        },
+        "1215": {
+          "health": {
+            "change": true,
+            "value_change": -0.001,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -86,8 +140,107 @@
       "events": {
         "1200": [
           {
+            "topic": "new relationship",
+            "key": 10299,
+            "people": [
+              10297,
+              10298
+            ],
+            "people names": [
+              "Justaes Battenman",
+              "Nellen Sloet"
+            ],
+            "people ages": [
+              39,
+              38
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stHelle voet.se5.c1",
+              "street": "Helle voet",
+              "neighborhood": "jorisbuurt",
+              "unique id": 107
+            }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1201
+          }
+        ],
+        "1203": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.823
+          }
+        ],
+        "1204": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.027
+          }
+        ],
+        "1206": [
+          {
+            "topic": "feelings change",
+            "target": 10297,
+            "target name": "Justaes Battenman",
+            "state": "out of love",
+            "relationship": 10299
+          }
+        ],
+        "1209": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.03
+          }
+        ],
+        "1213": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "enemy",
+            "relationship": 10299
+          },
+          {
+            "key": 10299,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10297,
+              "name": "Justaes Battenman",
+              "age": 53,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "old age",
+            "label": "spouse"
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "sickness"
           }
         ]
       }
@@ -96,15 +249,17 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stHelle voet.se9.c1",
+      "section": "stHelle voet.se5.c1",
       "street": "Helle voet",
       "neighborhood": "jorisbuurt",
-      "unique id": 129
+      "unique id": 107
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
-      "relationships": []
+      "taken": false,
+      "married": false,
+      "relationships": [
+        10299
+      ]
     }
   }
 }

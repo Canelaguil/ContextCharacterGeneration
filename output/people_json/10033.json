@@ -1,33 +1,33 @@
 {
   "10033": {
     "alive": false,
-    "name": "Willekine",
-    "surname": "Bein",
-    "full name": "Willekine Bein",
+    "name": "Herbert",
+    "surname": "",
+    "full name": "Herbert",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.001,
-      "romantic interest": 0.645,
-      "sex interest": 0.533,
-      "gender expression": 0.016,
+      "sexuality": 0.044,
+      "romantic interest": 0.999,
+      "sex interest": 0.846,
+      "gender expression": 0.186,
       "sex": "m"
     },
-    "age": 37,
-    "birth year": 1170,
+    "age": 54,
+    "birth year": 1155,
     "sex": "m",
-    "faction": "Zealots",
+    "faction": "Dogmatists",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.646,
-      "nice-nasty": 0.51,
-      "honest-false": 0.944
+      "lawful-chaotic": 0.647,
+      "nice-nasty": 0.772,
+      "honest-false": 0.283
     },
     "attitude": {
-      "outgoing": 0.566,
-      "dream": 0.281
+      "outgoing": 0.568,
+      "dream": 0.269
     },
     "homsoc": {
       "means": {
@@ -38,17 +38,47 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.0,
-        "gender expression expression": 0.01
+        "sexuality expression": 0.032,
+        "gender expression expression": 0.067
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13069": {
+          "key": 13069,
+          "name": "Margareta",
+          "age": 54,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Amalburga (10034)",
+            "father": "Herbert (10033)"
+          }
+        },
+        "14242": {
+          "key": 14242,
+          "name": "Lutghardis",
+          "age": 54,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Amalburga (10034)",
+            "father": "Herbert (10033)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          10035
-        ]
+          10035,
+          18894
+        ],
+        "child": {
+          "birth": [
+            13070,
+            14243
+          ]
+        }
       }
     },
     "occupation": {
@@ -57,33 +87,35 @@
         2,
         "middle class"
       ],
-      "income": 1.012,
+      "income": 1.524,
       "all_incomes": [
-        0.988,
-        0.971,
-        0.973,
-        1.042,
-        1.103,
-        1.115,
-        1.087,
-        1.012
+        1.177,
+        1.4229999999999998,
+        1.514,
+        1.524,
+        1.524,
+        1.524,
+        1.4909999999999999,
+        1.379,
+        1.524,
+        1.524
       ],
       "job": {
-        "lawful": true,
+        "lawful": false,
         "honest": true
       }
     },
     "genetics": {
-      "skin_color": 3,
+      "skin_color": 0,
       "eye_color": "brown",
-      "hair_color": "red",
-      "hair_color_code": 3,
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.645,
-      "fertility": 0.773,
+      "health": 0.0,
+      "fertility": 0.729,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -95,15 +127,39 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.645
+            "new_health": 0.692
+          },
+          "death": false
+        },
+        "1205": {
+          "health": {
+            "change": true,
+            "value_change": -0.187,
+            "new_health": 0.505
           },
           "death": false
         },
         "1206": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.645
+            "change": true,
+            "value_change": -0.275,
+            "new_health": 0.23
+          },
+          "death": false
+        },
+        "1207": {
+          "health": {
+            "change": true,
+            "value_change": -0.131,
+            "new_health": 0.099
+          },
+          "death": false
+        },
+        "1208": {
+          "health": {
+            "change": true,
+            "value_change": -0.099,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -113,7 +169,7 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.988
+            "income": 1.177
           },
           {
             "topic": "new relationship",
@@ -123,8 +179,12 @@
               10034
             ],
             "people names": [
-              "Willekine Bein",
-              "Aleberna Sluke"
+              "Herbert",
+              "Amalburga"
+            ],
+            "people ages": [
+              45,
+              39
             ],
             "label": "spouse",
             "committed": true
@@ -137,28 +197,96 @@
               "section": "stUterechse straet.se3.c2",
               "street": "Uterechse straet",
               "neighborhood": "varkensbuurt",
-              "unique id": 14
+              "unique id": 12
             }
-          }
-        ],
-        "1202": [
-          {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.042
           },
           {
-            "topic": "feelings change",
-            "target": 10034,
-            "target name": "Aleberna Sluke",
-            "state": "solid love",
-            "relationship": 10035
+            "topic": "new relationship",
+            "key": 13070,
+            "people": [
+              10033,
+              13069
+            ],
+            "people names": [
+              "Herbert",
+              "Margareta"
+            ],
+            "people ages": [
+              45,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1206": [
+        "1201": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1201
+          },
+          {
+            "topic": "new relationship",
+            "key": 14243,
+            "people": [
+              10033,
+              14242
+            ],
+            "people names": [
+              "Herbert",
+              "Lutghardis"
+            ],
+            "people ages": [
+              47,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1204": [
+          {
+            "key": 10035,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10034,
+              "name": "Amalburga",
+              "age": 44,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "label": "spouse"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "new relationship",
+            "key": 18894,
+            "people": [
+              10033,
+              11525
+            ],
+            "people names": [
+              "Herbert",
+              "Uergina"
+            ],
+            "people ages": [
+              53,
+              38
+            ],
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1208": [
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "sickness"
           }
         ]
       }
@@ -170,13 +298,14 @@
       "section": "stUterechse straet.se3.c2",
       "street": "Uterechse straet",
       "neighborhood": "varkensbuurt",
-      "unique id": 14
+      "unique id": 12
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        10035
+        10035,
+        18894
       ]
     }
   }

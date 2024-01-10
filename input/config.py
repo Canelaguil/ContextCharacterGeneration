@@ -7,7 +7,7 @@ are fed to the model through generation.py.
 
 
 simulation = {
-    'number_of_years' : 50,
+    'number_of_years' : 75,
     'simulation_output' : False,
     'json_output' : True,
     'tests' : False
@@ -15,7 +15,7 @@ simulation = {
 
 seed = {
     'city_mode' : 'vars', # ['vars', 'files']
-    'percentage_inhabited_houses' : 0.75,
+    'percentage_inhabited_houses' : 0.95,
     'generate' : False,
 
     # generate city
@@ -35,10 +35,10 @@ seed = {
 }
 
 health_stats = {
-    'bio_male_female_ratio' : 0.499, # percentage of men
+    'bio_male_female_ratio' : 0.5, # percentage of men
     'average_health' : 0.7, # on a scale from 0-1
     'health_care_modifier' : 0.0, # increased chance for cure 
-    'child_mortality' : 0.1, # yearly chance of child dying from childhood-specific illnesses (0 cancels out all childhood mortality)
+    'child_mortality' : 0.05, # yearly chance of child dying from childhood-specific illnesses (0 cancels out all childhood mortality)
     'old_age' : 50, # when is a person considered to be old in this community?
 
     'physical_disability_chance' : 0.1,
@@ -77,8 +77,9 @@ community = {
     # class system
     'classes' : 5,
     'class_names' : ['working class', 'lower middle class', 'middle class', 'upper middle class', 'nobility'],
-    'class_distribution' : [0.45, 0.3, 0.15, 0.08, 0.02],
+    'class_passive_income' : [0, 0, 0.025, 0.05, 0.1],
     'class_person_household_percentage' : [0.25, 0.15, 0.1, 0.05, 0.025], # what percentage of 1 income is needed to sustain 1 person?
+    'class_distribution' : [0.45, 0.3, 0.15, 0.08, 0.02],
     # class distribution will only be taken into account if not specified in input
 
     # factions

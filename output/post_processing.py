@@ -62,6 +62,8 @@ if __name__ == '__main__':
                 write_to_file(d, f"Born in {p['birth year']} to {p['network']['parents']['mother']} and {p['network']['parents']['father']}.")
             else:
                 write_to_file(d, f"Born in {p['birth year']} as a part of the first generation.")
+            if 'greatgrandchild' in p['network']:
+                print(p['key'])
             write_to_file(d, f"Is currently {'' if p['relationship status']['married'] else 'not '}married, has had {len(p['relationship status']['relationships'])} romantic relationship(s).\n")
 
             # basics
@@ -74,6 +76,11 @@ if __name__ == '__main__':
                         other = get_other_from_relationship(key, c)
                         ppl += f"{other['full name']} ({other['key']}), "
                         label_name = 'children'
+                elif relation_type == 'grandchild':
+                    for c in p['network']['relationship keys']['grandchild']['birth']:
+                        other = get_other_from_relationship(key, c)
+                        ppl += f"{other['full name']} ({other['key']}), "
+                        label_name = 'grandchildren'
                 else:
                     for relation_keys in p['network']['relationship keys'][relation_type]:
                         other = get_other_from_relationship(key, relation_keys)
@@ -129,12 +136,6 @@ if __name__ == '__main__':
                     topic = e['topic']
                     if topic == 'new home':
                         write_to_file(d, f"Moved to {e['home']['street']} in {e['home']['neighborhood']}.")
-                    elif topic == 'new sibling':
-                        write_to_file(d, f"New sibling was born, {e['child name']}.")
-                    elif topic == 'sibling died':
-                        write_to_file(d, f"Sibling {e['person']['name']} died.")
-                    elif topic == 'new child':
-                        write_to_file(d, f"Child was born, {e['child name']}.")
                     elif topic == 'person died':
                         if 'cause' in e and e['cause'] != '':
                             cause = f" of {e['cause']}"
@@ -145,6 +146,11 @@ if __name__ == '__main__':
                     elif topic == 'new relationship':
                         other = e['people names'][0] if p['key'] == e['people'][1] else e['people names'][1]
                         label = e['label'] if e['label'] != 'parentchild' else 'child'
+                        if label in ['grandparentchild', 'greatgrandparentchild']:
+                            if (int(y) - int(p['birth year'])) > 25:
+                                label = 'grandchild' if label == 'grandparentchild' else 'greatgrandchild'
+                            else:
+                                break # don't print grandparent relations
                         write_to_file(d, f"New {label}: {other}")
                     elif topic == 'unmarried':
                         write_to_file(d, f"No longer married.")
@@ -178,6 +184,10 @@ if __name__ == '__main__':
                     elif topic == 'update':
                         if e['update'] == 'parent married':
                             write_to_file(d, f"Parent {get_name(e['parent'])} remarried to {get_name(e['new partner'])}.")
+                        elif e['update'] == 'new friendship label':
+                            # print(e)
+                            other = get_other_from_relationship(key, e['relationship'])
+                            write_to_file(d, f"Now {e['friendship label']} relationship with {e['relationship label']} {other['full name']}.")
                     else:
                         print(e)
 

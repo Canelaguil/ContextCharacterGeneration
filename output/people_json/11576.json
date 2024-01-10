@@ -1,101 +1,78 @@
 {
   "11576": {
     "alive": false,
-    "name": "Baua",
-    "surname": "Baligant",
-    "full name": "Baua Baligant",
+    "name": "Breghlent",
+    "surname": "Hons",
+    "full name": "Breghlent Hons",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.04,
-      "romantic interest": 0.556,
-      "sex interest": 0.693,
-      "gender expression": 0.048,
+      "sexuality": 0.147,
+      "romantic interest": 0.607,
+      "sex interest": 0.711,
+      "gender expression": 0.198,
       "sex": "f"
     },
-    "age": 26,
-    "birth year": 1180,
+    "age": 52,
+    "birth year": 1159,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
       3,
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.465,
-      "nice-nasty": 0.311,
-      "honest-false": 0.432
+      "lawful-chaotic": 0.881,
+      "nice-nasty": 0.671,
+      "honest-false": 0.75
     },
     "attitude": {
-      "outgoing": 0.623,
-      "dream": 0.589
+      "outgoing": 0.565,
+      "dream": 0.733
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.021,
-        "gender expression expression": 0.014
+        "sexuality expression": 0.139,
+        "gender expression expression": 0.067
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {
-        "13125": {
-          "key": 13125,
-          "name": "Flore",
-          "age": 48,
-          "alive": true,
-          "sex": "f",
-          "parents": {
-            "mother": "Baua (11576)",
-            "father": "Bartholomeus (11575)"
-          }
-        }
-      },
+      "children": {},
       "relationship keys": {
         "spouse": [
           11577
-        ],
-        "child": {
-          "birth": [
-            13127
-          ]
-        }
+        ]
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
         3,
         "upper middle class"
       ],
-      "income": 0.429,
-      "all_incomes": [
-        0.789,
-        0.536,
-        0.429
-      ],
-      "job": {
-        "lawful": true,
-        "honest": false
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 9,
-      "eye_color": "brown",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "skin_color": 6,
+      "eye_color": "green",
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
       "hair_type": [
-        "C",
-        "C"
+        "S",
+        "S"
       ],
-      "health": 0.705,
-      "fertility": 0.751,
+      "health": 0.341,
+      "fertility": 0.717,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -107,17 +84,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.705
+            "new_health": 0.721
           },
           "death": false
         },
-        "1205": {
+        "1209": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.705
+            "change": true,
+            "value_change": -0.164,
+            "new_health": 0.557
           },
-          "death": true
+          "death": false
+        },
+        "1210": {
+          "health": {
+            "change": true,
+            "value_change": -0.216,
+            "new_health": 0.341
+          },
+          "death": false
         }
       },
       "events": {
@@ -130,8 +115,12 @@
               11576
             ],
             "people names": [
-              "Bartholomeus",
-              "Baua Baligant"
+              "Mourin Butziel",
+              "Breghlent Hons"
+            ],
+            "people ages": [
+              47,
+              41
             ],
             "label": "spouse",
             "committed": true
@@ -141,52 +130,64 @@
             "home": {
               "income class": 3,
               "income class label": "upper middle class",
-              "section": "stDie lange straet3.se7.c3",
-              "street": "Die lange straet3",
-              "neighborhood": "visbuurt",
-              "unique id": 698
+              "section": "stBreestraat.se3.c3",
+              "street": "Breestraat",
+              "neighborhood": "olvbuurt",
+              "unique id": 556
             }
           }
         ],
         "1201": [
           {
-            "topic": "new relationship",
-            "key": 13127,
-            "people": [
-              11576,
-              13125
-            ],
-            "people names": [
-              "Baua Baligant",
-              "Flore"
-            ],
-            "label": "parentchild",
-            "committed": false
+            "topic": "event",
+            "event": "plague",
+            "year": 1201
           }
         ],
-        "1203": [
+        "1206": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.789
-          }
-        ],
-        "1204": [
-          {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.536
-          }
-        ],
-        "1205": [
-          {
-            "topic": "job notice",
-            "notice": "earning very little",
-            "income": 0.429
+            "key": 11577,
+            "topic": "unmarried"
           },
           {
+            "topic": "person died",
+            "person": {
+              "key": 11575,
+              "name": "Mourin Butziel",
+              "age": 54,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "label": "spouse"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "old age"
           }
         ]
       }
@@ -195,14 +196,14 @@
     "home": {
       "income class": 3,
       "income class label": "upper middle class",
-      "section": "stDie lange straet3.se7.c3",
-      "street": "Die lange straet3",
-      "neighborhood": "visbuurt",
-      "unique id": 698
+      "section": "stBreestraat.se3.c3",
+      "street": "Breestraat",
+      "neighborhood": "olvbuurt",
+      "unique id": 556
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         11577
       ]

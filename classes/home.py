@@ -50,6 +50,7 @@ class Home(Agent):
         return
     
     def houses(self):
+        self.no_inhabitants = len(self.inhabitants)
         if self.no_inhabitants == 0:
             return
         

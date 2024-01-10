@@ -1,33 +1,33 @@
 {
   "12224": {
     "alive": false,
-    "name": "Folqui",
+    "name": "Aghata",
     "surname": "",
-    "full name": "Folqui",
+    "full name": "Aghata",
     "born this way": {
-      "sexuality label": "bi",
-      "sexuality": 0.423,
-      "romantic interest": 0.542,
-      "sex interest": 0.739,
-      "gender expression": 0.026,
+      "sexuality label": "straight",
+      "sexuality": 0.0,
+      "romantic interest": 0.465,
+      "sex interest": 0.509,
+      "gender expression": 0.01,
       "sex": "f"
     },
-    "age": 21,
-    "birth year": 1180,
+    "age": 54,
+    "birth year": 1158,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.756,
-      "nice-nasty": 0.999,
-      "honest-false": 0.0
+      "lawful-chaotic": 0.0,
+      "nice-nasty": 0.937,
+      "honest-false": 0.452
     },
     "attitude": {
-      "outgoing": 0.746,
-      "dream": 0.431
+      "outgoing": 0.544,
+      "dream": 0.616
     },
     "homsoc": {
       "means": {
@@ -35,38 +35,57 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.199,
-        "gender expression expression": 0.009
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.006
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {},
-      "relationship keys": {}
+      "relationship keys": {
+        "spouse": [
+          12225,
+          17512
+        ]
+      }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         1,
         "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.497,
+      "all_incomes": [
+        0.989,
+        0.736,
+        0.981,
+        0.936,
+        0.765,
+        1.151,
+        1.497
+      ],
+      "job": {
+        "lawful": false,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 6,
-      "eye_color": "blue",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "skin_color": 5,
+      "eye_color": "green",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
-        "S",
+        "C",
         "C"
       ],
-      "health": 0.626,
-      "fertility": 0.601,
+      "health": 0.0,
+      "fertility": 0.729,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -78,7 +97,39 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.626
+            "new_health": 0.654
+          },
+          "death": false
+        },
+        "1208": {
+          "health": {
+            "change": true,
+            "value_change": -0.208,
+            "new_health": 0.446
+          },
+          "death": false
+        },
+        "1209": {
+          "health": {
+            "change": true,
+            "value_change": -0.251,
+            "new_health": 0.195
+          },
+          "death": false
+        },
+        "1210": {
+          "health": {
+            "change": true,
+            "value_change": -0.19,
+            "new_health": 0.005
+          },
+          "death": false
+        },
+        "1211": {
+          "health": {
+            "change": true,
+            "value_change": -0.005,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -86,8 +137,136 @@
       "events": {
         "1200": [
           {
+            "topic": "new relationship",
+            "key": 12225,
+            "people": [
+              12223,
+              12224
+            ],
+            "people names": [
+              "Jacob",
+              "Aghata"
+            ],
+            "people ages": [
+              49,
+              42
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stStoof straet.se3.c1",
+              "street": "Stoof straet",
+              "neighborhood": "visbuurt",
+              "unique id": 779
+            }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1201
+          },
+          {
+            "topic": "feelings change",
+            "target": 12223,
+            "target name": "Jacob",
+            "state": "infatuation",
+            "relationship": 12225
+          }
+        ],
+        "1203": [
+          {
+            "topic": "feelings change",
+            "target": 12223,
+            "target name": "Jacob",
+            "state": "solid love",
+            "relationship": 12225
+          },
+          {
+            "key": 12225,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12223,
+              "name": "Jacob",
+              "age": 53,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "label": "spouse"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.989
+          },
+          {
+            "topic": "new relationship",
+            "key": 17512,
+            "people": [
+              12478,
+              12224
+            ],
+            "people names": [
+              "Gherelm Hanen",
+              "Aghata"
+            ],
+            "people ages": [
+              54,
+              48
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stDe Vyver.se3.c1",
+              "street": "De Vyver",
+              "neighborhood": "denhof",
+              "unique id": 869
+            }
+          }
+        ],
+        "1206": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.736
+          }
+        ],
+        "1210": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.151
+          }
+        ],
+        "1211": [
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "sickness"
           }
         ]
       }
@@ -96,15 +275,18 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stKerckstraet.se3.c1",
-      "street": "Kerckstraet",
+      "section": "stDe Vyver.se3.c1",
+      "street": "De Vyver",
       "neighborhood": "denhof",
-      "unique id": 989
+      "unique id": 869
     },
     "relationship status": {
       "taken": true,
       "married": true,
-      "relationships": []
+      "relationships": [
+        12225,
+        17512
+      ]
     }
   }
 }

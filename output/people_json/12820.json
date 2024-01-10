@@ -1,82 +1,138 @@
 {
   "12820": {
     "alive": false,
-    "name": "Harlo",
-    "surname": "Jacobszoon",
-    "full name": "Harlo Jacobszoon",
+    "name": "Bartholomeus",
+    "surname": "Raven",
+    "full name": "Bartholomeus Raven",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.003,
-      "romantic interest": 0.729,
-      "sex interest": 0.859,
-      "gender expression": 0.0,
+      "sexuality": 0.064,
+      "romantic interest": 0.623,
+      "sex interest": 0.796,
+      "gender expression": 0.177,
       "sex": "m"
     },
-    "age": 15,
-    "birth year": 1200,
+    "age": 53,
+    "birth year": 1161,
     "sex": "m",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
-      2,
-      "middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.606,
-      "nice-nasty": 0.406,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.654,
+      "nice-nasty": 0.278,
+      "honest-false": 0.249
     },
     "attitude": {
-      "outgoing": 0.571,
-      "dream": 0.498
+      "outgoing": 0.651,
+      "dream": 0.018
     },
     "homsoc": {
       "means": {
-        "independent": false,
-        "taken_care_of": true,
-        "caretaker": true,
-        "needs_care": true,
-        "flags": [
-          "starving"
-        ]
+        "independent": true,
+        "taken_care_of": false,
+        "caretaker": false,
+        "needs_care": false,
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.001,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.056,
+        "gender expression expression": 0.042
       }
     },
     "network": {
-      "parents": {
-        "mother": "Heylewigis (10550)",
-        "father": "Jacob (10549)"
+      "parents": "firstgen",
+      "children": {
+        "16684": {
+          "key": 16684,
+          "name": "Gabriel Raven",
+          "age": 32,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Brundonis (12821)",
+            "father": "Bartholomeus (12820)"
+          }
+        },
+        "17081": {
+          "key": 17081,
+          "name": "Radulphus Raven",
+          "age": 4,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Brundonis (12821)",
+            "father": "Bartholomeus (12820)"
+          }
+        },
+        "17692": {
+          "key": 17692,
+          "name": "Heylewigis Raven",
+          "age": 27,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Brundonis (12821)",
+            "father": "Bartholomeus (12820)"
+          }
+        }
       },
-      "children": {},
       "relationship keys": {
-        "parent": [
-          12821,
-          12822
-        ]
+        "spouse": [
+          12822,
+          20649
+        ],
+        "child": {
+          "birth": [
+            16685,
+            17082,
+            17693
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        2,
-        "middle class"
+        1,
+        "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.842,
+      "all_incomes": [
+        1.256,
+        1.117,
+        0.967,
+        0.95,
+        1.034,
+        1.024,
+        1.143,
+        1.23,
+        1.206,
+        1.276,
+        1.403,
+        1.24,
+        1.068,
+        0.79,
+        0.842
+      ],
+      "job": {
+        "lawful": true,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 5,
+      "skin_color": 8,
       "eye_color": "blue",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
       "hair_type": [
         "S",
-        "S"
+        "C"
       ],
-      "health": 0.54,
-      "fertility": 0.556,
+      "health": 0.0,
+      "fertility": 0.567,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -84,19 +140,35 @@
     },
     "memory": {
       "health": {
-        "1201": {
+        "1200": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.54
+            "new_health": 0.571
           },
           "death": false
         },
-        "1215": {
+        "1211": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.54
+            "change": true,
+            "value_change": -0.292,
+            "new_health": 0.279
+          },
+          "death": false
+        },
+        "1212": {
+          "health": {
+            "change": true,
+            "value_change": -0.261,
+            "new_health": 0.018
+          },
+          "death": false
+        },
+        "1213": {
+          "health": {
+            "change": true,
+            "value_change": -0.018,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -104,102 +176,204 @@
       "events": {
         "1200": [
           {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.256
+          },
+          {
+            "topic": "new relationship",
+            "key": 12822,
+            "people": [
+              12820,
+              12821
+            ],
+            "people names": [
+              "Bartholomeus Raven",
+              "Brundonis"
+            ],
+            "people ages": [
+              39,
+              34
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stBloemendaelse straet.se7.c2",
-              "street": "Bloemendaelse straet",
-              "neighborhood": "agnesbuurt",
-              "unique id": 243
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stKerckstraet.se3.c1",
+              "street": "Kerckstraet",
+              "neighborhood": "denhof",
+              "unique id": 989
             }
           }
         ],
         "1201": [
           {
+            "topic": "event",
+            "event": "plague",
+            "year": 1201
+          }
+        ],
+        "1203": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.034
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 16685,
+            "people": [
+              12820,
+              16684
+            ],
+            "people names": [
+              "Bartholomeus Raven",
+              "Gabriel Raven"
+            ],
+            "people ages": [
+              44,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1205": [
+          {
+            "topic": "new relationship",
+            "key": 17082,
+            "people": [
+              12820,
+              17081
+            ],
+            "people names": [
+              "Bartholomeus Raven",
+              "Radulphus Raven"
+            ],
+            "people ages": [
+              45,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 17693,
+            "people": [
+              12820,
+              17692
+            ],
+            "people names": [
+              "Bartholomeus Raven",
+              "Heylewigis Raven"
+            ],
+            "people ages": [
+              46,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1207": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "friend",
+            "relationship": 12822
+          }
+        ],
+        "1208": [
+          {
+            "key": 12822,
+            "topic": "unmarried"
+          },
+          {
             "topic": "person died",
             "person": {
-              "key": 10550,
-              "name": "Heylewigis Fierenblayse",
-              "age": 38,
+              "key": 12821,
+              "name": "Brundonis",
+              "age": 43,
               "alive": false,
               "sex": "f",
               "parents": "firstgen"
             },
             "cause": "illness",
-            "label": "parent"
-          }
-        ],
-        "1207": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1207
-          }
-        ],
-        "1208": [
-          {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
+            "label": "spouse"
           }
         ],
         "1209": [
           {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
+            "topic": "person died",
+            "person": {
+              "key": 17081,
+              "name": "Radulphus Raven",
+              "age": 4,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Brundonis (12821)",
+                "father": "Bartholomeus (12820)"
+              }
+            },
+            "cause": "childhood illness",
+            "label": "child"
           }
         ],
         "1210": [
           {
-            "topic": "update",
-            "update": "parent married",
-            "parent": 10549,
-            "new partner": 11942
+            "topic": "new relationship",
+            "key": 20649,
+            "people": [
+              12820,
+              10193
+            ],
+            "people names": [
+              "Bartholomeus Raven",
+              "Saswe"
+            ],
+            "people ages": [
+              50,
+              37
+            ],
+            "label": "spouse",
+            "committed": true
           }
         ],
-        "1212": [
-          {
-            "topic": "person died",
-            "person": {
-              "key": 10549,
-              "name": "Jacob",
-              "age": 53,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "cause": "sickness",
-            "label": "parent"
-          }
-        ],
-        "1215": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1215
-          },
+        "1213": [
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "sickness"
           }
         ]
       }
     },
     "key": 12820,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stBloemendaelse straet.se7.c2",
-      "street": "Bloemendaelse straet",
-      "neighborhood": "agnesbuurt",
-      "unique id": 243
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stKerckstraet.se3.c1",
+      "street": "Kerckstraet",
+      "neighborhood": "denhof",
+      "unique id": 989
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
-      "relationships": []
+      "taken": true,
+      "married": true,
+      "relationships": [
+        12822,
+        20649
+      ]
     }
   }
 }

@@ -1,19 +1,19 @@
 {
   "10022": {
     "alive": false,
-    "name": "Ryccie",
-    "surname": "",
-    "full name": "Ryccie",
+    "name": "Yda",
+    "surname": "Jserine",
+    "full name": "Yda Jserine",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.544,
-      "sex interest": 0.657,
-      "gender expression": 0.224,
+      "sexuality": 0.006,
+      "romantic interest": 0.999,
+      "sex interest": 0.799,
+      "gender expression": 0.055,
       "sex": "f"
     },
-    "age": 35,
-    "birth year": 1168,
+    "age": 46,
+    "birth year": 1174,
     "sex": "f",
     "faction": "Dogmatists",
     "income class": [
@@ -21,13 +21,13 @@
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.852,
-      "nice-nasty": 0.595,
-      "honest-false": 0.173
+      "lawful-chaotic": 0.694,
+      "nice-nasty": 0.0,
+      "honest-false": 0.888
     },
     "attitude": {
-      "outgoing": 0.327,
-      "dream": 0.589
+      "outgoing": 0.443,
+      "dream": 0.338
     },
     "homsoc": {
       "means": {
@@ -35,20 +35,75 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.22
+        "sexuality expression": 0.003,
+        "gender expression expression": 0.01
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13720": {
+          "key": 13720,
+          "name": "Suaneka Tant",
+          "age": 56,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Yda (10022)",
+            "father": "Menaures (10021)"
+          }
+        },
+        "15725": {
+          "key": 15725,
+          "name": "Liudburgis Tant",
+          "age": 16,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Yda (10022)",
+            "father": "Menaures (10021)"
+          }
+        },
+        "17893": {
+          "key": 17893,
+          "name": "Gerburgis Tant",
+          "age": 16,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Yda (10022)",
+            "father": "Menaures (10021)"
+          }
+        },
+        "19421": {
+          "key": 19421,
+          "name": "Rycaldis Tant",
+          "age": 19,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Yda (10022)",
+            "father": "Menaures (10021)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10023
-        ]
+        ],
+        "child": {
+          "birth": [
+            13722,
+            15727,
+            17895,
+            19423
+          ]
+        }
       }
     },
     "occupation": {
@@ -61,16 +116,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 7,
+      "skin_color": 3,
       "eye_color": "green",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "hair_color": "red",
+      "hair_color_code": 3,
       "hair_type": [
         "S",
         "S"
       ],
-      "health": 0.827,
-      "fertility": 0.693,
+      "health": 0.703,
+      "fertility": 0.705,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -82,15 +137,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.827
+            "new_health": 0.703
           },
           "death": false
         },
-        "1202": {
+        "1219": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.827
+            "new_health": 0.703
           },
           "death": true
         }
@@ -105,8 +160,12 @@
               10022
             ],
             "people names": [
-              "Wauthem Iude",
-              "Ryccie"
+              "Menaures Tant",
+              "Yda Jserine"
+            ],
+            "people ages": [
+              40,
+              26
             ],
             "label": "spouse",
             "committed": true
@@ -119,11 +178,243 @@
               "section": "stUterechse straet.se1.c2",
               "street": "Uterechse straet",
               "neighborhood": "varkensbuurt",
-              "unique id": 10
+              "unique id": 8
             }
+          },
+          {
+            "topic": "feelings change",
+            "target": 10021,
+            "target name": "Menaures Tant",
+            "state": "solid love",
+            "relationship": 10023
+          }
+        ],
+        "1201": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1201
+          },
+          {
+            "topic": "new relationship",
+            "key": 13722,
+            "people": [
+              10022,
+              13720
+            ],
+            "people names": [
+              "Yda Jserine",
+              "Suaneka Tant"
+            ],
+            "people ages": [
+              27,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1202": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "disliked",
+            "relationship": 13722
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 15727,
+            "people": [
+              10022,
+              15725
+            ],
+            "people names": [
+              "Yda Jserine",
+              "Liudburgis Tant"
+            ],
+            "people ages": [
+              30,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 17895,
+            "people": [
+              10022,
+              17893
+            ],
+            "people names": [
+              "Yda Jserine",
+              "Gerburgis Tant"
+            ],
+            "people ages": [
+              32,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1207": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 17895
+          }
+        ],
+        "1208": [
+          {
+            "topic": "new relationship",
+            "key": 19423,
+            "people": [
+              10022,
+              19421
+            ],
+            "people names": [
+              "Yda Jserine",
+              "Rycaldis Tant"
+            ],
+            "people ages": [
+              34,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1209": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 17895
+          }
+        ],
+        "1212": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 19423
+          }
+        ],
+        "1213": [
+          {
+            "key": 10023,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10021,
+              "name": "Menaures Tant",
+              "age": 54,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "label": "spouse"
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              39407,
+              58197,
+              66673,
+              75853,
+              77658,
+              24552,
+              60224,
+              89316
+            ]
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              39407,
+              58197,
+              66673,
+              75853,
+              77658,
+              24552,
+              60224,
+              89316
+            ]
+          }
+        ],
+        "1216": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              39407,
+              58197,
+              66673,
+              75853,
+              77658,
+              24552,
+              60224,
+              89316
+            ]
+          }
+        ],
+        "1217": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              39407,
+              58197,
+              66673,
+              75853,
+              77658,
+              24552,
+              60224,
+              89316
+            ]
+          }
+        ],
+        "1218": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              39407,
+              58197,
+              66673,
+              75853,
+              77658,
+              24552,
+              60224,
+              89316
+            ]
+          }
+        ],
+        "1219": [
           {
             "topic": "death",
             "cause": "illness"
@@ -138,11 +429,11 @@
       "section": "stUterechse straet.se1.c2",
       "street": "Uterechse straet",
       "neighborhood": "varkensbuurt",
-      "unique id": 10
+      "unique id": 8
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         10023
       ]

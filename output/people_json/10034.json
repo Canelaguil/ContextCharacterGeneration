@@ -1,33 +1,33 @@
 {
   "10034": {
     "alive": false,
-    "name": "Aleberna",
-    "surname": "Sluke",
-    "full name": "Aleberna Sluke",
+    "name": "Amalburga",
+    "surname": "",
+    "full name": "Amalburga",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.01,
-      "romantic interest": 0.581,
-      "sex interest": 0.698,
-      "gender expression": 0.07,
+      "sexuality": 0.013,
+      "romantic interest": 0.839,
+      "sex interest": 0.566,
+      "gender expression": 0.012,
       "sex": "f"
     },
-    "age": 46,
-    "birth year": 1172,
+    "age": 44,
+    "birth year": 1161,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "Dogmatists",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.178,
-      "nice-nasty": 0.976,
+      "lawful-chaotic": 0.586,
+      "nice-nasty": 0.241,
       "honest-false": 0.0
     },
     "attitude": {
-      "outgoing": 0.578,
-      "dream": 0.454
+      "outgoing": 0.174,
+      "dream": 0.605
     },
     "homsoc": {
       "means": {
@@ -38,77 +38,68 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.007,
-        "gender expression expression": 0.051
+        "sexuality expression": 0.005,
+        "gender expression expression": 0.005
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "16335": {
-          "key": 16335,
-          "name": "Piak Bein",
-          "age": 20,
+        "13069": {
+          "key": 13069,
+          "name": "Margareta",
+          "age": 54,
           "alive": false,
-          "sex": "m",
+          "sex": "f",
           "parents": {
-            "mother": "Aleberna (10034)",
-            "father": "Willekine (10033)"
+            "mother": "Amalburga (10034)",
+            "father": "Herbert (10033)"
+          }
+        },
+        "14242": {
+          "key": 14242,
+          "name": "Lutghardis",
+          "age": 54,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Amalburga (10034)",
+            "father": "Herbert (10033)"
           }
         }
       },
       "relationship keys": {
         "spouse": [
-          10035,
-          19922
+          10035
         ],
         "child": {
           "birth": [
-            16337
+            13071,
+            14244
           ]
         }
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 0.938,
-      "all_incomes": [
-        1.327,
-        1.094,
-        0.922,
-        0.835,
-        0.729,
-        0.702,
-        0.887,
-        0.604,
-        0.738,
-        1.005,
-        1.084,
-        1.127,
-        1.19,
-        1.135,
-        0.938
-      ],
-      "job": {
-        "lawful": true,
-        "honest": false
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 8,
+      "skin_color": 2,
       "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
         "S",
-        "S"
+        "C"
       ],
-      "health": 0.766,
-      "fertility": 0.786,
+      "health": 0.78,
+      "fertility": 0.802,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -120,15 +111,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.766
+            "new_health": 0.78
           },
           "death": false
         },
-        "1217": {
+        "1204": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.766
+            "new_health": 0.78
           },
           "death": true
         }
@@ -143,8 +134,12 @@
               10034
             ],
             "people names": [
-              "Willekine Bein",
-              "Aleberna Sluke"
+              "Herbert",
+              "Amalburga"
+            ],
+            "people ages": [
+              45,
+              39
             ],
             "label": "spouse",
             "committed": true
@@ -157,127 +152,63 @@
               "section": "stUterechse straet.se3.c2",
               "street": "Uterechse straet",
               "neighborhood": "varkensbuurt",
-              "unique id": 14
+              "unique id": 12
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 13071,
+            "people": [
+              10034,
+              13069
+            ],
+            "people names": [
+              "Amalburga",
+              "Margareta"
+            ],
+            "people ages": [
+              39,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1201": [
           {
-            "topic": "feelings change",
-            "target": 10033,
-            "target name": "Willekine Bein",
-            "state": "solid love",
-            "relationship": 10035
+            "topic": "event",
+            "event": "plague",
+            "year": 1201
+          },
+          {
+            "topic": "new relationship",
+            "key": 14244,
+            "people": [
+              10034,
+              14242
+            ],
+            "people names": [
+              "Amalburga",
+              "Lutghardis"
+            ],
+            "people ages": [
+              41,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1203": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.327
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "disliked",
+            "relationship": 14244
           }
         ],
-        "1206": [
-          {
-            "topic": "new relationship",
-            "key": 16337,
-            "people": [
-              10034,
-              16335
-            ],
-            "people names": [
-              "Aleberna Sluke",
-              "Piak Bein"
-            ],
-            "label": "parentchild",
-            "committed": false
-          },
-          {
-            "key": 10035,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 10033,
-              "name": "Willekine Bein",
-              "age": 37,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "cause": "illness",
-            "label": "spouse"
-          }
-        ],
-        "1207": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1207
-          },
-          {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.729
-          }
-        ],
-        "1210": [
-          {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.604
-          }
-        ],
-        "1211": [
-          {
-            "topic": "new relationship",
-            "key": 19922,
-            "people": [
-              10864,
-              10034
-            ],
-            "people names": [
-              "Radewijns Ickbier",
-              "Aleberna Sluke"
-            ],
-            "label": "spouse",
-            "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stDie Camp.se5.c2",
-              "street": "Die Camp",
-              "neighborhood": "kampbuurt",
-              "unique id": 389
-            }
-          }
-        ],
-        "1212": [
-          {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.005
-          }
-        ],
-        "1215": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1215
-          },
-          {
-            "topic": "feelings change",
-            "target": 10864,
-            "target name": "Radewijns Ickbier",
-            "state": "out of love",
-            "relationship": 19922
-          }
-        ],
-        "1217": [
+        "1204": [
           {
             "topic": "death",
             "cause": "illness"
@@ -289,17 +220,16 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stDie Camp.se5.c2",
-      "street": "Die Camp",
-      "neighborhood": "kampbuurt",
-      "unique id": 389
+      "section": "stUterechse straet.se3.c2",
+      "street": "Uterechse straet",
+      "neighborhood": "varkensbuurt",
+      "unique id": 12
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        10035,
-        19922
+        10035
       ]
     }
   }

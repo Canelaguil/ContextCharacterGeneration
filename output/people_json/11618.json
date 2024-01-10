@@ -1,33 +1,33 @@
 {
   "11618": {
     "alive": false,
-    "name": "Suaneka",
-    "surname": "Blauoets",
-    "full name": "Suaneka Blauoets",
+    "name": "Walburgis",
+    "surname": "Quade",
+    "full name": "Walburgis Quade",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.855,
-      "romantic interest": 0.588,
-      "sex interest": 0.71,
-      "gender expression": 0.227,
+      "sexuality label": "straight",
+      "sexuality": 0.01,
+      "romantic interest": 0.601,
+      "sex interest": 0.482,
+      "gender expression": 0.132,
       "sex": "f"
     },
-    "age": 25,
-    "birth year": 1183,
+    "age": 30,
+    "birth year": 1178,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.302,
-      "nice-nasty": 0.257,
-      "honest-false": 0.947
+      "lawful-chaotic": 0.379,
+      "nice-nasty": 0.0,
+      "honest-false": 0.999
     },
     "attitude": {
-      "outgoing": 0.497,
-      "dream": 0.585
+      "outgoing": 0.414,
+      "dream": 0.215
     },
     "homsoc": {
       "means": {
@@ -40,17 +40,46 @@
         ]
       },
       "expression": {
-        "sexuality expression": 0.539,
-        "gender expression expression": 0.081
+        "sexuality expression": 0.007,
+        "gender expression expression": 0.088
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14823": {
+          "key": 14823,
+          "name": "Berta Sloet",
+          "age": 15,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Walburgis (11618)",
+            "father": "Hughekine (11617)"
+          }
+        },
+        "16340": {
+          "key": 16340,
+          "name": "Meynseth Sloet",
+          "age": 11,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Walburgis (11618)",
+            "father": "Hughekine (11617)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11619
-        ]
+        ],
+        "child": {
+          "birth": [
+            14825,
+            16342
+          ]
+        }
       }
     },
     "occupation": {
@@ -63,16 +92,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 1,
+      "skin_color": 5,
       "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
         "S",
         "C"
       ],
-      "health": 0.345,
-      "fertility": 0.608,
+      "health": 0.776,
+      "fertility": 0.734,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -82,17 +111,9 @@
       "health": {
         "1200": {
           "health": {
-            "change": true,
-            "value_change": -0.267,
-            "new_health": 0.345
-          },
-          "death": false
-        },
-        "1201": {
-          "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.345
+            "new_health": 0.776
           },
           "death": false
         }
@@ -107,8 +128,12 @@
               11618
             ],
             "people names": [
-              "Cesarius Croppes",
-              "Suaneka Blauoets"
+              "Hughekine Sloet",
+              "Walburgis Quade"
+            ],
+            "people ages": [
+              37,
+              22
             ],
             "label": "spouse",
             "committed": true
@@ -118,52 +143,116 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stDie lange straet3.se9.c2",
-              "street": "Die lange straet3",
-              "neighborhood": "visbuurt",
-              "unique id": 714
+              "section": "stBreestraat.se5.c2",
+              "street": "Breestraat",
+              "neighborhood": "olvbuurt",
+              "unique id": 571
             }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1201
+          },
+          {
+            "topic": "feelings change",
+            "target": 11617,
+            "target name": "Hughekine Sloet",
+            "state": "out of love",
+            "relationship": 11619
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 14825,
+            "people": [
+              11618,
+              14823
+            ],
+            "people names": [
+              "Walburgis Quade",
+              "Berta Sloet"
+            ],
+            "people ages": [
+              24,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.148,
+            "inhabitants": [
+              11057
+            ]
+          }
+        ],
+        "1203": [
+          {
+            "topic": "not enough income",
+            "income": 0.030000000000000002,
+            "inhabitants": [
+              11057
+            ]
           }
         ],
         "1204": [
           {
-            "key": 11619,
-            "topic": "unmarried"
+            "topic": "new relationship",
+            "key": 16342,
+            "people": [
+              11618,
+              16340
+            ],
+            "people names": [
+              "Walburgis Quade",
+              "Meynseth Sloet"
+            ],
+            "people ages": [
+              27,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
-            "topic": "person died",
-            "person": {
-              "key": 11617,
-              "name": "Cesarius Croppes",
-              "age": 25,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "cause": "illness",
-            "label": "spouse"
+            "topic": "not enough income",
+            "income": 0.08,
+            "inhabitants": [
+              11057
+            ]
           }
         ],
         "1205": [
           {
+            "topic": "feelings change",
+            "target": 11617,
+            "target name": "Hughekine Sloet",
+            "state": "infatuation",
+            "relationship": 11619
+          },
+          {
             "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "income": 0.158,
+            "inhabitants": [
+              11057
+            ]
           }
         ],
         "1206": [
           {
             "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "income": 0.025,
+            "inhabitants": [
+              11057
+            ]
           }
         ],
         "1207": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1207
-          },
           {
             "topic": "death",
             "cause": "illness"
@@ -175,14 +264,14 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stDie lange straet3.se9.c2",
-      "street": "Die lange straet3",
-      "neighborhood": "visbuurt",
-      "unique id": 714
+      "section": "stBreestraat.se5.c2",
+      "street": "Breestraat",
+      "neighborhood": "olvbuurt",
+      "unique id": 571
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
         11619
       ]

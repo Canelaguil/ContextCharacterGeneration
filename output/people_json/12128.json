@@ -1,33 +1,33 @@
 {
   "12128": {
     "alive": false,
-    "name": "Hilduardis",
-    "surname": "",
-    "full name": "Hilduardis",
+    "name": "Siburgis",
+    "surname": "Svarten",
+    "full name": "Siburgis Svarten",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.076,
-      "romantic interest": 0.632,
-      "sex interest": 0.662,
-      "gender expression": 0.0,
+      "sexuality": 0.014,
+      "romantic interest": 0.825,
+      "sex interest": 0.598,
+      "gender expression": 0.074,
       "sex": "f"
     },
-    "age": 22,
-    "birth year": 1182,
+    "age": 52,
+    "birth year": 1161,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.881,
-      "honest-false": 0.408
+      "lawful-chaotic": 0.0,
+      "nice-nasty": 0.828,
+      "honest-false": 0.58
     },
     "attitude": {
-      "outgoing": 0.553,
-      "dream": 0.064
+      "outgoing": 0.558,
+      "dream": 0.268
     },
     "homsoc": {
       "means": {
@@ -35,68 +35,45 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.035,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.011,
+        "gender expression expression": 0.024
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {
-        "14168": {
-          "key": 14168,
-          "name": "Denijs Viltkin",
-          "age": 47,
-          "alive": true,
-          "sex": "m",
-          "parents": {
-            "mother": "Hilduardis (12128)",
-            "father": "Thomas (12127)"
-          }
-        }
-      },
+      "children": {},
       "relationship keys": {
         "spouse": [
-          12129
-        ],
-        "child": {
-          "birth": [
-            14170
-          ]
-        }
+          12129,
+          21214
+        ]
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 1.499,
-      "all_incomes": [
-        1.299,
-        1.336,
-        1.178,
-        1.499
-      ],
-      "job": {
-        "lawful": true,
-        "honest": false
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 6,
+      "skin_color": 7,
       "eye_color": "blue",
       "hair_color": "blonde",
       "hair_color_code": 4,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.903,
-      "fertility": 0.915,
+      "health": 0.0,
+      "fertility": 0.423,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -108,18 +85,29 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.903
+            "new_health": 0.5
           },
           "death": false
+        },
+        "1211": {
+          "health": {
+            "change": true,
+            "value_change": -0.325,
+            "new_health": 0.175
+          },
+          "death": false
+        },
+        "1212": {
+          "health": {
+            "change": true,
+            "value_change": -0.175,
+            "new_health": 0.0
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.299
-          },
           {
             "topic": "new relationship",
             "key": 12129,
@@ -128,8 +116,12 @@
               12128
             ],
             "people names": [
-              "Thomas Viltkin",
-              "Hilduardis"
+              "Marcilius Die niene verloech",
+              "Siburgis Svarten"
+            ],
+            "people ages": [
+              48,
+              39
             ],
             "label": "spouse",
             "committed": true
@@ -139,33 +131,123 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stDen Hof.se3.c2",
-              "street": "Den Hof",
-              "neighborhood": "denhof",
-              "unique id": 944
+              "section": "stCorte gracht.se3.c2",
+              "street": "Corte gracht",
+              "neighborhood": "visbuurt",
+              "unique id": 745
             }
           }
         ],
-        "1202": [
+        "1201": [
           {
-            "topic": "new relationship",
-            "key": 14170,
-            "people": [
-              12128,
-              14168
-            ],
-            "people names": [
-              "Hilduardis",
-              "Denijs Viltkin"
-            ],
-            "label": "parentchild",
-            "committed": false
+            "topic": "event",
+            "event": "plague",
+            "year": 1201
           }
         ],
-        "1203": [
+        "1204": [
+          {
+            "topic": "feelings change",
+            "target": 12127,
+            "target name": "Marcilius Die niene verloech",
+            "state": "out of love",
+            "relationship": 12129
+          },
+          {
+            "key": 12129,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12127,
+              "name": "Marcilius Die niene verloech",
+              "age": 53,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "label": "spouse"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "new relationship",
+            "key": 21214,
+            "people": [
+              10630,
+              12128
+            ],
+            "people names": [
+              "Tiuri Die niene verloech",
+              "Siburgis Svarten"
+            ],
+            "people ages": [
+              40,
+              51
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stBloemendaelse straet.se3.c2",
+              "street": "Bloemendaelse straet",
+              "neighborhood": "agnesbuurt",
+              "unique id": 221
+            }
+          }
+        ],
+        "1212": [
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "sickness"
           }
         ]
       }
@@ -174,16 +256,17 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stDen Hof.se3.c2",
-      "street": "Den Hof",
-      "neighborhood": "denhof",
-      "unique id": 944
+      "section": "stBloemendaelse straet.se3.c2",
+      "street": "Bloemendaelse straet",
+      "neighborhood": "agnesbuurt",
+      "unique id": 221
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        12129
+        12129,
+        21214
       ]
     }
   }

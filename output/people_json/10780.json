@@ -1,69 +1,145 @@
 {
   "10780": {
     "alive": false,
-    "name": "Karel",
-    "surname": "Mulart",
-    "full name": "Karel Mulart",
+    "name": "Hughe",
+    "surname": "Heurkint",
+    "full name": "Hughe Heurkint",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.023,
-      "romantic interest": 0.533,
-      "sex interest": 0.86,
-      "gender expression": 0.084,
+      "sexuality": 0.078,
+      "romantic interest": 0.548,
+      "sex interest": 0.819,
+      "gender expression": 0.053,
       "sex": "m"
     },
-    "age": 53,
-    "birth year": 1151,
+    "age": 49,
+    "birth year": 1164,
     "sex": "m",
-    "faction": "Dogmatists",
+    "faction": "Zealots",
     "income class": [
-      0,
-      "working class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.165,
-      "nice-nasty": 0.694,
-      "honest-false": 0.57
+      "lawful-chaotic": 0.093,
+      "nice-nasty": 0.523,
+      "honest-false": 0.695
     },
     "attitude": {
       "outgoing": 0.636,
-      "dream": 0.002
+      "dream": 0.39
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.015,
-        "gender expression expression": 0.042
+        "sexuality expression": 0.045,
+        "gender expression expression": 0.052
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13856": {
+          "key": 13856,
+          "name": "Jacomin Heurkint",
+          "age": 27,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Bertrade (10781)",
+            "father": "Hughe (10780)"
+          }
+        },
+        "14512": {
+          "key": 14512,
+          "name": "Jute Heurkint",
+          "age": 3,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Bertrade (10781)",
+            "father": "Hughe (10780)"
+          }
+        },
+        "16204": {
+          "key": 16204,
+          "name": "Uergina Heurkint",
+          "age": 38,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Bertrade (10781)",
+            "father": "Hughe (10780)"
+          }
+        },
+        "18135": {
+          "key": 18135,
+          "name": "Saswe Heurkint",
+          "age": 1,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Bertrade (10781)",
+            "father": "Hughe (10780)"
+          }
+        },
+        "19871": {
+          "key": 19871,
+          "name": "Eltetus Heurkint",
+          "age": 8,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Bertrade (10781)",
+            "father": "Hughe (10780)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10782
-        ]
+        ],
+        "child": {
+          "birth": [
+            13857,
+            14513,
+            16205,
+            18136,
+            19872
+          ]
+        }
       }
     },
     "occupation": {
       "has job": true,
       "income class": [
-        0,
-        "working class"
+        1,
+        "lower middle class"
       ],
-      "income": 1.175,
+      "income": 0.661,
       "all_incomes": [
-        0.881,
-        0.795,
-        0.958,
-        1.207,
-        1.175
+        0.829,
+        1.037,
+        0.806,
+        0.639,
+        0.95,
+        0.639,
+        0.636,
+        0.756,
+        0.64,
+        0.865,
+        0.81,
+        0.779,
+        0.691,
+        0.661
       ],
       "job": {
         "lawful": false,
@@ -71,16 +147,16 @@
       }
     },
     "genetics": {
-      "skin_color": 7,
-      "eye_color": "green",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "skin_color": 3,
+      "eye_color": "brown",
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
-        "C",
-        "S"
+        "S",
+        "C"
       ],
-      "health": 0.199,
-      "fertility": 0.783,
+      "health": 0.708,
+      "fertility": 0.749,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -92,33 +168,9 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.773
+            "new_health": 0.708
           },
           "death": false
-        },
-        "1201": {
-          "health": {
-            "change": true,
-            "value_change": -0.107,
-            "new_health": 0.666
-          },
-          "death": false
-        },
-        "1202": {
-          "health": {
-            "change": true,
-            "value_change": -0.185,
-            "new_health": 0.481
-          },
-          "death": false
-        },
-        "1203": {
-          "health": {
-            "change": true,
-            "value_change": -0.282,
-            "new_health": 0.199
-          },
-          "death": true
         }
       },
       "events": {
@@ -126,7 +178,12 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.881
+            "income": 0.829
+          },
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.037
           },
           {
             "topic": "new relationship",
@@ -136,8 +193,12 @@
               10781
             ],
             "people names": [
-              "Karel Mulart",
-              "Godeweris Cleenheere"
+              "Hughe Heurkint",
+              "Bertrade Brune"
+            ],
+            "people ages": [
+              36,
+              18
             ],
             "label": "spouse",
             "committed": true
@@ -145,38 +206,227 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stPotstraet.se3.c0",
-              "street": "Potstraet",
-              "neighborhood": "kampbuurt",
-              "unique id": 348
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stWalker straet.se7.c1",
+              "street": "Walker straet",
+              "neighborhood": "agnesbuurt",
+              "unique id": 274
             }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1201
+          },
+          {
+            "topic": "new relationship",
+            "key": 13857,
+            "people": [
+              10780,
+              13856
+            ],
+            "people names": [
+              "Hughe Heurkint",
+              "Jacomin Heurkint"
+            ],
+            "people ages": [
+              37,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 10781,
+            "target name": "Bertrade Brune",
+            "state": "out of love",
+            "relationship": 10782
           }
         ],
         "1202": [
           {
             "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.207
+            "notice": "low income",
+            "income": 0.639
+          },
+          {
+            "topic": "new relationship",
+            "key": 14513,
+            "people": [
+              10780,
+              14512
+            ],
+            "people names": [
+              "Hughe Heurkint",
+              "Jute Heurkint"
+            ],
+            "people ages": [
+              38,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1203": [
+        "1204": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.639
+          },
+          {
+            "topic": "new relationship",
+            "key": 16205,
+            "people": [
+              10780,
+              16204
+            ],
+            "people names": [
+              "Hughe Heurkint",
+              "Uergina Heurkint"
+            ],
+            "people ages": [
+              41,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.639,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 14512,
+              "name": "Jute Heurkint",
+              "age": 3,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Bertrade (10781)",
+                "father": "Hughe (10780)"
+              }
+            },
+            "cause": "childhood illness",
+            "label": "child"
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 18136,
+            "people": [
+              10780,
+              18135
+            ],
+            "people names": [
+              "Hughe Heurkint",
+              "Saswe Heurkint"
+            ],
+            "people ages": [
+              43,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1207": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.64
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 18136
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 18135,
+              "name": "Saswe Heurkint",
+              "age": 1,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Bertrade (10781)",
+                "father": "Hughe (10780)"
+              }
+            },
+            "cause": "childhood illness",
+            "label": "child"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "new relationship",
+            "key": 19872,
+            "people": [
+              10780,
+              19871
+            ],
+            "people names": [
+              "Hughe Heurkint",
+              "Eltetus Heurkint"
+            ],
+            "people ages": [
+              45,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1210": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "disliked",
+            "relationship": 13857
+          }
+        ],
+        "1211": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.691
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.691,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
           {
             "topic": "death",
-            "cause": "old age"
+            "cause": "illness"
           }
         ]
       }
     },
     "key": 10780,
     "home": {
-      "income class": 0,
-      "income class label": "working class",
-      "section": "stPotstraet.se3.c0",
-      "street": "Potstraet",
-      "neighborhood": "kampbuurt",
-      "unique id": 348
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stWalker straet.se7.c1",
+      "street": "Walker straet",
+      "neighborhood": "agnesbuurt",
+      "unique id": 274
     },
     "relationship status": {
       "taken": true,

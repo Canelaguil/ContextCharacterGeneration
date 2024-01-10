@@ -1,82 +1,96 @@
 {
   "11192": {
     "alive": false,
-    "name": "Goneir",
-    "surname": "Minne",
-    "full name": "Goneir Minne",
+    "name": "Eingeliadis",
+    "surname": "",
+    "full name": "Eingeliadis",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.072,
-      "romantic interest": 0.585,
-      "sex interest": 0.568,
-      "gender expression": 0.229,
+      "sexuality": 0.0,
+      "romantic interest": 0.835,
+      "sex interest": 0.698,
+      "gender expression": 0.128,
       "sex": "f"
     },
-    "age": 51,
-    "birth year": 1181,
+    "age": 49,
+    "birth year": 1171,
     "sex": "f",
     "faction": "No religion",
     "income class": [
-      2,
-      "middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.203,
-      "nice-nasty": 0.0,
-      "honest-false": 0.447
+      "lawful-chaotic": 0.0,
+      "nice-nasty": 0.373,
+      "honest-false": 0.964
     },
     "attitude": {
-      "outgoing": 0.289,
-      "dream": 0.316
+      "outgoing": 0.931,
+      "dream": 0.096
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.036,
-        "gender expression expression": 0.019
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.043
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "12938": {
-          "key": 12938,
-          "name": "Margareta Battenman",
+        "15913": {
+          "key": 15913,
+          "name": "Gertrudis Froes",
           "age": 48,
-          "alive": true,
+          "alive": false,
           "sex": "f",
           "parents": {
-            "mother": "Goneir (11192)",
-            "father": "Willem (11191)"
+            "mother": "Eingeliadis (11192)",
+            "father": "Kerolus (10291)"
           }
         },
-        "21090": {
-          "key": 21090,
-          "name": "Ricout Zassen",
-          "age": 1,
+        "17001": {
+          "key": 17001,
+          "name": "Aue Froes",
+          "age": 48,
           "alive": false,
-          "sex": "m",
+          "sex": "f",
           "parents": {
-            "mother": "Goneir (11192)",
-            "father": "Franco (10546)"
+            "mother": "Eingeliadis (11192)",
+            "father": "Kerolus (10291)"
+          }
+        },
+        "17540": {
+          "key": 17540,
+          "name": "Myrthel Froes",
+          "age": 6,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Eingeliadis (11192)",
+            "father": "Kerolus (10291)"
           }
         }
       },
       "relationship keys": {
         "spouse": [
           11193,
-          19918
+          15209
         ],
         "child": {
           "birth": [
-            12940,
-            21092
+            15915,
+            17003,
+            17542
           ]
         }
       }
@@ -84,57 +98,48 @@
     "occupation": {
       "has job": true,
       "income class": [
-        2,
-        "middle class"
+        1,
+        "lower middle class"
       ],
-      "income": 1.455,
+      "income": 0.034,
       "all_incomes": [
-        0.964,
-        0.935,
-        0.944,
-        0.884,
-        0.879,
-        0.876,
-        0.954,
-        0.923,
-        0.981,
-        1.006,
-        1.042,
-        1.033,
-        1.094,
-        1.12,
-        1.202,
-        1.19,
-        1.243,
-        1.245,
-        1.247,
-        1.317,
-        1.359,
-        1.346,
-        1.348,
-        1.318,
-        1.381,
-        1.391,
-        1.389,
-        1.347,
-        1.455
+        1.0,
+        0.834,
+        0.88,
+        0.727,
+        0.663,
+        0.636,
+        0.478,
+        0.681,
+        0.646,
+        0.408,
+        0.172,
+        0.0,
+        0.192,
+        0.0,
+        0.0,
+        0.055,
+        0.0,
+        0.027,
+        0.337,
+        0.034
       ],
       "job": {
-        "lawful": true,
+        "lawful": false,
         "honest": true
       }
     },
     "genetics": {
-      "skin_color": 2,
+      "skin_color": 1,
       "eye_color": "brown",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.424,
-      "fertility": 0.674,
+      "health": 0.758,
+      "fertility": 0.779,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -146,21 +151,26 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.662
+            "new_health": 0.758
           },
           "death": false
         },
-        "1231": {
+        "1219": {
           "health": {
-            "change": true,
-            "value_change": -0.238,
-            "new_health": 0.424
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.758
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.0
+          },
           {
             "topic": "new relationship",
             "key": 11193,
@@ -169,8 +179,12 @@
               11192
             ],
             "people names": [
-              "Willem Battenman",
-              "Goneir Minne"
+              "Mense Quade",
+              "Eingeliadis"
+            ],
+            "people ages": [
+              42,
+              29
             ],
             "label": "spouse",
             "committed": true
@@ -178,62 +192,28 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stBreestraat.se1.c2",
-              "street": "Breestraat",
-              "neighborhood": "olvbuurt",
-              "unique id": 528
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stSt. Ians straet.se3.c1",
+              "street": "St. Ians straet",
+              "neighborhood": "kampbuurt",
+              "unique id": 419
             }
           }
         ],
         "1201": [
           {
-            "topic": "new relationship",
-            "key": 12940,
-            "people": [
-              11192,
-              12938
-            ],
-            "people names": [
-              "Goneir Minne",
-              "Margareta Battenman"
-            ],
-            "label": "parentchild",
-            "committed": false
-          },
-          {
-            "topic": "feelings change",
-            "target": 11191,
-            "target name": "Willem Battenman",
-            "state": "infatuation",
-            "relationship": 11193
-          }
-        ],
-        "1202": [
-          {
-            "topic": "feelings change",
-            "target": 11191,
-            "target name": "Willem Battenman",
-            "state": "out of love",
-            "relationship": 11193
-          }
-        ],
-        "1203": [
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.964
-          }
-        ],
-        "1207": [
-          {
             "topic": "event",
             "event": "plague",
-            "year": 1207
-          }
-        ],
-        "1208": [
+            "year": 1201
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "indifferent",
+            "relationship": 11193
+          },
           {
             "key": 11193,
             "topic": "unmarried"
@@ -242,8 +222,8 @@
             "topic": "person died",
             "person": {
               "key": 11191,
-              "name": "Willem Battenman",
-              "age": 40,
+              "name": "Mense Quade",
+              "age": 44,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
@@ -252,17 +232,21 @@
             "label": "spouse"
           }
         ],
-        "1211": [
+        "1202": [
           {
             "topic": "new relationship",
-            "key": 19918,
+            "key": 15209,
             "people": [
-              10546,
+              10291,
               11192
             ],
             "people names": [
-              "Franco Zassen",
-              "Goneir Minne"
+              "Kerolus Froes",
+              "Eingeliadis"
+            ],
+            "people ages": [
+              49,
+              32
             ],
             "label": "spouse",
             "committed": true
@@ -270,36 +254,217 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stBloemendaelse straet.se7.c2",
-              "street": "Bloemendaelse straet",
-              "neighborhood": "agnesbuurt",
-              "unique id": 241
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stHelle voet.se5.c1",
+              "street": "Helle voet",
+              "neighborhood": "jorisbuurt",
+              "unique id": 105
             }
+          }
+        ],
+        "1203": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.727
+          },
+          {
+            "topic": "new relationship",
+            "key": 15915,
+            "people": [
+              11192,
+              15913
+            ],
+            "people names": [
+              "Eingeliadis",
+              "Gertrudis Froes"
+            ],
+            "people ages": [
+              33,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1204": [
+          {
+            "topic": "feelings change",
+            "target": 10291,
+            "target name": "Kerolus Froes",
+            "state": "solid love",
+            "relationship": 15209
+          }
+        ],
+        "1205": [
+          {
+            "topic": "new relationship",
+            "key": 17003,
+            "people": [
+              11192,
+              17001
+            ],
+            "people names": [
+              "Eingeliadis",
+              "Aue Froes"
+            ],
+            "people ages": [
+              34,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 10291,
+            "target name": "Kerolus Froes",
+            "state": "out of love",
+            "relationship": 15209
+          }
+        ],
+        "1206": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.478
+          },
+          {
+            "topic": "new relationship",
+            "key": 17542,
+            "people": [
+              11192,
+              17540
+            ],
+            "people names": [
+              "Eingeliadis",
+              "Myrthel Froes"
+            ],
+            "people ages": [
+              35,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 15915
+          }
+        ],
+        "1209": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.408
+          }
+        ],
+        "1210": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.172
+          },
+          {
+            "key": 15209,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10291,
+              "name": "Kerolus Froes",
+              "age": 57,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "label": "spouse"
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              36467,
+              63872,
+              68655,
+              69745,
+              71832,
+              38845,
+              76278,
+              77557
+            ]
           }
         ],
         "1212": [
           {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.006
+            "topic": "not enough income",
+            "income": 0.192,
+            "inhabitants": [
+              36467,
+              63872,
+              68655,
+              69745,
+              71832,
+              38845,
+              76278,
+              77557
+            ]
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 17540,
+              "name": "Myrthel Froes",
+              "age": 6,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Eingeliadis (11192)",
+                "father": "Kerolus (10291)"
+              }
+            },
+            "cause": "childhood illness",
+            "label": "child"
+          }
+        ],
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              36467,
+              63872,
+              68655,
+              69745,
+              71832,
+              38845,
+              76278,
+              77557
+            ]
           }
         ],
         "1214": [
           {
-            "topic": "new relationship",
-            "key": 21092,
-            "people": [
-              11192,
-              21090
-            ],
-            "people names": [
-              "Goneir Minne",
-              "Ricout Zassen"
-            ],
-            "label": "parentchild",
-            "committed": false
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              36467,
+              63872,
+              68655,
+              69745,
+              71832,
+              38845,
+              76278,
+              77557
+            ]
           }
         ],
         "1215": [
@@ -309,82 +474,103 @@
             "year": 1215
           },
           {
-            "topic": "person died",
-            "person": {
-              "key": 21090,
-              "name": "Ricout Zassen",
-              "age": 1,
-              "alive": false,
-              "sex": "m",
-              "parents": {
-                "mother": "Goneir (11192)",
-                "father": "Franco (10546)"
-              }
-            },
-            "cause": "childhood illness",
-            "label": "child"
+            "topic": "not enough income",
+            "income": 0.055,
+            "inhabitants": [
+              36467,
+              63872,
+              68655,
+              69745,
+              71832,
+              38845,
+              76278,
+              77557
+            ]
+          }
+        ],
+        "1216": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              36467,
+              63872,
+              68655,
+              69745,
+              71832,
+              38845,
+              76278,
+              77557
+            ]
+          }
+        ],
+        "1217": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 15915
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.027,
+            "inhabitants": [
+              36467,
+              63872,
+              68655,
+              69745,
+              71832,
+              38845,
+              76278,
+              77557
+            ]
           }
         ],
         "1218": [
           {
-            "topic": "feelings change",
-            "target": 10546,
-            "target name": "Franco Zassen",
-            "state": "infatuation",
-            "relationship": 19918
+            "topic": "not enough income",
+            "income": 0.337,
+            "inhabitants": [
+              36467,
+              63872,
+              68655,
+              69745,
+              71832,
+              38845,
+              76278,
+              77557
+            ]
           }
         ],
-        "1220": [
+        "1219": [
           {
-            "topic": "feelings change",
-            "target": 10546,
-            "target name": "Franco Zassen",
-            "state": "out of love",
-            "relationship": 19918
-          }
-        ],
-        "1228": [
-          {
-            "key": 19918,
-            "topic": "unmarried"
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.034
           },
           {
-            "topic": "person died",
-            "person": {
-              "key": 10546,
-              "name": "Franco Zassen",
-              "age": 49,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "cause": "illness",
-            "label": "spouse"
-          }
-        ],
-        "1231": [
-          {
             "topic": "death",
-            "cause": "old age"
+            "cause": "illness"
           }
         ]
       }
     },
     "key": 11192,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stBloemendaelse straet.se7.c2",
-      "street": "Bloemendaelse straet",
-      "neighborhood": "agnesbuurt",
-      "unique id": 241
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stHelle voet.se5.c1",
+      "street": "Helle voet",
+      "neighborhood": "jorisbuurt",
+      "unique id": 105
     },
     "relationship status": {
       "taken": false,
       "married": false,
       "relationships": [
         11193,
-        19918
+        15209
       ]
     }
   }

@@ -1,33 +1,33 @@
 {
   "10493": {
     "alive": false,
-    "name": "Zuanelt",
-    "surname": "Pauwe",
-    "full name": "Zuanelt Pauwe",
+    "name": "Yda",
+    "surname": "Manghenus",
+    "full name": "Yda Manghenus",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.045,
-      "romantic interest": 0.607,
-      "sex interest": 0.648,
+      "sexuality": 0.068,
+      "romantic interest": 0.578,
+      "sex interest": 0.603,
       "gender expression": 0.0,
       "sex": "f"
     },
-    "age": 24,
-    "birth year": 1181,
+    "age": 53,
+    "birth year": 1162,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "Dogmatists",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.679,
-      "nice-nasty": 0.886,
-      "honest-false": 0.565
+      "lawful-chaotic": 0.612,
+      "nice-nasty": 0.693,
+      "honest-false": 0.074
     },
     "attitude": {
-      "outgoing": 0.396,
-      "dream": 0.604
+      "outgoing": 0.637,
+      "dream": 0.483
     },
     "homsoc": {
       "means": {
@@ -35,37 +35,23 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.018,
+        "sexuality expression": 0.053,
         "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {
-        "12658": {
-          "key": 12658,
-          "name": "Reynwi van Zuanelt",
-          "age": 49,
-          "alive": true,
-          "sex": "f",
-          "parents": {
-            "mother": "Zuanelt (10493)",
-            "father": "Woubbrecht (10492)"
-          }
-        }
-      },
+      "children": {},
       "relationship keys": {
         "spouse": [
-          10494
-        ],
-        "child": {
-          "birth": [
-            12660
-          ]
-        }
+          10494,
+          18223
+        ]
       }
     },
     "occupation": {
@@ -79,15 +65,15 @@
     },
     "genetics": {
       "skin_color": 3,
-      "eye_color": "brown",
+      "eye_color": "blue",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.866,
-      "fertility": 0.779,
+      "health": 0.188,
+      "fertility": 0.686,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -99,17 +85,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.866
+            "new_health": 0.704
           },
           "death": false
         },
-        "1204": {
+        "1213": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.866
+            "change": true,
+            "value_change": -0.183,
+            "new_health": 0.521
           },
-          "death": true
+          "death": false
+        },
+        "1214": {
+          "health": {
+            "change": true,
+            "value_change": -0.333,
+            "new_health": 0.188
+          },
+          "death": false
         }
       },
       "events": {
@@ -122,8 +116,12 @@
               10493
             ],
             "people names": [
-              "Woubbrecht",
-              "Zuanelt Pauwe"
+              "Jonghen Rike",
+              "Yda Manghenus"
+            ],
+            "people ages": [
+              47,
+              38
             ],
             "label": "spouse",
             "committed": true
@@ -133,49 +131,133 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stBloemendaelse straet.se3.c2",
-              "street": "Bloemendaelse straet",
-              "neighborhood": "agnesbuurt",
-              "unique id": 219
+              "section": "stDavids hof.se1.c2",
+              "street": "Davids hof",
+              "neighborhood": "jorisbuurt",
+              "unique id": 175
             }
-          },
-          {
-            "topic": "new relationship",
-            "key": 12660,
-            "people": [
-              10493,
-              12658
-            ],
-            "people names": [
-              "Zuanelt Pauwe",
-              "Reynwi van Zuanelt"
-            ],
-            "label": "parentchild",
-            "committed": false
           }
         ],
-        "1204": [
+        "1201": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1201
+          }
+        ],
+        "1205": [
+          {
+            "key": 10494,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10492,
+              "name": "Jonghen Rike",
+              "age": 53,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "old age",
+            "label": "spouse"
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 18223,
+            "people": [
+              11344,
+              10493
+            ],
+            "people names": [
+              "Rissewint Snauel",
+              "Yda Manghenus"
+            ],
+            "people ages": [
+              49,
+              45
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stDie Coninc straet.se7.c1",
+              "street": "Die Coninc straet",
+              "neighborhood": "kampbuurt",
+              "unique id": 473
+            }
+          }
+        ],
+        "1210": [
+          {
+            "key": 18223,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11344,
+              "name": "Rissewint Snauel",
+              "age": 53,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "label": "spouse"
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1214": [
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "old age"
           }
         ]
       }
     },
     "key": 10493,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stBloemendaelse straet.se3.c2",
-      "street": "Bloemendaelse straet",
-      "neighborhood": "agnesbuurt",
-      "unique id": 219
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stDie Coninc straet.se7.c1",
+      "street": "Die Coninc straet",
+      "neighborhood": "kampbuurt",
+      "unique id": 473
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
-        10494
+        10494,
+        18223
       ]
     }
   }

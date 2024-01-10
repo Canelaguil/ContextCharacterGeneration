@@ -1,87 +1,84 @@
 {
   "12625": {
     "alive": false,
-    "name": "Hildeburgis",
-    "surname": "Neue",
-    "full name": "Hildeburgis Neue",
+    "name": "Alvericus",
+    "surname": "Midach",
+    "full name": "Alvericus Midach",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.02,
-      "romantic interest": 0.638,
-      "sex interest": 0.865,
-      "gender expression": 0.117,
-      "sex": "f"
+      "sexuality": 0.028,
+      "romantic interest": 0.457,
+      "sex interest": 0.947,
+      "gender expression": 0.075,
+      "sex": "m"
     },
-    "age": 15,
-    "birth year": 1200,
-    "sex": "f",
-    "faction": "Zealots",
+    "age": 47,
+    "birth year": 1155,
+    "sex": "m",
+    "faction": "No religion",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.33,
-      "nice-nasty": 0.486,
-      "honest-false": 0.3
+      "lawful-chaotic": 0.539,
+      "nice-nasty": 0.999,
+      "honest-false": 0.822
     },
     "attitude": {
-      "outgoing": 0.571,
-      "dream": 0.404
+      "outgoing": 0.612,
+      "dream": 0.221
     },
     "homsoc": {
       "means": {
-        "independent": false,
-        "taken_care_of": true,
-        "caretaker": true,
-        "needs_care": true,
+        "independent": true,
+        "taken_care_of": false,
+        "caretaker": false,
+        "needs_care": false,
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.014,
-        "gender expression expression": 0.043
+        "sexuality expression": 0.02,
+        "gender expression expression": 0.031
       }
     },
     "network": {
-      "parents": {
-        "mother": "Emgelberna (10868)",
-        "father": "Euerardus (10867)"
-      },
+      "parents": "firstgen",
       "children": {},
       "relationship keys": {
-        "parent": [
-          12626,
+        "spouse": [
           12627
-        ],
-        "sibling": [
-          13529,
-          14166,
-          16482,
-          20305,
-          21062
         ]
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.863,
+      "all_incomes": [
+        1.088,
+        0.897,
+        0.863
+      ],
+      "job": {
+        "lawful": true,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 5,
+      "skin_color": 3,
       "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
         "C",
-        "S"
+        "C"
       ],
-      "health": 0.656,
-      "fertility": 0.584,
+      "health": 0.572,
+      "fertility": 0.511,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -89,137 +86,65 @@
     },
     "memory": {
       "health": {
+        "1200": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.572
+          },
+          "death": false
+        },
         "1201": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.656
+            "new_health": 0.572
           },
-          "death": false
+          "death": true
         }
       },
       "events": {
         "1200": [
           {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.088
+          },
+          {
+            "topic": "new relationship",
+            "key": 12627,
+            "people": [
+              12625,
+              12626
+            ],
+            "people names": [
+              "Alvericus Midach",
+              "Heilsota Keghelaere"
+            ],
+            "people ages": [
+              45,
+              43
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
             "topic": "new home",
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stDie Camp.se5.c2",
-              "street": "Die Camp",
-              "neighborhood": "kampbuurt",
-              "unique id": 390
+              "section": "stMarcktgang.se1.c2",
+              "street": "Marcktgang",
+              "neighborhood": "denhof",
+              "unique id": 921
             }
           }
         ],
         "1201": [
           {
-            "topic": "new relationship",
-            "key": 13529,
-            "people": [
-              12625,
-              13526
-            ],
-            "people names": [
-              "Hildeburgis Neue",
-              "Hollander Neue"
-            ],
-            "label": "sibling",
-            "committed": false
-          }
-        ],
-        "1202": [
-          {
-            "topic": "new relationship",
-            "key": 14166,
-            "people": [
-              12625,
-              14163
-            ],
-            "people names": [
-              "Hildeburgis Neue",
-              "Saswe Neue"
-            ],
-            "label": "sibling",
-            "committed": false
-          }
-        ],
-        "1206": [
-          {
-            "topic": "new relationship",
-            "key": 16482,
-            "people": [
-              12625,
-              16479
-            ],
-            "people names": [
-              "Hildeburgis Neue",
-              "Gertrudis Neue"
-            ],
-            "label": "sibling",
-            "committed": false
-          }
-        ],
-        "1207": [
-          {
             "topic": "event",
             "event": "plague",
-            "year": 1207
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 16479,
-              "name": "Gertrudis Neue",
-              "age": 1,
-              "alive": false,
-              "sex": "f",
-              "parents": {
-                "mother": "Emgelberna (10868)",
-                "father": "Euerardus (10867)"
-              }
-            },
-            "cause": "childhood illness",
-            "label": "sibling"
-          }
-        ],
-        "1212": [
-          {
-            "topic": "new relationship",
-            "key": 20305,
-            "people": [
-              12625,
-              20302
-            ],
-            "people names": [
-              "Hildeburgis Neue",
-              "Laurens Neue"
-            ],
-            "label": "sibling",
-            "committed": false
-          }
-        ],
-        "1214": [
-          {
-            "topic": "new relationship",
-            "key": 21062,
-            "people": [
-              12625,
-              21059
-            ],
-            "people names": [
-              "Hildeburgis Neue",
-              "Nellen Neue"
-            ],
-            "label": "sibling",
-            "committed": false
-          }
-        ],
-        "1215": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1215
+            "year": 1201
           },
           {
             "topic": "death",
@@ -232,20 +157,16 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stDie Camp.se5.c2",
-      "street": "Die Camp",
-      "neighborhood": "kampbuurt",
-      "unique id": 390
+      "section": "stMarcktgang.se1.c2",
+      "street": "Marcktgang",
+      "neighborhood": "denhof",
+      "unique id": 921
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
-        13529,
-        14166,
-        16482,
-        20305,
-        21062
+        12627
       ]
     }
   }

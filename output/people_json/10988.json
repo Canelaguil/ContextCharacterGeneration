@@ -1,33 +1,33 @@
 {
   "10988": {
     "alive": false,
-    "name": "Hadewigis",
-    "surname": "Hont",
-    "full name": "Hadewigis Hont",
+    "name": "Douwen",
+    "surname": "Voit",
+    "full name": "Douwen Voit",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.886,
-      "romantic interest": 0.762,
-      "sex interest": 0.592,
-      "gender expression": 0.281,
+      "sexuality label": "straight",
+      "sexuality": 0.127,
+      "romantic interest": 0.812,
+      "sex interest": 0.717,
+      "gender expression": 0.13,
       "sex": "f"
     },
-    "age": 45,
-    "birth year": 1162,
+    "age": 44,
+    "birth year": 1175,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "Zealots",
     "income class": [
       0,
       "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.386,
-      "nice-nasty": 0.475,
-      "honest-false": 0.805
+      "lawful-chaotic": 0.729,
+      "nice-nasty": 0.629,
+      "honest-false": 0.602
     },
     "attitude": {
-      "outgoing": 0.378,
-      "dream": 0.188
+      "outgoing": 0.71,
+      "dream": 0.327
     },
     "homsoc": {
       "means": {
@@ -38,39 +38,80 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.736,
-        "gender expression expression": 0.126
+        "sexuality expression": 0.076,
+        "gender expression expression": 0.09
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "15729": {
+          "key": 15729,
+          "name": "Aleberna van Douwen",
+          "age": 58,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Douwen (10988)",
+            "father": "Winrechus (10987)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10989
-        ]
+        ],
+        "child": {
+          "birth": [
+            15731
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         0,
         "working class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.35,
+      "all_incomes": [
+        1.038,
+        0.953,
+        0.962,
+        1.066,
+        1.151,
+        1.16,
+        1.161,
+        1.106,
+        1.15,
+        1.179,
+        1.224,
+        1.201,
+        1.26,
+        1.223,
+        1.257,
+        1.307,
+        1.361,
+        1.329,
+        1.35
+      ],
+      "job": {
+        "lawful": true,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 2,
-      "eye_color": "brown",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "skin_color": 6,
+      "eye_color": "blue",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "S",
-        "C"
+        "S"
       ],
-      "health": 0.789,
-      "fertility": 0.787,
+      "health": 0.898,
+      "fertility": 0.9,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -82,21 +123,26 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.789
+            "new_health": 0.898
           },
           "death": false
         },
-        "1206": {
+        "1218": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.789
+            "new_health": 0.898
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.038
+          },
           {
             "topic": "new relationship",
             "key": 10989,
@@ -105,8 +151,12 @@
               10988
             ],
             "people names": [
-              "Woutermanne",
-              "Hadewigis Hont"
+              "Winrechus Zuakart",
+              "Douwen Voit"
+            ],
+            "people ages": [
+              34,
+              25
             ],
             "label": "spouse",
             "committed": true
@@ -116,23 +166,62 @@
             "home": {
               "income class": 0,
               "income class label": "working class",
-              "section": "stDie Coninc straet.se1.c0",
-              "street": "Die Coninc straet",
+              "section": "stPotstraet.se3.c0",
+              "street": "Potstraet",
               "neighborhood": "kampbuurt",
-              "unique id": 443
+              "unique id": 349
             }
+          }
+        ],
+        "1201": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1201
           }
         ],
         "1203": [
           {
-            "topic": "feelings change",
-            "target": 10987,
-            "target name": "Woutermanne",
-            "state": "out of love",
-            "relationship": 10989
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.066
+          },
+          {
+            "topic": "new relationship",
+            "key": 15731,
+            "people": [
+              10988,
+              15729
+            ],
+            "people names": [
+              "Douwen Voit",
+              "Aleberna van Douwen"
+            ],
+            "people ages": [
+              29,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1206": [
+        "1204": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 15731
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          }
+        ],
+        "1218": [
           {
             "topic": "death",
             "cause": "illness"
@@ -144,10 +233,10 @@
     "home": {
       "income class": 0,
       "income class label": "working class",
-      "section": "stDie Coninc straet.se1.c0",
-      "street": "Die Coninc straet",
+      "section": "stPotstraet.se3.c0",
+      "street": "Potstraet",
       "neighborhood": "kampbuurt",
-      "unique id": 443
+      "unique id": 349
     },
     "relationship status": {
       "taken": true,

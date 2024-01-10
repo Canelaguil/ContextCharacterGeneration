@@ -1,87 +1,91 @@
 {
   "12379": {
     "alive": false,
-    "name": "Adolfus",
-    "surname": "Smicke",
-    "full name": "Adolfus Smicke",
+    "name": "Jiusippus",
+    "surname": "Blessard",
+    "full name": "Jiusippus Blessard",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.867,
-      "romantic interest": 0.879,
-      "sex interest": 0.667,
-      "gender expression": 0.398,
+      "sexuality label": "straight",
+      "sexuality": 0.041,
+      "romantic interest": 0.762,
+      "sex interest": 0.388,
+      "gender expression": 0.196,
       "sex": "m"
     },
-    "age": 4,
-    "birth year": 1200,
+    "age": 42,
+    "birth year": 1167,
     "sex": "m",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
-      1,
-      "lower middle class"
+      4,
+      "nobility"
     ],
     "personality": {
-      "lawful-chaotic": 0.237,
-      "nice-nasty": 0.572,
-      "honest-false": 0.493
+      "lawful-chaotic": 0.825,
+      "nice-nasty": 0.604,
+      "honest-false": 0.999
     },
     "attitude": {
-      "outgoing": 0.637,
-      "dream": 0.388
+      "outgoing": 0.372,
+      "dream": 0.593
     },
     "homsoc": {
       "means": {
-        "independent": false,
-        "taken_care_of": true,
-        "caretaker": true,
-        "needs_care": true,
-        "flags": [
-          "starving"
-        ]
+        "independent": true,
+        "taken_care_of": false,
+        "caretaker": false,
+        "needs_care": false,
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.682,
-        "gender expression expression": 0.228
+        "sexuality expression": 0.008,
+        "gender expression expression": 0.067
       }
     },
     "network": {
-      "parents": {
-        "mother": "Ermerut (10217)",
-        "father": "Nannekin (10216)"
-      },
+      "parents": "firstgen",
       "children": {},
       "relationship keys": {
-        "parent": [
-          12380,
+        "spouse": [
           12381
-        ],
-        "sibling": [
-          13192,
-          13546,
-          14868
         ]
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        1,
-        "lower middle class"
+        4,
+        "nobility"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.177,
+      "all_incomes": [
+        0.911,
+        0.867,
+        0.782,
+        0.957,
+        0.9269999999999999,
+        0.86,
+        1.209,
+        1.4200000000000002,
+        1.3350000000000002,
+        1.177
+      ],
+      "job": {
+        "lawful": false,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 4,
-      "eye_color": "green",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "skin_color": 2,
+      "eye_color": "brown",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
-        "S",
-        "C"
+        "C",
+        "S"
       ],
-      "health": 0.86,
-      "fertility": 0.76,
+      "health": 0.696,
+      "fertility": 0.706,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -89,131 +93,126 @@
     },
     "memory": {
       "health": {
-        "1201": {
+        "1200": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.86
+            "new_health": 0.696
           },
           "death": false
+        },
+        "1208": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.696
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
           {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.911
+          },
+          {
+            "topic": "new relationship",
+            "key": 12381,
+            "people": [
+              12379,
+              12380
+            ],
+            "people names": [
+              "Jiusippus Blessard",
+              "Verthwi Kenode"
+            ],
+            "people ages": [
+              33,
+              32
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
             "topic": "new home",
             "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stHelle voet.se3.c1",
-              "street": "Helle voet",
-              "neighborhood": "jorisbuurt",
-              "unique id": 93
+              "income class": 4,
+              "income class label": "nobility",
+              "section": "stOp Havick1.se1.c4",
+              "street": "Op Havick1",
+              "neighborhood": "cingelnoord",
+              "unique id": 834
             }
+          },
+          {
+            "topic": "feelings change",
+            "target": 12380,
+            "target name": "Verthwi Kenode",
+            "state": "out of love",
+            "relationship": 12381
           }
         ],
         "1201": [
           {
-            "topic": "new relationship",
-            "key": 13192,
-            "people": [
-              12379,
-              13189
-            ],
-            "people names": [
-              "Adolfus Smicke",
-              "Amilius Smicke"
-            ],
-            "label": "sibling",
-            "committed": false
+            "topic": "event",
+            "event": "plague",
+            "year": 1201
           },
           {
-            "topic": "not enough income",
-            "income": 0.366,
-            "inhabitants": [
-              27845,
-              29776,
-              31654,
-              32332
-            ]
-          }
-        ],
-        "1202": [
-          {
-            "topic": "new relationship",
-            "key": 13546,
-            "people": [
-              12379,
-              13543
-            ],
-            "people names": [
-              "Adolfus Smicke",
-              "Uergina Smicke"
-            ],
-            "label": "sibling",
-            "committed": false
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.019,
-            "inhabitants": [
-              27845,
-              29776,
-              31654,
-              32332
-            ]
+            "topic": "feelings change",
+            "target": 12380,
+            "target name": "Verthwi Kenode",
+            "state": "infatuation",
+            "relationship": 12381
           }
         ],
         "1203": [
           {
-            "topic": "new relationship",
-            "key": 14868,
-            "people": [
-              12379,
-              14865
-            ],
-            "people names": [
-              "Adolfus Smicke",
-              "Cecilia Smicke"
-            ],
-            "label": "sibling",
-            "committed": false
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": [
-              27845,
-              29776,
-              31654,
-              32332
-            ]
+            "topic": "feelings change",
+            "target": 12380,
+            "target name": "Verthwi Kenode",
+            "state": "solid love",
+            "relationship": 12381
           }
         ],
-        "1204": [
+        "1205": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.209
+          },
+          {
+            "topic": "feelings change",
+            "target": 12380,
+            "target name": "Verthwi Kenode",
+            "state": "out of love",
+            "relationship": 12381
+          }
+        ],
+        "1208": [
           {
             "topic": "death",
-            "cause": "childhood illness"
+            "cause": "illness"
           }
         ]
       }
     },
     "key": 12379,
     "home": {
-      "income class": 1,
-      "income class label": "lower middle class",
-      "section": "stHelle voet.se3.c1",
-      "street": "Helle voet",
-      "neighborhood": "jorisbuurt",
-      "unique id": 93
+      "income class": 4,
+      "income class label": "nobility",
+      "section": "stOp Havick1.se1.c4",
+      "street": "Op Havick1",
+      "neighborhood": "cingelnoord",
+      "unique id": 834
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
-        13192,
-        13546,
-        14868
+        12381
       ]
     }
   }

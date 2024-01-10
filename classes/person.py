@@ -219,6 +219,12 @@ class Person(Agent):
             self.network.process_parent_child(msg, self.age)
             if self.sex == 'f' :
                 self.body.trigger('childbirth')
+        elif msg['label'] == 'grandparentchild':
+            self.network.process_parent_child(msg, self.age, 'birth', True)
+        elif msg['label'] in ['aunclenibling', 'greatgrandparentchild']:
+            # if msg['label'] == 'greatgrandparentchild':                
+            #     print(self.unique_id)
+            self.network.process_other_family(msg)
         else:
             self.update_relationship_status(msg) 
             self.network.add_relationship(msg)
