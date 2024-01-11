@@ -1,33 +1,35 @@
 {
   "14939": {
     "alive": false,
-    "name": "Yseboldus",
-    "surname": "",
-    "full name": "Yseboldus",
+    "name": "Daniel",
+    "surname": "Calvus",
+    "full name": "Daniel Calvus",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.128,
-      "romantic interest": 0.655,
-      "sex interest": 0.772,
-      "gender expression": 0.0,
+      "sexuality": 0.039,
+      "romantic interest": 0.59,
+      "sex interest": 0.778,
+      "gender expression": 0.08,
       "sex": "m"
     },
-    "age": 6,
-    "birth year": 1202,
+    "age": 15,
+    "birth year": 1201,
     "sex": "m",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
-      1,
-      "lower middle class"
+      4,
+      "nobility"
     ],
     "personality": {
-      "lawful-chaotic": 0.728,
-      "nice-nasty": 0.586,
-      "honest-false": 0.852
+      "lawful-chaotic": 0.927,
+      "nice-nasty": 0.445,
+      "honest-false": 0.356,
+      "dream": 0.423,
+      "outgoing": 0.883
     },
     "attitude": {
-      "outgoing": 0.463,
-      "dream": 0.557
+      "dream": 0.423,
+      "outgoing": 0.883
     },
     "homsoc": {
       "means": {
@@ -35,46 +37,51 @@
         "taken_care_of": true,
         "caretaker": true,
         "needs_care": true,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.096,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.018,
+        "gender expression expression": 0.02
       }
     },
     "network": {
       "parents": {
-        "mother": "Reynildis (10934)",
-        "father": "Amilius (10933)"
+        "mother": "Hodine (12296)",
+        "father": "Brame (12295)"
       },
       "children": {},
       "relationship keys": {
         "parent": [
           14940,
           14941
+        ],
+        "sibling": [
+          14942
         ]
       }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        1,
-        "lower middle class"
+        4,
+        "nobility"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 8,
+      "skin_color": 5,
       "eye_color": "blue",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
         "C",
-        "S"
+        "C"
       ],
-      "health": 0.596,
-      "fertility": 0.584,
+      "health": 0.28,
+      "fertility": 0.581,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -82,11 +89,19 @@
     },
     "memory": {
       "health": {
-        "1203": {
+        "1202": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.596
+            "new_health": 0.578
+          },
+          "death": false
+        },
+        "1207": {
+          "health": {
+            "change": true,
+            "value_change": -0.298,
+            "new_health": 0.28
           },
           "death": false
         },
@@ -94,46 +109,210 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.596
+            "new_health": 0.28
+          },
+          "death": false
+        },
+        "1216": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.28
           },
           "death": true
         }
       },
       "events": {
+        "1201": [
+          {
+            "topic": "birth",
+            "year": 1201
+          },
+          {
+            "topic": "new relationship",
+            "key": 14940,
+            "people": [
+              12295,
+              14939
+            ],
+            "people names": [
+              "Brame Calvus",
+              "Daniel Calvus"
+            ],
+            "people ages": [
+              39,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "new relationship",
+            "key": 14941,
+            "people": [
+              12296,
+              14939
+            ],
+            "people names": [
+              "Hodine Rin",
+              "Daniel Calvus"
+            ],
+            "people ages": [
+              30,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "new relationship",
+            "key": 14942,
+            "people": [
+              14029,
+              14939
+            ],
+            "people names": [
+              "Everyng Calvus",
+              "Daniel Calvus"
+            ],
+            "people ages": [
+              0,
+              0
+            ],
+            "label": "sibling",
+            "committed": false
+          }
+        ],
         "1202": [
           {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stTuytsteeg.se3.c1",
-              "street": "Tuytsteeg",
-              "neighborhood": "agnesbuurt",
-              "unique id": 331
-            }
+            "topic": "person died",
+            "person": {
+              "key": 12296,
+              "name": "Hodine Rin",
+              "age": 32,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "childbirth",
+            "friendship label": "indifferent",
+            "label": "parent"
+          }
+        ],
+        "1206": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "sibling",
+            "friendship label": "friend",
+            "relationship": 14942
           }
         ],
         "1208": [
           {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "sibling",
+            "friendship label": "indifferent",
+            "relationship": 14942
+          }
+        ],
+        "1210": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12295,
+              "name": "Brame Calvus",
+              "age": 49,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "friendship label": "indifferent",
+            "label": "parent"
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 14029,
+              "name": "Everyng Calvus",
+              "age": 15,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Hodine (12296)",
+                "father": "Brame (12295)"
+              }
+            },
+            "cause": "plague",
+            "friendship label": "indifferent",
+            "label": "sibling"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1216": [
+          {
             "topic": "death",
-            "cause": "childhood illness"
+            "cause": "starvation"
           }
         ]
       }
     },
     "key": 14939,
     "home": {
-      "income class": 1,
-      "income class label": "lower middle class",
-      "section": "stTuytsteeg.se3.c1",
-      "street": "Tuytsteeg",
-      "neighborhood": "agnesbuurt",
-      "unique id": 331
+      "income class": 4,
+      "income class label": "nobility",
+      "section": "stMuurhuysen2.se1.c4",
+      "street": "Muurhuysen2",
+      "neighborhood": "cingelnoord",
+      "unique id": 801
     },
     "relationship status": {
       "taken": false,
       "married": false,
       "relationships": []
-    }
+    },
+    "friends": [],
+    "enemies": []
   }
 }

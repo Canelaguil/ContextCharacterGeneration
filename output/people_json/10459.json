@@ -1,51 +1,77 @@
 {
   "10459": {
     "alive": false,
-    "name": "Amilius",
-    "surname": "Pluuier",
-    "full name": "Amilius Pluuier",
+    "name": "Rolant",
+    "surname": "Thuin",
+    "full name": "Rolant Thuin",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.089,
-      "romantic interest": 0.55,
-      "sex interest": 0.659,
-      "gender expression": 0.188,
+      "sexuality": 0.081,
+      "romantic interest": 0.823,
+      "sex interest": 0.622,
+      "gender expression": 0.214,
       "sex": "m"
     },
-    "age": 38,
-    "birth year": 1163,
+    "age": 48,
+    "birth year": 1155,
     "sex": "m",
-    "faction": "Dogmatists",
+    "faction": "No religion",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.103,
-      "nice-nasty": 0.367,
-      "honest-false": 0.193
+      "lawful-chaotic": 0.655,
+      "nice-nasty": 0.0,
+      "honest-false": 0.843,
+      "dream": 0.423,
+      "outgoing": 0.77
     },
     "attitude": {
-      "outgoing": 0.782,
-      "dream": 0.326
+      "dream": 0.423,
+      "outgoing": 0.77
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.056,
-        "gender expression expression": 0.07
+        "sexuality expression": 0.063,
+        "gender expression expression": 0.115
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
-      "relationship keys": {}
+      "children": {
+        "14344": {
+          "key": 14344,
+          "name": "Didderic Thuin",
+          "age": 49,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Nimme (10460)",
+            "father": "Rolant (10459)"
+          }
+        }
+      },
+      "relationship keys": {
+        "spouse": [
+          10461
+        ],
+        "child": {
+          "birth": [
+            14345
+          ]
+        },
+        "unrelated": [
+          16456
+        ]
+      }
     },
     "occupation": {
       "has job": true,
@@ -53,27 +79,29 @@
         1,
         "lower middle class"
       ],
-      "income": 0.698,
+      "income": 0.933,
       "all_incomes": [
-        0.763,
-        0.698
+        1.031,
+        0.92,
+        1.116,
+        0.933
       ],
       "job": {
         "lawful": false,
-        "honest": false
+        "honest": true
       }
     },
     "genetics": {
-      "skin_color": 2,
-      "eye_color": "brown",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "skin_color": 9,
+      "eye_color": "green",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
-        "C",
+        "S",
         "C"
       ],
-      "health": 0.632,
-      "fertility": 0.711,
+      "health": 0.834,
+      "fertility": 0.8,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -85,7 +113,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.632
+            "new_health": 0.834
+          },
+          "death": false
+        },
+        "1202": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.834
           },
           "death": true
         }
@@ -93,15 +129,77 @@
       "events": {
         "1200": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.763
+            "topic": "birth",
+            "year": 1155
           },
           {
             "topic": "job notice",
-            "notice": "low income",
-            "income": 0.698
+            "notice": "found job",
+            "income": 1.031
           },
+          {
+            "topic": "new relationship",
+            "key": 10461,
+            "people": [
+              10459,
+              10460
+            ],
+            "people names": [
+              "Rolant Thuin",
+              "Nimme Droeue"
+            ],
+            "people ages": [
+              45,
+              17
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new relationship",
+            "key": 14345,
+            "people": [
+              10459,
+              14344
+            ],
+            "people names": [
+              "Rolant Thuin",
+              "Didderic Thuin"
+            ],
+            "people ages": [
+              46,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1201": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.116
+          },
+          {
+            "topic": "new relationship",
+            "key": 16456,
+            "people": [
+              11618,
+              10459
+            ],
+            "people names": [
+              "Hille Quic",
+              "Rolant Thuin"
+            ],
+            "people ages": [
+              31,
+              47
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1202": [
           {
             "topic": "death",
             "cause": "illness"
@@ -116,12 +214,20 @@
       "section": "stMuelen straet.se3.c1",
       "street": "Muelen straet",
       "neighborhood": "jorisbuurt",
-      "unique id": 164
+      "unique id": 162
     },
     "relationship status": {
-      "taken": true,
+      "taken": false,
       "married": true,
-      "relationships": []
-    }
+      "relationships": [
+        10461
+      ]
+    },
+    "friends": [
+      10461,
+      14345,
+      16456
+    ],
+    "enemies": []
   }
 }

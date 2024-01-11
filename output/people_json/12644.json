@@ -1,33 +1,35 @@
 {
   "12644": {
     "alive": false,
-    "name": "Linnea",
+    "name": "Itsburgis",
     "surname": "",
-    "full name": "Linnea",
+    "full name": "Itsburgis",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.026,
-      "romantic interest": 0.691,
-      "sex interest": 0.828,
-      "gender expression": 0.054,
+      "sexuality": 0.052,
+      "romantic interest": 0.768,
+      "sex interest": 0.607,
+      "gender expression": 0.111,
       "sex": "f"
     },
-    "age": 34,
-    "birth year": 1174,
+    "age": 49,
+    "birth year": 1184,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "Zealots",
     "income class": [
-      3,
-      "upper middle class"
+      2,
+      "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.52,
-      "honest-false": 0.564
+      "lawful-chaotic": 0.14,
+      "nice-nasty": 0.857,
+      "honest-false": 0.633,
+      "dream": 0.373,
+      "outgoing": 0.482
     },
     "attitude": {
-      "outgoing": 0.344,
-      "dream": 0.346
+      "dream": 0.373,
+      "outgoing": 0.482
     },
     "homsoc": {
       "means": {
@@ -35,25 +37,38 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.016,
-        "gender expression expression": 0.028
+        "sexuality expression": 0.037,
+        "gender expression expression": 0.049
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "17685": {
-          "key": 17685,
-          "name": "Eggerdus Zassen",
-          "age": 53,
+        "13297": {
+          "key": 13297,
+          "name": "Liudburgis Busseel",
+          "age": 19,
           "alive": false,
-          "sex": "m",
+          "sex": "f",
           "parents": {
-            "mother": "Linnea (12644)",
-            "father": "Ysaac (12643)"
+            "mother": "Itsburgis (12644)",
+            "father": "Jiusippus (12643)"
+          }
+        },
+        "18446": {
+          "key": 18446,
+          "name": "Flore Busseel",
+          "age": 47,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Itsburgis (12644)",
+            "father": "Jiusippus (12643)"
           }
         }
       },
@@ -63,31 +78,35 @@
         ],
         "child": {
           "birth": [
-            17687
+            13299,
+            18448
           ]
-        }
+        },
+        "unrelated": [
+          53444
+        ]
       }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        3,
-        "upper middle class"
+        2,
+        "middle class"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 1,
+      "skin_color": 4,
       "eye_color": "brown",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "S",
         "S"
       ],
-      "health": 0.724,
-      "fertility": 0.731,
+      "health": 0.707,
+      "fertility": 0.757,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -99,13 +118,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.724
+            "new_health": 0.707
           },
           "death": false
+        },
+        "1232": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.707
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1184
+          },
           {
             "topic": "new relationship",
             "key": 12645,
@@ -114,70 +145,311 @@
               12644
             ],
             "people names": [
-              "Ysaac Zassen",
-              "Linnea"
+              "Jiusippus Busseel",
+              "Itsburgis"
             ],
             "people ages": [
-              44,
-              26
+              23,
+              16
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stMarcktgang.se3.c3",
-              "street": "Marcktgang",
-              "neighborhood": "denhof",
-              "unique id": 927
-            }
-          }
-        ],
-        "1201": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          },
-          {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "spouse",
-            "friendship label": "indifferent",
-            "relationship": 12645
-          },
-          {
-            "topic": "feelings change",
-            "target": 12643,
-            "target name": "Ysaac Zassen",
-            "state": "solid love",
-            "relationship": 12645
-          }
-        ],
-        "1206": [
-          {
             "topic": "new relationship",
-            "key": 17687,
+            "key": 13299,
             "people": [
               12644,
-              17685
+              13297
             ],
             "people names": [
-              "Linnea",
-              "Eggerdus Zassen"
+              "Itsburgis",
+              "Liudburgis Busseel"
             ],
             "people ages": [
-              32,
+              16,
               0
             ],
             "label": "parentchild",
             "committed": false
           }
         ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 18448,
+            "people": [
+              12644,
+              18446
+            ],
+            "people names": [
+              "Itsburgis",
+              "Flore Busseel"
+            ],
+            "people ages": [
+              19,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1203": [
+          {
+            "key": 12645,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12643,
+              "name": "Jiusippus Busseel",
+              "age": 27,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "friendship label": "friend",
+            "label": "spouse",
+            "love state": "loveless"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
         "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 18448
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1216": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1217": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1218": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1219": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 13297,
+              "name": "Liudburgis Busseel",
+              "age": 19,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Itsburgis (12644)",
+                "father": "Jiusippus (12643)"
+              }
+            },
+            "cause": "starvation",
+            "friendship label": "good friend",
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1220": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1221": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1222": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1223": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1223
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1224": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1225": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1226": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1227": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1228": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1230": [
+          {
+            "topic": "new relationship",
+            "key": 53444,
+            "people": [
+              12644,
+              10691
+            ],
+            "people names": [
+              "Itsburgis",
+              "Hille"
+            ],
+            "people ages": [
+              47,
+              48
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1232": [
+          {
+            "topic": "event",
+            "event": "war",
+            "year": 1232
+          },
           {
             "topic": "death",
             "cause": "illness"
@@ -187,19 +459,25 @@
     },
     "key": 12644,
     "home": {
-      "income class": 3,
-      "income class label": "upper middle class",
-      "section": "stMarcktgang.se3.c3",
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stMarcktgang.se1.c2",
       "street": "Marcktgang",
       "neighborhood": "denhof",
-      "unique id": 927
+      "unique id": 924
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         12645
       ]
-    }
+    },
+    "friends": [
+      12645,
+      13299,
+      53444
+    ],
+    "enemies": []
   }
 }

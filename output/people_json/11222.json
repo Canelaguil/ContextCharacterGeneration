@@ -1,19 +1,19 @@
 {
   "11222": {
     "alive": false,
-    "name": "Soeten",
+    "name": "Jute",
     "surname": "",
-    "full name": "Soeten",
+    "full name": "Jute",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.136,
-      "romantic interest": 0.809,
-      "sex interest": 0.493,
-      "gender expression": 0.31,
+      "sexuality label": "gay",
+      "sexuality": 0.928,
+      "romantic interest": 0.835,
+      "sex interest": 0.934,
+      "gender expression": 0.177,
       "sex": "f"
     },
-    "age": 54,
-    "birth year": 1170,
+    "age": 58,
+    "birth year": 1166,
     "sex": "f",
     "faction": "No religion",
     "income class": [
@@ -21,17 +21,19 @@
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.391,
-      "nice-nasty": 0.927,
-      "honest-false": 0.004
+      "lawful-chaotic": 0.222,
+      "nice-nasty": 0.186,
+      "honest-false": 0.186,
+      "dream": 0.128,
+      "outgoing": 0.771
     },
     "attitude": {
-      "outgoing": 0.522,
-      "dream": 0.586
+      "dream": 0.128,
+      "outgoing": 0.771
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
@@ -40,63 +42,68 @@
         ]
       },
       "expression": {
-        "sexuality expression": 0.083,
-        "gender expression expression": 0.238
+        "sexuality expression": 0.861,
+        "gender expression expression": 0.058
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13087": {
+          "key": 13087,
+          "name": "Costan",
+          "age": 32,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Jute (11222)",
+            "father": "Moys (11221)"
+          }
+        },
+        "23265": {
+          "key": 23265,
+          "name": "Hatebrandus Moysszoon",
+          "age": 35,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Jute (11222)",
+            "father": "Moys (11221)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11223
-        ]
+        ],
+        "child": {
+          "birth": [
+            13089,
+            23267
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
         1,
         "lower middle class"
       ],
-      "income": 0.707,
-      "all_incomes": [
-        1.337,
-        1.256,
-        1.499,
-        1.021,
-        0.893,
-        0.918,
-        1.068,
-        1.08,
-        1.377,
-        1.214,
-        1.499,
-        1.499,
-        1.303,
-        1.264,
-        1.06,
-        0.8,
-        0.677,
-        0.779,
-        0.707
-      ],
-      "job": {
-        "lawful": false,
-        "honest": false
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 1,
+      "skin_color": 5,
       "eye_color": "brown",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
-        "C",
+        "S",
         "C"
       ],
-      "health": 0.087,
-      "fertility": 0.75,
+      "health": 0.0,
+      "fertility": 0.825,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -108,45 +115,65 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.761
+            "new_health": 0.776
+          },
+          "death": false
+        },
+        "1218": {
+          "health": {
+            "change": true,
+            "value_change": -0.154,
+            "new_health": 0.622
+          },
+          "death": false
+        },
+        "1219": {
+          "health": {
+            "change": true,
+            "value_change": -0.321,
+            "new_health": 0.301
           },
           "death": false
         },
         "1220": {
           "health": {
             "change": true,
-            "value_change": -0.139,
-            "new_health": 0.622
+            "value_change": -0.19,
+            "new_health": 0.111
           },
           "death": false
         },
         "1221": {
           "health": {
             "change": true,
-            "value_change": -0.167,
-            "new_health": 0.455
+            "value_change": -0.091,
+            "new_health": 0.02
           },
           "death": false
         },
         "1222": {
           "health": {
             "change": true,
-            "value_change": -0.182,
-            "new_health": 0.273
+            "value_change": -0.017,
+            "new_health": 0.003
           },
           "death": false
         },
         "1223": {
           "health": {
             "change": true,
-            "value_change": -0.186,
-            "new_health": 0.087
+            "value_change": -0.003,
+            "new_health": 0.0
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1166
+          },
           {
             "topic": "new relationship",
             "key": 11223,
@@ -155,43 +182,104 @@
               11222
             ],
             "people names": [
-              "Remdo Crulleboye",
-              "Soeten"
+              "Moys",
+              "Jute"
             ],
             "people ages": [
               43,
-              30
+              34
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stSt. Ians straet.se5.c1",
-              "street": "St. Ians straet",
-              "neighborhood": "kampbuurt",
-              "unique id": 431
-            }
+            "topic": "new relationship",
+            "key": 13089,
+            "people": [
+              11222,
+              13087
+            ],
+            "people names": [
+              "Jute",
+              "Costan"
+            ],
+            "people ages": [
+              35,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1201": [
+        "1204": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 13089
+          }
+        ],
+        "1205": [
+          {
+            "topic": "new relationship",
+            "key": 23267,
+            "people": [
+              11222,
+              23265
+            ],
+            "people names": [
+              "Jute",
+              "Hatebrandus Moysszoon"
+            ],
+            "people ages": [
+              39,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1212": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 13089
+          }
+        ],
+        "1213": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 23267
+          }
+        ],
+        "1214": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 23267
+          }
+        ],
+        "1215": [
           {
             "topic": "event",
             "event": "plague",
-            "year": 1201
+            "year": 1215
           },
           {
-            "topic": "feelings change",
-            "target": 11221,
-            "target name": "Remdo Crulleboye",
-            "state": "solid love",
-            "relationship": 11223
-          }
-        ],
-        "1202": [
+            "topic": "personality change",
+            "change": true,
+            "trait": "nice-nasty",
+            "trigger": "trauma",
+            "mod": -0.067
+          },
           {
             "key": 11223,
             "topic": "unmarried"
@@ -200,72 +288,95 @@
             "topic": "person died",
             "person": {
               "key": 11221,
-              "name": "Remdo Crulleboye",
-              "age": 46,
+              "name": "Moys",
+              "age": 59,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
             },
-            "cause": "illness",
-            "label": "spouse"
+            "cause": "sickness",
+            "friendship label": "good friend",
+            "label": "spouse",
+            "love state": "loveless"
           }
         ],
-        "1203": [
+        "1216": [
           {
             "topic": "not enough income",
             "income": 0,
-            "inhabitants": []
+            "inhabitants": [
+              37500
+            ]
           }
         ],
-        "1204": [
+        "1217": [
           {
             "topic": "not enough income",
             "income": 0,
-            "inhabitants": []
+            "inhabitants": [
+              37500
+            ]
           }
         ],
-        "1205": [
+        "1218": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.337
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 13089
           },
           {
             "topic": "not enough income",
             "income": 0,
-            "inhabitants": []
+            "inhabitants": [
+              37500
+            ]
           }
         ],
-        "1211": [
+        "1219": [
           {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.068
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              37500
+            ]
           }
         ],
-        "1215": [
+        "1220": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1215
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              37500
+            ]
           }
         ],
         "1221": [
           {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.677
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              37500
+            ]
           }
         ],
         "1223": [
           {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.707
+            "topic": "event",
+            "event": "plague",
+            "year": 1223
+          },
+          {
+            "topic": "personality change",
+            "change": true,
+            "trait": "honest-false",
+            "trigger": "trauma",
+            "mod": 0.078
           },
           {
             "topic": "death",
-            "cause": "old age"
+            "cause": "sickness"
           }
         ]
       }
@@ -274,10 +385,10 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stSt. Ians straet.se5.c1",
+      "section": "stSt. Ians straet.se3.c1",
       "street": "St. Ians straet",
       "neighborhood": "kampbuurt",
-      "unique id": 431
+      "unique id": 422
     },
     "relationship status": {
       "taken": false,
@@ -285,6 +396,10 @@
       "relationships": [
         11223
       ]
-    }
+    },
+    "friends": [
+      11223
+    ],
+    "enemies": []
   }
 }

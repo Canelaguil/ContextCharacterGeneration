@@ -1,53 +1,125 @@
 {
   "11185": {
     "alive": false,
-    "name": "Stoethoute",
-    "surname": "Snauel",
-    "full name": "Stoethoute Snauel",
+    "name": "Ingel",
+    "surname": "",
+    "full name": "Ingel",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.037,
-      "romantic interest": 0.512,
-      "sex interest": 0.963,
-      "gender expression": 0.022,
+      "sexuality": 0.039,
+      "romantic interest": 0.655,
+      "sex interest": 0.607,
+      "gender expression": 0.266,
       "sex": "m"
     },
-    "age": 51,
-    "birth year": 1151,
+    "age": 53,
+    "birth year": 1158,
     "sex": "m",
-    "faction": "Dogmatists",
+    "faction": "Zealots",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.316,
-      "nice-nasty": 0.267,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.529,
+      "nice-nasty": 0.999,
+      "honest-false": 0.403,
+      "dream": 0.0,
+      "outgoing": 0.303
     },
     "attitude": {
-      "outgoing": 0.733,
-      "dream": 0.46
+      "dream": 0.0,
+      "outgoing": 0.303
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.013,
-        "gender expression expression": 0.003
+        "sexuality expression": 0.037,
+        "gender expression expression": 0.099
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14149": {
+          "key": 14149,
+          "name": "Elyas\u0430",
+          "age": 49,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Agnes (11186)",
+            "father": "Ingel (11185)"
+          }
+        },
+        "15896": {
+          "key": 15896,
+          "name": "Eltetus",
+          "age": 39,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Agnes (11186)",
+            "father": "Ingel (11185)"
+          }
+        },
+        "18134": {
+          "key": 18134,
+          "name": "Harlo",
+          "age": 47,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Agnes (11186)",
+            "father": "Ingel (11185)"
+          }
+        },
+        "23712": {
+          "key": 23712,
+          "name": "Willibrando van Ingel",
+          "age": 44,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Agnes (11186)",
+            "father": "Ingel (11185)"
+          }
+        },
+        "25908": {
+          "key": 25908,
+          "name": "Emmelina",
+          "age": 26,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Agnes (11186)",
+            "father": "Ingel (11185)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11187
+        ],
+        "child": {
+          "birth": [
+            14150,
+            15897,
+            18135,
+            23713,
+            25909
+          ]
+        },
+        "unrelated": [
+          16533
         ]
       }
     },
@@ -57,11 +129,20 @@
         1,
         "lower middle class"
       ],
-      "income": 0.87,
+      "income": 0.46,
       "all_incomes": [
-        1.026,
-        1.028,
-        0.87
+        0.728,
+        0.524,
+        0.868,
+        0.704,
+        0.553,
+        0.724,
+        0.843,
+        0.751,
+        0.577,
+        0.405,
+        0.206,
+        0.46
       ],
       "job": {
         "lawful": false,
@@ -69,16 +150,16 @@
       }
     },
     "genetics": {
-      "skin_color": 3,
-      "eye_color": "green",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "skin_color": 5,
+      "eye_color": "blue",
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
-        "C",
+        "S",
         "S"
       ],
-      "health": 0.546,
-      "fertility": 0.745,
+      "health": 0.0,
+      "fertility": 0.669,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -90,25 +171,45 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.703
+            "new_health": 0.686
           },
           "death": false
         },
-        "1201": {
+        "1208": {
           "health": {
             "change": true,
-            "value_change": -0.157,
-            "new_health": 0.546
+            "value_change": -0.262,
+            "new_health": 0.424
           },
           "death": false
+        },
+        "1209": {
+          "health": {
+            "change": true,
+            "value_change": -0.255,
+            "new_health": 0.169
+          },
+          "death": false
+        },
+        "1210": {
+          "health": {
+            "change": true,
+            "value_change": -0.169,
+            "new_health": 0.0
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
           {
+            "topic": "birth",
+            "year": 1158
+          },
+          {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.026
+            "income": 0.728
           },
           {
             "topic": "new relationship",
@@ -118,37 +219,383 @@
               11186
             ],
             "people names": [
-              "Stoethoute Snauel",
-              "Amelgeir"
+              "Ingel",
+              "Agnes Vaelspaen"
             ],
             "people ages": [
-              49,
-              30
+              42,
+              28
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stSt. Ians straet.se3.c1",
-              "street": "St. Ians straet",
-              "neighborhood": "kampbuurt",
-              "unique id": 417
-            }
+            "topic": "new relationship",
+            "key": 14150,
+            "people": [
+              11185,
+              14149
+            ],
+            "people names": [
+              "Ingel",
+              "Elyas\u0430"
+            ],
+            "people ages": [
+              43,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "topic": "new relationship",
+            "key": 15897,
+            "people": [
+              11185,
+              15896
+            ],
+            "people names": [
+              "Ingel",
+              "Eltetus"
+            ],
+            "people ages": [
+              43,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
+            "topic": "new relationship",
+            "key": 16533,
+            "people": [
+              11185,
+              12541
+            ],
+            "people names": [
+              "Ingel",
+              "Engelbertus Hoeghen"
+            ],
+            "people ages": [
+              44,
+              33
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1202": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.704
+          },
+          {
+            "topic": "new relationship",
+            "key": 18135,
+            "people": [
+              11185,
+              18134
+            ],
+            "people names": [
+              "Ingel",
+              "Harlo"
+            ],
+            "people ages": [
+              44,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.704,
+            "inhabitants": [
+              14149,
+              23712,
+              17061,
+              43555,
+              46741,
+              49090,
+              50126,
+              51393,
+              53135,
+              56400,
+              59179,
+              60967,
+              62167,
+              63534,
+              63886,
+              65612,
+              66253,
+              66840,
+              67540,
+              38248,
+              71724,
+              74748,
+              75882,
+              76310
+            ]
+          }
+        ],
+        "1203": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "friend",
+            "relationship": 16533
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.553,
+            "inhabitants": [
+              14149,
+              23712,
+              17061,
+              43555,
+              46741,
+              49090,
+              50126,
+              51393,
+              53135,
+              56400,
+              59179,
+              60967,
+              62167,
+              63534,
+              63886,
+              65612,
+              66253,
+              66840,
+              67540,
+              38248,
+              71724,
+              74748,
+              75882,
+              76310
+            ]
+          }
+        ],
+        "1204": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "indifferent",
+            "relationship": 11187
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.724,
+            "inhabitants": [
+              14149,
+              23712,
+              17061,
+              43555,
+              46741,
+              49090,
+              50126,
+              51393,
+              53135,
+              56400,
+              59179,
+              60967,
+              62167,
+              63534,
+              63886,
+              65612,
+              66253,
+              66840,
+              67540,
+              38248,
+              71724,
+              74748,
+              75882,
+              76310
+            ]
+          }
+        ],
+        "1205": [
+          {
+            "topic": "new relationship",
+            "key": 23713,
+            "people": [
+              11185,
+              23712
+            ],
+            "people names": [
+              "Ingel",
+              "Willibrando van Ingel"
+            ],
+            "people ages": [
+              47,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.843,
+            "inhabitants": [
+              14149,
+              23712,
+              17061,
+              43555,
+              46741,
+              49090,
+              50126,
+              51393,
+              53135,
+              56400,
+              59179,
+              60967,
+              62167,
+              63534,
+              63886,
+              65612,
+              66253,
+              66840,
+              67540,
+              38248,
+              71724,
+              74748,
+              75882,
+              76310
+            ]
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 25909,
+            "people": [
+              11185,
+              25908
+            ],
+            "people names": [
+              "Ingel",
+              "Emmelina"
+            ],
+            "people ages": [
+              49,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 11186,
+            "target name": "Agnes Vaelspaen",
+            "state": "out of love",
+            "friendship label": "indifferent",
+            "relationship": 11187
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.751,
+            "inhabitants": [
+              14149,
+              23712,
+              17061,
+              43555,
+              46741,
+              49090,
+              50126,
+              51393,
+              53135,
+              56400,
+              59179,
+              60967,
+              62167,
+              63534,
+              63886,
+              65612,
+              66253,
+              66840,
+              67540,
+              38248,
+              71724,
+              74748,
+              75882,
+              76310
+            ]
+          }
+        ],
+        "1207": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.577
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.577,
+            "inhabitants": [
+              14149,
+              23712,
+              17061,
+              43555,
+              46741,
+              49090,
+              50126,
+              51393,
+              53135,
+              56400,
+              59179,
+              60967,
+              62167,
+              63534,
+              63886,
+              65612,
+              66253,
+              66840,
+              67540,
+              38248,
+              71724,
+              74748,
+              75882,
+              76310
+            ]
+          }
+        ],
+        "1208": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.405
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "friend",
+            "relationship": 16533
+          }
+        ],
+        "1209": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.206
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 25909
+          }
+        ],
+        "1210": [
+          {
             "topic": "death",
-            "cause": "old age"
+            "cause": "sickness"
           }
         ]
       }
@@ -157,17 +604,22 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stSt. Ians straet.se3.c1",
+      "section": "stSt. Ians straet.se1.c1",
       "street": "St. Ians straet",
       "neighborhood": "kampbuurt",
-      "unique id": 417
+      "unique id": 410
     },
     "relationship status": {
-      "taken": true,
+      "taken": false,
       "married": true,
       "relationships": [
         11187
       ]
-    }
+    },
+    "friends": [
+      15897,
+      16533
+    ],
+    "enemies": []
   }
 }

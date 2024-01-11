@@ -1,37 +1,39 @@
 {
   "12128": {
     "alive": false,
-    "name": "Siburgis",
-    "surname": "Svarten",
-    "full name": "Siburgis Svarten",
+    "name": "Lelien",
+    "surname": "Snauel",
+    "full name": "Lelien Snauel",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.014,
-      "romantic interest": 0.825,
-      "sex interest": 0.598,
-      "gender expression": 0.074,
+      "sexuality": 0.0,
+      "romantic interest": 0.739,
+      "sex interest": 0.414,
+      "gender expression": 0.152,
       "sex": "f"
     },
-    "age": 52,
-    "birth year": 1161,
+    "age": 38,
+    "birth year": 1177,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.828,
-      "honest-false": 0.58
+      "lawful-chaotic": 0.663,
+      "nice-nasty": 0.702,
+      "honest-false": 0.798,
+      "dream": 0.438,
+      "outgoing": 0.49
     },
     "attitude": {
-      "outgoing": 0.558,
-      "dream": 0.268
+      "dream": 0.438,
+      "outgoing": 0.49
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
@@ -40,40 +42,105 @@
         ]
       },
       "expression": {
-        "sexuality expression": 0.011,
-        "gender expression expression": 0.024
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.109
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14107": {
+          "key": 14107,
+          "name": "Geldmaro Scamps",
+          "age": 32,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Lelien (12128)",
+            "father": "Tiuri (12127)"
+          }
+        },
+        "15624": {
+          "key": 15624,
+          "name": "Lutghardis Scamps",
+          "age": 48,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Lelien (12128)",
+            "father": "Tiuri (12127)"
+          }
+        },
+        "23945": {
+          "key": 23945,
+          "name": "Siwa Scamps",
+          "age": 44,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Lelien (12128)",
+            "father": "Tiuri (12127)"
+          }
+        },
+        "26109": {
+          "key": 26109,
+          "name": "Eggerdus Scamps",
+          "age": 38,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Lelien (12128)",
+            "father": "Tiuri (12127)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          12129,
-          21214
+          12129
+        ],
+        "child": {
+          "birth": [
+            14109,
+            15626,
+            23947,
+            26111
+          ]
+        },
+        "unrelated": [
+          27101,
+          30887,
+          36904
         ]
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.759,
+      "all_incomes": [
+        0.964,
+        0.808,
+        0.759
+      ],
+      "job": {
+        "lawful": false,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 7,
-      "eye_color": "blue",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "skin_color": 0,
+      "eye_color": "brown",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
         "C",
         "S"
       ],
-      "health": 0.0,
-      "fertility": 0.423,
+      "health": 0.629,
+      "fertility": 0.635,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -85,29 +152,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.5
+            "new_health": 0.629
           },
           "death": false
         },
-        "1211": {
+        "1214": {
           "health": {
-            "change": true,
-            "value_change": -0.325,
-            "new_health": 0.175
-          },
-          "death": false
-        },
-        "1212": {
-          "health": {
-            "change": true,
-            "value_change": -0.175,
-            "new_health": 0.0
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.629
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1177
+          },
           {
             "topic": "new relationship",
             "key": 12129,
@@ -116,43 +179,140 @@
               12128
             ],
             "people names": [
-              "Marcilius Die niene verloech",
-              "Siburgis Svarten"
+              "Tiuri Scamps",
+              "Lelien Snauel"
             ],
             "people ages": [
-              48,
-              39
+              25,
+              23
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stCorte gracht.se3.c2",
-              "street": "Corte gracht",
-              "neighborhood": "visbuurt",
-              "unique id": 745
-            }
+            "topic": "new relationship",
+            "key": 14109,
+            "people": [
+              12128,
+              14107
+            ],
+            "people names": [
+              "Lelien Snauel",
+              "Geldmaro Scamps"
+            ],
+            "people ages": [
+              24,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 12127,
+            "target name": "Tiuri Scamps",
+            "state": "solid love",
+            "friendship label": "friend",
+            "relationship": 12129
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "topic": "new relationship",
+            "key": 15626,
+            "people": [
+              12128,
+              15624
+            ],
+            "people names": [
+              "Lelien Snauel",
+              "Lutghardis Scamps"
+            ],
+            "people ages": [
+              24,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1202": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "friend",
+            "relationship": 12129
           }
         ],
         "1204": [
           {
-            "topic": "feelings change",
-            "target": 12127,
-            "target name": "Marcilius Die niene verloech",
-            "state": "out of love",
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "friend",
             "relationship": 12129
+          }
+        ],
+        "1205": [
+          {
+            "topic": "new relationship",
+            "key": 23947,
+            "people": [
+              12128,
+              23945
+            ],
+            "people names": [
+              "Lelien Snauel",
+              "Siwa Scamps"
+            ],
+            "people ages": [
+              28,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 26111,
+            "people": [
+              12128,
+              26109
+            ],
+            "people names": [
+              "Lelien Snauel",
+              "Eggerdus Scamps"
+            ],
+            "people ages": [
+              29,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           },
+          {
+            "topic": "new relationship",
+            "key": 27101,
+            "people": [
+              11288,
+              12128
+            ],
+            "people names": [
+              "Nellen Bigordel",
+              "Lelien Snauel"
+            ],
+            "people ages": [
+              28,
+              30
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1207": [
           {
             "key": 12129,
             "topic": "unmarried"
@@ -161,38 +321,52 @@
             "topic": "person died",
             "person": {
               "key": 12127,
-              "name": "Marcilius Die niene verloech",
-              "age": 53,
+              "name": "Tiuri Scamps",
+              "age": 33,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
             },
-            "cause": "sickness",
-            "label": "spouse"
-          }
-        ],
-        "1205": [
+            "cause": "illness",
+            "friendship label": "friend",
+            "label": "spouse",
+            "love state": "solid love"
+          },
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1206": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1207": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "person died",
+            "person": {
+              "key": 11288,
+              "name": "Nellen Bigordel",
+              "age": 29,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "friendship label": "friend",
+            "label": "unrelated",
+            "love state": "nothing"
           }
         ],
         "1208": [
+          {
+            "topic": "new relationship",
+            "key": 30887,
+            "people": [
+              11065,
+              12128
+            ],
+            "people names": [
+              "Erenboede lucrose",
+              "Lelien Snauel"
+            ],
+            "people ages": [
+              48,
+              32
+            ],
+            "label": "unrelated",
+            "committed": false
+          },
           {
             "topic": "not enough income",
             "income": 0,
@@ -208,6 +382,27 @@
         ],
         "1210": [
           {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "friend",
+            "relationship": 30887
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 15626
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 26111
+          },
+          {
             "topic": "not enough income",
             "income": 0,
             "inhabitants": []
@@ -215,39 +410,75 @@
         ],
         "1211": [
           {
-            "topic": "new relationship",
-            "key": 21214,
-            "people": [
-              10630,
-              12128
-            ],
-            "people names": [
-              "Tiuri Die niene verloech",
-              "Siburgis Svarten"
-            ],
-            "people ages": [
-              40,
-              51
-            ],
-            "label": "spouse",
-            "committed": true
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 15626
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stBloemendaelse straet.se3.c2",
-              "street": "Bloemendaelse straet",
-              "neighborhood": "agnesbuurt",
-              "unique id": 221
-            }
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 23947
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ],
         "1212": [
           {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.964
+          },
+          {
+            "topic": "new relationship",
+            "key": 36904,
+            "people": [
+              12329,
+              12128
+            ],
+            "people names": [
+              "Sophia Putocke",
+              "Lelien Snauel"
+            ],
+            "people ages": [
+              29,
+              36
+            ],
+            "label": "unrelated",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 26111
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "friend",
+            "relationship": 30887
+          }
+        ],
+        "1214": [
+          {
             "topic": "death",
-            "cause": "sickness"
+            "cause": "illness"
           }
         ]
       }
@@ -256,18 +487,26 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stBloemendaelse straet.se3.c2",
-      "street": "Bloemendaelse straet",
-      "neighborhood": "agnesbuurt",
-      "unique id": 221
+      "section": "stCorte gracht.se3.c2",
+      "street": "Corte gracht",
+      "neighborhood": "visbuurt",
+      "unique id": 740
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
-        12129,
-        21214
+        12129
       ]
-    }
+    },
+    "friends": [
+      12129,
+      14109,
+      26111,
+      27101,
+      30887,
+      36904
+    ],
+    "enemies": []
   }
 }

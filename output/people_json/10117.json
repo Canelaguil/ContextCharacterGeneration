@@ -1,33 +1,35 @@
 {
   "10117": {
     "alive": false,
-    "name": "Cats",
-    "surname": "",
-    "full name": "Cats",
+    "name": "Cees",
+    "surname": "Scenkel",
+    "full name": "Cees Scenkel",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.021,
-      "romantic interest": 0.716,
-      "sex interest": 0.778,
-      "gender expression": 0.057,
+      "sexuality": 0.045,
+      "romantic interest": 0.888,
+      "sex interest": 0.809,
+      "gender expression": 0.139,
       "sex": "m"
     },
-    "age": 46,
-    "birth year": 1156,
+    "age": 54,
+    "birth year": 1169,
     "sex": "m",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.89,
-      "nice-nasty": 0.135,
-      "honest-false": 0.0
+      "lawful-chaotic": 0.29,
+      "nice-nasty": 0.504,
+      "honest-false": 0.687,
+      "dream": 0.634,
+      "outgoing": 0.72
     },
     "attitude": {
-      "outgoing": 0.648,
-      "dream": 0.214
+      "dream": 0.634,
+      "outgoing": 0.72
     },
     "homsoc": {
       "means": {
@@ -35,37 +37,67 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.017,
-        "gender expression expression": 0.009
+        "sexuality expression": 0.039,
+        "gender expression expression": 0.099
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "13102": {
-          "key": 13102,
-          "name": "Wolfraem van Cats",
-          "age": 56,
+        "13117": {
+          "key": 13117,
+          "name": "Mabelie Scenkel",
+          "age": 40,
           "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Gloria (10118)",
+            "father": "Cees (10117)"
+          }
+        },
+        "21037": {
+          "key": 21037,
+          "name": "Segher Scenkel",
+          "age": 45,
+          "alive": true,
           "sex": "m",
           "parents": {
-            "mother": "Berta (10118)",
-            "father": "Cats (10117)"
+            "mother": "Gloria (10118)",
+            "father": "Cees (10117)"
+          }
+        },
+        "25223": {
+          "key": 25223,
+          "name": "Wernerus Scenkel",
+          "age": 43,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Gloria (10118)",
+            "father": "Cees (10117)"
           }
         }
       },
       "relationship keys": {
         "spouse": [
-          10119
+          10119,
+          30876
         ],
         "child": {
           "birth": [
-            13103
+            13118,
+            21038,
+            25224
           ]
-        }
+        },
+        "unrelated": [
+          29181
+        ]
       }
     },
     "occupation": {
@@ -74,28 +106,49 @@
         1,
         "lower middle class"
       ],
-      "income": 1.213,
+      "income": 1.14,
       "all_incomes": [
-        0.812,
-        0.948,
-        1.213
+        1.074,
+        1.069,
+        1.023,
+        0.966,
+        1.042,
+        1.006,
+        1.033,
+        0.981,
+        0.902,
+        0.848,
+        0.843,
+        0.871,
+        0.935,
+        1.026,
+        1.083,
+        1.115,
+        1.158,
+        1.167,
+        1.171,
+        1.235,
+        1.232,
+        1.12,
+        1.152,
+        1.14
       ],
       "job": {
         "lawful": true,
-        "honest": false
+        "honest": true
       }
     },
     "genetics": {
-      "skin_color": 7,
-      "eye_color": "green",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "skin_color": 6,
+      "eye_color": "blue",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "S",
-        "S"
+        "C",
+        "C"
       ],
-      "health": 0.681,
-      "fertility": 0.7,
+      "health": 0.0,
+      "fertility": 0.629,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -107,15 +160,39 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.681
+            "new_health": 0.7
           },
           "death": false
         },
-        "1201": {
+        "1219": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.681
+            "change": true,
+            "value_change": -0.15,
+            "new_health": 0.55
+          },
+          "death": false
+        },
+        "1220": {
+          "health": {
+            "change": true,
+            "value_change": -0.293,
+            "new_health": 0.257
+          },
+          "death": false
+        },
+        "1221": {
+          "health": {
+            "change": true,
+            "value_change": -0.255,
+            "new_health": 0.002
+          },
+          "death": false
+        },
+        "1222": {
+          "health": {
+            "change": true,
+            "value_change": -0.002,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -123,9 +200,13 @@
       "events": {
         "1200": [
           {
+            "topic": "birth",
+            "year": 1169
+          },
+          {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.812
+            "income": 1.074
           },
           {
             "topic": "new relationship",
@@ -135,40 +216,29 @@
               10118
             ],
             "people names": [
-              "Cats",
-              "Berta Roden"
+              "Cees Scenkel",
+              "Gloria Dronkine"
             ],
             "people ages": [
-              44,
-              17
+              31,
+              23
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stSlyck straet.se1.c1",
-              "street": "Slyck straet",
-              "neighborhood": "varkensbuurt",
-              "unique id": 40
-            }
-          },
-          {
             "topic": "new relationship",
-            "key": 13103,
+            "key": 13118,
             "people": [
               10117,
-              13102
+              13117
             ],
             "people names": [
-              "Cats",
-              "Wolfraem van Cats"
+              "Cees Scenkel",
+              "Mabelie Scenkel"
             ],
             "people ages": [
-              44,
+              31,
               0
             ],
             "label": "parentchild",
@@ -177,18 +247,260 @@
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "topic": "feelings change",
+            "target": 10118,
+            "target name": "Gloria Dronkine",
+            "state": "solid love",
+            "friendship label": "friend",
+            "relationship": 10119
+          }
+        ],
+        "1202": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 13118
           },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "friend",
+            "relationship": 10119
+          }
+        ],
+        "1203": [
           {
             "topic": "job notice",
             "notice": "comfortable earnings",
-            "income": 1.213
+            "income": 1.042
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 21038,
+            "people": [
+              10117,
+              21037
+            ],
+            "people names": [
+              "Cees Scenkel",
+              "Segher Scenkel"
+            ],
+            "people ages": [
+              35,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1206": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "friend",
+            "relationship": 10119
           },
           {
+            "topic": "new relationship",
+            "key": 25224,
+            "people": [
+              10117,
+              25223
+            ],
+            "people names": [
+              "Cees Scenkel",
+              "Wernerus Scenkel"
+            ],
+            "people ages": [
+              37,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "key": 10119,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10118,
+              "name": "Gloria Dronkine",
+              "age": 30,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "friendship label": "friend",
+            "label": "spouse",
+            "love state": "solid love"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "new relationship",
+            "key": 29181,
+            "people": [
+              10117,
+              12265
+            ],
+            "people names": [
+              "Cees Scenkel",
+              "Alvericus Vlieghe"
+            ],
+            "people ages": [
+              39,
+              43
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1208": [
+          {
+            "topic": "new relationship",
+            "key": 30876,
+            "people": [
+              10117,
+              10295
+            ],
+            "people names": [
+              "Cees Scenkel",
+              "Sybillia Vlieghe"
+            ],
+            "people ages": [
+              40,
+              45
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.848,
+            "inhabitants": [
+              25223,
+              19618,
+              46810,
+              51382,
+              59868,
+              60607,
+              49011,
+              75155
+            ]
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0.843,
+            "inhabitants": [
+              25223,
+              19618,
+              46810,
+              51382,
+              59868,
+              60607,
+              49011,
+              75155
+            ]
+          }
+        ],
+        "1210": [
+          {
+            "topic": "feelings change",
+            "target": 10295,
+            "target name": "Sybillia Vlieghe",
+            "state": "out of love",
+            "friendship label": "indifferent",
+            "relationship": 30876
+          }
+        ],
+        "1212": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.026
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          }
+        ],
+        "1216": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "enemy",
+            "relationship": 21038
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "friend",
+            "relationship": 29181
+          },
+          {
+            "key": 30876,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10295,
+              "name": "Sybillia Vlieghe",
+              "age": 53,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "friendship label": "indifferent",
+            "label": "spouse",
+            "love state": "out of love"
+          }
+        ],
+        "1217": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "good friend",
+            "relationship": 13118
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12265,
+              "name": "Alvericus Vlieghe",
+              "age": 53,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "friendship label": "friend",
+            "label": "unrelated",
+            "love state": "nothing"
+          }
+        ],
+        "1222": [
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "sickness"
           }
         ]
       }
@@ -200,14 +512,24 @@
       "section": "stSlyck straet.se1.c1",
       "street": "Slyck straet",
       "neighborhood": "varkensbuurt",
-      "unique id": 40
+      "unique id": 41
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
-        10119
+        10119,
+        30876
       ]
-    }
+    },
+    "friends": [
+      10119,
+      13118,
+      25224,
+      29181
+    ],
+    "enemies": [
+      21038
+    ]
   }
 }

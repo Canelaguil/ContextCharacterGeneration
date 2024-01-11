@@ -1,19 +1,19 @@
 {
   "12337": {
     "alive": false,
-    "name": "Hardenbernus",
-    "surname": "Fierenblayse",
-    "full name": "Hardenbernus Fierenblayse",
+    "name": "Bollarde",
+    "surname": "",
+    "full name": "Bollarde",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.004,
-      "romantic interest": 0.548,
-      "sex interest": 0.543,
-      "gender expression": 0.15,
+      "sexuality": 0.0,
+      "romantic interest": 0.539,
+      "sex interest": 0.672,
+      "gender expression": 0.199,
       "sex": "m"
     },
-    "age": 34,
-    "birth year": 1168,
+    "age": 56,
+    "birth year": 1156,
     "sex": "m",
     "faction": "No religion",
     "income class": [
@@ -21,13 +21,15 @@
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.209,
-      "nice-nasty": 0.048,
-      "honest-false": 0.041
+      "lawful-chaotic": 0.397,
+      "nice-nasty": 0.469,
+      "honest-false": 0.64,
+      "dream": 0.668,
+      "outgoing": 0.21
     },
     "attitude": {
-      "outgoing": 0.229,
-      "dream": 0.311
+      "dream": 0.668,
+      "outgoing": 0.21
     },
     "homsoc": {
       "means": {
@@ -38,16 +40,36 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.002,
-        "gender expression expression": 0.061
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.133
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "16414": {
+          "key": 16414,
+          "name": "Michiel",
+          "age": 48,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Imsoete (12338)",
+            "father": "Bollarde (12337)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           12339
+        ],
+        "child": {
+          "birth": [
+            16415
+          ]
+        },
+        "unrelated": [
+          34112
         ]
       }
     },
@@ -57,28 +79,38 @@
         3,
         "upper middle class"
       ],
-      "income": 1.104,
+      "income": 1.5490000000000002,
       "all_incomes": [
-        1.067,
-        1.044,
-        1.104
+        0.908,
+        0.896,
+        0.993,
+        1.18,
+        1.24,
+        1.325,
+        1.345,
+        1.455,
+        1.518,
+        1.5490000000000002,
+        1.5490000000000002,
+        1.5490000000000002,
+        1.5490000000000002
       ],
       "job": {
         "lawful": true,
-        "honest": false
+        "honest": true
       }
     },
     "genetics": {
-      "skin_color": 2,
+      "skin_color": 0,
       "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
-        "C",
+        "S",
         "C"
       ],
-      "health": 0.849,
-      "fertility": 0.855,
+      "health": 0.0,
+      "fertility": 0.722,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -90,17 +122,61 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.849
+            "new_health": 0.694
           },
           "death": false
+        },
+        "1207": {
+          "health": {
+            "change": true,
+            "value_change": -0.228,
+            "new_health": 0.466
+          },
+          "death": false
+        },
+        "1208": {
+          "health": {
+            "change": true,
+            "value_change": -0.356,
+            "new_health": 0.11
+          },
+          "death": false
+        },
+        "1209": {
+          "health": {
+            "change": true,
+            "value_change": -0.094,
+            "new_health": 0.016
+          },
+          "death": false
+        },
+        "1210": {
+          "health": {
+            "change": true,
+            "value_change": -0.015,
+            "new_health": 0.001
+          },
+          "death": false
+        },
+        "1211": {
+          "health": {
+            "change": true,
+            "value_change": -0.001,
+            "new_health": 0.0
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
           {
+            "topic": "birth",
+            "year": 1156
+          },
+          {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.067
+            "income": 0.908
           },
           {
             "topic": "new relationship",
@@ -110,44 +186,87 @@
               12338
             ],
             "people names": [
-              "Hardenbernus Fierenblayse",
-              "Walburgis Wilde"
+              "Bollarde",
+              "Imsoete"
             ],
             "people ages": [
-              32,
+              44,
               18
             ],
             "label": "spouse",
             "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stMuurhuysen2.se7.c3",
-              "street": "Muurhuysen2",
-              "neighborhood": "cingelnoord",
-              "unique id": 820
-            }
-          },
-          {
-            "topic": "feelings change",
-            "target": 12338,
-            "target name": "Walburgis Wilde",
-            "state": "solid love",
-            "relationship": 12339
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "topic": "new relationship",
+            "key": 16415,
+            "people": [
+              12337,
+              16414
+            ],
+            "people names": [
+              "Bollarde",
+              "Michiel"
+            ],
+            "people ages": [
+              46,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1202": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.18
           },
           {
+            "key": 12339,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12338,
+              "name": "Imsoete",
+              "age": 21,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "childbirth",
+            "friendship label": "friend",
+            "label": "spouse",
+            "love state": "loveless"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "new relationship",
+            "key": 34112,
+            "people": [
+              10834,
+              12337
+            ],
+            "people names": [
+              "Wolbrand Blaubloeme",
+              "Bollarde"
+            ],
+            "people ages": [
+              43,
+              55
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1211": [
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "sickness"
           }
         ]
       }
@@ -156,17 +275,22 @@
     "home": {
       "income class": 3,
       "income class label": "upper middle class",
-      "section": "stMuurhuysen2.se7.c3",
+      "section": "stMuurhuysen2.se5.c3",
       "street": "Muurhuysen2",
       "neighborhood": "cingelnoord",
-      "unique id": 820
+      "unique id": 815
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         12339
       ]
-    }
+    },
+    "friends": [
+      12339,
+      34112
+    ],
+    "enemies": []
   }
 }

@@ -1,53 +1,87 @@
 {
   "12610": {
     "alive": false,
-    "name": "Piak",
-    "surname": "Dicbir",
-    "full name": "Piak Dicbir",
+    "name": "Hardenbernus",
+    "surname": "Coc",
+    "full name": "Hardenbernus Coc",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.137,
-      "romantic interest": 0.535,
-      "sex interest": 0.61,
-      "gender expression": 0.139,
+      "sexuality": 0.035,
+      "romantic interest": 0.491,
+      "sex interest": 0.903,
+      "gender expression": 0.068,
       "sex": "m"
     },
-    "age": 51,
-    "birth year": 1151,
+    "age": 46,
+    "birth year": 1159,
     "sex": "m",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
       3,
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.293,
-      "nice-nasty": 0.314,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.463,
+      "nice-nasty": 0.262,
+      "honest-false": 0.061,
+      "dream": 0.436,
+      "outgoing": 0.382
     },
     "attitude": {
-      "outgoing": 0.872,
-      "dream": 0.653
+      "dream": 0.436,
+      "outgoing": 0.382
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.089,
-        "gender expression expression": 0.071
+        "sexuality expression": 0.015,
+        "gender expression expression": 0.042
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13687": {
+          "key": 13687,
+          "name": "Ase Coc",
+          "age": 32,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Oderada (12611)",
+            "father": "Hardenbernus (12610)"
+          }
+        },
+        "17642": {
+          "key": 17642,
+          "name": "Sollen Coc",
+          "age": 13,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Oderada (12611)",
+            "father": "Hardenbernus (12610)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           12612
+        ],
+        "child": {
+          "birth": [
+            13688,
+            17643
+          ]
+        },
+        "unrelated": [
+          18560
         ]
       }
     },
@@ -57,28 +91,31 @@
         3,
         "upper middle class"
       ],
-      "income": 1.497,
+      "income": 0.7350000000000001,
       "all_incomes": [
-        1.043,
-        1.1320000000000001,
-        1.497
+        1.031,
+        0.994,
+        1.319,
+        1.1480000000000001,
+        1.06,
+        0.7350000000000001
       ],
       "job": {
-        "lawful": false,
-        "honest": true
+        "lawful": true,
+        "honest": false
       }
     },
     "genetics": {
-      "skin_color": 6,
+      "skin_color": 7,
       "eye_color": "green",
       "hair_color": "blonde",
       "hair_color_code": 4,
       "hair_type": [
-        "S",
-        "C"
+        "C",
+        "S"
       ],
-      "health": 0.501,
-      "fertility": 0.705,
+      "health": 0.679,
+      "fertility": 0.7,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -90,15 +127,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.644
+            "new_health": 0.679
           },
           "death": false
         },
-        "1201": {
+        "1204": {
           "health": {
-            "change": true,
-            "value_change": -0.143,
-            "new_health": 0.501
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.679
           },
           "death": true
         }
@@ -106,9 +143,13 @@
       "events": {
         "1200": [
           {
+            "topic": "birth",
+            "year": 1159
+          },
+          {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.043
+            "income": 1.031
           },
           {
             "topic": "new relationship",
@@ -118,44 +159,89 @@
               12611
             ],
             "people names": [
-              "Piak Dicbir",
-              "Breghlent Vrint"
+              "Hardenbernus Coc",
+              "Oderada"
             ],
             "people ages": [
-              49,
-              46
+              41,
+              33
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stCromme straet.se7.c3",
-              "street": "Cromme straet",
-              "neighborhood": "denhof",
-              "unique id": 915
-            }
-          },
-          {
-            "topic": "feelings change",
-            "target": 12611,
-            "target name": "Breghlent Vrint",
-            "state": "out of love",
-            "relationship": 12612
+            "topic": "new relationship",
+            "key": 13688,
+            "people": [
+              12610,
+              13687
+            ],
+            "people names": [
+              "Hardenbernus Coc",
+              "Ase Coc"
+            ],
+            "people ages": [
+              42,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.319
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 17643,
+            "people": [
+              12610,
+              17642
+            ],
+            "people names": [
+              "Hardenbernus Coc",
+              "Sollen Coc"
+            ],
+            "people ages": [
+              43,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "new relationship",
+            "key": 18560,
+            "people": [
+              11585,
+              12610
+            ],
+            "people names": [
+              "Gerburgis Pipe",
+              "Hardenbernus Coc"
+            ],
+            "people ages": [
+              32,
+              44
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1204": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.7350000000000001
           },
           {
             "topic": "death",
-            "cause": "old age"
+            "cause": "illness"
           }
         ]
       }
@@ -167,14 +253,21 @@
       "section": "stCromme straet.se7.c3",
       "street": "Cromme straet",
       "neighborhood": "denhof",
-      "unique id": 915
+      "unique id": 913
     },
     "relationship status": {
-      "taken": true,
+      "taken": false,
       "married": true,
       "relationships": [
         12612
       ]
-    }
+    },
+    "friends": [
+      12612,
+      13688,
+      17643,
+      18560
+    ],
+    "enemies": []
   }
 }

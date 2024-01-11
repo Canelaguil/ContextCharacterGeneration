@@ -1,33 +1,35 @@
 {
   "11003": {
     "alive": false,
-    "name": "Reynildis",
-    "surname": "Commer",
-    "full name": "Reynildis Commer",
+    "name": "Diewiven",
+    "surname": "Heurkint",
+    "full name": "Diewiven Heurkint",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.082,
-      "romantic interest": 0.675,
-      "sex interest": 0.649,
-      "gender expression": 0.04,
+      "sexuality": 0.034,
+      "romantic interest": 0.679,
+      "sex interest": 0.892,
+      "gender expression": 0.05,
       "sex": "f"
     },
-    "age": 30,
-    "birth year": 1176,
+    "age": 32,
+    "birth year": 1173,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "Zealots",
     "income class": [
-      2,
-      "middle class"
+      0,
+      "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.479,
-      "nice-nasty": 0.124,
-      "honest-false": 0.594
+      "lawful-chaotic": 0.783,
+      "nice-nasty": 0.0,
+      "honest-false": 0.22,
+      "dream": 0.463,
+      "outgoing": 0.54
     },
     "attitude": {
-      "outgoing": 0.0,
-      "dream": 0.38
+      "dream": 0.463,
+      "outgoing": 0.54
     },
     "homsoc": {
       "means": {
@@ -38,22 +40,22 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.073,
-        "gender expression expression": 0.017
+        "sexuality expression": 0.017,
+        "gender expression expression": 0.034
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "14658": {
-          "key": 14658,
-          "name": "Helyana Rissewintsdochter",
-          "age": 1,
-          "alive": false,
+        "16119": {
+          "key": 16119,
+          "name": "Hildeburgis",
+          "age": 48,
+          "alive": true,
           "sex": "f",
           "parents": {
-            "mother": "Reynildis (11003)",
-            "father": "Rissewint (11002)"
+            "mother": "Diewiven (11003)",
+            "father": "Bobone (11002)"
           }
         }
       },
@@ -63,31 +65,37 @@
         ],
         "child": {
           "birth": [
-            14660
+            16121
           ]
         }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        2,
-        "middle class"
+        0,
+        "working class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.053,
+      "all_incomes": [
+        1.053
+      ],
+      "job": {
+        "lawful": true,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 3,
-      "eye_color": "brown",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "skin_color": 2,
+      "eye_color": "green",
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
         "S",
-        "C"
+        "S"
       ],
-      "health": 0.673,
-      "fertility": 0.604,
+      "health": 0.709,
+      "fertility": 0.74,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -99,21 +107,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.673
+            "new_health": 0.709
           },
           "death": false
         },
-        "1205": {
+        "1204": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.673
+            "new_health": 0.709
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1173
+          },
           {
             "topic": "new relationship",
             "key": 11004,
@@ -122,74 +134,52 @@
               11003
             ],
             "people names": [
-              "Rissewint",
-              "Reynildis Commer"
+              "Bobone",
+              "Diewiven Heurkint"
             ],
             "people ages": [
-              39,
-              24
+              42,
+              27
             ],
             "label": "spouse",
             "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stDie Camp.se1.c2",
-              "street": "Die Camp",
-              "neighborhood": "kampbuurt",
-              "unique id": 354
-            }
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          }
-        ],
-        "1202": [
-          {
             "topic": "new relationship",
-            "key": 14660,
+            "key": 16121,
             "people": [
               11003,
-              14658
+              16119
             ],
             "people names": [
-              "Reynildis Commer",
-              "Helyana Rissewintsdochter"
+              "Diewiven Heurkint",
+              "Hildeburgis"
             ],
             "people ages": [
-              26,
+              29,
               0
             ],
             "label": "parentchild",
             "committed": false
           }
         ],
-        "1203": [
+        "1202": [
           {
-            "topic": "person died",
-            "person": {
-              "key": 14658,
-              "name": "Helyana Rissewintsdochter",
-              "age": 1,
-              "alive": false,
-              "sex": "f",
-              "parents": {
-                "mother": "Reynildis (11003)",
-                "father": "Rissewint (11002)"
-              }
-            },
-            "cause": "childhood illness",
-            "label": "child"
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "disliked",
+            "relationship": 16121
           }
         ],
-        "1205": [
+        "1204": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.053
+          },
           {
             "topic": "death",
             "cause": "illness"
@@ -199,12 +189,12 @@
     },
     "key": 11003,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stDie Camp.se1.c2",
-      "street": "Die Camp",
+      "income class": 0,
+      "income class label": "working class",
+      "section": "stPotstraet.se3.c0",
+      "street": "Potstraet",
       "neighborhood": "kampbuurt",
-      "unique id": 354
+      "unique id": 347
     },
     "relationship status": {
       "taken": true,
@@ -212,6 +202,12 @@
       "relationships": [
         11004
       ]
-    }
+    },
+    "friends": [
+      11004
+    ],
+    "enemies": [
+      16121
+    ]
   }
 }

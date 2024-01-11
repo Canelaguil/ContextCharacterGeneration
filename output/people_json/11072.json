@@ -1,33 +1,35 @@
 {
   "11072": {
     "alive": false,
-    "name": "Aghete",
-    "surname": "Hoesterlinc",
-    "full name": "Aghete Hoesterlinc",
+    "name": "Mette",
+    "surname": "Bonghe",
+    "full name": "Mette Bonghe",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.909,
-      "sex interest": 0.537,
-      "gender expression": 0.008,
+      "sexuality": 0.117,
+      "romantic interest": 0.784,
+      "sex interest": 0.816,
+      "gender expression": 0.153,
       "sex": "f"
     },
-    "age": 37,
-    "birth year": 1169,
+    "age": 33,
+    "birth year": 1175,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "Dogmatists",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.764,
-      "nice-nasty": 0.713,
-      "honest-false": 0.383
+      "lawful-chaotic": 0.51,
+      "nice-nasty": 0.593,
+      "honest-false": 0.951,
+      "dream": 0.463,
+      "outgoing": 0.528
     },
     "attitude": {
-      "outgoing": 0.375,
-      "dream": 0.155
+      "dream": 0.463,
+      "outgoing": 0.528
     },
     "homsoc": {
       "means": {
@@ -35,42 +37,106 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.001
+        "sexuality expression": 0.059,
+        "gender expression expression": 0.09
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "15418": {
+          "key": 15418,
+          "name": "Truden Ruffo",
+          "age": 3,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Mette (11072)",
+            "father": "Grote (11071)"
+          }
+        },
+        "17263": {
+          "key": 17263,
+          "name": "Alebrando Ruffo",
+          "age": 5,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Mette (11072)",
+            "father": "Grote (11071)"
+          }
+        },
+        "19519": {
+          "key": 19519,
+          "name": "Michiel Ruffo",
+          "age": 46,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Mette (11072)",
+            "father": "Grote (11071)"
+          }
+        },
+        "25425": {
+          "key": 25425,
+          "name": "Wlfarde Ruffo",
+          "age": 43,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Mette (11072)",
+            "father": "Grote (11071)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11073
-        ]
+        ],
+        "child": {
+          "birth": [
+            15420,
+            17265,
+            19521,
+            25427
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.8140000000000001,
+      "all_incomes": [
+        0.998,
+        1.091,
+        0.871,
+        0.8140000000000001
+      ],
+      "job": {
+        "lawful": false,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 0,
+      "skin_color": 8,
       "eye_color": "green",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
         "S",
         "S"
       ],
-      "health": 0.72,
-      "fertility": 0.744,
+      "health": 0.686,
+      "fertility": 0.677,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -82,21 +148,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.72
+            "new_health": 0.686
           },
           "death": false
         },
-        "1205": {
+        "1207": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.72
+            "new_health": 0.686
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1175
+          },
           {
             "topic": "new relationship",
             "key": 11073,
@@ -105,43 +175,154 @@
               11072
             ],
             "people names": [
-              "Alem Steenard",
-              "Aghete Hoesterlinc"
+              "Grote Ruffo",
+              "Mette Bonghe"
             ],
             "people ages": [
-              39,
-              31
+              27,
+              25
             ],
             "label": "spouse",
             "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stDie Camp.se3.c2",
-              "street": "Die Camp",
-              "neighborhood": "kampbuurt",
-              "unique id": 377
-            }
-          },
-          {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "spouse",
-            "friendship label": "indifferent",
-            "relationship": 11073
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "topic": "new relationship",
+            "key": 15420,
+            "people": [
+              11072,
+              15418
+            ],
+            "people names": [
+              "Mette Bonghe",
+              "Truden Ruffo"
+            ],
+            "people ages": [
+              26,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 11071,
+            "target name": "Grote Ruffo",
+            "state": "out of love",
+            "friendship label": "friend",
+            "relationship": 11073
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 17265,
+            "people": [
+              11072,
+              17263
+            ],
+            "people names": [
+              "Mette Bonghe",
+              "Alebrando Ruffo"
+            ],
+            "people ages": [
+              27,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1203": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 15420
+          },
+          {
+            "topic": "new relationship",
+            "key": 19521,
+            "people": [
+              11072,
+              19519
+            ],
+            "people names": [
+              "Mette Bonghe",
+              "Michiel Ruffo"
+            ],
+            "people ages": [
+              29,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.254,
+            "inhabitants": []
+          }
+        ],
+        "1204": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.998
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 15418,
+              "name": "Truden Ruffo",
+              "age": 3,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Mette (11072)",
+                "father": "Grote (11071)"
+              }
+            },
+            "cause": "childhood illness",
+            "friendship label": "indifferent",
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.238,
+            "inhabitants": []
           }
         ],
         "1205": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.091
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 25427,
+            "people": [
+              11072,
+              25425
+            ],
+            "people names": [
+              "Mette Bonghe",
+              "Wlfarde Ruffo"
+            ],
+            "people ages": [
+              31,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1207": [
           {
             "topic": "death",
             "cause": "illness"
@@ -156,7 +337,7 @@
       "section": "stDie Camp.se3.c2",
       "street": "Die Camp",
       "neighborhood": "kampbuurt",
-      "unique id": 377
+      "unique id": 370
     },
     "relationship status": {
       "taken": true,
@@ -164,6 +345,12 @@
       "relationships": [
         11073
       ]
-    }
+    },
+    "friends": [
+      11073,
+      17265,
+      19521
+    ],
+    "enemies": []
   }
 }

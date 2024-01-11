@@ -1,33 +1,35 @@
 {
   "10891": {
     "alive": false,
-    "name": "Folkero",
-    "surname": "Ome",
-    "full name": "Folkero Ome",
+    "name": "Ulrici",
+    "surname": "",
+    "full name": "Ulrici",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.046,
-      "romantic interest": 0.709,
-      "sex interest": 0.999,
-      "gender expression": 0.14,
+      "sexuality": 0.116,
+      "romantic interest": 0.836,
+      "sex interest": 0.766,
+      "gender expression": 0.115,
       "sex": "m"
     },
-    "age": 49,
-    "birth year": 1154,
+    "age": 55,
+    "birth year": 1151,
     "sex": "m",
     "faction": "No religion",
     "income class": [
-      2,
-      "middle class"
+      3,
+      "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.748,
-      "nice-nasty": 0.895,
-      "honest-false": 0.44
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.546,
+      "honest-false": 0.61,
+      "dream": 0.198,
+      "outgoing": 0.483
     },
     "attitude": {
-      "outgoing": 0.303,
-      "dream": 0.15
+      "dream": 0.198,
+      "outgoing": 0.483
     },
     "homsoc": {
       "means": {
@@ -38,8 +40,8 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.021,
-        "gender expression expression": 0.104
+        "sexuality expression": 0.064,
+        "gender expression expression": 0.057
       }
     },
     "network": {
@@ -48,38 +50,44 @@
       "relationship keys": {
         "spouse": [
           10893
+        ],
+        "unrelated": [
+          18576
         ]
       }
     },
     "occupation": {
       "has job": true,
       "income class": [
-        2,
-        "middle class"
+        3,
+        "upper middle class"
       ],
-      "income": 0.8210000000000001,
+      "income": 1.272,
       "all_incomes": [
-        1.158,
-        1.22,
-        0.922,
-        0.8210000000000001
+        1.007,
+        1.046,
+        1.068,
+        1.1360000000000001,
+        1.2,
+        1.25,
+        1.272
       ],
       "job": {
         "lawful": true,
-        "honest": false
+        "honest": true
       }
     },
     "genetics": {
-      "skin_color": 0,
+      "skin_color": 2,
       "eye_color": "brown",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
       "hair_type": [
         "C",
-        "S"
+        "C"
       ],
-      "health": 0.664,
-      "fertility": 0.7,
+      "health": 0.0,
+      "fertility": 0.898,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -91,15 +99,47 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.664
+            "new_health": 0.815
+          },
+          "death": false
+        },
+        "1201": {
+          "health": {
+            "change": true,
+            "value_change": -0.152,
+            "new_health": 0.663
           },
           "death": false
         },
         "1202": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.664
+            "change": true,
+            "value_change": -0.224,
+            "new_health": 0.439
+          },
+          "death": false
+        },
+        "1203": {
+          "health": {
+            "change": true,
+            "value_change": -0.236,
+            "new_health": 0.203
+          },
+          "death": false
+        },
+        "1204": {
+          "health": {
+            "change": true,
+            "value_change": -0.129,
+            "new_health": 0.074
+          },
+          "death": false
+        },
+        "1205": {
+          "health": {
+            "change": true,
+            "value_change": -0.074,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -107,9 +147,13 @@
       "events": {
         "1200": [
           {
+            "topic": "birth",
+            "year": 1151
+          },
+          {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.158
+            "income": 1.007
           },
           {
             "topic": "new relationship",
@@ -119,58 +163,72 @@
               10892
             ],
             "people names": [
-              "Folkero Ome",
-              "Agnes Omekine"
+              "Ulrici",
+              "Scilla"
             ],
             "people ages": [
-              46,
-              37
+              49,
+              46
             ],
             "label": "spouse",
             "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stCingel.se5.c2",
-              "street": "Cingel",
-              "neighborhood": "agnesbuurt",
-              "unique id": 316
-            }
-          }
-        ],
-        "1201": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
           }
         ],
         "1202": [
           {
+            "topic": "feelings change",
+            "target": 10892,
+            "target name": "Scilla",
+            "state": "out of love",
+            "friendship label": "indifferent",
+            "relationship": 10893
+          },
+          {
+            "topic": "new relationship",
+            "key": 18576,
+            "people": [
+              10754,
+              10891
+            ],
+            "people names": [
+              "Agota Colsebyle",
+              "Ulrici"
+            ],
+            "people ages": [
+              40,
+              52
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1205": [
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "sickness"
           }
         ]
       }
     },
     "key": 10891,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stCingel.se5.c2",
+      "income class": 3,
+      "income class label": "upper middle class",
+      "section": "stCingel.se3.c3",
       "street": "Cingel",
       "neighborhood": "agnesbuurt",
-      "unique id": 316
+      "unique id": 309
     },
     "relationship status": {
-      "taken": true,
+      "taken": false,
       "married": true,
       "relationships": [
         10893
       ]
-    }
+    },
+    "friends": [
+      18576
+    ],
+    "enemies": []
   }
 }

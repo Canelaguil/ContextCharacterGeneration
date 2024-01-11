@@ -1,19 +1,19 @@
 {
   "10099": {
     "alive": false,
-    "name": "Godino",
-    "surname": "",
-    "full name": "Godino",
+    "name": "Gerart",
+    "surname": "Pryckert",
+    "full name": "Gerart Pryckert",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.006,
-      "romantic interest": 0.739,
-      "sex interest": 0.531,
-      "gender expression": 0.138,
+      "sexuality": 0.11,
+      "romantic interest": 0.79,
+      "sex interest": 0.738,
+      "gender expression": 0.023,
       "sex": "m"
     },
-    "age": 38,
-    "birth year": 1163,
+    "age": 41,
+    "birth year": 1169,
     "sex": "m",
     "faction": "Zealots",
     "income class": [
@@ -21,31 +21,92 @@
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.055,
-      "nice-nasty": 0.177,
-      "honest-false": 0.358
+      "lawful-chaotic": 0.557,
+      "nice-nasty": 0.874,
+      "honest-false": 0.188,
+      "dream": 0.298,
+      "outgoing": 0.999
     },
     "attitude": {
-      "outgoing": 0.476,
-      "dream": 0.534
+      "dream": 0.298,
+      "outgoing": 0.999
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.003,
-        "gender expression expression": 0.037
+        "sexuality expression": 0.056,
+        "gender expression expression": 0.014
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
-      "relationship keys": {}
+      "children": {
+        "14341": {
+          "key": 14341,
+          "name": "Vastraid Pryckert",
+          "age": 30,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Aleberna (10100)",
+            "father": "Gerart (10099)"
+          }
+        },
+        "16359": {
+          "key": 16359,
+          "name": "Hille Pryckert",
+          "age": 24,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Aleberna (10100)",
+            "father": "Gerart (10099)"
+          }
+        },
+        "17604": {
+          "key": 17604,
+          "name": "Alwar Pryckert",
+          "age": 30,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Aleberna (10100)",
+            "father": "Gerart (10099)"
+          }
+        },
+        "23061": {
+          "key": 23061,
+          "name": "Liudburgis Pryckert",
+          "age": 1,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Aleberna (10100)",
+            "father": "Gerart (10099)"
+          }
+        }
+      },
+      "relationship keys": {
+        "spouse": [
+          10101
+        ],
+        "child": {
+          "birth": [
+            14342,
+            16360,
+            17605,
+            23062
+          ]
+        }
+      }
     },
     "occupation": {
       "has job": true,
@@ -53,10 +114,19 @@
         2,
         "middle class"
       ],
-      "income": 1.524,
+      "income": 0.025,
       "all_incomes": [
-        1.189,
-        1.524
+        0.673,
+        1.244,
+        0.768,
+        0.177,
+        0.44,
+        0.517,
+        0.34600000000000003,
+        0.245,
+        0.025,
+        0.16699999999999998,
+        0.025
       ],
       "job": {
         "lawful": false,
@@ -66,14 +136,14 @@
     "genetics": {
       "skin_color": 5,
       "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
-        "C",
+        "S",
         "S"
       ],
-      "health": 0.447,
-      "fertility": 0.445,
+      "health": 0.611,
+      "fertility": 0.789,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -83,9 +153,25 @@
       "health": {
         "1200": {
           "health": {
+            "change": true,
+            "value_change": -0.151,
+            "new_health": 0.611
+          },
+          "death": false
+        },
+        "1201": {
+          "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.447
+            "new_health": 0.611
+          },
+          "death": false
+        },
+        "1209": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.611
           },
           "death": true
         }
@@ -93,10 +179,204 @@
       "events": {
         "1200": [
           {
+            "topic": "birth",
+            "year": 1169
+          },
+          {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.189
+            "income": 0.673
           },
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.244
+          },
+          {
+            "topic": "new relationship",
+            "key": 10101,
+            "people": [
+              10099,
+              10100
+            ],
+            "people names": [
+              "Gerart Pryckert",
+              "Aleberna Battenman"
+            ],
+            "people ages": [
+              31,
+              30
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new relationship",
+            "key": 14342,
+            "people": [
+              10099,
+              14341
+            ],
+            "people names": [
+              "Gerart Pryckert",
+              "Vastraid Pryckert"
+            ],
+            "people ages": [
+              31,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 16360,
+            "people": [
+              10099,
+              16359
+            ],
+            "people names": [
+              "Gerart Pryckert",
+              "Hille Pryckert"
+            ],
+            "people ages": [
+              32,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1202": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.177
+          },
+          {
+            "topic": "new relationship",
+            "key": 17605,
+            "people": [
+              10099,
+              17604
+            ],
+            "people names": [
+              "Gerart Pryckert",
+              "Alwar Pryckert"
+            ],
+            "people ages": [
+              34,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.177,
+            "inhabitants": []
+          }
+        ],
+        "1204": [
+          {
+            "topic": "feelings change",
+            "target": 10100,
+            "target name": "Aleberna Battenman",
+            "state": "solid love",
+            "friendship label": "friend",
+            "relationship": 10101
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 16360
+          }
+        ],
+        "1205": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.34600000000000003
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "indifferent",
+            "relationship": 10101
+          },
+          {
+            "topic": "new relationship",
+            "key": 23062,
+            "people": [
+              10099,
+              23061
+            ],
+            "people names": [
+              "Gerart Pryckert",
+              "Liudburgis Pryckert"
+            ],
+            "people ages": [
+              36,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 10100,
+            "target name": "Aleberna Battenman",
+            "state": "out of love",
+            "friendship label": "indifferent",
+            "relationship": 10101
+          }
+        ],
+        "1206": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.245
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 23061,
+              "name": "Liudburgis Pryckert",
+              "age": 1,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Aleberna (10100)",
+                "father": "Gerart (10099)"
+              }
+            },
+            "cause": "childbirth",
+            "friendship label": "good friend",
+            "label": "child"
+          },
+          {
+            "topic": "personality change",
+            "change": true,
+            "trait": "lawful-chaotic",
+            "trigger": "grief",
+            "mod": 0.047
+          }
+        ],
+        "1207": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "indifferent",
+            "relationship": 10101
+          }
+        ],
+        "1209": [
           {
             "topic": "death",
             "cause": "illness"
@@ -111,12 +391,19 @@
       "section": "stVerckens merct.se5.c2",
       "street": "Verckens merct",
       "neighborhood": "varkensbuurt",
-      "unique id": 34
+      "unique id": 35
     },
     "relationship status": {
       "taken": true,
       "married": true,
-      "relationships": []
-    }
+      "relationships": [
+        10101
+      ]
+    },
+    "friends": [
+      16360,
+      23062
+    ],
+    "enemies": []
   }
 }

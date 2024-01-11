@@ -1,33 +1,35 @@
 {
   "10723": {
     "alive": false,
-    "name": "Bobone",
-    "surname": "Sloet",
-    "full name": "Bobone Sloet",
+    "name": "Gherolf",
+    "surname": "Brune",
+    "full name": "Gherolf Brune",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.922,
-      "romantic interest": 0.845,
-      "sex interest": 0.999,
-      "gender expression": 0.413,
+      "sexuality label": "straight",
+      "sexuality": 0.04,
+      "romantic interest": 0.604,
+      "sex interest": 0.808,
+      "gender expression": 0.083,
       "sex": "m"
     },
-    "age": 50,
-    "birth year": 1155,
+    "age": 30,
+    "birth year": 1179,
     "sex": "m",
-    "faction": "Zealots",
+    "faction": "Dogmatists",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.502,
-      "nice-nasty": 0.0,
-      "honest-false": 0.0
+      "lawful-chaotic": 0.002,
+      "nice-nasty": 0.864,
+      "honest-false": 0.502,
+      "dream": 0.732,
+      "outgoing": 0.426
     },
     "attitude": {
-      "outgoing": 0.366,
-      "dream": 0.604
+      "dream": 0.732,
+      "outgoing": 0.426
     },
     "homsoc": {
       "means": {
@@ -40,16 +42,36 @@
         ]
       },
       "expression": {
-        "sexuality expression": 0.637,
-        "gender expression expression": 0.145
+        "sexuality expression": 0.022,
+        "gender expression expression": 0.045
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14431": {
+          "key": 14431,
+          "name": "Snellard",
+          "age": 23,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Hilduardis (10724)",
+            "father": "Gherolf (10723)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10725
+        ],
+        "child": {
+          "birth": [
+            14432
+          ]
+        },
+        "unrelated": [
+          16512
         ]
       }
     },
@@ -59,31 +81,35 @@
         1,
         "lower middle class"
       ],
-      "income": 0.0,
+      "income": 0.297,
       "all_incomes": [
-        0.815,
-        0.674,
-        0.285,
-        0.09,
         0.0,
-        0.0
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.011,
+        0.111,
+        0.297
       ],
       "job": {
-        "lawful": true,
+        "lawful": false,
         "honest": false
       }
     },
     "genetics": {
-      "skin_color": 9,
-      "eye_color": "blue",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "skin_color": 2,
+      "eye_color": "green",
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
       "hair_type": [
-        "C",
+        "S",
         "S"
       ],
-      "health": 0.761,
-      "fertility": 0.78,
+      "health": 0.654,
+      "fertility": 0.673,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -95,15 +121,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.761
+            "new_health": 0.654
           },
           "death": false
         },
-        "1204": {
+        "1208": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.761
+            "new_health": 0.654
           },
           "death": true
         }
@@ -111,14 +137,13 @@
       "events": {
         "1200": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.815
+            "topic": "birth",
+            "year": 1179
           },
           {
             "topic": "job notice",
-            "notice": "low income",
-            "income": 0.674
+            "notice": "found job",
+            "income": 0.0
           },
           {
             "topic": "new relationship",
@@ -128,61 +153,96 @@
               10724
             ],
             "people names": [
-              "Bobone Sloet",
-              "Aghata Junghe"
+              "Gherolf Brune",
+              "Hilduardis"
             ],
             "people ages": [
-              45,
-              42
+              21,
+              18
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stWaale straet.se3.c1",
-              "street": "Waale straet",
-              "neighborhood": "agnesbuurt",
-              "unique id": 253
-            }
+            "topic": "new relationship",
+            "key": 14432,
+            "people": [
+              10723,
+              14431
+            ],
+            "people names": [
+              "Gherolf Brune",
+              "Snellard"
+            ],
+            "people ages": [
+              22,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          },
-          {
-            "topic": "job notice",
-            "notice": "earning very little",
-            "income": 0.285
+            "topic": "new relationship",
+            "key": 16512,
+            "people": [
+              10723,
+              11282
+            ],
+            "people names": [
+              "Gherolf Brune",
+              "Nellen Coluen"
+            ],
+            "people ages": [
+              23,
+              21
+            ],
+            "label": "unrelated",
+            "committed": false
           },
           {
             "topic": "not enough income",
-            "income": 0.285,
+            "income": 0.0,
             "inhabitants": []
           }
         ],
         "1202": [
           {
-            "topic": "job notice",
-            "notice": "hardly any income",
-            "income": 0.09
-          },
-          {
             "topic": "feelings change",
             "target": 10724,
-            "target name": "Aghata Junghe",
+            "target name": "Hilduardis",
             "state": "solid love",
+            "friendship label": "friend",
             "relationship": 10725
           },
           {
+            "key": 10725,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10724,
+              "name": "Hilduardis",
+              "age": 21,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "starvation",
+            "friendship label": "friend",
+            "label": "spouse",
+            "love state": "solid love"
+          },
+          {
             "topic": "not enough income",
-            "income": 0.09,
+            "income": 0.0,
             "inhabitants": []
           }
         ],
@@ -195,8 +255,36 @@
         ],
         "1204": [
           {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0.011,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0.111,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "starvation"
           }
         ]
       }
@@ -208,14 +296,19 @@
       "section": "stWaale straet.se3.c1",
       "street": "Waale straet",
       "neighborhood": "agnesbuurt",
-      "unique id": 253
+      "unique id": 252
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         10725
       ]
-    }
+    },
+    "friends": [
+      10725,
+      16512
+    ],
+    "enemies": []
   }
 }

@@ -1,19 +1,19 @@
 {
   "11633": {
     "alive": false,
-    "name": "Ermerut",
-    "surname": "Coquus",
-    "full name": "Ermerut Coquus",
+    "name": "Helyana",
+    "surname": "Lettele",
+    "full name": "Helyana Lettele",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.938,
-      "romantic interest": 0.428,
-      "sex interest": 0.635,
-      "gender expression": 0.203,
+      "sexuality label": "straight",
+      "sexuality": 0.137,
+      "romantic interest": 0.695,
+      "sex interest": 0.885,
+      "gender expression": 0.12,
       "sex": "f"
     },
-    "age": 34,
-    "birth year": 1168,
+    "age": 53,
+    "birth year": 1166,
     "sex": "f",
     "faction": "Zealots",
     "income class": [
@@ -21,63 +21,82 @@
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.205,
-      "nice-nasty": 0.208,
-      "honest-false": 0.497
+      "lawful-chaotic": 0.014,
+      "nice-nasty": 0.318,
+      "honest-false": 0.963,
+      "dream": 0.765,
+      "outgoing": 0.852
     },
     "attitude": {
-      "outgoing": 0.535,
-      "dream": 0.48
+      "dream": 0.765,
+      "outgoing": 0.852
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.4,
-        "gender expression expression": 0.09
+        "sexuality expression": 0.102,
+        "gender expression expression": 0.063
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13300": {
+          "key": 13300,
+          "name": "Itsburgis Juvene",
+          "age": 5,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Helyana (11633)",
+            "father": "Euerocker (11632)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11634
+        ],
+        "child": {
+          "birth": [
+            13302
+          ]
+        },
+        "unrelated": [
+          20774,
+          27117,
+          38174
         ]
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
         3,
         "upper middle class"
       ],
-      "income": 0.765,
-      "all_incomes": [
-        0.948,
-        0.765
-      ],
-      "job": {
-        "lawful": false,
-        "honest": true
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
       "skin_color": 6,
-      "eye_color": "brown",
+      "eye_color": "green",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
         "C",
-        "S"
+        "C"
       ],
-      "health": 0.765,
-      "fertility": 0.755,
+      "health": 0.184,
+      "fertility": 0.768,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -89,15 +108,31 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.765
+            "new_health": 0.783
           },
           "death": false
         },
-        "1201": {
+        "1216": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.765
+            "change": true,
+            "value_change": -0.179,
+            "new_health": 0.604
+          },
+          "death": false
+        },
+        "1217": {
+          "health": {
+            "change": true,
+            "value_change": -0.25,
+            "new_health": 0.354
+          },
+          "death": false
+        },
+        "1218": {
+          "health": {
+            "change": true,
+            "value_change": -0.17,
+            "new_health": 0.184
           },
           "death": true
         }
@@ -105,9 +140,8 @@
       "events": {
         "1200": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.948
+            "topic": "birth",
+            "year": 1166
           },
           {
             "topic": "new relationship",
@@ -117,37 +151,307 @@
               11633
             ],
             "people names": [
-              "Grote",
-              "Ermerut Coquus"
+              "Euerocker Juvene",
+              "Helyana Lettele"
             ],
             "people ages": [
               38,
-              32
+              34
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stBreestraat.se7.c3",
-              "street": "Breestraat",
-              "neighborhood": "olvbuurt",
-              "unique id": 576
-            }
+            "topic": "new relationship",
+            "key": 13302,
+            "people": [
+              11633,
+              13300
+            ],
+            "people names": [
+              "Helyana Lettele",
+              "Itsburgis Juvene"
+            ],
+            "people ages": [
+              35,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 13302
           },
           {
+            "key": 11634,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11632,
+              "name": "Euerocker Juvene",
+              "age": 40,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "friendship label": "good friend",
+            "label": "spouse",
+            "love state": "solid love"
+          }
+        ],
+        "1202": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1203": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 13302
+          },
+          {
+            "topic": "new relationship",
+            "key": 20774,
+            "people": [
+              11633,
+              11401
+            ],
+            "people names": [
+              "Helyana Lettele",
+              "Robbrecht Zalm"
+            ],
+            "people ages": [
+              38,
+              25
+            ],
+            "label": "unrelated",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1204": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 13300,
+              "name": "Itsburgis Juvene",
+              "age": 5,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Helyana (11633)",
+                "father": "Euerocker (11632)"
+              }
+            },
+            "cause": "starvation",
+            "friendship label": "indifferent",
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 27117,
+            "people": [
+              10763,
+              11633
+            ],
+            "people names": [
+              "Esa Cnijf",
+              "Helyana Lettele"
+            ],
+            "people ages": [
+              26,
+              41
+            ],
+            "label": "unrelated",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10763,
+              "name": "Esa Cnijf",
+              "age": 27,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "childbirth",
+            "friendship label": "indifferent",
+            "label": "unrelated",
+            "love state": "nothing"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11401,
+              "name": "Robbrecht Zalm",
+              "age": 30,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "starvation",
+            "friendship label": "indifferent",
+            "label": "unrelated",
+            "love state": "nothing"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
+          {
+            "topic": "new relationship",
+            "key": 38174,
+            "people": [
+              11303,
+              11633
+            ],
+            "people names": [
+              "Amelgeir Canis",
+              "Helyana Lettele"
+            ],
+            "people ages": [
+              36,
+              48
+            ],
+            "label": "unrelated",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1214": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11303,
+              "name": "Amelgeir Canis",
+              "age": 37,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "friendship label": "friend",
+            "label": "unrelated",
+            "love state": "nothing"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1216": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1217": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1218": [
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "old age"
           }
         ]
       }
@@ -156,17 +460,22 @@
     "home": {
       "income class": 3,
       "income class label": "upper middle class",
-      "section": "stBreestraat.se7.c3",
+      "section": "stBreestraat.se3.c3",
       "street": "Breestraat",
       "neighborhood": "olvbuurt",
-      "unique id": 576
+      "unique id": 564
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         11634
       ]
-    }
+    },
+    "friends": [
+      11634,
+      38174
+    ],
+    "enemies": []
   }
 }

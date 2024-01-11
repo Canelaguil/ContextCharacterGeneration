@@ -1,19 +1,19 @@
 {
   "11993": {
     "alive": false,
-    "name": "Suaneka",
-    "surname": "Scakart",
-    "full name": "Suaneka Scakart",
+    "name": "Goneir",
+    "surname": "",
+    "full name": "Goneir",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.046,
-      "romantic interest": 0.894,
-      "sex interest": 0.688,
-      "gender expression": 0.368,
+      "sexuality": 0.107,
+      "romantic interest": 0.434,
+      "sex interest": 0.634,
+      "gender expression": 0.084,
       "sex": "f"
     },
-    "age": 28,
-    "birth year": 1178,
+    "age": 54,
+    "birth year": 1155,
     "sex": "f",
     "faction": "No religion",
     "income class": [
@@ -21,13 +21,15 @@
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.651,
-      "nice-nasty": 0.71,
-      "honest-false": 0.0
+      "lawful-chaotic": 0.0,
+      "nice-nasty": 0.097,
+      "honest-false": 0.624,
+      "dream": 0.6,
+      "outgoing": 0.705
     },
     "attitude": {
-      "outgoing": 0.39,
-      "dream": 0.632
+      "dream": 0.6,
+      "outgoing": 0.705
     },
     "homsoc": {
       "means": {
@@ -35,61 +37,38 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.023,
-        "gender expression expression": 0.155
+        "sexuality expression": 0.053,
+        "gender expression expression": 0.047
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {
-        "16037": {
-          "key": 16037,
-          "name": "Hildeburgis",
-          "age": 22,
-          "alive": false,
-          "sex": "f",
-          "parents": {
-            "mother": "Suaneka (11993)",
-            "father": "Siabbo (11992)"
-          }
-        }
-      },
+      "children": {},
       "relationship keys": {
         "spouse": [
           11994
         ],
-        "child": {
-          "birth": [
-            16039
-          ]
-        }
+        "unrelated": [
+          20756
+        ]
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
         3,
         "upper middle class"
       ],
-      "income": 1.284,
-      "all_incomes": [
-        1.022,
-        0.8210000000000001,
-        0.782,
-        0.9520000000000001,
-        1.215,
-        1.284
-      ],
-      "job": {
-        "lawful": true,
-        "honest": false
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 1,
+      "skin_color": 3,
       "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
@@ -97,8 +76,8 @@
         "C",
         "S"
       ],
-      "health": 0.676,
-      "fertility": 0.712,
+      "health": 0.0,
+      "fertility": 0.567,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -110,17 +89,48 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.676
+            "new_health": 0.647
           },
           "death": false
+        },
+        "1205": {
+          "health": {
+            "change": true,
+            "value_change": -0.232,
+            "new_health": 0.415
+          },
+          "death": false
+        },
+        "1206": {
+          "health": {
+            "change": true,
+            "value_change": -0.264,
+            "new_health": 0.151
+          },
+          "death": false
+        },
+        "1207": {
+          "health": {
+            "change": true,
+            "value_change": -0.145,
+            "new_health": 0.006
+          },
+          "death": false
+        },
+        "1208": {
+          "health": {
+            "change": true,
+            "value_change": -0.006,
+            "new_health": 0.0
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.022
+            "topic": "birth",
+            "year": 1155
           },
           {
             "topic": "new relationship",
@@ -130,39 +140,23 @@
               11993
             ],
             "people names": [
-              "Siabbo",
-              "Suaneka Scakart"
+              "Ghodscalc",
+              "Goneir"
             ],
             "people ages": [
-              23,
-              22
+              49,
+              45
             ],
             "label": "spouse",
             "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stDie lange straet3.se7.c3",
-              "street": "Die lange straet3",
-              "neighborhood": "visbuurt",
-              "unique id": 698
-            }
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          },
-          {
             "topic": "update",
             "update": "new friendship label",
             "relationship label": "spouse",
-            "friendship label": "disliked",
+            "friendship label": "indifferent",
             "relationship": 11994
           }
         ],
@@ -171,39 +165,86 @@
             "topic": "update",
             "update": "new friendship label",
             "relationship label": "spouse",
-            "friendship label": "disliked",
+            "friendship label": "indifferent",
             "relationship": 11994
+          },
+          {
+            "key": 11994,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11992,
+              "name": "Ghodscalc",
+              "age": 52,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "old age",
+            "friendship label": "indifferent",
+            "label": "spouse",
+            "love state": "infatuation"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 20756,
+            "people": [
+              10208,
+              11993
+            ],
+            "people names": [
+              "Amelgeir Scelwart",
+              "Goneir"
+            ],
+            "people ages": [
+              30,
+              49
+            ],
+            "label": "unrelated",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ],
         "1204": [
           {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.215
-          },
-          {
-            "topic": "new relationship",
-            "key": 16039,
-            "people": [
-              11993,
-              16037
-            ],
-            "people names": [
-              "Suaneka Scakart",
-              "Hildeburgis"
-            ],
-            "people ages": [
-              26,
-              0
-            ],
-            "label": "parentchild",
-            "committed": false
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ],
         "1205": [
           {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "sickness"
           }
         ]
       }
@@ -212,17 +253,21 @@
     "home": {
       "income class": 3,
       "income class label": "upper middle class",
-      "section": "stDie lange straet3.se7.c3",
+      "section": "stDie lange straet3.se5.c3",
       "street": "Die lange straet3",
       "neighborhood": "visbuurt",
-      "unique id": 698
+      "unique id": 691
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         11994
       ]
-    }
+    },
+    "friends": [
+      20756
+    ],
+    "enemies": []
   }
 }

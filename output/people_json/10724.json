@@ -1,33 +1,35 @@
 {
   "10724": {
     "alive": false,
-    "name": "Aghata",
-    "surname": "Junghe",
-    "full name": "Aghata Junghe",
+    "name": "Hilduardis",
+    "surname": "",
+    "full name": "Hilduardis",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.077,
-      "romantic interest": 0.495,
-      "sex interest": 0.518,
-      "gender expression": 0.04,
+      "sexuality label": "gay",
+      "sexuality": 0.912,
+      "romantic interest": 0.676,
+      "sex interest": 0.836,
+      "gender expression": 0.265,
       "sex": "f"
     },
-    "age": 54,
-    "birth year": 1158,
+    "age": 21,
+    "birth year": 1182,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "Dogmatists",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.999,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.2,
+      "nice-nasty": 0.55,
+      "honest-false": 0.448,
+      "dream": 0.714,
+      "outgoing": 0.678
     },
     "attitude": {
-      "outgoing": 0.691,
-      "dream": 0.431
+      "dream": 0.714,
+      "outgoing": 0.678
     },
     "homsoc": {
       "means": {
@@ -40,17 +42,34 @@
         ]
       },
       "expression": {
-        "sexuality expression": 0.05,
-        "gender expression expression": 0.039
+        "sexuality expression": 0.676,
+        "gender expression expression": 0.212
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14431": {
+          "key": 14431,
+          "name": "Snellard",
+          "age": 23,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Hilduardis (10724)",
+            "father": "Gherolf (10723)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10725
-        ]
+        ],
+        "child": {
+          "birth": [
+            14433
+          ]
+        }
       }
     },
     "occupation": {
@@ -63,16 +82,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 6,
-      "eye_color": "blue",
+      "skin_color": 2,
+      "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.0,
-      "fertility": 0.556,
+      "health": 0.553,
+      "fertility": 0.616,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -84,45 +103,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.565
+            "new_health": 0.553
           },
           "death": false
         },
-        "1208": {
+        "1202": {
           "health": {
-            "change": true,
-            "value_change": -0.245,
-            "new_health": 0.32
-          },
-          "death": false
-        },
-        "1209": {
-          "health": {
-            "change": true,
-            "value_change": -0.239,
-            "new_health": 0.081
-          },
-          "death": false
-        },
-        "1210": {
-          "health": {
-            "change": true,
-            "value_change": -0.078,
-            "new_health": 0.003
-          },
-          "death": false
-        },
-        "1211": {
-          "health": {
-            "change": true,
-            "value_change": -0.003,
-            "new_health": 0.0
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.553
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1182
+          },
           {
             "topic": "new relationship",
             "key": 10725,
@@ -131,131 +130,51 @@
               10724
             ],
             "people names": [
-              "Bobone Sloet",
-              "Aghata Junghe"
+              "Gherolf Brune",
+              "Hilduardis"
             ],
             "people ages": [
-              45,
-              42
+              21,
+              18
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stWaale straet.se3.c1",
-              "street": "Waale straet",
-              "neighborhood": "agnesbuurt",
-              "unique id": 253
-            }
+            "topic": "new relationship",
+            "key": 14433,
+            "people": [
+              10724,
+              14431
+            ],
+            "people names": [
+              "Hilduardis",
+              "Snellard"
+            ],
+            "people ages": [
+              19,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
-            "topic": "feelings change",
-            "target": 10723,
-            "target name": "Bobone Sloet",
-            "state": "solid love",
-            "relationship": 10725
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          },
-          {
             "topic": "not enough income",
-            "income": 0.285,
+            "income": 0.0,
             "inhabitants": []
           }
         ],
         "1202": [
           {
-            "topic": "not enough income",
-            "income": 0.09,
-            "inhabitants": []
-          }
-        ],
-        "1203": [
-          {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
-          }
-        ],
-        "1204": [
-          {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
-          },
-          {
-            "key": 10725,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 10723,
-              "name": "Bobone Sloet",
-              "age": 50,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "cause": "illness",
-            "label": "spouse"
-          }
-        ],
-        "1205": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1206": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1207": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1208": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1209": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1210": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1211": [
-          {
             "topic": "death",
-            "cause": "sickness"
+            "cause": "starvation"
           }
         ]
       }
@@ -267,14 +186,19 @@
       "section": "stWaale straet.se3.c1",
       "street": "Waale straet",
       "neighborhood": "agnesbuurt",
-      "unique id": 253
+      "unique id": 252
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
         10725
       ]
-    }
+    },
+    "friends": [
+      10725,
+      14433
+    ],
+    "enemies": []
   }
 }

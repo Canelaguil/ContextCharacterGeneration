@@ -1,59 +1,96 @@
 {
   "10483": {
     "alive": false,
-    "name": "Gheldekin",
-    "surname": "Broem",
-    "full name": "Gheldekin Broem",
+    "name": "Sylof",
+    "surname": "",
+    "full name": "Sylof",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.058,
-      "romantic interest": 0.613,
-      "sex interest": 0.897,
-      "gender expression": 0.139,
+      "sexuality": 0.132,
+      "romantic interest": 0.593,
+      "sex interest": 0.532,
+      "gender expression": 0.222,
       "sex": "m"
     },
-    "age": 34,
-    "birth year": 1170,
+    "age": 52,
+    "birth year": 1159,
     "sex": "m",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
-      2,
-      "middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
       "lawful-chaotic": 0.999,
-      "nice-nasty": 0.762,
-      "honest-false": 0.125
+      "nice-nasty": 0.676,
+      "honest-false": 0.341,
+      "dream": 0.518,
+      "outgoing": 0.478
     },
     "attitude": {
-      "outgoing": 0.422,
-      "dream": 0.0
+      "dream": 0.518,
+      "outgoing": 0.478
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.023,
-        "gender expression expression": 0.099
+        "sexuality expression": 0.088,
+        "gender expression expression": 0.12
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "13801": {
-          "key": 13801,
-          "name": "Diddekin Broem",
-          "age": 14,
+        "14638": {
+          "key": 14638,
+          "name": "Valken van Mette",
+          "age": 48,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Mette (10484)",
+            "father": "Sylof (10483)"
+          }
+        },
+        "16629": {
+          "key": 16629,
+          "name": "Gabriel",
+          "age": 30,
           "alive": false,
           "sex": "m",
           "parents": {
-            "mother": "Gloria (10484)",
-            "father": "Gheldekin (10483)"
+            "mother": "Mette (10484)",
+            "father": "Sylof (10483)"
+          }
+        },
+        "24266": {
+          "key": 24266,
+          "name": "Liudburgis van Sylof",
+          "age": 3,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Mette (10484)",
+            "father": "Sylof (10483)"
+          }
+        },
+        "26156": {
+          "key": 26156,
+          "name": "Volcwiif van Sylof",
+          "age": 43,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Mette (10484)",
+            "father": "Sylof (10483)"
           }
         }
       },
@@ -63,24 +100,37 @@
         ],
         "child": {
           "birth": [
-            13802
+            14639,
+            16630,
+            24267,
+            26157
           ]
-        }
+        },
+        "unrelated": [
+          16500
+        ]
       }
     },
     "occupation": {
       "has job": true,
       "income class": [
-        2,
-        "middle class"
+        1,
+        "lower middle class"
       ],
-      "income": 1.3319999999999999,
+      "income": 0.0,
       "all_incomes": [
-        0.896,
-        0.864,
-        1.2939999999999998,
-        1.3559999999999999,
-        1.3319999999999999
+        0.994,
+        0.999,
+        0.528,
+        0.458,
+        0.19,
+        0.352,
+        0.087,
+        0.0,
+        0.046,
+        0.118,
+        0.0,
+        0.0
       ],
       "job": {
         "lawful": true,
@@ -88,16 +138,16 @@
       }
     },
     "genetics": {
-      "skin_color": 0,
-      "eye_color": "green",
+      "skin_color": 3,
+      "eye_color": "brown",
       "hair_color": "strawberry blonde",
       "hair_color_code": 5,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.648,
-      "fertility": 0.707,
+      "health": 0.0,
+      "fertility": 0.6,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -109,15 +159,23 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.648
+            "new_health": 0.588
           },
           "death": false
         },
-        "1203": {
+        "1209": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.648
+            "change": true,
+            "value_change": -0.249,
+            "new_health": 0.339
+          },
+          "death": false
+        },
+        "1210": {
+          "health": {
+            "change": true,
+            "value_change": -0.339,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -125,9 +183,13 @@
       "events": {
         "1200": [
           {
+            "topic": "birth",
+            "year": 1159
+          },
+          {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.896
+            "income": 0.994
           },
           {
             "topic": "new relationship",
@@ -137,88 +199,321 @@
               10484
             ],
             "people names": [
-              "Gheldekin Broem",
-              "Gloria Stamelarit"
+              "Sylof",
+              "Mette Bein"
             ],
             "people ages": [
-              30,
-              17
+              41,
+              29
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stDavids hof.se1.c2",
-              "street": "Davids hof",
-              "neighborhood": "jorisbuurt",
-              "unique id": 172
-            }
+            "topic": "feelings change",
+            "target": 10484,
+            "target name": "Mette Bein",
+            "state": "out of love",
+            "friendship label": "friend",
+            "relationship": 10485
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          },
-          {
             "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.2939999999999998
+            "notice": "low income",
+            "income": 0.528
           },
           {
             "topic": "new relationship",
-            "key": 13802,
+            "key": 14639,
             "people": [
               10483,
-              13801
+              14638
             ],
             "people names": [
-              "Gheldekin Broem",
-              "Diddekin Broem"
+              "Sylof",
+              "Valken van Mette"
             ],
             "people ages": [
-              31,
+              42,
               0
             ],
             "label": "parentchild",
             "committed": false
           },
           {
-            "topic": "feelings change",
-            "target": 10484,
-            "target name": "Gloria Stamelarit",
-            "state": "out of love",
-            "relationship": 10485
+            "topic": "new relationship",
+            "key": 16500,
+            "people": [
+              12323,
+              10483
+            ],
+            "people names": [
+              "Pietersen Duvel",
+              "Sylof"
+            ],
+            "people ages": [
+              42,
+              43
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1202": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.458
+          },
+          {
+            "topic": "new relationship",
+            "key": 16630,
+            "people": [
+              10483,
+              16629
+            ],
+            "people names": [
+              "Sylof",
+              "Gabriel"
+            ],
+            "people ages": [
+              43,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.458,
+            "inhabitants": [
+              14638,
+              26156,
+              15958,
+              67988
+            ]
           }
         ],
         "1203": [
           {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.19
+          },
+          {
+            "topic": "feelings change",
+            "target": 10484,
+            "target name": "Mette Bein",
+            "state": "infatuation",
+            "friendship label": "friend",
+            "relationship": 10485
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.19,
+            "inhabitants": [
+              14638,
+              26156,
+              15958,
+              67988
+            ]
+          }
+        ],
+        "1204": [
+          {
+            "topic": "feelings change",
+            "target": 10484,
+            "target name": "Mette Bein",
+            "state": "out of love",
+            "friendship label": "friend",
+            "relationship": 10485
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.352,
+            "inhabitants": [
+              14638,
+              26156,
+              15958,
+              67988
+            ]
+          }
+        ],
+        "1205": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.087
+          },
+          {
+            "topic": "new relationship",
+            "key": 24267,
+            "people": [
+              10483,
+              24266
+            ],
+            "people names": [
+              "Sylof",
+              "Liudburgis van Sylof"
+            ],
+            "people ages": [
+              47,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.087,
+            "inhabitants": [
+              14638,
+              26156,
+              15958,
+              67988
+            ]
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 26157,
+            "people": [
+              10483,
+              26156
+            ],
+            "people names": [
+              "Sylof",
+              "Volcwiif van Sylof"
+            ],
+            "people ages": [
+              48,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 24267
+          },
+          {
+            "key": 10485,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10484,
+              "name": "Mette Bein",
+              "age": 36,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "starvation",
+            "friendship label": "friend",
+            "label": "spouse",
+            "love state": "out of love"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              14638,
+              26156,
+              15958,
+              67988
+            ]
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0.046,
+            "inhabitants": [
+              14638,
+              26156,
+              15958,
+              67988
+            ]
+          }
+        ],
+        "1208": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 24266,
+              "name": "Liudburgis van Sylof",
+              "age": 3,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Mette (10484)",
+                "father": "Sylof (10483)"
+              }
+            },
+            "cause": "starvation",
+            "friendship label": "indifferent",
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.118,
+            "inhabitants": [
+              14638,
+              26156,
+              15958,
+              67988
+            ]
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              14638,
+              26156,
+              15958,
+              67988
+            ]
+          }
+        ],
+        "1210": [
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "sickness"
           }
         ]
       }
     },
     "key": 10483,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stDavids hof.se1.c2",
-      "street": "Davids hof",
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stMuelen straet.se3.c1",
+      "street": "Muelen straet",
       "neighborhood": "jorisbuurt",
-      "unique id": 172
+      "unique id": 170
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         10485
       ]
-    }
+    },
+    "friends": [
+      10485,
+      14639,
+      16500
+    ],
+    "enemies": []
   }
 }

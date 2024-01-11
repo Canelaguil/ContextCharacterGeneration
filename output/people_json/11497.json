@@ -1,33 +1,35 @@
 {
   "11497": {
     "alive": false,
-    "name": "Kerstiaen",
-    "surname": "Vos",
-    "full name": "Kerstiaen Vos",
+    "name": "Wissen",
+    "surname": "Spiker",
+    "full name": "Wissen Spiker",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.017,
-      "romantic interest": 0.865,
-      "sex interest": 0.501,
-      "gender expression": 0.152,
+      "sexuality": 0.117,
+      "romantic interest": 0.589,
+      "sex interest": 0.578,
+      "gender expression": 0.117,
       "sex": "m"
     },
-    "age": 44,
-    "birth year": 1157,
+    "age": 53,
+    "birth year": 1152,
     "sex": "m",
     "faction": "No religion",
     "income class": [
-      2,
-      "middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.663,
-      "nice-nasty": 0.36,
-      "honest-false": 0.0
+      "lawful-chaotic": 0.217,
+      "nice-nasty": 0.839,
+      "honest-false": 0.153,
+      "dream": 0.179,
+      "outgoing": 0.567
     },
     "attitude": {
-      "outgoing": 0.984,
-      "dream": 0.297
+      "dream": 0.179,
+      "outgoing": 0.567
     },
     "homsoc": {
       "means": {
@@ -38,42 +40,70 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.011,
-        "gender expression expression": 0.068
+        "sexuality expression": 0.045,
+        "gender expression expression": 0.047
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
-      "relationship keys": {}
+      "children": {
+        "14128": {
+          "key": 14128,
+          "name": "Mabelie",
+          "age": 32,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Salome (11498)",
+            "father": "Wissen (11497)"
+          }
+        }
+      },
+      "relationship keys": {
+        "spouse": [
+          11499
+        ],
+        "child": {
+          "birth": [
+            14129
+          ]
+        },
+        "unrelated": [
+          18501
+        ]
+      }
     },
     "occupation": {
       "has job": true,
       "income class": [
-        2,
-        "middle class"
+        1,
+        "lower middle class"
       ],
-      "income": 1.089,
+      "income": 1.073,
       "all_incomes": [
-        1.068,
-        1.089
+        0.786,
+        0.789,
+        0.707,
+        0.732,
+        0.813,
+        1.073
       ],
       "job": {
-        "lawful": true,
+        "lawful": false,
         "honest": false
       }
     },
     "genetics": {
-      "skin_color": 3,
-      "eye_color": "green",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "skin_color": 7,
+      "eye_color": "brown",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "C",
-        "C"
+        "S"
       ],
-      "health": 0.699,
-      "fertility": 0.705,
+      "health": 0.0,
+      "fertility": 0.7,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -85,7 +115,31 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.699
+            "new_health": 0.701
+          },
+          "death": false
+        },
+        "1202": {
+          "health": {
+            "change": true,
+            "value_change": -0.29,
+            "new_health": 0.411
+          },
+          "death": false
+        },
+        "1203": {
+          "health": {
+            "change": true,
+            "value_change": -0.196,
+            "new_health": 0.215
+          },
+          "death": false
+        },
+        "1204": {
+          "health": {
+            "change": true,
+            "value_change": -0.215,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -93,30 +147,134 @@
       "events": {
         "1200": [
           {
+            "topic": "birth",
+            "year": 1152
+          },
+          {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.068
+            "income": 0.786
+          },
+          {
+            "topic": "new relationship",
+            "key": 11499,
+            "people": [
+              11497,
+              11498
+            ],
+            "people names": [
+              "Wissen Spiker",
+              "Salome Lancgeroch"
+            ],
+            "people ages": [
+              48,
+              43
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "friend",
+            "relationship": 11499
+          },
+          {
+            "topic": "new relationship",
+            "key": 14129,
+            "people": [
+              11497,
+              14128
+            ],
+            "people names": [
+              "Wissen Spiker",
+              "Mabelie"
+            ],
+            "people ages": [
+              48,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1201": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.707
+          }
+        ],
+        "1202": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "friend",
+            "relationship": 11499
+          },
+          {
+            "topic": "new relationship",
+            "key": 18501,
+            "people": [
+              11719,
+              11497
+            ],
+            "people names": [
+              "Rembrecht Ulf",
+              "Wissen Spiker"
+            ],
+            "people ages": [
+              50,
+              51
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1203": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "indifferent",
+            "relationship": 11499
+          }
+        ],
+        "1204": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.073
           },
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "sickness"
           }
         ]
       }
     },
     "key": 11497,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stBreestraat.se1.c2",
-      "street": "Breestraat",
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stPaternoster straetje.se1.c1",
+      "street": "Paternoster straetje",
       "neighborhood": "olvbuurt",
-      "unique id": 526
+      "unique id": 517
     },
     "relationship status": {
-      "taken": true,
+      "taken": false,
       "married": true,
-      "relationships": []
-    }
+      "relationships": [
+        11499
+      ]
+    },
+    "friends": [
+      14129,
+      18501
+    ],
+    "enemies": []
   }
 }

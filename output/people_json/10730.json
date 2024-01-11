@@ -1,33 +1,35 @@
 {
   "10730": {
     "alive": false,
-    "name": "Nimme",
-    "surname": "Calf",
-    "full name": "Nimme Calf",
+    "name": "Baua",
+    "surname": "Strument",
+    "full name": "Baua Strument",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.764,
-      "sex interest": 0.65,
-      "gender expression": 0.046,
+      "sexuality": 0.073,
+      "romantic interest": 0.883,
+      "sex interest": 0.688,
+      "gender expression": 0.224,
       "sex": "f"
     },
-    "age": 44,
-    "birth year": 1164,
+    "age": 28,
+    "birth year": 1181,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "Dogmatists",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.731,
-      "honest-false": 0.091
+      "lawful-chaotic": 0.789,
+      "nice-nasty": 0.999,
+      "honest-false": 0.292,
+      "dream": 0.504,
+      "outgoing": 0.916
     },
     "attitude": {
-      "outgoing": 0.532,
-      "dream": 0.584
+      "dream": 0.504,
+      "outgoing": 0.916
     },
     "homsoc": {
       "means": {
@@ -40,17 +42,58 @@
         ]
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.033
+        "sexuality expression": 0.02,
+        "gender expression expression": 0.064
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14718": {
+          "key": 14718,
+          "name": "Rycaldis",
+          "age": 1,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Baua (10730)",
+            "father": "Gherolf (10729)"
+          }
+        },
+        "22731": {
+          "key": 22731,
+          "name": "Hollander Gherolfszoon",
+          "age": 43,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Baua (10730)",
+            "father": "Gherolf (10729)"
+          }
+        },
+        "23995": {
+          "key": 23995,
+          "name": "Lelien Gherolfsdochter",
+          "age": 4,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Baua (10730)",
+            "father": "Gherolf (10729)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10731
-        ]
+        ],
+        "child": {
+          "birth": [
+            14720,
+            22733,
+            23997
+          ]
+        }
       }
     },
     "occupation": {
@@ -63,16 +106,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 5,
-      "eye_color": "blue",
+      "skin_color": 1,
+      "eye_color": "brown",
       "hair_color": "brown",
       "hair_color_code": 2,
       "hair_type": [
-        "C",
+        "S",
         "C"
       ],
-      "health": 0.653,
-      "fertility": 0.661,
+      "health": 0.659,
+      "fertility": 0.631,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -84,21 +127,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.653
+            "new_health": 0.659
           },
           "death": false
         },
-        "1207": {
+        "1208": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.653
+            "new_health": 0.659
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1181
+          },
           {
             "topic": "new relationship",
             "key": 10731,
@@ -107,53 +154,199 @@
               10730
             ],
             "people names": [
-              "Herdradus",
-              "Nimme Calf"
+              "Gherolf",
+              "Baua Strument"
             ],
             "people ages": [
-              39,
-              36
+              27,
+              19
             ],
             "label": "spouse",
             "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stWaale straet.se3.c1",
-              "street": "Waale straet",
-              "neighborhood": "agnesbuurt",
-              "unique id": 255
-            }
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "topic": "new relationship",
+            "key": 14720,
+            "people": [
+              10730,
+              14718
+            ],
+            "people names": [
+              "Baua Strument",
+              "Rycaldis"
+            ],
+            "people ages": [
+              20,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1202": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 14718,
+              "name": "Rycaldis",
+              "age": 1,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Baua (10730)",
+                "father": "Gherolf (10729)"
+              }
+            },
+            "cause": "childhood illness",
+            "friendship label": "friend",
+            "label": "child"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "not enough income",
+            "income": 0.223,
+            "inhabitants": [
+              27521,
+              62100,
+              64150,
+              64743,
+              66163,
+              67657,
+              69578,
+              72855
+            ]
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 22733,
+            "people": [
+              10730,
+              22731
+            ],
+            "people names": [
+              "Baua Strument",
+              "Hollander Gherolfszoon"
+            ],
+            "people ages": [
+              24,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 10729,
+            "target name": "Gherolf",
+            "state": "out of love",
+            "friendship label": "friend",
+            "relationship": 10731
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              27521,
+              62100,
+              64150,
+              64743,
+              66163,
+              67657,
+              69578,
+              72855
+            ]
           }
         ],
         "1205": [
           {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 22733
+          },
+          {
+            "topic": "new relationship",
+            "key": 23997,
+            "people": [
+              10730,
+              23995
+            ],
+            "people names": [
+              "Baua Strument",
+              "Lelien Gherolfsdochter"
+            ],
+            "people ages": [
+              24,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
             "topic": "not enough income",
-            "income": 0.134,
-            "inhabitants": []
+            "income": 0.433,
+            "inhabitants": [
+              27521,
+              62100,
+              64150,
+              64743,
+              66163,
+              67657,
+              69578,
+              72855
+            ]
           }
         ],
         "1206": [
           {
             "topic": "not enough income",
-            "income": 0.114,
-            "inhabitants": []
+            "income": 0.009,
+            "inhabitants": [
+              27521,
+              62100,
+              64150,
+              64743,
+              66163,
+              67657,
+              69578,
+              72855
+            ]
           }
         ],
         "1207": [
           {
+            "topic": "feelings change",
+            "target": 10729,
+            "target name": "Gherolf",
+            "state": "infatuation",
+            "friendship label": "friend",
+            "relationship": 10731
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              27521,
+              62100,
+              64150,
+              64743,
+              66163,
+              67657,
+              69578,
+              72855
+            ]
+          }
+        ],
+        "1208": [
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "starvation"
           }
         ]
       }
@@ -173,6 +366,11 @@
       "relationships": [
         10731
       ]
-    }
+    },
+    "friends": [
+      10731,
+      14720
+    ],
+    "enemies": []
   }
 }

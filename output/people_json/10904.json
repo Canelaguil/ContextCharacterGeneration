@@ -1,33 +1,35 @@
 {
   "10904": {
     "alive": false,
-    "name": "Breghlent",
-    "surname": "Boghart",
-    "full name": "Breghlent Boghart",
+    "name": "Soeten",
+    "surname": "Bec",
+    "full name": "Soeten Bec",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.013,
-      "romantic interest": 0.825,
-      "sex interest": 0.745,
-      "gender expression": 0.099,
+      "sexuality": 0.101,
+      "romantic interest": 0.672,
+      "sex interest": 0.509,
+      "gender expression": 0.1,
       "sex": "f"
     },
-    "age": 39,
-    "birth year": 1167,
+    "age": 25,
+    "birth year": 1182,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
-      1,
-      "lower middle class"
+      2,
+      "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.494,
-      "nice-nasty": 0.725,
-      "honest-false": 0.473
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.421,
+      "honest-false": 0.297,
+      "dream": 0.578,
+      "outgoing": 0.414
     },
     "attitude": {
-      "outgoing": 0.796,
-      "dream": 0.517
+      "dream": 0.578,
+      "outgoing": 0.414
     },
     "homsoc": {
       "means": {
@@ -38,22 +40,66 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.01,
-        "gender expression expression": 0.017
+        "sexuality expression": 0.083,
+        "gender expression expression": 0.044
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "15615": {
-          "key": 15615,
-          "name": "Hildeburgis Loddernie",
-          "age": 6,
+        "13000": {
+          "key": 13000,
+          "name": "Dammas Goude",
+          "age": 15,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Soeten (10904)",
+            "father": "Diddekin (10903)"
+          }
+        },
+        "16298": {
+          "key": 16298,
+          "name": "Gheesen Goude",
+          "age": 33,
           "alive": false,
           "sex": "f",
           "parents": {
-            "mother": "Breghlent (10904)",
-            "father": "Meinoldo (10903)"
+            "mother": "Soeten (10904)",
+            "father": "Diddekin (10903)"
+          }
+        },
+        "17646": {
+          "key": 17646,
+          "name": "Rycaldis Goude",
+          "age": 31,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Soeten (10904)",
+            "father": "Diddekin (10903)"
+          }
+        },
+        "20352": {
+          "key": 20352,
+          "name": "Michiel Goude",
+          "age": 46,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Soeten (10904)",
+            "father": "Diddekin (10903)"
+          }
+        },
+        "21051": {
+          "key": 21051,
+          "name": "Mette Goude",
+          "age": 27,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Soeten (10904)",
+            "father": "Diddekin (10903)"
           }
         }
       },
@@ -63,7 +109,11 @@
         ],
         "child": {
           "birth": [
-            15617
+            13002,
+            16300,
+            17648,
+            20354,
+            21053
           ]
         }
       }
@@ -71,23 +121,23 @@
     "occupation": {
       "has job": false,
       "income class": [
-        1,
-        "lower middle class"
+        2,
+        "middle class"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 0,
-      "eye_color": "brown",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "skin_color": 9,
+      "eye_color": "blue",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
         "S",
-        "C"
+        "S"
       ],
-      "health": 0.612,
-      "fertility": 0.727,
+      "health": 0.705,
+      "fertility": 0.75,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -99,21 +149,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.612
+            "new_health": 0.705
           },
           "death": false
         },
-        "1205": {
+        "1206": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.612
+            "new_health": 0.705
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1182
+          },
           {
             "topic": "new relationship",
             "key": 10905,
@@ -122,49 +176,116 @@
               10904
             ],
             "people names": [
-              "Meinoldo Loddernie",
-              "Breghlent Boghart"
+              "Diddekin Goude",
+              "Soeten Bec"
             ],
             "people ages": [
-              42,
-              33
+              40,
+              18
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stSt. Aechten straet.se1.c1",
-              "street": "St. Aechten straet",
-              "neighborhood": "agnesbuurt",
-              "unique id": 321
-            }
+            "topic": "new relationship",
+            "key": 13002,
+            "people": [
+              10904,
+              13000
+            ],
+            "people names": [
+              "Soeten Bec",
+              "Dammas Goude"
+            ],
+            "people ages": [
+              18,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "topic": "new relationship",
+            "key": 16300,
+            "people": [
+              10904,
+              16298
+            ],
+            "people names": [
+              "Soeten Bec",
+              "Gheesen Goude"
+            ],
+            "people ages": [
+              20,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 17648,
+            "people": [
+              10904,
+              17646
+            ],
+            "people names": [
+              "Soeten Bec",
+              "Rycaldis Goude"
+            ],
+            "people ages": [
+              21,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1203": [
           {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 13002
+          },
+          {
             "topic": "new relationship",
-            "key": 15617,
+            "key": 20354,
             "people": [
               10904,
-              15615
+              20352
             ],
             "people names": [
-              "Breghlent Boghart",
-              "Hildeburgis Loddernie"
+              "Soeten Bec",
+              "Michiel Goude"
             ],
             "people ages": [
-              37,
+              22,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 21053,
+            "people": [
+              10904,
+              21051
+            ],
+            "people names": [
+              "Soeten Bec",
+              "Mette Goude"
+            ],
+            "people ages": [
+              22,
               0
             ],
             "label": "parentchild",
@@ -172,6 +293,15 @@
           }
         ],
         "1205": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 13002
+          }
+        ],
+        "1206": [
           {
             "topic": "death",
             "cause": "illness"
@@ -181,12 +311,12 @@
     },
     "key": 10904,
     "home": {
-      "income class": 1,
-      "income class label": "lower middle class",
-      "section": "stSt. Aechten straet.se1.c1",
-      "street": "St. Aechten straet",
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stCingel.se5.c2",
+      "street": "Cingel",
       "neighborhood": "agnesbuurt",
-      "unique id": 321
+      "unique id": 313
     },
     "relationship status": {
       "taken": true,
@@ -194,6 +324,13 @@
       "relationships": [
         10905
       ]
-    }
+    },
+    "friends": [
+      13002,
+      16300,
+      17648,
+      20354
+    ],
+    "enemies": []
   }
 }

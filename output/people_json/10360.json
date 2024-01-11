@@ -1,19 +1,19 @@
 {
   "10360": {
     "alive": false,
-    "name": "Willibrando",
-    "surname": "Roede",
-    "full name": "Willibrando Roede",
+    "name": "Frethericus",
+    "surname": "Baers",
+    "full name": "Frethericus Baers",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.027,
-      "romantic interest": 0.578,
-      "sex interest": 0.724,
-      "gender expression": 0.104,
+      "sexuality": 0.079,
+      "romantic interest": 0.808,
+      "sex interest": 0.613,
+      "gender expression": 0.206,
       "sex": "m"
     },
-    "age": 32,
-    "birth year": 1169,
+    "age": 44,
+    "birth year": 1163,
     "sex": "m",
     "faction": "Dogmatists",
     "income class": [
@@ -21,31 +21,81 @@
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.638,
-      "honest-false": 0.291
+      "lawful-chaotic": 0.233,
+      "nice-nasty": 0.708,
+      "honest-false": 0.381,
+      "dream": 0.139,
+      "outgoing": 0.513
     },
     "attitude": {
-      "outgoing": 0.424,
-      "dream": 0.14
+      "dream": 0.139,
+      "outgoing": 0.513
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.016,
-        "gender expression expression": 0.063
+        "sexuality expression": 0.054,
+        "gender expression expression": 0.092
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
-      "relationship keys": {}
+      "children": {
+        "14020": {
+          "key": 14020,
+          "name": "Splinter Baers",
+          "age": 1,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Baua (10361)",
+            "father": "Frethericus (10360)"
+          }
+        },
+        "14907": {
+          "key": 14907,
+          "name": "Hille Baers",
+          "age": 15,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Baua (10361)",
+            "father": "Frethericus (10360)"
+          }
+        },
+        "19100": {
+          "key": 19100,
+          "name": "Ghoudekinen van Frethericus",
+          "age": 26,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Baua (10361)",
+            "father": "Frethericus (10360)"
+          }
+        }
+      },
+      "relationship keys": {
+        "spouse": [
+          10362
+        ],
+        "child": {
+          "birth": [
+            14021,
+            14908,
+            19101
+          ]
+        },
+        "unrelated": [
+          14563
+        ]
+      }
     },
     "occupation": {
       "has job": true,
@@ -53,27 +103,33 @@
         1,
         "lower middle class"
       ],
-      "income": 1.499,
+      "income": 0.595,
       "all_incomes": [
-        1.187,
-        1.499
+        0.89,
+        0.829,
+        0.843,
+        0.937,
+        0.779,
+        0.993,
+        0.872,
+        0.595
       ],
       "job": {
         "lawful": false,
-        "honest": false
+        "honest": true
       }
     },
     "genetics": {
-      "skin_color": 7,
+      "skin_color": 3,
       "eye_color": "brown",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
         "S",
         "S"
       ],
-      "health": 0.659,
-      "fertility": 0.609,
+      "health": 0.62,
+      "fertility": 0.557,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -85,7 +141,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.659
+            "new_health": 0.62
+          },
+          "death": false
+        },
+        "1206": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.62
           },
           "death": true
         }
@@ -93,9 +157,138 @@
       "events": {
         "1200": [
           {
+            "topic": "birth",
+            "year": 1163
+          },
+          {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.187
+            "income": 0.89
+          },
+          {
+            "topic": "new relationship",
+            "key": 10362,
+            "people": [
+              10360,
+              10361
+            ],
+            "people names": [
+              "Frethericus Baers",
+              "Baua Stoerm"
+            ],
+            "people ages": [
+              37,
+              20
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new relationship",
+            "key": 14021,
+            "people": [
+              10360,
+              14020
+            ],
+            "people names": [
+              "Frethericus Baers",
+              "Splinter Baers"
+            ],
+            "people ages": [
+              37,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "new relationship",
+            "key": 14563,
+            "people": [
+              12308,
+              10360
+            ],
+            "people names": [
+              "Hersewindis Scakart",
+              "Frethericus Baers"
+            ],
+            "people ages": [
+              33,
+              38
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1201": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 14021
+          },
+          {
+            "topic": "new relationship",
+            "key": 14908,
+            "people": [
+              10360,
+              14907
+            ],
+            "people names": [
+              "Frethericus Baers",
+              "Hille Baers"
+            ],
+            "people ages": [
+              38,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 14020,
+              "name": "Splinter Baers",
+              "age": 1,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Baua (10361)",
+                "father": "Frethericus (10360)"
+              }
+            },
+            "cause": "childhood illness",
+            "friendship label": "indifferent",
+            "label": "child"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 19101,
+            "people": [
+              10360,
+              19100
+            ],
+            "people names": [
+              "Frethericus Baers",
+              "Ghoudekinen van Frethericus"
+            ],
+            "people ages": [
+              40,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1206": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.595
           },
           {
             "topic": "death",
@@ -111,12 +304,20 @@
       "section": "stHelle voet.se9.c1",
       "street": "Helle voet",
       "neighborhood": "jorisbuurt",
-      "unique id": 130
+      "unique id": 129
     },
     "relationship status": {
-      "taken": true,
+      "taken": false,
       "married": true,
-      "relationships": []
-    }
+      "relationships": [
+        10362
+      ]
+    },
+    "friends": [
+      10362,
+      14908,
+      14563
+    ],
+    "enemies": []
   }
 }

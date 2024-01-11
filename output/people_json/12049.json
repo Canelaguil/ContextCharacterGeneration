@@ -1,106 +1,88 @@
 {
   "12049": {
     "alive": false,
-    "name": "Ino",
-    "surname": "Wittebart",
-    "full name": "Ino Wittebart",
+    "name": "Lambrecht",
+    "surname": "Capoen",
+    "full name": "Lambrecht Capoen",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.037,
-      "romantic interest": 0.755,
-      "sex interest": 0.826,
-      "gender expression": 0.179,
+      "sexuality": 0.0,
+      "romantic interest": 0.576,
+      "sex interest": 0.874,
+      "gender expression": 0.0,
       "sex": "m"
     },
-    "age": 30,
-    "birth year": 1177,
+    "age": 49,
+    "birth year": 1153,
     "sex": "m",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
-      2,
-      "middle class"
+      3,
+      "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.355,
-      "nice-nasty": 0.478,
-      "honest-false": 0.477
+      "lawful-chaotic": 0.617,
+      "nice-nasty": 0.015,
+      "honest-false": 0.303,
+      "dream": 0.278,
+      "outgoing": 0.269
     },
     "attitude": {
-      "outgoing": 0.352,
-      "dream": 0.389
+      "dream": 0.278,
+      "outgoing": 0.269
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.03,
-        "gender expression expression": 0.09
+        "sexuality expression": -0.001,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {
-        "16275": {
-          "key": 16275,
-          "name": "Eggerdus Wittebart",
-          "age": 34,
-          "alive": false,
-          "sex": "m",
-          "parents": {
-            "mother": "Rabburgis (12050)",
-            "father": "Ino (12049)"
-          }
-        }
-      },
+      "children": {},
       "relationship keys": {
         "spouse": [
           12051
-        ],
-        "child": {
-          "birth": [
-            16276
-          ]
-        }
+        ]
       }
     },
     "occupation": {
       "has job": true,
       "income class": [
-        2,
-        "middle class"
+        3,
+        "upper middle class"
       ],
-      "income": 1.1099999999999999,
+      "income": 0.23299999999999998,
       "all_incomes": [
-        1.095,
-        1.162,
-        1.126,
-        1.168,
-        0.973,
-        1.0619999999999998,
-        0.974,
-        1.1099999999999999
+        0.0,
+        0.05,
+        0.23299999999999998
       ],
       "job": {
         "lawful": false,
-        "honest": true
+        "honest": false
       }
     },
     "genetics": {
-      "skin_color": 9,
+      "skin_color": 6,
       "eye_color": "blue",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
-        "S",
-        "C"
+        "C",
+        "S"
       ],
-      "health": 0.709,
-      "fertility": 0.696,
+      "health": 0.668,
+      "fertility": 0.666,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -112,15 +94,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.709
+            "new_health": 0.668
           },
           "death": false
         },
-        "1206": {
+        "1201": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.709
+            "new_health": 0.668
           },
           "death": true
         }
@@ -128,9 +110,13 @@
       "events": {
         "1200": [
           {
+            "topic": "birth",
+            "year": 1153
+          },
+          {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.095
+            "income": 0.0
           },
           {
             "topic": "new relationship",
@@ -140,80 +126,31 @@
               12050
             ],
             "people names": [
-              "Ino Wittebart",
-              "Rabburgis Duker"
+              "Lambrecht Capoen",
+              "Sywi Zieken"
             ],
             "people ages": [
-              23,
-              22
+              47,
+              43
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stDie lange straet3.se9.c2",
-              "street": "Die lange straet3",
-              "neighborhood": "visbuurt",
-              "unique id": 718
-            }
-          },
-          {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "spouse",
+            "topic": "feelings change",
+            "target": 12050,
+            "target name": "Sywi Zieken",
+            "state": "out of love",
             "friendship label": "friend",
             "relationship": 12051
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.05,
+            "inhabitants": []
           }
         ],
         "1201": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          }
-        ],
-        "1204": [
-          {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.0619999999999998
-          },
-          {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "spouse",
-            "friendship label": "indifferent",
-            "relationship": 12051
-          },
-          {
-            "topic": "new relationship",
-            "key": 16276,
-            "people": [
-              12049,
-              16275
-            ],
-            "people names": [
-              "Ino Wittebart",
-              "Eggerdus Wittebart"
-            ],
-            "people ages": [
-              27,
-              0
-            ],
-            "label": "parentchild",
-            "committed": false
-          }
-        ],
-        "1206": [
-          {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.1099999999999999
-          },
           {
             "topic": "death",
             "cause": "illness"
@@ -223,12 +160,12 @@
     },
     "key": 12049,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stDie lange straet3.se9.c2",
+      "income class": 3,
+      "income class label": "upper middle class",
+      "section": "stDie lange straet3.se7.c3",
       "street": "Die lange straet3",
       "neighborhood": "visbuurt",
-      "unique id": 718
+      "unique id": 712
     },
     "relationship status": {
       "taken": true,
@@ -236,6 +173,10 @@
       "relationships": [
         12051
       ]
-    }
+    },
+    "friends": [
+      12051
+    ],
+    "enemies": []
   }
 }

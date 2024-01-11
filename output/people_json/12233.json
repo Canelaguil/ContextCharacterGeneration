@@ -1,33 +1,35 @@
 {
   "12233": {
     "alive": false,
-    "name": "Erkenradis",
-    "surname": "Hoghen",
-    "full name": "Erkenradis Hoghen",
+    "name": "Reymodis",
+    "surname": "",
+    "full name": "Reymodis",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.085,
-      "romantic interest": 0.651,
-      "sex interest": 0.591,
+      "sexuality": 0.054,
+      "romantic interest": 0.868,
+      "sex interest": 0.662,
       "gender expression": 0.0,
       "sex": "f"
     },
-    "age": 53,
-    "birth year": 1169,
+    "age": 54,
+    "birth year": 1172,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "No religion",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.078,
-      "nice-nasty": 0.828,
-      "honest-false": 0.307
+      "lawful-chaotic": 0.741,
+      "nice-nasty": 0.999,
+      "honest-false": 0.999,
+      "dream": 0.418,
+      "outgoing": 0.807
     },
     "attitude": {
-      "outgoing": 0.33,
-      "dream": 0.803
+      "dream": 0.418,
+      "outgoing": 0.807
     },
     "homsoc": {
       "means": {
@@ -40,22 +42,33 @@
         ]
       },
       "expression": {
-        "sexuality expression": 0.073,
+        "sexuality expression": 0.031,
         "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "13012": {
-          "key": 13012,
-          "name": "Thieleman Schelewart",
-          "age": 26,
+        "13546": {
+          "key": 13546,
+          "name": "Nimme Compere",
+          "age": 20,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Reymodis (12233)",
+            "father": "Conrad (12232)"
+          }
+        },
+        "14697": {
+          "key": 14697,
+          "name": "Gherbaren Compere",
+          "age": 30,
           "alive": false,
           "sex": "m",
           "parents": {
-            "mother": "Erkenradis (12233)",
-            "father": "Swegero (12232)"
+            "mother": "Reymodis (12233)",
+            "father": "Conrad (12232)"
           }
         }
       },
@@ -65,31 +78,48 @@
         ],
         "child": {
           "birth": [
-            13014
+            13548,
+            14699
           ]
-        }
+        },
+        "unrelated": [
+          44721
+        ]
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         1,
         "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.994,
+      "all_incomes": [
+        1.019,
+        1.061,
+        1.02,
+        0.988,
+        0.988,
+        0.998,
+        0.939,
+        0.994
+      ],
+      "job": {
+        "lawful": true,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 8,
-      "eye_color": "green",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 3,
+      "eye_color": "brown",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
-        "C",
-        "S"
+        "S",
+        "C"
       ],
       "health": 0.0,
-      "fertility": 0.783,
+      "fertility": 0.561,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -101,46 +131,38 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.764
+            "new_health": 0.631
           },
           "death": false
         },
-        "1217": {
+        "1222": {
           "health": {
             "change": true,
-            "value_change": -0.122,
-            "new_health": 0.642
+            "value_change": -0.204,
+            "new_health": 0.427
           },
           "death": false
         },
-        "1218": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.642
-          },
-          "death": false
-        },
-        "1219": {
+        "1223": {
           "health": {
             "change": true,
-            "value_change": -0.266,
-            "new_health": 0.376
+            "value_change": -0.247,
+            "new_health": 0.18
           },
           "death": false
         },
-        "1220": {
+        "1224": {
           "health": {
             "change": true,
-            "value_change": -0.28,
-            "new_health": 0.096
+            "value_change": -0.137,
+            "new_health": 0.043
           },
           "death": false
         },
-        "1221": {
+        "1225": {
           "health": {
             "change": true,
-            "value_change": -0.096,
+            "value_change": -0.043,
             "new_health": 0.0
           },
           "death": true
@@ -149,6 +171,10 @@
       "events": {
         "1200": [
           {
+            "topic": "birth",
+            "year": 1172
+          },
+          {
             "topic": "new relationship",
             "key": 12234,
             "people": [
@@ -156,47 +182,29 @@
               12233
             ],
             "people names": [
-              "Swegero Schelewart",
-              "Erkenradis Hoghen"
+              "Conrad Compere",
+              "Reymodis"
             ],
             "people ages": [
-              46,
-              31
+              42,
+              28
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stStoof straet.se3.c1",
-              "street": "Stoof straet",
-              "neighborhood": "visbuurt",
-              "unique id": 782
-            }
-          },
-          {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "spouse",
-            "friendship label": "indifferent",
-            "relationship": 12234
-          },
-          {
             "topic": "new relationship",
-            "key": 13014,
+            "key": 13548,
             "people": [
               12233,
-              13012
+              13546
             ],
             "people names": [
-              "Erkenradis Hoghen",
-              "Thieleman Schelewart"
+              "Reymodis",
+              "Nimme Compere"
             ],
             "people ages": [
-              31,
+              28,
               0
             ],
             "label": "parentchild",
@@ -205,21 +213,40 @@
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          }
-        ],
-        "1204": [
+            "topic": "new relationship",
+            "key": 14699,
+            "people": [
+              12233,
+              14697
+            ],
+            "people names": [
+              "Reymodis",
+              "Gherbaren Compere"
+            ],
+            "people ages": [
+              29,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
           {
             "topic": "feelings change",
             "target": 12232,
-            "target name": "Swegero Schelewart",
+            "target name": "Conrad Compere",
             "state": "out of love",
+            "friendship label": "indifferent",
             "relationship": 12234
           }
         ],
-        "1206": [
+        "1203": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 13548
+          },
           {
             "key": 12234,
             "topic": "unmarried"
@@ -228,14 +255,44 @@
             "topic": "person died",
             "person": {
               "key": 12232,
-              "name": "Swegero Schelewart",
-              "age": 53,
+              "name": "Conrad Compere",
+              "age": 46,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
             },
-            "cause": "sickness",
-            "label": "spouse"
+            "cause": "illness",
+            "friendship label": "indifferent",
+            "label": "spouse",
+            "love state": "out of love"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 13548
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ],
         "1207": [
@@ -267,13 +324,6 @@
           }
         ],
         "1211": [
-          {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "parentchild",
-            "friendship label": "indifferent",
-            "relationship": 13014
-          },
           {
             "topic": "not enough income",
             "income": 0,
@@ -320,7 +370,72 @@
             "inhabitants": []
           }
         ],
-        "1221": [
+        "1217": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1218": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.019
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1220": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 13546,
+              "name": "Nimme Compere",
+              "age": 20,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Reymodis (12233)",
+                "father": "Conrad (12232)"
+              }
+            },
+            "cause": "illness",
+            "friendship label": "indifferent",
+            "label": "child"
+          }
+        ],
+        "1222": [
+          {
+            "topic": "new relationship",
+            "key": 44721,
+            "people": [
+              12233,
+              12392
+            ],
+            "people names": [
+              "Reymodis",
+              "Baua Broem"
+            ],
+            "people ages": [
+              51,
+              45
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1223": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1223
+          }
+        ],
+        "1225": [
           {
             "topic": "death",
             "cause": "sickness"
@@ -335,7 +450,7 @@
       "section": "stStoof straet.se3.c1",
       "street": "Stoof straet",
       "neighborhood": "visbuurt",
-      "unique id": 782
+      "unique id": 778
     },
     "relationship status": {
       "taken": false,
@@ -343,6 +458,10 @@
       "relationships": [
         12234
       ]
-    }
+    },
+    "friends": [
+      44721
+    ],
+    "enemies": []
   }
 }

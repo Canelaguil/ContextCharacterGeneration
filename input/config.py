@@ -7,8 +7,8 @@ are fed to the model through generation.py.
 
 
 simulation = {
-    'number_of_years' : 75,
-    'simulation_output' : False,
+    'number_of_years' : 50,
+    'simulation_output' : True,
     'json_output' : True,
     'tests' : False
 }
@@ -69,6 +69,7 @@ society = {
     'marriage_age_women' : 16,
     'marriage_age_men' : 20,
     'male_meant_for_independence' :  True,
+    'desired_friends_outgoing' : 20, # number of friends desired by a 100% outgoing person
     'female_meant_for_independence' : False,
     'name_system' : 'medieval', # ['medieval', 'male-centric', 'equal']
 }

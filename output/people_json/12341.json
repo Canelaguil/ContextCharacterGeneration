@@ -1,33 +1,35 @@
 {
   "12341": {
     "alive": false,
-    "name": "Gheesen",
-    "surname": "",
-    "full name": "Gheesen",
+    "name": "Ghodelde",
+    "surname": "Colueken",
+    "full name": "Ghodelde Colueken",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.783,
-      "romantic interest": 0.682,
-      "sex interest": 0.678,
-      "gender expression": 0.228,
+      "sexuality label": "straight",
+      "sexuality": 0.109,
+      "romantic interest": 0.665,
+      "sex interest": 0.819,
+      "gender expression": 0.067,
       "sex": "f"
     },
-    "age": 47,
-    "birth year": 1169,
+    "age": 49,
+    "birth year": 1179,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "Zealots",
     "income class": [
       3,
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.716,
-      "nice-nasty": 0.053,
-      "honest-false": 0.645
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.999,
+      "honest-false": 0.01,
+      "dream": 0.529,
+      "outgoing": 0.464
     },
     "attitude": {
-      "outgoing": 0.588,
-      "dream": 0.274
+      "dream": 0.529,
+      "outgoing": 0.464
     },
     "homsoc": {
       "means": {
@@ -35,19 +37,42 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.339,
-        "gender expression expression": 0.069
+        "sexuality expression": 0.058,
+        "gender expression expression": 0.052
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14970": {
+          "key": 14970,
+          "name": "Imma Baligant",
+          "age": 12,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Ghodelde (12341)",
+            "father": "Pelegrim (12340)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           12342
+        ],
+        "child": {
+          "birth": [
+            14972
+          ]
+        },
+        "unrelated": [
+          20755,
+          34080
         ]
       }
     },
@@ -61,16 +86,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 4,
+      "skin_color": 6,
       "eye_color": "brown",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "S",
-        "S"
+        "C"
       ],
-      "health": 0.648,
-      "fertility": 0.602,
+      "health": 0.754,
+      "fertility": 0.745,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -82,13 +107,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.648
+            "new_health": 0.754
           },
           "death": false
+        },
+        "1227": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.754
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1179
+          },
           {
             "topic": "new relationship",
             "key": 12342,
@@ -97,42 +134,200 @@
               12341
             ],
             "people names": [
-              "Bartholomeus Spriet",
-              "Gheesen"
+              "Pelegrim Baligant",
+              "Ghodelde Colueken"
             ],
             "people ages": [
-              34,
-              31
+              31,
+              21
             ],
             "label": "spouse",
             "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stMuurhuysen2.se7.c3",
-              "street": "Muurhuysen2",
-              "neighborhood": "cingelnoord",
-              "unique id": 821
-            }
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "topic": "new relationship",
+            "key": 14972,
+            "people": [
+              12341,
+              14970
+            ],
+            "people names": [
+              "Ghodelde Colueken",
+              "Imma Baligant"
+            ],
+            "people ages": [
+              22,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1202": [
+          {
+            "key": 12342,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12340,
+              "name": "Pelegrim Baligant",
+              "age": 34,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "friendship label": "friend",
+            "label": "spouse",
+            "love state": "out of love"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 20755,
+            "people": [
+              12341,
+              10424
+            ],
+            "people names": [
+              "Ghodelde Colueken",
+              "Gloria"
+            ],
+            "people ages": [
+              25,
+              20
+            ],
+            "label": "unrelated",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1204": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "new relationship",
+            "key": 34080,
+            "people": [
+              11324,
+              12341
+            ],
+            "people names": [
+              "Riet",
+              "Ghodelde Colueken"
+            ],
+            "people ages": [
+              30,
+              32
+            ],
+            "label": "unrelated",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ],
         "1211": [
           {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
             "topic": "update",
             "update": "new friendship label",
-            "relationship label": "spouse",
-            "friendship label": "friend",
-            "relationship": 12342
+            "relationship label": "unrelated",
+            "friendship label": "indifferent",
+            "relationship": 34080
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 14970,
+              "name": "Imma Baligant",
+              "age": 12,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Ghodelde (12341)",
+                "father": "Pelegrim (12340)"
+              }
+            },
+            "cause": "starvation",
+            "friendship label": "indifferent",
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ],
         "1215": [
@@ -141,6 +336,125 @@
             "event": "plague",
             "year": 1215
           },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1216": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10424,
+              "name": "Gloria",
+              "age": 33,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "starvation",
+            "friendship label": "friend",
+            "label": "unrelated",
+            "love state": "nothing"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1217": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1218": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1219": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1220": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1221": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11324,
+              "name": "Riet",
+              "age": 41,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "starvation",
+            "friendship label": "indifferent",
+            "label": "unrelated",
+            "love state": "nothing"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1222": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1223": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1223
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1224": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1225": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1226": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1227": [
           {
             "topic": "death",
             "cause": "illness"
@@ -152,17 +466,22 @@
     "home": {
       "income class": 3,
       "income class label": "upper middle class",
-      "section": "stMuurhuysen2.se7.c3",
+      "section": "stMuurhuysen2.se5.c3",
       "street": "Muurhuysen2",
       "neighborhood": "cingelnoord",
-      "unique id": 821
+      "unique id": 816
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         12342
       ]
-    }
+    },
+    "friends": [
+      12342,
+      20755
+    ],
+    "enemies": []
   }
 }

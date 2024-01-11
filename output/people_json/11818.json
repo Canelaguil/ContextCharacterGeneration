@@ -1,33 +1,35 @@
 {
   "11818": {
     "alive": false,
-    "name": "Hatebrandus",
-    "surname": "Vroede",
-    "full name": "Hatebrandus Vroede",
+    "name": "Geldmaro",
+    "surname": "Sloet",
+    "full name": "Geldmaro Sloet",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.767,
-      "sex interest": 0.756,
-      "gender expression": 0.185,
+      "sexuality": 0.022,
+      "romantic interest": 0.684,
+      "sex interest": 0.687,
+      "gender expression": 0.191,
       "sex": "m"
     },
-    "age": 54,
-    "birth year": 1167,
+    "age": 36,
+    "birth year": 1169,
     "sex": "m",
-    "faction": "Dogmatists",
+    "faction": "Zealots",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.805,
-      "honest-false": 0.919
+      "lawful-chaotic": 0.838,
+      "nice-nasty": 0.613,
+      "honest-false": 0.999,
+      "dream": 0.295,
+      "outgoing": 0.449
     },
     "attitude": {
-      "outgoing": 0.297,
-      "dream": 0.455
+      "dream": 0.295,
+      "outgoing": 0.449
     },
     "homsoc": {
       "means": {
@@ -38,18 +40,46 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.118
+        "sexuality expression": 0.012,
+        "gender expression expression": 0.102
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14260": {
+          "key": 14260,
+          "name": "Marie Sloet",
+          "age": 49,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Cofte (11819)",
+            "father": "Geldmaro (11818)"
+          }
+        },
+        "17659": {
+          "key": 17659,
+          "name": "Emmelina Sloet",
+          "age": 37,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Cofte (11819)",
+            "father": "Geldmaro (11818)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          11820,
-          17511
-        ]
+          11820
+        ],
+        "child": {
+          "birth": [
+            14261,
+            17660
+          ]
+        }
       }
     },
     "occupation": {
@@ -58,30 +88,14 @@
         2,
         "middle class"
       ],
-      "income": 1.524,
+      "income": 1.3219999999999998,
       "all_incomes": [
-        1.06,
-        1.156,
-        1.212,
-        1.2369999999999999,
-        1.1949999999999998,
-        1.2009999999999998,
-        1.182,
-        1.031,
-        1.125,
-        1.19,
-        1.2489999999999999,
-        1.2819999999999998,
-        1.317,
-        1.3459999999999999,
-        1.377,
-        1.353,
-        1.382,
-        1.4189999999999998,
-        1.4669999999999999,
-        1.5,
-        1.514,
-        1.524
+        1.019,
+        1.067,
+        1.0979999999999999,
+        1.1629999999999998,
+        1.21,
+        1.3219999999999998
       ],
       "job": {
         "lawful": true,
@@ -89,16 +103,16 @@
       }
     },
     "genetics": {
-      "skin_color": 6,
-      "eye_color": "brown",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "skin_color": 2,
+      "eye_color": "green",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "C",
-        "S"
+        "C"
       ],
-      "health": 0.0,
-      "fertility": 0.508,
+      "health": 0.713,
+      "fertility": 0.71,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -110,39 +124,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.551
+            "new_health": 0.713
           },
           "death": false
         },
-        "1217": {
+        "1204": {
           "health": {
-            "change": true,
-            "value_change": -0.106,
-            "new_health": 0.445
-          },
-          "death": false
-        },
-        "1218": {
-          "health": {
-            "change": true,
-            "value_change": -0.318,
-            "new_health": 0.127
-          },
-          "death": false
-        },
-        "1219": {
-          "health": {
-            "change": true,
-            "value_change": -0.103,
-            "new_health": 0.024
-          },
-          "death": false
-        },
-        "1220": {
-          "health": {
-            "change": true,
-            "value_change": -0.024,
-            "new_health": 0.0
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.713
           },
           "death": true
         }
@@ -150,9 +140,13 @@
       "events": {
         "1200": [
           {
+            "topic": "birth",
+            "year": 1169
+          },
+          {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.06
+            "income": 1.019
           },
           {
             "topic": "new relationship",
@@ -162,111 +156,84 @@
               11819
             ],
             "people names": [
-              "Hatebrandus Vroede",
-              "Victoria"
+              "Geldmaro Sloet",
+              "Cofte"
+            ],
+            "people ages": [
+              31,
+              25
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new relationship",
+            "key": 14261,
+            "people": [
+              11818,
+              14260
+            ],
+            "people names": [
+              "Geldmaro Sloet",
+              "Marie Sloet"
+            ],
+            "people ages": [
+              31,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 11819,
+            "target name": "Cofte",
+            "state": "out of love",
+            "friendship label": "friend",
+            "relationship": 11820
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 17660,
+            "people": [
+              11818,
+              17659
+            ],
+            "people names": [
+              "Geldmaro Sloet",
+              "Emmelina Sloet"
             ],
             "people ages": [
               33,
-              18
+              0
             ],
-            "label": "spouse",
-            "committed": true
+            "label": "parentchild",
+            "committed": false
           },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stScherbier straet.se3.c2",
-              "street": "Scherbier straet",
-              "neighborhood": "cingelzuid",
-              "unique id": 638
-            }
-          }
-        ],
-        "1201": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          },
-          {
-            "key": 11820,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 11819,
-              "name": "Victoria",
-              "age": 20,
-              "alive": false,
-              "sex": "f",
-              "parents": "firstgen"
-            },
-            "cause": "illness",
-            "label": "spouse"
-          }
-        ],
-        "1205": [
-          {
-            "topic": "new relationship",
-            "key": 17511,
-            "people": [
-              11818,
-              12062
-            ],
-            "people names": [
-              "Hatebrandus Vroede",
-              "Woltwigis Valecappe"
-            ],
-            "people ages": [
-              39,
-              30
-            ],
-            "label": "spouse",
-            "committed": true
-          }
-        ],
-        "1208": [
           {
             "topic": "feelings change",
-            "target": 12062,
-            "target name": "Woltwigis Valecappe",
-            "state": "out of love",
-            "relationship": 17511
+            "target": 11819,
+            "target name": "Cofte",
+            "state": "infatuation",
+            "friendship label": "friend",
+            "relationship": 11820
           }
         ],
-        "1210": [
+        "1203": [
           {
-            "key": 17511,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 12062,
-              "name": "Woltwigis Valecappe",
-              "age": 35,
-              "alive": false,
-              "sex": "f",
-              "parents": "firstgen"
-            },
-            "cause": "illness",
-            "label": "spouse"
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 14261
           }
         ],
-        "1215": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1215
-          }
-        ],
-        "1220": [
+        "1204": [
           {
             "topic": "death",
-            "cause": "sickness"
+            "cause": "illness"
           }
         ]
       }
@@ -275,18 +242,22 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stScherbier straet.se3.c2",
+      "section": "stScherbier straet.se1.c2",
       "street": "Scherbier straet",
       "neighborhood": "cingelzuid",
-      "unique id": 638
+      "unique id": 628
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
-        11820,
-        17511
+        11820
       ]
-    }
+    },
+    "friends": [
+      11820,
+      14261
+    ],
+    "enemies": []
   }
 }

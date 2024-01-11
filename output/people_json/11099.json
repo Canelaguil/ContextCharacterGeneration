@@ -1,33 +1,35 @@
 {
   "11099": {
     "alive": false,
-    "name": "Menoldis",
-    "surname": "Crudepen",
-    "full name": "Menoldis Crudepen",
+    "name": "Oda",
+    "surname": "Minneman",
+    "full name": "Oda Minneman",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.938,
-      "romantic interest": 0.722,
-      "sex interest": 0.704,
-      "gender expression": 0.681,
+      "sexuality label": "straight",
+      "sexuality": 0.06,
+      "romantic interest": 0.488,
+      "sex interest": 0.54,
+      "gender expression": 0.058,
       "sex": "f"
     },
-    "age": 18,
-    "birth year": 1184,
+    "age": 42,
+    "birth year": 1170,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "No religion",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.495,
-      "nice-nasty": 0.148,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.681,
+      "nice-nasty": 0.616,
+      "honest-false": 0.679,
+      "dream": 0.251,
+      "outgoing": 0.698
     },
     "attitude": {
-      "outgoing": 0.794,
-      "dream": 0.41
+      "dream": 0.251,
+      "outgoing": 0.698
     },
     "homsoc": {
       "means": {
@@ -38,17 +40,73 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.849,
-        "gender expression expression": 0.525
+        "sexuality expression": 0.02,
+        "gender expression expression": 0.022
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "17349": {
+          "key": 17349,
+          "name": "Sylawert Loddernie",
+          "age": 15,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Oda (11099)",
+            "father": "Conrado (11098)"
+          }
+        },
+        "19598": {
+          "key": 19598,
+          "name": "Godeuert Loddernie",
+          "age": 13,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Oda (11099)",
+            "father": "Conrado (11098)"
+          }
+        },
+        "29025": {
+          "key": 29025,
+          "name": "Ludingus Loddernie",
+          "age": 38,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Oda (11099)",
+            "father": "Conrado (11098)"
+          }
+        },
+        "31159": {
+          "key": 31159,
+          "name": "Heillam Loddernie",
+          "age": 40,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Oda (11099)",
+            "father": "Conrado (11098)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11100
-        ]
+        ],
+        "unrelated": [
+          16468
+        ],
+        "child": {
+          "birth": [
+            17351,
+            19600,
+            29027,
+            31161
+          ]
+        }
       }
     },
     "occupation": {
@@ -57,26 +115,29 @@
         2,
         "middle class"
       ],
-      "income": 1.029,
+      "income": 0.839,
       "all_incomes": [
-        1.029
+        0.962,
+        0.914,
+        0.874,
+        0.839
       ],
       "job": {
-        "lawful": false,
+        "lawful": true,
         "honest": true
       }
     },
     "genetics": {
-      "skin_color": 6,
+      "skin_color": 8,
       "eye_color": "brown",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "C",
         "S"
       ],
-      "health": 0.781,
-      "fertility": 0.785,
+      "health": 0.652,
+      "fertility": 0.543,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -88,13 +149,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.781
+            "new_health": 0.652
           },
           "death": false
+        },
+        "1211": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.652
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1170
+          },
           {
             "topic": "new relationship",
             "key": 11100,
@@ -103,39 +176,156 @@
               11099
             ],
             "people names": [
-              "Rutgerus Toreel",
-              "Menoldis Crudepen"
+              "Conrado Loddernie",
+              "Oda Minneman"
             ],
             "people ages": [
-              22,
-              16
+              42,
+              30
             ],
             "label": "spouse",
             "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stDie Camp.se5.c2",
-              "street": "Die Camp",
-              "neighborhood": "kampbuurt",
-              "unique id": 387
-            }
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "topic": "feelings change",
+            "target": 11098,
+            "target name": "Conrado Loddernie",
+            "state": "out of love",
+            "friendship label": "indifferent",
+            "relationship": 11100
           },
+          {
+            "topic": "new relationship",
+            "key": 16468,
+            "people": [
+              12148,
+              11099
+            ],
+            "people names": [
+              "Richolfus Ome",
+              "Oda Minneman"
+            ],
+            "people ages": [
+              50,
+              32
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 17351,
+            "people": [
+              11099,
+              17349
+            ],
+            "people names": [
+              "Oda Minneman",
+              "Sylawert Loddernie"
+            ],
+            "people ages": [
+              33,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 19600,
+            "people": [
+              11099,
+              19598
+            ],
+            "people names": [
+              "Oda Minneman",
+              "Godeuert Loddernie"
+            ],
+            "people ages": [
+              33,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1205": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 17351
+          }
+        ],
+        "1207": [
+          {
+            "topic": "new relationship",
+            "key": 29027,
+            "people": [
+              11099,
+              29025
+            ],
+            "people names": [
+              "Oda Minneman",
+              "Ludingus Loddernie"
+            ],
+            "people ages": [
+              38,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1208": [
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.029
+            "income": 0.962
+          }
+        ],
+        "1209": [
+          {
+            "topic": "new relationship",
+            "key": 31161,
+            "people": [
+              11099,
+              31159
+            ],
+            "people names": [
+              "Oda Minneman",
+              "Heillam Loddernie"
+            ],
+            "people ages": [
+              39,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 29027
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "friend",
+            "relationship": 16468
+          }
+        ],
+        "1211": [
           {
             "topic": "death",
             "cause": "illness"
@@ -147,17 +337,22 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stDie Camp.se5.c2",
+      "section": "stDie Camp.se3.c2",
       "street": "Die Camp",
       "neighborhood": "kampbuurt",
-      "unique id": 387
+      "unique id": 379
     },
     "relationship status": {
-      "taken": true,
+      "taken": false,
       "married": true,
       "relationships": [
         11100
       ]
-    }
+    },
+    "friends": [
+      16468,
+      19600
+    ],
+    "enemies": []
   }
 }

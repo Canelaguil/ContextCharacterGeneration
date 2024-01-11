@@ -1,33 +1,35 @@
 {
   "10669": {
     "alive": false,
-    "name": "Firiin",
-    "surname": "",
-    "full name": "Firiin",
+    "name": "Niels",
+    "surname": "Blessard",
+    "full name": "Niels Blessard",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.053,
-      "romantic interest": 0.776,
-      "sex interest": 0.799,
-      "gender expression": 0.064,
+      "sexuality": 0.059,
+      "romantic interest": 0.815,
+      "sex interest": 0.82,
+      "gender expression": 0.0,
       "sex": "m"
     },
-    "age": 54,
-    "birth year": 1166,
+    "age": 56,
+    "birth year": 1151,
     "sex": "m",
-    "faction": "Dogmatists",
+    "faction": "Zealots",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.69,
-      "nice-nasty": 0.0,
-      "honest-false": 0.124
+      "lawful-chaotic": 0.485,
+      "nice-nasty": 0.734,
+      "honest-false": 0.057,
+      "dream": 0.528,
+      "outgoing": 0.637
     },
     "attitude": {
-      "outgoing": 0.147,
-      "dream": 0.629
+      "dream": 0.528,
+      "outgoing": 0.637
     },
     "homsoc": {
       "means": {
@@ -38,22 +40,33 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.024,
-        "gender expression expression": 0.034
+        "sexuality expression": 0.033,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "16610": {
-          "key": 16610,
-          "name": "Emmelina",
-          "age": 4,
+        "14797": {
+          "key": 14797,
+          "name": "Gheynekine Blessard",
+          "age": 14,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Heilsota (10670)",
+            "father": "Niels (10669)"
+          }
+        },
+        "21125": {
+          "key": 21125,
+          "name": "Nellen Blessard",
+          "age": 1,
           "alive": false,
           "sex": "f",
           "parents": {
-            "mother": "Lutghardis (10670)",
-            "father": "Firiin (10669)"
+            "mother": "Heilsota (10670)",
+            "father": "Niels (10669)"
           }
         }
       },
@@ -63,7 +76,8 @@
         ],
         "child": {
           "birth": [
-            16611
+            14798,
+            21126
           ]
         }
       }
@@ -74,46 +88,33 @@
         2,
         "middle class"
       ],
-      "income": 0.975,
+      "income": 1.524,
       "all_incomes": [
-        1.012,
-        1.0799999999999998,
-        0.8130000000000001,
-        0.735,
-        0.722,
-        0.855,
-        0.732,
-        0.67,
-        0.9440000000000001,
-        0.982,
-        0.811,
-        0.764,
-        0.769,
-        0.964,
-        0.857,
-        1.0879999999999999,
-        0.969,
-        0.716,
-        0.867,
-        0.898,
-        0.975
+        1.166,
+        1.524,
+        1.4129999999999998,
+        1.4309999999999998,
+        1.524,
+        1.524,
+        1.524,
+        1.524
       ],
       "job": {
-        "lawful": true,
+        "lawful": false,
         "honest": false
       }
     },
     "genetics": {
-      "skin_color": 1,
+      "skin_color": 2,
       "eye_color": "brown",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
-        "C",
+        "S",
         "S"
       ],
       "health": 0.0,
-      "fertility": 0.521,
+      "fertility": 0.648,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -125,38 +126,46 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.576
+            "new_health": 0.713
           },
           "death": false
         },
-        "1216": {
+        "1202": {
           "health": {
             "change": true,
-            "value_change": -0.253,
-            "new_health": 0.323
+            "value_change": -0.107,
+            "new_health": 0.606
           },
           "death": false
         },
-        "1217": {
+        "1203": {
           "health": {
             "change": true,
-            "value_change": -0.221,
-            "new_health": 0.102
+            "value_change": -0.255,
+            "new_health": 0.351
           },
           "death": false
         },
-        "1218": {
+        "1204": {
           "health": {
             "change": true,
-            "value_change": -0.035,
-            "new_health": 0.067
+            "value_change": -0.22,
+            "new_health": 0.131
           },
           "death": false
         },
-        "1219": {
+        "1205": {
           "health": {
             "change": true,
-            "value_change": -0.067,
+            "value_change": -0.07,
+            "new_health": 0.061
+          },
+          "death": false
+        },
+        "1206": {
+          "health": {
+            "change": true,
+            "value_change": -0.061,
             "new_health": 0.0
           },
           "death": true
@@ -165,9 +174,13 @@
       "events": {
         "1200": [
           {
+            "topic": "birth",
+            "year": 1151
+          },
+          {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.012
+            "income": 1.166
           },
           {
             "topic": "new relationship",
@@ -177,27 +190,47 @@
               10670
             ],
             "people names": [
-              "Firiin",
-              "Lutghardis"
+              "Niels Blessard",
+              "Heilsota"
             ],
             "people ages": [
-              34,
-              33
+              49,
+              22
             ],
             "label": "spouse",
             "committed": true
-          },
+          }
+        ],
+        "1201": [
           {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stBloemendaelse straet.se5.c2",
-              "street": "Bloemendaelse straet",
-              "neighborhood": "agnesbuurt",
-              "unique id": 234
-            }
-          },
+            "topic": "new relationship",
+            "key": 14798,
+            "people": [
+              10669,
+              14797
+            ],
+            "people names": [
+              "Niels Blessard",
+              "Gheynekine Blessard"
+            ],
+            "people ages": [
+              50,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1202": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "good friend",
+            "relationship": 14798
+          }
+        ],
+        "1204": [
           {
             "topic": "update",
             "update": "new friendship label",
@@ -206,41 +239,18 @@
             "relationship": 10671
           },
           {
-            "topic": "feelings change",
-            "target": 10670,
-            "target name": "Lutghardis",
-            "state": "solid love",
-            "relationship": 10671
-          }
-        ],
-        "1201": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          }
-        ],
-        "1202": [
-          {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.735
-          }
-        ],
-        "1204": [
-          {
             "topic": "new relationship",
-            "key": 16611,
+            "key": 21126,
             "people": [
               10669,
-              16610
+              21125
             ],
             "people names": [
-              "Firiin",
-              "Emmelina"
+              "Niels Blessard",
+              "Nellen Blessard"
             ],
             "people ages": [
-              39,
+              53,
               0
             ],
             "label": "parentchild",
@@ -249,58 +259,24 @@
         ],
         "1205": [
           {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.732
-          }
-        ],
-        "1208": [
-          {
-            "topic": "feelings change",
-            "target": 10670,
-            "target name": "Lutghardis",
-            "state": "out of love",
-            "relationship": 10671
-          },
-          {
             "topic": "person died",
             "person": {
-              "key": 16610,
-              "name": "Emmelina",
-              "age": 4,
+              "key": 21125,
+              "name": "Nellen Blessard",
+              "age": 1,
               "alive": false,
               "sex": "f",
               "parents": {
-                "mother": "Lutghardis (10670)",
-                "father": "Firiin (10669)"
+                "mother": "Heilsota (10670)",
+                "father": "Niels (10669)"
               }
             },
-            "cause": "childhood illness",
+            "cause": "childbirth",
+            "friendship label": "indifferent",
             "label": "child"
           }
         ],
-        "1214": [
-          {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.0879999999999999
-          }
-        ],
-        "1215": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1215
-          }
-        ],
-        "1216": [
-          {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.716
-          }
-        ],
-        "1219": [
+        "1206": [
           {
             "topic": "death",
             "cause": "sickness"
@@ -315,7 +291,7 @@
       "section": "stBloemendaelse straet.se5.c2",
       "street": "Bloemendaelse straet",
       "neighborhood": "agnesbuurt",
-      "unique id": 234
+      "unique id": 233
     },
     "relationship status": {
       "taken": true,
@@ -323,6 +299,10 @@
       "relationships": [
         10671
       ]
-    }
+    },
+    "friends": [
+      14798
+    ],
+    "enemies": []
   }
 }

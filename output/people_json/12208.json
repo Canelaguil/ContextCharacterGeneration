@@ -1,53 +1,124 @@
 {
   "12208": {
     "alive": false,
-    "name": "Heinkin",
-    "surname": "",
-    "full name": "Heinkin",
+    "name": "Brame",
+    "surname": "Widoeghe",
+    "full name": "Brame Widoeghe",
     "born this way": {
-      "sexuality label": "bi",
-      "sexuality": 0.674,
-      "romantic interest": 0.876,
-      "sex interest": 0.625,
-      "gender expression": 0.197,
+      "sexuality label": "straight",
+      "sexuality": 0.019,
+      "romantic interest": 0.596,
+      "sex interest": 0.805,
+      "gender expression": 0.104,
       "sex": "m"
     },
-    "age": 49,
-    "birth year": 1154,
+    "age": 53,
+    "birth year": 1156,
     "sex": "m",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.391,
-      "honest-false": 0.351
+      "lawful-chaotic": 0.291,
+      "nice-nasty": 0.298,
+      "honest-false": 0.214,
+      "dream": 0.41,
+      "outgoing": 0.732
     },
     "attitude": {
-      "outgoing": 0.447,
-      "dream": 0.066
+      "dream": 0.41,
+      "outgoing": 0.732
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.388,
-        "gender expression expression": 0.04
+        "sexuality expression": 0.012,
+        "gender expression expression": 0.076
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "16583": {
+          "key": 16583,
+          "name": "Wybel Widoeghe",
+          "age": 4,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Gloria (12209)",
+            "father": "Brame (12208)"
+          }
+        },
+        "20491": {
+          "key": 20491,
+          "name": "Saxiardis Widoeghe",
+          "age": 23,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Gloria (12209)",
+            "father": "Brame (12208)"
+          }
+        },
+        "20915": {
+          "key": 20915,
+          "name": "Mattheus",
+          "age": 12,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Gloria (12209)",
+            "father": "Brame (12208)"
+          }
+        },
+        "25727": {
+          "key": 25727,
+          "name": "Alebrando Widoeghe",
+          "age": 5,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Gloria (12209)",
+            "father": "Brame (12208)"
+          }
+        },
+        "28484": {
+          "key": 28484,
+          "name": "Sipper Widoeghe",
+          "age": 8,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Gloria (12209)",
+            "father": "Brame (12208)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           12210
+        ],
+        "child": {
+          "birth": [
+            16584,
+            20492,
+            20916,
+            25728,
+            28485
+          ]
+        },
+        "unrelated": [
+          20771,
+          25045
         ]
       }
     },
@@ -57,29 +128,35 @@
         1,
         "lower middle class"
       ],
-      "income": 0.717,
+      "income": 1.499,
       "all_incomes": [
-        0.974,
-        0.771,
-        0.917,
-        0.717
+        1.344,
+        0.925,
+        0.989,
+        1.129,
+        1.417,
+        0.951,
+        1.05,
+        1.333,
+        1.499,
+        1.499
       ],
       "job": {
-        "lawful": true,
+        "lawful": false,
         "honest": false
       }
     },
     "genetics": {
-      "skin_color": 0,
-      "eye_color": "green",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "skin_color": 1,
+      "eye_color": "brown",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
         "C",
         "C"
       ],
-      "health": 0.639,
-      "fertility": 0.669,
+      "health": 0.045,
+      "fertility": 0.78,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -91,15 +168,31 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.639
+            "new_health": 0.696
           },
           "death": false
         },
-        "1202": {
+        "1206": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.639
+            "change": true,
+            "value_change": -0.324,
+            "new_health": 0.372
+          },
+          "death": false
+        },
+        "1207": {
+          "health": {
+            "change": true,
+            "value_change": -0.232,
+            "new_health": 0.14
+          },
+          "death": false
+        },
+        "1208": {
+          "health": {
+            "change": true,
+            "value_change": -0.095,
+            "new_health": 0.045
           },
           "death": true
         }
@@ -107,9 +200,13 @@
       "events": {
         "1200": [
           {
+            "topic": "birth",
+            "year": 1156
+          },
+          {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.974
+            "income": 1.344
           },
           {
             "topic": "new relationship",
@@ -119,51 +216,193 @@
               12209
             ],
             "people names": [
-              "Heinkin",
-              "Iris"
+              "Brame Widoeghe",
+              "Gloria Canne"
             ],
             "people ages": [
-              46,
-              37
+              44,
+              27
             ],
             "label": "spouse",
             "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stStoof straet.se1.c1",
-              "street": "Stoof straet",
-              "neighborhood": "visbuurt",
-              "unique id": 773
-            }
-          }
-        ],
-        "1201": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          },
-          {
-            "topic": "feelings change",
-            "target": 12209,
-            "target name": "Iris",
-            "state": "out of love",
-            "relationship": 12210
           }
         ],
         "1202": [
           {
             "topic": "job notice",
-            "notice": "low income",
-            "income": 0.717
+            "notice": "comfortable earnings",
+            "income": 1.129
           },
           {
+            "topic": "new relationship",
+            "key": 16584,
+            "people": [
+              12208,
+              16583
+            ],
+            "people names": [
+              "Brame Widoeghe",
+              "Wybel Widoeghe"
+            ],
+            "people ages": [
+              46,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 20492,
+            "people": [
+              12208,
+              20491
+            ],
+            "people names": [
+              "Brame Widoeghe",
+              "Saxiardis Widoeghe"
+            ],
+            "people ages": [
+              48,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "new relationship",
+            "key": 20771,
+            "people": [
+              12208,
+              12320
+            ],
+            "people names": [
+              "Brame Widoeghe",
+              "Ricmoden Codde"
+            ],
+            "people ages": [
+              48,
+              43
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 20916,
+            "people": [
+              12208,
+              20915
+            ],
+            "people names": [
+              "Brame Widoeghe",
+              "Mattheus"
+            ],
+            "people ages": [
+              48,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1205": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.05
+          },
+          {
+            "topic": "new relationship",
+            "key": 25045,
+            "people": [
+              12208,
+              12227
+            ],
+            "people names": [
+              "Brame Widoeghe",
+              "Margareta"
+            ],
+            "people ages": [
+              50,
+              37
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 25728,
+            "people": [
+              12208,
+              25727
+            ],
+            "people names": [
+              "Brame Widoeghe",
+              "Alebrando Widoeghe"
+            ],
+            "people ages": [
+              50,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 16583,
+              "name": "Wybel Widoeghe",
+              "age": 4,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Gloria (12209)",
+                "father": "Brame (12208)"
+              }
+            },
+            "cause": "childhood illness",
+            "friendship label": "indifferent",
+            "label": "child"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "friend",
+            "relationship": 20771
+          },
+          {
+            "topic": "new relationship",
+            "key": 28485,
+            "people": [
+              12208,
+              28484
+            ],
+            "people names": [
+              "Brame Widoeghe",
+              "Sipper Widoeghe"
+            ],
+            "people ages": [
+              52,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1208": [
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "old age"
           }
         ]
       }
@@ -172,17 +411,26 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stStoof straet.se1.c1",
-      "street": "Stoof straet",
+      "section": "stNieu straet.se3.c1",
+      "street": "Nieu straet",
       "neighborhood": "visbuurt",
-      "unique id": 773
+      "unique id": 770
     },
     "relationship status": {
-      "taken": true,
+      "taken": false,
       "married": true,
       "relationships": [
         12210
       ]
-    }
+    },
+    "friends": [
+      12210,
+      20492,
+      20916,
+      25728,
+      20771,
+      25045
+    ],
+    "enemies": []
   }
 }

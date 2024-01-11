@@ -1,59 +1,83 @@
 {
   "10042": {
     "alive": false,
-    "name": "Snellard",
-    "surname": "Mule",
-    "full name": "Snellard Mule",
+    "name": "Trove",
+    "surname": "Sluke",
+    "full name": "Trove Sluke",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.057,
-      "romantic interest": 0.533,
-      "sex interest": 0.56,
-      "gender expression": 0.069,
+      "sexuality label": "gay",
+      "sexuality": 0.86,
+      "romantic interest": 0.99,
+      "sex interest": 0.74,
+      "gender expression": 0.579,
       "sex": "m"
     },
-    "age": 53,
-    "birth year": 1155,
+    "age": 33,
+    "birth year": 1178,
     "sex": "m",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.098,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.738,
+      "nice-nasty": 0.755,
+      "honest-false": 0.332,
+      "dream": 0.574,
+      "outgoing": 0.558
     },
     "attitude": {
-      "outgoing": 0.475,
-      "dream": 0.604
+      "dream": 0.574,
+      "outgoing": 0.558
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.039,
-        "gender expression expression": 0.055
+        "sexuality expression": 0.303,
+        "gender expression expression": 0.461
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "13841": {
-          "key": 13841,
-          "name": "Emmelina Mule",
-          "age": 21,
+        "17884": {
+          "key": 17884,
+          "name": "Andreas Sluke",
+          "age": 47,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Machtilden (10043)",
+            "father": "Trove (10042)"
+          }
+        },
+        "20874": {
+          "key": 20874,
+          "name": "Rase Sluke",
+          "age": 45,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Machtilden (10043)",
+            "father": "Trove (10042)"
+          }
+        },
+        "23312": {
+          "key": 23312,
+          "name": "Saxiardis Sluke",
+          "age": 11,
           "alive": false,
           "sex": "f",
           "parents": {
-            "mother": "Euffemia (10043)",
-            "father": "Snellard (10042)"
+            "mother": "Machtilden (10043)",
+            "father": "Trove (10042)"
           }
         }
       },
@@ -63,7 +87,9 @@
         ],
         "child": {
           "birth": [
-            13842
+            17885,
+            20875,
+            23313
           ]
         }
       }
@@ -74,34 +100,37 @@
         2,
         "middle class"
       ],
-      "income": 0.615,
+      "income": 1.192,
       "all_incomes": [
-        0.735,
-        0.73,
-        0.7010000000000001,
-        0.623,
-        0.5660000000000001,
-        0.439,
-        0.545,
-        0.5830000000000001,
-        0.615
+        0.646,
+        0.756,
+        0.882,
+        1.037,
+        1.158,
+        1.2309999999999999,
+        0.878,
+        0.849,
+        1.0819999999999999,
+        1.2469999999999999,
+        1.107,
+        1.192
       ],
       "job": {
-        "lawful": false,
-        "honest": true
+        "lawful": true,
+        "honest": false
       }
     },
     "genetics": {
-      "skin_color": 0,
-      "eye_color": "brown",
+      "skin_color": 9,
+      "eye_color": "green",
       "hair_color": "strawberry blonde",
       "hair_color_code": 5,
       "hair_type": [
-        "C",
-        "S"
+        "S",
+        "C"
       ],
-      "health": 0.0,
-      "fertility": 0.723,
+      "health": 0.817,
+      "fertility": 0.822,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -111,41 +140,17 @@
       "health": {
         "1200": {
           "health": {
-            "change": true,
-            "value_change": -0.252,
-            "new_health": 0.447
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.817
           },
           "death": false
         },
-        "1201": {
+        "1210": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.447
-          },
-          "death": false
-        },
-        "1205": {
-          "health": {
-            "change": true,
-            "value_change": -0.159,
-            "new_health": 0.288
-          },
-          "death": false
-        },
-        "1206": {
-          "health": {
-            "change": true,
-            "value_change": -0.221,
-            "new_health": 0.067
-          },
-          "death": false
-        },
-        "1207": {
-          "health": {
-            "change": true,
-            "value_change": -0.067,
-            "new_health": 0.0
+            "new_health": 0.817
           },
           "death": true
         }
@@ -153,9 +158,13 @@
       "events": {
         "1200": [
           {
+            "topic": "birth",
+            "year": 1178
+          },
+          {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.735
+            "income": 0.646
           },
           {
             "topic": "new relationship",
@@ -165,61 +174,88 @@
               10043
             ],
             "people names": [
-              "Snellard Mule",
-              "Euffemia"
+              "Trove Sluke",
+              "Machtilden Coram"
             ],
             "people ages": [
-              45,
-              34
+              22,
+              16
             ],
             "label": "spouse",
             "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stUterechse straet.se3.c2",
-              "street": "Uterechse straet",
-              "neighborhood": "varkensbuurt",
-              "unique id": 15
-            }
-          },
-          {
-            "topic": "feelings change",
-            "target": 10043,
-            "target name": "Euffemia",
-            "state": "out of love",
-            "relationship": 10044
           }
         ],
-        "1201": [
+        "1202": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.037
           },
           {
             "topic": "new relationship",
-            "key": 13842,
+            "key": 17885,
             "people": [
               10042,
-              13841
+              17884
             ],
             "people names": [
-              "Snellard Mule",
-              "Emmelina Mule"
+              "Trove Sluke",
+              "Andreas Sluke"
             ],
             "people ages": [
-              46,
+              25,
               0
             ],
             "label": "parentchild",
             "committed": false
           }
         ],
-        "1202": [
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 20875,
+            "people": [
+              10042,
+              20874
+            ],
+            "people names": [
+              "Trove Sluke",
+              "Rase Sluke"
+            ],
+            "people ages": [
+              26,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1205": [
+          {
+            "topic": "new relationship",
+            "key": 23313,
+            "people": [
+              10042,
+              23312
+            ],
+            "people names": [
+              "Trove Sluke",
+              "Saxiardis Sluke"
+            ],
+            "people ages": [
+              27,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1207": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.0819999999999999
+          },
           {
             "key": 10044,
             "topic": "unmarried"
@@ -228,27 +264,22 @@
             "topic": "person died",
             "person": {
               "key": 10043,
-              "name": "Euffemia",
-              "age": 37,
+              "name": "Machtilden Coram",
+              "age": 24,
               "alive": false,
               "sex": "f",
               "parents": "firstgen"
             },
             "cause": "illness",
-            "label": "spouse"
+            "friendship label": "friend",
+            "label": "spouse",
+            "love state": "loveless"
           }
         ],
-        "1204": [
-          {
-            "topic": "job notice",
-            "notice": "earning very little",
-            "income": 0.439
-          }
-        ],
-        "1207": [
+        "1210": [
           {
             "topic": "death",
-            "cause": "sickness"
+            "cause": "illness"
           }
         ]
       }
@@ -268,6 +299,12 @@
       "relationships": [
         10044
       ]
-    }
+    },
+    "friends": [
+      10044,
+      17885,
+      20875
+    ],
+    "enemies": []
   }
 }

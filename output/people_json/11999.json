@@ -1,33 +1,35 @@
 {
   "11999": {
     "alive": false,
-    "name": "Beatrice",
-    "surname": "Clinkart",
-    "full name": "Beatrice Clinkart",
+    "name": "Marie",
+    "surname": "",
+    "full name": "Marie",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.716,
-      "sex interest": 0.684,
-      "gender expression": 0.077,
+      "sexuality label": "gay",
+      "sexuality": 0.91,
+      "romantic interest": 0.818,
+      "sex interest": 0.979,
+      "gender expression": 0.453,
       "sex": "f"
     },
-    "age": 18,
-    "birth year": 1184,
+    "age": 59,
+    "birth year": 1167,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "No religion",
     "income class": [
       3,
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.913,
-      "nice-nasty": 0.999,
-      "honest-false": 0.442
+      "lawful-chaotic": 0.849,
+      "nice-nasty": 0.165,
+      "honest-false": 0.825,
+      "dream": 0.026,
+      "outgoing": 0.596
     },
     "attitude": {
-      "outgoing": 0.749,
-      "dream": 0.457
+      "dream": 0.026,
+      "outgoing": 0.596
     },
     "homsoc": {
       "means": {
@@ -35,25 +37,38 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.037
+        "sexuality expression": 0.511,
+        "gender expression expression": 0.248
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "13606": {
-          "key": 13606,
-          "name": "Ricward Brusch",
-          "age": 3,
+        "13669": {
+          "key": 13669,
+          "name": "Amelgeir Snauel",
+          "age": 8,
           "alive": false,
           "sex": "m",
           "parents": {
-            "mother": "Beatrice (11999)",
-            "father": "Waldfridus (11998)"
+            "mother": "Marie (11999)",
+            "father": "Thomas (11998)"
+          }
+        },
+        "14808": {
+          "key": 14808,
+          "name": "Nanne",
+          "age": 21,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Marie (11999)",
+            "father": "Thomas (11998)"
           }
         }
       },
@@ -63,9 +78,13 @@
         ],
         "child": {
           "birth": [
-            13608
+            13671,
+            14810
           ]
-        }
+        },
+        "unrelated": [
+          16462
+        ]
       }
     },
     "occupation": {
@@ -78,16 +97,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 6,
+      "skin_color": 7,
       "eye_color": "blue",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
-        "S",
+        "C",
         "C"
       ],
-      "health": 0.569,
-      "fertility": 0.501,
+      "health": 0.0,
+      "fertility": 0.864,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -99,13 +118,65 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.569
+            "new_health": 0.86
           },
           "death": false
+        },
+        "1220": {
+          "health": {
+            "change": true,
+            "value_change": -0.103,
+            "new_health": 0.757
+          },
+          "death": false
+        },
+        "1221": {
+          "health": {
+            "change": true,
+            "value_change": -0.201,
+            "new_health": 0.556
+          },
+          "death": false
+        },
+        "1222": {
+          "health": {
+            "change": true,
+            "value_change": -0.189,
+            "new_health": 0.367
+          },
+          "death": false
+        },
+        "1223": {
+          "health": {
+            "change": true,
+            "value_change": -0.237,
+            "new_health": 0.13
+          },
+          "death": false
+        },
+        "1224": {
+          "health": {
+            "change": true,
+            "value_change": -0.072,
+            "new_health": 0.058
+          },
+          "death": false
+        },
+        "1225": {
+          "health": {
+            "change": true,
+            "value_change": -0.058,
+            "new_health": 0.0
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1167
+          },
           {
             "topic": "new relationship",
             "key": 12000,
@@ -114,40 +185,29 @@
               11999
             ],
             "people names": [
-              "Waldfridus Brusch",
-              "Beatrice Clinkart"
+              "Thomas Snauel",
+              "Marie"
             ],
             "people ages": [
-              32,
-              16
+              36,
+              33
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stDie lange straet3.se7.c3",
-              "street": "Die lange straet3",
-              "neighborhood": "visbuurt",
-              "unique id": 701
-            }
-          },
-          {
             "topic": "new relationship",
-            "key": 13608,
+            "key": 13671,
             "people": [
               11999,
-              13606
+              13669
             ],
             "people names": [
-              "Beatrice Clinkart",
-              "Ricward Brusch"
+              "Marie",
+              "Amelgeir Snauel"
             ],
             "people ages": [
-              17,
+              33,
               0
             ],
             "label": "parentchild",
@@ -156,13 +216,240 @@
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "topic": "new relationship",
+            "key": 14810,
+            "people": [
+              11999,
+              14808
+            ],
+            "people names": [
+              "Marie",
+              "Nanne"
+            ],
+            "people ages": [
+              34,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
+            "topic": "new relationship",
+            "key": 16462,
+            "people": [
+              11999,
+              10391
+            ],
+            "people names": [
+              "Marie",
+              "Baua Euer"
+            ],
+            "people ages": [
+              35,
+              24
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1206": [
+          {
+            "key": 12000,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11998,
+              "name": "Thomas Snauel",
+              "age": 43,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "friendship label": "indifferent",
+            "label": "spouse",
+            "love state": "loveless"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "indifferent",
+            "relationship": 16462
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 13669,
+              "name": "Amelgeir Snauel",
+              "age": 8,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Marie (11999)",
+                "father": "Thomas (11998)"
+              }
+            },
+            "cause": "starvation",
+            "friendship label": "friend",
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10391,
+              "name": "Baua Euer",
+              "age": 32,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "childbirth",
+            "friendship label": "indifferent",
+            "label": "unrelated",
+            "love state": "nothing"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "topic": "personality change",
+            "change": true,
+            "trait": "nice-nasty",
+            "trigger": "trauma",
+            "mod": -0.009
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1216": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 14810
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1217": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1222": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 14808,
+              "name": "Nanne",
+              "age": 21,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Marie (11999)",
+                "father": "Thomas (11998)"
+              }
+            },
+            "cause": "illness",
+            "friendship label": "indifferent",
+            "label": "child"
+          }
+        ],
+        "1223": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1223
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1224": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1225": [
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "sickness"
           }
         ]
       }
@@ -171,17 +458,21 @@
     "home": {
       "income class": 3,
       "income class label": "upper middle class",
-      "section": "stDie lange straet3.se7.c3",
+      "section": "stDie lange straet3.se5.c3",
       "street": "Die lange straet3",
       "neighborhood": "visbuurt",
-      "unique id": 701
+      "unique id": 693
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         12000
       ]
-    }
+    },
+    "friends": [
+      13671
+    ],
+    "enemies": []
   }
 }

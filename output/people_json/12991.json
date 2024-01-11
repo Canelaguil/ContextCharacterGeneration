@@ -1,80 +1,85 @@
 {
   "12991": {
     "alive": false,
-    "name": "Woltwigis",
-    "surname": "Onlost",
-    "full name": "Woltwigis Onlost",
+    "name": "Aue",
+    "surname": "Weitijnsdochter",
+    "full name": "Aue Weitijnsdochter",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.109,
-      "romantic interest": 0.436,
-      "sex interest": 0.495,
-      "gender expression": 0.0,
+      "sexuality": 0.072,
+      "romantic interest": 0.627,
+      "sex interest": 0.747,
+      "gender expression": 0.027,
       "sex": "f"
     },
-    "age": 1,
+    "age": 16,
     "birth year": 1200,
     "sex": "f",
     "faction": "Dogmatists",
     "income class": [
-      2,
-      "middle class"
+      4,
+      "nobility"
     ],
     "personality": {
-      "lawful-chaotic": 0.273,
-      "nice-nasty": 0.686,
-      "honest-false": 0.0
+      "lawful-chaotic": 0.461,
+      "nice-nasty": 0.261,
+      "honest-false": 0.964,
+      "dream": 0.459,
+      "outgoing": 0.789
     },
     "attitude": {
-      "outgoing": 0.556,
-      "dream": 0.678
+      "dream": 0.459,
+      "outgoing": 0.789
     },
     "homsoc": {
       "means": {
         "independent": false,
-        "taken_care_of": true,
+        "taken_care_of": false,
         "caretaker": true,
-        "needs_care": true,
+        "needs_care": false,
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.035,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.037,
+        "gender expression expression": 0.005
       }
     },
     "network": {
       "parents": {
-        "mother": "Mette (11558)",
-        "father": "Moys (11557)"
+        "mother": "Katerina (11717)",
+        "father": "Weitijn (11716)"
       },
       "children": {},
       "relationship keys": {
         "parent": [
           12992,
           12993
+        ],
+        "unrelated": [
+          38203
         ]
       }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        2,
-        "middle class"
+        4,
+        "nobility"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
       "skin_color": 8,
-      "eye_color": "blue",
+      "eye_color": "green",
       "hair_color": "brown",
       "hair_color_code": 2,
       "hair_type": [
         "S",
-        "C"
+        "S"
       ],
-      "health": 0.739,
-      "fertility": 0.69,
+      "health": 0.625,
+      "fertility": 0.606,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -86,51 +91,160 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.739
+            "new_health": 0.625
           },
           "death": false
+        },
+        "1216": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.625
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
           {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stBreestraat.se1.c2",
-              "street": "Breestraat",
-              "neighborhood": "olvbuurt",
-              "unique id": 549
-            }
+            "topic": "birth",
+            "year": 1200
+          },
+          {
+            "topic": "new relationship",
+            "key": 12992,
+            "people": [
+              11716,
+              12991
+            ],
+            "people names": [
+              "Weitijn",
+              "Aue Weitijnsdochter"
+            ],
+            "people ages": [
+              40,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "new relationship",
+            "key": 12993,
+            "people": [
+              11717,
+              12991
+            ],
+            "people names": [
+              "Katerina",
+              "Aue Weitijnsdochter"
+            ],
+            "people ages": [
+              38,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1201": [
+        "1204": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 12992
+          }
+        ],
+        "1208": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11716,
+              "name": "Weitijn",
+              "age": 49,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "friendship label": "indifferent",
+            "label": "parent"
+          }
+        ],
+        "1213": [
+          {
+            "topic": "new relationship",
+            "key": 38203,
+            "people": [
+              12991,
+              13450
+            ],
+            "people names": [
+              "Aue Weitijnsdochter",
+              "Segherarden Naghel"
+            ],
+            "people ages": [
+              13,
+              13
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1215": [
           {
             "topic": "event",
             "event": "plague",
-            "year": 1201
+            "year": 1215
           },
           {
+            "topic": "personality change",
+            "change": true,
+            "trait": "honest-false",
+            "trigger": "trauma",
+            "mod": 0.082
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11717,
+              "name": "Katerina",
+              "age": 54,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "friendship label": "indifferent",
+            "label": "parent"
+          }
+        ],
+        "1216": [
+          {
             "topic": "death",
-            "cause": "childhood illness"
+            "cause": "illness"
           }
         ]
       }
     },
     "key": 12991,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stBreestraat.se1.c2",
-      "street": "Breestraat",
+      "income class": 4,
+      "income class label": "nobility",
+      "section": "stLievevrouwe kerch.se3.c4",
+      "street": "Lievevrouwe kerch",
       "neighborhood": "olvbuurt",
-      "unique id": 549
+      "unique id": 592
     },
     "relationship status": {
       "taken": false,
       "married": false,
       "relationships": []
-    }
+    },
+    "friends": [
+      38203
+    ],
+    "enemies": []
   }
 }

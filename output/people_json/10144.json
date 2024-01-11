@@ -1,84 +1,58 @@
 {
   "10144": {
     "alive": false,
-    "name": "Hubrecht",
-    "surname": "Wittebroet",
-    "full name": "Hubrecht Wittebroet",
+    "name": "Conrad",
+    "surname": "Viltkin",
+    "full name": "Conrad Viltkin",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.067,
-      "romantic interest": 0.657,
-      "sex interest": 0.934,
-      "gender expression": 0.16,
+      "sexuality": 0.109,
+      "romantic interest": 0.888,
+      "sex interest": 0.56,
+      "gender expression": 0.066,
       "sex": "m"
     },
     "age": 40,
-    "birth year": 1174,
+    "birth year": 1163,
     "sex": "m",
-    "faction": "Zealots",
+    "faction": "Dogmatists",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.843,
-      "nice-nasty": 0.378,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.163,
+      "nice-nasty": 0.359,
+      "honest-false": 0.0,
+      "dream": 0.451,
+      "outgoing": 0.341
     },
     "attitude": {
-      "outgoing": 0.657,
-      "dream": 0.604
+      "dream": 0.451,
+      "outgoing": 0.341
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.046,
-        "gender expression expression": 0.066
+        "sexuality expression": 0.049,
+        "gender expression expression": 0.03
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {
-        "14432": {
-          "key": 14432,
-          "name": "Splinter Wittebroet",
-          "age": 53,
-          "alive": false,
-          "sex": "m",
-          "parents": {
-            "mother": "Eingeliadis (10145)",
-            "father": "Hubrecht (10144)"
-          }
-        },
-        "21475": {
-          "key": 21475,
-          "name": "Lardies Wittebroet",
-          "age": 54,
-          "alive": false,
-          "sex": "m",
-          "parents": {
-            "mother": "Beatrice (10520)",
-            "father": "Hubrecht (10144)"
-          }
-        }
-      },
+      "children": {},
       "relationship keys": {
         "spouse": [
-          10146,
-          18900
-        ],
-        "child": {
-          "birth": [
-            14433,
-            21476
-          ]
-        }
+          10146
+        ]
       }
     },
     "occupation": {
@@ -87,40 +61,29 @@
         1,
         "lower middle class"
       ],
-      "income": 1.023,
+      "income": 0.0,
       "all_incomes": [
-        1.044,
-        0.967,
-        1.016,
-        1.061,
-        1.018,
-        0.977,
-        0.963,
-        0.926,
-        0.975,
-        0.935,
-        0.97,
-        1.064,
-        1.059,
-        1.03,
-        1.023
+        0.0,
+        0.0,
+        0.0,
+        0.0
       ],
       "job": {
-        "lawful": true,
-        "honest": true
+        "lawful": false,
+        "honest": false
       }
     },
     "genetics": {
       "skin_color": 7,
-      "eye_color": "blue",
+      "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
-        "S",
+        "C",
         "C"
       ],
-      "health": 0.576,
-      "fertility": 0.616,
+      "health": 0.805,
+      "fertility": 0.792,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -132,15 +95,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.576
+            "new_health": 0.805
           },
           "death": false
         },
-        "1213": {
+        "1202": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.576
+            "new_health": 0.805
           },
           "death": true
         }
@@ -148,9 +111,13 @@
       "events": {
         "1200": [
           {
+            "topic": "birth",
+            "year": 1163
+          },
+          {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.044
+            "income": 0.0
           },
           {
             "topic": "new relationship",
@@ -160,141 +127,54 @@
               10145
             ],
             "people names": [
-              "Hubrecht Wittebroet",
-              "Eingeliadis lucrose"
+              "Conrad Viltkin",
+              "Gertrudis"
             ],
             "people ages": [
-              26,
-              23
+              37,
+              24
             ],
             "label": "spouse",
             "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stSlyck straet.se3.c1",
-              "street": "Slyck straet",
-              "neighborhood": "varkensbuurt",
-              "unique id": 51
-            }
           },
           {
             "topic": "feelings change",
             "target": 10145,
-            "target name": "Eingeliadis lucrose",
-            "state": "solid love",
+            "target name": "Gertrudis",
+            "state": "out of love",
+            "friendship label": "friend",
             "relationship": 10146
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              16803,
+              53132,
+              54794,
+              61337,
+              67237,
+              71150,
+              75242
+            ]
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          },
-          {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.016
-          },
-          {
-            "topic": "new relationship",
-            "key": 14433,
-            "people": [
-              10144,
-              14432
-            ],
-            "people names": [
-              "Hubrecht Wittebroet",
-              "Splinter Wittebroet"
-            ],
-            "people ages": [
-              27,
-              0
-            ],
-            "label": "parentchild",
-            "committed": false
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              16803,
+              53132,
+              54794,
+              61337,
+              67237,
+              71150,
+              75242
+            ]
           }
         ],
         "1202": [
-          {
-            "key": 10146,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 10145,
-              "name": "Eingeliadis lucrose",
-              "age": 26,
-              "alive": false,
-              "sex": "f",
-              "parents": "firstgen"
-            },
-            "cause": "illness",
-            "label": "spouse"
-          }
-        ],
-        "1207": [
-          {
-            "topic": "new relationship",
-            "key": 18900,
-            "people": [
-              10144,
-              10520
-            ],
-            "people names": [
-              "Hubrecht Wittebroet",
-              "Beatrice Vriend"
-            ],
-            "people ages": [
-              34,
-              25
-            ],
-            "label": "spouse",
-            "committed": true
-          }
-        ],
-        "1210": [
-          {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.064
-          }
-        ],
-        "1211": [
-          {
-            "topic": "feelings change",
-            "target": 10520,
-            "target name": "Beatrice Vriend",
-            "state": "out of love",
-            "relationship": 18900
-          }
-        ],
-        "1212": [
-          {
-            "topic": "new relationship",
-            "key": 21476,
-            "people": [
-              10144,
-              21475
-            ],
-            "people names": [
-              "Hubrecht Wittebroet",
-              "Lardies Wittebroet"
-            ],
-            "people ages": [
-              39,
-              0
-            ],
-            "label": "parentchild",
-            "committed": false
-          }
-        ],
-        "1213": [
           {
             "topic": "death",
             "cause": "illness"
@@ -309,15 +189,18 @@
       "section": "stSlyck straet.se3.c1",
       "street": "Slyck straet",
       "neighborhood": "varkensbuurt",
-      "unique id": 51
+      "unique id": 52
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        10146,
-        18900
+        10146
       ]
-    }
+    },
+    "friends": [
+      10146
+    ],
+    "enemies": []
   }
 }

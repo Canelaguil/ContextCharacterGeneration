@@ -1,33 +1,35 @@
 {
   "10256": {
     "alive": false,
-    "name": "Amelgeir",
-    "surname": "Dukinghe",
-    "full name": "Amelgeir Dukinghe",
+    "name": "Cecilia",
+    "surname": "Boec",
+    "full name": "Cecilia Boec",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.648,
-      "sex interest": 0.986,
-      "gender expression": 0.0,
+      "sexuality": 0.026,
+      "romantic interest": 0.806,
+      "sex interest": 0.65,
+      "gender expression": 0.027,
       "sex": "f"
     },
-    "age": 27,
-    "birth year": 1183,
+    "age": 46,
+    "birth year": 1174,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "No religion",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.632,
-      "nice-nasty": 0.574,
-      "honest-false": 0.485
+      "lawful-chaotic": 0.143,
+      "nice-nasty": 0.147,
+      "honest-false": 0.365,
+      "dream": 0.382,
+      "outgoing": 0.708
     },
     "attitude": {
-      "outgoing": 0.691,
-      "dream": 0.223
+      "dream": 0.382,
+      "outgoing": 0.708
     },
     "homsoc": {
       "means": {
@@ -40,56 +42,69 @@
         ]
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.017,
+        "gender expression expression": 0.024
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "17616": {
-          "key": 17616,
-          "name": "Herbert Snepore",
-          "age": 56,
+        "16773": {
+          "key": 16773,
+          "name": "Thedwi Onlost",
+          "age": 7,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Cecilia (10256)",
+            "father": "Lucas (10255)"
+          }
+        },
+        "20066": {
+          "key": 20066,
+          "name": "Brame Onlost",
+          "age": 27,
           "alive": false,
           "sex": "m",
           "parents": {
-            "mother": "Amelgeir (10256)",
-            "father": "Amisius (10255)"
+            "mother": "Cecilia (10256)",
+            "father": "Lucas (10255)"
           }
         },
-        "18627": {
-          "key": 18627,
-          "name": "Goneir Snepore",
-          "age": 38,
+        "21012": {
+          "key": 21012,
+          "name": "Remdo Onlost",
+          "age": 7,
           "alive": false,
-          "sex": "f",
+          "sex": "m",
           "parents": {
-            "mother": "Amelgeir (10256)",
-            "father": "Amisius (10255)"
+            "mother": "Cecilia (10256)",
+            "father": "Lucas (10255)"
           }
         },
-        "19382": {
-          "key": 19382,
-          "name": "Suaneka Snepore",
-          "age": 39,
+        "38148": {
+          "key": 38148,
+          "name": "Abben van Ino",
+          "age": 3,
           "alive": false,
-          "sex": "f",
+          "sex": "m",
           "parents": {
-            "mother": "Amelgeir (10256)",
-            "father": "Amisius (10255)"
+            "mother": "Cecilia (10256)",
+            "father": "Ino (10972)"
           }
         }
       },
       "relationship keys": {
         "spouse": [
-          10257
+          10257,
+          32477
         ],
         "child": {
           "birth": [
-            17618,
-            18629,
-            19384
+            16775,
+            20068,
+            21014,
+            38150
           ]
         }
       }
@@ -104,16 +119,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 3,
-      "eye_color": "brown",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "skin_color": 6,
+      "eye_color": "green",
+      "hair_color": "red",
+      "hair_color_code": 3,
       "hair_type": [
-        "S",
-        "S"
+        "C",
+        "C"
       ],
-      "health": 0.713,
-      "fertility": 0.753,
+      "health": 0.355,
+      "fertility": 0.607,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -125,13 +140,41 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.713
+            "new_health": 0.663
           },
           "death": false
+        },
+        "1212": {
+          "health": {
+            "change": true,
+            "value_change": -0.308,
+            "new_health": 0.355
+          },
+          "death": false
+        },
+        "1213": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.355
+          },
+          "death": false
+        },
+        "1219": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.355
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1174
+          },
           {
             "topic": "new relationship",
             "key": 10257,
@@ -140,154 +183,406 @@
               10256
             ],
             "people names": [
-              "Amisius Snepore",
-              "Amelgeir Dukinghe"
+              "Lucas Onlost",
+              "Cecilia Boec"
             ],
             "people ages": [
-              36,
-              17
+              46,
+              26
+            ],
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 16775,
+            "people": [
+              10256,
+              16773
+            ],
+            "people names": [
+              "Cecilia Boec",
+              "Thedwi Onlost"
+            ],
+            "people ages": [
+              28,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 20068,
+            "people": [
+              10256,
+              20066
+            ],
+            "people names": [
+              "Cecilia Boec",
+              "Brame Onlost"
+            ],
+            "people ages": [
+              30,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 21014,
+            "people": [
+              10256,
+              21012
+            ],
+            "people names": [
+              "Cecilia Boec",
+              "Remdo Onlost"
+            ],
+            "people ages": [
+              30,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1206": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 20068
+          }
+        ],
+        "1208": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "good friend",
+            "relationship": 16775
+          },
+          {
+            "key": 10257,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10255,
+              "name": "Lucas Onlost",
+              "age": 55,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "friendship label": "good friend",
+            "label": "spouse",
+            "love state": "loveless"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "new relationship",
+            "key": 32477,
+            "people": [
+              10972,
+              10256
+            ],
+            "people names": [
+              "Ino",
+              "Cecilia Boec"
+            ],
+            "people ages": [
+              40,
+              36
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stHelle voet.se3.c1",
-              "street": "Helle voet",
-              "neighborhood": "jorisbuurt",
-              "unique id": 92
-            }
+            "topic": "person died",
+            "person": {
+              "key": 16773,
+              "name": "Thedwi Onlost",
+              "age": 7,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Cecilia (10256)",
+                "father": "Lucas (10255)"
+              }
+            },
+            "cause": "childhood illness",
+            "friendship label": "good friend",
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.822,
+            "inhabitants": [
+              21959,
+              24370,
+              47750,
+              51485,
+              55983,
+              57591,
+              60723,
+              66275,
+              43940
+            ]
           }
         ],
-        "1201": [
+        "1210": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "friend",
+            "relationship": 32477
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.83,
+            "inhabitants": [
+              21959,
+              24370,
+              47750,
+              51485,
+              55983,
+              57591,
+              60723,
+              66275,
+              43940
+            ]
+          }
+        ],
+        "1211": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "friend",
+            "relationship": 32477
+          },
+          {
+            "topic": "feelings change",
+            "target": 10972,
+            "target name": "Ino",
+            "state": "solid love",
+            "friendship label": "friend",
+            "relationship": 32477
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 21012,
+              "name": "Remdo Onlost",
+              "age": 7,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Cecilia (10256)",
+                "father": "Lucas (10255)"
+              }
+            },
+            "cause": "starvation",
+            "friendship label": "indifferent",
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.901,
+            "inhabitants": [
+              21959,
+              24370,
+              47750,
+              51485,
+              55983,
+              57591,
+              60723,
+              66275,
+              43940
+            ]
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0.931,
+            "inhabitants": [
+              21959,
+              24370,
+              47750,
+              51485,
+              55983,
+              57591,
+              60723,
+              66275,
+              43940
+            ]
+          }
+        ],
+        "1213": [
+          {
+            "topic": "new relationship",
+            "key": 38150,
+            "people": [
+              10256,
+              38148
+            ],
+            "people names": [
+              "Cecilia Boec",
+              "Abben van Ino"
+            ],
+            "people ages": [
+              40,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.887,
+            "inhabitants": [
+              21959,
+              24370,
+              47750,
+              51485,
+              55983,
+              57591,
+              60723,
+              66275,
+              43940
+            ]
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0.914,
+            "inhabitants": [
+              21959,
+              24370,
+              47750,
+              51485,
+              55983,
+              57591,
+              60723,
+              66275,
+              43940
+            ]
+          }
+        ],
+        "1215": [
           {
             "topic": "event",
             "event": "plague",
-            "year": 1201
-          }
-        ],
-        "1206": [
+            "year": 1215
+          },
           {
-            "topic": "new relationship",
-            "key": 17618,
-            "people": [
-              10256,
-              17616
-            ],
-            "people names": [
-              "Amelgeir Dukinghe",
-              "Herbert Snepore"
-            ],
-            "people ages": [
-              23,
-              0
-            ],
-            "label": "parentchild",
-            "committed": false
-          }
-        ],
-        "1207": [
-          {
-            "topic": "new relationship",
-            "key": 18629,
-            "people": [
-              10256,
-              18627
-            ],
-            "people names": [
-              "Amelgeir Dukinghe",
-              "Goneir Snepore"
-            ],
-            "people ages": [
-              25,
-              0
-            ],
-            "label": "parentchild",
-            "committed": false
+            "topic": "personality change",
+            "change": true,
+            "trait": "honest-false",
+            "trigger": "trauma",
+            "mod": -0.017
           },
           {
             "topic": "not enough income",
-            "income": 0.486,
+            "income": 0.868,
             "inhabitants": [
-              12179,
-              39129,
-              39700,
-              60093,
-              65425,
-              43205,
-              39932,
-              70015,
-              70337,
-              40895,
-              72064,
-              73318,
-              74697,
-              74769,
-              54546,
-              61559,
-              65589,
-              80868,
-              81222,
-              82024,
-              84210,
-              85478,
-              87728
+              21959,
+              24370,
+              47750,
+              51485,
+              55983,
+              57591,
+              60723,
+              66275,
+              43940
             ]
           }
         ],
-        "1208": [
+        "1216": [
           {
-            "topic": "new relationship",
-            "key": 19384,
-            "people": [
-              10256,
-              19382
-            ],
-            "people names": [
-              "Amelgeir Dukinghe",
-              "Suaneka Snepore"
-            ],
-            "people ages": [
-              26,
-              0
-            ],
-            "label": "parentchild",
-            "committed": false
+            "topic": "person died",
+            "person": {
+              "key": 38148,
+              "name": "Abben van Ino",
+              "age": 3,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Cecilia (10256)",
+                "father": "Ino (10972)"
+              }
+            },
+            "cause": "starvation",
+            "friendship label": "indifferent",
+            "label": "child"
           },
           {
             "topic": "not enough income",
-            "income": 0.598,
+            "income": 0.908,
             "inhabitants": [
-              12179,
-              39129,
-              39700,
-              60093,
-              65425,
-              43205,
-              39932,
-              70015,
-              70337,
-              40895,
-              72064,
-              73318,
-              74697,
-              74769,
-              54546,
-              61559,
-              65589,
-              80868,
-              81222,
-              82024,
-              84210,
-              85478,
-              87728
+              21959,
+              24370,
+              47750,
+              51485,
+              55983,
+              57591,
+              60723,
+              66275,
+              43940
             ]
           }
         ],
-        "1209": [
+        "1217": [
+          {
+            "topic": "not enough income",
+            "income": 0.892,
+            "inhabitants": [
+              21959,
+              24370,
+              47750,
+              51485,
+              55983,
+              57591,
+              60723,
+              66275,
+              43940
+            ]
+          }
+        ],
+        "1218": [
+          {
+            "topic": "not enough income",
+            "income": 0.93,
+            "inhabitants": [
+              21959,
+              24370,
+              47750,
+              51485,
+              55983,
+              57591,
+              60723,
+              66275,
+              43940
+            ]
+          }
+        ],
+        "1219": [
           {
             "topic": "death",
             "cause": "illness"
@@ -299,17 +594,24 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stHelle voet.se3.c1",
+      "section": "stHelle voet.se1.c1",
       "street": "Helle voet",
       "neighborhood": "jorisbuurt",
-      "unique id": 92
+      "unique id": 90
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        10257
+        10257,
+        32477
       ]
-    }
+    },
+    "friends": [
+      10257,
+      32477,
+      16775
+    ],
+    "enemies": []
   }
 }

@@ -1,33 +1,35 @@
 {
   "10292": {
     "alive": false,
-    "name": "Sophia",
-    "surname": "Buke",
-    "full name": "Sophia Buke",
+    "name": "Iris",
+    "surname": "Panne",
+    "full name": "Iris Panne",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.02,
-      "romantic interest": 0.525,
-      "sex interest": 0.598,
-      "gender expression": 0.206,
+      "sexuality": 0.0,
+      "romantic interest": 0.585,
+      "sex interest": 0.34,
+      "gender expression": 0.032,
       "sex": "f"
     },
-    "age": 20,
-    "birth year": 1182,
+    "age": 42,
+    "birth year": 1171,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "Dogmatists",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.42,
-      "nice-nasty": 0.877,
-      "honest-false": 0.04
+      "lawful-chaotic": 0.391,
+      "nice-nasty": 0.403,
+      "honest-false": 0.186,
+      "dream": 0.232,
+      "outgoing": 0.496
     },
     "attitude": {
-      "outgoing": 0.284,
-      "dream": 0.705
+      "dream": 0.232,
+      "outgoing": 0.496
     },
     "homsoc": {
       "means": {
@@ -35,25 +37,49 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.009,
-        "gender expression expression": 0.144
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.015
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "13444": {
-          "key": 13444,
-          "name": "Voghel Froes",
-          "age": 40,
+        "13723": {
+          "key": 13723,
+          "name": "Bertoldus Crulleboye",
+          "age": 26,
           "alive": false,
           "sex": "m",
           "parents": {
-            "mother": "Sophia (10292)",
-            "father": "Kerolus (10291)"
+            "mother": "Iris (10292)",
+            "father": "Bel (10291)"
+          }
+        },
+        "17396": {
+          "key": 17396,
+          "name": "Mourin Crulleboye",
+          "age": 11,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Iris (10292)",
+            "father": "Bel (10291)"
+          }
+        },
+        "25903": {
+          "key": 25903,
+          "name": "Anthonius Crulleboye",
+          "age": 1,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Iris (10292)",
+            "father": "Bel (10291)"
           }
         }
       },
@@ -63,9 +89,14 @@
         ],
         "child": {
           "birth": [
-            13446
+            13725,
+            17398,
+            25905
           ]
-        }
+        },
+        "unrelated": [
+          20732
+        ]
       }
     },
     "occupation": {
@@ -78,16 +109,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 7,
-      "eye_color": "blue",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 4,
+      "eye_color": "brown",
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
       "hair_type": [
         "C",
         "S"
       ],
-      "health": 0.624,
-      "fertility": 0.52,
+      "health": 0.542,
+      "fertility": 0.555,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -99,13 +130,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.624
+            "new_health": 0.542
           },
           "death": false
+        },
+        "1212": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.542
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1171
+          },
           {
             "topic": "new relationship",
             "key": 10293,
@@ -114,40 +157,29 @@
               10292
             ],
             "people names": [
-              "Kerolus Froes",
-              "Sophia Buke"
+              "Bel Crulleboye",
+              "Iris Panne"
             ],
             "people ages": [
-              46,
-              18
+              47,
+              29
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stHelle voet.se5.c1",
-              "street": "Helle voet",
-              "neighborhood": "jorisbuurt",
-              "unique id": 105
-            }
-          },
-          {
             "topic": "new relationship",
-            "key": 13446,
+            "key": 13725,
             "people": [
               10292,
-              13444
+              13723
             ],
             "people names": [
-              "Sophia Buke",
-              "Voghel Froes"
+              "Iris Panne",
+              "Bertoldus Crulleboye"
             ],
             "people ages": [
-              19,
+              29,
               0
             ],
             "label": "parentchild",
@@ -156,13 +188,184 @@
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 13725
           },
           {
+            "topic": "feelings change",
+            "target": 10291,
+            "target name": "Bel Crulleboye",
+            "state": "solid love",
+            "friendship label": "friend",
+            "relationship": 10293
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 17398,
+            "people": [
+              10292,
+              17396
+            ],
+            "people names": [
+              "Iris Panne",
+              "Mourin Crulleboye"
+            ],
+            "people ages": [
+              31,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 20732,
+            "people": [
+              10292,
+              11143
+            ],
+            "people names": [
+              "Iris Panne",
+              "Hatebrandus Crudepenninx"
+            ],
+            "people ages": [
+              33,
+              46
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1204": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "friend",
+            "relationship": 10293
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 25905,
+            "people": [
+              10292,
+              25903
+            ],
+            "people names": [
+              "Iris Panne",
+              "Anthonius Crulleboye"
+            ],
+            "people ages": [
+              36,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.671,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "key": 10293,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10291,
+              "name": "Bel Crulleboye",
+              "age": 55,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "starvation",
+            "friendship label": "friend",
+            "label": "spouse",
+            "love state": "solid love"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 25903,
+              "name": "Anthonius Crulleboye",
+              "age": 1,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Iris (10292)",
+                "father": "Bel (10291)"
+              }
+            },
+            "cause": "starvation",
+            "friendship label": "friend",
+            "label": "child"
+          },
+          {
+            "topic": "personality change",
+            "change": true,
+            "trait": "nice-nasty",
+            "trigger": "grief",
+            "mod": 0.147
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.348,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 17398
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "starvation"
           }
         ]
       }
@@ -174,14 +377,22 @@
       "section": "stHelle voet.se5.c1",
       "street": "Helle voet",
       "neighborhood": "jorisbuurt",
-      "unique id": 105
+      "unique id": 104
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         10293
       ]
-    }
+    },
+    "friends": [
+      10293,
+      13725,
+      17398,
+      25905,
+      20732
+    ],
+    "enemies": []
   }
 }

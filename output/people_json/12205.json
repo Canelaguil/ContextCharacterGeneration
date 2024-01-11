@@ -1,33 +1,35 @@
 {
   "12205": {
     "alive": false,
-    "name": "Ydier",
+    "name": "Harderico",
     "surname": "",
-    "full name": "Ydier",
+    "full name": "Harderico",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.02,
-      "romantic interest": 0.451,
-      "sex interest": 0.452,
-      "gender expression": 0.176,
+      "sexuality": 0.008,
+      "romantic interest": 0.555,
+      "sex interest": 0.635,
+      "gender expression": 0.0,
       "sex": "m"
     },
-    "age": 45,
-    "birth year": 1174,
+    "age": 54,
+    "birth year": 1152,
     "sex": "m",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.427,
-      "nice-nasty": 0.999,
-      "honest-false": 0.956
+      "lawful-chaotic": 0.5,
+      "nice-nasty": 0.386,
+      "honest-false": 0.208,
+      "dream": 0.673,
+      "outgoing": 0.469
     },
     "attitude": {
-      "outgoing": 0.808,
-      "dream": 0.454
+      "dream": 0.673,
+      "outgoing": 0.469
     },
     "homsoc": {
       "means": {
@@ -35,62 +37,47 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": [
-          "starving"
-        ]
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.015,
-        "gender expression expression": 0.119
+        "sexuality expression": 0.004,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "13123": {
-          "key": 13123,
-          "name": "Reynold",
-          "age": 28,
+        "13645": {
+          "key": 13645,
+          "name": "Adolfus van Sarre",
+          "age": 18,
           "alive": false,
           "sex": "m",
           "parents": {
-            "mother": "Riet (12206)",
-            "father": "Ydier (12205)"
+            "mother": "Sarre (12206)",
+            "father": "Harderico (12205)"
           }
         },
-        "15600": {
-          "key": 15600,
-          "name": "Ermerut Ydiersdochter",
-          "age": 53,
+        "21850": {
+          "key": 21850,
+          "name": "Aghete Hardericosdochter",
+          "age": 1,
           "alive": false,
           "sex": "f",
           "parents": {
-            "mother": "Riet (12206)",
-            "father": "Ydier (12205)"
-          }
-        },
-        "19028": {
-          "key": 19028,
-          "name": "Hollander van Riet",
-          "age": 21,
-          "alive": false,
-          "sex": "m",
-          "parents": {
-            "mother": "Riet (12206)",
-            "father": "Ydier (12205)"
+            "mother": "Sarre (12206)",
+            "father": "Harderico (12205)"
           }
         }
       },
       "relationship keys": {
         "spouse": [
-          12207,
-          22598
+          12207
         ],
         "child": {
           "birth": [
-            13124,
-            15601,
-            19029
+            13646,
+            21851
           ]
         }
       }
@@ -101,36 +88,23 @@
         1,
         "lower middle class"
       ],
-      "income": 0.265,
+      "income": 0.18,
       "all_incomes": [
-        1.123,
-        1.082,
-        1.168,
         1.21,
-        1.148,
-        1.076,
-        1.041,
-        0.851,
-        0.952,
-        1.015,
-        0.921,
-        0.779,
-        0.839,
-        0.547,
-        0.601,
-        0.524,
-        0.342,
-        0.346,
-        0.225,
-        0.265
+        1.289,
+        0.95,
+        0.878,
+        0.758,
+        0.815,
+        0.18
       ],
       "job": {
         "lawful": false,
-        "honest": true
+        "honest": false
       }
     },
     "genetics": {
-      "skin_color": 4,
+      "skin_color": 0,
       "eye_color": "brown",
       "hair_color": "strawberry blonde",
       "hair_color_code": 5,
@@ -138,8 +112,8 @@
         "S",
         "C"
       ],
-      "health": 0.707,
-      "fertility": 0.669,
+      "health": 0.0,
+      "fertility": 0.577,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -151,17 +125,53 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.707
+            "new_health": 0.527
           },
           "death": false
+        },
+        "1202": {
+          "health": {
+            "change": true,
+            "value_change": -0.291,
+            "new_health": 0.236
+          },
+          "death": false
+        },
+        "1203": {
+          "health": {
+            "change": true,
+            "value_change": -0.18,
+            "new_health": 0.056
+          },
+          "death": false
+        },
+        "1204": {
+          "health": {
+            "change": true,
+            "value_change": -0.049,
+            "new_health": 0.007
+          },
+          "death": false
+        },
+        "1205": {
+          "health": {
+            "change": true,
+            "value_change": -0.007,
+            "new_health": 0.0
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
           {
+            "topic": "birth",
+            "year": 1152
+          },
+          {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.123
+            "income": 1.21
           },
           {
             "topic": "new relationship",
@@ -171,40 +181,29 @@
               12206
             ],
             "people names": [
-              "Ydier",
-              "Riet Jude"
+              "Harderico",
+              "Sarre Cleenheere"
             ],
             "people ages": [
-              26,
-              23
+              48,
+              33
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stStoof straet.se1.c1",
-              "street": "Stoof straet",
-              "neighborhood": "visbuurt",
-              "unique id": 772
-            }
-          },
-          {
             "topic": "new relationship",
-            "key": 13124,
+            "key": 13646,
             "people": [
               12205,
-              13123
+              13645
             ],
             "people names": [
-              "Ydier",
-              "Reynold"
+              "Harderico",
+              "Adolfus van Sarre"
             ],
             "people ages": [
-              26,
+              49,
               0
             ],
             "label": "parentchild",
@@ -213,197 +212,50 @@
           {
             "topic": "feelings change",
             "target": 12206,
-            "target name": "Riet Jude",
-            "state": "solid love",
+            "target name": "Sarre Cleenheere",
+            "state": "out of love",
+            "friendship label": "friend",
             "relationship": 12207
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          }
-        ],
-        "1203": [
-          {
-            "topic": "new relationship",
-            "key": 15601,
-            "people": [
-              12205,
-              15600
-            ],
-            "people names": [
-              "Ydier",
-              "Ermerut Ydiersdochter"
-            ],
-            "people ages": [
-              30,
-              0
-            ],
-            "label": "parentchild",
-            "committed": false
-          }
-        ],
-        "1207": [
-          {
             "topic": "update",
             "update": "new friendship label",
-            "relationship label": "spouse",
-            "friendship label": "indifferent",
-            "relationship": 12207
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 13646
           }
         ],
-        "1208": [
-          {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.015
-          },
+        "1204": [
           {
             "topic": "new relationship",
-            "key": 19029,
+            "key": 21851,
             "people": [
               12205,
-              19028
+              21850
             ],
             "people names": [
-              "Ydier",
-              "Hollander van Riet"
+              "Harderico",
+              "Aghete Hardericosdochter"
             ],
             "people ages": [
-              35,
+              53,
               0
             ],
             "label": "parentchild",
             "committed": false
           }
         ],
-        "1210": [
-          {
-            "key": 12207,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 12206,
-              "name": "Riet Jude",
-              "age": 34,
-              "alive": false,
-              "sex": "f",
-              "parents": "firstgen"
-            },
-            "cause": "illness",
-            "label": "spouse"
-          }
-        ],
-        "1212": [
-          {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.547
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.547,
-            "inhabitants": []
-          }
-        ],
-        "1214": [
-          {
-            "topic": "new relationship",
-            "key": 22598,
-            "people": [
-              12205,
-              12221
-            ],
-            "people names": [
-              "Ydier",
-              "Katerina Junghe"
-            ],
-            "people ages": [
-              41,
-              37
-            ],
-            "label": "spouse",
-            "committed": true
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.524,
-            "inhabitants": []
-          }
-        ],
-        "1215": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1215
-          },
-          {
-            "topic": "job notice",
-            "notice": "earning very little",
-            "income": 0.342
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.342,
-            "inhabitants": []
-          }
-        ],
-        "1216": [
-          {
-            "topic": "job notice",
-            "notice": "earning very little",
-            "income": 0.346
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.346,
-            "inhabitants": []
-          }
-        ],
-        "1217": [
+        "1205": [
           {
             "topic": "job notice",
             "notice": "hardly any income",
-            "income": 0.225
+            "income": 0.18
           },
-          {
-            "topic": "feelings change",
-            "target": 12221,
-            "target name": "Katerina Junghe",
-            "state": "solid love",
-            "relationship": 22598
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.225,
-            "inhabitants": []
-          },
-          {
-            "key": 22598,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 12221,
-              "name": "Katerina Junghe",
-              "age": 40,
-              "alive": false,
-              "sex": "f",
-              "parents": "firstgen"
-            },
-            "cause": "illness",
-            "label": "spouse"
-          }
-        ],
-        "1218": [
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "sickness"
           }
         ]
       }
@@ -412,18 +264,22 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stStoof straet.se1.c1",
-      "street": "Stoof straet",
+      "section": "stNieu straet.se3.c1",
+      "street": "Nieu straet",
       "neighborhood": "visbuurt",
-      "unique id": 772
+      "unique id": 769
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
-        12207,
-        22598
+        12207
       ]
-    }
+    },
+    "friends": [
+      12207,
+      13646
+    ],
+    "enemies": []
   }
 }

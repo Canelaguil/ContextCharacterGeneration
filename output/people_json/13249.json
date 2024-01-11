@@ -1,33 +1,35 @@
 {
   "13249": {
     "alive": false,
-    "name": "Baua",
-    "surname": "Hoghen",
-    "full name": "Baua Hoghen",
+    "name": "Stoethoute",
+    "surname": "Bec",
+    "full name": "Stoethoute Bec",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.903,
-      "romantic interest": 0.772,
-      "sex interest": 0.861,
-      "gender expression": 0.0,
-      "sex": "f"
+      "sexuality label": "straight",
+      "sexuality": 0.075,
+      "romantic interest": 0.586,
+      "sex interest": 0.676,
+      "gender expression": 0.106,
+      "sex": "m"
     },
-    "age": 1,
+    "age": 3,
     "birth year": 1200,
-    "sex": "f",
+    "sex": "m",
     "faction": "Dogmatists",
     "income class": [
-      3,
-      "upper middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.199,
-      "nice-nasty": 0.064,
-      "honest-false": 0.605
+      "lawful-chaotic": 0.59,
+      "nice-nasty": 0.041,
+      "honest-false": 0.058,
+      "dream": 0.62,
+      "outgoing": 0.999
     },
     "attitude": {
-      "outgoing": 0.681,
-      "dream": 0.0
+      "dream": 0.62,
+      "outgoing": 0.999
     },
     "homsoc": {
       "means": {
@@ -38,43 +40,46 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.526,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.049,
+        "gender expression expression": 0.09
       }
     },
     "network": {
       "parents": {
-        "mother": "Alene (11777)",
-        "father": "Gherolf (11776)"
+        "mother": "Iris (12155)",
+        "father": "Gherbrandus (12154)"
       },
       "children": {},
       "relationship keys": {
         "parent": [
           13250,
           13251
+        ],
+        "sibling": [
+          16020
         ]
       }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        3,
-        "upper middle class"
+        1,
+        "lower middle class"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 7,
+      "skin_color": 8,
       "eye_color": "blue",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "red",
+      "hair_color_code": 3,
       "hair_type": [
         "S",
         "S"
       ],
-      "health": 0.784,
-      "fertility": 0.725,
+      "health": 0.713,
+      "fertility": 0.635,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -86,31 +91,83 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.784
+            "new_health": 0.713
           },
           "death": false
+        },
+        "1203": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.713
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
           {
-            "topic": "new home",
-            "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stDie lange straet2.se1.c3",
-              "street": "Die lange straet2",
-              "neighborhood": "cingelzuid",
-              "unique id": 624
-            }
+            "topic": "birth",
+            "year": 1200
+          },
+          {
+            "topic": "new relationship",
+            "key": 13250,
+            "people": [
+              12154,
+              13249
+            ],
+            "people names": [
+              "Gherbrandus Bec",
+              "Stoethoute Bec"
+            ],
+            "people ages": [
+              36,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "new relationship",
+            "key": 13251,
+            "people": [
+              12155,
+              13249
+            ],
+            "people names": [
+              "Iris Lettele",
+              "Stoethoute Bec"
+            ],
+            "people ages": [
+              23,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          },
+            "topic": "new relationship",
+            "key": 16020,
+            "people": [
+              13249,
+              16017
+            ],
+            "people names": [
+              "Stoethoute Bec",
+              "Ricmoden Bec"
+            ],
+            "people ages": [
+              1,
+              0
+            ],
+            "label": "sibling",
+            "committed": false
+          }
+        ],
+        "1203": [
           {
             "topic": "death",
             "cause": "childhood illness"
@@ -120,17 +177,22 @@
     },
     "key": 13249,
     "home": {
-      "income class": 3,
-      "income class label": "upper middle class",
-      "section": "stDie lange straet2.se1.c3",
-      "street": "Die lange straet2",
-      "neighborhood": "cingelzuid",
-      "unique id": 624
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stMooierstraet.se3.c1",
+      "street": "Mooierstraet",
+      "neighborhood": "visbuurt",
+      "unique id": 750
     },
     "relationship status": {
       "taken": false,
       "married": false,
       "relationships": []
-    }
+    },
+    "friends": [
+      13250,
+      16020
+    ],
+    "enemies": []
   }
 }

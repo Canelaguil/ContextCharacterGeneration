@@ -1,19 +1,19 @@
 {
   "12809": {
     "alive": false,
-    "name": "Aghata",
-    "surname": "Vraet",
-    "full name": "Aghata Vraet",
+    "name": "Liudburgis",
+    "surname": "Crane",
+    "full name": "Liudburgis Crane",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.053,
-      "romantic interest": 0.533,
-      "sex interest": 0.536,
-      "gender expression": 0.051,
+      "sexuality": 0.098,
+      "romantic interest": 0.764,
+      "sex interest": 0.689,
+      "gender expression": 0.218,
       "sex": "f"
     },
-    "age": 31,
-    "birth year": 1176,
+    "age": 51,
+    "birth year": 1167,
     "sex": "f",
     "faction": "No religion",
     "income class": [
@@ -21,13 +21,15 @@
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.38,
-      "nice-nasty": 0.721,
-      "honest-false": 0.423
+      "lawful-chaotic": 0.541,
+      "nice-nasty": 0.792,
+      "honest-false": 0.53,
+      "dream": 0.319,
+      "outgoing": 0.597
     },
     "attitude": {
-      "outgoing": 0.177,
-      "dream": 0.274
+      "dream": 0.319,
+      "outgoing": 0.597
     },
     "homsoc": {
       "means": {
@@ -38,68 +40,112 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.037,
-        "gender expression expression": 0.032
+        "sexuality expression": 0.058,
+        "gender expression expression": 0.074
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "13483": {
-          "key": 13483,
-          "name": "Gertrudis Vekenstyl",
-          "age": 49,
+        "17517": {
+          "key": 17517,
+          "name": "Fellen Doncker",
+          "age": 16,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Liudburgis (12809)",
+            "father": "Kerolus (12808)"
+          }
+        },
+        "19706": {
+          "key": 19706,
+          "name": "Hersewindis van Kerolus",
+          "age": 38,
           "alive": false,
           "sex": "f",
           "parents": {
-            "mother": "Aghata (12809)",
-            "father": "Dammas (12808)"
+            "mother": "Liudburgis (12809)",
+            "father": "Kerolus (12808)"
           }
         },
-        "17217": {
-          "key": 17217,
-          "name": "Sanse Vekenstyl",
+        "23407": {
+          "key": 23407,
+          "name": "Rissewint Doncker",
           "age": 25,
           "alive": false,
           "sex": "m",
           "parents": {
-            "mother": "Aghata (12809)",
-            "father": "Dammas (12808)"
+            "mother": "Liudburgis (12809)",
+            "father": "Kerolus (12808)"
+          }
+        },
+        "31012": {
+          "key": 31012,
+          "name": "Eggerdus Doncker",
+          "age": 23,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Liudburgis (12809)",
+            "father": "Kerolus (12808)"
           }
         }
       },
       "relationship keys": {
         "spouse": [
-          12810
+          12810,
+          35547
         ],
         "child": {
           "birth": [
-            13485,
-            17219
+            17519,
+            19708,
+            23409,
+            31014
           ]
         }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         1,
         "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.109,
+      "all_incomes": [
+        1.057,
+        0.571,
+        0.655,
+        0.6,
+        0.715,
+        0.908,
+        1.046,
+        1.137,
+        1.45,
+        0.975,
+        0.81,
+        1.075,
+        0.896,
+        1.109
+      ],
+      "job": {
+        "lawful": false,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 6,
-      "eye_color": "blue",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 0,
+      "eye_color": "brown",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
         "C",
         "C"
       ],
-      "health": 0.873,
-      "fertility": 0.894,
+      "health": 0.425,
+      "fertility": 0.618,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -111,13 +157,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.873
+            "new_health": 0.65
           },
           "death": false
+        },
+        "1217": {
+          "health": {
+            "change": true,
+            "value_change": -0.225,
+            "new_health": 0.425
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1167
+          },
           {
             "topic": "new relationship",
             "key": 12810,
@@ -126,96 +184,268 @@
               12809
             ],
             "people names": [
-              "Dammas Vekenstyl",
-              "Aghata Vraet"
+              "Kerolus Doncker",
+              "Liudburgis Crane"
             ],
             "people ages": [
-              44,
-              24
+              42,
+              33
             ],
             "label": "spouse",
             "committed": true
-          },
+          }
+        ],
+        "1202": [
           {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stKerckstraet.se1.c1",
-              "street": "Kerckstraet",
-              "neighborhood": "denhof",
-              "unique id": 984
-            }
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "friend",
+            "relationship": 12810
           },
           {
             "topic": "new relationship",
-            "key": 13485,
+            "key": 17519,
             "people": [
               12809,
-              13483
+              17517
             ],
             "people names": [
-              "Aghata Vraet",
-              "Gertrudis Vekenstyl"
+              "Liudburgis Crane",
+              "Fellen Doncker"
             ],
             "people ages": [
-              24,
+              36,
               0
             ],
             "label": "parentchild",
             "committed": false
           }
         ],
-        "1201": [
+        "1203": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "topic": "new relationship",
+            "key": 19708,
+            "people": [
+              12809,
+              19706
+            ],
+            "people names": [
+              "Liudburgis Crane",
+              "Hersewindis van Kerolus"
+            ],
+            "people ages": [
+              37,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1204": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.057
+          },
+          {
+            "topic": "feelings change",
+            "target": 12808,
+            "target name": "Kerolus Doncker",
+            "state": "solid love",
+            "friendship label": "friend",
+            "relationship": 12810
           }
         ],
         "1205": [
           {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.571
+          },
+          {
             "topic": "new relationship",
-            "key": 17219,
+            "key": 23409,
             "people": [
               12809,
-              17217
+              23407
             ],
             "people names": [
-              "Aghata Vraet",
-              "Sanse Vekenstyl"
+              "Liudburgis Crane",
+              "Rissewint Doncker"
             ],
             "people ages": [
-              29,
+              39,
               0
             ],
             "label": "parentchild",
             "committed": false
           }
         ],
-        "1206": [
+        "1207": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "indifferent",
+            "relationship": 12810
+          },
+          {
+            "topic": "feelings change",
+            "target": 12808,
+            "target name": "Kerolus Doncker",
+            "state": "out of love",
+            "friendship label": "indifferent",
+            "relationship": 12810
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 17519
+          }
+        ],
+        "1209": [
+          {
+            "topic": "new relationship",
+            "key": 31014,
+            "people": [
+              12809,
+              31012
+            ],
+            "people names": [
+              "Liudburgis Crane",
+              "Eggerdus Doncker"
+            ],
+            "people ages": [
+              42,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1210": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.046
+          },
+          {
+            "key": 12810,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12808,
+              "name": "Kerolus Doncker",
+              "age": 53,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "friendship label": "indifferent",
+            "label": "spouse",
+            "love state": "out of love"
+          }
+        ],
+        "1211": [
+          {
+            "topic": "new relationship",
+            "key": 35547,
+            "people": [
+              11014,
+              12809
+            ],
+            "people names": [
+              "Laurens Commer",
+              "Liudburgis Crane"
+            ],
+            "people ages": [
+              50,
+              45
+            ],
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1213": [
+          {
+            "topic": "feelings change",
+            "target": 11014,
+            "target name": "Laurens Commer",
+            "state": "solid love",
+            "friendship label": "friend",
+            "relationship": 35547
+          },
+          {
+            "key": 35547,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11014,
+              "name": "Laurens Commer",
+              "age": 52,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "old age",
+            "friendship label": "friend",
+            "label": "spouse",
+            "love state": "solid love"
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.075
+          }
+        ],
+        "1217": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.109
+          },
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "old age"
           }
         ]
       }
     },
     "key": 12809,
     "home": {
-      "income class": 1,
-      "income class label": "lower middle class",
-      "section": "stKerckstraet.se1.c1",
-      "street": "Kerckstraet",
-      "neighborhood": "denhof",
-      "unique id": 984
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stDie Camp.se1.c2",
+      "street": "Die Camp",
+      "neighborhood": "kampbuurt",
+      "unique id": 351
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
-        12810
+        12810,
+        35547
       ]
-    }
+    },
+    "friends": [
+      35547
+    ],
+    "enemies": []
   }
 }

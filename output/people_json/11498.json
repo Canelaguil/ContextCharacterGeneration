@@ -1,87 +1,107 @@
 {
   "11498": {
     "alive": false,
-    "name": "Berta",
-    "surname": "Schille",
-    "full name": "Berta Schille",
+    "name": "Salome",
+    "surname": "Lancgeroch",
+    "full name": "Salome Lancgeroch",
     "born this way": {
-      "sexuality label": "bi",
-      "sexuality": 0.377,
-      "romantic interest": 0.554,
-      "sex interest": 0.584,
-      "gender expression": 0.291,
+      "sexuality label": "straight",
+      "sexuality": 0.066,
+      "romantic interest": 0.526,
+      "sex interest": 0.627,
+      "gender expression": 0.029,
       "sex": "f"
     },
-    "age": 55,
-    "birth year": 1158,
+    "age": 56,
+    "birth year": 1157,
     "sex": "f",
     "faction": "No religion",
     "income class": [
-      2,
-      "middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.175,
-      "nice-nasty": 0.639,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.613,
+      "nice-nasty": 0.475,
+      "honest-false": 0.224,
+      "dream": 0.458,
+      "outgoing": 0.685
     },
     "attitude": {
-      "outgoing": 0.332,
-      "dream": 0.669
+      "dream": 0.458,
+      "outgoing": 0.685
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": [
-          "starving"
-        ]
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.155,
-        "gender expression expression": 0.161
+        "sexuality expression": 0.062,
+        "gender expression expression": 0.026
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14128": {
+          "key": 14128,
+          "name": "Mabelie",
+          "age": 32,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Salome (11498)",
+            "father": "Wissen (11497)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          11499
+          11499,
+          25003
+        ],
+        "child": {
+          "birth": [
+            14130
+          ]
+        },
+        "unrelated": [
+          16480
         ]
       }
     },
     "occupation": {
       "has job": true,
       "income class": [
-        2,
-        "middle class"
+        1,
+        "lower middle class"
       ],
-      "income": 1.113,
+      "income": 0.382,
       "all_incomes": [
-        0.822,
-        0.8280000000000001,
-        0.778,
-        1.113
+        1.213,
+        0.966,
+        0.382
       ],
       "job": {
         "lawful": false,
-        "honest": true
+        "honest": false
       }
     },
     "genetics": {
-      "skin_color": 2,
+      "skin_color": 4,
       "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
-        "C",
+        "S",
         "C"
       ],
       "health": 0.0,
-      "fertility": 0.757,
+      "fertility": 0.574,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -93,38 +113,54 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.748
+            "new_health": 0.703
+          },
+          "death": false
+        },
+        "1207": {
+          "health": {
+            "change": true,
+            "value_change": -0.229,
+            "new_health": 0.474
+          },
+          "death": false
+        },
+        "1208": {
+          "health": {
+            "change": true,
+            "value_change": -0.175,
+            "new_health": 0.299
           },
           "death": false
         },
         "1209": {
           "health": {
             "change": true,
-            "value_change": -0.166,
-            "new_health": 0.582
+            "value_change": -0.258,
+            "new_health": 0.041
           },
           "death": false
         },
         "1210": {
           "health": {
             "change": true,
-            "value_change": -0.254,
-            "new_health": 0.328
+            "value_change": -0.032,
+            "new_health": 0.009
           },
           "death": false
         },
         "1211": {
           "health": {
             "change": true,
-            "value_change": -0.216,
-            "new_health": 0.112
+            "value_change": -0.008,
+            "new_health": 0.001
           },
           "death": false
         },
         "1212": {
           "health": {
             "change": true,
-            "value_change": -0.112,
+            "value_change": -0.001,
             "new_health": 0.0
           },
           "death": true
@@ -133,6 +169,10 @@
       "events": {
         "1200": [
           {
+            "topic": "birth",
+            "year": 1157
+          },
+          {
             "topic": "new relationship",
             "key": 11499,
             "people": [
@@ -140,113 +180,180 @@
               11498
             ],
             "people names": [
-              "Kerstiaen Vos",
-              "Berta Schille"
+              "Wissen Spiker",
+              "Salome Lancgeroch"
             ],
             "people ages": [
-              43,
-              42
+              48,
+              43
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stBreestraat.se1.c2",
-              "street": "Breestraat",
-              "neighborhood": "olvbuurt",
-              "unique id": 526
-            }
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "friend",
+            "relationship": 11499
           },
           {
-            "topic": "feelings change",
-            "target": 11497,
-            "target name": "Kerstiaen Vos",
-            "state": "out of love",
-            "relationship": 11499
+            "topic": "new relationship",
+            "key": 14130,
+            "people": [
+              11498,
+              14128
+            ],
+            "people names": [
+              "Salome Lancgeroch",
+              "Mabelie"
+            ],
+            "people ages": [
+              44,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "topic": "feelings change",
+            "target": 11497,
+            "target name": "Wissen Spiker",
+            "state": "solid love",
+            "friendship label": "friend",
+            "relationship": 11499
           },
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "new relationship",
+            "key": 16480,
+            "people": [
+              11194,
+              11498
+            ],
+            "people names": [
+              "Radulphus Stopelkin",
+              "Salome Lancgeroch"
+            ],
+            "people ages": [
+              33,
+              45
+            ],
+            "label": "unrelated",
+            "committed": false
           }
         ],
         "1202": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "friend",
+            "relationship": 11499
           }
         ],
         "1203": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "indifferent",
+            "relationship": 11499
+          },
+          {
+            "topic": "feelings change",
+            "target": 11497,
+            "target name": "Wissen Spiker",
+            "state": "out of love",
+            "friendship label": "indifferent",
+            "relationship": 11499
           }
         ],
         "1204": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "key": 11499,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11497,
+              "name": "Wissen Spiker",
+              "age": 53,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "friendship label": "indifferent",
+            "label": "spouse",
+            "love state": "out of love"
           }
         ],
         "1205": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1206": [
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "friend",
+            "relationship": 16480
+          },
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1207": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1208": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "new relationship",
+            "key": 25003,
+            "people": [
+              10300,
+              11498
+            ],
+            "people names": [
+              "Eelbout",
+              "Salome Lancgeroch"
+            ],
+            "people ages": [
+              41,
+              49
+            ],
+            "label": "spouse",
+            "committed": true
           }
         ],
         "1209": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.822
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "friend",
+            "relationship": 25003
           },
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "person died",
+            "person": {
+              "key": 11194,
+              "name": "Radulphus Stopelkin",
+              "age": 41,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "friendship label": "friend",
+            "label": "unrelated",
+            "love state": "nothing"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.213
           }
         ],
         "1212": [
           {
             "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.113
+            "notice": "earning very little",
+            "income": 0.382
           },
           {
             "topic": "death",
@@ -257,19 +364,26 @@
     },
     "key": 11498,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stBreestraat.se1.c2",
-      "street": "Breestraat",
-      "neighborhood": "olvbuurt",
-      "unique id": 526
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stHelle voet.se5.c1",
+      "street": "Helle voet",
+      "neighborhood": "jorisbuurt",
+      "unique id": 107
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        11499
+        11499,
+        25003
       ]
-    }
+    },
+    "friends": [
+      25003,
+      14130,
+      16480
+    ],
+    "enemies": []
   }
 }

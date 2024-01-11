@@ -1,33 +1,35 @@
 {
   "12830": {
     "alive": false,
-    "name": "Godeweris",
-    "surname": "Colueken",
-    "full name": "Godeweris Colueken",
+    "name": "Marie",
+    "surname": "Cnode",
+    "full name": "Marie Cnode",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.553,
-      "sex interest": 0.585,
-      "gender expression": 0.0,
+      "sexuality label": "gay",
+      "sexuality": 0.818,
+      "romantic interest": 0.525,
+      "sex interest": 0.768,
+      "gender expression": 0.496,
       "sex": "f"
     },
-    "age": 26,
-    "birth year": 1176,
+    "age": 20,
+    "birth year": 1183,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "No religion",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.658,
-      "nice-nasty": 0.588,
-      "honest-false": 0.115
+      "lawful-chaotic": 0.99,
+      "nice-nasty": 0.467,
+      "honest-false": 0.331,
+      "dream": 0.375,
+      "outgoing": 0.734
     },
     "attitude": {
-      "outgoing": 0.574,
-      "dream": 0.39
+      "dream": 0.375,
+      "outgoing": 0.734
     },
     "homsoc": {
       "means": {
@@ -38,17 +40,34 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.237,
+        "gender expression expression": 0.039
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14904": {
+          "key": 14904,
+          "name": "Woutgerus van Kerolus",
+          "age": 3,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Marie (12830)",
+            "father": "Kerolus (12829)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           12831
-        ]
+        ],
+        "child": {
+          "birth": [
+            14906
+          ]
+        }
       }
     },
     "occupation": {
@@ -61,16 +80,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 6,
-      "eye_color": "green",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "skin_color": 9,
+      "eye_color": "brown",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
         "S",
-        "S"
+        "C"
       ],
-      "health": 0.702,
-      "fertility": 0.715,
+      "health": 0.681,
+      "fertility": 0.607,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -82,21 +101,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.702
+            "new_health": 0.681
           },
           "death": false
         },
-        "1201": {
+        "1202": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.702
+            "new_health": 0.681
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1183
+          },
           {
             "topic": "new relationship",
             "key": 12831,
@@ -105,34 +128,38 @@
               12830
             ],
             "people names": [
-              "Pauels Pluuier",
-              "Godeweris Colueken"
+              "Kerolus",
+              "Marie Cnode"
             ],
             "people ages": [
-              31,
-              24
+              20,
+              17
             ],
             "label": "spouse",
             "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stKerckstraet.se5.c1",
-              "street": "Kerckstraet",
-              "neighborhood": "denhof",
-              "unique id": 992
-            }
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          },
+            "topic": "new relationship",
+            "key": 14906,
+            "people": [
+              12830,
+              14904
+            ],
+            "people names": [
+              "Marie Cnode",
+              "Woutgerus van Kerolus"
+            ],
+            "people ages": [
+              18,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1202": [
           {
             "topic": "death",
             "cause": "illness"
@@ -147,7 +174,7 @@
       "section": "stKerckstraet.se5.c1",
       "street": "Kerckstraet",
       "neighborhood": "denhof",
-      "unique id": 992
+      "unique id": 990
     },
     "relationship status": {
       "taken": true,
@@ -155,6 +182,10 @@
       "relationships": [
         12831
       ]
-    }
+    },
+    "friends": [
+      14906
+    ],
+    "enemies": []
   }
 }

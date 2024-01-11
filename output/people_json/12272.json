@@ -1,33 +1,35 @@
 {
   "12272": {
     "alive": false,
-    "name": "Clementia",
-    "surname": "Pratre",
-    "full name": "Clementia Pratre",
+    "name": "Katrin",
+    "surname": "",
+    "full name": "Katrin",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.124,
-      "romantic interest": 0.566,
-      "sex interest": 0.483,
-      "gender expression": 0.0,
+      "sexuality": 0.0,
+      "romantic interest": 0.87,
+      "sex interest": 0.495,
+      "gender expression": 0.081,
       "sex": "f"
     },
-    "age": 46,
-    "birth year": 1165,
+    "age": 45,
+    "birth year": 1170,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
       4,
       "nobility"
     ],
     "personality": {
-      "lawful-chaotic": 0.809,
-      "nice-nasty": 0.142,
-      "honest-false": 0.0
+      "lawful-chaotic": 0.55,
+      "nice-nasty": 0.999,
+      "honest-false": 0.569,
+      "dream": 0.783,
+      "outgoing": 0.482
     },
     "attitude": {
-      "outgoing": 0.939,
-      "dream": 0.795
+      "dream": 0.783,
+      "outgoing": 0.482
     },
     "homsoc": {
       "means": {
@@ -35,58 +37,93 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.107,
-        "gender expression expression": -0.001
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.035
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13924": {
+          "key": 13924,
+          "name": "Victoria Smicke",
+          "age": 43,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Katrin (12272)",
+            "father": "Bodekine (12271)"
+          }
+        },
+        "21969": {
+          "key": 21969,
+          "name": "Ingel Bodekineszoon",
+          "age": 11,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Katrin (12272)",
+            "father": "Bodekine (12271)"
+          }
+        },
+        "31198": {
+          "key": 31198,
+          "name": "Lambrecht Smicke",
+          "age": 19,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Katrin (12272)",
+            "father": "Bodekine (12271)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           12273
+        ],
+        "child": {
+          "birth": [
+            13926,
+            21971,
+            31200
+          ]
+        },
+        "unrelated": [
+          14596,
+          16465,
+          18568,
+          22908,
+          27122,
+          35571
         ]
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
         4,
         "nobility"
       ],
-      "income": 1.5990000000000002,
-      "all_incomes": [
-        1.155,
-        1.433,
-        1.491,
-        1.3150000000000002,
-        1.2690000000000001,
-        1.262,
-        1.58,
-        1.5990000000000002,
-        1.5990000000000002,
-        1.5990000000000002,
-        1.5990000000000002
-      ],
-      "job": {
-        "lawful": true,
-        "honest": false
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 5,
+      "skin_color": 6,
       "eye_color": "brown",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
         "S",
         "C"
       ],
-      "health": 0.479,
-      "fertility": 0.73,
+      "health": 0.811,
+      "fertility": 0.805,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -98,31 +135,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.643
+            "new_health": 0.811
           },
           "death": false
         },
-        "1201": {
-          "health": {
-            "change": true,
-            "value_change": -0.164,
-            "new_health": 0.479
-          },
-          "death": false
-        },
-        "1202": {
+        "1214": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.479
-          },
-          "death": false
-        },
-        "1210": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.479
+            "new_health": 0.811
           },
           "death": true
         }
@@ -130,9 +151,8 @@
       "events": {
         "1200": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.155
+            "topic": "birth",
+            "year": 1170
           },
           {
             "topic": "new relationship",
@@ -142,36 +162,295 @@
               12272
             ],
             "people names": [
-              "Folkero Borsdraghere",
-              "Clementia Pratre"
+              "Bodekine Smicke",
+              "Katrin"
             ],
             "people ages": [
-              37,
-              35
+              43,
+              30
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 4,
-              "income class label": "nobility",
-              "section": "stMuurhuysen2.se1.c4",
-              "street": "Muurhuysen2",
-              "neighborhood": "cingelnoord",
-              "unique id": 796
-            }
+            "topic": "new relationship",
+            "key": 13926,
+            "people": [
+              12272,
+              13924
+            ],
+            "people names": [
+              "Katrin",
+              "Victoria Smicke"
+            ],
+            "people ages": [
+              30,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "new relationship",
+            "key": 14596,
+            "people": [
+              12272,
+              10228
+            ],
+            "people names": [
+              "Katrin",
+              "Voghel Clinkart"
+            ],
+            "people ages": [
+              31,
+              34
+            ],
+            "label": "unrelated",
+            "committed": false
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "friend",
+            "relationship": 12273
+          },
+          {
+            "topic": "new relationship",
+            "key": 16465,
+            "people": [
+              12272,
+              10274
+            ],
+            "people names": [
+              "Katrin",
+              "Emgelberna"
+            ],
+            "people ages": [
+              32,
+              23
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 18568,
+            "people": [
+              12272,
+              11483
+            ],
+            "people names": [
+              "Katrin",
+              "Imsoete Vint"
+            ],
+            "people ages": [
+              33,
+              49
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1203": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "friend",
+            "relationship": 12273
+          }
+        ],
+        "1204": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 13926
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "friend",
+            "relationship": 12273
+          },
+          {
+            "topic": "new relationship",
+            "key": 21971,
+            "people": [
+              12272,
+              21969
+            ],
+            "people names": [
+              "Katrin",
+              "Ingel Bodekineszoon"
+            ],
+            "people ages": [
+              35,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "new relationship",
+            "key": 22908,
+            "people": [
+              12272,
+              10243
+            ],
+            "people names": [
+              "Katrin",
+              "Menzone Crulleboye"
+            ],
+            "people ages": [
+              35,
+              42
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 27122,
+            "people": [
+              12272,
+              10540
+            ],
+            "people names": [
+              "Katrin",
+              "Harlo Mule"
+            ],
+            "people ages": [
+              37,
+              28
+            ],
+            "label": "unrelated",
+            "committed": false
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11483,
+              "name": "Imsoete Vint",
+              "age": 53,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "old age",
+            "friendship label": "indifferent",
+            "label": "unrelated",
+            "love state": "nothing"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 13926
+          }
+        ],
+        "1209": [
+          {
+            "topic": "new relationship",
+            "key": 31200,
+            "people": [
+              12272,
+              31198
+            ],
+            "people names": [
+              "Katrin",
+              "Lambrecht Smicke"
+            ],
+            "people ages": [
+              40,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1210": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "indifferent",
+            "relationship": 16465
+          }
+        ],
+        "1211": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 13926
+          },
+          {
+            "key": 12273,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12271,
+              "name": "Bodekine Smicke",
+              "age": 55,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "old age",
+            "friendship label": "friend",
+            "label": "spouse",
+            "love state": "out of love"
+          },
+          {
+            "topic": "new relationship",
+            "key": 35571,
+            "people": [
+              12272,
+              10922
+            ],
+            "people names": [
+              "Katrin",
+              "Sywi"
+            ],
+            "people ages": [
+              42,
+              41
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1214": [
           {
             "topic": "death",
             "cause": "illness"
@@ -186,14 +465,25 @@
       "section": "stMuurhuysen2.se1.c4",
       "street": "Muurhuysen2",
       "neighborhood": "cingelnoord",
-      "unique id": 796
+      "unique id": 792
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         12273
       ]
-    }
+    },
+    "friends": [
+      12273,
+      13926,
+      21971,
+      31200,
+      14596,
+      22908,
+      27122,
+      35571
+    ],
+    "enemies": []
   }
 }

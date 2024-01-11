@@ -1,19 +1,19 @@
 {
   "12100": {
     "alive": false,
-    "name": "Stemaers",
-    "surname": "Senum",
-    "full name": "Stemaers Senum",
+    "name": "Gosuinus",
+    "surname": "Froes",
+    "full name": "Gosuinus Froes",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.013,
-      "romantic interest": 0.614,
-      "sex interest": 0.961,
-      "gender expression": 0.158,
+      "sexuality": 0.0,
+      "romantic interest": 0.713,
+      "sex interest": 0.657,
+      "gender expression": 0.026,
       "sex": "m"
     },
-    "age": 30,
-    "birth year": 1173,
+    "age": 23,
+    "birth year": 1180,
     "sex": "m",
     "faction": "Zealots",
     "income class": [
@@ -21,13 +21,15 @@
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.867,
-      "nice-nasty": 0.291,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.0,
+      "nice-nasty": 0.469,
+      "honest-false": 0.675,
+      "dream": 0.278,
+      "outgoing": 0.738
     },
     "attitude": {
-      "outgoing": 0.502,
-      "dream": 0.328
+      "dream": 0.278,
+      "outgoing": 0.738
     },
     "homsoc": {
       "means": {
@@ -38,34 +40,17 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.009,
-        "gender expression expression": 0.103
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.018
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {
-        "14401": {
-          "key": 14401,
-          "name": "Conzone Senum",
-          "age": 16,
-          "alive": false,
-          "sex": "m",
-          "parents": {
-            "mother": "Alene (12101)",
-            "father": "Stemaers (12100)"
-          }
-        }
-      },
+      "children": {},
       "relationship keys": {
         "spouse": [
           12102
-        ],
-        "child": {
-          "birth": [
-            14402
-          ]
-        }
+        ]
       }
     },
     "occupation": {
@@ -74,28 +59,28 @@
         2,
         "middle class"
       ],
-      "income": 0.994,
+      "income": 1.524,
       "all_incomes": [
-        1.059,
-        0.999,
-        0.9500000000000001,
-        0.994
+        1.458,
+        1.4669999999999999,
+        1.524,
+        1.524
       ],
       "job": {
-        "lawful": true,
-        "honest": true
+        "lawful": false,
+        "honest": false
       }
     },
     "genetics": {
-      "skin_color": 2,
+      "skin_color": 5,
       "eye_color": "brown",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "C",
-        "S"
+        "C"
       ],
-      "health": 0.618,
+      "health": 0.579,
       "fertility": 0.532,
       "communication_impaired": false,
       "mobility_impaired": false,
@@ -108,7 +93,7 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.618
+            "new_health": 0.579
           },
           "death": false
         },
@@ -116,7 +101,7 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.618
+            "new_health": 0.579
           },
           "death": true
         }
@@ -124,9 +109,13 @@
       "events": {
         "1200": [
           {
+            "topic": "birth",
+            "year": 1180
+          },
+          {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.059
+            "income": 1.458
           },
           {
             "topic": "new relationship",
@@ -136,58 +125,39 @@
               12101
             ],
             "people names": [
-              "Stemaers Senum",
-              "Alene"
+              "Gosuinus Froes",
+              "Zuanelt Blessard"
             ],
             "people ages": [
-              27,
-              21
+              20,
+              19
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stCorte gracht.se3.c2",
-              "street": "Corte gracht",
-              "neighborhood": "visbuurt",
-              "unique id": 736
-            }
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "friend",
+            "relationship": 12102
           },
+          {
+            "topic": "feelings change",
+            "target": 12101,
+            "target name": "Zuanelt Blessard",
+            "state": "out of love",
+            "friendship label": "friend",
+            "relationship": 12102
+          }
+        ],
+        "1201": [
           {
             "topic": "update",
             "update": "new friendship label",
             "relationship label": "spouse",
             "friendship label": "indifferent",
             "relationship": 12102
-          }
-        ],
-        "1201": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          },
-          {
-            "topic": "new relationship",
-            "key": 14402,
-            "people": [
-              12100,
-              14401
-            ],
-            "people names": [
-              "Stemaers Senum",
-              "Conzone Senum"
-            ],
-            "people ages": [
-              29,
-              0
-            ],
-            "label": "parentchild",
-            "committed": false
           }
         ],
         "1202": [
@@ -202,10 +172,10 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stCorte gracht.se3.c2",
+      "section": "stCorte gracht.se1.c2",
       "street": "Corte gracht",
       "neighborhood": "visbuurt",
-      "unique id": 736
+      "unique id": 731
     },
     "relationship status": {
       "taken": true,
@@ -213,6 +183,8 @@
       "relationships": [
         12102
       ]
-    }
+    },
+    "friends": [],
+    "enemies": []
   }
 }

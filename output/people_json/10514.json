@@ -1,59 +1,63 @@
 {
   "10514": {
     "alive": false,
-    "name": "Oderada",
-    "surname": "Bart",
-    "full name": "Oderada Bart",
+    "name": "Beatrice",
+    "surname": "Loeuin",
+    "full name": "Beatrice Loeuin",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.077,
-      "romantic interest": 0.523,
-      "sex interest": 0.762,
-      "gender expression": 0.037,
+      "sexuality": 0.102,
+      "romantic interest": 0.843,
+      "sex interest": 0.826,
+      "gender expression": 0.17,
       "sex": "f"
     },
-    "age": 28,
-    "birth year": 1174,
+    "age": 53,
+    "birth year": 1161,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "No religion",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.369,
-      "nice-nasty": 0.541,
-      "honest-false": 0.795
+      "lawful-chaotic": 0.177,
+      "nice-nasty": 0.353,
+      "honest-false": 0.177,
+      "dream": 0.397,
+      "outgoing": 0.494
     },
     "attitude": {
-      "outgoing": 0.436,
-      "dream": 0.396
+      "dream": 0.397,
+      "outgoing": 0.494
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.042,
-        "gender expression expression": 0.018
+        "sexuality expression": 0.053,
+        "gender expression expression": 0.119
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "13384": {
-          "key": 13384,
-          "name": "Cofte Rike",
-          "age": 47,
+        "13711": {
+          "key": 13711,
+          "name": "Oliuerus Scakart",
+          "age": 23,
           "alive": false,
-          "sex": "f",
+          "sex": "m",
           "parents": {
-            "mother": "Oderada (10514)",
-            "father": "Passelin (10513)"
+            "mother": "Beatrice (10514)",
+            "father": "Hatebrandus (10513)"
           }
         }
       },
@@ -63,31 +67,42 @@
         ],
         "child": {
           "birth": [
-            13386
+            13713
           ]
         }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.194,
+      "all_incomes": [
+        0.71,
+        0.318,
+        0.463,
+        0.48300000000000004,
+        0.372,
+        0.194
+      ],
+      "job": {
+        "lawful": false,
+        "honest": false
+      }
     },
     "genetics": {
       "skin_color": 5,
-      "eye_color": "blue",
+      "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
-        "C",
-        "C"
+        "S",
+        "S"
       ],
-      "health": 0.843,
-      "fertility": 0.865,
+      "health": 0.002,
+      "fertility": 0.647,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -99,13 +114,41 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.843
+            "new_health": 0.592
           },
           "death": false
+        },
+        "1211": {
+          "health": {
+            "change": true,
+            "value_change": -0.326,
+            "new_health": 0.266
+          },
+          "death": false
+        },
+        "1212": {
+          "health": {
+            "change": true,
+            "value_change": -0.182,
+            "new_health": 0.084
+          },
+          "death": false
+        },
+        "1213": {
+          "health": {
+            "change": true,
+            "value_change": -0.082,
+            "new_health": 0.002
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1161
+          },
           {
             "topic": "new relationship",
             "key": 10515,
@@ -114,40 +157,29 @@
               10514
             ],
             "people names": [
-              "Passelin Rike",
-              "Oderada Bart"
+              "Hatebrandus Scakart",
+              "Beatrice Loeuin"
             ],
             "people ages": [
-              34,
-              26
+              47,
+              39
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stDavids hof.se1.c2",
-              "street": "Davids hof",
-              "neighborhood": "jorisbuurt",
-              "unique id": 182
-            }
-          },
-          {
             "topic": "new relationship",
-            "key": 13386,
+            "key": 13713,
             "people": [
               10514,
-              13384
+              13711
             ],
             "people names": [
-              "Oderada Bart",
-              "Cofte Rike"
+              "Beatrice Loeuin",
+              "Oliuerus Scakart"
             ],
             "people ages": [
-              26,
+              40,
               0
             ],
             "label": "parentchild",
@@ -156,13 +188,84 @@
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "topic": "feelings change",
+            "target": 10513,
+            "target name": "Hatebrandus Scakart",
+            "state": "solid love",
+            "friendship label": "friend",
+            "relationship": 10515
+          }
+        ],
+        "1207": [
+          {
+            "key": 10515,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10513,
+              "name": "Hatebrandus Scakart",
+              "age": 55,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "friendship label": "friend",
+            "label": "spouse",
+            "love state": "solid love"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.71
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.318
+          }
+        ],
+        "1210": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.463
+          }
+        ],
+        "1211": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.48300000000000004
+          }
+        ],
+        "1212": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.372
+          }
+        ],
+        "1213": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.194
           },
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "old age"
           }
         ]
       }
@@ -174,14 +277,19 @@
       "section": "stDavids hof.se1.c2",
       "street": "Davids hof",
       "neighborhood": "jorisbuurt",
-      "unique id": 182
+      "unique id": 180
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         10515
       ]
-    }
+    },
+    "friends": [
+      10515,
+      13713
+    ],
+    "enemies": []
   }
 }

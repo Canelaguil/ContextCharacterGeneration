@@ -1,54 +1,97 @@
 {
   "12157": {
     "alive": false,
-    "name": "Falco",
-    "surname": "Craie",
-    "full name": "Falco Craie",
+    "name": "Gherbrandus",
+    "surname": "Mol",
+    "full name": "Gherbrandus Mol",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.197,
-      "romantic interest": 0.776,
-      "sex interest": 0.69,
-      "gender expression": 0.022,
+      "sexuality": 0.038,
+      "romantic interest": 0.766,
+      "sex interest": 0.777,
+      "gender expression": 0.099,
       "sex": "m"
     },
-    "age": 30,
-    "birth year": 1172,
+    "age": 50,
+    "birth year": 1159,
     "sex": "m",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.568,
-      "honest-false": 0.958
+      "lawful-chaotic": 0.262,
+      "nice-nasty": 0.113,
+      "honest-false": 0.999,
+      "dream": 0.709,
+      "outgoing": 0.494
     },
     "attitude": {
-      "outgoing": 0.782,
-      "dream": 0.543
+      "dream": 0.709,
+      "outgoing": 0.494
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.097,
-        "gender expression expression": 0.015
+        "sexuality expression": 0.023,
+        "gender expression expression": 0.039
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "17703": {
+          "key": 17703,
+          "name": "Gertrudis Mol",
+          "age": 13,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Reynwi (12158)",
+            "father": "Gherbrandus (12157)"
+          }
+        },
+        "22653": {
+          "key": 22653,
+          "name": "Sarre Mol",
+          "age": 4,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Reynwi (12158)",
+            "father": "Gherbrandus (12157)"
+          }
+        },
+        "23822": {
+          "key": 23822,
+          "name": "Cofte Mol",
+          "age": 44,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Reynwi (12158)",
+            "father": "Gherbrandus (12157)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           12159
-        ]
+        ],
+        "child": {
+          "birth": [
+            17704,
+            22654,
+            23823
+          ]
+        }
       }
     },
     "occupation": {
@@ -57,28 +100,35 @@
         1,
         "lower middle class"
       ],
-      "income": 1.102,
+      "income": 0.575,
       "all_incomes": [
-        1.047,
-        1.136,
-        1.102
+        0.818,
+        0.863,
+        1.024,
+        1.224,
+        1.266,
+        1.057,
+        1.014,
+        1.032,
+        0.797,
+        0.575
       ],
       "job": {
-        "lawful": true,
+        "lawful": false,
         "honest": true
       }
     },
     "genetics": {
-      "skin_color": 7,
+      "skin_color": 5,
       "eye_color": "blue",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
         "S",
         "S"
       ],
-      "health": 0.784,
-      "fertility": 0.727,
+      "health": 0.722,
+      "fertility": 0.71,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -90,17 +140,29 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.784
+            "new_health": 0.722
           },
           "death": false
+        },
+        "1208": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.722
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
           {
+            "topic": "birth",
+            "year": 1159
+          },
+          {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.047
+            "income": 0.818
           },
           {
             "topic": "new relationship",
@@ -110,33 +172,103 @@
               12158
             ],
             "people names": [
-              "Falco Craie",
-              "Esa"
+              "Gherbrandus Mol",
+              "Reynwi Crulleboye"
             ],
             "people ages": [
-              28,
-              20
+              41,
+              16
             ],
             "label": "spouse",
             "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stNieu straet.se1.c1",
-              "street": "Nieu straet",
-              "neighborhood": "visbuurt",
-              "unique id": 756
-            }
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.024
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 17704,
+            "people": [
+              12157,
+              17703
+            ],
+            "people names": [
+              "Gherbrandus Mol",
+              "Gertrudis Mol"
+            ],
+            "people ages": [
+              43,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1204": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "friend",
+            "relationship": 12159
+          },
+          {
+            "topic": "new relationship",
+            "key": 22654,
+            "people": [
+              12157,
+              22653
+            ],
+            "people names": [
+              "Gherbrandus Mol",
+              "Sarre Mol"
+            ],
+            "people ages": [
+              46,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1205": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 17704
+          },
+          {
+            "topic": "new relationship",
+            "key": 23823,
+            "people": [
+              12157,
+              23822
+            ],
+            "people names": [
+              "Gherbrandus Mol",
+              "Cofte Mol"
+            ],
+            "people ages": [
+              46,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1208": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.575
           },
           {
             "topic": "death",
@@ -149,10 +281,10 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stNieu straet.se1.c1",
-      "street": "Nieu straet",
+      "section": "stMooierstraet.se3.c1",
+      "street": "Mooierstraet",
       "neighborhood": "visbuurt",
-      "unique id": 756
+      "unique id": 751
     },
     "relationship status": {
       "taken": true,
@@ -160,6 +292,12 @@
       "relationships": [
         12159
       ]
-    }
+    },
+    "friends": [
+      12159,
+      17704,
+      22654
+    ],
+    "enemies": []
   }
 }

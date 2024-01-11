@@ -1,33 +1,35 @@
 {
   "10156": {
     "alive": false,
-    "name": "Elyas\u0430",
-    "surname": "Pipe",
-    "full name": "Elyas\u0430 Pipe",
+    "name": "Mattheus",
+    "surname": "",
+    "full name": "Mattheus",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.113,
-      "romantic interest": 0.819,
-      "sex interest": 0.744,
-      "gender expression": 0.087,
+      "sexuality": 0.043,
+      "romantic interest": 0.71,
+      "sex interest": 0.664,
+      "gender expression": 0.118,
       "sex": "m"
     },
-    "age": 48,
-    "birth year": 1154,
+    "age": 36,
+    "birth year": 1167,
     "sex": "m",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.338,
-      "nice-nasty": 0.374,
-      "honest-false": 0.612
+      "lawful-chaotic": 0.193,
+      "nice-nasty": 0.451,
+      "honest-false": 0.161,
+      "dream": 0.293,
+      "outgoing": 0.411
     },
     "attitude": {
-      "outgoing": 0.553,
-      "dream": 0.407
+      "dream": 0.293,
+      "outgoing": 0.411
     },
     "homsoc": {
       "means": {
@@ -38,17 +40,34 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.061,
-        "gender expression expression": 0.052
+        "sexuality expression": 0.028,
+        "gender expression expression": 0.105
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14728": {
+          "key": 14728,
+          "name": "Emgelberna van Mattheus",
+          "age": 48,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Natelien (10157)",
+            "father": "Mattheus (10156)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10158
-        ]
+        ],
+        "child": {
+          "birth": [
+            14729
+          ]
+        }
       }
     },
     "occupation": {
@@ -57,28 +76,29 @@
         1,
         "lower middle class"
       ],
-      "income": 1.099,
+      "income": 0.903,
       "all_incomes": [
-        1.111,
-        1.115,
-        1.099
+        1.128,
+        1.147,
+        1.034,
+        0.903
       ],
       "job": {
-        "lawful": true,
+        "lawful": false,
         "honest": true
       }
     },
     "genetics": {
-      "skin_color": 8,
+      "skin_color": 1,
       "eye_color": "brown",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
         "S",
         "S"
       ],
-      "health": 0.715,
-      "fertility": 0.666,
+      "health": 0.808,
+      "fertility": 0.776,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -90,15 +110,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.715
+            "new_health": 0.808
           },
           "death": false
         },
-        "1201": {
+        "1202": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.715
+            "new_health": 0.808
           },
           "death": true
         }
@@ -106,9 +126,13 @@
       "events": {
         "1200": [
           {
+            "topic": "birth",
+            "year": 1167
+          },
+          {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.111
+            "income": 1.128
           },
           {
             "topic": "new relationship",
@@ -118,34 +142,53 @@
               10157
             ],
             "people names": [
-              "Elyas\u0430 Pipe",
-              "Heilsota"
+              "Mattheus",
+              "Natelien"
             ],
             "people ages": [
-              46,
-              33
+              33,
+              30
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stKoe straet.se1.c1",
-              "street": "Koe straet",
-              "neighborhood": "varkensbuurt",
-              "unique id": 56
-            }
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "friend",
+            "relationship": 10158
+          },
+          {
+            "topic": "feelings change",
+            "target": 10157,
+            "target name": "Natelien",
+            "state": "out of love",
+            "friendship label": "friend",
+            "relationship": 10158
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          },
+            "topic": "new relationship",
+            "key": 14729,
+            "people": [
+              10156,
+              14728
+            ],
+            "people names": [
+              "Mattheus",
+              "Emgelberna van Mattheus"
+            ],
+            "people ages": [
+              34,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1202": [
           {
             "topic": "death",
             "cause": "illness"
@@ -168,6 +211,10 @@
       "relationships": [
         10158
       ]
-    }
+    },
+    "friends": [
+      10158
+    ],
+    "enemies": []
   }
 }

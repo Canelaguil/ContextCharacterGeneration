@@ -1,19 +1,19 @@
 {
   "12572": {
     "alive": false,
-    "name": "Victoria",
-    "surname": "Coninc",
-    "full name": "Victoria Coninc",
+    "name": "Sywi",
+    "surname": "Pauwe",
+    "full name": "Sywi Pauwe",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.129,
-      "romantic interest": 0.722,
-      "sex interest": 0.836,
-      "gender expression": 0.047,
+      "sexuality": 0.013,
+      "romantic interest": 0.728,
+      "sex interest": 0.754,
+      "gender expression": 0.226,
       "sex": "f"
     },
-    "age": 20,
-    "birth year": 1181,
+    "age": 21,
+    "birth year": 1182,
     "sex": "f",
     "faction": "Dogmatists",
     "income class": [
@@ -21,13 +21,15 @@
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.435,
-      "nice-nasty": 0.999,
-      "honest-false": 0.72
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.961,
+      "honest-false": 0.273,
+      "dream": 0.41,
+      "outgoing": 0.644
     },
     "attitude": {
-      "outgoing": 0.843,
-      "dream": 0.571
+      "dream": 0.41,
+      "outgoing": 0.644
     },
     "homsoc": {
       "means": {
@@ -38,35 +40,63 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.067,
-        "gender expression expression": 0.029
+        "sexuality expression": 0.007,
+        "gender expression expression": 0.132
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
-      "relationship keys": {}
+      "children": {
+        "15597": {
+          "key": 15597,
+          "name": "Nannen Vrie",
+          "age": 14,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Sywi (12572)",
+            "father": "Pauels (12571)"
+          }
+        }
+      },
+      "relationship keys": {
+        "spouse": [
+          12573
+        ],
+        "child": {
+          "birth": [
+            15599
+          ]
+        }
+      }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.859,
+      "all_incomes": [
+        0.961,
+        0.859
+      ],
+      "job": {
+        "lawful": true,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 9,
-      "eye_color": "brown",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "skin_color": 5,
+      "eye_color": "green",
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
       "hair_type": [
         "S",
-        "C"
+        "S"
       ],
-      "health": 0.626,
-      "fertility": 0.615,
+      "health": 0.581,
+      "fertility": 0.548,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -78,7 +108,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.626
+            "new_health": 0.581
+          },
+          "death": false
+        },
+        "1202": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.581
           },
           "death": true
         }
@@ -86,8 +124,57 @@
       "events": {
         "1200": [
           {
+            "topic": "birth",
+            "year": 1182
+          },
+          {
+            "topic": "new relationship",
+            "key": 12573,
+            "people": [
+              12571,
+              12572
+            ],
+            "people names": [
+              "Pauels Vrie",
+              "Sywi Pauwe"
+            ],
+            "people ages": [
+              28,
+              18
+            ],
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1201": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.961
+          },
+          {
+            "topic": "new relationship",
+            "key": 15599,
+            "people": [
+              12572,
+              15597
+            ],
+            "people names": [
+              "Sywi Pauwe",
+              "Nannen Vrie"
+            ],
+            "people ages": [
+              19,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1202": [
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "childbirth"
           }
         ]
       }
@@ -99,12 +186,19 @@
       "section": "stCromme straet.se5.c2",
       "street": "Cromme straet",
       "neighborhood": "denhof",
-      "unique id": 901
+      "unique id": 900
     },
     "relationship status": {
       "taken": true,
       "married": true,
-      "relationships": []
-    }
+      "relationships": [
+        12573
+      ]
+    },
+    "friends": [
+      12573,
+      15599
+    ],
+    "enemies": []
   }
 }

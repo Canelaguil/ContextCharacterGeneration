@@ -1,33 +1,35 @@
 {
   "12122": {
     "alive": false,
-    "name": "Jute",
-    "surname": "Catere",
-    "full name": "Jute Catere",
+    "name": "Heilsota",
+    "surname": "Longus",
+    "full name": "Heilsota Longus",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.867,
-      "romantic interest": 0.731,
-      "sex interest": 0.384,
-      "gender expression": 0.086,
+      "sexuality label": "straight",
+      "sexuality": 0.09,
+      "romantic interest": 0.88,
+      "sex interest": 0.591,
+      "gender expression": 0.085,
       "sex": "f"
     },
-    "age": 29,
-    "birth year": 1176,
+    "age": 54,
+    "birth year": 1166,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "Zealots",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.0,
-      "honest-false": 0.504
+      "lawful-chaotic": 0.439,
+      "nice-nasty": 0.715,
+      "honest-false": 0.777,
+      "dream": 0.125,
+      "outgoing": 0.544
     },
     "attitude": {
-      "outgoing": 0.67,
-      "dream": 0.62
+      "dream": 0.125,
+      "outgoing": 0.544
     },
     "homsoc": {
       "means": {
@@ -35,25 +37,49 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.436,
-        "gender expression expression": 0.02
+        "sexuality expression": 0.046,
+        "gender expression expression": 0.053
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "15428": {
-          "key": 15428,
-          "name": "Ricmoden Screvel",
-          "age": 40,
+        "13702": {
+          "key": 13702,
+          "name": "Wasseliin Sicconeszoon",
+          "age": 18,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Heilsota (12122)",
+            "father": "Siccone (12121)"
+          }
+        },
+        "15620": {
+          "key": 15620,
+          "name": "Auesoete Sicconesdochter",
+          "age": 14,
           "alive": false,
           "sex": "f",
           "parents": {
-            "mother": "Jute (12122)",
-            "father": "Gheeneman (12121)"
+            "mother": "Heilsota (12122)",
+            "father": "Siccone (12121)"
+          }
+        },
+        "23779": {
+          "key": 23779,
+          "name": "Alene",
+          "age": 16,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Heilsota (12122)",
+            "father": "Siccone (12121)"
           }
         }
       },
@@ -63,7 +89,9 @@
         ],
         "child": {
           "birth": [
-            15430
+            13704,
+            15622,
+            23781
           ]
         }
       }
@@ -78,16 +106,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 7,
-      "eye_color": "blue",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "skin_color": 4,
+      "eye_color": "brown",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
-        "S",
-        "C"
+        "C",
+        "S"
       ],
-      "health": 0.829,
-      "fertility": 0.728,
+      "health": 0.0,
+      "fertility": 0.677,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -99,13 +127,49 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.829
+            "new_health": 0.647
           },
           "death": false
+        },
+        "1216": {
+          "health": {
+            "change": true,
+            "value_change": -0.236,
+            "new_health": 0.411
+          },
+          "death": false
+        },
+        "1217": {
+          "health": {
+            "change": true,
+            "value_change": -0.335,
+            "new_health": 0.076
+          },
+          "death": false
+        },
+        "1218": {
+          "health": {
+            "change": true,
+            "value_change": -0.072,
+            "new_health": 0.004
+          },
+          "death": false
+        },
+        "1219": {
+          "health": {
+            "change": true,
+            "value_change": -0.004,
+            "new_health": 0.0
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1166
+          },
           {
             "topic": "new relationship",
             "key": 12123,
@@ -114,59 +178,188 @@
               12122
             ],
             "people names": [
-              "Gheeneman Screvel",
-              "Jute Catere"
+              "Siccone",
+              "Heilsota Longus"
             ],
             "people ages": [
-              46,
-              24
+              40,
+              34
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stCorte gracht.se3.c2",
-              "street": "Corte gracht",
-              "neighborhood": "visbuurt",
-              "unique id": 743
-            }
-          }
-        ],
-        "1201": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          }
-        ],
-        "1203": [
-          {
             "topic": "new relationship",
-            "key": 15430,
+            "key": 13704,
             "people": [
               12122,
-              15428
+              13702
             ],
             "people names": [
-              "Jute Catere",
-              "Ricmoden Screvel"
+              "Heilsota Longus",
+              "Wasseliin Sicconeszoon"
             ],
             "people ages": [
-              28,
+              34,
               0
             ],
             "label": "parentchild",
             "committed": false
           }
         ],
-        "1204": [
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 15622,
+            "people": [
+              12122,
+              15620
+            ],
+            "people names": [
+              "Heilsota Longus",
+              "Auesoete Sicconesdochter"
+            ],
+            "people ages": [
+              36,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1203": [
+          {
+            "topic": "feelings change",
+            "target": 12121,
+            "target name": "Siccone",
+            "state": "out of love",
+            "friendship label": "indifferent",
+            "relationship": 12123
+          }
+        ],
+        "1205": [
+          {
+            "topic": "new relationship",
+            "key": 23781,
+            "people": [
+              12122,
+              23779
+            ],
+            "people names": [
+              "Heilsota Longus",
+              "Alene"
+            ],
+            "people ages": [
+              39,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1207": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 13704
+          }
+        ],
+        "1213": [
+          {
+            "key": 12123,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12121,
+              "name": "Siccone",
+              "age": 54,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "friendship label": "indifferent",
+            "label": "spouse",
+            "love state": "out of love"
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 15620,
+              "name": "Auesoete Sicconesdochter",
+              "age": 14,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Heilsota (12122)",
+                "father": "Siccone (12121)"
+              }
+            },
+            "cause": "starvation",
+            "friendship label": "friend",
+            "label": "child"
+          },
+          {
+            "topic": "personality change",
+            "change": true,
+            "trait": "lawful-chaotic",
+            "trigger": "grief",
+            "mod": 0.082
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1216": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1218": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 13702,
+              "name": "Wasseliin Sicconeszoon",
+              "age": 18,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Heilsota (12122)",
+                "father": "Siccone (12121)"
+              }
+            },
+            "cause": "illness",
+            "friendship label": "friend",
+            "label": "child"
+          }
+        ],
+        "1219": [
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "sickness"
           }
         ]
       }
@@ -178,14 +371,19 @@
       "section": "stCorte gracht.se3.c2",
       "street": "Corte gracht",
       "neighborhood": "visbuurt",
-      "unique id": 743
+      "unique id": 738
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         12123
       ]
-    }
+    },
+    "friends": [
+      13704,
+      15622
+    ],
+    "enemies": []
   }
 }

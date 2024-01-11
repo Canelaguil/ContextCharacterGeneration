@@ -1,33 +1,35 @@
 {
   "13372": {
     "alive": false,
-    "name": "Mense",
-    "surname": "Regis",
-    "full name": "Mense Regis",
+    "name": "Iacobus",
+    "surname": "Hoeghen",
+    "full name": "Iacobus Hoeghen",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.028,
-      "romantic interest": 0.998,
-      "sex interest": 0.575,
-      "gender expression": 0.095,
+      "sexuality": 0.0,
+      "romantic interest": 0.356,
+      "sex interest": 0.556,
+      "gender expression": 0.02,
       "sex": "m"
     },
-    "age": 15,
+    "age": 5,
     "birth year": 1200,
     "sex": "m",
     "faction": "Dogmatists",
     "income class": [
-      3,
-      "upper middle class"
+      2,
+      "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.999,
-      "honest-false": 0.307
+      "lawful-chaotic": 0.349,
+      "nice-nasty": 0.504,
+      "honest-false": 0.06,
+      "dream": 0.378,
+      "outgoing": 0.8
     },
     "attitude": {
-      "outgoing": 0.177,
-      "dream": 0.243
+      "dream": 0.378,
+      "outgoing": 0.8
     },
     "homsoc": {
       "means": {
@@ -35,46 +37,51 @@
         "taken_care_of": true,
         "caretaker": true,
         "needs_care": true,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.015,
-        "gender expression expression": 0.068
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.012
       }
     },
     "network": {
       "parents": {
-        "mother": "Cecilia (12725)",
-        "father": "Sibrando (12724)"
+        "mother": "Heile (11036)",
+        "father": "Jonas (11035)"
       },
       "children": {},
       "relationship keys": {
         "parent": [
           13373,
           13374
+        ],
+        "sibling": [
+          19907
         ]
       }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        3,
-        "upper middle class"
+        2,
+        "middle class"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 3,
+      "skin_color": 1,
       "eye_color": "brown",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "hair_color": "red",
+      "hair_color_code": 3,
       "hair_type": [
-        "C",
-        "S"
+        "S",
+        "C"
       ],
-      "health": 0.686,
-      "fertility": 0.764,
+      "health": 0.581,
+      "fertility": 0.523,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -86,99 +93,143 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.686
+            "new_health": 0.581
           },
           "death": false
+        },
+        "1205": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.581
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
           {
-            "topic": "new home",
-            "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stDen Hof.se7.c3",
-              "street": "Den Hof",
-              "neighborhood": "denhof",
-              "unique id": 955
-            }
+            "topic": "birth",
+            "year": 1200
+          },
+          {
+            "topic": "new relationship",
+            "key": 13373,
+            "people": [
+              11035,
+              13372
+            ],
+            "people names": [
+              "Jonas Hoeghen",
+              "Iacobus Hoeghen"
+            ],
+            "people ages": [
+              31,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "new relationship",
+            "key": 13374,
+            "people": [
+              11036,
+              13372
+            ],
+            "people names": [
+              "Heile Rowerus",
+              "Iacobus Hoeghen"
+            ],
+            "people ages": [
+              17,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1201": [
+        "1202": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "topic": "not enough income",
+            "income": 0.22,
+            "inhabitants": []
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 19907,
+            "people": [
+              13372,
+              19904
+            ],
+            "people names": [
+              "Iacobus Hoeghen",
+              "Reymodis Hoeghen"
+            ],
+            "people ages": [
+              2,
+              0
+            ],
+            "label": "sibling",
+            "committed": false
           },
           {
             "topic": "person died",
             "person": {
-              "key": 12725,
-              "name": "Cecilia",
-              "age": 20,
+              "key": 11035,
+              "name": "Jonas Hoeghen",
+              "age": 35,
               "alive": false,
-              "sex": "f",
+              "sex": "m",
               "parents": "firstgen"
             },
-            "cause": "illness",
+            "cause": "starvation",
+            "friendship label": "indifferent",
             "label": "parent"
           }
         ],
-        "1211": [
+        "1204": [
           {
             "topic": "update",
             "update": "new friendship label",
-            "relationship label": "parentchild",
-            "friendship label": "disliked",
-            "relationship": 13373
-          }
-        ],
-        "1212": [
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stDie lange straet3.se7.c3",
-              "street": "Die lange straet3",
-              "neighborhood": "visbuurt",
-              "unique id": 697
-            }
+            "relationship label": "sibling",
+            "friendship label": "good friend",
+            "relationship": 19907
           },
           {
-            "topic": "update",
-            "update": "parent married",
-            "parent": 12724,
-            "new partner": 11990
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ],
-        "1215": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1215
-          },
+        "1205": [
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "childhood illness"
           }
         ]
       }
     },
     "key": 13372,
     "home": {
-      "income class": 3,
-      "income class label": "upper middle class",
-      "section": "stDie lange straet3.se7.c3",
-      "street": "Die lange straet3",
-      "neighborhood": "visbuurt",
-      "unique id": 697
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stDie Camp.se1.c2",
+      "street": "Die Camp",
+      "neighborhood": "kampbuurt",
+      "unique id": 358
     },
     "relationship status": {
       "taken": false,
       "married": false,
       "relationships": []
-    }
+    },
+    "friends": [
+      13374,
+      19907
+    ],
+    "enemies": []
   }
 }

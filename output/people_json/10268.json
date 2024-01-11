@@ -1,19 +1,19 @@
 {
   "10268": {
     "alive": false,
-    "name": "Flore",
-    "surname": "Craiman",
-    "full name": "Flore Craiman",
+    "name": "Truden",
+    "surname": "Dicbier",
+    "full name": "Truden Dicbier",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.841,
-      "sex interest": 0.682,
-      "gender expression": 0.205,
+      "sexuality": 0.051,
+      "romantic interest": 0.703,
+      "sex interest": 0.486,
+      "gender expression": 0.087,
       "sex": "f"
     },
-    "age": 40,
-    "birth year": 1181,
+    "age": 24,
+    "birth year": 1182,
     "sex": "f",
     "faction": "Zealots",
     "income class": [
@@ -21,13 +21,15 @@
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.483,
-      "nice-nasty": 0.712,
-      "honest-false": 0.877
+      "lawful-chaotic": 0.859,
+      "nice-nasty": 0.427,
+      "honest-false": 0.222,
+      "dream": 0.175,
+      "outgoing": 0.698
     },
     "attitude": {
-      "outgoing": 0.241,
-      "dream": 0.721
+      "dream": 0.175,
+      "outgoing": 0.698
     },
     "homsoc": {
       "means": {
@@ -35,47 +37,60 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.15
+        "sexuality expression": 0.025,
+        "gender expression expression": 0.038
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "14278": {
-          "key": 14278,
-          "name": "Eelbout Stoerm",
-          "age": 46,
-          "alive": false,
+        "14613": {
+          "key": 14613,
+          "name": "Alebrando Dicbier",
+          "age": 48,
+          "alive": true,
           "sex": "m",
           "parents": {
-            "mother": "Flore (10268)",
-            "father": "Dauid (10267)"
+            "mother": "Truden (10268)",
+            "father": "Hughe (10267)"
           }
         },
-        "17688": {
-          "key": 17688,
-          "name": "Gheldekin",
-          "age": 55,
+        "17765": {
+          "key": 17765,
+          "name": "Cecilia Dicbier",
+          "age": 23,
           "alive": false,
-          "sex": "m",
+          "sex": "f",
           "parents": {
-            "mother": "Flore (10268)",
-            "father": "Dauid (10267)"
+            "mother": "Truden (10268)",
+            "father": "Hughe (10267)"
           }
         },
-        "20720": {
-          "key": 20720,
-          "name": "Rembrecht Stoerm",
-          "age": 46,
+        "19142": {
+          "key": 19142,
+          "name": "Valken Dicbier",
+          "age": 5,
           "alive": false,
           "sex": "m",
           "parents": {
-            "mother": "Flore (10268)",
-            "father": "Dauid (10267)"
+            "mother": "Truden (10268)",
+            "father": "Hughe (10267)"
+          }
+        },
+        "22738": {
+          "key": 22738,
+          "name": "Everdey Dicbier",
+          "age": 3,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Truden (10268)",
+            "father": "Hughe (10267)"
           }
         }
       },
@@ -85,42 +100,37 @@
         ],
         "child": {
           "birth": [
-            14280,
-            17690,
-            20722
+            14615,
+            17767,
+            19144,
+            22740
           ]
-        }
+        },
+        "unrelated": [
+          16508
+        ]
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
         1,
         "lower middle class"
       ],
-      "income": 1.19,
-      "all_incomes": [
-        1.137,
-        1.058,
-        1.069,
-        1.19
-      ],
-      "job": {
-        "lawful": false,
-        "honest": true
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 1,
+      "skin_color": 0,
       "eye_color": "brown",
       "hair_color": "strawberry blonde",
       "hair_color_code": 5,
       "hair_type": [
         "S",
-        "C"
+        "S"
       ],
-      "health": 0.533,
-      "fertility": 0.559,
+      "health": 0.439,
+      "fertility": 0.633,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -132,21 +142,41 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.533
+            "new_health": 0.648
           },
           "death": false
         },
-        "1220": {
+        "1202": {
+          "health": {
+            "change": true,
+            "value_change": -0.209,
+            "new_health": 0.439
+          },
+          "death": false
+        },
+        "1203": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.533
+            "new_health": 0.439
+          },
+          "death": false
+        },
+        "1205": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.439
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1182
+          },
           {
             "topic": "new relationship",
             "key": 10269,
@@ -155,44 +185,74 @@
               10268
             ],
             "people names": [
-              "Dauid Stoerm",
-              "Flore Craiman"
+              "Hughe Dicbier",
+              "Truden Dicbier"
             ],
             "people ages": [
-              33,
-              19
+              23,
+              18
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stHelle voet.se3.c1",
-              "street": "Helle voet",
-              "neighborhood": "jorisbuurt",
-              "unique id": 96
-            }
+            "topic": "feelings change",
+            "target": 10267,
+            "target name": "Hughe Dicbier",
+            "state": "out of love",
+            "friendship label": "indifferent",
+            "relationship": 10269
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "topic": "new relationship",
+            "key": 14615,
+            "people": [
+              10268,
+              14613
+            ],
+            "people names": [
+              "Truden Dicbier",
+              "Alebrando Dicbier"
+            ],
+            "people ages": [
+              19,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
             "topic": "new relationship",
-            "key": 14280,
+            "key": 16508,
             "people": [
-              10268,
-              14278
+              12389,
+              10268
             ],
             "people names": [
-              "Flore Craiman",
-              "Eelbout Stoerm"
+              "Bertrade",
+              "Truden Dicbier"
+            ],
+            "people ages": [
+              27,
+              20
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 17767,
+            "people": [
+              10268,
+              17765
+            ],
+            "people names": [
+              "Truden Dicbier",
+              "Cecilia Dicbier"
             ],
             "people ages": [
               21,
@@ -202,112 +262,64 @@
             "committed": false
           }
         ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 19144,
+            "people": [
+              10268,
+              19142
+            ],
+            "people names": [
+              "Truden Dicbier",
+              "Valken Dicbier"
+            ],
+            "people ages": [
+              21,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.685,
+            "inhabitants": [
+              14613
+            ]
+          }
+        ],
         "1204": [
           {
-            "topic": "feelings change",
-            "target": 10267,
-            "target name": "Dauid Stoerm",
-            "state": "out of love",
-            "relationship": 10269
-          }
-        ],
-        "1206": [
-          {
             "topic": "new relationship",
-            "key": 17690,
+            "key": 22740,
             "people": [
               10268,
-              17688
+              22738
             ],
             "people names": [
-              "Flore Craiman",
-              "Gheldekin"
+              "Truden Dicbier",
+              "Everdey Dicbier"
             ],
             "people ages": [
-              25,
+              23,
               0
             ],
             "label": "parentchild",
             "committed": false
           },
           {
-            "topic": "feelings change",
-            "target": 10267,
-            "target name": "Dauid Stoerm",
-            "state": "infatuation",
-            "relationship": 10269
+            "topic": "not enough income",
+            "income": 0.446,
+            "inhabitants": [
+              14613
+            ]
           }
         ],
-        "1211": [
-          {
-            "topic": "new relationship",
-            "key": 20722,
-            "people": [
-              10268,
-              20720
-            ],
-            "people names": [
-              "Flore Craiman",
-              "Rembrecht Stoerm"
-            ],
-            "people ages": [
-              30,
-              0
-            ],
-            "label": "parentchild",
-            "committed": false
-          },
-          {
-            "topic": "feelings change",
-            "target": 10267,
-            "target name": "Dauid Stoerm",
-            "state": "solid love",
-            "relationship": 10269
-          }
-        ],
-        "1214": [
-          {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "parentchild",
-            "friendship label": "indifferent",
-            "relationship": 17690
-          }
-        ],
-        "1215": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1215
-          },
-          {
-            "topic": "feelings change",
-            "target": 10267,
-            "target name": "Dauid Stoerm",
-            "state": "out of love",
-            "relationship": 10269
-          }
-        ],
-        "1217": [
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.137
-          }
-        ],
-        "1218": [
-          {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "parentchild",
-            "friendship label": "disliked",
-            "relationship": 20722
-          }
-        ],
-        "1220": [
+        "1205": [
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "starvation"
           }
         ]
       }
@@ -319,14 +331,19 @@
       "section": "stHelle voet.se3.c1",
       "street": "Helle voet",
       "neighborhood": "jorisbuurt",
-      "unique id": 96
+      "unique id": 95
     },
     "relationship status": {
-      "taken": true,
+      "taken": false,
       "married": true,
       "relationships": [
         10269
       ]
-    }
+    },
+    "friends": [
+      22740,
+      16508
+    ],
+    "enemies": []
   }
 }

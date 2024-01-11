@@ -1,33 +1,35 @@
 {
   "12829": {
     "alive": false,
-    "name": "Pauels",
-    "surname": "Pluuier",
-    "full name": "Pauels Pluuier",
+    "name": "Kerolus",
+    "surname": "",
+    "full name": "Kerolus",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.052,
-      "romantic interest": 0.783,
-      "sex interest": 0.787,
-      "gender expression": 0.015,
+      "sexuality": 0.007,
+      "romantic interest": 0.636,
+      "sex interest": 0.62,
+      "gender expression": 0.028,
       "sex": "m"
     },
-    "age": 40,
-    "birth year": 1169,
+    "age": 30,
+    "birth year": 1180,
     "sex": "m",
-    "faction": "Dogmatists",
+    "faction": "No religion",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.925,
-      "nice-nasty": 0.312,
-      "honest-false": 0.07
+      "lawful-chaotic": 0.72,
+      "nice-nasty": 0.41,
+      "honest-false": 0.632,
+      "dream": 0.411,
+      "outgoing": 0.462
     },
     "attitude": {
-      "outgoing": 0.498,
-      "dream": 0.508
+      "dream": 0.411,
+      "outgoing": 0.462
     },
     "homsoc": {
       "means": {
@@ -35,21 +37,51 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.032,
-        "gender expression expression": 0.007
+        "sexuality expression": 0.004,
+        "gender expression expression": 0.023
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14904": {
+          "key": 14904,
+          "name": "Woutgerus van Kerolus",
+          "age": 3,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Marie (12830)",
+            "father": "Kerolus (12829)"
+          }
+        },
+        "18174": {
+          "key": 18174,
+          "name": "Alard",
+          "age": 47,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Marie (12830)",
+            "father": "Kerolus (12829)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          12831,
-          17501
-        ]
+          12831
+        ],
+        "child": {
+          "birth": [
+            14905,
+            18175
+          ]
+        }
       }
     },
     "occupation": {
@@ -58,35 +90,36 @@
         1,
         "lower middle class"
       ],
-      "income": 0.769,
+      "income": 0.0,
       "all_incomes": [
-        1.001,
-        0.945,
-        0.818,
-        0.827,
-        0.822,
-        0.83,
-        0.818,
-        0.745,
-        0.775,
-        0.769
+        0.938,
+        0.779,
+        0.629,
+        0.456,
+        0.31,
+        0.782,
+        0.333,
+        0.029,
+        0.0,
+        0.035,
+        0.0
       ],
       "job": {
-        "lawful": true,
-        "honest": true
+        "lawful": false,
+        "honest": false
       }
     },
     "genetics": {
       "skin_color": 1,
       "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
         "S",
-        "S"
+        "C"
       ],
-      "health": 0.541,
-      "fertility": 0.789,
+      "health": 0.559,
+      "fertility": 0.575,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -98,15 +131,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.763
+            "new_health": 0.559
           },
           "death": false
         },
-        "1208": {
+        "1209": {
           "health": {
-            "change": true,
-            "value_change": -0.222,
-            "new_health": 0.541
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.559
           },
           "death": true
         }
@@ -114,9 +147,13 @@
       "events": {
         "1200": [
           {
+            "topic": "birth",
+            "year": 1180
+          },
+          {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.001
+            "income": 0.938
           },
           {
             "topic": "new relationship",
@@ -126,33 +163,80 @@
               12830
             ],
             "people names": [
-              "Pauels Pluuier",
-              "Godeweris Colueken"
+              "Kerolus",
+              "Marie Cnode"
             ],
             "people ages": [
-              31,
-              24
+              20,
+              17
             ],
             "label": "spouse",
             "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stKerckstraet.se5.c1",
-              "street": "Kerckstraet",
-              "neighborhood": "denhof",
-              "unique id": 992
-            }
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.629
+          },
+          {
+            "topic": "new relationship",
+            "key": 14905,
+            "people": [
+              12829,
+              14904
+            ],
+            "people names": [
+              "Kerolus",
+              "Woutgerus van Kerolus"
+            ],
+            "people ages": [
+              21,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 12830,
+            "target name": "Marie Cnode",
+            "state": "out of love",
+            "friendship label": "indifferent",
+            "relationship": 12831
+          }
+        ],
+        "1202": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.456
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 14905
+          },
+          {
+            "topic": "new relationship",
+            "key": 18175,
+            "people": [
+              12829,
+              18174
+            ],
+            "people names": [
+              "Kerolus",
+              "Alard"
+            ],
+            "people ages": [
+              23,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
             "key": 12831,
@@ -162,44 +246,126 @@
             "topic": "person died",
             "person": {
               "key": 12830,
-              "name": "Godeweris Colueken",
-              "age": 26,
+              "name": "Marie Cnode",
+              "age": 20,
               "alive": false,
               "sex": "f",
               "parents": "firstgen"
             },
             "cause": "illness",
-            "label": "spouse"
+            "friendship label": "indifferent",
+            "label": "spouse",
+            "love state": "out of love"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.31
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.31,
+            "inhabitants": [
+              18174,
+              47669,
+              50107,
+              55851,
+              61218,
+              64415,
+              65478,
+              71695
+            ]
+          }
+        ],
+        "1204": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 14904,
+              "name": "Woutgerus van Kerolus",
+              "age": 3,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Marie (12830)",
+                "father": "Kerolus (12829)"
+              }
+            },
+            "cause": "starvation",
+            "friendship label": "indifferent",
+            "label": "child"
           }
         ],
         "1205": [
           {
-            "topic": "new relationship",
-            "key": 17501,
-            "people": [
-              12829,
-              11474
-            ],
-            "people names": [
-              "Pauels Pluuier",
-              "Flore Craiman"
-            ],
-            "people ages": [
-              37,
-              26
-            ],
-            "label": "spouse",
-            "committed": true
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.333
           }
         ],
         "1206": [
           {
             "topic": "job notice",
-            "notice": "low income",
-            "income": 0.745
+            "notice": "hardly any income",
+            "income": 0.029
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.029,
+            "inhabitants": [
+              18174,
+              47669,
+              50107,
+              55851,
+              61218,
+              64415,
+              65478,
+              71695
+            ]
+          }
+        ],
+        "1207": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 18175
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              18174,
+              47669,
+              50107,
+              55851,
+              61218,
+              64415,
+              65478,
+              71695
+            ]
           }
         ],
         "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0.035,
+            "inhabitants": [
+              18174,
+              47669,
+              50107,
+              55851,
+              61218,
+              64415,
+              65478,
+              71695
+            ]
+          }
+        ],
+        "1209": [
           {
             "topic": "death",
             "cause": "illness"
@@ -214,15 +380,18 @@
       "section": "stKerckstraet.se5.c1",
       "street": "Kerckstraet",
       "neighborhood": "denhof",
-      "unique id": 992
+      "unique id": 990
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
-        12831,
-        17501
+        12831
       ]
-    }
+    },
+    "friends": [
+      18175
+    ],
+    "enemies": []
   }
 }

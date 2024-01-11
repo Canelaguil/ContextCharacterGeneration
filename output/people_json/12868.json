@@ -1,37 +1,39 @@
 {
   "12868": {
     "alive": false,
-    "name": "Siccone",
-    "surname": "Valant",
-    "full name": "Siccone Valant",
+    "name": "Conrado",
+    "surname": "Salm",
+    "full name": "Conrado Salm",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.018,
-      "romantic interest": 0.658,
-      "sex interest": 0.687,
-      "gender expression": 0.0,
+      "sexuality": 0.0,
+      "romantic interest": 0.999,
+      "sex interest": 0.625,
+      "gender expression": 0.18,
       "sex": "m"
     },
-    "age": 30,
+    "age": 19,
     "birth year": 1200,
     "sex": "m",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.999,
-      "honest-false": 0.001
+      "lawful-chaotic": 0.618,
+      "nice-nasty": 0.67,
+      "honest-false": 0.408,
+      "dream": 0.665,
+      "outgoing": 0.516
     },
     "attitude": {
-      "outgoing": 0.152,
-      "dream": 0.266
+      "dream": 0.665,
+      "outgoing": 0.516
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": true,
         "needs_care": false,
@@ -40,14 +42,14 @@
         ]
       },
       "expression": {
-        "sexuality expression": 0.01,
-        "gender expression expression": -0.001
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.092
       }
     },
     "network": {
       "parents": {
-        "mother": "Folqui (12800)",
-        "father": "Brandekijn (12799)"
+        "mother": "Marisseis (10220)",
+        "father": "Samuel (10219)"
       },
       "children": {},
       "relationship keys": {
@@ -56,18 +58,21 @@
           12870
         ],
         "sibling": [
-          15469,
-          16608,
-          18699,
-          19072,
-          22393,
-          22903
+          17723,
+          20520,
+          21216,
+          24611,
+          27993,
+          34315,
+          38021,
+          38761,
+          40139,
+          41025,
+          41630,
+          42596
         ],
-        "spouse": [
-          28861
-        ],
-        "nibling": [
-          30296
+        "unrelated": [
+          41401
         ]
       }
     },
@@ -77,38 +82,28 @@
         1,
         "lower middle class"
       ],
-      "income": 1.275,
+      "income": 0.758,
       "all_incomes": [
-        1.296,
-        1.499,
-        1.499,
-        0.795,
-        0.926,
-        0.852,
-        1.038,
-        1.323,
-        1.28,
-        1.097,
-        1.499,
-        1.499,
-        1.465,
-        1.275
+        0.899,
+        0.882,
+        0.791,
+        0.758
       ],
       "job": {
-        "lawful": false,
+        "lawful": true,
         "honest": false
       }
     },
     "genetics": {
-      "skin_color": 4,
-      "eye_color": "green",
-      "hair_color": "red",
-      "hair_color_code": 3,
+      "skin_color": 5,
+      "eye_color": "brown",
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.721,
+      "health": 0.514,
       "fertility": 0.758,
       "communication_impaired": false,
       "mobility_impaired": false,
@@ -121,15 +116,31 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.721
+            "new_health": 0.676
           },
           "death": false
         },
-        "1230": {
+        "1209": {
+          "health": {
+            "change": true,
+            "value_change": -0.162,
+            "new_health": 0.514
+          },
+          "death": false
+        },
+        "1210": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.721
+            "new_health": 0.514
+          },
+          "death": false
+        },
+        "1219": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.514
           },
           "death": true
         }
@@ -137,49 +148,86 @@
       "events": {
         "1200": [
           {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stPapenhofstede.se3.c1",
-              "street": "Papenhofstede",
-              "neighborhood": "denhof",
-              "unique id": 981
-            }
+            "topic": "birth",
+            "year": 1200
+          },
+          {
+            "topic": "new relationship",
+            "key": 12869,
+            "people": [
+              10219,
+              12868
+            ],
+            "people names": [
+              "Samuel Salm",
+              "Conrado Salm"
+            ],
+            "people ages": [
+              34,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "new relationship",
+            "key": 12870,
+            "people": [
+              10220,
+              12868
+            ],
+            "people names": [
+              "Marisseis Cnijf",
+              "Conrado Salm"
+            ],
+            "people ages": [
+              17,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          },
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 12869
+          }
+        ],
+        "1202": [
           {
-            "topic": "not enough income",
-            "income": 0.37,
-            "inhabitants": [
-              48931,
-              53443,
-              54930,
-              81070,
-              54580,
-              74959,
-              77667,
-              87323
-            ]
+            "topic": "new relationship",
+            "key": 17723,
+            "people": [
+              12868,
+              17720
+            ],
+            "people names": [
+              "Conrado Salm",
+              "Kornillis Salm"
+            ],
+            "people ages": [
+              1,
+              0
+            ],
+            "label": "sibling",
+            "committed": false
           }
         ],
         "1203": [
           {
             "topic": "new relationship",
-            "key": 15469,
+            "key": 20520,
             "people": [
               12868,
-              15466
+              20517
             ],
             "people names": [
-              "Siccone Valant",
-              "Marisseis Valant"
+              "Conrado Salm",
+              "Firiin Salm"
             ],
             "people ages": [
               3,
@@ -187,165 +235,127 @@
             ],
             "label": "sibling",
             "committed": false
-          },
-          {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "parentchild",
-            "friendship label": "disliked",
-            "relationship": 12870
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.537,
-            "inhabitants": [
-              48931,
-              53443,
-              54930,
-              81070,
-              54580,
-              74959,
-              77667,
-              87323
-            ]
           }
         ],
         "1204": [
           {
             "topic": "new relationship",
-            "key": 16608,
+            "key": 21216,
             "people": [
               12868,
-              16605
+              21213
             ],
             "people names": [
-              "Siccone Valant",
-              "Wendelmodis Brandekijnsdochter"
+              "Conrado Salm",
+              "Vandelghis Salm"
             ],
             "people ages": [
-              4,
+              3,
               0
             ],
             "label": "sibling",
             "committed": false
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.528,
-            "inhabitants": [
-              48931,
-              53443,
-              54930,
-              81070,
-              54580,
-              74959,
-              77667,
-              87323
-            ]
           }
         ],
         "1205": [
           {
-            "topic": "not enough income",
-            "income": 0.5830000000000001,
-            "inhabitants": [
-              48931,
-              53443,
-              54930,
-              81070,
-              54580,
-              74959,
-              77667,
-              87323
-            ]
-          }
-        ],
-        "1206": [
-          {
-            "topic": "not enough income",
-            "income": 0.712,
-            "inhabitants": [
-              48931,
-              53443,
-              54930,
-              81070,
-              54580,
-              74959,
-              77667,
-              87323
-            ]
+            "topic": "new relationship",
+            "key": 24611,
+            "people": [
+              12868,
+              24608
+            ],
+            "people names": [
+              "Conrado Salm",
+              "Bertrade Salm"
+            ],
+            "people ages": [
+              5,
+              0
+            ],
+            "label": "sibling",
+            "committed": false
           }
         ],
         "1207": [
           {
             "topic": "new relationship",
-            "key": 18699,
+            "key": 27993,
             "people": [
               12868,
-              18696
+              27990
             ],
             "people names": [
-              "Siccone Valant",
-              "Volcwiif Valant"
+              "Conrado Salm",
+              "Henric Salm"
             ],
             "people ages": [
-              7,
+              6,
               0
             ],
             "label": "sibling",
             "committed": false
           }
         ],
-        "1208": [
+        "1209": [
           {
-            "topic": "new relationship",
-            "key": 19072,
-            "people": [
-              12868,
-              19069
-            ],
-            "people names": [
-              "Siccone Valant",
-              "Ysewin Valant"
-            ],
-            "people ages": [
-              7,
-              0
-            ],
-            "label": "sibling",
-            "committed": false
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 12869
           }
         ],
         "1210": [
           {
-            "topic": "not enough income",
-            "income": 0.989,
-            "inhabitants": [
-              48931,
-              53443,
-              54930,
-              81070,
-              54580,
-              74959,
-              77667,
-              87323
-            ]
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "sibling",
+            "friendship label": "friend",
+            "relationship": 21216
           }
         ],
-        "1214": [
+        "1211": [
           {
             "topic": "new relationship",
-            "key": 22393,
+            "key": 34315,
             "people": [
               12868,
-              22390
+              34312
             ],
             "people names": [
-              "Siccone Valant",
-              "Ymmekine Valant"
+              "Conrado Salm",
+              "Heylewigis Salm"
             ],
             "people ages": [
-              14,
+              10,
+              0
+            ],
+            "label": "sibling",
+            "committed": false
+          }
+        ],
+        "1213": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "sibling",
+            "friendship label": "indifferent",
+            "relationship": 21216
+          },
+          {
+            "topic": "new relationship",
+            "key": 38021,
+            "people": [
+              12868,
+              38018
+            ],
+            "people names": [
+              "Conrado Salm",
+              "Amelgeir Salm"
+            ],
+            "people ages": [
+              13,
               0
             ],
             "label": "sibling",
@@ -353,16 +363,90 @@
           },
           {
             "topic": "not enough income",
-            "income": 0.586,
+            "income": 1.434,
             "inhabitants": [
-              48931,
-              53443,
-              54930,
-              81070,
-              54580,
-              74959,
-              77667,
-              87323
+              17720,
+              38018,
+              41627,
+              42593,
+              26749,
+              47595,
+              49948,
+              51845,
+              54490,
+              56329,
+              57523,
+              65025,
+              67071,
+              68242,
+              72515,
+              74048
+            ]
+          }
+        ],
+        "1214": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "sibling",
+            "friendship label": "indifferent",
+            "relationship": 20520
+          },
+          {
+            "topic": "new relationship",
+            "key": 38761,
+            "people": [
+              12868,
+              38758
+            ],
+            "people names": [
+              "Conrado Salm",
+              "Ebram Salm"
+            ],
+            "people ages": [
+              13,
+              0
+            ],
+            "label": "sibling",
+            "committed": false
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 24608,
+              "name": "Bertrade Salm",
+              "age": 9,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Marisseis (10220)",
+                "father": "Samuel (10219)"
+              }
+            },
+            "cause": "starvation",
+            "friendship label": "good friend",
+            "label": "sibling"
+          },
+          {
+            "topic": "not enough income",
+            "income": 1.393,
+            "inhabitants": [
+              17720,
+              38018,
+              41627,
+              42593,
+              26749,
+              47595,
+              49948,
+              51845,
+              54490,
+              56329,
+              57523,
+              65025,
+              67071,
+              68242,
+              72515,
+              74048
             ]
           }
         ],
@@ -373,29 +457,15 @@
             "year": 1215
           },
           {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "parentchild",
-            "friendship label": "indifferent",
-            "relationship": 12869
-          },
-          {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "sibling",
-            "friendship label": "indifferent",
-            "relationship": 18699
-          },
-          {
             "topic": "new relationship",
-            "key": 22903,
+            "key": 40139,
             "people": [
               12868,
-              22900
+              40136
             ],
             "people names": [
-              "Siccone Valant",
-              "Alretieren Valant"
+              "Conrado Salm",
+              "Berta Salm"
             ],
             "people ages": [
               15,
@@ -405,140 +475,176 @@
             "committed": false
           },
           {
-            "topic": "not enough income",
-            "income": 0.577,
-            "inhabitants": [
-              48931,
-              53443,
-              54930,
-              81070,
-              54580,
-              74959,
-              77667,
-              87323
-            ]
+            "topic": "person died",
+            "person": {
+              "key": 27990,
+              "name": "Henric Salm",
+              "age": 8,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Marisseis (10220)",
+                "father": "Samuel (10219)"
+              }
+            },
+            "cause": "starvation",
+            "friendship label": "good friend",
+            "label": "sibling"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 34312,
+              "name": "Heylewigis Salm",
+              "age": 4,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Marisseis (10220)",
+                "father": "Samuel (10219)"
+              }
+            },
+            "cause": "starvation",
+            "friendship label": "indifferent",
+            "label": "sibling"
           }
         ],
         "1216": [
           {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "sibling",
-            "friendship label": "disliked",
-            "relationship": 19072
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.899
           },
           {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "sibling",
-            "friendship label": "disliked",
-            "relationship": 22903
+            "topic": "new relationship",
+            "key": 41025,
+            "people": [
+              12868,
+              41022
+            ],
+            "people names": [
+              "Conrado Salm",
+              "Gosuinus Salm"
+            ],
+            "people ages": [
+              16,
+              0
+            ],
+            "label": "sibling",
+            "committed": false
+          },
+          {
+            "topic": "new relationship",
+            "key": 41401,
+            "people": [
+              12868,
+              13339
+            ],
+            "people names": [
+              "Conrado Salm",
+              "Ricmoden Euer"
+            ],
+            "people ages": [
+              16,
+              16
+            ],
+            "label": "unrelated",
+            "committed": false
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 20517,
+              "name": "Firiin Salm",
+              "age": 13,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Marisseis (10220)",
+                "father": "Samuel (10219)"
+              }
+            },
+            "cause": "illness",
+            "friendship label": "indifferent",
+            "label": "sibling"
           }
         ],
         "1217": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.296
+            "topic": "new relationship",
+            "key": 41630,
+            "people": [
+              12868,
+              41627
+            ],
+            "people names": [
+              "Conrado Salm",
+              "Breghlent Salm"
+            ],
+            "people ages": [
+              16,
+              0
+            ],
+            "label": "sibling",
+            "committed": false
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "friend",
+            "relationship": 41401
           }
         ],
         "1218": [
           {
             "topic": "update",
             "update": "new friendship label",
-            "relationship label": "sibling",
-            "friendship label": "disliked",
-            "relationship": 15469
-          }
-        ],
-        "1219": [
+            "relationship label": "unrelated",
+            "friendship label": "friend",
+            "relationship": 41401
+          },
           {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "parentchild",
-            "friendship label": "disliked",
-            "relationship": 12870
-          }
-        ],
-        "1222": [
-          {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "sibling",
-            "friendship label": "indifferent",
-            "relationship": 19072
+            "topic": "new relationship",
+            "key": 42596,
+            "people": [
+              12868,
+              42593
+            ],
+            "people names": [
+              "Conrado Salm",
+              "Reynwi Salm"
+            ],
+            "people ages": [
+              17,
+              0
+            ],
+            "label": "sibling",
+            "committed": false
           },
           {
             "topic": "update",
             "update": "new friendship label",
             "relationship label": "parentchild",
-            "friendship label": "indifferent",
+            "friendship label": "friend",
             "relationship": 12869
-          }
-        ],
-        "1223": [
-          {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.038
-          }
-        ],
-        "1227": [
-          {
-            "topic": "new relationship",
-            "key": 28861,
-            "people": [
-              12868,
-              14398
-            ],
-            "people names": [
-              "Siccone Valant",
-              "Erkenradis Mie"
-            ],
-            "people ages": [
-              27,
-              26
-            ],
-            "label": "spouse",
-            "committed": true
-          }
-        ],
-        "1228": [
-          {
-            "topic": "new relationship",
-            "key": 30296,
-            "people": [
-              12868,
-              28736
-            ],
-            "people names": [
-              "Siccone Valant",
-              "Radulphus Valant"
-            ],
-            "people ages": [
-              28,
-              1
-            ],
-            "label": "nibling",
-            "committed": false
-          }
-        ],
-        "1229": [
+          },
           {
             "topic": "person died",
             "person": {
-              "key": 12799,
-              "name": "Brandekijn Valant",
-              "age": 58,
+              "key": 10219,
+              "name": "Samuel Salm",
+              "age": 53,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
             },
-            "cause": "sickness",
+            "cause": "old age",
+            "friendship label": "friend",
             "label": "parent"
           }
         ],
-        "1230": [
+        "1219": [
           {
             "topic": "death",
             "cause": "illness"
@@ -550,23 +656,29 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stPapenhofstede.se3.c1",
-      "street": "Papenhofstede",
-      "neighborhood": "denhof",
-      "unique id": 981
+      "section": "stMerrien hoof.se1.c1",
+      "street": "Merrien hoof",
+      "neighborhood": "varkensbuurt",
+      "unique id": 78
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
-      "relationships": [
-        15469,
-        16608,
-        18699,
-        19072,
-        22393,
-        22903,
-        28861
-      ]
-    }
+      "taken": false,
+      "married": false,
+      "relationships": []
+    },
+    "friends": [
+      12869,
+      17723,
+      24611,
+      27993,
+      38021,
+      41025,
+      41630,
+      42596,
+      41401
+    ],
+    "enemies": [
+      38761
+    ]
   }
 }

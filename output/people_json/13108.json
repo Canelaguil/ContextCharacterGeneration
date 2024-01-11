@@ -1,18 +1,18 @@
 {
   "13108": {
     "alive": false,
-    "name": "Moerseil",
-    "surname": "Vincs",
-    "full name": "Moerseil Vincs",
+    "name": "Aghete",
+    "surname": "Hoedekine",
+    "full name": "Aghete Hoedekine",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.108,
-      "romantic interest": 0.51,
-      "sex interest": 0.773,
-      "gender expression": 0.035,
+      "sexuality label": "bi",
+      "sexuality": 0.387,
+      "romantic interest": 0.622,
+      "sex interest": 0.778,
+      "gender expression": 0.422,
       "sex": "f"
     },
-    "age": 5,
+    "age": 11,
     "birth year": 1200,
     "sex": "f",
     "faction": "No religion",
@@ -21,13 +21,15 @@
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.14,
-      "nice-nasty": 0.668,
-      "honest-false": 0.033
+      "lawful-chaotic": 0.534,
+      "nice-nasty": 0.803,
+      "honest-false": 0.349,
+      "dream": 0.508,
+      "outgoing": 0.295
     },
     "attitude": {
-      "outgoing": 0.353,
-      "dream": 0.381
+      "dream": 0.508,
+      "outgoing": 0.295
     },
     "homsoc": {
       "means": {
@@ -40,23 +42,20 @@
         ]
       },
       "expression": {
-        "sexuality expression": 0.047,
-        "gender expression expression": 0.011
+        "sexuality expression": 0.222,
+        "gender expression expression": 0.266
       }
     },
     "network": {
       "parents": {
-        "mother": "Agota (10433)",
-        "father": "Menaures (10432)"
+        "mother": "Remsindis (12815)",
+        "father": "Ramont (12814)"
       },
       "children": {},
       "relationship keys": {
         "parent": [
           13109,
           13110
-        ],
-        "sibling": [
-          13890
         ]
       }
     },
@@ -70,16 +69,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 3,
-      "eye_color": "brown",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "skin_color": 7,
+      "eye_color": "blue",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "S",
         "C"
       ],
-      "health": 0.657,
-      "fertility": 0.662,
+      "health": 0.514,
+      "fertility": 0.579,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -91,88 +90,140 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.657
+            "new_health": 0.514
           },
           "death": false
+        },
+        "1211": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.514
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
           {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stMuelen straet.se1.c1",
-              "street": "Muelen straet",
-              "neighborhood": "jorisbuurt",
-              "unique id": 154
-            }
+            "topic": "birth",
+            "year": 1200
+          },
+          {
+            "topic": "new relationship",
+            "key": 13109,
+            "people": [
+              12814,
+              13108
+            ],
+            "people names": [
+              "Ramont Hoedekine",
+              "Aghete Hoedekine"
+            ],
+            "people ages": [
+              37,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "new relationship",
+            "key": 13110,
+            "people": [
+              12815,
+              13108
+            ],
+            "people names": [
+              "Remsindis Smout",
+              "Aghete Hoedekine"
+            ],
+            "people ages": [
+              33,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          },
-          {
-            "topic": "new relationship",
-            "key": 13890,
-            "people": [
-              13108,
-              13887
-            ],
-            "people names": [
-              "Moerseil Vincs",
-              "Hilduardis Vincs"
-            ],
-            "people ages": [
-              0,
-              0
-            ],
-            "label": "sibling",
-            "committed": false
-          },
+            "topic": "person died",
+            "person": {
+              "key": 12815,
+              "name": "Remsindis Smout",
+              "age": 34,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "childbirth",
+            "friendship label": "friend",
+            "label": "parent"
+          }
+        ],
+        "1204": [
           {
             "topic": "person died",
             "person": {
-              "key": 10432,
-              "name": "Menaures Vincs",
-              "age": 35,
+              "key": 12814,
+              "name": "Ramont Hoedekine",
+              "age": 42,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
             },
             "cause": "illness",
+            "friendship label": "indifferent",
             "label": "parent"
-          }
-        ],
-        "1202": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1203": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1204": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
           }
         ],
         "1205": [
           {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
             "topic": "death",
-            "cause": "childhood illness"
+            "cause": "starvation"
           }
         ]
       }
@@ -181,17 +232,19 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stMuelen straet.se1.c1",
-      "street": "Muelen straet",
-      "neighborhood": "jorisbuurt",
-      "unique id": 154
+      "section": "stKerckstraet.se1.c1",
+      "street": "Kerckstraet",
+      "neighborhood": "denhof",
+      "unique id": 985
     },
     "relationship status": {
       "taken": false,
       "married": false,
-      "relationships": [
-        13890
-      ]
-    }
+      "relationships": []
+    },
+    "friends": [
+      13110
+    ],
+    "enemies": []
   }
 }

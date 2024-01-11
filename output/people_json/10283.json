@@ -1,33 +1,35 @@
 {
   "10283": {
     "alive": false,
-    "name": "Sybillia",
-    "surname": "",
-    "full name": "Sybillia",
+    "name": "Aleydis",
+    "surname": "Duker",
+    "full name": "Aleydis Duker",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.028,
-      "romantic interest": 0.593,
-      "sex interest": 0.999,
-      "gender expression": 0.152,
+      "sexuality": 0.0,
+      "romantic interest": 0.846,
+      "sex interest": 0.632,
+      "gender expression": 0.043,
       "sex": "f"
     },
-    "age": 48,
-    "birth year": 1165,
+    "age": 34,
+    "birth year": 1175,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.543,
-      "honest-false": 0.067
+      "lawful-chaotic": 0.448,
+      "nice-nasty": 0.286,
+      "honest-false": 0.154,
+      "dream": 0.149,
+      "outgoing": 0.614
     },
     "attitude": {
-      "outgoing": 0.632,
-      "dream": 0.602
+      "dream": 0.149,
+      "outgoing": 0.614
     },
     "homsoc": {
       "means": {
@@ -40,16 +42,96 @@
         ]
       },
       "expression": {
-        "sexuality expression": 0.023,
-        "gender expression expression": 0.046
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.009
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "18212": {
+          "key": 18212,
+          "name": "Wigherus Kiekiins",
+          "age": 47,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Aleydis (10283)",
+            "father": "Geykonis (10282)"
+          }
+        },
+        "19747": {
+          "key": 19747,
+          "name": "Enekonus Kiekiins",
+          "age": 46,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Aleydis (10283)",
+            "father": "Geykonis (10282)"
+          }
+        },
+        "22009": {
+          "key": 22009,
+          "name": "Aleberna Kiekiins",
+          "age": 27,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Aleydis (10283)",
+            "father": "Geykonis (10282)"
+          }
+        },
+        "24758": {
+          "key": 24758,
+          "name": "Pietersen Kiekiins",
+          "age": 10,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Aleydis (10283)",
+            "father": "Geykonis (10282)"
+          }
+        },
+        "26232": {
+          "key": 26232,
+          "name": "Mauricius Kiekiins",
+          "age": 43,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Aleydis (10283)",
+            "father": "Geykonis (10282)"
+          }
+        },
+        "28426": {
+          "key": 28426,
+          "name": "Oda Kiekiins",
+          "age": 12,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Aleydis (10283)",
+            "father": "Geykonis (10282)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10284
+        ],
+        "child": {
+          "birth": [
+            18214,
+            19749,
+            22011,
+            24760,
+            26234,
+            28428
+          ]
+        },
+        "unrelated": [
+          25008
         ]
       }
     },
@@ -63,16 +145,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 4,
+      "skin_color": 1,
       "eye_color": "green",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
         "S",
-        "S"
+        "C"
       ],
-      "health": 0.655,
-      "fertility": 0.673,
+      "health": 0.575,
+      "fertility": 0.555,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -84,13 +166,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.655
+            "new_health": 0.575
           },
           "death": false
+        },
+        "1208": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.575
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1175
+          },
           {
             "topic": "new relationship",
             "key": 10284,
@@ -99,104 +193,183 @@
               10283
             ],
             "people names": [
-              "Heillam Paue",
-              "Sybillia"
+              "Geykonis Kiekiins",
+              "Aleydis Duker"
             ],
             "people ages": [
-              39,
-              35
+              40,
+              25
             ],
             "label": "spouse",
             "committed": true
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 18214,
+            "people": [
+              10283,
+              18212
+            ],
+            "people names": [
+              "Aleydis Duker",
+              "Wigherus Kiekiins"
+            ],
+            "people ages": [
+              28,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1203": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 18214
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stHelle voet.se5.c1",
-              "street": "Helle voet",
-              "neighborhood": "jorisbuurt",
-              "unique id": 102
-            }
+            "topic": "new relationship",
+            "key": 19749,
+            "people": [
+              10283,
+              19747
+            ],
+            "people names": [
+              "Aleydis Duker",
+              "Enekonus Kiekiins"
+            ],
+            "people ages": [
+              28,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 22011,
+            "people": [
+              10283,
+              22009
+            ],
+            "people names": [
+              "Aleydis Duker",
+              "Aleberna Kiekiins"
+            ],
+            "people ages": [
+              29,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
             "topic": "update",
             "update": "new friendship label",
-            "relationship label": "spouse",
-            "friendship label": "indifferent",
-            "relationship": 10284
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 18214
           }
         ],
-        "1201": [
+        "1205": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "topic": "new relationship",
+            "key": 24760,
+            "people": [
+              10283,
+              24758
+            ],
+            "people names": [
+              "Aleydis Duker",
+              "Pietersen Kiekiins"
+            ],
+            "people ages": [
+              31,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "new relationship",
+            "key": 25008,
+            "people": [
+              10283,
+              12818
+            ],
+            "people names": [
+              "Aleydis Duker",
+              "Heilsota Vroede"
+            ],
+            "people ages": [
+              31,
+              25
+            ],
+            "label": "unrelated",
+            "committed": false
           }
         ],
         "1206": [
           {
-            "topic": "feelings change",
-            "target": 10282,
-            "target name": "Heillam Paue",
-            "state": "out of love",
-            "relationship": 10284
-          },
-          {
-            "key": 10284,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 10282,
-              "name": "Heillam Paue",
-              "age": 46,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "cause": "illness",
-            "label": "spouse"
+            "topic": "new relationship",
+            "key": 26234,
+            "people": [
+              10283,
+              26232
+            ],
+            "people names": [
+              "Aleydis Duker",
+              "Mauricius Kiekiins"
+            ],
+            "people ages": [
+              31,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1207": [
           {
+            "topic": "new relationship",
+            "key": 28428,
+            "people": [
+              10283,
+              28426
+            ],
+            "people names": [
+              "Aleydis Duker",
+              "Oda Kiekiins"
+            ],
+            "people ages": [
+              32,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
             "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "income": 1.051,
+            "inhabitants": [
+              18212,
+              26232,
+              64319,
+              68230,
+              71893,
+              73405,
+              74800
+            ]
           }
         ],
         "1208": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1209": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1210": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1211": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1212": [
           {
             "topic": "death",
             "cause": "illness"
@@ -211,14 +384,23 @@
       "section": "stHelle voet.se5.c1",
       "street": "Helle voet",
       "neighborhood": "jorisbuurt",
-      "unique id": 102
+      "unique id": 101
     },
     "relationship status": {
       "taken": false,
-      "married": false,
+      "married": true,
       "relationships": [
         10284
       ]
-    }
+    },
+    "friends": [
+      10284,
+      18214,
+      24760,
+      26234,
+      28428,
+      25008
+    ],
+    "enemies": []
   }
 }

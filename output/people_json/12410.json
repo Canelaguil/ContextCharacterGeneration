@@ -1,33 +1,35 @@
 {
   "12410": {
     "alive": false,
-    "name": "Gerburgis",
-    "surname": "Vraet",
-    "full name": "Gerburgis Vraet",
+    "name": "Aleydis",
+    "surname": "Vos",
+    "full name": "Aleydis Vos",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.082,
-      "romantic interest": 0.507,
-      "sex interest": 0.731,
-      "gender expression": 0.183,
+      "sexuality": 0.119,
+      "romantic interest": 0.729,
+      "sex interest": 0.745,
+      "gender expression": 0.006,
       "sex": "f"
     },
-    "age": 27,
-    "birth year": 1179,
+    "age": 32,
+    "birth year": 1173,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
       4,
       "nobility"
     ],
     "personality": {
-      "lawful-chaotic": 0.431,
-      "nice-nasty": 0.716,
-      "honest-false": 0.101
+      "lawful-chaotic": 0.559,
+      "nice-nasty": 0.525,
+      "honest-false": 0.308,
+      "dream": 0.255,
+      "outgoing": 0.999
     },
     "attitude": {
-      "outgoing": 0.268,
-      "dream": 0.0
+      "dream": 0.255,
+      "outgoing": 0.999
     },
     "homsoc": {
       "means": {
@@ -38,22 +40,44 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.053,
-        "gender expression expression": 0.085
+        "sexuality expression": 0.113,
+        "gender expression expression": 0.002
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "16177": {
-          "key": 16177,
-          "name": "Clementia Rin",
+        "13009": {
+          "key": 13009,
+          "name": "Moys Snauel",
           "age": 1,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Aleydis (12410)",
+            "father": "Gherolf (12409)"
+          }
+        },
+        "18077": {
+          "key": 18077,
+          "name": "Batten Snauel",
+          "age": 39,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Aleydis (12410)",
+            "father": "Gherolf (12409)"
+          }
+        },
+        "20003": {
+          "key": 20003,
+          "name": "Thedwi Snauel",
+          "age": 15,
           "alive": false,
           "sex": "f",
           "parents": {
-            "mother": "Gerburgis (12410)",
-            "father": "Mense (12409)"
+            "mother": "Aleydis (12410)",
+            "father": "Gherolf (12409)"
           }
         }
       },
@@ -63,9 +87,15 @@
         ],
         "child": {
           "birth": [
-            16179
+            13011,
+            18079,
+            20005
           ]
-        }
+        },
+        "unrelated": [
+          14583,
+          18566
+        ]
       }
     },
     "occupation": {
@@ -78,7 +108,7 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 2,
+      "skin_color": 9,
       "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
@@ -86,8 +116,8 @@
         "S",
         "S"
       ],
-      "health": 0.887,
-      "fertility": 0.903,
+      "health": 0.558,
+      "fertility": 0.572,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -99,21 +129,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.887
+            "new_health": 0.558
           },
           "death": false
         },
-        "1205": {
+        "1204": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.887
+            "new_health": 0.558
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1173
+          },
           {
             "topic": "new relationship",
             "key": 12411,
@@ -122,56 +156,154 @@
               12410
             ],
             "people names": [
-              "Mense Rin",
-              "Gerburgis Vraet"
+              "Gherolf Snauel",
+              "Aleydis Vos"
             ],
             "people ages": [
-              33,
-              21
+              31,
+              27
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 4,
-              "income class label": "nobility",
-              "section": "stOp Havick1.se1.c4",
-              "street": "Op Havick1",
-              "neighborhood": "cingelnoord",
-              "unique id": 845
-            }
+            "topic": "new relationship",
+            "key": 13011,
+            "people": [
+              12410,
+              13009
+            ],
+            "people names": [
+              "Aleydis Vos",
+              "Moys Snauel"
+            ],
+            "people ages": [
+              27,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 12409,
+            "target name": "Gherolf Snauel",
+            "state": "solid love",
+            "friendship label": "friend",
+            "relationship": 12411
+          },
+          {
+            "topic": "new relationship",
+            "key": 14583,
+            "people": [
+              11257,
+              12410
+            ],
+            "people names": [
+              "Lieuin",
+              "Aleydis Vos"
+            ],
+            "people ages": [
+              37,
+              28
+            ],
+            "label": "unrelated",
+            "committed": false
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "topic": "person died",
+            "person": {
+              "key": 13009,
+              "name": "Moys Snauel",
+              "age": 1,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Aleydis (12410)",
+                "father": "Gherolf (12409)"
+              }
+            },
+            "cause": "childhood illness",
+            "friendship label": "friend",
+            "label": "child"
           }
         ],
-        "1204": [
+        "1202": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "friend",
+            "relationship": 14583
+          },
           {
             "topic": "new relationship",
-            "key": 16179,
+            "key": 18079,
             "people": [
               12410,
-              16177
+              18077
             ],
             "people names": [
-              "Gerburgis Vraet",
-              "Clementia Rin"
+              "Aleydis Vos",
+              "Batten Snauel"
             ],
             "people ages": [
-              25,
+              29,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "new relationship",
+            "key": 18566,
+            "people": [
+              10921,
+              12410
+            ],
+            "people names": [
+              "Dolf Steenard",
+              "Aleydis Vos"
+            ],
+            "people ages": [
+              47,
+              30
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1203": [
+          {
+            "topic": "feelings change",
+            "target": 11257,
+            "target name": "Lieuin",
+            "state": "crush",
+            "friendship label": "friend",
+            "relationship": 14583
+          },
+          {
+            "topic": "new relationship",
+            "key": 20005,
+            "people": [
+              12410,
+              20003
+            ],
+            "people names": [
+              "Aleydis Vos",
+              "Thedwi Snauel"
+            ],
+            "people ages": [
+              30,
               0
             ],
             "label": "parentchild",
             "committed": false
           }
         ],
-        "1205": [
+        "1204": [
           {
             "topic": "death",
             "cause": "illness"
@@ -186,14 +318,22 @@
       "section": "stOp Havick1.se1.c4",
       "street": "Op Havick1",
       "neighborhood": "cingelnoord",
-      "unique id": 845
+      "unique id": 841
     },
     "relationship status": {
-      "taken": true,
+      "taken": false,
       "married": true,
       "relationships": [
         12411
       ]
-    }
+    },
+    "friends": [
+      12411,
+      13011,
+      20005,
+      14583,
+      18566
+    ],
+    "enemies": []
   }
 }

@@ -1,33 +1,35 @@
 {
   "12770": {
     "alive": false,
-    "name": "Sipper",
-    "surname": "Bards",
-    "full name": "Sipper Bards",
+    "name": "Eingeliadis",
+    "surname": "Wittebroet",
+    "full name": "Eingeliadis Wittebroet",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.073,
-      "romantic interest": 0.869,
-      "sex interest": 0.641,
-      "gender expression": 0.325,
+      "sexuality": 0.068,
+      "romantic interest": 0.999,
+      "sex interest": 0.878,
+      "gender expression": 0.064,
       "sex": "f"
     },
-    "age": 18,
-    "birth year": 1184,
+    "age": 55,
+    "birth year": 1175,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "Zealots",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.214,
-      "honest-false": 0.498
+      "lawful-chaotic": 0.61,
+      "nice-nasty": 0.118,
+      "honest-false": 0.356,
+      "dream": 0.31,
+      "outgoing": 0.274
     },
     "attitude": {
-      "outgoing": 0.61,
-      "dream": 0.631
+      "dream": 0.31,
+      "outgoing": 0.274
     },
     "homsoc": {
       "means": {
@@ -40,17 +42,86 @@
         ]
       },
       "expression": {
-        "sexuality expression": 0.039,
-        "gender expression expression": 0.156
+        "sexuality expression": 0.021,
+        "gender expression expression": 0.04
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13867": {
+          "key": 13867,
+          "name": "Sipper lucrose",
+          "age": 37,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Eingeliadis (12770)",
+            "father": "Dieuel (12769)"
+          }
+        },
+        "19558": {
+          "key": 19558,
+          "name": "Alretieren lucrose",
+          "age": 41,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Eingeliadis (12770)",
+            "father": "Dieuel (12769)"
+          }
+        },
+        "22714": {
+          "key": 22714,
+          "name": "Marie lucrose",
+          "age": 5,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Eingeliadis (12770)",
+            "father": "Dieuel (12769)"
+          }
+        },
+        "25131": {
+          "key": 25131,
+          "name": "Agnes lucrose",
+          "age": 5,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Eingeliadis (12770)",
+            "father": "Dieuel (12769)"
+          }
+        },
+        "46720": {
+          "key": 46720,
+          "name": "Haghen Dukinghe",
+          "age": 24,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Sipper (13867)",
+            "father": "Froumoldus (14911)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           12771
-        ]
+        ],
+        "child": {
+          "birth": [
+            13869,
+            19560,
+            22716,
+            25133
+          ]
+        },
+        "grandchild": {
+          "birth": [
+            47418
+          ]
+        }
       }
     },
     "occupation": {
@@ -63,16 +134,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 1,
-      "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 6,
+      "eye_color": "blue",
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
         "S",
-        "C"
+        "S"
       ],
-      "health": 0.597,
-      "fertility": 0.532,
+      "health": 0.0,
+      "fertility": 0.838,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -84,13 +155,49 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.597
+            "new_health": 0.805
           },
           "death": false
+        },
+        "1226": {
+          "health": {
+            "change": true,
+            "value_change": -0.159,
+            "new_health": 0.646
+          },
+          "death": false
+        },
+        "1227": {
+          "health": {
+            "change": true,
+            "value_change": -0.2,
+            "new_health": 0.446
+          },
+          "death": false
+        },
+        "1228": {
+          "health": {
+            "change": true,
+            "value_change": -0.307,
+            "new_health": 0.139
+          },
+          "death": false
+        },
+        "1229": {
+          "health": {
+            "change": true,
+            "value_change": -0.139,
+            "new_health": 0.0
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1175
+          },
           {
             "topic": "new relationship",
             "key": 12771,
@@ -99,49 +206,361 @@
               12770
             ],
             "people names": [
-              "Jdir",
-              "Sipper Bards"
+              "Dieuel lucrose",
+              "Eingeliadis Wittebroet"
             ],
             "people ages": [
-              21,
-              16
+              47,
+              25
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stAppel Marckt.se3.c1",
-              "street": "Appel Marckt",
-              "neighborhood": "denhof",
-              "unique id": 971
-            }
-          },
+            "topic": "new relationship",
+            "key": 13869,
+            "people": [
+              12770,
+              13867
+            ],
+            "people names": [
+              "Eingeliadis Wittebroet",
+              "Sipper lucrose"
+            ],
+            "people ages": [
+              25,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 19560,
+            "people": [
+              12770,
+              19558
+            ],
+            "people names": [
+              "Eingeliadis Wittebroet",
+              "Alretieren lucrose"
+            ],
+            "people ages": [
+              29,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1204": [
           {
             "topic": "update",
             "update": "new friendship label",
             "relationship label": "spouse",
-            "friendship label": "friend",
+            "friendship label": "indifferent",
             "relationship": 12771
           },
           {
+            "topic": "new relationship",
+            "key": 22716,
+            "people": [
+              12770,
+              22714
+            ],
+            "people names": [
+              "Eingeliadis Wittebroet",
+              "Marie lucrose"
+            ],
+            "people ages": [
+              30,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1205": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "disliked",
+            "relationship": 12771
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 25133,
+            "people": [
+              12770,
+              25131
+            ],
+            "people names": [
+              "Eingeliadis Wittebroet",
+              "Agnes lucrose"
+            ],
+            "people ages": [
+              31,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "key": 12771,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12769,
+              "name": "Dieuel lucrose",
+              "age": 54,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "friendship label": "disliked",
+            "label": "spouse",
+            "love state": "loveless"
+          }
+        ],
+        "1207": [
+          {
             "topic": "not enough income",
-            "income": 0.0,
+            "income": 0,
             "inhabitants": []
           }
         ],
-        "1201": [
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 19560
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 22714,
+              "name": "Marie lucrose",
+              "age": 5,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Eingeliadis (12770)",
+                "father": "Dieuel (12769)"
+              }
+            },
+            "cause": "starvation",
+            "friendship label": "friend",
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 13869
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 25131,
+              "name": "Agnes lucrose",
+              "age": 5,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Eingeliadis (12770)",
+                "father": "Dieuel (12769)"
+              }
+            },
+            "cause": "starvation",
+            "friendship label": "indifferent",
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1214": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 19560
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1215": [
           {
             "topic": "event",
             "event": "plague",
-            "year": 1201
+            "year": 1215
           },
           {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1216": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 19560
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1217": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1218": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 13869
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1219": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1220": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 19560
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1221": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1223": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1223
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 13869
+          }
+        ],
+        "1226": [
+          {
+            "topic": "new relationship",
+            "key": 47418,
+            "people": [
+              12770,
+              46720
+            ],
+            "people names": [
+              "Eingeliadis Wittebroet",
+              "Haghen Dukinghe"
+            ],
+            "people ages": [
+              51,
+              0
+            ],
+            "label": "grandparentchild",
+            "committed": false
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 13869
+          }
+        ],
+        "1229": [
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "sickness"
           }
         ]
       }
@@ -153,14 +572,21 @@
       "section": "stAppel Marckt.se3.c1",
       "street": "Appel Marckt",
       "neighborhood": "denhof",
-      "unique id": 971
+      "unique id": 970
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         12771
       ]
-    }
+    },
+    "friends": [
+      19560,
+      22716
+    ],
+    "enemies": [
+      12771
+    ]
   }
 }

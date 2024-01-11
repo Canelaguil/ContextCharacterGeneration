@@ -1,45 +1,49 @@
 {
   "10408": {
     "alive": false,
-    "name": "Wigboldo",
-    "surname": "Scenkel",
-    "full name": "Wigboldo Scenkel",
+    "name": "Elyas\u0430",
+    "surname": "",
+    "full name": "Elyas\u0430",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.011,
-      "romantic interest": 0.827,
-      "sex interest": 0.675,
-      "gender expression": 0.189,
+      "sexuality": 0.0,
+      "romantic interest": 0.872,
+      "sex interest": 0.542,
+      "gender expression": 0.155,
       "sex": "m"
     },
-    "age": 29,
-    "birth year": 1174,
+    "age": 53,
+    "birth year": 1151,
     "sex": "m",
-    "faction": "Zealots",
+    "faction": "Dogmatists",
     "income class": [
       0,
       "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.336,
-      "nice-nasty": 0.297,
-      "honest-false": 0.088
+      "lawful-chaotic": 0.827,
+      "nice-nasty": 0.27,
+      "honest-false": 0.0,
+      "dream": 0.325,
+      "outgoing": 0.535
     },
     "attitude": {
-      "outgoing": 0.706,
-      "dream": 0.37
+      "dream": 0.325,
+      "outgoing": 0.535
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.007,
-        "gender expression expression": 0.132
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.11
       }
     },
     "network": {
@@ -57,29 +61,30 @@
         0,
         "working class"
       ],
-      "income": 1.499,
+      "income": 0.34,
       "all_incomes": [
-        1.328,
-        1.462,
-        1.499,
-        1.499
+        0.0,
+        0.0,
+        0.097,
+        0.377,
+        0.34
       ],
       "job": {
-        "lawful": false,
+        "lawful": true,
         "honest": false
       }
     },
     "genetics": {
-      "skin_color": 3,
-      "eye_color": "green",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "skin_color": 1,
+      "eye_color": "brown",
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
       "hair_type": [
-        "C",
-        "S"
+        "S",
+        "C"
       ],
-      "health": 0.677,
-      "fertility": 0.703,
+      "health": 0.0,
+      "fertility": 0.64,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -91,15 +96,31 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.677
+            "new_health": 0.65
+          },
+          "death": false
+        },
+        "1201": {
+          "health": {
+            "change": true,
+            "value_change": -0.32,
+            "new_health": 0.33
           },
           "death": false
         },
         "1202": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.677
+            "change": true,
+            "value_change": -0.193,
+            "new_health": 0.137
+          },
+          "death": false
+        },
+        "1203": {
+          "health": {
+            "change": true,
+            "value_change": -0.137,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -107,9 +128,13 @@
       "events": {
         "1200": [
           {
+            "topic": "birth",
+            "year": 1151
+          },
+          {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.328
+            "income": 0.0
           },
           {
             "topic": "new relationship",
@@ -119,39 +144,45 @@
               10409
             ],
             "people names": [
-              "Wigboldo Scenkel",
-              "Katerina"
+              "Elyas\u0430",
+              "Myrthel"
             ],
             "people ages": [
-              26,
-              16
+              49,
+              37
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stSt. Joris straet.se3.c0",
-              "street": "St. Joris straet",
-              "neighborhood": "jorisbuurt",
-              "unique id": 146
-            }
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "topic": "not enough income",
+            "income": 0.097,
+            "inhabitants": []
           }
         ],
         "1202": [
           {
+            "topic": "not enough income",
+            "income": 0.377,
+            "inhabitants": []
+          }
+        ],
+        "1203": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.34
+          },
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "sickness"
           }
         ]
       }
@@ -160,10 +191,10 @@
     "home": {
       "income class": 0,
       "income class label": "working class",
-      "section": "stSt. Joris straet.se3.c0",
+      "section": "stSt. Joris straet.se1.c0",
       "street": "St. Joris straet",
       "neighborhood": "jorisbuurt",
-      "unique id": 146
+      "unique id": 145
     },
     "relationship status": {
       "taken": true,
@@ -171,6 +202,8 @@
       "relationships": [
         10410
       ]
-    }
+    },
+    "friends": [],
+    "enemies": []
   }
 }

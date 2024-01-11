@@ -1,33 +1,35 @@
 {
   "12260": {
     "alive": false,
-    "name": "Amalburga",
-    "surname": "",
-    "full name": "Amalburga",
+    "name": "Heylewigis",
+    "surname": "Blonde",
+    "full name": "Heylewigis Blonde",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.057,
-      "romantic interest": 0.748,
-      "sex interest": 0.718,
-      "gender expression": 0.132,
+      "sexuality": 0.036,
+      "romantic interest": 0.711,
+      "sex interest": 0.449,
+      "gender expression": 0.229,
       "sex": "f"
     },
-    "age": 25,
-    "birth year": 1181,
+    "age": 41,
+    "birth year": 1164,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
-      4,
-      "nobility"
+      2,
+      "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.596,
-      "nice-nasty": 0.329,
-      "honest-false": 0.549
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.489,
+      "honest-false": 0.0,
+      "dream": 0.035,
+      "outgoing": 0.495
     },
     "attitude": {
-      "outgoing": 0.279,
-      "dream": 0.012
+      "dream": 0.035,
+      "outgoing": 0.495
     },
     "homsoc": {
       "means": {
@@ -35,27 +37,47 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": [
-          "starving"
-        ]
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.022,
-        "gender expression expression": 0.101
+        "sexuality expression": 0.018,
+        "gender expression expression": 0.054
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "13222": {
-          "key": 13222,
-          "name": "Hilduardis Brusch",
-          "age": 5,
+        "13564": {
+          "key": 13564,
+          "name": "Katrin Borluet",
+          "age": 49,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Heylewigis (12260)",
+            "father": "Radulphus (12259)"
+          }
+        },
+        "14991": {
+          "key": 14991,
+          "name": "Ymmekine Borluet",
+          "age": 12,
           "alive": false,
           "sex": "f",
           "parents": {
-            "mother": "Amalburga (12260)",
-            "father": "Anthonius (12259)"
+            "mother": "Heylewigis (12260)",
+            "father": "Radulphus (12259)"
+          }
+        },
+        "16940": {
+          "key": 16940,
+          "name": "Radulphus Borluet",
+          "age": 12,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Heylewigis (12260)",
+            "father": "Radulphus (12259)"
           }
         }
       },
@@ -65,37 +87,33 @@
         ],
         "child": {
           "birth": [
-            13224
+            13566,
+            14993,
+            16942
           ]
         }
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
-        4,
-        "nobility"
+        2,
+        "middle class"
       ],
-      "income": 0.969,
-      "all_incomes": [
-        0.969
-      ],
-      "job": {
-        "lawful": true,
-        "honest": true
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 2,
-      "eye_color": "brown",
+      "skin_color": 5,
+      "eye_color": "green",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
-        "C",
-        "C"
+        "S",
+        "S"
       ],
-      "health": 0.695,
-      "fertility": 0.648,
+      "health": 0.362,
+      "fertility": 0.64,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -107,21 +125,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.695
+            "new_health": 0.612
           },
           "death": false
         },
-        "1205": {
+        "1204": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.695
+            "change": true,
+            "value_change": -0.25,
+            "new_health": 0.362
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1164
+          },
           {
             "topic": "new relationship",
             "key": 12261,
@@ -130,40 +152,29 @@
               12260
             ],
             "people names": [
-              "Anthonius Brusch",
-              "Amalburga"
+              "Radulphus Borluet",
+              "Heylewigis Blonde"
             ],
             "people ages": [
-              26,
-              19
+              45,
+              36
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 4,
-              "income class label": "nobility",
-              "section": "stMuurhuysen2.se1.c4",
-              "street": "Muurhuysen2",
-              "neighborhood": "cingelnoord",
-              "unique id": 791
-            }
-          },
-          {
             "topic": "new relationship",
-            "key": 13224,
+            "key": 13566,
             "people": [
               12260,
-              13222
+              13564
             ],
             "people names": [
-              "Amalburga",
-              "Hilduardis Brusch"
+              "Heylewigis Blonde",
+              "Katrin Borluet"
             ],
             "people ages": [
-              19,
+              36,
               0
             ],
             "label": "parentchild",
@@ -172,55 +183,52 @@
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "disliked",
+            "relationship": 12261
           },
           {
-            "key": 12261,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 12259,
-              "name": "Anthonius Brusch",
-              "age": 28,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "cause": "illness",
-            "label": "spouse"
+            "topic": "new relationship",
+            "key": 14993,
+            "people": [
+              12260,
+              14991
+            ],
+            "people names": [
+              "Heylewigis Blonde",
+              "Ymmekine Borluet"
+            ],
+            "people ages": [
+              38,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1202": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1203": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "new relationship",
+            "key": 16942,
+            "people": [
+              12260,
+              16940
+            ],
+            "people names": [
+              "Heylewigis Blonde",
+              "Radulphus Borluet"
+            ],
+            "people ages": [
+              38,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1204": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1205": [
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.969
-          },
           {
             "topic": "death",
             "cause": "illness"
@@ -230,19 +238,23 @@
     },
     "key": 12260,
     "home": {
-      "income class": 4,
-      "income class label": "nobility",
-      "section": "stMuurhuysen2.se1.c4",
-      "street": "Muurhuysen2",
-      "neighborhood": "cingelnoord",
-      "unique id": 791
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stGoetscalcstraet.se3.c2",
+      "street": "Goetscalcstraet",
+      "neighborhood": "visbuurt",
+      "unique id": 788
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
         12261
       ]
-    }
+    },
+    "friends": [],
+    "enemies": [
+      12261
+    ]
   }
 }

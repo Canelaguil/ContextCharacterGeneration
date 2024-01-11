@@ -11,6 +11,7 @@ class HomoSociologicus():
         self.income_class = income_class
         self.set_expression_of_expressions(born_like)
         self.tasks = MessageInbox(self)
+        self.ideal_no_friends = int(self.personality['outgoing'] * HomoSociologicus.no_friends)
 
         # needs
         if age == 0:
@@ -78,6 +79,7 @@ class HomoSociologicus():
                     'motivation' : 'convention', 
                     'sex' : self.sex,
                     'age' : age,
+                    'faction' : self.person.faction,
                     'source' : self.person_key, 
                     'income class' : self.income_class,
                     'personality' : self.personality,
@@ -114,7 +116,8 @@ class HomoSociologicus():
             log_error('Did not recognize that homsoc update.', update)
 
     def trigger(self, trigger):
-        ...
+        if trigger == 'faction upheaval':
+            ...
         
     """
     UTILS
@@ -145,7 +148,21 @@ class HomoSociologicus():
 
     def go_find_job(self, age):
         # change to message?
-        self.person.occupation.find_job(age)    
+        self.person.occupation.find_job(age)   
+
+    def find_friend(self, age):
+        it = {
+            'topic' : 'friendship', 
+            'sex' : self.sex,
+            'age' : age,
+            'source' : self.person_key, 
+            'income class' : self.income_class,
+            'personality' : self.personality,
+            'situation' : self.homo_sociologicus(),
+            'adress' : self.person.home
+        }
+        # print(it)
+        self.community.express_intention(it) 
 
     """
     INFO
@@ -178,7 +195,7 @@ class WomanMA(HomoSociologicus):
 
     def marriage_wish(self):
         look_at_me_now = self.community.get_person(self.person_key)
-        return 1
+        return 0.8
         # independent :  70 / 1 , 90 / 0
         # sexuality : 95 / straigth, 85 / bisexual , 50 / gay
         # romance : 95 / 1, 85 / 0
@@ -186,6 +203,11 @@ class WomanMA(HomoSociologicus):
 
     def childhood(self, age, record):
         self.needs_care = True
+        if age == 3:
+            self.find_friend(age)
+        elif age > 4:
+            if rand() < 0.8:
+                self.find_friend(age)
 
     def adulthood(self, age, record):
         # motivate to go for independence
@@ -198,6 +220,11 @@ class WomanMA(HomoSociologicus):
             else:
                 self.independent = False
 
+        # if not enough friends 
+        friends = self.person.network.get_friends()
+        if len(friends) < self.ideal_no_friends:
+            self.find_friend(age)
+
 class ManMA(HomoSociologicus):
     def __init__(self, person, community, born_like, whoami, income_class,
                  age=0, disabilities=[]) -> None:
@@ -206,9 +233,12 @@ class ManMA(HomoSociologicus):
         self.independent_age = 16 #HomoSociologicus.marriage_age_men
 
     def marriage_wish(self):
-        # look_at_me_now = self.community.get_person(self.person_key)
-        # personality = look_at_me_now['personality']
-        return 1
+        look_at_me_now = self.community.get_person(self.person_key)
+        personality = look_at_me_now['personality']
+        if self.independent:
+            return 0.6
+        else:
+            return 0
         pos_mods, neg_mods, vals = [], [], []
 
         # independent :  90 / 1 , 20 / 0
@@ -244,7 +274,12 @@ class ManMA(HomoSociologicus):
         return ch
 
     def childhood(self, age, record):
-        self.needs_care = True
+        self.needs_care = True        
+        if age == 3:
+            self.find_friend(age)
+        elif age > 4:
+            if rand() < 0.8:
+                self.find_friend(age)
 
     def adulthood(self, age, record):
         # motivate to go for independence
@@ -256,6 +291,11 @@ class ManMA(HomoSociologicus):
                 self.independent = True
             else:
                 self.independent = False
+
+        # if not enough friends 
+        friends = self.person.network.get_friends()
+        if len(friends) < self.ideal_no_friends:
+            self.find_friend(age)
 
         
         
@@ -269,7 +309,11 @@ class Neutral(HomoSociologicus):
 
     
     def childhood(self, age, record):
-        ...
+        if age == 3:
+            self.find_friend(age)
+        elif age > 4:
+            if rand() < 0.5:
+                self.find_friend(age)
 
     def adulthood(self, age, record):
         ...

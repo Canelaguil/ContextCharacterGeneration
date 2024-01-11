@@ -1,33 +1,35 @@
 {
   "12560": {
     "alive": false,
-    "name": "Ymmekine",
-    "surname": "Cabelliau",
-    "full name": "Ymmekine Cabelliau",
+    "name": "Clara",
+    "surname": "Ome",
+    "full name": "Clara Ome",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.016,
-      "romantic interest": 0.647,
-      "sex interest": 0.423,
-      "gender expression": 0.0,
+      "sexuality": 0.0,
+      "romantic interest": 0.676,
+      "sex interest": 0.662,
+      "gender expression": 0.05,
       "sex": "f"
     },
-    "age": 53,
-    "birth year": 1167,
+    "age": 36,
+    "birth year": 1174,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "No religion",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.129,
-      "nice-nasty": 0.999,
-      "honest-false": 0.047
+      "lawful-chaotic": 0.296,
+      "nice-nasty": 0.204,
+      "honest-false": 0.566,
+      "dream": 0.349,
+      "outgoing": 0.617
     },
     "attitude": {
-      "outgoing": 0.272,
-      "dream": 0.477
+      "dream": 0.349,
+      "outgoing": 0.617
     },
     "homsoc": {
       "means": {
@@ -35,51 +37,74 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.006,
-        "gender expression expression": -0.001
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.025
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13501": {
+          "key": 13501,
+          "name": "Hille Neve",
+          "age": 4,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Clara (12560)",
+            "father": "Erenboede (12559)"
+          }
+        },
+        "15582": {
+          "key": 15582,
+          "name": "Frethericus Neve",
+          "age": 40,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Clara (12560)",
+            "father": "Erenboede (12559)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          12561
-        ]
+          12561,
+          29132
+        ],
+        "child": {
+          "birth": [
+            13503,
+            15584
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 1.347,
-      "all_incomes": [
-        1.284,
-        1.4349999999999998,
-        1.3719999999999999,
-        1.347
-      ],
-      "job": {
-        "lawful": true,
-        "honest": false
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 3,
-      "eye_color": "brown",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "skin_color": 1,
+      "eye_color": "green",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
         "S",
-        "C"
+        "S"
       ],
-      "health": 0.0,
-      "fertility": 0.845,
+      "health": 0.618,
+      "fertility": 0.601,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -91,69 +116,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.794
+            "new_health": 0.618
           },
           "death": false
         },
-        "1203": {
-          "health": {
-            "change": true,
-            "value_change": -0.179,
-            "new_health": 0.615
-          },
-          "death": false
-        },
-        "1204": {
+        "1209": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.615
-          },
-          "death": false
-        },
-        "1205": {
-          "health": {
-            "change": true,
-            "value_change": -0.256,
-            "new_health": 0.359
-          },
-          "death": false
-        },
-        "1206": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.359
-          },
-          "death": false
-        },
-        "1217": {
-          "health": {
-            "change": true,
-            "value_change": -0.181,
-            "new_health": 0.178
-          },
-          "death": false
-        },
-        "1218": {
-          "health": {
-            "change": true,
-            "value_change": -0.166,
-            "new_health": 0.012
-          },
-          "death": false
-        },
-        "1219": {
-          "health": {
-            "change": true,
-            "value_change": -0.012,
-            "new_health": 0.0
+            "new_health": 0.618
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1174
+          },
           {
             "topic": "new relationship",
             "key": 12561,
@@ -162,56 +143,53 @@
               12560
             ],
             "people names": [
-              "Cats Bruus",
-              "Ymmekine Cabelliau"
+              "Erenboede Neve",
+              "Clara Ome"
             ],
             "people ages": [
-              40,
-              33
+              49,
+              26
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stCromme straet.se5.c2",
-              "street": "Cromme straet",
-              "neighborhood": "denhof",
-              "unique id": 897
-            }
+            "topic": "new relationship",
+            "key": 13503,
+            "people": [
+              12560,
+              13501
+            ],
+            "people names": [
+              "Clara Ome",
+              "Hille Neve"
+            ],
+            "people ages": [
+              27,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          }
-        ],
-        "1211": [
-          {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "spouse",
-            "friendship label": "indifferent",
-            "relationship": 12561
-          }
-        ],
-        "1215": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1215
-          }
-        ],
-        "1216": [
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.284
+            "topic": "new relationship",
+            "key": 15584,
+            "people": [
+              12560,
+              15582
+            ],
+            "people names": [
+              "Clara Ome",
+              "Frethericus Neve"
+            ],
+            "people ages": [
+              28,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
             "key": 12561,
@@ -221,20 +199,94 @@
             "topic": "person died",
             "person": {
               "key": 12559,
-              "name": "Cats Bruus",
-              "age": 57,
+              "name": "Erenboede Neve",
+              "age": 51,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
             },
-            "cause": "sickness",
-            "label": "spouse"
+            "cause": "old age",
+            "friendship label": "indifferent",
+            "label": "spouse",
+            "love state": "loveless"
           }
         ],
-        "1219": [
+        "1202": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1203": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1204": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 13501,
+              "name": "Hille Neve",
+              "age": 4,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Clara (12560)",
+                "father": "Erenboede (12559)"
+              }
+            },
+            "cause": "starvation",
+            "friendship label": "indifferent",
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "new relationship",
+            "key": 29132,
+            "people": [
+              10003,
+              12560
+            ],
+            "people names": [
+              "Isbrandus",
+              "Clara Ome"
+            ],
+            "people ages": [
+              30,
+              34
+            ],
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1209": [
           {
             "topic": "death",
-            "cause": "sickness"
+            "cause": "illness"
           }
         ]
       }
@@ -243,17 +295,22 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stCromme straet.se5.c2",
-      "street": "Cromme straet",
-      "neighborhood": "denhof",
-      "unique id": 897
+      "section": "stUterechse straet.se1.c2",
+      "street": "Uterechse straet",
+      "neighborhood": "varkensbuurt",
+      "unique id": 2
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
-        12561
+        12561,
+        29132
       ]
-    }
+    },
+    "friends": [
+      29132
+    ],
+    "enemies": []
   }
 }

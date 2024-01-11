@@ -1,37 +1,39 @@
 {
   "10574": {
     "alive": false,
-    "name": "Trame",
-    "surname": "Tater",
-    "full name": "Trame Tater",
+    "name": "Lielde",
+    "surname": "",
+    "full name": "Lielde",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.837,
-      "romantic interest": 0.514,
-      "sex interest": 0.519,
-      "gender expression": 0.272,
+      "sexuality label": "straight",
+      "sexuality": 0.0,
+      "romantic interest": 0.544,
+      "sex interest": 0.358,
+      "gender expression": 0.114,
       "sex": "f"
     },
-    "age": 54,
-    "birth year": 1172,
+    "age": 28,
+    "birth year": 1182,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.165,
-      "nice-nasty": 0.865,
-      "honest-false": 0.0
+      "lawful-chaotic": 0.653,
+      "nice-nasty": 0.348,
+      "honest-false": 0.361,
+      "dream": 0.366,
+      "outgoing": 0.576
     },
     "attitude": {
-      "outgoing": 0.053,
-      "dream": 0.202
+      "dream": 0.366,
+      "outgoing": 0.576
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
@@ -40,50 +42,104 @@
         ]
       },
       "expression": {
-        "sexuality expression": 0.589,
-        "gender expression expression": 0.05
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.039
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14197": {
+          "key": 14197,
+          "name": "Thezonus",
+          "age": 49,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Lielde (10574)",
+            "father": "Rissewint (10573)"
+          }
+        },
+        "18238": {
+          "key": 18238,
+          "name": "Snellard Rissewintszoon",
+          "age": 23,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Lielde (10574)",
+            "father": "Rissewint (10573)"
+          }
+        },
+        "21430": {
+          "key": 21430,
+          "name": "Lenildis Rissewintsdochter",
+          "age": 11,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Lielde (10574)",
+            "father": "Rissewint (10573)"
+          }
+        },
+        "23655": {
+          "key": 23655,
+          "name": "Riquardus",
+          "age": 22,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Lielde (10574)",
+            "father": "Rissewint (10573)"
+          }
+        },
+        "30695": {
+          "key": 30695,
+          "name": "Baua Rissewintsdochter",
+          "age": 22,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Lielde (10574)",
+            "father": "Rissewint (10573)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          10575,
-          16774,
-          22590
-        ]
+          10575
+        ],
+        "child": {
+          "birth": [
+            14199,
+            18240,
+            21432,
+            23657,
+            30697
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 0.778,
-      "all_incomes": [
-        0.88,
-        0.597,
-        0.738,
-        0.778
-      ],
-      "job": {
-        "lawful": false,
-        "honest": false
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
       "skin_color": 1,
-      "eye_color": "brown",
+      "eye_color": "blue",
       "hair_color": "blonde",
       "hair_color_code": 4,
       "hair_type": [
         "S",
-        "C"
+        "S"
       ],
-      "health": 0.0,
-      "fertility": 0.719,
+      "health": 0.566,
+      "fertility": 0.634,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -95,45 +151,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.741
+            "new_health": 0.566
           },
           "death": false
         },
-        "1222": {
+        "1209": {
           "health": {
-            "change": true,
-            "value_change": -0.225,
-            "new_health": 0.516
-          },
-          "death": false
-        },
-        "1223": {
-          "health": {
-            "change": true,
-            "value_change": -0.14,
-            "new_health": 0.376
-          },
-          "death": false
-        },
-        "1224": {
-          "health": {
-            "change": true,
-            "value_change": -0.313,
-            "new_health": 0.063
-          },
-          "death": false
-        },
-        "1225": {
-          "health": {
-            "change": true,
-            "value_change": -0.063,
-            "new_health": 0.0
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.566
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1182
+          },
           {
             "topic": "new relationship",
             "key": 10575,
@@ -142,228 +178,151 @@
               10574
             ],
             "people names": [
-              "Winardus\u0430 Zuakart",
-              "Trame Tater"
+              "Rissewint",
+              "Lielde"
             ],
             "people ages": [
-              33,
-              28
+              25,
+              18
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stOp 't Speuy.se1.c2",
-              "street": "Op 't Speuy",
-              "neighborhood": "jorisbuurt",
-              "unique id": 202
-            }
-          }
-        ],
-        "1201": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          },
-          {
-            "key": 10575,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 10573,
-              "name": "Winardus\u0430 Zuakart",
-              "age": 35,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "cause": "illness",
-            "label": "spouse"
+            "topic": "new relationship",
+            "key": 14199,
+            "people": [
+              10574,
+              14197
+            ],
+            "people names": [
+              "Lielde",
+              "Thezonus"
+            ],
+            "people ages": [
+              19,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1202": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "new relationship",
+            "key": 18240,
+            "people": [
+              10574,
+              18238
+            ],
+            "people names": [
+              "Lielde",
+              "Snellard Rissewintszoon"
+            ],
+            "people ages": [
+              21,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1203": [
           {
             "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "income": 0.383,
+            "inhabitants": [
+              30962,
+              72026
+            ]
           }
         ],
         "1204": [
-          {
-            "topic": "new relationship",
-            "key": 16774,
-            "people": [
-              12115,
-              10574
-            ],
-            "people names": [
-              "Jonas Mulart",
-              "Trame Tater"
-            ],
-            "people ages": [
-              46,
-              33
-            ],
-            "label": "spouse",
-            "committed": true
-          }
-        ],
-        "1207": [
           {
             "topic": "update",
             "update": "new friendship label",
             "relationship label": "spouse",
             "friendship label": "indifferent",
-            "relationship": 16774
-          }
-        ],
-        "1211": [
-          {
-            "key": 16774,
-            "topic": "unmarried"
+            "relationship": 10575
           },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 12115,
-              "name": "Jonas Mulart",
-              "age": 53,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "cause": "sickness",
-            "label": "spouse"
-          }
-        ],
-        "1212": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1213": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1214": [
           {
             "topic": "new relationship",
-            "key": 22590,
+            "key": 21432,
             "people": [
-              11569,
-              10574
+              10574,
+              21430
             ],
             "people names": [
-              "Sylof Vincs",
-              "Trame Tater"
+              "Lielde",
+              "Lenildis Rissewintsdochter"
             ],
             "people ages": [
-              46,
-              43
+              22,
+              0
             ],
-            "label": "spouse",
-            "committed": true
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1205": [
+          {
+            "topic": "new relationship",
+            "key": 23657,
+            "people": [
+              10574,
+              23655
+            ],
+            "people names": [
+              "Lielde",
+              "Riquardus"
+            ],
+            "people ages": [
+              23,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1208": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 14199
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stBreestraat.se1.c2",
-              "street": "Breestraat",
-              "neighborhood": "olvbuurt",
-              "unique id": 553
-            }
-          }
-        ],
-        "1215": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1215
-          }
-        ],
-        "1216": [
-          {
-            "topic": "feelings change",
-            "target": 11569,
-            "target name": "Sylof Vincs",
-            "state": "solid love",
-            "relationship": 22590
-          }
-        ],
-        "1217": [
-          {
-            "topic": "feelings change",
-            "target": 11569,
-            "target name": "Sylof Vincs",
-            "state": "out of love",
-            "relationship": 22590
-          }
-        ],
-        "1220": [
-          {
-            "key": 22590,
-            "topic": "unmarried"
+            "topic": "new relationship",
+            "key": 30697,
+            "people": [
+              10574,
+              30695
+            ],
+            "people names": [
+              "Lielde",
+              "Baua Rissewintsdochter"
+            ],
+            "people ages": [
+              27,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
-            "topic": "person died",
-            "person": {
-              "key": 11569,
-              "name": "Sylof Vincs",
-              "age": 52,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "cause": "old age",
-            "label": "spouse"
+            "topic": "feelings change",
+            "target": 10573,
+            "target name": "Rissewint",
+            "state": "infatuation",
+            "friendship label": "indifferent",
+            "relationship": 10575
           }
         ],
-        "1221": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1222": [
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.88
-          }
-        ],
-        "1223": [
-          {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.597
-          }
-        ],
-        "1225": [
+        "1209": [
           {
             "topic": "death",
-            "cause": "sickness"
+            "cause": "illness"
           }
         ]
       }
@@ -372,19 +331,23 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stBreestraat.se1.c2",
-      "street": "Breestraat",
-      "neighborhood": "olvbuurt",
-      "unique id": 553
+      "section": "stOp 't Speuy.se1.c2",
+      "street": "Op 't Speuy",
+      "neighborhood": "jorisbuurt",
+      "unique id": 200
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
-        10575,
-        16774,
-        22590
+        10575
       ]
-    }
+    },
+    "friends": [
+      18240,
+      21432,
+      30697
+    ],
+    "enemies": []
   }
 }

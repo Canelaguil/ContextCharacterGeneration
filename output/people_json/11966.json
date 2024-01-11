@@ -1,33 +1,35 @@
 {
   "11966": {
     "alive": false,
-    "name": "Ymmekine",
-    "surname": "Spiegel",
-    "full name": "Ymmekine Spiegel",
+    "name": "Siwa",
+    "surname": "Pluuier",
+    "full name": "Siwa Pluuier",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.045,
-      "romantic interest": 0.754,
-      "sex interest": 0.65,
-      "gender expression": 0.0,
+      "sexuality": 0.029,
+      "romantic interest": 0.646,
+      "sex interest": 0.472,
+      "gender expression": 0.107,
       "sex": "f"
     },
-    "age": 29,
-    "birth year": 1176,
+    "age": 26,
+    "birth year": 1182,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "Zealots",
     "income class": [
       3,
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.319,
-      "nice-nasty": 0.0,
-      "honest-false": 0.0
+      "lawful-chaotic": 0.123,
+      "nice-nasty": 0.737,
+      "honest-false": 0.999,
+      "dream": 0.442,
+      "outgoing": 0.597
     },
     "attitude": {
-      "outgoing": 0.022,
-      "dream": 0.558
+      "dream": 0.442,
+      "outgoing": 0.597
     },
     "homsoc": {
       "means": {
@@ -38,33 +40,55 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.029,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.017,
+        "gender expression expression": 0.1
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "14442": {
-          "key": 14442,
-          "name": "Bobone",
-          "age": 35,
+        "13627": {
+          "key": 13627,
+          "name": "Cofte",
+          "age": 45,
           "alive": false,
-          "sex": "m",
+          "sex": "f",
           "parents": {
-            "mother": "Ymmekine (11966)",
-            "father": "Clarebout (11965)"
+            "mother": "Siwa (11966)",
+            "father": "Pelegrim (11965)"
           }
         },
-        "15442": {
-          "key": 15442,
-          "name": "Alard Clareboutszoon",
-          "age": 16,
-          "alive": false,
-          "sex": "m",
+        "14609": {
+          "key": 14609,
+          "name": "Flore Pelegrimsdochter",
+          "age": 48,
+          "alive": true,
+          "sex": "f",
           "parents": {
-            "mother": "Ymmekine (11966)",
-            "father": "Clarebout (11965)"
+            "mother": "Siwa (11966)",
+            "father": "Pelegrim (11965)"
+          }
+        },
+        "22120": {
+          "key": 22120,
+          "name": "Moerseil",
+          "age": 45,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Siwa (11966)",
+            "father": "Pelegrim (11965)"
+          }
+        },
+        "26350": {
+          "key": 26350,
+          "name": "Scilla",
+          "age": 37,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Siwa (11966)",
+            "father": "Pelegrim (11965)"
           }
         }
       },
@@ -74,10 +98,16 @@
         ],
         "child": {
           "birth": [
-            14444,
-            15444
+            13629,
+            14611,
+            22122,
+            26352
           ]
-        }
+        },
+        "unrelated": [
+          14522,
+          16509
+        ]
       }
     },
     "occupation": {
@@ -90,16 +120,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 1,
+      "skin_color": 6,
       "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
         "C",
         "S"
       ],
-      "health": 0.704,
-      "fertility": 0.714,
+      "health": 0.69,
+      "fertility": 0.783,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -111,21 +141,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.704
+            "new_health": 0.69
           },
           "death": false
         },
-        "1204": {
+        "1207": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.704
+            "new_health": 0.69
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1182
+          },
           {
             "topic": "new relationship",
             "key": 11967,
@@ -134,77 +168,152 @@
               11966
             ],
             "people names": [
-              "Clarebout",
-              "Ymmekine Spiegel"
+              "Pelegrim",
+              "Siwa Pluuier"
             ],
             "people ages": [
-              35,
-              24
+              20,
+              18
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stDie lange straet3.se5.c3",
-              "street": "Die lange straet3",
-              "neighborhood": "visbuurt",
-              "unique id": 689
-            }
-          }
-        ],
-        "1201": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          },
-          {
             "topic": "new relationship",
-            "key": 14444,
+            "key": 13629,
             "people": [
               11966,
-              14442
+              13627
             ],
             "people names": [
-              "Ymmekine Spiegel",
-              "Bobone"
+              "Siwa Pluuier",
+              "Cofte"
             ],
             "people ages": [
-              26,
+              19,
               0
             ],
             "label": "parentchild",
             "committed": false
-          }
-        ],
-        "1203": [
+          },
+          {
+            "topic": "feelings change",
+            "target": 11965,
+            "target name": "Pelegrim",
+            "state": "out of love",
+            "friendship label": "indifferent",
+            "relationship": 11967
+          },
           {
             "topic": "new relationship",
-            "key": 15444,
+            "key": 14522,
             "people": [
               11966,
-              15442
+              10415
             ],
             "people names": [
-              "Ymmekine Spiegel",
-              "Alard Clareboutszoon"
+              "Siwa Pluuier",
+              "Suaneka"
             ],
             "people ages": [
-              27,
+              19,
+              22
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 14611,
+            "people": [
+              11966,
+              14609
+            ],
+            "people names": [
+              "Siwa Pluuier",
+              "Flore Pelegrimsdochter"
+            ],
+            "people ages": [
+              19,
               0
             ],
             "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "new relationship",
+            "key": 16509,
+            "people": [
+              11300,
+              11966
+            ],
+            "people names": [
+              "Hilduardis Dreet",
+              "Siwa Pluuier"
+            ],
+            "people ages": [
+              20,
+              20
+            ],
+            "label": "unrelated",
             "committed": false
           }
         ],
         "1204": [
           {
+            "topic": "new relationship",
+            "key": 22122,
+            "people": [
+              11966,
+              22120
+            ],
+            "people names": [
+              "Siwa Pluuier",
+              "Moerseil"
+            ],
+            "people ages": [
+              22,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1205": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "indifferent",
+            "relationship": 11967
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 26352,
+            "people": [
+              11966,
+              26350
+            ],
+            "people names": [
+              "Siwa Pluuier",
+              "Scilla"
+            ],
+            "people ages": [
+              25,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1207": [
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "childbirth"
           }
         ]
       }
@@ -213,17 +322,24 @@
     "home": {
       "income class": 3,
       "income class label": "upper middle class",
-      "section": "stDie lange straet3.se5.c3",
+      "section": "stDie lange straet3.se3.c3",
       "street": "Die lange straet3",
       "neighborhood": "visbuurt",
-      "unique id": 689
+      "unique id": 682
     },
     "relationship status": {
-      "taken": true,
+      "taken": false,
       "married": true,
       "relationships": [
         11967
       ]
-    }
+    },
+    "friends": [
+      14611,
+      22122,
+      14522,
+      16509
+    ],
+    "enemies": []
   }
 }

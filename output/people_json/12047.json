@@ -1,33 +1,35 @@
 {
   "12047": {
     "alive": false,
-    "name": "Hersewindis",
-    "surname": "Dicbier",
-    "full name": "Hersewindis Dicbier",
+    "name": "Jute",
+    "surname": "Bloeme",
+    "full name": "Jute Bloeme",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.005,
-      "romantic interest": 0.812,
-      "sex interest": 0.721,
-      "gender expression": 0.145,
+      "sexuality": 0.043,
+      "romantic interest": 0.5,
+      "sex interest": 0.633,
+      "gender expression": 0.0,
       "sex": "f"
     },
-    "age": 52,
-    "birth year": 1161,
+    "age": 41,
+    "birth year": 1166,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
-      2,
-      "middle class"
+      3,
+      "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.895,
-      "nice-nasty": 0.696,
-      "honest-false": 0.095
+      "lawful-chaotic": 0.66,
+      "nice-nasty": 0.263,
+      "honest-false": 0.7,
+      "dream": 0.436,
+      "outgoing": 0.432
     },
     "attitude": {
-      "outgoing": 0.544,
-      "dream": 0.4
+      "dream": 0.436,
+      "outgoing": 0.432
     },
     "homsoc": {
       "means": {
@@ -35,51 +37,83 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": [
-          "starving"
-        ]
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.003,
-        "gender expression expression": 0.108
+        "sexuality expression": 0.031,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "15826": {
+          "key": 15826,
+          "name": "Siburgis Scakart",
+          "age": 48,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Jute (12047)",
+            "father": "Geldmaro (12046)"
+          }
+        },
+        "23274": {
+          "key": 23274,
+          "name": "Clementia",
+          "age": 44,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Jute (12047)",
+            "father": "Geldmaro (12046)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           12048
+        ],
+        "child": {
+          "birth": [
+            15828,
+            23276
+          ]
+        },
+        "unrelated": [
+          16510
         ]
       }
     },
     "occupation": {
       "has job": true,
       "income class": [
-        2,
-        "middle class"
+        3,
+        "upper middle class"
       ],
-      "income": 0.86,
+      "income": 1.139,
       "all_incomes": [
-        0.844,
-        0.86
+        0.949,
+        1.025,
+        1.1580000000000001,
+        1.139
       ],
       "job": {
         "lawful": true,
-        "honest": false
+        "honest": true
       }
     },
     "genetics": {
-      "skin_color": 1,
+      "skin_color": 4,
       "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
-        "C",
+        "S",
         "C"
       ],
-      "health": 0.267,
-      "fertility": 0.718,
+      "health": 0.45,
+      "fertility": 0.696,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -91,29 +125,41 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.715
+            "new_health": 0.675
           },
           "death": false
         },
-        "1211": {
+        "1203": {
           "health": {
             "change": true,
-            "value_change": -0.201,
-            "new_health": 0.514
+            "value_change": -0.225,
+            "new_health": 0.45
           },
           "death": false
         },
-        "1212": {
+        "1204": {
           "health": {
-            "change": true,
-            "value_change": -0.247,
-            "new_health": 0.267
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.45
           },
           "death": false
+        },
+        "1206": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.45
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1166
+          },
           {
             "topic": "new relationship",
             "key": 12048,
@@ -122,131 +168,125 @@
               12047
             ],
             "people names": [
-              "Rampe",
-              "Hersewindis Dicbier"
+              "Geldmaro Scakart",
+              "Jute Bloeme"
             ],
             "people ages": [
-              47,
-              39
+              41,
+              34
             ],
             "label": "spouse",
             "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stDie lange straet3.se9.c2",
-              "street": "Die lange straet3",
-              "neighborhood": "visbuurt",
-              "unique id": 717
-            }
-          },
-          {
-            "topic": "feelings change",
-            "target": 12046,
-            "target name": "Rampe",
-            "state": "out of love",
-            "relationship": 12048
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "topic": "new relationship",
+            "key": 15828,
+            "people": [
+              12047,
+              15826
+            ],
+            "people names": [
+              "Jute Bloeme",
+              "Siburgis Scakart"
+            ],
+            "people ages": [
+              35,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 12046,
+            "target name": "Geldmaro Scakart",
+            "state": "out of love",
+            "friendship label": "friend",
+            "relationship": 12048
+          },
+          {
+            "topic": "new relationship",
+            "key": 16510,
+            "people": [
+              10387,
+              12047
+            ],
+            "people names": [
+              "Mattheus Rike",
+              "Jute Bloeme"
+            ],
+            "people ages": [
+              32,
+              36
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1203": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.949
+          }
+        ],
+        "1204": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.025
+          }
+        ],
+        "1205": [
+          {
+            "topic": "new relationship",
+            "key": 23276,
+            "people": [
+              12047,
+              23274
+            ],
+            "people names": [
+              "Jute Bloeme",
+              "Clementia"
+            ],
+            "people ages": [
+              39,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1206": [
           {
-            "topic": "feelings change",
-            "target": 12046,
-            "target name": "Rampe",
-            "state": "solid love",
-            "relationship": 12048
-          },
-          {
-            "key": 12048,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 12046,
-              "name": "Rampe",
-              "age": 54,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "cause": "sickness",
-            "label": "spouse"
-          }
-        ],
-        "1207": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1208": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1209": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1210": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1211": [
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.844
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1212": [
-          {
             "topic": "death",
-            "cause": "old age"
+            "cause": "childbirth"
           }
         ]
       }
     },
     "key": 12047,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stDie lange straet3.se9.c2",
+      "income class": 3,
+      "income class label": "upper middle class",
+      "section": "stDie lange straet3.se7.c3",
       "street": "Die lange straet3",
       "neighborhood": "visbuurt",
-      "unique id": 717
+      "unique id": 711
     },
     "relationship status": {
       "taken": false,
-      "married": false,
+      "married": true,
       "relationships": [
         12048
       ]
-    }
+    },
+    "friends": [
+      12048,
+      16510
+    ],
+    "enemies": []
   }
 }

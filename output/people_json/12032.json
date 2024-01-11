@@ -1,33 +1,35 @@
 {
   "12032": {
     "alive": false,
-    "name": "Emgelberna",
-    "surname": "Lancgeroch",
-    "full name": "Emgelberna Lancgeroch",
+    "name": "Agota",
+    "surname": "",
+    "full name": "Agota",
     "born this way": {
-      "sexuality label": "bi",
-      "sexuality": 0.558,
-      "romantic interest": 0.659,
-      "sex interest": 0.779,
-      "gender expression": 0.245,
+      "sexuality label": "straight",
+      "sexuality": 0.042,
+      "romantic interest": 0.658,
+      "sex interest": 0.476,
+      "gender expression": 0.165,
       "sex": "f"
     },
-    "age": 58,
-    "birth year": 1168,
+    "age": 28,
+    "birth year": 1181,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
       3,
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.425,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.264,
+      "nice-nasty": 0.719,
+      "honest-false": 0.367,
+      "dream": 0.549,
+      "outgoing": 0.723
     },
     "attitude": {
-      "outgoing": 0.573,
-      "dream": 0.363
+      "dream": 0.549,
+      "outgoing": 0.723
     },
     "homsoc": {
       "means": {
@@ -35,44 +37,102 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": [
-          "starving"
-        ]
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.323,
-        "gender expression expression": 0.094
+        "sexuality expression": 0.028,
+        "gender expression expression": 0.004
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "15663": {
+          "key": 15663,
+          "name": "Katerina Schelewart",
+          "age": 26,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Agota (12032)",
+            "father": "Wolbrand (12031)"
+          }
+        },
+        "19247": {
+          "key": 19247,
+          "name": "Folqui Schelewart",
+          "age": 20,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Agota (12032)",
+            "father": "Wolbrand (12031)"
+          }
+        },
+        "23023": {
+          "key": 23023,
+          "name": "Frethericus Schelewart",
+          "age": 15,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Agota (12032)",
+            "father": "Wolbrand (12031)"
+          }
+        },
+        "28524": {
+          "key": 28524,
+          "name": "Heile Schelewart",
+          "age": 1,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Agota (12032)",
+            "father": "Wolbrand (12031)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           12033
-        ]
+        ],
+        "child": {
+          "birth": [
+            15665,
+            19249,
+            23025,
+            28526
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         3,
         "upper middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.004,
+      "all_incomes": [
+        0.845,
+        1.004
+      ],
+      "job": {
+        "lawful": false,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 4,
-      "eye_color": "brown",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "skin_color": 5,
+      "eye_color": "green",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "C",
-        "S"
+        "S",
+        "C"
       ],
-      "health": 0.016,
-      "fertility": 0.842,
+      "health": 0.729,
+      "fertility": 0.756,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -84,45 +144,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.851
+            "new_health": 0.729
           },
           "death": false
         },
-        "1222": {
+        "1208": {
           "health": {
-            "change": true,
-            "value_change": -0.117,
-            "new_health": 0.734
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.729
           },
-          "death": false
-        },
-        "1223": {
-          "health": {
-            "change": true,
-            "value_change": -0.195,
-            "new_health": 0.539
-          },
-          "death": false
-        },
-        "1224": {
-          "health": {
-            "change": true,
-            "value_change": -0.462,
-            "new_health": 0.077
-          },
-          "death": false
-        },
-        "1225": {
-          "health": {
-            "change": true,
-            "value_change": -0.061,
-            "new_health": 0.016
-          },
-          "death": false
+          "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1181
+          },
           {
             "topic": "new relationship",
             "key": 12033,
@@ -131,118 +171,119 @@
               12032
             ],
             "people names": [
-              "Jiusippus Fierenblayse",
-              "Emgelberna Lancgeroch"
+              "Wolbrand Schelewart",
+              "Agota"
             ],
             "people ages": [
-              34,
-              32
+              26,
+              19
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stDie lange straet3.se7.c3",
-              "street": "Die lange straet3",
-              "neighborhood": "visbuurt",
-              "unique id": 712
-            }
-          },
-          {
             "topic": "feelings change",
             "target": 12031,
-            "target name": "Jiusippus Fierenblayse",
+            "target name": "Wolbrand Schelewart",
             "state": "out of love",
+            "friendship label": "friend",
             "relationship": 12033
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "topic": "new relationship",
+            "key": 15665,
+            "people": [
+              12032,
+              15663
+            ],
+            "people names": [
+              "Agota",
+              "Katerina Schelewart"
+            ],
+            "people ages": [
+              21,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1206": [
+        "1203": [
           {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "spouse",
-            "friendship label": "indifferent",
-            "relationship": 12033
-          },
+            "topic": "new relationship",
+            "key": 19249,
+            "people": [
+              12032,
+              19247
+            ],
+            "people names": [
+              "Agota",
+              "Folqui Schelewart"
+            ],
+            "people ages": [
+              23,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1205": [
           {
-            "topic": "feelings change",
-            "target": 12031,
-            "target name": "Jiusippus Fierenblayse",
-            "state": "infatuation",
-            "relationship": 12033
+            "topic": "new relationship",
+            "key": 23025,
+            "people": [
+              12032,
+              23023
+            ],
+            "people names": [
+              "Agota",
+              "Frethericus Schelewart"
+            ],
+            "people ages": [
+              24,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1207": [
           {
-            "topic": "feelings change",
-            "target": 12031,
-            "target name": "Jiusippus Fierenblayse",
-            "state": "out of love",
-            "relationship": 12033
-          }
-        ],
-        "1215": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1215
-          }
-        ],
-        "1221": [
-          {
-            "key": 12033,
-            "topic": "unmarried"
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.845
           },
           {
-            "topic": "person died",
-            "person": {
-              "key": 12031,
-              "name": "Jiusippus Fierenblayse",
-              "age": 56,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "cause": "sickness",
-            "label": "spouse"
+            "topic": "new relationship",
+            "key": 28526,
+            "people": [
+              12032,
+              28524
+            ],
+            "people names": [
+              "Agota",
+              "Heile Schelewart"
+            ],
+            "people ages": [
+              26,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1222": [
+        "1208": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1223": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1224": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1225": [
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.004
+          },
           {
             "topic": "death",
-            "cause": "old age"
+            "cause": "childbirth"
           }
         ]
       }
@@ -254,14 +295,20 @@
       "section": "stDie lange straet3.se7.c3",
       "street": "Die lange straet3",
       "neighborhood": "visbuurt",
-      "unique id": 712
+      "unique id": 706
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
         12033
       ]
-    }
+    },
+    "friends": [
+      12033,
+      19249,
+      28526
+    ],
+    "enemies": []
   }
 }

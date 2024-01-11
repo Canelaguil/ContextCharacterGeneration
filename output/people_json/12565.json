@@ -1,19 +1,19 @@
 {
   "12565": {
     "alive": false,
-    "name": "Vais",
-    "surname": "Reigher",
-    "full name": "Vais Reigher",
+    "name": "Rissewint",
+    "surname": "Huntekin",
+    "full name": "Rissewint Huntekin",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.009,
-      "romantic interest": 0.501,
-      "sex interest": 0.667,
-      "gender expression": 0.025,
+      "sexuality": 0.047,
+      "romantic interest": 0.67,
+      "sex interest": 0.652,
+      "gender expression": 0.252,
       "sex": "m"
     },
-    "age": 53,
-    "birth year": 1153,
+    "age": 57,
+    "birth year": 1155,
     "sex": "m",
     "faction": "Dogmatists",
     "income class": [
@@ -21,13 +21,15 @@
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.202,
-      "nice-nasty": 0.748,
-      "honest-false": 0.403
+      "lawful-chaotic": 0.515,
+      "nice-nasty": 0.843,
+      "honest-false": 0.64,
+      "dream": 0.401,
+      "outgoing": 0.259
     },
     "attitude": {
-      "outgoing": 0.709,
-      "dream": 0.002
+      "dream": 0.401,
+      "outgoing": 0.259
     },
     "homsoc": {
       "means": {
@@ -38,17 +40,37 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.005,
-        "gender expression expression": 0.0
+        "sexuality expression": 0.017,
+        "gender expression expression": 0.201
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "22724": {
+          "key": 22724,
+          "name": "Ghodscalc Huntekin",
+          "age": 45,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Siwa (12566)",
+            "father": "Rissewint (12565)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           12567
-        ]
+        ],
+        "unrelated": [
+          18536
+        ],
+        "child": {
+          "birth": [
+            22725
+          ]
+        }
       }
     },
     "occupation": {
@@ -57,32 +79,38 @@
         2,
         "middle class"
       ],
-      "income": 1.524,
+      "income": 1.399,
       "all_incomes": [
-        1.097,
-        1.017,
-        1.1969999999999998,
-        1.4789999999999999,
-        1.317,
-        1.347,
-        1.524
+        1.055,
+        1.0879999999999999,
+        1.126,
+        1.2229999999999999,
+        1.315,
+        1.327,
+        1.319,
+        1.3519999999999999,
+        1.389,
+        1.3639999999999999,
+        1.4569999999999999,
+        1.4469999999999998,
+        1.399
       ],
       "job": {
-        "lawful": false,
+        "lawful": true,
         "honest": true
       }
     },
     "genetics": {
-      "skin_color": 0,
+      "skin_color": 5,
       "eye_color": "brown",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "C",
         "C"
       ],
       "health": 0.0,
-      "fertility": 0.712,
+      "fertility": 0.89,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -94,30 +122,46 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.681
+            "new_health": 0.797
           },
           "death": false
         },
-        "1203": {
+        "1207": {
           "health": {
             "change": true,
-            "value_change": -0.19,
-            "new_health": 0.491
+            "value_change": -0.164,
+            "new_health": 0.633
           },
           "death": false
         },
-        "1204": {
+        "1208": {
           "health": {
             "change": true,
-            "value_change": -0.273,
-            "new_health": 0.218
+            "value_change": -0.255,
+            "new_health": 0.378
           },
           "death": false
         },
-        "1205": {
+        "1209": {
           "health": {
             "change": true,
-            "value_change": -0.218,
+            "value_change": -0.191,
+            "new_health": 0.187
+          },
+          "death": false
+        },
+        "1210": {
+          "health": {
+            "change": true,
+            "value_change": -0.132,
+            "new_health": 0.055
+          },
+          "death": false
+        },
+        "1211": {
+          "health": {
+            "change": true,
+            "value_change": -0.055,
             "new_health": 0.0
           },
           "death": true
@@ -126,9 +170,13 @@
       "events": {
         "1200": [
           {
+            "topic": "birth",
+            "year": 1155
+          },
+          {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.097
+            "income": 1.055
           },
           {
             "topic": "new relationship",
@@ -138,54 +186,82 @@
               12566
             ],
             "people names": [
-              "Vais Reigher",
-              "Leanne"
+              "Rissewint Huntekin",
+              "Siwa Pauwe"
             ],
             "people ages": [
-              47,
-              34
+              45,
+              36
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stCromme straet.se5.c2",
-              "street": "Cromme straet",
-              "neighborhood": "denhof",
-              "unique id": 899
-            }
-          }
-        ],
-        "1201": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          }
-        ],
-        "1202": [
-          {
             "topic": "feelings change",
             "target": 12566,
-            "target name": "Leanne",
+            "target name": "Siwa Pauwe",
             "state": "out of love",
-            "relationship": 12567
-          }
-        ],
-        "1204": [
-          {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "spouse",
             "friendship label": "friend",
             "relationship": 12567
           }
         ],
-        "1205": [
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 18536,
+            "people": [
+              10132,
+              12565
+            ],
+            "people names": [
+              "Geraldus Criec",
+              "Rissewint Huntekin"
+            ],
+            "people ages": [
+              38,
+              48
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 22725,
+            "people": [
+              12565,
+              22724
+            ],
+            "people names": [
+              "Rissewint Huntekin",
+              "Ghodscalc Huntekin"
+            ],
+            "people ages": [
+              50,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1206": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "indifferent",
+            "relationship": 12567
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "friend",
+            "relationship": 18536
+          }
+        ],
+        "1211": [
           {
             "topic": "death",
             "cause": "sickness"
@@ -200,14 +276,19 @@
       "section": "stCromme straet.se5.c2",
       "street": "Cromme straet",
       "neighborhood": "denhof",
-      "unique id": 899
+      "unique id": 898
     },
     "relationship status": {
-      "taken": true,
+      "taken": false,
       "married": true,
       "relationships": [
         12567
       ]
-    }
+    },
+    "friends": [
+      18536,
+      22725
+    ],
+    "enemies": []
   }
 }

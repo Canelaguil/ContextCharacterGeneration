@@ -1,33 +1,35 @@
 {
   "11108": {
     "alive": false,
-    "name": "Agnes",
-    "surname": "Snauel",
-    "full name": "Agnes Snauel",
+    "name": "Natelien",
+    "surname": "Barvoet",
+    "full name": "Natelien Barvoet",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.062,
-      "romantic interest": 0.841,
-      "sex interest": 0.844,
-      "gender expression": 0.0,
+      "sexuality": 0.034,
+      "romantic interest": 0.771,
+      "sex interest": 0.736,
+      "gender expression": 0.075,
       "sex": "f"
     },
-    "age": 19,
-    "birth year": 1183,
+    "age": 35,
+    "birth year": 1181,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.725,
-      "nice-nasty": 0.57,
-      "honest-false": 0.874
+      "lawful-chaotic": 0.173,
+      "nice-nasty": 0.261,
+      "honest-false": 0.606,
+      "dream": 0.329,
+      "outgoing": 0.7
     },
     "attitude": {
-      "outgoing": 0.592,
-      "dream": 0.058
+      "dream": 0.329,
+      "outgoing": 0.7
     },
     "homsoc": {
       "means": {
@@ -35,25 +37,71 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.029,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.018,
+        "gender expression expression": 0.026
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "13021": {
-          "key": 13021,
-          "name": "Gertrudis Tuc",
-          "age": 53,
+        "13585": {
+          "key": 13585,
+          "name": "Gheuardus Broem",
+          "age": 14,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Natelien (11108)",
+            "father": "Brandekijn (11107)"
+          }
+        },
+        "14935": {
+          "key": 14935,
+          "name": "Sara Broem",
+          "age": 9,
           "alive": false,
           "sex": "f",
           "parents": {
-            "mother": "Agnes (11108)",
-            "father": "Martin (11107)"
+            "mother": "Natelien (11108)",
+            "father": "Brandekijn (11107)"
+          }
+        },
+        "17970": {
+          "key": 17970,
+          "name": "Ramont Broem",
+          "age": 13,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Natelien (11108)",
+            "father": "Brandekijn (11107)"
+          }
+        },
+        "19456": {
+          "key": 19456,
+          "name": "Sara Broem",
+          "age": 32,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Natelien (11108)",
+            "father": "Brandekijn (11107)"
+          }
+        },
+        "20798": {
+          "key": 20798,
+          "name": "Heillam Broem",
+          "age": 1,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Natelien (11108)",
+            "father": "Brandekijn (11107)"
           }
         }
       },
@@ -63,9 +111,16 @@
         ],
         "child": {
           "birth": [
-            13023
+            13587,
+            14937,
+            17972,
+            19458,
+            20800
           ]
-        }
+        },
+        "unrelated": [
+          16546
+        ]
       }
     },
     "occupation": {
@@ -78,16 +133,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 4,
-      "eye_color": "brown",
+      "skin_color": 9,
+      "eye_color": "blue",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
-        "S",
-        "C"
+        "C",
+        "S"
       ],
-      "health": 0.681,
-      "fertility": 0.685,
+      "health": 0.712,
+      "fertility": 0.782,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -99,13 +154,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.681
+            "new_health": 0.712
           },
           "death": false
+        },
+        "1215": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.712
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1181
+          },
           {
             "topic": "new relationship",
             "key": 11109,
@@ -114,40 +181,29 @@
               11108
             ],
             "people names": [
-              "Martin Tuc",
-              "Agnes Snauel"
+              "Brandekijn Broem",
+              "Natelien Barvoet"
             ],
             "people ages": [
-              28,
-              17
+              24,
+              19
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stDie Camp.se5.c2",
-              "street": "Die Camp",
-              "neighborhood": "kampbuurt",
-              "unique id": 390
-            }
-          },
-          {
             "topic": "new relationship",
-            "key": 13023,
+            "key": 13587,
             "people": [
               11108,
-              13021
+              13585
             ],
             "people names": [
-              "Agnes Snauel",
-              "Gertrudis Tuc"
+              "Natelien Barvoet",
+              "Gheuardus Broem"
             ],
             "people ages": [
-              18,
+              19,
               0
             ],
             "label": "parentchild",
@@ -156,13 +212,294 @@
         ],
         "1201": [
           {
+            "topic": "new relationship",
+            "key": 14937,
+            "people": [
+              11108,
+              14935
+            ],
+            "people names": [
+              "Natelien Barvoet",
+              "Sara Broem"
+            ],
+            "people ages": [
+              20,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "new relationship",
+            "key": 16546,
+            "people": [
+              12845,
+              11108
+            ],
+            "people names": [
+              "Margareta Calvus",
+              "Natelien Barvoet"
+            ],
+            "people ages": [
+              23,
+              21
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1202": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "indifferent",
+            "relationship": 16546
+          },
+          {
+            "topic": "new relationship",
+            "key": 17972,
+            "people": [
+              11108,
+              17970
+            ],
+            "people names": [
+              "Natelien Barvoet",
+              "Ramont Broem"
+            ],
+            "people ages": [
+              21,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.438,
+            "inhabitants": []
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 19458,
+            "people": [
+              11108,
+              19456
+            ],
+            "people names": [
+              "Natelien Barvoet",
+              "Sara Broem"
+            ],
+            "people ages": [
+              22,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 14937
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.378,
+            "inhabitants": []
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 20800,
+            "people": [
+              11108,
+              20798
+            ],
+            "people names": [
+              "Natelien Barvoet",
+              "Heillam Broem"
+            ],
+            "people ages": [
+              23,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "key": 11109,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11107,
+              "name": "Brandekijn Broem",
+              "age": 29,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "starvation",
+            "friendship label": "friend",
+            "label": "spouse",
+            "love state": "solid love"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.31,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "disliked",
+            "relationship": 16546
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 20798,
+              "name": "Heillam Broem",
+              "age": 1,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Natelien (11108)",
+                "father": "Brandekijn (11107)"
+              }
+            },
+            "cause": "starvation",
+            "friendship label": "indifferent",
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 14935,
+              "name": "Sara Broem",
+              "age": 9,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Natelien (11108)",
+                "father": "Brandekijn (11107)"
+              }
+            },
+            "cause": "starvation",
+            "friendship label": "indifferent",
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "indifferent",
+            "relationship": 16546
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1214": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 13585,
+              "name": "Gheuardus Broem",
+              "age": 14,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Natelien (11108)",
+                "father": "Brandekijn (11107)"
+              }
+            },
+            "cause": "starvation",
+            "friendship label": "friend",
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1215": [
+          {
             "topic": "event",
             "event": "plague",
-            "year": 1201
+            "year": 1215
           },
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "starvation"
           }
         ]
       }
@@ -171,17 +508,23 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stDie Camp.se5.c2",
+      "section": "stDie Camp.se3.c2",
       "street": "Die Camp",
       "neighborhood": "kampbuurt",
-      "unique id": 390
+      "unique id": 383
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         11109
       ]
-    }
+    },
+    "friends": [
+      11109,
+      13587,
+      17972
+    ],
+    "enemies": []
   }
 }

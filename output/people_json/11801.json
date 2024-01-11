@@ -1,33 +1,35 @@
 {
   "11801": {
     "alive": false,
-    "name": "Vreile",
-    "surname": "Buk",
-    "full name": "Vreile Buk",
+    "name": "Yda",
+    "surname": "",
+    "full name": "Yda",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.025,
-      "romantic interest": 0.745,
-      "sex interest": 0.544,
-      "gender expression": 0.112,
+      "sexuality": 0.09,
+      "romantic interest": 0.572,
+      "sex interest": 0.869,
+      "gender expression": 0.036,
       "sex": "f"
     },
-    "age": 44,
-    "birth year": 1172,
+    "age": 24,
+    "birth year": 1180,
     "sex": "f",
     "faction": "Dogmatists",
     "income class": [
-      2,
-      "middle class"
+      3,
+      "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.228,
-      "nice-nasty": 0.225,
-      "honest-false": 0.628
+      "lawful-chaotic": 0.602,
+      "nice-nasty": 0.768,
+      "honest-false": 0.834,
+      "dream": 0.302,
+      "outgoing": 0.551
     },
     "attitude": {
-      "outgoing": 0.584,
-      "dream": 0.515
+      "dream": 0.302,
+      "outgoing": 0.551
     },
     "homsoc": {
       "means": {
@@ -38,57 +40,56 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.013,
-        "gender expression expression": 0.023
+        "sexuality expression": 0.076,
+        "gender expression expression": 0.026
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "17124": {
-          "key": 17124,
-          "name": "Rutgerus Alemszoon",
-          "age": 27,
+        "13027": {
+          "key": 13027,
+          "name": "Rembrecht",
+          "age": 12,
           "alive": false,
           "sex": "m",
           "parents": {
-            "mother": "Vreile (11801)",
-            "father": "Alem (11800)"
+            "mother": "Yda (11801)",
+            "father": "Ringot (11800)"
           }
         },
-        "17697": {
-          "key": 17697,
-          "name": "Cofte Alemsdochter",
-          "age": 45,
+        "14793": {
+          "key": 14793,
+          "name": "Clementia",
+          "age": 11,
           "alive": false,
           "sex": "f",
           "parents": {
-            "mother": "Vreile (11801)",
-            "father": "Alem (11800)"
+            "mother": "Yda (11801)",
+            "father": "Ringot (11800)"
           }
         },
-        "19930": {
-          "key": 19930,
-          "name": "Pietersen van Arnst",
-          "age": 1,
+        "17998": {
+          "key": 17998,
+          "name": "Gheesen",
+          "age": 30,
           "alive": false,
           "sex": "f",
           "parents": {
-            "mother": "Vreile (11801)",
-            "father": "Arnst (10564)"
+            "mother": "Yda (11801)",
+            "father": "Ringot (11800)"
           }
         }
       },
       "relationship keys": {
         "spouse": [
-          11802,
-          18890
+          11802
         ],
         "child": {
           "birth": [
-            17126,
-            17699,
-            19932
+            13029,
+            14795,
+            18000
           ]
         }
       }
@@ -96,23 +97,23 @@
     "occupation": {
       "has job": false,
       "income class": [
-        2,
-        "middle class"
+        3,
+        "upper middle class"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 8,
-      "eye_color": "green",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 3,
+      "eye_color": "blue",
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
         "C",
-        "S"
+        "C"
       ],
-      "health": 0.732,
-      "fertility": 0.771,
+      "health": 0.774,
+      "fertility": 0.752,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -124,13 +125,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.732
+            "new_health": 0.774
           },
           "death": false
+        },
+        "1203": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.774
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1180
+          },
           {
             "topic": "new relationship",
             "key": 11802,
@@ -139,190 +152,111 @@
               11801
             ],
             "people names": [
-              "Alem",
-              "Vreile Buk"
+              "Ringot",
+              "Yda"
             ],
             "people ages": [
-              46,
-              28
+              29,
+              20
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stScherbier straet.se1.c2",
-              "street": "Scherbier straet",
-              "neighborhood": "cingelzuid",
-              "unique id": 632
-            }
+            "topic": "new relationship",
+            "key": 13029,
+            "people": [
+              11801,
+              13027
+            ],
+            "people names": [
+              "Yda",
+              "Rembrecht"
+            ],
+            "people ages": [
+              20,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          }
-        ],
-        "1205": [
-          {
             "topic": "new relationship",
-            "key": 17126,
+            "key": 14795,
             "people": [
               11801,
-              17124
+              14793
             ],
             "people names": [
-              "Vreile Buk",
-              "Rutgerus Alemszoon"
+              "Yda",
+              "Clementia"
             ],
             "people ages": [
-              34,
+              21,
               0
             ],
             "label": "parentchild",
             "committed": false
           }
         ],
-        "1206": [
+        "1202": [
           {
             "topic": "new relationship",
-            "key": 17699,
+            "key": 18000,
             "people": [
               11801,
-              17697
+              17998
             ],
             "people names": [
-              "Vreile Buk",
-              "Cofte Alemsdochter"
+              "Yda",
+              "Gheesen"
             ],
             "people ages": [
-              35,
+              23,
               0
             ],
             "label": "parentchild",
             "committed": false
           },
           {
-            "key": 11802,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 11800,
-              "name": "Alem",
-              "age": 53,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "cause": "sickness",
-            "label": "spouse"
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "disliked",
+            "relationship": 13029
           }
         ],
-        "1207": [
-          {
-            "topic": "new relationship",
-            "key": 18890,
-            "people": [
-              10564,
-              11801
-            ],
-            "people names": [
-              "Arnst",
-              "Vreile Buk"
-            ],
-            "people ages": [
-              30,
-              36
-            ],
-            "label": "spouse",
-            "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stOp 't Speuy.se1.c2",
-              "street": "Op 't Speuy",
-              "neighborhood": "jorisbuurt",
-              "unique id": 199
-            }
-          }
-        ],
-        "1209": [
-          {
-            "topic": "new relationship",
-            "key": 19932,
-            "people": [
-              11801,
-              19930
-            ],
-            "people names": [
-              "Vreile Buk",
-              "Pietersen van Arnst"
-            ],
-            "people ages": [
-              38,
-              0
-            ],
-            "label": "parentchild",
-            "committed": false
-          }
-        ],
-        "1210": [
-          {
-            "topic": "person died",
-            "person": {
-              "key": 19930,
-              "name": "Pietersen van Arnst",
-              "age": 1,
-              "alive": false,
-              "sex": "f",
-              "parents": {
-                "mother": "Vreile (11801)",
-                "father": "Arnst (10564)"
-              }
-            },
-            "cause": "childhood illness",
-            "label": "child"
-          }
-        ],
-        "1215": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1215
-          },
+        "1203": [
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "childbirth"
           }
         ]
       }
     },
     "key": 11801,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stOp 't Speuy.se1.c2",
-      "street": "Op 't Speuy",
-      "neighborhood": "jorisbuurt",
-      "unique id": 199
+      "income class": 3,
+      "income class label": "upper middle class",
+      "section": "stDie lange straet2.se1.c3",
+      "street": "Die lange straet2",
+      "neighborhood": "cingelzuid",
+      "unique id": 622
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        11802,
-        18890
+        11802
       ]
-    }
+    },
+    "friends": [
+      11802
+    ],
+    "enemies": [
+      13029
+    ]
   }
 }

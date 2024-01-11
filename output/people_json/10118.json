@@ -1,33 +1,35 @@
 {
   "10118": {
     "alive": false,
-    "name": "Berta",
-    "surname": "Roden",
-    "full name": "Berta Roden",
+    "name": "Gloria",
+    "surname": "Dronkine",
+    "full name": "Gloria Dronkine",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.107,
-      "romantic interest": 0.873,
-      "sex interest": 0.816,
-      "gender expression": 0.18,
+      "sexuality": 0.039,
+      "romantic interest": 0.765,
+      "sex interest": 0.814,
+      "gender expression": 0.056,
       "sex": "f"
     },
-    "age": 31,
-    "birth year": 1183,
+    "age": 30,
+    "birth year": 1177,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.635,
-      "nice-nasty": 0.999,
-      "honest-false": 0.761
+      "lawful-chaotic": 0.336,
+      "nice-nasty": 0.53,
+      "honest-false": 0.43,
+      "dream": 0.584,
+      "outgoing": 0.547
     },
     "attitude": {
-      "outgoing": 0.323,
-      "dream": 0.183
+      "dream": 0.584,
+      "outgoing": 0.547
     },
     "homsoc": {
       "means": {
@@ -35,38 +37,47 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": [
-          "starving"
-        ]
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.066,
-        "gender expression expression": 0.023
+        "sexuality expression": 0.021,
+        "gender expression expression": 0.042
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "13102": {
-          "key": 13102,
-          "name": "Wolfraem van Cats",
-          "age": 56,
+        "13117": {
+          "key": 13117,
+          "name": "Mabelie Scenkel",
+          "age": 40,
           "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Gloria (10118)",
+            "father": "Cees (10117)"
+          }
+        },
+        "21037": {
+          "key": 21037,
+          "name": "Segher Scenkel",
+          "age": 45,
+          "alive": true,
           "sex": "m",
           "parents": {
-            "mother": "Berta (10118)",
-            "father": "Cats (10117)"
+            "mother": "Gloria (10118)",
+            "father": "Cees (10117)"
           }
         }
       },
       "relationship keys": {
         "spouse": [
-          10119,
-          16767
+          10119
         ],
         "child": {
           "birth": [
-            13104
+            13119,
+            21039
           ]
         }
       }
@@ -81,16 +92,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 4,
-      "eye_color": "brown",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "skin_color": 8,
+      "eye_color": "blue",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "S",
+        "C",
         "C"
       ],
-      "health": 0.814,
-      "fertility": 0.828,
+      "health": 0.649,
+      "fertility": 0.626,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -102,13 +113,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.814
+            "new_health": 0.649
           },
           "death": false
+        },
+        "1206": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.649
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1177
+          },
           {
             "topic": "new relationship",
             "key": 10119,
@@ -117,522 +140,73 @@
               10118
             ],
             "people names": [
-              "Cats",
-              "Berta Roden"
+              "Cees Scenkel",
+              "Gloria Dronkine"
             ],
             "people ages": [
-              44,
-              17
+              31,
+              23
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stSlyck straet.se1.c1",
-              "street": "Slyck straet",
-              "neighborhood": "varkensbuurt",
-              "unique id": 40
-            }
-          },
-          {
             "topic": "new relationship",
-            "key": 13104,
+            "key": 13119,
             "people": [
               10118,
-              13102
+              13117
             ],
             "people names": [
-              "Berta Roden",
-              "Wolfraem van Cats"
+              "Gloria Dronkine",
+              "Mabelie Scenkel"
             ],
             "people ages": [
-              18,
+              24,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 10117,
+            "target name": "Cees Scenkel",
+            "state": "solid love",
+            "friendship label": "friend",
+            "relationship": 10119
+          }
+        ],
+        "1202": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "friend",
+            "relationship": 10119
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 21039,
+            "people": [
+              10118,
+              21037
+            ],
+            "people names": [
+              "Gloria Dronkine",
+              "Segher Scenkel"
+            ],
+            "people ages": [
+              27,
               0
             ],
             "label": "parentchild",
             "committed": false
           }
         ],
-        "1201": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          },
-          {
-            "key": 10119,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 10117,
-              "name": "Cats",
-              "age": 46,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "cause": "illness",
-            "label": "spouse"
-          }
-        ],
-        "1202": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1203": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1204": [
-          {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "parentchild",
-            "friendship label": "indifferent",
-            "relationship": 13104
-          },
-          {
-            "topic": "new relationship",
-            "key": 16767,
-            "people": [
-              10357,
-              10118
-            ],
-            "people names": [
-              "Radulphus",
-              "Berta Roden"
-            ],
-            "people ages": [
-              29,
-              22
-            ],
-            "label": "spouse",
-            "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stHelle voet.se9.c1",
-              "street": "Helle voet",
-              "neighborhood": "jorisbuurt",
-              "unique id": 129
-            }
-          }
-        ],
-        "1205": [
-          {
-            "topic": "not enough income",
-            "income": 0.412,
-            "inhabitants": [
-              38073,
-              38824,
-              40811,
-              42992,
-              43271,
-              28772,
-              30943,
-              47602,
-              36053,
-              53281,
-              47765,
-              54523,
-              61957,
-              63724,
-              66624,
-              67003,
-              39085,
-              68221,
-              68403,
-              68413,
-              68487,
-              35816,
-              69723,
-              69862,
-              70028,
-              70035,
-              71575,
-              49115,
-              75967,
-              77539,
-              78096,
-              78103,
-              79224,
-              79430,
-              79781,
-              53254,
-              81219,
-              82345,
-              82661,
-              83609,
-              83672,
-              83758,
-              84217,
-              85810,
-              86039,
-              86231,
-              87681,
-              63585
-            ]
-          }
-        ],
         "1206": [
-          {
-            "topic": "not enough income",
-            "income": 0.099,
-            "inhabitants": [
-              38073,
-              38824,
-              40811,
-              42992,
-              43271,
-              28772,
-              30943,
-              47602,
-              36053,
-              53281,
-              47765,
-              54523,
-              61957,
-              63724,
-              66624,
-              67003,
-              39085,
-              68221,
-              68403,
-              68413,
-              68487,
-              35816,
-              69723,
-              69862,
-              70028,
-              70035,
-              71575,
-              49115,
-              75967,
-              77539,
-              78096,
-              78103,
-              79224,
-              79430,
-              79781,
-              53254,
-              81219,
-              82345,
-              82661,
-              83609,
-              83672,
-              83758,
-              84217,
-              85810,
-              86039,
-              86231,
-              87681,
-              63585
-            ]
-          }
-        ],
-        "1207": [
-          {
-            "topic": "not enough income",
-            "income": 0.148,
-            "inhabitants": [
-              38073,
-              38824,
-              40811,
-              42992,
-              43271,
-              28772,
-              30943,
-              47602,
-              36053,
-              53281,
-              47765,
-              54523,
-              61957,
-              63724,
-              66624,
-              67003,
-              39085,
-              68221,
-              68403,
-              68413,
-              68487,
-              35816,
-              69723,
-              69862,
-              70028,
-              70035,
-              71575,
-              49115,
-              75967,
-              77539,
-              78096,
-              78103,
-              79224,
-              79430,
-              79781,
-              53254,
-              81219,
-              82345,
-              82661,
-              83609,
-              83672,
-              83758,
-              84217,
-              85810,
-              86039,
-              86231,
-              87681,
-              63585
-            ]
-          }
-        ],
-        "1208": [
-          {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": [
-              38073,
-              38824,
-              40811,
-              42992,
-              43271,
-              28772,
-              30943,
-              47602,
-              36053,
-              53281,
-              47765,
-              54523,
-              61957,
-              63724,
-              66624,
-              67003,
-              39085,
-              68221,
-              68403,
-              68413,
-              68487,
-              35816,
-              69723,
-              69862,
-              70028,
-              70035,
-              71575,
-              49115,
-              75967,
-              77539,
-              78096,
-              78103,
-              79224,
-              79430,
-              79781,
-              53254,
-              81219,
-              82345,
-              82661,
-              83609,
-              83672,
-              83758,
-              84217,
-              85810,
-              86039,
-              86231,
-              87681,
-              63585
-            ]
-          }
-        ],
-        "1209": [
-          {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": [
-              38073,
-              38824,
-              40811,
-              42992,
-              43271,
-              28772,
-              30943,
-              47602,
-              36053,
-              53281,
-              47765,
-              54523,
-              61957,
-              63724,
-              66624,
-              67003,
-              39085,
-              68221,
-              68403,
-              68413,
-              68487,
-              35816,
-              69723,
-              69862,
-              70028,
-              70035,
-              71575,
-              49115,
-              75967,
-              77539,
-              78096,
-              78103,
-              79224,
-              79430,
-              79781,
-              53254,
-              81219,
-              82345,
-              82661,
-              83609,
-              83672,
-              83758,
-              84217,
-              85810,
-              86039,
-              86231,
-              87681,
-              63585
-            ]
-          }
-        ],
-        "1211": [
-          {
-            "topic": "not enough income",
-            "income": 0.182,
-            "inhabitants": [
-              38073,
-              38824,
-              40811,
-              42992,
-              43271,
-              28772,
-              30943,
-              47602,
-              36053,
-              53281,
-              47765,
-              54523,
-              61957,
-              63724,
-              66624,
-              67003,
-              39085,
-              68221,
-              68403,
-              68413,
-              68487,
-              35816,
-              69723,
-              69862,
-              70028,
-              70035,
-              71575,
-              49115,
-              75967,
-              77539,
-              78096,
-              78103,
-              79224,
-              79430,
-              79781,
-              53254,
-              81219,
-              82345,
-              82661,
-              83609,
-              83672,
-              83758,
-              84217,
-              85810,
-              86039,
-              86231,
-              87681,
-              63585
-            ]
-          }
-        ],
-        "1212": [
-          {
-            "topic": "feelings change",
-            "target": 10357,
-            "target name": "Radulphus",
-            "state": "infatuation",
-            "relationship": 16767
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": [
-              38073,
-              38824,
-              40811,
-              42992,
-              43271,
-              28772,
-              30943,
-              47602,
-              36053,
-              53281,
-              47765,
-              54523,
-              61957,
-              63724,
-              66624,
-              67003,
-              39085,
-              68221,
-              68403,
-              68413,
-              68487,
-              35816,
-              69723,
-              69862,
-              70028,
-              70035,
-              71575,
-              49115,
-              75967,
-              77539,
-              78096,
-              78103,
-              79224,
-              79430,
-              79781,
-              53254,
-              81219,
-              82345,
-              82661,
-              83609,
-              83672,
-              83758,
-              84217,
-              85810,
-              86039,
-              86231,
-              87681,
-              63585
-            ]
-          }
-        ],
-        "1213": [
           {
             "topic": "death",
             "cause": "illness"
@@ -644,18 +218,21 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stHelle voet.se9.c1",
-      "street": "Helle voet",
-      "neighborhood": "jorisbuurt",
-      "unique id": 129
+      "section": "stSlyck straet.se1.c1",
+      "street": "Slyck straet",
+      "neighborhood": "varkensbuurt",
+      "unique id": 41
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        10119,
-        16767
+        10119
       ]
-    }
+    },
+    "friends": [
+      10119
+    ],
+    "enemies": []
   }
 }

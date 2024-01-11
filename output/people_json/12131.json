@@ -1,19 +1,19 @@
 {
   "12131": {
     "alive": false,
-    "name": "Reymodis",
-    "surname": "Bruus",
-    "full name": "Reymodis Bruus",
+    "name": "Salome",
+    "surname": "Peteman",
+    "full name": "Salome Peteman",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.07,
-      "romantic interest": 0.973,
-      "sex interest": 0.734,
-      "gender expression": 0.0,
+      "sexuality": 0.055,
+      "romantic interest": 0.655,
+      "sex interest": 0.999,
+      "gender expression": 0.151,
       "sex": "f"
     },
-    "age": 47,
-    "birth year": 1154,
+    "age": 31,
+    "birth year": 1184,
     "sex": "f",
     "faction": "Dogmatists",
     "income class": [
@@ -21,13 +21,15 @@
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.086,
-      "nice-nasty": 0.576,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.072,
+      "nice-nasty": 0.697,
+      "honest-false": 0.733,
+      "dream": 0.344,
+      "outgoing": 0.582
     },
     "attitude": {
-      "outgoing": 0.702,
-      "dream": 0.435
+      "dream": 0.344,
+      "outgoing": 0.582
     },
     "homsoc": {
       "means": {
@@ -35,17 +37,103 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.05,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.028,
+        "gender expression expression": 0.131
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
-      "relationship keys": {}
+      "children": {
+        "13765": {
+          "key": 13765,
+          "name": "Jacobus van Sygerus",
+          "age": 6,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Salome (12131)",
+            "father": "Sygerus (12130)"
+          }
+        },
+        "15649": {
+          "key": 15649,
+          "name": "Abben Sygerusszoon",
+          "age": 12,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Salome (12131)",
+            "father": "Sygerus (12130)"
+          }
+        },
+        "16726": {
+          "key": 16726,
+          "name": "Heideric van Sygerus",
+          "age": 15,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Salome (12131)",
+            "father": "Sygerus (12130)"
+          }
+        },
+        "18728": {
+          "key": 18728,
+          "name": "Paradanus",
+          "age": 12,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Salome (12131)",
+            "father": "Sygerus (12130)"
+          }
+        },
+        "28231": {
+          "key": 28231,
+          "name": "Alard Sygerusszoon",
+          "age": 42,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Salome (12131)",
+            "father": "Sygerus (12130)"
+          }
+        },
+        "32159": {
+          "key": 32159,
+          "name": "Arnst",
+          "age": 40,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Salome (12131)",
+            "father": "Sygerus (12130)"
+          }
+        }
+      },
+      "relationship keys": {
+        "spouse": [
+          12132
+        ],
+        "child": {
+          "birth": [
+            13767,
+            15651,
+            16728,
+            18730,
+            28233,
+            32161
+          ]
+        },
+        "unrelated": [
+          14523
+        ]
+      }
     },
     "occupation": {
       "has job": false,
@@ -58,15 +146,15 @@
     },
     "genetics": {
       "skin_color": 1,
-      "eye_color": "blue",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "eye_color": "brown",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "C",
         "C"
       ],
-      "health": 0.764,
-      "fertility": 0.669,
+      "health": 0.727,
+      "fertility": 0.687,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -78,7 +166,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.764
+            "new_health": 0.727
+          },
+          "death": false
+        },
+        "1214": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.727
           },
           "death": true
         }
@@ -86,8 +182,315 @@
       "events": {
         "1200": [
           {
+            "topic": "birth",
+            "year": 1184
+          },
+          {
+            "topic": "new relationship",
+            "key": 12132,
+            "people": [
+              12130,
+              12131
+            ],
+            "people names": [
+              "Sygerus",
+              "Salome Peteman"
+            ],
+            "people ages": [
+              23,
+              16
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new relationship",
+            "key": 13767,
+            "people": [
+              12131,
+              13765
+            ],
+            "people names": [
+              "Salome Peteman",
+              "Jacobus van Sygerus"
+            ],
+            "people ages": [
+              17,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "new relationship",
+            "key": 14523,
+            "people": [
+              11525,
+              12131
+            ],
+            "people names": [
+              "Aghete",
+              "Salome Peteman"
+            ],
+            "people ages": [
+              18,
+              17
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 15651,
+            "people": [
+              12131,
+              15649
+            ],
+            "people names": [
+              "Salome Peteman",
+              "Abben Sygerusszoon"
+            ],
+            "people ages": [
+              17,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 13767
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 16728,
+            "people": [
+              12131,
+              16726
+            ],
+            "people names": [
+              "Salome Peteman",
+              "Heideric van Sygerus"
+            ],
+            "people ages": [
+              18,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "friend",
+            "relationship": 14523
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 18730,
+            "people": [
+              12131,
+              18728
+            ],
+            "people names": [
+              "Salome Peteman",
+              "Paradanus"
+            ],
+            "people ages": [
+              19,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1205": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 16728
+          }
+        ],
+        "1206": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 13765,
+              "name": "Jacobus van Sygerus",
+              "age": 6,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Salome (12131)",
+                "father": "Sygerus (12130)"
+              }
+            },
+            "cause": "sickness",
+            "friendship label": "indifferent",
+            "label": "child"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11525,
+              "name": "Aghete",
+              "age": 24,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "childbirth",
+            "friendship label": "friend",
+            "label": "unrelated",
+            "love state": "nothing"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "new relationship",
+            "key": 28233,
+            "people": [
+              12131,
+              28231
+            ],
+            "people names": [
+              "Salome Peteman",
+              "Alard Sygerusszoon"
+            ],
+            "people ages": [
+              24,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1209": [
+          {
+            "topic": "new relationship",
+            "key": 32161,
+            "people": [
+              12131,
+              32159
+            ],
+            "people names": [
+              "Salome Peteman",
+              "Arnst"
+            ],
+            "people ages": [
+              26,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "key": 12132,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12130,
+              "name": "Sygerus",
+              "age": 33,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "friendship label": "friend",
+            "label": "spouse",
+            "love state": "loveless"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              28231,
+              32159
+            ]
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              28231,
+              32159
+            ]
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              28231,
+              32159
+            ]
+          }
+        ],
+        "1213": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 16728
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 15649,
+              "name": "Abben Sygerusszoon",
+              "age": 12,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Salome (12131)",
+                "father": "Sygerus (12130)"
+              }
+            },
+            "cause": "starvation",
+            "friendship label": "good friend",
+            "label": "child"
+          },
+          {
+            "topic": "personality change",
+            "change": true,
+            "trait": "lawful-chaotic",
+            "trigger": "grief",
+            "mod": 0.039
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              28231,
+              32159
+            ]
+          }
+        ],
+        "1214": [
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "starvation"
           }
         ]
       }
@@ -99,12 +502,21 @@
       "section": "stCorte gracht.se3.c2",
       "street": "Corte gracht",
       "neighborhood": "visbuurt",
-      "unique id": 746
+      "unique id": 741
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
-      "relationships": []
-    }
+      "taken": false,
+      "married": false,
+      "relationships": [
+        12132
+      ]
+    },
+    "friends": [
+      12132,
+      15651,
+      16728,
+      14523
+    ],
+    "enemies": []
   }
 }

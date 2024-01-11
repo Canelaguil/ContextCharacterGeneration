@@ -1,33 +1,35 @@
 {
   "12119": {
     "alive": false,
-    "name": "Breghlent",
-    "surname": "Pipe",
-    "full name": "Breghlent Pipe",
+    "name": "Heile",
+    "surname": "Wittebloem",
+    "full name": "Heile Wittebloem",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.09,
-      "romantic interest": 0.763,
-      "sex interest": 0.62,
-      "gender expression": 0.0,
+      "sexuality": 0.114,
+      "romantic interest": 0.526,
+      "sex interest": 0.93,
+      "gender expression": 0.263,
       "sex": "f"
     },
-    "age": 53,
-    "birth year": 1160,
+    "age": 35,
+    "birth year": 1177,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.999,
-      "honest-false": 0.517
+      "lawful-chaotic": 0.378,
+      "nice-nasty": 0.676,
+      "honest-false": 0.935,
+      "dream": 0.543,
+      "outgoing": 0.701
     },
     "attitude": {
-      "outgoing": 0.62,
-      "dream": 0.614
+      "dream": 0.543,
+      "outgoing": 0.701
     },
     "homsoc": {
       "means": {
@@ -35,58 +37,109 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.047,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.076,
+        "gender expression expression": 0.04
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13699": {
+          "key": 13699,
+          "name": "Iordanus Crulleboye",
+          "age": 44,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Heile (12119)",
+            "father": "Elberino (12118)"
+          }
+        },
+        "21539": {
+          "key": 21539,
+          "name": "Hugheman Crulleboye",
+          "age": 45,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Heile (12119)",
+            "father": "Elberino (12118)"
+          }
+        },
+        "24514": {
+          "key": 24514,
+          "name": "Kornillis Crulleboye",
+          "age": 6,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Heile (12119)",
+            "father": "Elberino (12118)"
+          }
+        },
+        "30839": {
+          "key": 30839,
+          "name": "Wijfgode Crulleboye",
+          "age": 41,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Heile (12119)",
+            "father": "Elberino (12118)"
+          }
+        },
+        "33555": {
+          "key": 33555,
+          "name": "Gherolf Crulleboye",
+          "age": 23,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Heile (12119)",
+            "father": "Elberino (12118)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          12120,
-          18236
-        ]
+          12120
+        ],
+        "child": {
+          "birth": [
+            13701,
+            21541,
+            24516,
+            30841,
+            33557
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 1.065,
-      "all_incomes": [
-        0.986,
-        1.016,
-        1.025,
-        1.0379999999999998,
-        1.0919999999999999,
-        1.079,
-        1.063,
-        1.085,
-        1.016,
-        1.065
-      ],
-      "job": {
-        "lawful": true,
-        "honest": true
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 7,
-      "eye_color": "blue",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "skin_color": 0,
+      "eye_color": "green",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
         "C",
         "C"
       ],
-      "health": 0.134,
-      "fertility": 0.718,
+      "health": 0.669,
+      "fertility": 0.619,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -98,37 +151,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.72
-          },
-          "death": false
-        },
-        "1210": {
-          "health": {
-            "change": true,
-            "value_change": -0.086,
-            "new_health": 0.634
+            "new_health": 0.669
           },
           "death": false
         },
         "1211": {
           "health": {
-            "change": true,
-            "value_change": -0.273,
-            "new_health": 0.361
-          },
-          "death": false
-        },
-        "1212": {
-          "health": {
-            "change": true,
-            "value_change": -0.227,
-            "new_health": 0.134
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.669
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1177
+          },
           {
             "topic": "new relationship",
             "key": 12120,
@@ -137,112 +178,144 @@
               12119
             ],
             "people names": [
-              "Wellinus Firenbrais",
-              "Breghlent Pipe"
+              "Elberino Crulleboye",
+              "Heile Wittebloem"
             ],
             "people ages": [
-              47,
-              40
+              42,
+              23
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stCorte gracht.se3.c2",
-              "street": "Corte gracht",
-              "neighborhood": "visbuurt",
-              "unique id": 742
-            }
-          }
-        ],
-        "1201": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          }
-        ],
-        "1203": [
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.986
+            "topic": "new relationship",
+            "key": 13701,
+            "people": [
+              12119,
+              13699
+            ],
+            "people names": [
+              "Heile Wittebloem",
+              "Iordanus Crulleboye"
+            ],
+            "people ages": [
+              23,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1204": [
           {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.016
+            "topic": "new relationship",
+            "key": 21541,
+            "people": [
+              12119,
+              21539
+            ],
+            "people names": [
+              "Heile Wittebloem",
+              "Hugheman Crulleboye"
+            ],
+            "people ages": [
+              27,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1205": [
           {
-            "key": 12120,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 12118,
-              "name": "Wellinus Firenbrais",
-              "age": 53,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "cause": "sickness",
-            "label": "spouse"
+            "topic": "new relationship",
+            "key": 24516,
+            "people": [
+              12119,
+              24514
+            ],
+            "people names": [
+              "Heile Wittebloem",
+              "Kornillis Crulleboye"
+            ],
+            "people ages": [
+              29,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1206": [
           {
-            "topic": "new relationship",
-            "key": 18236,
-            "people": [
-              12688,
-              12119
-            ],
-            "people names": [
-              "Eltetus Ballinc",
-              "Breghlent Pipe"
-            ],
-            "people ages": [
-              49,
-              47
-            ],
-            "label": "spouse",
-            "committed": true
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 24516
+          }
+        ],
+        "1208": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 24516
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stDen Hof.se3.c2",
-              "street": "Den Hof",
-              "neighborhood": "denhof",
-              "unique id": 942
-            }
+            "topic": "new relationship",
+            "key": 30841,
+            "people": [
+              12119,
+              30839
+            ],
+            "people names": [
+              "Heile Wittebloem",
+              "Wijfgode Crulleboye"
+            ],
+            "people ages": [
+              32,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1210": [
+          {
+            "topic": "new relationship",
+            "key": 33557,
+            "people": [
+              12119,
+              33555
+            ],
+            "people names": [
+              "Heile Wittebloem",
+              "Gherolf Crulleboye"
+            ],
+            "people ages": [
+              34,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.595,
+            "inhabitants": [
+              21539,
+              30839,
+              50322
+            ]
           }
         ],
         "1211": [
           {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "spouse",
-            "friendship label": "indifferent",
-            "relationship": 18236
-          }
-        ],
-        "1212": [
-          {
             "topic": "death",
-            "cause": "old age"
+            "cause": "illness"
           }
         ]
       }
@@ -251,18 +324,25 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stDen Hof.se3.c2",
-      "street": "Den Hof",
-      "neighborhood": "denhof",
-      "unique id": 942
+      "section": "stCorte gracht.se3.c2",
+      "street": "Corte gracht",
+      "neighborhood": "visbuurt",
+      "unique id": 737
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        12120,
-        18236
+        12120
       ]
-    }
+    },
+    "friends": [
+      12120,
+      13701,
+      21541,
+      24516,
+      30841
+    ],
+    "enemies": []
   }
 }

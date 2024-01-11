@@ -56,13 +56,13 @@ class BirdsAndBees():
                 self.can_conceive = False
                 return False
             elif self.mother_age > 41:
-                chance = 0.01
+                chance = 0.1
             elif self.mother_age > 36:
-                chance = 0.2
-            elif self.mother_age > 25:
-                chance = 0.4
-            elif self.mother_age > 15:
                 chance = 0.5
+            elif self.mother_age > 25:
+                chance = 0.8
+            elif self.mother_age > 15:
+                chance = 1
             else:
                 chance = 0.
             updated_chance = chance * self.fertility * chance_modifier
@@ -71,7 +71,7 @@ class BirdsAndBees():
                 return True
             return False
             
-        def evolve(self):
+        def evolve(self, romance_report):
             """
             Reasoning: the tendencies in relationships to have less sex as time 
             progresses, as well as the tendency to have better sex as time progresses
@@ -80,13 +80,12 @@ class BirdsAndBees():
             """
             report = {'change' : False}
             if not self.is_sexual: 
-                return report
-            # TODO : one night stand
-            # if not self.is_sexual:
-            #     if self.sexuality_compatible:
-            #         if rand() < 0.001 * self.drive_compatibility:
-            #             self.is_sexual = True
-
+                # chance of one night stand
+                if (romance_report['state A'] != 'nothing' or romance_report['state B']) and rand() < 0.1:
+                    self.one_time_thing = True
+                else:
+                    return report
+                
             # chance of something changing
             something_chance = 0.2 * (1-self.drive_compatibility)
             if rand() < something_chance:
@@ -100,6 +99,11 @@ class BirdsAndBees():
 
             return report
             
+        def get_status(self): 
+            return {
+
+            }
+        
         def get_parents(self):
             return self.mother, self.father
 

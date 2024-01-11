@@ -1,33 +1,35 @@
 {
   "11131": {
     "alive": false,
-    "name": "Tiedeman",
-    "surname": "",
-    "full name": "Tiedeman",
+    "name": "Woutgerus",
+    "surname": "Neve",
+    "full name": "Woutgerus Neve",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.839,
-      "sex interest": 0.73,
-      "gender expression": 0.029,
+      "sexuality": 0.039,
+      "romantic interest": 0.636,
+      "sex interest": 0.962,
+      "gender expression": 0.074,
       "sex": "m"
     },
-    "age": 29,
-    "birth year": 1172,
+    "age": 54,
+    "birth year": 1154,
     "sex": "m",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.627,
-      "honest-false": 0.485
+      "lawful-chaotic": 0.426,
+      "nice-nasty": 0.729,
+      "honest-false": 0.299,
+      "dream": 0.697,
+      "outgoing": 0.871
     },
     "attitude": {
-      "outgoing": 0.517,
-      "dream": 0.297
+      "dream": 0.697,
+      "outgoing": 0.871
     },
     "homsoc": {
       "means": {
@@ -38,14 +40,21 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.026
+        "sexuality expression": 0.026,
+        "gender expression expression": 0.073
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {},
-      "relationship keys": {}
+      "relationship keys": {
+        "spouse": [
+          11133
+        ],
+        "unrelated": [
+          14537
+        ]
+      }
     },
     "occupation": {
       "has job": true,
@@ -53,27 +62,34 @@
         2,
         "middle class"
       ],
-      "income": 0.969,
+      "income": 1.3179999999999998,
       "all_incomes": [
-        0.946,
-        0.969
+        0.925,
+        0.758,
+        1.025,
+        1.3479999999999999,
+        1.524,
+        1.524,
+        1.524,
+        1.391,
+        1.3179999999999998
       ],
       "job": {
         "lawful": true,
-        "honest": true
+        "honest": false
       }
     },
     "genetics": {
-      "skin_color": 9,
+      "skin_color": 2,
       "eye_color": "blue",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
-        "S",
+        "C",
         "C"
       ],
-      "health": 0.784,
-      "fertility": 0.726,
+      "health": 0.0,
+      "fertility": 0.687,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -85,7 +101,39 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.784
+            "new_health": 0.687
+          },
+          "death": false
+        },
+        "1204": {
+          "health": {
+            "change": true,
+            "value_change": -0.157,
+            "new_health": 0.53
+          },
+          "death": false
+        },
+        "1205": {
+          "health": {
+            "change": true,
+            "value_change": -0.315,
+            "new_health": 0.215
+          },
+          "death": false
+        },
+        "1206": {
+          "health": {
+            "change": true,
+            "value_change": -0.211,
+            "new_health": 0.004
+          },
+          "death": false
+        },
+        "1207": {
+          "health": {
+            "change": true,
+            "value_change": -0.004,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -93,13 +141,107 @@
       "events": {
         "1200": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.946
+            "topic": "birth",
+            "year": 1154
           },
           {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.925
+          },
+          {
+            "topic": "new relationship",
+            "key": 11133,
+            "people": [
+              11131,
+              11132
+            ],
+            "people names": [
+              "Woutgerus Neve",
+              "Hilduardis Stopelkin"
+            ],
+            "people ages": [
+              46,
+              45
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "feelings change",
+            "target": 11132,
+            "target name": "Hilduardis Stopelkin",
+            "state": "out of love",
+            "friendship label": "good friend",
+            "relationship": 11133
+          },
+          {
+            "topic": "new relationship",
+            "key": 14537,
+            "people": [
+              11032,
+              11131
+            ],
+            "people names": [
+              "Eligius Fierenblayse",
+              "Woutgerus Neve"
+            ],
+            "people ages": [
+              36,
+              47
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1201": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.025
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "indifferent",
+            "relationship": 14537
+          }
+        ],
+        "1202": [
+          {
+            "key": 11133,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11132,
+              "name": "Hilduardis Stopelkin",
+              "age": 48,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "friendship label": "good friend",
+            "label": "spouse",
+            "love state": "out of love"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "indifferent",
+            "relationship": 14537
+          }
+        ],
+        "1207": [
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "sickness"
           }
         ]
       }
@@ -108,15 +250,21 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stDie Camp.se7.c2",
+      "section": "stDie Camp.se5.c2",
       "street": "Die Camp",
       "neighborhood": "kampbuurt",
-      "unique id": 398
+      "unique id": 391
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
-      "relationships": []
-    }
+      "taken": false,
+      "married": false,
+      "relationships": [
+        11133
+      ]
+    },
+    "friends": [
+      11133
+    ],
+    "enemies": []
   }
 }

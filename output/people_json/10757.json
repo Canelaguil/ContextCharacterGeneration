@@ -1,33 +1,35 @@
 {
   "10757": {
     "alive": false,
-    "name": "Moerseil",
-    "surname": "",
-    "full name": "Moerseil",
+    "name": "Tetta",
+    "surname": "Zalm",
+    "full name": "Tetta Zalm",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.073,
-      "romantic interest": 0.662,
-      "sex interest": 0.571,
-      "gender expression": 0.0,
+      "sexuality": 0.076,
+      "romantic interest": 0.654,
+      "sex interest": 0.762,
+      "gender expression": 0.157,
       "sex": "f"
     },
-    "age": 21,
-    "birth year": 1184,
+    "age": 40,
+    "birth year": 1180,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
       0,
       "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.422,
-      "nice-nasty": 0.0,
-      "honest-false": 0.0
+      "lawful-chaotic": 0.253,
+      "nice-nasty": 0.267,
+      "honest-false": 0.375,
+      "dream": 0.483,
+      "outgoing": 0.446
     },
     "attitude": {
-      "outgoing": 0.507,
-      "dream": 0.154
+      "dream": 0.483,
+      "outgoing": 0.446
     },
     "homsoc": {
       "means": {
@@ -35,19 +37,65 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.042,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.05,
+        "gender expression expression": 0.131
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13903": {
+          "key": 13903,
+          "name": "Barwoud Sygerusszoon",
+          "age": 34,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Tetta (10757)",
+            "father": "Sygerus (10756)"
+          }
+        },
+        "15559": {
+          "key": 15559,
+          "name": "Enekonus",
+          "age": 5,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Tetta (10757)",
+            "father": "Sygerus (10756)"
+          }
+        },
+        "16612": {
+          "key": 16612,
+          "name": "Clementia Sygerussdochter",
+          "age": 47,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Tetta (10757)",
+            "father": "Sygerus (10756)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10758
+        ],
+        "child": {
+          "birth": [
+            13905,
+            15561,
+            16614
+          ]
+        },
+        "unrelated": [
+          30917
         ]
       }
     },
@@ -57,30 +105,33 @@
         0,
         "working class"
       ],
-      "income": 1.309,
+      "income": 1.24,
       "all_incomes": [
-        1.402,
-        1.122,
-        1.015,
-        1.089,
-        1.309
+        1.21,
+        1.421,
+        1.499,
+        1.499,
+        1.139,
+        1.017,
+        0.997,
+        1.24
       ],
       "job": {
-        "lawful": false,
+        "lawful": true,
         "honest": false
       }
     },
     "genetics": {
-      "skin_color": 8,
-      "eye_color": "blue",
+      "skin_color": 9,
+      "eye_color": "green",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
         "C",
         "C"
       ],
-      "health": 0.787,
-      "fertility": 0.754,
+      "health": 0.725,
+      "fertility": 0.736,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -92,15 +143,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.787
+            "new_health": 0.725
           },
           "death": false
         },
-        "1204": {
+        "1219": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.787
+            "new_health": 0.725
           },
           "death": true
         }
@@ -108,9 +159,8 @@
       "events": {
         "1200": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.402
+            "topic": "birth",
+            "year": 1180
           },
           {
             "topic": "new relationship",
@@ -120,45 +170,250 @@
               10757
             ],
             "people names": [
-              "Gelmarus",
-              "Moerseil"
+              "Sygerus",
+              "Tetta Zalm"
             ],
             "people ages": [
-              40,
-              16
+              47,
+              20
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stWalker straet.se1.c0",
-              "street": "Walker straet",
-              "neighborhood": "agnesbuurt",
-              "unique id": 265
-            }
+            "topic": "new relationship",
+            "key": 13905,
+            "people": [
+              10757,
+              13903
+            ],
+            "people names": [
+              "Tetta Zalm",
+              "Barwoud Sygerusszoon"
+            ],
+            "people ages": [
+              20,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "topic": "new relationship",
+            "key": 15561,
+            "people": [
+              10757,
+              15559
+            ],
+            "people names": [
+              "Tetta Zalm",
+              "Enekonus"
+            ],
+            "people ages": [
+              21,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.862,
+            "inhabitants": []
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 16614,
+            "people": [
+              10757,
+              16612
+            ],
+            "people names": [
+              "Tetta Zalm",
+              "Clementia Sygerussdochter"
+            ],
+            "people ages": [
+              22,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.874,
+            "inhabitants": []
           }
         ],
         "1203": [
           {
-            "topic": "feelings change",
-            "target": 10756,
-            "target name": "Gelmarus",
-            "state": "out of love",
-            "relationship": 10758
+            "topic": "not enough income",
+            "income": 1.019,
+            "inhabitants": []
           }
         ],
         "1204": [
+          {
+            "key": 10758,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10756,
+              "name": "Sygerus",
+              "age": 52,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "starvation",
+            "friendship label": "indifferent",
+            "label": "spouse",
+            "love state": "loveless"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.97,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 15559,
+              "name": "Enekonus",
+              "age": 5,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Tetta (10757)",
+                "father": "Sygerus (10756)"
+              }
+            },
+            "cause": "starvation",
+            "friendship label": "indifferent",
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "new relationship",
+            "key": 30917,
+            "people": [
+              10757,
+              11609
+            ],
+            "people names": [
+              "Tetta Zalm",
+              "Amalburga Magnus"
+            ],
+            "people ages": [
+              29,
+              25
+            ],
+            "label": "unrelated",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "friend",
+            "relationship": 30917
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.21
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 13905
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "indifferent",
+            "relationship": 30917
+          }
+        ],
+        "1219": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.24
+          },
           {
             "topic": "death",
             "cause": "illness"
@@ -173,14 +428,16 @@
       "section": "stWalker straet.se1.c0",
       "street": "Walker straet",
       "neighborhood": "agnesbuurt",
-      "unique id": 265
+      "unique id": 264
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         10758
       ]
-    }
+    },
+    "friends": [],
+    "enemies": []
   }
 }

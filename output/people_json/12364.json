@@ -1,37 +1,39 @@
 {
   "12364": {
     "alive": false,
-    "name": "Wlfarde",
+    "name": "Radwardo",
     "surname": "",
-    "full name": "Wlfarde",
+    "full name": "Radwardo",
     "born this way": {
       "sexuality label": "straight",
       "sexuality": 0.0,
-      "romantic interest": 0.862,
-      "sex interest": 0.964,
-      "gender expression": 0.204,
+      "romantic interest": 0.439,
+      "sex interest": 0.782,
+      "gender expression": 0.188,
       "sex": "m"
     },
-    "age": 43,
-    "birth year": 1163,
+    "age": 45,
+    "birth year": 1158,
     "sex": "m",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
-      4,
-      "nobility"
+      3,
+      "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.502,
-      "nice-nasty": 0.553,
-      "honest-false": 0.542
+      "lawful-chaotic": 0.0,
+      "nice-nasty": 0.507,
+      "honest-false": 0.927,
+      "dream": 0.489,
+      "outgoing": 0.152
     },
     "attitude": {
-      "outgoing": 0.393,
-      "dream": 0.444
+      "dream": 0.489,
+      "outgoing": 0.152
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
@@ -39,50 +41,79 @@
       },
       "expression": {
         "sexuality expression": -0.001,
-        "gender expression expression": 0.011
+        "gender expression expression": 0.11
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13951": {
+          "key": 13951,
+          "name": "Agnes van Radwardo",
+          "age": 12,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Beatrice (12365)",
+            "father": "Radwardo (12364)"
+          }
+        },
+        "15335": {
+          "key": 15335,
+          "name": "Herardus",
+          "age": 16,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Beatrice (12365)",
+            "father": "Radwardo (12364)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           12366
+        ],
+        "child": {
+          "birth": [
+            13952,
+            15336
+          ]
+        },
+        "unrelated": [
+          14590
         ]
       }
     },
     "occupation": {
       "has job": true,
       "income class": [
-        4,
-        "nobility"
+        3,
+        "upper middle class"
       ],
-      "income": 1.544,
+      "income": 0.52,
       "all_incomes": [
-        1.06,
-        1.221,
-        1.219,
-        1.272,
-        1.368,
-        1.367,
-        1.544
+        0.887,
+        0.7240000000000001,
+        0.78,
+        0.52
       ],
       "job": {
-        "lawful": true,
+        "lawful": false,
         "honest": true
       }
     },
     "genetics": {
-      "skin_color": 7,
+      "skin_color": 5,
       "eye_color": "brown",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
         "S",
-        "C"
+        "S"
       ],
-      "health": 0.617,
-      "fertility": 0.608,
+      "health": 0.682,
+      "fertility": 0.688,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -94,15 +125,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.617
+            "new_health": 0.682
           },
           "death": false
         },
-        "1205": {
+        "1202": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.617
+            "new_health": 0.682
           },
           "death": true
         }
@@ -110,9 +141,18 @@
       "events": {
         "1200": [
           {
+            "topic": "birth",
+            "year": 1158
+          },
+          {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.06
+            "income": 0.887
+          },
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.7240000000000001
           },
           {
             "topic": "new relationship",
@@ -122,43 +162,79 @@
               12365
             ],
             "people names": [
-              "Wlfarde",
-              "Itsburgis"
+              "Radwardo",
+              "Beatrice Vrie"
             ],
             "people ages": [
-              37,
-              30
+              42,
+              19
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 4,
-              "income class label": "nobility",
-              "section": "stOp Havick1.se1.c4",
-              "street": "Op Havick1",
-              "neighborhood": "cingelnoord",
-              "unique id": 829
-            }
+            "topic": "new relationship",
+            "key": 13952,
+            "people": [
+              12364,
+              13951
+            ],
+            "people names": [
+              "Radwardo",
+              "Agnes van Radwardo"
+            ],
+            "people ages": [
+              42,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "new relationship",
+            "key": 14590,
+            "people": [
+              12364,
+              10838
+            ],
+            "people names": [
+              "Radwardo",
+              "Marie Vint"
+            ],
+            "people ages": [
+              43,
+              27
+            ],
+            "label": "unrelated",
+            "committed": false
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          },
-          {
-            "topic": "feelings change",
-            "target": 12365,
-            "target name": "Itsburgis",
-            "state": "solid love",
-            "relationship": 12366
+            "topic": "new relationship",
+            "key": 15336,
+            "people": [
+              12364,
+              15335
+            ],
+            "people names": [
+              "Radwardo",
+              "Herardus"
+            ],
+            "people ages": [
+              44,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1205": [
+        "1202": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.52
+          },
           {
             "topic": "death",
             "cause": "illness"
@@ -168,19 +244,24 @@
     },
     "key": 12364,
     "home": {
-      "income class": 4,
-      "income class label": "nobility",
-      "section": "stOp Havick1.se1.c4",
-      "street": "Op Havick1",
+      "income class": 3,
+      "income class label": "upper middle class",
+      "section": "stMuurhuysen2.se7.c3",
+      "street": "Muurhuysen2",
       "neighborhood": "cingelnoord",
-      "unique id": 829
+      "unique id": 824
     },
     "relationship status": {
-      "taken": true,
+      "taken": false,
       "married": true,
       "relationships": [
         12366
       ]
-    }
+    },
+    "friends": [
+      12366,
+      14590
+    ],
+    "enemies": []
   }
 }

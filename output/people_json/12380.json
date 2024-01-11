@@ -1,33 +1,35 @@
 {
   "12380": {
     "alive": false,
-    "name": "Verthwi",
-    "surname": "Kenode",
-    "full name": "Verthwi Kenode",
+    "name": "Nellen",
+    "surname": "",
+    "full name": "Nellen",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.803,
-      "sex interest": 0.891,
-      "gender expression": 0.147,
+      "sexuality": 0.076,
+      "romantic interest": 0.903,
+      "sex interest": 0.504,
+      "gender expression": 0.134,
       "sex": "f"
     },
     "age": 47,
-    "birth year": 1168,
+    "birth year": 1160,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
       4,
       "nobility"
     ],
     "personality": {
-      "lawful-chaotic": 0.919,
-      "nice-nasty": 0.564,
-      "honest-false": 0.394
+      "lawful-chaotic": 0.556,
+      "nice-nasty": 0.738,
+      "honest-false": 0.614,
+      "dream": 0.332,
+      "outgoing": 0.725
     },
     "attitude": {
-      "outgoing": 0.402,
-      "dream": 0.4
+      "dream": 0.332,
+      "outgoing": 0.725
     },
     "homsoc": {
       "means": {
@@ -40,34 +42,21 @@
         ]
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.059
+        "sexuality expression": 0.039,
+        "gender expression expression": 0.088
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {
-        "19049": {
-          "key": 19049,
-          "name": "Niels Blessard",
-          "age": 7,
-          "alive": false,
-          "sex": "m",
-          "parents": {
-            "mother": "Verthwi (12380)",
-            "father": "Jiusippus (12379)"
-          }
-        }
-      },
+      "children": {},
       "relationship keys": {
         "spouse": [
           12381
         ],
-        "child": {
-          "birth": [
-            19051
-          ]
-        }
+        "unrelated": [
+          18476,
+          20729
+        ]
       }
     },
     "occupation": {
@@ -80,16 +69,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 5,
-      "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 0,
+      "eye_color": "green",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
-        "C",
+        "S",
         "C"
       ],
-      "health": 0.846,
-      "fertility": 0.803,
+      "health": 0.486,
+      "fertility": 0.614,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -101,21 +90,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.846
+            "new_health": 0.486
           },
           "death": false
         },
-        "1214": {
+        "1206": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.846
+            "new_health": 0.486
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1160
+          },
           {
             "topic": "new relationship",
             "key": 12381,
@@ -124,53 +117,80 @@
               12380
             ],
             "people names": [
-              "Jiusippus Blessard",
-              "Verthwi Kenode"
+              "Wellinus",
+              "Nellen"
             ],
             "people ages": [
-              33,
-              32
+              48,
+              40
             ],
             "label": "spouse",
             "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 4,
-              "income class label": "nobility",
-              "section": "stOp Havick1.se1.c4",
-              "street": "Op Havick1",
-              "neighborhood": "cingelnoord",
-              "unique id": 834
-            }
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "friend",
+            "relationship": 12381
           }
         ],
-        "1208": [
+        "1202": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "friend",
+            "relationship": 12381
+          },
           {
             "topic": "new relationship",
-            "key": 19051,
+            "key": 18476,
             "people": [
               12380,
-              19049
+              12202
             ],
             "people names": [
-              "Verthwi Kenode",
-              "Niels Blessard"
+              "Nellen",
+              "Wolcout Coquus"
             ],
             "people ages": [
-              40,
-              0
+              43,
+              45
             ],
-            "label": "parentchild",
+            "label": "unrelated",
             "committed": false
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 20729,
+            "people": [
+              12380,
+              11953
+            ],
+            "people names": [
+              "Nellen",
+              "Sylawert Duckar"
+            ],
+            "people ages": [
+              44,
+              44
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1204": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "friend",
+            "relationship": 18476
           },
           {
             "key": 12381,
@@ -180,55 +200,36 @@
             "topic": "person died",
             "person": {
               "key": 12379,
-              "name": "Jiusippus Blessard",
-              "age": 42,
+              "name": "Wellinus",
+              "age": 53,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
             },
-            "cause": "illness",
-            "label": "spouse"
+            "cause": "sickness",
+            "friendship label": "friend",
+            "label": "spouse",
+            "love state": "out of love"
           }
         ],
-        "1209": [
+        "1205": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "friend",
+            "relationship": 18476
+          },
           {
             "topic": "not enough income",
             "income": 0,
             "inhabitants": []
           }
         ],
-        "1210": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1211": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1212": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1213": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1214": [
+        "1206": [
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "starvation"
           }
         ]
       }
@@ -240,7 +241,7 @@
       "section": "stOp Havick1.se1.c4",
       "street": "Op Havick1",
       "neighborhood": "cingelnoord",
-      "unique id": 834
+      "unique id": 830
     },
     "relationship status": {
       "taken": false,
@@ -248,6 +249,11 @@
       "relationships": [
         12381
       ]
-    }
+    },
+    "friends": [
+      12381,
+      18476
+    ],
+    "enemies": []
   }
 }

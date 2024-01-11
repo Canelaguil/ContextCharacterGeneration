@@ -1,19 +1,19 @@
 {
   "10003": {
     "alive": false,
-    "name": "Wolfraem",
-    "surname": "Cockine",
-    "full name": "Wolfraem Cockine",
+    "name": "Isbrandus",
+    "surname": "",
+    "full name": "Isbrandus",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.904,
-      "romantic interest": 0.602,
-      "sex interest": 0.632,
-      "gender expression": 0.264,
+      "sexuality label": "straight",
+      "sexuality": 0.078,
+      "romantic interest": 0.246,
+      "sex interest": 0.504,
+      "gender expression": 0.179,
       "sex": "m"
     },
-    "age": 44,
-    "birth year": 1160,
+    "age": 40,
+    "birth year": 1178,
     "sex": "m",
     "faction": "No religion",
     "income class": [
@@ -21,34 +21,80 @@
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.102,
-      "nice-nasty": 0.585,
-      "honest-false": 0.114
+      "lawful-chaotic": 0.0,
+      "nice-nasty": 0.195,
+      "honest-false": 0.0,
+      "dream": 0.423,
+      "outgoing": 0.16
     },
     "attitude": {
-      "outgoing": 0.594,
-      "dream": 0.321
+      "dream": 0.423,
+      "outgoing": 0.16
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.562,
-        "gender expression expression": 0.129
+        "sexuality expression": 0.052,
+        "gender expression expression": 0.071
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13366": {
+          "key": 13366,
+          "name": "Iris",
+          "age": 49,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Scilla (10004)",
+            "father": "Isbrandus (10003)"
+          }
+        },
+        "17024": {
+          "key": 17024,
+          "name": "Ghela van Isbrandus",
+          "age": 1,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Scilla (10004)",
+            "father": "Isbrandus (10003)"
+          }
+        },
+        "20272": {
+          "key": 20272,
+          "name": "Hardenbernus",
+          "age": 46,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Scilla (10004)",
+            "father": "Isbrandus (10003)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          10005
-        ]
+          10005,
+          29132
+        ],
+        "child": {
+          "birth": [
+            13367,
+            17025,
+            20273
+          ]
+        }
       }
     },
     "occupation": {
@@ -57,13 +103,27 @@
         2,
         "middle class"
       ],
-      "income": 0.992,
+      "income": 0.049,
       "all_incomes": [
-        0.594,
-        0.548,
-        0.647,
-        0.967,
-        0.992
+        0.676,
+        0.899,
+        0.176,
+        0.025,
+        0.158,
+        0.07,
+        0.272,
+        0.668,
+        0.865,
+        0.748,
+        0.839,
+        0.879,
+        0.6940000000000001,
+        0.401,
+        0.36000000000000004,
+        0.218,
+        0.468,
+        0.025,
+        0.049
       ],
       "job": {
         "lawful": false,
@@ -71,16 +131,16 @@
       }
     },
     "genetics": {
-      "skin_color": 8,
-      "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 0,
+      "eye_color": "green",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
-        "S",
-        "C"
+        "C",
+        "S"
       ],
-      "health": 0.571,
-      "fertility": 0.499,
+      "health": 0.679,
+      "fertility": 0.669,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -92,15 +152,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.571
+            "new_health": 0.679
           },
           "death": false
         },
-        "1203": {
+        "1217": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.571
+            "new_health": 0.679
           },
           "death": true
         }
@@ -108,9 +168,13 @@
       "events": {
         "1200": [
           {
+            "topic": "birth",
+            "year": 1178
+          },
+          {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.594
+            "income": 0.676
           },
           {
             "topic": "new relationship",
@@ -120,36 +184,104 @@
               10004
             ],
             "people names": [
-              "Wolfraem Cockine",
-              "Marisseis Cleine"
+              "Isbrandus",
+              "Scilla"
             ],
             "people ages": [
-              40,
-              39
+              22,
+              16
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stUterechse straet.se1.c2",
-              "street": "Uterechse straet",
-              "neighborhood": "varkensbuurt",
-              "unique id": 2
-            }
+            "topic": "new relationship",
+            "key": 13367,
+            "people": [
+              10003,
+              13366
+            ],
+            "people names": [
+              "Isbrandus",
+              "Iris"
+            ],
+            "people ages": [
+              23,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.176
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.176,
+            "inhabitants": [
+              13366,
+              20272
+            ]
           }
         ],
         "1202": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "indifferent",
+            "relationship": 10005
+          },
+          {
+            "topic": "new relationship",
+            "key": 17025,
+            "people": [
+              10003,
+              17024
+            ],
+            "people names": [
+              "Isbrandus",
+              "Ghela van Isbrandus"
+            ],
+            "people ages": [
+              25,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.025,
+            "inhabitants": [
+              13366,
+              20272
+            ]
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 20273,
+            "people": [
+              10003,
+              20272
+            ],
+            "people names": [
+              "Isbrandus",
+              "Hardenbernus"
+            ],
+            "people ages": [
+              26,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
           {
             "key": 10005,
             "topic": "unmarried"
@@ -158,17 +290,193 @@
             "topic": "person died",
             "person": {
               "key": 10004,
-              "name": "Marisseis Cleine",
-              "age": 42,
+              "name": "Scilla",
+              "age": 20,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "childbirth",
+            "friendship label": "indifferent",
+            "label": "spouse",
+            "love state": "loveless"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 17024,
+              "name": "Ghela van Isbrandus",
+              "age": 1,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Scilla (10004)",
+                "father": "Isbrandus (10003)"
+              }
+            },
+            "cause": "childbirth",
+            "friendship label": "friend",
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.158,
+            "inhabitants": [
+              13366,
+              20272
+            ]
+          }
+        ],
+        "1204": [
+          {
+            "topic": "not enough income",
+            "income": 0.07,
+            "inhabitants": [
+              13366,
+              20272
+            ]
+          }
+        ],
+        "1205": [
+          {
+            "topic": "not enough income",
+            "income": 0.272,
+            "inhabitants": [
+              13366,
+              20272
+            ]
+          }
+        ],
+        "1207": [
+          {
+            "topic": "new relationship",
+            "key": 29132,
+            "people": [
+              10003,
+              12560
+            ],
+            "people names": [
+              "Isbrandus",
+              "Clara Ome"
+            ],
+            "people ages": [
+              30,
+              34
+            ],
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1208": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.748
+          },
+          {
+            "topic": "feelings change",
+            "target": 12560,
+            "target name": "Clara Ome",
+            "state": "out of love",
+            "friendship label": "friend",
+            "relationship": 29132
+          }
+        ],
+        "1209": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 13367
+          },
+          {
+            "key": 29132,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12560,
+              "name": "Clara Ome",
+              "age": 36,
               "alive": false,
               "sex": "f",
               "parents": "firstgen"
             },
             "cause": "illness",
-            "label": "spouse"
+            "friendship label": "friend",
+            "label": "spouse",
+            "love state": "out of love"
           }
         ],
-        "1203": [
+        "1211": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.6940000000000001
+          }
+        ],
+        "1212": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.401
+          }
+        ],
+        "1213": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.36000000000000004
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.36000000000000004,
+            "inhabitants": [
+              13366,
+              20272
+            ]
+          }
+        ],
+        "1214": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.218
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.218,
+            "inhabitants": [
+              13366,
+              20272
+            ]
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          }
+        ],
+        "1216": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.025
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.025,
+            "inhabitants": [
+              13366,
+              20272
+            ]
+          }
+        ],
+        "1217": [
           {
             "topic": "death",
             "cause": "illness"
@@ -189,8 +497,15 @@
       "taken": false,
       "married": false,
       "relationships": [
-        10005
+        10005,
+        29132
       ]
-    }
+    },
+    "friends": [
+      29132,
+      17025,
+      20273
+    ],
+    "enemies": []
   }
 }

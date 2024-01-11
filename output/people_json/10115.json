@@ -1,33 +1,35 @@
 {
   "10115": {
     "alive": false,
-    "name": "Diewiven",
-    "surname": "",
-    "full name": "Diewiven",
+    "name": "Heylewigis",
+    "surname": "Rape",
+    "full name": "Heylewigis Rape",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.062,
-      "romantic interest": 0.672,
-      "sex interest": 0.765,
-      "gender expression": 0.126,
+      "sexuality": 0.002,
+      "romantic interest": 0.838,
+      "sex interest": 0.861,
+      "gender expression": 0.0,
       "sex": "f"
     },
-    "age": 43,
-    "birth year": 1159,
+    "age": 25,
+    "birth year": 1179,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "Zealots",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.439,
-      "nice-nasty": 0.268,
-      "honest-false": 0.365
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.042,
+      "honest-false": 0.052,
+      "dream": 0.302,
+      "outgoing": 0.833
     },
     "attitude": {
-      "outgoing": 0.501,
-      "dream": 0.296
+      "dream": 0.302,
+      "outgoing": 0.833
     },
     "homsoc": {
       "means": {
@@ -38,17 +40,34 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.044,
-        "gender expression expression": 0.0
+        "sexuality expression": 0.001,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "16949": {
+          "key": 16949,
+          "name": "Anthonius",
+          "age": 47,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Heylewigis (10115)",
+            "father": "Ancelmus (10114)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10116
-        ]
+        ],
+        "child": {
+          "birth": [
+            16951
+          ]
+        }
       }
     },
     "occupation": {
@@ -61,16 +80,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 4,
-      "eye_color": "brown",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "skin_color": 6,
+      "eye_color": "blue",
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
         "S",
         "S"
       ],
-      "health": 0.65,
-      "fertility": 0.631,
+      "health": 0.59,
+      "fertility": 0.575,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -82,13 +101,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.65
+            "new_health": 0.59
           },
           "death": false
+        },
+        "1203": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.59
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1179
+          },
           {
             "topic": "new relationship",
             "key": 10116,
@@ -97,37 +128,41 @@
               10115
             ],
             "people names": [
-              "Blomart",
-              "Diewiven"
+              "Ancelmus",
+              "Heylewigis Rape"
             ],
             "people ages": [
-              49,
-              41
+              36,
+              21
             ],
             "label": "spouse",
             "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stSlyck straet.se1.c1",
-              "street": "Slyck straet",
-              "neighborhood": "varkensbuurt",
-              "unique id": 39
-            }
           }
         ],
-        "1201": [
+        "1202": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          },
+            "topic": "new relationship",
+            "key": 16951,
+            "people": [
+              10115,
+              16949
+            ],
+            "people names": [
+              "Heylewigis Rape",
+              "Anthonius"
+            ],
+            "people ages": [
+              24,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1203": [
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "childbirth"
           }
         ]
       }
@@ -139,7 +174,7 @@
       "section": "stSlyck straet.se1.c1",
       "street": "Slyck straet",
       "neighborhood": "varkensbuurt",
-      "unique id": 39
+      "unique id": 40
     },
     "relationship status": {
       "taken": true,
@@ -147,6 +182,8 @@
       "relationships": [
         10116
       ]
-    }
+    },
+    "friends": [],
+    "enemies": []
   }
 }

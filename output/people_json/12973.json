@@ -1,33 +1,35 @@
 {
   "12973": {
     "alive": false,
-    "name": "Ermegardis",
-    "surname": "Brede",
-    "full name": "Ermegardis Brede",
+    "name": "Ghoudekinen",
+    "surname": "Sicconesdochter",
+    "full name": "Ghoudekinen Sicconesdochter",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.055,
-      "romantic interest": 0.763,
-      "sex interest": 0.663,
+      "sexuality": 0.024,
+      "romantic interest": 0.658,
+      "sex interest": 0.495,
       "gender expression": 0.0,
       "sex": "f"
     },
-    "age": 1,
+    "age": 10,
     "birth year": 1200,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
-      2,
-      "middle class"
+      3,
+      "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.281,
-      "honest-false": 0.951
+      "lawful-chaotic": 0.848,
+      "nice-nasty": 0.01,
+      "honest-false": 0.525,
+      "dream": 0.835,
+      "outgoing": 0.344
     },
     "attitude": {
-      "outgoing": 0.331,
-      "dream": 0.799
+      "dream": 0.835,
+      "outgoing": 0.344
     },
     "homsoc": {
       "means": {
@@ -35,46 +37,57 @@
         "taken_care_of": true,
         "caretaker": true,
         "needs_care": true,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.022,
+        "sexuality expression": 0.011,
         "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": {
-        "mother": "Emgelberna (10049)",
-        "father": "Willai (10048)"
+        "mother": "Waldrada (11444)",
+        "father": "Siccone (11443)"
       },
       "children": {},
       "relationship keys": {
         "parent": [
           12974,
           12975
+        ],
+        "sibling": [
+          21073,
+          23670,
+          27980,
+          29579
+        ],
+        "unrelated": [
+          27073
         ]
       }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        2,
-        "middle class"
+        3,
+        "upper middle class"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 9,
-      "eye_color": "blue",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 3,
+      "eye_color": "brown",
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
       "hair_type": [
-        "C",
+        "S",
         "S"
       ],
-      "health": 0.768,
-      "fertility": 0.791,
+      "health": 0.62,
+      "fertility": 0.675,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -86,51 +99,244 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.768
+            "new_health": 0.62
           },
           "death": false
+        },
+        "1210": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.62
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
           {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stUterechse straet.se3.c2",
-              "street": "Uterechse straet",
-              "neighborhood": "varkensbuurt",
-              "unique id": 17
-            }
-          }
-        ],
-        "1201": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "topic": "birth",
+            "year": 1200
           },
           {
+            "topic": "new relationship",
+            "key": 12974,
+            "people": [
+              11443,
+              12973
+            ],
+            "people names": [
+              "Siccone",
+              "Ghoudekinen Sicconesdochter"
+            ],
+            "people ages": [
+              32,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "new relationship",
+            "key": 12975,
+            "people": [
+              11444,
+              12973
+            ],
+            "people names": [
+              "Waldrada Coe",
+              "Ghoudekinen Sicconesdochter"
+            ],
+            "people ages": [
+              17,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 21073,
+            "people": [
+              12973,
+              21070
+            ],
+            "people names": [
+              "Ghoudekinen Sicconesdochter",
+              "Goneir van Siccone"
+            ],
+            "people ages": [
+              4,
+              0
+            ],
+            "label": "sibling",
+            "committed": false
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 12975
+          }
+        ],
+        "1205": [
+          {
+            "topic": "new relationship",
+            "key": 23670,
+            "people": [
+              12973,
+              23667
+            ],
+            "people names": [
+              "Ghoudekinen Sicconesdochter",
+              "Wauthem Sicconeszoon"
+            ],
+            "people ages": [
+              4,
+              0
+            ],
+            "label": "sibling",
+            "committed": false
+          }
+        ],
+        "1206": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 12975
+          },
+          {
+            "topic": "new relationship",
+            "key": 27073,
+            "people": [
+              12973,
+              12955
+            ],
+            "people names": [
+              "Ghoudekinen Sicconesdochter",
+              "Waldrada Blaubloeme"
+            ],
+            "people ages": [
+              6,
+              6
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1207": [
+          {
+            "topic": "new relationship",
+            "key": 27980,
+            "people": [
+              12973,
+              27977
+            ],
+            "people names": [
+              "Ghoudekinen Sicconesdochter",
+              "Esa"
+            ],
+            "people ages": [
+              6,
+              0
+            ],
+            "label": "sibling",
+            "committed": false
+          }
+        ],
+        "1208": [
+          {
+            "topic": "new relationship",
+            "key": 29579,
+            "people": [
+              12973,
+              29576
+            ],
+            "people names": [
+              "Ghoudekinen Sicconesdochter",
+              "Hille"
+            ],
+            "people ages": [
+              7,
+              0
+            ],
+            "label": "sibling",
+            "committed": false
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11444,
+              "name": "Waldrada Coe",
+              "age": 26,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "childbirth",
+            "friendship label": "friend",
+            "label": "parent"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 27977,
+              "name": "Esa",
+              "age": 1,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Waldrada (11444)",
+                "father": "Siccone (11443)"
+              }
+            },
+            "cause": "childbirth",
+            "friendship label": "indifferent",
+            "label": "sibling"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0.05,
+            "inhabitants": [
+              29576
+            ]
+          }
+        ],
+        "1210": [
+          {
             "topic": "death",
-            "cause": "childhood illness"
+            "cause": "starvation"
           }
         ]
       }
     },
     "key": 12973,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stUterechse straet.se3.c2",
-      "street": "Uterechse straet",
-      "neighborhood": "varkensbuurt",
-      "unique id": 17
+      "income class": 3,
+      "income class label": "upper middle class",
+      "section": "stLange gracht.se1.c3",
+      "street": "Lange gracht",
+      "neighborhood": "olvbuurt",
+      "unique id": 499
     },
     "relationship status": {
       "taken": false,
       "married": false,
       "relationships": []
-    }
+    },
+    "friends": [
+      12974,
+      12975,
+      29579,
+      27073
+    ],
+    "enemies": []
   }
 }

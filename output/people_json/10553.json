@@ -1,19 +1,19 @@
 {
   "10553": {
     "alive": false,
-    "name": "Wendelmodis",
-    "surname": "Longus",
-    "full name": "Wendelmodis Longus",
+    "name": "Katerina",
+    "surname": "Roden",
+    "full name": "Katerina Roden",
     "born this way": {
-      "sexuality label": "bi",
-      "sexuality": 0.448,
-      "romantic interest": 0.586,
-      "sex interest": 0.541,
-      "gender expression": 0.468,
+      "sexuality label": "straight",
+      "sexuality": 0.087,
+      "romantic interest": 0.87,
+      "sex interest": 0.5,
+      "gender expression": 0.116,
       "sex": "f"
     },
-    "age": 35,
-    "birth year": 1169,
+    "age": 55,
+    "birth year": 1158,
     "sex": "f",
     "faction": "No religion",
     "income class": [
@@ -21,13 +21,15 @@
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.231,
-      "nice-nasty": 0.834,
-      "honest-false": 0.368
+      "lawful-chaotic": 0.654,
+      "nice-nasty": 0.445,
+      "honest-false": 0.524,
+      "dream": 0.786,
+      "outgoing": 0.582
     },
     "attitude": {
-      "outgoing": 0.579,
-      "dream": 0.509
+      "dream": 0.786,
+      "outgoing": 0.582
     },
     "homsoc": {
       "means": {
@@ -35,49 +37,25 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.317,
-        "gender expression expression": 0.16
+        "sexuality expression": 0.048,
+        "gender expression expression": 0.069
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {
-        "14021": {
-          "key": 14021,
-          "name": "Reynerus Godeliefszoon",
-          "age": 35,
-          "alive": false,
-          "sex": "m",
-          "parents": {
-            "mother": "Wendelmodis (10553)",
-            "father": "Godelief (10552)"
-          }
-        },
-        "14579": {
-          "key": 14579,
-          "name": "Gherbrandus",
-          "age": 12,
-          "alive": false,
-          "sex": "m",
-          "parents": {
-            "mother": "Wendelmodis (10553)",
-            "father": "Godelief (10552)"
-          }
-        }
-      },
+      "children": {},
       "relationship keys": {
         "spouse": [
           10554
         ],
-        "child": {
-          "birth": [
-            14023,
-            14581
-          ]
-        }
+        "unrelated": [
+          27090
+        ]
       }
     },
     "occupation": {
@@ -90,16 +68,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 6,
+      "skin_color": 8,
       "eye_color": "blue",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
       "hair_type": [
-        "C",
-        "S"
+        "S",
+        "C"
       ],
-      "health": 0.627,
-      "fertility": 0.729,
+      "health": 0.0,
+      "fertility": 0.761,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -111,13 +89,57 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.627
+            "new_health": 0.612
           },
           "death": false
+        },
+        "1208": {
+          "health": {
+            "change": true,
+            "value_change": -0.25,
+            "new_health": 0.362
+          },
+          "death": false
+        },
+        "1209": {
+          "health": {
+            "change": true,
+            "value_change": -0.195,
+            "new_health": 0.167
+          },
+          "death": false
+        },
+        "1210": {
+          "health": {
+            "change": true,
+            "value_change": -0.11,
+            "new_health": 0.057
+          },
+          "death": false
+        },
+        "1211": {
+          "health": {
+            "change": true,
+            "value_change": -0.047,
+            "new_health": 0.01
+          },
+          "death": false
+        },
+        "1212": {
+          "health": {
+            "change": true,
+            "value_change": -0.01,
+            "new_health": 0.0
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1158
+          },
           {
             "topic": "new relationship",
             "key": 10554,
@@ -126,77 +148,84 @@
               10553
             ],
             "people names": [
-              "Godelief",
-              "Wendelmodis Longus"
+              "Heinone",
+              "Katerina Roden"
             ],
             "people ages": [
-              39,
-              31
+              45,
+              42
             ],
             "label": "spouse",
             "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stOp 't Speuy.se1.c2",
-              "street": "Op 't Speuy",
-              "neighborhood": "jorisbuurt",
-              "unique id": 195
-            }
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "topic": "feelings change",
+            "target": 10552,
+            "target name": "Heinone",
+            "state": "solid love",
+            "friendship label": "friend",
+            "relationship": 10554
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 27090,
+            "people": [
+              10553,
+              11938
+            ],
+            "people names": [
+              "Katerina Roden",
+              "Breghtgherus Buke"
+            ],
+            "people ages": [
+              49,
+              37
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1210": [
+          {
+            "key": 10554,
+            "topic": "unmarried"
           },
           {
-            "topic": "new relationship",
-            "key": 14023,
-            "people": [
-              10553,
-              14021
-            ],
-            "people names": [
-              "Wendelmodis Longus",
-              "Reynerus Godeliefszoon"
-            ],
-            "people ages": [
-              32,
-              0
-            ],
-            "label": "parentchild",
-            "committed": false
-          }
-        ],
-        "1202": [
+            "topic": "person died",
+            "person": {
+              "key": 10552,
+              "name": "Heinone",
+              "age": 56,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "old age",
+            "friendship label": "friend",
+            "label": "spouse",
+            "love state": "solid love"
+          },
           {
-            "topic": "new relationship",
-            "key": 14581,
-            "people": [
-              10553,
-              14579
-            ],
-            "people names": [
-              "Wendelmodis Longus",
-              "Gherbrandus"
-            ],
-            "people ages": [
-              33,
-              0
-            ],
-            "label": "parentchild",
-            "committed": false
+            "topic": "not enough income",
+            "income": 0.096,
+            "inhabitants": []
           }
         ],
-        "1203": [
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "sickness"
           }
         ]
       }
@@ -208,14 +237,19 @@
       "section": "stOp 't Speuy.se1.c2",
       "street": "Op 't Speuy",
       "neighborhood": "jorisbuurt",
-      "unique id": 195
+      "unique id": 193
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         10554
       ]
-    }
+    },
+    "friends": [
+      10554,
+      27090
+    ],
+    "enemies": []
   }
 }

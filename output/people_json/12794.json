@@ -1,33 +1,35 @@
 {
   "12794": {
     "alive": false,
-    "name": "Cecilia",
+    "name": "Esa",
     "surname": "",
-    "full name": "Cecilia",
+    "full name": "Esa",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.043,
-      "romantic interest": 0.794,
-      "sex interest": 0.595,
-      "gender expression": 0.043,
+      "sexuality": 0.054,
+      "romantic interest": 0.872,
+      "sex interest": 0.736,
+      "gender expression": 0.135,
       "sex": "f"
     },
-    "age": 45,
-    "birth year": 1166,
+    "age": 26,
+    "birth year": 1177,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "No religion",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.305,
-      "honest-false": 0.0
+      "lawful-chaotic": 0.338,
+      "nice-nasty": 0.04,
+      "honest-false": 0.496,
+      "dream": 0.526,
+      "outgoing": 0.646
     },
     "attitude": {
-      "outgoing": 0.388,
-      "dream": 0.097
+      "dream": 0.526,
+      "outgoing": 0.646
     },
     "homsoc": {
       "means": {
@@ -35,22 +37,49 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": [
-          "starving"
-        ]
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.016,
-        "gender expression expression": 0.008
+        "sexuality expression": 0.032,
+        "gender expression expression": 0.097
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14353": {
+          "key": 14353,
+          "name": "Adam Borluet",
+          "age": 4,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Esa (12794)",
+            "father": "Alebrando (12793)"
+          }
+        },
+        "14914": {
+          "key": 14914,
+          "name": "Salome Borluet",
+          "age": 48,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Esa (12794)",
+            "father": "Alebrando (12793)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           12795
-        ]
+        ],
+        "child": {
+          "birth": [
+            14355,
+            14916
+          ]
+        }
       }
     },
     "occupation": {
@@ -63,16 +92,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 8,
-      "eye_color": "brown",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "skin_color": 7,
+      "eye_color": "green",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
-        "C",
-        "C"
+        "S",
+        "S"
       ],
-      "health": 0.478,
-      "fertility": 0.467,
+      "health": 0.525,
+      "fertility": 0.646,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -84,13 +113,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.478
+            "new_health": 0.755
           },
           "death": false
+        },
+        "1202": {
+          "health": {
+            "change": true,
+            "value_change": -0.23,
+            "new_health": 0.525
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1177
+          },
           {
             "topic": "new relationship",
             "key": 12795,
@@ -99,79 +140,66 @@
               12794
             ],
             "people names": [
-              "Franco",
-              "Cecilia"
+              "Alebrando Borluet",
+              "Esa"
             ],
             "people ages": [
-              45,
-              34
+              41,
+              23
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stPapenhofstede.se3.c1",
-              "street": "Papenhofstede",
-              "neighborhood": "denhof",
-              "unique id": 979
-            }
+            "topic": "new relationship",
+            "key": 14355,
+            "people": [
+              12794,
+              14353
+            ],
+            "people names": [
+              "Esa",
+              "Adam Borluet"
+            ],
+            "people ages": [
+              24,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          },
-          {
-            "topic": "feelings change",
-            "target": 12793,
-            "target name": "Franco",
-            "state": "out of love",
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "friend",
             "relationship": 12795
-          }
-        ],
-        "1207": [
-          {
-            "key": 12795,
-            "topic": "unmarried"
           },
           {
-            "topic": "person died",
-            "person": {
-              "key": 12793,
-              "name": "Franco",
-              "age": 53,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "cause": "sickness",
-            "label": "spouse"
+            "topic": "new relationship",
+            "key": 14916,
+            "people": [
+              12794,
+              14914
+            ],
+            "people names": [
+              "Esa",
+              "Salome Borluet"
+            ],
+            "people ages": [
+              24,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1208": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1209": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1210": [
+        "1202": [
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "childbirth"
           }
         ]
       }
@@ -183,14 +211,20 @@
       "section": "stPapenhofstede.se3.c1",
       "street": "Papenhofstede",
       "neighborhood": "denhof",
-      "unique id": 979
+      "unique id": 978
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
         12795
       ]
-    }
+    },
+    "friends": [
+      12795,
+      14355,
+      14916
+    ],
+    "enemies": []
   }
 }

@@ -5,29 +5,31 @@
     "surname": "",
     "full name": "Victoria",
     "born this way": {
-      "sexuality label": "bi",
-      "sexuality": 0.435,
-      "romantic interest": 0.642,
-      "sex interest": 0.95,
-      "gender expression": 0.388,
+      "sexuality label": "straight",
+      "sexuality": 0.179,
+      "romantic interest": 0.876,
+      "sex interest": 0.571,
+      "gender expression": 0.0,
       "sex": "f"
     },
     "age": 25,
     "birth year": 1184,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.785,
-      "nice-nasty": 0.999,
-      "honest-false": 0.299
+      "lawful-chaotic": 0.686,
+      "nice-nasty": 0.201,
+      "honest-false": 0.985,
+      "dream": 0.367,
+      "outgoing": 0.764
     },
     "attitude": {
-      "outgoing": 0.637,
-      "dream": 0.0
+      "dream": 0.367,
+      "outgoing": 0.764
     },
     "homsoc": {
       "means": {
@@ -35,44 +37,105 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": [
-          "starving"
-        ]
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.271,
-        "gender expression expression": 0.154
+        "sexuality expression": 0.126,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "15117": {
+          "key": 15117,
+          "name": "Goeskin Menauresszoon",
+          "age": 48,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Victoria (11084)",
+            "father": "Menaures (11083)"
+          }
+        },
+        "20139": {
+          "key": 20139,
+          "name": "Herbert",
+          "age": 23,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Victoria (11084)",
+            "father": "Menaures (11083)"
+          }
+        },
+        "22804": {
+          "key": 22804,
+          "name": "Diewiven Menauressdochter",
+          "age": 31,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Victoria (11084)",
+            "father": "Menaures (11083)"
+          }
+        },
+        "28953": {
+          "key": 28953,
+          "name": "Splinter Menauresszoon",
+          "age": 5,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Victoria (11084)",
+            "father": "Menaures (11083)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11085
-        ]
+        ],
+        "child": {
+          "birth": [
+            15119,
+            20141,
+            22806,
+            28955
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.208,
+      "all_incomes": [
+        1.034,
+        1.0899999999999999,
+        1.16,
+        1.1529999999999998,
+        1.208
+      ],
+      "job": {
+        "lawful": true,
+        "honest": true
+      }
     },
     "genetics": {
       "skin_color": 6,
       "eye_color": "blue",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "S",
-        "S"
+        "C",
+        "C"
       ],
-      "health": 0.524,
-      "fertility": 0.5,
+      "health": 0.659,
+      "fertility": 0.632,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -84,7 +147,7 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.524
+            "new_health": 0.659
           },
           "death": false
         },
@@ -92,13 +155,17 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.524
+            "new_health": 0.659
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1184
+          },
           {
             "topic": "new relationship",
             "key": 11085,
@@ -107,45 +174,101 @@
               11084
             ],
             "people names": [
-              "Godino",
+              "Menaures",
               "Victoria"
             ],
             "people ages": [
-              20,
+              45,
               16
             ],
             "label": "spouse",
             "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stDie Camp.se3.c2",
-              "street": "Die Camp",
-              "neighborhood": "kampbuurt",
-              "unique id": 381
-            }
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "topic": "new relationship",
+            "key": 15119,
+            "people": [
+              11084,
+              15117
+            ],
+            "people names": [
+              "Victoria",
+              "Goeskin Menauresszoon"
+            ],
+            "people ages": [
+              17,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1202": [
+        "1203": [
           {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "spouse",
-            "friendship label": "indifferent",
-            "relationship": 11085
+            "topic": "new relationship",
+            "key": 20141,
+            "people": [
+              11084,
+              20139
+            ],
+            "people names": [
+              "Victoria",
+              "Herbert"
+            ],
+            "people ages": [
+              20,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1206": [
+        "1204": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.034
+          },
+          {
+            "topic": "new relationship",
+            "key": 22806,
+            "people": [
+              11084,
+              22804
+            ],
+            "people names": [
+              "Victoria",
+              "Diewiven Menauressdochter"
+            ],
+            "people ages": [
+              21,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1207": [
+          {
+            "topic": "new relationship",
+            "key": 28955,
+            "people": [
+              11084,
+              28953
+            ],
+            "people names": [
+              "Victoria",
+              "Splinter Menauresszoon"
+            ],
+            "people ages": [
+              24,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
           {
             "key": 11085,
             "topic": "unmarried"
@@ -154,39 +277,34 @@
             "topic": "person died",
             "person": {
               "key": 11083,
-              "name": "Godino",
-              "age": 27,
+              "name": "Menaures",
+              "age": 53,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
             },
-            "cause": "illness",
-            "label": "spouse"
-          }
-        ],
-        "1207": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "cause": "sickness",
+            "friendship label": "friend",
+            "label": "spouse",
+            "love state": "loveless"
           }
         ],
         "1208": [
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "childbirth"
           }
         ]
       }
     },
     "key": 11084,
     "home": {
-      "income class": 3,
-      "income class label": "upper middle class",
-      "section": "stLievevrouwe kerch.se5.c3",
-      "street": "Lievevrouwe kerch",
-      "neighborhood": "olvbuurt",
-      "unique id": 597
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stDie Camp.se3.c2",
+      "street": "Die Camp",
+      "neighborhood": "kampbuurt",
+      "unique id": 374
     },
     "relationship status": {
       "taken": false,
@@ -194,6 +312,11 @@
       "relationships": [
         11085
       ]
-    }
+    },
+    "friends": [
+      11085,
+      28955
+    ],
+    "enemies": []
   }
 }

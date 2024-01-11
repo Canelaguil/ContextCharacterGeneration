@@ -1,33 +1,35 @@
 {
   "11507": {
     "alive": false,
-    "name": "Lutghardis",
-    "surname": "Duvel",
-    "full name": "Lutghardis Duvel",
+    "name": "Clara",
+    "surname": "",
+    "full name": "Clara",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.018,
-      "romantic interest": 0.905,
-      "sex interest": 0.714,
-      "gender expression": 0.118,
+      "sexuality label": "bi",
+      "sexuality": 0.612,
+      "romantic interest": 0.835,
+      "sex interest": 0.744,
+      "gender expression": 0.037,
       "sex": "f"
     },
-    "age": 26,
-    "birth year": 1179,
+    "age": 40,
+    "birth year": 1170,
     "sex": "f",
     "faction": "No religion",
     "income class": [
-      2,
-      "middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.574,
-      "nice-nasty": 0.0,
-      "honest-false": 0.0
+      "lawful-chaotic": 0.851,
+      "nice-nasty": 0.999,
+      "honest-false": 0.425,
+      "dream": 0.532,
+      "outgoing": 0.999
     },
     "attitude": {
-      "outgoing": 0.703,
-      "dream": 0.274
+      "dream": 0.532,
+      "outgoing": 0.999
     },
     "homsoc": {
       "means": {
@@ -35,27 +37,47 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": [
-          "starving"
-        ]
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.01,
-        "gender expression expression": 0.047
+        "sexuality expression": 0.377,
+        "gender expression expression": 0.006
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "15161": {
-          "key": 15161,
-          "name": "Ymmekine Dronkine",
-          "age": 53,
+        "21142": {
+          "key": 21142,
+          "name": "Aleydis Markolf",
+          "age": 1,
           "alive": false,
           "sex": "f",
           "parents": {
-            "mother": "Lutghardis (11507)",
-            "father": "Heinhoca (11506)"
+            "mother": "Clara (11507)",
+            "father": "Lotijn (11506)"
+          }
+        },
+        "26559": {
+          "key": 26559,
+          "name": "Sara van Lotijn",
+          "age": 14,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Clara (11507)",
+            "father": "Lotijn (11506)"
+          }
+        },
+        "30204": {
+          "key": 30204,
+          "name": "Soi Markolf",
+          "age": 16,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Clara (11507)",
+            "father": "Lotijn (11506)"
           }
         }
       },
@@ -65,7 +87,9 @@
         ],
         "child": {
           "birth": [
-            15163
+            21144,
+            26561,
+            30206
           ]
         }
       }
@@ -73,23 +97,23 @@
     "occupation": {
       "has job": false,
       "income class": [
-        2,
-        "middle class"
+        1,
+        "lower middle class"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 6,
-      "eye_color": "brown",
+      "skin_color": 1,
+      "eye_color": "green",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
         "C",
         "C"
       ],
-      "health": 0.542,
-      "fertility": 0.561,
+      "health": 0.467,
+      "fertility": 0.704,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -101,21 +125,41 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.542
+            "new_health": 0.688
           },
           "death": false
         },
-        "1204": {
+        "1205": {
+          "health": {
+            "change": true,
+            "value_change": -0.221,
+            "new_health": 0.467
+          },
+          "death": false
+        },
+        "1206": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.542
+            "new_health": 0.467
+          },
+          "death": false
+        },
+        "1209": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.467
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1170
+          },
           {
             "topic": "new relationship",
             "key": 11508,
@@ -124,80 +168,112 @@
               11507
             ],
             "people names": [
-              "Heinhoca Dronkine",
-              "Lutghardis Duvel"
+              "Lotijn Markolf",
+              "Clara"
             ],
             "people ages": [
-              29,
-              21
+              41,
+              30
             ],
             "label": "spouse",
             "committed": true
+          }
+        ],
+        "1204": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "friend",
+            "relationship": 11508
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stBreestraat.se1.c2",
-              "street": "Breestraat",
-              "neighborhood": "olvbuurt",
-              "unique id": 529
-            }
-          }
-        ],
-        "1201": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          }
-        ],
-        "1202": [
-          {
             "topic": "new relationship",
-            "key": 15163,
+            "key": 21144,
             "people": [
               11507,
-              15161
+              21142
             ],
             "people names": [
-              "Lutghardis Duvel",
-              "Ymmekine Dronkine"
+              "Clara",
+              "Aleydis Markolf"
             ],
             "people ages": [
-              24,
+              34,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1205": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 21142,
+              "name": "Aleydis Markolf",
+              "age": 1,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Clara (11507)",
+                "father": "Lotijn (11506)"
+              }
+            },
+            "cause": "childbirth",
+            "friendship label": "indifferent",
+            "label": "child"
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 26561,
+            "people": [
+              11507,
+              26559
+            ],
+            "people names": [
+              "Clara",
+              "Sara van Lotijn"
+            ],
+            "people ages": [
+              37,
               0
             ],
             "label": "parentchild",
             "committed": false
           },
           {
-            "key": 11508,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 11506,
-              "name": "Heinhoca Dronkine",
-              "age": 32,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "cause": "illness",
-            "label": "spouse"
+            "topic": "feelings change",
+            "target": 11506,
+            "target name": "Lotijn Markolf",
+            "state": "out of love",
+            "friendship label": "friend",
+            "relationship": 11508
           }
         ],
-        "1203": [
+        "1208": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "new relationship",
+            "key": 30206,
+            "people": [
+              11507,
+              30204
+            ],
+            "people names": [
+              "Clara",
+              "Soi Markolf"
+            ],
+            "people ages": [
+              38,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1204": [
+        "1209": [
           {
             "topic": "death",
             "cause": "illness"
@@ -207,19 +283,24 @@
     },
     "key": 11507,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stBreestraat.se1.c2",
-      "street": "Breestraat",
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stPaternoster straetje.se1.c1",
+      "street": "Paternoster straetje",
       "neighborhood": "olvbuurt",
-      "unique id": 529
+      "unique id": 520
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
         11508
       ]
-    }
+    },
+    "friends": [
+      11508,
+      26561
+    ],
+    "enemies": []
   }
 }

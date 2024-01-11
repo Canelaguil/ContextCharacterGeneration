@@ -182,6 +182,8 @@ class Body():
         Does the person die this turn?
         """
         # to avoid random 200+ years olds given an old age of 50, eg
+        if self.person.mark_for_death:
+            return True
         max_age_this_year = (Body.old_age * 2) - rand_int(int(Body.old_age * 0.2), 0)
         if self.health == 0:
             self.death_cause = 'sickness'

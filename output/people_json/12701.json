@@ -1,33 +1,35 @@
 {
   "12701": {
     "alive": false,
-    "name": "Meynseth",
-    "surname": "",
-    "full name": "Meynseth",
+    "name": "Riet",
+    "surname": "Euer",
+    "full name": "Riet Euer",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.08,
-      "romantic interest": 0.887,
-      "sex interest": 0.743,
-      "gender expression": 0.158,
+      "sexuality": 0.02,
+      "romantic interest": 0.583,
+      "sex interest": 0.601,
+      "gender expression": 0.147,
       "sex": "f"
     },
-    "age": 48,
-    "birth year": 1169,
+    "age": 32,
+    "birth year": 1172,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "Zealots",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.017,
-      "nice-nasty": 0.669,
-      "honest-false": 0.771
+      "lawful-chaotic": 0.938,
+      "nice-nasty": 0.0,
+      "honest-false": 0.63,
+      "dream": 0.0,
+      "outgoing": 0.648
     },
     "attitude": {
-      "outgoing": 0.314,
-      "dream": 0.096
+      "dream": 0.0,
+      "outgoing": 0.648
     },
     "homsoc": {
       "means": {
@@ -38,44 +40,44 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.049,
-        "gender expression expression": 0.121
+        "sexuality expression": 0.016,
+        "gender expression expression": 0.014
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "13955": {
-          "key": 13955,
-          "name": "Remsindis van Meynseth",
-          "age": 14,
+        "13801": {
+          "key": 13801,
+          "name": "Euerardus Calf",
+          "age": 12,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Riet (12701)",
+            "father": "Lucas (12700)"
+          }
+        },
+        "15593": {
+          "key": 15593,
+          "name": "Itsburgis Calf",
+          "age": 48,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Riet (12701)",
+            "father": "Lucas (12700)"
+          }
+        },
+        "17237": {
+          "key": 17237,
+          "name": "Cecilia Calf",
+          "age": 47,
           "alive": false,
           "sex": "f",
           "parents": {
-            "mother": "Meynseth (12701)",
-            "father": "Reymbernus (12700)"
-          }
-        },
-        "16823": {
-          "key": 16823,
-          "name": "Waldfridus Reymbernusszoon",
-          "age": 56,
-          "alive": false,
-          "sex": "m",
-          "parents": {
-            "mother": "Meynseth (12701)",
-            "father": "Reymbernus (12700)"
-          }
-        },
-        "19904": {
-          "key": 19904,
-          "name": "Eremboldus Reymbernusszoon",
-          "age": 10,
-          "alive": false,
-          "sex": "m",
-          "parents": {
-            "mother": "Meynseth (12701)",
-            "father": "Reymbernus (12700)"
+            "mother": "Riet (12701)",
+            "father": "Lucas (12700)"
           }
         }
       },
@@ -85,9 +87,9 @@
         ],
         "child": {
           "birth": [
-            13957,
-            16825,
-            19906
+            13803,
+            15595,
+            17239
           ]
         }
       }
@@ -98,31 +100,29 @@
         2,
         "middle class"
       ],
-      "income": 1.524,
+      "income": 1.1179999999999999,
       "all_incomes": [
-        0.922,
-        0.5650000000000001,
-        0.854,
-        1.02,
-        1.524,
-        1.524
+        0.981,
+        1.01,
+        1.069,
+        1.1179999999999999
       ],
       "job": {
-        "lawful": false,
-        "honest": false
+        "lawful": true,
+        "honest": true
       }
     },
     "genetics": {
-      "skin_color": 0,
+      "skin_color": 3,
       "eye_color": "brown",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.723,
-      "fertility": 0.725,
+      "health": 0.673,
+      "fertility": 0.729,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -134,21 +134,30 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.723
+            "new_health": 0.673
           },
           "death": false
         },
-        "1216": {
+        "1203": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.723
+            "new_health": 0.673
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1172
+          },
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.981
+          },
           {
             "topic": "new relationship",
             "key": 12702,
@@ -157,183 +166,84 @@
               12701
             ],
             "people names": [
-              "Reymbernus",
-              "Meynseth"
+              "Lucas Calf",
+              "Riet Euer"
             ],
             "people ages": [
-              42,
-              31
+              45,
+              28
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stDen Hof.se3.c2",
-              "street": "Den Hof",
-              "neighborhood": "denhof",
-              "unique id": 946
-            }
+            "topic": "new relationship",
+            "key": 13803,
+            "people": [
+              12701,
+              13801
+            ],
+            "people names": [
+              "Riet Euer",
+              "Euerardus Calf"
+            ],
+            "people ages": [
+              28,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          },
-          {
-            "topic": "new relationship",
-            "key": 13957,
-            "people": [
-              12701,
-              13955
-            ],
-            "people names": [
-              "Meynseth",
-              "Remsindis van Meynseth"
-            ],
-            "people ages": [
-              32,
-              0
-            ],
-            "label": "parentchild",
-            "committed": false
-          }
-        ],
-        "1205": [
-          {
-            "topic": "new relationship",
-            "key": 16825,
-            "people": [
-              12701,
-              16823
-            ],
-            "people names": [
-              "Meynseth",
-              "Waldfridus Reymbernusszoon"
-            ],
-            "people ages": [
-              36,
-              0
-            ],
-            "label": "parentchild",
-            "committed": false
-          }
-        ],
-        "1207": [
-          {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "spouse",
-            "friendship label": "disliked",
-            "relationship": 12702
-          }
-        ],
-        "1208": [
-          {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "parentchild",
-            "friendship label": "friend",
-            "relationship": 13957
-          }
-        ],
-        "1209": [
-          {
-            "topic": "new relationship",
-            "key": 19906,
-            "people": [
-              12701,
-              19904
-            ],
-            "people names": [
-              "Meynseth",
-              "Eremboldus Reymbernusszoon"
-            ],
-            "people ages": [
-              40,
-              0
-            ],
-            "label": "parentchild",
-            "committed": false
-          }
-        ],
-        "1211": [
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.922
-          },
-          {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "parentchild",
-            "friendship label": "enemy",
-            "relationship": 19906
-          },
-          {
-            "key": 12702,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 12700,
-              "name": "Reymbernus",
-              "age": 54,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "cause": "sickness",
-            "label": "spouse"
-          }
-        ],
-        "1212": [
-          {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.5650000000000001
-          }
-        ],
-        "1214": [
-          {
             "topic": "job notice",
             "notice": "comfortable earnings",
-            "income": 1.02
-          }
-        ],
-        "1215": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1215
+            "income": 1.01
           },
           {
-            "topic": "person died",
-            "person": {
-              "key": 13955,
-              "name": "Remsindis van Meynseth",
-              "age": 14,
-              "alive": false,
-              "sex": "f",
-              "parents": {
-                "mother": "Meynseth (12701)",
-                "father": "Reymbernus (12700)"
-              }
-            },
-            "cause": "illness",
-            "label": "child"
+            "topic": "new relationship",
+            "key": 15595,
+            "people": [
+              12701,
+              15593
+            ],
+            "people names": [
+              "Riet Euer",
+              "Itsburgis Calf"
+            ],
+            "people ages": [
+              30,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1216": [
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 17239,
+            "people": [
+              12701,
+              17237
+            ],
+            "people names": [
+              "Riet Euer",
+              "Cecilia Calf"
+            ],
+            "people ages": [
+              30,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1203": [
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "childbirth"
           }
         ]
       }
@@ -348,11 +258,17 @@
       "unique id": 946
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
         12702
       ]
-    }
+    },
+    "friends": [
+      13803,
+      15595,
+      17239
+    ],
+    "enemies": []
   }
 }

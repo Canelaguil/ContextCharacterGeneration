@@ -1,19 +1,19 @@
 {
   "10160": {
     "alive": false,
-    "name": "Walburgis",
-    "surname": "Vint",
-    "full name": "Walburgis Vint",
+    "name": "Bertrade",
+    "surname": "Sluke",
+    "full name": "Bertrade Sluke",
     "born this way": {
-      "sexuality label": "bi",
-      "sexuality": 0.578,
-      "romantic interest": 0.54,
-      "sex interest": 0.786,
-      "gender expression": 0.359,
+      "sexuality label": "straight",
+      "sexuality": 0.111,
+      "romantic interest": 0.849,
+      "sex interest": 0.811,
+      "gender expression": 0.0,
       "sex": "f"
     },
-    "age": 33,
-    "birth year": 1168,
+    "age": 42,
+    "birth year": 1174,
     "sex": "f",
     "faction": "Dogmatists",
     "income class": [
@@ -21,13 +21,15 @@
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.497,
-      "nice-nasty": 0.212,
-      "honest-false": 0.385
+      "lawful-chaotic": 0.642,
+      "nice-nasty": 0.56,
+      "honest-false": 0.291,
+      "dream": 0.629,
+      "outgoing": 0.443
     },
     "attitude": {
-      "outgoing": 0.504,
-      "dream": 0.664
+      "dream": 0.629,
+      "outgoing": 0.443
     },
     "homsoc": {
       "means": {
@@ -35,38 +37,103 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.277,
-        "gender expression expression": 0.144
+        "sexuality expression": 0.077,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
-      "relationship keys": {}
+      "children": {
+        "14812": {
+          "key": 14812,
+          "name": "Aghata Wilde",
+          "age": 48,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Bertrade (10160)",
+            "father": "Otto (10159)"
+          }
+        },
+        "16990": {
+          "key": 16990,
+          "name": "Blomart Wilde",
+          "age": 41,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Bertrade (10160)",
+            "father": "Otto (10159)"
+          }
+        },
+        "25275": {
+          "key": 25275,
+          "name": "Remsindis Wilde",
+          "age": 13,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Bertrade (10160)",
+            "father": "Otto (10159)"
+          }
+        }
+      },
+      "relationship keys": {
+        "spouse": [
+          10161
+        ],
+        "child": {
+          "birth": [
+            14814,
+            16992,
+            25277
+          ]
+        },
+        "unrelated": [
+          20707,
+          25069
+        ]
+      }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         1,
         "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.205,
+      "all_incomes": [
+        0.978,
+        0.556,
+        0.736,
+        0.893,
+        0.845,
+        0.662,
+        0.842,
+        1.164,
+        1.205
+      ],
+      "job": {
+        "lawful": true,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 7,
-      "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 3,
+      "eye_color": "green",
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
-        "C",
+        "S",
         "S"
       ],
-      "health": 0.72,
-      "fertility": 0.653,
+      "health": 0.788,
+      "fertility": 0.766,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -78,13 +145,310 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.72
+            "new_health": 0.788
+          },
+          "death": false
+        },
+        "1215": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.788
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1174
+          },
+          {
+            "topic": "new relationship",
+            "key": 10161,
+            "people": [
+              10159,
+              10160
+            ],
+            "people names": [
+              "Otto Wilde",
+              "Bertrade Sluke"
+            ],
+            "people ages": [
+              49,
+              26
+            ],
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 14814,
+            "people": [
+              10160,
+              14812
+            ],
+            "people names": [
+              "Bertrade Sluke",
+              "Aghata Wilde"
+            ],
+            "people ages": [
+              27,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 16992,
+            "people": [
+              10160,
+              16990
+            ],
+            "people names": [
+              "Bertrade Sluke",
+              "Blomart Wilde"
+            ],
+            "people ages": [
+              28,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 14814
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 20707,
+            "people": [
+              10160,
+              11713
+            ],
+            "people names": [
+              "Bertrade Sluke",
+              "Snelle Blonde"
+            ],
+            "people ages": [
+              30,
+              47
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1204": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 16992
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.372,
+            "inhabitants": [
+              14812
+            ]
+          }
+        ],
+        "1205": [
+          {
+            "topic": "new relationship",
+            "key": 25069,
+            "people": [
+              10160,
+              10151
+            ],
+            "people names": [
+              "Bertrade Sluke",
+              "Heile Colueken"
+            ],
+            "people ages": [
+              32,
+              22
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1206": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "indifferent",
+            "relationship": 10161
+          },
+          {
+            "topic": "new relationship",
+            "key": 25277,
+            "people": [
+              10160,
+              25275
+            ],
+            "people names": [
+              "Bertrade Sluke",
+              "Remsindis Wilde"
+            ],
+            "people ages": [
+              32,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "friend",
+            "relationship": 20707
+          },
+          {
+            "key": 10161,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10159,
+              "name": "Otto Wilde",
+              "age": 56,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "friendship label": "indifferent",
+            "label": "spouse",
+            "love state": "loveless"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.978
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              14812
+            ]
+          }
+        ],
+        "1208": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.556
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "friend",
+            "relationship": 25069
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.556,
+            "inhabitants": [
+              14812
+            ]
+          }
+        ],
+        "1209": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "friend",
+            "relationship": 20707
+          }
+        ],
+        "1212": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.662
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "disliked",
+            "relationship": 14814
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11713,
+              "name": "Snelle Blonde",
+              "age": 56,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "friendship label": "friend",
+            "label": "unrelated",
+            "love state": "nothing"
+          }
+        ],
+        "1213": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "disliked",
+            "relationship": 25277
+          }
+        ],
+        "1214": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.164
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10151,
+              "name": "Heile Colueken",
+              "age": 31,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "starvation",
+            "friendship label": "friend",
+            "label": "unrelated",
+            "love state": "nothing"
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
           {
             "topic": "death",
             "cause": "illness"
@@ -102,9 +466,19 @@
       "unique id": 57
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
-      "relationships": []
-    }
+      "taken": false,
+      "married": false,
+      "relationships": [
+        10161
+      ]
+    },
+    "friends": [
+      20707,
+      25069
+    ],
+    "enemies": [
+      14814,
+      25277
+    ]
   }
 }

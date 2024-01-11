@@ -1,33 +1,35 @@
 {
   "11711": {
     "alive": false,
-    "name": "Liudburgis",
+    "name": "Ghoudekinen",
     "surname": "",
-    "full name": "Liudburgis",
+    "full name": "Ghoudekinen",
     "born this way": {
-      "sexuality label": "bi",
-      "sexuality": 0.402,
-      "romantic interest": 0.74,
-      "sex interest": 0.588,
-      "gender expression": 0.413,
+      "sexuality label": "gay",
+      "sexuality": 0.886,
+      "romantic interest": 0.73,
+      "sex interest": 0.977,
+      "gender expression": 0.16,
       "sex": "f"
     },
-    "age": 34,
-    "birth year": 1170,
+    "age": 37,
+    "birth year": 1174,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
-      3,
-      "upper middle class"
+      4,
+      "nobility"
     ],
     "personality": {
-      "lawful-chaotic": 0.704,
-      "nice-nasty": 0.0,
-      "honest-false": 0.162
+      "lawful-chaotic": 0.386,
+      "nice-nasty": 0.817,
+      "honest-false": 0.907,
+      "dream": 0.717,
+      "outgoing": 0.76
     },
     "attitude": {
-      "outgoing": 0.313,
-      "dream": 0.448
+      "dream": 0.717,
+      "outgoing": 0.76
     },
     "homsoc": {
       "means": {
@@ -38,22 +40,55 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.295,
-        "gender expression expression": 0.076
+        "sexuality expression": 0.52,
+        "gender expression expression": 0.089
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "15078": {
-          "key": 15078,
-          "name": "Hadewigis Iacobussdochter",
-          "age": 55,
+        "14374": {
+          "key": 14374,
+          "name": "Ryccie Longus",
+          "age": 49,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Ghoudekinen (11711)",
+            "father": "Richolfus (11710)"
+          }
+        },
+        "20668": {
+          "key": 20668,
+          "name": "Harderico Longus",
+          "age": 38,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Ghoudekinen (11711)",
+            "father": "Richolfus (11710)"
+          }
+        },
+        "24836": {
+          "key": 24836,
+          "name": "Henric Longus",
+          "age": 30,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Ghoudekinen (11711)",
+            "father": "Richolfus (11710)"
+          }
+        },
+        "27293": {
+          "key": 27293,
+          "name": "Folqui van Richolfus",
+          "age": 37,
           "alive": false,
           "sex": "f",
           "parents": {
-            "mother": "Liudburgis (11711)",
-            "father": "Iacobus (11710)"
+            "mother": "Ghoudekinen (11711)",
+            "father": "Richolfus (11710)"
           }
         }
       },
@@ -63,31 +98,48 @@
         ],
         "child": {
           "birth": [
-            15080
+            14376,
+            20670,
+            24838,
+            27295
           ]
-        }
+        },
+        "unrelated": [
+          27051,
+          29135
+        ]
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        3,
-        "upper middle class"
+        4,
+        "nobility"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.4620000000000002,
+      "all_incomes": [
+        0.919,
+        1.1500000000000001,
+        1.2770000000000001,
+        1.367,
+        1.4620000000000002
+      ],
+      "job": {
+        "lawful": true,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 4,
+      "skin_color": 3,
       "eye_color": "brown",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
         "C",
-        "S"
+        "C"
       ],
-      "health": 0.66,
-      "fertility": 0.615,
+      "health": 0.627,
+      "fertility": 0.683,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -99,13 +151,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.66
+            "new_health": 0.627
           },
           "death": false
+        },
+        "1210": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.627
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1174
+          },
           {
             "topic": "new relationship",
             "key": 11712,
@@ -114,49 +178,29 @@
               11711
             ],
             "people names": [
-              "Iacobus",
-              "Liudburgis"
+              "Richolfus Longus",
+              "Ghoudekinen"
             ],
             "people ages": [
-              32,
-              30
+              27,
+              26
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stLievevrouwe kerch.se7.c3",
-              "street": "Lievevrouwe kerch",
-              "neighborhood": "olvbuurt",
-              "unique id": 602
-            }
-          }
-        ],
-        "1201": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          }
-        ],
-        "1202": [
-          {
             "topic": "new relationship",
-            "key": 15080,
+            "key": 14376,
             "people": [
               11711,
-              15078
+              14374
             ],
             "people names": [
-              "Liudburgis",
-              "Hadewigis Iacobussdochter"
+              "Ghoudekinen",
+              "Ryccie Longus"
             ],
             "people ages": [
-              33,
+              27,
               0
             ],
             "label": "parentchild",
@@ -164,6 +208,114 @@
           }
         ],
         "1203": [
+          {
+            "topic": "new relationship",
+            "key": 20670,
+            "people": [
+              11711,
+              20668
+            ],
+            "people names": [
+              "Ghoudekinen",
+              "Harderico Longus"
+            ],
+            "people ages": [
+              30,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1205": [
+          {
+            "topic": "new relationship",
+            "key": 24838,
+            "people": [
+              11711,
+              24836
+            ],
+            "people names": [
+              "Ghoudekinen",
+              "Henric Longus"
+            ],
+            "people ages": [
+              32,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1206": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.919
+          },
+          {
+            "topic": "new relationship",
+            "key": 27051,
+            "people": [
+              11518,
+              11711
+            ],
+            "people names": [
+              "Brame",
+              "Ghoudekinen"
+            ],
+            "people ages": [
+              43,
+              33
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1207": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.1500000000000001
+          },
+          {
+            "topic": "new relationship",
+            "key": 27295,
+            "people": [
+              11711,
+              27293
+            ],
+            "people names": [
+              "Ghoudekinen",
+              "Folqui van Richolfus"
+            ],
+            "people ages": [
+              34,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "new relationship",
+            "key": 29135,
+            "people": [
+              11711,
+              10249
+            ],
+            "people names": [
+              "Ghoudekinen",
+              "Barwoud Neve"
+            ],
+            "people ages": [
+              34,
+              50
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1210": [
           {
             "topic": "death",
             "cause": "illness"
@@ -173,19 +325,26 @@
     },
     "key": 11711,
     "home": {
-      "income class": 3,
-      "income class label": "upper middle class",
-      "section": "stLievevrouwe kerch.se7.c3",
+      "income class": 4,
+      "income class label": "nobility",
+      "section": "stLievevrouwe kerch.se3.c4",
       "street": "Lievevrouwe kerch",
       "neighborhood": "olvbuurt",
-      "unique id": 602
+      "unique id": 590
     },
     "relationship status": {
-      "taken": true,
+      "taken": false,
       "married": true,
       "relationships": [
         11712
       ]
-    }
+    },
+    "friends": [
+      11712,
+      14376,
+      27295,
+      27051
+    ],
+    "enemies": []
   }
 }

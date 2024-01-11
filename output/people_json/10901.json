@@ -1,33 +1,35 @@
 {
   "10901": {
     "alive": false,
-    "name": "Verthwi",
-    "surname": "Mol",
-    "full name": "Verthwi Mol",
+    "name": "Myrthel",
+    "surname": "Vincs",
+    "full name": "Myrthel Vincs",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.001,
-      "romantic interest": 0.739,
-      "sex interest": 0.907,
-      "gender expression": 0.06,
+      "sexuality label": "bi",
+      "sexuality": 0.422,
+      "romantic interest": 0.534,
+      "sex interest": 0.544,
+      "gender expression": 0.0,
       "sex": "f"
     },
-    "age": 45,
-    "birth year": 1170,
+    "age": 28,
+    "birth year": 1176,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
-      1,
-      "lower middle class"
+      2,
+      "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.406,
-      "nice-nasty": 0.999,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.173,
+      "nice-nasty": 0.313,
+      "honest-false": 0.371,
+      "dream": 0.192,
+      "outgoing": 0.676
     },
     "attitude": {
-      "outgoing": 0.213,
-      "dream": 0.61
+      "dream": 0.192,
+      "outgoing": 0.676
     },
     "homsoc": {
       "means": {
@@ -35,25 +37,49 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.0,
-        "gender expression expression": 0.046
+        "sexuality expression": 0.318,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "17366": {
-          "key": 17366,
-          "name": "Didewar Mey",
-          "age": 3,
+        "12949": {
+          "key": 12949,
+          "name": "Eremboldus Vrode",
+          "age": 49,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Myrthel (10901)",
+            "father": "Herdradus (10900)"
+          }
+        },
+        "14893": {
+          "key": 14893,
+          "name": "Alretieren Vrode",
+          "age": 12,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Myrthel (10901)",
+            "father": "Herdradus (10900)"
+          }
+        },
+        "17064": {
+          "key": 17064,
+          "name": "Walic Vrode",
+          "age": 1,
           "alive": false,
           "sex": "m",
           "parents": {
-            "mother": "Verthwi (10901)",
-            "father": "Anselmi (10900)"
+            "mother": "Myrthel (10901)",
+            "father": "Herdradus (10900)"
           }
         }
       },
@@ -63,26 +89,21 @@
         ],
         "child": {
           "birth": [
-            17368
+            12951,
+            14895,
+            17066
           ]
         }
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
-        1,
-        "lower middle class"
+        2,
+        "middle class"
       ],
-      "income": 1.411,
-      "all_incomes": [
-        1.266,
-        1.411
-      ],
-      "job": {
-        "lawful": false,
-        "honest": true
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
       "skin_color": 1,
@@ -90,11 +111,11 @@
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
-        "S",
+        "C",
         "C"
       ],
-      "health": 0.652,
-      "fertility": 0.747,
+      "health": 0.78,
+      "fertility": 0.712,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -106,21 +127,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.652
+            "new_health": 0.78
           },
           "death": false
         },
-        "1214": {
+        "1203": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.652
+            "new_health": 0.78
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1176
+          },
           {
             "topic": "new relationship",
             "key": 10902,
@@ -129,130 +154,120 @@
               10901
             ],
             "people names": [
-              "Anselmi Mey",
-              "Verthwi Mol"
+              "Herdradus Vrode",
+              "Myrthel Vincs"
             ],
             "people ages": [
-              33,
-              30
+              31,
+              24
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stSt. Aechten straet.se1.c1",
-              "street": "St. Aechten straet",
-              "neighborhood": "agnesbuurt",
-              "unique id": 319
-            }
+            "topic": "new relationship",
+            "key": 12951,
+            "people": [
+              10901,
+              12949
+            ],
+            "people names": [
+              "Myrthel Vincs",
+              "Eremboldus Vrode"
+            ],
+            "people ages": [
+              24,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "spouse",
-            "friendship label": "indifferent",
+            "topic": "feelings change",
+            "target": 10900,
+            "target name": "Herdradus Vrode",
+            "state": "out of love",
+            "friendship label": "friend",
             "relationship": 10902
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          }
-        ],
-        "1202": [
-          {
-            "topic": "feelings change",
-            "target": 10900,
-            "target name": "Anselmi Mey",
-            "state": "infatuation",
-            "relationship": 10902
-          }
-        ],
-        "1204": [
-          {
-            "topic": "feelings change",
-            "target": 10900,
-            "target name": "Anselmi Mey",
-            "state": "solid love",
-            "relationship": 10902
-          }
-        ],
-        "1205": [
-          {
             "topic": "new relationship",
-            "key": 17368,
+            "key": 14895,
             "people": [
               10901,
-              17366
+              14893
             ],
             "people names": [
-              "Verthwi Mol",
-              "Didewar Mey"
+              "Myrthel Vincs",
+              "Alretieren Vrode"
             ],
             "people ages": [
-              36,
+              25,
               0
             ],
             "label": "parentchild",
             "committed": false
           }
         ],
-        "1208": [
-          {
-            "topic": "person died",
-            "person": {
-              "key": 17366,
-              "name": "Didewar Mey",
-              "age": 3,
-              "alive": false,
-              "sex": "m",
-              "parents": {
-                "mother": "Verthwi (10901)",
-                "father": "Anselmi (10900)"
-              }
-            },
-            "cause": "childhood illness",
-            "label": "child"
-          }
-        ],
-        "1211": [
+        "1202": [
           {
             "topic": "update",
             "update": "new friendship label",
             "relationship label": "spouse",
-            "friendship label": "disliked",
+            "friendship label": "friend",
             "relationship": 10902
-          }
-        ],
-        "1213": [
+          },
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.266
+            "topic": "new relationship",
+            "key": 17066,
+            "people": [
+              10901,
+              17064
+            ],
+            "people names": [
+              "Myrthel Vincs",
+              "Walic Vrode"
+            ],
+            "people ages": [
+              26,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 12951
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.497,
+            "inhabitants": [
+              12949
+            ]
           }
         ],
-        "1214": [
+        "1203": [
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "starvation"
           }
         ]
       }
     },
     "key": 10901,
     "home": {
-      "income class": 1,
-      "income class label": "lower middle class",
-      "section": "stSt. Aechten straet.se1.c1",
-      "street": "St. Aechten straet",
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stCingel.se5.c2",
+      "street": "Cingel",
       "neighborhood": "agnesbuurt",
-      "unique id": 319
+      "unique id": 312
     },
     "relationship status": {
       "taken": true,
@@ -260,6 +275,10 @@
       "relationships": [
         10902
       ]
-    }
+    },
+    "friends": [
+      10902
+    ],
+    "enemies": []
   }
 }

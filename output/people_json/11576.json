@@ -1,33 +1,35 @@
 {
   "11576": {
     "alive": false,
-    "name": "Breghlent",
-    "surname": "Hons",
-    "full name": "Breghlent Hons",
+    "name": "Trame",
+    "surname": "Euer",
+    "full name": "Trame Euer",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.147,
-      "romantic interest": 0.607,
-      "sex interest": 0.711,
-      "gender expression": 0.198,
+      "sexuality": 0.0,
+      "romantic interest": 0.563,
+      "sex interest": 0.649,
+      "gender expression": 0.08,
       "sex": "f"
     },
-    "age": 52,
-    "birth year": 1159,
+    "age": 27,
+    "birth year": 1182,
     "sex": "f",
     "faction": "No religion",
     "income class": [
-      3,
-      "upper middle class"
+      2,
+      "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.881,
-      "nice-nasty": 0.671,
-      "honest-false": 0.75
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.436,
+      "honest-false": 0.0,
+      "dream": 0.196,
+      "outgoing": 0.495
     },
     "attitude": {
-      "outgoing": 0.565,
-      "dream": 0.733
+      "dream": 0.196,
+      "outgoing": 0.495
     },
     "homsoc": {
       "means": {
@@ -35,44 +37,107 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": [
-          "starving"
-        ]
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.139,
-        "gender expression expression": 0.067
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.011
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14305": {
+          "key": 14305,
+          "name": "Machtilden Jurresdochter",
+          "age": 49,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Trame (11576)",
+            "father": "Jurre (11575)"
+          }
+        },
+        "15704": {
+          "key": 15704,
+          "name": "Suaneka Kenode",
+          "age": 34,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Trame (11576)",
+            "father": "Jurre (11575)"
+          }
+        },
+        "19650": {
+          "key": 19650,
+          "name": "Tarun Jurreszoon",
+          "age": 29,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Trame (11576)",
+            "father": "Jurre (11575)"
+          }
+        },
+        "21291": {
+          "key": 21291,
+          "name": "Lutghardis Kenode",
+          "age": 45,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Trame (11576)",
+            "father": "Jurre (11575)"
+          }
+        },
+        "28413": {
+          "key": 28413,
+          "name": "Wernerus Jurreszoon",
+          "age": 18,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Trame (11576)",
+            "father": "Jurre (11575)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11577
-        ]
+        ],
+        "child": {
+          "birth": [
+            14307,
+            15706,
+            19652,
+            21293,
+            28415
+          ]
+        }
       }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        3,
-        "upper middle class"
+        2,
+        "middle class"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 6,
-      "eye_color": "green",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "skin_color": 0,
+      "eye_color": "brown",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
         "S",
-        "S"
+        "C"
       ],
-      "health": 0.341,
-      "fertility": 0.717,
+      "health": 0.527,
+      "fertility": 0.451,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -84,29 +149,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.721
+            "new_health": 0.527
           },
           "death": false
         },
-        "1209": {
+        "1208": {
           "health": {
-            "change": true,
-            "value_change": -0.164,
-            "new_health": 0.557
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.527
           },
-          "death": false
-        },
-        "1210": {
-          "health": {
-            "change": true,
-            "value_change": -0.216,
-            "new_health": 0.341
-          },
-          "death": false
+          "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1182
+          },
           {
             "topic": "new relationship",
             "key": 11577,
@@ -115,98 +176,165 @@
               11576
             ],
             "people names": [
-              "Mourin Butziel",
-              "Breghlent Hons"
+              "Jurre Kenode",
+              "Trame Euer"
             ],
             "people ages": [
-              47,
-              41
+              26,
+              18
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stBreestraat.se3.c3",
-              "street": "Breestraat",
-              "neighborhood": "olvbuurt",
-              "unique id": 556
-            }
+            "topic": "new relationship",
+            "key": 14307,
+            "people": [
+              11576,
+              14305
+            ],
+            "people names": [
+              "Trame Euer",
+              "Machtilden Jurresdochter"
+            ],
+            "people ages": [
+              19,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          }
-        ],
-        "1206": [
-          {
-            "key": 11577,
-            "topic": "unmarried"
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "indifferent",
+            "relationship": 11577
           },
           {
-            "topic": "person died",
-            "person": {
-              "key": 11575,
-              "name": "Mourin Butziel",
-              "age": 54,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "cause": "sickness",
-            "label": "spouse"
+            "topic": "new relationship",
+            "key": 15706,
+            "people": [
+              11576,
+              15704
+            ],
+            "people names": [
+              "Trame Euer",
+              "Suaneka Kenode"
+            ],
+            "people ages": [
+              19,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 19652,
+            "people": [
+              11576,
+              19650
+            ],
+            "people names": [
+              "Trame Euer",
+              "Tarun Jurreszoon"
+            ],
+            "people ages": [
+              21,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1204": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 14307
+          },
+          {
+            "topic": "new relationship",
+            "key": 21293,
+            "people": [
+              11576,
+              21291
+            ],
+            "people names": [
+              "Trame Euer",
+              "Lutghardis Kenode"
+            ],
+            "people ages": [
+              23,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 15706
           }
         ],
         "1207": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "new relationship",
+            "key": 28415,
+            "people": [
+              11576,
+              28413
+            ],
+            "people names": [
+              "Trame Euer",
+              "Wernerus Jurreszoon"
+            ],
+            "people ages": [
+              26,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1208": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1209": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1210": [
-          {
             "topic": "death",
-            "cause": "old age"
+            "cause": "childbirth"
           }
         ]
       }
     },
     "key": 11576,
     "home": {
-      "income class": 3,
-      "income class label": "upper middle class",
-      "section": "stBreestraat.se3.c3",
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stBreestraat.se1.c2",
       "street": "Breestraat",
       "neighborhood": "olvbuurt",
-      "unique id": 556
+      "unique id": 543
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
         11577
       ]
-    }
+    },
+    "friends": [
+      14307,
+      19652,
+      21293
+    ],
+    "enemies": []
   }
 }

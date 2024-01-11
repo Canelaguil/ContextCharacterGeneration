@@ -1,33 +1,35 @@
 {
   "10073": {
     "alive": false,
-    "name": "Esa",
-    "surname": "Dicbir",
-    "full name": "Esa Dicbir",
+    "name": "Emmelina",
+    "surname": "",
+    "full name": "Emmelina",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.139,
-      "romantic interest": 0.739,
-      "sex interest": 0.942,
-      "gender expression": 0.011,
+      "sexuality": 0.112,
+      "romantic interest": 0.646,
+      "sex interest": 0.61,
+      "gender expression": 0.132,
       "sex": "f"
     },
-    "age": 27,
-    "birth year": 1175,
+    "age": 40,
+    "birth year": 1167,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.466,
-      "honest-false": 0.794
+      "lawful-chaotic": 0.413,
+      "nice-nasty": 0.205,
+      "honest-false": 0.327,
+      "dream": 0.204,
+      "outgoing": 0.563
     },
     "attitude": {
-      "outgoing": 0.501,
-      "dream": 0.418
+      "dream": 0.204,
+      "outgoing": 0.563
     },
     "homsoc": {
       "means": {
@@ -38,17 +40,46 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.105,
-        "gender expression expression": 0.004
+        "sexuality expression": 0.106,
+        "gender expression expression": 0.072
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "18455": {
+          "key": 18455,
+          "name": "Herbert Ramontszoon",
+          "age": 47,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Emmelina (10073)",
+            "father": "Ramont (10072)"
+          }
+        },
+        "23689": {
+          "key": 23689,
+          "name": "Hodine van Ramont",
+          "age": 25,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Emmelina (10073)",
+            "father": "Ramont (10072)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10074
-        ]
+        ],
+        "child": {
+          "birth": [
+            18457,
+            23691
+          ]
+        }
       }
     },
     "occupation": {
@@ -61,16 +92,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 5,
-      "eye_color": "green",
+      "skin_color": 8,
+      "eye_color": "blue",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
-        "S",
-        "C"
+        "C",
+        "S"
       ],
-      "health": 0.707,
-      "fertility": 0.694,
+      "health": 0.775,
+      "fertility": 0.796,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -82,13 +113,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.707
+            "new_health": 0.775
           },
           "death": false
+        },
+        "1206": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.775
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1167
+          },
           {
             "topic": "new relationship",
             "key": 10074,
@@ -97,37 +140,86 @@
               10073
             ],
             "people names": [
-              "Syuardus Senum",
-              "Esa Dicbir"
+              "Ramont",
+              "Emmelina"
             ],
             "people ages": [
-              47,
-              25
+              37,
+              33
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stVerckens merct.se1.c2",
-              "street": "Verckens merct",
-              "neighborhood": "varkensbuurt",
-              "unique id": 25
-            }
+            "topic": "feelings change",
+            "target": 10072,
+            "target name": "Ramont",
+            "state": "out of love",
+            "friendship label": "indifferent",
+            "relationship": 10074
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "topic": "feelings change",
+            "target": 10072,
+            "target name": "Ramont",
+            "state": "infatuation",
+            "friendship label": "indifferent",
+            "relationship": 10074
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 18457,
+            "people": [
+              10073,
+              18455
+            ],
+            "people names": [
+              "Emmelina",
+              "Herbert Ramontszoon"
+            ],
+            "people ages": [
+              36,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1205": [
+          {
+            "topic": "new relationship",
+            "key": 23691,
+            "people": [
+              10073,
+              23689
+            ],
+            "people names": [
+              "Emmelina",
+              "Hodine van Ramont"
+            ],
+            "people ages": [
+              38,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 18457
+          }
+        ],
+        "1206": [
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "childbirth"
           }
         ]
       }
@@ -147,6 +239,10 @@
       "relationships": [
         10074
       ]
-    }
+    },
+    "friends": [
+      23691
+    ],
+    "enemies": []
   }
 }

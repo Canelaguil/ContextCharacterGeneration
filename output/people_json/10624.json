@@ -1,19 +1,19 @@
 {
   "10624": {
     "alive": false,
-    "name": "Niels",
-    "surname": "Stoc",
-    "full name": "Niels Stoc",
+    "name": "Ramont",
+    "surname": "Ballinc",
+    "full name": "Ramont Ballinc",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.077,
-      "romantic interest": 0.378,
-      "sex interest": 0.946,
-      "gender expression": 0.005,
+      "sexuality": 0.028,
+      "romantic interest": 0.721,
+      "sex interest": 0.615,
+      "gender expression": 0.035,
       "sex": "m"
     },
-    "age": 52,
-    "birth year": 1159,
+    "age": 48,
+    "birth year": 1163,
     "sex": "m",
     "faction": "No religion",
     "income class": [
@@ -21,39 +21,65 @@
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.0,
-      "honest-false": 0.01
+      "lawful-chaotic": 0.446,
+      "nice-nasty": 0.636,
+      "honest-false": 0.351,
+      "dream": 0.153,
+      "outgoing": 0.408
     },
     "attitude": {
-      "outgoing": 0.398,
-      "dream": 0.438
+      "dream": 0.153,
+      "outgoing": 0.408
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.051,
-        "gender expression expression": 0.002
+        "sexuality expression": 0.02,
+        "gender expression expression": 0.02
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "15048": {
-          "key": 15048,
-          "name": "Sybillia Stoc",
-          "age": 11,
+        "13738": {
+          "key": 13738,
+          "name": "Katerina Ballinc",
+          "age": 2,
           "alive": false,
           "sex": "f",
           "parents": {
-            "mother": "Lelien (10625)",
-            "father": "Niels (10624)"
+            "mother": "Walburgis (10625)",
+            "father": "Ramont (10624)"
+          }
+        },
+        "19610": {
+          "key": 19610,
+          "name": "Leanne Ballinc",
+          "age": 46,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Walburgis (10625)",
+            "father": "Ramont (10624)"
+          }
+        },
+        "24005": {
+          "key": 24005,
+          "name": "Bartholomeus Ballinc",
+          "age": 20,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Walburgis (10625)",
+            "father": "Ramont (10624)"
           }
         }
       },
@@ -63,9 +89,14 @@
         ],
         "child": {
           "birth": [
-            15049
+            13739,
+            19611,
+            24006
           ]
-        }
+        },
+        "unrelated": [
+          14552
+        ]
       }
     },
     "occupation": {
@@ -74,37 +105,37 @@
         2,
         "middle class"
       ],
-      "income": 0.726,
+      "income": 1.025,
       "all_incomes": [
-        0.808,
-        0.595,
-        0.875,
-        1.073,
-        1.0259999999999998,
-        1.498,
-        1.049,
-        1.091,
-        1.305,
-        1.0479999999999998,
-        0.809,
-        0.726
+        0.651,
+        0.258,
+        0.037000000000000005,
+        0.025,
+        0.025,
+        0.025,
+        0.782,
+        0.732,
+        0.749,
+        0.5700000000000001,
+        0.797,
+        1.025
       ],
       "job": {
-        "lawful": true,
+        "lawful": false,
         "honest": false
       }
     },
     "genetics": {
-      "skin_color": 2,
+      "skin_color": 1,
       "eye_color": "brown",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "S",
-        "C"
+        "C",
+        "S"
       ],
-      "health": 0.0,
-      "fertility": 0.491,
+      "health": 0.757,
+      "fertility": 0.75,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -116,23 +147,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.493
-          },
-          "death": false
-        },
-        "1209": {
-          "health": {
-            "change": true,
-            "value_change": -0.289,
-            "new_health": 0.204
+            "new_health": 0.757
           },
           "death": false
         },
         "1210": {
           "health": {
-            "change": true,
-            "value_change": -0.204,
-            "new_health": 0.0
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.757
           },
           "death": true
         }
@@ -140,14 +163,18 @@
       "events": {
         "1200": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.808
+            "topic": "birth",
+            "year": 1163
           },
           {
             "topic": "job notice",
-            "notice": "low income",
-            "income": 0.595
+            "notice": "found job",
+            "income": 0.651
+          },
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.258
           },
           {
             "topic": "new relationship",
@@ -157,94 +184,190 @@
               10625
             ],
             "people names": [
-              "Niels Stoc",
-              "Lelien Buk"
+              "Ramont Ballinc",
+              "Walburgis"
             ],
             "people ages": [
-              41,
-              35
+              37,
+              28
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stBloemendaelse straet.se3.c2",
-              "street": "Bloemendaelse straet",
-              "neighborhood": "agnesbuurt",
-              "unique id": 219
-            }
+            "topic": "new relationship",
+            "key": 13739,
+            "people": [
+              10624,
+              13738
+            ],
+            "people names": [
+              "Ramont Ballinc",
+              "Katerina Ballinc"
+            ],
+            "people ages": [
+              37,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
             "topic": "feelings change",
             "target": 10625,
-            "target name": "Lelien Buk",
-            "state": "solid love",
+            "target name": "Walburgis",
+            "state": "out of love",
+            "friendship label": "good friend",
             "relationship": 10626
+          },
+          {
+            "topic": "new relationship",
+            "key": 14552,
+            "people": [
+              10349,
+              10624
+            ],
+            "people names": [
+              "Gertrudis Stamelart",
+              "Ramont Ballinc"
+            ],
+            "people ages": [
+              37,
+              38
+            ],
+            "label": "unrelated",
+            "committed": false
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.037000000000000005
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.037000000000000005,
+            "inhabitants": [
+              19610
+            ]
           }
         ],
         "1202": [
           {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.073
+            "topic": "person died",
+            "person": {
+              "key": 13738,
+              "name": "Katerina Ballinc",
+              "age": 2,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Walburgis (10625)",
+                "father": "Ramont (10624)"
+              }
+            },
+            "cause": "starvation",
+            "friendship label": "friend",
+            "label": "child"
           },
           {
+            "topic": "not enough income",
+            "income": 0.025,
+            "inhabitants": [
+              19610
+            ]
+          }
+        ],
+        "1203": [
+          {
             "topic": "new relationship",
-            "key": 15049,
+            "key": 19611,
             "people": [
               10624,
-              15048
+              19610
             ],
             "people names": [
-              "Niels Stoc",
-              "Sybillia Stoc"
+              "Ramont Ballinc",
+              "Leanne Ballinc"
             ],
             "people ages": [
-              44,
+              40,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.025,
+            "inhabitants": [
+              19610
+            ]
+          }
+        ],
+        "1204": [
+          {
+            "topic": "not enough income",
+            "income": 0.025,
+            "inhabitants": [
+              19610
+            ]
+          }
+        ],
+        "1205": [
+          {
+            "topic": "new relationship",
+            "key": 24006,
+            "people": [
+              10624,
+              24005
+            ],
+            "people names": [
+              "Ramont Ballinc",
+              "Bartholomeus Ballinc"
+            ],
+            "people ages": [
+              43,
               0
             ],
             "label": "parentchild",
             "committed": false
           }
         ],
-        "1204": [
+        "1206": [
           {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "spouse",
-            "friendship label": "indifferent",
-            "relationship": 10626
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.732
           }
         ],
-        "1205": [
+        "1209": [
           {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "spouse",
-            "friendship label": "friend",
-            "relationship": 10626
+            "topic": "person died",
+            "person": {
+              "key": 10349,
+              "name": "Gertrudis Stamelart",
+              "age": 46,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "friendship label": "indifferent",
+            "label": "unrelated",
+            "love state": "nothing"
           }
         ],
         "1210": [
           {
             "topic": "job notice",
-            "notice": "low income",
-            "income": 0.726
+            "notice": "comfortable earnings",
+            "income": 1.025
           },
           {
             "topic": "death",
-            "cause": "sickness"
+            "cause": "illness"
           }
         ]
       }
@@ -253,17 +376,24 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stBloemendaelse straet.se3.c2",
+      "section": "stBloemendaelse straet.se1.c2",
       "street": "Bloemendaelse straet",
       "neighborhood": "agnesbuurt",
-      "unique id": 219
+      "unique id": 218
     },
     "relationship status": {
-      "taken": true,
+      "taken": false,
       "married": true,
       "relationships": [
         10626
       ]
-    }
+    },
+    "friends": [
+      10626,
+      13739,
+      19611,
+      24006
+    ],
+    "enemies": []
   }
 }

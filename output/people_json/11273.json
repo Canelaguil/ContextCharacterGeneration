@@ -1,33 +1,35 @@
 {
   "11273": {
     "alive": false,
-    "name": "Thedwi",
-    "surname": "Spirinx",
-    "full name": "Thedwi Spirinx",
+    "name": "Diewiven",
+    "surname": "",
+    "full name": "Diewiven",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.067,
-      "romantic interest": 0.559,
-      "sex interest": 0.571,
-      "gender expression": 0.0,
+      "sexuality": 0.021,
+      "romantic interest": 0.682,
+      "sex interest": 0.595,
+      "gender expression": 0.036,
       "sex": "f"
     },
-    "age": 31,
-    "birth year": 1180,
+    "age": 29,
+    "birth year": 1182,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
       0,
       "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.47,
-      "nice-nasty": 0.942,
-      "honest-false": 0.177
+      "lawful-chaotic": 0.532,
+      "nice-nasty": 0.0,
+      "honest-false": 0.411,
+      "dream": 0.231,
+      "outgoing": 0.761
     },
     "attitude": {
-      "outgoing": 0.69,
-      "dream": 0.342
+      "dream": 0.231,
+      "outgoing": 0.761
     },
     "homsoc": {
       "means": {
@@ -35,25 +37,49 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.035,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.01,
+        "gender expression expression": 0.012
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "13898": {
-          "key": 13898,
-          "name": "Winardus\u0430 Gheynekineszoon",
-          "age": 4,
-          "alive": false,
+        "13411": {
+          "key": 13411,
+          "name": "Ulrici Hanen",
+          "age": 49,
+          "alive": true,
           "sex": "m",
           "parents": {
-            "mother": "Thedwi (11273)",
-            "father": "Gheynekine (11272)"
+            "mother": "Diewiven (11273)",
+            "father": "Menzone (11272)"
+          }
+        },
+        "17590": {
+          "key": 17590,
+          "name": "Alene Hanen",
+          "age": 4,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Diewiven (11273)",
+            "father": "Menzone (11272)"
+          }
+        },
+        "27352": {
+          "key": 27352,
+          "name": "Lenildis Hanen",
+          "age": 2,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Diewiven (11273)",
+            "father": "Menzone (11272)"
           }
         }
       },
@@ -63,9 +89,15 @@
         ],
         "child": {
           "birth": [
-            13900
+            13413,
+            17592,
+            27354
           ]
-        }
+        },
+        "unrelated": [
+          18562,
+          25053
+        ]
       }
     },
     "occupation": {
@@ -80,14 +112,14 @@
     "genetics": {
       "skin_color": 2,
       "eye_color": "brown",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
-        "C",
-        "C"
+        "S",
+        "S"
       ],
-      "health": 0.506,
-      "fertility": 0.795,
+      "health": 0.548,
+      "fertility": 0.493,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -99,23 +131,7 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.687
-          },
-          "death": false
-        },
-        "1207": {
-          "health": {
-            "change": true,
-            "value_change": -0.181,
-            "new_health": 0.506
-          },
-          "death": false
-        },
-        "1208": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.506
+            "new_health": 0.548
           },
           "death": false
         },
@@ -123,13 +139,17 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.506
+            "new_health": 0.548
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1182
+          },
           {
             "topic": "new relationship",
             "key": 11274,
@@ -138,96 +158,242 @@
               11273
             ],
             "people names": [
-              "Gheynekine Hoeghen",
-              "Thedwi Spirinx"
+              "Menzone Hanen",
+              "Diewiven"
             ],
             "people ages": [
-              23,
-              20
+              28,
+              18
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stDie Coninc straet.se3.c0",
-              "street": "Die Coninc straet",
-              "neighborhood": "kampbuurt",
-              "unique id": 449
-            }
-          }
-        ],
-        "1201": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          },
-          {
             "topic": "new relationship",
-            "key": 13900,
+            "key": 13413,
             "people": [
               11273,
-              13898
+              13411
             ],
             "people names": [
-              "Thedwi Spirinx",
-              "Winardus\u0430 Gheynekineszoon"
+              "Diewiven",
+              "Ulrici Hanen"
             ],
             "people ages": [
-              21,
+              18,
               0
             ],
             "label": "parentchild",
             "committed": false
           }
         ],
+        "1201": [
+          {
+            "topic": "not enough income",
+            "income": 0.469,
+            "inhabitants": []
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 17592,
+            "people": [
+              11273,
+              17590
+            ],
+            "people names": [
+              "Diewiven",
+              "Alene Hanen"
+            ],
+            "people ages": [
+              20,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "new relationship",
+            "key": 18562,
+            "people": [
+              11273,
+              11615
+            ],
+            "people names": [
+              "Diewiven",
+              "Ricmoden"
+            ],
+            "people ages": [
+              21,
+              23
+            ],
+            "label": "unrelated",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.548,
+            "inhabitants": []
+          }
+        ],
+        "1203": [
+          {
+            "topic": "not enough income",
+            "income": 0.837,
+            "inhabitants": []
+          }
+        ],
         "1204": [
           {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "spouse",
-            "friendship label": "indifferent",
-            "relationship": 11274
+            "topic": "not enough income",
+            "income": 0.959,
+            "inhabitants": []
           }
         ],
         "1205": [
           {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "friend",
+            "relationship": 11274
+          },
+          {
+            "topic": "new relationship",
+            "key": 25053,
+            "people": [
+              11273,
+              11987
+            ],
+            "people names": [
+              "Diewiven",
+              "Truden Wittebart"
+            ],
+            "people ages": [
+              24,
+              24
+            ],
+            "label": "unrelated",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.672,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "indifferent",
+            "relationship": 18562
+          },
+          {
             "topic": "person died",
             "person": {
-              "key": 13898,
-              "name": "Winardus\u0430 Gheynekineszoon",
+              "key": 17590,
+              "name": "Alene Hanen",
               "age": 4,
               "alive": false,
-              "sex": "m",
+              "sex": "f",
               "parents": {
-                "mother": "Thedwi (11273)",
-                "father": "Gheynekine (11272)"
+                "mother": "Diewiven (11273)",
+                "father": "Menzone (11272)"
               }
             },
-            "cause": "childhood illness",
+            "cause": "starvation",
+            "friendship label": "indifferent",
             "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.504,
+            "inhabitants": []
           }
         ],
         "1207": [
           {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "spouse",
-            "friendship label": "indifferent",
-            "relationship": 11274
+            "topic": "new relationship",
+            "key": 27354,
+            "people": [
+              11273,
+              27352
+            ],
+            "people names": [
+              "Diewiven",
+              "Lenildis Hanen"
+            ],
+            "people ages": [
+              25,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.262,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "key": 11274,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11272,
+              "name": "Menzone Hanen",
+              "age": 37,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "starvation",
+            "friendship label": "friend",
+            "label": "spouse",
+            "love state": "loveless"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.058,
+            "inhabitants": []
           }
         ],
         "1209": [
           {
-            "topic": "feelings change",
-            "target": 11272,
-            "target name": "Gheynekine Hoeghen",
-            "state": "out of love",
-            "relationship": 11274
+            "topic": "person died",
+            "person": {
+              "key": 27352,
+              "name": "Lenildis Hanen",
+              "age": 2,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Diewiven (11273)",
+                "father": "Menzone (11272)"
+              }
+            },
+            "cause": "childhood illness",
+            "friendship label": "friend",
+            "label": "child"
+          },
+          {
+            "topic": "personality change",
+            "change": true,
+            "trait": "lawful-chaotic",
+            "trigger": "grief",
+            "mod": 0.1
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ],
         "1210": [
@@ -242,17 +408,23 @@
     "home": {
       "income class": 0,
       "income class label": "working class",
-      "section": "stDie Coninc straet.se3.c0",
-      "street": "Die Coninc straet",
+      "section": "stTrysgens.se1.c0",
+      "street": "Trysgens",
       "neighborhood": "kampbuurt",
-      "unique id": 449
+      "unique id": 439
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         11274
       ]
-    }
+    },
+    "friends": [
+      11274,
+      27354,
+      25053
+    ],
+    "enemies": []
   }
 }

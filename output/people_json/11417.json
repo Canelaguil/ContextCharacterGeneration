@@ -1,33 +1,35 @@
 {
   "11417": {
     "alive": false,
-    "name": "Tetta",
-    "surname": "",
-    "full name": "Tetta",
+    "name": "Sywi",
+    "surname": "Coram",
+    "full name": "Sywi Coram",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.029,
-      "romantic interest": 0.822,
-      "sex interest": 0.739,
-      "gender expression": 0.083,
+      "sexuality": 0.0,
+      "romantic interest": 0.646,
+      "sex interest": 0.707,
+      "gender expression": 0.026,
       "sex": "f"
     },
-    "age": 24,
-    "birth year": 1178,
+    "age": 55,
+    "birth year": 1168,
     "sex": "f",
     "faction": "Zealots",
     "income class": [
-      3,
-      "upper middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.077,
-      "honest-false": 0.172
+      "lawful-chaotic": 0.559,
+      "nice-nasty": 0.999,
+      "honest-false": 0.95,
+      "dream": 0.525,
+      "outgoing": 0.573
     },
     "attitude": {
-      "outgoing": 0.564,
-      "dream": 0.433
+      "dream": 0.525,
+      "outgoing": 0.573
     },
     "homsoc": {
       "means": {
@@ -35,42 +37,100 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.021,
-        "gender expression expression": 0.02
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.002
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "15404": {
+          "key": 15404,
+          "name": "Thieleman Quade",
+          "age": 20,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Sywi (11417)",
+            "father": "Woutermanne (11416)"
+          }
+        },
+        "26783": {
+          "key": 26783,
+          "name": "Ludingus Quade",
+          "age": 15,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Sywi (11417)",
+            "father": "Woutermanne (11416)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11418
-        ]
+        ],
+        "child": {
+          "birth": [
+            15406,
+            26785
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        3,
-        "upper middle class"
+        1,
+        "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.013,
+      "all_incomes": [
+        1.035,
+        0.996,
+        1.008,
+        1.073,
+        1.098,
+        1.129,
+        1.09,
+        0.91,
+        0.815,
+        0.595,
+        0.6,
+        0.527,
+        0.648,
+        0.372,
+        0.588,
+        0.37,
+        0.438,
+        0.434,
+        0.739,
+        0.925,
+        1.132,
+        1.013
+      ],
+      "job": {
+        "lawful": false,
+        "honest": true
+      }
     },
     "genetics": {
       "skin_color": 5,
-      "eye_color": "brown",
+      "eye_color": "blue",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
-        "S",
-        "S"
+        "C",
+        "C"
       ],
-      "health": 0.624,
-      "fertility": 0.619,
+      "health": 0.001,
+      "fertility": 0.547,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -82,21 +142,57 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.624
+            "new_health": 0.612
           },
           "death": false
         },
-        "1201": {
+        "1218": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.624
+            "change": true,
+            "value_change": -0.136,
+            "new_health": 0.476
+          },
+          "death": false
+        },
+        "1219": {
+          "health": {
+            "change": true,
+            "value_change": -0.18,
+            "new_health": 0.296
+          },
+          "death": false
+        },
+        "1220": {
+          "health": {
+            "change": true,
+            "value_change": -0.147,
+            "new_health": 0.149
+          },
+          "death": false
+        },
+        "1221": {
+          "health": {
+            "change": true,
+            "value_change": -0.11,
+            "new_health": 0.039
+          },
+          "death": false
+        },
+        "1222": {
+          "health": {
+            "change": true,
+            "value_change": -0.038,
+            "new_health": 0.001
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1168
+          },
           {
             "topic": "new relationship",
             "key": 11418,
@@ -105,63 +201,231 @@
               11417
             ],
             "people names": [
-              "Snellekine Clinkart",
-              "Tetta"
+              "Woutermanne Quade",
+              "Sywi Coram"
             ],
             "people ages": [
-              26,
-              22
+              36,
+              32
             ],
             "label": "spouse",
             "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stLange gracht.se1.c3",
-              "street": "Lange gracht",
-              "neighborhood": "olvbuurt",
-              "unique id": 497
-            }
-          },
-          {
-            "topic": "feelings change",
-            "target": 11416,
-            "target name": "Snellekine Clinkart",
-            "state": "infatuation",
-            "relationship": 11418
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.035
           },
           {
+            "topic": "new relationship",
+            "key": 15406,
+            "people": [
+              11417,
+              15404
+            ],
+            "people names": [
+              "Sywi Coram",
+              "Thieleman Quade"
+            ],
+            "people ages": [
+              34,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1203": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.008
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 26785,
+            "people": [
+              11417,
+              26783
+            ],
+            "people names": [
+              "Sywi Coram",
+              "Ludingus Quade"
+            ],
+            "people ages": [
+              38,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1207": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "friend",
+            "relationship": 11418
+          }
+        ],
+        "1210": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.595
+          }
+        ],
+        "1214": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.372
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "key": 11418,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11416,
+              "name": "Woutermanne Quade",
+              "age": 52,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "old age",
+            "friendship label": "friend",
+            "label": "spouse",
+            "love state": "solid love"
+          }
+        ],
+        "1216": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.37
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "disliked",
+            "relationship": 15406
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.37,
+            "inhabitants": []
+          }
+        ],
+        "1217": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.438
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.438,
+            "inhabitants": []
+          }
+        ],
+        "1218": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.434
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.434,
+            "inhabitants": []
+          }
+        ],
+        "1221": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.132
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 15404,
+              "name": "Thieleman Quade",
+              "age": 20,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Sywi (11417)",
+                "father": "Woutermanne (11416)"
+              }
+            },
+            "cause": "illness",
+            "friendship label": "disliked",
+            "label": "child"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 26783,
+              "name": "Ludingus Quade",
+              "age": 15,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Sywi (11417)",
+                "father": "Woutermanne (11416)"
+              }
+            },
+            "cause": "illness",
+            "friendship label": "indifferent",
+            "label": "child"
+          }
+        ],
+        "1222": [
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "old age"
           }
         ]
       }
     },
     "key": 11417,
     "home": {
-      "income class": 3,
-      "income class label": "upper middle class",
-      "section": "stLange gracht.se1.c3",
-      "street": "Lange gracht",
-      "neighborhood": "olvbuurt",
-      "unique id": 497
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stOly straetje.se5.c1",
+      "street": "Oly straetje",
+      "neighborhood": "kampbuurt",
+      "unique id": 489
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         11418
       ]
-    }
+    },
+    "friends": [
+      11418
+    ],
+    "enemies": [
+      15406
+    ]
   }
 }

@@ -1,33 +1,35 @@
 {
   "10490": {
     "alive": false,
-    "name": "Sara",
-    "surname": "Croppes",
-    "full name": "Sara Croppes",
+    "name": "Marcibilia",
+    "surname": "",
+    "full name": "Marcibilia",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.055,
-      "romantic interest": 0.693,
-      "sex interest": 0.686,
-      "gender expression": 0.149,
+      "sexuality": 0.129,
+      "romantic interest": 0.634,
+      "sex interest": 0.837,
+      "gender expression": 0.16,
       "sex": "f"
     },
-    "age": 47,
-    "birth year": 1169,
+    "age": 53,
+    "birth year": 1157,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.714,
-      "nice-nasty": 0.544,
-      "honest-false": 0.228
+      "lawful-chaotic": 0.26,
+      "nice-nasty": 0.242,
+      "honest-false": 0.407,
+      "dream": 0.203,
+      "outgoing": 0.6
     },
     "attitude": {
-      "outgoing": 0.713,
-      "dream": 0.156
+      "dream": 0.203,
+      "outgoing": 0.6
     },
     "homsoc": {
       "means": {
@@ -35,37 +37,22 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.016,
-        "gender expression expression": 0.056
+        "sexuality expression": 0.073,
+        "gender expression expression": 0.096
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {
-        "18291": {
-          "key": 18291,
-          "name": "Hille van Radulphus",
-          "age": 11,
-          "alive": false,
-          "sex": "m",
-          "parents": {
-            "mother": "Sara (10490)",
-            "father": "Radulphus (10489)"
-          }
-        }
-      },
+      "children": {},
       "relationship keys": {
         "spouse": [
           10491
-        ],
-        "child": {
-          "birth": [
-            18293
-          ]
-        }
+        ]
       }
     },
     "occupation": {
@@ -78,16 +65,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 5,
-      "eye_color": "green",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 2,
+      "eye_color": "brown",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
         "S",
         "C"
       ],
-      "health": 0.664,
-      "fertility": 0.629,
+      "health": 0.0,
+      "fertility": 0.641,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -99,13 +86,41 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.664
+            "new_health": 0.578
           },
           "death": false
+        },
+        "1207": {
+          "health": {
+            "change": true,
+            "value_change": -0.195,
+            "new_health": 0.383
+          },
+          "death": false
+        },
+        "1208": {
+          "health": {
+            "change": true,
+            "value_change": -0.277,
+            "new_health": 0.106
+          },
+          "death": false
+        },
+        "1209": {
+          "health": {
+            "change": true,
+            "value_change": -0.106,
+            "new_health": 0.0
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1157
+          },
           {
             "topic": "new relationship",
             "key": 10491,
@@ -114,89 +129,70 @@
               10490
             ],
             "people names": [
-              "Radulphus Spirinx",
-              "Sara Croppes"
+              "Rodolf Spirinc",
+              "Marcibilia"
             ],
             "people ages": [
-              38,
-              31
+              48,
+              43
             ],
             "label": "spouse",
             "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stDavids hof.se1.c2",
-              "street": "Davids hof",
-              "neighborhood": "jorisbuurt",
-              "unique id": 174
-            }
-          },
-          {
-            "topic": "feelings change",
-            "target": 10489,
-            "target name": "Radulphus Spirinx",
-            "state": "solid love",
-            "relationship": 10491
-          }
-        ],
-        "1201": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          }
-        ],
-        "1203": [
-          {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "spouse",
-            "friendship label": "indifferent",
-            "relationship": 10491
           }
         ],
         "1204": [
           {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "spouse",
+            "key": 10491,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10489,
+              "name": "Rodolf Spirinc",
+              "age": 53,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "old age",
             "friendship label": "friend",
-            "relationship": 10491
+            "label": "spouse",
+            "love state": "solid love"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ],
         "1207": [
           {
-            "topic": "new relationship",
-            "key": 18293,
-            "people": [
-              10490,
-              18291
-            ],
-            "people names": [
-              "Sara Croppes",
-              "Hille van Radulphus"
-            ],
-            "people ages": [
-              38,
-              0
-            ],
-            "label": "parentchild",
-            "committed": false
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ],
-        "1215": [
+        "1208": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1215
-          },
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "sickness"
           }
         ]
       }
@@ -208,14 +204,18 @@
       "section": "stDavids hof.se1.c2",
       "street": "Davids hof",
       "neighborhood": "jorisbuurt",
-      "unique id": 174
+      "unique id": 172
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         10491
       ]
-    }
+    },
+    "friends": [
+      10491
+    ],
+    "enemies": []
   }
 }

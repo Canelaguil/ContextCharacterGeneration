@@ -1,19 +1,19 @@
 {
   "10493": {
     "alive": false,
-    "name": "Yda",
-    "surname": "Manghenus",
-    "full name": "Yda Manghenus",
+    "name": "Gloria",
+    "surname": "Kriec",
+    "full name": "Gloria Kriec",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.068,
-      "romantic interest": 0.578,
-      "sex interest": 0.603,
-      "gender expression": 0.0,
+      "sexuality": 0.047,
+      "romantic interest": 0.579,
+      "sex interest": 0.678,
+      "gender expression": 0.072,
       "sex": "f"
     },
     "age": 53,
-    "birth year": 1162,
+    "birth year": 1158,
     "sex": "f",
     "faction": "Dogmatists",
     "income class": [
@@ -21,13 +21,15 @@
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.612,
-      "nice-nasty": 0.693,
-      "honest-false": 0.074
+      "lawful-chaotic": 0.136,
+      "nice-nasty": 0.782,
+      "honest-false": 0.24,
+      "dream": 0.644,
+      "outgoing": 0.364
     },
     "attitude": {
-      "outgoing": 0.637,
-      "dream": 0.483
+      "dream": 0.644,
+      "outgoing": 0.364
     },
     "homsoc": {
       "means": {
@@ -40,40 +42,68 @@
         ]
       },
       "expression": {
-        "sexuality expression": 0.053,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.024,
+        "gender expression expression": 0.035
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "20908": {
+          "key": 20908,
+          "name": "Ermerut Vrie",
+          "age": 12,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Gloria (10493)",
+            "father": "Pauels (12571)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10494,
-          18223
-        ]
+          20691
+        ],
+        "child": {
+          "birth": [
+            20910
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.0839999999999999,
+      "all_incomes": [
+        1.04,
+        1.0359999999999998,
+        1.101,
+        1.093,
+        1.079,
+        1.0839999999999999
+      ],
+      "job": {
+        "lawful": true,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 3,
-      "eye_color": "blue",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 9,
+      "eye_color": "brown",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
-        "C",
-        "S"
+        "S",
+        "C"
       ],
-      "health": 0.188,
-      "fertility": 0.686,
+      "health": 0.0,
+      "fertility": 0.667,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -85,29 +115,41 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.704
+            "new_health": 0.613
           },
           "death": false
         },
-        "1213": {
+        "1208": {
           "health": {
             "change": true,
-            "value_change": -0.183,
-            "new_health": 0.521
+            "value_change": -0.302,
+            "new_health": 0.311
           },
           "death": false
         },
-        "1214": {
+        "1209": {
           "health": {
             "change": true,
-            "value_change": -0.333,
-            "new_health": 0.188
+            "value_change": -0.282,
+            "new_health": 0.029
           },
           "death": false
+        },
+        "1210": {
+          "health": {
+            "change": true,
+            "value_change": -0.029,
+            "new_health": 0.0
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1158
+          },
           {
             "topic": "new relationship",
             "key": 10494,
@@ -116,36 +158,18 @@
               10493
             ],
             "people names": [
-              "Jonghen Rike",
-              "Yda Manghenus"
+              "Woutermanne",
+              "Gloria Kriec"
             ],
             "people ages": [
-              47,
-              38
+              46,
+              42
             ],
             "label": "spouse",
             "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stDavids hof.se1.c2",
-              "street": "Davids hof",
-              "neighborhood": "jorisbuurt",
-              "unique id": 175
-            }
           }
         ],
         "1201": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          }
-        ],
-        "1205": [
           {
             "key": 10494,
             "topic": "unmarried"
@@ -154,111 +178,122 @@
             "topic": "person died",
             "person": {
               "key": 10492,
-              "name": "Jonghen Rike",
-              "age": 53,
+              "name": "Woutermanne",
+              "age": 48,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
             },
-            "cause": "old age",
-            "label": "spouse"
+            "cause": "illness",
+            "friendship label": "friend",
+            "label": "spouse",
+            "love state": "out of love"
+          }
+        ],
+        "1202": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 20691,
+            "people": [
+              12571,
+              10493
+            ],
+            "people names": [
+              "Pauels Vrie",
+              "Gloria Kriec"
+            ],
+            "people ages": [
+              32,
+              46
+            ],
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 20910,
+            "people": [
+              10493,
+              20908
+            ],
+            "people names": [
+              "Gloria Kriec",
+              "Ermerut Vrie"
+            ],
+            "people ages": [
+              47,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1205": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.04
           }
         ],
         "1206": [
           {
-            "topic": "new relationship",
-            "key": 18223,
-            "people": [
-              11344,
-              10493
-            ],
-            "people names": [
-              "Rissewint Snauel",
-              "Yda Manghenus"
-            ],
-            "people ages": [
-              49,
-              45
-            ],
-            "label": "spouse",
-            "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stDie Coninc straet.se7.c1",
-              "street": "Die Coninc straet",
-              "neighborhood": "kampbuurt",
-              "unique id": 473
-            }
-          }
-        ],
-        "1210": [
-          {
-            "key": 18223,
+            "key": 20691,
             "topic": "unmarried"
           },
           {
             "topic": "person died",
             "person": {
-              "key": 11344,
-              "name": "Rissewint Snauel",
-              "age": 53,
+              "key": 12571,
+              "name": "Pauels Vrie",
+              "age": 35,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
             },
-            "cause": "sickness",
-            "label": "spouse"
+            "cause": "illness",
+            "friendship label": "indifferent",
+            "label": "spouse",
+            "love state": "infatuation"
           }
         ],
-        "1211": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1212": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1213": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1214": [
+        "1210": [
           {
             "topic": "death",
-            "cause": "old age"
+            "cause": "sickness"
           }
         ]
       }
     },
     "key": 10493,
     "home": {
-      "income class": 1,
-      "income class label": "lower middle class",
-      "section": "stDie Coninc straet.se7.c1",
-      "street": "Die Coninc straet",
-      "neighborhood": "kampbuurt",
-      "unique id": 473
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stCromme straet.se5.c2",
+      "street": "Cromme straet",
+      "neighborhood": "denhof",
+      "unique id": 900
     },
     "relationship status": {
       "taken": false,
       "married": false,
       "relationships": [
         10494,
-        18223
+        20691
       ]
-    }
+    },
+    "friends": [
+      10494,
+      20910
+    ],
+    "enemies": []
   }
 }

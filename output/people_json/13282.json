@@ -1,51 +1,55 @@
 {
   "13282": {
     "alive": false,
-    "name": "Ghisebrecht",
-    "surname": "Reinardusszoon",
-    "full name": "Ghisebrecht Reinardusszoon",
+    "name": "Gherelm",
+    "surname": "van Strom",
+    "full name": "Gherelm van Strom",
     "born this way": {
-      "sexuality label": "bi",
-      "sexuality": 0.416,
-      "romantic interest": 0.577,
-      "sex interest": 0.597,
-      "gender expression": 0.489,
+      "sexuality label": "straight",
+      "sexuality": 0.068,
+      "romantic interest": 0.523,
+      "sex interest": 0.649,
+      "gender expression": 0.07,
       "sex": "m"
     },
-    "age": 22,
+    "age": 2,
     "birth year": 1200,
     "sex": "m",
     "faction": "No religion",
     "income class": [
-      2,
-      "middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.791,
-      "nice-nasty": 0.679,
-      "honest-false": 0.0
+      "lawful-chaotic": 0.0,
+      "nice-nasty": 0.639,
+      "honest-false": 0.54,
+      "dream": 0.406,
+      "outgoing": 0.632
     },
     "attitude": {
-      "outgoing": 0.595,
-      "dream": 0.464
+      "dream": 0.406,
+      "outgoing": 0.632
     },
     "homsoc": {
       "means": {
         "independent": false,
-        "taken_care_of": false,
+        "taken_care_of": true,
         "caretaker": true,
-        "needs_care": false,
-        "flags": []
+        "needs_care": true,
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.188,
-        "gender expression expression": 0.244
+        "sexuality expression": 0.041,
+        "gender expression expression": 0.059
       }
     },
     "network": {
       "parents": {
-        "mother": "Suaneka (12080)",
-        "father": "Reinardus (12079)"
+        "mother": "Hodine (11180)",
+        "father": "Strom (11179)"
       },
       "children": {},
       "relationship keys": {
@@ -56,37 +60,25 @@
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
-        2,
-        "middle class"
+        1,
+        "lower middle class"
       ],
-      "income": 0.613,
-      "all_incomes": [
-        0.699,
-        0.856,
-        0.6910000000000001,
-        0.6980000000000001,
-        0.643,
-        0.736,
-        0.613
-      ],
-      "job": {
-        "lawful": true,
-        "honest": false
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 9,
-      "eye_color": "blue",
+      "skin_color": 4,
+      "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
-        "S",
+        "C",
         "C"
       ],
-      "health": 0.432,
-      "fertility": 0.646,
+      "health": 0.626,
+      "fertility": 0.648,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -98,31 +90,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.661
+            "new_health": 0.626
           },
           "death": false
         },
-        "1204": {
-          "health": {
-            "change": true,
-            "value_change": -0.229,
-            "new_health": 0.432
-          },
-          "death": false
-        },
-        "1205": {
+        "1202": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.432
-          },
-          "death": false
-        },
-        "1222": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.432
+            "new_health": 0.626
           },
           "death": true
         }
@@ -130,112 +106,85 @@
       "events": {
         "1200": [
           {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stCorte gracht.se1.c2",
-              "street": "Corte gracht",
-              "neighborhood": "visbuurt",
-              "unique id": 728
-            }
+            "topic": "birth",
+            "year": 1200
+          },
+          {
+            "topic": "new relationship",
+            "key": 13283,
+            "people": [
+              11179,
+              13282
+            ],
+            "people names": [
+              "Strom",
+              "Gherelm van Strom"
+            ],
+            "people ages": [
+              30,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "new relationship",
+            "key": 13284,
+            "people": [
+              11180,
+              13282
+            ],
+            "people names": [
+              "Hodine",
+              "Gherelm van Strom"
+            ],
+            "people ages": [
+              23,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          }
-        ],
-        "1206": [
-          {
             "topic": "update",
             "update": "new friendship label",
             "relationship label": "parentchild",
-            "friendship label": "indifferent",
-            "relationship": 13284
-          }
-        ],
-        "1214": [
-          {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "parentchild",
-            "friendship label": "indifferent",
+            "friendship label": "friend",
             "relationship": 13284
           },
           {
-            "topic": "person died",
-            "person": {
-              "key": 12079,
-              "name": "Reinardus",
-              "age": 53,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "cause": "sickness",
-            "label": "parent"
+            "topic": "not enough income",
+            "income": 0.21,
+            "inhabitants": []
           }
         ],
-        "1215": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1215
-          }
-        ],
-        "1216": [
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.699
-          }
-        ],
-        "1218": [
-          {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.6910000000000001
-          }
-        ],
-        "1219": [
-          {
-            "topic": "person died",
-            "person": {
-              "key": 12080,
-              "name": "Suaneka Juvene",
-              "age": 54,
-              "alive": false,
-              "sex": "f",
-              "parents": "firstgen"
-            },
-            "cause": "sickness",
-            "label": "parent"
-          }
-        ],
-        "1222": [
+        "1202": [
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "childhood illness"
           }
         ]
       }
     },
     "key": 13282,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stCorte gracht.se1.c2",
-      "street": "Corte gracht",
-      "neighborhood": "visbuurt",
-      "unique id": 728
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stSt. Ians straet.se1.c1",
+      "street": "St. Ians straet",
+      "neighborhood": "kampbuurt",
+      "unique id": 408
     },
     "relationship status": {
       "taken": false,
       "married": false,
       "relationships": []
-    }
+    },
+    "friends": [
+      13284
+    ],
+    "enemies": []
   }
 }

@@ -1,33 +1,35 @@
 {
   "10205": {
     "alive": false,
-    "name": "Euffemia",
+    "name": "Heilsota",
     "surname": "",
-    "full name": "Euffemia",
+    "full name": "Heilsota",
     "born this way": {
       "sexuality label": "straight",
       "sexuality": 0.0,
-      "romantic interest": 0.995,
-      "sex interest": 0.594,
-      "gender expression": 0.109,
+      "romantic interest": 0.845,
+      "sex interest": 0.577,
+      "gender expression": 0.182,
       "sex": "f"
     },
-    "age": 49,
-    "birth year": 1166,
+    "age": 28,
+    "birth year": 1184,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "Zealots",
     "income class": [
       0,
       "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.817,
-      "nice-nasty": 0.438,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.123,
+      "nice-nasty": 0.903,
+      "honest-false": 0.705,
+      "dream": 0.373,
+      "outgoing": 0.419
     },
     "attitude": {
-      "outgoing": 0.272,
-      "dream": 0.372
+      "dream": 0.373,
+      "outgoing": 0.419
     },
     "homsoc": {
       "means": {
@@ -35,87 +37,114 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
         "sexuality expression": -0.001,
-        "gender expression expression": 0.007
+        "gender expression expression": 0.181
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "15136": {
-          "key": 15136,
-          "name": "Engelbertus Groete",
-          "age": 38,
+        "13477": {
+          "key": 13477,
+          "name": "Erkenradis",
+          "age": 49,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Heilsota (10205)",
+            "father": "Arnekin (10204)"
+          }
+        },
+        "15124": {
+          "key": 15124,
+          "name": "Walic",
+          "age": 25,
           "alive": false,
           "sex": "m",
           "parents": {
-            "mother": "Euffemia (10205)",
-            "father": "Hugheman (10204)"
+            "mother": "Heilsota (10205)",
+            "father": "Arnekin (10204)"
           }
         },
-        "16934": {
-          "key": 16934,
-          "name": "Waldrada Groete",
-          "age": 47,
+        "16752": {
+          "key": 16752,
+          "name": "Gheeneman",
+          "age": 6,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Heilsota (10205)",
+            "father": "Arnekin (10204)"
+          }
+        },
+        "20198": {
+          "key": 20198,
+          "name": "Wijfgode van Arnekin",
+          "age": 46,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Heilsota (10205)",
+            "father": "Arnekin (10204)"
+          }
+        },
+        "22195": {
+          "key": 22195,
+          "name": "Bertrade",
+          "age": 1,
           "alive": false,
           "sex": "f",
           "parents": {
-            "mother": "Euffemia (10205)",
-            "father": "Hugheman (10204)"
+            "mother": "Heilsota (10205)",
+            "father": "Arnekin (10204)"
           }
         }
       },
       "relationship keys": {
         "spouse": [
-          10206,
-          20646
+          10206
         ],
         "child": {
           "birth": [
-            15138,
-            16936
+            13479,
+            15126,
+            16754,
+            20200,
+            22197
           ]
-        }
+        },
+        "unrelated": [
+          18526,
+          20754,
+          22912
+        ]
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
         0,
         "working class"
       ],
-      "income": 1.013,
-      "all_incomes": [
-        0.919,
-        0.975,
-        0.995,
-        1.042,
-        1.072,
-        1.106,
-        1.051,
-        0.998,
-        0.971,
-        1.013
-      ],
-      "job": {
-        "lawful": true,
-        "honest": true
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 6,
+      "skin_color": 0,
       "eye_color": "green",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
         "C",
-        "C"
+        "S"
       ],
-      "health": 0.787,
-      "fertility": 0.77,
+      "health": 0.69,
+      "fertility": 0.725,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -127,21 +156,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.787
+            "new_health": 0.69
           },
           "death": false
         },
-        "1214": {
+        "1211": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.787
+            "new_health": 0.69
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1184
+          },
           {
             "topic": "new relationship",
             "key": 10206,
@@ -150,88 +183,245 @@
               10205
             ],
             "people names": [
-              "Hugheman Groete",
-              "Euffemia"
+              "Arnekin",
+              "Heilsota"
             ],
             "people ages": [
-              44,
-              34
+              29,
+              16
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stIn den Haeg.se3.c0",
-              "street": "In den Haeg",
-              "neighborhood": "varkensbuurt",
-              "unique id": 73
-            }
+            "topic": "new relationship",
+            "key": 13479,
+            "people": [
+              10205,
+              13477
+            ],
+            "people names": [
+              "Heilsota",
+              "Erkenradis"
+            ],
+            "people ages": [
+              16,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "topic": "new relationship",
+            "key": 15126,
+            "people": [
+              10205,
+              15124
+            ],
+            "people names": [
+              "Heilsota",
+              "Walic"
+            ],
+            "people ages": [
+              17,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.442,
+            "inhabitants": [
+              20198
+            ]
           }
         ],
         "1202": [
           {
             "topic": "new relationship",
-            "key": 15138,
+            "key": 16754,
             "people": [
               10205,
-              15136
+              16752
             ],
             "people names": [
-              "Euffemia",
-              "Engelbertus Groete"
+              "Heilsota",
+              "Gheeneman"
             ],
             "people ages": [
-              36,
+              18,
               0
             ],
             "label": "parentchild",
             "committed": false
+          },
+          {
+            "topic": "new relationship",
+            "key": 18526,
+            "people": [
+              12002,
+              10205
+            ],
+            "people names": [
+              "Saxiardis Tater",
+              "Heilsota"
+            ],
+            "people ages": [
+              20,
+              19
+            ],
+            "label": "unrelated",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.068,
+            "inhabitants": [
+              20198
+            ]
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 20200,
+            "people": [
+              10205,
+              20198
+            ],
+            "people names": [
+              "Heilsota",
+              "Wijfgode van Arnekin"
+            ],
+            "people ages": [
+              20,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "new relationship",
+            "key": 20754,
+            "people": [
+              10205,
+              12665
+            ],
+            "people names": [
+              "Heilsota",
+              "Moerseil Craye"
+            ],
+            "people ages": [
+              20,
+              26
+            ],
+            "label": "unrelated",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              20198
+            ]
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 22197,
+            "people": [
+              10205,
+              22195
+            ],
+            "people names": [
+              "Heilsota",
+              "Bertrade"
+            ],
+            "people ages": [
+              20,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 16754
+          },
+          {
+            "topic": "new relationship",
+            "key": 22912,
+            "people": [
+              11981,
+              10205
+            ],
+            "people names": [
+              "Aleydis Regis",
+              "Heilsota"
+            ],
+            "people ages": [
+              23,
+              21
+            ],
+            "label": "unrelated",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.093,
+            "inhabitants": [
+              20198
+            ]
           }
         ],
         "1205": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.919
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 13479
           },
           {
-            "topic": "new relationship",
-            "key": 16936,
-            "people": [
-              10205,
-              16934
-            ],
-            "people names": [
-              "Euffemia",
-              "Waldrada Groete"
-            ],
-            "people ages": [
-              39,
-              0
-            ],
-            "label": "parentchild",
-            "committed": false
-          }
-        ],
-        "1208": [
+            "topic": "person died",
+            "person": {
+              "key": 22195,
+              "name": "Bertrade",
+              "age": 1,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Heilsota (10205)",
+                "father": "Arnekin (10204)"
+              }
+            },
+            "cause": "childbirth",
+            "friendship label": "indifferent",
+            "label": "child"
+          },
           {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.042
+            "topic": "not enough income",
+            "income": 0.141,
+            "inhabitants": [
+              20198
+            ]
           }
         ],
-        "1209": [
+        "1206": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "friend",
+            "relationship": 10206
+          },
           {
             "key": 10206,
             "topic": "unmarried"
@@ -240,65 +430,82 @@
             "topic": "person died",
             "person": {
               "key": 10204,
-              "name": "Hugheman Groete",
-              "age": 54,
+              "name": "Arnekin",
+              "age": 36,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
             },
-            "cause": "old age",
-            "label": "spouse"
+            "cause": "illness",
+            "friendship label": "friend",
+            "label": "spouse",
+            "love state": "loveless"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              20198
+            ]
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              20198
+            ]
+          }
+        ],
+        "1208": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 16752,
+              "name": "Gheeneman",
+              "age": 6,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Heilsota (10205)",
+                "father": "Arnekin (10204)"
+              }
+            },
+            "cause": "starvation",
+            "friendship label": "friend",
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              20198
+            ]
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              20198
+            ]
           }
         ],
         "1210": [
           {
-            "topic": "new relationship",
-            "key": 20646,
-            "people": [
-              10201,
-              10205
-            ],
-            "people names": [
-              "Dolf",
-              "Euffemia"
-            ],
-            "people ages": [
-              44,
-              45
-            ],
-            "label": "spouse",
-            "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stIn den Haeg.se1.c0",
-              "street": "In den Haeg",
-              "neighborhood": "varkensbuurt",
-              "unique id": 72
-            }
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              20198
+            ]
           }
         ],
-        "1212": [
-          {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "parentchild",
-            "friendship label": "indifferent",
-            "relationship": 16936
-          }
-        ],
-        "1214": [
-          {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.013
-          },
+        "1211": [
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "starvation"
           }
         ]
       }
@@ -307,18 +514,26 @@
     "home": {
       "income class": 0,
       "income class label": "working class",
-      "section": "stIn den Haeg.se1.c0",
+      "section": "stIn den Haeg.se3.c0",
       "street": "In den Haeg",
       "neighborhood": "varkensbuurt",
-      "unique id": 72
+      "unique id": 73
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
-        10206,
-        20646
+        10206
       ]
-    }
+    },
+    "friends": [
+      10206,
+      16754,
+      20200,
+      18526,
+      20754,
+      22912
+    ],
+    "enemies": []
   }
 }

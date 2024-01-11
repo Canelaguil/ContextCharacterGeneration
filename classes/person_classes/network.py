@@ -25,15 +25,7 @@ class Network():
             'person' : about_me,
             'cause' : cause
         }
-        for l in self.relationship_types.values():
-            # for children subcategories
-            if isinstance(l, dict):
-                for _, l2 in l.items():
-                    for r in l2:
-                        self.community.message_relationship(r, relation_message)
-            else:
-                for r in l:
-                    self.community.message_relationship(r, relation_message)
+        self.message_relationships(relation_message)
 
     """
     RELATIONSHIP MANAGEMENT
@@ -167,7 +159,16 @@ class Network():
         for ch in self.children_keys:
             self.community.message_person(ch, msg)
 
-
+    def message_relationships(self, msg): 
+        for l in self.relationship_types.values():
+            # for children subcategories
+            if isinstance(l, dict):
+                for _, l2 in l.items():
+                    for r in l2:
+                        self.community.message_relationship(r, msg)
+            else:
+                for r in l:
+                    self.community.message_relationship(r, msg)
     """
     INFO FUNCTIONS
     """
@@ -186,6 +187,42 @@ class Network():
             child = self.community.get_person_short(child_key)
             child_summary[child_key] = child
         return child_summary
+    
+    def get_friends(self):
+        friends = []
+        is_friend = lambda x : True if x['friendship']['score'] >= 1 else False
+        for l in self.relationship_types.values():
+            # for children subcategories
+            if isinstance(l, dict):
+                for r, l2 in l.items():
+                    for r in l2:
+                        info = self.community.get_relationship_info(r)
+                        if is_friend(info):
+                            friends.append(r)
+            else:
+                for r in l:
+                    info = self.community.get_relationship_info(r)
+                    if is_friend(info):
+                            friends.append(r)
+        return friends
+
+    def get_enemies(self):
+        enemies = []
+        is_enemy = lambda x : True if x['friendship']['score'] <= 0.5 else False
+        for l in self.relationship_types.values():
+            # for children subcategories
+            if isinstance(l, dict):
+                for r, l2 in l.items():
+                    for r in l2:
+                        info = self.community.get_relationship_info(r)
+                        if is_enemy(info):
+                            enemies.append(r)
+            else:
+                for r in l:
+                    info = self.community.get_relationship_info(r)
+                    if is_enemy(info):
+                            enemies.append(r)
+        return enemies
 
     def get_relationships(self):
         rs = {}

@@ -1,33 +1,35 @@
 {
   "11135": {
     "alive": false,
-    "name": "Wijfgode",
-    "surname": "Turc",
-    "full name": "Wijfgode Turc",
+    "name": "Walburgis",
+    "surname": "Paus",
+    "full name": "Walburgis Paus",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.825,
-      "romantic interest": 0.888,
-      "sex interest": 0.611,
-      "gender expression": 0.536,
+      "sexuality label": "straight",
+      "sexuality": 0.014,
+      "romantic interest": 0.692,
+      "sex interest": 0.788,
+      "gender expression": 0.306,
       "sex": "f"
     },
-    "age": 30,
-    "birth year": 1179,
+    "age": 54,
+    "birth year": 1162,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.468,
-      "nice-nasty": 0.243,
-      "honest-false": 0.934
+      "lawful-chaotic": 0.737,
+      "nice-nasty": 0.045,
+      "honest-false": 0.999,
+      "dream": 0.347,
+      "outgoing": 0.56
     },
     "attitude": {
-      "outgoing": 0.44,
-      "dream": 0.527
+      "dream": 0.347,
+      "outgoing": 0.56
     },
     "homsoc": {
       "means": {
@@ -35,35 +37,50 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.752,
-        "gender expression expression": 0.028
+        "sexuality expression": 0.004,
+        "gender expression expression": 0.2
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "18270": {
-          "key": 18270,
-          "name": "Macharius Crudepenninx",
-          "age": 52,
+        "13237": {
+          "key": 13237,
+          "name": "Lutbrandus",
+          "age": 45,
           "alive": false,
           "sex": "m",
           "parents": {
-            "mother": "Wijfgode (11135)",
-            "father": "Gelmarus (11134)"
+            "mother": "Walburgis (11135)",
+            "father": "Rampe (11134)"
+          }
+        },
+        "18191": {
+          "key": 18191,
+          "name": "Clara Rampesdochter",
+          "age": 13,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Walburgis (11135)",
+            "father": "Rampe (11134)"
           }
         }
       },
       "relationship keys": {
         "spouse": [
-          11136
+          11136,
+          36898
         ],
         "child": {
           "birth": [
-            18272
+            13239,
+            18193
           ]
         }
       }
@@ -78,16 +95,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 9,
-      "eye_color": "green",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "skin_color": 7,
+      "eye_color": "brown",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "S",
         "S"
       ],
-      "health": 0.526,
-      "fertility": 0.518,
+      "health": 0.191,
+      "fertility": 0.708,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -99,13 +116,41 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.526
+            "new_health": 0.69
           },
           "death": false
+        },
+        "1213": {
+          "health": {
+            "change": true,
+            "value_change": -0.126,
+            "new_health": 0.564
+          },
+          "death": false
+        },
+        "1214": {
+          "health": {
+            "change": true,
+            "value_change": -0.23,
+            "new_health": 0.334
+          },
+          "death": false
+        },
+        "1215": {
+          "health": {
+            "change": true,
+            "value_change": -0.143,
+            "new_health": 0.191
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1162
+          },
           {
             "topic": "new relationship",
             "key": 11136,
@@ -114,94 +159,189 @@
               11135
             ],
             "people names": [
-              "Gelmarus Crudepenninx",
-              "Wijfgode Turc"
+              "Rampe Stael",
+              "Walburgis Paus"
             ],
             "people ages": [
-              27,
-              21
+              43,
+              38
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stDie Camp.se7.c2",
-              "street": "Die Camp",
-              "neighborhood": "kampbuurt",
-              "unique id": 399
-            }
-          }
-        ],
-        "1201": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          },
-          {
-            "topic": "feelings change",
-            "target": 11134,
-            "target name": "Gelmarus Crudepenninx",
-            "state": "out of love",
-            "relationship": 11136
-          }
-        ],
-        "1202": [
-          {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "spouse",
-            "friendship label": "indifferent",
-            "relationship": 11136
-          }
-        ],
-        "1207": [
-          {
             "topic": "new relationship",
-            "key": 18272,
+            "key": 13239,
             "people": [
               11135,
-              18270
+              13237
             ],
             "people names": [
-              "Wijfgode Turc",
-              "Macharius Crudepenninx"
+              "Walburgis Paus",
+              "Lutbrandus"
             ],
             "people ages": [
-              28,
+              38,
               0
             ],
             "label": "parentchild",
             "committed": false
           }
         ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 18193,
+            "people": [
+              11135,
+              18191
+            ],
+            "people names": [
+              "Walburgis Paus",
+              "Clara Rampesdochter"
+            ],
+            "people ages": [
+              41,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1203": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "friend",
+            "relationship": 11136
+          },
+          {
+            "topic": "feelings change",
+            "target": 11134,
+            "target name": "Rampe Stael",
+            "state": "solid love",
+            "friendship label": "friend",
+            "relationship": 11136
+          }
+        ],
         "1208": [
           {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 18193
+          }
+        ],
+        "1210": [
+          {
+            "key": 11136,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11134,
+              "name": "Rampe Stael",
+              "age": 54,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "friendship label": "friend",
+            "label": "spouse",
+            "love state": "solid love"
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "disliked",
+            "relationship": 18193
+          },
+          {
+            "topic": "new relationship",
+            "key": 36898,
+            "people": [
+              10936,
+              11135
+            ],
+            "people names": [
+              "Michiel Boghart",
+              "Walburgis Paus"
+            ],
+            "people ages": [
+              50,
+              51
+            ],
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1213": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "disliked",
+            "relationship": 18193
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "topic": "personality change",
+            "change": true,
+            "trait": "lawful-chaotic",
+            "trigger": "trauma",
+            "mod": 0.059
+          },
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "plague"
           }
         ]
       }
     },
     "key": 11135,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stDie Camp.se7.c2",
-      "street": "Die Camp",
-      "neighborhood": "kampbuurt",
-      "unique id": 399
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stTuytsteeg.se1.c1",
+      "street": "Tuytsteeg",
+      "neighborhood": "agnesbuurt",
+      "unique id": 324
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        11136
+        11136,
+        36898
       ]
-    }
+    },
+    "friends": [
+      11136,
+      36898,
+      13239
+    ],
+    "enemies": [
+      18193
+    ]
   }
 }

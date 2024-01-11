@@ -1,33 +1,35 @@
 {
   "11881": {
     "alive": false,
-    "name": "Eggerdus",
-    "surname": "",
-    "full name": "Eggerdus",
+    "name": "Breghtgherus",
+    "surname": "Coquus",
+    "full name": "Breghtgherus Coquus",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.64,
-      "sex interest": 0.799,
-      "gender expression": 0.081,
+      "sexuality": 0.003,
+      "romantic interest": 0.504,
+      "sex interest": 0.811,
+      "gender expression": 0.247,
       "sex": "m"
     },
-    "age": 27,
-    "birth year": 1175,
+    "age": 36,
+    "birth year": 1168,
     "sex": "m",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
       3,
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.045,
-      "nice-nasty": 0.999,
-      "honest-false": 0.826
+      "lawful-chaotic": 0.36,
+      "nice-nasty": 0.49,
+      "honest-false": 0.148,
+      "dream": 0.155,
+      "outgoing": 0.507
     },
     "attitude": {
-      "outgoing": 0.19,
-      "dream": 0.0
+      "dream": 0.155,
+      "outgoing": 0.507
     },
     "homsoc": {
       "means": {
@@ -38,16 +40,48 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.059
+        "sexuality expression": 0.001,
+        "gender expression expression": 0.234
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14206": {
+          "key": 14206,
+          "name": "Veder Coquus",
+          "age": 49,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Sara (11882)",
+            "father": "Breghtgherus (11881)"
+          }
+        },
+        "16799": {
+          "key": 16799,
+          "name": "Hersewindis Coquus",
+          "age": 14,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Sara (11882)",
+            "father": "Breghtgherus (11881)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11883
+        ],
+        "child": {
+          "birth": [
+            14207,
+            16800
+          ]
+        },
+        "unrelated": [
+          18577
         ]
       }
     },
@@ -57,28 +91,30 @@
         3,
         "upper middle class"
       ],
-      "income": 1.2570000000000001,
+      "income": 1.143,
       "all_incomes": [
-        1.303,
-        1.181,
-        1.2570000000000001
+        1.293,
+        0.745,
+        0.9820000000000001,
+        1.0,
+        1.143
       ],
       "job": {
         "lawful": false,
-        "honest": true
+        "honest": false
       }
     },
     "genetics": {
-      "skin_color": 1,
-      "eye_color": "blue",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 3,
+      "eye_color": "brown",
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
-        "S",
-        "S"
+        "C",
+        "C"
       ],
-      "health": 0.504,
-      "fertility": 0.5,
+      "health": 0.322,
+      "fertility": 0.743,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -90,17 +126,42 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.504
+            "new_health": 0.613
           },
           "death": false
+        },
+        "1202": {
+          "health": {
+            "change": true,
+            "value_change": -0.291,
+            "new_health": 0.322
+          },
+          "death": false
+        },
+        "1203": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.322
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
           {
+            "topic": "birth",
+            "year": 1168
+          },
+          {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.303
+            "income": 1.293
+          },
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.745
           },
           {
             "topic": "new relationship",
@@ -110,41 +171,84 @@
               11882
             ],
             "people names": [
-              "Eggerdus",
-              "Pietersen"
+              "Breghtgherus Coquus",
+              "Sara"
             ],
             "people ages": [
-              25,
-              20
+              32,
+              31
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stMuurhuysen1.se3.c3",
-              "street": "Muurhuysen1",
-              "neighborhood": "cingelzuid",
-              "unique id": 661
-            }
-          },
-          {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "spouse",
-            "friendship label": "indifferent",
-            "relationship": 11883
+            "topic": "new relationship",
+            "key": 14207,
+            "people": [
+              11881,
+              14206
+            ],
+            "people names": [
+              "Breghtgherus Coquus",
+              "Veder Coquus"
+            ],
+            "people ages": [
+              33,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "topic": "feelings change",
+            "target": 11882,
+            "target name": "Sara",
+            "state": "solid love",
+            "friendship label": "good friend",
+            "relationship": 11883
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 16800,
+            "people": [
+              11881,
+              16799
+            ],
+            "people names": [
+              "Breghtgherus Coquus",
+              "Hersewindis Coquus"
+            ],
+            "people ages": [
+              34,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           },
+          {
+            "topic": "new relationship",
+            "key": 18577,
+            "people": [
+              11881,
+              10210
+            ],
+            "people names": [
+              "Breghtgherus Coquus",
+              "Rodolf"
+            ],
+            "people ages": [
+              35,
+              29
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1203": [
           {
             "topic": "death",
             "cause": "illness"
@@ -156,17 +260,23 @@
     "home": {
       "income class": 3,
       "income class label": "upper middle class",
-      "section": "stMuurhuysen1.se3.c3",
+      "section": "stMuurhuysen1.se1.c3",
       "street": "Muurhuysen1",
       "neighborhood": "cingelzuid",
-      "unique id": 661
+      "unique id": 650
     },
     "relationship status": {
-      "taken": true,
+      "taken": false,
       "married": true,
       "relationships": [
         11883
       ]
-    }
+    },
+    "friends": [
+      11883,
+      14207,
+      18577
+    ],
+    "enemies": []
   }
 }

@@ -1,19 +1,19 @@
 {
   "11123": {
     "alive": false,
-    "name": "Nellen",
-    "surname": "Quistwater",
-    "full name": "Nellen Quistwater",
+    "name": "Soeten",
+    "surname": "Canne",
+    "full name": "Soeten Canne",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.047,
-      "romantic interest": 0.764,
-      "sex interest": 0.724,
-      "gender expression": 0.105,
+      "sexuality": 0.01,
+      "romantic interest": 0.624,
+      "sex interest": 0.804,
+      "gender expression": 0.199,
       "sex": "f"
     },
-    "age": 26,
-    "birth year": 1177,
+    "age": 40,
+    "birth year": 1181,
     "sex": "f",
     "faction": "Dogmatists",
     "income class": [
@@ -21,13 +21,15 @@
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.119,
-      "nice-nasty": 0.061,
-      "honest-false": 0.16
+      "lawful-chaotic": 0.345,
+      "nice-nasty": 0.738,
+      "honest-false": 0.307,
+      "dream": 0.597,
+      "outgoing": 0.671
     },
     "attitude": {
-      "outgoing": 0.526,
-      "dream": 0.624
+      "dream": 0.597,
+      "outgoing": 0.671
     },
     "homsoc": {
       "means": {
@@ -35,59 +37,125 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.025,
-        "gender expression expression": 0.05
+        "sexuality expression": 0.007,
+        "gender expression expression": 0.146
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "14329": {
-          "key": 14329,
-          "name": "Iordanus Scelwart",
-          "age": 16,
+        "13909": {
+          "key": 13909,
+          "name": "Siwa",
+          "age": 23,
           "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Soeten (11123)",
+            "father": "Haghen (11122)"
+          }
+        },
+        "14764": {
+          "key": 14764,
+          "name": "Breghlent Haghensdochter",
+          "age": 48,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Soeten (11123)",
+            "father": "Haghen (11122)"
+          }
+        },
+        "21361": {
+          "key": 21361,
+          "name": "Dolf",
+          "age": 45,
+          "alive": true,
           "sex": "m",
           "parents": {
-            "mother": "Nellen (11123)",
-            "father": "Hughekine (11122)"
+            "mother": "Soeten (11123)",
+            "father": "Haghen (11122)"
+          }
+        },
+        "22958": {
+          "key": 22958,
+          "name": "Alem van Soeten",
+          "age": 44,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Soeten (11123)",
+            "father": "Haghen (11122)"
+          }
+        },
+        "26575": {
+          "key": 26575,
+          "name": "Gisele",
+          "age": 1,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Soeten (11123)",
+            "father": "Haghen (11122)"
           }
         }
       },
       "relationship keys": {
         "spouse": [
-          11124
+          11124,
+          42028
         ],
         "child": {
           "birth": [
-            14331
+            13911,
+            14766,
+            21363,
+            22960,
+            26577
           ]
         }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.283,
+      "all_incomes": [
+        1.215,
+        1.23,
+        1.2779999999999998,
+        1.129,
+        1.524,
+        1.4669999999999999,
+        1.4089999999999998,
+        1.524,
+        1.2129999999999999,
+        1.283
+      ],
+      "job": {
+        "lawful": false,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 8,
+      "skin_color": 9,
       "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
         "C",
-        "S"
+        "C"
       ],
-      "health": 0.605,
-      "fertility": 0.671,
+      "health": 0.75,
+      "fertility": 0.838,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -99,13 +167,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.605
+            "new_health": 0.75
           },
           "death": false
+        },
+        "1220": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.75
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1181
+          },
           {
             "topic": "new relationship",
             "key": 11124,
@@ -114,54 +194,271 @@
               11123
             ],
             "people names": [
-              "Hughekine Scelwart",
-              "Nellen Quistwater"
+              "Haghen",
+              "Soeten Canne"
             ],
             "people ages": [
-              36,
-              23
+              21,
+              19
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stDie Camp.se5.c2",
-              "street": "Die Camp",
-              "neighborhood": "kampbuurt",
-              "unique id": 395
-            }
-          }
-        ],
-        "1201": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          },
-          {
             "topic": "new relationship",
-            "key": 14331,
+            "key": 13911,
             "people": [
               11123,
-              14329
+              13909
             ],
             "people names": [
-              "Nellen Quistwater",
-              "Iordanus Scelwart"
+              "Soeten Canne",
+              "Siwa"
             ],
             "people ages": [
-              25,
+              20,
               0
             ],
             "label": "parentchild",
             "committed": false
           }
         ],
-        "1202": [
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 14766,
+            "people": [
+              11123,
+              14764
+            ],
+            "people names": [
+              "Soeten Canne",
+              "Breghlent Haghensdochter"
+            ],
+            "people ages": [
+              20,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 21363,
+            "people": [
+              11123,
+              21361
+            ],
+            "people names": [
+              "Soeten Canne",
+              "Dolf"
+            ],
+            "people ages": [
+              23,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1205": [
+          {
+            "topic": "new relationship",
+            "key": 22960,
+            "people": [
+              11123,
+              22958
+            ],
+            "people names": [
+              "Soeten Canne",
+              "Alem van Soeten"
+            ],
+            "people ages": [
+              24,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 26577,
+            "people": [
+              11123,
+              26575
+            ],
+            "people names": [
+              "Soeten Canne",
+              "Gisele"
+            ],
+            "people ages": [
+              26,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "key": 11124,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11122,
+              "name": "Haghen",
+              "age": 28,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "friendship label": "indifferent",
+            "label": "spouse",
+            "love state": "infatuation"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 26575,
+              "name": "Gisele",
+              "age": 1,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Soeten (11123)",
+                "father": "Haghen (11122)"
+              }
+            },
+            "cause": "childbirth",
+            "friendship label": "friend",
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 13911
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.215
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          }
+        ],
+        "1217": [
+          {
+            "topic": "new relationship",
+            "key": 42028,
+            "people": [
+              12667,
+              11123
+            ],
+            "people names": [
+              "Riuum Smout",
+              "Soeten Canne"
+            ],
+            "people ages": [
+              52,
+              37
+            ],
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1218": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "friend",
+            "relationship": 42028
+          },
+          {
+            "topic": "feelings change",
+            "target": 12667,
+            "target name": "Riuum Smout",
+            "state": "solid love",
+            "friendship label": "friend",
+            "relationship": 42028
+          },
+          {
+            "key": 42028,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12667,
+              "name": "Riuum Smout",
+              "age": 53,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "friendship label": "friend",
+            "label": "spouse",
+            "love state": "solid love"
+          }
+        ],
+        "1219": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 13911
+          }
+        ],
+        "1220": [
           {
             "topic": "death",
             "cause": "illness"
@@ -173,17 +470,24 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stDie Camp.se5.c2",
-      "street": "Die Camp",
-      "neighborhood": "kampbuurt",
-      "unique id": 395
+      "section": "stMarcktgang.se5.c2",
+      "street": "Marcktgang",
+      "neighborhood": "denhof",
+      "unique id": 933
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
-        11124
+        11124,
+        42028
       ]
-    }
+    },
+    "friends": [
+      42028,
+      14766,
+      26577
+    ],
+    "enemies": []
   }
 }

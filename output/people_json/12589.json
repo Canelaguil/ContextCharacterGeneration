@@ -1,33 +1,35 @@
 {
   "12589": {
     "alive": false,
-    "name": "Oudrauen",
-    "surname": "Ballinc",
-    "full name": "Oudrauen Ballinc",
+    "name": "Strom",
+    "surname": "Hoen",
+    "full name": "Strom Hoen",
     "born this way": {
       "sexuality label": "straight",
       "sexuality": 0.0,
-      "romantic interest": 0.999,
-      "sex interest": 0.878,
-      "gender expression": 0.0,
+      "romantic interest": 0.795,
+      "sex interest": 0.756,
+      "gender expression": 0.154,
       "sex": "m"
     },
-    "age": 27,
-    "birth year": 1174,
+    "age": 49,
+    "birth year": 1156,
     "sex": "m",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.456,
-      "nice-nasty": 0.991,
-      "honest-false": 0.641
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.346,
+      "honest-false": 0.31,
+      "dream": 0.342,
+      "outgoing": 0.674
     },
     "attitude": {
-      "outgoing": 0.33,
-      "dream": 0.397
+      "dream": 0.342,
+      "outgoing": 0.674
     },
     "homsoc": {
       "means": {
@@ -39,13 +41,58 @@
       },
       "expression": {
         "sexuality expression": -0.001,
-        "gender expression expression": -0.001
+        "gender expression expression": 0.109
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
-      "relationship keys": {}
+      "children": {
+        "14155": {
+          "key": 14155,
+          "name": "Barwoud Hoen",
+          "age": 44,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Lenildis (12590)",
+            "father": "Strom (12589)"
+          }
+        },
+        "16290": {
+          "key": 16290,
+          "name": "Dilane",
+          "age": 9,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Lenildis (12590)",
+            "father": "Strom (12589)"
+          }
+        },
+        "20239": {
+          "key": 20239,
+          "name": "Clementia Hoen",
+          "age": 31,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Lenildis (12590)",
+            "father": "Strom (12589)"
+          }
+        }
+      },
+      "relationship keys": {
+        "spouse": [
+          12591
+        ],
+        "child": {
+          "birth": [
+            14156,
+            16291,
+            20240
+          ]
+        }
+      }
     },
     "occupation": {
       "has job": true,
@@ -53,27 +100,31 @@
         2,
         "middle class"
       ],
-      "income": 1.1119999999999999,
+      "income": 0.968,
       "all_incomes": [
-        1.141,
-        1.1119999999999999
+        0.921,
+        0.9,
+        0.973,
+        1.0419999999999998,
+        0.997,
+        0.968
       ],
       "job": {
         "lawful": true,
-        "honest": false
+        "honest": true
       }
     },
     "genetics": {
-      "skin_color": 6,
-      "eye_color": "blue",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "skin_color": 1,
+      "eye_color": "brown",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
-        "C",
-        "C"
+        "S",
+        "S"
       ],
-      "health": 0.592,
-      "fertility": 0.502,
+      "health": 0.783,
+      "fertility": 0.698,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -85,7 +136,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.592
+            "new_health": 0.783
+          },
+          "death": false
+        },
+        "1204": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.783
           },
           "death": true
         }
@@ -93,10 +152,107 @@
       "events": {
         "1200": [
           {
+            "topic": "birth",
+            "year": 1156
+          },
+          {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.141
+            "income": 0.921
           },
+          {
+            "topic": "new relationship",
+            "key": 12591,
+            "people": [
+              12589,
+              12590
+            ],
+            "people names": [
+              "Strom Hoen",
+              "Lenildis"
+            ],
+            "people ages": [
+              44,
+              32
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new relationship",
+            "key": 14156,
+            "people": [
+              12589,
+              14155
+            ],
+            "people names": [
+              "Strom Hoen",
+              "Barwoud Hoen"
+            ],
+            "people ages": [
+              45,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 16291,
+            "people": [
+              12589,
+              16290
+            ],
+            "people names": [
+              "Strom Hoen",
+              "Dilane"
+            ],
+            "people ages": [
+              46,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 12590,
+            "target name": "Lenildis",
+            "state": "out of love",
+            "friendship label": "friend",
+            "relationship": 12591
+          }
+        ],
+        "1202": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.0419999999999998
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 20240,
+            "people": [
+              12589,
+              20239
+            ],
+            "people names": [
+              "Strom Hoen",
+              "Clementia Hoen"
+            ],
+            "people ages": [
+              48,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1204": [
           {
             "topic": "death",
             "cause": "illness"
@@ -111,12 +267,18 @@
       "section": "stCromme straet.se5.c2",
       "street": "Cromme straet",
       "neighborhood": "denhof",
-      "unique id": 908
+      "unique id": 906
     },
     "relationship status": {
       "taken": true,
       "married": true,
-      "relationships": []
-    }
+      "relationships": [
+        12591
+      ]
+    },
+    "friends": [
+      12591
+    ],
+    "enemies": []
   }
 }

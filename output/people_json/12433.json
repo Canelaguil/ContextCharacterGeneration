@@ -1,33 +1,35 @@
 {
   "12433": {
     "alive": false,
-    "name": "Vroeden",
-    "surname": "Cnijf",
-    "full name": "Vroeden Cnijf",
+    "name": "Wein",
+    "surname": "",
+    "full name": "Wein",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.093,
-      "romantic interest": 0.635,
-      "sex interest": 0.733,
-      "gender expression": 0.154,
+      "sexuality": 0.045,
+      "romantic interest": 0.748,
+      "sex interest": 0.554,
+      "gender expression": 0.0,
       "sex": "m"
     },
-    "age": 45,
-    "birth year": 1157,
+    "age": 54,
+    "birth year": 1153,
     "sex": "m",
-    "faction": "Zealots",
+    "faction": "Dogmatists",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.224,
-      "honest-false": 0.239
+      "lawful-chaotic": 0.646,
+      "nice-nasty": 0.223,
+      "honest-false": 0.271,
+      "dream": 0.524,
+      "outgoing": 0.667
     },
     "attitude": {
-      "outgoing": 0.147,
-      "dream": 0.716
+      "dream": 0.524,
+      "outgoing": 0.667
     },
     "homsoc": {
       "means": {
@@ -38,17 +40,34 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.049,
-        "gender expression expression": 0.014
+        "sexuality expression": 0.033,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "17754": {
+          "key": 17754,
+          "name": "Gerburgis van Wein",
+          "age": 41,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Beatrice (12434)",
+            "father": "Wein (12433)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           12435
-        ]
+        ],
+        "child": {
+          "birth": [
+            17755
+          ]
+        }
       }
     },
     "occupation": {
@@ -57,19 +76,24 @@
         2,
         "middle class"
       ],
-      "income": 1.0459999999999998,
+      "income": 1.255,
       "all_incomes": [
-        1.04,
-        0.9400000000000001,
-        1.0459999999999998
+        0.901,
+        0.926,
+        1.009,
+        1.0279999999999998,
+        1.222,
+        1.25,
+        1.3279999999999998,
+        1.255
       ],
       "job": {
-        "lawful": false,
-        "honest": true
+        "lawful": true,
+        "honest": false
       }
     },
     "genetics": {
-      "skin_color": 8,
+      "skin_color": 3,
       "eye_color": "brown",
       "hair_color": "dark brown",
       "hair_color_code": 1,
@@ -77,8 +101,8 @@
         "C",
         "S"
       ],
-      "health": 0.703,
-      "fertility": 0.743,
+      "health": 0.0,
+      "fertility": 0.65,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -90,15 +114,39 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.703
+            "new_health": 0.655
           },
           "death": false
         },
-        "1201": {
+        "1203": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.703
+            "change": true,
+            "value_change": -0.215,
+            "new_health": 0.44
+          },
+          "death": false
+        },
+        "1204": {
+          "health": {
+            "change": true,
+            "value_change": -0.181,
+            "new_health": 0.259
+          },
+          "death": false
+        },
+        "1205": {
+          "health": {
+            "change": true,
+            "value_change": -0.189,
+            "new_health": 0.07
+          },
+          "death": false
+        },
+        "1206": {
+          "health": {
+            "change": true,
+            "value_change": -0.07,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -106,9 +154,13 @@
       "events": {
         "1200": [
           {
+            "topic": "birth",
+            "year": 1153
+          },
+          {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.04
+            "income": 0.901
           },
           {
             "topic": "new relationship",
@@ -118,42 +170,63 @@
               12434
             ],
             "people names": [
-              "Vroeden Cnijf",
-              "Ghela Borluet"
+              "Wein",
+              "Beatrice Buk"
             ],
             "people ages": [
-              43,
-              19
+              47,
+              46
             ],
             "label": "spouse",
             "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stOp Havick2.se1.c2",
-              "street": "Op Havick2",
-              "neighborhood": "denhof",
-              "unique id": 853
-            }
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          },
-          {
             "topic": "job notice",
             "notice": "comfortable earnings",
-            "income": 1.0459999999999998
+            "income": 1.009
           },
           {
+            "topic": "feelings change",
+            "target": 12434,
+            "target name": "Beatrice Buk",
+            "state": "solid love",
+            "friendship label": "friend",
+            "relationship": 12435
+          }
+        ],
+        "1202": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "friend",
+            "relationship": 12435
+          },
+          {
+            "topic": "new relationship",
+            "key": 17755,
+            "people": [
+              12433,
+              17754
+            ],
+            "people names": [
+              "Wein",
+              "Gerburgis van Wein"
+            ],
+            "people ages": [
+              50,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1206": [
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "sickness"
           }
         ]
       }
@@ -165,7 +238,7 @@
       "section": "stOp Havick2.se1.c2",
       "street": "Op Havick2",
       "neighborhood": "denhof",
-      "unique id": 853
+      "unique id": 850
     },
     "relationship status": {
       "taken": true,
@@ -173,6 +246,10 @@
       "relationships": [
         12435
       ]
-    }
+    },
+    "friends": [
+      12435
+    ],
+    "enemies": []
   }
 }

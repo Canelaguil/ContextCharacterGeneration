@@ -136,6 +136,8 @@ if __name__ == '__main__':
                     topic = e['topic']
                     if topic == 'new home':
                         write_to_file(d, f"Moved to {e['home']['street']} in {e['home']['neighborhood']}.")
+                    elif topic == 'birth':
+                        write_to_file(d, f"Born in {e['year']}.")
                     elif topic == 'person died':
                         if 'cause' in e and e['cause'] != '':
                             cause = f" of {e['cause']}"
@@ -181,6 +183,10 @@ if __name__ == '__main__':
                     elif topic == 'death':
                         recorded = True
                         write_to_file(d, f"Died of {e['cause']}.")
+                        if e['cause'] == 'war':
+                            print(key)
+                    elif topic == 'personality change':
+                        write_to_file(d, f"Personality change of {e['mod']} in {e['trait']} caused by {e['trigger']}.")
                     elif topic == 'update':
                         if e['update'] == 'parent married':
                             write_to_file(d, f"Parent {get_name(e['parent'])} remarried to {get_name(e['new partner'])}.")

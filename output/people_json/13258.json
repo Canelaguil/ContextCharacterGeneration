@@ -1,33 +1,35 @@
 {
   "13258": {
     "alive": false,
-    "name": "Bertrade",
-    "surname": "Craiman",
-    "full name": "Bertrade Craiman",
+    "name": "Conzone",
+    "surname": "Snauel",
+    "full name": "Conzone Snauel",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.069,
-      "romantic interest": 0.629,
-      "sex interest": 0.559,
-      "gender expression": 0.319,
-      "sex": "f"
+      "sexuality": 0.147,
+      "romantic interest": 0.615,
+      "sex interest": 0.566,
+      "gender expression": 0.174,
+      "sex": "m"
     },
-    "age": 6,
+    "age": 10,
     "birth year": 1200,
-    "sex": "f",
-    "faction": "No religion",
+    "sex": "m",
+    "faction": "Zealots",
     "income class": [
-      2,
-      "middle class"
+      3,
+      "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.5,
-      "nice-nasty": 0.493,
-      "honest-false": 0.777
+      "lawful-chaotic": 0.923,
+      "nice-nasty": 0.872,
+      "honest-false": 0.131,
+      "dream": 0.353,
+      "outgoing": 0.999
     },
     "attitude": {
-      "outgoing": 0.461,
-      "dream": 0.264
+      "dream": 0.353,
+      "outgoing": 0.999
     },
     "homsoc": {
       "means": {
@@ -40,14 +42,14 @@
         ]
       },
       "expression": {
-        "sexuality expression": 0.049,
-        "gender expression expression": 0.158
+        "sexuality expression": 0.074,
+        "gender expression expression": 0.125
       }
     },
     "network": {
       "parents": {
-        "mother": "Rabburgis (10994)",
-        "father": "Boidin (10993)"
+        "mother": "Myrthel (11723)",
+        "father": "Iordanus (11722)"
       },
       "children": {},
       "relationship keys": {
@@ -56,32 +58,30 @@
           13260
         ],
         "sibling": [
-          15126,
-          16412,
-          16965
+          16798
         ]
       }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        2,
-        "middle class"
+        3,
+        "upper middle class"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 1,
-      "eye_color": "green",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "skin_color": 6,
+      "eye_color": "brown",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "S",
-        "S"
+        "C",
+        "C"
       ],
-      "health": 0.635,
-      "fertility": 0.639,
+      "health": 0.642,
+      "fertility": 0.655,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -93,46 +93,76 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.635
+            "new_health": 0.642
           },
           "death": false
+        },
+        "1210": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.642
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
           {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stDie Camp.se1.c2",
-              "street": "Die Camp",
-              "neighborhood": "kampbuurt",
-              "unique id": 351
-            }
-          }
-        ],
-        "1201": [
+            "topic": "birth",
+            "year": 1200
+          },
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "topic": "new relationship",
+            "key": 13259,
+            "people": [
+              11722,
+              13258
+            ],
+            "people names": [
+              "Iordanus Snauel",
+              "Conzone Snauel"
+            ],
+            "people ages": [
+              42,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "new relationship",
+            "key": 13260,
+            "people": [
+              11723,
+              13258
+            ],
+            "people names": [
+              "Myrthel Pluuier",
+              "Conzone Snauel"
+            ],
+            "people ages": [
+              18,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1202": [
           {
             "topic": "new relationship",
-            "key": 15126,
+            "key": 16798,
             "people": [
               13258,
-              15123
+              16795
             ],
             "people names": [
-              "Bertrade Craiman",
-              "Seukinus Craiman"
+              "Conzone Snauel",
+              "Robbrecht Snauel"
             ],
             "people ages": [
-              1,
+              2,
               0
             ],
             "label": "sibling",
@@ -141,94 +171,97 @@
         ],
         "1204": [
           {
-            "topic": "new relationship",
-            "key": 16412,
-            "people": [
-              13258,
-              16409
-            ],
-            "people names": [
-              "Bertrade Craiman",
-              "Gloria Craiman"
-            ],
-            "people ages": [
-              4,
-              0
-            ],
-            "label": "sibling",
-            "committed": false
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "sibling",
+            "friendship label": "indifferent",
+            "relationship": 16798
           }
         ],
         "1205": [
           {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "parentchild",
+            "topic": "person died",
+            "person": {
+              "key": 11723,
+              "name": "Myrthel Pluuier",
+              "age": 24,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
             "friendship label": "indifferent",
-            "relationship": 13260
-          },
-          {
-            "topic": "new relationship",
-            "key": 16965,
-            "people": [
-              13258,
-              16962
-            ],
-            "people names": [
-              "Bertrade Craiman",
-              "Folqui Craiman"
-            ],
-            "people ages": [
-              4,
-              0
-            ],
-            "label": "sibling",
-            "committed": false
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.455,
-            "inhabitants": [
-              29663,
-              26943,
-              34604,
-              51870,
-              65293,
-              69832,
-              74386,
-              74544,
-              51691,
-              82438,
-              87789,
-              89446
-            ]
+            "label": "parent"
           }
         ],
         "1206": [
           {
+            "topic": "not enough income",
+            "income": 0.05,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 16795,
+              "name": "Robbrecht Snauel",
+              "age": 5,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Myrthel (11723)",
+                "father": "Iordanus (11722)"
+              }
+            },
+            "cause": "starvation",
+            "friendship label": "indifferent",
+            "label": "sibling"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.05,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0.05,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0.05,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
             "topic": "death",
-            "cause": "childhood illness"
+            "cause": "starvation"
           }
         ]
       }
     },
     "key": 13258,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stDie Camp.se1.c2",
-      "street": "Die Camp",
-      "neighborhood": "kampbuurt",
-      "unique id": 351
+      "income class": 3,
+      "income class label": "upper middle class",
+      "section": "stLievevrouwe kerch.se5.c3",
+      "street": "Lievevrouwe kerch",
+      "neighborhood": "olvbuurt",
+      "unique id": 594
     },
     "relationship status": {
       "taken": false,
       "married": false,
-      "relationships": [
-        15126,
-        16412,
-        16965
-      ]
-    }
+      "relationships": []
+    },
+    "friends": [],
+    "enemies": []
   }
 }

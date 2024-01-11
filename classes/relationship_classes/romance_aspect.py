@@ -1,12 +1,12 @@
 from ..utils import *
 
 class LoveIsAStateMachine():
-    def __init__(self, relationship, subject, love_object, can_marry=True, 
+    def __init__(self, romance, subject : dict, love_object : dict, can_marry=True, 
                  can_break_up=True, start='nothing') -> None:
         """
         TODO: young love
         """
-        self.relationship = relationship
+        self.romance = romance
         self.subject = subject
         self.object = love_object
 
@@ -23,13 +23,32 @@ class LoveIsAStateMachine():
                 self.can_love = False 
         else:
             self.can_love = True # lucky bisexuals
+        
         self.can_marry = can_marry
         self.can_break_up = can_break_up
-        self.state = start 
+        
+        # just avoiding pedophilia as much as possible here
+        if age_match(subject['age'], love_object['age']) < 0.8:
+            self.can_love = False
+            
 
-    def turn(self, marriage_age_restraint=False, love_restraint=False):
-        self.marriage_age_restraint = marriage_age_restraint
-        self.love_restraint = love_restraint
+        if start == 'generate':
+            self.init_arranged()
+        else:
+            self.state = start 
+
+    def init_arranged(self):
+        if self.can_love:
+            self.state = 'infatuation'
+        else:
+            self.state = 'loveless'
+
+    """
+    CORE FUNCTIONS
+    """
+    def turn(self, marriage_restraint, solid_love_restraint):
+        self.marriage_restraint = marriage_restraint
+        self.solid_love_restraint = solid_love_restraint
 
         old_state = self.state
         # pre-relationship phases
@@ -56,8 +75,8 @@ class LoveIsAStateMachine():
             return True
         return False
     
-    def start_relationship(self):        
-        if self.can_marry:
+    def start_relationship(self, taken):        
+        if self.can_marry and not taken: # if not already married or no marriage rights
             self.can_break_up = False
         else:
             self.can_break_up = True
@@ -65,28 +84,43 @@ class LoveIsAStateMachine():
     def end_relationship(self):
         self.state = 'nothing'
 
-    def receive_declaration(self, status={}):
+    def receive_declaration(self, status : dict):
         """
         INPUT: current relationship status
         """
+        if not self.can_love:
+            return False
+        taken = status['taken']
         rng = rand()
-        if self.state == 'nothing': 
+        if self.state == 'nothing' and not taken: 
             if rng < 0.02 and self.can_love:
                 self.state = 'infatuation'
-                self.start_relationship()
+                self.start_relationship(taken)
                 return True
             return False
         elif self.state == 'crush':
-            if rng < 0.7:
-                self.state = 'infatuation'
-                self.start_relationship()
-                return True
+            if not taken:
+                if rng < 0.7:
+                    self.state = 'infatuation'
+                    self.start_relationship(taken)
+                    return True
+            else:
+                if rng < 0.2:
+                    self.state = 'infatuation'
+                    self.start_relationship(taken)
+                    return True
             return False
         elif self.state == 'in love':
-            if rng < 0.95:
-                self.state = 'honeymoon'
-                self.start_relationship()
-                return True
+            if not taken:
+                if rng < 0.95:
+                    self.state = 'honeymoon'
+                    self.start_relationship(taken)
+                    return True
+            else:
+                if rng < 0.5:
+                    self.state = 'honeymoon'
+                    self.start_relationship(taken)
+                    return True
             return False
         return False
     
@@ -101,23 +135,34 @@ class LoveIsAStateMachine():
         return 'nothing'
 
     def crush(self):
+        taken = self.romance.model.get_relationship_status_person(self.subject['key'])['taken']
         rng = rand()
-        if rng < 0.33:
-            return 'nothing'
-        elif rng < 0.66:
-            return 'in love'
+        if not taken:
+            if rng < 0.33:
+                return 'nothing'
+            elif rng < 0.66:
+                return 'in love'
+            else:
+                return 'crush'
         else:
-            return 'crush'
+            if rng < 0.5:
+                return 'nothing'
+            elif rng < 0.7: # 20 % chance of properly falling in love while taken
+                return 'in love'
+            else:
+                return 'crush'
+
 
     def in_love(self):
         rng = rand()
+        taken = self.romance.model.get_relationship_status_person(self.subject['key'])['taken']
         if rng < 0.5:
             return 'in love'
-        elif rng < 0.7:
-            return 'nothing'
-        else:
-            if self.relationship.declaration(self.subject['key']):
-                self.start_relationship()
+        elif rng < 0.8 and not self.marriage_restraint:
+            if self.romance.declaration(self.subject['key']):
+                print(self.subject['key'])
+                self.start_relationship(taken)
+                # print(self.subject)
                 return 'honeymoon phase'
             else:
                 rng2 = rand()
@@ -125,6 +170,9 @@ class LoveIsAStateMachine():
                     return 'crush'
                 else: 
                     return 'nothing'
+                
+        else:
+            return 'nothing'
 
     """
     RELATIONSHIP PHASES
@@ -133,10 +181,10 @@ class LoveIsAStateMachine():
         rng = rand()
         if rng < 0.2:
             return 'out of love'
-        elif rng < 0.7:
-            return 'infatuation'
-        else:
+        elif rng < 0.5 and not self.solid_love_restraint:
             return 'solid love'
+        else:
+            return 'infatuation'
 
     def loveless(self):
         rng = rand()
@@ -148,10 +196,10 @@ class LoveIsAStateMachine():
         rng = rand()
         if rng < 0.05:
             return 'out of love'
-        elif rng < 0.7:
-            return 'honeymoon phase'
-        else:
+        elif rng < 0.35 and not self.solid_love_restraint:
             return 'solid love'
+        else:
+            return 'honeymoon phase'
     
     def out_of_love(self):
         rng = rand()
@@ -159,8 +207,9 @@ class LoveIsAStateMachine():
             if rng < 0.5:
                 return 'out of love'
             elif rng < 0.98:
-                self.relationship.break_up(self.subject['key'])
-                return 'nothing'
+                print(f"{self.subject['key']} wants to break up")
+                # self.romance.break_up(self.subject['key'])
+                # return 'nothing'
         else:
             if rng < 0.95:
                 return 'out of love'
@@ -168,21 +217,17 @@ class LoveIsAStateMachine():
 
     def solid_love(self):
         rng = rand()
-        if rng < 0.95:
+        if rng < 0.98 and not self.solid_love_restraint:
             return 'solid love'
         else:
             return 'out of love'
 
 class Romance():
-    def __init__(self, model, relationship, personA, personB, initA='nothing',
+    def __init__(self, relationship, model, personA : dict, personB : dict, initA='nothing',
                   initB='nothing') -> None:
         self.relationship = relationship
         self.model = model
-        self.people = {
-            personA['key'] : personA,
-            personB['key']  : personB
-        }
-
+        
         if Romance.equal_rights or (personA['sex'] != personB['sex']):
             can_marry = True
             can_break_up = Romance.can_divorce
@@ -193,24 +238,45 @@ class Romance():
                                                   can_break_up, initA)
         self.state_machineB = LoveIsAStateMachine(self, personB, personA, can_marry, 
                                                   can_break_up, initB)
+        
+        self.machines = {
+            personA['key'] : self.state_machineA,
+            personB['key'] : self.state_machineB
+        }
 
     def declaration(self, receiver):
+        # TODO add memory
         status = self.model.get_relationship_status_person(receiver)
-        response = self.people[receiver].receive_declaration(status)
+        response = self.machines[receiver].receive_declaration(status)
         return response
 
     def break_up(self, origin):
-        for p in self.people.items():
+        for p in self.machines.items():
             p.break_up()
 
     def get_states(self):
         return {
-            
+            'state A' : self.state_machineA.state,
+            'state B' : self.state_machineB.state,
         }
+    
+    def get_state(self, source):
+        return self.machines[source].state
 
-    def evolve(self):
-        changeA = self.state_machineA.turn()
-        changeB = self.state_machineB.turn()
+    def evolve(self, friendship_state, adults):
+        # Check if people are old enough to enter a relationship / marriage
+        if adults != [True, True]:
+            age_restraint = True
+        else:
+            age_restraint = False
+
+        # check if people are friends enough to have a solid love relationship
+        if friendship_state['score'] < 1:
+            solid_love_restraint = True
+        else:
+            solid_love_restraint = False
+        changeA = self.state_machineA.turn(age_restraint, solid_love_restraint)
+        changeB = self.state_machineB.turn(age_restraint, solid_love_restraint)
         change = True if changeA or changeB else False
         return {
             'change' : change,

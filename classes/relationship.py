@@ -1,6 +1,7 @@
 from .utils import *
 from mesa import Agent, Model
 from .relationship_classes import *
+from copy import deepcopy
 
 class Relationship(Agent):
     def __init__(self, unique_id: int, model: Model, personA : dict, 
@@ -13,6 +14,7 @@ class Relationship(Agent):
         self.personB = personB
         self.keys = [personA['key'], personB['key']]
         self.ages = [personA['age'], personB['age']]
+        self.adults = [True if a > 16 else False for a in self.ages ]
         self.proximity_score = 1 # for testing
         self.children = []
         self.adopted_children = []
@@ -29,6 +31,7 @@ class Relationship(Agent):
             self.family_init()
         elif label == 'friend':
             self.friendship_init()
+            label = 'unrelated' # categorize under unrelated
         else:
             self.platonic_init()
         
@@ -50,36 +53,28 @@ class Relationship(Agent):
         Arrange marriage for first_gen couples. Disregards the platonic_only 
         parameter.
         """
-        # print('arrangingggg')
-        friendship_seed = normal_in_range(1.1, 0.3)
+        friendship_seed = normal_in_range(1.1, 0.2, 1.5)
         self.friendship_aspect = Friendship(self, self.personA, self.personB, 
                                             False, friendship_seed)
 
         self.sexual_aspect = BirdsAndBees(self, self.personA, self.personB, True)
-        # self.sexual_aspect.init_types('arranged')
-        if rand() < self.friendship_aspect.compatibility:
-            initA = 'solid love'
-            initB = 'solid love'
-        else:
-            initA = 'infatuation'
-            initB = 'infatuation' if rand() < 0.5 else 'out of love'
         self.romance_aspect = Romance(self, self.model, self.personA, self.personB, 
-                                      initA, initB)
+                                      'generate', 'generate')
 
     def friendship_init(self):
-        friendship_seed = normal_in_range(0.7, 0.2)
+        friendship_seed = normal_in_range(1.1, 0.1, 1.5)
         self.friendship_aspect = Friendship(self, self.personA, self.personB, 
                                             False, friendship_seed)
         self.sexual_aspect = BirdsAndBees(self, self.personA, self.personB, False)
         self.romance_aspect = Romance(self, self.model, self.personA, self.personB)
 
     def platonic_init(self):
-        friendship_seed = normal_in_range(0.7, 0.3)
+        friendship_seed = normal_in_range(0.7, 0.2, 1.5)
         self.friendship_aspect = Friendship(self, self.personA, self.personB, 
                                             False, friendship_seed)
 
     def family_init(self):
-        friendship_seed = normal_in_range(0.7, 0.2)
+        friendship_seed = normal_in_range(1, 0.2, 1.5)
         self.friendship_aspect = Friendship(self, self.personA, self.personB, 
                                             True, friendship_seed)
 
@@ -112,7 +107,8 @@ class Relationship(Agent):
         if end_cause == 'person died':
             self.end_year = self.model.get_year()
             self.end_cause = f"{context['person']['name']} died"
-            self.keys.remove(context['person']['key'])
+            people_involved = deepcopy(self.keys)
+            people_involved.remove(context['person']['key'])
             
             # if relationship, update relationship status
             relationship_msg = {
@@ -120,10 +116,10 @@ class Relationship(Agent):
             }
             if self.label == 'spouse':
                 relationship_msg['topic'] = 'unmarried'
-                self.model.message_person(self.keys[0], relationship_msg)
+                self.model.message_person(people_involved[0], relationship_msg)
             elif self.label == 'partner':
                 relationship_msg['topic'] = 'single'
-                self.model.message_person(self.keys[0], relationship_msg)
+                self.model.message_person(people_involved[0], relationship_msg)
 
             # Determine whether it was a child or a parent to the survior
             if self.label == 'parentchild':
@@ -148,9 +144,12 @@ class Relationship(Agent):
                 'topic' : 'person died',
                 'person' : context['person'],
                 'cause' : context['cause'],
+                'friendship label' : self.friendship_aspect.label,
                 'label' : descriptor
             }
-            self.model.message_person(self.keys[0], death_note)
+            if not self.platonic_only:
+                death_note['love state'] = self.romance_aspect.get_state(people_involved[0])
+            self.model.message_person(people_involved[0], death_note)
             
         else:
             self.end_cause = end_cause
@@ -170,6 +169,8 @@ class Relationship(Agent):
             'unrelated'
         ]
         if label_hierarchy.index(new_label) < label_hierarchy.index(self.label):
+            print(new_label)
+            print(self.unique_id)
             self.label = new_label
 
     """
@@ -197,8 +198,8 @@ class Relationship(Agent):
        
         change = report['friendship']['change']
         if not self.platonic_only:
-            romance_report = self.romance_aspect.evolve()
-            sexual_report = self.sexual_aspect.evolve()
+            romance_report = self.romance_aspect.evolve(friend_report, self.adults)
+            sexual_report = self.sexual_aspect.evolve(romance_report)
             conceived = self.sexual_aspect.conceive()
             if conceived:
                 self.add_child_birth()
@@ -213,6 +214,7 @@ class Relationship(Agent):
                         'target' : self.keys[1],
                         'target name' : self.personB['full name'],
                         'state' : romance_report['state A'],
+                        'friendship label' : friend_report['label'], 
                         'relationship' : self.unique_id
                     }
                     self.model.message_person(self.keys[0], update)
@@ -221,7 +223,8 @@ class Relationship(Agent):
                         'topic' : 'feelings change', 
                         'target' : self.keys[0],
                         'target name' : self.personA['full name'],
-                        'state' : romance_report['state B'],
+                        'state' : romance_report['state B'],                        
+                        'friendship label' : friend_report['label'], 
                         'relationship' : self.unique_id
                     }
                     self.model.message_person(self.keys[1], update)
@@ -238,7 +241,15 @@ class Relationship(Agent):
             self.logs.add_log(report)       
 
     def lovedeathbirth(self): 
-        return
+        task = self.tasks.get()
+        while task != None:
+            topic = task['topic']
+            if topic == 'person died':
+                self.end('person died', {'person' : task['person'], 'cause' : task['cause']})
+            if topic == 'newly adult':
+                source = task['source']
+                self.adult[self.people.index(source)] = True
+            task = self.tasks.get()
         
     def houses(self):
         task = self.tasks.get()
@@ -307,12 +318,14 @@ class Relationship(Agent):
     """
     INFO FUNCTIONS
     """
-    def update(self):
+    def get_update(self):
         about_us = {
-            'friendship' : self.friendship_aspect.score
+            'friendship' : self.friendship_aspect.get_status()
         }
         if not self.platonic_only:
-            about_us['romantic state']
+            about_us['romance'] = self.romance_aspect.get_states()
+            about_us['sex'] = self.sexual_aspect.get_status()
+        return about_us
 
     def status(self):
         # return woman first if woman in relationship
@@ -324,6 +337,7 @@ class Relationship(Agent):
         return {
             'active' : self.active,
             'duration' : [self.start_year, self.end_year],
+            'ages at init' : self.ages,
             'label' : self.label,
             'compatibility' : self.friendship_aspect.determine_compatibility(self.personA, self.personB),
             'platonic only' : self.platonic_only,

@@ -1,19 +1,19 @@
 {
   "10184": {
     "alive": false,
-    "name": "Breghlent",
-    "surname": "Boghart",
-    "full name": "Breghlent Boghart",
+    "name": "Imsoete",
+    "surname": "Froes",
+    "full name": "Imsoete Froes",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.582,
-      "sex interest": 0.774,
-      "gender expression": 0.189,
+      "sexuality": 0.071,
+      "romantic interest": 0.737,
+      "sex interest": 0.567,
+      "gender expression": 0.115,
       "sex": "f"
     },
-    "age": 25,
-    "birth year": 1181,
+    "age": 33,
+    "birth year": 1169,
     "sex": "f",
     "faction": "No religion",
     "income class": [
@@ -21,13 +21,15 @@
       "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.456,
-      "nice-nasty": 0.0,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.298,
+      "nice-nasty": 0.271,
+      "honest-false": 0.266,
+      "dream": 0.862,
+      "outgoing": 0.516
     },
     "attitude": {
-      "outgoing": 0.327,
-      "dream": 0.728
+      "dream": 0.862,
+      "outgoing": 0.516
     },
     "homsoc": {
       "means": {
@@ -38,22 +40,22 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.141
+        "sexuality expression": 0.03,
+        "gender expression expression": 0.018
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "16287": {
-          "key": 16287,
-          "name": "Hildeburgis Busseel",
-          "age": 20,
-          "alive": false,
+        "12970": {
+          "key": 12970,
+          "name": "Lenildis Ludingussdochter",
+          "age": 49,
+          "alive": true,
           "sex": "f",
           "parents": {
-            "mother": "Breghlent (10184)",
-            "father": "Wolcout (10183)"
+            "mother": "Imsoete (10184)",
+            "father": "Ludingus (10183)"
           }
         }
       },
@@ -63,9 +65,12 @@
         ],
         "child": {
           "birth": [
-            16289
+            12972
           ]
-        }
+        },
+        "unrelated": [
+          14506
+        ]
       }
     },
     "occupation": {
@@ -78,16 +83,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 9,
-      "eye_color": "blue",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 8,
+      "eye_color": "brown",
+      "hair_color": "red",
+      "hair_color_code": 3,
       "hair_type": [
         "S",
-        "S"
+        "C"
       ],
-      "health": 0.518,
-      "fertility": 0.517,
+      "health": 0.616,
+      "fertility": 0.613,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -99,13 +104,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.518
+            "new_health": 0.616
           },
           "death": false
+        },
+        "1201": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.616
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1169
+          },
           {
             "topic": "new relationship",
             "key": 10185,
@@ -114,73 +131,57 @@
               10184
             ],
             "people names": [
-              "Wolcout Busseel",
-              "Breghlent Boghart"
+              "Ludingus",
+              "Imsoete Froes"
             ],
             "people ages": [
-              42,
-              19
+              35,
+              31
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stIn den Haeg.se1.c0",
-              "street": "In den Haeg",
-              "neighborhood": "varkensbuurt",
-              "unique id": 65
-            }
-          }
-        ],
-        "1201": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          },
-          {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "spouse",
-            "friendship label": "indifferent",
-            "relationship": 10185
-          }
-        ],
-        "1204": [
-          {
             "topic": "new relationship",
-            "key": 16289,
+            "key": 12972,
             "people": [
               10184,
-              16287
+              12970
             ],
             "people names": [
-              "Breghlent Boghart",
-              "Hildeburgis Busseel"
+              "Imsoete Froes",
+              "Lenildis Ludingussdochter"
             ],
             "people ages": [
-              23,
+              31,
               0
             ],
             "label": "parentchild",
             "committed": false
           },
           {
-            "topic": "feelings change",
-            "target": 10183,
-            "target name": "Wolcout Busseel",
-            "state": "infatuation",
-            "relationship": 10185
+            "topic": "new relationship",
+            "key": 14506,
+            "people": [
+              11929,
+              10184
+            ],
+            "people names": [
+              "Remboldus",
+              "Imsoete Froes"
+            ],
+            "people ages": [
+              26,
+              32
+            ],
+            "label": "unrelated",
+            "committed": false
           }
         ],
-        "1205": [
+        "1201": [
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "childbirth"
           }
         ]
       }
@@ -195,11 +196,16 @@
       "unique id": 65
     },
     "relationship status": {
-      "taken": true,
+      "taken": false,
       "married": true,
       "relationships": [
         10185
       ]
-    }
+    },
+    "friends": [
+      10185,
+      14506
+    ],
+    "enemies": []
   }
 }

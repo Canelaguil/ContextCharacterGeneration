@@ -1,80 +1,96 @@
 {
   "13393": {
     "alive": false,
-    "name": "Aue",
-    "surname": "Blideleuen",
-    "full name": "Aue Blideleuen",
+    "name": "Ghela",
+    "surname": "",
+    "full name": "Ghela",
     "born this way": {
       "sexuality label": "gay",
-      "sexuality": 0.853,
-      "romantic interest": 0.983,
-      "sex interest": 0.613,
-      "gender expression": 0.72,
+      "sexuality": 0.888,
+      "romantic interest": 0.672,
+      "sex interest": 0.897,
+      "gender expression": 0.414,
       "sex": "f"
     },
-    "age": 1,
+    "age": 30,
     "birth year": 1200,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "Dogmatists",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.523,
-      "honest-false": 0.276
+      "lawful-chaotic": 0.374,
+      "nice-nasty": 0.354,
+      "honest-false": 0.648,
+      "dream": 0.316,
+      "outgoing": 0.806
     },
     "attitude": {
-      "outgoing": 0.158,
-      "dream": 0.286
+      "dream": 0.316,
+      "outgoing": 0.806
     },
     "homsoc": {
       "means": {
         "independent": false,
-        "taken_care_of": true,
+        "taken_care_of": false,
         "caretaker": true,
-        "needs_care": true,
-        "flags": []
+        "needs_care": false,
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.573,
-        "gender expression expression": 0.683
+        "sexuality expression": 0.487,
+        "gender expression expression": 0.278
       }
     },
     "network": {
       "parents": {
-        "mother": "Suaneka (11153)",
-        "father": "Arnoud (11152)"
+        "mother": "Wendelmodis (11933)",
+        "father": "Dybben (11932)"
       },
       "children": {},
       "relationship keys": {
         "parent": [
           13394,
           13395
+        ],
+        "sibling": [
+          14998,
+          20651,
+          25507,
+          27926
         ]
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.808,
+      "all_incomes": [
+        0.808
+      ],
+      "job": {
+        "lawful": false,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 3,
+      "skin_color": 5,
       "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
-        "C",
+        "S",
         "C"
       ],
-      "health": 0.742,
-      "fertility": 0.768,
+      "health": 0.504,
+      "fertility": 0.452,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -86,34 +102,408 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.742
+            "new_health": 0.504
           },
           "death": false
+        },
+        "1230": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.504
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
           {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stDie Camp.se7.c2",
-              "street": "Die Camp",
-              "neighborhood": "kampbuurt",
-              "unique id": 405
-            }
+            "topic": "birth",
+            "year": 1200
+          },
+          {
+            "topic": "new relationship",
+            "key": 13394,
+            "people": [
+              11932,
+              13393
+            ],
+            "people names": [
+              "Dybben",
+              "Ghela"
+            ],
+            "people ages": [
+              33,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "new relationship",
+            "key": 13395,
+            "people": [
+              11933,
+              13393
+            ],
+            "people names": [
+              "Wendelmodis Keghelaere",
+              "Ghela"
+            ],
+            "people ages": [
+              20,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1201": [
           {
+            "topic": "new relationship",
+            "key": 14998,
+            "people": [
+              13393,
+              14995
+            ],
+            "people names": [
+              "Ghela",
+              "Geykonis"
+            ],
+            "people ages": [
+              0,
+              0
+            ],
+            "label": "sibling",
+            "committed": false
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 20651,
+            "people": [
+              13393,
+              20648
+            ],
+            "people names": [
+              "Ghela",
+              "Splinter"
+            ],
+            "people ages": [
+              3,
+              0
+            ],
+            "label": "sibling",
+            "committed": false
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 25507,
+            "people": [
+              13393,
+              25504
+            ],
+            "people names": [
+              "Ghela",
+              "Riuum"
+            ],
+            "people ages": [
+              5,
+              0
+            ],
+            "label": "sibling",
+            "committed": false
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "sibling",
+            "friendship label": "friend",
+            "relationship": 20651
+          }
+        ],
+        "1207": [
+          {
+            "topic": "new relationship",
+            "key": 27926,
+            "people": [
+              13393,
+              27923
+            ],
+            "people names": [
+              "Ghela",
+              "Jacob"
+            ],
+            "people ages": [
+              6,
+              0
+            ],
+            "label": "sibling",
+            "committed": false
+          }
+        ],
+        "1208": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "sibling",
+            "friendship label": "friend",
+            "relationship": 20651
+          }
+        ],
+        "1212": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11932,
+              "name": "Dybben",
+              "age": 46,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "friendship label": "friend",
+            "label": "parent"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 27923,
+              "name": "Jacob",
+              "age": 5,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Wendelmodis (11933)",
+                "father": "Dybben (11932)"
+              }
+            },
+            "cause": "childhood illness",
+            "friendship label": "indifferent",
+            "label": "sibling"
+          }
+        ],
+        "1213": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "sibling",
+            "friendship label": "indifferent",
+            "relationship": 20651
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1215": [
+          {
             "topic": "event",
             "event": "plague",
-            "year": 1201
+            "year": 1215
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "sibling",
+            "friendship label": "indifferent",
+            "relationship": 14998
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 14995,
+              "name": "Geykonis",
+              "age": 14,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Wendelmodis (11933)",
+                "father": "Dybben (11932)"
+              }
+            },
+            "cause": "illness",
+            "friendship label": "indifferent",
+            "label": "sibling"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1216": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 20648,
+              "name": "Splinter",
+              "age": 13,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Wendelmodis (11933)",
+                "father": "Dybben (11932)"
+              }
+            },
+            "cause": "starvation",
+            "friendship label": "indifferent",
+            "label": "sibling"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1217": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1218": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1219": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11933,
+              "name": "Wendelmodis Keghelaere",
+              "age": 40,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "starvation",
+            "friendship label": "indifferent",
+            "label": "parent"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1220": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1221": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 25504,
+              "name": "Riuum",
+              "age": 15,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Wendelmodis (11933)",
+                "father": "Dybben (11932)"
+              }
+            },
+            "cause": "illness",
+            "friendship label": "good friend",
+            "label": "sibling"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1222": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1223": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1223
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1224": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1225": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1226": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1227": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1228": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1229": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1230": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.808
           },
           {
             "topic": "death",
-            "cause": "childhood illness"
+            "cause": "illness"
           }
         ]
       }
@@ -122,15 +512,20 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stDie Camp.se7.c2",
-      "street": "Die Camp",
-      "neighborhood": "kampbuurt",
-      "unique id": 405
+      "section": "stDie lange straet3.se1.c2",
+      "street": "Die lange straet3",
+      "neighborhood": "visbuurt",
+      "unique id": 670
     },
     "relationship status": {
       "taken": false,
       "married": false,
       "relationships": []
-    }
+    },
+    "friends": [
+      13394,
+      25507
+    ],
+    "enemies": []
   }
 }

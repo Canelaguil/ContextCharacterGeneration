@@ -1,18 +1,18 @@
 {
   "11014": {
     "alive": false,
-    "name": "Eremboldus",
-    "surname": "Moes",
-    "full name": "Eremboldus Moes",
+    "name": "Laurens",
+    "surname": "Commer",
+    "full name": "Laurens Commer",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.051,
-      "romantic interest": 0.826,
-      "sex interest": 0.672,
-      "gender expression": 0.149,
+      "sexuality label": "gay",
+      "sexuality": 0.999,
+      "romantic interest": 0.928,
+      "sex interest": 0.625,
+      "gender expression": 0.578,
       "sex": "m"
     },
-    "age": 49,
+    "age": 52,
     "birth year": 1162,
     "sex": "m",
     "faction": "No religion",
@@ -21,13 +21,15 @@
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.477,
-      "honest-false": 0.8
+      "lawful-chaotic": 0.444,
+      "nice-nasty": 0.544,
+      "honest-false": 0.611,
+      "dream": 0.315,
+      "outgoing": 0.747
     },
     "attitude": {
-      "outgoing": 0.503,
-      "dream": 0.658
+      "dream": 0.315,
+      "outgoing": 0.747
     },
     "homsoc": {
       "means": {
@@ -38,32 +40,45 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.05,
-        "gender expression expression": 0.098
+        "sexuality expression": 0.371,
+        "gender expression expression": 0.0
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "13872": {
-          "key": 13872,
-          "name": "Rutgerus Moes",
-          "age": 14,
+        "15354": {
+          "key": 15354,
+          "name": "Eligius Commer",
+          "age": 35,
           "alive": false,
           "sex": "m",
           "parents": {
-            "mother": "Margareta (11015)",
-            "father": "Eremboldus (11014)"
+            "mother": "Hille (11015)",
+            "father": "Laurens (11014)"
+          }
+        },
+        "16713": {
+          "key": 16713,
+          "name": "Meynseth Commer",
+          "age": 47,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Hille (11015)",
+            "father": "Laurens (11014)"
           }
         }
       },
       "relationship keys": {
         "spouse": [
-          11016
+          11016,
+          35547
         ],
         "child": {
           "birth": [
-            13873
+            15355,
+            16714
           ]
         }
       }
@@ -74,20 +89,23 @@
         2,
         "middle class"
       ],
-      "income": 0.87,
+      "income": 1.524,
       "all_incomes": [
-        1.052,
-        1.1629999999999998,
-        1.0519999999999998,
-        1.1589999999999998,
-        0.973,
-        1.2879999999999998,
-        1.257,
-        1.269,
-        1.085,
-        0.871,
-        0.786,
-        0.87
+        1.283,
+        1.3279999999999998,
+        1.518,
+        1.524,
+        1.524,
+        1.4969999999999999,
+        1.524,
+        1.524,
+        1.309,
+        1.2309999999999999,
+        1.3279999999999998,
+        1.3259999999999998,
+        1.266,
+        1.335,
+        1.524
       ],
       "job": {
         "lawful": false,
@@ -95,16 +113,16 @@
       }
     },
     "genetics": {
-      "skin_color": 4,
+      "skin_color": 5,
       "eye_color": "green",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
-        "C",
+        "S",
         "C"
       ],
-      "health": 0.695,
-      "fertility": 0.813,
+      "health": 0.327,
+      "fertility": 0.619,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -116,15 +134,23 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.695
+            "new_health": 0.645
           },
           "death": false
         },
-        "1210": {
+        "1212": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.695
+            "change": true,
+            "value_change": -0.177,
+            "new_health": 0.468
+          },
+          "death": false
+        },
+        "1213": {
+          "health": {
+            "change": true,
+            "value_change": -0.141,
+            "new_health": 0.327
           },
           "death": true
         }
@@ -132,9 +158,13 @@
       "events": {
         "1200": [
           {
+            "topic": "birth",
+            "year": 1162
+          },
+          {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.052
+            "income": 1.283
           },
           {
             "topic": "new relationship",
@@ -144,44 +174,48 @@
               11015
             ],
             "people names": [
-              "Eremboldus Moes",
-              "Margareta Kiekin"
+              "Laurens Commer",
+              "Hille Rowerus"
             ],
             "people ages": [
               38,
-              34
+              32
             ],
             "label": "spouse",
             "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stDie Camp.se1.c2",
-              "street": "Die Camp",
-              "neighborhood": "kampbuurt",
-              "unique id": 358
-            }
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          },
-          {
             "topic": "new relationship",
-            "key": 13873,
+            "key": 15355,
             "people": [
               11014,
-              13872
+              15354
             ],
             "people names": [
-              "Eremboldus Moes",
-              "Rutgerus Moes"
+              "Laurens Commer",
+              "Eligius Commer"
+            ],
+            "people ages": [
+              39,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 16714,
+            "people": [
+              11014,
+              16713
+            ],
+            "people names": [
+              "Laurens Commer",
+              "Meynseth Commer"
             ],
             "people ages": [
               40,
@@ -191,56 +225,49 @@
             "committed": false
           },
           {
-            "topic": "feelings change",
-            "target": 11015,
-            "target name": "Margareta Kiekin",
-            "state": "out of love",
-            "relationship": 11016
-          }
-        ],
-        "1203": [
-          {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "parentchild",
-            "friendship label": "indifferent",
-            "relationship": 13873
+            "key": 11016,
+            "topic": "unmarried"
           },
           {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "spouse",
-            "friendship label": "indifferent",
-            "relationship": 11016
+            "topic": "person died",
+            "person": {
+              "key": 11015,
+              "name": "Hille Rowerus",
+              "age": 35,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "friendship label": "friend",
+            "label": "spouse",
+            "love state": "loveless"
           }
         ],
-        "1204": [
+        "1211": [
           {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.2879999999999998
-          },
-          {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "parentchild",
-            "friendship label": "indifferent",
-            "relationship": 13873
+            "topic": "new relationship",
+            "key": 35547,
+            "people": [
+              11014,
+              12809
+            ],
+            "people names": [
+              "Laurens Commer",
+              "Liudburgis Crane"
+            ],
+            "people ages": [
+              50,
+              45
+            ],
+            "label": "spouse",
+            "committed": true
           }
         ],
-        "1208": [
-          {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "parentchild",
-            "friendship label": "indifferent",
-            "relationship": 13873
-          }
-        ],
-        "1210": [
+        "1213": [
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "old age"
           }
         ]
       }
@@ -252,14 +279,21 @@
       "section": "stDie Camp.se1.c2",
       "street": "Die Camp",
       "neighborhood": "kampbuurt",
-      "unique id": 358
+      "unique id": 351
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        11016
+        11016,
+        35547
       ]
-    }
+    },
+    "friends": [
+      11016,
+      35547,
+      15355
+    ],
+    "enemies": []
   }
 }

@@ -1,19 +1,19 @@
 {
   "11264": {
     "alive": false,
-    "name": "Marisseis",
+    "name": "Hilduardis",
     "surname": "",
-    "full name": "Marisseis",
+    "full name": "Hilduardis",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.002,
-      "romantic interest": 0.752,
-      "sex interest": 0.887,
-      "gender expression": 0.148,
+      "sexuality": 0.119,
+      "romantic interest": 0.671,
+      "sex interest": 0.623,
+      "gender expression": 0.223,
       "sex": "f"
     },
-    "age": 45,
-    "birth year": 1168,
+    "age": 46,
+    "birth year": 1165,
     "sex": "f",
     "faction": "Dogmatists",
     "income class": [
@@ -21,13 +21,15 @@
       "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.283,
-      "nice-nasty": 0.394,
-      "honest-false": 0.04
+      "lawful-chaotic": 0.827,
+      "nice-nasty": 0.68,
+      "honest-false": 0.584,
+      "dream": 0.537,
+      "outgoing": 0.26
     },
     "attitude": {
-      "outgoing": 0.596,
-      "dream": 0.168
+      "dream": 0.537,
+      "outgoing": 0.26
     },
     "homsoc": {
       "means": {
@@ -35,64 +37,43 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": [
-          "starving"
-        ]
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.001,
-        "gender expression expression": 0.048
+        "sexuality expression": 0.024,
+        "gender expression expression": 0.157
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {
-        "12922": {
-          "key": 12922,
-          "name": "Nimme Makerreel",
-          "age": 6,
-          "alive": false,
-          "sex": "f",
-          "parents": {
-            "mother": "Marisseis (11264)",
-            "father": "Ghisele (11263)"
-          }
-        },
-        "16871": {
-          "key": 16871,
-          "name": "Nimme Makerreel",
-          "age": 32,
-          "alive": false,
-          "sex": "f",
-          "parents": {
-            "mother": "Marisseis (11264)",
-            "father": "Ghisele (11263)"
-          }
-        }
-      },
+      "children": {},
       "relationship keys": {
         "spouse": [
           11265
         ],
-        "child": {
-          "birth": [
-            12924,
-            16872
-          ]
-        }
+        "unrelated": [
+          27094
+        ]
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         0,
         "working class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.976,
+      "all_incomes": [
+        1.239,
+        0.976
+      ],
+      "job": {
+        "lawful": false,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 9,
+      "skin_color": 0,
       "eye_color": "green",
       "hair_color": "strawberry blonde",
       "hair_color_code": 5,
@@ -100,8 +81,8 @@
         "S",
         "C"
       ],
-      "health": 0.77,
-      "fertility": 0.84,
+      "health": 0.658,
+      "fertility": 0.683,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -113,13 +94,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.77
+            "new_health": 0.658
           },
           "death": false
+        },
+        "1210": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.658
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1165
+          },
           {
             "topic": "new relationship",
             "key": 11265,
@@ -128,184 +121,64 @@
               11264
             ],
             "people names": [
-              "Ghisele Makerreel",
-              "Marisseis"
+              "Lucas Loddernie",
+              "Hilduardis"
             ],
             "people ages": [
               42,
-              32
+              35
             ],
             "label": "spouse",
             "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stDie Coninc straet.se1.c0",
-              "street": "Die Coninc straet",
-              "neighborhood": "kampbuurt",
-              "unique id": 445
-            }
-          },
-          {
-            "topic": "new relationship",
-            "key": 12924,
-            "people": [
-              11264,
-              12922
-            ],
-            "people names": [
-              "Marisseis",
-              "Nimme Makerreel"
-            ],
-            "people ages": [
-              32,
-              0
-            ],
-            "label": "parentchild",
-            "committed": false
-          },
-          {
-            "topic": "feelings change",
-            "target": 11263,
-            "target name": "Ghisele Makerreel",
-            "state": "solid love",
-            "relationship": 11265
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1202": [
-          {
             "topic": "feelings change",
             "target": 11263,
-            "target name": "Ghisele Makerreel",
-            "state": "out of love",
+            "target name": "Lucas Loddernie",
+            "state": "solid love",
+            "friendship label": "friend",
             "relationship": 11265
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1203": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
           }
         ],
         "1204": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1205": [
-          {
-            "topic": "new relationship",
-            "key": 16872,
-            "people": [
-              11264,
-              16871
-            ],
-            "people names": [
-              "Marisseis",
-              "Nimme Makerreel"
-            ],
-            "people ages": [
-              37,
-              0
-            ],
-            "label": "parentchild",
-            "committed": false
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "friend",
+            "relationship": 11265
           }
         ],
         "1206": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 12922,
-              "name": "Nimme Makerreel",
-              "age": 6,
-              "alive": false,
-              "sex": "f",
-              "parents": {
-                "mother": "Marisseis (11264)",
-                "father": "Ghisele (11263)"
-              }
-            },
-            "cause": "childhood illness",
-            "label": "child"
-          }
-        ],
-        "1207": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1208": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "new relationship",
+            "key": 27094,
+            "people": [
+              11869,
+              11264
+            ],
+            "people names": [
+              "Lutgeri Stoerm",
+              "Hilduardis"
+            ],
+            "people ages": [
+              33,
+              42
+            ],
+            "label": "unrelated",
+            "committed": false
           }
         ],
         "1209": [
           {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.239
           }
         ],
         "1210": [
-          {
-            "topic": "feelings change",
-            "target": 11263,
-            "target name": "Ghisele Makerreel",
-            "state": "solid love",
-            "relationship": 11265
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1211": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1212": [
           {
             "topic": "death",
             "cause": "illness"
@@ -317,17 +190,22 @@
     "home": {
       "income class": 0,
       "income class label": "working class",
-      "section": "stDie Coninc straet.se1.c0",
-      "street": "Die Coninc straet",
+      "section": "stTrysgens.se1.c0",
+      "street": "Trysgens",
       "neighborhood": "kampbuurt",
-      "unique id": 445
+      "unique id": 436
     },
     "relationship status": {
-      "taken": true,
+      "taken": false,
       "married": true,
       "relationships": [
         11265
       ]
-    }
+    },
+    "friends": [
+      11265,
+      27094
+    ],
+    "enemies": []
   }
 }

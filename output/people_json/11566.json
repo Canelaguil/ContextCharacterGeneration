@@ -1,33 +1,35 @@
 {
   "11566": {
     "alive": false,
-    "name": "Franse",
+    "name": "Ghoris",
     "surname": "",
-    "full name": "Franse",
+    "full name": "Ghoris",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.102,
-      "romantic interest": 0.752,
-      "sex interest": 0.61,
-      "gender expression": 0.189,
+      "sexuality label": "bi",
+      "sexuality": 0.564,
+      "romantic interest": 0.833,
+      "sex interest": 0.759,
+      "gender expression": 0.287,
       "sex": "m"
     },
-    "age": 47,
-    "birth year": 1155,
+    "age": 54,
+    "birth year": 1164,
     "sex": "m",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.883,
-      "nice-nasty": 0.999,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.961,
+      "nice-nasty": 0.302,
+      "honest-false": 0.841,
+      "dream": 0.564,
+      "outgoing": 0.639
     },
     "attitude": {
-      "outgoing": 0.0,
-      "dream": 0.263
+      "dream": 0.564,
+      "outgoing": 0.639
     },
     "homsoc": {
       "means": {
@@ -38,17 +40,35 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.08,
-        "gender expression expression": 0.144
+        "sexuality expression": 0.287,
+        "gender expression expression": 0.221
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "15638": {
+          "key": 15638,
+          "name": "Woutgerus",
+          "age": 4,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Hodine (11567)",
+            "father": "Ghoris (11566)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          11568
-        ]
+          11568,
+          30875
+        ],
+        "child": {
+          "birth": [
+            15639
+          ]
+        }
       }
     },
     "occupation": {
@@ -57,11 +77,27 @@
         2,
         "middle class"
       ],
-      "income": 0.894,
+      "income": 1.3119999999999998,
       "all_incomes": [
-        0.939,
-        0.925,
-        0.894
+        1.012,
+        1.115,
+        1.0779999999999998,
+        0.997,
+        0.988,
+        0.9440000000000001,
+        0.9610000000000001,
+        0.929,
+        0.971,
+        0.928,
+        0.9520000000000001,
+        1.0379999999999998,
+        1.0419999999999998,
+        1.0999999999999999,
+        1.1569999999999998,
+        1.1609999999999998,
+        1.172,
+        1.226,
+        1.3119999999999998
       ],
       "job": {
         "lawful": true,
@@ -69,16 +105,16 @@
       }
     },
     "genetics": {
-      "skin_color": 8,
+      "skin_color": 6,
       "eye_color": "brown",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "C",
+        "S",
         "C"
       ],
-      "health": 0.636,
-      "fertility": 0.656,
+      "health": 0.0,
+      "fertility": 0.747,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -90,17 +126,53 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.636
+            "new_health": 0.733
           },
           "death": false
+        },
+        "1214": {
+          "health": {
+            "change": true,
+            "value_change": -0.188,
+            "new_health": 0.545
+          },
+          "death": false
+        },
+        "1215": {
+          "health": {
+            "change": true,
+            "value_change": -0.244,
+            "new_health": 0.301
+          },
+          "death": false
+        },
+        "1216": {
+          "health": {
+            "change": true,
+            "value_change": -0.283,
+            "new_health": 0.018
+          },
+          "death": false
+        },
+        "1217": {
+          "health": {
+            "change": true,
+            "value_change": -0.018,
+            "new_health": 0.0
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
           {
+            "topic": "birth",
+            "year": 1164
+          },
+          {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.939
+            "income": 1.012
           },
           {
             "topic": "new relationship",
@@ -110,27 +182,46 @@
               11567
             ],
             "people names": [
-              "Franse",
-              "Sybillia"
+              "Ghoris",
+              "Hodine Kriec"
             ],
             "people ages": [
-              45,
-              25
+              36,
+              35
             ],
             "label": "spouse",
             "committed": true
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 15639,
+            "people": [
+              11566,
+              15638
+            ],
+            "people names": [
+              "Ghoris",
+              "Woutgerus"
+            ],
+            "people ages": [
+              38,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stBreestraat.se1.c2",
-              "street": "Breestraat",
-              "neighborhood": "olvbuurt",
-              "unique id": 552
-            }
-          },
+            "topic": "feelings change",
+            "target": 11567,
+            "target name": "Hodine Kriec",
+            "state": "out of love",
+            "friendship label": "indifferent",
+            "relationship": 11568
+          }
+        ],
+        "1202": [
           {
             "topic": "update",
             "update": "new friendship label",
@@ -139,22 +230,101 @@
             "relationship": 11568
           },
           {
-            "topic": "feelings change",
-            "target": 11567,
-            "target name": "Sybillia",
-            "state": "out of love",
-            "relationship": 11568
+            "key": 11568,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11567,
+              "name": "Hodine Kriec",
+              "age": 38,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "friendship label": "indifferent",
+            "label": "spouse",
+            "love state": "out of love"
           }
         ],
-        "1201": [
+        "1204": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 15639
+          }
+        ],
+        "1205": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 15638,
+              "name": "Woutgerus",
+              "age": 4,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Hodine (11567)",
+                "father": "Ghoris (11566)"
+              }
+            },
+            "cause": "childhood illness",
+            "friendship label": "indifferent",
+            "label": "child"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "new relationship",
+            "key": 30875,
+            "people": [
+              11566,
+              10580
+            ],
+            "people names": [
+              "Ghoris",
+              "Gerburgis Storhem"
+            ],
+            "people ages": [
+              45,
+              55
+            ],
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1210": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.0379999999999998
+          }
+        ],
+        "1214": [
+          {
+            "topic": "feelings change",
+            "target": 10580,
+            "target name": "Gerburgis Storhem",
+            "state": "out of love",
+            "friendship label": "indifferent",
+            "relationship": 30875
+          }
+        ],
+        "1215": [
           {
             "topic": "event",
             "event": "plague",
-            "year": 1201
-          },
+            "year": 1215
+          }
+        ],
+        "1217": [
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "sickness"
           }
         ]
       }
@@ -166,14 +336,17 @@
       "section": "stBreestraat.se1.c2",
       "street": "Breestraat",
       "neighborhood": "olvbuurt",
-      "unique id": 552
+      "unique id": 540
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        11568
+        11568,
+        30875
       ]
-    }
+    },
+    "friends": [],
+    "enemies": []
   }
 }

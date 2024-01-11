@@ -1,33 +1,35 @@
 {
   "11437": {
     "alive": false,
-    "name": "Wauthem",
-    "surname": "Napbrekere",
-    "full name": "Wauthem Napbrekere",
+    "name": "Clais",
+    "surname": "Wittebroet",
+    "full name": "Clais Wittebroet",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.052,
-      "romantic interest": 0.671,
-      "sex interest": 0.77,
-      "gender expression": 0.151,
+      "sexuality label": "bi",
+      "sexuality": 0.704,
+      "romantic interest": 0.852,
+      "sex interest": 0.827,
+      "gender expression": 0.368,
       "sex": "m"
     },
-    "age": 54,
-    "birth year": 1151,
+    "age": 50,
+    "birth year": 1153,
     "sex": "m",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
       3,
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.332,
-      "nice-nasty": 0.877,
-      "honest-false": 0.935
+      "lawful-chaotic": 0.236,
+      "nice-nasty": 0.718,
+      "honest-false": 0.769,
+      "dream": 0.614,
+      "outgoing": 0.72
     },
     "attitude": {
-      "outgoing": 0.213,
-      "dream": 0.605
+      "dream": 0.614,
+      "outgoing": 0.72
     },
     "homsoc": {
       "means": {
@@ -38,16 +40,48 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.033,
-        "gender expression expression": 0.088
+        "sexuality expression": 0.551,
+        "gender expression expression": 0.103
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13927": {
+          "key": 13927,
+          "name": "Agnes Wittebroet",
+          "age": 7,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Zuanelt (11438)",
+            "father": "Clais (11437)"
+          }
+        },
+        "16244": {
+          "key": 16244,
+          "name": "Badeloghen Wittebroet",
+          "age": 35,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Zuanelt (11438)",
+            "father": "Clais (11437)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11439
+        ],
+        "child": {
+          "birth": [
+            13928,
+            16245
+          ]
+        },
+        "unrelated": [
+          16481
         ]
       }
     },
@@ -57,14 +91,12 @@
         3,
         "upper middle class"
       ],
-      "income": 1.1620000000000001,
+      "income": 1.2630000000000001,
       "all_incomes": [
-        0.921,
-        0.9550000000000001,
-        1.018,
-        0.9690000000000001,
-        1.053,
-        1.1620000000000001
+        1.019,
+        1.19,
+        1.195,
+        1.2630000000000001
       ],
       "job": {
         "lawful": true,
@@ -72,16 +104,16 @@
       }
     },
     "genetics": {
-      "skin_color": 0,
+      "skin_color": 9,
       "eye_color": "brown",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.0,
-      "fertility": 0.621,
+      "health": 0.542,
+      "fertility": 0.497,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -93,39 +125,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.591
-          },
-          "death": false
-        },
-        "1201": {
-          "health": {
-            "change": true,
-            "value_change": -0.176,
-            "new_health": 0.415
+            "new_health": 0.542
           },
           "death": false
         },
         "1202": {
           "health": {
-            "change": true,
-            "value_change": -0.31,
-            "new_health": 0.105
-          },
-          "death": false
-        },
-        "1203": {
-          "health": {
-            "change": true,
-            "value_change": -0.075,
-            "new_health": 0.03
-          },
-          "death": false
-        },
-        "1204": {
-          "health": {
-            "change": true,
-            "value_change": -0.03,
-            "new_health": 0.0
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.542
           },
           "death": true
         }
@@ -133,9 +141,13 @@
       "events": {
         "1200": [
           {
+            "topic": "birth",
+            "year": 1153
+          },
+          {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.921
+            "income": 1.019
           },
           {
             "topic": "new relationship",
@@ -145,58 +157,77 @@
               11438
             ],
             "people names": [
-              "Wauthem Napbrekere",
-              "Lenildis Ulf"
+              "Clais Wittebroet",
+              "Zuanelt Hont"
             ],
             "people ages": [
-              49,
-              31
+              47,
+              26
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stLange gracht.se3.c3",
-              "street": "Lange gracht",
-              "neighborhood": "olvbuurt",
-              "unique id": 504
-            }
+            "topic": "new relationship",
+            "key": 13928,
+            "people": [
+              11437,
+              13927
+            ],
+            "people names": [
+              "Clais Wittebroet",
+              "Agnes Wittebroet"
+            ],
+            "people ages": [
+              47,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "topic": "new relationship",
+            "key": 16245,
+            "people": [
+              11437,
+              16244
+            ],
+            "people names": [
+              "Clais Wittebroet",
+              "Badeloghen Wittebroet"
+            ],
+            "people ages": [
+              49,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.018
-          },
-          {
-            "topic": "feelings change",
-            "target": 11438,
-            "target name": "Lenildis Ulf",
-            "state": "out of love",
-            "relationship": 11439
+            "topic": "new relationship",
+            "key": 16481,
+            "people": [
+              10405,
+              11437
+            ],
+            "people names": [
+              "Hornekinga",
+              "Clais Wittebroet"
+            ],
+            "people ages": [
+              45,
+              49
+            ],
+            "label": "unrelated",
+            "committed": false
           }
         ],
-        "1203": [
-          {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.053
-          }
-        ],
-        "1204": [
+        "1202": [
           {
             "topic": "death",
-            "cause": "sickness"
+            "cause": "illness"
           }
         ]
       }
@@ -205,17 +236,23 @@
     "home": {
       "income class": 3,
       "income class label": "upper middle class",
-      "section": "stLange gracht.se3.c3",
+      "section": "stLange gracht.se1.c3",
       "street": "Lange gracht",
       "neighborhood": "olvbuurt",
-      "unique id": 504
+      "unique id": 497
     },
     "relationship status": {
-      "taken": true,
+      "taken": false,
       "married": true,
       "relationships": [
         11439
       ]
-    }
+    },
+    "friends": [
+      11439,
+      13928,
+      16245
+    ],
+    "enemies": []
   }
 }

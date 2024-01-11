@@ -1,33 +1,35 @@
 {
   "10814": {
     "alive": false,
-    "name": "Sara",
+    "name": "Linnea",
     "surname": "",
-    "full name": "Sara",
+    "full name": "Linnea",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.063,
-      "romantic interest": 0.752,
-      "sex interest": 0.69,
-      "gender expression": 0.062,
+      "sexuality": 0.044,
+      "romantic interest": 0.725,
+      "sex interest": 0.501,
+      "gender expression": 0.229,
       "sex": "f"
     },
-    "age": 43,
+    "age": 41,
     "birth year": 1181,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
       0,
       "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.752,
-      "nice-nasty": 0.0,
-      "honest-false": 0.974
+      "lawful-chaotic": 0.0,
+      "nice-nasty": 0.762,
+      "honest-false": 0.491,
+      "dream": 0.29,
+      "outgoing": 0.549
     },
     "attitude": {
-      "outgoing": 0.0,
-      "dream": 0.595
+      "dream": 0.29,
+      "outgoing": 0.549
     },
     "homsoc": {
       "means": {
@@ -35,58 +37,100 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.043,
-        "gender expression expression": 0.032
+        "sexuality expression": 0.026,
+        "gender expression expression": 0.128
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14947": {
+          "key": 14947,
+          "name": "Vreile Rolekinesdochter",
+          "age": 15,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Linnea (10814)",
+            "father": "Rolekine (10813)"
+          }
+        },
+        "17193": {
+          "key": 17193,
+          "name": "Voghel van Rolekine",
+          "age": 3,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Linnea (10814)",
+            "father": "Rolekine (10813)"
+          }
+        },
+        "24111": {
+          "key": 24111,
+          "name": "Woutersoet",
+          "age": 14,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Linnea (10814)",
+            "father": "Rolekine (10813)"
+          }
+        },
+        "28658": {
+          "key": 28658,
+          "name": "Maelkin",
+          "age": 4,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Linnea (10814)",
+            "father": "Rolekine (10813)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10815
+        ],
+        "child": {
+          "birth": [
+            14949,
+            17195,
+            24113,
+            28660
+          ]
+        },
+        "unrelated": [
+          43246
         ]
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
         0,
         "working class"
       ],
-      "income": 1.092,
-      "all_incomes": [
-        0.957,
-        0.854,
-        0.828,
-        0.878,
-        0.867,
-        0.888,
-        1.012,
-        1.072,
-        1.104,
-        1.078,
-        1.092
-      ],
-      "job": {
-        "lawful": true,
-        "honest": true
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 7,
-      "eye_color": "green",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 9,
+      "eye_color": "brown",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
         "C",
         "C"
       ],
-      "health": 0.563,
-      "fertility": 0.479,
+      "health": 0.822,
+      "fertility": 0.82,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -98,21 +142,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.563
+            "new_health": 0.822
           },
           "death": false
         },
-        "1223": {
+        "1221": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.563
+            "new_health": 0.822
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1181
+          },
           {
             "topic": "new relationship",
             "key": 10815,
@@ -121,8 +169,8 @@
               10814
             ],
             "people names": [
-              "Radulphus Scoreel",
-              "Sara"
+              "Rolekine",
+              "Linnea"
             ],
             "people ages": [
               20,
@@ -130,47 +178,252 @@
             ],
             "label": "spouse",
             "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stDe Tuyt.se3.c0",
-              "street": "De Tuyt",
-              "neighborhood": "agnesbuurt",
-              "unique id": 288
-            }
-          },
-          {
-            "topic": "feelings change",
-            "target": 10813,
-            "target name": "Radulphus Scoreel",
-            "state": "out of love",
-            "relationship": 10815
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "topic": "new relationship",
+            "key": 14949,
+            "people": [
+              10814,
+              14947
+            ],
+            "people names": [
+              "Linnea",
+              "Vreile Rolekinesdochter"
+            ],
+            "people ages": [
+              20,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1202": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "friend",
+            "relationship": 10815
+          },
+          {
+            "topic": "new relationship",
+            "key": 17195,
+            "people": [
+              10814,
+              17193
+            ],
+            "people names": [
+              "Linnea",
+              "Voghel van Rolekine"
+            ],
+            "people ages": [
+              22,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.966,
+            "inhabitants": []
+          }
+        ],
+        "1203": [
+          {
+            "topic": "not enough income",
+            "income": 0.95,
+            "inhabitants": []
+          }
+        ],
+        "1204": [
+          {
+            "topic": "not enough income",
+            "income": 0.938,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 17195
+          },
+          {
+            "topic": "new relationship",
+            "key": 24113,
+            "people": [
+              10814,
+              24111
+            ],
+            "people names": [
+              "Linnea",
+              "Woutersoet"
+            ],
+            "people ages": [
+              25,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 17193,
+              "name": "Voghel van Rolekine",
+              "age": 3,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Linnea (10814)",
+                "father": "Rolekine (10813)"
+              }
+            },
+            "cause": "starvation",
+            "friendship label": "indifferent",
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.983,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0.927,
+            "inhabitants": []
           }
         ],
         "1207": [
           {
             "topic": "update",
             "update": "new friendship label",
-            "relationship label": "spouse",
+            "relationship label": "parentchild",
             "friendship label": "indifferent",
-            "relationship": 10815
+            "relationship": 24113
+          },
+          {
+            "topic": "new relationship",
+            "key": 28660,
+            "people": [
+              10814,
+              28658
+            ],
+            "people names": [
+              "Linnea",
+              "Maelkin"
+            ],
+            "people ages": [
+              27,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.935,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 24113
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.909,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "key": 10815,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10813,
+              "name": "Rolekine",
+              "age": 30,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "starvation",
+            "friendship label": "friend",
+            "label": "spouse",
+            "love state": "out of love"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.938,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 28658,
+              "name": "Maelkin",
+              "age": 4,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Linnea (10814)",
+                "father": "Rolekine (10813)"
+              }
+            },
+            "cause": "starvation",
+            "friendship label": "friend",
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ],
         "1213": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.957
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ],
         "1215": [
@@ -180,31 +433,106 @@
             "year": 1215
           },
           {
-            "key": 10815,
-            "topic": "unmarried"
-          },
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1216": [
           {
             "topic": "person died",
             "person": {
-              "key": 10813,
-              "name": "Radulphus Scoreel",
-              "age": 36,
+              "key": 14947,
+              "name": "Vreile Rolekinesdochter",
+              "age": 15,
               "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
+              "sex": "f",
+              "parents": {
+                "mother": "Linnea (10814)",
+                "father": "Rolekine (10813)"
+              }
             },
-            "cause": "illness",
-            "label": "spouse"
+            "cause": "starvation",
+            "friendship label": "indifferent",
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1217": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1218": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ],
         "1219": [
           {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.012
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 24113
+          },
+          {
+            "topic": "new relationship",
+            "key": 43246,
+            "people": [
+              10814,
+              12650
+            ],
+            "people names": [
+              "Linnea",
+              "Siburgis Makerreel"
+            ],
+            "people ages": [
+              39,
+              47
+            ],
+            "label": "unrelated",
+            "committed": false
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 24111,
+              "name": "Woutersoet",
+              "age": 14,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Linnea (10814)",
+                "father": "Rolekine (10813)"
+              }
+            },
+            "cause": "starvation",
+            "friendship label": "friend",
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ],
-        "1223": [
+        "1220": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1221": [
           {
             "topic": "death",
             "cause": "illness"
@@ -216,10 +544,10 @@
     "home": {
       "income class": 0,
       "income class label": "working class",
-      "section": "stDe Tuyt.se3.c0",
+      "section": "stDe Tuyt.se1.c0",
       "street": "De Tuyt",
       "neighborhood": "agnesbuurt",
-      "unique id": 288
+      "unique id": 283
     },
     "relationship status": {
       "taken": false,
@@ -227,6 +555,13 @@
       "relationships": [
         10815
       ]
-    }
+    },
+    "friends": [
+      10815,
+      24113,
+      28660,
+      43246
+    ],
+    "enemies": []
   }
 }

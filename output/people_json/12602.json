@@ -1,19 +1,19 @@
 {
   "12602": {
     "alive": false,
-    "name": "Breghlent",
+    "name": "Ricmoden",
     "surname": "",
-    "full name": "Breghlent",
+    "full name": "Ricmoden",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.054,
-      "romantic interest": 0.464,
-      "sex interest": 0.635,
-      "gender expression": 0.202,
+      "sexuality label": "gay",
+      "sexuality": 0.878,
+      "romantic interest": 0.582,
+      "sex interest": 0.63,
+      "gender expression": 0.273,
       "sex": "f"
     },
-    "age": 36,
-    "birth year": 1165,
+    "age": 21,
+    "birth year": 1182,
     "sex": "f",
     "faction": "No religion",
     "income class": [
@@ -21,13 +21,15 @@
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.334,
-      "nice-nasty": 0.0,
-      "honest-false": 0.512
+      "lawful-chaotic": 0.033,
+      "nice-nasty": 0.272,
+      "honest-false": 0.524,
+      "dream": 0.298,
+      "outgoing": 0.481
     },
     "attitude": {
-      "outgoing": 0.533,
-      "dream": 0.061
+      "dream": 0.298,
+      "outgoing": 0.481
     },
     "homsoc": {
       "means": {
@@ -38,35 +40,76 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.023,
-        "gender expression expression": 0.127
+        "sexuality expression": 0.383,
+        "gender expression expression": 0.139
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
-      "relationship keys": {}
+      "children": {
+        "14266": {
+          "key": 14266,
+          "name": "Stemaers Slabbart",
+          "age": 40,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Ricmoden (12602)",
+            "father": "Anthonius (12601)"
+          }
+        },
+        "15152": {
+          "key": 15152,
+          "name": "Beatrice Slabbart",
+          "age": 39,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Ricmoden (12602)",
+            "father": "Anthonius (12601)"
+          }
+        }
+      },
+      "relationship keys": {
+        "spouse": [
+          12603
+        ],
+        "child": {
+          "birth": [
+            14268,
+            15154
+          ]
+        }
+      }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         3,
         "upper middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.9430000000000001,
+      "all_incomes": [
+        0.873,
+        0.903,
+        0.9430000000000001
+      ],
+      "job": {
+        "lawful": false,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 2,
-      "eye_color": "brown",
+      "skin_color": 9,
+      "eye_color": "green",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
-        "C",
+        "S",
         "C"
       ],
-      "health": 0.795,
-      "fertility": 0.858,
+      "health": 0.702,
+      "fertility": 0.764,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -78,7 +121,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.795
+            "new_health": 0.702
+          },
+          "death": false
+        },
+        "1202": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.702
           },
           "death": true
         }
@@ -86,8 +137,75 @@
       "events": {
         "1200": [
           {
+            "topic": "birth",
+            "year": 1182
+          },
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.873
+          },
+          {
+            "topic": "new relationship",
+            "key": 12603,
+            "people": [
+              12601,
+              12602
+            ],
+            "people names": [
+              "Anthonius Slabbart",
+              "Ricmoden"
+            ],
+            "people ages": [
+              26,
+              18
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new relationship",
+            "key": 14268,
+            "people": [
+              12602,
+              14266
+            ],
+            "people names": [
+              "Ricmoden",
+              "Stemaers Slabbart"
+            ],
+            "people ages": [
+              18,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 15154,
+            "people": [
+              12602,
+              15152
+            ],
+            "people names": [
+              "Ricmoden",
+              "Beatrice Slabbart"
+            ],
+            "people ages": [
+              19,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1202": [
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "childbirth"
           }
         ]
       }
@@ -99,12 +217,20 @@
       "section": "stCromme straet.se7.c3",
       "street": "Cromme straet",
       "neighborhood": "denhof",
-      "unique id": 912
+      "unique id": 910
     },
     "relationship status": {
       "taken": true,
       "married": true,
-      "relationships": []
-    }
+      "relationships": [
+        12603
+      ]
+    },
+    "friends": [
+      12603,
+      14268,
+      15154
+    ],
+    "enemies": []
   }
 }

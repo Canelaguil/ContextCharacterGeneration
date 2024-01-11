@@ -1,19 +1,19 @@
 {
   "10775": {
     "alive": false,
-    "name": "Cecilia",
-    "surname": "Cnijf",
-    "full name": "Cecilia Cnijf",
+    "name": "Saswe",
+    "surname": "Slabbart",
+    "full name": "Saswe Slabbart",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.104,
-      "romantic interest": 0.837,
-      "sex interest": 0.698,
-      "gender expression": 0.0,
+      "sexuality label": "bi",
+      "sexuality": 0.541,
+      "romantic interest": 0.553,
+      "sex interest": 0.999,
+      "gender expression": 0.382,
       "sex": "f"
     },
-    "age": 52,
-    "birth year": 1155,
+    "age": 25,
+    "birth year": 1177,
     "sex": "f",
     "faction": "No religion",
     "income class": [
@@ -21,13 +21,15 @@
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.497,
-      "nice-nasty": 0.84,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.72,
+      "nice-nasty": 0.254,
+      "honest-false": 0.643,
+      "dream": 0.626,
+      "outgoing": 0.693
     },
     "attitude": {
-      "outgoing": 0.495,
-      "dream": 0.495
+      "dream": 0.626,
+      "outgoing": 0.693
     },
     "homsoc": {
       "means": {
@@ -38,17 +40,34 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.081,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.136,
+        "gender expression expression": 0.271
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14047": {
+          "key": 14047,
+          "name": "Martin Dicbier",
+          "age": 3,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Saswe (10775)",
+            "father": "Rase (10774)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10776
-        ]
+        ],
+        "child": {
+          "birth": [
+            14049
+          ]
+        }
       }
     },
     "occupation": {
@@ -61,16 +80,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 9,
+      "skin_color": 0,
       "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
-        "S",
-        "C"
+        "C",
+        "S"
       ],
-      "health": 0.1,
-      "fertility": 0.666,
+      "health": 0.387,
+      "fertility": 0.366,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -82,29 +101,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.593
+            "new_health": 0.387
           },
           "death": false
         },
-        "1205": {
+        "1201": {
           "health": {
-            "change": true,
-            "value_change": -0.319,
-            "new_health": 0.274
-          },
-          "death": false
-        },
-        "1206": {
-          "health": {
-            "change": true,
-            "value_change": -0.174,
-            "new_health": 0.1
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.387
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1177
+          },
           {
             "topic": "new relationship",
             "key": 10776,
@@ -113,58 +128,39 @@
               10775
             ],
             "people names": [
-              "Vais",
-              "Cecilia Cnijf"
+              "Rase Dicbier",
+              "Saswe Slabbart"
             ],
             "people ages": [
-              49,
-              45
+              27,
+              23
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stWalker straet.se5.c1",
-              "street": "Walker straet",
-              "neighborhood": "agnesbuurt",
-              "unique id": 272
-            }
+            "topic": "new relationship",
+            "key": 14049,
+            "people": [
+              10775,
+              14047
+            ],
+            "people names": [
+              "Saswe Slabbart",
+              "Martin Dicbier"
+            ],
+            "people ages": [
+              24,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          }
-        ],
-        "1205": [
-          {
-            "key": 10776,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 10774,
-              "name": "Vais",
-              "age": 55,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "cause": "sickness",
-            "label": "spouse"
-          }
-        ],
-        "1206": [
-          {
             "topic": "death",
-            "cause": "old age"
+            "cause": "childbirth"
           }
         ]
       }
@@ -176,14 +172,19 @@
       "section": "stWalker straet.se5.c1",
       "street": "Walker straet",
       "neighborhood": "agnesbuurt",
-      "unique id": 272
+      "unique id": 270
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
         10776
       ]
-    }
+    },
+    "friends": [
+      10776,
+      14049
+    ],
+    "enemies": []
   }
 }

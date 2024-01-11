@@ -51,6 +51,7 @@ def set_globals(health_stats, aesthetic_seed, names, society, community):
         # people
         HomoSociologicus.male_for_indepenence = society['male_meant_for_independence']
         HomoSociologicus.female_for_indepenence = society['female_meant_for_independence']
+        HomoSociologicus.no_friends = society['desired_friends_outgoing']
         Occupation.adult_age = society['male_meant_for_independence']
         Occupation.passive_income = community['class_passive_income']
         Home.person_income_percentage = community['class_person_household_percentage']
@@ -88,7 +89,7 @@ class Community(Model):
         self.year = year
         self.people = {}
         self.homes = {}
-        self.relationships = {}
+        self.get_relationships = {}
         self.whoknowswho = {} # person_key : [list of acquaintances]
 
         # init the various community components
@@ -173,7 +174,7 @@ class Community(Model):
             self.whoknowswho[b] = []
         self.whoknowswho[a].append(b)
         self.whoknowswho[b].append(a)
-        self.relationships[relat.unique_id] = relat 
+        self.get_relationships[relat.unique_id] = relat 
         self.schedule.add(relat)
 
     def marry(self, keyA, keyB, type='spouse'):
@@ -230,8 +231,7 @@ class Community(Model):
         personB = self.get_person(personB_key)
 
         # check if they're both alive
-        if not personA['alive'] or not personB['alive']:
-            
+        if not personA['alive'] or not personB['alive']:            
             return False
         
         u_id = self.get_id()
@@ -277,7 +277,7 @@ class Community(Model):
 
     def message_relationship(self, key, msg):
         try:
-            self.relationships[key].receive_message(msg)
+            self.get_relationships[key].receive_message(msg)
         except:
             print('in relationship messaging')
             print(f"key: {key}")
@@ -319,7 +319,7 @@ class Community(Model):
         print("SIMULATION STATS")
         print(f"- {years} years")
         print(f"- {len(self.people)} people")
-        print(f"- {len(self.relationships)} relationships")
+        print(f"- {len(self.get_relationships)} relationships")
         print(f"- {len(self.homes)} homes")
         print(f'- {self.schedule.get_agent_count()} active agents')
         global errors
@@ -343,8 +343,11 @@ class Community(Model):
         return self.homes[key].info()
     
     def get_relationship(self, key):
-        return self.relationships[key].status()
+        return self.get_relationships[key].status()
     
+    def get_relationship_info(self, key):
+        return self.get_relationships[key].get_update()
+
     def get_relationship_status_person(self, key):
         return self.people[key].get_relationship_status()
     
@@ -367,9 +370,12 @@ class Community(Model):
     def get_homes(self):
         return [h.info() for h in self.homes.values()]
 
-    def relationships(self):
-        return [r.status() for r in self.relationships.values()]
+    def get_relationships(self):
+        return [r.status() for r in self.get_relationships.values()]
 
+    """
+    JSON OUTPUT
+    """
     def json_output(self):
         """
         Output all agent info into json files. Deletes all previous files.
@@ -385,7 +391,7 @@ class Community(Model):
 
         for key, p in self.people.items():
             with open(f"output/people_json/{key}.json", 'w') as output:
-                json.dump({f'{key}' : p.description()}, output, indent=2, separators=(',', ': '))
+                json.dump({f'{key}' : p.description(True)}, output, indent=2, separators=(',', ': '))
 
         if not os.path.exists('output/homes_json'):
             os.mkdir('output/homes_json')
@@ -395,7 +401,7 @@ class Community(Model):
 
         if not os.path.exists('output/relationships_json'):
             os.mkdir('output/relationships_json')
-        for key, r in self.relationships.items():
+        for key, r in self.get_relationships.items():
             with open(f"output/relationships_json/{key}.json", 'w') as output:
                 json.dump({key : r.status()}, output, indent=2, separators=(',', ': '))
 

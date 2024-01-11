@@ -1,19 +1,19 @@
 {
   "12473": {
     "alive": false,
-    "name": "Auesoete",
-    "surname": "",
-    "full name": "Auesoete",
+    "name": "Jute",
+    "surname": "Roede",
+    "full name": "Jute Roede",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.916,
-      "romantic interest": 0.921,
-      "sex interest": 0.724,
-      "gender expression": 0.568,
+      "sexuality label": "straight",
+      "sexuality": 0.107,
+      "romantic interest": 0.821,
+      "sex interest": 0.681,
+      "gender expression": 0.139,
       "sex": "f"
     },
-    "age": 18,
-    "birth year": 1184,
+    "age": 26,
+    "birth year": 1179,
     "sex": "f",
     "faction": "Dogmatists",
     "income class": [
@@ -21,13 +21,15 @@
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.265,
-      "nice-nasty": 0.265,
-      "honest-false": 0.286
+      "lawful-chaotic": 0.287,
+      "nice-nasty": 0.999,
+      "honest-false": 0.278,
+      "dream": 0.273,
+      "outgoing": 0.592
     },
     "attitude": {
-      "outgoing": 0.525,
-      "dream": 0.543
+      "dream": 0.273,
+      "outgoing": 0.592
     },
     "homsoc": {
       "means": {
@@ -35,19 +37,65 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.741,
-        "gender expression expression": 0.344
+        "sexuality expression": 0.072,
+        "gender expression expression": 0.138
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13018": {
+          "key": 13018,
+          "name": "Menaures Haec",
+          "age": 11,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Jute (12473)",
+            "father": "Snellard (12472)"
+          }
+        },
+        "14750": {
+          "key": 14750,
+          "name": "Cees Haec",
+          "age": 22,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Jute (12473)",
+            "father": "Snellard (12472)"
+          }
+        },
+        "20398": {
+          "key": 20398,
+          "name": "Ermerut Haec",
+          "age": 23,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Jute (12473)",
+            "father": "Snellard (12472)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           12474
+        ],
+        "child": {
+          "birth": [
+            13020,
+            14752,
+            20400
+          ]
+        },
+        "unrelated": [
+          18559
         ]
       }
     },
@@ -63,14 +111,14 @@
     "genetics": {
       "skin_color": 6,
       "eye_color": "blue",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "S",
-        "C"
+        "S"
       ],
-      "health": 0.678,
-      "fertility": 0.625,
+      "health": 0.548,
+      "fertility": 0.547,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -82,21 +130,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.678
+            "new_health": 0.548
           },
           "death": false
         },
-        "1201": {
+        "1204": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.678
+            "new_health": 0.548
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1179
+          },
           {
             "topic": "new relationship",
             "key": 12474,
@@ -105,37 +157,118 @@
               12473
             ],
             "people names": [
-              "Robbrecht Roede",
-              "Auesoete"
+              "Snellard Haec",
+              "Jute Roede"
             ],
             "people ages": [
-              28,
-              16
+              22,
+              21
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stDe Vyver.se3.c1",
-              "street": "De Vyver",
-              "neighborhood": "denhof",
-              "unique id": 866
-            }
+            "topic": "new relationship",
+            "key": 13020,
+            "people": [
+              12473,
+              13018
+            ],
+            "people names": [
+              "Jute Roede",
+              "Menaures Haec"
+            ],
+            "people ages": [
+              21,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "topic": "new relationship",
+            "key": 14752,
+            "people": [
+              12473,
+              14750
+            ],
+            "people names": [
+              "Jute Roede",
+              "Cees Haec"
+            ],
+            "people ages": [
+              23,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
+            "topic": "not enough income",
+            "income": 0.542,
+            "inhabitants": []
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 18559,
+            "people": [
+              10028,
+              12473
+            ],
+            "people names": [
+              "Godeweris Bara",
+              "Jute Roede"
+            ],
+            "people ages": [
+              20,
+              24
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1203": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "good friend",
+            "relationship": 13020
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "indifferent",
+            "relationship": 12474
+          },
+          {
+            "topic": "new relationship",
+            "key": 20400,
+            "people": [
+              12473,
+              20398
+            ],
+            "people names": [
+              "Jute Roede",
+              "Ermerut Haec"
+            ],
+            "people ages": [
+              25,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1204": [
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "childbirth"
           }
         ]
       }
@@ -147,14 +280,19 @@
       "section": "stDe Vyver.se3.c1",
       "street": "De Vyver",
       "neighborhood": "denhof",
-      "unique id": 866
+      "unique id": 864
     },
     "relationship status": {
-      "taken": true,
+      "taken": false,
       "married": true,
       "relationships": [
         12474
       ]
-    }
+    },
+    "friends": [
+      13020,
+      18559
+    ],
+    "enemies": []
   }
 }

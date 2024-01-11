@@ -1,53 +1,101 @@
 {
   "11296": {
     "alive": false,
-    "name": "Walramus",
-    "surname": "Coram",
-    "full name": "Walramus Coram",
+    "name": "Willibrando",
+    "surname": "Schille",
+    "full name": "Willibrando Schille",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.108,
-      "romantic interest": 0.826,
-      "sex interest": 0.514,
-      "gender expression": 0.0,
+      "sexuality": 0.04,
+      "romantic interest": 0.799,
+      "sex interest": 0.305,
+      "gender expression": 0.164,
       "sex": "m"
     },
-    "age": 53,
-    "birth year": 1152,
+    "age": 54,
+    "birth year": 1154,
     "sex": "m",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
       0,
       "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.01,
-      "honest-false": 0.445
+      "lawful-chaotic": 0.764,
+      "nice-nasty": 0.653,
+      "honest-false": 0.532,
+      "dream": 0.496,
+      "outgoing": 0.409
     },
     "attitude": {
-      "outgoing": 0.71,
-      "dream": 0.597
+      "dream": 0.496,
+      "outgoing": 0.409
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.056,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.017,
+        "gender expression expression": 0.065
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14419": {
+          "key": 14419,
+          "name": "Mette Schille",
+          "age": 15,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Beatrice (11297)",
+            "father": "Willibrando (11296)"
+          }
+        },
+        "15094": {
+          "key": 15094,
+          "name": "Heyman Schille",
+          "age": 46,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Beatrice (11297)",
+            "father": "Willibrando (11296)"
+          }
+        },
+        "19407": {
+          "key": 19407,
+          "name": "Suaneka Schille",
+          "age": 1,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Beatrice (11297)",
+            "father": "Willibrando (11296)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11298
+        ],
+        "child": {
+          "birth": [
+            14420,
+            15095,
+            19408
+          ]
+        },
+        "unrelated": [
+          25071
         ]
       }
     },
@@ -57,31 +105,34 @@
         0,
         "working class"
       ],
-      "income": 1.092,
+      "income": 0.178,
       "all_incomes": [
-        0.962,
-        0.994,
-        1.052,
-        1.018,
-        1.098,
-        1.092
+        0.599,
+        0.385,
+        0.428,
+        0.743,
+        0.499,
+        0.21,
+        0.074,
+        0.0,
+        0.178
       ],
       "job": {
         "lawful": true,
-        "honest": true
+        "honest": false
       }
     },
     "genetics": {
-      "skin_color": 1,
+      "skin_color": 5,
       "eye_color": "brown",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
         "C",
         "C"
       ],
       "health": 0.0,
-      "fertility": 0.54,
+      "fertility": 0.575,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -91,40 +142,40 @@
       "health": {
         "1200": {
           "health": {
-            "change": true,
-            "value_change": -0.204,
-            "new_health": 0.433
-          },
-          "death": false
-        },
-        "1201": {
-          "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.433
-          },
-          "death": false
-        },
-        "1202": {
-          "health": {
-            "change": true,
-            "value_change": -0.188,
-            "new_health": 0.245
-          },
-          "death": false
-        },
-        "1203": {
-          "health": {
-            "change": true,
-            "value_change": -0.154,
-            "new_health": 0.091
+            "new_health": 0.642
           },
           "death": false
         },
         "1204": {
           "health": {
             "change": true,
-            "value_change": -0.091,
+            "value_change": -0.229,
+            "new_health": 0.413
+          },
+          "death": false
+        },
+        "1205": {
+          "health": {
+            "change": true,
+            "value_change": -0.243,
+            "new_health": 0.17
+          },
+          "death": false
+        },
+        "1206": {
+          "health": {
+            "change": true,
+            "value_change": -0.156,
+            "new_health": 0.014
+          },
+          "death": false
+        },
+        "1207": {
+          "health": {
+            "change": true,
+            "value_change": -0.014,
             "new_health": 0.0
           },
           "death": true
@@ -133,9 +184,18 @@
       "events": {
         "1200": [
           {
+            "topic": "birth",
+            "year": 1154
+          },
+          {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.962
+            "income": 0.599
+          },
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.385
           },
           {
             "topic": "new relationship",
@@ -145,57 +205,205 @@
               11297
             ],
             "people names": [
-              "Walramus Coram",
-              "Soeten"
+              "Willibrando Schille",
+              "Beatrice Calvesnack"
             ],
             "people ages": [
-              48,
-              43
+              46,
+              30
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stDie Coninc straet.se3.c0",
-              "street": "Die Coninc straet",
-              "neighborhood": "kampbuurt",
-              "unique id": 457
-            }
-          }
-        ],
-        "1201": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          },
-          {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.052
+            "topic": "new relationship",
+            "key": 14420,
+            "people": [
+              11296,
+              14419
+            ],
+            "people names": [
+              "Willibrando Schille",
+              "Mette Schille"
+            ],
+            "people ages": [
+              47,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
             "topic": "feelings change",
             "target": 11297,
-            "target name": "Soeten",
-            "state": "solid love",
+            "target name": "Beatrice Calvesnack",
+            "state": "out of love",
+            "friendship label": "friend",
             "relationship": 11298
+          }
+        ],
+        "1201": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.428
+          },
+          {
+            "topic": "new relationship",
+            "key": 15095,
+            "people": [
+              11296,
+              15094
+            ],
+            "people names": [
+              "Willibrando Schille",
+              "Heyman Schille"
+            ],
+            "people ages": [
+              47,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.428,
+            "inhabitants": []
+          }
+        ],
+        "1202": [
+          {
+            "topic": "not enough income",
+            "income": 0.743,
+            "inhabitants": []
           }
         ],
         "1203": [
           {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "spouse",
-            "friendship label": "disliked",
-            "relationship": 11298
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.499
+          },
+          {
+            "topic": "new relationship",
+            "key": 19408,
+            "people": [
+              11296,
+              19407
+            ],
+            "people names": [
+              "Willibrando Schille",
+              "Suaneka Schille"
+            ],
+            "people ages": [
+              49,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.499,
+            "inhabitants": []
           }
         ],
         "1204": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.21
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 14420
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 19407,
+              "name": "Suaneka Schille",
+              "age": 1,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Beatrice (11297)",
+                "father": "Willibrando (11296)"
+              }
+            },
+            "cause": "childhood illness",
+            "friendship label": "indifferent",
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.21,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "friend",
+            "relationship": 11298
+          },
+          {
+            "key": 11298,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11297,
+              "name": "Beatrice Calvesnack",
+              "age": 36,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "friendship label": "friend",
+            "label": "spouse",
+            "love state": "out of love"
+          },
+          {
+            "topic": "new relationship",
+            "key": 25071,
+            "people": [
+              10279,
+              11296
+            ],
+            "people names": [
+              "Seukinus",
+              "Willibrando Schille"
+            ],
+            "people ages": [
+              50,
+              52
+            ],
+            "label": "unrelated",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.074,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
           {
             "topic": "death",
             "cause": "sickness"
@@ -207,17 +415,23 @@
     "home": {
       "income class": 0,
       "income class label": "working class",
-      "section": "stDie Coninc straet.se3.c0",
+      "section": "stDie Coninc straet.se1.c0",
       "street": "Die Coninc straet",
       "neighborhood": "kampbuurt",
-      "unique id": 457
+      "unique id": 447
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         11298
       ]
-    }
+    },
+    "friends": [
+      11298,
+      14420,
+      15095
+    ],
+    "enemies": []
   }
 }

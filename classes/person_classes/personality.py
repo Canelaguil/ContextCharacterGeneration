@@ -1,57 +1,64 @@
 from ..utils import *
 
+def random_trait():
+    return rand_choice(['lawful-chaotic', 'nice-nasty', 'honest-false'])
+
 class Personality():
     def __init__(self, person) -> None:
         self.person = person
         # personality
-        self.lawfulchaotic = normal_in_range(0.5, 0.4)
-        self.nicenasty = normal_in_range(0.5, 0.4)
-        self.honestfalse = normal_in_range(0.5, 0.4)
+        self.personality = {
+            'lawful-chaotic': normal_in_range(0.5, 0.3),
+            'nice-nasty': normal_in_range(0.5, 0.3),
+            'honest-false': normal_in_range(0.5, 0.3), 
+        }
 
         # attitude
-        self.dream = normal_in_range(0.4, 0.2)
-        self.outgoing = normal_in_range(0.5, 0.2)
-
-    def influence_lc(self, chance, modifier):
-        if rand() < chance:
-            self.lawfulchaotic = fair_mod(self.lawfulchaotic, modifier, 1, 3)
-            return True
-        return False
-
-    def influence_nn(self, chance, modifier):
-        if rand() < chance:
-            self.nicenasty = fair_mod(self.nicenasty, modifier, 1, 3)
-            return True
-        return False   
-        
-    def influence_hf(self, chance, modifier):
-        if rand() < chance:
-            self.honestfalse = fair_mod(self.honestfalse, modifier, 1, 3)
-            return True
-        return False
+        self.attitude = {
+            'dream' : normal_in_range(0.4, 0.2),
+            'outgoing' : normal_in_range(0.6, 0.2),
+        }
     
-    def get_trait(self, trait):
+    def influence_trait(self, trait, chance, modifier):
+        if rand() < chance:
+            self.personality[trait] = fair_mod(self.personality[trait], modifier, 1, 3)
+            return True
+        return False
+
+    def trigger(self, trigger, params = None):
+        if trigger == 'grief':
+            ch = 0.2 * (1 - self.attitude['dream']) # bigger chance if dreamer
+            trait = random_trait()
+            mod = normal_in_range(0., 0.1, 0.5, -0.5)
+            change = self.influence_trait(trait, ch, mod)
+        elif trigger == 'trauma':
+            ch = 0.2 * (1 - self.attitude['dream']) # bigger chance if dreamer
+            trait = random_trait()
+            mod = normal_in_range(0., 0.1, 0.5, -0.5)
+            change = self.influence_trait(trait, ch, mod)
+
         return {
-            'lc': self.lawfulchaotic,
-            'nn': self.nicenasty,
-            'hf': self.honestfalse, 
-            'dream' : self.dream
-        }[trait]
+            'topic' : 'personality change',
+            'change' : change,
+            'trait' : trait,
+            'trigger' : trigger,
+            'mod' : mod
+        }
+
+    """
+    INFO FUNCTIONS
+    """
+    def get_trait(self, trait):
+        return self.personality[trait]
 
     def get_personality(self, core = False):
         if core:
-            return [self.lawfulchaotic, self.nicenasty, self.honestfalse]
-        p = {
-            'lawful-chaotic': self.lawfulchaotic,
-            'nice-nasty': self.nicenasty,
-            'honest-false': self.honestfalse, 
+            return list(self.personality.values())
+        return {
+            ** self.personality,
+            ** self.attitude
         }
-        return p
     
     def get_attitude(self):
-        a = {
-            'outgoing' : self.outgoing,
-            'dream' : self.dream,
-        }
-        return a
+        return self.attitude
     

@@ -1,37 +1,39 @@
 {
   "10157": {
     "alive": false,
-    "name": "Heilsota",
+    "name": "Natelien",
     "surname": "",
-    "full name": "Heilsota",
+    "full name": "Natelien",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.06,
-      "romantic interest": 0.864,
-      "sex interest": 0.78,
-      "gender expression": 0.0,
+      "sexuality": 0.125,
+      "romantic interest": 0.526,
+      "sex interest": 0.492,
+      "gender expression": 0.162,
       "sex": "f"
     },
-    "age": 49,
-    "birth year": 1167,
+    "age": 38,
+    "birth year": 1170,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.386,
-      "nice-nasty": 0.008,
-      "honest-false": 0.645
+      "lawful-chaotic": 0.606,
+      "nice-nasty": 0.331,
+      "honest-false": 0.199,
+      "dream": 0.288,
+      "outgoing": 0.546
     },
     "attitude": {
-      "outgoing": 0.747,
-      "dream": 0.461
+      "dream": 0.288,
+      "outgoing": 0.546
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
@@ -40,77 +42,56 @@
         ]
       },
       "expression": {
-        "sexuality expression": 0.032,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.088,
+        "gender expression expression": 0.08
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "15358": {
-          "key": 15358,
-          "name": "Woltwigis Lozere",
-          "age": 55,
-          "alive": false,
+        "14728": {
+          "key": 14728,
+          "name": "Emgelberna van Mattheus",
+          "age": 48,
+          "alive": true,
           "sex": "f",
           "parents": {
-            "mother": "Heilsota (10157)",
-            "father": "Jacob (11251)"
+            "mother": "Natelien (10157)",
+            "father": "Mattheus (10156)"
           }
         }
       },
       "relationship keys": {
         "spouse": [
-          10158,
-          15198
+          10158
         ],
         "child": {
           "birth": [
-            15360
+            14730
           ]
         }
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
         1,
         "lower middle class"
       ],
-      "income": 0.451,
-      "all_incomes": [
-        0.763,
-        0.736,
-        0.66,
-        0.953,
-        1.009,
-        0.838,
-        0.605,
-        0.769,
-        0.785,
-        0.56,
-        0.313,
-        0.311,
-        0.395,
-        0.285,
-        0.451
-      ],
-      "job": {
-        "lawful": true,
-        "honest": false
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 6,
-      "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 1,
+      "eye_color": "green",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
         "C",
-        "S"
+        "C"
       ],
-      "health": 0.654,
-      "fertility": 0.639,
+      "health": 0.784,
+      "fertility": 0.774,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -122,13 +103,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.654
+            "new_health": 0.784
           },
           "death": false
+        },
+        "1207": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.784
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1170
+          },
           {
             "topic": "new relationship",
             "key": 10158,
@@ -137,39 +130,45 @@
               10157
             ],
             "people names": [
-              "Elyas\u0430 Pipe",
-              "Heilsota"
+              "Mattheus",
+              "Natelien"
             ],
             "people ages": [
-              46,
-              33
+              33,
+              30
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stKoe straet.se1.c1",
-              "street": "Koe straet",
-              "neighborhood": "varkensbuurt",
-              "unique id": 56
-            }
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "friend",
+            "relationship": 10158
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          },
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.763
-          },
+            "topic": "new relationship",
+            "key": 14730,
+            "people": [
+              10157,
+              14728
+            ],
+            "people names": [
+              "Natelien",
+              "Emgelberna van Mattheus"
+            ],
+            "people ages": [
+              31,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1202": [
           {
             "key": 10158,
             "topic": "unmarried"
@@ -178,199 +177,125 @@
             "topic": "person died",
             "person": {
               "key": 10156,
-              "name": "Elyas\u0430 Pipe",
-              "age": 48,
+              "name": "Mattheus",
+              "age": 36,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
             },
             "cause": "illness",
-            "label": "spouse"
-          }
-        ],
-        "1202": [
-          {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.736
-          },
-          {
-            "topic": "new relationship",
-            "key": 15198,
-            "people": [
-              11251,
-              10157
-            ],
-            "people names": [
-              "Jacob Lozere",
-              "Heilsota"
-            ],
-            "people ages": [
-              40,
-              36
-            ],
+            "friendship label": "friend",
             "label": "spouse",
-            "committed": true
+            "love state": "solid love"
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stDie Coninc straet.se1.c0",
-              "street": "Die Coninc straet",
-              "neighborhood": "kampbuurt",
-              "unique id": 441
-            }
+            "topic": "personality change",
+            "change": true,
+            "trait": "honest-false",
+            "trigger": "grief",
+            "mod": 0.068
           }
         ],
         "1203": [
           {
-            "topic": "new relationship",
-            "key": 15360,
-            "people": [
-              10157,
-              15358
-            ],
-            "people names": [
-              "Heilsota",
-              "Woltwigis Lozere"
-            ],
-            "people ages": [
-              37,
-              0
-            ],
-            "label": "parentchild",
-            "committed": false
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              14728,
+              17695,
+              57961,
+              59595,
+              62182,
+              63448,
+              64957,
+              68905,
+              69689,
+              75978
+            ]
+          }
+        ],
+        "1204": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              14728,
+              17695,
+              57961,
+              59595,
+              62182,
+              63448,
+              64957,
+              68905,
+              69689,
+              75978
+            ]
           }
         ],
         "1205": [
           {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.009
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              14728,
+              17695,
+              57961,
+              59595,
+              62182,
+              63448,
+              64957,
+              68905,
+              69689,
+              75978
+            ]
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              14728,
+              17695,
+              57961,
+              59595,
+              62182,
+              63448,
+              64957,
+              68905,
+              69689,
+              75978
+            ]
           }
         ],
         "1207": [
           {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.605
-          },
-          {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "spouse",
-            "friendship label": "friend",
-            "relationship": 15198
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.718,
-            "inhabitants": []
-          }
-        ],
-        "1210": [
-          {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.56
-          },
-          {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "spouse",
-            "friendship label": "enemy",
-            "relationship": 15198
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.56,
-            "inhabitants": []
-          }
-        ],
-        "1211": [
-          {
-            "topic": "job notice",
-            "notice": "earning very little",
-            "income": 0.313
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.41400000000000003,
-            "inhabitants": []
-          }
-        ],
-        "1212": [
-          {
-            "topic": "job notice",
-            "notice": "earning very little",
-            "income": 0.311
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.45899999999999996,
-            "inhabitants": []
-          }
-        ],
-        "1213": [
-          {
-            "topic": "job notice",
-            "notice": "earning very little",
-            "income": 0.395
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.395,
-            "inhabitants": []
-          }
-        ],
-        "1214": [
-          {
-            "topic": "job notice",
-            "notice": "earning very little",
-            "income": 0.285
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.285,
-            "inhabitants": []
-          }
-        ],
-        "1215": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1215
-          },
-          {
-            "topic": "job notice",
-            "notice": "earning very little",
-            "income": 0.451
-          },
-          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "starvation"
           }
         ]
       }
     },
     "key": 10157,
     "home": {
-      "income class": 0,
-      "income class label": "working class",
-      "section": "stDie Coninc straet.se1.c0",
-      "street": "Die Coninc straet",
-      "neighborhood": "kampbuurt",
-      "unique id": 441
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stKoe straet.se1.c1",
+      "street": "Koe straet",
+      "neighborhood": "varkensbuurt",
+      "unique id": 56
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
-        10158,
-        15198
+        10158
       ]
-    }
+    },
+    "friends": [
+      10158,
+      14730
+    ],
+    "enemies": []
   }
 }

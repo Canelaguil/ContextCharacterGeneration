@@ -1,72 +1,114 @@
 {
   "11510": {
     "alive": false,
-    "name": "Aue",
+    "name": "Soeten",
     "surname": "",
-    "full name": "Aue",
+    "full name": "Soeten",
     "born this way": {
-      "sexuality label": "bi",
-      "sexuality": 0.535,
-      "romantic interest": 0.51,
-      "sex interest": 0.934,
-      "gender expression": 0.195,
+      "sexuality label": "straight",
+      "sexuality": 0.091,
+      "romantic interest": 0.593,
+      "sex interest": 0.469,
+      "gender expression": 0.078,
       "sex": "f"
     },
-    "age": 33,
-    "birth year": 1168,
+    "age": 45,
+    "birth year": 1172,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
-      2,
-      "middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.238,
-      "nice-nasty": 0.692,
-      "honest-false": 0.185
+      "lawful-chaotic": 0.113,
+      "nice-nasty": 0.664,
+      "honest-false": 0.542,
+      "dream": 0.501,
+      "outgoing": 0.581
     },
     "attitude": {
-      "outgoing": 0.644,
-      "dream": 0.638
+      "dream": 0.501,
+      "outgoing": 0.581
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.377,
-        "gender expression expression": 0.0
+        "sexuality expression": 0.074,
+        "gender expression expression": 0.061
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
-      "relationship keys": {}
+      "children": {
+        "15925": {
+          "key": 15925,
+          "name": "Reymodis Widoeghe",
+          "age": 5,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Soeten (11510)",
+            "father": "Isbrandus (11509)"
+          }
+        }
+      },
+      "relationship keys": {
+        "spouse": [
+          11511
+        ],
+        "child": {
+          "birth": [
+            15927
+          ]
+        },
+        "unrelated": [
+          22870,
+          32485
+        ]
+      }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        2,
-        "middle class"
+        1,
+        "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.698,
+      "all_incomes": [
+        0.59,
+        0.572,
+        0.598,
+        0.754,
+        0.765,
+        0.418,
+        0.456,
+        0.698
+      ],
+      "job": {
+        "lawful": false,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 6,
-      "eye_color": "blue",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "skin_color": 7,
+      "eye_color": "green",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "C",
-        "S"
+        "S",
+        "C"
       ],
-      "health": 0.774,
-      "fertility": 0.762,
+      "health": 0.593,
+      "fertility": 0.621,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -78,13 +120,217 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.774
+            "new_health": 0.593
+          },
+          "death": false
+        },
+        "1216": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.593
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1172
+          },
+          {
+            "topic": "new relationship",
+            "key": 11511,
+            "people": [
+              11509,
+              11510
+            ],
+            "people names": [
+              "Isbrandus Widoeghe",
+              "Soeten"
+            ],
+            "people ages": [
+              38,
+              28
+            ],
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 15927,
+            "people": [
+              11510,
+              15925
+            ],
+            "people names": [
+              "Soeten",
+              "Reymodis Widoeghe"
+            ],
+            "people ages": [
+              30,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "key": 11511,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11509,
+              "name": "Isbrandus Widoeghe",
+              "age": 40,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "friendship label": "indifferent",
+            "label": "spouse",
+            "love state": "infatuation"
+          }
+        ],
+        "1202": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1203": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 22870,
+            "people": [
+              12409,
+              11510
+            ],
+            "people names": [
+              "Gherolf Snauel",
+              "Soeten"
+            ],
+            "people ages": [
+              36,
+              33
+            ],
+            "label": "unrelated",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 15925,
+              "name": "Reymodis Widoeghe",
+              "age": 5,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Soeten (11510)",
+                "father": "Isbrandus (11509)"
+              }
+            },
+            "cause": "childhood illness",
+            "friendship label": "indifferent",
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.59
+          },
+          {
+            "topic": "new relationship",
+            "key": 32485,
+            "people": [
+              11510,
+              10168
+            ],
+            "people names": [
+              "Soeten",
+              "Pieter"
+            ],
+            "people ages": [
+              38,
+              47
+            ],
+            "label": "unrelated",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1214": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.418
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.456
+          }
+        ],
+        "1216": [
           {
             "topic": "death",
             "cause": "illness"
@@ -94,17 +340,24 @@
     },
     "key": 11510,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stBreestraat.se1.c2",
-      "street": "Breestraat",
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stPaternoster straetje.se3.c1",
+      "street": "Paternoster straetje",
       "neighborhood": "olvbuurt",
-      "unique id": 531
+      "unique id": 521
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
-      "relationships": []
-    }
+      "taken": false,
+      "married": false,
+      "relationships": [
+        11511
+      ]
+    },
+    "friends": [
+      22870,
+      32485
+    ],
+    "enemies": []
   }
 }

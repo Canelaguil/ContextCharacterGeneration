@@ -1,19 +1,19 @@
 {
   "12557": {
     "alive": false,
-    "name": "Hildeburgis",
-    "surname": "Loeuin",
-    "full name": "Hildeburgis Loeuin",
+    "name": "Gerburgis",
+    "surname": "",
+    "full name": "Gerburgis",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.095,
-      "romantic interest": 0.889,
-      "sex interest": 0.642,
+      "sexuality": 0.109,
+      "romantic interest": 0.773,
+      "sex interest": 0.779,
       "gender expression": 0.0,
       "sex": "f"
     },
-    "age": 28,
-    "birth year": 1178,
+    "age": 53,
+    "birth year": 1160,
     "sex": "f",
     "faction": "Dogmatists",
     "income class": [
@@ -21,13 +21,15 @@
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.817,
-      "nice-nasty": 0.456,
-      "honest-false": 0.0
+      "lawful-chaotic": 0.879,
+      "nice-nasty": 0.999,
+      "honest-false": 0.506,
+      "dream": 0.053,
+      "outgoing": 0.755
     },
     "attitude": {
-      "outgoing": 0.515,
-      "dream": 0.317
+      "dream": 0.053,
+      "outgoing": 0.755
     },
     "homsoc": {
       "means": {
@@ -38,46 +40,17 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.034,
+        "sexuality expression": 0.094,
         "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {
-        "13964": {
-          "key": 13964,
-          "name": "Dodo Ulf",
-          "age": 54,
-          "alive": false,
-          "sex": "m",
-          "parents": {
-            "mother": "Hildeburgis (12557)",
-            "father": "Rembrandus (12556)"
-          }
-        },
-        "14830": {
-          "key": 14830,
-          "name": "Folqui Ulf",
-          "age": 61,
-          "alive": false,
-          "sex": "f",
-          "parents": {
-            "mother": "Hildeburgis (12557)",
-            "father": "Rembrandus (12556)"
-          }
-        }
-      },
+      "children": {},
       "relationship keys": {
         "spouse": [
           12558
-        ],
-        "child": {
-          "birth": [
-            13966,
-            14832
-          ]
-        }
+        ]
       }
     },
     "occupation": {
@@ -90,16 +63,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 7,
+      "skin_color": 2,
       "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
         "C",
         "C"
       ],
-      "health": 0.809,
-      "fertility": 0.819,
+      "health": 0.629,
+      "fertility": 0.77,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -111,21 +84,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.809
+            "new_health": 0.765
           },
           "death": false
         },
-        "1205": {
+        "1212": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.809
+            "change": true,
+            "value_change": -0.136,
+            "new_health": 0.629
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1160
+          },
           {
             "topic": "new relationship",
             "key": 12558,
@@ -134,91 +111,51 @@
               12557
             ],
             "people names": [
-              "Rembrandus Ulf",
-              "Hildeburgis Loeuin"
+              "Butsel Capoen",
+              "Gerburgis"
             ],
             "people ages": [
-              26,
-              22
+              43,
+              40
             ],
             "label": "spouse",
             "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stCromme straet.se5.c2",
-              "street": "Cromme straet",
-              "neighborhood": "denhof",
-              "unique id": 896
-            }
           }
         ],
-        "1201": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          },
-          {
-            "topic": "new relationship",
-            "key": 13966,
-            "people": [
-              12557,
-              13964
-            ],
-            "people names": [
-              "Hildeburgis Loeuin",
-              "Dodo Ulf"
-            ],
-            "people ages": [
-              23,
-              0
-            ],
-            "label": "parentchild",
-            "committed": false
-          },
-          {
-            "topic": "feelings change",
-            "target": 12556,
-            "target name": "Rembrandus Ulf",
-            "state": "out of love",
-            "relationship": 12558
-          }
-        ],
-        "1202": [
+        "1208": [
           {
             "topic": "update",
             "update": "new friendship label",
             "relationship label": "spouse",
             "friendship label": "indifferent",
             "relationship": 12558
-          },
-          {
-            "topic": "new relationship",
-            "key": 14832,
-            "people": [
-              12557,
-              14830
-            ],
-            "people names": [
-              "Hildeburgis Loeuin",
-              "Folqui Ulf"
-            ],
-            "people ages": [
-              25,
-              0
-            ],
-            "label": "parentchild",
-            "committed": false
           }
         ],
-        "1205": [
+        "1211": [
+          {
+            "key": 12558,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12556,
+              "name": "Butsel Capoen",
+              "age": 55,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "friendship label": "indifferent",
+            "label": "spouse",
+            "love state": "out of love"
+          }
+        ],
+        "1212": [
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "old age"
           }
         ]
       }
@@ -230,14 +167,16 @@
       "section": "stCromme straet.se5.c2",
       "street": "Cromme straet",
       "neighborhood": "denhof",
-      "unique id": 896
+      "unique id": 895
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         12558
       ]
-    }
+    },
+    "friends": [],
+    "enemies": []
   }
 }

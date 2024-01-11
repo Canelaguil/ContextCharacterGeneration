@@ -1,54 +1,73 @@
 {
   "10078": {
     "alive": false,
-    "name": "Macharius",
-    "surname": "",
-    "full name": "Macharius",
+    "name": "Didewar",
+    "surname": "Baligant",
+    "full name": "Didewar Baligant",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.814,
-      "romantic interest": 0.999,
-      "sex interest": 0.813,
-      "gender expression": 0.739,
+      "sexuality label": "straight",
+      "sexuality": 0.101,
+      "romantic interest": 0.48,
+      "sex interest": 0.83,
+      "gender expression": 0.096,
       "sex": "m"
     },
-    "age": 34,
-    "birth year": 1171,
+    "age": 54,
+    "birth year": 1153,
     "sex": "m",
-    "faction": "Dogmatists",
+    "faction": "No religion",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.753,
-      "nice-nasty": 0.531,
-      "honest-false": 0.449
+      "lawful-chaotic": 0.835,
+      "nice-nasty": 0.0,
+      "honest-false": 0.437,
+      "dream": 0.698,
+      "outgoing": 0.57
     },
     "attitude": {
-      "outgoing": 0.384,
-      "dream": 0.357
+      "dream": 0.698,
+      "outgoing": 0.57
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.653,
-        "gender expression expression": 0.499
+        "sexuality expression": 0.07,
+        "gender expression expression": 0.044
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13762": {
+          "key": 13762,
+          "name": "Riquardus Baligant",
+          "age": 17,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Brundonis (10079)",
+            "father": "Didewar (10078)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10080
-        ]
+        ],
+        "child": {
+          "birth": [
+            13763
+          ]
+        }
       }
     },
     "occupation": {
@@ -57,31 +76,33 @@
         2,
         "middle class"
       ],
-      "income": 0.264,
+      "income": 0.9620000000000001,
       "all_incomes": [
-        0.821,
-        0.885,
-        0.636,
-        0.748,
-        0.617,
-        0.264
+        0.985,
+        0.9500000000000001,
+        0.963,
+        0.896,
+        0.895,
+        1.022,
+        0.965,
+        0.9620000000000001
       ],
       "job": {
-        "lawful": false,
-        "honest": false
+        "lawful": true,
+        "honest": true
       }
     },
     "genetics": {
-      "skin_color": 7,
+      "skin_color": 6,
       "eye_color": "green",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
-        "C",
-        "C"
+        "S",
+        "S"
       ],
-      "health": 0.766,
-      "fertility": 0.744,
+      "health": 0.0,
+      "fertility": 0.65,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -93,15 +114,31 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.766
+            "new_health": 0.701
           },
           "death": false
         },
         "1204": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.766
+            "change": true,
+            "value_change": -0.179,
+            "new_health": 0.522
+          },
+          "death": false
+        },
+        "1205": {
+          "health": {
+            "change": true,
+            "value_change": -0.34,
+            "new_health": 0.182
+          },
+          "death": false
+        },
+        "1206": {
+          "health": {
+            "change": true,
+            "value_change": -0.182,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -109,9 +146,13 @@
       "events": {
         "1200": [
           {
+            "topic": "birth",
+            "year": 1153
+          },
+          {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.821
+            "income": 0.985
           },
           {
             "topic": "new relationship",
@@ -121,56 +162,77 @@
               10079
             ],
             "people names": [
-              "Macharius",
-              "Verthwi Roede"
+              "Didewar Baligant",
+              "Brundonis"
             ],
             "people ages": [
-              29,
-              23
+              47,
+              39
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stVerckens merct.se3.c2",
-              "street": "Verckens merct",
-              "neighborhood": "varkensbuurt",
-              "unique id": 27
-            }
-          },
+            "topic": "new relationship",
+            "key": 13763,
+            "people": [
+              10078,
+              13762
+            ],
+            "people names": [
+              "Didewar Baligant",
+              "Riquardus Baligant"
+            ],
+            "people ages": [
+              47,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1202": [
           {
             "topic": "feelings change",
             "target": 10079,
-            "target name": "Verthwi Roede",
-            "state": "solid love",
+            "target name": "Brundonis",
+            "state": "out of love",
+            "friendship label": "indifferent",
             "relationship": 10080
           }
         ],
-        "1201": [
+        "1203": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "key": 10080,
+            "topic": "unmarried"
           },
           {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.636
+            "topic": "person died",
+            "person": {
+              "key": 10079,
+              "name": "Brundonis",
+              "age": 43,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "friendship label": "indifferent",
+            "label": "spouse",
+            "love state": "out of love"
           }
         ],
         "1204": [
           {
             "topic": "job notice",
-            "notice": "earning very little",
-            "income": 0.264
-          },
+            "notice": "comfortable earnings",
+            "income": 1.022
+          }
+        ],
+        "1206": [
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "sickness"
           }
         ]
       }
@@ -185,11 +247,15 @@
       "unique id": 27
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         10080
       ]
-    }
+    },
+    "friends": [
+      13763
+    ],
+    "enemies": []
   }
 }

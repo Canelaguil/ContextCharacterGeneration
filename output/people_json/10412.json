@@ -1,33 +1,35 @@
 {
   "10412": {
     "alive": false,
-    "name": "Truden",
-    "surname": "",
-    "full name": "Truden",
+    "name": "Lisebette",
+    "surname": "Pluuier",
+    "full name": "Lisebette Pluuier",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.077,
-      "romantic interest": 0.669,
-      "sex interest": 0.62,
-      "gender expression": 0.133,
+      "sexuality": 0.0,
+      "romantic interest": 0.738,
+      "sex interest": 0.999,
+      "gender expression": 0.06,
       "sex": "f"
     },
-    "age": 20,
-    "birth year": 1183,
+    "age": 33,
+    "birth year": 1170,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
       0,
       "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.198,
-      "nice-nasty": 0.02,
-      "honest-false": 0.43
+      "lawful-chaotic": 0.368,
+      "nice-nasty": 0.999,
+      "honest-false": 0.999,
+      "dream": 0.414,
+      "outgoing": 0.999
     },
     "attitude": {
-      "outgoing": 0.245,
-      "dream": 0.473
+      "dream": 0.414,
+      "outgoing": 0.999
     },
     "homsoc": {
       "means": {
@@ -35,38 +37,36 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": [
-          "starving"
-        ]
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.055,
-        "gender expression expression": 0.063
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.025
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "13342": {
-          "key": 13342,
-          "name": "Rabburgis Crulleboye",
+        "14194": {
+          "key": 14194,
+          "name": "Ghela van Walramus",
           "age": 7,
           "alive": false,
           "sex": "f",
           "parents": {
-            "mother": "Truden (10412)",
-            "father": "Wigherus (10411)"
+            "mother": "Lisebette (10412)",
+            "father": "Walramus (10411)"
           }
         },
-        "13663": {
-          "key": 13663,
-          "name": "Herbert Wigherusszoon",
-          "age": 49,
+        "16383": {
+          "key": 16383,
+          "name": "Gerlacus van Walramus",
+          "age": 21,
           "alive": false,
           "sex": "m",
           "parents": {
-            "mother": "Truden (10412)",
-            "father": "Wigherus (10411)"
+            "mother": "Lisebette (10412)",
+            "father": "Walramus (10411)"
           }
         }
       },
@@ -76,10 +76,13 @@
         ],
         "child": {
           "birth": [
-            13344,
-            13665
+            14196,
+            16385
           ]
-        }
+        },
+        "unrelated": [
+          14548
+        ]
       }
     },
     "occupation": {
@@ -93,15 +96,15 @@
     },
     "genetics": {
       "skin_color": 7,
-      "eye_color": "blue",
+      "eye_color": "brown",
       "hair_color": "blonde",
       "hair_color_code": 4,
       "hair_type": [
-        "C",
-        "C"
+        "S",
+        "S"
       ],
-      "health": 0.716,
-      "fertility": 0.665,
+      "health": 0.73,
+      "fertility": 0.801,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -113,13 +116,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.716
+            "new_health": 0.73
           },
           "death": false
+        },
+        "1202": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.73
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1170
+          },
           {
             "topic": "new relationship",
             "key": 10413,
@@ -128,90 +143,79 @@
               10412
             ],
             "people names": [
-              "Wigherus Crulleboye",
-              "Truden"
+              "Walramus",
+              "Lisebette Pluuier"
             ],
             "people ages": [
-              31,
-              17
+              49,
+              30
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stSt. Joris straet.se3.c0",
-              "street": "St. Joris straet",
-              "neighborhood": "jorisbuurt",
-              "unique id": 147
-            }
-          },
-          {
             "topic": "new relationship",
-            "key": 13344,
+            "key": 14196,
             "people": [
               10412,
-              13342
+              14194
             ],
             "people names": [
-              "Truden",
-              "Rabburgis Crulleboye"
+              "Lisebette Pluuier",
+              "Ghela van Walramus"
             ],
             "people ages": [
-              18,
+              31,
               0
             ],
             "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 10411,
+            "target name": "Walramus",
+            "state": "solid love",
+            "friendship label": "friend",
+            "relationship": 10413
+          },
+          {
+            "topic": "new relationship",
+            "key": 14548,
+            "people": [
+              11741,
+              10412
+            ],
+            "people names": [
+              "Cecilia Bier",
+              "Lisebette Pluuier"
+            ],
+            "people ages": [
+              24,
+              31
+            ],
+            "label": "unrelated",
             "committed": false
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          },
-          {
             "topic": "new relationship",
-            "key": 13665,
+            "key": 16385,
             "people": [
               10412,
-              13663
+              16383
             ],
             "people names": [
-              "Truden",
-              "Herbert Wigherusszoon"
+              "Lisebette Pluuier",
+              "Gerlacus van Walramus"
             ],
             "people ages": [
-              18,
+              32,
               0
             ],
             "label": "parentchild",
             "committed": false
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.666,
-            "inhabitants": [
-              39832,
-              45799,
-              46735,
-              24189,
-              42210,
-              70283,
-              76306,
-              28478,
-              65274,
-              66918,
-              70389,
-              80988,
-              82572,
-              87613,
-              53155
-            ]
           }
         ],
         "1202": [
@@ -229,14 +233,20 @@
       "section": "stSt. Joris straet.se3.c0",
       "street": "St. Joris straet",
       "neighborhood": "jorisbuurt",
-      "unique id": 147
+      "unique id": 146
     },
     "relationship status": {
-      "taken": true,
+      "taken": false,
       "married": true,
       "relationships": [
         10413
       ]
-    }
+    },
+    "friends": [
+      10413,
+      16385,
+      14548
+    ],
+    "enemies": []
   }
 }

@@ -1,54 +1,111 @@
 {
   "10813": {
     "alive": false,
-    "name": "Radulphus",
-    "surname": "Scoreel",
-    "full name": "Radulphus Scoreel",
+    "name": "Rolekine",
+    "surname": "",
+    "full name": "Rolekine",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.107,
-      "romantic interest": 0.87,
-      "sex interest": 0.695,
-      "gender expression": 0.038,
+      "sexuality": 0.01,
+      "romantic interest": 0.565,
+      "sex interest": 0.66,
+      "gender expression": 0.145,
       "sex": "m"
     },
-    "age": 36,
+    "age": 30,
     "birth year": 1180,
     "sex": "m",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
       0,
       "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.465,
-      "nice-nasty": 0.643,
-      "honest-false": 0.173
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.187,
+      "honest-false": 0.801,
+      "dream": 0.545,
+      "outgoing": 0.478
     },
     "attitude": {
-      "outgoing": 0.717,
-      "dream": 0.317
+      "dream": 0.545,
+      "outgoing": 0.478
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.07,
-        "gender expression expression": 0.013
+        "sexuality expression": 0.006,
+        "gender expression expression": 0.037
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14947": {
+          "key": 14947,
+          "name": "Vreile Rolekinesdochter",
+          "age": 15,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Linnea (10814)",
+            "father": "Rolekine (10813)"
+          }
+        },
+        "17193": {
+          "key": 17193,
+          "name": "Voghel van Rolekine",
+          "age": 3,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Linnea (10814)",
+            "father": "Rolekine (10813)"
+          }
+        },
+        "24111": {
+          "key": 24111,
+          "name": "Woutersoet",
+          "age": 14,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Linnea (10814)",
+            "father": "Rolekine (10813)"
+          }
+        },
+        "28658": {
+          "key": 28658,
+          "name": "Maelkin",
+          "age": 4,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Linnea (10814)",
+            "father": "Rolekine (10813)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10815
-        ]
+        ],
+        "child": {
+          "birth": [
+            14948,
+            17194,
+            24112,
+            28659
+          ]
+        }
       }
     },
     "occupation": {
@@ -57,42 +114,36 @@
         0,
         "working class"
       ],
-      "income": 0.074,
+      "income": 0.938,
       "all_incomes": [
-        0.854,
-        0.821,
-        0.968,
-        1.389,
-        1.499,
-        1.46,
-        1.499,
-        1.304,
-        1.099,
-        1.058,
-        0.991,
-        0.914,
-        1.073,
-        0.89,
-        0.684,
-        0.28,
-        0.074
+        0.985,
+        0.908,
+        1.005,
+        0.966,
+        0.95,
+        0.938,
+        0.983,
+        0.927,
+        0.935,
+        0.909,
+        0.938
       ],
       "job": {
-        "lawful": false,
-        "honest": false
+        "lawful": true,
+        "honest": true
       }
     },
     "genetics": {
       "skin_color": 7,
-      "eye_color": "blue",
+      "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
-        "S",
-        "S"
+        "C",
+        "C"
       ],
-      "health": 0.758,
-      "fertility": 0.787,
+      "health": 0.652,
+      "fertility": 0.634,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -104,17 +155,29 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.758
+            "new_health": 0.652
           },
           "death": false
+        },
+        "1209": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.652
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
           {
+            "topic": "birth",
+            "year": 1180
+          },
+          {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.854
+            "income": 0.985
           },
           {
             "topic": "new relationship",
@@ -124,8 +187,8 @@
               10814
             ],
             "people names": [
-              "Radulphus Scoreel",
-              "Sara"
+              "Rolekine",
+              "Linnea"
             ],
             "people ages": [
               20,
@@ -135,100 +198,177 @@
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stDe Tuyt.se3.c0",
-              "street": "De Tuyt",
-              "neighborhood": "agnesbuurt",
-              "unique id": 288
-            }
+            "topic": "feelings change",
+            "target": 10814,
+            "target name": "Linnea",
+            "state": "solid love",
+            "friendship label": "friend",
+            "relationship": 10815
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.005
+          },
+          {
+            "topic": "new relationship",
+            "key": 14948,
+            "people": [
+              10813,
+              14947
+            ],
+            "people names": [
+              "Rolekine",
+              "Vreile Rolekinesdochter"
+            ],
+            "people ages": [
+              21,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1202": [
           {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.389
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "friend",
+            "relationship": 10815
           },
           {
-            "topic": "feelings change",
-            "target": 10814,
-            "target name": "Sara",
-            "state": "out of love",
-            "relationship": 10815
+            "topic": "new relationship",
+            "key": 17194,
+            "people": [
+              10813,
+              17193
+            ],
+            "people names": [
+              "Rolekine",
+              "Voghel van Rolekine"
+            ],
+            "people ages": [
+              23,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.966,
+            "inhabitants": []
+          }
+        ],
+        "1203": [
+          {
+            "topic": "not enough income",
+            "income": 0.95,
+            "inhabitants": []
+          }
+        ],
+        "1204": [
+          {
+            "topic": "not enough income",
+            "income": 0.938,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "new relationship",
+            "key": 24112,
+            "people": [
+              10813,
+              24111
+            ],
+            "people names": [
+              "Rolekine",
+              "Woutersoet"
+            ],
+            "people ages": [
+              25,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 17193,
+              "name": "Voghel van Rolekine",
+              "age": 3,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Linnea (10814)",
+                "father": "Rolekine (10813)"
+              }
+            },
+            "cause": "starvation",
+            "friendship label": "friend",
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.983,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 14948
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.927,
+            "inhabitants": []
           }
         ],
         "1207": [
           {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "spouse",
-            "friendship label": "indifferent",
-            "relationship": 10815
+            "topic": "new relationship",
+            "key": 28659,
+            "people": [
+              10813,
+              28658
+            ],
+            "people names": [
+              "Rolekine",
+              "Maelkin"
+            ],
+            "people ages": [
+              28,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.935,
+            "inhabitants": []
           }
         ],
         "1208": [
           {
-            "topic": "feelings change",
-            "target": 10814,
-            "target name": "Sara",
-            "state": "infatuation",
-            "relationship": 10815
+            "topic": "not enough income",
+            "income": 0.909,
+            "inhabitants": []
           }
         ],
         "1209": [
           {
-            "topic": "feelings change",
-            "target": 10814,
-            "target name": "Sara",
-            "state": "solid love",
-            "relationship": 10815
-          }
-        ],
-        "1211": [
-          {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.073
-          }
-        ],
-        "1213": [
-          {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.684
-          }
-        ],
-        "1214": [
-          {
-            "topic": "job notice",
-            "notice": "earning very little",
-            "income": 0.28
-          }
-        ],
-        "1215": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1215
-          },
-          {
-            "topic": "job notice",
-            "notice": "hardly any income",
-            "income": 0.074
-          },
-          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "starvation"
           }
         ]
       }
@@ -237,10 +377,10 @@
     "home": {
       "income class": 0,
       "income class label": "working class",
-      "section": "stDe Tuyt.se3.c0",
+      "section": "stDe Tuyt.se1.c0",
       "street": "De Tuyt",
       "neighborhood": "agnesbuurt",
-      "unique id": 288
+      "unique id": 283
     },
     "relationship status": {
       "taken": true,
@@ -248,6 +388,13 @@
       "relationships": [
         10815
       ]
-    }
+    },
+    "friends": [
+      10815,
+      14948,
+      17194,
+      24112
+    ],
+    "enemies": []
   }
 }

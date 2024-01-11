@@ -1,72 +1,88 @@
 {
   "11708": {
     "alive": false,
-    "name": "Machtilden",
-    "surname": "Juvene",
-    "full name": "Machtilden Juvene",
+    "name": "Jute",
+    "surname": "Clinkart",
+    "full name": "Jute Clinkart",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.035,
-      "romantic interest": 0.631,
-      "sex interest": 0.501,
-      "gender expression": 0.0,
+      "sexuality": 0.052,
+      "romantic interest": 0.575,
+      "sex interest": 0.546,
+      "gender expression": 0.035,
       "sex": "f"
     },
-    "age": 36,
-    "birth year": 1165,
+    "age": 49,
+    "birth year": 1158,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "Dogmatists",
     "income class": [
-      3,
-      "upper middle class"
+      4,
+      "nobility"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.325,
-      "honest-false": 0.831
+      "lawful-chaotic": 0.454,
+      "nice-nasty": 0.804,
+      "honest-false": 0.792,
+      "dream": 0.46,
+      "outgoing": 0.614
     },
     "attitude": {
-      "outgoing": 0.368,
-      "dream": 0.445
+      "dream": 0.46,
+      "outgoing": 0.614
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.009,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.028,
+        "gender expression expression": 0.018
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {},
-      "relationship keys": {}
+      "relationship keys": {
+        "spouse": [
+          11709
+        ],
+        "unrelated": [
+          20709
+        ]
+      }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        3,
-        "upper middle class"
+        4,
+        "nobility"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.29900000000000004,
+      "all_incomes": [
+        0.0,
+        0.29900000000000004
+      ],
+      "job": {
+        "lawful": false,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 7,
-      "eye_color": "green",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "skin_color": 4,
+      "eye_color": "brown",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
-        "S",
+        "C",
         "C"
       ],
-      "health": 0.718,
-      "fertility": 0.709,
+      "health": 0.748,
+      "fertility": 0.719,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -78,13 +94,97 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.718
+            "new_health": 0.748
+          },
+          "death": false
+        },
+        "1206": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.748
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1158
+          },
+          {
+            "topic": "new relationship",
+            "key": 11709,
+            "people": [
+              11707,
+              11708
+            ],
+            "people names": [
+              "Arnst Jude",
+              "Jute Clinkart"
+            ],
+            "people ages": [
+              43,
+              42
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "feelings change",
+            "target": 11707,
+            "target name": "Arnst Jude",
+            "state": "solid love",
+            "friendship label": "friend",
+            "relationship": 11709
+          }
+        ],
+        "1203": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "friend",
+            "relationship": 11709
+          },
+          {
+            "topic": "new relationship",
+            "key": 20709,
+            "people": [
+              11888,
+              11708
+            ],
+            "people names": [
+              "Oderada Burne",
+              "Jute Clinkart"
+            ],
+            "people ages": [
+              30,
+              46
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1204": [
+          {
+            "topic": "feelings change",
+            "target": 11707,
+            "target name": "Arnst Jude",
+            "state": "out of love",
+            "friendship label": "friend",
+            "relationship": 11709
+          }
+        ],
+        "1205": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.0
+          }
+        ],
+        "1206": [
           {
             "topic": "death",
             "cause": "illness"
@@ -94,17 +194,24 @@
     },
     "key": 11708,
     "home": {
-      "income class": 3,
-      "income class label": "upper middle class",
-      "section": "stLievevrouwe kerch.se7.c3",
+      "income class": 4,
+      "income class label": "nobility",
+      "section": "stLievevrouwe kerch.se3.c4",
       "street": "Lievevrouwe kerch",
       "neighborhood": "olvbuurt",
-      "unique id": 601
+      "unique id": 589
     },
     "relationship status": {
-      "taken": true,
+      "taken": false,
       "married": true,
-      "relationships": []
-    }
+      "relationships": [
+        11709
+      ]
+    },
+    "friends": [
+      11709,
+      20709
+    ],
+    "enemies": []
   }
 }

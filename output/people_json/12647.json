@@ -1,33 +1,35 @@
 {
   "12647": {
     "alive": false,
-    "name": "Aleydis",
-    "surname": "Makerreel",
-    "full name": "Aleydis Makerreel",
+    "name": "Siburgis",
+    "surname": "Dukinghe",
+    "full name": "Siburgis Dukinghe",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.067,
-      "romantic interest": 0.725,
-      "sex interest": 0.821,
-      "gender expression": 0.168,
+      "sexuality": 0.058,
+      "romantic interest": 0.504,
+      "sex interest": 0.474,
+      "gender expression": 0.035,
       "sex": "f"
     },
-    "age": 42,
-    "birth year": 1170,
+    "age": 37,
+    "birth year": 1168,
     "sex": "f",
     "faction": "Zealots",
     "income class": [
-      3,
-      "upper middle class"
+      2,
+      "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.672,
-      "nice-nasty": 0.301,
-      "honest-false": 0.219
+      "lawful-chaotic": 0.321,
+      "nice-nasty": 0.202,
+      "honest-false": 0.633,
+      "dream": 0.313,
+      "outgoing": 0.427
     },
     "attitude": {
-      "outgoing": 0.532,
-      "dream": 0.516
+      "dream": 0.313,
+      "outgoing": 0.427
     },
     "homsoc": {
       "means": {
@@ -35,58 +37,71 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": [
-          "starving"
-        ]
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.025,
-        "gender expression expression": 0.073
+        "sexuality expression": 0.027,
+        "gender expression expression": 0.029
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "16195": {
+          "key": 16195,
+          "name": "Verthwi Innighe",
+          "age": 42,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Siburgis (12647)",
+            "father": "Hornekinga (12646)"
+          }
+        },
+        "18969": {
+          "key": 18969,
+          "name": "Hubrecht Innighe",
+          "age": 29,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Siburgis (12647)",
+            "father": "Hornekinga (12646)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          12648,
-          20103
-        ]
+          12648
+        ],
+        "child": {
+          "birth": [
+            16197,
+            18971
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
-        3,
-        "upper middle class"
+        2,
+        "middle class"
       ],
-      "income": 1.151,
-      "all_incomes": [
-        0.982,
-        1.024,
-        1.024,
-        0.913,
-        0.887,
-        1.005,
-        1.032,
-        1.151
-      ],
-      "job": {
-        "lawful": true,
-        "honest": true
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 6,
-      "eye_color": "brown",
+      "skin_color": 8,
+      "eye_color": "green",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
         "C",
         "C"
       ],
-      "health": 0.752,
-      "fertility": 0.8,
+      "health": 0.748,
+      "fertility": 0.798,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -98,21 +113,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.752
+            "new_health": 0.748
           },
           "death": false
         },
-        "1211": {
+        "1204": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.752
+            "new_health": 0.748
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1168
+          },
           {
             "topic": "new relationship",
             "key": 12648,
@@ -121,33 +140,78 @@
               12647
             ],
             "people names": [
-              "Wouter Commer",
-              "Aleydis Makerreel"
+              "Hornekinga Innighe",
+              "Siburgis Dukinghe"
             ],
             "people ages": [
-              36,
-              30
+              42,
+              32
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stMarcktgang.se3.c3",
-              "street": "Marcktgang",
-              "neighborhood": "denhof",
-              "unique id": 928
-            }
+            "topic": "feelings change",
+            "target": 12646,
+            "target name": "Hornekinga Innighe",
+            "state": "solid love",
+            "friendship label": "friend",
+            "relationship": 12648
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "indifferent",
+            "relationship": 12648
+          },
+          {
+            "topic": "new relationship",
+            "key": 16197,
+            "people": [
+              12647,
+              16195
+            ],
+            "people names": [
+              "Siburgis Dukinghe",
+              "Verthwi Innighe"
+            ],
+            "people ages": [
+              34,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 12646,
+            "target name": "Hornekinga Innighe",
+            "state": "out of love",
+            "friendship label": "indifferent",
+            "relationship": 12648
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 18971,
+            "people": [
+              12647,
+              18969
+            ],
+            "people names": [
+              "Siburgis Dukinghe",
+              "Hubrecht Innighe"
+            ],
+            "people ages": [
+              36,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
             "key": 12648,
@@ -157,86 +221,19 @@
             "topic": "person died",
             "person": {
               "key": 12646,
-              "name": "Wouter Commer",
-              "age": 38,
+              "name": "Hornekinga Innighe",
+              "age": 46,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
             },
             "cause": "illness",
-            "label": "spouse"
-          }
-        ],
-        "1202": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1203": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
+            "friendship label": "indifferent",
+            "label": "spouse",
+            "love state": "out of love"
           }
         ],
         "1204": [
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.982
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1205": [
-          {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.024
-          }
-        ],
-        "1209": [
-          {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.005
-          },
-          {
-            "topic": "new relationship",
-            "key": 20103,
-            "people": [
-              11860,
-              12647
-            ],
-            "people names": [
-              "Harlo",
-              "Aleydis Makerreel"
-            ],
-            "people ages": [
-              43,
-              40
-            ],
-            "label": "spouse",
-            "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stMuurhuysen1.se1.c3",
-              "street": "Muurhuysen1",
-              "neighborhood": "cingelzuid",
-              "unique id": 653
-            }
-          }
-        ],
-        "1211": [
           {
             "topic": "death",
             "cause": "illness"
@@ -246,20 +243,21 @@
     },
     "key": 12647,
     "home": {
-      "income class": 3,
-      "income class label": "upper middle class",
-      "section": "stMuurhuysen1.se1.c3",
-      "street": "Muurhuysen1",
-      "neighborhood": "cingelzuid",
-      "unique id": 653
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stMarcktgang.se1.c2",
+      "street": "Marcktgang",
+      "neighborhood": "denhof",
+      "unique id": 925
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
-        12648,
-        20103
+        12648
       ]
-    }
+    },
+    "friends": [],
+    "enemies": []
   }
 }

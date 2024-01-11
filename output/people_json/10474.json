@@ -1,19 +1,19 @@
 {
   "10474": {
     "alive": false,
-    "name": "Breghtgherus",
-    "surname": "Coluen",
-    "full name": "Breghtgherus Coluen",
+    "name": "Wolfraem",
+    "surname": "Moer",
+    "full name": "Wolfraem Moer",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.095,
-      "romantic interest": 0.744,
-      "sex interest": 0.733,
-      "gender expression": 0.028,
+      "sexuality": 0.105,
+      "romantic interest": 0.665,
+      "sex interest": 0.383,
+      "gender expression": 0.0,
       "sex": "m"
     },
-    "age": 44,
-    "birth year": 1161,
+    "age": 54,
+    "birth year": 1156,
     "sex": "m",
     "faction": "Zealots",
     "income class": [
@@ -21,33 +21,69 @@
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.459,
-      "nice-nasty": 0.374,
-      "honest-false": 0.319
+      "lawful-chaotic": 0.671,
+      "nice-nasty": 0.167,
+      "honest-false": 0.234,
+      "dream": 0.507,
+      "outgoing": 0.678
     },
     "attitude": {
-      "outgoing": 0.723,
-      "dream": 0.335
+      "dream": 0.507,
+      "outgoing": 0.678
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.059,
-        "gender expression expression": 0.02
+        "sexuality expression": 0.053,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13789": {
+          "key": 13789,
+          "name": "Helyana Moer",
+          "age": 49,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Hille (10475)",
+            "father": "Wolfraem (10474)"
+          }
+        },
+        "15070": {
+          "key": 15070,
+          "name": "Waldrada Moer",
+          "age": 10,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Hille (10475)",
+            "father": "Wolfraem (10474)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10476
+        ],
+        "child": {
+          "birth": [
+            13790,
+            15071
+          ]
+        },
+        "unrelated": [
+          18496
         ]
       }
     },
@@ -57,31 +93,36 @@
         1,
         "lower middle class"
       ],
-      "income": 1.002,
+      "income": 0.161,
       "all_incomes": [
-        0.788,
-        0.827,
-        1.082,
-        0.755,
-        0.952,
-        1.002
+        0.86,
+        0.934,
+        0.813,
+        0.661,
+        0.268,
+        0.201,
+        0.215,
+        0.126,
+        0.601,
+        0.534,
+        0.161
       ],
       "job": {
-        "lawful": true,
+        "lawful": false,
         "honest": false
       }
     },
     "genetics": {
-      "skin_color": 7,
-      "eye_color": "blue",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "skin_color": 4,
+      "eye_color": "brown",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.524,
-      "fertility": 0.621,
+      "health": 0.0,
+      "fertility": 0.644,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -93,23 +134,39 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.697
+            "new_health": 0.678
           },
           "death": false
         },
-        "1203": {
+        "1206": {
           "health": {
             "change": true,
-            "value_change": -0.173,
-            "new_health": 0.524
+            "value_change": -0.256,
+            "new_health": 0.422
           },
           "death": false
         },
-        "1204": {
+        "1207": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.524
+            "change": true,
+            "value_change": -0.275,
+            "new_health": 0.147
+          },
+          "death": false
+        },
+        "1208": {
+          "health": {
+            "change": true,
+            "value_change": -0.134,
+            "new_health": 0.013
+          },
+          "death": false
+        },
+        "1209": {
+          "health": {
+            "change": true,
+            "value_change": -0.013,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -117,9 +174,13 @@
       "events": {
         "1200": [
           {
+            "topic": "birth",
+            "year": 1156
+          },
+          {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.788
+            "income": 0.86
           },
           {
             "topic": "new relationship",
@@ -129,49 +190,183 @@
               10475
             ],
             "people names": [
-              "Breghtgherus Coluen",
-              "Agnes Ledeghe"
+              "Wolfraem Moer",
+              "Hille"
             ],
             "people ages": [
-              39,
-              29
+              44,
+              28
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stMuelen straet.se3.c1",
-              "street": "Muelen straet",
-              "neighborhood": "jorisbuurt",
-              "unique id": 169
-            }
+            "topic": "new relationship",
+            "key": 13790,
+            "people": [
+              10474,
+              13789
+            ],
+            "people names": [
+              "Wolfraem Moer",
+              "Helyana Moer"
+            ],
+            "people ages": [
+              45,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "topic": "new relationship",
+            "key": 15071,
+            "people": [
+              10474,
+              15070
+            ],
+            "people names": [
+              "Wolfraem Moer",
+              "Waldrada Moer"
+            ],
+            "people ages": [
+              45,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
+            "key": 10476,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10475,
+              "name": "Hille",
+              "age": 30,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "childbirth",
+            "friendship label": "friend",
+            "label": "spouse",
+            "love state": "infatuation"
+          }
+        ],
+        "1202": [
+          {
             "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.082
+            "notice": "low income",
+            "income": 0.661
+          },
+          {
+            "topic": "new relationship",
+            "key": 18496,
+            "people": [
+              10474,
+              11899
+            ],
+            "people names": [
+              "Wolfraem Moer",
+              "Vesse Mol"
+            ],
+            "people ages": [
+              47,
+              43
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1203": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.268
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.268,
+            "inhabitants": []
           }
         ],
         "1204": [
           {
             "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.002
+            "notice": "hardly any income",
+            "income": 0.201
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "friend",
+            "relationship": 18496
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.201,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 13790
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.215,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 15071
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.126,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 15071
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "good friend",
+            "relationship": 18496
+          }
+        ],
+        "1209": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.161
           },
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "sickness"
           }
         ]
       }
@@ -183,14 +378,19 @@
       "section": "stMuelen straet.se3.c1",
       "street": "Muelen straet",
       "neighborhood": "jorisbuurt",
-      "unique id": 169
+      "unique id": 167
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         10476
       ]
-    }
+    },
+    "friends": [
+      10476,
+      18496
+    ],
+    "enemies": []
   }
 }

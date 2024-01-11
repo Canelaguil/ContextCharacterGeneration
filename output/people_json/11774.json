@@ -1,33 +1,35 @@
 {
   "11774": {
     "alive": false,
-    "name": "Sybillia",
+    "name": "Waldrada",
     "surname": "",
-    "full name": "Sybillia",
+    "full name": "Waldrada",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.073,
-      "romantic interest": 0.622,
-      "sex interest": 0.999,
-      "gender expression": 0.234,
+      "sexuality": 0.0,
+      "romantic interest": 0.717,
+      "sex interest": 0.898,
+      "gender expression": 0.276,
       "sex": "f"
     },
-    "age": 41,
-    "birth year": 1169,
+    "age": 46,
+    "birth year": 1166,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
       3,
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.804,
-      "nice-nasty": 0.768,
-      "honest-false": 0.616
+      "lawful-chaotic": 0.906,
+      "nice-nasty": 0.728,
+      "honest-false": 0.288,
+      "dream": 0.273,
+      "outgoing": 0.581
     },
     "attitude": {
-      "outgoing": 0.295,
-      "dream": 0.911
+      "dream": 0.273,
+      "outgoing": 0.581
     },
     "homsoc": {
       "means": {
@@ -40,22 +42,22 @@
         ]
       },
       "expression": {
-        "sexuality expression": 0.036,
-        "gender expression expression": 0.064
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.132
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "15070": {
-          "key": 15070,
-          "name": "Havix Euer",
-          "age": 45,
+        "14629": {
+          "key": 14629,
+          "name": "Clementia",
+          "age": 10,
           "alive": false,
-          "sex": "m",
+          "sex": "f",
           "parents": {
-            "mother": "Sybillia (11774)",
-            "father": "Symon (11773)"
+            "mother": "Waldrada (11774)",
+            "father": "Tijs (11773)"
           }
         }
       },
@@ -65,9 +67,13 @@
         ],
         "child": {
           "birth": [
-            15072
+            14631
           ]
-        }
+        },
+        "unrelated": [
+          18527,
+          22846
+        ]
       }
     },
     "occupation": {
@@ -80,16 +86,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 5,
-      "eye_color": "brown",
+      "skin_color": 0,
+      "eye_color": "green",
       "hair_color": "strawberry blonde",
       "hair_color_code": 5,
       "hair_type": [
         "C",
-        "S"
+        "C"
       ],
-      "health": 0.619,
-      "fertility": 0.59,
+      "health": 0.51,
+      "fertility": 0.481,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -101,13 +107,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.619
+            "new_health": 0.51
           },
           "death": false
+        },
+        "1211": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.51
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1166
+          },
           {
             "topic": "new relationship",
             "key": 11775,
@@ -116,79 +134,78 @@
               11774
             ],
             "people names": [
-              "Symon Euer",
-              "Sybillia"
+              "Tijs",
+              "Waldrada"
             ],
             "people ages": [
-              39,
-              31
+              42,
+              34
             ],
             "label": "spouse",
             "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stDie lange straet2.se1.c3",
-              "street": "Die lange straet2",
-              "neighborhood": "cingelzuid",
-              "unique id": 623
-            }
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          },
-          {
-            "topic": "feelings change",
-            "target": 11773,
-            "target name": "Symon Euer",
-            "state": "solid love",
-            "relationship": 11775
-          }
-        ],
-        "1202": [
-          {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "spouse",
-            "friendship label": "friend",
-            "relationship": 11775
-          },
-          {
             "topic": "new relationship",
-            "key": 15072,
+            "key": 14631,
             "people": [
               11774,
-              15070
+              14629
             ],
             "people names": [
-              "Sybillia",
-              "Havix Euer"
+              "Waldrada",
+              "Clementia"
             ],
             "people ages": [
-              34,
+              35,
               0
             ],
             "label": "parentchild",
             "committed": false
           }
         ],
-        "1204": [
+        "1202": [
           {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "parentchild",
-            "friendship label": "indifferent",
-            "relationship": 15072
+            "topic": "new relationship",
+            "key": 18527,
+            "people": [
+              11326,
+              11774
+            ],
+            "people names": [
+              "Costan",
+              "Waldrada"
+            ],
+            "people ages": [
+              48,
+              37
+            ],
+            "label": "unrelated",
+            "committed": false
           }
         ],
-        "1207": [
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 22846,
+            "people": [
+              11774,
+              10192
+            ],
+            "people names": [
+              "Waldrada",
+              "Kerolus Toreel"
+            ],
+            "people ages": [
+              39,
+              45
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1205": [
           {
             "key": 11775,
             "topic": "unmarried"
@@ -197,49 +214,79 @@
             "topic": "person died",
             "person": {
               "key": 11773,
-              "name": "Symon Euer",
-              "age": 47,
+              "name": "Tijs",
+              "age": 48,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
             },
             "cause": "illness",
-            "label": "spouse"
+            "friendship label": "friend",
+            "label": "spouse",
+            "love state": "out of love"
+          },
+          {
+            "topic": "personality change",
+            "change": true,
+            "trait": "lawful-chaotic",
+            "trigger": "grief",
+            "mod": 0.108
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11326,
+              "name": "Costan",
+              "age": 51,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "starvation",
+            "friendship label": "indifferent",
+            "label": "unrelated",
+            "love state": "nothing"
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ],
         "1208": [
           {
             "topic": "not enough income",
             "income": 0,
-            "inhabitants": [
-              26186,
-              32978,
-              48937,
-              55036,
-              47747,
-              50029,
-              60037,
-              61880,
-              66907,
-              69923,
-              72946,
-              77475,
-              79861,
-              53086,
-              90001,
-              38380,
-              62077,
-              63847,
-              71579,
-              76004,
-              79746
-            ]
+            "inhabitants": []
           }
         ],
         "1209": [
           {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "starvation"
           }
         ]
       }
@@ -248,10 +295,10 @@
     "home": {
       "income class": 3,
       "income class label": "upper middle class",
-      "section": "stDie lange straet2.se1.c3",
-      "street": "Die lange straet2",
-      "neighborhood": "cingelzuid",
-      "unique id": 623
+      "section": "stDie lange straet1.se3.c3",
+      "street": "Die lange straet1",
+      "neighborhood": "olvbuurt",
+      "unique id": 612
     },
     "relationship status": {
       "taken": false,
@@ -259,6 +306,11 @@
       "relationships": [
         11775
       ]
-    }
+    },
+    "friends": [
+      11775,
+      22846
+    ],
+    "enemies": []
   }
 }

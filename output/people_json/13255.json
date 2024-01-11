@@ -1,80 +1,111 @@
 {
   "13255": {
     "alive": false,
-    "name": "Ludolphus",
-    "surname": "Cnijf",
-    "full name": "Ludolphus Cnijf",
+    "name": "Arnulphus",
+    "surname": "Diddekinszoon",
+    "full name": "Arnulphus Diddekinszoon",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.123,
-      "romantic interest": 0.659,
-      "sex interest": 0.678,
+      "sexuality": 0.06,
+      "romantic interest": 0.715,
+      "sex interest": 0.692,
       "gender expression": 0.0,
       "sex": "m"
     },
-    "age": 1,
+    "age": 34,
     "birth year": 1200,
     "sex": "m",
-    "faction": "Dogmatists",
+    "faction": "Zealots",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.552,
-      "nice-nasty": 0.197,
-      "honest-false": 0.401
+      "lawful-chaotic": 0.145,
+      "nice-nasty": 0.757,
+      "honest-false": 0.408,
+      "dream": 0.339,
+      "outgoing": 0.114
     },
     "attitude": {
-      "outgoing": 0.277,
-      "dream": 0.468
+      "dream": 0.339,
+      "outgoing": 0.114
     },
     "homsoc": {
       "means": {
         "independent": false,
-        "taken_care_of": true,
+        "taken_care_of": false,
         "caretaker": true,
-        "needs_care": true,
-        "flags": []
+        "needs_care": false,
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.041,
+        "sexuality expression": 0.034,
         "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": {
-        "mother": "Salome (12155)",
-        "father": "Gherbrandus (12154)"
+        "mother": "Helyana (10928)",
+        "father": "Diddekin (10927)"
       },
       "children": {},
       "relationship keys": {
         "parent": [
           13256,
           13257
+        ],
+        "sibling": [
+          16939,
+          19556
+        ],
+        "unrelated": [
+          48054
         ]
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         1,
         "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.55,
+      "all_incomes": [
+        0.606,
+        1.065,
+        0.961,
+        1.333,
+        1.499,
+        1.499,
+        1.499,
+        1.258,
+        1.245,
+        1.138,
+        1.284,
+        1.001,
+        0.654,
+        0.382,
+        0.55
+      ],
+      "job": {
+        "lawful": false,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 2,
+      "skin_color": 5,
       "eye_color": "brown",
-      "hair_color": "red",
-      "hair_color_code": 3,
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
-        "C",
+        "S",
         "S"
       ],
-      "health": 0.805,
-      "fertility": 0.801,
+      "health": 0.633,
+      "fertility": 0.624,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -86,34 +117,364 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.805
+            "new_health": 0.633
           },
           "death": false
+        },
+        "1234": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.633
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
           {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stNieu straet.se1.c1",
-              "street": "Nieu straet",
-              "neighborhood": "visbuurt",
-              "unique id": 755
-            }
+            "topic": "birth",
+            "year": 1200
+          },
+          {
+            "topic": "new relationship",
+            "key": 13256,
+            "people": [
+              10927,
+              13255
+            ],
+            "people names": [
+              "Diddekin",
+              "Arnulphus Diddekinszoon"
+            ],
+            "people ages": [
+              47,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "new relationship",
+            "key": 13257,
+            "people": [
+              10928,
+              13255
+            ],
+            "people names": [
+              "Helyana Moer",
+              "Arnulphus Diddekinszoon"
+            ],
+            "people ages": [
+              36,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1201": [
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 16939,
+            "people": [
+              13255,
+              16936
+            ],
+            "people names": [
+              "Arnulphus Diddekinszoon",
+              "Esa"
+            ],
+            "people ages": [
+              1,
+              0
+            ],
+            "label": "sibling",
+            "committed": false
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 19556,
+            "people": [
+              13255,
+              19553
+            ],
+            "people names": [
+              "Arnulphus Diddekinszoon",
+              "Rabburgis van Diddekin"
+            ],
+            "people ages": [
+              2,
+              0
+            ],
+            "label": "sibling",
+            "committed": false
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 13256
+          }
+        ],
+        "1204": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "sibling",
+            "friendship label": "indifferent",
+            "relationship": 16939
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "sibling",
+            "friendship label": "indifferent",
+            "relationship": 19556
+          }
+        ],
+        "1205": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10928,
+              "name": "Helyana Moer",
+              "age": 42,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "friendship label": "friend",
+            "label": "parent"
+          }
+        ],
+        "1206": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "sibling",
+            "friendship label": "indifferent",
+            "relationship": 16939
+          }
+        ],
+        "1208": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10927,
+              "name": "Diddekin",
+              "age": 55,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "old age",
+            "friendship label": "indifferent",
+            "label": "parent"
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1214": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 16936,
+              "name": "Esa",
+              "age": 12,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Helyana (10928)",
+                "father": "Diddekin (10927)"
+              }
+            },
+            "cause": "starvation",
+            "friendship label": "indifferent",
+            "label": "sibling"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1215": [
           {
             "topic": "event",
             "event": "plague",
-            "year": 1201
+            "year": 1215
           },
           {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1216": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1217": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "sibling",
+            "friendship label": "indifferent",
+            "relationship": 19556
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1218": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1219": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1220": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.606
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1221": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.065
+          }
+        ],
+        "1223": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1223
+          },
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.333
+          }
+        ],
+        "1226": [
+          {
+            "topic": "new relationship",
+            "key": 48054,
+            "people": [
+              13255,
+              23274
+            ],
+            "people names": [
+              "Arnulphus Diddekinszoon",
+              "Clementia"
+            ],
+            "people ages": [
+              26,
+              21
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1228": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "sibling",
+            "friendship label": "friend",
+            "relationship": 19556
+          }
+        ],
+        "1230": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "friend",
+            "relationship": 48054
+          }
+        ],
+        "1232": [
+          {
+            "topic": "event",
+            "event": "war",
+            "year": 1232
+          },
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.654
+          }
+        ],
+        "1233": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.382
+          }
+        ],
+        "1234": [
+          {
             "topic": "death",
-            "cause": "childhood illness"
+            "cause": "illness"
           }
         ]
       }
@@ -122,15 +483,21 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stNieu straet.se1.c1",
-      "street": "Nieu straet",
-      "neighborhood": "visbuurt",
-      "unique id": 755
+      "section": "stSt. Aechten straet.se1.c1",
+      "street": "St. Aechten straet",
+      "neighborhood": "agnesbuurt",
+      "unique id": 321
     },
     "relationship status": {
       "taken": false,
       "married": false,
       "relationships": []
-    }
+    },
+    "friends": [
+      13257,
+      19556,
+      48054
+    ],
+    "enemies": []
   }
 }

@@ -31,6 +31,7 @@ class Person(Agent):
         # Init submodules 
         self.messages = MessageInbox(self)
         self.memory = Memory(self, self.model) 
+        self.memory.add_event({'topic' : 'birth', 'year' : self.birth_year})
         self.personality = Personality(self)
         if self.first_gen:
             self.names = Naming(self.sex, '', '', '', True)
@@ -173,13 +174,12 @@ class Person(Agent):
                 self.memory.add_event(msg)
             elif topic == 'feelings change':
                 self.memory.add_event(msg)
-            # elif topic == 'event':
-            #     self.process_event(msg)
-            elif topic == 'person died': # or topic == 'sibling died':
+            elif topic == 'person died': 
                 self.memory.add_event(msg)
-            elif topic == 'new home': 
-                # self.move(msg['home'])
-                self.memory.add_event(msg)
+                if msg['friendship label'] in ['friend', 'good friend']:
+                    personality_effect = self.personality.trigger('grief')
+                    if personality_effect['change']:
+                        self.memory.add_event(personality_effect)
             elif topic == 'not enough income':
                 self.body.trigger('starving')
                 self.homsoc.situation_change(msg, self.age)
@@ -200,8 +200,6 @@ class Person(Agent):
             else:
                 log_error('person received unrecognized message', msg)
             msg = self.messages.get()
-        
-        
 
     """
     UTIL FUNCTIONS
@@ -229,8 +227,8 @@ class Person(Agent):
             self.update_relationship_status(msg) 
             self.network.add_relationship(msg)
 
-        if self.age != 0: # skip memories for family new relationships
-            self.memory.add_event(msg)
+        # if self.age != 0: # skip memories for family new relationships
+        self.memory.add_event(msg)
 
     def move(self, home_info):
         self.home = home_info
@@ -247,16 +245,23 @@ class Person(Agent):
         self.romantic_relationship_status['taken'] = info['committed']
         if info['label'] == 'spouse':
             self.romantic_relationship_status['married'] = True
-        self.romantic_relationship_status['relationships'].append(info['key'])
+        if info['label']  in ['spouse', 'partner']:
+            self.romantic_relationship_status['relationships'].append(info['key'])
 
     def process_event(self, info):
         self.memory.add_event(info)
         event = info['event']
         if event in ['famine', 'plague']:
             self.body.trigger(event)
+            personality_effect = self.personality.trigger('trauma')
+            if personality_effect['change']:
+                self.memory.add_event(personality_effect)
         elif event == 'war':
             if self.sex == 'm' and self.age > Body.adult_age:
                 self.body.trigger(event)
+            personality_effect = self.personality.trigger('trauma')
+            if personality_effect['change']:
+                self.memory.add_event(personality_effect)
         elif event == 'faction upheaval':
             ...
 
@@ -297,7 +302,7 @@ class Person(Agent):
             'parents' : self.network.get_parents()
         }
 
-    def description(self) -> dict:
+    def description(self, final=False) -> dict:
         """
         Long description for json objects
         """
@@ -323,6 +328,9 @@ class Person(Agent):
             'home' : self.home, 
             'relationship status' : self.get_relationship_status()
         }
+        if final:
+            me['friends'] = self.network.get_friends()
+            me['enemies'] = self.network.get_enemies()
         return me
     
 

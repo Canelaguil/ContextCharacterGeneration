@@ -1,33 +1,35 @@
 {
   "11723": {
     "alive": false,
-    "name": "Thedwi",
-    "surname": "Pauwe",
-    "full name": "Thedwi Pauwe",
+    "name": "Myrthel",
+    "surname": "Pluuier",
+    "full name": "Myrthel Pluuier",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.1,
-      "romantic interest": 0.63,
-      "sex interest": 0.484,
-      "gender expression": 0.166,
+      "sexuality label": "bi",
+      "sexuality": 0.541,
+      "romantic interest": 0.581,
+      "sex interest": 0.869,
+      "gender expression": 0.091,
       "sex": "f"
     },
-    "age": 50,
-    "birth year": 1165,
+    "age": 24,
+    "birth year": 1182,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "Zealots",
     "income class": [
       3,
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.566,
-      "nice-nasty": 0.864,
-      "honest-false": 0.564
+      "lawful-chaotic": 0.656,
+      "nice-nasty": 0.921,
+      "honest-false": 0.696,
+      "dream": 0.179,
+      "outgoing": 0.328
     },
     "attitude": {
-      "outgoing": 0.522,
-      "dream": 0.673
+      "dream": 0.179,
+      "outgoing": 0.328
     },
     "homsoc": {
       "means": {
@@ -38,18 +40,46 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.07,
-        "gender expression expression": 0.07
+        "sexuality expression": 0.213,
+        "gender expression expression": 0.032
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13258": {
+          "key": 13258,
+          "name": "Conzone Snauel",
+          "age": 10,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Myrthel (11723)",
+            "father": "Iordanus (11722)"
+          }
+        },
+        "16795": {
+          "key": 16795,
+          "name": "Robbrecht Snauel",
+          "age": 5,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Myrthel (11723)",
+            "father": "Iordanus (11722)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
-          11724,
-          15956
-        ]
+          11724
+        ],
+        "child": {
+          "birth": [
+            13260,
+            16797
+          ]
+        }
       }
     },
     "occupation": {
@@ -63,15 +93,15 @@
     },
     "genetics": {
       "skin_color": 4,
-      "eye_color": "green",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "eye_color": "brown",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
-        "C",
+        "S",
         "C"
       ],
-      "health": 0.747,
-      "fertility": 0.735,
+      "health": 0.661,
+      "fertility": 0.674,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -83,21 +113,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.747
+            "new_health": 0.661
           },
           "death": false
         },
-        "1214": {
+        "1205": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.747
+            "new_health": 0.661
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1182
+          },
           {
             "topic": "new relationship",
             "key": 11724,
@@ -106,100 +140,65 @@
               11723
             ],
             "people names": [
-              "Walic Napbrekere",
-              "Thedwi Pauwe"
+              "Iordanus Snauel",
+              "Myrthel Pluuier"
             ],
             "people ages": [
-              36,
-              35
+              42,
+              18
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stDie lange straet1.se1.c3",
-              "street": "Die lange straet1",
-              "neighborhood": "olvbuurt",
-              "unique id": 606
-            }
-          },
-          {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "spouse",
-            "friendship label": "indifferent",
-            "relationship": 11724
-          }
-        ],
-        "1201": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "topic": "new relationship",
+            "key": 13260,
+            "people": [
+              11723,
+              13258
+            ],
+            "people names": [
+              "Myrthel Pluuier",
+              "Conzone Snauel"
+            ],
+            "people ages": [
+              18,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1202": [
           {
-            "key": 11724,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 11722,
-              "name": "Walic Napbrekere",
-              "age": 39,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "cause": "illness",
-            "label": "spouse"
-          }
-        ],
-        "1203": [
-          {
             "topic": "new relationship",
-            "key": 15956,
+            "key": 16797,
             "people": [
-              10081,
-              11723
+              11723,
+              16795
             ],
             "people names": [
-              "Amelgeir",
-              "Thedwi Pauwe"
+              "Myrthel Pluuier",
+              "Robbrecht Snauel"
             ],
             "people ages": [
-              34,
-              39
+              20,
+              0
             ],
-            "label": "spouse",
-            "committed": true
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1204": [
           {
-            "topic": "feelings change",
-            "target": 10081,
-            "target name": "Amelgeir",
-            "state": "out of love",
-            "relationship": 15956
-          }
-        ],
-        "1210": [
-          {
             "topic": "update",
             "update": "new friendship label",
-            "relationship label": "spouse",
-            "friendship label": "friend",
-            "relationship": 15956
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 16797
           }
         ],
-        "1214": [
+        "1205": [
           {
             "topic": "death",
             "cause": "illness"
@@ -211,18 +210,21 @@
     "home": {
       "income class": 3,
       "income class label": "upper middle class",
-      "section": "stDie lange straet1.se1.c3",
-      "street": "Die lange straet1",
+      "section": "stLievevrouwe kerch.se5.c3",
+      "street": "Lievevrouwe kerch",
       "neighborhood": "olvbuurt",
-      "unique id": 606
+      "unique id": 594
     },
     "relationship status": {
       "taken": true,
       "married": true,
       "relationships": [
-        11724,
-        15956
+        11724
       ]
-    }
+    },
+    "friends": [
+      11724
+    ],
+    "enemies": []
   }
 }

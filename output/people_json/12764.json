@@ -1,19 +1,19 @@
 {
   "12764": {
     "alive": false,
-    "name": "Flore",
-    "surname": "",
-    "full name": "Flore",
+    "name": "Brundonis",
+    "surname": "Burne",
+    "full name": "Brundonis Burne",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.516,
-      "sex interest": 0.599,
-      "gender expression": 0.099,
+      "sexuality": 0.126,
+      "romantic interest": 0.655,
+      "sex interest": 0.832,
+      "gender expression": 0.129,
       "sex": "f"
     },
-    "age": 35,
-    "birth year": 1171,
+    "age": 19,
+    "birth year": 1184,
     "sex": "f",
     "faction": "Dogmatists",
     "income class": [
@@ -21,13 +21,15 @@
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.694,
-      "nice-nasty": 0.517,
-      "honest-false": 0.095
+      "lawful-chaotic": 0.895,
+      "nice-nasty": 0.318,
+      "honest-false": 0.617,
+      "dream": 0.196,
+      "outgoing": 0.756
     },
     "attitude": {
-      "outgoing": 0.029,
-      "dream": 0.359
+      "dream": 0.196,
+      "outgoing": 0.756
     },
     "homsoc": {
       "means": {
@@ -35,25 +37,38 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.008
+        "sexuality expression": 0.1,
+        "gender expression expression": 0.022
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "15446": {
-          "key": 15446,
-          "name": "Karel Canis",
+        "13003": {
+          "key": 13003,
+          "name": "Victoria Corbeel",
           "age": 2,
           "alive": false,
-          "sex": "m",
+          "sex": "f",
           "parents": {
-            "mother": "Flore (12764)",
-            "father": "Grote (12763)"
+            "mother": "Brundonis (12764)",
+            "father": "Hughekine (12763)"
+          }
+        },
+        "14987": {
+          "key": 14987,
+          "name": "Alene Corbeel",
+          "age": 4,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Brundonis (12764)",
+            "father": "Hughekine (12763)"
           }
         }
       },
@@ -63,7 +78,8 @@
         ],
         "child": {
           "birth": [
-            15448
+            13005,
+            14989
           ]
         }
       }
@@ -78,16 +94,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 9,
-      "eye_color": "blue",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "skin_color": 2,
+      "eye_color": "brown",
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
-        "S",
+        "C",
         "C"
       ],
-      "health": 0.815,
-      "fertility": 0.784,
+      "health": 0.674,
+      "fertility": 0.63,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -99,21 +115,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.815
+            "new_health": 0.674
           },
           "death": false
         },
-        "1205": {
+        "1202": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.815
+            "new_health": 0.674
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1184
+          },
           {
             "topic": "new relationship",
             "key": 12765,
@@ -122,68 +142,64 @@
               12764
             ],
             "people names": [
-              "Grote Canis",
-              "Flore"
+              "Hughekine Corbeel",
+              "Brundonis Burne"
             ],
             "people ages": [
-              34,
-              29
+              27,
+              16
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stAppel Marckt.se3.c1",
-              "street": "Appel Marckt",
-              "neighborhood": "denhof",
-              "unique id": 969
-            }
-          }
-        ],
-        "1201": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          }
-        ],
-        "1203": [
-          {
             "topic": "new relationship",
-            "key": 15448,
+            "key": 13005,
             "people": [
               12764,
-              15446
+              13003
             ],
             "people names": [
-              "Flore",
-              "Karel Canis"
+              "Brundonis Burne",
+              "Victoria Corbeel"
             ],
             "people ages": [
-              32,
+              16,
               0
             ],
             "label": "parentchild",
             "committed": false
           }
         ],
-        "1204": [
+        "1201": [
           {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "parentchild",
-            "friendship label": "indifferent",
-            "relationship": 15448
+            "topic": "new relationship",
+            "key": 14989,
+            "people": [
+              12764,
+              14987
+            ],
+            "people names": [
+              "Brundonis Burne",
+              "Alene Corbeel"
+            ],
+            "people ages": [
+              18,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.347,
+            "inhabitants": []
           }
         ],
-        "1205": [
+        "1202": [
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "starvation"
           }
         ]
       }
@@ -195,7 +211,7 @@
       "section": "stAppel Marckt.se3.c1",
       "street": "Appel Marckt",
       "neighborhood": "denhof",
-      "unique id": 969
+      "unique id": 968
     },
     "relationship status": {
       "taken": true,
@@ -203,6 +219,10 @@
       "relationships": [
         12765
       ]
-    }
+    },
+    "friends": [
+      12765
+    ],
+    "enemies": []
   }
 }

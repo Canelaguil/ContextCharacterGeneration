@@ -1,80 +1,108 @@
 {
   "14697": {
     "alive": false,
-    "name": "Ymmekine",
-    "surname": "van Vais",
-    "full name": "Ymmekine van Vais",
+    "name": "Gherbaren",
+    "surname": "Compere",
+    "full name": "Gherbaren Compere",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.007,
-      "romantic interest": 0.786,
-      "sex interest": 0.853,
-      "gender expression": 0.267,
-      "sex": "f"
+      "sexuality label": "bi",
+      "sexuality": 0.41,
+      "romantic interest": 0.487,
+      "sex interest": 0.84,
+      "gender expression": 0.273,
+      "sex": "m"
     },
-    "age": 1,
-    "birth year": 1202,
-    "sex": "f",
-    "faction": "Zealots",
+    "age": 30,
+    "birth year": 1201,
+    "sex": "m",
+    "faction": "No religion",
     "income class": [
-      3,
-      "upper middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.218,
-      "nice-nasty": 0.999,
-      "honest-false": 0.442
+      "lawful-chaotic": 0.377,
+      "nice-nasty": 0.817,
+      "honest-false": 0.87,
+      "dream": 0.486,
+      "outgoing": 0.389
     },
     "attitude": {
-      "outgoing": 0.649,
-      "dream": 0.24
+      "dream": 0.486,
+      "outgoing": 0.389
     },
     "homsoc": {
       "means": {
         "independent": false,
-        "taken_care_of": true,
+        "taken_care_of": false,
         "caretaker": true,
-        "needs_care": true,
-        "flags": []
+        "needs_care": false,
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.004,
-        "gender expression expression": 0.112
+        "sexuality expression": 0.297,
+        "gender expression expression": 0.223
       }
     },
     "network": {
       "parents": {
-        "mother": "Hadewigis (11957)",
-        "father": "Vais (11956)"
+        "mother": "Reymodis (12233)",
+        "father": "Conrad (12232)"
       },
       "children": {},
       "relationship keys": {
         "parent": [
           14698,
           14699
+        ],
+        "sibling": [
+          14700
+        ],
+        "unrelated": [
+          53493
         ]
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        3,
-        "upper middle class"
+        1,
+        "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.654,
+      "all_incomes": [
+        0.99,
+        1.068,
+        1.078,
+        1.089,
+        0.973,
+        0.925,
+        0.906,
+        0.823,
+        0.81,
+        0.722,
+        0.677,
+        0.755,
+        0.654
+      ],
+      "job": {
+        "lawful": false,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 5,
+      "skin_color": 1,
       "eye_color": "brown",
-      "hair_color": "red",
-      "hair_color_code": 3,
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
-        "C",
-        "C"
+        "S",
+        "S"
       ],
-      "health": 0.584,
-      "fertility": 0.518,
+      "health": 0.632,
+      "fertility": 0.501,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -82,50 +110,337 @@
     },
     "memory": {
       "health": {
-        "1203": {
+        "1202": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.584
+            "new_health": 0.632
+          },
+          "death": false
+        },
+        "1231": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.632
           },
           "death": true
         }
       },
       "events": {
-        "1202": [
+        "1201": [
           {
-            "topic": "new home",
-            "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stDie lange straet3.se3.c3",
-              "street": "Die lange straet3",
-              "neighborhood": "visbuurt",
-              "unique id": 686
-            }
+            "topic": "birth",
+            "year": 1201
+          },
+          {
+            "topic": "new relationship",
+            "key": 14698,
+            "people": [
+              12232,
+              14697
+            ],
+            "people names": [
+              "Conrad Compere",
+              "Gherbaren Compere"
+            ],
+            "people ages": [
+              43,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "new relationship",
+            "key": 14699,
+            "people": [
+              12233,
+              14697
+            ],
+            "people names": [
+              "Reymodis",
+              "Gherbaren Compere"
+            ],
+            "people ages": [
+              29,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "new relationship",
+            "key": 14700,
+            "people": [
+              13546,
+              14697
+            ],
+            "people names": [
+              "Nimme Compere",
+              "Gherbaren Compere"
+            ],
+            "people ages": [
+              0,
+              0
+            ],
+            "label": "sibling",
+            "committed": false
           }
         ],
         "1203": [
           {
+            "topic": "person died",
+            "person": {
+              "key": 12232,
+              "name": "Conrad Compere",
+              "age": 46,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "friendship label": "indifferent",
+            "label": "parent"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "sibling",
+            "friendship label": "disliked",
+            "relationship": 14700
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1216": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1217": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1218": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1219": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.99
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "sibling",
+            "friendship label": "disliked",
+            "relationship": 14700
+          }
+        ],
+        "1220": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.068
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 13546,
+              "name": "Nimme Compere",
+              "age": 20,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Reymodis (12233)",
+                "father": "Conrad (12232)"
+              }
+            },
+            "cause": "illness",
+            "friendship label": "disliked",
+            "label": "sibling"
+          }
+        ],
+        "1223": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1223
+          }
+        ],
+        "1225": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12233,
+              "name": "Reymodis",
+              "age": 54,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "friendship label": "indifferent",
+            "label": "parent"
+          }
+        ],
+        "1228": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.722
+          }
+        ],
+        "1230": [
+          {
+            "topic": "new relationship",
+            "key": 53493,
+            "people": [
+              13447,
+              14697
+            ],
+            "people names": [
+              "Sywi Blonde",
+              "Gherbaren Compere"
+            ],
+            "people ages": [
+              30,
+              29
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1231": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.654
+          },
+          {
             "topic": "death",
-            "cause": "childhood illness"
+            "cause": "illness"
           }
         ]
       }
     },
     "key": 14697,
     "home": {
-      "income class": 3,
-      "income class label": "upper middle class",
-      "section": "stDie lange straet3.se3.c3",
-      "street": "Die lange straet3",
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stStoof straet.se3.c1",
+      "street": "Stoof straet",
       "neighborhood": "visbuurt",
-      "unique id": 686
+      "unique id": 778
     },
     "relationship status": {
       "taken": false,
       "married": false,
       "relationships": []
-    }
+    },
+    "friends": [
+      53493
+    ],
+    "enemies": [
+      14700
+    ]
   }
 }

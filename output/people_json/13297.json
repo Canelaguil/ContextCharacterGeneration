@@ -1,80 +1,87 @@
 {
   "13297": {
     "alive": false,
-    "name": "Tetta",
-    "surname": "Iude",
-    "full name": "Tetta Iude",
+    "name": "Liudburgis",
+    "surname": "Busseel",
+    "full name": "Liudburgis Busseel",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.81,
-      "sex interest": 0.556,
-      "gender expression": 0.088,
+      "sexuality label": "gay",
+      "sexuality": 0.99,
+      "romantic interest": 0.535,
+      "sex interest": 0.761,
+      "gender expression": 0.589,
       "sex": "f"
     },
-    "age": 1,
+    "age": 19,
     "birth year": 1200,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "Zealots",
     "income class": [
-      1,
-      "lower middle class"
+      2,
+      "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.046,
-      "nice-nasty": 0.827,
-      "honest-false": 0.61
+      "lawful-chaotic": 0.478,
+      "nice-nasty": 0.545,
+      "honest-false": 0.548,
+      "dream": 0.353,
+      "outgoing": 0.736
     },
     "attitude": {
-      "outgoing": 0.573,
-      "dream": 0.668
+      "dream": 0.353,
+      "outgoing": 0.736
     },
     "homsoc": {
       "means": {
         "independent": false,
-        "taken_care_of": true,
+        "taken_care_of": false,
         "caretaker": true,
-        "needs_care": true,
-        "flags": []
+        "needs_care": false,
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.064
+        "sexuality expression": 0.739,
+        "gender expression expression": 0.134
       }
     },
     "network": {
       "parents": {
-        "mother": "Amelgeir (11396)",
-        "father": "Eelbout (11395)"
+        "mother": "Itsburgis (12644)",
+        "father": "Jiusippus (12643)"
       },
       "children": {},
       "relationship keys": {
         "parent": [
           13298,
           13299
+        ],
+        "sibling": [
+          18449
         ]
       }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        1,
-        "lower middle class"
+        2,
+        "middle class"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 6,
+      "skin_color": 2,
       "eye_color": "brown",
       "hair_color": "brown",
       "hair_color_code": 2,
       "hair_type": [
-        "C",
-        "C"
+        "S",
+        "S"
       ],
-      "health": 0.872,
-      "fertility": 0.853,
+      "health": 0.718,
+      "fertility": 0.722,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -86,51 +93,241 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.872
+            "new_health": 0.718
           },
           "death": false
+        },
+        "1219": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.718
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
           {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stOly straetje.se5.c1",
-              "street": "Oly straetje",
-              "neighborhood": "kampbuurt",
-              "unique id": 490
-            }
+            "topic": "birth",
+            "year": 1200
+          },
+          {
+            "topic": "new relationship",
+            "key": 13298,
+            "people": [
+              12643,
+              13297
+            ],
+            "people names": [
+              "Jiusippus Busseel",
+              "Liudburgis Busseel"
+            ],
+            "people ages": [
+              23,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "new relationship",
+            "key": 13299,
+            "people": [
+              12644,
+              13297
+            ],
+            "people names": [
+              "Itsburgis",
+              "Liudburgis Busseel"
+            ],
+            "people ages": [
+              16,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
-        "1201": [
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 18449,
+            "people": [
+              13297,
+              18446
+            ],
+            "people names": [
+              "Liudburgis Busseel",
+              "Flore Busseel"
+            ],
+            "people ages": [
+              2,
+              0
+            ],
+            "label": "sibling",
+            "committed": false
+          }
+        ],
+        "1203": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12643,
+              "name": "Jiusippus Busseel",
+              "age": 27,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "friendship label": "friend",
+            "label": "parent"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "sibling",
+            "friendship label": "indifferent",
+            "relationship": 18449
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1215": [
           {
             "topic": "event",
             "event": "plague",
-            "year": 1201
+            "year": 1215
           },
           {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1216": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1217": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1218": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1219": [
+          {
             "topic": "death",
-            "cause": "childhood illness"
+            "cause": "starvation"
           }
         ]
       }
     },
     "key": 13297,
     "home": {
-      "income class": 1,
-      "income class label": "lower middle class",
-      "section": "stOly straetje.se5.c1",
-      "street": "Oly straetje",
-      "neighborhood": "kampbuurt",
-      "unique id": 490
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stMarcktgang.se1.c2",
+      "street": "Marcktgang",
+      "neighborhood": "denhof",
+      "unique id": 924
     },
     "relationship status": {
       "taken": false,
       "married": false,
       "relationships": []
-    }
+    },
+    "friends": [
+      13298,
+      13299
+    ],
+    "enemies": []
   }
 }

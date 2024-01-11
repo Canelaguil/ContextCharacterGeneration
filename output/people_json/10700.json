@@ -1,33 +1,35 @@
 {
   "10700": {
     "alive": false,
-    "name": "Imma",
-    "surname": "Cum Macula",
-    "full name": "Imma Cum Macula",
+    "name": "Beatrice",
+    "surname": "",
+    "full name": "Beatrice",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.064,
-      "romantic interest": 0.999,
-      "sex interest": 0.672,
-      "gender expression": 0.178,
+      "sexuality": 0.089,
+      "romantic interest": 0.68,
+      "sex interest": 0.65,
+      "gender expression": 0.162,
       "sex": "f"
     },
-    "age": 37,
-    "birth year": 1169,
+    "age": 53,
+    "birth year": 1171,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.82,
-      "nice-nasty": 0.456,
-      "honest-false": 0.434
+      "lawful-chaotic": 0.609,
+      "nice-nasty": 0.193,
+      "honest-false": 0.71,
+      "dream": 0.382,
+      "outgoing": 0.272
     },
     "attitude": {
-      "outgoing": 0.424,
-      "dream": 0.203
+      "dream": 0.382,
+      "outgoing": 0.272
     },
     "homsoc": {
       "means": {
@@ -35,25 +37,60 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.037,
-        "gender expression expression": 0.124
+        "sexuality expression": 0.063,
+        "gender expression expression": 0.099
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "14085": {
-          "key": 14085,
-          "name": "Arnulphus Robbrechtszoon",
+        "17717": {
+          "key": 17717,
+          "name": "Badeloghen Onlost",
+          "age": 47,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Beatrice (10700)",
+            "father": "Wybel (10699)"
+          }
+        },
+        "20021": {
+          "key": 20021,
+          "name": "Clementia Onlost",
+          "age": 35,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Beatrice (10700)",
+            "father": "Wybel (10699)"
+          }
+        },
+        "24486": {
+          "key": 24486,
+          "name": "Leanne",
           "age": 33,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Beatrice (10700)",
+            "father": "Wybel (10699)"
+          }
+        },
+        "25120": {
+          "key": 25120,
+          "name": "Alwin Onlost",
+          "age": 4,
           "alive": false,
           "sex": "m",
           "parents": {
-            "mother": "Imma (10700)",
-            "father": "Robbrecht (10699)"
+            "mother": "Beatrice (10700)",
+            "father": "Wybel (10699)"
           }
         }
       },
@@ -63,9 +100,15 @@
         ],
         "child": {
           "birth": [
-            14087
+            17719,
+            20023,
+            24488,
+            25122
           ]
-        }
+        },
+        "unrelated": [
+          20769
+        ]
       }
     },
     "occupation": {
@@ -78,16 +121,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 1,
+      "skin_color": 4,
       "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.756,
-      "fertility": 0.827,
+      "health": 0.0,
+      "fertility": 0.756,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -99,21 +142,57 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.756
+            "new_health": 0.728
           },
           "death": false
         },
-        "1205": {
+        "1217": {
+          "health": {
+            "change": true,
+            "value_change": -0.124,
+            "new_health": 0.604
+          },
+          "death": false
+        },
+        "1218": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.756
+            "new_health": 0.604
+          },
+          "death": false
+        },
+        "1221": {
+          "health": {
+            "change": true,
+            "value_change": -0.188,
+            "new_health": 0.416
+          },
+          "death": false
+        },
+        "1222": {
+          "health": {
+            "change": true,
+            "value_change": -0.255,
+            "new_health": 0.161
+          },
+          "death": false
+        },
+        "1223": {
+          "health": {
+            "change": true,
+            "value_change": -0.161,
+            "new_health": 0.0
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1171
+          },
           {
             "topic": "new relationship",
             "key": 10701,
@@ -122,44 +201,38 @@
               10700
             ],
             "people names": [
-              "Robbrecht",
-              "Imma Cum Macula"
+              "Wybel Onlost",
+              "Beatrice"
             ],
             "people ages": [
-              47,
-              31
+              45,
+              29
             ],
             "label": "spouse",
             "committed": true
-          },
-          {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stWaale straet.se1.c2",
-              "street": "Waale straet",
-              "neighborhood": "agnesbuurt",
-              "unique id": 245
-            }
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          },
+            "topic": "feelings change",
+            "target": 10699,
+            "target name": "Wybel Onlost",
+            "state": "out of love",
+            "friendship label": "indifferent",
+            "relationship": 10701
+          }
+        ],
+        "1202": [
           {
             "topic": "new relationship",
-            "key": 14087,
+            "key": 17719,
             "people": [
               10700,
-              14085
+              17717
             ],
             "people names": [
-              "Imma Cum Macula",
-              "Arnulphus Robbrechtszoon"
+              "Beatrice",
+              "Badeloghen Onlost"
             ],
             "people ages": [
               32,
@@ -169,10 +242,296 @@
             "committed": false
           }
         ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 20023,
+            "people": [
+              10700,
+              20021
+            ],
+            "people names": [
+              "Beatrice",
+              "Clementia Onlost"
+            ],
+            "people ages": [
+              32,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "new relationship",
+            "key": 20769,
+            "people": [
+              10700,
+              12010
+            ],
+            "people names": [
+              "Beatrice",
+              "Tielen"
+            ],
+            "people ages": [
+              33,
+              34
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
         "1205": [
           {
+            "topic": "new relationship",
+            "key": 24488,
+            "people": [
+              10700,
+              24486
+            ],
+            "people names": [
+              "Beatrice",
+              "Leanne"
+            ],
+            "people ages": [
+              35,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 25122,
+            "people": [
+              10700,
+              25120
+            ],
+            "people names": [
+              "Beatrice",
+              "Alwin Onlost"
+            ],
+            "people ages": [
+              35,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.516,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0.5760000000000001,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0.513,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "key": 10701,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10699,
+              "name": "Wybel Onlost",
+              "age": 55,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "friendship label": "indifferent",
+            "label": "spouse",
+            "love state": "out of love"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.44,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 25120,
+              "name": "Alwin Onlost",
+              "age": 4,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Beatrice (10700)",
+                "father": "Wybel (10699)"
+              }
+            },
+            "cause": "starvation",
+            "friendship label": "indifferent",
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 20023
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "indifferent",
+            "relationship": 20769
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1216": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 20023
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1217": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1218": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1219": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12010,
+              "name": "Tielen",
+              "age": 50,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "friendship label": "indifferent",
+            "label": "unrelated",
+            "love state": "nothing"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1220": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 24488
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1221": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1222": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 20023
+          }
+        ],
+        "1223": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1223
+          },
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "sickness"
           }
         ]
       }
@@ -181,17 +540,22 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stWaale straet.se1.c2",
-      "street": "Waale straet",
+      "section": "stBloemendaelse straet.se7.c2",
+      "street": "Bloemendaelse straet",
       "neighborhood": "agnesbuurt",
-      "unique id": 245
+      "unique id": 243
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         10701
       ]
-    }
+    },
+    "friends": [
+      17719,
+      20023
+    ],
+    "enemies": []
   }
 }

@@ -1,33 +1,35 @@
 {
   "12083": {
     "alive": false,
-    "name": "Liedelde",
+    "name": "Segherarden",
     "surname": "",
-    "full name": "Liedelde",
+    "full name": "Segherarden",
     "born this way": {
-      "sexuality label": "bi",
-      "sexuality": 0.501,
-      "romantic interest": 0.437,
-      "sex interest": 0.804,
-      "gender expression": 0.217,
+      "sexuality label": "straight",
+      "sexuality": 0.036,
+      "romantic interest": 0.757,
+      "sex interest": 0.642,
+      "gender expression": 0.089,
       "sex": "f"
     },
-    "age": 27,
-    "birth year": 1179,
+    "age": 31,
+    "birth year": 1182,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.436,
-      "nice-nasty": 0.469,
-      "honest-false": 0.578
+      "lawful-chaotic": 0.254,
+      "nice-nasty": 0.235,
+      "honest-false": 0.643,
+      "dream": 0.293,
+      "outgoing": 0.815
     },
     "attitude": {
-      "outgoing": 0.404,
-      "dream": 0.366
+      "dream": 0.293,
+      "outgoing": 0.815
     },
     "homsoc": {
       "means": {
@@ -40,33 +42,44 @@
         ]
       },
       "expression": {
-        "sexuality expression": 0.294,
-        "gender expression expression": 0.12
+        "sexuality expression": 0.03,
+        "gender expression expression": 0.052
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "13561": {
-          "key": 13561,
-          "name": "Imma",
-          "age": 14,
+        "12952": {
+          "key": 12952,
+          "name": "Galo",
+          "age": 24,
           "alive": false,
-          "sex": "f",
+          "sex": "m",
           "parents": {
-            "mother": "Liedelde (12083)",
-            "father": "Hildebrandus (12082)"
+            "mother": "Segherarden (12083)",
+            "father": "Radwardo (12082)"
           }
         },
-        "13804": {
-          "key": 13804,
-          "name": "Auesoete Bastart",
-          "age": 30,
+        "17525": {
+          "key": 17525,
+          "name": "Lennot Quistwater",
+          "age": 43,
           "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Segherarden (12083)",
+            "father": "Radwardo (12082)"
+          }
+        },
+        "20486": {
+          "key": 20486,
+          "name": "Helyana Quistwater",
+          "age": 46,
+          "alive": true,
           "sex": "f",
           "parents": {
-            "mother": "Liedelde (12083)",
-            "father": "Hildebrandus (12082)"
+            "mother": "Segherarden (12083)",
+            "father": "Radwardo (12082)"
           }
         }
       },
@@ -76,10 +89,14 @@
         ],
         "child": {
           "birth": [
-            13563,
-            13806
+            12954,
+            17527,
+            20488
           ]
-        }
+        },
+        "unrelated": [
+          32521
+        ]
       }
     },
     "occupation": {
@@ -92,16 +109,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 1,
+      "skin_color": 8,
       "eye_color": "brown",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
-        "C",
-        "C"
+        "S",
+        "S"
       ],
-      "health": 0.708,
-      "fertility": 0.657,
+      "health": 0.63,
+      "fertility": 0.676,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -113,13 +130,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.708
+            "new_health": 0.63
           },
           "death": false
+        },
+        "1212": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.63
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1182
+          },
           {
             "topic": "new relationship",
             "key": 12084,
@@ -128,79 +157,84 @@
               12083
             ],
             "people names": [
-              "Hildebrandus Bastart",
-              "Liedelde"
+              "Radwardo Quistwater",
+              "Segherarden"
             ],
             "people ages": [
-              23,
-              21
+              20,
+              18
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stCorte gracht.se1.c2",
-              "street": "Corte gracht",
-              "neighborhood": "visbuurt",
-              "unique id": 729
-            }
-          },
-          {
             "topic": "new relationship",
-            "key": 13563,
+            "key": 12954,
             "people": [
               12083,
-              13561
+              12952
             ],
             "people names": [
-              "Liedelde",
-              "Imma"
+              "Segherarden",
+              "Galo"
             ],
             "people ages": [
-              22,
+              18,
               0
             ],
             "label": "parentchild",
             "committed": false
-          }
-        ],
-        "1201": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
           },
           {
-            "topic": "new relationship",
-            "key": 13806,
-            "people": [
-              12083,
-              13804
-            ],
-            "people names": [
-              "Liedelde",
-              "Auesoete Bastart"
-            ],
-            "people ages": [
-              22,
-              0
-            ],
-            "label": "parentchild",
-            "committed": false
+            "topic": "feelings change",
+            "target": 12082,
+            "target name": "Radwardo Quistwater",
+            "state": "solid love",
+            "friendship label": "friend",
+            "relationship": 12084
           }
         ],
         "1202": [
           {
-            "topic": "not enough income",
-            "income": 0.374,
-            "inhabitants": []
+            "topic": "new relationship",
+            "key": 17527,
+            "people": [
+              12083,
+              17525
+            ],
+            "people names": [
+              "Segherarden",
+              "Lennot Quistwater"
+            ],
+            "people ages": [
+              20,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1203": [
+          {
+            "topic": "new relationship",
+            "key": 20488,
+            "people": [
+              12083,
+              20486
+            ],
+            "people names": [
+              "Segherarden",
+              "Helyana Quistwater"
+            ],
+            "people ages": [
+              22,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1204": [
           {
             "key": 12084,
             "topic": "unmarried"
@@ -209,39 +243,108 @@
             "topic": "person died",
             "person": {
               "key": 12082,
-              "name": "Hildebrandus Bastart",
-              "age": 27,
+              "name": "Radwardo Quistwater",
+              "age": 25,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
             },
             "cause": "illness",
-            "label": "spouse"
+            "friendship label": "friend",
+            "label": "spouse",
+            "love state": "solid love"
           }
         ],
-        "1204": [
+        "1205": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 20488
+          },
           {
             "topic": "not enough income",
             "income": 0,
             "inhabitants": []
           }
         ],
-        "1205": [
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "new relationship",
+            "key": 32521,
+            "people": [
+              12083,
+              12692
+            ],
+            "people names": [
+              "Segherarden",
+              "Rabburgis Lancgeroch"
+            ],
+            "people ages": [
+              28,
+              42
+            ],
+            "label": "unrelated",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "starvation"
           }
         ]
       }
     },
     "key": 12083,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stCorte gracht.se1.c2",
-      "street": "Corte gracht",
-      "neighborhood": "visbuurt",
-      "unique id": 729
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stOly straetje.se5.c1",
+      "street": "Oly straetje",
+      "neighborhood": "kampbuurt",
+      "unique id": 491
     },
     "relationship status": {
       "taken": false,
@@ -249,6 +352,12 @@
       "relationships": [
         12084
       ]
-    }
+    },
+    "friends": [
+      12084,
+      20488,
+      32521
+    ],
+    "enemies": []
   }
 }

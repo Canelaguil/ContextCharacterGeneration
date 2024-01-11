@@ -54,18 +54,18 @@ class Friendship():
         if self.label == 'enemy':
             something_chance = 0.01
         elif self.label == 'disliked':
-            something_chance = 0.075
+            something_chance = 0.1
         elif self.label == 'indifferent':
             something_chance = 0.05
         elif self.label == 'friend':
-            something_chance = 0.075
+            something_chance = 0.1
         elif self.label == 'good friend':
             something_chance = 0.01
 
         # # chance of something happening
         # something_chance = self.score * 0.2 + (0.2 ** proximity_score)
         something_happens = True if rand() < something_chance else False
-        report = {'change' : False, 'label change' : False, 'value_change' : 0.}
+        report = {'change' : False, 'label change' : False}
 
         # something happens
         if something_happens:
@@ -87,7 +87,6 @@ class Friendship():
             self.score = fair_mod(self.score, e * posneg, 1.5)
             self.label = self.get_label(self.score)
             report['label change'] = report['old score'] != self.label
-            report['new score'] = self.score
 
             # if label changed, record it in history
             if report['label change']:
@@ -103,9 +102,10 @@ class Friendship():
 
         
         report['label'] = self.label
+        report['score'] = self.score
         return report
     
-    def status(self):
+    def get_status(self):
         return {
             'label' : self.label,
             'score' : self.score,

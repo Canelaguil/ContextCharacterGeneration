@@ -1,33 +1,35 @@
 {
   "11066": {
     "alive": false,
-    "name": "Leanne",
-    "surname": "Butziel",
-    "full name": "Leanne Butziel",
+    "name": "Siburgis",
+    "surname": "Sage",
+    "full name": "Siburgis Sage",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.041,
-      "romantic interest": 0.999,
-      "sex interest": 0.565,
-      "gender expression": 0.106,
+      "sexuality label": "gay",
+      "sexuality": 0.944,
+      "romantic interest": 0.438,
+      "sex interest": 0.665,
+      "gender expression": 0.555,
       "sex": "f"
     },
-    "age": 34,
-    "birth year": 1174,
+    "age": 35,
+    "birth year": 1169,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.816,
-      "nice-nasty": 0.385,
-      "honest-false": 0.903
+      "lawful-chaotic": 0.763,
+      "nice-nasty": 0.682,
+      "honest-false": 0.999,
+      "dream": 0.686,
+      "outgoing": 0.709
     },
     "attitude": {
-      "outgoing": 0.745,
-      "dream": 0.454
+      "dream": 0.686,
+      "outgoing": 0.709
     },
     "homsoc": {
       "means": {
@@ -38,33 +40,44 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.023,
-        "gender expression expression": 0.038
+        "sexuality expression": 0.181,
+        "gender expression expression": 0.366
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "13723": {
-          "key": 13723,
-          "name": "Erkenradis Albertussdochter",
-          "age": 22,
+        "13729": {
+          "key": 13729,
+          "name": "Ermerut",
+          "age": 15,
           "alive": false,
           "sex": "f",
           "parents": {
-            "mother": "Leanne (11066)",
-            "father": "Albertus (11065)"
+            "mother": "Siburgis (11066)",
+            "father": "Erenboede (11065)"
           }
         },
-        "15143": {
-          "key": 15143,
-          "name": "Walramus",
+        "14781": {
+          "key": 14781,
+          "name": "Sophia lucrose",
+          "age": 48,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Siburgis (11066)",
+            "father": "Erenboede (11065)"
+          }
+        },
+        "16694": {
+          "key": 16694,
+          "name": "Wolcout lucrose",
           "age": 47,
-          "alive": false,
+          "alive": true,
           "sex": "m",
           "parents": {
-            "mother": "Leanne (11066)",
-            "father": "Albertus (11065)"
+            "mother": "Siburgis (11066)",
+            "father": "Erenboede (11065)"
           }
         }
       },
@@ -74,32 +87,42 @@
         ],
         "child": {
           "birth": [
-            13725,
-            15145
+            13731,
+            14783,
+            16696
           ]
         }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.137,
+      "all_incomes": [
+        1.025,
+        1.0539999999999998,
+        1.1789999999999998,
+        1.137
+      ],
+      "job": {
+        "lawful": true,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 1,
-      "eye_color": "brown",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "skin_color": 4,
+      "eye_color": "green",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "S",
-        "C"
+        "S"
       ],
-      "health": 0.786,
-      "fertility": 0.866,
+      "health": 0.793,
+      "fertility": 0.782,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -111,21 +134,30 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.786
+            "new_health": 0.793
           },
           "death": false
         },
-        "1207": {
+        "1203": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.786
+            "new_health": 0.793
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1169
+          },
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.025
+          },
           {
             "topic": "new relationship",
             "key": 11067,
@@ -134,47 +166,49 @@
               11066
             ],
             "people names": [
-              "Albertus",
-              "Leanne Butziel"
+              "Erenboede lucrose",
+              "Siburgis Sage"
             ],
             "people ages": [
-              31,
-              26
+              39,
+              31
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stDie Camp.se3.c2",
-              "street": "Die Camp",
-              "neighborhood": "kampbuurt",
-              "unique id": 375
-            }
+            "topic": "new relationship",
+            "key": 13731,
+            "people": [
+              11066,
+              13729
+            ],
+            "people names": [
+              "Siburgis Sage",
+              "Ermerut"
+            ],
+            "people ages": [
+              31,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          },
-          {
             "topic": "new relationship",
-            "key": 13725,
+            "key": 14783,
             "people": [
               11066,
-              13723
+              14781
             ],
             "people names": [
-              "Leanne Butziel",
-              "Erkenradis Albertussdochter"
+              "Siburgis Sage",
+              "Sophia lucrose"
             ],
             "people ages": [
-              27,
+              32,
               0
             ],
             "label": "parentchild",
@@ -184,24 +218,31 @@
         "1202": [
           {
             "topic": "new relationship",
-            "key": 15145,
+            "key": 16696,
             "people": [
               11066,
-              15143
+              16694
             ],
             "people names": [
-              "Leanne Butziel",
-              "Walramus"
+              "Siburgis Sage",
+              "Wolcout lucrose"
             ],
             "people ages": [
-              29,
+              33,
               0
             ],
             "label": "parentchild",
             "committed": false
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 14783
           }
         ],
-        "1207": [
+        "1203": [
           {
             "topic": "death",
             "cause": "illness"
@@ -216,7 +257,7 @@
       "section": "stDie Camp.se3.c2",
       "street": "Die Camp",
       "neighborhood": "kampbuurt",
-      "unique id": 375
+      "unique id": 368
     },
     "relationship status": {
       "taken": true,
@@ -224,6 +265,11 @@
       "relationships": [
         11067
       ]
-    }
+    },
+    "friends": [
+      11067,
+      14783
+    ],
+    "enemies": []
   }
 }

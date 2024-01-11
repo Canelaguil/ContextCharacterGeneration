@@ -1,19 +1,19 @@
 {
   "10475": {
     "alive": false,
-    "name": "Agnes",
-    "surname": "Ledeghe",
-    "full name": "Agnes Ledeghe",
+    "name": "Hille",
+    "surname": "",
+    "full name": "Hille",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.085,
-      "romantic interest": 0.615,
-      "sex interest": 0.761,
-      "gender expression": 0.117,
+      "sexuality label": "bi",
+      "sexuality": 0.662,
+      "romantic interest": 0.458,
+      "sex interest": 0.781,
+      "gender expression": 0.474,
       "sex": "f"
     },
-    "age": 48,
-    "birth year": 1171,
+    "age": 30,
+    "birth year": 1172,
     "sex": "f",
     "faction": "Zealots",
     "income class": [
@@ -21,13 +21,15 @@
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.621,
-      "nice-nasty": 0.135,
-      "honest-false": 0.061
+      "lawful-chaotic": 0.466,
+      "nice-nasty": 0.935,
+      "honest-false": 0.791,
+      "dream": 0.689,
+      "outgoing": 0.623
     },
     "attitude": {
-      "outgoing": 0.249,
-      "dream": 0.356
+      "dream": 0.689,
+      "outgoing": 0.623
     },
     "homsoc": {
       "means": {
@@ -35,22 +37,37 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": [
-          "starving"
-        ]
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.052,
-        "gender expression expression": 0.054
+        "sexuality expression": 0.434,
+        "gender expression expression": 0.305
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13789": {
+          "key": 13789,
+          "name": "Helyana Moer",
+          "age": 49,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Hille (10475)",
+            "father": "Wolfraem (10474)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10476
-        ]
+        ],
+        "child": {
+          "birth": [
+            13791
+          ]
+        }
       }
     },
     "occupation": {
@@ -63,16 +80,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 2,
-      "eye_color": "brown",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "skin_color": 1,
+      "eye_color": "green",
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
       "hair_type": [
         "C",
         "S"
       ],
-      "health": 0.743,
-      "fertility": 0.638,
+      "health": 0.807,
+      "fertility": 0.823,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -84,13 +101,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.743
+            "new_health": 0.807
           },
           "death": false
+        },
+        "1201": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.807
+          },
+          "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1172
+          },
           {
             "topic": "new relationship",
             "key": 10476,
@@ -99,154 +128,39 @@
               10475
             ],
             "people names": [
-              "Breghtgherus Coluen",
-              "Agnes Ledeghe"
+              "Wolfraem Moer",
+              "Hille"
             ],
             "people ages": [
-              39,
-              29
+              44,
+              28
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stMuelen straet.se3.c1",
-              "street": "Muelen straet",
-              "neighborhood": "jorisbuurt",
-              "unique id": 169
-            }
+            "topic": "new relationship",
+            "key": 13791,
+            "people": [
+              10475,
+              13789
+            ],
+            "people names": [
+              "Hille",
+              "Helyana Moer"
+            ],
+            "people ages": [
+              29,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          }
-        ],
-        "1204": [
-          {
-            "key": 10476,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 10474,
-              "name": "Breghtgherus Coluen",
-              "age": 44,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "cause": "illness",
-            "label": "spouse"
-          }
-        ],
-        "1205": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1206": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1207": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1208": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1209": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1210": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1211": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1212": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1213": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1214": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1215": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1215
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1216": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1217": [
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": []
-          }
-        ],
-        "1218": [
-          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "childbirth"
           }
         ]
       }
@@ -258,14 +172,18 @@
       "section": "stMuelen straet.se3.c1",
       "street": "Muelen straet",
       "neighborhood": "jorisbuurt",
-      "unique id": 169
+      "unique id": 167
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
+      "taken": true,
+      "married": true,
       "relationships": [
         10476
       ]
-    }
+    },
+    "friends": [
+      10476
+    ],
+    "enemies": []
   }
 }

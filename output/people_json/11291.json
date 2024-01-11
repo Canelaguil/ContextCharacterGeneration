@@ -1,33 +1,35 @@
 {
   "11291": {
     "alive": false,
-    "name": "Esa",
-    "surname": "Onlost",
-    "full name": "Esa Onlost",
+    "name": "Cofte",
+    "surname": "Mol",
+    "full name": "Cofte Mol",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.112,
-      "romantic interest": 0.793,
-      "sex interest": 0.806,
-      "gender expression": 0.211,
+      "sexuality": 0.043,
+      "romantic interest": 0.862,
+      "sex interest": 0.588,
+      "gender expression": 0.077,
       "sex": "f"
     },
-    "age": 30,
-    "birth year": 1175,
+    "age": 26,
+    "birth year": 1182,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
       0,
       "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.987,
-      "nice-nasty": 0.0,
-      "honest-false": 0.86
+      "lawful-chaotic": 0.0,
+      "nice-nasty": 0.124,
+      "honest-false": 0.982,
+      "dream": 0.317,
+      "outgoing": 0.444
     },
     "attitude": {
-      "outgoing": 0.483,
-      "dream": 0.411
+      "dream": 0.317,
+      "outgoing": 0.444
     },
     "homsoc": {
       "means": {
@@ -35,36 +37,38 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.056,
-        "gender expression expression": 0.152
+        "sexuality expression": 0.03,
+        "gender expression expression": 0.036
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "14272": {
-          "key": 14272,
-          "name": "Paradanus van Otger",
-          "age": 13,
+        "13798": {
+          "key": 13798,
+          "name": "Soeten Cnijf",
+          "age": 49,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Cofte (11291)",
+            "father": "Iordanus (11290)"
+          }
+        },
+        "26555": {
+          "key": 26555,
+          "name": "Valken Cnijf",
+          "age": 14,
           "alive": false,
           "sex": "m",
           "parents": {
-            "mother": "Esa (11291)",
-            "father": "Otger (11290)"
-          }
-        },
-        "15250": {
-          "key": 15250,
-          "name": "Katrin van Otger",
-          "age": 14,
-          "alive": false,
-          "sex": "f",
-          "parents": {
-            "mother": "Esa (11291)",
-            "father": "Otger (11290)"
+            "mother": "Cofte (11291)",
+            "father": "Iordanus (11290)"
           }
         }
       },
@@ -74,10 +78,13 @@
         ],
         "child": {
           "birth": [
-            14274,
-            15252
+            13800,
+            26557
           ]
-        }
+        },
+        "unrelated": [
+          22899
+        ]
       }
     },
     "occupation": {
@@ -91,15 +98,15 @@
     },
     "genetics": {
       "skin_color": 9,
-      "eye_color": "green",
-      "hair_color": "red",
-      "hair_color_code": 3,
+      "eye_color": "blue",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
         "C",
         "C"
       ],
-      "health": 0.821,
-      "fertility": 0.769,
+      "health": 0.57,
+      "fertility": 0.597,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -111,21 +118,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.821
+            "new_health": 0.57
           },
           "death": false
         },
-        "1204": {
+        "1207": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.821
+            "new_health": 0.57
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1182
+          },
           {
             "topic": "new relationship",
             "key": 11292,
@@ -134,67 +145,69 @@
               11291
             ],
             "people names": [
-              "Otger",
-              "Esa Onlost"
+              "Iordanus Cnijf",
+              "Cofte Mol"
             ],
             "people ages": [
-              30,
-              25
+              37,
+              18
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stDie Coninc straet.se3.c0",
-              "street": "Die Coninc straet",
-              "neighborhood": "kampbuurt",
-              "unique id": 455
-            }
-          }
-        ],
-        "1201": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          },
-          {
             "topic": "new relationship",
-            "key": 14274,
+            "key": 13800,
             "people": [
               11291,
-              14272
+              13798
             ],
             "people names": [
-              "Esa Onlost",
-              "Paradanus van Otger"
+              "Cofte Mol",
+              "Soeten Cnijf"
             ],
             "people ages": [
-              27,
+              18,
               0
             ],
             "label": "parentchild",
             "committed": false
           }
         ],
-        "1203": [
+        "1204": [
           {
             "topic": "new relationship",
-            "key": 15252,
+            "key": 22899,
             "people": [
-              11291,
-              15250
+              11450,
+              11291
             ],
             "people names": [
-              "Esa Onlost",
-              "Katrin van Otger"
+              "Godeweris",
+              "Cofte Mol"
             ],
             "people ages": [
-              28,
+              21,
+              23
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 26557,
+            "people": [
+              11291,
+              26555
+            ],
+            "people names": [
+              "Cofte Mol",
+              "Valken Cnijf"
+            ],
+            "people ages": [
+              24,
               0
             ],
             "label": "parentchild",
@@ -203,15 +216,22 @@
           {
             "topic": "update",
             "update": "new friendship label",
-            "relationship label": "parentchild",
+            "relationship label": "unrelated",
             "friendship label": "indifferent",
-            "relationship": 14274
+            "relationship": 22899
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.773,
+            "inhabitants": [
+              13798
+            ]
           }
         ],
-        "1204": [
+        "1207": [
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "childbirth"
           }
         ]
       }
@@ -220,17 +240,21 @@
     "home": {
       "income class": 0,
       "income class label": "working class",
-      "section": "stDie Coninc straet.se3.c0",
+      "section": "stDie Coninc straet.se1.c0",
       "street": "Die Coninc straet",
       "neighborhood": "kampbuurt",
-      "unique id": 455
+      "unique id": 445
     },
     "relationship status": {
-      "taken": true,
+      "taken": false,
       "married": true,
       "relationships": [
         11292
       ]
-    }
+    },
+    "friends": [
+      26557
+    ],
+    "enemies": []
   }
 }

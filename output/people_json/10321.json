@@ -1,70 +1,61 @@
 {
   "10321": {
     "alive": false,
-    "name": "Reuro",
-    "surname": "Scenkel",
-    "full name": "Reuro Scenkel",
+    "name": "Gherung",
+    "surname": "",
+    "full name": "Gherung",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.062,
-      "romantic interest": 0.742,
-      "sex interest": 0.999,
-      "gender expression": 0.234,
+      "sexuality": 0.057,
+      "romantic interest": 0.783,
+      "sex interest": 0.644,
+      "gender expression": 0.043,
       "sex": "m"
     },
-    "age": 45,
+    "age": 42,
     "birth year": 1161,
     "sex": "m",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.503,
-      "nice-nasty": 0.0,
-      "honest-false": 0.255
+      "lawful-chaotic": 0.202,
+      "nice-nasty": 0.544,
+      "honest-false": 0.047,
+      "dream": 0.455,
+      "outgoing": 0.125
     },
     "attitude": {
-      "outgoing": 0.652,
-      "dream": 0.585
+      "dream": 0.455,
+      "outgoing": 0.125
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.038,
-        "gender expression expression": 0.115
+        "sexuality expression": 0.042,
+        "gender expression expression": 0.003
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "14503": {
-          "key": 14503,
-          "name": "Jacob Scenkel",
-          "age": 4,
-          "alive": false,
-          "sex": "m",
-          "parents": {
-            "mother": "Godeweris (10322)",
-            "father": "Reuro (10321)"
-          }
-        },
-        "15336": {
-          "key": 15336,
-          "name": "Agota Scenkel",
-          "age": 18,
+        "13219": {
+          "key": 13219,
+          "name": "Godeweris Gherungsdochter",
+          "age": 14,
           "alive": false,
           "sex": "f",
           "parents": {
-            "mother": "Godeweris (10322)",
-            "father": "Reuro (10321)"
+            "mother": "Mette (10322)",
+            "father": "Gherung (10321)"
           }
         }
       },
@@ -74,8 +65,7 @@
         ],
         "child": {
           "birth": [
-            14504,
-            15337
+            13220
           ]
         }
       }
@@ -86,32 +76,29 @@
         1,
         "lower middle class"
       ],
-      "income": 0.846,
+      "income": 0.37,
       "all_incomes": [
-        0.924,
-        0.85,
-        0.841,
-        0.808,
-        0.808,
-        0.826,
-        0.846
+        1.499,
+        1.225,
+        0.907,
+        0.37
       ],
       "job": {
-        "lawful": true,
-        "honest": true
+        "lawful": false,
+        "honest": false
       }
     },
     "genetics": {
-      "skin_color": 6,
+      "skin_color": 2,
       "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_type": [
         "S",
-        "C"
+        "S"
       ],
-      "health": 0.82,
-      "fertility": 0.811,
+      "health": 0.812,
+      "fertility": 0.923,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -123,15 +110,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.82
+            "new_health": 0.812
           },
           "death": false
         },
-        "1205": {
+        "1202": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.82
+            "new_health": 0.812
           },
           "death": true
         }
@@ -139,9 +126,13 @@
       "events": {
         "1200": [
           {
+            "topic": "birth",
+            "year": 1161
+          },
+          {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.924
+            "income": 1.499
           },
           {
             "topic": "new relationship",
@@ -151,85 +142,59 @@
               10322
             ],
             "people names": [
-              "Reuro Scenkel",
-              "Godeweris Haec"
+              "Gherung",
+              "Mette Stopelkin"
             ],
             "people ages": [
               39,
-              26
+              25
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stHelle voet.se5.c1",
-              "street": "Helle voet",
-              "neighborhood": "jorisbuurt",
-              "unique id": 115
-            }
+            "topic": "new relationship",
+            "key": 13220,
+            "people": [
+              10321,
+              13219
+            ],
+            "people names": [
+              "Gherung",
+              "Godeweris Gherungsdochter"
+            ],
+            "people ages": [
+              39,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 10322,
+            "target name": "Mette Stopelkin",
+            "state": "out of love",
+            "friendship label": "good friend",
+            "relationship": 10323
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
+            "topic": "feelings change",
+            "target": 10322,
+            "target name": "Mette Stopelkin",
+            "state": "infatuation",
+            "friendship label": "good friend",
+            "relationship": 10323
           }
         ],
         "1202": [
           {
-            "topic": "new relationship",
-            "key": 14504,
-            "people": [
-              10321,
-              14503
-            ],
-            "people names": [
-              "Reuro Scenkel",
-              "Jacob Scenkel"
-            ],
-            "people ages": [
-              41,
-              0
-            ],
-            "label": "parentchild",
-            "committed": false
-          }
-        ],
-        "1203": [
-          {
-            "topic": "new relationship",
-            "key": 15337,
-            "people": [
-              10321,
-              15336
-            ],
-            "people names": [
-              "Reuro Scenkel",
-              "Agota Scenkel"
-            ],
-            "people ages": [
-              42,
-              0
-            ],
-            "label": "parentchild",
-            "committed": false
-          }
-        ],
-        "1204": [
-          {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "spouse",
-            "friendship label": "indifferent",
-            "relationship": 10323
-          }
-        ],
-        "1205": [
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.37
+          },
           {
             "topic": "death",
             "cause": "illness"
@@ -252,6 +217,11 @@
       "relationships": [
         10323
       ]
-    }
+    },
+    "friends": [
+      10323,
+      13220
+    ],
+    "enemies": []
   }
 }

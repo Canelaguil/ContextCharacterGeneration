@@ -1,19 +1,19 @@
 {
   "11564": {
     "alive": false,
-    "name": "Marie",
-    "surname": "Mule",
-    "full name": "Marie Mule",
+    "name": "Leanne",
+    "surname": "Vlieghe",
+    "full name": "Leanne Vlieghe",
     "born this way": {
-      "sexuality label": "bi",
-      "sexuality": 0.632,
-      "romantic interest": 0.895,
-      "sex interest": 0.702,
-      "gender expression": 0.25,
+      "sexuality label": "straight",
+      "sexuality": 0.011,
+      "romantic interest": 0.741,
+      "sex interest": 0.614,
+      "gender expression": 0.0,
       "sex": "f"
     },
     "age": 35,
-    "birth year": 1172,
+    "birth year": 1171,
     "sex": "f",
     "faction": "No religion",
     "income class": [
@@ -21,13 +21,15 @@
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.73,
-      "honest-false": 0.999
+      "lawful-chaotic": 0.697,
+      "nice-nasty": 0.158,
+      "honest-false": 0.329,
+      "dream": 0.2,
+      "outgoing": 0.549
     },
     "attitude": {
-      "outgoing": 0.623,
-      "dream": 0.56
+      "dream": 0.2,
+      "outgoing": 0.549
     },
     "homsoc": {
       "means": {
@@ -38,33 +40,44 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.395,
-        "gender expression expression": 0.107
+        "sexuality expression": 0.005,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "14712": {
-          "key": 14712,
-          "name": "Everdey Vlieghe",
+        "14890": {
+          "key": 14890,
+          "name": "Helyana Voit",
+          "age": 20,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Leanne (11564)",
+            "father": "Kornillis (11563)"
+          }
+        },
+        "18922": {
+          "key": 18922,
+          "name": "Eylwardo Voit",
           "age": 30,
           "alive": false,
           "sex": "m",
           "parents": {
-            "mother": "Marie (11564)",
-            "father": "Froumoldus (11563)"
+            "mother": "Leanne (11564)",
+            "father": "Kornillis (11563)"
           }
         },
-        "17428": {
-          "key": 17428,
-          "name": "Margareta Vlieghe",
-          "age": 55,
+        "21872": {
+          "key": 21872,
+          "name": "Otger Voit",
+          "age": 14,
           "alive": false,
-          "sex": "f",
+          "sex": "m",
           "parents": {
-            "mother": "Marie (11564)",
-            "father": "Froumoldus (11563)"
+            "mother": "Leanne (11564)",
+            "father": "Kornillis (11563)"
           }
         }
       },
@@ -74,8 +87,9 @@
         ],
         "child": {
           "birth": [
-            14714,
-            17430
+            14892,
+            18924,
+            21874
           ]
         }
       }
@@ -90,16 +104,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 1,
-      "eye_color": "brown",
+      "skin_color": 7,
+      "eye_color": "blue",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
-        "C",
+        "S",
         "S"
       ],
-      "health": 0.732,
-      "fertility": 0.786,
+      "health": 0.727,
+      "fertility": 0.661,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -111,21 +125,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.732
+            "new_health": 0.727
           },
           "death": false
         },
-        "1206": {
+        "1205": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.732
+            "new_health": 0.727
           },
           "death": true
         }
       },
       "events": {
         "1200": [
+          {
+            "topic": "birth",
+            "year": 1171
+          },
           {
             "topic": "new relationship",
             "key": 11565,
@@ -134,46 +152,35 @@
               11564
             ],
             "people names": [
-              "Froumoldus Vlieghe",
-              "Marie Mule"
+              "Kornillis Voit",
+              "Leanne Vlieghe"
             ],
             "people ages": [
-              29,
-              28
+              48,
+              29
             ],
             "label": "spouse",
             "committed": true
           },
           {
-            "topic": "new home",
-            "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stBreestraat.se1.c2",
-              "street": "Breestraat",
-              "neighborhood": "olvbuurt",
-              "unique id": 551
-            }
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "indifferent",
+            "relationship": 11565
           }
         ],
         "1201": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1201
-          }
-        ],
-        "1202": [
-          {
             "topic": "new relationship",
-            "key": 14714,
+            "key": 14892,
             "people": [
               11564,
-              14712
+              14890
             ],
             "people names": [
-              "Marie Mule",
-              "Everdey Vlieghe"
+              "Leanne Vlieghe",
+              "Helyana Voit"
             ],
             "people ages": [
               30,
@@ -183,26 +190,37 @@
             "committed": false
           }
         ],
-        "1204": [
-          {
-            "topic": "feelings change",
-            "target": 11563,
-            "target name": "Froumoldus Vlieghe",
-            "state": "out of love",
-            "relationship": 11565
-          }
-        ],
-        "1205": [
+        "1203": [
           {
             "topic": "new relationship",
-            "key": 17430,
+            "key": 18924,
             "people": [
               11564,
-              17428
+              18922
             ],
             "people names": [
-              "Marie Mule",
-              "Margareta Vlieghe"
+              "Leanne Vlieghe",
+              "Eylwardo Voit"
+            ],
+            "people ages": [
+              32,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 21874,
+            "people": [
+              11564,
+              21872
+            ],
+            "people names": [
+              "Leanne Vlieghe",
+              "Otger Voit"
             ],
             "people ages": [
               34,
@@ -210,9 +228,28 @@
             ],
             "label": "parentchild",
             "committed": false
+          },
+          {
+            "key": 11565,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11563,
+              "name": "Kornillis Voit",
+              "age": 53,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "friendship label": "indifferent",
+            "label": "spouse",
+            "love state": "loveless"
           }
         ],
-        "1206": [
+        "1205": [
           {
             "topic": "death",
             "cause": "illness"
@@ -224,17 +261,22 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stBreestraat.se1.c2",
-      "street": "Breestraat",
-      "neighborhood": "olvbuurt",
-      "unique id": 551
+      "section": "stDavids hof.se1.c2",
+      "street": "Davids hof",
+      "neighborhood": "jorisbuurt",
+      "unique id": 177
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         11565
       ]
-    }
+    },
+    "friends": [
+      14892,
+      18924
+    ],
+    "enemies": []
   }
 }

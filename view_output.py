@@ -6,8 +6,8 @@ import json
 if __name__ == '__main__':
     directory = 'output/people_json/'
     print("Welcome! Use this tool to quickly parse biographies.")
-    print("Enter 'd' at any time to switch to the descriptive mode.")
-    print("Enter 'r' at any time to get a random (living) person.")
+    print("Enter 'd' at any time to switch between descriptive and json mode for people.")
+    print("Enter 'r' at any time to get a random (living) person from the selected directory.")
     print("Enter 's' to switch between the people and relationship json directories.")
     print("Enter 'e' at any time to leave.")
     print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
@@ -16,7 +16,10 @@ if __name__ == '__main__':
         print("-------------------------------------------------------------")
         inp = inp.strip()
         if inp == 'd':
-            directory = 'output/people_description/'
+            if directory == 'output/people_description/':
+                directory = 'output/people_json/'
+            else:
+                directory = 'output/people_description/'
             print(f'Directory switched to {directory}')
         elif inp == 'e':
             sys.exit()
