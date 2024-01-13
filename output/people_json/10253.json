@@ -1,35 +1,35 @@
 {
   "10253": {
     "alive": false,
-    "name": "Remsindis",
-    "surname": "Rike",
-    "full name": "Remsindis Rike",
+    "name": "Lutghardis",
+    "surname": "",
+    "full name": "Lutghardis",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.07,
-      "romantic interest": 0.576,
-      "sex interest": 0.681,
-      "gender expression": 0.093,
+      "sexuality": 0.0,
+      "romantic interest": 0.854,
+      "sex interest": 0.728,
+      "gender expression": 0.211,
       "sex": "f"
     },
-    "age": 47,
-    "birth year": 1155,
+    "age": 54,
+    "birth year": 1159,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "No religion",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.281,
-      "nice-nasty": 0.933,
-      "honest-false": 0.241,
-      "dream": 0.76,
-      "outgoing": 0.37
+      "lawful-chaotic": 0.0,
+      "nice-nasty": 0.999,
+      "honest-false": 0.572,
+      "dream": 0.448,
+      "outgoing": 0.485
     },
     "attitude": {
-      "dream": 0.76,
-      "outgoing": 0.37
+      "dream": 0.448,
+      "outgoing": 0.485
     },
     "homsoc": {
       "means": {
@@ -37,20 +37,39 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.035,
-        "gender expression expression": 0.092
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.056
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "25864": {
+          "key": 25864,
+          "name": "Hildeburgis",
+          "age": 43,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Lutghardis (10253)",
+            "father": "Werenboud (10252)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10254
-        ]
+        ],
+        "child": {
+          "birth": [
+            25866
+          ]
+        }
       }
     },
     "occupation": {
@@ -63,16 +82,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 8,
+      "skin_color": 0,
       "eye_color": "brown",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
         "C",
-        "S"
+        "C"
       ],
-      "health": 0.683,
-      "fertility": 0.719,
+      "health": 0.08,
+      "fertility": 0.761,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -84,15 +103,31 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.683
+            "new_health": 0.748
           },
           "death": false
         },
-        "1201": {
+        "1210": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.683
+            "change": true,
+            "value_change": -0.141,
+            "new_health": 0.607
+          },
+          "death": false
+        },
+        "1211": {
+          "health": {
+            "change": true,
+            "value_change": -0.279,
+            "new_health": 0.328
+          },
+          "death": false
+        },
+        "1212": {
+          "health": {
+            "change": true,
+            "value_change": -0.248,
+            "new_health": 0.08
           },
           "death": true
         }
@@ -101,7 +136,7 @@
         "1200": [
           {
             "topic": "birth",
-            "year": 1155
+            "year": 1159
           },
           {
             "topic": "new relationship",
@@ -111,29 +146,156 @@
               10253
             ],
             "people names": [
-              "Gherbrandus",
-              "Remsindis Rike"
+              "Werenboud",
+              "Lutghardis"
             ],
             "people ages": [
-              48,
-              45
+              43,
+              41
             ],
             "label": "spouse",
             "committed": true
+          }
+        ],
+        "1202": [
+          {
+            "topic": "not enough income",
+            "income": 0.213,
+            "inhabitants": []
+          }
+        ],
+        "1203": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "indifferent",
+            "relationship": 10254
           },
+          {
+            "topic": "not enough income",
+            "income": 0.068,
+            "inhabitants": []
+          }
+        ],
+        "1204": [
+          {
+            "topic": "not enough income",
+            "income": 0.129,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "not enough income",
+            "income": 0.002,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 25866,
+            "people": [
+              10253,
+              25864
+            ],
+            "people names": [
+              "Lutghardis",
+              "Hildeburgis"
+            ],
+            "people ages": [
+              48,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "event",
+            "event": "faction upheaval",
+            "faction": "No religion",
+            "year": 1208
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.04,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
           {
             "topic": "feelings change",
             "target": 10252,
-            "target name": "Gherbrandus",
-            "state": "solid love",
-            "friendship label": "friend",
+            "target name": "Werenboud",
+            "state": "infatuation",
+            "friendship label": "indifferent",
             "relationship": 10254
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
           }
         ],
-        "1201": [
+        "1210": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "indifferent",
+            "relationship": 10254
+          },
+          {
+            "key": 10254,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10252,
+              "name": "Werenboud",
+              "age": 54,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "friendship label": "indifferent",
+            "label": "spouse",
+            "love state": "out of love"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.184,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "starvation"
           }
         ]
       }
@@ -148,15 +310,13 @@
       "unique id": 89
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         10254
       ]
     },
-    "friends": [
-      10254
-    ],
+    "friends": [],
     "enemies": []
   }
 }

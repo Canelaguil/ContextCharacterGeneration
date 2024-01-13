@@ -1,35 +1,35 @@
 {
   "12412": {
     "alive": false,
-    "name": "Winrechus",
-    "surname": "Hyseriin",
-    "full name": "Winrechus Hyseriin",
+    "name": "Wolbrand",
+    "surname": "Tuc",
+    "full name": "Wolbrand Tuc",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.149,
-      "romantic interest": 0.472,
-      "sex interest": 0.843,
-      "gender expression": 0.043,
+      "sexuality": 0.099,
+      "romantic interest": 0.769,
+      "sex interest": 0.639,
+      "gender expression": 0.192,
       "sex": "m"
     },
-    "age": 49,
-    "birth year": 1152,
+    "age": 33,
+    "birth year": 1171,
     "sex": "m",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
       4,
       "nobility"
     ],
     "personality": {
-      "lawful-chaotic": 0.28,
-      "nice-nasty": 0.963,
-      "honest-false": 0.144,
-      "dream": 0.24,
-      "outgoing": 0.727
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.18,
+      "honest-false": 0.598,
+      "dream": 0.473,
+      "outgoing": 0.687
     },
     "attitude": {
-      "dream": 0.24,
-      "outgoing": 0.727
+      "dream": 0.473,
+      "outgoing": 0.687
     },
     "homsoc": {
       "means": {
@@ -40,14 +40,39 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.108,
-        "gender expression expression": 0.013
+        "sexuality expression": 0.061,
+        "gender expression expression": 0.077
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
-      "relationship keys": {}
+      "children": {
+        "14985": {
+          "key": 14985,
+          "name": "Zuanelt Tuc",
+          "age": 4,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Gisele (12413)",
+            "father": "Wolbrand (12412)"
+          }
+        }
+      },
+      "relationship keys": {
+        "spouse": [
+          12414
+        ],
+        "child": {
+          "birth": [
+            14986
+          ]
+        },
+        "unrelated": [
+          16457,
+          18523
+        ]
+      }
     },
     "occupation": {
       "has job": true,
@@ -55,27 +80,30 @@
         4,
         "nobility"
       ],
-      "income": 0.994,
+      "income": 1.2530000000000001,
       "all_incomes": [
-        1.058,
-        0.994
+        0.95,
+        1.0,
+        1.2120000000000002,
+        1.2550000000000001,
+        1.2530000000000001
       ],
       "job": {
-        "lawful": false,
-        "honest": false
+        "lawful": true,
+        "honest": true
       }
     },
     "genetics": {
-      "skin_color": 3,
+      "skin_color": 0,
       "eye_color": "brown",
       "hair_color": "strawberry blonde",
       "hair_color_code": 5,
       "hair_type": [
-        "C",
-        "C"
+        "S",
+        "S"
       ],
-      "health": 0.783,
-      "fertility": 0.753,
+      "health": 0.827,
+      "fertility": 0.844,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -87,7 +115,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.783
+            "new_health": 0.827
+          },
+          "death": false
+        },
+        "1203": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.827
           },
           "death": true
         }
@@ -96,13 +132,110 @@
         "1200": [
           {
             "topic": "birth",
-            "year": 1152
+            "year": 1171
           },
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.058
+            "income": 0.95
           },
+          {
+            "topic": "new relationship",
+            "key": 12414,
+            "people": [
+              12412,
+              12413
+            ],
+            "people names": [
+              "Wolbrand Tuc",
+              "Gisele Zieken"
+            ],
+            "people ages": [
+              29,
+              17
+            ],
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 14986,
+            "people": [
+              12412,
+              14985
+            ],
+            "people names": [
+              "Wolbrand Tuc",
+              "Zuanelt Tuc"
+            ],
+            "people ages": [
+              31,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "new relationship",
+            "key": 16457,
+            "people": [
+              12412,
+              10796
+            ],
+            "people names": [
+              "Wolbrand Tuc",
+              "Alene Maerke"
+            ],
+            "people ages": [
+              31,
+              25
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1202": [
+          {
+            "key": 12414,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12413,
+              "name": "Gisele Zieken",
+              "age": 20,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "friendship label": "friend",
+            "label": "spouse",
+            "love state": "loveless"
+          },
+          {
+            "topic": "new relationship",
+            "key": 18523,
+            "people": [
+              12251,
+              12412
+            ],
+            "people names": [
+              "Lisebette Bove",
+              "Wolbrand Tuc"
+            ],
+            "people ages": [
+              27,
+              32
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1203": [
           {
             "topic": "death",
             "cause": "illness"
@@ -117,14 +250,20 @@
       "section": "stOp Havick1.se1.c4",
       "street": "Op Havick1",
       "neighborhood": "cingelnoord",
-      "unique id": 842
+      "unique id": 841
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
-      "relationships": []
+      "taken": false,
+      "married": false,
+      "relationships": [
+        12414
+      ]
     },
-    "friends": [],
+    "friends": [
+      12414,
+      16457,
+      18523
+    ],
     "enemies": []
   }
 }

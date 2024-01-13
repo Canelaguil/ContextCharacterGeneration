@@ -1,35 +1,35 @@
 {
   "11161": {
     "alive": false,
-    "name": "Hubrecht",
-    "surname": "Hoeghen",
-    "full name": "Hubrecht Hoeghen",
+    "name": "Jurre",
+    "surname": "",
+    "full name": "Jurre",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.03,
-      "romantic interest": 0.84,
-      "sex interest": 0.943,
+      "sexuality": 0.05,
+      "romantic interest": 0.396,
+      "sex interest": 0.42,
       "gender expression": 0.0,
       "sex": "m"
     },
-    "age": 38,
-    "birth year": 1163,
+    "age": 34,
+    "birth year": 1173,
     "sex": "m",
-    "faction": "Dogmatists",
+    "faction": "Zealots",
     "income class": [
-      2,
-      "middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.128,
-      "nice-nasty": 0.826,
-      "honest-false": 0.929,
-      "dream": 0.422,
-      "outgoing": 0.661
+      "lawful-chaotic": 0.567,
+      "nice-nasty": 0.852,
+      "honest-false": 0.476,
+      "dream": 0.874,
+      "outgoing": 0.704
     },
     "attitude": {
-      "dream": 0.422,
-      "outgoing": 0.661
+      "dream": 0.874,
+      "outgoing": 0.704
     },
     "homsoc": {
       "means": {
@@ -37,36 +37,68 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.025,
+        "sexuality expression": 0.037,
         "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
-      "relationship keys": {}
+      "children": {
+        "18842": {
+          "key": 18842,
+          "name": "Imsoete Jurresdochter",
+          "age": 26,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Zuanelt (11162)",
+            "father": "Jurre (11161)"
+          }
+        }
+      },
+      "relationship keys": {
+        "spouse": [
+          11163
+        ],
+        "child": {
+          "birth": [
+            18843
+          ]
+        },
+        "unrelated": [
+          22806
+        ]
+      }
     },
     "occupation": {
       "has job": true,
       "income class": [
-        2,
-        "middle class"
+        1,
+        "lower middle class"
       ],
-      "income": 0.993,
+      "income": 0.86,
       "all_incomes": [
-        0.995,
-        0.993
+        0.716,
+        0.516,
+        0.404,
+        0.217,
+        0.414,
+        0.647,
+        0.901,
+        0.86
       ],
       "job": {
-        "lawful": false,
-        "honest": true
+        "lawful": true,
+        "honest": false
       }
     },
     "genetics": {
-      "skin_color": 9,
+      "skin_color": 1,
       "eye_color": "brown",
       "hair_color": "dark brown",
       "hair_color_code": 1,
@@ -74,8 +106,8 @@
         "C",
         "S"
       ],
-      "health": 0.576,
-      "fertility": 0.611,
+      "health": 0.695,
+      "fertility": 0.601,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -87,7 +119,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.576
+            "new_health": 0.695
+          },
+          "death": false
+        },
+        "1206": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.695
           },
           "death": true
         }
@@ -96,13 +136,105 @@
         "1200": [
           {
             "topic": "birth",
-            "year": 1163
+            "year": 1173
           },
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.995
+            "income": 0.716
           },
+          {
+            "topic": "new relationship",
+            "key": 11163,
+            "people": [
+              11161,
+              11162
+            ],
+            "people names": [
+              "Jurre",
+              "Zuanelt Coc"
+            ],
+            "people ages": [
+              27,
+              25
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "feelings change",
+            "target": 11162,
+            "target name": "Zuanelt Coc",
+            "state": "solid love",
+            "friendship label": "friend",
+            "relationship": 11163
+          }
+        ],
+        "1201": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.404
+          }
+        ],
+        "1202": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.217
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.217,
+            "inhabitants": []
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 18843,
+            "people": [
+              11161,
+              18842
+            ],
+            "people names": [
+              "Jurre",
+              "Imsoete Jurresdochter"
+            ],
+            "people ages": [
+              30,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.414,
+            "inhabitants": []
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 22806,
+            "people": [
+              11161,
+              11680
+            ],
+            "people names": [
+              "Jurre",
+              "Sanse Maerke"
+            ],
+            "people ages": [
+              32,
+              45
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1206": [
           {
             "topic": "death",
             "cause": "illness"
@@ -112,19 +244,24 @@
     },
     "key": 11161,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stDie Camp.se7.c2",
-      "street": "Die Camp",
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stSt. Ians straet.se1.c1",
+      "street": "St. Ians straet",
       "neighborhood": "kampbuurt",
-      "unique id": 402
+      "unique id": 409
     },
     "relationship status": {
-      "taken": true,
+      "taken": false,
       "married": true,
-      "relationships": []
+      "relationships": [
+        11163
+      ]
     },
-    "friends": [],
+    "friends": [
+      11163,
+      22806
+    ],
     "enemies": []
   }
 }

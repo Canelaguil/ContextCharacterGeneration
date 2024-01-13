@@ -1,19 +1,19 @@
 {
   "10414": {
     "alive": false,
-    "name": "Radewijns",
-    "surname": "",
-    "full name": "Radewijns",
+    "name": "Havix",
+    "surname": "Vinke",
+    "full name": "Havix Vinke",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.019,
-      "romantic interest": 0.594,
-      "sex interest": 0.537,
-      "gender expression": 0.049,
+      "sexuality label": "bi",
+      "sexuality": 0.67,
+      "romantic interest": 0.679,
+      "sex interest": 0.602,
+      "gender expression": 0.314,
       "sex": "m"
     },
-    "age": 26,
-    "birth year": 1175,
+    "age": 32,
+    "birth year": 1176,
     "sex": "m",
     "faction": "Dogmatists",
     "income class": [
@@ -21,33 +21,72 @@
       "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.244,
-      "nice-nasty": 0.0,
-      "honest-false": 0.479,
-      "dream": 0.402,
-      "outgoing": 0.284
+      "lawful-chaotic": 0.389,
+      "nice-nasty": 0.642,
+      "honest-false": 0.979,
+      "dream": 0.215,
+      "outgoing": 0.583
     },
     "attitude": {
-      "dream": 0.402,
-      "outgoing": 0.284
+      "dream": 0.215,
+      "outgoing": 0.583
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.008,
-        "gender expression expression": 0.048
+        "sexuality expression": 0.455,
+        "gender expression expression": 0.313
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
-      "relationship keys": {}
+      "children": {
+        "14841": {
+          "key": 14841,
+          "name": "Clara Vinke",
+          "age": 1,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Menoldis (10415)",
+            "father": "Havix (10414)"
+          }
+        },
+        "18325": {
+          "key": 18325,
+          "name": "Marie Vinke",
+          "age": 4,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Menoldis (10415)",
+            "father": "Havix (10414)"
+          }
+        }
+      },
+      "relationship keys": {
+        "spouse": [
+          10416
+        ],
+        "child": {
+          "birth": [
+            14842,
+            18326
+          ]
+        },
+        "unrelated": [
+          16481,
+          18578
+        ]
+      }
     },
     "occupation": {
       "has job": true,
@@ -55,27 +94,34 @@
         0,
         "working class"
       ],
-      "income": 0.887,
+      "income": 0.354,
       "all_incomes": [
-        1.304,
-        0.887
+        1.036,
+        1.048,
+        0.761,
+        0.789,
+        0.621,
+        0.545,
+        0.346,
+        0.262,
+        0.354
       ],
       "job": {
         "lawful": false,
-        "honest": false
+        "honest": true
       }
     },
     "genetics": {
-      "skin_color": 7,
-      "eye_color": "green",
+      "skin_color": 9,
+      "eye_color": "blue",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
-        "C",
+        "S",
         "S"
       ],
-      "health": 0.661,
-      "fertility": 0.701,
+      "health": 0.675,
+      "fertility": 0.731,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -87,7 +133,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.661
+            "new_health": 0.675
+          },
+          "death": false
+        },
+        "1207": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.675
           },
           "death": true
         }
@@ -96,16 +150,216 @@
         "1200": [
           {
             "topic": "birth",
-            "year": 1175
+            "year": 1176
           },
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.304
+            "income": 1.036
+          },
+          {
+            "topic": "new relationship",
+            "key": 10416,
+            "people": [
+              10414,
+              10415
+            ],
+            "people names": [
+              "Havix Vinke",
+              "Menoldis Blauoets"
+            ],
+            "people ages": [
+              24,
+              22
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "feelings change",
+            "target": 10415,
+            "target name": "Menoldis Blauoets",
+            "state": "solid love",
+            "friendship label": "friend",
+            "relationship": 10416
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 14842,
+            "people": [
+              10414,
+              14841
+            ],
+            "people names": [
+              "Havix Vinke",
+              "Clara Vinke"
+            ],
+            "people ages": [
+              25,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "new relationship",
+            "key": 16481,
+            "people": [
+              10414,
+              12338
+            ],
+            "people names": [
+              "Havix Vinke",
+              "Sara Oge"
+            ],
+            "people ages": [
+              26,
+              39
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1202": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 14842
+          },
+          {
+            "topic": "new relationship",
+            "key": 18326,
+            "people": [
+              10414,
+              18325
+            ],
+            "people names": [
+              "Havix Vinke",
+              "Marie Vinke"
+            ],
+            "people ages": [
+              27,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "new relationship",
+            "key": 18578,
+            "people": [
+              11864,
+              10414
+            ],
+            "people names": [
+              "Gloria Croic",
+              "Havix Vinke"
+            ],
+            "people ages": [
+              43,
+              27
+            ],
+            "label": "unrelated",
+            "committed": false
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 14841,
+              "name": "Clara Vinke",
+              "age": 1,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Menoldis (10415)",
+                "father": "Havix (10414)"
+              }
+            },
+            "cause": "childbirth",
+            "friendship label": "indifferent",
+            "label": "child"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.621
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.621,
+            "inhabitants": []
+          }
+        ],
+        "1204": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "friend",
+            "relationship": 16481
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.545,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.346
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.346,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.262
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 18325,
+              "name": "Marie Vinke",
+              "age": 4,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Menoldis (10415)",
+                "father": "Havix (10414)"
+              }
+            },
+            "cause": "starvation",
+            "friendship label": "good friend",
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.262,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.354
           },
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "starvation"
           }
         ]
       }
@@ -114,17 +368,23 @@
     "home": {
       "income class": 0,
       "income class label": "working class",
-      "section": "stSt. Joris straet.se3.c0",
+      "section": "stSt. Joris straet.se1.c0",
       "street": "St. Joris straet",
       "neighborhood": "jorisbuurt",
-      "unique id": 147
+      "unique id": 145
     },
     "relationship status": {
-      "taken": true,
+      "taken": false,
       "married": true,
-      "relationships": []
+      "relationships": [
+        10416
+      ]
     },
-    "friends": [],
+    "friends": [
+      10416,
+      18326,
+      16481
+    ],
     "enemies": []
   }
 }

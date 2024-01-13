@@ -1,18 +1,18 @@
 {
   "12142": {
     "alive": false,
-    "name": "Ase",
-    "surname": "Vrode",
-    "full name": "Ase Vrode",
+    "name": "Tiuri",
+    "surname": "Cornuit",
+    "full name": "Tiuri Cornuit",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.032,
-      "romantic interest": 0.712,
-      "sex interest": 0.636,
-      "gender expression": 0.0,
+      "sexuality": 0.077,
+      "romantic interest": 0.735,
+      "sex interest": 0.545,
+      "gender expression": 0.086,
       "sex": "m"
     },
-    "age": 43,
+    "age": 53,
     "birth year": 1158,
     "sex": "m",
     "faction": "Zealots",
@@ -21,15 +21,15 @@
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.674,
-      "nice-nasty": 0.0,
-      "honest-false": 0.675,
-      "dream": 0.444,
-      "outgoing": 0.541
+      "lawful-chaotic": 0.63,
+      "nice-nasty": 0.553,
+      "honest-false": 0.94,
+      "dream": 0.089,
+      "outgoing": 0.354
     },
     "attitude": {
-      "dream": 0.444,
-      "outgoing": 0.541
+      "dream": 0.089,
+      "outgoing": 0.354
     },
     "homsoc": {
       "means": {
@@ -40,14 +40,18 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.019,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.066,
+        "gender expression expression": 0.068
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {},
-      "relationship keys": {}
+      "relationship keys": {
+        "spouse": [
+          12144
+        ]
+      }
     },
     "occupation": {
       "has job": true,
@@ -55,27 +59,37 @@
         2,
         "middle class"
       ],
-      "income": 1.095,
+      "income": 1.2029999999999998,
       "all_incomes": [
-        1.05,
-        1.095
+        1.027,
+        1.041,
+        1.087,
+        1.0499999999999998,
+        1.382,
+        1.3439999999999999,
+        1.4649999999999999,
+        1.454,
+        1.398,
+        1.3039999999999998,
+        1.398,
+        1.2029999999999998
       ],
       "job": {
-        "lawful": true,
+        "lawful": false,
         "honest": true
       }
     },
     "genetics": {
-      "skin_color": 2,
+      "skin_color": 0,
       "eye_color": "brown",
       "hair_color": "strawberry blonde",
       "hair_color_code": 5,
       "hair_type": [
         "S",
-        "S"
+        "C"
       ],
-      "health": 0.711,
-      "fertility": 0.76,
+      "health": 0.0,
+      "fertility": 0.551,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -87,7 +101,31 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.711
+            "new_health": 0.629
+          },
+          "death": false
+        },
+        "1208": {
+          "health": {
+            "change": true,
+            "value_change": -0.318,
+            "new_health": 0.311
+          },
+          "death": false
+        },
+        "1209": {
+          "health": {
+            "change": true,
+            "value_change": -0.224,
+            "new_health": 0.087
+          },
+          "death": false
+        },
+        "1210": {
+          "health": {
+            "change": true,
+            "value_change": -0.087,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -101,11 +139,56 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.05
+            "income": 1.027
           },
           {
+            "topic": "new relationship",
+            "key": 12144,
+            "people": [
+              12142,
+              12143
+            ],
+            "people names": [
+              "Tiuri Cornuit",
+              "Meynseth"
+            ],
+            "people ages": [
+              42,
+              34
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "feelings change",
+            "target": 12143,
+            "target name": "Meynseth",
+            "state": "solid love",
+            "friendship label": "friend",
+            "relationship": 12144
+          }
+        ],
+        "1205": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "friend",
+            "relationship": 12144
+          }
+        ],
+        "1208": [
+          {
+            "topic": "event",
+            "event": "faction upheaval",
+            "faction": "No religion",
+            "year": 1208
+          }
+        ],
+        "1210": [
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "sickness"
           }
         ]
       }
@@ -122,9 +205,13 @@
     "relationship status": {
       "taken": true,
       "married": true,
-      "relationships": []
+      "relationships": [
+        12144
+      ]
     },
-    "friends": [],
+    "friends": [
+      12144
+    ],
     "enemies": []
   }
 }

@@ -1,19 +1,19 @@
 {
   "11023": {
     "alive": false,
-    "name": "Wissen",
+    "name": "Ever",
     "surname": "",
-    "full name": "Wissen",
+    "full name": "Ever",
     "born this way": {
-      "sexuality label": "bi",
-      "sexuality": 0.636,
-      "romantic interest": 0.715,
-      "sex interest": 0.715,
-      "gender expression": 0.445,
+      "sexuality label": "straight",
+      "sexuality": 0.122,
+      "romantic interest": 0.878,
+      "sex interest": 0.742,
+      "gender expression": 0.031,
       "sex": "m"
     },
-    "age": 53,
-    "birth year": 1158,
+    "age": 25,
+    "birth year": 1178,
     "sex": "m",
     "faction": "Dogmatists",
     "income class": [
@@ -21,15 +21,15 @@
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.749,
-      "nice-nasty": 0.616,
-      "honest-false": 0.688,
-      "dream": 0.466,
-      "outgoing": 0.6
+      "lawful-chaotic": 0.592,
+      "nice-nasty": 0.495,
+      "honest-false": 0.478,
+      "dream": 0.473,
+      "outgoing": 0.713
     },
     "attitude": {
-      "dream": 0.466,
-      "outgoing": 0.6
+      "dream": 0.473,
+      "outgoing": 0.713
     },
     "homsoc": {
       "means": {
@@ -40,21 +40,34 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.392,
-        "gender expression expression": 0.065
+        "sexuality expression": 0.069,
+        "gender expression expression": 0.014
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "15358": {
+          "key": 15358,
+          "name": "Woubbrecht",
+          "age": 48,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": "Machtilden (11024)",
+            "father": "Ever (11023)"
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11025
         ],
-        "unrelated": [
-          14557,
-          29178
-        ]
+        "child": {
+          "birth": [
+            15359
+          ]
+        }
       }
     },
     "occupation": {
@@ -63,20 +76,12 @@
         2,
         "middle class"
       ],
-      "income": 1.466,
+      "income": 1.0499999999999998,
       "all_incomes": [
-        0.925,
-        0.991,
-        0.995,
-        1.003,
-        0.9480000000000001,
-        0.791,
-        0.774,
-        0.8200000000000001,
-        0.786,
-        0.767,
-        1.0679999999999998,
-        1.466
+        1.268,
+        1.0979999999999999,
+        0.875,
+        1.0499999999999998
       ],
       "job": {
         "lawful": true,
@@ -84,16 +89,16 @@
       }
     },
     "genetics": {
-      "skin_color": 0,
+      "skin_color": 5,
       "eye_color": "brown",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "S",
         "S"
       ],
-      "health": 0.0,
-      "fertility": 0.633,
+      "health": 0.313,
+      "fertility": 0.562,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -103,33 +108,25 @@
       "health": {
         "1200": {
           "health": {
+            "change": true,
+            "value_change": -0.264,
+            "new_health": 0.313
+          },
+          "death": false
+        },
+        "1201": {
+          "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.735
+            "new_health": 0.313
           },
           "death": false
         },
-        "1208": {
+        "1202": {
           "health": {
-            "change": true,
-            "value_change": -0.229,
-            "new_health": 0.506
-          },
-          "death": false
-        },
-        "1209": {
-          "health": {
-            "change": true,
-            "value_change": -0.378,
-            "new_health": 0.128
-          },
-          "death": false
-        },
-        "1210": {
-          "health": {
-            "change": true,
-            "value_change": -0.128,
-            "new_health": 0.0
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.313
           },
           "death": true
         }
@@ -138,12 +135,12 @@
         "1200": [
           {
             "topic": "birth",
-            "year": 1158
+            "year": 1178
           },
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.925
+            "income": 1.268
           },
           {
             "topic": "new relationship",
@@ -153,12 +150,12 @@
               11024
             ],
             "people names": [
-              "Wissen",
-              "Aleydis Bein"
+              "Ever",
+              "Machtilden"
             ],
             "people ages": [
-              42,
-              41
+              22,
+              19
             ],
             "label": "spouse",
             "committed": true
@@ -169,23 +166,25 @@
             "relationship label": "spouse",
             "friendship label": "indifferent",
             "relationship": 11025
-          },
+          }
+        ],
+        "1201": [
           {
             "topic": "new relationship",
-            "key": 14557,
+            "key": 15359,
             "people": [
-              10013,
-              11023
+              11023,
+              15358
             ],
             "people names": [
-              "Marie",
-              "Wissen"
+              "Ever",
+              "Woubbrecht"
             ],
             "people ages": [
-              32,
-              43
+              23,
+              0
             ],
-            "label": "unrelated",
+            "label": "parentchild",
             "committed": false
           }
         ],
@@ -193,86 +192,11 @@
           {
             "topic": "job notice",
             "notice": "comfortable earnings",
-            "income": 1.003
-          }
-        ],
-        "1204": [
-          {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "spouse",
-            "friendship label": "disliked",
-            "relationship": 11025
-          }
-        ],
-        "1205": [
-          {
-            "topic": "feelings change",
-            "target": 11024,
-            "target name": "Aleydis Bein",
-            "state": "out of love",
-            "friendship label": "disliked",
-            "relationship": 11025
-          }
-        ],
-        "1206": [
-          {
-            "topic": "feelings change",
-            "target": 11024,
-            "target name": "Aleydis Bein",
-            "state": "infatuation",
-            "friendship label": "disliked",
-            "relationship": 11025
-          }
-        ],
-        "1207": [
-          {
-            "topic": "feelings change",
-            "target": 11024,
-            "target name": "Aleydis Bein",
-            "state": "out of love",
-            "friendship label": "disliked",
-            "relationship": 11025
+            "income": 1.0499999999999998
           },
           {
-            "topic": "new relationship",
-            "key": 29178,
-            "people": [
-              11164,
-              11023
-            ],
-            "people names": [
-              "Froumoldus",
-              "Wissen"
-            ],
-            "people ages": [
-              35,
-              50
-            ],
-            "label": "unrelated",
-            "committed": false
-          }
-        ],
-        "1208": [
-          {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "unrelated",
-            "friendship label": "indifferent",
-            "relationship": 29178
-          }
-        ],
-        "1209": [
-          {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.0679999999999998
-          }
-        ],
-        "1210": [
-          {
             "topic": "death",
-            "cause": "sickness"
+            "cause": "illness"
           }
         ]
       }
@@ -284,20 +208,18 @@
       "section": "stDie Camp.se1.c2",
       "street": "Die Camp",
       "neighborhood": "kampbuurt",
-      "unique id": 354
+      "unique id": 358
     },
     "relationship status": {
-      "taken": false,
+      "taken": true,
       "married": true,
       "relationships": [
         11025
       ]
     },
     "friends": [
-      14557
+      15359
     ],
-    "enemies": [
-      11025
-    ]
+    "enemies": []
   }
 }

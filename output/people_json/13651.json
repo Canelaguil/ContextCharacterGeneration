@@ -1,82 +1,114 @@
 {
   "13651": {
     "alive": false,
-    "name": "Agota",
-    "surname": "Reinardussdochter",
-    "full name": "Agota Reinardussdochter",
+    "name": "Reynwi",
+    "surname": "Salomonsdochter",
+    "full name": "Reynwi Salomonsdochter",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.057,
-      "romantic interest": 0.817,
-      "sex interest": 0.886,
-      "gender expression": 0.211,
+      "sexuality": 0.029,
+      "romantic interest": 0.83,
+      "sex interest": 0.624,
+      "gender expression": 0.132,
       "sex": "f"
     },
-    "age": 1,
+    "age": 32,
     "birth year": 1200,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.532,
-      "honest-false": 0.272,
-      "dream": 0.999,
-      "outgoing": 0.542
+      "lawful-chaotic": 0.145,
+      "nice-nasty": 0.625,
+      "honest-false": 0.198,
+      "dream": 0.246,
+      "outgoing": 0.487
     },
     "attitude": {
-      "dream": 0.999,
-      "outgoing": 0.542
+      "dream": 0.246,
+      "outgoing": 0.487
     },
     "homsoc": {
       "means": {
-        "independent": false,
-        "taken_care_of": true,
+        "independent": true,
+        "taken_care_of": false,
         "caretaker": true,
-        "needs_care": true,
-        "flags": []
+        "needs_care": false,
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.036,
-        "gender expression expression": 0.129
+        "sexuality expression": 0.015,
+        "gender expression expression": 0.073
       }
     },
     "network": {
       "parents": {
-        "mother": "Victoria (11375)",
-        "father": "Reinardus (11374)"
+        "mother": "Douwen (10478)",
+        "father": "Salomon (10477)"
       },
-      "children": {},
+      "children": {
+        "55291": {
+          "key": 55291,
+          "name": "Agota Crudepen",
+          "age": 19,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Reynwi (13651)",
+            "father": "Huwardo (26052)"
+          }
+        }
+      },
       "relationship keys": {
         "parent": [
           13652,
           13653
-        ]
+        ],
+        "sibling": [
+          18478
+        ],
+        "spouse": [
+          50669
+        ],
+        "child": {
+          "birth": [
+            55293
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         1,
         "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.887,
+      "all_incomes": [
+        0.966,
+        0.887
+      ],
+      "job": {
+        "lawful": true,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 3,
+      "skin_color": 4,
       "eye_color": "blue",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
         "S",
         "S"
       ],
-      "health": 0.614,
-      "fertility": 0.605,
+      "health": 0.919,
+      "fertility": 0.906,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -88,7 +120,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.614
+            "new_health": 0.919
+          },
+          "death": false
+        },
+        "1232": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.919
           },
           "death": true
         }
@@ -103,15 +143,15 @@
             "topic": "new relationship",
             "key": 13652,
             "people": [
-              11374,
+              10477,
               13651
             ],
             "people names": [
-              "Reinardus Zassen",
-              "Agota Reinardussdochter"
+              "Salomon",
+              "Reynwi Salomonsdochter"
             ],
             "people ages": [
-              40,
+              28,
               0
             ],
             "label": "parentchild",
@@ -121,15 +161,15 @@
             "topic": "new relationship",
             "key": 13653,
             "people": [
-              11375,
+              10478,
               13651
             ],
             "people names": [
-              "Victoria Blonde",
-              "Agota Reinardussdochter"
+              "Douwen Buc",
+              "Reynwi Salomonsdochter"
             ],
             "people ages": [
-              35,
+              17,
               0
             ],
             "label": "parentchild",
@@ -138,8 +178,232 @@
         ],
         "1201": [
           {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 13652
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 18478,
+            "people": [
+              13651,
+              18475
+            ],
+            "people names": [
+              "Reynwi Salomonsdochter",
+              "Wlfarde Salomonszoon"
+            ],
+            "people ages": [
+              2,
+              0
+            ],
+            "label": "sibling",
+            "committed": false
+          }
+        ],
+        "1203": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10478,
+              "name": "Douwen Buc",
+              "age": 21,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "friendship label": "indifferent",
+            "label": "parent"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10477,
+              "name": "Salomon",
+              "age": 35,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "friendship label": "friend",
+            "label": "parent"
+          }
+        ],
+        "1208": [
+          {
+            "topic": "event",
+            "event": "faction upheaval",
+            "faction": "No religion",
+            "year": 1208
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1216": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1217": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1218": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1227": [
+          {
+            "topic": "new relationship",
+            "key": 50669,
+            "people": [
+              26052,
+              13651
+            ],
+            "people names": [
+              "Huwardo Crudepen",
+              "Reynwi Salomonsdochter"
+            ],
+            "people ages": [
+              21,
+              27
+            ],
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1229": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "sibling",
+            "friendship label": "indifferent",
+            "relationship": 18478
+          }
+        ],
+        "1230": [
+          {
+            "topic": "new relationship",
+            "key": 55293,
+            "people": [
+              13651,
+              55291
+            ],
+            "people names": [
+              "Reynwi Salomonsdochter",
+              "Agota Crudepen"
+            ],
+            "people ages": [
+              30,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1231": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.966
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 55293
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "sibling",
+            "friendship label": "indifferent",
+            "relationship": 18478
+          }
+        ],
+        "1232": [
+          {
+            "topic": "event",
+            "event": "war",
+            "year": 1232
+          },
+          {
             "topic": "death",
-            "cause": "childbirth"
+            "cause": "illness"
           }
         ]
       }
@@ -148,15 +412,17 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stDie Coninc straet.se9.c1",
+      "section": "stDie Coninc straet.se5.c1",
       "street": "Die Coninc straet",
       "neighborhood": "kampbuurt",
-      "unique id": 474
+      "unique id": 460
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
-      "relationships": []
+      "taken": true,
+      "married": true,
+      "relationships": [
+        50669
+      ]
     },
     "friends": [
       13652

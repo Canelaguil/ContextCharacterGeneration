@@ -1,35 +1,35 @@
 {
   "10751": {
     "alive": false,
-    "name": "Trame",
-    "surname": "Rin",
-    "full name": "Trame Rin",
+    "name": "Lelien",
+    "surname": "BieBye",
+    "full name": "Lelien BieBye",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.829,
-      "sex interest": 0.526,
-      "gender expression": 0.16,
+      "sexuality": 0.04,
+      "romantic interest": 0.871,
+      "sex interest": 0.588,
+      "gender expression": 0.0,
       "sex": "f"
     },
-    "age": 45,
-    "birth year": 1156,
+    "age": 54,
+    "birth year": 1176,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "Dogmatists",
     "income class": [
       0,
       "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.216,
-      "nice-nasty": 0.743,
-      "honest-false": 0.514,
-      "dream": 0.42,
-      "outgoing": 0.95
+      "lawful-chaotic": 0.522,
+      "nice-nasty": 0.456,
+      "honest-false": 0.14,
+      "dream": 0.344,
+      "outgoing": 0.636
     },
     "attitude": {
-      "dream": 0.42,
-      "outgoing": 0.95
+      "dream": 0.344,
+      "outgoing": 0.636
     },
     "homsoc": {
       "means": {
@@ -37,17 +37,59 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.127
+        "sexuality expression": 0.02,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
-      "relationship keys": {}
+      "children": {
+        "27996": {
+          "key": 27996,
+          "name": "Geile Vandelghissdochter",
+          "age": 2,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Lelien (10751)",
+            "father": "Vandelghis (10750)"
+          }
+        },
+        "32033": {
+          "key": 32033,
+          "name": "Wedeghe",
+          "age": 5,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Lelien (10751)",
+            "father": "Vandelghis (10750)"
+          }
+        }
+      },
+      "relationship keys": {
+        "spouse": [
+          10752
+        ],
+        "unrelated": [
+          14555,
+          22777,
+          38665,
+          43445,
+          45840
+        ],
+        "child": {
+          "birth": [
+            27998,
+            32035
+          ]
+        }
+      }
     },
     "occupation": {
       "has job": false,
@@ -59,16 +101,16 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 6,
+      "skin_color": 1,
       "eye_color": "blue",
       "hair_color": "blonde",
       "hair_color_code": 4,
       "hair_type": [
         "S",
-        "C"
+        "S"
       ],
-      "health": 0.605,
-      "fertility": 0.593,
+      "health": 0.0,
+      "fertility": 0.721,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -80,7 +122,39 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.605
+            "new_health": 0.734
+          },
+          "death": false
+        },
+        "1226": {
+          "health": {
+            "change": true,
+            "value_change": -0.228,
+            "new_health": 0.506
+          },
+          "death": false
+        },
+        "1227": {
+          "health": {
+            "change": true,
+            "value_change": -0.316,
+            "new_health": 0.19
+          },
+          "death": false
+        },
+        "1228": {
+          "health": {
+            "change": true,
+            "value_change": -0.136,
+            "new_health": 0.054
+          },
+          "death": false
+        },
+        "1229": {
+          "health": {
+            "change": true,
+            "value_change": -0.054,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -89,11 +163,444 @@
         "1200": [
           {
             "topic": "birth",
-            "year": 1156
+            "year": 1176
           },
           {
+            "topic": "new relationship",
+            "key": 10752,
+            "people": [
+              10750,
+              10751
+            ],
+            "people names": [
+              "Vandelghis",
+              "Lelien BieBye"
+            ],
+            "people ages": [
+              46,
+              24
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new relationship",
+            "key": 14555,
+            "people": [
+              11842,
+              10751
+            ],
+            "people names": [
+              "Lutgeri Paue",
+              "Lelien BieBye"
+            ],
+            "people ages": [
+              28,
+              25
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 22777,
+            "people": [
+              10751,
+              11882
+            ],
+            "people names": [
+              "Lelien BieBye",
+              "Ymmekine Paus"
+            ],
+            "people ages": [
+              29,
+              25
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1206": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "indifferent",
+            "relationship": 14555
+          }
+        ],
+        "1207": [
+          {
+            "topic": "new relationship",
+            "key": 27998,
+            "people": [
+              10751,
+              27996
+            ],
+            "people names": [
+              "Lelien BieBye",
+              "Geile Vandelghissdochter"
+            ],
+            "people ages": [
+              31,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "indifferent",
+            "relationship": 22777
+          }
+        ],
+        "1208": [
+          {
+            "topic": "event",
+            "event": "faction upheaval",
+            "faction": "No religion",
+            "year": 1208
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "friend",
+            "relationship": 10752
+          }
+        ],
+        "1209": [
+          {
+            "topic": "new relationship",
+            "key": 32035,
+            "people": [
+              10751,
+              32033
+            ],
+            "people names": [
+              "Lelien BieBye",
+              "Wedeghe"
+            ],
+            "people ages": [
+              33,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "key": 10752,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10750,
+              "name": "Vandelghis",
+              "age": 56,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "old age",
+            "friendship label": "friend",
+            "label": "spouse",
+            "love state": "loveless"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 27996,
+              "name": "Geile Vandelghissdochter",
+              "age": 2,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Lelien (10751)",
+                "father": "Vandelghis (10750)"
+              }
+            },
+            "cause": "childhood illness",
+            "friendship label": "friend",
+            "label": "child"
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11842,
+              "name": "Lutgeri Paue",
+              "age": 39,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "friendship label": "indifferent",
+            "label": "unrelated",
+            "love state": "nothing"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
+          {
+            "topic": "new relationship",
+            "key": 38665,
+            "people": [
+              10751,
+              11771
+            ],
+            "people names": [
+              "Lelien BieBye",
+              "Pietersen Vroede"
+            ],
+            "people ages": [
+              38,
+              39
+            ],
+            "label": "unrelated",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1214": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 32033,
+              "name": "Wedeghe",
+              "age": 5,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": "Lelien (10751)",
+                "father": "Vandelghis (10750)"
+              }
+            },
+            "cause": "starvation",
+            "friendship label": "friend",
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1216": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1217": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1218": [
+          {
+            "topic": "new relationship",
+            "key": 43445,
+            "people": [
+              10751,
+              11423
+            ],
+            "people names": [
+              "Lelien BieBye",
+              "Gisele Duue"
+            ],
+            "people ages": [
+              43,
+              36
+            ],
+            "label": "unrelated",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1219": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1220": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1221": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "friend",
+            "relationship": 38665
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1222": [
+          {
+            "topic": "new relationship",
+            "key": 45840,
+            "people": [
+              11609,
+              10751
+            ],
+            "people names": [
+              "Lenildis Hont",
+              "Lelien BieBye"
+            ],
+            "people ages": [
+              52,
+              47
+            ],
+            "label": "unrelated",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1223": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1224": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "friend",
+            "relationship": 45840
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1225": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1226": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1227": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11609,
+              "name": "Lenildis Hont",
+              "age": 57,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "friendship label": "friend",
+            "label": "unrelated",
+            "love state": "nothing"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1228": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11771,
+              "name": "Pietersen Vroede",
+              "age": 54,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "friendship label": "friend",
+            "label": "unrelated",
+            "love state": "nothing"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1229": [
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "starvation"
           }
         ]
       }
@@ -105,14 +612,22 @@
       "section": "stWalker straet.se1.c0",
       "street": "Walker straet",
       "neighborhood": "agnesbuurt",
-      "unique id": 262
+      "unique id": 263
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
-      "relationships": []
+      "taken": false,
+      "married": false,
+      "relationships": [
+        10752
+      ]
     },
-    "friends": [],
+    "friends": [
+      10752,
+      38665,
+      45840,
+      27998,
+      32035
+    ],
     "enemies": []
   }
 }

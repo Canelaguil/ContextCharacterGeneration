@@ -1,35 +1,35 @@
 {
   "11198": {
     "alive": false,
-    "name": "Woltwigis",
-    "surname": "Calvesnack",
-    "full name": "Woltwigis Calvesnack",
+    "name": "Waldrada",
+    "surname": "Manghenus",
+    "full name": "Waldrada Manghenus",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.061,
-      "romantic interest": 0.713,
-      "sex interest": 0.697,
-      "gender expression": 0.221,
+      "sexuality": 0.06,
+      "romantic interest": 0.802,
+      "sex interest": 0.939,
+      "gender expression": 0.0,
       "sex": "f"
     },
-    "age": 22,
-    "birth year": 1179,
+    "age": 25,
+    "birth year": 1177,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.953,
-      "honest-false": 0.979,
-      "dream": 0.259,
-      "outgoing": 0.396
+      "lawful-chaotic": 0.612,
+      "nice-nasty": 0.894,
+      "honest-false": 0.194,
+      "dream": 0.307,
+      "outgoing": 0.896
     },
     "attitude": {
-      "dream": 0.259,
-      "outgoing": 0.396
+      "dream": 0.307,
+      "outgoing": 0.896
     },
     "homsoc": {
       "means": {
@@ -40,35 +40,63 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.047,
-        "gender expression expression": 0.119
+        "sexuality expression": 0.038,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
-      "relationship keys": {}
+      "children": {
+        "13738": {
+          "key": 13738,
+          "name": "Beatrice van Eelbout",
+          "age": 3,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Waldrada (11198)",
+            "father": "Eelbout (11197)"
+          }
+        }
+      },
+      "relationship keys": {
+        "spouse": [
+          11199
+        ],
+        "child": {
+          "birth": [
+            13740
+          ]
+        }
+      }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         1,
         "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.187,
+      "all_incomes": [
+        1.031,
+        1.187
+      ],
+      "job": {
+        "lawful": true,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 1,
+      "skin_color": 9,
       "eye_color": "brown",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "hair_color": "red",
+      "hair_color_code": 3,
       "hair_type": [
         "C",
         "C"
       ],
-      "health": 0.607,
-      "fertility": 0.647,
+      "health": 0.749,
+      "fertility": 0.787,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -80,7 +108,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.607
+            "new_health": 0.749
+          },
+          "death": false
+        },
+        "1201": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.749
           },
           "death": true
         }
@@ -89,8 +125,58 @@
         "1200": [
           {
             "topic": "birth",
-            "year": 1179
+            "year": 1177
           },
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.031
+          },
+          {
+            "topic": "new relationship",
+            "key": 11199,
+            "people": [
+              11197,
+              11198
+            ],
+            "people names": [
+              "Eelbout Auonde",
+              "Waldrada Manghenus"
+            ],
+            "people ages": [
+              39,
+              23
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "friend",
+            "relationship": 11199
+          },
+          {
+            "topic": "new relationship",
+            "key": 13740,
+            "people": [
+              11198,
+              13738
+            ],
+            "people names": [
+              "Waldrada Manghenus",
+              "Beatrice van Eelbout"
+            ],
+            "people ages": [
+              24,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1201": [
           {
             "topic": "death",
             "cause": "illness"
@@ -102,17 +188,21 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stSt. Ians straet.se1.c1",
+      "section": "stSt. Ians straet.se3.c1",
       "street": "St. Ians straet",
       "neighborhood": "kampbuurt",
-      "unique id": 414
+      "unique id": 421
     },
     "relationship status": {
       "taken": true,
       "married": true,
-      "relationships": []
+      "relationships": [
+        11199
+      ]
     },
-    "friends": [],
+    "friends": [
+      13740
+    ],
     "enemies": []
   }
 }

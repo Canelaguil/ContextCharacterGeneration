@@ -1,35 +1,35 @@
 {
   "12761": {
     "alive": false,
-    "name": "Baua",
-    "surname": "",
-    "full name": "Baua",
+    "name": "Erkenradis",
+    "surname": "Vlieghe",
+    "full name": "Erkenradis Vlieghe",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.081,
-      "romantic interest": 0.901,
-      "sex interest": 0.797,
-      "gender expression": 0.248,
+      "sexuality label": "gay",
+      "sexuality": 0.915,
+      "romantic interest": 0.999,
+      "sex interest": 0.712,
+      "gender expression": 0.318,
       "sex": "f"
     },
-    "age": 23,
-    "birth year": 1178,
+    "age": 37,
+    "birth year": 1165,
     "sex": "f",
     "faction": "Zealots",
     "income class": [
-      1,
-      "lower middle class"
+      3,
+      "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.0,
-      "nice-nasty": 0.999,
-      "honest-false": 0.669,
-      "dream": 0.479,
-      "outgoing": 0.283
+      "lawful-chaotic": 0.464,
+      "nice-nasty": 0.901,
+      "honest-false": 0.633,
+      "dream": 0.867,
+      "outgoing": 0.028
     },
     "attitude": {
-      "dream": 0.479,
-      "outgoing": 0.283
+      "dream": 0.867,
+      "outgoing": 0.028
     },
     "homsoc": {
       "means": {
@@ -40,35 +40,56 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.059,
-        "gender expression expression": 0.144
+        "sexuality expression": 0.647,
+        "gender expression expression": 0.16
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
-      "relationship keys": {}
+      "children": {
+        "12934": {
+          "key": 12934,
+          "name": "Yoel Putoc",
+          "age": 18,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Erkenradis (12761)",
+            "father": "Menzone (12760)"
+          }
+        }
+      },
+      "relationship keys": {
+        "spouse": [
+          12762
+        ],
+        "child": {
+          "birth": [
+            12936
+          ]
+        }
+      }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        1,
-        "lower middle class"
+        3,
+        "upper middle class"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 5,
-      "eye_color": "green",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 0,
+      "eye_color": "brown",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
         "S",
         "C"
       ],
-      "health": 0.625,
-      "fertility": 0.756,
+      "health": 0.546,
+      "fertility": 0.555,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -80,7 +101,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.625
+            "new_health": 0.546
+          },
+          "death": false
+        },
+        "1201": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.546
           },
           "death": true
         }
@@ -89,30 +118,72 @@
         "1200": [
           {
             "topic": "birth",
-            "year": 1178
+            "year": 1165
           },
           {
+            "topic": "new relationship",
+            "key": 12762,
+            "people": [
+              12760,
+              12761
+            ],
+            "people names": [
+              "Menzone Putoc",
+              "Erkenradis Vlieghe"
+            ],
+            "people ages": [
+              42,
+              35
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new relationship",
+            "key": 12936,
+            "people": [
+              12761,
+              12934
+            ],
+            "people names": [
+              "Erkenradis Vlieghe",
+              "Yoel Putoc"
+            ],
+            "people ages": [
+              35,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1201": [
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "childbirth"
           }
         ]
       }
     },
     "key": 12761,
     "home": {
-      "income class": 1,
-      "income class label": "lower middle class",
-      "section": "stAppel Marckt.se1.c1",
-      "street": "Appel Marckt",
+      "income class": 3,
+      "income class label": "upper middle class",
+      "section": "stDen Hof.se7.c3",
+      "street": "Den Hof",
       "neighborhood": "denhof",
-      "unique id": 967
+      "unique id": 961
     },
     "relationship status": {
       "taken": true,
       "married": true,
-      "relationships": []
+      "relationships": [
+        12762
+      ]
     },
-    "friends": [],
+    "friends": [
+      12762
+    ],
     "enemies": []
   }
 }

@@ -1,19 +1,19 @@
 {
   "10177": {
     "alive": false,
-    "name": "Sylawert",
-    "surname": "",
-    "full name": "Sylawert",
+    "name": "Brame",
+    "surname": "Toreel",
+    "full name": "Brame Toreel",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.688,
-      "sex interest": 0.712,
-      "gender expression": 0.099,
+      "sexuality label": "gay",
+      "sexuality": 0.891,
+      "romantic interest": 0.989,
+      "sex interest": 0.657,
+      "gender expression": 0.584,
       "sex": "m"
     },
-    "age": 21,
-    "birth year": 1180,
+    "age": 53,
+    "birth year": 1152,
     "sex": "m",
     "faction": "Zealots",
     "income class": [
@@ -21,15 +21,15 @@
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.626,
-      "nice-nasty": 0.764,
-      "honest-false": 0.486,
-      "dream": 0.246,
-      "outgoing": 0.619
+      "lawful-chaotic": 0.064,
+      "nice-nasty": 0.0,
+      "honest-false": 0.999,
+      "dream": 0.835,
+      "outgoing": 0.64
     },
     "attitude": {
-      "dream": 0.246,
-      "outgoing": 0.619
+      "dream": 0.835,
+      "outgoing": 0.64
     },
     "homsoc": {
       "means": {
@@ -40,14 +40,35 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.012
+        "sexuality expression": 0.382,
+        "gender expression expression": 0.249
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
-      "relationship keys": {}
+      "children": {
+        "19813": {
+          "key": 19813,
+          "name": "Gertrudis Toreel",
+          "age": 46,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Lutghardis (10178)",
+            "father": "Brame (10177)"
+          }
+        }
+      },
+      "relationship keys": {
+        "spouse": [
+          10179
+        ],
+        "child": {
+          "birth": [
+            19814
+          ]
+        }
+      }
     },
     "occupation": {
       "has job": true,
@@ -55,27 +76,31 @@
         1,
         "lower middle class"
       ],
-      "income": 0.99,
+      "income": 1.197,
       "all_incomes": [
-        1.078,
-        0.99
+        1.024,
+        0.909,
+        0.822,
+        0.637,
+        1.042,
+        1.197
       ],
       "job": {
-        "lawful": true,
+        "lawful": false,
         "honest": true
       }
     },
     "genetics": {
-      "skin_color": 7,
-      "eye_color": "blue",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "skin_color": 2,
+      "eye_color": "brown",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_type": [
-        "S",
-        "C"
+        "C",
+        "S"
       ],
-      "health": 0.782,
-      "fertility": 0.802,
+      "health": 0.0,
+      "fertility": 0.483,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -87,7 +112,31 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.782
+            "new_health": 0.559
+          },
+          "death": false
+        },
+        "1202": {
+          "health": {
+            "change": true,
+            "value_change": -0.286,
+            "new_health": 0.273
+          },
+          "death": false
+        },
+        "1203": {
+          "health": {
+            "change": true,
+            "value_change": -0.191,
+            "new_health": 0.082
+          },
+          "death": false
+        },
+        "1204": {
+          "health": {
+            "change": true,
+            "value_change": -0.082,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -96,16 +145,68 @@
         "1200": [
           {
             "topic": "birth",
-            "year": 1180
+            "year": 1152
           },
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.078
+            "income": 1.024
           },
           {
+            "topic": "new relationship",
+            "key": 10179,
+            "people": [
+              10177,
+              10178
+            ],
+            "people names": [
+              "Brame Toreel",
+              "Lutghardis Strich"
+            ],
+            "people ages": [
+              48,
+              28
+            ],
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1202": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.637
+          }
+        ],
+        "1203": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.042
+          },
+          {
+            "topic": "new relationship",
+            "key": 19814,
+            "people": [
+              10177,
+              19813
+            ],
+            "people names": [
+              "Brame Toreel",
+              "Gertrudis Toreel"
+            ],
+            "people ages": [
+              52,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1204": [
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "sickness"
           }
         ]
       }
@@ -117,14 +218,19 @@
       "section": "stKoe straet.se3.c1",
       "street": "Koe straet",
       "neighborhood": "varkensbuurt",
-      "unique id": 63
+      "unique id": 62
     },
     "relationship status": {
       "taken": true,
       "married": true,
-      "relationships": []
+      "relationships": [
+        10179
+      ]
     },
-    "friends": [],
+    "friends": [
+      10179,
+      19814
+    ],
     "enemies": []
   }
 }

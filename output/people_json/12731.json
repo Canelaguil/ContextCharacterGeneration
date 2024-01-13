@@ -1,19 +1,19 @@
 {
   "12731": {
     "alive": false,
-    "name": "Agnes",
-    "surname": "Oer",
-    "full name": "Agnes Oer",
+    "name": "Gertrudis",
+    "surname": "Vaelspaen",
+    "full name": "Gertrudis Vaelspaen",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.879,
-      "romantic interest": 0.808,
-      "sex interest": 0.529,
-      "gender expression": 0.389,
+      "sexuality label": "straight",
+      "sexuality": 0.066,
+      "romantic interest": 0.547,
+      "sex interest": 0.65,
+      "gender expression": 0.046,
       "sex": "f"
     },
-    "age": 25,
-    "birth year": 1176,
+    "age": 44,
+    "birth year": 1170,
     "sex": "f",
     "faction": "No religion",
     "income class": [
@@ -21,15 +21,15 @@
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.788,
-      "nice-nasty": 0.478,
-      "honest-false": 0.768,
-      "dream": 0.694,
-      "outgoing": 0.86
+      "lawful-chaotic": 0.102,
+      "nice-nasty": 0.393,
+      "honest-false": 0.347,
+      "dream": 0.229,
+      "outgoing": 0.866
     },
     "attitude": {
-      "dream": 0.694,
-      "outgoing": 0.86
+      "dream": 0.229,
+      "outgoing": 0.866
     },
     "homsoc": {
       "means": {
@@ -37,44 +37,65 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.46,
-        "gender expression expression": 0.195
+        "sexuality expression": 0.042,
+        "gender expression expression": 0.036
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
-      "relationship keys": {}
+      "children": {
+        "15280": {
+          "key": 15280,
+          "name": "Berta Hoeghen",
+          "age": 31,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Gertrudis (12731)",
+            "father": "Amisius (12730)"
+          }
+        }
+      },
+      "relationship keys": {
+        "spouse": [
+          12732
+        ],
+        "child": {
+          "birth": [
+            15282
+          ]
+        },
+        "unrelated": [
+          16496,
+          29025
+        ]
+      }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
         3,
         "upper middle class"
       ],
-      "income": 1.01,
-      "all_incomes": [
-        1.01
-      ],
-      "job": {
-        "lawful": false,
-        "honest": true
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 3,
-      "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 5,
+      "eye_color": "green",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_type": [
-        "S",
-        "S"
+        "C",
+        "C"
       ],
-      "health": 0.705,
-      "fertility": 0.654,
+      "health": 0.719,
+      "fertility": 0.734,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -86,7 +107,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.705
+            "new_health": 0.719
+          },
+          "death": false
+        },
+        "1213": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.719
           },
           "death": true
         }
@@ -95,13 +124,203 @@
         "1200": [
           {
             "topic": "birth",
-            "year": 1176
+            "year": 1170
           },
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.01
+            "topic": "new relationship",
+            "key": 12732,
+            "people": [
+              12730,
+              12731
+            ],
+            "people names": [
+              "Amisius Hoeghen",
+              "Gertrudis Vaelspaen"
+            ],
+            "people ages": [
+              41,
+              30
+            ],
+            "label": "spouse",
+            "committed": true
           },
+          {
+            "topic": "feelings change",
+            "target": 12730,
+            "target name": "Amisius Hoeghen",
+            "state": "out of love",
+            "friendship label": "friend",
+            "relationship": 12732
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 15282,
+            "people": [
+              12731,
+              15280
+            ],
+            "people names": [
+              "Gertrudis Vaelspaen",
+              "Berta Hoeghen"
+            ],
+            "people ages": [
+              31,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "new relationship",
+            "key": 16496,
+            "people": [
+              10214,
+              12731
+            ],
+            "people names": [
+              "Douwen",
+              "Gertrudis Vaelspaen"
+            ],
+            "people ages": [
+              33,
+              32
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1202": [
+          {
+            "key": 12732,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12730,
+              "name": "Amisius Hoeghen",
+              "age": 44,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "friendship label": "friend",
+            "label": "spouse",
+            "love state": "out of love"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1204": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 15282
+          },
+          {
+            "topic": "new relationship",
+            "key": 29025,
+            "people": [
+              11290,
+              12731
+            ],
+            "people names": [
+              "Heinhoca",
+              "Gertrudis Vaelspaen"
+            ],
+            "people ages": [
+              31,
+              38
+            ],
+            "label": "unrelated",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "event",
+            "event": "faction upheaval",
+            "faction": "No religion",
+            "year": 1208
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "friend",
+            "relationship": 29025
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
           {
             "topic": "death",
             "cause": "illness"
@@ -113,17 +332,23 @@
     "home": {
       "income class": 3,
       "income class label": "upper middle class",
-      "section": "stDen Hof.se7.c3",
+      "section": "stDen Hof.se5.c3",
       "street": "Den Hof",
       "neighborhood": "denhof",
-      "unique id": 956
+      "unique id": 951
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
-      "relationships": []
+      "taken": false,
+      "married": false,
+      "relationships": [
+        12732
+      ]
     },
-    "friends": [],
+    "friends": [
+      12732,
+      16496,
+      29025
+    ],
     "enemies": []
   }
 }

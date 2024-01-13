@@ -1,90 +1,114 @@
 {
   "53218": {
     "alive": true,
-    "name": "Alene",
+    "name": "Riquardus",
     "surname": "",
-    "full name": "Alene",
+    "full name": "Riquardus",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.111,
-      "romantic interest": 0.578,
-      "sex interest": 0.666,
-      "gender expression": 0.309,
-      "sex": "f"
+      "sexuality": 0.033,
+      "romantic interest": 0.684,
+      "sex interest": 0.799,
+      "gender expression": 0.064,
+      "sex": "m"
     },
-    "age": 19,
-    "birth year": 1230,
-    "sex": "f",
-    "faction": "No religion",
+    "age": 20,
+    "birth year": 1229,
+    "sex": "m",
+    "faction": "Zealots",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.555,
-      "nice-nasty": 0.541,
-      "honest-false": 0.372,
-      "dream": 0.326,
-      "outgoing": 0.146
+      "lawful-chaotic": 0.191,
+      "nice-nasty": 0.12,
+      "honest-false": 0.945,
+      "dream": 0.66,
+      "outgoing": 0.232
     },
     "attitude": {
-      "dream": 0.326,
-      "outgoing": 0.146
+      "dream": 0.66,
+      "outgoing": 0.232
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": true,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.074,
-        "gender expression expression": 0.243
+        "sexuality expression": 0.02,
+        "gender expression expression": 0.035
       }
     },
     "network": {
       "parents": {
-        "mother": "Sarre (18691)",
-        "father": "Firiin (30560)"
+        "mother": "Heylewigis (27475)",
+        "father": "Justaes (31339)"
       },
-      "children": {},
+      "children": {
+        "81140": {
+          "key": 81140,
+          "name": "Douwen van Beatrice",
+          "age": 0,
+          "alive": true,
+          "sex": "f",
+          "parents": {
+            "mother": "Beatrice (56492)",
+            "father": "Riquardus (53218)"
+          }
+        }
+      },
       "relationship keys": {
         "parent": [
           53219,
           53220
         ],
-        "half-sibling": [
-          60443,
-          62016,
-          63367,
-          64678,
-          67051,
-          70453
-        ]
+        "spouse": [
+          80663
+        ],
+        "child": {
+          "birth": [
+            81141
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.2249999999999999,
+      "all_incomes": [
+        1.159,
+        1.281,
+        1.2959999999999998,
+        1.121,
+        1.2249999999999999
+      ],
+      "job": {
+        "lawful": false,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 5,
-      "eye_color": "brown",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "skin_color": 7,
+      "eye_color": "green",
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_type": [
         "C",
         "S"
       ],
-      "health": 0.647,
-      "fertility": 0.62,
+      "health": 0.66,
+      "fertility": 0.665,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -92,34 +116,34 @@
     },
     "memory": {
       "health": {
-        "1231": {
+        "1230": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.647
+            "new_health": 0.66
           },
           "death": false
         }
       },
       "events": {
-        "1230": [
+        "1229": [
           {
             "topic": "birth",
-            "year": 1230
+            "year": 1229
           },
           {
             "topic": "new relationship",
             "key": 53219,
             "people": [
-              30560,
+              31339,
               53218
             ],
             "people names": [
-              "Firiin",
-              "Alene"
+              "Justaes",
+              "Riquardus"
             ],
             "people ages": [
-              21,
+              19,
               0
             ],
             "label": "parentchild",
@@ -129,19 +153,38 @@
             "topic": "new relationship",
             "key": 53220,
             "people": [
-              18691,
+              27475,
               53218
             ],
             "people names": [
-              "Sarre Jserine",
-              "Alene"
+              "Heylewigis Cornuit",
+              "Riquardus"
             ],
             "people ages": [
-              27,
+              21,
               0
             ],
             "label": "parentchild",
             "committed": false
+          }
+        ],
+        "1230": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 27475,
+              "name": "Heylewigis Cornuit",
+              "age": 23,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Ermegardis (11639)",
+                "father": "Enekonus (11638)"
+              }
+            },
+            "cause": "childbirth",
+            "friendship label": "indifferent",
+            "label": "parent"
           }
         ],
         "1232": [
@@ -149,246 +192,106 @@
             "topic": "event",
             "event": "war",
             "year": 1232
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 30560,
-              "name": "Firiin",
-              "age": 24,
-              "alive": false,
-              "sex": "m",
-              "parents": {
-                "mother": "Flore (12089)",
-                "father": "Boidin (12088)"
-              }
-            },
-            "cause": "war",
-            "friendship label": "friend",
-            "label": "parent"
-          }
-        ],
-        "1233": [
-          {
-            "topic": "update",
-            "update": "parent married",
-            "parent": 18691,
-            "new partner": 19503
-          }
-        ],
-        "1234": [
-          {
-            "topic": "new relationship",
-            "key": 60443,
-            "people": [
-              53218,
-              59815
-            ],
-            "people names": [
-              "Alene",
-              "Jonas Keghelaere"
-            ],
-            "people ages": [
-              4,
-              0
-            ],
-            "label": "half-sibling",
-            "committed": false
-          }
-        ],
-        "1235": [
-          {
-            "topic": "new relationship",
-            "key": 62016,
-            "people": [
-              53218,
-              61017
-            ],
-            "people names": [
-              "Alene",
-              "Ghiselijn Keghelaere"
-            ],
-            "people ages": [
-              5,
-              0
-            ],
-            "label": "half-sibling",
-            "committed": false
-          }
-        ],
-        "1236": [
-          {
-            "topic": "new relationship",
-            "key": 63367,
-            "people": [
-              53218,
-              62954
-            ],
-            "people names": [
-              "Alene",
-              "Alene Keghelaere"
-            ],
-            "people ages": [
-              6,
-              0
-            ],
-            "label": "half-sibling",
-            "committed": false
           }
         ],
         "1237": [
           {
-            "topic": "new relationship",
-            "key": 64678,
-            "people": [
-              53218,
-              63674
-            ],
-            "people names": [
-              "Alene",
-              "Victoria Keghelaere"
-            ],
-            "people ages": [
-              7,
-              0
-            ],
-            "label": "half-sibling",
-            "committed": false
-          }
-        ],
-        "1239": [
-          {
             "topic": "update",
             "update": "new friendship label",
-            "relationship label": "half-sibling",
-            "friendship label": "indifferent",
-            "relationship": 62016
-          },
-          {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "half-sibling",
-            "friendship label": "disliked",
-            "relationship": 64678
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 63674,
-              "name": "Victoria Keghelaere",
-              "age": 2,
-              "alive": false,
-              "sex": "f",
-              "parents": {
-                "mother": "Sarre (18691)",
-                "father": "Sibrando (19503)"
-              }
-            },
-            "cause": "childhood illness",
-            "friendship label": "disliked",
-            "label": "half-sibling"
-          },
-          {
-            "topic": "new relationship",
-            "key": 67051,
-            "people": [
-              53218,
-              66268
-            ],
-            "people names": [
-              "Alene",
-              "Ghoudekinen Keghelaere"
-            ],
-            "people ages": [
-              9,
-              0
-            ],
-            "label": "half-sibling",
-            "committed": false
-          }
-        ],
-        "1242": [
-          {
-            "topic": "new relationship",
-            "key": 70453,
-            "people": [
-              53218,
-              69743
-            ],
-            "people names": [
-              "Alene",
-              "Lucas Sibrandoszoon"
-            ],
-            "people ages": [
-              12,
-              0
-            ],
-            "label": "half-sibling",
-            "committed": false
-          }
-        ],
-        "1243": [
-          {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "half-sibling",
+            "relationship label": "parentchild",
             "friendship label": "friend",
-            "relationship": 60443
+            "relationship": 53219
+          }
+        ],
+        "1238": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 53219
+          }
+        ],
+        "1241": [
+          {
+            "topic": "not enough income",
+            "income": 0.28200000000000003,
+            "inhabitants": [
+              34518,
+              31339,
+              19404,
+              56931,
+              58743,
+              62031,
+              62287,
+              63807,
+              64159,
+              64291,
+              64999,
+              65853,
+              67569,
+              67681,
+              69170,
+              72094,
+              75786,
+              77146,
+              78893,
+              80408
+            ]
+          }
+        ],
+        "1244": [
+          {
+            "topic": "event",
+            "event": "war",
+            "year": 1244
           }
         ],
         "1245": [
           {
-            "topic": "event",
-            "event": "famine",
-            "year": 1245
-          },
-          {
-            "topic": "personality change",
-            "change": true,
-            "trait": "honest-false",
-            "trigger": "trauma",
-            "mod": 0.019
-          }
-        ],
-        "1247": [
-          {
-            "topic": "update",
-            "update": "parent married",
-            "parent": 18691,
-            "new partner": 25387
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.159
           }
         ],
         "1248": [
           {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "half-sibling",
-            "friendship label": "friend",
-            "relationship": 60443
-          },
+            "topic": "new relationship",
+            "key": 80663,
+            "people": [
+              53218,
+              56492
+            ],
+            "people names": [
+              "Riquardus",
+              "Beatrice Maenschin"
+            ],
+            "people ages": [
+              19,
+              17
+            ],
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1249": [
           {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "half-sibling",
-            "friendship label": "friend",
-            "relationship": 67051
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 69743,
-              "name": "Lucas Sibrandoszoon",
-              "age": 6,
-              "alive": false,
-              "sex": "m",
-              "parents": {
-                "mother": "Sarre (18691)",
-                "father": "Sibrando (19503)"
-              }
-            },
-            "cause": "childhood illness",
-            "friendship label": "indifferent",
-            "label": "half-sibling"
+            "topic": "new relationship",
+            "key": 81141,
+            "people": [
+              53218,
+              81140
+            ],
+            "people names": [
+              "Riquardus",
+              "Douwen van Beatrice"
+            ],
+            "people ages": [
+              20,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ]
       }
@@ -397,24 +300,22 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stDie lange straet3.se9.c2",
-      "street": "Die lange straet3",
-      "neighborhood": "visbuurt",
-      "unique id": 725
+      "section": "stDoelen.se1.c2",
+      "street": "Doelen",
+      "neighborhood": "jorisbuurt",
+      "unique id": 204
     },
     "relationship status": {
-      "taken": false,
-      "married": false,
-      "relationships": []
+      "taken": true,
+      "married": true,
+      "relationships": [
+        80663
+      ]
     },
     "friends": [
-      53219,
-      60443,
-      63367,
-      67051
+      80663,
+      81141
     ],
-    "enemies": [
-      64678
-    ]
+    "enemies": []
   }
 }

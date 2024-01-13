@@ -1,82 +1,120 @@
 {
   "14320": {
-    "alive": false,
-    "name": "Gisele",
-    "surname": "Pertshoeft",
-    "full name": "Gisele Pertshoeft",
+    "alive": true,
+    "name": "Rabburgis",
+    "surname": "Cleine",
+    "full name": "Rabburgis Cleine",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.087,
-      "romantic interest": 0.389,
-      "sex interest": 0.701,
-      "gender expression": 0.209,
+      "sexuality label": "bi",
+      "sexuality": 0.566,
+      "romantic interest": 0.693,
+      "sex interest": 0.714,
+      "gender expression": 0.405,
       "sex": "f"
     },
-    "age": 12,
+    "age": 49,
     "birth year": 1200,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "Dogmatists",
     "income class": [
-      2,
-      "middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.375,
-      "nice-nasty": 0.771,
-      "honest-false": 0.988,
-      "dream": 0.601,
-      "outgoing": 0.797
+      "lawful-chaotic": 0.718,
+      "nice-nasty": 0.322,
+      "honest-false": 0.364,
+      "dream": 0.276,
+      "outgoing": 0.66
     },
     "attitude": {
-      "dream": 0.601,
-      "outgoing": 0.797
+      "dream": 0.276,
+      "outgoing": 0.66
     },
     "homsoc": {
       "means": {
         "independent": false,
-        "taken_care_of": true,
+        "taken_care_of": false,
         "caretaker": true,
-        "needs_care": true,
-        "flags": []
+        "needs_care": false,
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.035,
-        "gender expression expression": 0.153
+        "sexuality expression": 0.471,
+        "gender expression expression": 0.302
       }
     },
     "network": {
       "parents": {
-        "mother": "Ghela (10628)",
-        "father": "Riquardus (10627)"
+        "mother": "Rabburgis (10256)",
+        "father": "Gerart (10255)"
       },
       "children": {},
       "relationship keys": {
         "parent": [
           14321,
           14322
+        ],
+        "sibling": [
+          15673
+        ],
+        "unrelated": [
+          61215,
+          67965,
+          71169,
+          79960
         ]
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        2,
-        "middle class"
+        1,
+        "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.54,
+      "all_incomes": [
+        1.126,
+        0.575,
+        0.655,
+        0.854,
+        0.721,
+        0.233,
+        0.0,
+        0.0,
+        0.022,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.501,
+        0.493,
+        0.627,
+        0.649,
+        0.757,
+        0.245,
+        0.106,
+        0.54
+      ],
+      "job": {
+        "lawful": false,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 3,
-      "eye_color": "blue",
+      "skin_color": 5,
+      "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_type": [
-        "C",
+        "S",
         "S"
       ],
-      "health": 0.694,
-      "fertility": 0.707,
+      "health": 0.528,
+      "fertility": 0.756,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -88,17 +126,25 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.694
+            "new_health": 0.739
           },
           "death": false
         },
-        "1212": {
+        "1243": {
+          "health": {
+            "change": true,
+            "value_change": -0.211,
+            "new_health": 0.528
+          },
+          "death": false
+        },
+        "1244": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.694
+            "new_health": 0.528
           },
-          "death": true
+          "death": false
         }
       },
       "events": {
@@ -111,15 +157,15 @@
             "topic": "new relationship",
             "key": 14321,
             "people": [
-              10627,
+              10255,
               14320
             ],
             "people names": [
-              "Riquardus Pertshoeft",
-              "Gisele Pertshoeft"
+              "Gerart Cleine",
+              "Rabburgis Cleine"
             ],
             "people ages": [
-              29,
+              44,
               0
             ],
             "label": "parentchild",
@@ -129,15 +175,15 @@
             "topic": "new relationship",
             "key": 14322,
             "people": [
-              10628,
+              10256,
               14320
             ],
             "people names": [
-              "Ghela",
-              "Gisele Pertshoeft"
+              "Rabburgis Neue",
+              "Rabburgis Cleine"
             ],
             "people ages": [
-              27,
+              37,
               0
             ],
             "label": "parentchild",
@@ -146,45 +192,448 @@
         ],
         "1201": [
           {
+            "topic": "new relationship",
+            "key": 15673,
+            "people": [
+              14320,
+              15670
+            ],
+            "people names": [
+              "Rabburgis Cleine",
+              "Aleydis Cleine"
+            ],
+            "people ages": [
+              0,
+              0
+            ],
+            "label": "sibling",
+            "committed": false
+          },
+          {
             "topic": "person died",
             "person": {
-              "key": 10628,
-              "name": "Ghela",
-              "age": 28,
+              "key": 10255,
+              "name": "Gerart Cleine",
+              "age": 45,
               "alive": false,
-              "sex": "f",
+              "sex": "m",
               "parents": "firstgen"
             },
             "cause": "illness",
-            "friendship label": "friend",
+            "friendship label": "indifferent",
             "label": "parent"
+          }
+        ],
+        "1202": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 15670,
+              "name": "Aleydis Cleine",
+              "age": 1,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Rabburgis (10256)",
+                "father": "Gerart (10255)"
+              }
+            },
+            "cause": "childbirth",
+            "friendship label": "indifferent",
+            "label": "sibling"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "update",
+            "update": "parent married",
+            "parent": 10256,
+            "new partner": 11326
+          }
+        ],
+        "1208": [
+          {
+            "topic": "event",
+            "event": "faction upheaval",
+            "faction": "No religion",
+            "year": 1208
           }
         ],
         "1209": [
           {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "parentchild",
-            "friendship label": "indifferent",
-            "relationship": 14321
+            "topic": "not enough income",
+            "income": 0.625,
+            "inhabitants": [
+              14320
+            ]
           }
         ],
-        "1212": [
+        "1210": [
           {
-            "topic": "death",
-            "cause": "illness"
+            "topic": "not enough income",
+            "income": 0.499,
+            "inhabitants": [
+              14320
+            ]
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0.586,
+            "inhabitants": [
+              14320
+            ]
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          }
+        ],
+        "1218": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10256,
+              "name": "Rabburgis Neue",
+              "age": 55,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "friendship label": "indifferent",
+            "label": "parent"
+          }
+        ],
+        "1219": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              14320
+            ]
+          }
+        ],
+        "1220": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              14320
+            ]
+          }
+        ],
+        "1221": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              14320
+            ]
+          }
+        ],
+        "1222": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              14320
+            ]
+          }
+        ],
+        "1223": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              14320
+            ]
+          }
+        ],
+        "1224": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              14320
+            ]
+          }
+        ],
+        "1225": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": [
+              14320
+            ]
+          }
+        ],
+        "1228": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.126
+          }
+        ],
+        "1229": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.575
+          }
+        ],
+        "1232": [
+          {
+            "topic": "event",
+            "event": "war",
+            "year": 1232
+          },
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.721
+          }
+        ],
+        "1233": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.233
+          },
+          {
+            "topic": "new relationship",
+            "key": 61215,
+            "people": [
+              25170,
+              14320
+            ],
+            "people names": [
+              "Marcibilia Bloeme",
+              "Rabburgis Cleine"
+            ],
+            "people ages": [
+              27,
+              33
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1234": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              14320
+            ]
+          }
+        ],
+        "1235": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              14320
+            ]
+          }
+        ],
+        "1236": [
+          {
+            "topic": "not enough income",
+            "income": 0.022,
+            "inhabitants": [
+              14320
+            ]
+          }
+        ],
+        "1237": [
+          {
+            "topic": "new relationship",
+            "key": 67965,
+            "people": [
+              14320,
+              24763
+            ],
+            "people names": [
+              "Rabburgis Cleine",
+              "Ghela Zieken"
+            ],
+            "people ages": [
+              37,
+              32
+            ],
+            "label": "unrelated",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              14320
+            ]
+          }
+        ],
+        "1238": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              14320
+            ]
+          }
+        ],
+        "1239": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "friend",
+            "relationship": 67965
+          },
+          {
+            "topic": "new relationship",
+            "key": 71169,
+            "people": [
+              14320,
+              20732
+            ],
+            "people names": [
+              "Rabburgis Cleine",
+              "Didderic Pratre"
+            ],
+            "people ages": [
+              39,
+              35
+            ],
+            "label": "unrelated",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              14320
+            ]
+          }
+        ],
+        "1240": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              14320
+            ]
+          }
+        ],
+        "1241": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": [
+              14320
+            ]
+          }
+        ],
+        "1242": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 25170,
+              "name": "Marcibilia Bloeme",
+              "age": 36,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Aleberna (12386)",
+                "father": "Pelegrim (12385)"
+              }
+            },
+            "cause": "illness",
+            "friendship label": "indifferent",
+            "label": "unrelated",
+            "love state": "nothing"
+          }
+        ],
+        "1243": [
+          {
+            "topic": "job notice",
+            "notice": "earning very little",
+            "income": 0.493
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 24763,
+              "name": "Ghela Zieken",
+              "age": 38,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": "Nimme (11672)",
+                "father": "Gheeneman (11671)"
+              }
+            },
+            "cause": "illness",
+            "friendship label": "friend",
+            "label": "unrelated",
+            "love state": "nothing"
+          }
+        ],
+        "1244": [
+          {
+            "topic": "event",
+            "event": "war",
+            "year": 1244
+          }
+        ],
+        "1247": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.245
+          },
+          {
+            "topic": "new relationship",
+            "key": 79960,
+            "people": [
+              28247,
+              14320
+            ],
+            "people names": [
+              "Evergero Ledeghe",
+              "Rabburgis Cleine"
+            ],
+            "people ages": [
+              40,
+              47
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1248": [
+          {
+            "topic": "not enough income",
+            "income": 0.106,
+            "inhabitants": [
+              14320
+            ]
           }
         ]
       }
     },
     "key": 14320,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stBloemendaelse straet.se3.c2",
-      "street": "Bloemendaelse straet",
-      "neighborhood": "agnesbuurt",
-      "unique id": 219
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stDie Coninc straet.se7.c1",
+      "street": "Die Coninc straet",
+      "neighborhood": "kampbuurt",
+      "unique id": 466
     },
     "relationship status": {
       "taken": false,
@@ -192,7 +641,8 @@
       "relationships": []
     },
     "friends": [
-      14322
+      67965,
+      79960
     ],
     "enemies": []
   }

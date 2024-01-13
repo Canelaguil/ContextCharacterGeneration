@@ -1,53 +1,112 @@
 {
   "10960": {
     "alive": false,
-    "name": "Ulrici",
-    "surname": "Scinkel",
-    "full name": "Ulrici Scinkel",
+    "name": "Poppo",
+    "surname": "Dreet",
+    "full name": "Poppo Dreet",
     "born this way": {
-      "sexuality label": "bi",
-      "sexuality": 0.586,
-      "romantic interest": 0.999,
-      "sex interest": 0.565,
-      "gender expression": 0.337,
+      "sexuality label": "straight",
+      "sexuality": 0.042,
+      "romantic interest": 0.901,
+      "sex interest": 0.595,
+      "gender expression": 0.064,
       "sex": "m"
     },
-    "age": 47,
-    "birth year": 1154,
+    "age": 53,
+    "birth year": 1157,
     "sex": "m",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.355,
-      "nice-nasty": 0.702,
-      "honest-false": 0.209,
-      "dream": 0.766,
-      "outgoing": 0.565
+      "lawful-chaotic": 0.485,
+      "nice-nasty": 0.613,
+      "honest-false": 0.505,
+      "dream": 0.376,
+      "outgoing": 0.823
     },
     "attitude": {
-      "dream": 0.766,
-      "outgoing": 0.565
+      "dream": 0.376,
+      "outgoing": 0.823
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.406,
-        "gender expression expression": 0.231
+        "sexuality expression": 0.029,
+        "gender expression expression": 0.045
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
-      "relationship keys": {}
+      "children": {
+        "14128": {
+          "key": 14128,
+          "name": "Deghen Dreet",
+          "age": 42,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Baua (10961)",
+            "father": "Poppo (10960)"
+          }
+        },
+        "14988": {
+          "key": 14988,
+          "name": "Jute Dreet",
+          "age": 29,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Baua (10961)",
+            "father": "Poppo (10960)"
+          }
+        },
+        "26165": {
+          "key": 26165,
+          "name": "Hildebolding Dreet",
+          "age": 3,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": "Baua (10961)",
+            "father": "Poppo (10960)"
+          }
+        },
+        "29727": {
+          "key": 29727,
+          "name": "Agota Dreet",
+          "age": 1,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": "Baua (10961)",
+            "father": "Poppo (10960)"
+          }
+        }
+      },
+      "relationship keys": {
+        "spouse": [
+          10962
+        ],
+        "child": {
+          "birth": [
+            14129,
+            14989,
+            26166,
+            29728
+          ]
+        }
+      }
     },
     "occupation": {
       "has job": true,
@@ -55,27 +114,36 @@
         1,
         "lower middle class"
       ],
-      "income": 0.782,
+      "income": 0.829,
       "all_incomes": [
-        0.635,
-        0.782
+        0.976,
+        0.924,
+        0.844,
+        0.847,
+        0.882,
+        0.836,
+        0.873,
+        0.873,
+        0.813,
+        0.741,
+        0.829
       ],
       "job": {
-        "lawful": false,
-        "honest": false
+        "lawful": true,
+        "honest": true
       }
     },
     "genetics": {
-      "skin_color": 0,
+      "skin_color": 2,
       "eye_color": "brown",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
       "hair_type": [
-        "S",
-        "S"
+        "C",
+        "C"
       ],
-      "health": 0.619,
-      "fertility": 0.603,
+      "health": 0.045,
+      "fertility": 0.391,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -87,7 +155,31 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.619
+            "new_health": 0.46
+          },
+          "death": false
+        },
+        "1207": {
+          "health": {
+            "change": true,
+            "value_change": -0.255,
+            "new_health": 0.205
+          },
+          "death": false
+        },
+        "1208": {
+          "health": {
+            "change": true,
+            "value_change": -0.051,
+            "new_health": 0.154
+          },
+          "death": false
+        },
+        "1209": {
+          "health": {
+            "change": true,
+            "value_change": -0.109,
+            "new_health": 0.045
           },
           "death": true
         }
@@ -96,16 +188,179 @@
         "1200": [
           {
             "topic": "birth",
-            "year": 1154
+            "year": 1157
           },
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.635
+            "income": 0.976
           },
           {
+            "topic": "new relationship",
+            "key": 10962,
+            "people": [
+              10960,
+              10961
+            ],
+            "people names": [
+              "Poppo Dreet",
+              "Baua Masc"
+            ],
+            "people ages": [
+              43,
+              31
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new relationship",
+            "key": 14129,
+            "people": [
+              10960,
+              14128
+            ],
+            "people names": [
+              "Poppo Dreet",
+              "Deghen Dreet"
+            ],
+            "people ages": [
+              43,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 14989,
+            "people": [
+              10960,
+              14988
+            ],
+            "people names": [
+              "Poppo Dreet",
+              "Jute Dreet"
+            ],
+            "people ages": [
+              44,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 14129
+          }
+        ],
+        "1204": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 14129
+          }
+        ],
+        "1205": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 14989
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "good friend",
+            "relationship": 14129
+          }
+        ],
+        "1206": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 14989
+          },
+          {
+            "topic": "new relationship",
+            "key": 26166,
+            "people": [
+              10960,
+              26165
+            ],
+            "people names": [
+              "Poppo Dreet",
+              "Hildebolding Dreet"
+            ],
+            "people ages": [
+              50,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1207": [
+          {
+            "topic": "feelings change",
+            "target": 10961,
+            "target name": "Baua Masc",
+            "state": "out of love",
+            "friendship label": "indifferent",
+            "relationship": 10962
+          }
+        ],
+        "1208": [
+          {
+            "topic": "event",
+            "event": "faction upheaval",
+            "faction": "No religion",
+            "year": 1208
+          },
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.741
+          },
+          {
+            "topic": "new relationship",
+            "key": 29728,
+            "people": [
+              10960,
+              29727
+            ],
+            "people names": [
+              "Poppo Dreet",
+              "Agota Dreet"
+            ],
+            "people ages": [
+              51,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.741,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "old age"
           }
         ]
       }
@@ -114,17 +369,23 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stTuytsteeg.se3.c1",
-      "street": "Tuytsteeg",
+      "section": "stCoppelstraet.se1.c1",
+      "street": "Coppelstraet",
       "neighborhood": "agnesbuurt",
-      "unique id": 333
+      "unique id": 337
     },
     "relationship status": {
       "taken": true,
       "married": true,
-      "relationships": []
+      "relationships": [
+        10962
+      ]
     },
-    "friends": [],
+    "friends": [
+      14129,
+      14989,
+      29728
+    ],
     "enemies": []
   }
 }
