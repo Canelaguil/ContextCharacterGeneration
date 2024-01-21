@@ -1,57 +1,89 @@
 {
   "11167": {
     "alive": false,
-    "name": "Ludolphus",
-    "surname": "Naghel",
-    "full name": "Ludolphus Naghel",
+    "name": "Amilius",
+    "surname": "Voet",
+    "full name": "Amilius Voet",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.074,
-      "romantic interest": 0.866,
-      "sex interest": 0.551,
-      "gender expression": 0.066,
+      "sexuality": 0.076,
+      "romantic interest": 0.712,
+      "sex interest": 0.945,
+      "gender expression": 0.055,
       "sex": "m"
     },
-    "age": 30,
-    "birth year": 1172,
+    "age": 51,
+    "birth year": 1158,
     "sex": "m",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.548,
-      "nice-nasty": 0.315,
-      "honest-false": 0.355,
-      "dream": 0.417,
-      "outgoing": 0.254
+      "lawful-chaotic": 0.626,
+      "nice-nasty": 0.419,
+      "honest-false": 0.855,
+      "dream": 0.24,
+      "outgoing": 0.829
     },
     "attitude": {
-      "dream": 0.417,
-      "outgoing": 0.254
+      "dream": 0.24,
+      "outgoing": 0.829
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": [
-          "starving"
-        ]
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.046,
-        "gender expression expression": 0.014
+        "sexuality expression": 0.065,
+        "gender expression expression": 0.016
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "16222": {
+          "key": 16222,
+          "name": "Baua Voet",
+          "age": 14,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": {
+              "key": 11168,
+              "name": "Heile Rouvoet",
+              "age": 53,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 11167,
+              "name": "Amilius Voet",
+              "age": 51,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11169
+        ],
+        "child": {
+          "birth": [
+            16223
+          ]
+        },
+        "unrelated": [
+          16387
         ]
       }
     },
@@ -61,28 +93,37 @@
         1,
         "lower middle class"
       ],
-      "income": 0.438,
+      "income": 1.073,
       "all_incomes": [
-        0.0,
-        0.014,
-        0.438
+        0.951,
+        0.885,
+        0.871,
+        1.01,
+        0.945,
+        0.968,
+        1.002,
+        1.01,
+        1.046,
+        1.073
       ],
       "job": {
-        "lawful": false,
-        "honest": false
+        "lawful": true,
+        "honest": true
       }
     },
     "genetics": {
-      "skin_color": 2,
+      "skin_color": 3,
       "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
+      "hair_length": "medium",
+      "beauty": 0.62,
       "hair_type": [
-        "C",
+        "S",
         "C"
       ],
-      "health": 0.615,
-      "fertility": 0.582,
+      "health": 0.0,
+      "fertility": 0.538,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -94,29 +135,91 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.615
+            "new_health": 0.553
           },
           "death": false
         },
-        "1201": {
+        "1204": {
+          "health": {
+            "change": true,
+            "value_change": -0.369,
+            "new_health": 0.184
+          },
+          "death": false
+        },
+        "1205": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.615
+            "new_health": 0.184
+          },
+          "death": false
+        },
+        "1208": {
+          "health": {
+            "change": true,
+            "value_change": -0.184,
+            "new_health": 0.0
           },
           "death": true
+        }
+      },
+      "homsoc": {
+        "1200": {
+          "independent": true,
+          "needs_care": false,
+          "taken_care_of": false,
+          "caretaker": false
+        }
+      },
+      "ocupation": {
+        "1200": {
+          "has job": true,
+          "income": 0.885
+        },
+        "1201": {
+          "has job": true,
+          "income": 0.871
+        },
+        "1202": {
+          "has job": true,
+          "income": 1.01
+        },
+        "1203": {
+          "has job": true,
+          "income": 0.945
+        },
+        "1204": {
+          "has job": true,
+          "income": 0.968
+        },
+        "1205": {
+          "has job": true,
+          "income": 1.002
+        },
+        "1206": {
+          "has job": true,
+          "income": 1.01
+        },
+        "1207": {
+          "has job": true,
+          "income": 1.046
+        },
+        "1208": {
+          "has job": true,
+          "income": 1.073
         }
       },
       "events": {
         "1200": [
           {
             "topic": "birth",
-            "year": 1172
+            "year": 1158
           },
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.0
+            "income": 0.951
           },
           {
             "topic": "new relationship",
@@ -126,26 +229,82 @@
               11168
             ],
             "people names": [
-              "Ludolphus Naghel",
-              "Heile Butziel"
+              "Amilius Voet",
+              "Heile Rouvoet"
             ],
             "people ages": [
-              28,
-              18
+              42,
+              26
             ],
             "label": "spouse",
             "committed": true
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.014,
-            "inhabitants": []
           }
         ],
         "1201": [
           {
+            "topic": "new relationship",
+            "key": 16223,
+            "people": [
+              11167,
+              16222
+            ],
+            "people names": [
+              "Amilius Voet",
+              "Baua Voet"
+            ],
+            "people ages": [
+              44,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "new relationship",
+            "key": 16387,
+            "people": [
+              11167,
+              10477
+            ],
+            "people names": [
+              "Amilius Voet",
+              "Karis"
+            ],
+            "people ages": [
+              44,
+              43
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1202": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.01
+          }
+        ],
+        "1205": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.002
+          }
+        ],
+        "1206": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "good friend",
+            "relationship": 16387
+          }
+        ],
+        "1208": [
+          {
             "topic": "death",
-            "cause": "starvation"
+            "cause": "sickness"
           }
         ]
       }
@@ -160,13 +319,17 @@
       "unique id": 411
     },
     "relationship status": {
-      "taken": true,
+      "taken": false,
       "married": true,
       "relationships": [
         11169
       ]
     },
-    "friends": [],
+    "friends": [
+      11169,
+      16223,
+      16387
+    ],
     "enemies": []
   }
 }

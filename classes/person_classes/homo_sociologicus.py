@@ -129,6 +129,13 @@ class HomoSociologicus():
             self.i_dont_need_care(addr)
             # print('discharged')
 
+        # notify network of adulthood
+        adult_msg = {
+            'topic' : 'newly adult',
+            'source' : self.person_key
+        }
+        self.person.network.message_relationships(adult_msg)
+
     def need_care(self, home_key : int):
         self.needs_care = True
         msg = {
@@ -233,6 +240,9 @@ class ManMA(HomoSociologicus):
         self.independent_age = 16 #HomoSociologicus.marriage_age_men
 
     def marriage_wish(self):
+        """
+        This would have been a good place for a more nuanced chance (influenced)
+        """
         look_at_me_now = self.community.get_person(self.person_key)
         personality = look_at_me_now['personality']
         if self.independent:
@@ -296,9 +306,6 @@ class ManMA(HomoSociologicus):
         friends = self.person.network.get_friends()
         if len(friends) < self.ideal_no_friends:
             self.find_friend(age)
-
-        
-        
 
 class Neutral(HomoSociologicus):
     def __init__(self, person, community, born_like, whoami, income_class,

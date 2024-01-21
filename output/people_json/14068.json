@@ -1,55 +1,69 @@
 {
   "14068": {
     "alive": false,
-    "name": "Myrthel",
-    "surname": "Corbeel",
-    "full name": "Myrthel Corbeel",
+    "name": "Folqui",
+    "surname": "Loddernie",
+    "full name": "Folqui Loddernie",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.041,
-      "romantic interest": 0.705,
-      "sex interest": 0.408,
-      "gender expression": 0.072,
+      "sexuality label": "gay",
+      "sexuality": 0.835,
+      "romantic interest": 0.61,
+      "sex interest": 0.639,
+      "gender expression": 0.118,
       "sex": "f"
     },
-    "age": 15,
+    "age": 4,
     "birth year": 1200,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "Zealots",
     "income class": [
-      1,
-      "lower middle class"
+      3,
+      "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.999,
-      "nice-nasty": 0.746,
-      "honest-false": 0.655,
-      "dream": 0.429,
-      "outgoing": 0.745
+      "lawful-chaotic": 0.169,
+      "nice-nasty": 0.999,
+      "honest-false": 0.164,
+      "dream": 0.116,
+      "outgoing": 0.355
     },
     "attitude": {
-      "dream": 0.429,
-      "outgoing": 0.745
+      "dream": 0.116,
+      "outgoing": 0.355
     },
     "homsoc": {
       "means": {
         "independent": false,
-        "taken_care_of": true,
+        "taken_care_of": false,
         "caretaker": true,
         "needs_care": true,
         "flags": [
-          "starving"
+          "neglected"
         ]
       },
       "expression": {
-        "sexuality expression": 0.032,
-        "gender expression expression": 0.044
+        "sexuality expression": 0.489,
+        "gender expression expression": 0.064
       }
     },
     "network": {
       "parents": {
-        "mother": "Clara (10241)",
-        "father": "Ever (10240)"
+        "mother": {
+          "key": 12008,
+          "name": "Saswe",
+          "age": 54,
+          "alive": false,
+          "sex": "f",
+          "parents": "firstgen"
+        },
+        "father": {
+          "key": 12007,
+          "name": "Snelgerus Loddernie",
+          "age": 54,
+          "alive": false,
+          "sex": "m",
+          "parents": "firstgen"
+        }
       },
       "children": {},
       "relationship keys": {
@@ -58,36 +72,33 @@
           14070
         ],
         "sibling": [
-          18356,
-          21604,
-          29998,
-          33540,
-          35068,
-          36295,
-          37837
+          18217,
+          19937
         ]
       }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        1,
-        "lower middle class"
+        3,
+        "upper middle class"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 6,
+      "skin_color": 4,
       "eye_color": "brown",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "hair_color": "black",
+      "hair_color_code": 0,
+      "hair_length": "long",
+      "beauty": 0.837,
       "hair_type": [
         "C",
-        "C"
+        "S"
       ],
-      "health": 0.614,
-      "fertility": 0.611,
+      "health": 0.833,
+      "fertility": 0.877,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -99,17 +110,49 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.614
+            "new_health": 0.833
           },
           "death": false
         },
-        "1215": {
+        "1204": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.614
+            "new_health": 0.833
           },
           "death": true
+        }
+      },
+      "homsoc": {
+        "1201": {
+          "independent": false,
+          "needs_care": true,
+          "taken_care_of": true,
+          "caretaker": true
+        },
+        "1202": {
+          "independent": false,
+          "needs_care": true,
+          "taken_care_of": false,
+          "caretaker": true
+        }
+      },
+      "ocupation": {
+        "1201": {
+          "has job": false,
+          "income": 0
+        },
+        "1202": {
+          "has job": false,
+          "income": 0
+        },
+        "1203": {
+          "has job": false,
+          "income": 0
+        },
+        "1204": {
+          "has job": false,
+          "income": 0
         }
       },
       "events": {
@@ -122,15 +165,15 @@
             "topic": "new relationship",
             "key": 14069,
             "people": [
-              10240,
+              12007,
               14068
             ],
             "people names": [
-              "Ever Corbeel",
-              "Myrthel Corbeel"
+              "Snelgerus Loddernie",
+              "Folqui Loddernie"
             ],
             "people ages": [
-              29,
+              42,
               0
             ],
             "label": "parentchild",
@@ -140,32 +183,37 @@
             "topic": "new relationship",
             "key": 14070,
             "people": [
-              10241,
+              12008,
               14068
             ],
             "people names": [
-              "Clara Criec",
-              "Myrthel Corbeel"
+              "Saswe",
+              "Folqui Loddernie"
             ],
             "people ages": [
-              20,
+              38,
               0
             ],
             "label": "parentchild",
             "committed": false
           }
         ],
+        "1201": [
+          {
+            "topic": "neglected"
+          }
+        ],
         "1202": [
           {
             "topic": "new relationship",
-            "key": 18356,
+            "key": 18217,
             "people": [
               14068,
-              18354
+              18214
             ],
             "people names": [
-              "Myrthel Corbeel",
-              "Reymar Corbeel"
+              "Folqui Loddernie",
+              "Saxiardis Loddernie"
             ],
             "people ages": [
               2,
@@ -173,19 +221,29 @@
             ],
             "label": "sibling",
             "committed": false
+          },
+          {
+            "topic": "neglected"
           }
         ],
-        "1204": [
+        "1203": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 14069
+          },
           {
             "topic": "new relationship",
-            "key": 21604,
+            "key": 19937,
             "people": [
               14068,
-              21602
+              19934
             ],
             "people names": [
-              "Myrthel Corbeel",
-              "Weitijn van Clara"
+              "Folqui Loddernie",
+              "Gherbrandus Loddernie"
             ],
             "people ages": [
               3,
@@ -193,275 +251,27 @@
             ],
             "label": "sibling",
             "committed": false
+          },
+          {
+            "topic": "neglected"
           }
         ],
-        "1207": [
-          {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "sibling",
-            "friendship label": "friend",
-            "relationship": 21604
-          }
-        ],
-        "1208": [
-          {
-            "topic": "event",
-            "event": "faction upheaval",
-            "faction": "No religion",
-            "year": 1208
-          },
-          {
-            "topic": "new relationship",
-            "key": 29998,
-            "people": [
-              14068,
-              29996
-            ],
-            "people names": [
-              "Myrthel Corbeel",
-              "Ryccie Corbeel"
-            ],
-            "people ages": [
-              7,
-              0
-            ],
-            "label": "sibling",
-            "committed": false
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 21602,
-              "name": "Weitijn van Clara",
-              "age": 4,
-              "alive": false,
-              "sex": "m",
-              "parents": {
-                "mother": "Clara (10241)",
-                "father": "Ever (10240)"
-              }
-            },
-            "cause": "childhood illness",
-            "friendship label": "friend",
-            "label": "sibling"
-          }
-        ],
-        "1210": [
-          {
-            "topic": "new relationship",
-            "key": 33540,
-            "people": [
-              14068,
-              33538
-            ],
-            "people names": [
-              "Myrthel Corbeel",
-              "Betten Corbeel"
-            ],
-            "people ages": [
-              9,
-              0
-            ],
-            "label": "sibling",
-            "committed": false
-          }
-        ],
-        "1211": [
-          {
-            "topic": "new relationship",
-            "key": 35068,
-            "people": [
-              14068,
-              35066
-            ],
-            "people names": [
-              "Myrthel Corbeel",
-              "Wederic Corbeel"
-            ],
-            "people ages": [
-              10,
-              0
-            ],
-            "label": "sibling",
-            "committed": false
-          },
-          {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "sibling",
-            "friendship label": "friend",
-            "relationship": 18356
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.839,
-            "inhabitants": [
-              18354,
-              19409,
-              46811,
-              57280,
-              58702,
-              60564,
-              65087,
-              67157,
-              70168
-            ]
-          }
-        ],
-        "1212": [
-          {
-            "topic": "new relationship",
-            "key": 36295,
-            "people": [
-              14068,
-              36293
-            ],
-            "people names": [
-              "Myrthel Corbeel",
-              "Florens"
-            ],
-            "people ages": [
-              12,
-              0
-            ],
-            "label": "sibling",
-            "committed": false
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.732,
-            "inhabitants": [
-              18354,
-              19409,
-              46811,
-              57280,
-              58702,
-              60564,
-              65087,
-              67157,
-              70168
-            ]
-          }
-        ],
-        "1213": [
-          {
-            "topic": "new relationship",
-            "key": 37837,
-            "people": [
-              14068,
-              37835
-            ],
-            "people names": [
-              "Myrthel Corbeel",
-              "Franco Corbeel"
-            ],
-            "people ages": [
-              13,
-              0
-            ],
-            "label": "sibling",
-            "committed": false
-          },
-          {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "sibling",
-            "friendship label": "indifferent",
-            "relationship": 33540
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 10240,
-              "name": "Ever Corbeel",
-              "age": 42,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "cause": "illness",
-            "friendship label": "indifferent",
-            "label": "parent"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 36293,
-              "name": "Florens",
-              "age": 1,
-              "alive": false,
-              "sex": "m",
-              "parents": {
-                "mother": "Clara (10241)",
-                "father": "Ever (10240)"
-              }
-            },
-            "cause": "starvation",
-            "friendship label": "indifferent",
-            "label": "sibling"
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.744,
-            "inhabitants": [
-              18354,
-              19409,
-              46811,
-              57280,
-              58702,
-              60564,
-              65087,
-              67157,
-              70168
-            ]
-          }
-        ],
-        "1214": [
-          {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "parentchild",
-            "friendship label": "friend",
-            "relationship": 14070
-          },
-          {
-            "topic": "not enough income",
-            "income": 0,
-            "inhabitants": [
-              18354,
-              19409,
-              46811,
-              57280,
-              58702,
-              60564,
-              65087,
-              67157,
-              70168
-            ]
-          }
-        ],
-        "1215": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1215
-          },
+        "1204": [
           {
             "topic": "death",
-            "cause": "starvation"
+            "cause": "childhood illness"
           }
         ]
       }
     },
     "key": 14068,
     "home": {
-      "income class": 1,
-      "income class label": "lower middle class",
-      "section": "stHelle voet.se1.c1",
-      "street": "Helle voet",
-      "neighborhood": "jorisbuurt",
-      "unique id": 85
+      "income class": 3,
+      "income class label": "upper middle class",
+      "section": "stDie lange straet3.se7.c3",
+      "street": "Die lange straet3",
+      "neighborhood": "visbuurt",
+      "unique id": 708
     },
     "relationship status": {
       "taken": false,
@@ -470,9 +280,7 @@
     },
     "friends": [
       14070,
-      18356,
-      21604,
-      37837
+      19937
     ],
     "enemies": []
   }

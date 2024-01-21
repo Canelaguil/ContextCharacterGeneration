@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import argparse
 import sys, os
 
-experiment = ''
+experiment = 'AAADefault_'
 def plot(x, y, title, xlabel='', ylabel=''):
     if isinstance(y[0], tuple):
         # print(y)

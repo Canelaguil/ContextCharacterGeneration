@@ -14,22 +14,23 @@ simulation = {
 }
 
 seed = {
-    'city_mode' : 'vars', # ['vars', 'files']
     'percentage_inhabited_houses' : 0.95,
-    'generate' : False,
+    'generate' : False, # True is not available yet
 
-    # generate city
+    # generate city parameters
     'number_of_houses' : 750, 
     'streets_per_neighborhood' : 5, 
     'sections_per_neighborhood' : 5,
     'houses_per_section': 5, 
     'input_streets' : 'input/city/streetnames.txt', 
     'input_neighborhoods' : 'input/city/neighborhoods.txt',
+
+    # name input
     'input_male_names' : 'input/names/male.names', 
     'input_female_names' : 'input/names/female.names', 
     'input_surnames' : 'input/names/genericsur.names',
 
-    # pre-crafted city
+    # pre-crafted city files
     'sections_street_file' : 'input/preset_city/SectionStreets.csv',
     'neighborhood_file' : 'input/preset_city/Buurten.csv'
 }
@@ -50,7 +51,7 @@ health_stats = {
                                              # (communication, mobility, cognitive, health_modifier)
 
 }
-
+ 
 aesthetic_seed = {
     'skin_color_distribution' : [0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1], # from dark to light
     'hair_colors' : ['black', 'dark brown', 'brown', 'red', 'blonde', 'strawberry blonde'],
@@ -96,7 +97,7 @@ community = {
     'community_fixed_events' : [[1232], [], [1215], []] # fixed years in which these events will happen
 }
 
-
+# NOTE: These are not used (yet) in the simulation, as institutions haven't been implemented
 institutions = {
     'orphanage' : True,
     'orphanage_label' : 'House of Children',

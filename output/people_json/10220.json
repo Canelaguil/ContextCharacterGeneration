@@ -1,35 +1,35 @@
 {
   "10220": {
     "alive": false,
-    "name": "Segherarden",
-    "surname": "",
-    "full name": "Segherarden",
+    "name": "Meynseth",
+    "surname": "Valke",
+    "full name": "Meynseth Valke",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.06,
-      "romantic interest": 0.747,
-      "sex interest": 0.862,
-      "gender expression": 0.036,
+      "sexuality": 0.014,
+      "romantic interest": 0.468,
+      "sex interest": 0.602,
+      "gender expression": 0.099,
       "sex": "f"
     },
-    "age": 30,
-    "birth year": 1171,
+    "age": 51,
+    "birth year": 1165,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "No religion",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.492,
-      "nice-nasty": 0.637,
-      "honest-false": 0.07,
-      "dream": 0.377,
-      "outgoing": 0.42
+      "lawful-chaotic": 0.781,
+      "nice-nasty": 0.319,
+      "honest-false": 0.647,
+      "dream": 0.0,
+      "outgoing": 0.862
     },
     "attitude": {
-      "dream": 0.377,
-      "outgoing": 0.42
+      "dream": 0.0,
+      "outgoing": 0.862
     },
     "homsoc": {
       "means": {
@@ -37,17 +37,23 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.032,
-        "gender expression expression": 0.016
+        "sexuality expression": 0.01,
+        "gender expression expression": 0.08
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {},
-      "relationship keys": {}
+      "relationship keys": {
+        "spouse": [
+          10221
+        ]
+      }
     },
     "occupation": {
       "has job": false,
@@ -60,15 +66,17 @@
     },
     "genetics": {
       "skin_color": 3,
-      "eye_color": "green",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
+      "eye_color": "brown",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
+      "hair_length": "medium",
+      "beauty": 0.329,
       "hair_type": [
         "S",
         "C"
       ],
-      "health": 0.677,
-      "fertility": 0.619,
+      "health": 0.762,
+      "fertility": 0.895,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -80,20 +88,246 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.677
+            "new_health": 0.762
+          },
+          "death": false
+        },
+        "1215": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.762
           },
           "death": true
+        }
+      },
+      "homsoc": {
+        "1200": {
+          "independent": true,
+          "needs_care": false,
+          "taken_care_of": false,
+          "caretaker": false
+        }
+      },
+      "ocupation": {
+        "1200": {
+          "has job": false,
+          "income": 0
+        },
+        "1201": {
+          "has job": false,
+          "income": 0
+        },
+        "1202": {
+          "has job": false,
+          "income": 0
+        },
+        "1203": {
+          "has job": false,
+          "income": 0
+        },
+        "1204": {
+          "has job": false,
+          "income": 0
+        },
+        "1205": {
+          "has job": false,
+          "income": 0
+        },
+        "1206": {
+          "has job": false,
+          "income": 0
+        },
+        "1207": {
+          "has job": false,
+          "income": 0
+        },
+        "1208": {
+          "has job": false,
+          "income": 0
+        },
+        "1209": {
+          "has job": false,
+          "income": 0
+        },
+        "1210": {
+          "has job": false,
+          "income": 0
+        },
+        "1211": {
+          "has job": false,
+          "income": 0
+        },
+        "1212": {
+          "has job": false,
+          "income": 0
+        },
+        "1213": {
+          "has job": false,
+          "income": 0
+        },
+        "1214": {
+          "has job": false,
+          "income": 0
+        },
+        "1215": {
+          "has job": false,
+          "income": 0
         }
       },
       "events": {
         "1200": [
           {
             "topic": "birth",
-            "year": 1171
+            "year": 1165
+          },
+          {
+            "topic": "new relationship",
+            "key": 10221,
+            "people": [
+              10219,
+              10220
+            ],
+            "people names": [
+              "Thieleman",
+              "Meynseth Valke"
+            ],
+            "people ages": [
+              46,
+              35
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "feelings change",
+            "target": 10219,
+            "target name": "Thieleman",
+            "state": "out of love",
+            "friendship label": "friend",
+            "relationship": 10221
+          }
+        ],
+        "1202": [
+          {
+            "key": 10221,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10219,
+              "name": "Thieleman",
+              "age": 49,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "friendship label": "friend",
+            "label": "spouse",
+            "love state": "out of love"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1204": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "event",
+            "event": "faction upheaval",
+            "faction": "No religion",
+            "year": 1212
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
           },
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "starvation"
           }
         ]
       }
@@ -108,11 +342,15 @@
       "unique id": 77
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
-      "relationships": []
+      "taken": false,
+      "married": false,
+      "relationships": [
+        10221
+      ]
     },
-    "friends": [],
+    "friends": [
+      10221
+    ],
     "enemies": []
   }
 }

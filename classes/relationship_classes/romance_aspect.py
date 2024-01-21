@@ -1,5 +1,6 @@
 from ..utils import *
 
+# TODO: ROMANCE RELATIONSHIP
 class LoveIsAStateMachine():
     def __init__(self, romance, subject : dict, love_object : dict, can_marry=True, 
                  can_break_up=True, start='nothing') -> None:
@@ -223,17 +224,23 @@ class LoveIsAStateMachine():
             return 'out of love'
 
 class Romance():
+    """
+    Represents Romance aspect of Relationship
+    """
     def __init__(self, relationship, model, personA : dict, personB : dict, initA='nothing',
                   initB='nothing') -> None:
         self.relationship = relationship
         self.model = model
         
+        # check if couple would potentially be able to marry / break up
         if Romance.equal_rights or (personA['sex'] != personB['sex']):
             can_marry = True
             can_break_up = Romance.can_divorce
         else:
             can_marry = False
             can_break_up = True
+
+        # init state machines
         self.state_machineA = LoveIsAStateMachine(self, personA, personB, can_marry, 
                                                   can_break_up, initA)
         self.state_machineB = LoveIsAStateMachine(self, personB, personA, can_marry, 
@@ -245,25 +252,46 @@ class Romance():
         }
 
     def declaration(self, receiver):
-        # TODO add memory
+        """
+        Declare love
+        """
         status = self.model.get_relationship_status_person(receiver)
         response = self.machines[receiver].receive_declaration(status)
+        msg = {
+            'topic' : 'declaration', 
+            'result' : 'accepted' if response else 'rejected', 
+            'target' : receiver
+        }
+        self.relationship.update_people(msg)
         return response
 
     def break_up(self, origin):
+        """
+        Break up relationship
+        """
         for p in self.machines.items():
             p.break_up()
 
     def get_states(self):
+        """
+        Returns love states of the pair
+        """
         return {
             'state A' : self.state_machineA.state,
             'state B' : self.state_machineB.state,
         }
     
     def get_state(self, source):
+        """
+        Returns love state of [source]
+        """
         return self.machines[source].state
 
     def evolve(self, friendship_state, adults):
+        """
+        Evolve romantic relationship through state machine and its conditions,
+        and report back any change
+        """
         # Check if people are old enough to enter a relationship / marriage
         if adults != [True, True]:
             age_restraint = True

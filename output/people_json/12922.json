@@ -1,18 +1,18 @@
 {
   "12922": {
     "alive": false,
-    "name": "Vreile",
-    "surname": "",
-    "full name": "Vreile",
+    "name": "Breghlent",
+    "surname": "Vint",
+    "full name": "Breghlent Vint",
     "born this way": {
       "sexuality label": "straight",
       "sexuality": 0.0,
-      "romantic interest": 0.422,
-      "sex interest": 0.886,
-      "gender expression": 0.052,
+      "romantic interest": 0.692,
+      "sex interest": 0.636,
+      "gender expression": 0.023,
       "sex": "f"
     },
-    "age": 14,
+    "age": 11,
     "birth year": 1200,
     "sex": "f",
     "faction": "Zealots",
@@ -21,15 +21,15 @@
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.67,
-      "nice-nasty": 0.561,
-      "honest-false": 0.114,
-      "dream": 0.388,
-      "outgoing": 0.475
+      "lawful-chaotic": 0.034,
+      "nice-nasty": 0.898,
+      "honest-false": 0.353,
+      "dream": 0.441,
+      "outgoing": 0.184
     },
     "attitude": {
-      "dream": 0.388,
-      "outgoing": 0.475
+      "dream": 0.441,
+      "outgoing": 0.184
     },
     "homsoc": {
       "means": {
@@ -37,17 +37,35 @@
         "taken_care_of": true,
         "caretaker": true,
         "needs_care": true,
-        "flags": []
+        "flags": [
+          "neglected",
+          "caretaker",
+          "starving"
+        ]
       },
       "expression": {
         "sexuality expression": -0.001,
-        "gender expression expression": 0.024
+        "gender expression expression": 0.005
       }
     },
     "network": {
       "parents": {
-        "mother": "Hersewindis (11027)",
-        "father": "Stemaers (11026)"
+        "mother": {
+          "key": 11900,
+          "name": "Truden Cnif",
+          "age": 35,
+          "alive": false,
+          "sex": "f",
+          "parents": "firstgen"
+        },
+        "father": {
+          "key": 11899,
+          "name": "Grote Vint",
+          "age": 45,
+          "alive": false,
+          "sex": "m",
+          "parents": "firstgen"
+        }
       },
       "children": {},
       "relationship keys": {
@@ -56,14 +74,7 @@
           12924
         ],
         "sibling": [
-          15962,
-          20473,
-          21418,
-          24462,
-          26335,
-          28949,
-          33095,
-          37637
+          17108
         ]
       }
     },
@@ -77,16 +88,18 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 6,
+      "skin_color": 7,
       "eye_color": "blue",
       "hair_color": "black",
       "hair_color_code": 0,
+      "hair_length": "medium",
+      "beauty": 0.345,
       "hair_type": [
         "C",
         "C"
       ],
-      "health": 0.476,
-      "fertility": 0.692,
+      "health": 0.692,
+      "fertility": 0.719,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -98,33 +111,83 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.69
+            "new_health": 0.692
           },
           "death": false
         },
-        "1207": {
-          "health": {
-            "change": true,
-            "value_change": -0.214,
-            "new_health": 0.476
-          },
-          "death": false
-        },
-        "1208": {
+        "1211": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.476
-          },
-          "death": false
-        },
-        "1214": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.476
+            "new_health": 0.692
           },
           "death": true
+        }
+      },
+      "homsoc": {
+        "1201": {
+          "independent": false,
+          "needs_care": true,
+          "taken_care_of": true,
+          "caretaker": true
+        },
+        "1202": {
+          "independent": false,
+          "needs_care": true,
+          "taken_care_of": false,
+          "caretaker": true
+        },
+        "1203": {
+          "independent": false,
+          "needs_care": true,
+          "taken_care_of": true,
+          "caretaker": true
+        }
+      },
+      "ocupation": {
+        "1201": {
+          "has job": false,
+          "income": 0
+        },
+        "1202": {
+          "has job": false,
+          "income": 0
+        },
+        "1203": {
+          "has job": false,
+          "income": 0
+        },
+        "1204": {
+          "has job": false,
+          "income": 0
+        },
+        "1205": {
+          "has job": false,
+          "income": 0
+        },
+        "1206": {
+          "has job": false,
+          "income": 0
+        },
+        "1207": {
+          "has job": false,
+          "income": 0
+        },
+        "1208": {
+          "has job": false,
+          "income": 0
+        },
+        "1209": {
+          "has job": false,
+          "income": 0
+        },
+        "1210": {
+          "has job": false,
+          "income": 0
+        },
+        "1211": {
+          "has job": false,
+          "income": 0
         }
       },
       "events": {
@@ -137,15 +200,15 @@
             "topic": "new relationship",
             "key": 12923,
             "people": [
-              11026,
+              11899,
               12922
             ],
             "people names": [
-              "Stemaers",
-              "Vreile"
+              "Grote Vint",
+              "Breghlent Vint"
             ],
             "people ages": [
-              35,
+              42,
               0
             ],
             "label": "parentchild",
@@ -155,15 +218,15 @@
             "topic": "new relationship",
             "key": 12924,
             "people": [
-              11027,
+              11900,
               12922
             ],
             "people names": [
-              "Hersewindis Capoen",
-              "Vreile"
+              "Truden Cnif",
+              "Breghlent Vint"
             ],
             "people ages": [
-              17,
+              31,
               0
             ],
             "label": "parentchild",
@@ -172,15 +235,20 @@
         ],
         "1201": [
           {
+            "topic": "neglected"
+          }
+        ],
+        "1202": [
+          {
             "topic": "new relationship",
-            "key": 15962,
+            "key": 17108,
             "people": [
               12922,
-              15959
+              17105
             ],
             "people names": [
-              "Vreile",
-              "Denijs"
+              "Breghlent Vint",
+              "Reynerus Vint"
             ],
             "people ages": [
               1,
@@ -188,204 +256,108 @@
             ],
             "label": "sibling",
             "committed": false
-          }
-        ],
-        "1202": [
+          },
           {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "parentchild",
-            "friendship label": "indifferent",
-            "relationship": 12923
+            "topic": "person died",
+            "person": {
+              "key": 11899,
+              "name": "Grote Vint",
+              "age": 45,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "friendship label": "friend",
+            "label": "parent"
+          },
+          {
+            "topic": "new caretaker",
+            "person": 11900
           }
         ],
         "1203": [
           {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "parentchild",
+            "topic": "person died",
+            "person": {
+              "key": 11900,
+              "name": "Truden Cnif",
+              "age": 35,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "childbirth",
             "friendship label": "friend",
-            "relationship": 12924
+            "label": "parent"
           },
           {
-            "topic": "new relationship",
-            "key": 20473,
-            "people": [
-              12922,
-              20470
-            ],
-            "people names": [
-              "Vreile",
-              "Clara Stemaerssdochter"
-            ],
-            "people ages": [
-              3,
-              0
-            ],
-            "label": "sibling",
-            "committed": false
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ],
         "1204": [
           {
-            "topic": "new relationship",
-            "key": 21418,
-            "people": [
-              12922,
-              21415
-            ],
-            "people names": [
-              "Vreile",
-              "Karel"
-            ],
-            "people ages": [
-              3,
-              0
-            ],
-            "label": "sibling",
-            "committed": false
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ],
         "1205": [
           {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "parentchild",
-            "friendship label": "indifferent",
-            "relationship": 12923
-          },
-          {
-            "topic": "new relationship",
-            "key": 24462,
-            "people": [
-              12922,
-              24459
-            ],
-            "people names": [
-              "Vreile",
-              "Eghenonis van Hersewindis"
-            ],
-            "people ages": [
-              4,
-              0
-            ],
-            "label": "sibling",
-            "committed": false
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ],
         "1206": [
           {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "sibling",
-            "friendship label": "indifferent",
-            "relationship": 20473
-          },
-          {
-            "topic": "new relationship",
-            "key": 26335,
-            "people": [
-              12922,
-              26332
-            ],
-            "people names": [
-              "Vreile",
-              "Segherarden"
-            ],
-            "people ages": [
-              6,
-              0
-            ],
-            "label": "sibling",
-            "committed": false
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ],
         "1207": [
           {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "parentchild",
-            "friendship label": "disliked",
-            "relationship": 12923
-          },
-          {
-            "topic": "new relationship",
-            "key": 28949,
-            "people": [
-              12922,
-              28946
-            ],
-            "people names": [
-              "Vreile",
-              "Meynseth Stemaerssdochter"
-            ],
-            "people ages": [
-              7,
-              0
-            ],
-            "label": "sibling",
-            "committed": false
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ],
         "1208": [
           {
-            "topic": "event",
-            "event": "faction upheaval",
-            "faction": "No religion",
-            "year": 1208
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           },
           {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "parentchild",
-            "friendship label": "disliked",
-            "relationship": 12923
+            "topic": "now caretaker",
+            "care dependants": []
+          },
+          {
+            "topic": "new caretaker",
+            "person": 12922
           }
         ],
         "1210": [
           {
-            "topic": "new relationship",
-            "key": 33095,
-            "people": [
-              12922,
-              33092
-            ],
-            "people names": [
-              "Vreile",
-              "Goneir van Stemaers"
-            ],
-            "people ages": [
-              10,
-              0
-            ],
-            "label": "sibling",
-            "committed": false
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ],
-        "1213": [
-          {
-            "topic": "new relationship",
-            "key": 37637,
-            "people": [
-              12922,
-              37634
-            ],
-            "people names": [
-              "Vreile",
-              "Wauthem"
-            ],
-            "people ages": [
-              12,
-              0
-            ],
-            "label": "sibling",
-            "committed": false
-          }
-        ],
-        "1214": [
+        "1211": [
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "starvation"
           }
         ]
       }
@@ -394,10 +366,10 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stDie Camp.se1.c2",
-      "street": "Die Camp",
-      "neighborhood": "kampbuurt",
-      "unique id": 359
+      "section": "stDie lange straet3.se1.c2",
+      "street": "Die lange straet3",
+      "neighborhood": "visbuurt",
+      "unique id": 672
     },
     "relationship status": {
       "taken": false,
@@ -405,13 +377,9 @@
       "relationships": []
     },
     "friends": [
-      12924,
-      26335,
-      28949,
-      37637
+      12923,
+      12924
     ],
-    "enemies": [
-      12923
-    ]
+    "enemies": []
   }
 }

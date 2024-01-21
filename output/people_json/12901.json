@@ -1,66 +1,75 @@
 {
   "12901": {
     "alive": false,
-    "name": "Rutgerus",
-    "surname": "van Willai",
-    "full name": "Rutgerus van Willai",
+    "name": "Mette",
+    "surname": "Wilde",
+    "full name": "Mette Wilde",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.743,
-      "sex interest": 0.452,
-      "gender expression": 0.0,
-      "sex": "m"
+      "sexuality": 0.056,
+      "romantic interest": 0.76,
+      "sex interest": 0.889,
+      "gender expression": 0.029,
+      "sex": "f"
     },
-    "age": 4,
+    "age": 2,
     "birth year": 1200,
-    "sex": "m",
+    "sex": "f",
     "faction": "Zealots",
     "income class": [
       0,
       "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.817,
-      "nice-nasty": 0.245,
-      "honest-false": 0.768,
-      "dream": 0.568,
-      "outgoing": 0.29
+      "lawful-chaotic": 0.566,
+      "nice-nasty": 0.09,
+      "honest-false": 0.507,
+      "dream": 0.248,
+      "outgoing": 0.449
     },
     "attitude": {
-      "dream": 0.568,
-      "outgoing": 0.29
+      "dream": 0.248,
+      "outgoing": 0.449
     },
     "homsoc": {
       "means": {
         "independent": false,
-        "taken_care_of": true,
+        "taken_care_of": false,
         "caretaker": true,
         "needs_care": true,
         "flags": [
-          "starving"
+          "neglected"
         ]
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.032,
+        "gender expression expression": 0.013
       }
     },
     "network": {
       "parents": {
-        "mother": "Hildeburgis (10991)",
-        "father": "Willai (10990)"
+        "mother": {
+          "key": 10817,
+          "name": "Marcibilia Lozere",
+          "age": 54,
+          "alive": false,
+          "sex": "f",
+          "parents": "firstgen"
+        },
+        "father": {
+          "key": 10816,
+          "name": "Vesse Wilde",
+          "age": 57,
+          "alive": false,
+          "sex": "m",
+          "parents": "firstgen"
+        }
       },
       "children": {},
       "relationship keys": {
         "parent": [
           12902,
           12903
-        ],
-        "sibling": [
-          15829,
-          16763,
-          20051
         ]
       }
     },
@@ -74,16 +83,18 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 5,
-      "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 4,
+      "eye_color": "blue",
+      "hair_color": "blonde",
+      "hair_color_code": 4,
+      "hair_length": "medium",
+      "beauty": 0.693,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.672,
-      "fertility": 0.721,
+      "health": 0.655,
+      "fertility": 0.6,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -95,17 +106,41 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.672
+            "new_health": 0.655
           },
           "death": false
         },
-        "1204": {
+        "1202": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.672
+            "new_health": 0.655
           },
           "death": true
+        }
+      },
+      "homsoc": {
+        "1201": {
+          "independent": false,
+          "needs_care": true,
+          "taken_care_of": true,
+          "caretaker": true
+        },
+        "1202": {
+          "independent": false,
+          "needs_care": true,
+          "taken_care_of": false,
+          "caretaker": true
+        }
+      },
+      "ocupation": {
+        "1201": {
+          "has job": false,
+          "income": 0
+        },
+        "1202": {
+          "has job": false,
+          "income": 0
         }
       },
       "events": {
@@ -118,12 +153,12 @@
             "topic": "new relationship",
             "key": 12902,
             "people": [
-              10990,
+              10816,
               12901
             ],
             "people names": [
-              "Willai",
-              "Rutgerus van Willai"
+              "Vesse Wilde",
+              "Mette Wilde"
             ],
             "people ages": [
               43,
@@ -136,15 +171,15 @@
             "topic": "new relationship",
             "key": 12903,
             "people": [
-              10991,
+              10817,
               12901
             ],
             "people names": [
-              "Hildeburgis Bloemart",
-              "Rutgerus van Willai"
+              "Marcibilia Lozere",
+              "Mette Wilde"
             ],
             "people ages": [
-              30,
+              32,
               0
             ],
             "label": "parentchild",
@@ -153,112 +188,13 @@
         ],
         "1201": [
           {
-            "topic": "new relationship",
-            "key": 15829,
-            "people": [
-              12901,
-              15826
-            ],
-            "people names": [
-              "Rutgerus van Willai",
-              "Emmelina Willaisdochter"
-            ],
-            "people ages": [
-              1,
-              0
-            ],
-            "label": "sibling",
-            "committed": false
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.557,
-            "inhabitants": [
-              25749,
-              58865,
-              63502,
-              66923
-            ]
+            "topic": "neglected"
           }
         ],
         "1202": [
           {
-            "topic": "new relationship",
-            "key": 16763,
-            "people": [
-              12901,
-              16760
-            ],
-            "people names": [
-              "Rutgerus van Willai",
-              "Geykonis"
-            ],
-            "people ages": [
-              2,
-              0
-            ],
-            "label": "sibling",
-            "committed": false
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.804,
-            "inhabitants": [
-              25749,
-              58865,
-              63502,
-              66923
-            ]
-          }
-        ],
-        "1203": [
-          {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "parentchild",
-            "friendship label": "friend",
-            "relationship": 12902
-          },
-          {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "sibling",
-            "friendship label": "indifferent",
-            "relationship": 15829
-          },
-          {
-            "topic": "new relationship",
-            "key": 20051,
-            "people": [
-              12901,
-              20048
-            ],
-            "people names": [
-              "Rutgerus van Willai",
-              "Folcard Willaiszoon"
-            ],
-            "people ages": [
-              3,
-              0
-            ],
-            "label": "sibling",
-            "committed": false
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.883,
-            "inhabitants": [
-              25749,
-              58865,
-              63502,
-              66923
-            ]
-          }
-        ],
-        "1204": [
-          {
             "topic": "death",
-            "cause": "starvation"
+            "cause": "childhood illness"
           }
         ]
       }
@@ -267,10 +203,10 @@
     "home": {
       "income class": 0,
       "income class label": "working class",
-      "section": "stPotstraet.se3.c0",
-      "street": "Potstraet",
-      "neighborhood": "kampbuurt",
-      "unique id": 347
+      "section": "stDe Tuyt.se1.c0",
+      "street": "De Tuyt",
+      "neighborhood": "agnesbuurt",
+      "unique id": 287
     },
     "relationship status": {
       "taken": false,
@@ -278,9 +214,7 @@
       "relationships": []
     },
     "friends": [
-      12902,
-      12903,
-      20051
+      12903
     ],
     "enemies": []
   }

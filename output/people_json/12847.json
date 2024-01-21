@@ -1,130 +1,98 @@
 {
   "12847": {
     "alive": false,
-    "name": "Heideric",
-    "surname": "Croic",
-    "full name": "Heideric Croic",
+    "name": "Katrin",
+    "surname": "",
+    "full name": "Katrin",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.085,
-      "romantic interest": 0.632,
-      "sex interest": 0.582,
-      "gender expression": 0.143,
-      "sex": "m"
+      "sexuality": 0.073,
+      "romantic interest": 0.815,
+      "sex interest": 0.655,
+      "gender expression": 0.063,
+      "sex": "f"
     },
-    "age": 37,
-    "birth year": 1168,
-    "sex": "m",
-    "faction": "No religion",
+    "age": 1,
+    "birth year": 1200,
+    "sex": "f",
+    "faction": "Dogmatists",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.622,
-      "nice-nasty": 0.428,
-      "honest-false": 0.379,
-      "dream": 0.605,
-      "outgoing": 0.746
+      "lawful-chaotic": 0.183,
+      "nice-nasty": 0.216,
+      "honest-false": 0.543,
+      "dream": 0.59,
+      "outgoing": 0.457
     },
     "attitude": {
-      "dream": 0.605,
-      "outgoing": 0.746
+      "dream": 0.59,
+      "outgoing": 0.457
     },
     "homsoc": {
       "means": {
-        "independent": true,
-        "taken_care_of": false,
-        "caretaker": false,
-        "needs_care": false,
+        "independent": false,
+        "taken_care_of": true,
+        "caretaker": true,
+        "needs_care": true,
         "flags": []
       },
       "expression": {
         "sexuality expression": 0.053,
-        "gender expression expression": 0.039
+        "gender expression expression": 0.054
       }
     },
     "network": {
-      "parents": "firstgen",
-      "children": {
-        "14056": {
-          "key": 14056,
-          "name": "Sywi Croic",
-          "age": 47,
+      "parents": {
+        "mother": {
+          "key": 10775,
+          "name": "Emmelina Maerke",
+          "age": 53,
           "alive": false,
           "sex": "f",
-          "parents": {
-            "mother": "Aleydis (12848)",
-            "father": "Heideric (12847)"
-          }
+          "parents": "firstgen"
         },
-        "15948": {
-          "key": 15948,
-          "name": "Marcilius Croic",
-          "age": 47,
+        "father": {
+          "key": 10774,
+          "name": "Rolant Muil",
+          "age": 57,
           "alive": false,
           "sex": "m",
-          "parents": {
-            "mother": "Aleydis (12848)",
-            "father": "Heideric (12847)"
-          }
-        },
-        "20475": {
-          "key": 20475,
-          "name": "Vandelghis Croic",
-          "age": 17,
-          "alive": false,
-          "sex": "m",
-          "parents": {
-            "mother": "Aleydis (12848)",
-            "father": "Heideric (12847)"
-          }
+          "parents": "firstgen"
         }
       },
+      "children": {},
       "relationship keys": {
-        "spouse": [
+        "parent": [
+          12848,
           12849
-        ],
-        "child": {
-          "birth": [
-            14057,
-            15949,
-            20476
-          ]
-        }
+        ]
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
         1,
         "lower middle class"
       ],
-      "income": 0.885,
-      "all_incomes": [
-        1.171,
-        0.995,
-        1.029,
-        1.1,
-        0.917,
-        0.885
-      ],
-      "job": {
-        "lawful": false,
-        "honest": true
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
       "skin_color": 2,
-      "eye_color": "brown",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "eye_color": "green",
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
+      "hair_length": "short",
+      "beauty": 0.666,
       "hair_type": [
-        "C",
-        "S"
+        "S",
+        "C"
       ],
-      "health": 0.745,
-      "fertility": 0.714,
+      "health": 0.789,
+      "fertility": 0.84,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -132,65 +100,66 @@
     },
     "memory": {
       "health": {
-        "1200": {
+        "1201": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.745
-          },
-          "death": false
-        },
-        "1204": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.745
+            "new_health": 0.789
           },
           "death": true
+        }
+      },
+      "homsoc": {
+        "1201": {
+          "independent": false,
+          "needs_care": true,
+          "taken_care_of": true,
+          "caretaker": true
+        }
+      },
+      "ocupation": {
+        "1201": {
+          "has job": false,
+          "income": 0
         }
       },
       "events": {
         "1200": [
           {
             "topic": "birth",
-            "year": 1168
+            "year": 1200
           },
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.171
+            "topic": "new relationship",
+            "key": 12848,
+            "people": [
+              10774,
+              12847
+            ],
+            "people names": [
+              "Rolant Muil",
+              "Katrin"
+            ],
+            "people ages": [
+              45,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
             "topic": "new relationship",
             "key": 12849,
             "people": [
-              12847,
-              12848
+              10775,
+              12847
             ],
             "people names": [
-              "Heideric Croic",
-              "Aleydis Hoeuedekin"
+              "Emmelina Maerke",
+              "Katrin"
             ],
             "people ages": [
-              32,
-              17
-            ],
-            "label": "spouse",
-            "committed": true
-          },
-          {
-            "topic": "new relationship",
-            "key": 14057,
-            "people": [
-              12847,
-              14056
-            ],
-            "people names": [
-              "Heideric Croic",
-              "Sywi Croic"
-            ],
-            "people ages": [
-              33,
+              37,
               0
             ],
             "label": "parentchild",
@@ -199,53 +168,8 @@
         ],
         "1201": [
           {
-            "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.029
-          },
-          {
-            "topic": "new relationship",
-            "key": 15949,
-            "people": [
-              12847,
-              15948
-            ],
-            "people names": [
-              "Heideric Croic",
-              "Marcilius Croic"
-            ],
-            "people ages": [
-              34,
-              0
-            ],
-            "label": "parentchild",
-            "committed": false
-          }
-        ],
-        "1203": [
-          {
-            "topic": "new relationship",
-            "key": 20476,
-            "people": [
-              12847,
-              20475
-            ],
-            "people names": [
-              "Heideric Croic",
-              "Vandelghis Croic"
-            ],
-            "people ages": [
-              36,
-              0
-            ],
-            "label": "parentchild",
-            "committed": false
-          }
-        ],
-        "1204": [
-          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "childbirth"
           }
         ]
       }
@@ -254,22 +178,19 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stKerckstraet.se5.c1",
-      "street": "Kerckstraet",
-      "neighborhood": "denhof",
-      "unique id": 990
+      "section": "stWalker straet.se7.c1",
+      "street": "Walker straet",
+      "neighborhood": "agnesbuurt",
+      "unique id": 273
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
-      "relationships": [
-        12849
-      ]
+      "taken": false,
+      "married": false,
+      "relationships": []
     },
     "friends": [
-      12849,
-      14057,
-      15949
+      12848,
+      12849
     ],
     "enemies": []
   }

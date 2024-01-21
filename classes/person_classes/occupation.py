@@ -22,6 +22,9 @@ def income_adjusted_for_age(age, income, previously_employed=False):
 
 
 class Occupation():
+    """
+    Abstractly represents the job of Person, with an income changing per cycle
+    """
     def __init__(self, person, model, income_class : tuple, personality : dict, 
                  lawful=None, honest=None, hereditary=False) -> None:
         self.person = person
@@ -39,6 +42,9 @@ class Occupation():
         }
 
     def find_job(self, age):
+        """
+        Find job for Person based on their personality
+        """
         # determine the kind of job
         if rand() < self.personality['lawful-chaotic'] :
             lawful = True
@@ -66,6 +72,9 @@ class Occupation():
         return self.income
     
     def evolve(self, age):
+        """
+        Yearly income change, report changes at thresholds
+        """
         old_income = self.income
         if self.has_job:
             scale = job_volatility(**self.job)
@@ -88,6 +97,9 @@ class Occupation():
         }
     
     def notify(self, notice):
+        """
+        Add memory of big income change (as event)
+        """
         # has to go through person instead of message processing because of creation order
         event = {
             'topic' : 'job notice',
@@ -96,7 +108,10 @@ class Occupation():
         }
         self.person.memory.add_event(event)
         
-    def resume(self):
+    def resume(self) -> dict:
+        """
+        Returns info about a person's occupation
+        """
         resume =  {
             'has job' : self.has_job,
             'income class' : self.income_class, 

@@ -1,8 +1,12 @@
 from mesa import Agent, Model
 from .utils import *
-# from .city_classes import StreetSection # Dit kan nog problemen opleveren
 
+# TODO INTRODUCRE PEOPLE TO EACH OTHER
 class Home(Agent):
+    """
+    Agent representing a home: keeps track of its inhabitants, caretakers and
+    income. 
+    """
     def __init__(self, key: str, unique_id: int, model: Model, income_class: int, 
                  section) -> None:
         # Init
@@ -43,13 +47,18 @@ class Home(Agent):
     PHASES / STEPS
     """
     def people(self):
-        self.people_to_remove = []
-        self.people_to_add = []
-
+        return
+    
     def lovedeathbirth(self): 
         return
     
     def houses(self):
+        """
+        - Add / remove people
+        - Process other messages
+        - Set people to work if needed
+        - Find new caretaker if needed
+        """
         self.no_inhabitants = len(self.inhabitants)
         if self.no_inhabitants == 0:
             return
@@ -113,32 +122,42 @@ class Home(Agent):
 
         self.inhabitant_tracking.append((self.no_inhabitants, self.inhabitants))
 
-    def post_processing(self):      
-        ...
-        
+    def post_processing(self):              
+        self.people_to_remove = []
+        self.people_to_add = []
 
     """
     UPDATE FUNCTIONS 
     """
-    def add_person(self, person_info): 
+    def add_person(self, person_info : dict): 
+        """
+        Add person to home
+        """
         # self.no_inhabitants += 1
+        if person_info['key'] in self.inhabitants:
+            log_error('perosn already in home', person_info)
         self.inhabitants.append(person_info['key'])
-        move_notice = {
-            'topic' : 'new home',
-            'home' : self.address()
-        }
+        # move_notice = {
+        #     'topic' : 'new home',
+        #     'home' : self.address()
+        # }
         ic = {
             'report' : {
                 'income' : person_info['occupation']['income']
             }
         }
-        self.model.message_person(person_info['key'], move_notice)
-        self.income_reports.append(ic)
+        self.income_reports.append(ic) # add income report for this cycle
+        
+        # self.model.message_person(person_info['key'], move_notice)
         self.no_inhabitants = len(self.inhabitants)
-        # if person_info['age'] < 16 and person_info['key'] not in self.care_dependants:
-        #     self.add_care_dependant(person_info['key'])
 
-    def remove_person(self, person_info):
+        if person_info['age'] < Home.adult_age and person_info['key'] not in self.care_dependants:
+            self.add_care_dependant(person_info['key'])
+
+    def remove_person(self, person_info : dict):
+        """
+        Remove person from home
+        """
         if person_info['key'] in self.inhabitants:
             # self.no_inhabitants -= 1
             # print(self.inhabitants)
@@ -156,6 +175,9 @@ class Home(Agent):
                                             'year' : self.model.get_year()})
 
     def add_care_dependant(self, key):
+        """
+        Add care dependant to home
+        """
         if key not in self.care_dependants:
             if key not in self.inhabitants:
                 log_error('I dont even go here', [key, self.unique_id])
@@ -163,6 +185,9 @@ class Home(Agent):
             self.care_dependants.append(key)
 
     def remove_care_dependants(self, key):
+        """
+        Remove care dependant from home
+        """
         if key in self.care_dependants:
             if key not in self.inhabitants:
                 log_error('I dont even go here', [key, self.unique_id])
@@ -179,6 +204,10 @@ class Home(Agent):
             self.caretakers = []
 
     def receive_message(self, msg):
+        """
+        Receive message, and process income reports and +/- inhabitant messages
+        immediately. 
+        """
         topic = msg['topic']
         if topic == 'income report':
             self.income_reports.append(msg)
@@ -193,6 +222,9 @@ class Home(Agent):
     UTILS
     """
     def process_income_reports(self):
+        """
+        Calculate income based on the received income reports. 
+        """
         income = 0
         for ic in self.income_reports: 
             income += ic['report']['income']
@@ -200,6 +232,10 @@ class Home(Agent):
         return income
     
     def not_enough_income(self):
+        """
+        Notify inhabitants not enough income was earned this cycle to support 
+        them all. 
+        """
         msg = {
             'topic' : 'not enough income',
             'income' : self.income,
@@ -208,6 +244,12 @@ class Home(Agent):
         self.notify_inhabitants(msg)
 
     def set_people_to_work(self, income_needed):
+        """
+        Find new person to work. Preference is given to unemployed older men. 
+
+        TODO: Don't just find one, but estimate how many are needed based on 
+        the missing income
+        """
         # check if people are eligible to work & not working, and set to work
         best_candidate = None
         max_age = 10
@@ -247,6 +289,10 @@ class Home(Agent):
             log_error('no possible worker', self.info())
 
     def find_caretaker(self):
+        """
+        Find new caretaker in the house. Preference is giving to unemployed older
+        women.
+        """
         # check if people are eligible to work & not working, and set to work
         best_candidate = None
         best_age = 8 # minimum caretaking age...
@@ -303,39 +349,56 @@ class Home(Agent):
     """
     def get_my_children(self, person_info):
         """
-        Get all children of person living in the house (used eg when a parent moves
-        in with a new spouse).
+        Returns the ID's of all children of a person living in the house 
+        (used eg when a parent moves in with a new spouse).
         """
         children = []
         for key, child in person_info['network']['children'].items():
             if key in self.inhabitants:
                 if child['age'] < 18:
                     children.append(key)
-                # TODO: check if care dependant
+                # TODO: check if care dependant regardless of being child
         return children
         
-
-    def is_empty(self): 
+    def is_empty(self) -> bool: 
         if self.no_inhabitants == 0:
             return True
-        else:
-            return False
+        return False
         
     def get_inhabitants(self):
+        """
+        Generate quick overview of current inhabitants
+        """
         my_people = {}
         for i in self.inhabitants:
             my_people[i] = self.model.get_person_summary(i)
         return my_people
     
+    """
+    UTILS
+    """
     def notify_inhabitants(self, msg):
+        """
+        Send message to all inhabitants
+        """
         for i in self.inhabitants:
             self.model.message_person(i, msg)
 
     def notify_care_dependants(self, msg):
+        """
+        Send message to all care dependants
+        """
         for i in self.care_dependants:
             self.model.message_person(i, msg)
+
+    """
+    OUTPUT FUNCTIONS
+    """
     
     def address(self):
+        """
+        Short output without danger of recursive requests to other agent's info.
+        """
         return {
             'income class' : self.income_class[0], 
             'income class label' : self.income_class[1],
@@ -346,6 +409,9 @@ class Home(Agent):
         }
         
     def info(self):
+        """
+        Long output, used for .json file.
+        """
         return {
             'income class' : self.income_class[0], 
             'income class label' : self.income_class[1],

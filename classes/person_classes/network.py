@@ -1,11 +1,17 @@
 from ..utils import *
 
 def get_other(my_key, update):
+    """
+    Get person key of the other in a relationship
+    """
     # has to be done like this because of python var referencing
     return update['people'][0] if update['people'][0] != my_key else update['people'][1]
 
 class Network():
-    def __init__(self, person, community, mother, father) -> None:
+    """
+    Keeps track of the network element 
+    """
+    def __init__(self, person, community, mother : dict, father : dict) -> None:
         self.community = community
         self.person = person
         self.person_key = person.unique_id
@@ -17,7 +23,7 @@ class Network():
 
     def unravel(self, cause=''):
         """
-        Person dies, network ends and relationships & people are notified
+        Person dies, network ends and relationships are notified
         """
         about_me = self.community.get_person_short(self.person_key)
         relation_message = {
@@ -147,6 +153,9 @@ class Network():
     UTILS 
     """
     def new_marriage(self, update):
+        """
+        Process a new marriage by notifying children of their new step parent
+        """
         msg = {
             'topic' : 'update',
             'update' : 'parent married',
@@ -156,10 +165,16 @@ class Network():
         self.message_children(msg)
 
     def message_children(self, msg):
+        """
+        Message children directly
+        """
         for ch in self.children_keys:
             self.community.message_person(ch, msg)
 
     def message_relationships(self, msg): 
+        """
+        Message all relationships
+        """
         for l in self.relationship_types.values():
             # for children subcategories
             if isinstance(l, dict):
@@ -169,19 +184,26 @@ class Network():
             else:
                 for r in l:
                     self.community.message_relationship(r, msg)
+
     """
     INFO FUNCTIONS
     """
     def get_parents(self):
+        """
+        Returns short description of parents
+        """
         if self.mother != {}:
             return {
-                'mother' : f"{self.mother['name']} ({self.mother['key']})",
-                'father' : f"{self.father['name']} ({self.father['key']})",
+                'mother' : self.community.get_person_short(self.mother['key']),
+                'father' : self.community.get_person_short(self.father['key']),
             }
         else:
             return 'firstgen'
     
     def get_child_descriptions(self):
+        """
+        Returns short descriptions of children
+        """
         child_summary = {}
         for child_key in self.children_keys:
             child = self.community.get_person_short(child_key)
@@ -189,6 +211,9 @@ class Network():
         return child_summary
     
     def get_friends(self):
+        """
+        Returns list with keys of all friend relationships (in case Person wants more)
+        """
         friends = []
         is_friend = lambda x : True if x['friendship']['score'] >= 1 else False
         for l in self.relationship_types.values():
@@ -207,6 +232,9 @@ class Network():
         return friends
 
     def get_enemies(self):
+        """
+        Returns list of all enemy relationships of Person
+        """
         enemies = []
         is_enemy = lambda x : True if x['friendship']['score'] <= 0.5 else False
         for l in self.relationship_types.values():
@@ -225,6 +253,9 @@ class Network():
         return enemies
 
     def get_relationships(self):
+        """
+        Returns all relationships with short descriptions
+        """
         rs = {}
         for k, p in self.relationships.items():
             other = self.community.get_person_short(p)

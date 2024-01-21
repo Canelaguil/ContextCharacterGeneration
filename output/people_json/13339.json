@@ -1,82 +1,107 @@
 {
   "13339": {
     "alive": false,
-    "name": "Marie",
+    "name": "Siburgis",
     "surname": "",
-    "full name": "Marie",
+    "full name": "Siburgis",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.086,
-      "romantic interest": 0.625,
-      "sex interest": 0.392,
-      "gender expression": 0.139,
+      "sexuality": 0.03,
+      "romantic interest": 0.777,
+      "sex interest": 0.643,
+      "gender expression": 0.013,
       "sex": "f"
     },
-    "age": 1,
+    "age": 7,
     "birth year": 1200,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
-      1,
-      "lower middle class"
+      0,
+      "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.056,
-      "nice-nasty": 0.508,
-      "honest-false": 0.324,
-      "dream": 0.488,
-      "outgoing": 0.605
+      "lawful-chaotic": 0.345,
+      "nice-nasty": 0.716,
+      "honest-false": 0.186,
+      "dream": 0.606,
+      "outgoing": 0.548
     },
     "attitude": {
-      "dream": 0.488,
-      "outgoing": 0.605
+      "dream": 0.606,
+      "outgoing": 0.548
     },
     "homsoc": {
       "means": {
         "independent": false,
-        "taken_care_of": true,
+        "taken_care_of": false,
         "caretaker": true,
         "needs_care": true,
-        "flags": []
+        "flags": [
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.038,
-        "gender expression expression": 0.015
+        "sexuality expression": 0.017,
+        "gender expression expression": 0.008
       }
     },
     "network": {
       "parents": {
-        "mother": "Ermegardis (12821)",
-        "father": "Menaures (12820)"
+        "mother": {
+          "key": 10742,
+          "name": "Remsindis Kics",
+          "age": 25,
+          "alive": false,
+          "sex": "f",
+          "parents": "firstgen"
+        },
+        "father": {
+          "key": 10741,
+          "name": "Winrechus",
+          "age": 32,
+          "alive": false,
+          "sex": "m",
+          "parents": "firstgen"
+        }
       },
       "children": {},
       "relationship keys": {
         "parent": [
           13340,
           13341
+        ],
+        "sibling": [
+          18006,
+          19865,
+          22051,
+          25773
         ]
       }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        1,
-        "lower middle class"
+        0,
+        "working class"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 4,
+      "skin_color": 2,
       "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
+      "hair_length": "long",
+      "beauty": 0.66,
       "hair_type": [
         "S",
-        "S"
+        "C"
       ],
-      "health": 0.203,
-      "fertility": 0.431,
+      "health": 0.0,
+      "fertility": 0.581,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -86,11 +111,71 @@
       "health": {
         "1201": {
           "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.563
+          },
+          "death": false
+        },
+        "1206": {
+          "health": {
             "change": true,
-            "value_change": -0.24,
-            "new_health": 0.203
+            "value_change": -0.334,
+            "new_health": 0.229
+          },
+          "death": false
+        },
+        "1207": {
+          "health": {
+            "change": true,
+            "value_change": -0.229,
+            "new_health": 0.0
           },
           "death": true
+        }
+      },
+      "homsoc": {
+        "1201": {
+          "independent": false,
+          "needs_care": true,
+          "taken_care_of": true,
+          "caretaker": true
+        },
+        "1202": {
+          "independent": false,
+          "needs_care": true,
+          "taken_care_of": false,
+          "caretaker": true
+        }
+      },
+      "ocupation": {
+        "1201": {
+          "has job": false,
+          "income": 0
+        },
+        "1202": {
+          "has job": false,
+          "income": 0
+        },
+        "1203": {
+          "has job": false,
+          "income": 0
+        },
+        "1204": {
+          "has job": false,
+          "income": 0
+        },
+        "1205": {
+          "has job": false,
+          "income": 0
+        },
+        "1206": {
+          "has job": false,
+          "income": 0
+        },
+        "1207": {
+          "has job": false,
+          "income": 0
         }
       },
       "events": {
@@ -103,15 +188,15 @@
             "topic": "new relationship",
             "key": 13340,
             "people": [
-              12820,
+              10741,
               13339
             ],
             "people names": [
-              "Menaures",
-              "Marie"
+              "Winrechus",
+              "Siburgis"
             ],
             "people ages": [
-              40,
+              20,
               0
             ],
             "label": "parentchild",
@@ -121,15 +206,15 @@
             "topic": "new relationship",
             "key": 13341,
             "people": [
-              12821,
+              10742,
               13339
             ],
             "people names": [
-              "Ermegardis Cabelliau",
-              "Marie"
+              "Remsindis Kics",
+              "Siburgis"
             ],
             "people ages": [
-              28,
+              18,
               0
             ],
             "label": "parentchild",
@@ -138,20 +223,127 @@
         ],
         "1201": [
           {
+            "topic": "neglected"
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 18006,
+            "people": [
+              13339,
+              18003
+            ],
+            "people names": [
+              "Siburgis",
+              "Clara van Remsindis"
+            ],
+            "people ages": [
+              2,
+              0
+            ],
+            "label": "sibling",
+            "committed": false
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 19865,
+            "people": [
+              13339,
+              19862
+            ],
+            "people names": [
+              "Siburgis",
+              "Kerolus Winrechusszoon"
+            ],
+            "people ages": [
+              3,
+              0
+            ],
+            "label": "sibling",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 1.023,
+            "inhabitants": []
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 22051,
+            "people": [
+              13339,
+              22048
+            ],
+            "people names": [
+              "Siburgis",
+              "Reynildis"
+            ],
+            "people ages": [
+              4,
+              0
+            ],
+            "label": "sibling",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.97,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "not enough income",
+            "income": 0.956,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 25773,
+            "people": [
+              13339,
+              25770
+            ],
+            "people names": [
+              "Siburgis",
+              "Marisseis"
+            ],
+            "people ages": [
+              6,
+              0
+            ],
+            "label": "sibling",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.978,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
             "topic": "death",
-            "cause": "childbirth"
+            "cause": "sickness"
           }
         ]
       }
     },
     "key": 13339,
     "home": {
-      "income class": 1,
-      "income class label": "lower middle class",
-      "section": "stPapenhofstede.se3.c1",
-      "street": "Papenhofstede",
-      "neighborhood": "denhof",
-      "unique id": 981
+      "income class": 0,
+      "income class label": "working class",
+      "section": "stWalker straet.se1.c0",
+      "street": "Walker straet",
+      "neighborhood": "agnesbuurt",
+      "unique id": 262
     },
     "relationship status": {
       "taken": false,
@@ -159,7 +351,8 @@
       "relationships": []
     },
     "friends": [
-      13341
+      13340,
+      25773
     ],
     "enemies": []
   }

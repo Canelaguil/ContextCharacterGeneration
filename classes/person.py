@@ -4,7 +4,12 @@ from .home import Home
 from .utils import *
 from .person_classes import *
 
+# TODO: Parent info???
+# TODO: notify relationships of adult age
 class Person(Agent):
+    """
+    Represents an inhabitant of a community. 
+    """
     def __init__(self, unique_id: int, model: Model, birth_year : int, 
                  income_class : int, faction : str, parent_info={}, sex='r',  
                  age=0, first_gen=False) -> None:
@@ -16,7 +21,7 @@ class Person(Agent):
         self.born_this_way(sex)
 
         self.income_class = income_class
-        self.parent_key = parent_info if first_gen else parent_info['key']
+        self.parent_key = None if first_gen else parent_info['key']
         self.home = None
         self.age = age
         self.alive = True
@@ -65,7 +70,7 @@ class Person(Agent):
         Init submodules for all people with parents (=not first gen)
         """
         # get parent info 
-        mother_key, father_key = parent_info['people']
+        mother_key, father_key = parent_info['people'] # woman is listed first
         mother = self.community.get_person(mother_key)
         father = self.community.get_person(father_key)
         surnames = [father['surname'], mother['surname']]
@@ -125,37 +130,41 @@ class Person(Agent):
     PHASES / STEPS
     """
     def people(self):
+        """
+        Evolve submodules and process changes. 
+        """
         if not self.alive: 
             return        
         self.age += 1
 
         # health update
-        health_report = self.body.yearly_step(self.age)
+        health_report = self.body.evolve(self.age)
         if health_report['death']:
             self.mark_for_death = True
 
-        # job update
+        # send income report to home
         occupation_report = self.occupation.evolve(self.age)
         home_msg ={
             'topic' : 'income report',
             'sender' : self.unique_id,
             'report' : occupation_report
-        }
+        }        
         if self.home != None:
             self.community.message_home(self.home['unique id'], home_msg)
         else:
             log_error('no home', self.description())
-
+     
+        # homsoc requires the other reports, so record is already made her
         record = {
             'health' : health_report,
-            'occupation' : occupation_report
+            'occupation' : occupation_report,
+            'homsoc' :  None
         }
-
-        homsoc_report = self.homsoc.evolve(self.age, record, self.romantic_relationship_status)
-        record['homsoc'] = homsoc_report
+        record['homsoc'] = self.homsoc.evolve(self.age, record, self.romantic_relationship_status)
         self.memory.add_record(record)
 
     def lovedeathbirth(self): 
+        "Die if previously market for death"
         if self.mark_for_death:
             self.die(self.body.death_cause)
     
@@ -163,6 +172,9 @@ class Person(Agent):
         return
 
     def post_processing(self):
+        """
+        Process all messages received in previous steps
+        """
         msg = self.messages.get()
         while msg != None:
             topic = msg['topic']
@@ -173,6 +185,8 @@ class Person(Agent):
                 # TODO: notify network
                 self.memory.add_event(msg)
             elif topic == 'feelings change':
+                self.memory.add_event(msg)
+            elif topic == 'declaration':
                 self.memory.add_event(msg)
             elif topic == 'person died': 
                 self.memory.add_event(msg)
@@ -193,6 +207,8 @@ class Person(Agent):
             elif topic in ['now caretaker', 'not caretaker', 'new caretaker', 
                            'neglected', 'need care']:
                 self.homsoc.situation_change(msg, self.age)
+                if topic == 'neglected': 
+                    self.personality.trigger('neglect')
                 if self.age != 0:
                     self.memory.add_event(msg)
             elif topic == 'update':
@@ -205,6 +221,9 @@ class Person(Agent):
     UTIL FUNCTIONS
     """        
     def receive_message(self, msg):
+        """
+        Add message to queue or process immediately if it concerns a community event
+        """
         if not self.alive:
             return
         if msg['topic'] == 'event':
@@ -213,6 +232,9 @@ class Person(Agent):
         self.messages.add(msg)
 
     def relationship_processing(self, msg):
+        """
+        Process new relationship notice
+        """
         if msg['label'] == 'parentchild':
             self.network.process_parent_child(msg, self.age)
             if self.sex == 'f' :
@@ -232,8 +254,16 @@ class Person(Agent):
 
     def move(self, home_info):
         self.home = home_info
+        event = {
+            'topic' : 'new home', 
+            'info' : home_info
+        }
+        self.memory.add_event(event)
 
     def update_relationship_status(self, info):
+        """
+        Update relationship status
+        """
         # end relationship 
         if info['topic'] in ['unmarried', 'single']:
             # TODO : account for cheating
@@ -249,6 +279,9 @@ class Person(Agent):
             self.romantic_relationship_status['relationships'].append(info['key'])
 
     def process_event(self, info):
+        """
+        Process community event
+        """
         self.memory.add_event(info)
         event = info['event']
         if event in ['famine', 'plague']:
@@ -269,8 +302,12 @@ class Person(Agent):
     """
     INFO FUNCTIONS
     """
-
-    def get_homsoc_attributes(self):
+    def get_homsoc_attributes(self) -> dict:
+        """
+        Collects attributes required as input for the homsoc module.
+        NOTE: these have to be passed through a custom dict because the full 
+        person description is not available yet during Person initialization
+        """
         return {
             'sexuality label' : self.primary_sexuality,
             'sexuality' : self.secondary_sexuality, 
@@ -280,10 +317,20 @@ class Person(Agent):
             'sex' : self.sex,
         }
     
-    def get_relationship_status(self):
+    def get_relationship_status(self) -> dict:
+        """
+        Returns a dictionary specifying whether a person is taken and/or married
+        OUTPUT DICTIONARY: 
+            'taken' : [bool]
+            'married' : [bool]
+            'relationships' : [list of romatnic relationships]
+        """
         return self.romantic_relationship_status
     
     def in_short(self):
+        """
+        Short(est) person description
+        """
         return {
             'name' : self.names.full(),
             'age' : self.age
@@ -318,7 +365,6 @@ class Person(Agent):
             'faction' : self.faction,
             'income class' : self.income_class, 
             'personality' : self.personality.get_personality(),
-            'attitude' : self.personality.get_attitude(),
             'homsoc' : self.homsoc.homo_sociologicus(),
             'network' : self.network.links(),
             'occupation' : self.occupation.resume(),

@@ -1,8 +1,12 @@
 import numpy as np
 from ..utils import *
 
+# TODO: child mortality and stuff
 def punnett_eye_model(eye1, eye2):
+    """
+    Simple eye-color genetics model. 
     # source: https://www.verywellhealth.com/genetics-of-eye-color-3421603
+    """    
     p = {
         'blue' : {
             'blue' : [0.99, 0.009, 0.001], 
@@ -23,17 +27,22 @@ def punnett_eye_model(eye1, eye2):
     return rand_choice(['blue', 'green', 'brown'], p=p)
 
 class Body():
+    """
+    Represents both the health and aesthetic look of a person's body. 
+    """
     def __init__(self, person, father_gens, mother_gens, first_gen = False) -> None:
         self.person = person
         self.father_gens = father_gens
         self.mother_gens =  mother_gens
         self.first_gen = first_gen
 
-        # body vars
+        # body aesthetics vars
         self.skin_color = self._set_skin()
         self.hair_type = self._set_hair_type()
         self.hair_color, self.hair_color_code = self._set_hair_color()
+        self.hair_length = rand_choice(['long', 'medium', 'short'], [0.3, 0.5, 0.2]) # can be interpreted as relative to the sex-norm
         self.eye_color = self._set_eyes()
+        self.beauty = normal_in_range(0.6, 0.2)
 
         # health vars
         self.health = self._set_health()
@@ -47,7 +56,7 @@ class Body():
         self.trigger('birth')
 
     """
-    INIT FUNCTIONS
+    INIT AESTHETICS FUNCTIONS
     """
     def _set_skin(self):
         """
@@ -139,7 +148,10 @@ class Body():
     """
     BODILY FUNCTIONS
     """
-    def yearly_step(self, age):
+    def evolve(self, age):
+        """
+        Collect reports to send back to Person
+        """
         report = {}
         report['health'] = self.health_event(age)
         report['death'] = self.mortality_event(age)
@@ -160,9 +172,19 @@ class Body():
         report = {'change' : False, 'value_change' : 0.}
         if rand() < chance:
             report['change'] = True
+
             loc_impact = 1 - self.health
             scale_impact = loc_impact / 4
             impact = -1 * normal_in_range(loc_impact, scale_impact)
+
+            # check if person is cured this cycle and so change is disregarded
+            if impact < 0.2 and rand() < Body.health_care_modifier:
+                return {
+                    'value change' : 0,
+                    'new_health' : self.health,
+                    'impact' : impact,
+                    'info' : 'cured'
+                }
 
             # chance of gaining disability
             if rand() < 0.1 * impact:
@@ -226,15 +248,15 @@ class Body():
                 self.death_cause = 'childbirth'
                 self.person.mark_for_death = True
         elif trigger == 'starving' or trigger == 'famine':
-            if rand() < 0.1 * (1 - self.health):
+            if rand() < 0.15 * (1 - self.health):
                 self.death_cause = 'starvation'
                 self.person.mark_for_death = True
         elif trigger == 'war':             
-            if rand() < 0.1:
+            if rand() < 0.2:
                 self.death_cause = 'war'
                 self.person.mark_for_death = True
         elif trigger == 'plague':
-            if rand() < 0.1 * (1 - self.health):
+            if rand() < 0.15 * (1 - self.health):
                 self.death_cause = 'plague'
                 self.person.mark_for_death = True
 
@@ -273,11 +295,16 @@ class Body():
     INFO FUNCTIONS
     """
     def pass_gens(self):
+        """
+        Collects "genetics" to be passed on to child
+        """
         return {
             'skin_color' : int(self.skin_color),
             'eye_color' : self.eye_color, 
             'hair_color' : self.hair_color,
             'hair_color_code' : self.hair_color_code,
+            'hair_length' : self.hair_length,
+            'beauty' : self.beauty,
             'hair_type' : self.hair_type,
             'health' : self.health,
             'fertility' : self.fertility,

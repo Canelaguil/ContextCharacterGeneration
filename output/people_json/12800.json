@@ -1,19 +1,19 @@
 {
   "12800": {
     "alive": false,
-    "name": "Truden",
-    "surname": "",
-    "full name": "Truden",
+    "name": "Diewiven",
+    "surname": "Schille",
+    "full name": "Diewiven Schille",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.025,
-      "romantic interest": 0.767,
-      "sex interest": 0.85,
-      "gender expression": 0.235,
+      "sexuality": 0.051,
+      "romantic interest": 0.45,
+      "sex interest": 0.888,
+      "gender expression": 0.221,
       "sex": "f"
     },
-    "age": 21,
-    "birth year": 1184,
+    "age": 56,
+    "birth year": 1175,
     "sex": "f",
     "faction": "No religion",
     "income class": [
@@ -21,15 +21,15 @@
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.673,
-      "nice-nasty": 0.104,
-      "honest-false": 0.263,
-      "dream": 0.46,
-      "outgoing": 0.999
+      "lawful-chaotic": 0.553,
+      "nice-nasty": 0.463,
+      "honest-false": 0.774,
+      "dream": 0.504,
+      "outgoing": 0.464
     },
     "attitude": {
-      "dream": 0.46,
-      "outgoing": 0.999
+      "dream": 0.504,
+      "outgoing": 0.464
     },
     "homsoc": {
       "means": {
@@ -37,49 +37,59 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "caretaker",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.011,
-        "gender expression expression": 0.126
+        "sexuality expression": 0.047,
+        "gender expression expression": 0.044
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "17701": {
-          "key": 17701,
-          "name": "Wigherus Stopelkin",
-          "age": 41,
+        "32666": {
+          "key": 32666,
+          "name": "Fellen Evergeroszoon",
+          "age": 6,
           "alive": false,
           "sex": "m",
           "parents": {
-            "mother": "Truden (12800)",
-            "father": "Eggerdus (12799)"
-          }
-        },
-        "19765": {
-          "key": 19765,
-          "name": "Auesoete Stopelkin",
-          "age": 34,
-          "alive": false,
-          "sex": "f",
-          "parents": {
-            "mother": "Truden (12800)",
-            "father": "Eggerdus (12799)"
+            "mother": {
+              "key": 12800,
+              "name": "Diewiven Schille",
+              "age": 56,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 10453,
+              "name": "Evergero",
+              "age": 55,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
           }
         }
       },
       "relationship keys": {
         "spouse": [
-          12801
+          12801,
+          28608
         ],
         "child": {
           "birth": [
-            17703,
-            19767
+            32668
           ]
-        }
+        },
+        "unrelated": [
+          41906,
+          45865
+        ]
       }
     },
     "occupation": {
@@ -92,16 +102,18 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 0,
+      "skin_color": 9,
       "eye_color": "brown",
       "hair_color": "strawberry blonde",
       "hair_color_code": 5,
+      "hair_length": "long",
+      "beauty": 0.432,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.738,
-      "fertility": 0.717,
+      "health": 0.0,
+      "fertility": 0.615,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -113,24 +125,210 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.738
+            "new_health": 0.626
           },
           "death": false
         },
-        "1204": {
+        "1225": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.738
+            "change": true,
+            "value_change": -0.16,
+            "new_health": 0.466
+          },
+          "death": false
+        },
+        "1226": {
+          "health": {
+            "change": true,
+            "value_change": -0.195,
+            "new_health": 0.271
+          },
+          "death": false
+        },
+        "1227": {
+          "health": {
+            "change": true,
+            "value_change": -0.198,
+            "new_health": 0.073
+          },
+          "death": false
+        },
+        "1228": {
+          "health": {
+            "change": true,
+            "value_change": -0.065,
+            "new_health": 0.008
+          },
+          "death": false
+        },
+        "1229": {
+          "health": {
+            "change": true,
+            "value_change": -0.004,
+            "new_health": 0.004
+          },
+          "death": false
+        },
+        "1230": {
+          "health": {
+            "change": true,
+            "value_change": -0.004,
+            "new_health": 0.0
           },
           "death": true
+        }
+      },
+      "homsoc": {
+        "1200": {
+          "independent": true,
+          "needs_care": false,
+          "taken_care_of": false,
+          "caretaker": false
+        },
+        "1211": {
+          "independent": true,
+          "needs_care": false,
+          "taken_care_of": false,
+          "caretaker": true
+        },
+        "1223": {
+          "independent": true,
+          "needs_care": false,
+          "taken_care_of": false,
+          "caretaker": false
+        }
+      },
+      "ocupation": {
+        "1200": {
+          "has job": false,
+          "income": 0
+        },
+        "1201": {
+          "has job": false,
+          "income": 0
+        },
+        "1202": {
+          "has job": false,
+          "income": 0
+        },
+        "1203": {
+          "has job": false,
+          "income": 0
+        },
+        "1204": {
+          "has job": false,
+          "income": 0
+        },
+        "1205": {
+          "has job": false,
+          "income": 0
+        },
+        "1206": {
+          "has job": false,
+          "income": 0
+        },
+        "1207": {
+          "has job": false,
+          "income": 0
+        },
+        "1208": {
+          "has job": false,
+          "income": 0
+        },
+        "1209": {
+          "has job": false,
+          "income": 0
+        },
+        "1210": {
+          "has job": false,
+          "income": 0
+        },
+        "1211": {
+          "has job": false,
+          "income": 0
+        },
+        "1212": {
+          "has job": false,
+          "income": 0
+        },
+        "1213": {
+          "has job": false,
+          "income": 0
+        },
+        "1214": {
+          "has job": false,
+          "income": 0
+        },
+        "1215": {
+          "has job": false,
+          "income": 0
+        },
+        "1216": {
+          "has job": false,
+          "income": 0
+        },
+        "1217": {
+          "has job": false,
+          "income": 0
+        },
+        "1218": {
+          "has job": false,
+          "income": 0
+        },
+        "1219": {
+          "has job": false,
+          "income": 0
+        },
+        "1220": {
+          "has job": false,
+          "income": 0
+        },
+        "1221": {
+          "has job": false,
+          "income": 0
+        },
+        "1222": {
+          "has job": false,
+          "income": 0
+        },
+        "1223": {
+          "has job": false,
+          "income": 0
+        },
+        "1224": {
+          "has job": false,
+          "income": 0
+        },
+        "1225": {
+          "has job": false,
+          "income": 0
+        },
+        "1226": {
+          "has job": false,
+          "income": 0
+        },
+        "1227": {
+          "has job": false,
+          "income": 0
+        },
+        "1228": {
+          "has job": false,
+          "income": 0
+        },
+        "1229": {
+          "has job": false,
+          "income": 0
+        },
+        "1230": {
+          "has job": false,
+          "income": 0
         }
       },
       "events": {
         "1200": [
           {
             "topic": "birth",
-            "year": 1184
+            "year": 1175
           },
           {
             "topic": "new relationship",
@@ -140,61 +338,368 @@
               12800
             ],
             "people names": [
-              "Eggerdus Stopelkin",
-              "Truden"
+              "Ludolphus Borsdraghere",
+              "Diewiven Schille"
             ],
             "people ages": [
-              23,
-              16
+              47,
+              25
             ],
             "label": "spouse",
             "committed": true
           }
         ],
-        "1202": [
-          {
-            "topic": "new relationship",
-            "key": 17703,
-            "people": [
-              12800,
-              17701
-            ],
-            "people names": [
-              "Truden",
-              "Wigherus Stopelkin"
-            ],
-            "people ages": [
-              18,
-              0
-            ],
-            "label": "parentchild",
-            "committed": false
-          }
-        ],
-        "1203": [
-          {
-            "topic": "new relationship",
-            "key": 19767,
-            "people": [
-              12800,
-              19765
-            ],
-            "people names": [
-              "Truden",
-              "Auesoete Stopelkin"
-            ],
-            "people ages": [
-              19,
-              0
-            ],
-            "label": "parentchild",
-            "committed": false
-          }
-        ],
         "1204": [
           {
+            "key": 12801,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12799,
+              "name": "Ludolphus Borsdraghere",
+              "age": 52,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "friendship label": "good friend",
+            "label": "spouse",
+            "love state": "loveless"
+          },
+          {
+            "topic": "personality change",
+            "change": true,
+            "trait": "nice-nasty",
+            "trigger": "grief",
+            "mod": 0.095
+          }
+        ],
+        "1205": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "new relationship",
+            "key": 28608,
+            "people": [
+              10453,
+              12800
+            ],
+            "people names": [
+              "Evergero",
+              "Diewiven Schille"
+            ],
+            "people ages": [
+              52,
+              33
+            ],
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1209": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "friend",
+            "relationship": 28608
+          }
+        ],
+        "1210": [
+          {
+            "topic": "new relationship",
+            "key": 32668,
+            "people": [
+              12800,
+              32666
+            ],
+            "people names": [
+              "Diewiven Schille",
+              "Fellen Evergeroszoon"
+            ],
+            "people ages": [
+              35,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "key": 28608,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10453,
+              "name": "Evergero",
+              "age": 55,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "friendship label": "friend",
+            "label": "spouse",
+            "love state": "infatuation"
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "event",
+            "event": "faction upheaval",
+            "faction": "No religion",
+            "year": 1212
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 32668
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1216": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 32666,
+              "name": "Fellen Evergeroszoon",
+              "age": 6,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": {
+                  "key": 12800,
+                  "name": "Diewiven Schille",
+                  "age": 42,
+                  "alive": true,
+                  "sex": "f",
+                  "parents": "firstgen"
+                },
+                "father": {
+                  "key": 10453,
+                  "name": "Evergero",
+                  "age": 55,
+                  "alive": false,
+                  "sex": "m",
+                  "parents": "firstgen"
+                }
+              }
+            },
+            "cause": "starvation",
+            "friendship label": "friend",
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1217": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1218": [
+          {
+            "topic": "new relationship",
+            "key": 41906,
+            "people": [
+              12800,
+              11183
+            ],
+            "people names": [
+              "Diewiven Schille",
+              "Marie Bigordel"
+            ],
+            "people ages": [
+              44,
+              49
+            ],
+            "label": "unrelated",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1219": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1220": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1221": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1222": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11183,
+              "name": "Marie Bigordel",
+              "age": 53,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "old age",
+            "friendship label": "friend",
+            "label": "unrelated",
+            "love state": "nothing"
+          },
+          {
+            "topic": "not caretaker"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1223": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1225": [
+          {
+            "topic": "new relationship",
+            "key": 45865,
+            "people": [
+              12800,
+              10312
+            ],
+            "people names": [
+              "Diewiven Schille",
+              "Hughekine Spirinx"
+            ],
+            "people ages": [
+              51,
+              54
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1226": [
+          {
+            "topic": "event",
+            "event": "faction upheaval",
+            "faction": "Dogmatists",
+            "year": 1226
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "friend",
+            "relationship": 45865
+          }
+        ],
+        "1227": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10312,
+              "name": "Hughekine Spirinx",
+              "age": 56,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "friendship label": "friend",
+            "label": "unrelated",
+            "love state": "nothing"
+          }
+        ],
+        "1230": [
+          {
+            "topic": "event",
+            "event": "war",
+            "year": 1230
+          },
+          {
             "topic": "death",
-            "cause": "childbirth"
+            "cause": "sickness"
           }
         ]
       }
@@ -203,21 +708,25 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stPapenhofstede.se1.c1",
-      "street": "Papenhofstede",
-      "neighborhood": "denhof",
-      "unique id": 974
+      "section": "stMuelen straet.se3.c1",
+      "street": "Muelen straet",
+      "neighborhood": "jorisbuurt",
+      "unique id": 161
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
-        12801
+        12801,
+        28608
       ]
     },
     "friends": [
-      17703,
-      19767
+      12801,
+      28608,
+      32668,
+      41906,
+      45865
     ],
     "enemies": []
   }

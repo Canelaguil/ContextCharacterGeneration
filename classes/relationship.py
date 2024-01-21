@@ -3,7 +3,12 @@ from mesa import Agent, Model
 from .relationship_classes import *
 from copy import deepcopy
 
+# TODO: enable sexual relationship upon label change
+# TODO: ROATNCIA RELATION CHANGE
 class Relationship(Agent):
+    """
+    Represents a relationship between two individuals (Person agents)
+    """
     def __init__(self, unique_id: int, model: Model, personA : dict, 
                  personB : dict, label : str, platonic_only=False) -> None:
         super().__init__(unique_id, model)
@@ -21,7 +26,7 @@ class Relationship(Agent):
         self.tasks = MessageInbox(self)
         self.logs = Log(model)
 
-        # don't allow for romance or sexual angle (w/ family e.g.)
+        # don't allow for romance or sexual angle (with family eg, (hopefully))
         self.platonic_only = platonic_only
 
         if label == 'spouse':
@@ -29,13 +34,15 @@ class Relationship(Agent):
         elif label in ['parentchild', 'sibling', 'half-sibling', 
                        'grandparentchild', 'aunclenibling', 'cousin']:
             self.family_init()
-        elif label == 'friend':
+        elif label == 'friend': # IMPORTANT: friend is not an actual label
             self.friendship_init()
-            label = 'unrelated' # categorize under unrelated
+            label = 'unrelated' # ACTUALLY categorized under unrelated
         else:
             self.platonic_init()
         
         self.label = label
+
+        # notify people of their new relationship
         notify_people_msg = {
             'topic' : 'new relationship',
             'key' : self.unique_id, 
@@ -48,10 +55,12 @@ class Relationship(Agent):
         self.update_people(notify_people_msg)
         self.end_cause = 'still active' # updated when relationship ends
 
+    """
+    INIT OPTIONS
+    """
     def arranged_marriage_init(self):
         """
-        Arrange marriage for first_gen couples. Disregards the platonic_only 
-        parameter.
+        Init an arranged marriage
         """
         friendship_seed = normal_in_range(1.1, 0.2, 1.5)
         self.friendship_aspect = Friendship(self, self.personA, self.personB, 
@@ -60,31 +69,46 @@ class Relationship(Agent):
         self.sexual_aspect = BirdsAndBees(self, self.personA, self.personB, True)
         self.romance_aspect = Romance(self, self.model, self.personA, self.personB, 
                                       'generate', 'generate')
-
+   
     def friendship_init(self):
-        friendship_seed = normal_in_range(1.1, 0.1, 1.5)
+        """
+        Init "arranged" friendship
+        """
+        friendship_seed = normal_in_range(1.3, 0.1, 1.5)
         self.friendship_aspect = Friendship(self, self.personA, self.personB, 
                                             False, friendship_seed)
         self.sexual_aspect = BirdsAndBees(self, self.personA, self.personB, False)
         self.romance_aspect = Romance(self, self.model, self.personA, self.personB)
 
     def platonic_init(self):
-        friendship_seed = normal_in_range(0.7, 0.2, 1.5)
+        """
+        Init platonic relationship
+        """
+        friendship_seed = normal_in_range(0.7, 0.1, 1.5)
         self.friendship_aspect = Friendship(self, self.personA, self.personB, 
                                             False, friendship_seed)
 
     def family_init(self):
+        """
+        Init family relationship
+        """
         friendship_seed = normal_in_range(1, 0.2, 1.5)
         self.friendship_aspect = Friendship(self, self.personA, self.personB, 
                                             True, friendship_seed)
 
     def set_home(self, house_key):
+        """
+        Set a home for any potential children to be born in
+        """
         self.common_home = house_key
 
     """
     CHANGE RELATIONSHIP STATE
     """
     def romance_change(self, new_label):
+        """
+        Change relationship label and notify inhabitants
+        """
         self.update_label(new_label)
         if new_label in ['spouse', 'partner']:
             taken = True
@@ -100,6 +124,13 @@ class Relationship(Agent):
         self.update_people(notify_people_msg)
 
     def end(self, end_cause, context={}):
+        """
+        End relationship (because someone died).
+        NOTE: a break-up does not end a relationship, it merely changes the label.
+        The only other reason to end a relationship would be because one of the 
+        people moves out of town, something which has not yet been implemented yet
+        (this comes from a institution)
+        """
         # if relationship already done for
         if not self.active:
             return
@@ -157,6 +188,10 @@ class Relationship(Agent):
         self.active = False
 
     def update_label(self, new_label):
+        """
+        Update label if higher in hierarchy than previous label (mostly: unrelated
+        to partner/spouse)
+        """
         label_hierarchy = [
             'sibling',
             'half-sibling',
@@ -177,9 +212,14 @@ class Relationship(Agent):
     PHASES / STEPS
     """
     def people(self):
+        """
+        Evolve applicable relationship aspects and save / process any changes
+        """
         if not self.active:
             return
         change = False
+
+        # friendship
         friend_report = self.friendship_aspect.evolve(self.proximity_score)
         report = {
             'friendship' : friend_report,
@@ -195,8 +235,9 @@ class Relationship(Agent):
                 'relationship' : self.unique_id
             }
             self.update_people(friend_update)
-       
         change = report['friendship']['change']
+
+        # love & sex
         if not self.platonic_only:
             romance_report = self.romance_aspect.evolve(friend_report, self.adults)
             sexual_report = self.sexual_aspect.evolve(romance_report)
@@ -208,7 +249,7 @@ class Relationship(Agent):
                 change = True
 
                 # notify person that their feelings changed
-                if romance_report['change A']:
+                if romance_report['change A']: # notify person a
                     update = {
                         'topic' : 'feelings change', 
                         'target' : self.keys[1],
@@ -218,7 +259,7 @@ class Relationship(Agent):
                         'relationship' : self.unique_id
                     }
                     self.model.message_person(self.keys[0], update)
-                else:
+                else: # notify person b
                     update = {
                         'topic' : 'feelings change', 
                         'target' : self.keys[0],
@@ -228,6 +269,7 @@ class Relationship(Agent):
                         'relationship' : self.unique_id
                     }
                     self.model.message_person(self.keys[1], update)
+
             if sexual_report['change']:
                 change = True
 
@@ -241,6 +283,9 @@ class Relationship(Agent):
             self.logs.add_log(report)       
 
     def lovedeathbirth(self): 
+        """
+        Process tasks / messages
+        """
         task = self.tasks.get()
         while task != None:
             topic = task['topic']
@@ -248,10 +293,13 @@ class Relationship(Agent):
                 self.end('person died', {'person' : task['person'], 'cause' : task['cause']})
             if topic == 'newly adult':
                 source = task['source']
-                self.adult[self.people.index(source)] = True
+                self.adults[self.keys.index(source)] = True
             task = self.tasks.get()
         
     def houses(self):
+        """
+        Process tasks / messages
+        """
         task = self.tasks.get()
         while task != None:
             topic = task['topic']
@@ -266,6 +314,10 @@ class Relationship(Agent):
     UTILS
     """
     def add_child_birth(self):
+        """
+        Adds a child to relationship through birth. 
+        NOTE: no option for adopted children is yet implemented
+        """
         income_class = self.personA['income class']
         child = self.model.birth_child(self.unique_id, income_class, self.personA['faction'])
         self.add_child(child, 'birth')
@@ -273,6 +325,7 @@ class Relationship(Agent):
     def add_child(self, child, kind='birth'):
         """
         Add child, either through birth or adoption
+        NOTE: no option for adopted children is yet implemented
         """
         for parent in self.keys:
             self.model.create_relationship(parent, child['key'], 'parentchild', True)
@@ -303,13 +356,23 @@ class Relationship(Agent):
     MESSAGING FUNCTIONS
     """
     def receive_message(self, task):
+        """
+        Receive message / task
+        """
         self.tasks.add(task)
 
     def update_people(self, msg):
+        """
+        Update both people in the relationship on something (presumably a change
+        in their relationship)
+        """
         self.model.message_person(self.personA['key'], msg)
         self.model.message_person(self.personB['key'], msg)
 
     def update_children(self, msg):
+        """
+        Update children of this relationship on a change relating to their parents
+        """
         for child in self.children:
             self.model.message_person(child, msg)
         for a_child in self.adopted_children:
@@ -319,6 +382,10 @@ class Relationship(Agent):
     INFO FUNCTIONS
     """
     def get_update(self):
+        """
+        Returns information about the status of the relation in question upon
+        inquiry (usually by someone in the relationship)
+        """
         about_us = {
             'friendship' : self.friendship_aspect.get_status()
         }
@@ -328,6 +395,10 @@ class Relationship(Agent):
         return about_us
 
     def status(self):
+        """
+        Actual extended relationship status, as well ast eh object that actually
+        gets turned into a .json object
+        """
         # return woman first if woman in relationship
         if self.personA['sex'] == 'f':
             people = [self.personA['key'], self.personB['key']]

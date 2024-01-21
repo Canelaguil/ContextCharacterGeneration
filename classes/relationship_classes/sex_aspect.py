@@ -1,54 +1,67 @@
 from ..utils import *
 
 class BirdsAndBees():
+        """
+        Directs conception and sex life progression
+        """
         def __init__(self, relationship, personA : dict, personB : dict, 
                      sexualRelationship : bool) -> None:
             self.relationship = relationship
-
+            self.personA = personA
+            self.personB = personB
+            
             # nature of sexual relationship
             self.is_sexual = sexualRelationship
-            self.sex_degree = (personA['born this way']['sex interest'] + personB['born this way']['sex interest']) / 2
-            self.sexuality_compatible = sexuality_match(personA['sex'], personB['sex'],
-                                                        personA['born this way']['sexuality label'],
-                                                        personB['born this way']['sexuality label'])
-            self.sexuality_score = sexuality_match(personA['sex'], personB['sex'],
-                                                    personA['born this way']['sexuality'],
-                                                    personB['born this way']['sexuality'], 
+            if sexualRelationship:
+                self.make_sexual()
+            
+            self.sexuality_compatible = sexuality_match(self.personA['sex'], self.personB['sex'],
+                                                        self.personA['born this way']['sexuality label'],
+                                                        self.personB['born this way']['sexuality label'])
+            self.sexuality_score = sexuality_match(self.personA['sex'], self.personB['sex'],
+                                                    self.personA['born this way']['sexuality'],
+                                                    self.personB['born this way']['sexuality'], 
                                                     'score')
             
             # conception variables
-            if personA['sex'] != personB['sex']:
+            if self.personA['sex'] != self.personB['sex']:
                 self.can_conceive = True         
-                if personB['sex'] == 'm':
-                    self.mother = personA['key']
-                    self.father = personB['key']
-                    self.mother_age = personA['age']
+                if self.personB['sex'] == 'm':
+                    self.mother = self.personA['key']
+                    self.father = self.personB['key']
+                    self.mother_age = self.personA['age']
                 else:
-                    self.mother = personB['key']
-                    self.father = personA['key']
-                    self.mother_age = personB['age']
-                self.fertility = min(personA['genetics']['fertility'], 
-                                     personB['genetics']['fertility'])
+                    self.mother = self.personB['key']
+                    self.father = self.personA['key']
+                    self.mother_age = self.personB['age']
+                self.fertility = min(self.personA['genetics']['fertility'], 
+                                     self.personB['genetics']['fertility'])
 
             else:
                 self.can_conceive = False
 
+            
+            
+        def make_sexual(self):
+            """
+            Determine nature of sexual relationship
+            """
             # sex life variables
-            self.max_sex_life = max(personA['born this way']['sex interest'], 
-                                    personB['born this way']['sex interest'])
-            self.min_sex_life = min(personA['born this way']['sex interest'], 
-                                    personB['born this way']['sex interest'])
+            self.is_sexual = True
+            self.sex_degree = (self.personA['born this way']['sex interest'] + self.personB['born this way']['sex interest']) / 2
+            self.max_sex_life = max(self.personA['born this way']['sex interest'], 
+                                    self.personB['born this way']['sex interest'])
+            self.min_sex_life = min(self.personA['born this way']['sex interest'], 
+                                    self.personB['born this way']['sex interest'])
             self.current_sex_life = round((self.max_sex_life + self.min_sex_life) / 2, 3)
             self.drive_compatibility = 1 - round(self.max_sex_life - self.min_sex_life, 3)
-            
-        def conceive(self):
+
+        def conceive(self, chance_modifier = 1):
             """
-            TODO: actually do something with the fertility scores
+            Chance of conception based on age and fertility score
             """
             if not self.can_conceive or not self.is_sexual:
                 return False
-            
-            chance_modifier = 1
             
             # update known age
             self.mother_age += 1
@@ -80,11 +93,13 @@ class BirdsAndBees():
             """
             report = {'change' : False}
             if not self.is_sexual: 
-                # chance of one night stand
-                if (romance_report['state A'] != 'nothing' or romance_report['state B']) and rand() < 0.1:
-                    self.one_time_thing = True
-                else:
-                    return report
+                # ch = rand()
+                # # chance of one night stand
+                # if (romance_report['state A'] != 'nothing' or romance_report['state B']) and ch < 0.1:
+                #     self.one_time_thing = True
+                # else:
+                #     return report
+                return
                 
             # chance of something changing
             something_chance = 0.2 * (1-self.drive_compatibility)
@@ -98,10 +113,10 @@ class BirdsAndBees():
             report['sex degree'] = self.sex_degree
 
             return report
-            
+    
         def get_status(self): 
             return {
-
+                'sexual' : self.is_sexual
             }
         
         def get_parents(self):

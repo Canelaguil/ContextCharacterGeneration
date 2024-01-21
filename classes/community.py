@@ -16,6 +16,9 @@ from .relationship_classes import Romance
 from .tests import run_tests
 
 def set_globals(health_stats, aesthetic_seed, names, society, community):
+        """
+        Sets globals from the config file in the files that need it. 
+        """
         # names
         Naming.surnames = names[2]
         Naming.female_names = names[1]
@@ -55,6 +58,7 @@ def set_globals(health_stats, aesthetic_seed, names, society, community):
         Occupation.adult_age = society['male_meant_for_independence']
         Occupation.passive_income = community['class_passive_income']
         Home.person_income_percentage = community['class_person_household_percentage']
+        Home.adult_age = society['male_meant_for_independence']
         
         # relationships
         Person.can_divorce = society['divorce']
@@ -71,26 +75,36 @@ def set_globals(health_stats, aesthetic_seed, names, society, community):
 
 
 class Community(Model):
+    """
+    Model directing the various elements and agents that make a community. 
+    Keeps track of various statistics. All inter-agent communication and 
+    information requests are done through the community.
+    """
     def __init__(self, society, seed, health_stats, aesthetic_seed, 
-                 community, institutions, names, testing=True, year=1200) -> None:
+                 community, institutions, names, testing=False, year=1200) -> None:
         super().__init__(self)
         set_globals(health_stats, aesthetic_seed, names, society, community)
 
         # stat trackers
-        self.ids = 10000 # TODO : find consistent system?
+        self.ids = 10000 # TODO : find consistent numbering system?
         self.births = 0
         self.male_births, self.female_births = 0, 0
         self.deaths = 0
         self.marriages = 0
         self.people_alive = 0
 
+        # model parameters
+        self.year = year
         self.schedule = StagedActivation(self, ["people", "lovedeathbirth", "houses", 
                                                 "post_processing"], True)
-        self.year = year
+        
+        # agent storage
         self.people = {}
         self.homes = {}
-        self.get_relationships = {}
-        self.whoknowswho = {} # person_key : [list of acquaintances]
+        self.relationships = {}
+
+        # utils
+        self.whoknowswho = {} # person_key : [list of acquaintance keys]
 
         # init the various community components
         self.city = City(self, seed, community)
@@ -98,26 +112,33 @@ class Community(Model):
         self.institutions = Institutions(institutions)
         self.community_events = CommunityEvents(self, community)
         self.intention_manager = Intention_Manager(0, self)
-        self.init_community(society, seed)
+        self.init_community(seed)
 
+        # testing is useful for developers implementing and testing new modules;
+        # further tuning can be better done through output analysis
         if testing:
-            run_tests(self)
+            run_tests(self) 
 
     """
     INIT FUNCTIONS
     """
-    def init_community(self, society, seed):
+    def init_community(self, seed):
+        """
+        Add seed couples to homes. Homes have already been initialized in the 
+        City class.
+        """
         for hk, h in self.homes.items():
             if rand() < seed['percentage_inhabited_houses']: 
                 income_class = h.income_class
                 m, w = self.make_couple(income_class, h.address())
                 self.move_person_to_home(hk, m)
                 self.move_person_to_home(hk, w)
-                # self.add_person_to_home(hk, m)
-                # self.add_person_to_home(hk, w)
 
-    def make_couple(self, income_class, home_address):
-        max_age = Body.old_age # Person.adult_age_men + int((Body.old_age - Person.adult_age_men) * 0.6)
+    def make_couple(self, income_class, home_address) -> tuple:
+        """
+        Returns the keys of a married couple (relationship initialized). 
+        """
+        max_age = Body.old_age 
         man_age = rand_int(max_age, Person.adult_age_men)
         faction = self.factions.assign_faction()
         man = Person(self.get_id(), self, self.year, income_class, faction,'firstgen', 
@@ -138,6 +159,9 @@ class Community(Model):
     INPUT FUNCTIONS
     """
     def add_person(self, person : Agent):
+        """
+        Add a Person class to the model's person tracking systems.  
+        """
         self.people_alive += 1
         # everyone knows themselves
         if not person.unique_id in self.whoknowswho:
@@ -147,14 +171,30 @@ class Community(Model):
         self.schedule.add(person)
 
     def add_home(self, home : Agent):
+        """
+        Add a Home class to the model's home tracking systems.  
+        """
         self.homes[home.unique_id] = home
         self.schedule.add(home)
 
-    def add_person_to_home(self, house_key, person_key):
-        person_info = self.people[person_key].description()
-        self.homes[house_key].add_person(person_info)
+    def add_relationship(self, relat : Agent):
+        a, b = relat.keys
+        if not a in self.whoknowswho:
+            self.whoknowswho[a] = []
+        if not b in self.whoknowswho:
+            self.whoknowswho[b] = []
+        self.whoknowswho[a].append(b)
+        self.whoknowswho[b].append(a)
+        self.relationships[relat.unique_id] = relat 
+        self.schedule.add(relat)
 
+    """
+    AGENT UTILS
+    """
     def move_person_to_home(self, house_key, person_key):
+        """ 
+        Move person out of a home if they have one, and add to new one. 
+        """
         person_info = self.people[person_key].description()
         try:
             if person_info['home'] != None: # like for newborns
@@ -166,18 +206,14 @@ class Community(Model):
         house_info = self.homes[house_key].address()
         self.people[person_key].move(house_info)
 
-    def add_relationship(self, relat : Agent):
-        a, b = relat.keys
-        if not a in self.whoknowswho:
-            self.whoknowswho[a] = []
-        if not b in self.whoknowswho:
-            self.whoknowswho[b] = []
-        self.whoknowswho[a].append(b)
-        self.whoknowswho[b].append(a)
-        self.get_relationships[relat.unique_id] = relat 
-        self.schedule.add(relat)
-
     def marry(self, keyA, keyB, type='spouse'):
+        """ 
+        Marry two agents, and move any pre-existing children to their new
+        shared home.
+
+        NOTE: Middle Ages specific, should be moved to project-specific module
+        in the future
+        """
         self.marriages += 1
         personA = self.get_person(keyA)
         personB = self.get_person(keyB)
@@ -222,6 +258,9 @@ class Community(Model):
 
     def create_relationship(self, personA_key, personB_key, label, 
                             platonic_only=False):
+        """
+        Create new relationship between two people.
+        """
         # check if we already know each other
         if self.we_know_each_other(personA_key, personB_key):
             log_error('We already know each other', [personA_key, personB_key])
@@ -239,10 +278,13 @@ class Community(Model):
         self.add_relationship(r)
         return u_id
 
-    def express_intention(self, intention):
-        self.intention_manager.receive_intention(intention)
-
     def birth_child(self, relationship_key, income_class, faction):
+        """
+        Community extension of childbirth prompted by Relationship: new child is 
+        added.
+
+        TODO: select house to move into here instead of in the Relationship
+        """
         self.births += 1
         parent_info = self.get_relationship(relationship_key)
         unique_id = self.get_id()
@@ -256,6 +298,9 @@ class Community(Model):
         return child.description()
     
     def report_death(self, key):
+        """
+        Process death of Person agent.
+        """
         self.people_alive -= 1
         self.deaths += 1
         self.schedule.remove(self.people[key])
@@ -265,28 +310,49 @@ class Community(Model):
     MESSAGE FUNCTIONS
     """
     def message_person(self, key, msg):
+        """
+        Add a message to a Person's message queue. 
+        """
         self.people[key].receive_message(msg)
 
     def message_all_living_people(self, msg):
+        """
+        Add a message to all living people's message queue. Is prompted for
+        community events.
+        """
         for key, p in self.people.items():
             if p.alive:
                 self.message_person(key, msg)
 
     def message_home(self, key, msg):
+        """
+        Add a task to a Home's message queue. 
+        """
         self.homes[key].receive_message(msg)
 
     def message_relationship(self, key, msg):
+        """
+        Add a message to a Relationship's message queue. 
+        """
         try:
-            self.get_relationships[key].receive_message(msg)
+            self.relationships[key].receive_message(msg)
         except:
-            print('in relationship messaging')
-            print(f"key: {key}")
             fatal_error(msg)
+
+    def express_intention(self, intention):
+        """
+        Send intention to intention manager.
+        """
+        self.intention_manager.receive_intention(intention)
 
     """
     SIMULATION FUNCTIONS
     """
     def step(self):
+        """
+        A step in the model's agent: agents are directed through scheduler, and 
+        the community event manager is checked for events.
+        """
         # check if a historical event happens this year
         happenings = self.community_events.something_happens(self.year)
         if happenings != []:
@@ -295,6 +361,9 @@ class Community(Model):
         self.schedule.step()
 
     def run(self, years, output=False):
+        """
+        Runs simulation for x years, printing stats to the terminal or not.
+        """
         # add intention manager to schedule (unique ID=0)
         self.schedule.add(self.intention_manager)
 
@@ -319,7 +388,7 @@ class Community(Model):
         print("SIMULATION STATS")
         print(f"- {years} years")
         print(f"- {len(self.people)} people")
-        print(f"- {len(self.get_relationships)} relationships")
+        print(f"- {len(self.relationships)} relationships")
         print(f"- {len(self.homes)} homes")
         print(f'- {self.schedule.get_agent_count()} active agents')
         global errors
@@ -328,7 +397,7 @@ class Community(Model):
         # self.city.stats(True)
 
     """
-    OUTPUT FUNCTIONS
+    INFO FUNCTIONS
     """
     def get_person(self, key):
         return self.people[key].description()
@@ -343,10 +412,10 @@ class Community(Model):
         return self.homes[key].info()
     
     def get_relationship(self, key):
-        return self.get_relationships[key].status()
+        return self.relationships[key].status()
     
     def get_relationship_info(self, key):
-        return self.get_relationships[key].get_update()
+        return self.relationships[key].get_update()
 
     def get_relationship_status_person(self, key):
         return self.people[key].get_relationship_status()
@@ -371,7 +440,7 @@ class Community(Model):
         return [h.info() for h in self.homes.values()]
 
     def get_relationships(self):
-        return [r.status() for r in self.get_relationships.values()]
+        return [r.status() for r in self.relationships.values()]
 
     """
     JSON OUTPUT
@@ -401,7 +470,7 @@ class Community(Model):
 
         if not os.path.exists('output/relationships_json'):
             os.mkdir('output/relationships_json')
-        for key, r in self.get_relationships.items():
+        for key, r in self.relationships.items():
             with open(f"output/relationships_json/{key}.json", 'w') as output:
                 json.dump({key : r.status()}, output, indent=2, separators=(',', ': '))
 

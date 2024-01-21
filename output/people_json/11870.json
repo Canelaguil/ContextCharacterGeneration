@@ -1,93 +1,114 @@
 {
   "11870": {
     "alive": false,
-    "name": "Atghardis",
-    "surname": "Clinkart",
-    "full name": "Atghardis Clinkart",
+    "name": "Ghela",
+    "surname": "Minne",
+    "full name": "Ghela Minne",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.166,
-      "romantic interest": 0.692,
-      "sex interest": 0.7,
-      "gender expression": 0.0,
+      "sexuality": 0.077,
+      "romantic interest": 0.694,
+      "sex interest": 0.531,
+      "gender expression": 0.05,
       "sex": "f"
     },
-    "age": 49,
-    "birth year": 1161,
+    "age": 25,
+    "birth year": 1179,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
       3,
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.335,
-      "nice-nasty": 0.999,
-      "honest-false": 0.556,
-      "dream": 0.168,
-      "outgoing": 0.549
+      "lawful-chaotic": 0.495,
+      "nice-nasty": 0.791,
+      "honest-false": 0.609,
+      "dream": 0.371,
+      "outgoing": 0.999
     },
     "attitude": {
-      "dream": 0.168,
-      "outgoing": 0.549
+      "dream": 0.371,
+      "outgoing": 0.999
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "caretaker",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.108,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.061,
+        "gender expression expression": 0.038
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "15751": {
+          "key": 15751,
+          "name": "Walburgis",
+          "age": 16,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": {
+              "key": 11870,
+              "name": "Ghela Minne",
+              "age": 25,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 11869,
+              "name": "Suam",
+              "age": 44,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11871
-        ]
+        ],
+        "child": {
+          "birth": [
+            15753
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
         3,
         "upper middle class"
       ],
-      "income": 1.5490000000000002,
-      "all_incomes": [
-        1.093,
-        1.243,
-        1.538,
-        1.5490000000000002,
-        1.5490000000000002,
-        1.5490000000000002,
-        1.5490000000000002,
-        1.5490000000000002,
-        1.298,
-        1.5490000000000002
-      ],
-      "job": {
-        "lawful": false,
-        "honest": false
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 1,
-      "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 9,
+      "eye_color": "blue",
+      "hair_color": "brown",
+      "hair_color_code": 2,
+      "hair_length": "long",
+      "beauty": 0.459,
       "hair_type": [
         "S",
         "S"
       ],
-      "health": 0.742,
-      "fertility": 0.803,
+      "health": 0.594,
+      "fertility": 0.521,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -99,29 +120,56 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.742
+            "new_health": 0.594
           },
           "death": false
         },
-        "1209": {
+        "1203": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.742
+            "new_health": 0.594
           },
           "death": true
+        }
+      },
+      "homsoc": {
+        "1200": {
+          "independent": true,
+          "needs_care": false,
+          "taken_care_of": false,
+          "caretaker": false
+        },
+        "1202": {
+          "independent": true,
+          "needs_care": false,
+          "taken_care_of": false,
+          "caretaker": true
+        }
+      },
+      "ocupation": {
+        "1200": {
+          "has job": false,
+          "income": 0
+        },
+        "1201": {
+          "has job": false,
+          "income": 0
+        },
+        "1202": {
+          "has job": false,
+          "income": 0
+        },
+        "1203": {
+          "has job": false,
+          "income": 0
         }
       },
       "events": {
         "1200": [
           {
             "topic": "birth",
-            "year": 1161
-          },
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.093
+            "year": 1179
           },
           {
             "topic": "new relationship",
@@ -131,34 +179,68 @@
               11870
             ],
             "people names": [
-              "Meynolphus Iude",
-              "Atghardis Clinkart"
+              "Suam",
+              "Ghela Minne"
             ],
             "people ages": [
-              46,
-              39
+              42,
+              21
             ],
             "label": "spouse",
             "committed": true
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 15753,
+            "people": [
+              11870,
+              15751
+            ],
+            "people names": [
+              "Ghela Minne",
+              "Walburgis"
+            ],
+            "people ages": [
+              22,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
-            "topic": "feelings change",
-            "target": 11869,
-            "target name": "Meynolphus Iude",
-            "state": "solid love",
-            "friendship label": "good friend",
-            "relationship": 11871
-          }
-        ],
-        "1208": [
+            "key": 11871,
+            "topic": "unmarried"
+          },
           {
-            "topic": "event",
-            "event": "faction upheaval",
-            "faction": "No religion",
-            "year": 1208
+            "topic": "person died",
+            "person": {
+              "key": 11869,
+              "name": "Suam",
+              "age": 44,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "friendship label": "indifferent",
+            "label": "spouse",
+            "love state": "loveless"
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
           }
         ],
-        "1209": [
+        "1202": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1203": [
           {
             "topic": "death",
             "cause": "illness"
@@ -170,20 +252,20 @@
     "home": {
       "income class": 3,
       "income class label": "upper middle class",
-      "section": "stMuurhuysen1.se1.c3",
+      "section": "stMuurhuysen1.se3.c3",
       "street": "Muurhuysen1",
       "neighborhood": "cingelzuid",
-      "unique id": 653
+      "unique id": 662
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         11871
       ]
     },
     "friends": [
-      11871
+      15753
     ],
     "enemies": []
   }

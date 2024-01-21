@@ -1,6 +1,9 @@
 from ..utils import *
 
 class CommunityEvents():
+    """
+    Makes community events happen either at random or as planned
+    """
     def __init__(self, model, community) -> None:
         self.events = community['community_events']
         self.event_distr = community['community_events_distr']
@@ -17,6 +20,9 @@ class CommunityEvents():
                 self.fixed_events[y].append(e)
     
     def trigger(self, event=None, param=None):
+        """
+        Trigger specific community happening
+        """
         # choose random event if none specified
         if event == None or event not in self.events:
             event = rand_choice(self.events, self.event_distr)
@@ -42,6 +48,10 @@ class CommunityEvents():
         return []
     
     def something_happens(self, year):
+        """
+        Yearly evolve step: check if something is meant to happen, have something
+        happen by chance (might be double!)
+        """
         self.year = year
         # if something is meant to happen this year, make it happen
         history_book = self.dictated_history(year)
@@ -63,6 +73,9 @@ class CommunityEvents():
     """
 
     def plague(self):
+        """
+        Announce plague to community
+        """
         announcement = {
             'topic' : 'event',
             'event' : 'plague', 
@@ -71,6 +84,9 @@ class CommunityEvents():
         self.announce(announcement)
     
     def faction_upheaval(self, faction=None):
+        """
+        Announce faction upheaval to community
+        """
         if faction == None:
             f = rand_choice(self.factions)
         announcement = {
@@ -82,6 +98,9 @@ class CommunityEvents():
         self.announce(announcement)
 
     def war(self):
+        """
+        Announce war to community
+        """
         announcement = {
             'topic' : 'event',
             'event' : 'war', 
@@ -90,6 +109,9 @@ class CommunityEvents():
         self.announce(announcement)
 
     def famine(self):
+        """
+        Announce famine to community
+        """
         announcement = {
             'topic' : 'event',
             'event' : 'famine', 
@@ -98,5 +120,8 @@ class CommunityEvents():
         self.announce(announcement)
 
     def announce(self, announcement):
+        """
+        Announce the current disaster to community
+        """
         self.model.message_all_living_people(announcement)
         

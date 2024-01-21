@@ -2,6 +2,9 @@ from ..utils import *
 from mesa import Agent, Model
 
 class Matchmaker():
+    """
+    Matchmaker parent class
+    """
     def __init__(self, owner) -> None:
         self.owner = owner
         self.candidate_list = []
@@ -24,6 +27,9 @@ class Matchmaker():
         return False
 
 class FriendshipCandidates(Matchmaker): 
+    """
+    Child of Matchmaker: friendship matching algorithm
+    """
     def __init__(self, owner) -> None:
         super().__init__(owner)
 
@@ -99,6 +105,9 @@ class FriendshipCandidates(Matchmaker):
         return best_option    
 
 class MarriageCandidates(Matchmaker):
+    """
+    Child of Matchmaker: marriage matching algorithm
+    """
     def __init__(self, owner) -> None:
         super().__init__(owner)
     
@@ -164,6 +173,10 @@ class MarriageCandidates(Matchmaker):
         return best_option    
 
 class Intention_Manager(Agent):
+    """
+    Receives socializing intentions from Person agents and tries matching them
+    accordingly
+    """
     def __init__(self, unique_id: int, model: Model) -> None:
         super().__init__(unique_id, model)
         self.male_marriage_intentions = MarriageCandidates(self)
@@ -186,6 +199,9 @@ class Intention_Manager(Agent):
     Intention management
     """
     def receive_intention(self, intention_msg):
+        """
+        Receive intention and sort into proper category
+        """
         intention = intention_msg['topic']
         if intention == 'marriage':
             if intention_msg['sex'] == 'f':
@@ -202,6 +218,9 @@ class Intention_Manager(Agent):
         pass
 
     def lovedeathbirth(self):
+        """
+        Match people and create new relationships
+        """
         # record stats
         self.bachelors.append(len(self.male_marriage_intentions.candidate_list))
         self.bachelorettes.append(len(self.female_marriage_intentions.candidate_list))
@@ -246,6 +265,9 @@ class Intention_Manager(Agent):
     """
     def receive_stats(self, new_males, new_females, new_deaths, new_marriages,
                       living_people):
+        """
+        Receive and process stats from community
+        """
         all = new_males + new_females
         self.male_births.append(new_males)
         self.births.append(all)
@@ -255,6 +277,9 @@ class Intention_Manager(Agent):
         self.living_people.append(living_people)
 
     def demographics(self):
+        """ 
+        Return demographic stats from the run
+        """
         return {
             'male births' : self.male_births, 
             'female births' : self.female_births, 

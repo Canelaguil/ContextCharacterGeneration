@@ -1,19 +1,19 @@
 {
   "10255": {
     "alive": false,
-    "name": "Gerart",
-    "surname": "Cleine",
-    "full name": "Gerart Cleine",
+    "name": "Gherelm",
+    "surname": "Buke",
+    "full name": "Gherelm Buke",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.049,
-      "romantic interest": 0.664,
-      "sex interest": 0.735,
+      "sexuality": 0.039,
+      "romantic interest": 0.672,
+      "sex interest": 0.852,
       "gender expression": 0.0,
       "sex": "m"
     },
-    "age": 45,
-    "birth year": 1157,
+    "age": 53,
+    "birth year": 1152,
     "sex": "m",
     "faction": "Dogmatists",
     "income class": [
@@ -21,15 +21,15 @@
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.419,
-      "nice-nasty": 0.325,
-      "honest-false": 0.57,
-      "dream": 0.353,
-      "outgoing": 0.836
+      "lawful-chaotic": 0.426,
+      "nice-nasty": 0.041,
+      "honest-false": 0.681,
+      "dream": 0.762,
+      "outgoing": 0.594
     },
     "attitude": {
-      "dream": 0.353,
-      "outgoing": 0.836
+      "dream": 0.762,
+      "outgoing": 0.594
     },
     "homsoc": {
       "means": {
@@ -40,22 +40,61 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.023,
+        "sexuality expression": 0.014,
         "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "14320": {
-          "key": 14320,
-          "name": "Rabburgis Cleine",
-          "age": 49,
-          "alive": true,
+        "14314": {
+          "key": 14314,
+          "name": "Aue Buke",
+          "age": 17,
+          "alive": false,
           "sex": "f",
           "parents": {
-            "mother": "Rabburgis (10256)",
-            "father": "Gerart (10255)"
+            "mother": {
+              "key": 10256,
+              "name": "Lutghardis Calf",
+              "age": 57,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 10255,
+              "name": "Gherelm Buke",
+              "age": 53,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
+          }
+        },
+        "17254": {
+          "key": 17254,
+          "name": "Martin Buke",
+          "age": 47,
+          "alive": true,
+          "sex": "m",
+          "parents": {
+            "mother": {
+              "key": 10256,
+              "name": "Lutghardis Calf",
+              "age": 57,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 10255,
+              "name": "Gherelm Buke",
+              "age": 53,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
           }
         }
       },
@@ -65,7 +104,8 @@
         ],
         "child": {
           "birth": [
-            14321
+            14315,
+            17255
           ]
         }
       }
@@ -76,28 +116,33 @@
         1,
         "lower middle class"
       ],
-      "income": 0.995,
+      "income": 0.909,
       "all_incomes": [
-        0.74,
-        0.903,
-        0.995
+        0.996,
+        0.992,
+        0.906,
+        0.92,
+        1.002,
+        0.909
       ],
       "job": {
         "lawful": true,
-        "honest": false
+        "honest": true
       }
     },
     "genetics": {
-      "skin_color": 5,
-      "eye_color": "brown",
+      "skin_color": 8,
+      "eye_color": "blue",
       "hair_color": "black",
       "hair_color_code": 0,
+      "hair_length": "long",
+      "beauty": 0.804,
       "hair_type": [
         "S",
-        "S"
+        "C"
       ],
-      "health": 0.667,
-      "fertility": 0.759,
+      "health": 0.0,
+      "fertility": 0.608,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -109,29 +154,75 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.667
+            "new_health": 0.624
           },
           "death": false
         },
-        "1201": {
+        "1202": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.667
+            "change": true,
+            "value_change": -0.262,
+            "new_health": 0.362
+          },
+          "death": false
+        },
+        "1203": {
+          "health": {
+            "change": true,
+            "value_change": -0.248,
+            "new_health": 0.114
+          },
+          "death": false
+        },
+        "1204": {
+          "health": {
+            "change": true,
+            "value_change": -0.114,
+            "new_health": 0.0
           },
           "death": true
+        }
+      },
+      "homsoc": {
+        "1200": {
+          "independent": true,
+          "needs_care": false,
+          "taken_care_of": false,
+          "caretaker": false
+        }
+      },
+      "ocupation": {
+        "1200": {
+          "has job": true,
+          "income": 0.992
+        },
+        "1201": {
+          "has job": true,
+          "income": 0.906
+        },
+        "1202": {
+          "has job": true,
+          "income": 0.92
+        },
+        "1203": {
+          "has job": true,
+          "income": 1.002
+        },
+        "1204": {
+          "has job": true,
+          "income": 0.909
         }
       },
       "events": {
         "1200": [
           {
             "topic": "birth",
-            "year": 1157
+            "year": 1152
           },
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.74
+            "income": 0.996
           },
           {
             "topic": "new relationship",
@@ -141,39 +232,74 @@
               10256
             ],
             "people names": [
-              "Gerart Cleine",
-              "Rabburgis Neue"
+              "Gherelm Buke",
+              "Lutghardis Calf"
             ],
             "people ages": [
-              43,
-              36
+              48,
+              35
             ],
             "label": "spouse",
             "committed": true
           },
           {
             "topic": "new relationship",
-            "key": 14321,
+            "key": 14315,
             "people": [
               10255,
-              14320
+              14314
             ],
             "people names": [
-              "Gerart Cleine",
-              "Rabburgis Cleine"
+              "Gherelm Buke",
+              "Aue Buke"
             ],
             "people ages": [
-              44,
+              49,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 10256,
+            "target name": "Lutghardis Calf",
+            "state": "solid love",
+            "friendship label": "friend",
+            "relationship": 10257
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 17255,
+            "people": [
+              10255,
+              17254
+            ],
+            "people names": [
+              "Gherelm Buke",
+              "Martin Buke"
+            ],
+            "people ages": [
+              51,
               0
             ],
             "label": "parentchild",
             "committed": false
           }
         ],
-        "1201": [
+        "1203": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.002
+          }
+        ],
+        "1204": [
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "sickness"
           }
         ]
       }
@@ -195,7 +321,8 @@
       ]
     },
     "friends": [
-      10257
+      10257,
+      17255
     ],
     "enemies": []
   }

@@ -1,35 +1,35 @@
 {
   "11746": {
     "alive": false,
-    "name": "Meinoldo",
-    "surname": "Ome",
-    "full name": "Meinoldo Ome",
+    "name": "Isbrandus",
+    "surname": "",
+    "full name": "Isbrandus",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.165,
-      "romantic interest": 0.59,
-      "sex interest": 0.843,
-      "gender expression": 0.118,
+      "sexuality": 0.031,
+      "romantic interest": 0.999,
+      "sex interest": 0.584,
+      "gender expression": 0.199,
       "sex": "m"
     },
-    "age": 49,
-    "birth year": 1152,
+    "age": 36,
+    "birth year": 1167,
     "sex": "m",
-    "faction": "Dogmatists",
+    "faction": "No religion",
     "income class": [
       3,
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.796,
-      "nice-nasty": 0.764,
-      "honest-false": 0.923,
-      "dream": 0.356,
-      "outgoing": 0.874
+      "lawful-chaotic": 0.732,
+      "nice-nasty": 0.726,
+      "honest-false": 0.419,
+      "dream": 0.237,
+      "outgoing": 0.543
     },
     "attitude": {
-      "dream": 0.356,
-      "outgoing": 0.874
+      "dream": 0.237,
+      "outgoing": 0.543
     },
     "homsoc": {
       "means": {
@@ -40,14 +40,52 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.088,
-        "gender expression expression": 0.054
+        "sexuality expression": 0.016,
+        "gender expression expression": 0.082
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
-      "relationship keys": {}
+      "children": {
+        "15883": {
+          "key": 15883,
+          "name": "Seukinus Isbrandusszoon",
+          "age": 25,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": {
+              "key": 11747,
+              "name": "Natelien Innighe",
+              "age": 31,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 11746,
+              "name": "Isbrandus",
+              "age": 36,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
+          }
+        }
+      },
+      "relationship keys": {
+        "spouse": [
+          11748
+        ],
+        "unrelated": [
+          14494
+        ],
+        "child": {
+          "birth": [
+            15884
+          ]
+        }
+      }
     },
     "occupation": {
       "has job": true,
@@ -55,27 +93,31 @@
         3,
         "upper middle class"
       ],
-      "income": 1.051,
+      "income": 0.8360000000000001,
       "all_incomes": [
-        0.974,
-        1.051
+        0.761,
+        0.671,
+        0.792,
+        0.8360000000000001
       ],
       "job": {
         "lawful": true,
-        "honest": true
+        "honest": false
       }
     },
     "genetics": {
-      "skin_color": 1,
-      "eye_color": "brown",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "skin_color": 7,
+      "eye_color": "green",
+      "hair_color": "blonde",
+      "hair_color_code": 4,
+      "hair_length": "medium",
+      "beauty": 0.313,
       "hair_type": [
         "C",
-        "C"
+        "S"
       ],
-      "health": 0.724,
-      "fertility": 0.637,
+      "health": 0.754,
+      "fertility": 0.787,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -87,27 +129,147 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.724
+            "new_health": 0.754
+          },
+          "death": false
+        },
+        "1202": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.754
           },
           "death": true
+        }
+      },
+      "homsoc": {
+        "1200": {
+          "independent": false,
+          "needs_care": false,
+          "taken_care_of": false,
+          "caretaker": false
+        },
+        "1202": {
+          "independent": true,
+          "needs_care": false,
+          "taken_care_of": false,
+          "caretaker": false
+        }
+      },
+      "ocupation": {
+        "1200": {
+          "has job": true,
+          "income": 0.671
+        },
+        "1201": {
+          "has job": true,
+          "income": 0.792
+        },
+        "1202": {
+          "has job": true,
+          "income": 0.8360000000000001
         }
       },
       "events": {
         "1200": [
           {
             "topic": "birth",
-            "year": 1152
+            "year": 1167
           },
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.974
+            "income": 0.761
           },
           {
             "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.051
+            "notice": "low income",
+            "income": 0.671
           },
+          {
+            "topic": "new relationship",
+            "key": 11748,
+            "people": [
+              11746,
+              11747
+            ],
+            "people names": [
+              "Isbrandus",
+              "Natelien Innighe"
+            ],
+            "people ages": [
+              33,
+              29
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "friend",
+            "relationship": 11748
+          },
+          {
+            "topic": "new relationship",
+            "key": 14494,
+            "people": [
+              10208,
+              11746
+            ],
+            "people names": [
+              "Clara Spiker",
+              "Isbrandus"
+            ],
+            "people ages": [
+              31,
+              34
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 15884,
+            "people": [
+              11746,
+              15883
+            ],
+            "people names": [
+              "Isbrandus",
+              "Seukinus Isbrandusszoon"
+            ],
+            "people ages": [
+              35,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "key": 11748,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11747,
+              "name": "Natelien Innighe",
+              "age": 31,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "friendship label": "friend",
+            "label": "spouse",
+            "love state": "infatuation"
+          }
+        ],
+        "1202": [
           {
             "topic": "death",
             "cause": "illness"
@@ -119,17 +281,23 @@
     "home": {
       "income class": 3,
       "income class label": "upper middle class",
-      "section": "stDie lange straet1.se1.c3",
+      "section": "stDie lange straet1.se3.c3",
       "street": "Die lange straet1",
       "neighborhood": "olvbuurt",
-      "unique id": 610
+      "unique id": 617
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
-      "relationships": []
+      "taken": false,
+      "married": false,
+      "relationships": [
+        11748
+      ]
     },
-    "friends": [],
+    "friends": [
+      11748,
+      14494,
+      15884
+    ],
     "enemies": []
   }
 }

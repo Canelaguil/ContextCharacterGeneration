@@ -1,35 +1,35 @@
 {
   "11284": {
     "alive": false,
-    "name": "Hardenbernus",
-    "surname": "Ballinc",
-    "full name": "Hardenbernus Ballinc",
+    "name": "Betten",
+    "surname": "Durcant",
+    "full name": "Betten Durcant",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.677,
-      "sex interest": 0.593,
-      "gender expression": 0.113,
+      "sexuality": 0.053,
+      "romantic interest": 0.483,
+      "sex interest": 0.98,
+      "gender expression": 0.184,
       "sex": "m"
     },
-    "age": 32,
-    "birth year": 1169,
+    "age": 29,
+    "birth year": 1175,
     "sex": "m",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
       0,
       "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.662,
-      "nice-nasty": 0.479,
-      "honest-false": 0.46,
-      "dream": 0.289,
-      "outgoing": 0.577
+      "lawful-chaotic": 0.555,
+      "nice-nasty": 0.518,
+      "honest-false": 0.416,
+      "dream": 0.216,
+      "outgoing": 0.483
     },
     "attitude": {
-      "dream": 0.289,
-      "outgoing": 0.577
+      "dream": 0.216,
+      "outgoing": 0.483
     },
     "homsoc": {
       "means": {
@@ -37,17 +37,83 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.073
+        "sexuality expression": 0.042,
+        "gender expression expression": 0.183
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
-      "relationship keys": {}
+      "children": {
+        "16151": {
+          "key": 16151,
+          "name": "Heinhoca Bettenszoon",
+          "age": 14,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": {
+              "key": 11285,
+              "name": "Aghata Tunne",
+              "age": 20,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 11284,
+              "name": "Betten Durcant",
+              "age": 29,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
+          }
+        },
+        "17400": {
+          "key": 17400,
+          "name": "Hersewindis Durcant",
+          "age": 1,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": {
+              "key": 11285,
+              "name": "Aghata Tunne",
+              "age": 20,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 11284,
+              "name": "Betten Durcant",
+              "age": 29,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
+          }
+        }
+      },
+      "relationship keys": {
+        "spouse": [
+          11286
+        ],
+        "unrelated": [
+          14479
+        ],
+        "child": {
+          "birth": [
+            16152,
+            17401
+          ]
+        }
+      }
     },
     "occupation": {
       "has job": true,
@@ -55,27 +121,32 @@
         0,
         "working class"
       ],
-      "income": 1.499,
+      "income": 0.918,
       "all_incomes": [
-        1.45,
-        1.499
+        0.99,
+        1.051,
+        1.047,
+        0.98,
+        0.918
       ],
       "job": {
-        "lawful": false,
-        "honest": false
+        "lawful": true,
+        "honest": true
       }
     },
     "genetics": {
-      "skin_color": 5,
-      "eye_color": "blue",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 0,
+      "eye_color": "brown",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
+      "hair_length": "medium",
+      "beauty": 0.704,
       "hair_type": [
-        "S",
+        "C",
         "C"
       ],
-      "health": 0.721,
-      "fertility": 0.823,
+      "health": 0.318,
+      "fertility": 0.533,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -87,25 +158,154 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.721
+            "new_health": 0.566
+          },
+          "death": false
+        },
+        "1203": {
+          "health": {
+            "change": true,
+            "value_change": -0.248,
+            "new_health": 0.318
           },
           "death": true
+        }
+      },
+      "homsoc": {
+        "1200": {
+          "independent": true,
+          "needs_care": false,
+          "taken_care_of": false,
+          "caretaker": false
+        }
+      },
+      "ocupation": {
+        "1200": {
+          "has job": true,
+          "income": 1.051
+        },
+        "1201": {
+          "has job": true,
+          "income": 1.047
+        },
+        "1202": {
+          "has job": true,
+          "income": 0.98
+        },
+        "1203": {
+          "has job": true,
+          "income": 0.918
         }
       },
       "events": {
         "1200": [
           {
             "topic": "birth",
-            "year": 1169
+            "year": 1175
           },
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.45
+            "income": 0.99
           },
           {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.051
+          },
+          {
+            "topic": "new relationship",
+            "key": 11286,
+            "people": [
+              11284,
+              11285
+            ],
+            "people names": [
+              "Betten Durcant",
+              "Aghata Tunne"
+            ],
+            "people ages": [
+              25,
+              16
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new relationship",
+            "key": 14479,
+            "people": [
+              11284,
+              11105
+            ],
+            "people names": [
+              "Betten Durcant",
+              "Eingeliadis"
+            ],
+            "people ages": [
+              26,
+              29
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 16152,
+            "people": [
+              11284,
+              16151
+            ],
+            "people names": [
+              "Betten Durcant",
+              "Heinhoca Bettenszoon"
+            ],
+            "people ages": [
+              27,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1202": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "good friend",
+            "relationship": 16152
+          },
+          {
+            "topic": "new relationship",
+            "key": 17401,
+            "people": [
+              11284,
+              17400
+            ],
+            "people names": [
+              "Betten Durcant",
+              "Hersewindis Durcant"
+            ],
+            "people ages": [
+              27,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.98,
+            "inhabitants": []
+          }
+        ],
+        "1203": [
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "starvation"
           }
         ]
       }
@@ -117,14 +317,20 @@
       "section": "stDie Coninc straet.se3.c0",
       "street": "Die Coninc straet",
       "neighborhood": "kampbuurt",
-      "unique id": 450
+      "unique id": 453
     },
     "relationship status": {
-      "taken": true,
+      "taken": false,
       "married": true,
-      "relationships": []
+      "relationships": [
+        11286
+      ]
     },
-    "friends": [],
+    "friends": [
+      11286,
+      14479,
+      16152
+    ],
     "enemies": []
   }
 }

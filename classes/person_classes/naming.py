@@ -2,10 +2,10 @@ import random
 from ..utils import *
 
 class Naming():
+    """
+    Generates a name for the Person 
+    """
     def __init__(self, sex, father, mother, surnames, first_gen=False) -> None:
-        """
-        Generates a name for the person 
-        """
         # reads naming system
         if Naming.system == 'medieval':
             self.generator = self.MedievalNameGenerator(sex, father, mother)

@@ -1,6 +1,9 @@
 from ..utils import *
 
 class Factions():
+    """
+    Handles the faction aspect of the community
+    """
     def __init__(self, community) -> None:
         self.factions = {}
         self.faction_names = community['faction_names']
@@ -26,15 +29,23 @@ class Factions():
                 'relative mobility' : relative_mobility
             }
 
-
     def assign_faction(self):
+        """
+        Assign faction to Person who wanted one
+        """
         f = rand_choice(self.faction_names, self.faction_distr)
         return f
 
     def change_faction(self, old_f):
+        """
+        Chance of changing to other faction based on old faction
+        """
         new_f = rand_choice(self.factions[old_f]['relative mobility'].keys(), 
                         self.factions[old_f]['relative mobility'].values())
         return new_f
     
     def get_mobility(self, faction):
+        """
+        Return general faction mobility of faction
+        """
         return self.factions[faction]['mobility']

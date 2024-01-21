@@ -1,19 +1,19 @@
 {
   "11165": {
     "alive": false,
-    "name": "Sarre",
+    "name": "Tetta",
     "surname": "",
-    "full name": "Sarre",
+    "full name": "Tetta",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.798,
-      "sex interest": 0.631,
-      "gender expression": 0.111,
+      "sexuality label": "gay",
+      "sexuality": 0.875,
+      "romantic interest": 0.649,
+      "sex interest": 0.608,
+      "gender expression": 0.256,
       "sex": "f"
     },
-    "age": 40,
-    "birth year": 1164,
+    "age": 30,
+    "birth year": 1172,
     "sex": "f",
     "faction": "No religion",
     "income class": [
@@ -21,15 +21,15 @@
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.358,
-      "nice-nasty": 0.823,
-      "honest-false": 0.785,
-      "dream": 0.437,
-      "outgoing": 0.687
+      "lawful-chaotic": 0.494,
+      "nice-nasty": 0.213,
+      "honest-false": 0.88,
+      "dream": 0.206,
+      "outgoing": 0.682
     },
     "attitude": {
-      "dream": 0.437,
-      "outgoing": 0.687
+      "dream": 0.206,
+      "outgoing": 0.682
     },
     "homsoc": {
       "means": {
@@ -40,33 +40,36 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.058
+        "sexuality expression": 0.552,
+        "gender expression expression": 0.163
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "14074": {
-          "key": 14074,
-          "name": "Clara Toreel",
-          "age": 49,
-          "alive": true,
-          "sex": "f",
-          "parents": {
-            "mother": "Sarre (11165)",
-            "father": "Geldmaro (11164)"
-          }
-        },
-        "18074": {
-          "key": 18074,
-          "name": "Myrthel Toreel",
-          "age": 3,
+        "13828": {
+          "key": 13828,
+          "name": "Scilla Commer",
+          "age": 47,
           "alive": false,
           "sex": "f",
           "parents": {
-            "mother": "Sarre (11165)",
-            "father": "Geldmaro (11164)"
+            "mother": {
+              "key": 11165,
+              "name": "Tetta",
+              "age": 30,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 11164,
+              "name": "Rolant Commer",
+              "age": 46,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
           }
         }
       },
@@ -76,41 +79,33 @@
         ],
         "child": {
           "birth": [
-            14076,
-            18076
+            13830
           ]
-        },
-        "unrelated": [
-          16534
-        ]
+        }
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
         1,
         "lower middle class"
       ],
-      "income": 1.05,
-      "all_incomes": [
-        1.05
-      ],
-      "job": {
-        "lawful": true,
-        "honest": true
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
       "skin_color": 3,
       "eye_color": "brown",
       "hair_color": "strawberry blonde",
       "hair_color_code": 5,
+      "hair_length": "short",
+      "beauty": 0.718,
       "hair_type": [
-        "C",
-        "C"
+        "S",
+        "S"
       ],
-      "health": 0.512,
-      "fertility": 0.438,
+      "health": 0.726,
+      "fertility": 0.679,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -122,24 +117,42 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.512
+            "new_health": 0.726
           },
           "death": false
         },
-        "1203": {
+        "1201": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.512
+            "new_health": 0.726
           },
           "death": true
+        }
+      },
+      "homsoc": {
+        "1200": {
+          "independent": true,
+          "needs_care": false,
+          "taken_care_of": false,
+          "caretaker": false
+        }
+      },
+      "ocupation": {
+        "1200": {
+          "has job": false,
+          "income": 0
+        },
+        "1201": {
+          "has job": false,
+          "income": 0
         }
       },
       "events": {
         "1200": [
           {
             "topic": "birth",
-            "year": 1164
+            "year": 1172
           },
           {
             "topic": "new relationship",
@@ -149,29 +162,36 @@
               11165
             ],
             "people names": [
-              "Geldmaro Toreel",
-              "Sarre"
+              "Rolant Commer",
+              "Tetta"
             ],
             "people ages": [
-              41,
-              36
+              39,
+              28
             ],
             "label": "spouse",
             "committed": true
           },
           {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "indifferent",
+            "relationship": 11166
+          },
+          {
             "topic": "new relationship",
-            "key": 14076,
+            "key": 13830,
             "people": [
               11165,
-              14074
+              13828
             ],
             "people names": [
-              "Sarre",
-              "Clara Toreel"
+              "Tetta",
+              "Scilla Commer"
             ],
             "people ages": [
-              37,
+              29,
               0
             ],
             "label": "parentchild",
@@ -179,51 +199,6 @@
           }
         ],
         "1201": [
-          {
-            "topic": "new relationship",
-            "key": 16534,
-            "people": [
-              11693,
-              11165
-            ],
-            "people names": [
-              "Reynildis Zieken",
-              "Sarre"
-            ],
-            "people ages": [
-              35,
-              38
-            ],
-            "label": "unrelated",
-            "committed": false
-          }
-        ],
-        "1202": [
-          {
-            "topic": "new relationship",
-            "key": 18076,
-            "people": [
-              11165,
-              18074
-            ],
-            "people names": [
-              "Sarre",
-              "Myrthel Toreel"
-            ],
-            "people ages": [
-              39,
-              0
-            ],
-            "label": "parentchild",
-            "committed": false
-          }
-        ],
-        "1203": [
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.05
-          },
           {
             "topic": "death",
             "cause": "childbirth"
@@ -241,15 +216,13 @@
       "unique id": 410
     },
     "relationship status": {
-      "taken": false,
+      "taken": true,
       "married": true,
       "relationships": [
         11166
       ]
     },
-    "friends": [
-      18076
-    ],
+    "friends": [],
     "enemies": []
   }
 }

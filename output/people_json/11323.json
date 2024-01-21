@@ -1,56 +1,113 @@
 {
   "11323": {
     "alive": false,
-    "name": "Poppo",
-    "surname": "Goude",
-    "full name": "Poppo Goude",
+    "name": "Mattheus",
+    "surname": "",
+    "full name": "Mattheus",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.01,
-      "romantic interest": 0.635,
-      "sex interest": 0.73,
-      "gender expression": 0.057,
+      "sexuality label": "bi",
+      "sexuality": 0.533,
+      "romantic interest": 0.724,
+      "sex interest": 0.527,
+      "gender expression": 0.0,
       "sex": "m"
     },
-    "age": 49,
-    "birth year": 1153,
+    "age": 54,
+    "birth year": 1151,
     "sex": "m",
-    "faction": "Dogmatists",
+    "faction": "No religion",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.313,
-      "nice-nasty": 0.9,
-      "honest-false": 0.245,
-      "dream": 0.0,
-      "outgoing": 0.88
+      "lawful-chaotic": 0.644,
+      "nice-nasty": 0.135,
+      "honest-false": 0.796,
+      "dream": 0.591,
+      "outgoing": 0.379
     },
     "attitude": {
-      "dream": 0.0,
-      "outgoing": 0.88
+      "dream": 0.591,
+      "outgoing": 0.379
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.007,
-        "gender expression expression": 0.047
+        "sexuality expression": 0.416,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "16659": {
+          "key": 16659,
+          "name": "Meinoldo",
+          "age": 24,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": {
+              "key": 11324,
+              "name": "Sipper",
+              "age": 55,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 11323,
+              "name": "Mattheus",
+              "age": 54,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
+          }
+        },
+        "18768": {
+          "key": 18768,
+          "name": "Agota Mattheussdochter",
+          "age": 18,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": {
+              "key": 11324,
+              "name": "Sipper",
+              "age": 55,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 11323,
+              "name": "Mattheus",
+              "age": 54,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11325
-        ]
+        ],
+        "child": {
+          "birth": [
+            16660,
+            18769
+          ]
+        }
       }
     },
     "occupation": {
@@ -59,28 +116,33 @@
         1,
         "lower middle class"
       ],
-      "income": 0.427,
+      "income": 0.984,
       "all_incomes": [
-        1.046,
-        0.605,
-        0.427
+        0.938,
+        0.941,
+        1.079,
+        1.187,
+        0.879,
+        0.984
       ],
       "job": {
         "lawful": false,
-        "honest": false
+        "honest": true
       }
     },
     "genetics": {
-      "skin_color": 6,
+      "skin_color": 3,
       "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "blonde",
+      "hair_color_code": 4,
+      "hair_length": "medium",
+      "beauty": 0.373,
       "hair_type": [
         "C",
         "C"
       ],
-      "health": 0.719,
-      "fertility": 0.736,
+      "health": 0.0,
+      "fertility": 0.649,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -92,34 +154,83 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.719
+            "new_health": 0.722
           },
           "death": false
         },
         "1201": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.719
+            "change": true,
+            "value_change": -0.087,
+            "new_health": 0.635
+          },
+          "death": false
+        },
+        "1202": {
+          "health": {
+            "change": true,
+            "value_change": -0.276,
+            "new_health": 0.359
+          },
+          "death": false
+        },
+        "1203": {
+          "health": {
+            "change": true,
+            "value_change": -0.292,
+            "new_health": 0.067
+          },
+          "death": false
+        },
+        "1204": {
+          "health": {
+            "change": true,
+            "value_change": -0.067,
+            "new_health": 0.0
           },
           "death": true
+        }
+      },
+      "homsoc": {
+        "1200": {
+          "independent": true,
+          "needs_care": false,
+          "taken_care_of": false,
+          "caretaker": false
+        }
+      },
+      "ocupation": {
+        "1200": {
+          "has job": true,
+          "income": 0.941
+        },
+        "1201": {
+          "has job": true,
+          "income": 1.079
+        },
+        "1202": {
+          "has job": true,
+          "income": 1.187
+        },
+        "1203": {
+          "has job": true,
+          "income": 0.879
+        },
+        "1204": {
+          "has job": true,
+          "income": 0.984
         }
       },
       "events": {
         "1200": [
           {
             "topic": "birth",
-            "year": 1153
+            "year": 1151
           },
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.046
-          },
-          {
-            "topic": "job notice",
-            "notice": "low income",
-            "income": 0.605
+            "income": 0.938
           },
           {
             "topic": "new relationship",
@@ -129,12 +240,12 @@
               11324
             ],
             "people names": [
-              "Poppo Goude",
-              "Liudburgis"
+              "Mattheus",
+              "Sipper"
             ],
             "people ages": [
-              47,
-              45
+              49,
+              32
             ],
             "label": "spouse",
             "committed": true
@@ -143,12 +254,62 @@
         "1201": [
           {
             "topic": "job notice",
-            "notice": "earning very little",
-            "income": 0.427
+            "notice": "comfortable earnings",
+            "income": 1.079
           },
           {
+            "topic": "feelings change",
+            "target": 11324,
+            "target name": "Sipper",
+            "state": "solid love",
+            "friendship label": "good friend",
+            "relationship": 11325
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 16660,
+            "people": [
+              11323,
+              16659
+            ],
+            "people names": [
+              "Mattheus",
+              "Meinoldo"
+            ],
+            "people ages": [
+              51,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 18769,
+            "people": [
+              11323,
+              18768
+            ],
+            "people names": [
+              "Mattheus",
+              "Agota Mattheussdochter"
+            ],
+            "people ages": [
+              52,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1204": [
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "sickness"
           }
         ]
       }
@@ -160,7 +321,7 @@
       "section": "stDie Coninc straet.se7.c1",
       "street": "Die Coninc straet",
       "neighborhood": "kampbuurt",
-      "unique id": 465
+      "unique id": 466
     },
     "relationship status": {
       "taken": true,
@@ -170,7 +331,8 @@
       ]
     },
     "friends": [
-      11325
+      11325,
+      16660
     ],
     "enemies": []
   }

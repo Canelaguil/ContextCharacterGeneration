@@ -1,53 +1,70 @@
 {
   "14002": {
     "alive": false,
-    "name": "Godino",
-    "surname": "Gosuinusszoon",
-    "full name": "Godino Gosuinusszoon",
+    "name": "Gilis",
+    "surname": "Stael",
+    "full name": "Gilis Stael",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.042,
-      "romantic interest": 0.578,
-      "sex interest": 0.781,
-      "gender expression": 0.144,
+      "sexuality": 0.142,
+      "romantic interest": 0.551,
+      "sex interest": 0.554,
+      "gender expression": 0.025,
       "sex": "m"
     },
-    "age": 17,
+    "age": 3,
     "birth year": 1200,
     "sex": "m",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
-      2,
-      "middle class"
+      0,
+      "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.87,
-      "nice-nasty": 0.242,
-      "honest-false": 0.999,
-      "dream": 0.854,
-      "outgoing": 0.617
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.567,
+      "honest-false": 0.274,
+      "dream": 0.658,
+      "outgoing": 0.847
     },
     "attitude": {
-      "dream": 0.854,
-      "outgoing": 0.617
+      "dream": 0.658,
+      "outgoing": 0.847
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": true,
-        "needs_care": false,
-        "flags": []
+        "needs_care": true,
+        "flags": [
+          "neglected",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.035,
-        "gender expression expression": 0.128
+        "sexuality expression": 0.074,
+        "gender expression expression": 0.012
       }
     },
     "network": {
       "parents": {
-        "mother": "Zuanelt (11066)",
-        "father": "Gosuinus (11065)"
+        "mother": {
+          "key": 10799,
+          "name": "Pietersen Kriec",
+          "age": 31,
+          "alive": false,
+          "sex": "f",
+          "parents": "firstgen"
+        },
+        "father": {
+          "key": 10798,
+          "name": "Ludingus Stael",
+          "age": 53,
+          "alive": false,
+          "sex": "m",
+          "parents": "firstgen"
+        }
       },
       "children": {},
       "relationship keys": {
@@ -56,45 +73,32 @@
           14004
         ],
         "sibling": [
-          20417,
-          24057,
-          30422,
-          32321,
-          32691,
-          35447,
-          38214,
-          38981,
-          41124
+          15450
         ]
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
-        2,
-        "middle class"
+        0,
+        "working class"
       ],
-      "income": 0.974,
-      "all_incomes": [
-        0.961,
-        0.974
-      ],
-      "job": {
-        "lawful": true,
-        "honest": true
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 5,
+      "skin_color": 3,
       "eye_color": "brown",
-      "hair_color": "brown",
-      "hair_color_code": 2,
+      "hair_color": "black",
+      "hair_color_code": 0,
+      "hair_length": "medium",
+      "beauty": 0.639,
       "hair_type": [
-        "C",
-        "C"
+        "S",
+        "S"
       ],
-      "health": 0.655,
-      "fertility": 0.68,
+      "health": 0.704,
+      "fertility": 0.703,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -106,17 +110,45 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.655
+            "new_health": 0.704
           },
           "death": false
         },
-        "1217": {
+        "1203": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.655
+            "new_health": 0.704
           },
           "death": true
+        }
+      },
+      "homsoc": {
+        "1201": {
+          "independent": false,
+          "needs_care": true,
+          "taken_care_of": true,
+          "caretaker": true
+        },
+        "1203": {
+          "independent": false,
+          "needs_care": true,
+          "taken_care_of": false,
+          "caretaker": true
+        }
+      },
+      "ocupation": {
+        "1201": {
+          "has job": false,
+          "income": 0
+        },
+        "1202": {
+          "has job": false,
+          "income": 0
+        },
+        "1203": {
+          "has job": false,
+          "income": 0
         }
       },
       "events": {
@@ -129,15 +161,15 @@
             "topic": "new relationship",
             "key": 14003,
             "people": [
-              11065,
+              10798,
               14002
             ],
             "people names": [
-              "Gosuinus",
-              "Godino Gosuinusszoon"
+              "Ludingus Stael",
+              "Gilis Stael"
             ],
             "people ages": [
-              32,
+              31,
               0
             ],
             "label": "parentchild",
@@ -147,296 +179,76 @@
             "topic": "new relationship",
             "key": 14004,
             "people": [
-              11066,
+              10799,
               14002
             ],
             "people names": [
-              "Zuanelt",
-              "Godino Gosuinusszoon"
+              "Pietersen Kriec",
+              "Gilis Stael"
             ],
             "people ages": [
-              16,
+              23,
               0
             ],
             "label": "parentchild",
             "committed": false
           }
         ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 15450,
+            "people": [
+              14002,
+              15447
+            ],
+            "people names": [
+              "Gilis Stael",
+              "Imma Stael"
+            ],
+            "people ages": [
+              1,
+              0
+            ],
+            "label": "sibling",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.903,
+            "inhabitants": [
+              21447
+            ]
+          }
+        ],
+        "1202": [
+          {
+            "topic": "neglected"
+          }
+        ],
         "1203": [
           {
-            "topic": "new relationship",
-            "key": 20417,
-            "people": [
-              14002,
-              20414
-            ],
-            "people names": [
-              "Godino Gosuinusszoon",
-              "Snelgerus Gosuinusszoon"
-            ],
-            "people ages": [
-              3,
-              0
-            ],
-            "label": "sibling",
-            "committed": false
-          }
-        ],
-        "1205": [
-          {
-            "topic": "new relationship",
-            "key": 24057,
-            "people": [
-              14002,
-              24054
-            ],
-            "people names": [
-              "Godino Gosuinusszoon",
-              "Snellekine Gosuinusszoon"
-            ],
-            "people ages": [
-              4,
-              0
-            ],
-            "label": "sibling",
-            "committed": false
-          }
-        ],
-        "1208": [
-          {
-            "topic": "event",
-            "event": "faction upheaval",
-            "faction": "No religion",
-            "year": 1208
-          },
-          {
-            "topic": "new relationship",
-            "key": 30422,
-            "people": [
-              14002,
-              30419
-            ],
-            "people names": [
-              "Godino Gosuinusszoon",
-              "Gherelm"
-            ],
-            "people ages": [
-              8,
-              0
-            ],
-            "label": "sibling",
-            "committed": false
-          },
-          {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "sibling",
-            "friendship label": "indifferent",
-            "relationship": 24057
-          }
-        ],
-        "1209": [
-          {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "parentchild",
-            "friendship label": "disliked",
-            "relationship": 14003
-          },
-          {
-            "topic": "new relationship",
-            "key": 32321,
-            "people": [
-              14002,
-              32318
-            ],
-            "people names": [
-              "Godino Gosuinusszoon",
-              "Willem"
-            ],
-            "people ages": [
-              9,
-              0
-            ],
-            "label": "sibling",
-            "committed": false
-          }
-        ],
-        "1210": [
-          {
-            "topic": "new relationship",
-            "key": 32691,
-            "people": [
-              14002,
-              32688
-            ],
-            "people names": [
-              "Godino Gosuinusszoon",
-              "Iordanus"
-            ],
-            "people ages": [
-              9,
-              0
-            ],
-            "label": "sibling",
-            "committed": false
-          }
-        ],
-        "1211": [
-          {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "parentchild",
-            "friendship label": "indifferent",
-            "relationship": 14004
-          },
-          {
-            "topic": "new relationship",
-            "key": 35447,
-            "people": [
-              14002,
-              35444
-            ],
-            "people names": [
-              "Godino Gosuinusszoon",
-              "Kolekinus Gosuinusszoon"
-            ],
-            "people ages": [
-              11,
-              0
-            ],
-            "label": "sibling",
-            "committed": false
-          }
-        ],
-        "1212": [
-          {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "sibling",
-            "friendship label": "indifferent",
-            "relationship": 30422
-          }
-        ],
-        "1213": [
-          {
-            "topic": "new relationship",
-            "key": 38214,
-            "people": [
-              14002,
-              38211
-            ],
-            "people names": [
-              "Godino Gosuinusszoon",
-              "Heylewigis"
-            ],
-            "people ages": [
-              12,
-              0
-            ],
-            "label": "sibling",
-            "committed": false
-          }
-        ],
-        "1214": [
-          {
-            "topic": "new relationship",
-            "key": 38981,
-            "people": [
-              14002,
-              38978
-            ],
-            "people names": [
-              "Godino Gosuinusszoon",
-              "Lucas Gosuinusszoon"
-            ],
-            "people ages": [
-              13,
-              0
-            ],
-            "label": "sibling",
-            "committed": false
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 38211,
-              "name": "Heylewigis",
-              "age": 1,
-              "alive": false,
-              "sex": "f",
-              "parents": {
-                "mother": "Zuanelt (11066)",
-                "father": "Gosuinus (11065)"
-              }
-            },
-            "cause": "childbirth",
-            "friendship label": "indifferent",
-            "label": "sibling"
-          }
-        ],
-        "1215": [
-          {
-            "topic": "event",
-            "event": "plague",
-            "year": 1215
-          }
-        ],
-        "1216": [
-          {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 0.961
-          },
-          {
-            "topic": "new relationship",
-            "key": 41124,
-            "people": [
-              14002,
-              41121
-            ],
-            "people names": [
-              "Godino Gosuinusszoon",
-              "Woltwigis"
-            ],
-            "people ages": [
-              15,
-              0
-            ],
-            "label": "sibling",
-            "committed": false
-          }
-        ],
-        "1217": [
-          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "childhood illness"
           }
         ]
       }
     },
     "key": 14002,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stDie Camp.se3.c2",
-      "street": "Die Camp",
-      "neighborhood": "kampbuurt",
-      "unique id": 375
+      "income class": 0,
+      "income class label": "working class",
+      "section": "stDe Tuyt.se1.c0",
+      "street": "De Tuyt",
+      "neighborhood": "agnesbuurt",
+      "unique id": 281
     },
     "relationship status": {
       "taken": false,
       "married": false,
       "relationships": []
     },
-    "friends": [
-      20417,
-      32321,
-      41124
-    ],
-    "enemies": [
-      14003,
-      30422
-    ]
+    "friends": [],
+    "enemies": []
   }
 }
