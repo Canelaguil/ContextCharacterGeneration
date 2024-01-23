@@ -1,35 +1,31 @@
 {
   "10835": {
     "alive": false,
-    "name": "Katrin",
+    "name": "Reynwi",
     "surname": "",
-    "full name": "Katrin",
+    "full name": "Reynwi",
     "born this way": {
-      "sexuality label": "bi",
-      "sexuality": 0.613,
-      "romantic interest": 0.517,
-      "sex interest": 0.749,
-      "gender expression": 0.263,
+      "sexuality label": "straight",
+      "sexuality": 0.107,
+      "romantic interest": 0.88,
+      "sex interest": 0.654,
+      "gender expression": 0.099,
       "sex": "f"
     },
-    "age": 39,
-    "birth year": 1167,
+    "age": 38,
+    "birth year": 1166,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
-      1,
-      "lower middle class"
+      0,
+      "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.736,
-      "nice-nasty": 0.195,
-      "honest-false": 0.787,
-      "dream": 0.029,
-      "outgoing": 0.519
-    },
-    "attitude": {
-      "dream": 0.029,
-      "outgoing": 0.519
+      "lawful-chaotic": 0.413,
+      "nice-nasty": 0.714,
+      "honest-false": 0.3,
+      "dream": 0.539,
+      "outgoing": 0.75
     },
     "homsoc": {
       "means": {
@@ -37,78 +33,52 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.292,
-        "gender expression expression": 0.111
+        "sexuality expression": 0.069,
+        "gender expression expression": 0.058
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {
-        "21981": {
-          "key": 21981,
-          "name": "Ermerut van Euerardus",
-          "age": 8,
-          "alive": false,
-          "sex": "f",
-          "parents": {
-            "mother": {
-              "key": 10835,
-              "name": "Katrin",
-              "age": 39,
-              "alive": false,
-              "sex": "f",
-              "parents": "firstgen"
-            },
-            "father": {
-              "key": 10834,
-              "name": "Euerardus",
-              "age": 53,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            }
-          }
-        }
-      },
+      "children": {},
       "relationship keys": {
         "spouse": [
           10836
-        ],
-        "unrelated": [
-          20495
-        ],
-        "child": {
-          "birth": [
-            21983
-          ]
-        }
+        ]
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
-        1,
-        "lower middle class"
+        0,
+        "working class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.522,
+      "all_incomes": [
+        0.522
+      ],
+      "job": {
+        "lawful": true,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 4,
+      "skin_color": 3,
       "eye_color": "green",
       "hair_color": "black",
       "hair_color_code": 0,
-      "hair_length": "long",
-      "beauty": 0.494,
+      "hair_length": "short",
+      "beauty": 0.446,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.691,
-      "fertility": 0.723,
+      "health": 0.788,
+      "fertility": 0.842,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -120,15 +90,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.691
+            "new_health": 0.788
           },
           "death": false
         },
-        "1205": {
+        "1203": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.691
+            "new_health": 0.788
           },
           "death": true
         }
@@ -157,21 +127,24 @@
         "1203": {
           "has job": false,
           "income": 0
-        },
-        "1204": {
-          "has job": false,
-          "income": 0
-        },
-        "1205": {
-          "has job": false,
-          "income": 0
         }
       },
       "events": {
         "1200": [
           {
             "topic": "birth",
-            "year": 1167
+            "year": 1166
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 0,
+              "income class label": "working class",
+              "section": "stDe Tuyt.se3.c0",
+              "street": "De Tuyt",
+              "neighborhood": "agnesbuurt",
+              "unique id": 290
+            }
           },
           {
             "topic": "new relationship",
@@ -181,12 +154,12 @@
               10835
             ],
             "people names": [
-              "Euerardus",
-              "Katrin"
+              "Jonghen Mey",
+              "Reynwi"
             ],
             "people ages": [
-              45,
-              33
+              35,
+              34
             ],
             "label": "spouse",
             "committed": true
@@ -194,87 +167,56 @@
           {
             "topic": "feelings change",
             "target": 10834,
-            "target name": "Euerardus",
-            "state": "solid love",
-            "friendship label": "friend",
+            "target name": "Jonghen Mey",
+            "state": "out of love",
+            "friendship label": "indifferent",
             "relationship": 10836
+          }
+        ],
+        "1201": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1202": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ],
         "1203": [
           {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "spouse",
-            "friendship label": "friend",
-            "relationship": 10836
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.522
           },
           {
-            "topic": "new relationship",
-            "key": 20495,
-            "people": [
-              12268,
-              10835
-            ],
-            "people names": [
-              "Godeuert",
-              "Katrin"
-            ],
-            "people ages": [
-              26,
-              37
-            ],
-            "label": "unrelated",
-            "committed": false
-          }
-        ],
-        "1204": [
-          {
-            "topic": "new relationship",
-            "key": 21983,
-            "people": [
-              10835,
-              21981
-            ],
-            "people names": [
-              "Katrin",
-              "Ermerut van Euerardus"
-            ],
-            "people ages": [
-              38,
-              0
-            ],
-            "label": "parentchild",
-            "committed": false
-          }
-        ],
-        "1205": [
-          {
             "topic": "death",
-            "cause": "childbirth"
+            "cause": "illness"
           }
         ]
       }
     },
     "key": 10835,
     "home": {
-      "income class": 1,
-      "income class label": "lower middle class",
-      "section": "stDe Tuyt.se5.c1",
+      "income class": 0,
+      "income class label": "working class",
+      "section": "stDe Tuyt.se3.c0",
       "street": "De Tuyt",
       "neighborhood": "agnesbuurt",
-      "unique id": 294
+      "unique id": 290
     },
     "relationship status": {
-      "taken": false,
+      "taken": true,
       "married": true,
       "relationships": [
         10836
       ]
     },
-    "friends": [
-      10836,
-      20495
-    ],
+    "friends": [],
     "enemies": []
   }
 }

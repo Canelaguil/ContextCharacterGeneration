@@ -1,53 +1,142 @@
 {
   "12823": {
     "alive": false,
-    "name": "Vais",
+    "name": "Heyman",
     "surname": "",
-    "full name": "Vais",
+    "full name": "Heyman",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.044,
-      "romantic interest": 0.834,
-      "sex interest": 0.757,
-      "gender expression": 0.083,
+      "sexuality": 0.0,
+      "romantic interest": 0.684,
+      "sex interest": 0.716,
+      "gender expression": 0.168,
       "sex": "m"
     },
-    "age": 39,
-    "birth year": 1162,
+    "age": 43,
+    "birth year": 1168,
     "sex": "m",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.181,
-      "nice-nasty": 0.109,
-      "honest-false": 0.999,
-      "dream": 0.204,
-      "outgoing": 0.282
-    },
-    "attitude": {
-      "dream": 0.204,
-      "outgoing": 0.282
+      "lawful-chaotic": 0.355,
+      "nice-nasty": 0.07,
+      "honest-false": 0.666,
+      "dream": 0.581,
+      "outgoing": 0.471
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.027,
-        "gender expression expression": 0.059
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.163
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
-      "relationship keys": {}
+      "children": {
+        "13513": {
+          "key": 13513,
+          "name": "Ino Heymanszoon",
+          "age": 13,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": {
+              "key": 12824,
+              "name": "Bertrade Screvel",
+              "age": 24,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 12823,
+              "name": "Heyman",
+              "age": 43,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
+          }
+        },
+        "16788": {
+          "key": 16788,
+          "name": "Froumoldus",
+          "age": 13,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": {
+              "key": 12824,
+              "name": "Bertrade Screvel",
+              "age": 24,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 12823,
+              "name": "Heyman",
+              "age": 43,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
+          }
+        },
+        "19060": {
+          "key": 19060,
+          "name": "Betten Heymanszoon",
+          "age": 7,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": {
+              "key": 12824,
+              "name": "Bertrade Screvel",
+              "age": 24,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 12823,
+              "name": "Heyman",
+              "age": 43,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
+          }
+        }
+      },
+      "relationship keys": {
+        "spouse": [
+          12825
+        ],
+        "child": {
+          "birth": [
+            13514,
+            16789,
+            19061
+          ]
+        },
+        "unrelated": [
+          16203,
+          23596
+        ]
+      }
     },
     "occupation": {
       "has job": true,
@@ -55,10 +144,20 @@
         1,
         "lower middle class"
       ],
-      "income": 1.088,
+      "income": 0.0,
       "all_incomes": [
-        0.804,
-        1.088
+        0.771,
+        0.0,
+        0.124,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.134,
+        0.011,
+        0.076,
+        0.186,
+        0.0
       ],
       "job": {
         "lawful": false,
@@ -66,18 +165,18 @@
       }
     },
     "genetics": {
-      "skin_color": 1,
+      "skin_color": 8,
       "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
-      "hair_length": "long",
-      "beauty": 0.624,
+      "hair_length": "medium",
+      "beauty": 0.844,
       "hair_type": [
-        "C",
+        "S",
         "S"
       ],
-      "health": 0.655,
-      "fertility": 0.652,
+      "health": 0.723,
+      "fertility": 0.798,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -89,14 +188,22 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.655
+            "new_health": 0.723
+          },
+          "death": false
+        },
+        "1210": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.723
           },
           "death": true
         }
       },
       "homsoc": {
         "1200": {
-          "independent": true,
+          "independent": false,
           "needs_care": false,
           "taken_care_of": false,
           "caretaker": false
@@ -105,28 +212,317 @@
       "ocupation": {
         "1200": {
           "has job": true,
-          "income": 1.088
+          "income": 0.0
+        },
+        "1201": {
+          "has job": true,
+          "income": 0.124
+        },
+        "1202": {
+          "has job": true,
+          "income": 0.0
+        },
+        "1203": {
+          "has job": true,
+          "income": 0.0
+        },
+        "1204": {
+          "has job": true,
+          "income": 0.0
+        },
+        "1205": {
+          "has job": true,
+          "income": 0.0
+        },
+        "1206": {
+          "has job": true,
+          "income": 0.134
+        },
+        "1207": {
+          "has job": true,
+          "income": 0.011
+        },
+        "1208": {
+          "has job": true,
+          "income": 0.076
+        },
+        "1209": {
+          "has job": true,
+          "income": 0.186
+        },
+        "1210": {
+          "has job": true,
+          "income": 0.0
         }
       },
       "events": {
         "1200": [
           {
             "topic": "birth",
-            "year": 1162
+            "year": 1168
           },
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.804
+            "income": 0.771
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stKerckstraet.se5.c1",
+              "street": "Kerckstraet",
+              "neighborhood": "denhof",
+              "unique id": 992
+            }
           },
           {
             "topic": "job notice",
-            "notice": "comfortable earnings",
-            "income": 1.088
+            "notice": "hardly any income",
+            "income": 0.0
+          },
+          {
+            "topic": "new relationship",
+            "key": 12825,
+            "people": [
+              12823,
+              12824
+            ],
+            "people names": [
+              "Heyman",
+              "Bertrade Screvel"
+            ],
+            "people ages": [
+              32,
+              20
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new relationship",
+            "key": 13514,
+            "people": [
+              12823,
+              13513
+            ],
+            "people names": [
+              "Heyman",
+              "Ino Heymanszoon"
+            ],
+            "people ages": [
+              32,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1201": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "indifferent",
+            "relationship": 12825
+          },
+          {
+            "topic": "new relationship",
+            "key": 16203,
+            "people": [
+              12823,
+              10261
+            ],
+            "people names": [
+              "Heyman",
+              "Havix Juvene"
+            ],
+            "people ages": [
+              34,
+              32
+            ],
+            "label": "unrelated",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.124,
+            "inhabitants": []
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 16789,
+            "people": [
+              12823,
+              16788
+            ],
+            "people names": [
+              "Heyman",
+              "Froumoldus"
+            ],
+            "people ages": [
+              34,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 13514
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 19061,
+            "people": [
+              12823,
+              19060
+            ],
+            "people names": [
+              "Heyman",
+              "Betten Heymanszoon"
+            ],
+            "people ages": [
+              36,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "key": 12825,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12824,
+              "name": "Bertrade Screvel",
+              "age": 24,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "childbirth",
+            "friendship label": "indifferent",
+            "label": "spouse",
+            "love state": "loveless"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1204": [
+          {
+            "topic": "event",
+            "event": "faction upheaval",
+            "faction": "No religion",
+            "year": 1204
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "good friend",
+            "relationship": 16203
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 19061
+          },
+          {
+            "topic": "new relationship",
+            "key": 23596,
+            "people": [
+              12274,
+              12823
+            ],
+            "people names": [
+              "Gelmarus Tant",
+              "Heyman"
+            ],
+            "people ages": [
+              45,
+              38
+            ],
+            "label": "unrelated",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0.134,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0.011,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0.076,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 19061
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.186,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1210
           },
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "starvation"
           }
         ]
       }
@@ -138,14 +534,20 @@
       "section": "stKerckstraet.se5.c1",
       "street": "Kerckstraet",
       "neighborhood": "denhof",
-      "unique id": 996
+      "unique id": 992
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
-      "relationships": []
+      "taken": false,
+      "married": false,
+      "relationships": [
+        12825
+      ]
     },
-    "friends": [],
+    "friends": [
+      16789,
+      16203,
+      23596
+    ],
     "enemies": []
   }
 }

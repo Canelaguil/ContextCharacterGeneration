@@ -1,19 +1,19 @@
 {
   "11221": {
     "alive": false,
-    "name": "Ghisele",
+    "name": "Remboldus",
     "surname": "",
-    "full name": "Ghisele",
+    "full name": "Remboldus",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.027,
-      "romantic interest": 0.705,
-      "sex interest": 0.63,
-      "gender expression": 0.067,
+      "sexuality": 0.004,
+      "romantic interest": 0.588,
+      "sex interest": 0.71,
+      "gender expression": 0.196,
       "sex": "m"
     },
-    "age": 38,
-    "birth year": 1163,
+    "age": 40,
+    "birth year": 1162,
     "sex": "m",
     "faction": "Zealots",
     "income class": [
@@ -21,33 +21,64 @@
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.418,
-      "nice-nasty": 0.523,
-      "honest-false": 0.709,
-      "dream": 0.387,
-      "outgoing": 0.83
-    },
-    "attitude": {
-      "dream": 0.387,
-      "outgoing": 0.83
+      "lawful-chaotic": 0.0,
+      "nice-nasty": 0.52,
+      "honest-false": 0.396,
+      "dream": 0.447,
+      "outgoing": 0.934
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.019,
-        "gender expression expression": 0.034
+        "sexuality expression": 0.003,
+        "gender expression expression": 0.125
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
-      "relationship keys": {}
+      "children": {
+        "14245": {
+          "key": 14245,
+          "name": "Ripperti",
+          "age": 15,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": {
+              "key": 11222,
+              "name": "Riet",
+              "age": 44,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 11221,
+              "name": "Remboldus",
+              "age": 40,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
+          }
+        }
+      },
+      "relationship keys": {
+        "spouse": [
+          11223
+        ],
+        "child": {
+          "birth": [
+            14246
+          ]
+        }
+      }
     },
     "occupation": {
       "has job": true,
@@ -55,29 +86,30 @@
         1,
         "lower middle class"
       ],
-      "income": 0.953,
+      "income": 0.0,
       "all_incomes": [
-        0.967,
-        0.953
+        1.23,
+        0.118,
+        0.0
       ],
       "job": {
-        "lawful": true,
-        "honest": true
+        "lawful": false,
+        "honest": false
       }
     },
     "genetics": {
       "skin_color": 8,
-      "eye_color": "green",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "eye_color": "brown",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_length": "short",
-      "beauty": 0.744,
+      "beauty": 0.733,
       "hair_type": [
         "C",
         "C"
       ],
-      "health": 0.713,
-      "fertility": 0.749,
+      "health": 0.711,
+      "fertility": 0.65,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -89,14 +121,22 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.713
+            "new_health": 0.711
+          },
+          "death": false
+        },
+        "1201": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.711
           },
           "death": true
         }
       },
       "homsoc": {
         "1200": {
-          "independent": true,
+          "independent": false,
           "needs_care": false,
           "taken_care_of": false,
           "caretaker": false
@@ -105,20 +145,86 @@
       "ocupation": {
         "1200": {
           "has job": true,
-          "income": 0.953
+          "income": 0.118
+        },
+        "1201": {
+          "has job": true,
+          "income": 0.0
         }
       },
       "events": {
         "1200": [
           {
             "topic": "birth",
-            "year": 1163
+            "year": 1162
           },
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.967
+            "income": 1.23
           },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stSt. Ians straet.se3.c1",
+              "street": "St. Ians straet",
+              "neighborhood": "kampbuurt",
+              "unique id": 424
+            }
+          },
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.118
+          },
+          {
+            "topic": "new relationship",
+            "key": 11223,
+            "people": [
+              11221,
+              11222
+            ],
+            "people names": [
+              "Remboldus",
+              "Riet"
+            ],
+            "people ages": [
+              38,
+              33
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new relationship",
+            "key": 14246,
+            "people": [
+              11221,
+              14245
+            ],
+            "people names": [
+              "Remboldus",
+              "Ripperti"
+            ],
+            "people ages": [
+              39,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 11222,
+            "target name": "Riet",
+            "state": "solid love",
+            "friendship label": "good friend",
+            "relationship": 11223
+          }
+        ],
+        "1201": [
           {
             "topic": "death",
             "cause": "illness"
@@ -130,17 +236,21 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stSt. Ians straet.se5.c1",
+      "section": "stSt. Ians straet.se3.c1",
       "street": "St. Ians straet",
       "neighborhood": "kampbuurt",
-      "unique id": 430
+      "unique id": 424
     },
     "relationship status": {
       "taken": true,
       "married": true,
-      "relationships": []
+      "relationships": [
+        11223
+      ]
     },
-    "friends": [],
+    "friends": [
+      11223
+    ],
     "enemies": []
   }
 }

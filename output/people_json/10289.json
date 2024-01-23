@@ -1,35 +1,31 @@
 {
   "10289": {
     "alive": false,
-    "name": "Saxiardis",
-    "surname": "Coquus",
-    "full name": "Saxiardis Coquus",
+    "name": "Alene",
+    "surname": "",
+    "full name": "Alene",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.056,
-      "romantic interest": 0.834,
-      "sex interest": 0.798,
-      "gender expression": 0.095,
+      "sexuality": 0.064,
+      "romantic interest": 0.783,
+      "sex interest": 0.598,
+      "gender expression": 0.094,
       "sex": "f"
     },
-    "age": 50,
-    "birth year": 1156,
+    "age": 45,
+    "birth year": 1160,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "Zealots",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.313,
-      "nice-nasty": 0.538,
-      "honest-false": 0.448,
-      "dream": 0.562,
-      "outgoing": 0.607
-    },
-    "attitude": {
-      "dream": 0.562,
-      "outgoing": 0.607
+      "lawful-chaotic": 0.553,
+      "nice-nasty": 0.881,
+      "honest-false": 0.104,
+      "dream": 0.501,
+      "outgoing": 0.723
     },
     "homsoc": {
       "means": {
@@ -37,11 +33,13 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.046,
-        "gender expression expression": 0.052
+        "sexuality expression": 0.052,
+        "gender expression expression": 0.025
       }
     },
     "network": {
@@ -52,7 +50,7 @@
           10290
         ],
         "unrelated": [
-          14517
+          20040
         ]
       }
     },
@@ -68,16 +66,16 @@
     "genetics": {
       "skin_color": 8,
       "eye_color": "green",
-      "hair_color": "black",
-      "hair_color_code": 0,
-      "hair_length": "long",
-      "beauty": 0.548,
+      "hair_color": "brown",
+      "hair_color_code": 2,
+      "hair_length": "short",
+      "beauty": 0.626,
       "hair_type": [
         "C",
         "S"
       ],
-      "health": 0.705,
-      "fertility": 0.76,
+      "health": 0.86,
+      "fertility": 0.799,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -89,15 +87,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.705
+            "new_health": 0.86
           },
           "death": false
         },
-        "1205": {
+        "1204": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.705
+            "new_health": 0.86
           },
           "death": true
         }
@@ -130,17 +128,24 @@
         "1204": {
           "has job": false,
           "income": 0
-        },
-        "1205": {
-          "has job": false,
-          "income": 0
         }
       },
       "events": {
         "1200": [
           {
             "topic": "birth",
-            "year": 1156
+            "year": 1160
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stHelle voet.se3.c1",
+              "street": "Helle voet",
+              "neighborhood": "jorisbuurt",
+              "unique id": 99
+            }
           },
           {
             "topic": "new relationship",
@@ -150,51 +155,70 @@
               10289
             ],
             "people names": [
-              "Kerolus Lettele",
-              "Saxiardis Coquus"
+              "Wolbrand",
+              "Alene"
             ],
             "people ages": [
-              46,
-              44
+              41,
+              40
             ],
             "label": "spouse",
             "committed": true
-          },
+          }
+        ],
+        "1201": [
           {
             "topic": "update",
             "update": "new friendship label",
             "relationship label": "spouse",
-            "friendship label": "friend",
+            "friendship label": "indifferent",
             "relationship": 10290
           },
           {
-            "topic": "feelings change",
-            "target": 10288,
-            "target name": "Kerolus Lettele",
-            "state": "solid love",
-            "friendship label": "friend",
-            "relationship": 10290
-          },
+            "topic": "not enough income",
+            "income": 0.115,
+            "inhabitants": []
+          }
+        ],
+        "1202": [
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1203": [
           {
             "topic": "new relationship",
-            "key": 14517,
+            "key": 20040,
             "people": [
-              12452,
+              12376,
               10289
             ],
             "people names": [
-              "Oda Vrode",
-              "Saxiardis Coquus"
+              "Adolfus",
+              "Alene"
             ],
             "people ages": [
-              41,
-              45
+              48,
+              44
             ],
             "label": "unrelated",
             "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
           }
         ],
-        "1205": [
+        "1204": [
+          {
+            "topic": "event",
+            "event": "faction upheaval",
+            "faction": "No religion",
+            "year": 1204
+          },
           {
             "topic": "death",
             "cause": "illness"
@@ -206,10 +230,10 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stHelle voet.se5.c1",
+      "section": "stHelle voet.se3.c1",
       "street": "Helle voet",
       "neighborhood": "jorisbuurt",
-      "unique id": 102
+      "unique id": 99
     },
     "relationship status": {
       "taken": false,
@@ -219,8 +243,7 @@
       ]
     },
     "friends": [
-      10290,
-      14517
+      20040
     ],
     "enemies": []
   }

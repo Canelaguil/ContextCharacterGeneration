@@ -262,6 +262,9 @@ class Network():
             rs[k] = other
 
     def links(self):
+        """
+        Returns summary of network links
+        """
         return {
             'parents' : self.get_parents(),
             'children' : self.get_child_descriptions(),

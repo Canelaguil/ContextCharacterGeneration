@@ -313,4 +313,3 @@ class Body():
             'cognitive_impaired' : self.cognitive_impaired,
             'disabilities' : self.disabilities, 
         }
-

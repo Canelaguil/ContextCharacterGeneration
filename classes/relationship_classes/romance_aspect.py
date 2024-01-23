@@ -2,6 +2,9 @@ from ..utils import *
 
 # TODO: ROMANCE RELATIONSHIP
 class LoveIsAStateMachine():
+    """
+    State machine representing a person's feeling towards another
+    """
     def __init__(self, romance, subject : dict, love_object : dict, can_marry=True, 
                  can_break_up=True, start='nothing') -> None:
         """
@@ -153,14 +156,13 @@ class LoveIsAStateMachine():
             else:
                 return 'crush'
 
-
     def in_love(self):
         rng = rand()
         taken = self.romance.model.get_relationship_status_person(self.subject['key'])['taken']
         if rng < 0.5:
             return 'in love'
         elif rng < 0.8 and not self.marriage_restraint:
-            if self.romance.declaration(self.subject['key']):
+            if self.romance.declaration(self.object['key'], self.subject['key']):
                 print(self.subject['key'])
                 self.start_relationship(taken)
                 # print(self.subject)
@@ -234,35 +236,47 @@ class Romance():
         
         # check if couple would potentially be able to marry / break up
         if Romance.equal_rights or (personA['sex'] != personB['sex']):
-            can_marry = True
-            can_break_up = Romance.can_divorce
+            self.can_marry = True
+            self.can_break_up = Romance.can_divorce
         else:
-            can_marry = False
-            can_break_up = True
+            self.can_marry = False
+            self.can_break_up = True
 
         # init state machines
-        self.state_machineA = LoveIsAStateMachine(self, personA, personB, can_marry, 
-                                                  can_break_up, initA)
-        self.state_machineB = LoveIsAStateMachine(self, personB, personA, can_marry, 
-                                                  can_break_up, initB)
+        self.state_machineA = LoveIsAStateMachine(self, personA, personB, self.can_marry, 
+                                                  self.can_break_up, initA)
+        self.state_machineB = LoveIsAStateMachine(self, personB, personA, self.can_marry, 
+                                                  self.can_break_up, initB)
         
         self.machines = {
             personA['key'] : self.state_machineA,
             personB['key'] : self.state_machineB
         }
 
-    def declaration(self, receiver):
+    def declaration(self, receiver, sender) -> bool:
         """
-        Declare love
+        One of the state machines has made a love declaration: what are the next
+        steps?
         """
-        status = self.model.get_relationship_status_person(receiver)
-        response = self.machines[receiver].receive_declaration(status)
+        status_sender = self.model.get_relationship_status_person(sender)
+        status_receiver = self.model.get_relationship_status_person(receiver)
+
+        response = self.machines[receiver].receive_declaration(status_receiver)
         msg = {
             'topic' : 'declaration', 
             'result' : 'accepted' if response else 'rejected', 
             'target' : receiver
         }
         self.relationship.update_people(msg)
+
+        # if positive response, init proper relationship
+        if response == True:
+            if self.can_marry and not (status_receiver['married'] or status_sender['married']):
+                # start married relationship
+                self.relationship.romance_change('spouse')
+            else:
+                # start unmarried relationship
+                self.relationship.romance_change('partner')
         return response
 
     def break_up(self, origin):

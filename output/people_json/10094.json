@@ -1,19 +1,19 @@
 {
   "10094": {
     "alive": false,
-    "name": "Hille",
-    "surname": "Cabelliau",
-    "full name": "Hille Cabelliau",
+    "name": "Alene",
+    "surname": "Snep",
+    "full name": "Alene Snep",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.003,
-      "romantic interest": 0.964,
-      "sex interest": 0.767,
-      "gender expression": 0.057,
+      "sexuality": 0.043,
+      "romantic interest": 0.516,
+      "sex interest": 0.999,
+      "gender expression": 0.22,
       "sex": "f"
     },
-    "age": 52,
-    "birth year": 1153,
+    "age": 41,
+    "birth year": 1182,
     "sex": "f",
     "faction": "Zealots",
     "income class": [
@@ -21,15 +21,11 @@
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.396,
-      "nice-nasty": 0.918,
-      "honest-false": 0.675,
-      "dream": 0.524,
-      "outgoing": 0.661
-    },
-    "attitude": {
-      "dream": 0.524,
-      "outgoing": 0.661
+      "lawful-chaotic": 0.867,
+      "nice-nasty": 0.0,
+      "honest-false": 0.395,
+      "dream": 0.19,
+      "outgoing": 0.816
     },
     "homsoc": {
       "means": {
@@ -37,20 +33,106 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "caretaker",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.002,
-        "gender expression expression": 0.019
+        "sexuality expression": 0.035,
+        "gender expression expression": 0.219
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14323": {
+          "key": 14323,
+          "name": "Pieter Duue",
+          "age": 45,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": {
+              "key": 10094,
+              "name": "Alene Snep",
+              "age": 41,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 10093,
+              "name": "Gerlacus Duue",
+              "age": 23,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
+          }
+        },
+        "14803": {
+          "key": 14803,
+          "name": "Verthwi Duue",
+          "age": 12,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": {
+              "key": 10094,
+              "name": "Alene Snep",
+              "age": 41,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 10093,
+              "name": "Gerlacus Duue",
+              "age": 23,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
+          }
+        },
+        "16774": {
+          "key": 16774,
+          "name": "Reynwi",
+          "age": 1,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": {
+              "key": 10094,
+              "name": "Alene Snep",
+              "age": 41,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 10093,
+              "name": "Gerlacus Duue",
+              "age": 23,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10095
-        ]
+        ],
+        "child": {
+          "birth": [
+            14325,
+            14805,
+            16776
+          ]
+        }
       }
     },
     "occupation": {
@@ -59,22 +141,22 @@
         2,
         "middle class"
       ],
-      "income": 0,
+      "income": 0.025,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 2,
-      "eye_color": "brown",
-      "hair_color": "brown",
-      "hair_color_code": 2,
-      "hair_length": "long",
-      "beauty": 0.366,
+      "skin_color": 0,
+      "eye_color": "green",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
+      "hair_length": "medium",
+      "beauty": 0.485,
       "hair_type": [
         "C",
         "S"
       ],
-      "health": 0.285,
-      "fertility": 0.631,
+      "health": 0.646,
+      "fertility": 0.7,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -86,23 +168,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.687
+            "new_health": 0.646
           },
           "death": false
         },
-        "1203": {
+        "1222": {
           "health": {
-            "change": true,
-            "value_change": -0.251,
-            "new_health": 0.436
-          },
-          "death": false
-        },
-        "1204": {
-          "health": {
-            "change": true,
-            "value_change": -0.151,
-            "new_health": 0.285
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.646
           },
           "death": true
         }
@@ -113,35 +187,130 @@
           "needs_care": false,
           "taken_care_of": false,
           "caretaker": false
+        },
+        "1203": {
+          "independent": true,
+          "needs_care": false,
+          "taken_care_of": false,
+          "caretaker": true
+        },
+        "1217": {
+          "independent": true,
+          "needs_care": false,
+          "taken_care_of": false,
+          "caretaker": false
         }
       },
       "ocupation": {
         "1200": {
           "has job": false,
-          "income": 0
+          "income": 0.025
         },
         "1201": {
           "has job": false,
-          "income": 0
+          "income": 0.025
         },
         "1202": {
           "has job": false,
-          "income": 0
+          "income": 0.025
         },
         "1203": {
           "has job": false,
-          "income": 0
+          "income": 0.025
         },
         "1204": {
           "has job": false,
-          "income": 0
+          "income": 0.025
+        },
+        "1205": {
+          "has job": false,
+          "income": 0.025
+        },
+        "1206": {
+          "has job": false,
+          "income": 0.025
+        },
+        "1207": {
+          "has job": false,
+          "income": 0.025
+        },
+        "1208": {
+          "has job": false,
+          "income": 0.025
+        },
+        "1209": {
+          "has job": false,
+          "income": 0.025
+        },
+        "1210": {
+          "has job": false,
+          "income": 0.025
+        },
+        "1211": {
+          "has job": false,
+          "income": 0.025
+        },
+        "1212": {
+          "has job": false,
+          "income": 0.025
+        },
+        "1213": {
+          "has job": false,
+          "income": 0.025
+        },
+        "1214": {
+          "has job": false,
+          "income": 0.025
+        },
+        "1215": {
+          "has job": false,
+          "income": 0.025
+        },
+        "1216": {
+          "has job": false,
+          "income": 0.025
+        },
+        "1217": {
+          "has job": false,
+          "income": 0.025
+        },
+        "1218": {
+          "has job": false,
+          "income": 0.025
+        },
+        "1219": {
+          "has job": false,
+          "income": 0.025
+        },
+        "1220": {
+          "has job": false,
+          "income": 0.025
+        },
+        "1221": {
+          "has job": false,
+          "income": 0.025
+        },
+        "1222": {
+          "has job": false,
+          "income": 0.025
         }
       },
       "events": {
         "1200": [
           {
             "topic": "birth",
-            "year": 1153
+            "year": 1182
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stVerckens merct.se5.c2",
+              "street": "Verckens merct",
+              "neighborhood": "varkensbuurt",
+              "unique id": 33
+            }
           },
           {
             "topic": "new relationship",
@@ -151,38 +320,381 @@
               10094
             ],
             "people names": [
-              "Franco Raven",
-              "Hille Cabelliau"
+              "Gerlacus Duue",
+              "Alene Snep"
             ],
             "people ages": [
-              48,
-              47
+              20,
+              18
             ],
             "label": "spouse",
             "committed": true
           },
           {
+            "topic": "new relationship",
+            "key": 14325,
+            "people": [
+              10094,
+              14323
+            ],
+            "people names": [
+              "Alene Snep",
+              "Pieter Duue"
+            ],
+            "people ages": [
+              19,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
             "topic": "feelings change",
             "target": 10093,
-            "target name": "Franco Raven",
-            "state": "solid love",
-            "friendship label": "friend",
+            "target name": "Gerlacus Duue",
+            "state": "out of love",
+            "friendship label": "indifferent",
             "relationship": 10095
           }
         ],
         "1201": [
           {
+            "topic": "new relationship",
+            "key": 14805,
+            "people": [
+              10094,
+              14803
+            ],
+            "people names": [
+              "Alene Snep",
+              "Verthwi Duue"
+            ],
+            "people ages": [
+              19,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
             "topic": "update",
             "update": "new friendship label",
-            "relationship label": "spouse",
+            "relationship label": "parentchild",
             "friendship label": "friend",
-            "relationship": 10095
+            "relationship": 14325
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.07200000000000001,
+            "inhabitants": []
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 16776,
+            "people": [
+              10094,
+              16774
+            ],
+            "people names": [
+              "Alene Snep",
+              "Reynwi"
+            ],
+            "people ages": [
+              20,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "key": 10095,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10093,
+              "name": "Gerlacus Duue",
+              "age": 23,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "friendship label": "indifferent",
+            "label": "spouse",
+            "love state": "out of love"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.091,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          }
+        ],
+        "1203": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 16774,
+              "name": "Reynwi",
+              "age": 1,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": {
+                  "key": 10094,
+                  "name": "Alene Snep",
+                  "age": 22,
+                  "alive": true,
+                  "sex": "f",
+                  "parents": "firstgen"
+                },
+                "father": {
+                  "key": 10093,
+                  "name": "Gerlacus Duue",
+                  "age": 23,
+                  "alive": false,
+                  "sex": "m",
+                  "parents": "firstgen"
+                }
+              }
+            },
+            "cause": "childbirth",
+            "friendship label": "friend",
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.1,
+            "inhabitants": []
           }
         ],
         "1204": [
           {
+            "topic": "event",
+            "event": "faction upheaval",
+            "faction": "No religion",
+            "year": 1204
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 14805
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.07500000000000001,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "not enough income",
+            "income": 0.07500000000000001,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 14325
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.07500000000000001,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0.07500000000000001,
+            "inhabitants": []
+          }
+        ],
+        "1208": [
+          {
+            "topic": "not enough income",
+            "income": 0.07500000000000001,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "not enough income",
+            "income": 0.07500000000000001,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1210
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.07500000000000001,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0.07500000000000001,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0.07500000000000001,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 14803,
+              "name": "Verthwi Duue",
+              "age": 12,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": {
+                  "key": 10094,
+                  "name": "Alene Snep",
+                  "age": 32,
+                  "alive": true,
+                  "sex": "f",
+                  "parents": "firstgen"
+                },
+                "father": {
+                  "key": 10093,
+                  "name": "Gerlacus Duue",
+                  "age": 23,
+                  "alive": false,
+                  "sex": "m",
+                  "parents": "firstgen"
+                }
+              }
+            },
+            "cause": "starvation",
+            "friendship label": "indifferent",
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.07500000000000001,
+            "inhabitants": []
+          }
+        ],
+        "1214": [
+          {
+            "topic": "not enough income",
+            "income": 0.05,
+            "inhabitants": []
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "topic": "personality change",
+            "change": true,
+            "trait": "lawful-chaotic",
+            "trigger": "trauma",
+            "mod": 0.165
+          },
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.05,
+            "inhabitants": []
+          }
+        ],
+        "1216": [
+          {
+            "topic": "not caretaker"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.05,
+            "inhabitants": []
+          }
+        ],
+        "1217": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 14325
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.05,
+            "inhabitants": []
+          }
+        ],
+        "1218": [
+          {
+            "topic": "not enough income",
+            "income": 0.05,
+            "inhabitants": []
+          }
+        ],
+        "1219": [
+          {
+            "topic": "not enough income",
+            "income": 0.05,
+            "inhabitants": []
+          }
+        ],
+        "1220": [
+          {
+            "topic": "not enough income",
+            "income": 0.091,
+            "inhabitants": []
+          }
+        ],
+        "1221": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 14325
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.057,
+            "inhabitants": []
+          }
+        ],
+        "1222": [
+          {
             "topic": "death",
-            "cause": "old age"
+            "cause": "starvation"
           }
         ]
       }
@@ -197,14 +709,15 @@
       "unique id": 33
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         10095
       ]
     },
     "friends": [
-      10095
+      14325,
+      16776
     ],
     "enemies": []
   }

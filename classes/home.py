@@ -1,4 +1,5 @@
 from mesa import Agent, Model
+import copy
 from .utils import *
 
 # TODO INTRODUCRE PEOPLE TO EACH OTHER
@@ -61,27 +62,20 @@ class Home(Agent):
         """
         self.no_inhabitants = len(self.inhabitants)
         if self.no_inhabitants == 0:
-            return
+            return  
         
-        # update inhabitants
-        # print('-------')
-        # print(self.inhabitants)
-        # print(self.people_to_add)
-        # print(self.people_to_remove)
+        # remove and add people
         for p in self.people_to_add:
             self.add_person(p)
         for p2 in self.people_to_remove:
             self.remove_person(p2)
 
+        if self.no_inhabitants == 0:
+            return
+
         msg = self.tasks.get()
         while msg != None:
             task = msg['topic']
-            # if task == 'new person':
-            #     self.add_person(msg)
-            # elif task == 'person died':
-            #     self.remove_person(msg)
-            # elif task == 'person moved':
-            #     self.remove_person(msg)
             if task == 'new care dependant':
                 self.add_care_dependant(msg['key'])
             elif task == 'remove care dependant':
@@ -90,9 +84,6 @@ class Home(Agent):
                 log_error('did not recognize home task', msg)
             msg = self.tasks.get()
         
-        # self.no_inhabitants = len(self.inhabitants)
-        if self.no_inhabitants == 0:
-            return
         
         self.income = self.process_income_reports()
         self.income_needed = self.no_inhabitants * self.person_percentage
@@ -103,7 +94,7 @@ class Home(Agent):
                 'income' : self.income,
                 'income needed' : round(self.income_needed, 3),
                 'no inhabitants' : self.no_inhabitants,
-                'inhabitants' : self.inhabitants
+                'inhabitants' : copy.deepcopy(self.inhabitants)
             }
             self.log.add_log(log)
             
@@ -111,16 +102,16 @@ class Home(Agent):
         if self.care_dependants != [] and self.caretakers == []:
             log = {
                 'topic' : 'needs new caretaker', 
-                'care dependants' : self.care_dependants,
-                'caretakers' : self.caretakers,
-                'inhabitants' : self.inhabitants,
+                'care dependants' : copy.deepcopy(self.care_dependants),
+                'caretakers' : copy.deepcopy(self.caretakers),
+                'inhabitants' : copy.deepcopy(self.inhabitants),
                 'income' : self.income,
                 'income needed' : round(self.income_needed, 3),
             }
             self.log.add_log(log)
             self.find_caretaker()
 
-        self.inhabitant_tracking.append((self.no_inhabitants, self.inhabitants))
+        self.inhabitant_tracking.append((self.no_inhabitants, copy.deepcopy(self.inhabitants), copy.deepcopy(self.care_dependants)))
 
     def post_processing(self):              
         self.people_to_remove = []
@@ -341,8 +332,6 @@ class Home(Agent):
                 }
                 self.notify_care_dependants(msg)
                 # log_error('no possible caretaker', self.info())
-                # if self.income_class[0] > 2:                    
-                #     print(self.care_dependants)
 
     """
     INFO FUNCTIONS 

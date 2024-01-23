@@ -1,35 +1,31 @@
 {
   "10226": {
     "alive": false,
-    "name": "Douwen",
-    "surname": "Hoeuedekin",
-    "full name": "Douwen Hoeuedekin",
+    "name": "Heile",
+    "surname": "Stoc",
+    "full name": "Heile Stoc",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.054,
-      "romantic interest": 0.75,
-      "sex interest": 0.612,
-      "gender expression": 0.035,
+      "sexuality label": "bi",
+      "sexuality": 0.439,
+      "romantic interest": 0.798,
+      "sex interest": 0.581,
+      "gender expression": 0.702,
       "sex": "f"
     },
-    "age": 32,
-    "birth year": 1173,
+    "age": 28,
+    "birth year": 1176,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.455,
-      "nice-nasty": 0.608,
-      "honest-false": 0.552,
-      "dream": 0.328,
-      "outgoing": 0.601
-    },
-    "attitude": {
-      "dream": 0.328,
-      "outgoing": 0.601
+      "lawful-chaotic": 0.562,
+      "nice-nasty": 0.818,
+      "honest-false": 0.0,
+      "dream": 0.639,
+      "outgoing": 0.97
     },
     "homsoc": {
       "means": {
@@ -42,19 +38,76 @@
         ]
       },
       "expression": {
-        "sexuality expression": 0.041,
-        "gender expression expression": 0.012
+        "sexuality expression": 0.208,
+        "gender expression expression": 0.406
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13729": {
+          "key": 13729,
+          "name": "Stephanus",
+          "age": 8,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": {
+              "key": 10226,
+              "name": "Heile Stoc",
+              "age": 28,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 10225,
+              "name": "Wissen",
+              "age": 44,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
+          }
+        },
+        "17183": {
+          "key": 17183,
+          "name": "Erkenradis van Wissen",
+          "age": 10,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": {
+              "key": 10226,
+              "name": "Heile Stoc",
+              "age": 28,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 10225,
+              "name": "Wissen",
+              "age": 44,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10227
         ],
+        "child": {
+          "birth": [
+            13731,
+            17185
+          ]
+        },
         "unrelated": [
-          18446
+          18154
         ]
       }
     },
@@ -68,18 +121,18 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 8,
-      "eye_color": "brown",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
-      "hair_length": "long",
-      "beauty": 0.352,
+      "skin_color": 1,
+      "eye_color": "green",
+      "hair_color": "black",
+      "hair_color_code": 0,
+      "hair_length": "medium",
+      "beauty": 0.455,
       "hair_type": [
-        "C",
-        "S"
+        "S",
+        "C"
       ],
-      "health": 0.463,
-      "fertility": 0.476,
+      "health": 0.576,
+      "fertility": 0.646,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -91,15 +144,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.463
+            "new_health": 0.576
           },
           "death": false
         },
-        "1204": {
+        "1203": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.463
+            "new_health": 0.576
           },
           "death": true
         }
@@ -128,17 +181,24 @@
         "1203": {
           "has job": false,
           "income": 0
-        },
-        "1204": {
-          "has job": false,
-          "income": 0
         }
       },
       "events": {
         "1200": [
           {
             "topic": "birth",
-            "year": 1173
+            "year": 1176
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stMerrien hoof.se1.c1",
+              "street": "Merrien hoof",
+              "neighborhood": "varkensbuurt",
+              "unique id": 78
+            }
           },
           {
             "topic": "new relationship",
@@ -148,74 +208,94 @@
               10226
             ],
             "people names": [
-              "Dodo Vlieghe",
-              "Douwen Hoeuedekin"
+              "Wissen",
+              "Heile Stoc"
             ],
             "people ages": [
-              35,
-              27
+              31,
+              24
             ],
             "label": "spouse",
             "committed": true
+          },
+          {
+            "topic": "new relationship",
+            "key": 13731,
+            "people": [
+              10226,
+              13729
+            ],
+            "people names": [
+              "Heile Stoc",
+              "Stephanus"
+            ],
+            "people ages": [
+              25,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 10225,
+            "target name": "Wissen",
+            "state": "solid love",
+            "friendship label": "good friend",
+            "relationship": 10227
           }
         ],
         "1201": [
           {
-            "topic": "feelings change",
-            "target": 10225,
-            "target name": "Dodo Vlieghe",
-            "state": "solid love",
-            "friendship label": "friend",
-            "relationship": 10227
+            "topic": "not enough income",
+            "income": 0.157,
+            "inhabitants": []
           }
         ],
         "1202": [
           {
-            "key": 10227,
-            "topic": "unmarried"
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 10225,
-              "name": "Dodo Vlieghe",
-              "age": 38,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "cause": "illness",
-            "friendship label": "friend",
-            "label": "spouse",
-            "love state": "solid love"
+            "topic": "new relationship",
+            "key": 17185,
+            "people": [
+              10226,
+              17183
+            ],
+            "people names": [
+              "Heile Stoc",
+              "Erkenradis van Wissen"
+            ],
+            "people ages": [
+              26,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
             "topic": "new relationship",
-            "key": 18446,
+            "key": 18154,
             "people": [
-              12271,
+              11956,
               10226
             ],
             "people names": [
-              "Ghiselijn",
-              "Douwen Hoeuedekin"
+              "Willibrando Junghe",
+              "Heile Stoc"
             ],
             "people ages": [
-              48,
-              30
+              39,
+              27
             ],
             "label": "unrelated",
             "committed": false
-          }
-        ],
-        "1203": [
+          },
           {
             "topic": "not enough income",
-            "income": 0,
+            "income": 0.088,
             "inhabitants": []
           }
         ],
-        "1204": [
+        "1203": [
           {
             "topic": "death",
             "cause": "starvation"
@@ -227,21 +307,21 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stMerrien hoof.se3.c1",
+      "section": "stMerrien hoof.se1.c1",
       "street": "Merrien hoof",
       "neighborhood": "varkensbuurt",
-      "unique id": 80
+      "unique id": 78
     },
     "relationship status": {
       "taken": false,
-      "married": false,
+      "married": true,
       "relationships": [
         10227
       ]
     },
     "friends": [
       10227,
-      18446
+      18154
     ],
     "enemies": []
   }

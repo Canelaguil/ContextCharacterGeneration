@@ -76,12 +76,12 @@ class Occupation():
         Yearly income change, report changes at thresholds
         """
         old_income = self.income
+        self.income = self.passive_income # for higher classes
         if self.has_job:
             scale = job_volatility(**self.job)
             if age < Occupation.adult_age:
                 self.income += income_adjusted_for_age(age, self.income, True)
             self.income = normal_in_range(self.income, scale, 1.5, 0)
-            self.income += self.passive_income # for higher classes
             self.all_incomes.append(self.income)
             if self.income < 0.25 and old_income > 0.25:
                 self.notify('hardly any income')

@@ -1,19 +1,19 @@
 {
   "11258": {
     "alive": false,
-    "name": "Imsoete",
-    "surname": "",
-    "full name": "Imsoete",
+    "name": "Aghete",
+    "surname": "Minneman",
+    "full name": "Aghete Minneman",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.845,
-      "sex interest": 0.803,
-      "gender expression": 0.186,
+      "sexuality": 0.026,
+      "romantic interest": 0.592,
+      "sex interest": 0.779,
+      "gender expression": 0.113,
       "sex": "f"
     },
-    "age": 19,
-    "birth year": 1184,
+    "age": 27,
+    "birth year": 1178,
     "sex": "f",
     "faction": "Dogmatists",
     "income class": [
@@ -21,15 +21,11 @@
       "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.291,
-      "nice-nasty": 0.388,
-      "honest-false": 0.337,
-      "dream": 0.411,
-      "outgoing": 0.487
-    },
-    "attitude": {
-      "dream": 0.411,
-      "outgoing": 0.487
+      "lawful-chaotic": 0.442,
+      "nice-nasty": 0.413,
+      "honest-false": 0.499,
+      "dream": 0.0,
+      "outgoing": 0.401
     },
     "homsoc": {
       "means": {
@@ -42,51 +38,72 @@
         ]
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.088
+        "sexuality expression": 0.013,
+        "gender expression expression": 0.062
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "19219": {
+          "key": 19219,
+          "name": "Helyana Crane",
+          "age": 2,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": {
+              "key": 11258,
+              "name": "Aghete Minneman",
+              "age": 27,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 11257,
+              "name": "Eremboldus Crane",
+              "age": 42,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11259
         ],
-        "unrelated": [
-          14419
-        ]
+        "child": {
+          "birth": [
+            19221
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": true,
+      "has job": false,
       "income class": [
         0,
         "working class"
       ],
-      "income": 1.07,
-      "all_incomes": [
-        1.135,
-        1.07
-      ],
-      "job": {
-        "lawful": false,
-        "honest": false
-      }
+      "income": 0,
+      "all_incomes": []
     },
     "genetics": {
-      "skin_color": 1,
+      "skin_color": 6,
       "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_length": "long",
-      "beauty": 0.229,
+      "beauty": 0.768,
       "hair_type": [
-        "C",
+        "S",
         "C"
       ],
-      "health": 0.617,
-      "fertility": 0.576,
+      "health": 0.736,
+      "fertility": 0.742,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -98,15 +115,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.617
+            "new_health": 0.736
           },
           "death": false
         },
-        "1202": {
+        "1204": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.617
+            "new_health": 0.736
           },
           "death": true
         }
@@ -129,15 +146,34 @@
           "income": 0
         },
         "1202": {
-          "has job": true,
-          "income": 1.07
+          "has job": false,
+          "income": 0
+        },
+        "1203": {
+          "has job": false,
+          "income": 0
+        },
+        "1204": {
+          "has job": false,
+          "income": 0
         }
       },
       "events": {
         "1200": [
           {
             "topic": "birth",
-            "year": 1184
+            "year": 1178
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 0,
+              "income class label": "working class",
+              "section": "stTrysgens.se1.c0",
+              "street": "Trysgens",
+              "neighborhood": "kampbuurt",
+              "unique id": 436
+            }
           },
           {
             "topic": "new relationship",
@@ -147,53 +183,71 @@
               11258
             ],
             "people names": [
-              "Godeuert",
-              "Imsoete"
+              "Eremboldus Crane",
+              "Aghete Minneman"
             ],
             "people ages": [
-              33,
-              16
+              32,
+              22
             ],
             "label": "spouse",
             "committed": true
-          },
-          {
-            "topic": "new relationship",
-            "key": 14419,
-            "people": [
-              11258,
-              12718
-            ],
-            "people names": [
-              "Imsoete",
-              "Anthonius Vrint"
-            ],
-            "people ages": [
-              17,
-              22
-            ],
-            "label": "unrelated",
-            "committed": false
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.122,
-            "inhabitants": []
           }
         ],
         "1201": [
           {
-            "topic": "job notice",
-            "notice": "found job",
-            "income": 1.135
-          },
-          {
             "topic": "not enough income",
-            "income": 0.181,
+            "income": 0.03,
             "inhabitants": []
           }
         ],
         "1202": [
+          {
+            "topic": "feelings change",
+            "target": 11257,
+            "target name": "Eremboldus Crane",
+            "state": "out of love",
+            "friendship label": "friend",
+            "relationship": 11259
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 19221,
+            "people": [
+              11258,
+              19219
+            ],
+            "people names": [
+              "Aghete Minneman",
+              "Helyana Crane"
+            ],
+            "people ages": [
+              26,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.021,
+            "inhabitants": []
+          }
+        ],
+        "1204": [
+          {
+            "topic": "event",
+            "event": "faction upheaval",
+            "faction": "No religion",
+            "year": 1204
+          },
           {
             "topic": "death",
             "cause": "starvation"
@@ -205,13 +259,13 @@
     "home": {
       "income class": 0,
       "income class label": "working class",
-      "section": "stDie Coninc straet.se1.c0",
-      "street": "Die Coninc straet",
+      "section": "stTrysgens.se1.c0",
+      "street": "Trysgens",
       "neighborhood": "kampbuurt",
-      "unique id": 444
+      "unique id": 436
     },
     "relationship status": {
-      "taken": false,
+      "taken": true,
       "married": true,
       "relationships": [
         11259
@@ -219,7 +273,7 @@
     },
     "friends": [
       11259,
-      14419
+      19221
     ],
     "enemies": []
   }

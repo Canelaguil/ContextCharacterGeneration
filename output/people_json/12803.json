@@ -1,19 +1,19 @@
 {
   "12803": {
     "alive": false,
-    "name": "Siburgis",
-    "surname": "Pratre",
-    "full name": "Siburgis Pratre",
+    "name": "Hadewigis",
+    "surname": "",
+    "full name": "Hadewigis",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.108,
-      "romantic interest": 0.722,
-      "sex interest": 0.638,
-      "gender expression": 0.065,
+      "sexuality label": "bi",
+      "sexuality": 0.57,
+      "romantic interest": 0.668,
+      "sex interest": 0.636,
+      "gender expression": 0.1,
       "sex": "f"
     },
     "age": 28,
-    "birth year": 1174,
+    "birth year": 1175,
     "sex": "f",
     "faction": "No religion",
     "income class": [
@@ -21,36 +21,66 @@
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.502,
-      "nice-nasty": 0.477,
-      "honest-false": 0.354,
-      "dream": 0.341,
-      "outgoing": 0.802
-    },
-    "attitude": {
-      "dream": 0.341,
-      "outgoing": 0.802
+      "lawful-chaotic": 0.638,
+      "nice-nasty": 0.999,
+      "honest-false": 0.01,
+      "dream": 0.393,
+      "outgoing": 0.617
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "caretaker",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.089,
-        "gender expression expression": 0.03
+        "sexuality expression": 0.493,
+        "gender expression expression": 0.072
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12946": {
+          "key": 12946,
+          "name": "Myrthel Froes",
+          "age": 8,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": {
+              "key": 12803,
+              "name": "Hadewigis",
+              "age": 28,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 12802,
+              "name": "Rampe Froes",
+              "age": 29,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           12804
-        ]
+        ],
+        "child": {
+          "birth": [
+            12948
+          ]
+        }
       }
     },
     "occupation": {
@@ -63,18 +93,18 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 7,
-      "eye_color": "brown",
+      "skin_color": 0,
+      "eye_color": "green",
       "hair_color": "strawberry blonde",
       "hair_color_code": 5,
-      "hair_length": "medium",
-      "beauty": 0.461,
+      "hair_length": "short",
+      "beauty": 0.516,
       "hair_type": [
         "S",
         "C"
       ],
-      "health": 0.785,
-      "fertility": 0.686,
+      "health": 0.665,
+      "fertility": 0.622,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -86,15 +116,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.785
+            "new_health": 0.665
           },
           "death": false
         },
-        "1201": {
+        "1202": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.785
+            "new_health": 0.665
           },
           "death": true
         }
@@ -105,6 +135,12 @@
           "needs_care": false,
           "taken_care_of": false,
           "caretaker": false
+        },
+        "1202": {
+          "independent": true,
+          "needs_care": false,
+          "taken_care_of": false,
+          "caretaker": true
         }
       },
       "ocupation": {
@@ -115,13 +151,28 @@
         "1201": {
           "has job": false,
           "income": 0
+        },
+        "1202": {
+          "has job": false,
+          "income": 0
         }
       },
       "events": {
         "1200": [
           {
             "topic": "birth",
-            "year": 1174
+            "year": 1175
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stKerckstraet.se1.c1",
+              "street": "Kerckstraet",
+              "neighborhood": "denhof",
+              "unique id": 985
+            }
           },
           {
             "topic": "new relationship",
@@ -131,21 +182,77 @@
               12803
             ],
             "people names": [
-              "Menaures Longus",
-              "Siburgis Pratre"
+              "Rampe Froes",
+              "Hadewigis"
             ],
             "people ages": [
-              29,
-              26
+              27,
+              25
             ],
             "label": "spouse",
             "committed": true
+          },
+          {
+            "topic": "new relationship",
+            "key": 12948,
+            "people": [
+              12803,
+              12946
+            ],
+            "people names": [
+              "Hadewigis",
+              "Myrthel Froes"
+            ],
+            "people ages": [
+              25,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 12802,
+            "target name": "Rampe Froes",
+            "state": "solid love",
+            "friendship label": "friend",
+            "relationship": 12804
           }
         ],
         "1201": [
           {
+            "key": 12804,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12802,
+              "name": "Rampe Froes",
+              "age": 29,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "friendship label": "friend",
+            "label": "spouse",
+            "love state": "solid love"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.138,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          }
+        ],
+        "1202": [
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "starvation"
           }
         ]
       }
@@ -154,14 +261,14 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stKerckstraet.se3.c1",
+      "section": "stKerckstraet.se1.c1",
       "street": "Kerckstraet",
       "neighborhood": "denhof",
-      "unique id": 989
+      "unique id": 985
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         12804
       ]

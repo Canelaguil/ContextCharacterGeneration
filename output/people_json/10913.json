@@ -1,19 +1,19 @@
 {
   "10913": {
     "alive": false,
-    "name": "Cecilia",
-    "surname": "",
-    "full name": "Cecilia",
+    "name": "Segherarden",
+    "surname": "Kriec",
+    "full name": "Segherarden Kriec",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.027,
-      "romantic interest": 0.543,
-      "sex interest": 0.828,
-      "gender expression": 0.0,
+      "sexuality": 0.096,
+      "romantic interest": 0.781,
+      "sex interest": 0.733,
+      "gender expression": 0.245,
       "sex": "f"
     },
-    "age": 43,
-    "birth year": 1160,
+    "age": 28,
+    "birth year": 1177,
     "sex": "f",
     "faction": "Dogmatists",
     "income class": [
@@ -21,15 +21,11 @@
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.609,
-      "nice-nasty": 0.518,
-      "honest-false": 0.638,
-      "dream": 0.594,
-      "outgoing": 0.479
-    },
-    "attitude": {
-      "dream": 0.594,
-      "outgoing": 0.479
+      "lawful-chaotic": 0.757,
+      "nice-nasty": 0.344,
+      "honest-false": 0.445,
+      "dream": 0.38,
+      "outgoing": 0.544
     },
     "homsoc": {
       "means": {
@@ -37,20 +33,53 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.008,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.076,
+        "gender expression expression": 0.08
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "15140": {
+          "key": 15140,
+          "name": "Amelgeir Bigordel",
+          "age": 1,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": {
+              "key": 10913,
+              "name": "Segherarden Kriec",
+              "age": 28,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 10912,
+              "name": "Willem Bigordel",
+              "age": 53,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10914
-        ]
+        ],
+        "child": {
+          "birth": [
+            15142
+          ]
+        }
       }
     },
     "occupation": {
@@ -63,18 +92,18 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 1,
+      "skin_color": 5,
       "eye_color": "brown",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_length": "medium",
-      "beauty": 0.567,
+      "beauty": 0.929,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.488,
-      "fertility": 0.511,
+      "health": 0.76,
+      "fertility": 0.772,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -86,15 +115,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.488
+            "new_health": 0.76
           },
           "death": false
         },
-        "1202": {
+        "1204": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.488
+            "new_health": 0.76
           },
           "death": true
         }
@@ -119,13 +148,32 @@
         "1202": {
           "has job": false,
           "income": 0
+        },
+        "1203": {
+          "has job": false,
+          "income": 0
+        },
+        "1204": {
+          "has job": false,
+          "income": 0
         }
       },
       "events": {
         "1200": [
           {
             "topic": "birth",
-            "year": 1160
+            "year": 1177
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stSt. Aechten straet.se1.c1",
+              "street": "St. Aechten straet",
+              "neighborhood": "agnesbuurt",
+              "unique id": 318
+            }
           },
           {
             "topic": "new relationship",
@@ -135,18 +183,102 @@
               10913
             ],
             "people names": [
-              "Jois",
-              "Cecilia"
+              "Willem Bigordel",
+              "Segherarden Kriec"
             ],
             "people ages": [
-              48,
-              40
+              24,
+              23
             ],
             "label": "spouse",
             "committed": true
+          },
+          {
+            "topic": "feelings change",
+            "target": 10912,
+            "target name": "Willem Bigordel",
+            "state": "solid love",
+            "friendship label": "friend",
+            "relationship": 10914
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 15142,
+            "people": [
+              10913,
+              15140
+            ],
+            "people names": [
+              "Segherarden Kriec",
+              "Amelgeir Bigordel"
+            ],
+            "people ages": [
+              24,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
           }
         ],
         "1202": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 15140,
+              "name": "Amelgeir Bigordel",
+              "age": 1,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": {
+                  "key": 10913,
+                  "name": "Segherarden Kriec",
+                  "age": 26,
+                  "alive": true,
+                  "sex": "f",
+                  "parents": "firstgen"
+                },
+                "father": {
+                  "key": 10912,
+                  "name": "Willem Bigordel",
+                  "age": 27,
+                  "alive": true,
+                  "sex": "m",
+                  "parents": "firstgen"
+                }
+              }
+            },
+            "cause": "starvation",
+            "friendship label": "friend",
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1203": [
+          {
+            "topic": "not enough income",
+            "income": 0.109,
+            "inhabitants": []
+          }
+        ],
+        "1204": [
+          {
+            "topic": "event",
+            "event": "faction upheaval",
+            "faction": "No religion",
+            "year": 1204
+          },
           {
             "topic": "death",
             "cause": "illness"
@@ -161,7 +293,7 @@
       "section": "stSt. Aechten straet.se1.c1",
       "street": "St. Aechten straet",
       "neighborhood": "agnesbuurt",
-      "unique id": 321
+      "unique id": 318
     },
     "relationship status": {
       "taken": true,
@@ -171,7 +303,8 @@
       ]
     },
     "friends": [
-      10914
+      10914,
+      15142
     ],
     "enemies": []
   }

@@ -1,66 +1,62 @@
 {
   "12877": {
     "alive": false,
-    "name": "Gertrudis",
-    "surname": "Bonghe",
-    "full name": "Gertrudis Bonghe",
+    "name": "Bartholomeus",
+    "surname": "van Ricward",
+    "full name": "Bartholomeus van Ricward",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.885,
-      "romantic interest": 0.897,
-      "sex interest": 0.754,
-      "gender expression": 0.376,
-      "sex": "f"
+      "sexuality label": "straight",
+      "sexuality": 0.044,
+      "romantic interest": 0.777,
+      "sex interest": 0.489,
+      "gender expression": 0.175,
+      "sex": "m"
     },
-    "age": 10,
+    "age": 11,
     "birth year": 1200,
-    "sex": "f",
-    "faction": "No religion",
+    "sex": "m",
+    "faction": "Zealots",
     "income class": [
-      2,
-      "middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.742,
-      "nice-nasty": 0.149,
-      "honest-false": 0.87,
-      "dream": 0.516,
-      "outgoing": 0.999
-    },
-    "attitude": {
-      "dream": 0.516,
-      "outgoing": 0.999
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.403,
+      "honest-false": 0.999,
+      "dream": 0.463,
+      "outgoing": 0.699
     },
     "homsoc": {
       "means": {
         "independent": false,
-        "taken_care_of": false,
+        "taken_care_of": true,
         "caretaker": true,
         "needs_care": true,
         "flags": [
-          "neglected",
+          "caretaker",
           "starving"
         ]
       },
       "expression": {
-        "sexuality expression": 0.594,
-        "gender expression expression": 0.154
+        "sexuality expression": 0.033,
+        "gender expression expression": 0.105
       }
     },
     "network": {
       "parents": {
         "mother": {
-          "key": 12527,
-          "name": "Myrthel Bart",
-          "age": 33,
+          "key": 10466,
+          "name": "Linnea Lozere",
+          "age": 22,
           "alive": false,
           "sex": "f",
           "parents": "firstgen"
         },
         "father": {
-          "key": 12526,
-          "name": "Jurre Bonghe",
-          "age": 83,
+          "key": 10465,
+          "name": "Ricward",
+          "age": 25,
           "alive": false,
           "sex": "m",
           "parents": "firstgen"
@@ -73,19 +69,15 @@
           12879
         ],
         "sibling": [
-          17606,
-          22839,
-          26054,
-          27720,
-          30983
+          19835
         ]
       }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        2,
-        "middle class"
+        1,
+        "lower middle class"
       ],
       "income": 0,
       "all_incomes": []
@@ -96,13 +88,13 @@
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_length": "medium",
-      "beauty": 0.598,
+      "beauty": 0.344,
       "hair_type": [
-        "S",
+        "C",
         "C"
       ],
-      "health": 0.672,
-      "fertility": 0.669,
+      "health": 0.732,
+      "fertility": 0.785,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -114,15 +106,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.672
+            "new_health": 0.732
           },
           "death": false
         },
-        "1210": {
+        "1211": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.672
+            "new_health": 0.732
           },
           "death": true
         }
@@ -132,12 +124,6 @@
           "independent": false,
           "needs_care": true,
           "taken_care_of": true,
-          "caretaker": true
-        },
-        "1202": {
-          "independent": false,
-          "needs_care": true,
-          "taken_care_of": false,
           "caretaker": true
         }
       },
@@ -181,6 +167,10 @@
         "1210": {
           "has job": false,
           "income": 0
+        },
+        "1211": {
+          "has job": false,
+          "income": 0
         }
       },
       "events": {
@@ -190,18 +180,29 @@
             "year": 1200
           },
           {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stMuelen straet.se3.c1",
+              "street": "Muelen straet",
+              "neighborhood": "jorisbuurt",
+              "unique id": 161
+            }
+          },
+          {
             "topic": "new relationship",
             "key": 12878,
             "people": [
-              12526,
+              10465,
               12877
             ],
             "people names": [
-              "Jurre Bonghe",
-              "Gertrudis Bonghe"
+              "Ricward",
+              "Bartholomeus van Ricward"
             ],
             "people ages": [
-              41,
+              20,
               0
             ],
             "label": "parentchild",
@@ -211,198 +212,216 @@
             "topic": "new relationship",
             "key": 12879,
             "people": [
-              12527,
+              10466,
               12877
             ],
             "people names": [
-              "Myrthel Bart",
-              "Gertrudis Bonghe"
+              "Linnea Lozere",
+              "Bartholomeus van Ricward"
             ],
             "people ages": [
-              17,
+              18,
               0
             ],
             "label": "parentchild",
             "committed": false
+          },
+          {
+            "topic": "personality change",
+            "change": true,
+            "trait": "outgoing",
+            "trigger": "neglect",
+            "mod": -0.3
           }
         ],
         "1201": [
           {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "parentchild",
-            "friendship label": "friend",
-            "relationship": 12878
-          },
-          {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
           }
         ],
         "1202": [
           {
-            "topic": "new relationship",
-            "key": 17606,
-            "people": [
-              12877,
-              17603
-            ],
-            "people names": [
-              "Gertrudis Bonghe",
-              "Rycaldis Bonghe"
-            ],
-            "people ages": [
-              2,
-              0
-            ],
-            "label": "sibling",
-            "committed": false
-          },
-          {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0.162,
+            "inhabitants": []
           }
         ],
         "1203": [
           {
-            "topic": "neglected"
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 12878
+          },
+          {
+            "topic": "new relationship",
+            "key": 19835,
+            "people": [
+              12877,
+              19832
+            ],
+            "people names": [
+              "Bartholomeus van Ricward",
+              "Maelkin"
+            ],
+            "people ages": [
+              3,
+              0
+            ],
+            "label": "sibling",
+            "committed": false
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10466,
+              "name": "Linnea Lozere",
+              "age": 22,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "starvation",
+            "friendship label": "indifferent",
+            "label": "parent"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.084,
+            "inhabitants": []
           }
         ],
         "1204": [
           {
-            "topic": "neglected"
-          }
-        ],
-        "1205": [
-          {
-            "topic": "new relationship",
-            "key": 22839,
-            "people": [
-              12877,
-              22836
-            ],
-            "people names": [
-              "Gertrudis Bonghe",
-              "Iacobus Bonghe"
-            ],
-            "people ages": [
-              4,
-              0
-            ],
-            "label": "sibling",
-            "committed": false
+            "topic": "event",
+            "event": "faction upheaval",
+            "faction": "No religion",
+            "year": 1204
           },
-          {
-            "topic": "neglected"
-          }
-        ],
-        "1206": [
-          {
-            "topic": "new relationship",
-            "key": 26054,
-            "people": [
-              12877,
-              26051
-            ],
-            "people names": [
-              "Gertrudis Bonghe",
-              "Emmelina Bonghe"
-            ],
-            "people ages": [
-              6,
-              0
-            ],
-            "label": "sibling",
-            "committed": false
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.513,
-            "inhabitants": [
-              26051,
-              39672
-            ]
-          }
-        ],
-        "1207": [
           {
             "topic": "update",
             "update": "new friendship label",
             "relationship label": "parentchild",
-            "friendship label": "friend",
-            "relationship": 12879
+            "friendship label": "indifferent",
+            "relationship": 12878
           },
           {
-            "topic": "new relationship",
-            "key": 27720,
-            "people": [
-              12877,
-              27717
-            ],
-            "people names": [
-              "Gertrudis Bonghe",
-              "Lambrecht Bonghe"
-            ],
-            "people ages": [
-              7,
-              0
-            ],
-            "label": "sibling",
-            "committed": false
+            "topic": "person died",
+            "person": {
+              "key": 10465,
+              "name": "Ricward",
+              "age": 25,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "friendship label": "indifferent",
+            "label": "parent"
           },
           {
             "topic": "not enough income",
-            "income": 0.661,
-            "inhabitants": [
-              26051,
-              39672
-            ]
+            "income": 0.256,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 19832,
+              "name": "Maelkin",
+              "age": 3,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": {
+                  "key": 10466,
+                  "name": "Linnea Lozere",
+                  "age": 22,
+                  "alive": false,
+                  "sex": "f",
+                  "parents": "firstgen"
+                },
+                "father": {
+                  "key": 10465,
+                  "name": "Ricward",
+                  "age": 25,
+                  "alive": false,
+                  "sex": "m",
+                  "parents": "firstgen"
+                }
+              }
+            },
+            "cause": "starvation",
+            "friendship label": "good friend",
+            "label": "sibling"
+          },
+          {
+            "topic": "personality change",
+            "change": true,
+            "trait": "nice-nasty",
+            "trigger": "grief",
+            "mod": 0.028
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ],
         "1208": [
           {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "sibling",
-            "friendship label": "friend",
-            "relationship": 26054
-          },
-          {
             "topic": "not enough income",
-            "income": 0.47700000000000004,
-            "inhabitants": [
-              26051,
-              39672
-            ]
+            "income": 0,
+            "inhabitants": []
           }
         ],
         "1209": [
           {
-            "topic": "new relationship",
-            "key": 30983,
-            "people": [
-              12877,
-              30980
-            ],
-            "people names": [
-              "Gertrudis Bonghe",
-              "Rembrandus Bonghe"
-            ],
-            "people ages": [
-              8,
-              0
-            ],
-            "label": "sibling",
-            "committed": false
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           },
           {
-            "topic": "not enough income",
-            "income": 0.402,
-            "inhabitants": [
-              26051,
-              39672
-            ]
+            "topic": "now caretaker",
+            "care dependants": []
+          },
+          {
+            "topic": "new caretaker",
+            "person": 12877
           }
         ],
         "1210": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1210
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
           {
             "topic": "death",
             "cause": "starvation"
@@ -412,12 +431,12 @@
     },
     "key": 12877,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stCromme straet.se5.c2",
-      "street": "Cromme straet",
-      "neighborhood": "denhof",
-      "unique id": 895
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stMuelen straet.se3.c1",
+      "street": "Muelen straet",
+      "neighborhood": "jorisbuurt",
+      "unique id": 161
     },
     "relationship status": {
       "taken": false,
@@ -425,12 +444,7 @@
       "relationships": []
     },
     "friends": [
-      12878,
-      12879,
-      17606,
-      26054,
-      27720,
-      30983
+      19835
     ],
     "enemies": []
   }

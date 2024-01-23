@@ -1,53 +1,55 @@
 {
   "11806": {
     "alive": false,
-    "name": "Ioris",
-    "surname": "Vrode",
-    "full name": "Ioris Vrode",
+    "name": "Denijs",
+    "surname": "Lettele",
+    "full name": "Denijs Lettele",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.035,
-      "romantic interest": 0.717,
-      "sex interest": 0.999,
-      "gender expression": 0.0,
+      "sexuality": 0.013,
+      "romantic interest": 0.652,
+      "sex interest": 0.709,
+      "gender expression": 0.192,
       "sex": "m"
     },
-    "age": 36,
-    "birth year": 1165,
+    "age": 46,
+    "birth year": 1158,
     "sex": "m",
-    "faction": "Dogmatists",
+    "faction": "No religion",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.384,
-      "nice-nasty": 0.809,
-      "honest-false": 0.484,
-      "dream": 0.432,
-      "outgoing": 0.789
-    },
-    "attitude": {
-      "dream": 0.432,
-      "outgoing": 0.789
+      "lawful-chaotic": 0.551,
+      "nice-nasty": 0.747,
+      "honest-false": 0.64,
+      "dream": 0.644,
+      "outgoing": 0.607
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.019,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.012,
+        "gender expression expression": 0.036
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {},
-      "relationship keys": {}
+      "relationship keys": {
+        "spouse": [
+          11808
+        ]
+      }
     },
     "occupation": {
       "has job": true,
@@ -55,29 +57,32 @@
         2,
         "middle class"
       ],
-      "income": 0.988,
+      "income": 0.354,
       "all_incomes": [
-        0.982,
-        0.988
+        0.872,
+        0.0,
+        0.0,
+        0.027,
+        0.354
       ],
       "job": {
-        "lawful": true,
-        "honest": true
+        "lawful": false,
+        "honest": false
       }
     },
     "genetics": {
-      "skin_color": 1,
-      "eye_color": "brown",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
-      "hair_length": "medium",
-      "beauty": 0.973,
+      "skin_color": 6,
+      "eye_color": "green",
+      "hair_color": "black",
+      "hair_color_code": 0,
+      "hair_length": "short",
+      "beauty": 0.538,
       "hair_type": [
         "S",
         "S"
       ],
-      "health": 0.817,
-      "fertility": 0.796,
+      "health": 0.623,
+      "fertility": 0.58,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -89,14 +94,22 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.817
+            "new_health": 0.623
+          },
+          "death": false
+        },
+        "1203": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.623
           },
           "death": true
         }
       },
       "homsoc": {
         "1200": {
-          "independent": true,
+          "independent": false,
           "needs_care": false,
           "taken_care_of": false,
           "caretaker": false
@@ -105,23 +118,93 @@
       "ocupation": {
         "1200": {
           "has job": true,
-          "income": 0.988
+          "income": 0.0
+        },
+        "1201": {
+          "has job": true,
+          "income": 0.0
+        },
+        "1202": {
+          "has job": true,
+          "income": 0.027
+        },
+        "1203": {
+          "has job": true,
+          "income": 0.354
         }
       },
       "events": {
         "1200": [
           {
             "topic": "birth",
-            "year": 1165
+            "year": 1158
           },
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.982
+            "income": 0.872
           },
           {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stScherbier straet.se1.c2",
+              "street": "Scherbier straet",
+              "neighborhood": "cingelzuid",
+              "unique id": 632
+            }
+          },
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.0
+          },
+          {
+            "topic": "new relationship",
+            "key": 11808,
+            "people": [
+              11806,
+              11807
+            ],
+            "people names": [
+              "Denijs Lettele",
+              "Heilsota"
+            ],
+            "people ages": [
+              42,
+              27
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "feelings change",
+            "target": 11807,
+            "target name": "Heilsota",
+            "state": "solid love",
+            "friendship label": "friend",
+            "relationship": 11808
+          }
+        ],
+        "1201": [
+          {
+            "topic": "not enough income",
+            "income": 0.025,
+            "inhabitants": []
+          }
+        ],
+        "1202": [
+          {
+            "topic": "not enough income",
+            "income": 0.052000000000000005,
+            "inhabitants": []
+          }
+        ],
+        "1203": [
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "starvation"
           }
         ]
       }
@@ -130,17 +213,21 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stScherbier straet.se3.c2",
+      "section": "stScherbier straet.se1.c2",
       "street": "Scherbier straet",
       "neighborhood": "cingelzuid",
-      "unique id": 638
+      "unique id": 632
     },
     "relationship status": {
       "taken": true,
       "married": true,
-      "relationships": []
+      "relationships": [
+        11808
+      ]
     },
-    "friends": [],
+    "friends": [
+      11808
+    ],
     "enemies": []
   }
 }

@@ -1,35 +1,31 @@
 {
   "11030": {
     "alive": false,
-    "name": "Clementia",
-    "surname": "Vint",
-    "full name": "Clementia Vint",
+    "name": "Hersewindis",
+    "surname": "Stael",
+    "full name": "Hersewindis Stael",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.996,
-      "romantic interest": 0.551,
-      "sex interest": 0.599,
-      "gender expression": 0.328,
+      "sexuality label": "straight",
+      "sexuality": 0.054,
+      "romantic interest": 0.521,
+      "sex interest": 0.841,
+      "gender expression": 0.071,
       "sex": "f"
     },
-    "age": 22,
-    "birth year": 1180,
+    "age": 33,
+    "birth year": 1170,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.466,
-      "nice-nasty": 0.999,
-      "honest-false": 0.985,
-      "dream": 0.561,
-      "outgoing": 0.706
-    },
-    "attitude": {
-      "dream": 0.561,
-      "outgoing": 0.706
+      "lawful-chaotic": 0.0,
+      "nice-nasty": 0.745,
+      "honest-false": 0.559,
+      "dream": 0.504,
+      "outgoing": 0.394
     },
     "homsoc": {
       "means": {
@@ -37,20 +33,79 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.712,
-        "gender expression expression": 0.172
+        "sexuality expression": 0.025,
+        "gender expression expression": 0.07
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13501": {
+          "key": 13501,
+          "name": "Katerina Wilde",
+          "age": 7,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": {
+              "key": 11030,
+              "name": "Hersewindis Stael",
+              "age": 33,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 11029,
+              "name": "Gherbaren Wilde",
+              "age": 57,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
+          }
+        },
+        "16166": {
+          "key": 16166,
+          "name": "Reynwi Wilde",
+          "age": 1,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": {
+              "key": 11030,
+              "name": "Hersewindis Stael",
+              "age": 33,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 11029,
+              "name": "Gherbaren Wilde",
+              "age": 57,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11031
-        ]
+        ],
+        "child": {
+          "birth": [
+            13503,
+            16168
+          ]
+        }
       }
     },
     "occupation": {
@@ -59,22 +114,22 @@
         2,
         "middle class"
       ],
-      "income": 0,
+      "income": 0.025,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 2,
-      "eye_color": "blue",
+      "skin_color": 3,
+      "eye_color": "green",
       "hair_color": "black",
       "hair_color_code": 0,
-      "hair_length": "medium",
-      "beauty": 0.551,
+      "hair_length": "long",
+      "beauty": 0.534,
       "hair_type": [
-        "C",
+        "S",
         "S"
       ],
-      "health": 0.171,
-      "fertility": 0.542,
+      "health": 0.751,
+      "fertility": 0.731,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -84,17 +139,17 @@
       "health": {
         "1200": {
           "health": {
-            "change": true,
-            "value_change": -0.344,
-            "new_health": 0.171
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.751
           },
           "death": false
         },
-        "1201": {
+        "1202": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.171
+            "new_health": 0.751
           },
           "death": true
         }
@@ -110,18 +165,33 @@
       "ocupation": {
         "1200": {
           "has job": false,
-          "income": 0
+          "income": 0.025
         },
         "1201": {
           "has job": false,
-          "income": 0
+          "income": 0.025
+        },
+        "1202": {
+          "has job": false,
+          "income": 0.025
         }
       },
       "events": {
         "1200": [
           {
             "topic": "birth",
-            "year": 1180
+            "year": 1170
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stDie Camp.se1.c2",
+              "street": "Die Camp",
+              "neighborhood": "kampbuurt",
+              "unique id": 358
+            }
           },
           {
             "topic": "new relationship",
@@ -131,21 +201,64 @@
               11030
             ],
             "people names": [
-              "Rolant Rouer",
-              "Clementia Vint"
+              "Gherbaren Wilde",
+              "Hersewindis Stael"
             ],
             "people ages": [
-              38,
-              20
+              43,
+              30
             ],
             "label": "spouse",
             "committed": true
+          },
+          {
+            "topic": "new relationship",
+            "key": 13503,
+            "people": [
+              11030,
+              13501
+            ],
+            "people names": [
+              "Hersewindis Stael",
+              "Katerina Wilde"
+            ],
+            "people ages": [
+              30,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           }
         ],
         "1201": [
           {
+            "topic": "new relationship",
+            "key": 16168,
+            "people": [
+              11030,
+              16166
+            ],
+            "people names": [
+              "Hersewindis Stael",
+              "Reynwi Wilde"
+            ],
+            "people ages": [
+              32,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.121,
+            "inhabitants": []
+          }
+        ],
+        "1202": [
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "childbirth"
           }
         ]
       }
@@ -157,7 +270,7 @@
       "section": "stDie Camp.se1.c2",
       "street": "Die Camp",
       "neighborhood": "kampbuurt",
-      "unique id": 363
+      "unique id": 358
     },
     "relationship status": {
       "taken": true,
@@ -166,7 +279,9 @@
         11031
       ]
     },
-    "friends": [],
+    "friends": [
+      11031
+    ],
     "enemies": []
   }
 }

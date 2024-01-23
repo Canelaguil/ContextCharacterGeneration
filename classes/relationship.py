@@ -120,6 +120,7 @@ class Relationship(Agent):
             'people' : [self.personA['key'], self.personB['key']], 
             'key' : self.unique_id,
             'committed' : taken,
+            'married' : True if new_label == 'spouse' else False
         }
         self.update_people(notify_people_msg)
 

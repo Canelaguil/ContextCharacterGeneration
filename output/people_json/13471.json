@@ -1,66 +1,62 @@
 {
   "13471": {
     "alive": false,
-    "name": "Andreas",
-    "surname": "Raven",
-    "full name": "Andreas Raven",
+    "name": "Ghoudekinen",
+    "surname": "Boene",
+    "full name": "Ghoudekinen Boene",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.09,
-      "romantic interest": 0.604,
-      "sex interest": 0.484,
-      "gender expression": 0.116,
-      "sex": "m"
+      "sexuality": 0.065,
+      "romantic interest": 0.663,
+      "sex interest": 0.704,
+      "gender expression": 0.036,
+      "sex": "f"
     },
-    "age": 15,
+    "age": 16,
     "birth year": 1200,
-    "sex": "m",
+    "sex": "f",
     "faction": "Zealots",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.537,
-      "nice-nasty": 0.496,
-      "honest-false": 0.458,
-      "dream": 0.595,
-      "outgoing": 0.517
-    },
-    "attitude": {
-      "dream": 0.595,
-      "outgoing": 0.517
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.878,
+      "honest-false": 0.212,
+      "dream": 0.204,
+      "outgoing": 0.227
     },
     "homsoc": {
       "means": {
         "independent": false,
         "taken_care_of": false,
         "caretaker": true,
-        "needs_care": true,
+        "needs_care": false,
         "flags": [
-          "neglected",
+          "caretaker",
           "starving"
         ]
       },
       "expression": {
-        "sexuality expression": 0.021,
-        "gender expression expression": 0.115
+        "sexuality expression": 0.018,
+        "gender expression expression": 0.015
       }
     },
     "network": {
       "parents": {
         "mother": {
-          "key": 11180,
-          "name": "Trame Bloeme",
-          "age": 25,
+          "key": 11342,
+          "name": "Agnes Ulf",
+          "age": 38,
           "alive": false,
           "sex": "f",
           "parents": "firstgen"
         },
         "father": {
-          "key": 11179,
-          "name": "Hako Raven",
-          "age": 56,
+          "key": 11341,
+          "name": "Vroeden Boene",
+          "age": 53,
           "alive": false,
           "sex": "m",
           "parents": "firstgen"
@@ -73,7 +69,8 @@
           13473
         ],
         "sibling": [
-          15103
+          15915,
+          17328
         ]
       }
     },
@@ -87,18 +84,18 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 5,
+      "skin_color": 6,
       "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
       "hair_length": "medium",
-      "beauty": 0.305,
+      "beauty": 0.499,
       "hair_type": [
         "S",
-        "C"
+        "S"
       ],
-      "health": 0.726,
-      "fertility": 0.65,
+      "health": 0.699,
+      "fertility": 0.713,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -110,15 +107,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.726
+            "new_health": 0.699
           },
           "death": false
         },
-        "1215": {
+        "1216": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.726
+            "new_health": 0.699
           },
           "death": true
         }
@@ -130,9 +127,9 @@
           "taken_care_of": true,
           "caretaker": true
         },
-        "1202": {
+        "1216": {
           "independent": false,
-          "needs_care": true,
+          "needs_care": false,
           "taken_care_of": false,
           "caretaker": true
         }
@@ -197,6 +194,10 @@
         "1215": {
           "has job": false,
           "income": 0
+        },
+        "1216": {
+          "has job": false,
+          "income": 0
         }
       },
       "events": {
@@ -206,18 +207,29 @@
             "year": 1200
           },
           {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stDie Coninc straet.se7.c1",
+              "street": "Die Coninc straet",
+              "neighborhood": "kampbuurt",
+              "unique id": 469
+            }
+          },
+          {
             "topic": "new relationship",
             "key": 13472,
             "people": [
-              11179,
+              11341,
               13471
             ],
             "people names": [
-              "Hako Raven",
-              "Andreas Raven"
+              "Vroeden Boene",
+              "Ghoudekinen Boene"
             ],
             "people ages": [
-              37,
+              38,
               0
             ],
             "label": "parentchild",
@@ -227,177 +239,221 @@
             "topic": "new relationship",
             "key": 13473,
             "people": [
-              11180,
+              11342,
               13471
             ],
             "people names": [
-              "Trame Bloeme",
-              "Andreas Raven"
+              "Agnes Ulf",
+              "Ghoudekinen Boene"
             ],
             "people ages": [
-              24,
+              33,
               0
             ],
             "label": "parentchild",
             "committed": false
+          },
+          {
+            "topic": "personality change",
+            "change": true,
+            "trait": "outgoing",
+            "trigger": "neglect",
+            "mod": -0.3
           }
         ],
         "1201": [
           {
             "topic": "new relationship",
-            "key": 15103,
+            "key": 15915,
             "people": [
               13471,
-              15100
+              15912
             ],
             "people names": [
-              "Andreas Raven",
-              "Ludingus Hakoszoon"
+              "Ghoudekinen Boene",
+              "Gilis Boene"
             ],
             "people ages": [
-              0,
+              1,
               0
             ],
             "label": "sibling",
             "committed": false
           },
           {
-            "topic": "person died",
-            "person": {
-              "key": 11180,
-              "name": "Trame Bloeme",
-              "age": 25,
-              "alive": false,
-              "sex": "f",
-              "parents": "firstgen"
-            },
-            "cause": "childbirth",
-            "friendship label": "indifferent",
-            "label": "parent"
-          },
-          {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0.063,
+            "inhabitants": []
           }
         ],
         "1202": [
           {
-            "topic": "neglected"
+            "topic": "new relationship",
+            "key": 17328,
+            "people": [
+              13471,
+              17325
+            ],
+            "people names": [
+              "Ghoudekinen Boene",
+              "Iris Boene"
+            ],
+            "people ages": [
+              2,
+              0
+            ],
+            "label": "sibling",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.092,
+            "inhabitants": []
           }
         ],
         "1203": [
           {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
           }
         ],
         "1204": [
           {
-            "topic": "neglected"
+            "topic": "event",
+            "event": "faction upheaval",
+            "faction": "No religion",
+            "year": 1204
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11342,
+              "name": "Agnes Ulf",
+              "age": 38,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "starvation",
+            "friendship label": "friend",
+            "label": "parent"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.093,
+            "inhabitants": []
           }
         ],
         "1205": [
           {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0.208,
+            "inhabitants": []
           }
         ],
         "1206": [
           {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0.113,
+            "inhabitants": []
           }
         ],
         "1208": [
           {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "parentchild",
-            "friendship label": "indifferent",
-            "relationship": 13472
-          },
-          {
             "topic": "not enough income",
-            "income": 0.434,
+            "income": 0.0,
             "inhabitants": []
           }
         ],
         "1209": [
           {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "sibling",
-            "friendship label": "friend",
-            "relationship": 15103
+            "topic": "not enough income",
+            "income": 0.093,
+            "inhabitants": []
           }
         ],
         "1210": [
           {
-            "topic": "neglected"
+            "topic": "event",
+            "event": "plague",
+            "year": 1210
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "sibling",
+            "friendship label": "indifferent",
+            "relationship": 17328
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
           }
         ],
         "1211": [
           {
             "topic": "not enough income",
-            "income": 0.382,
+            "income": 0.0,
             "inhabitants": []
           }
         ],
         "1212": [
           {
-            "topic": "event",
-            "event": "faction upheaval",
-            "faction": "No religion",
-            "year": 1212
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 15100,
-              "name": "Ludingus Hakoszoon",
-              "age": 11,
-              "alive": false,
-              "sex": "m",
-              "parents": {
-                "mother": {
-                  "key": 11180,
-                  "name": "Trame Bloeme",
-                  "age": 25,
-                  "alive": false,
-                  "sex": "f",
-                  "parents": "firstgen"
-                },
-                "father": {
-                  "key": 11179,
-                  "name": "Hako Raven",
-                  "age": 50,
-                  "alive": true,
-                  "sex": "m",
-                  "parents": "firstgen"
-                }
-              }
-            },
-            "cause": "starvation",
-            "friendship label": "friend",
-            "label": "sibling"
-          },
-          {
             "topic": "not enough income",
-            "income": 0.282,
+            "income": 0.0,
             "inhabitants": []
           }
         ],
         "1213": [
           {
-            "topic": "neglected"
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "sibling",
+            "friendship label": "indifferent",
+            "relationship": 17328
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.292,
+            "inhabitants": []
           }
         ],
         "1214": [
           {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "parentchild",
+            "topic": "person died",
+            "person": {
+              "key": 11341,
+              "name": "Vroeden Boene",
+              "age": 53,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "starvation",
             "friendship label": "indifferent",
-            "relationship": 13472
+            "label": "parent"
           },
           {
-            "topic": "neglected"
+            "topic": "not enough income",
+            "income": 0.004,
+            "inhabitants": []
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          },
+          {
+            "topic": "new caretaker",
+            "person": 13471
           }
         ],
         "1215": [
@@ -407,15 +463,20 @@
             "year": 1215
           },
           {
-            "topic": "personality change",
-            "change": true,
-            "trait": "honest-false",
-            "trigger": "trauma",
-            "mod": 0.117
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
           },
           {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1216": [
+          {
             "topic": "death",
-            "cause": "plague"
+            "cause": "illness"
           }
         ]
       }
@@ -424,10 +485,10 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stSt. Ians straet.se3.c1",
-      "street": "St. Ians straet",
+      "section": "stDie Coninc straet.se7.c1",
+      "street": "Die Coninc straet",
       "neighborhood": "kampbuurt",
-      "unique id": 415
+      "unique id": 469
     },
     "relationship status": {
       "taken": false,
@@ -435,7 +496,8 @@
       "relationships": []
     },
     "friends": [
-      15103
+      13473,
+      15915
     ],
     "enemies": []
   }

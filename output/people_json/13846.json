@@ -1,35 +1,31 @@
 {
   "13846": {
     "alive": false,
-    "name": "Hadewigis",
-    "surname": "Curthals",
-    "full name": "Hadewigis Curthals",
+    "name": "Lutghardis",
+    "surname": "Maerke",
+    "full name": "Lutghardis Maerke",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.042,
-      "romantic interest": 0.421,
-      "sex interest": 0.87,
-      "gender expression": 0.0,
+      "sexuality": 0.043,
+      "romantic interest": 0.459,
+      "sex interest": 0.999,
+      "gender expression": 0.041,
       "sex": "f"
     },
-    "age": 1,
+    "age": 4,
     "birth year": 1200,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
-      0,
-      "working class"
+      2,
+      "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.431,
-      "nice-nasty": 0.433,
-      "honest-false": 0.694,
-      "dream": 0.185,
-      "outgoing": 0.999
-    },
-    "attitude": {
-      "dream": 0.185,
-      "outgoing": 0.999
+      "lawful-chaotic": 0.482,
+      "nice-nasty": 0.508,
+      "honest-false": 0.496,
+      "dream": 0.284,
+      "outgoing": 0.287
     },
     "homsoc": {
       "means": {
@@ -37,27 +33,29 @@
         "taken_care_of": true,
         "caretaker": true,
         "needs_care": true,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.016,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.028,
+        "gender expression expression": 0.023
       }
     },
     "network": {
       "parents": {
         "mother": {
-          "key": 11252,
-          "name": "Marisseis",
-          "age": 50,
+          "key": 10043,
+          "name": "Gisele Pratre",
+          "age": 35,
           "alive": false,
           "sex": "f",
           "parents": "firstgen"
         },
         "father": {
-          "key": 11251,
-          "name": "Wybel Curthals",
-          "age": 54,
+          "key": 10042,
+          "name": "Rodolf Maerke",
+          "age": 41,
           "alive": false,
           "sex": "m",
           "parents": "firstgen"
@@ -68,31 +66,35 @@
         "parent": [
           13847,
           13848
+        ],
+        "sibling": [
+          15631,
+          19937
         ]
       }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        0,
-        "working class"
+        2,
+        "middle class"
       ],
-      "income": 0,
+      "income": 0.025,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 5,
-      "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "skin_color": 2,
+      "eye_color": "blue",
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_length": "medium",
-      "beauty": 0.905,
+      "beauty": 0.667,
       "hair_type": [
         "S",
         "C"
       ],
-      "health": 0.622,
-      "fertility": 0.63,
+      "health": 0.806,
+      "fertility": 0.804,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -104,7 +106,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.622
+            "new_health": 0.806
+          },
+          "death": false
+        },
+        "1204": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.806
           },
           "death": true
         }
@@ -120,7 +130,19 @@
       "ocupation": {
         "1201": {
           "has job": false,
-          "income": 0
+          "income": 0.025
+        },
+        "1202": {
+          "has job": false,
+          "income": 0.025
+        },
+        "1203": {
+          "has job": false,
+          "income": 0.025
+        },
+        "1204": {
+          "has job": false,
+          "income": 0.025
         }
       },
       "events": {
@@ -130,18 +152,29 @@
             "year": 1200
           },
           {
+            "topic": "new home",
+            "home": {
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stUterechse straet.se3.c2",
+              "street": "Uterechse straet",
+              "neighborhood": "varkensbuurt",
+              "unique id": 15
+            }
+          },
+          {
             "topic": "new relationship",
             "key": 13847,
             "people": [
-              11251,
+              10042,
               13846
             ],
             "people names": [
-              "Wybel Curthals",
-              "Hadewigis Curthals"
+              "Rodolf Maerke",
+              "Lutghardis Maerke"
             ],
             "people ages": [
-              46,
+              29,
               0
             ],
             "label": "parentchild",
@@ -151,44 +184,154 @@
             "topic": "new relationship",
             "key": 13848,
             "people": [
-              11252,
+              10043,
               13846
             ],
             "people names": [
-              "Marisseis",
-              "Hadewigis Curthals"
+              "Gisele Pratre",
+              "Lutghardis Maerke"
             ],
             "people ages": [
-              20,
+              25,
               0
             ],
             "label": "parentchild",
             "committed": false
+          },
+          {
+            "topic": "personality change",
+            "change": true,
+            "trait": "outgoing",
+            "trigger": "neglect",
+            "mod": -0.3
           }
         ],
         "1201": [
           {
+            "topic": "new relationship",
+            "key": 15631,
+            "people": [
+              13846,
+              15628
+            ],
+            "people names": [
+              "Lutghardis Maerke",
+              "Ghoudekinen Maerke"
+            ],
+            "people ages": [
+              0,
+              0
+            ],
+            "label": "sibling",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.05,
+            "inhabitants": []
+          }
+        ],
+        "1202": [
+          {
+            "topic": "not enough income",
+            "income": 0.159,
+            "inhabitants": []
+          }
+        ],
+        "1203": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 13848
+          },
+          {
+            "topic": "new relationship",
+            "key": 19937,
+            "people": [
+              13846,
+              19934
+            ],
+            "people names": [
+              "Lutghardis Maerke",
+              "Florens Maerke"
+            ],
+            "people ages": [
+              2,
+              0
+            ],
+            "label": "sibling",
+            "committed": false
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 15628,
+              "name": "Ghoudekinen Maerke",
+              "age": 2,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": {
+                  "key": 10043,
+                  "name": "Gisele Pratre",
+                  "age": 28,
+                  "alive": true,
+                  "sex": "f",
+                  "parents": "firstgen"
+                },
+                "father": {
+                  "key": 10042,
+                  "name": "Rodolf Maerke",
+                  "age": 32,
+                  "alive": true,
+                  "sex": "m",
+                  "parents": "firstgen"
+                }
+              }
+            },
+            "cause": "starvation",
+            "friendship label": "friend",
+            "label": "sibling"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.185,
+            "inhabitants": []
+          }
+        ],
+        "1204": [
+          {
+            "topic": "event",
+            "event": "faction upheaval",
+            "faction": "No religion",
+            "year": 1204
+          },
+          {
             "topic": "death",
-            "cause": "childbirth"
+            "cause": "starvation"
           }
         ]
       }
     },
     "key": 13846,
     "home": {
-      "income class": 0,
-      "income class label": "working class",
-      "section": "stDie Coninc straet.se1.c0",
-      "street": "Die Coninc straet",
-      "neighborhood": "kampbuurt",
-      "unique id": 442
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stUterechse straet.se3.c2",
+      "street": "Uterechse straet",
+      "neighborhood": "varkensbuurt",
+      "unique id": 15
     },
     "relationship status": {
       "taken": false,
       "married": false,
       "relationships": []
     },
-    "friends": [],
+    "friends": [
+      15631
+    ],
     "enemies": []
   }
 }

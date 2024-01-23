@@ -5,7 +5,6 @@ from .utils import *
 from .person_classes import *
 
 # TODO: Parent info???
-# TODO: notify relationships of adult age
 class Person(Agent):
     """
     Represents an inhabitant of a community. 
@@ -208,7 +207,9 @@ class Person(Agent):
                            'neglected', 'need care']:
                 self.homsoc.situation_change(msg, self.age)
                 if topic == 'neglected': 
-                    self.personality.trigger('neglect')
+                    personality_effect = self.personality.trigger('neglect')
+                    if personality_effect['change']:
+                        self.memory.add_event(personality_effect)
                 if self.age != 0:
                     self.memory.add_event(msg)
             elif topic == 'update':
@@ -256,7 +257,7 @@ class Person(Agent):
         self.home = home_info
         event = {
             'topic' : 'new home', 
-            'info' : home_info
+            'home' : home_info
         }
         self.memory.add_event(event)
 
@@ -284,20 +285,19 @@ class Person(Agent):
         """
         self.memory.add_event(info)
         event = info['event']
+        effect = {'change' : False}
         if event in ['famine', 'plague']:
             self.body.trigger(event)
-            personality_effect = self.personality.trigger('trauma')
-            if personality_effect['change']:
-                self.memory.add_event(personality_effect)
+            effect = self.personality.trigger('trauma')            
         elif event == 'war':
             if self.sex == 'm' and self.age > Body.adult_age:
                 self.body.trigger(event)
-            personality_effect = self.personality.trigger('trauma')
-            if personality_effect['change']:
-                self.memory.add_event(personality_effect)
+            effect = self.personality.trigger('trauma')
         elif event == 'faction upheaval':
             ...
 
+        if effect['change']:
+            self.memory.add_event(effect)
 
     """
     INFO FUNCTIONS

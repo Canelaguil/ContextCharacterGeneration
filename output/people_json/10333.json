@@ -1,83 +1,118 @@
 {
   "10333": {
     "alive": false,
-    "name": "Lotijn",
+    "name": "Rembrandus",
     "surname": "",
-    "full name": "Lotijn",
+    "full name": "Rembrandus",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.931,
-      "romantic interest": 0.616,
-      "sex interest": 0.777,
-      "gender expression": 0.182,
+      "sexuality label": "bi",
+      "sexuality": 0.51,
+      "romantic interest": 0.708,
+      "sex interest": 0.667,
+      "gender expression": 0.492,
       "sex": "m"
     },
-    "age": 50,
+    "age": 51,
     "birth year": 1151,
     "sex": "m",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
-      0,
-      "working class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.21,
-      "nice-nasty": 0.295,
-      "honest-false": 0.55,
-      "dream": 0.55,
-      "outgoing": 0.862
-    },
-    "attitude": {
-      "dream": 0.55,
-      "outgoing": 0.862
+      "lawful-chaotic": 0.251,
+      "nice-nasty": 0.436,
+      "honest-false": 0.0,
+      "dream": 0.516,
+      "outgoing": 0.565
     },
     "homsoc": {
       "means": {
-        "independent": true,
+        "independent": false,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.795,
-        "gender expression expression": 0.131
+        "sexuality expression": 0.459,
+        "gender expression expression": 0.362
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
-      "relationship keys": {}
+      "children": {
+        "13999": {
+          "key": 13999,
+          "name": "Liedelde",
+          "age": 1,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": {
+              "key": 10334,
+              "name": "Hersewindis Crulleboye",
+              "age": 36,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 10333,
+              "name": "Rembrandus",
+              "age": 51,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
+          }
+        }
+      },
+      "relationship keys": {
+        "spouse": [
+          10335
+        ],
+        "child": {
+          "birth": [
+            14000
+          ]
+        },
+        "unrelated": [
+          14423
+        ]
+      }
     },
     "occupation": {
       "has job": true,
       "income class": [
-        0,
-        "working class"
+        1,
+        "lower middle class"
       ],
-      "income": 1.014,
+      "income": 0.0,
       "all_incomes": [
-        1.025,
-        1.014
+        1.478,
+        0.546,
+        0.0
       ],
       "job": {
-        "lawful": true,
-        "honest": true
+        "lawful": false,
+        "honest": false
       }
     },
     "genetics": {
-      "skin_color": 6,
-      "eye_color": "brown",
-      "hair_color": "brown",
-      "hair_color_code": 2,
-      "hair_length": "long",
-      "beauty": 0.755,
+      "skin_color": 0,
+      "eye_color": "blue",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
+      "hair_length": "short",
+      "beauty": 0.651,
       "hair_type": [
-        "C",
+        "S",
         "S"
       ],
-      "health": 0.847,
-      "fertility": 0.845,
+      "health": 0.513,
+      "fertility": 0.774,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -89,14 +124,22 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.847
+            "new_health": 0.754
+          },
+          "death": false
+        },
+        "1201": {
+          "health": {
+            "change": true,
+            "value_change": -0.241,
+            "new_health": 0.513
           },
           "death": true
         }
       },
       "homsoc": {
         "1200": {
-          "independent": true,
+          "independent": false,
           "needs_care": false,
           "taken_care_of": false,
           "caretaker": false
@@ -105,7 +148,11 @@
       "ocupation": {
         "1200": {
           "has job": true,
-          "income": 1.014
+          "income": 0.546
+        },
+        "1201": {
+          "has job": true,
+          "income": 0.0
         }
       },
       "events": {
@@ -117,30 +164,113 @@
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.025
+            "income": 1.478
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stHelle voet.se5.c1",
+              "street": "Helle voet",
+              "neighborhood": "jorisbuurt",
+              "unique id": 117
+            }
+          },
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.546
+          },
+          {
+            "topic": "new relationship",
+            "key": 10335,
+            "people": [
+              10333,
+              10334
+            ],
+            "people names": [
+              "Rembrandus",
+              "Hersewindis Crulleboye"
+            ],
+            "people ages": [
+              49,
+              25
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new relationship",
+            "key": 14000,
+            "people": [
+              10333,
+              13999
+            ],
+            "people names": [
+              "Rembrandus",
+              "Liedelde"
+            ],
+            "people ages": [
+              49,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "new relationship",
+            "key": 14423,
+            "people": [
+              12355,
+              10333
+            ],
+            "people names": [
+              "Ghisele Stamelart",
+              "Rembrandus"
+            ],
+            "people ages": [
+              49,
+              50
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1201": [
+          {
+            "topic": "job notice",
+            "notice": "hardly any income",
+            "income": 0.0
           },
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "old age"
           }
         ]
       }
     },
     "key": 10333,
     "home": {
-      "income class": 0,
-      "income class label": "working class",
-      "section": "stHelle voet.se7.c0",
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stHelle voet.se5.c1",
       "street": "Helle voet",
       "neighborhood": "jorisbuurt",
-      "unique id": 120
+      "unique id": 117
     },
     "relationship status": {
-      "taken": true,
+      "taken": false,
       "married": true,
-      "relationships": []
+      "relationships": [
+        10335
+      ]
     },
-    "friends": [],
+    "friends": [
+      10335,
+      14000,
+      14423
+    ],
     "enemies": []
   }
 }

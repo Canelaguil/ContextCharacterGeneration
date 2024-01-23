@@ -1,19 +1,19 @@
 {
   "10340": {
     "alive": false,
-    "name": "Gisele",
-    "surname": "Napbrekere",
-    "full name": "Gisele Napbrekere",
+    "name": "Nimme",
+    "surname": "Dreet",
+    "full name": "Nimme Dreet",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.691,
-      "sex interest": 0.548,
-      "gender expression": 0.0,
+      "sexuality": 0.103,
+      "romantic interest": 0.431,
+      "sex interest": 0.669,
+      "gender expression": 0.135,
       "sex": "f"
     },
-    "age": 51,
-    "birth year": 1152,
+    "age": 32,
+    "birth year": 1172,
     "sex": "f",
     "faction": "Zealots",
     "income class": [
@@ -21,15 +21,11 @@
       "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.219,
-      "nice-nasty": 0.499,
-      "honest-false": 0.628,
-      "dream": 0.599,
-      "outgoing": 0.174
-    },
-    "attitude": {
-      "dream": 0.599,
-      "outgoing": 0.174
+      "lawful-chaotic": 0.5,
+      "nice-nasty": 0.202,
+      "honest-false": 0.449,
+      "dream": 0.477,
+      "outgoing": 0.528
     },
     "homsoc": {
       "means": {
@@ -37,22 +33,81 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.07,
+        "gender expression expression": 0.081
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "13384": {
+          "key": 13384,
+          "name": "Ghisebrecht Spirinc",
+          "age": 8,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": {
+              "key": 10340,
+              "name": "Nimme Dreet",
+              "age": 32,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 10339,
+              "name": "Everocker Spirinc",
+              "age": 51,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
+          }
+        },
+        "14518": {
+          "key": 14518,
+          "name": "Ysewin Spirinc",
+          "age": 15,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": {
+              "key": 10340,
+              "name": "Nimme Dreet",
+              "age": 32,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 10339,
+              "name": "Everocker Spirinc",
+              "age": 51,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10341
         ],
+        "child": {
+          "birth": [
+            13386,
+            14520
+          ]
+        },
         "unrelated": [
-          14478
+          14452
         ]
       }
     },
@@ -66,18 +121,18 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 2,
+      "skin_color": 1,
       "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
-      "hair_length": "medium",
-      "beauty": 0.49,
+      "hair_color": "brown",
+      "hair_color_code": 2,
+      "hair_length": "short",
+      "beauty": 0.662,
       "hair_type": [
         "C",
-        "S"
+        "C"
       ],
-      "health": 0.776,
-      "fertility": 0.788,
+      "health": 0.796,
+      "fertility": 0.734,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -89,15 +144,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.776
+            "new_health": 0.796
           },
           "death": false
         },
-        "1202": {
+        "1203": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.776
+            "new_health": 0.796
           },
           "death": true
         }
@@ -122,13 +177,28 @@
         "1202": {
           "has job": false,
           "income": 0
+        },
+        "1203": {
+          "has job": false,
+          "income": 0
         }
       },
       "events": {
         "1200": [
           {
             "topic": "birth",
-            "year": 1152
+            "year": 1172
+          },
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 0,
+              "income class label": "working class",
+              "section": "stHelle voet.se7.c0",
+              "street": "Helle voet",
+              "neighborhood": "jorisbuurt",
+              "unique id": 119
+            }
           },
           {
             "topic": "new relationship",
@@ -138,30 +208,48 @@
               10340
             ],
             "people names": [
-              "Stoethoute Cnode",
-              "Gisele Napbrekere"
+              "Everocker Spirinc",
+              "Nimme Dreet"
             ],
             "people ages": [
-              49,
-              48
+              35,
+              28
             ],
             "label": "spouse",
             "committed": true
           },
           {
             "topic": "new relationship",
-            "key": 14478,
+            "key": 13386,
             "people": [
               10340,
-              11638
+              13384
             ],
             "people names": [
-              "Gisele Napbrekere",
-              "Mauricius Hoghen"
+              "Nimme Dreet",
+              "Ghisebrecht Spirinc"
             ],
             "people ages": [
-              49,
-              32
+              28,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "new relationship",
+            "key": 14452,
+            "people": [
+              12617,
+              10340
+            ],
+            "people names": [
+              "Rabburgis Broem",
+              "Nimme Dreet"
+            ],
+            "people ages": [
+              21,
+              29
             ],
             "label": "unrelated",
             "committed": false
@@ -169,29 +257,55 @@
         ],
         "1201": [
           {
-            "key": 10341,
-            "topic": "unmarried"
+            "topic": "new relationship",
+            "key": 14520,
+            "people": [
+              10340,
+              14518
+            ],
+            "people names": [
+              "Nimme Dreet",
+              "Ysewin Spirinc"
+            ],
+            "people ages": [
+              29,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
           },
           {
-            "topic": "person died",
-            "person": {
-              "key": 10339,
-              "name": "Stoethoute Cnode",
-              "age": 51,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "cause": "old age",
-            "friendship label": "good friend",
-            "label": "spouse",
-            "love state": "out of love"
+            "topic": "feelings change",
+            "target": 10339,
+            "target name": "Everocker Spirinc",
+            "state": "solid love",
+            "friendship label": "friend",
+            "relationship": 10341
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "indifferent",
+            "relationship": 14452
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.0,
+            "inhabitants": []
           }
         ],
         "1202": [
           {
+            "topic": "not enough income",
+            "income": 0.045,
+            "inhabitants": []
+          }
+        ],
+        "1203": [
+          {
             "topic": "death",
-            "cause": "old age"
+            "cause": "starvation"
           }
         ]
       }
@@ -203,18 +317,18 @@
       "section": "stHelle voet.se7.c0",
       "street": "Helle voet",
       "neighborhood": "jorisbuurt",
-      "unique id": 122
+      "unique id": 119
     },
     "relationship status": {
       "taken": false,
-      "married": false,
+      "married": true,
       "relationships": [
         10341
       ]
     },
     "friends": [
       10341,
-      14478
+      14520
     ],
     "enemies": []
   }

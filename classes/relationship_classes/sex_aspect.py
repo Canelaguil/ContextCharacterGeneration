@@ -99,7 +99,7 @@ class BirdsAndBees():
                 #     self.one_time_thing = True
                 # else:
                 #     return report
-                return
+                return report
                 
             # chance of something changing
             something_chance = 0.2 * (1-self.drive_compatibility)
