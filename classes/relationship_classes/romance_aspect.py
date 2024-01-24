@@ -1,6 +1,5 @@
 from ..utils import *
 
-# TODO: ROMANCE RELATIONSHIP
 class LoveIsAStateMachine():
     """
     State machine representing a person's feeling towards another
@@ -134,7 +133,7 @@ class LoveIsAStateMachine():
     def nothing(self):
         if not self.can_love:
             return 'nothing'
-        if rand() < 0.005:
+        if rand() < 0.1:
             return 'crush'
         return 'nothing'
 
@@ -163,7 +162,7 @@ class LoveIsAStateMachine():
             return 'in love'
         elif rng < 0.8 and not self.marriage_restraint:
             if self.romance.declaration(self.object['key'], self.subject['key']):
-                print(self.subject['key'])
+                # print(self.subject['key'])
                 self.start_relationship(taken)
                 # print(self.subject)
                 return 'honeymoon phase'
@@ -265,7 +264,8 @@ class Romance():
         msg = {
             'topic' : 'declaration', 
             'result' : 'accepted' if response else 'rejected', 
-            'target' : receiver
+            'target' : receiver,
+            'source' : sender
         }
         self.relationship.update_people(msg)
 

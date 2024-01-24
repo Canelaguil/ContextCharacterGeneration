@@ -99,7 +99,7 @@ class Network():
         elif notice['label'] == 'greatgrandparentchild':
             # print(self.person_key)
             if notice['people ages'][my_index] > notice['people ages'][int(not my_index)]:
-                print('my_index')
+                # print('my_index')
                 label = 'greatgrandchild'
             else:
                 label = 'greatgrandparent'

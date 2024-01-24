@@ -1,61 +1,61 @@
 {
   "14842": {
     "alive": false,
-    "name": "Hildegardis",
-    "surname": "",
-    "full name": "Hildegardis",
+    "name": "Lenildis",
+    "surname": "Suamsdochter",
+    "full name": "Lenildis Suamsdochter",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.029,
-      "romantic interest": 0.519,
-      "sex interest": 0.75,
-      "gender expression": 0.018,
+      "sexuality": 0.067,
+      "romantic interest": 0.613,
+      "sex interest": 0.559,
+      "gender expression": 0.125,
       "sex": "f"
     },
-    "age": 1,
+    "age": 4,
     "birth year": 1201,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.271,
-      "nice-nasty": 0.0,
-      "honest-false": 0.242,
-      "dream": 0.838,
-      "outgoing": 0.665
+      "lawful-chaotic": 0.689,
+      "nice-nasty": 0.374,
+      "honest-false": 0.709,
+      "dream": 0.411,
+      "outgoing": 0.497
     },
     "homsoc": {
       "means": {
         "independent": false,
-        "taken_care_of": true,
+        "taken_care_of": false,
         "caretaker": true,
         "needs_care": true,
         "flags": [
-          "starving"
+          "neglected"
         ]
       },
       "expression": {
-        "sexuality expression": 0.016,
-        "gender expression expression": 0.01
+        "sexuality expression": 0.05,
+        "gender expression expression": 0.014
       }
     },
     "network": {
       "parents": {
         "mother": {
-          "key": 12215,
-          "name": "Myrthel",
-          "age": 36,
+          "key": 10313,
+          "name": "Hersewindis",
+          "age": 58,
           "alive": false,
           "sex": "f",
           "parents": "firstgen"
         },
         "father": {
-          "key": 12214,
-          "name": "Conrado",
-          "age": 38,
+          "key": 10312,
+          "name": "Suam",
+          "age": 54,
           "alive": false,
           "sex": "m",
           "parents": "firstgen"
@@ -66,6 +66,10 @@
         "parent": [
           14843,
           14844
+        ],
+        "sibling": [
+          16087,
+          19455
         ]
       }
     },
@@ -79,18 +83,18 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 6,
+      "skin_color": 1,
       "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
-      "hair_length": "long",
-      "beauty": 0.939,
+      "hair_length": "medium",
+      "beauty": 0.824,
       "hair_type": [
         "S",
-        "S"
+        "C"
       ],
-      "health": 0.687,
-      "fertility": 0.679,
+      "health": 0.769,
+      "fertility": 0.81,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -102,7 +106,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.687
+            "new_health": 0.769
+          },
+          "death": false
+        },
+        "1205": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.769
           },
           "death": true
         }
@@ -113,10 +125,28 @@
           "needs_care": true,
           "taken_care_of": true,
           "caretaker": true
+        },
+        "1203": {
+          "independent": false,
+          "needs_care": true,
+          "taken_care_of": false,
+          "caretaker": true
         }
       },
       "ocupation": {
         "1202": {
+          "has job": false,
+          "income": 0
+        },
+        "1203": {
+          "has job": false,
+          "income": 0
+        },
+        "1204": {
+          "has job": false,
+          "income": 0
+        },
+        "1205": {
           "has job": false,
           "income": 0
         }
@@ -132,25 +162,25 @@
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stStoof straet.se3.c1",
-              "street": "Stoof straet",
-              "neighborhood": "visbuurt",
-              "unique id": 779
+              "section": "stHelle voet.se5.c1",
+              "street": "Helle voet",
+              "neighborhood": "jorisbuurt",
+              "unique id": 109
             }
           },
           {
             "topic": "new relationship",
             "key": 14843,
             "people": [
-              12214,
+              10312,
               14842
             ],
             "people names": [
-              "Conrado",
-              "Hildegardis"
+              "Suam",
+              "Lenildis Suamsdochter"
             ],
             "people ages": [
-              28,
+              49,
               0
             ],
             "label": "parentchild",
@@ -160,12 +190,12 @@
             "topic": "new relationship",
             "key": 14844,
             "people": [
-              12215,
+              10313,
               14842
             ],
             "people names": [
-              "Myrthel",
-              "Hildegardis"
+              "Hersewindis",
+              "Lenildis Suamsdochter"
             ],
             "people ages": [
               24,
@@ -175,15 +205,106 @@
             "committed": false
           },
           {
-            "topic": "not enough income",
-            "income": 0.38,
-            "inhabitants": []
+            "topic": "personality change",
+            "change": true,
+            "trait": "outgoing",
+            "trigger": "neglect",
+            "mod": -0.3
           }
         ],
         "1202": [
           {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 14843
+          },
+          {
+            "topic": "new relationship",
+            "key": 16087,
+            "people": [
+              14842,
+              16084
+            ],
+            "people names": [
+              "Lenildis Suamsdochter",
+              "Ymmekine"
+            ],
+            "people ages": [
+              0,
+              0
+            ],
+            "label": "sibling",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 16084,
+              "name": "Ymmekine",
+              "age": 1,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": {
+                  "key": 10313,
+                  "name": "Hersewindis",
+                  "age": 26,
+                  "alive": true,
+                  "sex": "f",
+                  "parents": "firstgen"
+                },
+                "father": {
+                  "key": 10312,
+                  "name": "Suam",
+                  "age": 51,
+                  "alive": true,
+                  "sex": "m",
+                  "parents": "firstgen"
+                }
+              }
+            },
+            "cause": "childhood illness",
+            "friendship label": "indifferent",
+            "label": "sibling"
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 19455,
+            "people": [
+              14842,
+              19452
+            ],
+            "people names": [
+              "Lenildis Suamsdochter",
+              "Badeloghen"
+            ],
+            "people ages": [
+              3,
+              0
+            ],
+            "label": "sibling",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1205": [
+          {
             "topic": "death",
-            "cause": "childbirth"
+            "cause": "childhood illness"
           }
         ]
       }
@@ -192,10 +313,10 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stStoof straet.se3.c1",
-      "street": "Stoof straet",
-      "neighborhood": "visbuurt",
-      "unique id": 779
+      "section": "stHelle voet.se5.c1",
+      "street": "Helle voet",
+      "neighborhood": "jorisbuurt",
+      "unique id": 109
     },
     "relationship status": {
       "taken": false,
@@ -203,7 +324,6 @@
       "relationships": []
     },
     "friends": [
-      14843,
       14844
     ],
     "enemies": []

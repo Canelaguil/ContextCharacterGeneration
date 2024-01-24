@@ -55,6 +55,12 @@ class Relationship(Agent):
         self.update_people(notify_people_msg)
         self.end_cause = 'still active' # updated when relationship ends
 
+        self.nochildren = False
+        if not personA['network']['parents']== 'firstgen':
+            self.common_home = personA['home']['unique id']        
+        elif personA['network']['parents']== 'firstgen' and self.label != 'spouse':
+            self.nochildren = True # if there is no house for the children to go just skip
+
     """
     INIT OPTIONS
     """
@@ -112,6 +118,7 @@ class Relationship(Agent):
         self.update_label(new_label)
         if new_label in ['spouse', 'partner']:
             taken = True
+            self.sexual_aspect.make_sexual()
         else: taken = False
 
         notify_people_msg = {
@@ -123,6 +130,9 @@ class Relationship(Agent):
             'married' : True if new_label == 'spouse' else False
         }
         self.update_people(notify_people_msg)
+        if new_label == 'spouse':
+            print('natural marriage')
+            self.model.marry(*self.keys, marriage=self)
 
     def end(self, end_cause, context={}):
         """
@@ -205,8 +215,8 @@ class Relationship(Agent):
             'unrelated'
         ]
         if label_hierarchy.index(new_label) < label_hierarchy.index(self.label):
-            print(new_label)
-            print(self.unique_id)
+            # print(new_label)
+            # print(self.unique_id)
             self.label = new_label
 
     """
@@ -242,10 +252,15 @@ class Relationship(Agent):
         if not self.platonic_only:
             romance_report = self.romance_aspect.evolve(friend_report, self.adults)
             sexual_report = self.sexual_aspect.evolve(romance_report)
-            conceived = self.sexual_aspect.conceive()
-            if conceived:
-                self.add_child_birth()
-                change = True
+            
+            if not self.nochildren:
+                # specifically to avoid cheating first genners from having children
+                conceived = self.sexual_aspect.conceive()
+                if conceived:
+                    self.add_child_birth()
+                    change = True
+            else:
+                conceived = False
             if romance_report['change']:
                 change = True
 
@@ -336,7 +351,6 @@ class Relationship(Agent):
                 if not self.model.we_know_each_other(sibling, child['key']):
                     self.model.create_relationship(sibling, child['key'], 'sibling', True)
             except:
-                print(sibling)
                 print(child['key'])
                 fatal_error('failed to notify siblings', [sibling, child, self.unique_id])
 

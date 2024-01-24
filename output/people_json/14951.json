@@ -1,18 +1,18 @@
 {
   "14951": {
     "alive": false,
-    "name": "Daniel",
+    "name": "Denijs",
     "surname": "",
-    "full name": "Daniel",
+    "full name": "Denijs",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.861,
-      "romantic interest": 0.645,
-      "sex interest": 0.607,
-      "gender expression": 0.837,
+      "sexuality label": "straight",
+      "sexuality": 0.029,
+      "romantic interest": 0.689,
+      "sex interest": 0.999,
+      "gender expression": 0.0,
       "sex": "m"
     },
-    "age": 10,
+    "age": 14,
     "birth year": 1201,
     "sex": "m",
     "faction": "No religion",
@@ -21,40 +21,40 @@
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.16,
-      "nice-nasty": 0.917,
-      "honest-false": 0.585,
-      "dream": 0.581,
-      "outgoing": 0.487
+      "lawful-chaotic": 0.469,
+      "nice-nasty": 0.203,
+      "honest-false": 0.35,
+      "dream": 0.76,
+      "outgoing": 0.151
     },
     "homsoc": {
       "means": {
         "independent": false,
-        "taken_care_of": true,
+        "taken_care_of": false,
         "caretaker": true,
         "needs_care": true,
         "flags": [
-          "starving"
+          "neglected"
         ]
       },
       "expression": {
-        "sexuality expression": 0.513,
-        "gender expression expression": 0.458
+        "sexuality expression": 0.013,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": {
         "mother": {
-          "key": 11036,
+          "key": 10859,
           "name": "Cecilia",
-          "age": 18,
+          "age": 37,
           "alive": false,
           "sex": "f",
           "parents": "firstgen"
         },
         "father": {
-          "key": 11035,
-          "name": "Galo",
+          "key": 10858,
+          "name": "Veder Voit",
           "age": 52,
           "alive": false,
           "sex": "m",
@@ -68,7 +68,12 @@
           14953
         ],
         "sibling": [
-          14954
+          19463,
+          20586,
+          23008,
+          24382,
+          26226,
+          27552
         ]
       }
     },
@@ -82,18 +87,18 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 7,
+      "skin_color": 3,
       "eye_color": "brown",
-      "hair_color": "brown",
-      "hair_color_code": 2,
-      "hair_length": "medium",
-      "beauty": 0.885,
+      "hair_color": "red",
+      "hair_color_code": 3,
+      "hair_length": "long",
+      "beauty": 0.653,
       "hair_type": [
         "S",
         "C"
       ],
-      "health": 0.685,
-      "fertility": 0.68,
+      "health": 0.691,
+      "fertility": 0.76,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -105,15 +110,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.685
+            "new_health": 0.691
           },
           "death": false
         },
-        "1211": {
+        "1215": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.685
+            "new_health": 0.691
           },
           "death": true
         }
@@ -123,6 +128,12 @@
           "independent": false,
           "needs_care": true,
           "taken_care_of": true,
+          "caretaker": true
+        },
+        "1203": {
+          "independent": false,
+          "needs_care": true,
+          "taken_care_of": false,
           "caretaker": true
         }
       },
@@ -166,6 +177,22 @@
         "1211": {
           "has job": false,
           "income": 0.025
+        },
+        "1212": {
+          "has job": false,
+          "income": 0.025
+        },
+        "1213": {
+          "has job": false,
+          "income": 0.025
+        },
+        "1214": {
+          "has job": false,
+          "income": 0.025
+        },
+        "1215": {
+          "has job": false,
+          "income": 0.025
         }
       },
       "events": {
@@ -179,25 +206,25 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stDie Camp.se1.c2",
-              "street": "Die Camp",
-              "neighborhood": "kampbuurt",
-              "unique id": 360
+              "section": "stCingel.se1.c2",
+              "street": "Cingel",
+              "neighborhood": "agnesbuurt",
+              "unique id": 302
             }
           },
           {
             "topic": "new relationship",
             "key": 14952,
             "people": [
-              11035,
+              10858,
               14951
             ],
             "people names": [
-              "Galo",
-              "Daniel"
+              "Veder Voit",
+              "Denijs"
             ],
             "people ages": [
-              42,
+              34,
               0
             ],
             "label": "parentchild",
@@ -207,154 +234,302 @@
             "topic": "new relationship",
             "key": 14953,
             "people": [
-              11036,
+              10859,
               14951
             ],
             "people names": [
               "Cecilia",
-              "Daniel"
+              "Denijs"
             ],
             "people ages": [
-              18,
+              25,
               0
             ],
             "label": "parentchild",
             "committed": false
           },
           {
+            "topic": "personality change",
+            "change": true,
+            "trait": "outgoing",
+            "trigger": "neglect",
+            "mod": -0.3
+          }
+        ],
+        "1202": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 14952
+          },
+          {
+            "topic": "personality change",
+            "change": true,
+            "trait": "outgoing",
+            "trigger": "neglect",
+            "mod": -0.3
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 14953
+          },
+          {
             "topic": "new relationship",
-            "key": 14954,
+            "key": 19463,
             "people": [
-              13801,
-              14951
+              14951,
+              19460
             ],
             "people names": [
-              "Folqui",
-              "Daniel"
+              "Denijs",
+              "Reymodis Voit"
             ],
             "people ages": [
-              0,
+              3,
               0
             ],
             "label": "sibling",
             "committed": false
           },
           {
-            "topic": "not enough income",
-            "income": 0.062,
-            "inhabitants": []
-          }
-        ],
-        "1202": [
-          {
-            "topic": "not enough income",
-            "income": 0.05,
-            "inhabitants": []
-          }
-        ],
-        "1203": [
-          {
-            "topic": "not enough income",
-            "income": 0.1,
-            "inhabitants": []
-          }
-        ],
-        "1204": [
-          {
-            "topic": "event",
-            "event": "faction upheaval",
-            "faction": "No religion",
-            "year": 1204
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.081,
-            "inhabitants": []
+            "topic": "neglected"
           }
         ],
         "1205": [
           {
             "topic": "update",
             "update": "new friendship label",
-            "relationship label": "sibling",
-            "friendship label": "indifferent",
-            "relationship": 14954
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 14952
           },
           {
-            "topic": "not enough income",
-            "income": 0.10999999999999999,
-            "inhabitants": []
+            "topic": "new relationship",
+            "key": 20586,
+            "people": [
+              14951,
+              20583
+            ],
+            "people names": [
+              "Denijs",
+              "Jurre Voit"
+            ],
+            "people ages": [
+              4,
+              0
+            ],
+            "label": "sibling",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1206": [
           {
-            "topic": "not enough income",
-            "income": 0.05,
-            "inhabitants": []
+            "topic": "personality change",
+            "change": true,
+            "trait": "outgoing",
+            "trigger": "neglect",
+            "mod": -0.3
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1207": [
           {
-            "topic": "not enough income",
-            "income": 0.16799999999999998,
-            "inhabitants": []
+            "topic": "new relationship",
+            "key": 23008,
+            "people": [
+              14951,
+              23005
+            ],
+            "people names": [
+              "Denijs",
+              "Nimme Voit"
+            ],
+            "people ages": [
+              6,
+              0
+            ],
+            "label": "sibling",
+            "committed": false
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "sibling",
+            "friendship label": "friend",
+            "relationship": 20586
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1208": [
           {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "parentchild",
-            "friendship label": "indifferent",
-            "relationship": 14953
+            "topic": "new relationship",
+            "key": 24382,
+            "people": [
+              14951,
+              24379
+            ],
+            "people names": [
+              "Denijs",
+              "Flore Voit"
+            ],
+            "people ages": [
+              7,
+              0
+            ],
+            "label": "sibling",
+            "committed": false
           },
           {
-            "topic": "not enough income",
-            "income": 0.10600000000000001,
-            "inhabitants": []
+            "topic": "neglected"
           }
         ],
         "1209": [
           {
-            "topic": "not enough income",
-            "income": 0.135,
-            "inhabitants": []
+            "topic": "neglected"
           }
         ],
         "1210": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1210
+            "topic": "new relationship",
+            "key": 26226,
+            "people": [
+              14951,
+              26223
+            ],
+            "people names": [
+              "Denijs",
+              "Cesarius Voit"
+            ],
+            "people ages": [
+              8,
+              0
+            ],
+            "label": "sibling",
+            "committed": false
           },
           {
-            "topic": "person died",
-            "person": {
-              "key": 11035,
-              "name": "Galo",
-              "age": 52,
-              "alive": false,
-              "sex": "m",
-              "parents": "firstgen"
-            },
-            "cause": "starvation",
-            "friendship label": "friend",
-            "label": "parent"
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "sibling",
+            "friendship label": "indifferent",
+            "relationship": 19463
           },
           {
-            "topic": "not enough income",
-            "income": 0.05,
-            "inhabitants": []
-          },
-          {
-            "topic": "new caretaker",
-            "person": 13801
+            "topic": "neglected"
           }
         ],
         "1211": [
           {
+            "topic": "new relationship",
+            "key": 27552,
+            "people": [
+              14951,
+              27549
+            ],
+            "people names": [
+              "Denijs",
+              "Jute Voit"
+            ],
+            "people ages": [
+              10,
+              0
+            ],
+            "label": "sibling",
+            "committed": false
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1212": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "sibling",
+            "friendship label": "friend",
+            "relationship": 27552
+          },
+          {
+            "topic": "personality change",
+            "change": true,
+            "trait": "outgoing",
+            "trigger": "neglect",
+            "mod": -0.3
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1213": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1213
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10859,
+              "name": "Cecilia",
+              "age": 37,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "plague",
+            "friendship label": "friend",
+            "label": "parent"
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1214": [
+          {
+            "topic": "event",
+            "event": "faction upheaval",
+            "faction": "No religion",
+            "year": 1214
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "sibling",
+            "friendship label": "friend",
+            "relationship": 20586
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
             "topic": "death",
-            "cause": "starvation"
+            "cause": "plague"
           }
         ]
       }
@@ -363,10 +538,10 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stDie Camp.se1.c2",
-      "street": "Die Camp",
-      "neighborhood": "kampbuurt",
-      "unique id": 360
+      "section": "stCingel.se1.c2",
+      "street": "Cingel",
+      "neighborhood": "agnesbuurt",
+      "unique id": 302
     },
     "relationship status": {
       "taken": false,
@@ -374,7 +549,12 @@
       "relationships": []
     },
     "friends": [
-      14952
+      14953,
+      20586,
+      23008,
+      24382,
+      26226,
+      27552
     ],
     "enemies": []
   }

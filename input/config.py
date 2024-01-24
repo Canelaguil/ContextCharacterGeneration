@@ -5,9 +5,8 @@ These dictionaries are never referenced directly in the code and
 are fed to the model through generation.py. 
 """
 
-
 simulation = {
-    'number_of_years' : 50,
+    'number_of_years' : 75,
     'simulation_output' : True,
     'json_output' : True,
     'tests' : False

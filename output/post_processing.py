@@ -59,12 +59,12 @@ if __name__ == '__main__':
             # headline
             write_to_file(d, title(f"{p['full name']} ({p['sex']})"))
             if p['network']['parents'] != 'firstgen':
-                write_to_file(d, f"Born in {p['birth year']} to {p['network']['parents']['mother']} and {p['network']['parents']['father']}.")
+                write_to_file(d, f"Born in {p['birth year']}.")
             else:
                 write_to_file(d, f"Born in {p['birth year']} as a part of the first generation.")
             if 'greatgrandchild' in p['network']:
                 print(p['key'])
-            write_to_file(d, f"Is currently {'' if p['relationship status']['married'] else 'not '}married, has had {len(p['relationship status']['relationships'])} romantic relationship(s).\n")
+            write_to_file(d, f"Is currently {'' if p['relationship status']['married'] else 'not '}married\n")
 
             # basics
             write_to_file(d, f"{p['age']} ({'alive' if p['alive'] else 'dead'})", 'Age')
@@ -183,8 +183,20 @@ if __name__ == '__main__':
                     elif topic == 'death':
                         recorded = True
                         write_to_file(d, f"Died of {e['cause']}.")
-                        if e['cause'] == 'war':
-                            print(key)
+                        # if e['cause'] == 'war':
+                        #     print(key)
+                    elif topic == 'declaration':
+                        if e['target'] == int(key):
+                            other = get_name(e['source'])
+                            write_to_file(d, f"{e['result'].title()} love declaration from {other}")
+                        else:
+                            other = get_name(e['target'])
+                            write_to_file(d, f"Had their love declaration {e['result']} by {other}")
+                    elif topic == 'relationship change':
+                        if e['label'] == 'spouse':
+                            write_to_file(d, "Now married")
+                        else:
+                            write_to_file(d, "Now in a relationship")
                     elif topic == 'personality change':
                         write_to_file(d, f"Personality change of {e['mod']} in {e['trait']} caused by {e['trigger']}.")
                     elif topic == 'update':

@@ -269,6 +269,6 @@ if __name__ == '__main__':
             counter += 1
     print(counter)
     # similarity_analysis()
-    # relationship_analysis()
-    # overall_stats()
-    # output_people()
+    relationship_analysis()
+    overall_stats()
+    output_people()

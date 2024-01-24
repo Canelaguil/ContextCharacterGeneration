@@ -71,11 +71,11 @@ class BirdsAndBees():
             elif self.mother_age > 41:
                 chance = 0.1
             elif self.mother_age > 36:
-                chance = 0.5
+                chance = 0.3
             elif self.mother_age > 25:
-                chance = 0.8
+                chance = 0.6
             elif self.mother_age > 15:
-                chance = 1
+                chance = 0.7
             else:
                 chance = 0.
             updated_chance = chance * self.fertility * chance_modifier

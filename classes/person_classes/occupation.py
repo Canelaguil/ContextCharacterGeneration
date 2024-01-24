@@ -61,7 +61,7 @@ class Occupation():
         # determine income
         scale = job_volatility(lawful, honest)
         if self.has_job and self.income != 0:
-            self.income = normal_in_range(self.income, scale, 1.5, 0.5)
+            self.income = normal_in_range(1, scale, 1.5, 0.5)
         else:
             self.income = normal_in_range(1, scale, 1.5, 0.5)
             if age < Occupation.adult_age:
@@ -81,7 +81,7 @@ class Occupation():
             scale = job_volatility(**self.job)
             if age < Occupation.adult_age:
                 self.income += income_adjusted_for_age(age, self.income, True)
-            self.income = normal_in_range(self.income, scale, 1.5, 0)
+            self.income = normal_in_range(1, scale, 1.5, 0)
             self.all_incomes.append(self.income)
             if self.income < 0.25 and old_income > 0.25:
                 self.notify('hardly any income')

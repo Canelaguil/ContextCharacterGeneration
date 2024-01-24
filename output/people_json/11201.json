@@ -1,31 +1,31 @@
 {
   "11201": {
     "alive": false,
-    "name": "Truden",
-    "surname": "",
-    "full name": "Truden",
+    "name": "Rycaldis",
+    "surname": "Caen",
+    "full name": "Rycaldis Caen",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.01,
-      "romantic interest": 0.759,
-      "sex interest": 0.699,
-      "gender expression": 0.171,
+      "sexuality": 0.002,
+      "romantic interest": 0.856,
+      "sex interest": 0.751,
+      "gender expression": 0.004,
       "sex": "f"
     },
-    "age": 20,
-    "birth year": 1182,
+    "age": 43,
+    "birth year": 1183,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "Zealots",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.541,
-      "nice-nasty": 0.141,
-      "honest-false": 0.614,
-      "dream": 0.351,
-      "outgoing": 0.819
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.991,
+      "honest-false": 0.999,
+      "dream": 0.564,
+      "outgoing": 0.614
     },
     "homsoc": {
       "means": {
@@ -33,20 +33,109 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "caretaker",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.006,
-        "gender expression expression": 0.081
+        "sexuality expression": 0.001,
+        "gender expression expression": 0.003
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "20099": {
+          "key": 20099,
+          "name": "Bernero Steenard",
+          "age": 52,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": {
+              "key": 11201,
+              "name": "Rycaldis Caen",
+              "age": 43,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 11200,
+              "name": "Philips Steenard",
+              "age": 43,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
+          }
+        },
+        "26669": {
+          "key": 26669,
+          "name": "Zuanelt Steenard",
+          "age": 3,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": {
+              "key": 11201,
+              "name": "Rycaldis Caen",
+              "age": 43,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 11200,
+              "name": "Philips Steenard",
+              "age": 43,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
+          }
+        },
+        "31946": {
+          "key": 31946,
+          "name": "Badeloghen Steenard",
+          "age": 2,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": {
+              "key": 11201,
+              "name": "Rycaldis Caen",
+              "age": 43,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 11200,
+              "name": "Philips Steenard",
+              "age": 43,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           11202
-        ]
+        ],
+        "unrelated": [
+          18129
+        ],
+        "child": {
+          "birth": [
+            20101,
+            26671,
+            31948
+          ]
+        }
       }
     },
     "occupation": {
@@ -60,17 +149,17 @@
     },
     "genetics": {
       "skin_color": 7,
-      "eye_color": "blue",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "eye_color": "brown",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_length": "short",
-      "beauty": 0.84,
+      "beauty": 0.527,
       "hair_type": [
-        "S",
-        "S"
+        "C",
+        "C"
       ],
-      "health": 0.581,
-      "fertility": 0.579,
+      "health": 0.334,
+      "fertility": 0.516,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -82,21 +171,49 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.581
+            "new_health": 0.521
           },
           "death": false
         },
-        "1201": {
+        "1203": {
+          "health": {
+            "change": true,
+            "value_change": -0.187,
+            "new_health": 0.334
+          },
+          "death": false
+        },
+        "1204": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.581
+            "new_health": 0.334
+          },
+          "death": false
+        },
+        "1225": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.334
           },
           "death": true
         }
       },
       "homsoc": {
         "1200": {
+          "independent": true,
+          "needs_care": false,
+          "taken_care_of": false,
+          "caretaker": false
+        },
+        "1218": {
+          "independent": true,
+          "needs_care": false,
+          "taken_care_of": false,
+          "caretaker": true
+        },
+        "1222": {
           "independent": true,
           "needs_care": false,
           "taken_care_of": false,
@@ -111,13 +228,109 @@
         "1201": {
           "has job": false,
           "income": 0
+        },
+        "1202": {
+          "has job": false,
+          "income": 0
+        },
+        "1203": {
+          "has job": false,
+          "income": 0
+        },
+        "1204": {
+          "has job": false,
+          "income": 0
+        },
+        "1205": {
+          "has job": false,
+          "income": 0
+        },
+        "1206": {
+          "has job": false,
+          "income": 0
+        },
+        "1207": {
+          "has job": false,
+          "income": 0
+        },
+        "1208": {
+          "has job": false,
+          "income": 0
+        },
+        "1209": {
+          "has job": false,
+          "income": 0
+        },
+        "1210": {
+          "has job": false,
+          "income": 0
+        },
+        "1211": {
+          "has job": false,
+          "income": 0
+        },
+        "1212": {
+          "has job": false,
+          "income": 0
+        },
+        "1213": {
+          "has job": false,
+          "income": 0
+        },
+        "1214": {
+          "has job": false,
+          "income": 0
+        },
+        "1215": {
+          "has job": false,
+          "income": 0
+        },
+        "1216": {
+          "has job": false,
+          "income": 0
+        },
+        "1217": {
+          "has job": false,
+          "income": 0
+        },
+        "1218": {
+          "has job": false,
+          "income": 0
+        },
+        "1219": {
+          "has job": false,
+          "income": 0
+        },
+        "1220": {
+          "has job": false,
+          "income": 0
+        },
+        "1221": {
+          "has job": false,
+          "income": 0
+        },
+        "1222": {
+          "has job": false,
+          "income": 0
+        },
+        "1223": {
+          "has job": false,
+          "income": 0
+        },
+        "1224": {
+          "has job": false,
+          "income": 0
+        },
+        "1225": {
+          "has job": false,
+          "income": 0
         }
       },
       "events": {
         "1200": [
           {
             "topic": "birth",
-            "year": 1182
+            "year": 1183
           },
           {
             "topic": "new home",
@@ -127,7 +340,7 @@
               "section": "stSt. Ians straet.se3.c1",
               "street": "St. Ians straet",
               "neighborhood": "kampbuurt",
-              "unique id": 416
+              "unique id": 423
             }
           },
           {
@@ -138,18 +351,284 @@
               11201
             ],
             "people names": [
-              "Radewijns",
-              "Truden"
+              "Philips Steenard",
+              "Rycaldis Caen"
             ],
             "people ages": [
-              27,
-              18
+              25,
+              17
             ],
             "label": "spouse",
             "committed": true
           }
         ],
-        "1201": [
+        "1203": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "enemy",
+            "relationship": 11202
+          },
+          {
+            "topic": "new relationship",
+            "key": 18129,
+            "people": [
+              11201,
+              12299
+            ],
+            "people names": [
+              "Rycaldis Caen",
+              "Clementia"
+            ],
+            "people ages": [
+              21,
+              21
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1205": [
+          {
+            "topic": "new relationship",
+            "key": 20101,
+            "people": [
+              11201,
+              20099
+            ],
+            "people names": [
+              "Rycaldis Caen",
+              "Bernero Steenard"
+            ],
+            "people ages": [
+              22,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1207": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 20101
+          }
+        ],
+        "1210": [
+          {
+            "topic": "new relationship",
+            "key": 26671,
+            "people": [
+              11201,
+              26669
+            ],
+            "people names": [
+              "Rycaldis Caen",
+              "Zuanelt Steenard"
+            ],
+            "people ages": [
+              27,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1213": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1213
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 26669,
+              "name": "Zuanelt Steenard",
+              "age": 3,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": {
+                  "key": 11201,
+                  "name": "Rycaldis Caen",
+                  "age": 31,
+                  "alive": true,
+                  "sex": "f",
+                  "parents": "firstgen"
+                },
+                "father": {
+                  "key": 11200,
+                  "name": "Philips Steenard",
+                  "age": 39,
+                  "alive": true,
+                  "sex": "m",
+                  "parents": "firstgen"
+                }
+              }
+            },
+            "cause": "plague",
+            "friendship label": "indifferent",
+            "label": "child"
+          }
+        ],
+        "1214": [
+          {
+            "topic": "event",
+            "event": "faction upheaval",
+            "faction": "No religion",
+            "year": 1214
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          }
+        ],
+        "1216": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 20101
+          }
+        ],
+        "1217": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "enemy",
+            "relationship": 11202
+          },
+          {
+            "topic": "new relationship",
+            "key": 31948,
+            "people": [
+              11201,
+              31946
+            ],
+            "people names": [
+              "Rycaldis Caen",
+              "Badeloghen Steenard"
+            ],
+            "people ages": [
+              35,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "key": 11202,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11200,
+              "name": "Philips Steenard",
+              "age": 43,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "friendship label": "enemy",
+            "label": "spouse",
+            "love state": "loveless"
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          }
+        ],
+        "1218": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1219": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 31946,
+              "name": "Badeloghen Steenard",
+              "age": 2,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": {
+                  "key": 11201,
+                  "name": "Rycaldis Caen",
+                  "age": 37,
+                  "alive": true,
+                  "sex": "f",
+                  "parents": "firstgen"
+                },
+                "father": {
+                  "key": 11200,
+                  "name": "Philips Steenard",
+                  "age": 43,
+                  "alive": false,
+                  "sex": "m",
+                  "parents": "firstgen"
+                }
+              }
+            },
+            "cause": "starvation",
+            "friendship label": "good friend",
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1220": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1221": [
+          {
+            "topic": "not caretaker"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1222": [
+          {
+            "topic": "not enough income",
+            "income": 0.246,
+            "inhabitants": []
+          }
+        ],
+        "1223": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 20101
+          }
+        ],
+        "1225": [
           {
             "topic": "death",
             "cause": "illness"
@@ -164,18 +643,21 @@
       "section": "stSt. Ians straet.se3.c1",
       "street": "St. Ians straet",
       "neighborhood": "kampbuurt",
-      "unique id": 416
+      "unique id": 423
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         11202
       ]
     },
     "friends": [
-      11202
+      18129,
+      31948
     ],
-    "enemies": []
+    "enemies": [
+      11202
+    ]
   }
 }

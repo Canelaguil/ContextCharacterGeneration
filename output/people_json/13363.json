@@ -1,18 +1,18 @@
 {
   "13363": {
     "alive": false,
-    "name": "Rycaldis",
-    "surname": "van Remdo",
-    "full name": "Rycaldis van Remdo",
+    "name": "Margareta",
+    "surname": "Goude",
+    "full name": "Margareta Goude",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.108,
-      "romantic interest": 0.454,
-      "sex interest": 0.663,
-      "gender expression": 0.365,
+      "sexuality label": "gay",
+      "sexuality": 0.806,
+      "romantic interest": 0.498,
+      "sex interest": 0.696,
+      "gender expression": 0.508,
       "sex": "f"
     },
-    "age": 17,
+    "age": 15,
     "birth year": 1200,
     "sex": "f",
     "faction": "No religion",
@@ -21,41 +21,43 @@
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.378,
-      "nice-nasty": 0.923,
-      "honest-false": 0.845,
-      "dream": 0.18,
-      "outgoing": 0.79
+      "lawful-chaotic": 0.549,
+      "nice-nasty": 0.971,
+      "honest-false": 0.139,
+      "dream": 0.466,
+      "outgoing": 0.075
     },
     "homsoc": {
       "means": {
         "independent": false,
-        "taken_care_of": false,
+        "taken_care_of": true,
         "caretaker": true,
-        "needs_care": false,
+        "needs_care": true,
         "flags": [
-          "starving"
+          "caretaker",
+          "starving",
+          "neglected"
         ]
       },
       "expression": {
-        "sexuality expression": 0.07,
-        "gender expression expression": 0.172
+        "sexuality expression": 0.49,
+        "gender expression expression": 0.244
       }
     },
     "network": {
       "parents": {
         "mother": {
-          "key": 10001,
-          "name": "Natelien Smiec",
-          "age": 28,
+          "key": 11009,
+          "name": "Heylewigis Vlieghe",
+          "age": 23,
           "alive": false,
           "sex": "f",
           "parents": "firstgen"
         },
         "father": {
-          "key": 10000,
-          "name": "Remdo",
-          "age": 53,
+          "key": 11008,
+          "name": "Paradanus Goude",
+          "age": 32,
           "alive": false,
           "sex": "m",
           "parents": "firstgen"
@@ -68,10 +70,7 @@
           13365
         ],
         "sibling": [
-          17231,
-          21734,
-          23018,
-          24575
+          16867
         ]
       }
     },
@@ -85,18 +84,18 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 9,
+      "skin_color": 4,
       "eye_color": "blue",
       "hair_color": "black",
       "hair_color_code": 0,
-      "hair_length": "long",
-      "beauty": 0.409,
+      "hair_length": "short",
+      "beauty": 0.478,
       "hair_type": [
         "C",
         "C"
       ],
-      "health": 0.669,
-      "fertility": 0.589,
+      "health": 0.807,
+      "fertility": 0.813,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -108,15 +107,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.669
+            "new_health": 0.807
           },
           "death": false
         },
-        "1217": {
+        "1215": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.669
+            "new_health": 0.807
           },
           "death": true
         }
@@ -128,10 +127,16 @@
           "taken_care_of": true,
           "caretaker": true
         },
-        "1216": {
+        "1202": {
           "independent": false,
-          "needs_care": false,
+          "needs_care": true,
           "taken_care_of": false,
+          "caretaker": true
+        },
+        "1210": {
+          "independent": false,
+          "needs_care": true,
+          "taken_care_of": true,
           "caretaker": true
         }
       },
@@ -195,14 +200,6 @@
         "1215": {
           "has job": false,
           "income": 0.025
-        },
-        "1216": {
-          "has job": false,
-          "income": 0.025
-        },
-        "1217": {
-          "has job": false,
-          "income": 0.025
         }
       },
       "events": {
@@ -216,25 +213,25 @@
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stUterechse straet.se1.c2",
-              "street": "Uterechse straet",
-              "neighborhood": "varkensbuurt",
-              "unique id": 1
+              "section": "stDie Camp.se1.c2",
+              "street": "Die Camp",
+              "neighborhood": "kampbuurt",
+              "unique id": 355
             }
           },
           {
             "topic": "new relationship",
             "key": 13364,
             "people": [
-              10000,
+              11008,
               13363
             ],
             "people names": [
-              "Remdo",
-              "Rycaldis van Remdo"
+              "Paradanus Goude",
+              "Margareta Goude"
             ],
             "people ages": [
-              35,
+              26,
               0
             ],
             "label": "parentchild",
@@ -244,46 +241,63 @@
             "topic": "new relationship",
             "key": 13365,
             "people": [
-              10001,
+              11009,
               13363
             ],
             "people names": [
-              "Natelien Smiec",
-              "Rycaldis van Remdo"
+              "Heylewigis Vlieghe",
+              "Margareta Goude"
             ],
             "people ages": [
-              21,
+              19,
               0
             ],
             "label": "parentchild",
             "committed": false
+          },
+          {
+            "topic": "personality change",
+            "change": true,
+            "trait": "outgoing",
+            "trigger": "neglect",
+            "mod": -0.3
           }
         ],
         "1201": [
           {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "parentchild",
-            "friendship label": "indifferent",
-            "relationship": 13365
+            "topic": "personality change",
+            "change": true,
+            "trait": "outgoing",
+            "trigger": "neglect",
+            "mod": -0.3
           },
           {
-            "topic": "not enough income",
-            "income": 0.05,
-            "inhabitants": []
+            "topic": "neglected"
           }
         ],
         "1202": [
           {
+            "topic": "personality change",
+            "change": true,
+            "trait": "outgoing",
+            "trigger": "neglect",
+            "mod": -0.3
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
             "topic": "new relationship",
-            "key": 17231,
+            "key": 16867,
             "people": [
               13363,
-              17228
+              16864
             ],
             "people names": [
-              "Rycaldis van Remdo",
-              "Galo Remdoszoon"
+              "Margareta Goude",
+              "Clementia Goude"
             ],
             "people ages": [
               2,
@@ -293,275 +307,149 @@
             "committed": false
           },
           {
-            "topic": "not enough income",
-            "income": 0.157,
-            "inhabitants": []
-          }
-        ],
-        "1203": [
-          {
-            "topic": "not enough income",
-            "income": 0.07500000000000001,
-            "inhabitants": []
+            "topic": "neglected"
           }
         ],
         "1204": [
           {
-            "topic": "event",
-            "event": "faction upheaval",
-            "faction": "No religion",
-            "year": 1204
-          },
-          {
-            "topic": "new relationship",
-            "key": 21734,
-            "people": [
-              13363,
-              21731
-            ],
-            "people names": [
-              "Rycaldis van Remdo",
-              "Gherung"
-            ],
-            "people ages": [
-              4,
-              0
-            ],
-            "label": "sibling",
-            "committed": false
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.14900000000000002,
-            "inhabitants": []
-          }
-        ],
-        "1205": [
-          {
-            "topic": "new relationship",
-            "key": 23018,
-            "people": [
-              13363,
-              23015
-            ],
-            "people names": [
-              "Rycaldis van Remdo",
-              "Kerolus"
-            ],
-            "people ages": [
-              4,
-              0
-            ],
-            "label": "sibling",
-            "committed": false
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.10400000000000001,
-            "inhabitants": []
-          }
-        ],
-        "1206": [
-          {
-            "topic": "new relationship",
-            "key": 24575,
-            "people": [
-              13363,
-              24572
-            ],
-            "people names": [
-              "Rycaldis van Remdo",
-              "Brun Remdoszoon"
-            ],
-            "people ages": [
-              6,
-              0
-            ],
-            "label": "sibling",
-            "committed": false
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 13365
           },
           {
             "topic": "person died",
             "person": {
-              "key": 10001,
-              "name": "Natelien Smiec",
-              "age": 28,
+              "key": 11009,
+              "name": "Heylewigis Vlieghe",
+              "age": 23,
               "alive": false,
               "sex": "f",
               "parents": "firstgen"
             },
-            "cause": "starvation",
+            "cause": "childbirth",
             "friendship label": "indifferent",
             "label": "parent"
           },
           {
-            "topic": "person died",
-            "person": {
-              "key": 21731,
-              "name": "Gherung",
-              "age": 2,
-              "alive": false,
-              "sex": "m",
-              "parents": {
-                "mother": {
-                  "key": 10001,
-                  "name": "Natelien Smiec",
-                  "age": 28,
-                  "alive": false,
-                  "sex": "f",
-                  "parents": "firstgen"
-                },
-                "father": {
-                  "key": 10000,
-                  "name": "Remdo",
-                  "age": 41,
-                  "alive": true,
-                  "sex": "m",
-                  "parents": "firstgen"
-                }
-              }
-            },
-            "cause": "starvation",
-            "friendship label": "friend",
-            "label": "sibling"
+            "topic": "personality change",
+            "change": true,
+            "trait": "outgoing",
+            "trigger": "neglect",
+            "mod": -0.3
           },
           {
-            "topic": "not enough income",
-            "income": 0.137,
-            "inhabitants": []
+            "topic": "neglected"
+          }
+        ],
+        "1205": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1206": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 13364
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11008,
+              "name": "Paradanus Goude",
+              "age": 32,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "friendship label": "indifferent",
+            "label": "parent"
+          },
+          {
+            "topic": "personality change",
+            "change": true,
+            "trait": "outgoing",
+            "trigger": "neglect",
+            "mod": -0.3
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1207": [
           {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "sibling",
-            "friendship label": "good friend",
-            "relationship": 17231
-          },
-          {
             "topic": "not enough income",
-            "income": 0.176,
+            "income": 0.05,
             "inhabitants": []
           }
         ],
         "1208": [
           {
             "topic": "not enough income",
-            "income": 0.14100000000000001,
+            "income": 0.05,
             "inhabitants": []
           }
         ],
         "1209": [
           {
-            "topic": "person died",
-            "person": {
-              "key": 23015,
-              "name": "Kerolus",
-              "age": 4,
-              "alive": false,
-              "sex": "m",
-              "parents": {
-                "mother": {
-                  "key": 10001,
-                  "name": "Natelien Smiec",
-                  "age": 28,
-                  "alive": false,
-                  "sex": "f",
-                  "parents": "firstgen"
-                },
-                "father": {
-                  "key": 10000,
-                  "name": "Remdo",
-                  "age": 44,
-                  "alive": true,
-                  "sex": "m",
-                  "parents": "firstgen"
-                }
-              }
-            },
-            "cause": "starvation",
-            "friendship label": "friend",
-            "label": "sibling"
+            "topic": "not enough income",
+            "income": 0.05,
+            "inhabitants": []
           },
           {
-            "topic": "not enough income",
-            "income": 0.1,
-            "inhabitants": []
+            "topic": "now caretaker",
+            "care dependants": []
+          },
+          {
+            "topic": "new caretaker",
+            "person": 13363
           }
         ],
         "1210": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1210
-          },
-          {
             "topic": "not enough income",
-            "income": 0.087,
+            "income": 0.05,
             "inhabitants": []
           }
         ],
         "1211": [
           {
             "topic": "not enough income",
-            "income": 0.07500000000000001,
+            "income": 0.05,
             "inhabitants": []
           }
         ],
         "1212": [
           {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "sibling",
-            "friendship label": "indifferent",
-            "relationship": 24575
-          },
-          {
-            "topic": "person died",
-            "person": {
-              "key": 24572,
-              "name": "Brun Remdoszoon",
-              "age": 6,
-              "alive": false,
-              "sex": "m",
-              "parents": {
-                "mother": {
-                  "key": 10001,
-                  "name": "Natelien Smiec",
-                  "age": 28,
-                  "alive": false,
-                  "sex": "f",
-                  "parents": "firstgen"
-                },
-                "father": {
-                  "key": 10000,
-                  "name": "Remdo",
-                  "age": 47,
-                  "alive": true,
-                  "sex": "m",
-                  "parents": "firstgen"
-                }
-              }
-            },
-            "cause": "starvation",
-            "friendship label": "indifferent",
-            "label": "sibling"
-          },
-          {
             "topic": "not enough income",
-            "income": 0.07500000000000001,
+            "income": 0.05,
             "inhabitants": []
           }
         ],
         "1213": [
           {
+            "topic": "event",
+            "event": "plague",
+            "year": 1213
+          },
+          {
             "topic": "not enough income",
-            "income": 0.10300000000000001,
+            "income": 0.05,
             "inhabitants": []
           }
         ],
         "1214": [
+          {
+            "topic": "event",
+            "event": "faction upheaval",
+            "faction": "No religion",
+            "year": 1214
+          },
           {
             "topic": "not enough income",
             "income": 0.05,
@@ -575,25 +463,6 @@
             "year": 1215
           },
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1215
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.05,
-            "inhabitants": []
-          }
-        ],
-        "1216": [
-          {
-            "topic": "not enough income",
-            "income": 0.05,
-            "inhabitants": []
-          }
-        ],
-        "1217": [
-          {
             "topic": "death",
             "cause": "starvation"
           }
@@ -604,10 +473,10 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stUterechse straet.se1.c2",
-      "street": "Uterechse straet",
-      "neighborhood": "varkensbuurt",
-      "unique id": 1
+      "section": "stDie Camp.se1.c2",
+      "street": "Die Camp",
+      "neighborhood": "kampbuurt",
+      "unique id": 355
     },
     "relationship status": {
       "taken": false,
@@ -615,10 +484,7 @@
       "relationships": []
     },
     "friends": [
-      13364,
-      17231,
-      21734,
-      23018
+      16867
     ],
     "enemies": []
   }

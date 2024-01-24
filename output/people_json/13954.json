@@ -1,31 +1,31 @@
 {
   "13954": {
     "alive": false,
-    "name": "Lenildis",
-    "surname": "Philipssdochter",
-    "full name": "Lenildis Philipssdochter",
+    "name": "Woltwigis",
+    "surname": "Alwinsdochter",
+    "full name": "Woltwigis Alwinsdochter",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.147,
-      "romantic interest": 0.655,
-      "sex interest": 0.625,
-      "gender expression": 0.129,
+      "sexuality": 0.083,
+      "romantic interest": 0.896,
+      "sex interest": 0.636,
+      "gender expression": 0.2,
       "sex": "f"
     },
-    "age": 3,
+    "age": 4,
     "birth year": 1200,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "Dogmatists",
     "income class": [
       3,
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.521,
-      "nice-nasty": 0.783,
-      "honest-false": 0.8,
-      "dream": 0.189,
-      "outgoing": 0.337
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.464,
+      "honest-false": 0.637,
+      "dream": 0.723,
+      "outgoing": 0.224
     },
     "homsoc": {
       "means": {
@@ -34,29 +34,28 @@
         "caretaker": true,
         "needs_care": true,
         "flags": [
-          "starving",
           "neglected"
         ]
       },
       "expression": {
-        "sexuality expression": 0.14,
-        "gender expression expression": 0.049
+        "sexuality expression": 0.045,
+        "gender expression expression": 0.05
       }
     },
     "network": {
       "parents": {
         "mother": {
-          "key": 11624,
-          "name": "Heile Spiegel",
-          "age": 53,
+          "key": 12641,
+          "name": "Cecilia Vos",
+          "age": 31,
           "alive": false,
           "sex": "f",
           "parents": "firstgen"
         },
         "father": {
-          "key": 11623,
-          "name": "Philips",
-          "age": 56,
+          "key": 12640,
+          "name": "Alwin",
+          "age": 49,
           "alive": false,
           "sex": "m",
           "parents": "firstgen"
@@ -67,9 +66,6 @@
         "parent": [
           13955,
           13956
-        ],
-        "sibling": [
-          17155
         ]
       }
     },
@@ -83,18 +79,18 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 5,
-      "eye_color": "brown",
+      "skin_color": 2,
+      "eye_color": "blue",
       "hair_color": "dark brown",
       "hair_color_code": 1,
-      "hair_length": "medium",
-      "beauty": 0.802,
+      "hair_length": "long",
+      "beauty": 0.924,
       "hair_type": [
         "S",
         "C"
       ],
-      "health": 0.635,
-      "fertility": 0.771,
+      "health": 0.686,
+      "fertility": 0.624,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -104,25 +100,17 @@
       "health": {
         "1201": {
           "health": {
-            "change": true,
-            "value_change": -0.145,
-            "new_health": 0.635
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.686
           },
           "death": false
         },
-        "1202": {
+        "1204": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.635
-          },
-          "death": false
-        },
-        "1203": {
-          "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.635
+            "new_health": 0.686
           },
           "death": true
         }
@@ -134,7 +122,7 @@
           "taken_care_of": true,
           "caretaker": true
         },
-        "1203": {
+        "1202": {
           "independent": false,
           "needs_care": true,
           "taken_care_of": false,
@@ -153,6 +141,10 @@
         "1203": {
           "has job": false,
           "income": 0.05
+        },
+        "1204": {
+          "has job": false,
+          "income": 0.05
         }
       },
       "events": {
@@ -166,25 +158,25 @@
             "home": {
               "income class": 3,
               "income class label": "upper middle class",
-              "section": "stBreestraat.se3.c3",
-              "street": "Breestraat",
-              "neighborhood": "olvbuurt",
-              "unique id": 566
+              "section": "stCromme straet.se7.c3",
+              "street": "Cromme straet",
+              "neighborhood": "denhof",
+              "unique id": 920
             }
           },
           {
             "topic": "new relationship",
             "key": 13955,
             "people": [
-              11623,
+              12640,
               13954
             ],
             "people names": [
-              "Philips",
-              "Lenildis Philipssdochter"
+              "Alwin",
+              "Woltwigis Alwinsdochter"
             ],
             "people ages": [
-              35,
+              33,
               0
             ],
             "label": "parentchild",
@@ -194,51 +186,41 @@
             "topic": "new relationship",
             "key": 13956,
             "people": [
-              11624,
+              12641,
               13954
             ],
             "people names": [
-              "Heile Spiegel",
-              "Lenildis Philipssdochter"
+              "Cecilia Vos",
+              "Woltwigis Alwinsdochter"
             ],
             "people ages": [
-              22,
+              24,
               0
             ],
             "label": "parentchild",
             "committed": false
+          },
+          {
+            "topic": "personality change",
+            "change": true,
+            "trait": "outgoing",
+            "trigger": "neglect",
+            "mod": -0.3
           }
         ],
         "1201": [
           {
-            "topic": "not enough income",
-            "income": 0.1,
-            "inhabitants": [
-              23798,
-              31108,
-              32068
-            ]
+            "topic": "personality change",
+            "change": true,
+            "trait": "outgoing",
+            "trigger": "neglect",
+            "mod": -0.3
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1202": [
-          {
-            "topic": "new relationship",
-            "key": 17155,
-            "people": [
-              13954,
-              17152
-            ],
-            "people names": [
-              "Lenildis Philipssdochter",
-              "Katerina van Philips"
-            ],
-            "people ages": [
-              1,
-              0
-            ],
-            "label": "sibling",
-            "committed": false
-          },
           {
             "topic": "personality change",
             "change": true,
@@ -252,6 +234,18 @@
         ],
         "1203": [
           {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 13955
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
             "topic": "death",
             "cause": "childhood illness"
           }
@@ -262,20 +256,17 @@
     "home": {
       "income class": 3,
       "income class label": "upper middle class",
-      "section": "stBreestraat.se3.c3",
-      "street": "Breestraat",
-      "neighborhood": "olvbuurt",
-      "unique id": 566
+      "section": "stCromme straet.se7.c3",
+      "street": "Cromme straet",
+      "neighborhood": "denhof",
+      "unique id": 920
     },
     "relationship status": {
       "taken": false,
       "married": false,
       "relationships": []
     },
-    "friends": [
-      13956,
-      17155
-    ],
+    "friends": [],
     "enemies": []
   }
 }

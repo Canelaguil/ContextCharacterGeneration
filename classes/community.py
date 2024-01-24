@@ -206,7 +206,7 @@ class Community(Model):
         house_info = self.homes[house_key].address()
         self.people[person_key].move(house_info)
 
-    def marry(self, keyA, keyB, type='spouse'):
+    def marry(self, keyA, keyB, type='spouse', marriage=None):
         """ 
         Marry two agents, and move any pre-existing children to their new
         shared home.
@@ -217,8 +217,9 @@ class Community(Model):
         self.marriages += 1
         personA = self.get_person(keyA)
         personB = self.get_person(keyB)
-        marriage = Relationship(self.get_id(), self, personA, personB, type)
-        self.add_relationship(marriage)
+        if not self.we_know_each_other(keyA, keyB):
+            marriage = Relationship(self.get_id(), self, personA, personB, type)
+            self.add_relationship(marriage)
 
         # TODO : could be moved to community events?
         # add spouse to house of other spouse (MA inclination for moving in with husband)

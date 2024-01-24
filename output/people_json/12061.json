@@ -1,49 +1,53 @@
 {
   "12061": {
     "alive": false,
-    "name": "Woutgerus",
-    "surname": "Suardt",
-    "full name": "Woutgerus Suardt",
+    "name": "Tijs",
+    "surname": "",
+    "full name": "Tijs",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.098,
-      "romantic interest": 0.749,
-      "sex interest": 0.646,
-      "gender expression": 0.066,
+      "sexuality": 0.019,
+      "romantic interest": 0.577,
+      "sex interest": 0.81,
+      "gender expression": 0.015,
       "sex": "m"
     },
-    "age": 48,
-    "birth year": 1153,
+    "age": 49,
+    "birth year": 1154,
     "sex": "m",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.334,
-      "nice-nasty": 0.559,
-      "honest-false": 0.724,
-      "dream": 0.526,
-      "outgoing": 0.741
+      "lawful-chaotic": 0.825,
+      "nice-nasty": 0.661,
+      "honest-false": 0.554,
+      "dream": 0.592,
+      "outgoing": 0.933
     },
     "homsoc": {
       "means": {
-        "independent": false,
+        "independent": true,
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.049,
-        "gender expression expression": 0.032
+        "sexuality expression": 0.007,
+        "gender expression expression": 0.009
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {},
-      "relationship keys": {}
+      "relationship keys": {
+        "spouse": [
+          12063
+        ]
+      }
     },
     "occupation": {
       "has job": true,
@@ -51,29 +55,31 @@
         2,
         "middle class"
       ],
-      "income": 0.0,
+      "income": 0.968,
       "all_incomes": [
-        1.26,
-        0.0
+        1.095,
+        1.001,
+        1.015,
+        0.968
       ],
       "job": {
-        "lawful": false,
-        "honest": false
+        "lawful": true,
+        "honest": true
       }
     },
     "genetics": {
-      "skin_color": 9,
-      "eye_color": "green",
-      "hair_color": "brown",
-      "hair_color_code": 2,
-      "hair_length": "medium",
-      "beauty": 0.417,
+      "skin_color": 1,
+      "eye_color": "brown",
+      "hair_color": "black",
+      "hair_color_code": 0,
+      "hair_length": "long",
+      "beauty": 0.253,
       "hair_type": [
-        "C",
-        "S"
+        "S",
+        "C"
       ],
-      "health": 0.84,
-      "fertility": 0.895,
+      "health": 0.704,
+      "fertility": 0.703,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -85,14 +91,22 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.84
+            "new_health": 0.704
+          },
+          "death": false
+        },
+        "1202": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.704
           },
           "death": true
         }
       },
       "homsoc": {
         "1200": {
-          "independent": false,
+          "independent": true,
           "needs_care": false,
           "taken_care_of": false,
           "caretaker": false
@@ -101,19 +115,27 @@
       "ocupation": {
         "1200": {
           "has job": true,
-          "income": 0.0
+          "income": 1.001
+        },
+        "1201": {
+          "has job": true,
+          "income": 1.015
+        },
+        "1202": {
+          "has job": true,
+          "income": 0.968
         }
       },
       "events": {
         "1200": [
           {
             "topic": "birth",
-            "year": 1153
+            "year": 1154
           },
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.26
+            "income": 1.095
           },
           {
             "topic": "new home",
@@ -123,14 +145,29 @@
               "section": "stDie lange straet3.se9.c2",
               "street": "Die lange straet3",
               "neighborhood": "visbuurt",
-              "unique id": 725
+              "unique id": 722
             }
           },
           {
-            "topic": "job notice",
-            "notice": "hardly any income",
-            "income": 0.0
-          },
+            "topic": "new relationship",
+            "key": 12063,
+            "people": [
+              12061,
+              12062
+            ],
+            "people names": [
+              "Tijs",
+              "Hildegardis Borlut"
+            ],
+            "people ages": [
+              46,
+              17
+            ],
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1202": [
           {
             "topic": "death",
             "cause": "illness"
@@ -145,14 +182,18 @@
       "section": "stDie lange straet3.se9.c2",
       "street": "Die lange straet3",
       "neighborhood": "visbuurt",
-      "unique id": 725
+      "unique id": 722
     },
     "relationship status": {
       "taken": true,
       "married": true,
-      "relationships": []
+      "relationships": [
+        12063
+      ]
     },
-    "friends": [],
+    "friends": [
+      12063
+    ],
     "enemies": []
   }
 }

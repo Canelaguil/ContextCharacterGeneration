@@ -1,59 +1,61 @@
 {
   "13237": {
     "alive": false,
-    "name": "Gloria",
-    "surname": "",
-    "full name": "Gloria",
+    "name": "Rycaldis",
+    "surname": "Snep",
+    "full name": "Rycaldis Snep",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.018,
-      "romantic interest": 0.921,
-      "sex interest": 0.668,
-      "gender expression": 0.113,
+      "sexuality": 0.009,
+      "romantic interest": 0.901,
+      "sex interest": 0.553,
+      "gender expression": 0.0,
       "sex": "f"
     },
-    "age": 1,
+    "age": 6,
     "birth year": 1200,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.357,
-      "nice-nasty": 0.999,
-      "honest-false": 0.676,
-      "dream": 0.435,
-      "outgoing": 0.429
+      "lawful-chaotic": 0.73,
+      "nice-nasty": 0.541,
+      "honest-false": 0.55,
+      "dream": 0.466,
+      "outgoing": 0.459
     },
     "homsoc": {
       "means": {
         "independent": false,
-        "taken_care_of": true,
+        "taken_care_of": false,
         "caretaker": true,
         "needs_care": true,
-        "flags": []
+        "flags": [
+          "neglected"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.006,
-        "gender expression expression": 0.065
+        "sexuality expression": 0.004,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": {
         "mother": {
-          "key": 11339,
-          "name": "Lisebette Mol",
-          "age": 24,
+          "key": 10145,
+          "name": "Sywi",
+          "age": 53,
           "alive": false,
           "sex": "f",
           "parents": "firstgen"
         },
         "father": {
-          "key": 11338,
-          "name": "Dauid",
-          "age": 29,
+          "key": 10144,
+          "name": "Winrechus Snep",
+          "age": 47,
           "alive": false,
           "sex": "m",
           "parents": "firstgen"
@@ -64,6 +66,9 @@
         "parent": [
           13238,
           13239
+        ],
+        "sibling": [
+          17754
         ]
       }
     },
@@ -77,18 +82,18 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 5,
+      "skin_color": 1,
       "eye_color": "brown",
-      "hair_color": "dark brown",
-      "hair_color_code": 1,
-      "hair_length": "short",
-      "beauty": 0.441,
+      "hair_color": "red",
+      "hair_color_code": 3,
+      "hair_length": "medium",
+      "beauty": 0.66,
       "hair_type": [
         "S",
-        "S"
+        "C"
       ],
-      "health": 0.659,
-      "fertility": 0.554,
+      "health": 0.669,
+      "fertility": 0.651,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -100,7 +105,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.659
+            "new_health": 0.669
+          },
+          "death": false
+        },
+        "1206": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.669
           },
           "death": true
         }
@@ -111,10 +124,36 @@
           "needs_care": true,
           "taken_care_of": true,
           "caretaker": true
+        },
+        "1202": {
+          "independent": false,
+          "needs_care": true,
+          "taken_care_of": false,
+          "caretaker": true
         }
       },
       "ocupation": {
         "1201": {
+          "has job": false,
+          "income": 0
+        },
+        "1202": {
+          "has job": false,
+          "income": 0
+        },
+        "1203": {
+          "has job": false,
+          "income": 0
+        },
+        "1204": {
+          "has job": false,
+          "income": 0
+        },
+        "1205": {
+          "has job": false,
+          "income": 0
+        },
+        "1206": {
           "has job": false,
           "income": 0
         }
@@ -130,25 +169,25 @@
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stDie Coninc straet.se7.c1",
-              "street": "Die Coninc straet",
-              "neighborhood": "kampbuurt",
-              "unique id": 466
+              "section": "stSlyck straet.se3.c1",
+              "street": "Slyck straet",
+              "neighborhood": "varkensbuurt",
+              "unique id": 50
             }
           },
           {
             "topic": "new relationship",
             "key": 13238,
             "people": [
-              11338,
+              10144,
               13237
             ],
             "people names": [
-              "Dauid",
-              "Gloria"
+              "Winrechus Snep",
+              "Rycaldis Snep"
             ],
             "people ages": [
-              26,
+              32,
               0
             ],
             "label": "parentchild",
@@ -158,29 +197,80 @@
             "topic": "new relationship",
             "key": 13239,
             "people": [
-              11339,
+              10145,
               13237
             ],
             "people names": [
-              "Lisebette Mol",
-              "Gloria"
+              "Sywi",
+              "Rycaldis Snep"
             ],
             "people ages": [
-              16,
+              31,
               0
             ],
             "label": "parentchild",
             "committed": false
-          },
+          }
+        ],
+        "1201": [
           {
             "topic": "personality change",
             "change": true,
             "trait": "outgoing",
             "trigger": "neglect",
             "mod": -0.3
+          },
+          {
+            "topic": "neglected"
           }
         ],
-        "1201": [
+        "1202": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 17754,
+            "people": [
+              13237,
+              17751
+            ],
+            "people names": [
+              "Rycaldis Snep",
+              "Ramont Snep"
+            ],
+            "people ages": [
+              3,
+              0
+            ],
+            "label": "sibling",
+            "committed": false
+          }
+        ],
+        "1204": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "sibling",
+            "friendship label": "indifferent",
+            "relationship": 17754
+          }
+        ],
+        "1205": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 13239
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1206": [
           {
             "topic": "death",
             "cause": "childhood illness"
@@ -192,10 +282,10 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stDie Coninc straet.se7.c1",
-      "street": "Die Coninc straet",
-      "neighborhood": "kampbuurt",
-      "unique id": 466
+      "section": "stSlyck straet.se3.c1",
+      "street": "Slyck straet",
+      "neighborhood": "varkensbuurt",
+      "unique id": 50
     },
     "relationship status": {
       "taken": false,
@@ -203,7 +293,8 @@
       "relationships": []
     },
     "friends": [
-      13238
+      13238,
+      13239
     ],
     "enemies": []
   }

@@ -1,61 +1,62 @@
 {
   "13327": {
     "alive": false,
-    "name": "Aleberna",
-    "surname": "Cockine",
-    "full name": "Aleberna Cockine",
+    "name": "Mauricius",
+    "surname": "Karisszoon",
+    "full name": "Mauricius Karisszoon",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.095,
-      "romantic interest": 0.648,
-      "sex interest": 0.788,
-      "gender expression": 0.185,
-      "sex": "f"
+      "sexuality": 0.0,
+      "romantic interest": 0.999,
+      "sex interest": 0.661,
+      "gender expression": 0.0,
+      "sex": "m"
     },
-    "age": 10,
+    "age": 8,
     "birth year": 1200,
-    "sex": "f",
-    "faction": "Dogmatists",
+    "sex": "m",
+    "faction": "Zealots",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.67,
-      "nice-nasty": 0.605,
-      "honest-false": 0.159,
-      "dream": 0.401,
-      "outgoing": 0.501
+      "lawful-chaotic": 0.724,
+      "nice-nasty": 0.0,
+      "honest-false": 0.988,
+      "dream": 0.454,
+      "outgoing": 0.699
     },
     "homsoc": {
       "means": {
         "independent": false,
-        "taken_care_of": true,
+        "taken_care_of": false,
         "caretaker": true,
         "needs_care": true,
         "flags": [
-          "starving"
+          "starving",
+          "neglected"
         ]
       },
       "expression": {
-        "sexuality expression": 0.059,
-        "gender expression expression": 0.102
+        "sexuality expression": -0.001,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": {
         "mother": {
-          "key": 12812,
-          "name": "Tetta Brebart",
-          "age": 53,
+          "key": 10469,
+          "name": "Gertrudis Blome",
+          "age": 40,
           "alive": false,
           "sex": "f",
           "parents": "firstgen"
         },
         "father": {
-          "key": 12811,
-          "name": "Woutersoet Cockine",
-          "age": 55,
+          "key": 10468,
+          "name": "Karis",
+          "age": 56,
           "alive": false,
           "sex": "m",
           "parents": "firstgen"
@@ -68,11 +69,10 @@
           13329
         ],
         "sibling": [
-          15553,
-          17461,
-          18783,
-          20817,
-          25356
+          15263,
+          16483,
+          17782,
+          20741
         ]
       }
     },
@@ -90,14 +90,14 @@
       "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
-      "hair_length": "medium",
-      "beauty": 0.494,
+      "hair_length": "short",
+      "beauty": 0.862,
       "hair_type": [
-        "C",
+        "S",
         "S"
       ],
-      "health": 0.628,
-      "fertility": 0.605,
+      "health": 0.73,
+      "fertility": 0.746,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -109,15 +109,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.628
+            "new_health": 0.73
           },
           "death": false
         },
-        "1210": {
+        "1208": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.628
+            "new_health": 0.73
           },
           "death": true
         }
@@ -127,6 +127,12 @@
           "independent": false,
           "needs_care": true,
           "taken_care_of": true,
+          "caretaker": true
+        },
+        "1202": {
+          "independent": false,
+          "needs_care": true,
+          "taken_care_of": false,
           "caretaker": true
         }
       },
@@ -162,14 +168,6 @@
         "1208": {
           "has job": false,
           "income": 0
-        },
-        "1209": {
-          "has job": false,
-          "income": 0
-        },
-        "1210": {
-          "has job": false,
-          "income": 0
         }
       },
       "events": {
@@ -183,25 +181,25 @@
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stKerckstraet.se3.c1",
-              "street": "Kerckstraet",
-              "neighborhood": "denhof",
-              "unique id": 988
+              "section": "stMuelen straet.se3.c1",
+              "street": "Muelen straet",
+              "neighborhood": "jorisbuurt",
+              "unique id": 166
             }
           },
           {
             "topic": "new relationship",
             "key": 13328,
             "people": [
-              12811,
+              10468,
               13327
             ],
             "people names": [
-              "Woutersoet Cockine",
-              "Aleberna Cockine"
+              "Karis",
+              "Mauricius Karisszoon"
             ],
             "people ages": [
-              39,
+              35,
               0
             ],
             "label": "parentchild",
@@ -211,39 +209,39 @@
             "topic": "new relationship",
             "key": 13329,
             "people": [
-              12812,
+              10469,
               13327
             ],
             "people names": [
-              "Tetta Brebart",
-              "Aleberna Cockine"
+              "Gertrudis Blome",
+              "Mauricius Karisszoon"
             ],
             "people ages": [
-              23,
+              30,
               0
             ],
             "label": "parentchild",
             "committed": false
-          },
-          {
-            "topic": "personality change",
-            "change": true,
-            "trait": "outgoing",
-            "trigger": "neglect",
-            "mod": -0.3
           }
         ],
         "1201": [
           {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 13328
+          },
+          {
             "topic": "new relationship",
-            "key": 15553,
+            "key": 15263,
             "people": [
               13327,
-              15550
+              15260
             ],
             "people names": [
-              "Aleberna Cockine",
-              "Bertrade Cockine"
+              "Mauricius Karisszoon",
+              "Saswe"
             ],
             "people ages": [
               1,
@@ -253,22 +251,20 @@
             "committed": false
           },
           {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
+            "topic": "neglected"
           }
         ],
         "1202": [
           {
             "topic": "new relationship",
-            "key": 17461,
+            "key": 16483,
             "people": [
               13327,
-              17458
+              16480
             ],
             "people names": [
-              "Aleberna Cockine",
-              "Evergero Cockine"
+              "Mauricius Karisszoon",
+              "Saxiardis Karissdochter"
             ],
             "people ages": [
               2,
@@ -278,60 +274,34 @@
             "committed": false
           },
           {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
+            "topic": "personality change",
+            "change": true,
+            "trait": "outgoing",
+            "trigger": "neglect",
+            "mod": -0.3
+          },
+          {
+            "topic": "neglected"
           }
         ],
         "1203": [
           {
-            "topic": "new relationship",
-            "key": 18783,
-            "people": [
-              13327,
-              18780
-            ],
-            "people names": [
-              "Aleberna Cockine",
-              "Wolcout Cockine"
-            ],
-            "people ages": [
-              2,
-              0
-            ],
-            "label": "sibling",
-            "committed": false
-          },
-          {
             "topic": "update",
             "update": "new friendship label",
-            "relationship label": "parentchild",
+            "relationship label": "sibling",
             "friendship label": "indifferent",
-            "relationship": 13329
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.222,
-            "inhabitants": []
-          }
-        ],
-        "1204": [
-          {
-            "topic": "event",
-            "event": "faction upheaval",
-            "faction": "No religion",
-            "year": 1204
+            "relationship": 15263
           },
           {
             "topic": "new relationship",
-            "key": 20817,
+            "key": 17782,
             "people": [
               13327,
-              20814
+              17779
             ],
             "people names": [
-              "Aleberna Cockine",
-              "Aleberna Cockine"
+              "Mauricius Karisszoon",
+              "Eligius"
             ],
             "people ages": [
               3,
@@ -341,118 +311,105 @@
             "committed": false
           },
           {
-            "topic": "not enough income",
-            "income": 0.355,
-            "inhabitants": []
-          }
-        ],
-        "1205": [
-          {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "sibling",
-            "friendship label": "friend",
-            "relationship": 15553
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
-          }
-        ],
-        "1206": [
-          {
-            "topic": "not enough income",
-            "income": 0.251,
-            "inhabitants": []
-          }
-        ],
-        "1207": [
-          {
-            "topic": "new relationship",
-            "key": 25356,
-            "people": [
-              13327,
-              25353
-            ],
-            "people names": [
-              "Aleberna Cockine",
-              "Marisseis Cockine"
-            ],
-            "people ages": [
-              6,
-              0
-            ],
-            "label": "sibling",
-            "committed": false
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
-          }
-        ],
-        "1208": [
-          {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
-          }
-        ],
-        "1209": [
-          {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "sibling",
-            "friendship label": "indifferent",
-            "relationship": 20817
-          },
-          {
             "topic": "person died",
             "person": {
-              "key": 17458,
-              "name": "Evergero Cockine",
-              "age": 7,
+              "key": 16480,
+              "name": "Saxiardis Karissdochter",
+              "age": 1,
               "alive": false,
-              "sex": "m",
+              "sex": "f",
               "parents": {
                 "mother": {
-                  "key": 12812,
-                  "name": "Tetta Brebart",
-                  "age": 33,
+                  "key": 10469,
+                  "name": "Gertrudis Blome",
+                  "age": 34,
                   "alive": true,
                   "sex": "f",
                   "parents": "firstgen"
                 },
                 "father": {
-                  "key": 12811,
-                  "name": "Woutersoet Cockine",
-                  "age": 49,
+                  "key": 10468,
+                  "name": "Karis",
+                  "age": 38,
                   "alive": true,
                   "sex": "m",
                   "parents": "firstgen"
                 }
               }
             },
-            "cause": "starvation",
-            "friendship label": "disliked",
+            "cause": "childhood illness",
+            "friendship label": "indifferent",
             "label": "sibling"
           },
           {
             "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
+            "income": 0.737,
+            "inhabitants": [
+              96765,
+              97155
+            ]
           }
         ],
-        "1210": [
+        "1204": [
           {
-            "topic": "event",
-            "event": "plague",
-            "year": 1210
+            "topic": "not enough income",
+            "income": 0.67,
+            "inhabitants": [
+              96765,
+              97155
+            ]
+          }
+        ],
+        "1205": [
+          {
+            "topic": "new relationship",
+            "key": 20741,
+            "people": [
+              13327,
+              20738
+            ],
+            "people names": [
+              "Mauricius Karisszoon",
+              "Splinter"
+            ],
+            "people ages": [
+              5,
+              0
+            ],
+            "label": "sibling",
+            "committed": false
+          }
+        ],
+        "1206": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "sibling",
+            "friendship label": "indifferent",
+            "relationship": 20741
           },
           {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 13329
+          }
+        ],
+        "1207": [
+          {
+            "topic": "not enough income",
+            "income": 0.846,
+            "inhabitants": [
+              96765,
+              97155
+            ]
+          }
+        ],
+        "1208": [
+          {
             "topic": "death",
-            "cause": "plague"
+            "cause": "starvation"
           }
         ]
       }
@@ -461,10 +418,10 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stKerckstraet.se3.c1",
-      "street": "Kerckstraet",
-      "neighborhood": "denhof",
-      "unique id": 988
+      "section": "stMuelen straet.se3.c1",
+      "street": "Muelen straet",
+      "neighborhood": "jorisbuurt",
+      "unique id": 166
     },
     "relationship status": {
       "taken": false,
@@ -472,10 +429,11 @@
       "relationships": []
     },
     "friends": [
-      15553
+      13328,
+      17782
     ],
     "enemies": [
-      17461
+      15263
     ]
   }
 }

@@ -1,31 +1,31 @@
 {
   "12314": {
     "alive": false,
-    "name": "Kerstine",
-    "surname": "Wittebart",
-    "full name": "Kerstine Wittebart",
+    "name": "Marie",
+    "surname": "",
+    "full name": "Marie",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.032,
-      "romantic interest": 0.744,
-      "sex interest": 0.805,
-      "gender expression": 0.089,
+      "sexuality": 0.09,
+      "romantic interest": 0.85,
+      "sex interest": 0.51,
+      "gender expression": 0.064,
       "sex": "f"
     },
-    "age": 35,
-    "birth year": 1166,
+    "age": 38,
+    "birth year": 1164,
     "sex": "f",
     "faction": "No religion",
     "income class": [
-      3,
-      "upper middle class"
+      4,
+      "nobility"
     ],
     "personality": {
-      "lawful-chaotic": 0.826,
-      "nice-nasty": 0.317,
-      "honest-false": 0.626,
-      "dream": 0.417,
-      "outgoing": 0.999
+      "lawful-chaotic": 0.621,
+      "nice-nasty": 0.673,
+      "honest-false": 0.318,
+      "dream": 0.51,
+      "outgoing": 0.727
     },
     "homsoc": {
       "means": {
@@ -36,37 +36,44 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.028,
-        "gender expression expression": 0.057
+        "sexuality expression": 0.059,
+        "gender expression expression": 0.049
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {},
-      "relationship keys": {}
+      "relationship keys": {
+        "spouse": [
+          12315
+        ],
+        "unrelated": [
+          14078
+        ]
+      }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        3,
-        "upper middle class"
+        4,
+        "nobility"
       ],
-      "income": 0.05,
+      "income": 0.1,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 8,
-      "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
-      "hair_length": "medium",
-      "beauty": 0.784,
+      "skin_color": 0,
+      "eye_color": "blue",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
+      "hair_length": "short",
+      "beauty": 0.679,
       "hair_type": [
         "C",
-        "S"
+        "C"
       ],
-      "health": 0.53,
-      "fertility": 0.732,
+      "health": 0.527,
+      "fertility": 0.542,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -76,9 +83,17 @@
       "health": {
         "1200": {
           "health": {
-            "change": true,
-            "value_change": -0.171,
-            "new_health": 0.53
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.527
+          },
+          "death": false
+        },
+        "1201": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.527
           },
           "death": true
         }
@@ -94,26 +109,75 @@
       "ocupation": {
         "1200": {
           "has job": false,
-          "income": 0.05
+          "income": 0.1
+        },
+        "1201": {
+          "has job": false,
+          "income": 0.1
         }
       },
       "events": {
         "1200": [
           {
             "topic": "birth",
-            "year": 1166
+            "year": 1164
           },
           {
             "topic": "new home",
             "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stMuurhuysen2.se5.c3",
+              "income class": 4,
+              "income class label": "nobility",
+              "section": "stMuurhuysen2.se3.c4",
               "street": "Muurhuysen2",
               "neighborhood": "cingelnoord",
-              "unique id": 815
+              "unique id": 808
             }
           },
+          {
+            "topic": "new relationship",
+            "key": 12315,
+            "people": [
+              12313,
+              12314
+            ],
+            "people names": [
+              "Rembrandus",
+              "Marie"
+            ],
+            "people ages": [
+              37,
+              36
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "indifferent",
+            "relationship": 12315
+          },
+          {
+            "topic": "new relationship",
+            "key": 14078,
+            "people": [
+              12314,
+              10147
+            ],
+            "people names": [
+              "Marie",
+              "Breghtgherus Croenekin"
+            ],
+            "people ages": [
+              37,
+              46
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1201": [
           {
             "topic": "death",
             "cause": "illness"
@@ -123,19 +187,23 @@
     },
     "key": 12314,
     "home": {
-      "income class": 3,
-      "income class label": "upper middle class",
-      "section": "stMuurhuysen2.se5.c3",
+      "income class": 4,
+      "income class label": "nobility",
+      "section": "stMuurhuysen2.se3.c4",
       "street": "Muurhuysen2",
       "neighborhood": "cingelnoord",
-      "unique id": 815
+      "unique id": 808
     },
     "relationship status": {
-      "taken": true,
+      "taken": false,
       "married": true,
-      "relationships": []
+      "relationships": [
+        12315
+      ]
     },
-    "friends": [],
+    "friends": [
+      14078
+    ],
     "enemies": []
   }
 }

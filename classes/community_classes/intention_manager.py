@@ -113,7 +113,7 @@ class MarriageCandidates(Matchmaker):
     
     def find_match(self, seeker):
         # TODO : check for motivation
-        sample_size = 80
+        sample_size = 500
         no_candidates = len(self.candidate_list)
         if no_candidates < sample_size:
             size = no_candidates
@@ -128,8 +128,8 @@ class MarriageCandidates(Matchmaker):
             this_option = False
 
             # only in-faction marriages allowed through matchmaking
-            if op['faction'] != seeker['faction']:
-                break
+            # if op['faction'] != seeker['faction']:
+            #     break
 
             # check if these two already know each other (siblings, eg)
             if self.owner.model.we_know_each_other(op['source'], seeker['source']):
@@ -228,14 +228,13 @@ class Intention_Manager(Agent):
         friend_pairs = 0
 
         # match marriage seekers
-        print(len(self.male_marriage_intentions.candidate_list))
-        print(len(self.female_marriage_intentions.candidate_list))
+        # print(len(self.male_marriage_intentions.candidate_list))
+        # print(len(self.female_marriage_intentions.candidate_list))
         marriage_intention = self.male_marriage_intentions.get()
         while marriage_intention != None:
             partner = self.female_marriage_intentions.find_match(marriage_intention)
             if partner:
                 self.model.marry(marriage_intention['source'], partner['source'])
-                print('match made')
             marriage_intention = self.male_marriage_intentions.get()
 
         # match friendship seekers

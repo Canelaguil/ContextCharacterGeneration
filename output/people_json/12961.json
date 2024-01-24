@@ -1,31 +1,31 @@
 {
   "12961": {
     "alive": false,
-    "name": "Alebrando",
-    "surname": "Langhe",
-    "full name": "Alebrando Langhe",
+    "name": "Splinter",
+    "surname": "Menauresszoon",
+    "full name": "Splinter Menauresszoon",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.863,
-      "romantic interest": 0.915,
-      "sex interest": 0.829,
-      "gender expression": 0.171,
+      "sexuality label": "straight",
+      "sexuality": 0.037,
+      "romantic interest": 0.593,
+      "sex interest": 0.768,
+      "gender expression": 0.076,
       "sex": "m"
     },
-    "age": 9,
+    "age": 13,
     "birth year": 1200,
     "sex": "m",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
       0,
       "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.539,
-      "nice-nasty": 0.583,
-      "honest-false": 0.406,
-      "dream": 0.617,
-      "outgoing": 0.535
+      "lawful-chaotic": 0.582,
+      "nice-nasty": 0.879,
+      "honest-false": 0.847,
+      "dream": 0.268,
+      "outgoing": 0.326
     },
     "homsoc": {
       "means": {
@@ -34,28 +34,29 @@
         "caretaker": true,
         "needs_care": true,
         "flags": [
-          "starving"
+          "starving",
+          "neglected"
         ]
       },
       "expression": {
-        "sexuality expression": 0.462,
-        "gender expression expression": 0.1
+        "sexuality expression": 0.017,
+        "gender expression expression": 0.051
       }
     },
     "network": {
       "parents": {
         "mother": {
-          "key": 10214,
-          "name": "Aue Buc",
-          "age": 37,
+          "key": 10211,
+          "name": "Salome",
+          "age": 54,
           "alive": false,
           "sex": "f",
           "parents": "firstgen"
         },
         "father": {
-          "key": 10213,
-          "name": "Mattheus Langhe",
-          "age": 34,
+          "key": 10210,
+          "name": "Menaures",
+          "age": 53,
           "alive": false,
           "sex": "m",
           "parents": "firstgen"
@@ -68,11 +69,12 @@
           12963
         ],
         "sibling": [
-          17621,
-          21390,
-          22600,
-          26306,
-          27002
+          15630,
+          19776,
+          26242
+        ],
+        "unrelated": [
+          28016
         ]
       }
     },
@@ -86,18 +88,18 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 7,
-      "eye_color": "brown",
-      "hair_color": "brown",
-      "hair_color_code": 2,
-      "hair_length": "long",
-      "beauty": 0.436,
+      "skin_color": 6,
+      "eye_color": "blue",
+      "hair_color": "red",
+      "hair_color_code": 3,
+      "hair_length": "medium",
+      "beauty": 0.829,
       "hair_type": [
-        "C",
-        "C"
+        "S",
+        "S"
       ],
-      "health": 0.748,
-      "fertility": 0.757,
+      "health": 0.514,
+      "fertility": 0.524,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -109,21 +111,33 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.748
+            "new_health": 0.514
           },
           "death": false
         },
-        "1209": {
+        "1213": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.748
+            "new_health": 0.514
           },
           "death": true
         }
       },
       "homsoc": {
         "1201": {
+          "independent": false,
+          "needs_care": true,
+          "taken_care_of": true,
+          "caretaker": true
+        },
+        "1202": {
+          "independent": false,
+          "needs_care": true,
+          "taken_care_of": false,
+          "caretaker": true
+        },
+        "1211": {
           "independent": false,
           "needs_care": true,
           "taken_care_of": true,
@@ -166,6 +180,22 @@
         "1209": {
           "has job": false,
           "income": 0
+        },
+        "1210": {
+          "has job": false,
+          "income": 0
+        },
+        "1211": {
+          "has job": false,
+          "income": 0
+        },
+        "1212": {
+          "has job": false,
+          "income": 0
+        },
+        "1213": {
+          "has job": false,
+          "income": 0
         }
       },
       "events": {
@@ -182,22 +212,22 @@
               "section": "stIn den Haeg.se3.c0",
               "street": "In den Haeg",
               "neighborhood": "varkensbuurt",
-              "unique id": 74
+              "unique id": 75
             }
           },
           {
             "topic": "new relationship",
             "key": 12962,
             "people": [
-              10213,
+              10210,
               12961
             ],
             "people names": [
-              "Mattheus Langhe",
-              "Alebrando Langhe"
+              "Menaures",
+              "Splinter Menauresszoon"
             ],
             "people ages": [
-              23,
+              43,
               0
             ],
             "label": "parentchild",
@@ -207,19 +237,28 @@
             "topic": "new relationship",
             "key": 12963,
             "people": [
-              10214,
+              10211,
               12961
             ],
             "people names": [
-              "Aue Buc",
-              "Alebrando Langhe"
+              "Salome",
+              "Splinter Menauresszoon"
             ],
             "people ages": [
-              21,
+              27,
               0
             ],
             "label": "parentchild",
             "committed": false
+          }
+        ],
+        "1201": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 12962
           },
           {
             "topic": "personality change",
@@ -227,41 +266,64 @@
             "trait": "outgoing",
             "trigger": "neglect",
             "mod": -0.3
-          }
-        ],
-        "1201": [
+          },
           {
-            "topic": "not enough income",
-            "income": 0.093,
-            "inhabitants": []
+            "topic": "neglected"
           }
         ],
         "1202": [
           {
             "topic": "new relationship",
-            "key": 17621,
+            "key": 15630,
             "people": [
               12961,
-              17618
+              15627
             ],
             "people names": [
-              "Alebrando Langhe",
-              "Sifridus Langhe"
+              "Splinter Menauresszoon",
+              "Gertrudis"
             ],
             "people ages": [
-              2,
+              1,
+              0
+            ],
+            "label": "sibling",
+            "committed": false
+          }
+        ],
+        "1203": [
+          {
+            "topic": "not enough income",
+            "income": 0.938,
+            "inhabitants": []
+          }
+        ],
+        "1204": [
+          {
+            "topic": "not enough income",
+            "income": 0.973,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "new relationship",
+            "key": 19776,
+            "people": [
+              12961,
+              19773
+            ],
+            "people names": [
+              "Splinter Menauresszoon",
+              "Helyana"
+            ],
+            "people ages": [
+              4,
               0
             ],
             "label": "sibling",
             "committed": false
           },
-          {
-            "topic": "not enough income",
-            "income": 0.047,
-            "inhabitants": []
-          }
-        ],
-        "1203": [
           {
             "topic": "update",
             "update": "new friendship label",
@@ -271,63 +333,7 @@
           },
           {
             "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
-          }
-        ],
-        "1204": [
-          {
-            "topic": "event",
-            "event": "faction upheaval",
-            "faction": "No religion",
-            "year": 1204
-          },
-          {
-            "topic": "new relationship",
-            "key": 21390,
-            "people": [
-              12961,
-              21387
-            ],
-            "people names": [
-              "Alebrando Langhe",
-              "Folqui Langhe"
-            ],
-            "people ages": [
-              4,
-              0
-            ],
-            "label": "sibling",
-            "committed": false
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
-          }
-        ],
-        "1205": [
-          {
-            "topic": "new relationship",
-            "key": 22600,
-            "people": [
-              12961,
-              22597
-            ],
-            "people names": [
-              "Alebrando Langhe",
-              "Robbrecht van Mattheus"
-            ],
-            "people ages": [
-              4,
-              0
-            ],
-            "label": "sibling",
-            "committed": false
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.169,
+            "income": 1.023,
             "inhabitants": []
           }
         ],
@@ -335,31 +341,45 @@
           {
             "topic": "update",
             "update": "new friendship label",
-            "relationship label": "parentchild",
-            "friendship label": "good friend",
-            "relationship": 12963
+            "relationship label": "sibling",
+            "friendship label": "indifferent",
+            "relationship": 19776
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.993,
+            "inhabitants": []
+          }
+        ],
+        "1207": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "sibling",
+            "friendship label": "friend",
+            "relationship": 19776
           },
           {
             "topic": "person died",
             "person": {
-              "key": 17618,
-              "name": "Sifridus Langhe",
-              "age": 4,
+              "key": 15627,
+              "name": "Gertrudis",
+              "age": 5,
               "alive": false,
-              "sex": "m",
+              "sex": "f",
               "parents": {
                 "mother": {
-                  "key": 10214,
-                  "name": "Aue Buc",
-                  "age": 28,
+                  "key": 10211,
+                  "name": "Salome",
+                  "age": 35,
                   "alive": true,
                   "sex": "f",
                   "parents": "firstgen"
                 },
                 "father": {
-                  "key": 10213,
-                  "name": "Mattheus Langhe",
-                  "age": 30,
+                  "key": 10210,
+                  "name": "Menaures",
+                  "age": 50,
                   "alive": true,
                   "sex": "m",
                   "parents": "firstgen"
@@ -369,64 +389,158 @@
             "cause": "starvation",
             "friendship label": "indifferent",
             "label": "sibling"
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
-          }
-        ],
-        "1207": [
-          {
-            "topic": "new relationship",
-            "key": 26306,
-            "people": [
-              12961,
-              26303
-            ],
-            "people names": [
-              "Alebrando Langhe",
-              "Lubertus Langhe"
-            ],
-            "people ages": [
-              7,
-              0
-            ],
-            "label": "sibling",
-            "committed": false
-          },
-          {
-            "topic": "not enough income",
-            "income": 0.042,
-            "inhabitants": []
           }
         ],
         "1208": [
           {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 12962
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 12963
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "sibling",
+            "friendship label": "friend",
+            "relationship": 19776
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.915,
+            "inhabitants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "sibling",
+            "friendship label": "indifferent",
+            "relationship": 19776
+          },
+          {
             "topic": "new relationship",
-            "key": 27002,
+            "key": 26242,
             "people": [
               12961,
-              26999
+              26239
             ],
             "people names": [
-              "Alebrando Langhe",
-              "Sipper Langhe"
+              "Splinter Menauresszoon",
+              "Hersewindis Menauressdochter"
             ],
             "people ages": [
-              8,
+              10,
               0
             ],
             "label": "sibling",
             "committed": false
           },
           {
+            "topic": "person died",
+            "person": {
+              "key": 10210,
+              "name": "Menaures",
+              "age": 53,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "friendship label": "friend",
+            "label": "parent"
+          },
+          {
+            "topic": "new caretaker",
+            "person": 10211
+          }
+        ],
+        "1211": [
+          {
+            "topic": "new relationship",
+            "key": 28016,
+            "people": [
+              12961,
+              13048
+            ],
+            "people names": [
+              "Splinter Menauresszoon",
+              "Riquardus Hont"
+            ],
+            "people ages": [
+              11,
+              11
+            ],
+            "label": "unrelated",
+            "committed": false
+          },
+          {
             "topic": "not enough income",
-            "income": 0.23,
+            "income": 0,
             "inhabitants": []
           }
         ],
-        "1209": [
+        "1212": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 13048,
+              "name": "Riquardus Hont",
+              "age": 12,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": {
+                  "key": 11498,
+                  "name": "Badeloghen",
+                  "age": 29,
+                  "alive": true,
+                  "sex": "f",
+                  "parents": "firstgen"
+                },
+                "father": {
+                  "key": 11497,
+                  "name": "Lubertus Hont",
+                  "age": 33,
+                  "alive": true,
+                  "sex": "m",
+                  "parents": "firstgen"
+                }
+              }
+            },
+            "cause": "illness",
+            "friendship label": "friend",
+            "label": "unrelated",
+            "love state": "nothing"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1213
+          },
+          {
+            "topic": "personality change",
+            "change": true,
+            "trait": "lawful-chaotic",
+            "trigger": "trauma",
+            "mod": 0.015
+          },
           {
             "topic": "death",
             "cause": "starvation"
@@ -441,7 +555,7 @@
       "section": "stIn den Haeg.se3.c0",
       "street": "In den Haeg",
       "neighborhood": "varkensbuurt",
-      "unique id": 74
+      "unique id": 75
     },
     "relationship status": {
       "taken": false,
@@ -450,9 +564,8 @@
     },
     "friends": [
       12962,
-      12963,
-      21390,
-      26306
+      26242,
+      28016
     ],
     "enemies": []
   }

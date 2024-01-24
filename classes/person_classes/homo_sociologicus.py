@@ -1,6 +1,9 @@
 from ..utils import *
 
 class HomoSociologicus():
+    """
+    Represents how Person interacts with their society
+    """
     def __init__(self, person, community, born_like, personality, income_class, 
                  age=0, disabilities=[]) -> None:
 
@@ -56,6 +59,9 @@ class HomoSociologicus():
     EVOLVE
     """
     def evolve(self, age, record, relationship_status):
+        """
+        Yearly evolve step
+        """
         # check for disabilities
         if 'new_disability' in record['health']['health']:
             look_at_me_now = self.community.get_person(self.person_key)
@@ -63,7 +69,6 @@ class HomoSociologicus():
             self.need_care(addr)
 
         # filter for age
-        # print(self.independent_age)
         if age < self.independent_age:
             self.childhood(age, record)
         else:
@@ -72,7 +77,6 @@ class HomoSociologicus():
             self.adulthood(age, record)
 
             # marriage wish
-            # TODO : check for existing relationships
             if not relationship_status['married'] and rand() < self.marriage_wish():
                 it = {
                     'topic' : 'marriage', 
@@ -222,7 +226,7 @@ class WomanMA(HomoSociologicus):
             if rand() < 0.05:
                 self.go_find_job(age)
         else:
-            if record['occupation']['income'] > 0.8:
+            if record['occupation']['income'] > 0.5:
                 self.independent = True
             else:
                 self.independent = False
@@ -288,19 +292,19 @@ class ManMA(HomoSociologicus):
 
     def childhood(self, age, record):
         self.needs_care = True        
-        if age == 3:
+        if age > 3:
             self.find_friend(age)
-        elif age > 4:
-            if rand() < 0.8:
-                self.find_friend(age)
+        # elif age > 4:
+        #     if rand() < 0.8:
+                # self.find_friend(age)
 
     def adulthood(self, age, record):
         # motivate to go for independence
         if not record['occupation']['has job']:
-            if rand() < 0.5:
+            if rand() < 0.9:
                 self.go_find_job(age)
         else:
-            if record['occupation']['income'] > 0.8:
+            if record['occupation']['income'] > 0.5:
                 self.independent = True
             else:
                 self.independent = False
@@ -319,11 +323,9 @@ class Neutral(HomoSociologicus):
 
     
     def childhood(self, age, record):
-        if age == 3:
+        self.needs_care = True        
+        if age > 3:
             self.find_friend(age)
-        elif age > 4:
-            if rand() < 0.5:
-                self.find_friend(age)
 
     def adulthood(self, age, record):
         ...

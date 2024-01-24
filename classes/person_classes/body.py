@@ -213,11 +213,12 @@ class Body():
             chance = 1
         elif age < 12:
             self.death_cause = 'childhood illness'
-            chance = (fair_mod(Body.child_mortality * (1 - self.health), - (0.125 * age))) 
+            halfchildmor = Body.child_mortality / 2
+            chance = (halfchildmor * (1 - self.health)) / 2 + fair_mod(halfchildmor, - (1/12 * age * Body.child_mortality))
         elif age >= max_age_this_year:
             self.death_cause = 'old age'
             return True
-        elif age > Body.old_age:
+        elif age > Body.old_age: 
             self.death_cause = 'old age'
             chance = (0.05 + (0.01 * (age - Body.old_age))) * (1 - self.health)
         elif age > 0.5 * Body.old_age:            
@@ -226,7 +227,7 @@ class Body():
             chance = 0.025 * (1 - self.health) + (0.001 * years)
         else:
             self.death_cause = 'illness'
-            chance = 0.05 * (1 - self.health)
+            chance = 0.025 * (1 - self.health)
         
         if rand() < chance:
             return True

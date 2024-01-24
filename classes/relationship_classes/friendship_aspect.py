@@ -65,15 +65,15 @@ class Friendship():
         """
         # chance of something happening
         if self.label == 'enemy':
-            something_chance = 0.01
-        elif self.label == 'disliked':
-            something_chance = 0.1
-        elif self.label == 'indifferent':
             something_chance = 0.05
-        elif self.label == 'friend':
+        elif self.label == 'disliked':
+            something_chance = 0.15
+        elif self.label == 'indifferent':
             something_chance = 0.1
+        elif self.label == 'friend':
+            something_chance = 0.15
         elif self.label == 'good friend':
-            something_chance = 0.01
+            something_chance = 0.05
 
         # # chance of something happening
         # something_chance = self.score * 0.2 + (0.2 ** proximity_score)

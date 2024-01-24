@@ -40,7 +40,7 @@ class Home(Agent):
         self.neighborhood = neighborhood
         self.street = street
         if self.section == None:
-            print(self.street, self.income_class)
+            fatal_error(self.street, self.income_class)
         self.section_key = self.section.key
         self.registered = True
 

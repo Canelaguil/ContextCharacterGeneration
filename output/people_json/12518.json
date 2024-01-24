@@ -1,19 +1,19 @@
 {
   "12518": {
     "alive": false,
-    "name": "Rabburgis",
-    "surname": "Dicbier",
-    "full name": "Rabburgis Dicbier",
+    "name": "Diewiven",
+    "surname": "Colueken",
+    "full name": "Diewiven Colueken",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.113,
-      "romantic interest": 0.546,
-      "sex interest": 0.285,
-      "gender expression": 0.038,
+      "sexuality": 0.029,
+      "romantic interest": 0.789,
+      "sex interest": 0.447,
+      "gender expression": 0.239,
       "sex": "f"
     },
-    "age": 33,
-    "birth year": 1168,
+    "age": 48,
+    "birth year": 1178,
     "sex": "f",
     "faction": "Zealots",
     "income class": [
@@ -21,29 +21,122 @@
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.518,
-      "nice-nasty": 0.999,
-      "honest-false": 0.0,
-      "dream": 0.226,
-      "outgoing": 0.692
+      "lawful-chaotic": 0.82,
+      "nice-nasty": 0.163,
+      "honest-false": 0.364,
+      "dream": 0.375,
+      "outgoing": 0.832
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "caretaker",
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.042,
-        "gender expression expression": 0.037
+        "sexuality expression": 0.016,
+        "gender expression expression": 0.201
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
-      "relationship keys": {}
+      "children": {
+        "13741": {
+          "key": 13741,
+          "name": "Rabburgis Bruus",
+          "age": 6,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": {
+              "key": 12518,
+              "name": "Diewiven Colueken",
+              "age": 48,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 12517,
+              "name": "Wein Bruus",
+              "age": 39,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
+          }
+        },
+        "24254": {
+          "key": 24254,
+          "name": "Yda Bruus",
+          "age": 15,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": {
+              "key": 12518,
+              "name": "Diewiven Colueken",
+              "age": 48,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 12517,
+              "name": "Wein Bruus",
+              "age": 39,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
+          }
+        },
+        "30632": {
+          "key": 30632,
+          "name": "Ghoudekinen Bruus",
+          "age": 17,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": {
+              "key": 12518,
+              "name": "Diewiven Colueken",
+              "age": 48,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 12517,
+              "name": "Wein Bruus",
+              "age": 39,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
+          }
+        }
+      },
+      "relationship keys": {
+        "spouse": [
+          12519
+        ],
+        "child": {
+          "birth": [
+            13743,
+            24256,
+            30634
+          ]
+        },
+        "unrelated": [
+          23509
+        ]
+      }
     },
     "occupation": {
       "has job": false,
@@ -55,18 +148,18 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 6,
+      "skin_color": 9,
       "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
-      "hair_length": "medium",
-      "beauty": 0.56,
+      "hair_length": "long",
+      "beauty": 0.646,
       "hair_type": [
-        "C",
-        "S"
+        "S",
+        "C"
       ],
-      "health": 0.665,
-      "fertility": 0.625,
+      "health": 0.641,
+      "fertility": 0.736,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -78,7 +171,31 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.665
+            "new_health": 0.766
+          },
+          "death": false
+        },
+        "1215": {
+          "health": {
+            "change": true,
+            "value_change": -0.125,
+            "new_health": 0.641
+          },
+          "death": false
+        },
+        "1216": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.641
+          },
+          "death": false
+        },
+        "1225": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.641
           },
           "death": true
         }
@@ -89,10 +206,116 @@
           "needs_care": false,
           "taken_care_of": false,
           "caretaker": false
+        },
+        "1216": {
+          "independent": true,
+          "needs_care": false,
+          "taken_care_of": false,
+          "caretaker": true
         }
       },
       "ocupation": {
         "1200": {
+          "has job": false,
+          "income": 0.025
+        },
+        "1201": {
+          "has job": false,
+          "income": 0.025
+        },
+        "1202": {
+          "has job": false,
+          "income": 0.025
+        },
+        "1203": {
+          "has job": false,
+          "income": 0.025
+        },
+        "1204": {
+          "has job": false,
+          "income": 0.025
+        },
+        "1205": {
+          "has job": false,
+          "income": 0.025
+        },
+        "1206": {
+          "has job": false,
+          "income": 0.025
+        },
+        "1207": {
+          "has job": false,
+          "income": 0.025
+        },
+        "1208": {
+          "has job": false,
+          "income": 0.025
+        },
+        "1209": {
+          "has job": false,
+          "income": 0.025
+        },
+        "1210": {
+          "has job": false,
+          "income": 0.025
+        },
+        "1211": {
+          "has job": false,
+          "income": 0.025
+        },
+        "1212": {
+          "has job": false,
+          "income": 0.025
+        },
+        "1213": {
+          "has job": false,
+          "income": 0.025
+        },
+        "1214": {
+          "has job": false,
+          "income": 0.025
+        },
+        "1215": {
+          "has job": false,
+          "income": 0.025
+        },
+        "1216": {
+          "has job": false,
+          "income": 0.025
+        },
+        "1217": {
+          "has job": false,
+          "income": 0.025
+        },
+        "1218": {
+          "has job": false,
+          "income": 0.025
+        },
+        "1219": {
+          "has job": false,
+          "income": 0.025
+        },
+        "1220": {
+          "has job": false,
+          "income": 0.025
+        },
+        "1221": {
+          "has job": false,
+          "income": 0.025
+        },
+        "1222": {
+          "has job": false,
+          "income": 0.025
+        },
+        "1223": {
+          "has job": false,
+          "income": 0.025
+        },
+        "1224": {
+          "has job": false,
+          "income": 0.025
+        },
+        "1225": {
           "has job": false,
           "income": 0.025
         }
@@ -101,7 +324,7 @@
         "1200": [
           {
             "topic": "birth",
-            "year": 1168
+            "year": 1178
           },
           {
             "topic": "new home",
@@ -111,12 +334,358 @@
               "section": "stCromme straet.se3.c2",
               "street": "Cromme straet",
               "neighborhood": "denhof",
-              "unique id": 885
+              "unique id": 879
             }
           },
           {
+            "topic": "new relationship",
+            "key": 12519,
+            "people": [
+              12517,
+              12518
+            ],
+            "people names": [
+              "Wein Bruus",
+              "Diewiven Colueken"
+            ],
+            "people ages": [
+              23,
+              22
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new relationship",
+            "key": 13743,
+            "people": [
+              12518,
+              13741
+            ],
+            "people names": [
+              "Diewiven Colueken",
+              "Rabburgis Bruus"
+            ],
+            "people ages": [
+              23,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 12517,
+            "target name": "Wein Bruus",
+            "state": "out of love",
+            "friendship label": "good friend",
+            "relationship": 12519
+          }
+        ],
+        "1202": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 13743
+          }
+        ],
+        "1205": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "good friend",
+            "relationship": 12519
+          }
+        ],
+        "1206": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 13741,
+              "name": "Rabburgis Bruus",
+              "age": 6,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": {
+                  "key": 12518,
+                  "name": "Diewiven Colueken",
+                  "age": 29,
+                  "alive": true,
+                  "sex": "f",
+                  "parents": "firstgen"
+                },
+                "father": {
+                  "key": 12517,
+                  "name": "Wein Bruus",
+                  "age": 30,
+                  "alive": true,
+                  "sex": "m",
+                  "parents": "firstgen"
+                }
+              }
+            },
+            "cause": "childhood illness",
+            "friendship label": "friend",
+            "label": "child"
+          }
+        ],
+        "1207": [
+          {
+            "topic": "new relationship",
+            "key": 23509,
+            "people": [
+              12497,
+              12518
+            ],
+            "people names": [
+              "Helyana Croppes",
+              "Diewiven Colueken"
+            ],
+            "people ages": [
+              38,
+              30
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1208": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "friend",
+            "relationship": 23509
+          },
+          {
+            "topic": "new relationship",
+            "key": 24256,
+            "people": [
+              12518,
+              24254
+            ],
+            "people names": [
+              "Diewiven Colueken",
+              "Yda Bruus"
+            ],
+            "people ages": [
+              31,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1211": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 24256
+          }
+        ],
+        "1213": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1213
+          },
+          {
+            "topic": "personality change",
+            "change": true,
+            "trait": "lawful-chaotic",
+            "trigger": "trauma",
+            "mod": 0.005
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 24256
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "good friend",
+            "relationship": 23509
+          }
+        ],
+        "1214": [
+          {
+            "topic": "event",
+            "event": "faction upheaval",
+            "faction": "No religion",
+            "year": 1214
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12497,
+              "name": "Helyana Croppes",
+              "age": 45,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "friendship label": "good friend",
+            "label": "unrelated",
+            "love state": "nothing"
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "topic": "new relationship",
+            "key": 30634,
+            "people": [
+              12518,
+              30632
+            ],
+            "people names": [
+              "Diewiven Colueken",
+              "Ghoudekinen Bruus"
+            ],
+            "people ages": [
+              37,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "key": 12519,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12517,
+              "name": "Wein Bruus",
+              "age": 39,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "friendship label": "good friend",
+            "label": "spouse",
+            "love state": "out of love"
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          }
+        ],
+        "1216": [
+          {
+            "topic": "not enough income",
+            "income": 0.07500000000000001,
+            "inhabitants": []
+          }
+        ],
+        "1217": [
+          {
+            "topic": "not enough income",
+            "income": 0.07500000000000001,
+            "inhabitants": []
+          }
+        ],
+        "1218": [
+          {
+            "topic": "not enough income",
+            "income": 0.07500000000000001,
+            "inhabitants": []
+          }
+        ],
+        "1219": [
+          {
+            "topic": "not enough income",
+            "income": 0.07500000000000001,
+            "inhabitants": []
+          }
+        ],
+        "1220": [
+          {
+            "topic": "not enough income",
+            "income": 0.07500000000000001,
+            "inhabitants": []
+          }
+        ],
+        "1221": [
+          {
+            "topic": "not enough income",
+            "income": 0.07500000000000001,
+            "inhabitants": []
+          }
+        ],
+        "1222": [
+          {
+            "topic": "not enough income",
+            "income": 0.07500000000000001,
+            "inhabitants": []
+          }
+        ],
+        "1223": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 24254,
+              "name": "Yda Bruus",
+              "age": 15,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": {
+                  "key": 12518,
+                  "name": "Diewiven Colueken",
+                  "age": 46,
+                  "alive": true,
+                  "sex": "f",
+                  "parents": "firstgen"
+                },
+                "father": {
+                  "key": 12517,
+                  "name": "Wein Bruus",
+                  "age": 39,
+                  "alive": false,
+                  "sex": "m",
+                  "parents": "firstgen"
+                }
+              }
+            },
+            "cause": "starvation",
+            "friendship label": "indifferent",
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.07500000000000001,
+            "inhabitants": []
+          }
+        ],
+        "1224": [
+          {
+            "topic": "not enough income",
+            "income": 0.05,
+            "inhabitants": []
+          }
+        ],
+        "1225": [
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "starvation"
           }
         ]
       }
@@ -128,14 +697,21 @@
       "section": "stCromme straet.se3.c2",
       "street": "Cromme straet",
       "neighborhood": "denhof",
-      "unique id": 885
+      "unique id": 879
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
-      "relationships": []
+      "taken": false,
+      "married": false,
+      "relationships": [
+        12519
+      ]
     },
-    "friends": [],
+    "friends": [
+      12519,
+      13743,
+      30634,
+      23509
+    ],
     "enemies": []
   }
 }

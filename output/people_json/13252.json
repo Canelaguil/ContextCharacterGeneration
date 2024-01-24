@@ -1,31 +1,31 @@
 {
   "13252": {
     "alive": false,
-    "name": "Liedelde",
-    "surname": "Lettele",
-    "full name": "Liedelde Lettele",
+    "name": "Badeloghen",
+    "surname": "Kriec",
+    "full name": "Badeloghen Kriec",
     "born this way": {
       "sexuality label": "bi",
-      "sexuality": 0.601,
-      "romantic interest": 0.768,
-      "sex interest": 0.568,
-      "gender expression": 0.28,
+      "sexuality": 0.527,
+      "romantic interest": 0.672,
+      "sex interest": 0.814,
+      "gender expression": 0.16,
       "sex": "f"
     },
-    "age": 2,
+    "age": 1,
     "birth year": 1200,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
-      0,
-      "working class"
+      3,
+      "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.328,
-      "nice-nasty": 0.814,
-      "honest-false": 0.371,
-      "dream": 0.391,
-      "outgoing": 0.742
+      "lawful-chaotic": 0.312,
+      "nice-nasty": 0.67,
+      "honest-false": 0.0,
+      "dream": 0.542,
+      "outgoing": 0.526
     },
     "homsoc": {
       "means": {
@@ -33,29 +33,27 @@
         "taken_care_of": true,
         "caretaker": true,
         "needs_care": true,
-        "flags": [
-          "starving"
-        ]
+        "flags": []
       },
       "expression": {
-        "sexuality expression": 0.188,
-        "gender expression expression": 0.151
+        "sexuality expression": 0.363,
+        "gender expression expression": 0.06
       }
     },
     "network": {
       "parents": {
         "mother": {
-          "key": 11261,
-          "name": "Remsindis",
-          "age": 21,
+          "key": 12035,
+          "name": "Walburgis Zassen",
+          "age": 36,
           "alive": false,
           "sex": "f",
           "parents": "firstgen"
         },
         "father": {
-          "key": 11260,
-          "name": "Radewijns Lettele",
-          "age": 54,
+          "key": 12034,
+          "name": "Abelkijn Kriec",
+          "age": 50,
           "alive": false,
           "sex": "m",
           "parents": "firstgen"
@@ -72,25 +70,25 @@
     "occupation": {
       "has job": false,
       "income class": [
-        0,
-        "working class"
+        3,
+        "upper middle class"
       ],
-      "income": 0,
+      "income": 0.05,
       "all_incomes": []
     },
     "genetics": {
       "skin_color": 6,
       "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
       "hair_length": "medium",
-      "beauty": 0.289,
+      "beauty": 0.426,
       "hair_type": [
-        "C",
-        "S"
+        "S",
+        "C"
       ],
-      "health": 0.318,
-      "fertility": 0.563,
+      "health": 0.633,
+      "fertility": 0.617,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -100,17 +98,9 @@
       "health": {
         "1201": {
           "health": {
-            "change": true,
-            "value_change": -0.258,
-            "new_health": 0.318
-          },
-          "death": false
-        },
-        "1202": {
-          "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.318
+            "new_health": 0.633
           },
           "death": true
         }
@@ -126,11 +116,7 @@
       "ocupation": {
         "1201": {
           "has job": false,
-          "income": 0
-        },
-        "1202": {
-          "has job": false,
-          "income": 0
+          "income": 0.05
         }
       },
       "events": {
@@ -142,27 +128,27 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 0,
-              "income class label": "working class",
-              "section": "stTrysgens.se1.c0",
-              "street": "Trysgens",
-              "neighborhood": "kampbuurt",
-              "unique id": 437
+              "income class": 3,
+              "income class label": "upper middle class",
+              "section": "stDie lange straet3.se7.c3",
+              "street": "Die lange straet3",
+              "neighborhood": "visbuurt",
+              "unique id": 711
             }
           },
           {
             "topic": "new relationship",
             "key": 13253,
             "people": [
-              11260,
+              12034,
               13252
             ],
             "people names": [
-              "Radewijns Lettele",
-              "Liedelde Lettele"
+              "Abelkijn Kriec",
+              "Badeloghen Kriec"
             ],
             "people ages": [
-              46,
+              48,
               0
             ],
             "label": "parentchild",
@@ -172,29 +158,29 @@
             "topic": "new relationship",
             "key": 13254,
             "people": [
-              11261,
+              12035,
               13252
             ],
             "people names": [
-              "Remsindis",
-              "Liedelde Lettele"
+              "Walburgis Zassen",
+              "Badeloghen Kriec"
             ],
             "people ages": [
-              18,
+              28,
               0
             ],
             "label": "parentchild",
             "committed": false
+          },
+          {
+            "topic": "personality change",
+            "change": true,
+            "trait": "outgoing",
+            "trigger": "neglect",
+            "mod": -0.3
           }
         ],
         "1201": [
-          {
-            "topic": "not enough income",
-            "income": 0.0,
-            "inhabitants": []
-          }
-        ],
-        "1202": [
           {
             "topic": "death",
             "cause": "childhood illness"
@@ -204,19 +190,21 @@
     },
     "key": 13252,
     "home": {
-      "income class": 0,
-      "income class label": "working class",
-      "section": "stTrysgens.se1.c0",
-      "street": "Trysgens",
-      "neighborhood": "kampbuurt",
-      "unique id": 437
+      "income class": 3,
+      "income class label": "upper middle class",
+      "section": "stDie lange straet3.se7.c3",
+      "street": "Die lange straet3",
+      "neighborhood": "visbuurt",
+      "unique id": 711
     },
     "relationship status": {
       "taken": false,
       "married": false,
       "relationships": []
     },
-    "friends": [],
+    "friends": [
+      13254
+    ],
     "enemies": []
   }
 }
