@@ -1,31 +1,31 @@
 {
   "12440": {
     "alive": false,
-    "name": "Trame",
-    "surname": "Svancken",
-    "full name": "Trame Svancken",
+    "name": "Breghlent",
+    "surname": "Bigordel",
+    "full name": "Breghlent Bigordel",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.049,
-      "romantic interest": 0.635,
-      "sex interest": 0.999,
-      "gender expression": 0.05,
+      "sexuality": 0.096,
+      "romantic interest": 0.756,
+      "sex interest": 0.7,
+      "gender expression": 0.102,
       "sex": "f"
     },
-    "age": 22,
-    "birth year": 1179,
+    "age": 21,
+    "birth year": 1184,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Zealots",
     "income class": [
-      2,
-      "middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.648,
-      "nice-nasty": 0.958,
-      "honest-false": 0.073,
-      "dream": 0.24,
-      "outgoing": 0.65
+      "lawful-chaotic": 0.25,
+      "nice-nasty": 0.863,
+      "honest-false": 0.667,
+      "dream": 0.417,
+      "outgoing": 0.564
     },
     "homsoc": {
       "means": {
@@ -36,37 +36,75 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.032,
-        "gender expression expression": 0.031
+        "sexuality expression": 0.053,
+        "gender expression expression": 0.054
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
-      "relationship keys": {}
+      "children": {
+        "18097": {
+          "key": 18097,
+          "name": "Salome",
+          "age": 5,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": {
+              "key": 12440,
+              "name": "Breghlent Bigordel",
+              "age": 21,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 12439,
+              "name": "Siabbo",
+              "age": 54,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
+          }
+        }
+      },
+      "relationship keys": {
+        "spouse": [
+          12441
+        ],
+        "unrelated": [
+          15361
+        ],
+        "child": {
+          "birth": [
+            18099
+          ]
+        }
+      }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        2,
-        "middle class"
+        1,
+        "lower middle class"
       ],
-      "income": 0.025,
+      "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 1,
+      "skin_color": 2,
       "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
-      "hair_length": "long",
-      "beauty": 0.4,
+      "hair_color": "dark brown",
+      "hair_color_code": 1,
+      "hair_length": "short",
+      "beauty": 0.399,
       "hair_type": [
-        "S",
-        "C"
+        "C",
+        "S"
       ],
-      "health": 0.727,
-      "fertility": 0.694,
+      "health": 0.51,
+      "fertility": 0.523,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -78,7 +116,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.727
+            "new_health": 0.51
+          },
+          "death": false
+        },
+        "1204": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.51
           },
           "death": true
         }
@@ -94,48 +140,129 @@
       "ocupation": {
         "1200": {
           "has job": false,
-          "income": 0.025
+          "income": 0
+        },
+        "1201": {
+          "has job": false,
+          "income": 0
+        },
+        "1202": {
+          "has job": false,
+          "income": 0
+        },
+        "1203": {
+          "has job": false,
+          "income": 0
+        },
+        "1204": {
+          "has job": false,
+          "income": 0
         }
       },
       "events": {
         "1200": [
           {
             "topic": "birth",
-            "year": 1179
+            "year": 1184
           },
           {
             "topic": "new home",
             "home": {
-              "income class": 2,
-              "income class label": "middle class",
-              "section": "stOp Havick2.se1.c2",
-              "street": "Op Havick2",
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stDe Vyver.se1.c1",
+              "street": "De Vyver",
               "neighborhood": "denhof",
-              "unique id": 853
+              "unique id": 860
             }
           },
           {
+            "topic": "new relationship",
+            "key": 12441,
+            "people": [
+              12439,
+              12440
+            ],
+            "people names": [
+              "Siabbo",
+              "Breghlent Bigordel"
+            ],
+            "people ages": [
+              38,
+              16
+            ],
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 15361,
+            "people": [
+              12385,
+              12440
+            ],
+            "people names": [
+              "Coppesoeten Callart",
+              "Breghlent Bigordel"
+            ],
+            "people ages": [
+              25,
+              18
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 18099,
+            "people": [
+              12440,
+              18097
+            ],
+            "people names": [
+              "Breghlent Bigordel",
+              "Salome"
+            ],
+            "people ages": [
+              20,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1204": [
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "childbirth"
           }
         ]
       }
     },
     "key": 12440,
     "home": {
-      "income class": 2,
-      "income class label": "middle class",
-      "section": "stOp Havick2.se1.c2",
-      "street": "Op Havick2",
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stDe Vyver.se1.c1",
+      "street": "De Vyver",
       "neighborhood": "denhof",
-      "unique id": 853
+      "unique id": 860
     },
     "relationship status": {
-      "taken": true,
+      "taken": false,
       "married": true,
-      "relationships": []
+      "relationships": [
+        12441
+      ]
     },
-    "friends": [],
+    "friends": [
+      12441,
+      15361
+    ],
     "enemies": []
   }
 }

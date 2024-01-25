@@ -2,18 +2,18 @@
   "12721": {
     "alive": false,
     "name": "Coclike",
-    "surname": "Commer",
-    "full name": "Coclike Commer",
+    "surname": "Criec",
+    "full name": "Coclike Criec",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.015,
-      "romantic interest": 0.991,
-      "sex interest": 0.88,
-      "gender expression": 0.181,
+      "sexuality": 0.019,
+      "romantic interest": 0.766,
+      "sex interest": 0.802,
+      "gender expression": 0.078,
       "sex": "m"
     },
-    "age": 26,
-    "birth year": 1175,
+    "age": 40,
+    "birth year": 1165,
     "sex": "m",
     "faction": "Zealots",
     "income class": [
@@ -21,11 +21,11 @@
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.064,
-      "nice-nasty": 0.103,
-      "honest-false": 0.644,
-      "dream": 0.759,
-      "outgoing": 0.439
+      "lawful-chaotic": 0.454,
+      "nice-nasty": 0.282,
+      "honest-false": 0.465,
+      "dream": 0.572,
+      "outgoing": 0.776
     },
     "homsoc": {
       "means": {
@@ -36,14 +36,78 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.008,
-        "gender expression expression": 0.067
+        "sexuality expression": 0.013,
+        "gender expression expression": 0.0
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
-      "relationship keys": {}
+      "children": {
+        "14382": {
+          "key": 14382,
+          "name": "Franse Criec",
+          "age": 10,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": {
+              "key": 12722,
+              "name": "Truden",
+              "age": 52,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 12721,
+              "name": "Coclike Criec",
+              "age": 40,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
+          }
+        },
+        "16009": {
+          "key": 16009,
+          "name": "Waldrada Criec",
+          "age": 54,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": {
+              "key": 12722,
+              "name": "Truden",
+              "age": 52,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 12721,
+              "name": "Coclike Criec",
+              "age": 40,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
+          }
+        }
+      },
+      "relationship keys": {
+        "spouse": [
+          12723
+        ],
+        "child": {
+          "birth": [
+            14383,
+            16010
+          ]
+        },
+        "unrelated": [
+          18142
+        ]
+      }
     },
     "occupation": {
       "has job": true,
@@ -51,10 +115,14 @@
         3,
         "upper middle class"
       ],
-      "income": 1.082,
+      "income": 1.134,
       "all_incomes": [
-        0.804,
-        1.082
+        1.006,
+        1.148,
+        1.0,
+        0.919,
+        0.947,
+        1.134
       ],
       "job": {
         "lawful": false,
@@ -62,18 +130,18 @@
       }
     },
     "genetics": {
-      "skin_color": 7,
-      "eye_color": "blue",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "skin_color": 5,
+      "eye_color": "brown",
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_length": "medium",
-      "beauty": 0.634,
+      "beauty": 0.639,
       "hair_type": [
-        "S",
+        "C",
         "C"
       ],
-      "health": 0.807,
-      "fertility": 0.76,
+      "health": 0.651,
+      "fertility": 0.682,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -85,7 +153,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.807
+            "new_health": 0.651
+          },
+          "death": false
+        },
+        "1204": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.651
           },
           "death": true
         }
@@ -101,35 +177,131 @@
       "ocupation": {
         "1200": {
           "has job": true,
-          "income": 1.082
+          "income": 1.148
+        },
+        "1201": {
+          "has job": true,
+          "income": 1.0
+        },
+        "1202": {
+          "has job": true,
+          "income": 0.919
+        },
+        "1203": {
+          "has job": true,
+          "income": 0.947
+        },
+        "1204": {
+          "has job": true,
+          "income": 1.134
         }
       },
       "events": {
         "1200": [
           {
             "topic": "birth",
-            "year": 1175
+            "year": 1165
           },
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 0.804
+            "income": 1.006
           },
           {
             "topic": "new home",
             "home": {
               "income class": 3,
               "income class label": "upper middle class",
-              "section": "stDen Hof.se5.c3",
+              "section": "stDen Hof.se7.c3",
               "street": "Den Hof",
               "neighborhood": "denhof",
-              "unique id": 950
+              "unique id": 960
             }
           },
           {
+            "topic": "new relationship",
+            "key": 12723,
+            "people": [
+              12721,
+              12722
+            ],
+            "people names": [
+              "Coclike Criec",
+              "Truden"
+            ],
+            "people ages": [
+              35,
+              17
+            ],
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 14383,
+            "people": [
+              12721,
+              14382
+            ],
+            "people names": [
+              "Coclike Criec",
+              "Franse Criec"
+            ],
+            "people ages": [
+              37,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 16010,
+            "people": [
+              12721,
+              16009
+            ],
+            "people names": [
+              "Coclike Criec",
+              "Waldrada Criec"
+            ],
+            "people ages": [
+              38,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1203": [
+          {
+            "topic": "new relationship",
+            "key": 18142,
+            "people": [
+              12721,
+              10829
+            ],
+            "people names": [
+              "Coclike Criec",
+              "Nannen Banghe"
+            ],
+            "people ages": [
+              39,
+              29
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1204": [
+          {
             "topic": "job notice",
             "notice": "comfortable earnings",
-            "income": 1.082
+            "income": 1.134
           },
           {
             "topic": "death",
@@ -142,17 +314,21 @@
     "home": {
       "income class": 3,
       "income class label": "upper middle class",
-      "section": "stDen Hof.se5.c3",
+      "section": "stDen Hof.se7.c3",
       "street": "Den Hof",
       "neighborhood": "denhof",
-      "unique id": 950
+      "unique id": 960
     },
     "relationship status": {
-      "taken": true,
+      "taken": false,
       "married": true,
-      "relationships": []
+      "relationships": [
+        12723
+      ]
     },
-    "friends": [],
+    "friends": [
+      18142
+    ],
     "enemies": []
   }
 }

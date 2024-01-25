@@ -1,31 +1,31 @@
 {
   "10658": {
     "alive": false,
-    "name": "Heile",
-    "surname": "Spiker",
-    "full name": "Heile Spiker",
+    "name": "Natelien",
+    "surname": "Tay",
+    "full name": "Natelien Tay",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.024,
-      "romantic interest": 0.629,
-      "sex interest": 0.804,
-      "gender expression": 0.042,
+      "sexuality": 0.066,
+      "romantic interest": 0.747,
+      "sex interest": 0.698,
+      "gender expression": 0.108,
       "sex": "f"
     },
-    "age": 28,
-    "birth year": 1176,
+    "age": 26,
+    "birth year": 1177,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.887,
-      "nice-nasty": 0.427,
-      "honest-false": 0.443,
-      "dream": 0.593,
-      "outgoing": 0.516
+      "lawful-chaotic": 0.781,
+      "nice-nasty": 0.789,
+      "honest-false": 0.403,
+      "dream": 0.698,
+      "outgoing": 0.539
     },
     "homsoc": {
       "means": {
@@ -36,41 +36,79 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.015,
-        "gender expression expression": 0.038
+        "sexuality expression": 0.056,
+        "gender expression expression": 0.048
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14479": {
+          "key": 14479,
+          "name": "Ghiselijn Buke",
+          "age": 14,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": {
+              "key": 10658,
+              "name": "Natelien Tay",
+              "age": 26,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 10657,
+              "name": "Herman Buke",
+              "age": 38,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10659
-        ]
+        ],
+        "child": {
+          "birth": [
+            14481
+          ]
+        }
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         2,
         "middle class"
       ],
-      "income": 0.025,
-      "all_incomes": []
+      "income": 0.943,
+      "all_incomes": [
+        0.68,
+        0.943
+      ],
+      "job": {
+        "lawful": true,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 7,
+      "skin_color": 2,
       "eye_color": "brown",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
-      "hair_length": "long",
-      "beauty": 0.626,
+      "hair_color": "blonde",
+      "hair_color_code": 4,
+      "hair_length": "medium",
+      "beauty": 0.748,
       "hair_type": [
         "S",
         "S"
       ],
-      "health": 0.638,
-      "fertility": 0.538,
+      "health": 0.765,
+      "fertility": 0.744,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -82,15 +120,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.638
+            "new_health": 0.765
           },
           "death": false
         },
-        "1203": {
+        "1202": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.638
+            "new_health": 0.765
           },
           "death": true
         }
@@ -113,29 +151,25 @@
           "income": 0.025
         },
         "1202": {
-          "has job": false,
-          "income": 0.025
-        },
-        "1203": {
-          "has job": false,
-          "income": 0.025
+          "has job": true,
+          "income": 0.943
         }
       },
       "events": {
         "1200": [
           {
             "topic": "birth",
-            "year": 1176
+            "year": 1177
           },
           {
             "topic": "new home",
             "home": {
               "income class": 2,
               "income class label": "middle class",
-              "section": "stBloemendaelse straet.se3.c2",
+              "section": "stBloemendaelse straet.se5.c2",
               "street": "Bloemendaelse straet",
               "neighborhood": "agnesbuurt",
-              "unique id": 229
+              "unique id": 233
             }
           },
           {
@@ -146,18 +180,51 @@
               10658
             ],
             "people names": [
-              "Wilbord Storhem",
-              "Heile Spiker"
+              "Herman Buke",
+              "Natelien Tay"
             ],
             "people ages": [
-              43,
-              24
+              25,
+              23
             ],
             "label": "spouse",
             "committed": true
           }
         ],
-        "1203": [
+        "1201": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.68
+          },
+          {
+            "topic": "new relationship",
+            "key": 14481,
+            "people": [
+              10658,
+              14479
+            ],
+            "people names": [
+              "Natelien Tay",
+              "Ghiselijn Buke"
+            ],
+            "people ages": [
+              25,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 10657,
+            "target name": "Herman Buke",
+            "state": "solid love",
+            "friendship label": "friend",
+            "relationship": 10659
+          }
+        ],
+        "1202": [
           {
             "topic": "death",
             "cause": "illness"
@@ -169,10 +236,10 @@
     "home": {
       "income class": 2,
       "income class label": "middle class",
-      "section": "stBloemendaelse straet.se3.c2",
+      "section": "stBloemendaelse straet.se5.c2",
       "street": "Bloemendaelse straet",
       "neighborhood": "agnesbuurt",
-      "unique id": 229
+      "unique id": 233
     },
     "relationship status": {
       "taken": true,

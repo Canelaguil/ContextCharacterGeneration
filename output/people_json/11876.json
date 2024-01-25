@@ -1,19 +1,19 @@
 {
   "11876": {
     "alive": false,
-    "name": "Remsindis",
-    "surname": "Kics",
-    "full name": "Remsindis Kics",
+    "name": "Ghoudekinen",
+    "surname": "",
+    "full name": "Ghoudekinen",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.054,
-      "romantic interest": 0.624,
-      "sex interest": 0.946,
-      "gender expression": 0.0,
+      "sexuality label": "bi",
+      "sexuality": 0.537,
+      "romantic interest": 0.633,
+      "sex interest": 0.421,
+      "gender expression": 0.554,
       "sex": "f"
     },
-    "age": 19,
-    "birth year": 1182,
+    "age": 24,
+    "birth year": 1179,
     "sex": "f",
     "faction": "No religion",
     "income class": [
@@ -21,11 +21,11 @@
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.628,
-      "nice-nasty": 0.589,
-      "honest-false": 0.648,
-      "dream": 0.544,
-      "outgoing": 0.795
+      "lawful-chaotic": 0.067,
+      "nice-nasty": 0.335,
+      "honest-false": 0.389,
+      "dream": 0.234,
+      "outgoing": 0.848
     },
     "homsoc": {
       "means": {
@@ -36,37 +36,81 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.028,
-        "gender expression expression": -0.001
+        "sexuality expression": 0.333,
+        "gender expression expression": 0.362
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
-      "relationship keys": {}
+      "children": {
+        "14028": {
+          "key": 14028,
+          "name": "Eelbout Zalm",
+          "age": 51,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": {
+              "key": 11876,
+              "name": "Ghoudekinen",
+              "age": 24,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 11875,
+              "name": "Huwardo Zalm",
+              "age": 30,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
+          }
+        }
+      },
+      "relationship keys": {
+        "spouse": [
+          11877
+        ],
+        "unrelated": [
+          13978
+        ],
+        "child": {
+          "birth": [
+            14030
+          ]
+        }
+      }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         3,
         "upper middle class"
       ],
-      "income": 0.05,
-      "all_incomes": []
+      "income": 0.592,
+      "all_incomes": [
+        0.592
+      ],
+      "job": {
+        "lawful": false,
+        "honest": false
+      }
     },
     "genetics": {
-      "skin_color": 5,
-      "eye_color": "blue",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "skin_color": 0,
+      "eye_color": "brown",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_length": "medium",
-      "beauty": 0.183,
+      "beauty": 0.163,
       "hair_type": [
         "C",
-        "S"
+        "C"
       ],
-      "health": 0.763,
-      "fertility": 0.79,
+      "health": 0.775,
+      "fertility": 0.792,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -78,7 +122,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.763
+            "new_health": 0.775
+          },
+          "death": false
+        },
+        "1202": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.775
           },
           "death": true
         }
@@ -95,24 +147,95 @@
         "1200": {
           "has job": false,
           "income": 0.05
+        },
+        "1201": {
+          "has job": false,
+          "income": 0.05
+        },
+        "1202": {
+          "has job": false,
+          "income": 0.05
         }
       },
       "events": {
         "1200": [
           {
             "topic": "birth",
-            "year": 1182
+            "year": 1179
           },
           {
             "topic": "new home",
             "home": {
               "income class": 3,
               "income class label": "upper middle class",
-              "section": "stMuurhuysen1.se1.c3",
+              "section": "stMuurhuysen1.se3.c3",
               "street": "Muurhuysen1",
               "neighborhood": "cingelzuid",
-              "unique id": 655
+              "unique id": 663
             }
+          },
+          {
+            "topic": "new relationship",
+            "key": 11877,
+            "people": [
+              11875,
+              11876
+            ],
+            "people names": [
+              "Huwardo Zalm",
+              "Ghoudekinen"
+            ],
+            "people ages": [
+              22,
+              21
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new relationship",
+            "key": 13978,
+            "people": [
+              10829,
+              11876
+            ],
+            "people names": [
+              "Nannen Banghe",
+              "Ghoudekinen"
+            ],
+            "people ages": [
+              26,
+              22
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 14030,
+            "people": [
+              11876,
+              14028
+            ],
+            "people names": [
+              "Ghoudekinen",
+              "Eelbout Zalm"
+            ],
+            "people ages": [
+              22,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1202": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.592
           },
           {
             "topic": "death",
@@ -125,17 +248,21 @@
     "home": {
       "income class": 3,
       "income class label": "upper middle class",
-      "section": "stMuurhuysen1.se1.c3",
+      "section": "stMuurhuysen1.se3.c3",
       "street": "Muurhuysen1",
       "neighborhood": "cingelzuid",
-      "unique id": 655
+      "unique id": 663
     },
     "relationship status": {
-      "taken": true,
+      "taken": false,
       "married": true,
-      "relationships": []
+      "relationships": [
+        11877
+      ]
     },
-    "friends": [],
+    "friends": [
+      13978
+    ],
     "enemies": []
   }
 }

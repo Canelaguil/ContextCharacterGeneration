@@ -1,18 +1,18 @@
 {
   "13411": {
     "alive": false,
-    "name": "Truden",
-    "surname": "Bobel",
-    "full name": "Truden Bobel",
+    "name": "Sywi",
+    "surname": "Brusch",
+    "full name": "Sywi Brusch",
     "born this way": {
-      "sexuality label": "bi",
-      "sexuality": 0.581,
-      "romantic interest": 0.77,
-      "sex interest": 0.868,
-      "gender expression": 0.491,
+      "sexuality label": "straight",
+      "sexuality": 0.046,
+      "romantic interest": 0.741,
+      "sex interest": 0.518,
+      "gender expression": 0.117,
       "sex": "f"
     },
-    "age": 1,
+    "age": 5,
     "birth year": 1200,
     "sex": "f",
     "faction": "Zealots",
@@ -21,39 +21,41 @@
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.505,
-      "nice-nasty": 0.684,
-      "honest-false": 0.437,
-      "dream": 0.588,
-      "outgoing": 0.33
+      "lawful-chaotic": 0.238,
+      "nice-nasty": 0.518,
+      "honest-false": 0.54,
+      "dream": 0.212,
+      "outgoing": 0.037
     },
     "homsoc": {
       "means": {
         "independent": false,
-        "taken_care_of": true,
+        "taken_care_of": false,
         "caretaker": true,
         "needs_care": true,
-        "flags": []
+        "flags": [
+          "neglected"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.251,
-        "gender expression expression": 0.31
+        "sexuality expression": 0.022,
+        "gender expression expression": 0.034
       }
     },
     "network": {
       "parents": {
         "mother": {
-          "key": 12188,
-          "name": "Badeloghen Scamel",
-          "age": 57,
+          "key": 12194,
+          "name": "Suaneka",
+          "age": 58,
           "alive": false,
           "sex": "f",
           "parents": "firstgen"
         },
         "father": {
-          "key": 12187,
-          "name": "Ripperti Bobel",
-          "age": 27,
+          "key": 12193,
+          "name": "Poppo Brusch",
+          "age": 53,
           "alive": false,
           "sex": "m",
           "parents": "firstgen"
@@ -77,18 +79,18 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 5,
+      "skin_color": 6,
       "eye_color": "brown",
-      "hair_color": "red",
-      "hair_color_code": 3,
+      "hair_color": "black",
+      "hair_color_code": 0,
       "hair_length": "medium",
-      "beauty": 0.748,
+      "beauty": 0.791,
       "hair_type": [
         "C",
         "S"
       ],
-      "health": 0.65,
-      "fertility": 0.585,
+      "health": 0.778,
+      "fertility": 0.779,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -100,7 +102,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.65
+            "new_health": 0.778
+          },
+          "death": false
+        },
+        "1205": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.778
           },
           "death": true
         }
@@ -111,10 +121,32 @@
           "needs_care": true,
           "taken_care_of": true,
           "caretaker": true
+        },
+        "1202": {
+          "independent": false,
+          "needs_care": true,
+          "taken_care_of": false,
+          "caretaker": true
         }
       },
       "ocupation": {
         "1201": {
+          "has job": false,
+          "income": 0
+        },
+        "1202": {
+          "has job": false,
+          "income": 0
+        },
+        "1203": {
+          "has job": false,
+          "income": 0
+        },
+        "1204": {
+          "has job": false,
+          "income": 0
+        },
+        "1205": {
           "has job": false,
           "income": 0
         }
@@ -130,25 +162,25 @@
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stNieu straet.se3.c1",
-              "street": "Nieu straet",
+              "section": "stStoof straet.se1.c1",
+              "street": "Stoof straet",
               "neighborhood": "visbuurt",
-              "unique id": 765
+              "unique id": 774
             }
           },
           {
             "topic": "new relationship",
             "key": 13412,
             "people": [
-              12187,
+              12193,
               13411
             ],
             "people names": [
-              "Ripperti Bobel",
-              "Truden Bobel"
+              "Poppo Brusch",
+              "Sywi Brusch"
             ],
             "people ages": [
-              20,
+              36,
               0
             ],
             "label": "parentchild",
@@ -158,25 +190,80 @@
             "topic": "new relationship",
             "key": 13413,
             "people": [
-              12188,
+              12194,
               13411
             ],
             "people names": [
-              "Badeloghen Scamel",
-              "Truden Bobel"
+              "Suaneka",
+              "Sywi Brusch"
             ],
             "people ages": [
-              17,
+              28,
               0
             ],
             "label": "parentchild",
             "committed": false
+          },
+          {
+            "topic": "personality change",
+            "change": true,
+            "trait": "outgoing",
+            "trigger": "neglect",
+            "mod": -0.3
           }
         ],
         "1201": [
           {
+            "topic": "personality change",
+            "change": true,
+            "trait": "outgoing",
+            "trigger": "neglect",
+            "mod": -0.3
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1202": [
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1203": [
+          {
+            "topic": "personality change",
+            "change": true,
+            "trait": "outgoing",
+            "trigger": "neglect",
+            "mod": -0.3
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1204": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 13412
+          },
+          {
+            "topic": "personality change",
+            "change": true,
+            "trait": "outgoing",
+            "trigger": "neglect",
+            "mod": -0.3
+          },
+          {
+            "topic": "neglected"
+          }
+        ],
+        "1205": [
+          {
             "topic": "death",
-            "cause": "childbirth"
+            "cause": "childhood illness"
           }
         ]
       }
@@ -185,17 +272,19 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stNieu straet.se3.c1",
-      "street": "Nieu straet",
+      "section": "stStoof straet.se1.c1",
+      "street": "Stoof straet",
       "neighborhood": "visbuurt",
-      "unique id": 765
+      "unique id": 774
     },
     "relationship status": {
       "taken": false,
       "married": false,
       "relationships": []
     },
-    "friends": [],
+    "friends": [
+      13412
+    ],
     "enemies": []
   }
 }

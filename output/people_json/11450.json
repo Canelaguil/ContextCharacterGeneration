@@ -1,31 +1,31 @@
 {
   "11450": {
     "alive": false,
-    "name": "Oda",
-    "surname": "Ledeghe",
-    "full name": "Oda Ledeghe",
+    "name": "Truden",
+    "surname": "Bone",
+    "full name": "Truden Bone",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.019,
-      "romantic interest": 0.554,
-      "sex interest": 0.632,
-      "gender expression": 0.066,
+      "sexuality label": "gay",
+      "sexuality": 0.982,
+      "romantic interest": 0.7,
+      "sex interest": 0.899,
+      "gender expression": 0.467,
       "sex": "f"
     },
-    "age": 27,
-    "birth year": 1174,
+    "age": 33,
+    "birth year": 1171,
     "sex": "f",
     "faction": "Dogmatists",
     "income class": [
-      3,
-      "upper middle class"
+      1,
+      "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.397,
-      "nice-nasty": 0.034,
-      "honest-false": 0.568,
-      "dream": 0.363,
-      "outgoing": 0.17
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.51,
+      "honest-false": 0.041,
+      "dream": 0.408,
+      "outgoing": 0.662
     },
     "homsoc": {
       "means": {
@@ -36,22 +36,83 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.007,
-        "gender expression expression": 0.015
+        "sexuality expression": 0.622,
+        "gender expression expression": 0.357
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
-      "relationship keys": {}
+      "children": {
+        "13900": {
+          "key": 13900,
+          "name": "Emmelina van Jan",
+          "age": 1,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": {
+              "key": 11450,
+              "name": "Truden Bone",
+              "age": 33,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 11449,
+              "name": "Jan",
+              "age": 55,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
+          }
+        },
+        "16369": {
+          "key": 16369,
+          "name": "Mette Jansdochter",
+          "age": 26,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": {
+              "key": 11450,
+              "name": "Truden Bone",
+              "age": 33,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 11449,
+              "name": "Jan",
+              "age": 55,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
+          }
+        }
+      },
+      "relationship keys": {
+        "spouse": [
+          11451
+        ],
+        "child": {
+          "birth": [
+            13902,
+            16371
+          ]
+        }
+      }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        3,
-        "upper middle class"
+        1,
+        "lower middle class"
       ],
-      "income": 0.05,
+      "income": 0,
       "all_incomes": []
     },
     "genetics": {
@@ -59,14 +120,14 @@
       "eye_color": "green",
       "hair_color": "strawberry blonde",
       "hair_color_code": 5,
-      "hair_length": "long",
-      "beauty": 0.642,
+      "hair_length": "medium",
+      "beauty": 0.526,
       "hair_type": [
-        "C",
-        "S"
+        "S",
+        "C"
       ],
-      "health": 0.669,
-      "fertility": 0.619,
+      "health": 0.237,
+      "fertility": 0.699,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -78,7 +139,31 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.669
+            "new_health": 0.607
+          },
+          "death": false
+        },
+        "1201": {
+          "health": {
+            "change": true,
+            "value_change": -0.37,
+            "new_health": 0.237
+          },
+          "death": false
+        },
+        "1202": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.237
+          },
+          "death": false
+        },
+        "1203": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.237
           },
           "death": true
         }
@@ -94,48 +179,162 @@
       "ocupation": {
         "1200": {
           "has job": false,
-          "income": 0.05
+          "income": 0
+        },
+        "1201": {
+          "has job": false,
+          "income": 0
+        },
+        "1202": {
+          "has job": false,
+          "income": 0
+        },
+        "1203": {
+          "has job": false,
+          "income": 0
         }
       },
       "events": {
         "1200": [
           {
             "topic": "birth",
-            "year": 1174
+            "year": 1171
           },
           {
             "topic": "new home",
             "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stLange gracht.se5.c3",
-              "street": "Lange gracht",
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stPaternoster straetje.se1.c1",
+              "street": "Paternoster straetje",
               "neighborhood": "olvbuurt",
-              "unique id": 508
+              "unique id": 515
             }
           },
           {
+            "topic": "new relationship",
+            "key": 11451,
+            "people": [
+              11449,
+              11450
+            ],
+            "people names": [
+              "Jan",
+              "Truden Bone"
+            ],
+            "people ages": [
+              48,
+              29
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new relationship",
+            "key": 13902,
+            "people": [
+              11450,
+              13900
+            ],
+            "people names": [
+              "Truden Bone",
+              "Emmelina van Jan"
+            ],
+            "people ages": [
+              30,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1201": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 13902
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 13900,
+              "name": "Emmelina van Jan",
+              "age": 1,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": {
+                  "key": 11450,
+                  "name": "Truden Bone",
+                  "age": 31,
+                  "alive": true,
+                  "sex": "f",
+                  "parents": "firstgen"
+                },
+                "father": {
+                  "key": 11449,
+                  "name": "Jan",
+                  "age": 50,
+                  "alive": true,
+                  "sex": "m",
+                  "parents": "firstgen"
+                }
+              }
+            },
+            "cause": "childbirth",
+            "friendship label": "indifferent",
+            "label": "child"
+          }
+        ],
+        "1202": [
+          {
+            "topic": "new relationship",
+            "key": 16371,
+            "people": [
+              11450,
+              16369
+            ],
+            "people names": [
+              "Truden Bone",
+              "Mette Jansdochter"
+            ],
+            "people ages": [
+              31,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1203": [
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "childbirth"
           }
         ]
       }
     },
     "key": 11450,
     "home": {
-      "income class": 3,
-      "income class label": "upper middle class",
-      "section": "stLange gracht.se5.c3",
-      "street": "Lange gracht",
+      "income class": 1,
+      "income class label": "lower middle class",
+      "section": "stPaternoster straetje.se1.c1",
+      "street": "Paternoster straetje",
       "neighborhood": "olvbuurt",
-      "unique id": 508
+      "unique id": 515
     },
     "relationship status": {
       "taken": true,
       "married": true,
-      "relationships": []
+      "relationships": [
+        11451
+      ]
     },
-    "friends": [],
+    "friends": [
+      16371
+    ],
     "enemies": []
   }
 }

@@ -1,67 +1,120 @@
 {
   "11480": {
     "alive": false,
-    "name": "Eingeliadis",
-    "surname": "",
-    "full name": "Eingeliadis",
+    "name": "Hilduardis",
+    "surname": "Keghelaere",
+    "full name": "Hilduardis Keghelaere",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.094,
-      "romantic interest": 0.723,
-      "sex interest": 0.839,
-      "gender expression": 0.066,
+      "sexuality": 0.122,
+      "romantic interest": 0.611,
+      "sex interest": 0.617,
+      "gender expression": 0.115,
       "sex": "f"
     },
-    "age": 29,
-    "birth year": 1174,
+    "age": 53,
+    "birth year": 1177,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "Dogmatists",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.802,
-      "nice-nasty": 0.661,
-      "honest-false": 0.419,
-      "dream": 0.207,
-      "outgoing": 0.68
+      "lawful-chaotic": 0.774,
+      "nice-nasty": 0.356,
+      "honest-false": 0.312,
+      "dream": 0.536,
+      "outgoing": 0.6
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving",
+          "caretaker"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.055,
-        "gender expression expression": 0.051
+        "sexuality expression": 0.076,
+        "gender expression expression": 0.059
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "12886": {
-          "key": 12886,
-          "name": "Kerstine",
+        "13630": {
+          "key": 13630,
+          "name": "Alene van Lardies",
           "age": 54,
           "alive": false,
           "sex": "f",
           "parents": {
             "mother": {
               "key": 11480,
-              "name": "Eingeliadis",
-              "age": 29,
+              "name": "Hilduardis Keghelaere",
+              "age": 53,
               "alive": false,
               "sex": "f",
               "parents": "firstgen"
             },
             "father": {
               "key": 11479,
-              "name": "Jan",
-              "age": 41,
+              "name": "Lardies Oge",
+              "age": 43,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
+          }
+        },
+        "29086": {
+          "key": 29086,
+          "name": "Yoel Siabboszoon",
+          "age": 2,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": {
+              "key": 11480,
+              "name": "Hilduardis Keghelaere",
+              "age": 53,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 12439,
+              "name": "Siabbo",
+              "age": 54,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
+          }
+        },
+        "30051": {
+          "key": 30051,
+          "name": "Ymmekine van Hilduardis",
+          "age": 2,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": {
+              "key": 11480,
+              "name": "Hilduardis Keghelaere",
+              "age": 53,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 12439,
+              "name": "Siabbo",
+              "age": 54,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
@@ -71,37 +124,59 @@
       },
       "relationship keys": {
         "spouse": [
-          11481
+          11481,
+          22200
         ],
         "child": {
           "birth": [
-            12888
+            13632,
+            29088,
+            30053
           ]
-        }
+        },
+        "unrelated": [
+          15383,
+          18183,
+          20950,
+          36561,
+          40654
+        ]
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         1,
         "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 0.94,
+      "all_incomes": [
+        0.965,
+        0.683,
+        1.212,
+        1.103,
+        0.883,
+        0.925,
+        0.94
+      ],
+      "job": {
+        "lawful": false,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 6,
+      "skin_color": 8,
       "eye_color": "blue",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
-      "hair_length": "short",
-      "beauty": 0.35,
+      "hair_color": "black",
+      "hair_color_code": 0,
+      "hair_length": "long",
+      "beauty": 0.763,
       "hair_type": [
         "S",
-        "S"
+        "C"
       ],
-      "health": 0.496,
-      "fertility": 0.581,
+      "health": 0.0,
+      "fertility": 0.741,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -113,15 +188,63 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.496
+            "new_health": 0.732
           },
           "death": false
         },
         "1202": {
           "health": {
+            "change": true,
+            "value_change": -0.203,
+            "new_health": 0.529
+          },
+          "death": false
+        },
+        "1203": {
+          "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.496
+            "new_health": 0.529
+          },
+          "death": false
+        },
+        "1222": {
+          "health": {
+            "change": true,
+            "value_change": -0.244,
+            "new_health": 0.285
+          },
+          "death": false
+        },
+        "1223": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.285
+          },
+          "death": false
+        },
+        "1227": {
+          "health": {
+            "change": true,
+            "value_change": -0.239,
+            "new_health": 0.046
+          },
+          "death": false
+        },
+        "1228": {
+          "health": {
+            "change": true,
+            "value_change": -0.033,
+            "new_health": 0.013
+          },
+          "death": false
+        },
+        "1229": {
+          "health": {
+            "change": true,
+            "value_change": -0.013,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -132,6 +255,12 @@
           "needs_care": false,
           "taken_care_of": false,
           "caretaker": false
+        },
+        "1204": {
+          "independent": true,
+          "needs_care": false,
+          "taken_care_of": false,
+          "caretaker": true
         }
       },
       "ocupation": {
@@ -146,23 +275,131 @@
         "1202": {
           "has job": false,
           "income": 0
+        },
+        "1203": {
+          "has job": false,
+          "income": 0
+        },
+        "1204": {
+          "has job": false,
+          "income": 0
+        },
+        "1205": {
+          "has job": false,
+          "income": 0
+        },
+        "1206": {
+          "has job": false,
+          "income": 0
+        },
+        "1207": {
+          "has job": false,
+          "income": 0
+        },
+        "1208": {
+          "has job": false,
+          "income": 0
+        },
+        "1209": {
+          "has job": false,
+          "income": 0
+        },
+        "1210": {
+          "has job": false,
+          "income": 0
+        },
+        "1211": {
+          "has job": false,
+          "income": 0
+        },
+        "1212": {
+          "has job": false,
+          "income": 0
+        },
+        "1213": {
+          "has job": false,
+          "income": 0
+        },
+        "1214": {
+          "has job": false,
+          "income": 0
+        },
+        "1215": {
+          "has job": false,
+          "income": 0
+        },
+        "1216": {
+          "has job": false,
+          "income": 0
+        },
+        "1217": {
+          "has job": false,
+          "income": 0
+        },
+        "1218": {
+          "has job": false,
+          "income": 0
+        },
+        "1219": {
+          "has job": false,
+          "income": 0
+        },
+        "1220": {
+          "has job": false,
+          "income": 0
+        },
+        "1221": {
+          "has job": false,
+          "income": 0
+        },
+        "1222": {
+          "has job": false,
+          "income": 0
+        },
+        "1223": {
+          "has job": false,
+          "income": 0
+        },
+        "1224": {
+          "has job": true,
+          "income": 0.683
+        },
+        "1225": {
+          "has job": true,
+          "income": 1.212
+        },
+        "1226": {
+          "has job": true,
+          "income": 1.103
+        },
+        "1227": {
+          "has job": true,
+          "income": 0.883
+        },
+        "1228": {
+          "has job": true,
+          "income": 0.925
+        },
+        "1229": {
+          "has job": true,
+          "income": 0.94
         }
       },
       "events": {
         "1200": [
           {
             "topic": "birth",
-            "year": 1174
+            "year": 1177
           },
           {
             "topic": "new home",
             "home": {
               "income class": 1,
               "income class label": "lower middle class",
-              "section": "stPaternoster straetje.se1.c1",
+              "section": "stPaternoster straetje.se3.c1",
               "street": "Paternoster straetje",
               "neighborhood": "olvbuurt",
-              "unique id": 518
+              "unique id": 525
             }
           },
           {
@@ -173,56 +410,538 @@
               11480
             ],
             "people names": [
-              "Jan",
-              "Eingeliadis"
+              "Lardies Oge",
+              "Hilduardis Keghelaere"
             ],
             "people ages": [
-              29,
-              26
+              39,
+              23
             ],
             "label": "spouse",
             "committed": true
           },
           {
             "topic": "new relationship",
-            "key": 12888,
+            "key": 13632,
             "people": [
               11480,
-              12886
+              13630
             ],
             "people names": [
-              "Eingeliadis",
-              "Kerstine"
+              "Hilduardis Keghelaere",
+              "Alene van Lardies"
             ],
             "people ages": [
-              26,
+              24,
               0
             ],
             "label": "parentchild",
             "committed": false
-          },
-          {
-            "topic": "feelings change",
-            "target": 11479,
-            "target name": "Jan",
-            "state": "solid love",
-            "friendship label": "friend",
-            "relationship": 11481
           }
         ],
         "1201": [
+          {
+            "topic": "new relationship",
+            "key": 15383,
+            "people": [
+              11480,
+              10633
+            ],
+            "people names": [
+              "Hilduardis Keghelaere",
+              "Deghen"
+            ],
+            "people ages": [
+              25,
+              37
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1203": [
+          {
+            "key": 11481,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 11479,
+              "name": "Lardies Oge",
+              "age": 43,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "illness",
+            "friendship label": "good friend",
+            "label": "spouse",
+            "love state": "loveless"
+          },
+          {
+            "topic": "new relationship",
+            "key": 18183,
+            "people": [
+              11480,
+              12251
+            ],
+            "people names": [
+              "Hilduardis Keghelaere",
+              "Aleydis Borlutte"
+            ],
+            "people ages": [
+              27,
+              28
+            ],
+            "label": "unrelated",
+            "committed": false
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          }
+        ],
+        "1204": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 13632
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "new relationship",
+            "key": 20950,
+            "people": [
+              10355,
+              11480
+            ],
+            "people names": [
+              "Tetta Curthals",
+              "Hilduardis Keghelaere"
+            ],
+            "people ages": [
+              29,
+              29
+            ],
+            "label": "unrelated",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new home",
+            "home": {
+              "income class": 1,
+              "income class label": "lower middle class",
+              "section": "stDe Vyver.se1.c1",
+              "street": "De Vyver",
+              "neighborhood": "denhof",
+              "unique id": 860
+            }
+          },
+          {
+            "topic": "new relationship",
+            "key": 22200,
+            "people": [
+              12439,
+              11480
+            ],
+            "people names": [
+              "Siabbo",
+              "Hilduardis Keghelaere"
+            ],
+            "people ages": [
+              45,
+              30
+            ],
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1207": [
           {
             "topic": "update",
             "update": "new friendship label",
             "relationship label": "spouse",
             "friendship label": "friend",
-            "relationship": 11481
+            "relationship": 22200
           }
         ],
-        "1202": [
+        "1209": [
+          {
+            "topic": "feelings change",
+            "target": 12439,
+            "target name": "Siabbo",
+            "state": "solid love",
+            "friendship label": "friend",
+            "relationship": 22200
+          }
+        ],
+        "1210": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "friend",
+            "relationship": 20950
+          }
+        ],
+        "1212": [
+          {
+            "topic": "new relationship",
+            "key": 29088,
+            "people": [
+              11480,
+              29086
+            ],
+            "people names": [
+              "Hilduardis Keghelaere",
+              "Yoel Siabboszoon"
+            ],
+            "people ages": [
+              36,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1213": [
+          {
+            "topic": "feelings change",
+            "target": 10633,
+            "target name": "Deghen",
+            "state": "crush",
+            "friendship label": "good friend",
+            "relationship": 15383
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "indifferent",
+            "relationship": 22200
+          },
+          {
+            "topic": "new relationship",
+            "key": 30053,
+            "people": [
+              11480,
+              30051
+            ],
+            "people names": [
+              "Hilduardis Keghelaere",
+              "Ymmekine van Hilduardis"
+            ],
+            "people ages": [
+              37,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1214": [
+          {
+            "topic": "feelings change",
+            "target": 10633,
+            "target name": "Deghen",
+            "state": "nothing",
+            "friendship label": "good friend",
+            "relationship": 15383
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 29088
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 29086,
+              "name": "Yoel Siabboszoon",
+              "age": 2,
+              "alive": false,
+              "sex": "m",
+              "parents": {
+                "mother": {
+                  "key": 11480,
+                  "name": "Hilduardis Keghelaere",
+                  "age": 38,
+                  "alive": true,
+                  "sex": "f",
+                  "parents": "firstgen"
+                },
+                "father": {
+                  "key": 12439,
+                  "name": "Siabbo",
+                  "age": 53,
+                  "alive": true,
+                  "sex": "m",
+                  "parents": "firstgen"
+                }
+              }
+            },
+            "cause": "childhood illness",
+            "friendship label": "indifferent",
+            "label": "child"
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "key": 22200,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12439,
+              "name": "Siabbo",
+              "age": 54,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "friendship label": "indifferent",
+            "label": "spouse",
+            "love state": "out of love"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 30051,
+              "name": "Ymmekine van Hilduardis",
+              "age": 2,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": {
+                  "key": 11480,
+                  "name": "Hilduardis Keghelaere",
+                  "age": 39,
+                  "alive": true,
+                  "sex": "f",
+                  "parents": "firstgen"
+                },
+                "father": {
+                  "key": 12439,
+                  "name": "Siabbo",
+                  "age": 54,
+                  "alive": false,
+                  "sex": "m",
+                  "parents": "firstgen"
+                }
+              }
+            },
+            "cause": "plague",
+            "friendship label": "indifferent",
+            "label": "child"
+          }
+        ],
+        "1216": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1217": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "good friend",
+            "relationship": 15383
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 13632
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "indifferent",
+            "relationship": 20950
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1218": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10633,
+              "name": "Deghen",
+              "age": 54,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "sickness",
+            "friendship label": "good friend",
+            "label": "unrelated",
+            "love state": "nothing"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1219": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1222": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "indifferent",
+            "relationship": 20950
+          }
+        ],
+        "1223": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.965
+          },
+          {
+            "topic": "new relationship",
+            "key": 36561,
+            "people": [
+              11480,
+              10559
+            ],
+            "people names": [
+              "Hilduardis Keghelaere",
+              "Gheesen Compere"
+            ],
+            "people ages": [
+              47,
+              50
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1224": [
+          {
+            "topic": "event",
+            "event": "faction upheaval",
+            "faction": "Zealots",
+            "year": 1224
+          },
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.683
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "good friend",
+            "relationship": 36561
+          }
+        ],
+        "1225": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.212
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 13632
+          }
+        ],
+        "1226": [
+          {
+            "topic": "new relationship",
+            "key": 40654,
+            "people": [
+              12310,
+              11480
+            ],
+            "people names": [
+              "Mense Vroede",
+              "Hilduardis Keghelaere"
+            ],
+            "people ages": [
+              52,
+              50
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1227": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 13632
+          }
+        ],
+        "1228": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10355,
+              "name": "Tetta Curthals",
+              "age": 52,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "old age",
+            "friendship label": "indifferent",
+            "label": "unrelated",
+            "love state": "nothing"
+          }
+        ],
+        "1229": [
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "sickness"
           }
         ]
       }
@@ -231,21 +950,25 @@
     "home": {
       "income class": 1,
       "income class label": "lower middle class",
-      "section": "stPaternoster straetje.se1.c1",
-      "street": "Paternoster straetje",
-      "neighborhood": "olvbuurt",
-      "unique id": 518
+      "section": "stDe Vyver.se1.c1",
+      "street": "De Vyver",
+      "neighborhood": "denhof",
+      "unique id": 860
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
-        11481
+        11481,
+        22200
       ]
     },
     "friends": [
       11481,
-      12888
+      15383,
+      18183,
+      36561,
+      40654
     ],
     "enemies": []
   }

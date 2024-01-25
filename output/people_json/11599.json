@@ -1,31 +1,31 @@
 {
   "11599": {
     "alive": false,
-    "name": "Geldmaro",
-    "surname": "Breede",
-    "full name": "Geldmaro Breede",
+    "name": "Bobone",
+    "surname": "Duker",
+    "full name": "Bobone Duker",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.795,
-      "sex interest": 0.868,
-      "gender expression": 0.083,
+      "sexuality": 0.039,
+      "romantic interest": 0.94,
+      "sex interest": 0.568,
+      "gender expression": 0.0,
       "sex": "m"
     },
-    "age": 36,
-    "birth year": 1165,
+    "age": 42,
+    "birth year": 1161,
     "sex": "m",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
       3,
       "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.536,
-      "nice-nasty": 0.919,
-      "honest-false": 0.447,
-      "dream": 0.414,
-      "outgoing": 0.606
+      "lawful-chaotic": 0.335,
+      "nice-nasty": 0.724,
+      "honest-false": 0.858,
+      "dream": 0.489,
+      "outgoing": 0.245
     },
     "homsoc": {
       "means": {
@@ -36,14 +36,49 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.056
+        "sexuality expression": 0.024,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
-      "relationship keys": {}
+      "children": {
+        "14086": {
+          "key": 14086,
+          "name": "Riuum Duker",
+          "age": 31,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": {
+              "key": 11600,
+              "name": "Rabburgis Vetten",
+              "age": 55,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 11599,
+              "name": "Bobone Duker",
+              "age": 42,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
+          }
+        }
+      },
+      "relationship keys": {
+        "spouse": [
+          11601
+        ],
+        "child": {
+          "birth": [
+            14087
+          ]
+        }
+      }
     },
     "occupation": {
       "has job": true,
@@ -51,29 +86,31 @@
         3,
         "upper middle class"
       ],
-      "income": 1.035,
+      "income": 1.003,
       "all_incomes": [
-        1.009,
-        1.035
+        0.991,
+        1.063,
+        0.968,
+        1.003
       ],
       "job": {
-        "lawful": false,
+        "lawful": true,
         "honest": true
       }
     },
     "genetics": {
       "skin_color": 4,
-      "eye_color": "green",
-      "hair_color": "black",
-      "hair_color_code": 0,
-      "hair_length": "short",
-      "beauty": 0.614,
+      "eye_color": "brown",
+      "hair_color": "blonde",
+      "hair_color_code": 4,
+      "hair_length": "medium",
+      "beauty": 0.503,
       "hair_type": [
         "C",
         "C"
       ],
-      "health": 0.58,
-      "fertility": 0.61,
+      "health": 0.927,
+      "fertility": 0.897,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -85,7 +122,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.58
+            "new_health": 0.927
+          },
+          "death": false
+        },
+        "1202": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.927
           },
           "death": true
         }
@@ -101,19 +146,27 @@
       "ocupation": {
         "1200": {
           "has job": true,
-          "income": 1.035
+          "income": 1.063
+        },
+        "1201": {
+          "has job": true,
+          "income": 0.968
+        },
+        "1202": {
+          "has job": true,
+          "income": 1.003
         }
       },
       "events": {
         "1200": [
           {
             "topic": "birth",
-            "year": 1165
+            "year": 1161
           },
           {
             "topic": "job notice",
             "notice": "found job",
-            "income": 1.009
+            "income": 0.991
           },
           {
             "topic": "new home",
@@ -123,8 +176,58 @@
               "section": "stBreestraat.se3.c3",
               "street": "Breestraat",
               "neighborhood": "olvbuurt",
-              "unique id": 561
+              "unique id": 567
             }
+          },
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.063
+          },
+          {
+            "topic": "new relationship",
+            "key": 11601,
+            "people": [
+              11599,
+              11600
+            ],
+            "people names": [
+              "Bobone Duker",
+              "Rabburgis Vetten"
+            ],
+            "people ages": [
+              39,
+              34
+            ],
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 14087,
+            "people": [
+              11599,
+              14086
+            ],
+            "people names": [
+              "Bobone Duker",
+              "Riuum Duker"
+            ],
+            "people ages": [
+              40,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1202": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.003
           },
           {
             "topic": "death",
@@ -140,14 +243,18 @@
       "section": "stBreestraat.se3.c3",
       "street": "Breestraat",
       "neighborhood": "olvbuurt",
-      "unique id": 561
+      "unique id": 567
     },
     "relationship status": {
       "taken": true,
       "married": true,
-      "relationships": []
+      "relationships": [
+        11601
+      ]
     },
-    "friends": [],
+    "friends": [
+      14087
+    ],
     "enemies": []
   }
 }

@@ -1,31 +1,31 @@
 {
   "10385": {
     "alive": false,
-    "name": "Berta",
-    "surname": "Pluckerose",
-    "full name": "Berta Pluckerose",
+    "name": "Marcibilia",
+    "surname": "",
+    "full name": "Marcibilia",
     "born this way": {
-      "sexuality label": "gay",
-      "sexuality": 0.949,
-      "romantic interest": 0.8,
-      "sex interest": 0.7,
-      "gender expression": 0.313,
+      "sexuality label": "straight",
+      "sexuality": 0.083,
+      "romantic interest": 0.618,
+      "sex interest": 0.639,
+      "gender expression": 0.0,
       "sex": "f"
     },
-    "age": 17,
-    "birth year": 1184,
+    "age": 24,
+    "birth year": 1180,
     "sex": "f",
     "faction": "Dogmatists",
     "income class": [
-      1,
-      "lower middle class"
+      0,
+      "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.828,
-      "nice-nasty": 0.0,
-      "honest-false": 0.602,
-      "dream": 0.126,
-      "outgoing": 0.624
+      "lawful-chaotic": 0.999,
+      "nice-nasty": 0.032,
+      "honest-false": 0.754,
+      "dream": 0.337,
+      "outgoing": 0.667
     },
     "homsoc": {
       "means": {
@@ -33,40 +33,77 @@
         "taken_care_of": false,
         "caretaker": false,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.637,
-        "gender expression expression": 0.192
+        "sexuality expression": 0.069,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
-      "relationship keys": {}
+      "children": {
+        "14422": {
+          "key": 14422,
+          "name": "Segherarden Putoc",
+          "age": 9,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": {
+              "key": 10385,
+              "name": "Marcibilia",
+              "age": 24,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 10384,
+              "name": "Ludolphus Putoc",
+              "age": 53,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
+          }
+        }
+      },
+      "relationship keys": {
+        "spouse": [
+          10386
+        ],
+        "child": {
+          "birth": [
+            14424
+          ]
+        }
+      }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        1,
-        "lower middle class"
+        0,
+        "working class"
       ],
       "income": 0,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 0,
+      "skin_color": 9,
       "eye_color": "brown",
-      "hair_color": "strawberry blonde",
-      "hair_color_code": 5,
+      "hair_color": "brown",
+      "hair_color_code": 2,
       "hair_length": "medium",
-      "beauty": 0.215,
+      "beauty": 0.494,
       "hair_type": [
-        "S",
+        "C",
         "S"
       ],
-      "health": 0.688,
-      "fertility": 0.675,
+      "health": 0.735,
+      "fertility": 0.721,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -78,7 +115,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.688
+            "new_health": 0.735
+          },
+          "death": false
+        },
+        "1203": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.735
           },
           "death": true
         }
@@ -95,47 +140,117 @@
         "1200": {
           "has job": false,
           "income": 0
+        },
+        "1201": {
+          "has job": false,
+          "income": 0
+        },
+        "1202": {
+          "has job": false,
+          "income": 0
+        },
+        "1203": {
+          "has job": false,
+          "income": 0
         }
       },
       "events": {
         "1200": [
           {
             "topic": "birth",
-            "year": 1184
+            "year": 1180
           },
           {
             "topic": "new home",
             "home": {
-              "income class": 1,
-              "income class label": "lower middle class",
-              "section": "stHelle voet.se9.c1",
-              "street": "Helle voet",
+              "income class": 0,
+              "income class label": "working class",
+              "section": "stSt. Joris straet.se1.c0",
+              "street": "St. Joris straet",
               "neighborhood": "jorisbuurt",
-              "unique id": 134
+              "unique id": 137
             }
           },
           {
+            "topic": "new relationship",
+            "key": 10386,
+            "people": [
+              10384,
+              10385
+            ],
+            "people names": [
+              "Ludolphus Putoc",
+              "Marcibilia"
+            ],
+            "people ages": [
+              32,
+              20
+            ],
+            "label": "spouse",
+            "committed": true
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 14424,
+            "people": [
+              10385,
+              14422
+            ],
+            "people names": [
+              "Marcibilia",
+              "Segherarden Putoc"
+            ],
+            "people ages": [
+              22,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1202": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "indifferent",
+            "relationship": 14424
+          },
+          {
+            "topic": "not enough income",
+            "income": 0.739,
+            "inhabitants": []
+          }
+        ],
+        "1203": [
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "starvation"
           }
         ]
       }
     },
     "key": 10385,
     "home": {
-      "income class": 1,
-      "income class label": "lower middle class",
-      "section": "stHelle voet.se9.c1",
-      "street": "Helle voet",
+      "income class": 0,
+      "income class label": "working class",
+      "section": "stSt. Joris straet.se1.c0",
+      "street": "St. Joris straet",
       "neighborhood": "jorisbuurt",
-      "unique id": 134
+      "unique id": 137
     },
     "relationship status": {
       "taken": true,
       "married": true,
-      "relationships": []
+      "relationships": [
+        10386
+      ]
     },
-    "friends": [],
+    "friends": [
+      10386
+    ],
     "enemies": []
   }
 }

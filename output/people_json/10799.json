@@ -1,19 +1,19 @@
 {
   "10799": {
     "alive": false,
-    "name": "Hilduardis",
-    "surname": "Ballinc",
-    "full name": "Hilduardis Ballinc",
+    "name": "Yda",
+    "surname": "Jude",
+    "full name": "Yda Jude",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.094,
-      "romantic interest": 0.648,
-      "sex interest": 0.651,
-      "gender expression": 0.168,
+      "sexuality": 0.028,
+      "romantic interest": 0.746,
+      "sex interest": 0.766,
+      "gender expression": 0.085,
       "sex": "f"
     },
-    "age": 36,
-    "birth year": 1167,
+    "age": 28,
+    "birth year": 1174,
     "sex": "f",
     "faction": "Dogmatists",
     "income class": [
@@ -21,11 +21,11 @@
       "working class"
     ],
     "personality": {
-      "lawful-chaotic": 0.992,
-      "nice-nasty": 0.408,
-      "honest-false": 0.433,
-      "dream": 0.377,
-      "outgoing": 0.528
+      "lawful-chaotic": 0.628,
+      "nice-nasty": 0.171,
+      "honest-false": 0.123,
+      "dream": 0.332,
+      "outgoing": 0.525
     },
     "homsoc": {
       "means": {
@@ -36,20 +36,48 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.083,
-        "gender expression expression": 0.122
+        "sexuality expression": 0.018,
+        "gender expression expression": 0.003
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "12958": {
+          "key": 12958,
+          "name": "Erenboede Pluuier",
+          "age": 57,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": {
+              "key": 10799,
+              "name": "Yda Jude",
+              "age": 28,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 10798,
+              "name": "Godefridus Pluuier",
+              "age": 67,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10800
         ],
-        "unrelated": [
-          14039
-        ]
+        "child": {
+          "birth": [
+            12960
+          ]
+        }
       }
     },
     "occupation": {
@@ -62,18 +90,18 @@
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 2,
-      "eye_color": "green",
+      "skin_color": 1,
+      "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
-      "hair_length": "long",
-      "beauty": 0.148,
+      "hair_length": "medium",
+      "beauty": 0.52,
       "hair_type": [
         "S",
         "C"
       ],
-      "health": 0.614,
-      "fertility": 0.663,
+      "health": 0.768,
+      "fertility": 0.821,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -85,15 +113,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.614
+            "new_health": 0.768
           },
           "death": false
         },
-        "1202": {
+        "1201": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.614
+            "new_health": 0.768
           },
           "death": true
         }
@@ -114,17 +142,13 @@
         "1201": {
           "has job": false,
           "income": 0
-        },
-        "1202": {
-          "has job": false,
-          "income": 0
         }
       },
       "events": {
         "1200": [
           {
             "topic": "birth",
-            "year": 1167
+            "year": 1174
           },
           {
             "topic": "new home",
@@ -134,7 +158,7 @@
               "section": "stDe Tuyt.se1.c0",
               "street": "De Tuyt",
               "neighborhood": "agnesbuurt",
-              "unique id": 281
+              "unique id": 282
             }
           },
           {
@@ -145,39 +169,39 @@
               10799
             ],
             "people names": [
-              "Hildebrandus Cauwen",
-              "Hilduardis Ballinc"
+              "Godefridus Pluuier",
+              "Yda Jude"
             ],
             "people ages": [
-              35,
-              33
+              42,
+              26
             ],
             "label": "spouse",
             "committed": true
           },
           {
             "topic": "new relationship",
-            "key": 14039,
+            "key": 12960,
             "people": [
-              11227,
-              10799
+              10799,
+              12958
             ],
             "people names": [
-              "Lutgeri",
-              "Hilduardis Ballinc"
+              "Yda Jude",
+              "Erenboede Pluuier"
             ],
             "people ages": [
-              44,
-              34
+              26,
+              0
             ],
-            "label": "unrelated",
+            "label": "parentchild",
             "committed": false
           }
         ],
-        "1202": [
+        "1201": [
           {
             "topic": "death",
-            "cause": "illness"
+            "cause": "childbirth"
           }
         ]
       }
@@ -189,18 +213,17 @@
       "section": "stDe Tuyt.se1.c0",
       "street": "De Tuyt",
       "neighborhood": "agnesbuurt",
-      "unique id": 281
+      "unique id": 282
     },
     "relationship status": {
-      "taken": false,
+      "taken": true,
       "married": true,
       "relationships": [
         10800
       ]
     },
     "friends": [
-      10800,
-      14039
+      10800
     ],
     "enemies": []
   }

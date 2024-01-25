@@ -1,59 +1,61 @@
 {
   "13717": {
     "alive": false,
-    "name": "Siwa",
-    "surname": "Bruus",
-    "full name": "Siwa Bruus",
+    "name": "Gheesen",
+    "surname": "Longus",
+    "full name": "Gheesen Longus",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.102,
-      "romantic interest": 0.846,
-      "sex interest": 0.714,
-      "gender expression": 0.069,
+      "sexuality": 0.0,
+      "romantic interest": 0.67,
+      "sex interest": 0.756,
+      "gender expression": 0.211,
       "sex": "f"
     },
-    "age": 1,
+    "age": 2,
     "birth year": 1200,
     "sex": "f",
-    "faction": "Dogmatists",
+    "faction": "Zealots",
     "income class": [
-      3,
-      "upper middle class"
+      2,
+      "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.948,
-      "nice-nasty": 0.65,
-      "honest-false": 0.749,
-      "dream": 0.077,
-      "outgoing": 0.34
+      "lawful-chaotic": 0.499,
+      "nice-nasty": 0.045,
+      "honest-false": 0.54,
+      "dream": 0.334,
+      "outgoing": 0.363
     },
     "homsoc": {
       "means": {
         "independent": false,
-        "taken_care_of": true,
+        "taken_care_of": false,
         "caretaker": true,
         "needs_care": true,
-        "flags": []
+        "flags": [
+          "neglected"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.076,
-        "gender expression expression": 0.04
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.078
       }
     },
     "network": {
       "parents": {
         "mother": {
-          "key": 11447,
-          "name": "Jute Ruffo",
-          "age": 24,
+          "key": 11054,
+          "name": "Erkenradis",
+          "age": 53,
           "alive": false,
           "sex": "f",
           "parents": "firstgen"
         },
         "father": {
-          "key": 11446,
-          "name": "Soi Bruus",
-          "age": 45,
+          "key": 11053,
+          "name": "Pelegrim Longus",
+          "age": 43,
           "alive": false,
           "sex": "m",
           "parents": "firstgen"
@@ -64,31 +66,34 @@
         "parent": [
           13718,
           13719
+        ],
+        "sibling": [
+          14557
         ]
       }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        3,
-        "upper middle class"
+        2,
+        "middle class"
       ],
-      "income": 0.05,
+      "income": 0.025,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 5,
+      "skin_color": 2,
       "eye_color": "brown",
       "hair_color": "black",
       "hair_color_code": 0,
       "hair_length": "medium",
-      "beauty": 0.627,
+      "beauty": 0.367,
       "hair_type": [
         "C",
-        "S"
+        "C"
       ],
-      "health": 0.739,
-      "fertility": 0.76,
+      "health": 0.75,
+      "fertility": 0.688,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -100,7 +105,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.739
+            "new_health": 0.75
+          },
+          "death": false
+        },
+        "1202": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.75
           },
           "death": true
         }
@@ -111,12 +124,22 @@
           "needs_care": true,
           "taken_care_of": true,
           "caretaker": true
+        },
+        "1202": {
+          "independent": false,
+          "needs_care": true,
+          "taken_care_of": false,
+          "caretaker": true
         }
       },
       "ocupation": {
         "1201": {
           "has job": false,
-          "income": 0.05
+          "income": 0.025
+        },
+        "1202": {
+          "has job": false,
+          "income": 0.025
         }
       },
       "events": {
@@ -128,27 +151,27 @@
           {
             "topic": "new home",
             "home": {
-              "income class": 3,
-              "income class label": "upper middle class",
-              "section": "stLange gracht.se5.c3",
-              "street": "Lange gracht",
-              "neighborhood": "olvbuurt",
-              "unique id": 507
+              "income class": 2,
+              "income class label": "middle class",
+              "section": "stDie Camp.se3.c2",
+              "street": "Die Camp",
+              "neighborhood": "kampbuurt",
+              "unique id": 373
             }
           },
           {
             "topic": "new relationship",
             "key": 13718,
             "people": [
-              11446,
+              11053,
               13717
             ],
             "people names": [
-              "Soi Bruus",
-              "Siwa Bruus"
+              "Pelegrim Longus",
+              "Gheesen Longus"
             ],
             "people ages": [
-              21,
+              28,
               0
             ],
             "label": "parentchild",
@@ -158,19 +181,46 @@
             "topic": "new relationship",
             "key": 13719,
             "people": [
-              11447,
+              11054,
               13717
             ],
             "people names": [
-              "Jute Ruffo",
-              "Siwa Bruus"
+              "Erkenradis",
+              "Gheesen Longus"
             ],
             "people ages": [
-              19,
+              18,
               0
             ],
             "label": "parentchild",
             "committed": false
+          }
+        ],
+        "1201": [
+          {
+            "topic": "new relationship",
+            "key": 14557,
+            "people": [
+              13717,
+              14554
+            ],
+            "people names": [
+              "Gheesen Longus",
+              "Aleberna Longus"
+            ],
+            "people ages": [
+              0,
+              0
+            ],
+            "label": "sibling",
+            "committed": false
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 13719
           },
           {
             "topic": "personality change",
@@ -178,9 +228,12 @@
             "trait": "outgoing",
             "trigger": "neglect",
             "mod": -0.3
+          },
+          {
+            "topic": "neglected"
           }
         ],
-        "1201": [
+        "1202": [
           {
             "topic": "death",
             "cause": "childhood illness"
@@ -190,12 +243,12 @@
     },
     "key": 13717,
     "home": {
-      "income class": 3,
-      "income class label": "upper middle class",
-      "section": "stLange gracht.se5.c3",
-      "street": "Lange gracht",
-      "neighborhood": "olvbuurt",
-      "unique id": 507
+      "income class": 2,
+      "income class label": "middle class",
+      "section": "stDie Camp.se3.c2",
+      "street": "Die Camp",
+      "neighborhood": "kampbuurt",
+      "unique id": 373
     },
     "relationship status": {
       "taken": false,
@@ -203,7 +256,8 @@
       "relationships": []
     },
     "friends": [
-      13719
+      13719,
+      14557
     ],
     "enemies": []
   }

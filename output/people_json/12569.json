@@ -1,31 +1,31 @@
 {
   "12569": {
     "alive": false,
-    "name": "Sarre",
-    "surname": "Croppes",
-    "full name": "Sarre Croppes",
+    "name": "Badeloghen",
+    "surname": "",
+    "full name": "Badeloghen",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.078,
-      "romantic interest": 0.957,
-      "sex interest": 0.576,
-      "gender expression": 0.14,
+      "sexuality": 0.035,
+      "romantic interest": 0.688,
+      "sex interest": 0.532,
+      "gender expression": 0.169,
       "sex": "f"
     },
-    "age": 36,
+    "age": 38,
     "birth year": 1168,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
       2,
       "middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.106,
-      "nice-nasty": 0.604,
-      "honest-false": 0.254,
-      "dream": 0.453,
-      "outgoing": 0.445
+      "lawful-chaotic": 0.701,
+      "nice-nasty": 0.688,
+      "honest-false": 0.511,
+      "dream": 0.073,
+      "outgoing": 0.301
     },
     "homsoc": {
       "means": {
@@ -36,17 +36,74 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": 0.063,
-        "gender expression expression": 0.046
+        "sexuality expression": 0.025,
+        "gender expression expression": 0.165
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "16966": {
+          "key": 16966,
+          "name": "Douwen Kics",
+          "age": 55,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": {
+              "key": 12569,
+              "name": "Badeloghen",
+              "age": 38,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 12568,
+              "name": "Reymbernus Kics",
+              "age": 57,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
+          }
+        },
+        "19382": {
+          "key": 19382,
+          "name": "Segher Kics",
+          "age": 12,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": {
+              "key": 12569,
+              "name": "Badeloghen",
+              "age": 38,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 12568,
+              "name": "Reymbernus Kics",
+              "age": 57,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           12570
-        ]
+        ],
+        "child": {
+          "birth": [
+            16968,
+            19384
+          ]
+        }
       }
     },
     "occupation": {
@@ -55,9 +112,12 @@
         2,
         "middle class"
       ],
-      "income": 0.795,
+      "income": 0.6,
       "all_incomes": [
-        0.795
+        1.328,
+        0.905,
+        1.491,
+        0.6
       ],
       "job": {
         "lawful": false,
@@ -66,17 +126,17 @@
     },
     "genetics": {
       "skin_color": 5,
-      "eye_color": "blue",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "eye_color": "brown",
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_length": "short",
-      "beauty": 0.281,
+      "beauty": 0.508,
       "hair_type": [
-        "S",
+        "C",
         "C"
       ],
-      "health": 0.507,
-      "fertility": 0.552,
+      "health": 0.677,
+      "fertility": 0.646,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -88,15 +148,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.507
+            "new_health": 0.677
           },
           "death": false
         },
-        "1203": {
+        "1205": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.507
+            "new_health": 0.677
           },
           "death": true
         }
@@ -123,8 +183,16 @@
           "income": 0.025
         },
         "1203": {
-          "has job": false,
-          "income": 0.025
+          "has job": true,
+          "income": 0.905
+        },
+        "1204": {
+          "has job": true,
+          "income": 1.491
+        },
+        "1205": {
+          "has job": true,
+          "income": 0.6
         }
       },
       "events": {
@@ -141,7 +209,7 @@
               "section": "stCromme straet.se5.c2",
               "street": "Cromme straet",
               "neighborhood": "denhof",
-              "unique id": 896
+              "unique id": 906
             }
           },
           {
@@ -152,22 +220,89 @@
               12569
             ],
             "people names": [
-              "Tiuri Blauoets",
-              "Sarre Croppes"
+              "Reymbernus Kics",
+              "Badeloghen"
             ],
             "people ages": [
-              37,
+              47,
               32
             ],
             "label": "spouse",
             "committed": true
+          },
+          {
+            "topic": "feelings change",
+            "target": 12568,
+            "target name": "Reymbernus Kics",
+            "state": "out of love",
+            "friendship label": "indifferent",
+            "relationship": 12570
+          }
+        ],
+        "1202": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 1.328
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "indifferent",
+            "relationship": 12570
           }
         ],
         "1203": [
           {
+            "topic": "new relationship",
+            "key": 16968,
+            "people": [
+              12569,
+              16966
+            ],
+            "people names": [
+              "Badeloghen",
+              "Douwen Kics"
+            ],
+            "people ages": [
+              35,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1204": [
+          {
             "topic": "job notice",
-            "notice": "found job",
-            "income": 0.795
+            "notice": "comfortable earnings",
+            "income": 1.491
+          },
+          {
+            "topic": "new relationship",
+            "key": 19384,
+            "people": [
+              12569,
+              19382
+            ],
+            "people names": [
+              "Badeloghen",
+              "Segher Kics"
+            ],
+            "people ages": [
+              37,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1205": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.6
           },
           {
             "topic": "death",
@@ -183,7 +318,7 @@
       "section": "stCromme straet.se5.c2",
       "street": "Cromme straet",
       "neighborhood": "denhof",
-      "unique id": 896
+      "unique id": 906
     },
     "relationship status": {
       "taken": true,
@@ -193,7 +328,8 @@
       ]
     },
     "friends": [
-      12570
+      16968,
+      19384
     ],
     "enemies": []
   }

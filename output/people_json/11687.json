@@ -1,31 +1,31 @@
 {
   "11687": {
     "alive": false,
-    "name": "Iris",
-    "surname": "",
-    "full name": "Iris",
+    "name": "Ryccie",
+    "surname": "Mie",
+    "full name": "Ryccie Mie",
     "born this way": {
-      "sexuality label": "straight",
-      "sexuality": 0.0,
-      "romantic interest": 0.73,
-      "sex interest": 0.947,
-      "gender expression": 0.094,
+      "sexuality label": "bi",
+      "sexuality": 0.399,
+      "romantic interest": 0.663,
+      "sex interest": 0.848,
+      "gender expression": 0.0,
       "sex": "f"
     },
-    "age": 39,
-    "birth year": 1162,
+    "age": 37,
+    "birth year": 1165,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "No religion",
     "income class": [
-      4,
-      "nobility"
+      3,
+      "upper middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.451,
-      "nice-nasty": 0.335,
-      "honest-false": 0.375,
-      "dream": 0.636,
-      "outgoing": 0.542
+      "lawful-chaotic": 0.816,
+      "nice-nasty": 0.228,
+      "honest-false": 0.518,
+      "dream": 0.508,
+      "outgoing": 0.582
     },
     "homsoc": {
       "means": {
@@ -36,37 +36,72 @@
         "flags": []
       },
       "expression": {
-        "sexuality expression": -0.001,
-        "gender expression expression": 0.045
+        "sexuality expression": 0.201,
+        "gender expression expression": -0.001
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
-      "relationship keys": {}
+      "children": {
+        "13282": {
+          "key": 13282,
+          "name": "Thedwi van Albertus",
+          "age": 41,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": {
+              "key": 11687,
+              "name": "Ryccie Mie",
+              "age": 37,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 11686,
+              "name": "Albertus",
+              "age": 60,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
+          }
+        }
+      },
+      "relationship keys": {
+        "spouse": [
+          11688
+        ],
+        "child": {
+          "birth": [
+            13284
+          ]
+        }
+      }
     },
     "occupation": {
       "has job": false,
       "income class": [
-        4,
-        "nobility"
+        3,
+        "upper middle class"
       ],
-      "income": 0.1,
+      "income": 0.05,
       "all_incomes": []
     },
     "genetics": {
-      "skin_color": 5,
-      "eye_color": "blue",
-      "hair_color": "blonde",
-      "hair_color_code": 4,
+      "skin_color": 0,
+      "eye_color": "green",
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_length": "short",
-      "beauty": 0.98,
+      "beauty": 0.498,
       "hair_type": [
         "C",
-        "C"
+        "S"
       ],
-      "health": 0.735,
-      "fertility": 0.709,
+      "health": 0.71,
+      "fertility": 0.767,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -78,7 +113,15 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.735
+            "new_health": 0.71
+          },
+          "death": false
+        },
+        "1201": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.71
           },
           "death": true
         }
@@ -94,48 +137,102 @@
       "ocupation": {
         "1200": {
           "has job": false,
-          "income": 0.1
+          "income": 0.05
+        },
+        "1201": {
+          "has job": false,
+          "income": 0.05
         }
       },
       "events": {
         "1200": [
           {
             "topic": "birth",
-            "year": 1162
+            "year": 1165
           },
           {
             "topic": "new home",
             "home": {
-              "income class": 4,
-              "income class label": "nobility",
-              "section": "stLievevrouwe kerch.se3.c4",
+              "income class": 3,
+              "income class label": "upper middle class",
+              "section": "stLievevrouwe kerch.se5.c3",
               "street": "Lievevrouwe kerch",
               "neighborhood": "olvbuurt",
-              "unique id": 592
+              "unique id": 597
             }
           },
           {
+            "topic": "new relationship",
+            "key": 11688,
+            "people": [
+              11686,
+              11687
+            ],
+            "people names": [
+              "Albertus",
+              "Ryccie Mie"
+            ],
+            "people ages": [
+              42,
+              35
+            ],
+            "label": "spouse",
+            "committed": true
+          },
+          {
+            "topic": "new relationship",
+            "key": 13284,
+            "people": [
+              11687,
+              13282
+            ],
+            "people names": [
+              "Ryccie Mie",
+              "Thedwi van Albertus"
+            ],
+            "people ages": [
+              36,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          },
+          {
+            "topic": "feelings change",
+            "target": 11686,
+            "target name": "Albertus",
+            "state": "out of love",
+            "friendship label": "friend",
+            "relationship": 11688
+          }
+        ],
+        "1201": [
+          {
             "topic": "death",
-            "cause": "illness"
+            "cause": "childbirth"
           }
         ]
       }
     },
     "key": 11687,
     "home": {
-      "income class": 4,
-      "income class label": "nobility",
-      "section": "stLievevrouwe kerch.se3.c4",
+      "income class": 3,
+      "income class label": "upper middle class",
+      "section": "stLievevrouwe kerch.se5.c3",
       "street": "Lievevrouwe kerch",
       "neighborhood": "olvbuurt",
-      "unique id": 592
+      "unique id": 597
     },
     "relationship status": {
       "taken": true,
       "married": true,
-      "relationships": []
+      "relationships": [
+        11688
+      ]
     },
-    "friends": [],
+    "friends": [
+      11688
+    ],
     "enemies": []
   }
 }

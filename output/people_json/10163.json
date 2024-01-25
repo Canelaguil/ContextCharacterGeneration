@@ -1,67 +1,95 @@
 {
   "10163": {
     "alive": false,
-    "name": "Aleberna",
-    "surname": "Duker",
-    "full name": "Aleberna Duker",
+    "name": "Margareta",
+    "surname": "Stippekender",
+    "full name": "Margareta Stippekender",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.074,
-      "romantic interest": 0.459,
-      "sex interest": 0.747,
-      "gender expression": 0.182,
+      "sexuality": 0.157,
+      "romantic interest": 0.821,
+      "sex interest": 0.855,
+      "gender expression": 0.027,
       "sex": "f"
     },
-    "age": 32,
-    "birth year": 1172,
+    "age": 55,
+    "birth year": 1166,
     "sex": "f",
-    "faction": "No religion",
+    "faction": "Dogmatists",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.629,
-      "nice-nasty": 0.342,
-      "honest-false": 0.169,
-      "dream": 0.723,
-      "outgoing": 0.889
+      "lawful-chaotic": 0.815,
+      "nice-nasty": 0.37,
+      "honest-false": 0.595,
+      "dream": 0.358,
+      "outgoing": 0.527
     },
     "homsoc": {
       "means": {
         "independent": true,
         "taken_care_of": false,
-        "caretaker": false,
+        "caretaker": true,
         "needs_care": false,
-        "flags": []
+        "flags": [
+          "starving",
+          "caretaker"
+        ]
       },
       "expression": {
-        "sexuality expression": 0.04,
-        "gender expression expression": 0.117
+        "sexuality expression": 0.066,
+        "gender expression expression": 0.021
       }
     },
     "network": {
       "parents": "firstgen",
       "children": {
-        "16025": {
-          "key": 16025,
-          "name": "Alretieren Bigordel",
-          "age": 54,
+        "13231": {
+          "key": 13231,
+          "name": "Margareta Jurresdochter",
+          "age": 16,
           "alive": false,
           "sex": "f",
           "parents": {
             "mother": {
               "key": 10163,
-              "name": "Aleberna Duker",
-              "age": 32,
+              "name": "Margareta Stippekender",
+              "age": 55,
               "alive": false,
               "sex": "f",
               "parents": "firstgen"
             },
             "father": {
               "key": 10162,
-              "name": "Alwin Bigordel",
-              "age": 43,
+              "name": "Jurre",
+              "age": 52,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
+          }
+        },
+        "24308": {
+          "key": 24308,
+          "name": "Badeloghen van Margareta",
+          "age": 10,
+          "alive": false,
+          "sex": "f",
+          "parents": {
+            "mother": {
+              "key": 10163,
+              "name": "Margareta Stippekender",
+              "age": 55,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 10162,
+              "name": "Jurre",
+              "age": 52,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
@@ -75,9 +103,14 @@
         ],
         "child": {
           "birth": [
-            16027
+            13233,
+            24310
           ]
-        }
+        },
+        "unrelated": [
+          19579,
+          22222
+        ]
       }
     },
     "occupation": {
@@ -91,17 +124,17 @@
     },
     "genetics": {
       "skin_color": 6,
-      "eye_color": "green",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "eye_color": "blue",
+      "hair_color": "blonde",
+      "hair_color_code": 4,
       "hair_length": "medium",
-      "beauty": 0.396,
+      "beauty": 0.74,
       "hair_type": [
         "S",
         "C"
       ],
-      "health": 0.571,
-      "fertility": 0.544,
+      "health": 0.0,
+      "fertility": 0.766,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -113,15 +146,47 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.571
+            "new_health": 0.72
           },
           "death": false
         },
-        "1203": {
+        "1216": {
           "health": {
-            "change": false,
-            "value_change": 0.0,
-            "new_health": 0.571
+            "change": true,
+            "value_change": -0.182,
+            "new_health": 0.538
+          },
+          "death": false
+        },
+        "1217": {
+          "health": {
+            "change": true,
+            "value_change": -0.245,
+            "new_health": 0.293
+          },
+          "death": false
+        },
+        "1218": {
+          "health": {
+            "change": true,
+            "value_change": -0.171,
+            "new_health": 0.122
+          },
+          "death": false
+        },
+        "1219": {
+          "health": {
+            "change": true,
+            "value_change": -0.104,
+            "new_health": 0.018
+          },
+          "death": false
+        },
+        "1220": {
+          "health": {
+            "change": true,
+            "value_change": -0.018,
+            "new_health": 0.0
           },
           "death": true
         }
@@ -132,6 +197,12 @@
           "needs_care": false,
           "taken_care_of": false,
           "caretaker": false
+        },
+        "1210": {
+          "independent": true,
+          "needs_care": false,
+          "taken_care_of": false,
+          "caretaker": true
         }
       },
       "ocupation": {
@@ -150,13 +221,81 @@
         "1203": {
           "has job": false,
           "income": 0
+        },
+        "1204": {
+          "has job": false,
+          "income": 0
+        },
+        "1205": {
+          "has job": false,
+          "income": 0
+        },
+        "1206": {
+          "has job": false,
+          "income": 0
+        },
+        "1207": {
+          "has job": false,
+          "income": 0
+        },
+        "1208": {
+          "has job": false,
+          "income": 0
+        },
+        "1209": {
+          "has job": false,
+          "income": 0
+        },
+        "1210": {
+          "has job": false,
+          "income": 0
+        },
+        "1211": {
+          "has job": false,
+          "income": 0
+        },
+        "1212": {
+          "has job": false,
+          "income": 0
+        },
+        "1213": {
+          "has job": false,
+          "income": 0
+        },
+        "1214": {
+          "has job": false,
+          "income": 0
+        },
+        "1215": {
+          "has job": false,
+          "income": 0
+        },
+        "1216": {
+          "has job": false,
+          "income": 0
+        },
+        "1217": {
+          "has job": false,
+          "income": 0
+        },
+        "1218": {
+          "has job": false,
+          "income": 0
+        },
+        "1219": {
+          "has job": false,
+          "income": 0
+        },
+        "1220": {
+          "has job": false,
+          "income": 0
         }
       },
       "events": {
         "1200": [
           {
             "topic": "birth",
-            "year": 1172
+            "year": 1166
           },
           {
             "topic": "new home",
@@ -166,7 +305,7 @@
               "section": "stKoe straet.se1.c1",
               "street": "Koe straet",
               "neighborhood": "varkensbuurt",
-              "unique id": 57
+              "unique id": 56
             }
           },
           {
@@ -177,51 +316,338 @@
               10163
             ],
             "people names": [
-              "Alwin Bigordel",
-              "Aleberna Duker"
+              "Jurre",
+              "Margareta Stippekender"
             ],
             "people ages": [
-              29,
-              28
+              42,
+              34
             ],
             "label": "spouse",
             "committed": true
-          }
-        ],
-        "1201": [
-          {
-            "topic": "feelings change",
-            "target": 10162,
-            "target name": "Alwin Bigordel",
-            "state": "out of love",
-            "friendship label": "friend",
-            "relationship": 10164
-          }
-        ],
-        "1202": [
+          },
           {
             "topic": "new relationship",
-            "key": 16027,
+            "key": 13233,
             "people": [
               10163,
-              16025
+              13231
             ],
             "people names": [
-              "Aleberna Duker",
-              "Alretieren Bigordel"
+              "Margareta Stippekender",
+              "Margareta Jurresdochter"
             ],
             "people ages": [
-              31,
+              34,
               0
             ],
             "label": "parentchild",
             "committed": false
           }
         ],
-        "1203": [
+        "1201": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "spouse",
+            "friendship label": "indifferent",
+            "relationship": 10164
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 19579,
+            "people": [
+              10267,
+              10163
+            ],
+            "people names": [
+              "Pieter Cum Macula",
+              "Margareta Stippekender"
+            ],
+            "people ages": [
+              26,
+              39
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1206": [
+          {
+            "topic": "new relationship",
+            "key": 22222,
+            "people": [
+              10163,
+              12272
+            ],
+            "people names": [
+              "Margareta Stippekender",
+              "Pietersen Auonde"
+            ],
+            "people ages": [
+              41,
+              36
+            ],
+            "label": "unrelated",
+            "committed": false
+          }
+        ],
+        "1207": [
+          {
+            "topic": "feelings change",
+            "target": 10162,
+            "target name": "Jurre",
+            "state": "out of love",
+            "friendship label": "indifferent",
+            "relationship": 10164
+          }
+        ],
+        "1208": [
+          {
+            "topic": "new relationship",
+            "key": 24310,
+            "people": [
+              10163,
+              24308
+            ],
+            "people names": [
+              "Margareta Stippekender",
+              "Badeloghen van Margareta"
+            ],
+            "people ages": [
+              42,
+              0
+            ],
+            "label": "parentchild",
+            "committed": false
+          }
+        ],
+        "1209": [
+          {
+            "topic": "feelings change",
+            "target": 10267,
+            "target name": "Pieter Cum Macula",
+            "state": "nothing",
+            "friendship label": "friend",
+            "relationship": 19579
+          },
+          {
+            "key": 10164,
+            "topic": "unmarried"
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 10162,
+              "name": "Jurre",
+              "age": 52,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            },
+            "cause": "old age",
+            "friendship label": "indifferent",
+            "label": "spouse",
+            "love state": "out of love"
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          }
+        ],
+        "1210": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "unrelated",
+            "friendship label": "friend",
+            "relationship": 22222
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 12272,
+              "name": "Pietersen Auonde",
+              "age": 40,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "cause": "childbirth",
+            "friendship label": "friend",
+            "label": "unrelated",
+            "love state": "nothing"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1211": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1212": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1213": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1214": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "friend",
+            "relationship": 24310
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          },
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "good friend",
+            "relationship": 13233
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1216": [
+          {
+            "topic": "person died",
+            "person": {
+              "key": 13231,
+              "name": "Margareta Jurresdochter",
+              "age": 16,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": {
+                  "key": 10163,
+                  "name": "Margareta Stippekender",
+                  "age": 51,
+                  "alive": true,
+                  "sex": "f",
+                  "parents": "firstgen"
+                },
+                "father": {
+                  "key": 10162,
+                  "name": "Jurre",
+                  "age": 52,
+                  "alive": false,
+                  "sex": "m",
+                  "parents": "firstgen"
+                }
+              }
+            },
+            "cause": "starvation",
+            "friendship label": "good friend",
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1217": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "good friend",
+            "relationship": 24310
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1218": [
+          {
+            "topic": "update",
+            "update": "new friendship label",
+            "relationship label": "parentchild",
+            "friendship label": "good friend",
+            "relationship": 24310
+          },
+          {
+            "topic": "person died",
+            "person": {
+              "key": 24308,
+              "name": "Badeloghen van Margareta",
+              "age": 10,
+              "alive": false,
+              "sex": "f",
+              "parents": {
+                "mother": {
+                  "key": 10163,
+                  "name": "Margareta Stippekender",
+                  "age": 53,
+                  "alive": true,
+                  "sex": "f",
+                  "parents": "firstgen"
+                },
+                "father": {
+                  "key": 10162,
+                  "name": "Jurre",
+                  "age": 52,
+                  "alive": false,
+                  "sex": "m",
+                  "parents": "firstgen"
+                }
+              }
+            },
+            "cause": "starvation",
+            "friendship label": "good friend",
+            "label": "child"
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1219": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1220": [
           {
             "topic": "death",
-            "cause": "childbirth"
+            "cause": "sickness"
           }
         ]
       }
@@ -233,18 +659,20 @@
       "section": "stKoe straet.se1.c1",
       "street": "Koe straet",
       "neighborhood": "varkensbuurt",
-      "unique id": 57
+      "unique id": 56
     },
     "relationship status": {
-      "taken": true,
-      "married": true,
+      "taken": false,
+      "married": false,
       "relationships": [
         10164
       ]
     },
     "friends": [
-      10164,
-      16027
+      13233,
+      24310,
+      19579,
+      22222
     ],
     "enemies": []
   }

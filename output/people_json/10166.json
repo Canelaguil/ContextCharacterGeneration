@@ -1,31 +1,31 @@
 {
   "10166": {
     "alive": false,
-    "name": "Siwa",
+    "name": "Esa",
     "surname": "",
-    "full name": "Siwa",
+    "full name": "Esa",
     "born this way": {
       "sexuality label": "straight",
-      "sexuality": 0.101,
-      "romantic interest": 0.837,
-      "sex interest": 0.999,
-      "gender expression": 0.099,
+      "sexuality": 0.0,
+      "romantic interest": 0.989,
+      "sex interest": 0.752,
+      "gender expression": 0.142,
       "sex": "f"
     },
-    "age": 48,
-    "birth year": 1163,
+    "age": 36,
+    "birth year": 1184,
     "sex": "f",
-    "faction": "Zealots",
+    "faction": "Dogmatists",
     "income class": [
       1,
       "lower middle class"
     ],
     "personality": {
-      "lawful-chaotic": 0.304,
-      "nice-nasty": 0.031,
-      "honest-false": 0.263,
-      "dream": 0.223,
-      "outgoing": 0.866
+      "lawful-chaotic": 0.09,
+      "nice-nasty": 0.521,
+      "honest-false": 0.441,
+      "dream": 0.342,
+      "outgoing": 0.3
     },
     "homsoc": {
       "means": {
@@ -34,48 +34,96 @@
         "caretaker": false,
         "needs_care": false,
         "flags": [
-          "starving"
+          "starving",
+          "caretaker"
         ]
       },
       "expression": {
-        "sexuality expression": 0.027,
-        "gender expression expression": 0.087
+        "sexuality expression": -0.001,
+        "gender expression expression": 0.044
       }
     },
     "network": {
       "parents": "firstgen",
-      "children": {},
+      "children": {
+        "14492": {
+          "key": 14492,
+          "name": "Lennot van Hubrecht",
+          "age": 27,
+          "alive": false,
+          "sex": "m",
+          "parents": {
+            "mother": {
+              "key": 10166,
+              "name": "Esa",
+              "age": 36,
+              "alive": false,
+              "sex": "f",
+              "parents": "firstgen"
+            },
+            "father": {
+              "key": 10165,
+              "name": "Hubrecht",
+              "age": 25,
+              "alive": false,
+              "sex": "m",
+              "parents": "firstgen"
+            }
+          }
+        }
+      },
       "relationship keys": {
         "spouse": [
           10167
         ],
+        "child": {
+          "birth": [
+            14494
+          ]
+        },
         "unrelated": [
-          15406
+          19529,
+          20986
         ]
       }
     },
     "occupation": {
-      "has job": false,
+      "has job": true,
       "income class": [
         1,
         "lower middle class"
       ],
-      "income": 0,
-      "all_incomes": []
+      "income": 1.071,
+      "all_incomes": [
+        0.637,
+        1.065,
+        0.737,
+        1.06,
+        1.054,
+        1.1,
+        0.926,
+        1.137,
+        1.013,
+        1.071
+      ],
+      "job": {
+        "lawful": false,
+        "honest": true
+      }
     },
     "genetics": {
-      "skin_color": 3,
+      "skin_color": 1,
       "eye_color": "brown",
-      "hair_color": "black",
-      "hair_color_code": 0,
+      "hair_color": "strawberry blonde",
+      "hair_color_code": 5,
       "hair_length": "medium",
-      "beauty": 0.595,
+      "beauty": 0.447,
       "hair_type": [
         "S",
         "C"
       ],
-      "health": 0.603,
-      "fertility": 0.689,
+      "health": 0.262,
+      "fertility": 0.541,
       "communication_impaired": false,
       "mobility_impaired": false,
       "cognitive_impaired": false,
@@ -87,21 +135,49 @@
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.603
+            "new_health": 0.559
           },
           "death": false
         },
-        "1210": {
+        "1217": {
+          "health": {
+            "change": true,
+            "value_change": -0.297,
+            "new_health": 0.262
+          },
+          "death": false
+        },
+        "1218": {
           "health": {
             "change": false,
             "value_change": 0.0,
-            "new_health": 0.603
+            "new_health": 0.262
+          },
+          "death": false
+        },
+        "1219": {
+          "health": {
+            "change": false,
+            "value_change": 0.0,
+            "new_health": 0.262
           },
           "death": true
         }
       },
       "homsoc": {
         "1200": {
+          "independent": true,
+          "needs_care": false,
+          "taken_care_of": false,
+          "caretaker": false
+        },
+        "1203": {
+          "independent": true,
+          "needs_care": false,
+          "taken_care_of": false,
+          "caretaker": true
+        },
+        "1218": {
           "independent": true,
           "needs_care": false,
           "taken_care_of": false,
@@ -152,13 +228,49 @@
         "1210": {
           "has job": false,
           "income": 0
+        },
+        "1211": {
+          "has job": true,
+          "income": 1.065
+        },
+        "1212": {
+          "has job": true,
+          "income": 0.737
+        },
+        "1213": {
+          "has job": true,
+          "income": 1.06
+        },
+        "1214": {
+          "has job": true,
+          "income": 1.054
+        },
+        "1215": {
+          "has job": true,
+          "income": 1.1
+        },
+        "1216": {
+          "has job": true,
+          "income": 0.926
+        },
+        "1217": {
+          "has job": true,
+          "income": 1.137
+        },
+        "1218": {
+          "has job": true,
+          "income": 1.013
+        },
+        "1219": {
+          "has job": true,
+          "income": 1.071
         }
       },
       "events": {
         "1200": [
           {
             "topic": "birth",
-            "year": 1163
+            "year": 1184
           },
           {
             "topic": "new home",
@@ -168,7 +280,7 @@
               "section": "stKoe straet.se1.c1",
               "street": "Koe straet",
               "neighborhood": "varkensbuurt",
-              "unique id": 58
+              "unique id": 57
             }
           },
           {
@@ -179,12 +291,12 @@
               10166
             ],
             "people names": [
-              "Thitardo Euer",
-              "Siwa"
+              "Hubrecht",
+              "Esa"
             ],
             "people ages": [
-              44,
-              37
+              22,
+              16
             ],
             "label": "spouse",
             "committed": true
@@ -195,48 +307,29 @@
             "topic": "update",
             "update": "new friendship label",
             "relationship label": "spouse",
-            "friendship label": "friend",
+            "friendship label": "indifferent",
             "relationship": 10167
           },
           {
             "topic": "new relationship",
-            "key": 15406,
+            "key": 14494,
             "people": [
               10166,
-              11666
+              14492
             ],
             "people names": [
-              "Siwa",
-              "Thedwi Froes"
+              "Esa",
+              "Lennot van Hubrecht"
             ],
             "people ages": [
-              39,
-              48
+              17,
+              0
             ],
-            "label": "unrelated",
+            "label": "parentchild",
             "committed": false
           }
         ],
-        "1203": [
-          {
-            "topic": "feelings change",
-            "target": 10165,
-            "target name": "Thitardo Euer",
-            "state": "solid love",
-            "friendship label": "friend",
-            "relationship": 10167
-          }
-        ],
-        "1205": [
-          {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "unrelated",
-            "friendship label": "friend",
-            "relationship": 15406
-          }
-        ],
-        "1206": [
+        "1202": [
           {
             "key": 10167,
             "topic": "unmarried"
@@ -245,16 +338,84 @@
             "topic": "person died",
             "person": {
               "key": 10165,
-              "name": "Thitardo Euer",
-              "age": 51,
+              "name": "Hubrecht",
+              "age": 25,
               "alive": false,
               "sex": "m",
               "parents": "firstgen"
             },
-            "cause": "old age",
-            "friendship label": "friend",
+            "cause": "illness",
+            "friendship label": "indifferent",
             "label": "spouse",
-            "love state": "solid love"
+            "love state": "loveless"
+          },
+          {
+            "topic": "now caretaker",
+            "care dependants": []
+          }
+        ],
+        "1203": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1204": [
+          {
+            "topic": "new relationship",
+            "key": 19529,
+            "people": [
+              10166,
+              12395
+            ],
+            "people names": [
+              "Esa",
+              "Vreile Stamelart"
+            ],
+            "people ages": [
+              21,
+              22
+            ],
+            "label": "unrelated",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1205": [
+          {
+            "topic": "new relationship",
+            "key": 20986,
+            "people": [
+              10166,
+              12697
+            ],
+            "people names": [
+              "Esa",
+              "Richolfus"
+            ],
+            "people ages": [
+              22,
+              31
+            ],
+            "label": "unrelated",
+            "committed": false
+          },
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1206": [
+          {
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
           }
         ],
         "1207": [
@@ -266,24 +427,32 @@
         ],
         "1208": [
           {
-            "topic": "update",
-            "update": "new friendship label",
-            "relationship label": "unrelated",
-            "friendship label": "friend",
-            "relationship": 15406
+            "topic": "not enough income",
+            "income": 0,
+            "inhabitants": []
+          }
+        ],
+        "1209": [
+          {
+            "topic": "feelings change",
+            "target": 12697,
+            "target name": "Richolfus",
+            "state": "crush",
+            "friendship label": "good friend",
+            "relationship": 20986
           },
           {
             "topic": "person died",
             "person": {
-              "key": 11666,
-              "name": "Thedwi Froes",
-              "age": 55,
+              "key": 12395,
+              "name": "Vreile Stamelart",
+              "age": 27,
               "alive": false,
               "sex": "f",
               "parents": "firstgen"
             },
-            "cause": "sickness",
-            "friendship label": "friend",
+            "cause": "childbirth",
+            "friendship label": "good friend",
             "label": "unrelated",
             "love state": "nothing"
           },
@@ -293,17 +462,104 @@
             "inhabitants": []
           }
         ],
-        "1209": [
+        "1210": [
+          {
+            "topic": "job notice",
+            "notice": "found job",
+            "income": 0.637
+          },
           {
             "topic": "not enough income",
             "income": 0,
             "inhabitants": []
           }
         ],
-        "1210": [
+        "1211": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.065
+          },
+          {
+            "topic": "feelings change",
+            "target": 12697,
+            "target name": "Richolfus",
+            "state": "in love",
+            "friendship label": "good friend",
+            "relationship": 20986
+          }
+        ],
+        "1212": [
+          {
+            "topic": "job notice",
+            "notice": "low income",
+            "income": 0.737
+          }
+        ],
+        "1213": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.06
+          },
+          {
+            "topic": "feelings change",
+            "target": 12697,
+            "target name": "Richolfus",
+            "state": "nothing",
+            "friendship label": "good friend",
+            "relationship": 20986
+          }
+        ],
+        "1215": [
+          {
+            "topic": "event",
+            "event": "plague",
+            "year": 1215
+          }
+        ],
+        "1216": [
+          {
+            "topic": "feelings change",
+            "target": 12697,
+            "target name": "Richolfus",
+            "state": "crush",
+            "friendship label": "good friend",
+            "relationship": 20986
+          }
+        ],
+        "1217": [
+          {
+            "topic": "job notice",
+            "notice": "comfortable earnings",
+            "income": 1.137
+          },
+          {
+            "topic": "feelings change",
+            "target": 12697,
+            "target name": "Richolfus",
+            "state": "in love",
+            "friendship label": "good friend",
+            "relationship": 20986
+          },
+          {
+            "topic": "not caretaker"
+          }
+        ],
+        "1218": [
+          {
+            "topic": "feelings change",
+            "target": 12697,
+            "target name": "Richolfus",
+            "state": "nothing",
+            "friendship label": "good friend",
+            "relationship": 20986
+          }
+        ],
+        "1219": [
           {
             "topic": "death",
-            "cause": "starvation"
+            "cause": "illness"
           }
         ]
       }
@@ -315,7 +571,7 @@
       "section": "stKoe straet.se1.c1",
       "street": "Koe straet",
       "neighborhood": "varkensbuurt",
-      "unique id": 58
+      "unique id": 57
     },
     "relationship status": {
       "taken": false,
@@ -325,8 +581,8 @@
       ]
     },
     "friends": [
-      10167,
-      15406
+      19529,
+      20986
     ],
     "enemies": []
   }

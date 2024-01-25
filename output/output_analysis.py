@@ -1,12 +1,13 @@
 import json
 import matplotlib.pyplot as plt
+from matplotlib.markers import MarkerStyle
 import argparse
 import random
 import numpy as np
 import sys, os
 
 experiment = 'AAADefault_'
-def plot(x, y, title, xlabel='', ylabel=''):
+def plot(x, y, title, xlabel='', ylabel='', stretch=False):
     if isinstance(y[0], tuple):
         # print(y)
         for subY in y:
@@ -14,6 +15,10 @@ def plot(x, y, title, xlabel='', ylabel=''):
         plt.legend()
     else:
         plt.plot(x, y)
+
+    if stretch:
+        fig = plt.gcf()
+        fig.set_size_inches(9, 4)    
     plt.title(title)
     plt.xlabel(xlabel)
     plt.ylabel(ylabel)
@@ -21,13 +26,17 @@ def plot(x, y, title, xlabel='', ylabel=''):
     plt.savefig(f'output/analysis/plots/{experiment}{title}.png')
     plt.close()
 
-def plot_scatter(x, y, title, xlabel='', ylabel='', all_xticks=False):
+def plot_scatter(x, y, title, xlabel='', ylabel='', all_xticks=False, stretch=False):
     if isinstance(y[0], tuple):
         for subY in y:
-            plt.scatter(x, subY[0], label=subY[1])
+            plt.scatter(x, subY[0], label=subY[1],  s=0.3, linewidth=0)
         plt.legend()
     else:
-        plt.scatter(x, y)
+        plt.scatter(x, y, s=0.3, linewidth=0)
+        
+    if stretch:
+        fig = plt.gcf()
+        fig.set_size_inches(9, 4)   
     plt.title(title)
     plt.xlabel(xlabel)
     plt.ylabel(ylabel)
@@ -78,13 +87,34 @@ def relationship_analysis():
         dfs.append(difference)
         cmp.append(compatiblity)
     plot_scatter(cmp, dfs, 'Relationship trajectory with compatiblity', 
-                 'compatibility score', 'difference during relationship')
+                 'compatibility score', 'difference during relationship', True)
     plot_bar(no_children, 'Frequency of number of children per relationship with heterosexual sex', xlabel='Number of children', ylabel='Frequency')
+
+def get_network_and_event_size(p):
+    life_events = 0
+    network_size = 0
+    for memkey in p['memory']:
+        for y in p['memory'][memkey]:
+            acontecimientos = p['memory'][memkey][y]
+            if isinstance(acontecimientos, dict):
+                life_events += 1
+            else:
+                life_events += len(acontecimientos)
+    # network size
+    for rkey in p['network']['relationship keys']:
+        netx = p['network']['relationship keys'][rkey]
+        if isinstance(netx, dict):
+            network_size  += len(netx['birth'])
+        else: 
+            network_size  += len(netx)
+    return life_events, network_size
 
 def output_people():
     directory = 'output/people_json/'
     ages = [0] * 100
     age_to_die = [0] * 100
+    network_freq = [0] * 75
+    event_freq = [0] * 300
     for f in os.listdir(directory):
         path = f"{directory}{f}"
         with open(path) as json_data:
@@ -101,7 +131,14 @@ def output_people():
                 age_to_die[p['age']] += 1
             except:
                 print(f"Dead person too old: {p['age']}, key {p['key']}")
-    
+
+        if p['age'] > 15 and not p['network']['parents'] != 'firstgen':
+            no_events, no_connects = get_network_and_event_size(p)
+            event_freq[no_events] += 1
+            network_freq[no_connects] += 1
+    # print(no_events, no_connects)
+    plot_bar(event_freq[0:201], 'Number of life events per person', None, 'number of events', 'frequency')
+    plot_bar(network_freq[0:50], 'Number of network connections per person', None, 'number of connections', 'frequency')
     plot_bar(ages, 'People per age', None, 'ages', 'number of people')
     plot_bar(age_to_die, 'People to die per age', None, 'ages', 'number of people')
 
@@ -113,10 +150,8 @@ def overall_stats():
     ys = [(s[key], key) for key in s.keys()]
     ys.remove((s['male births'], 'male births'))
     ys.remove((s['female births'], 'female births'))
-    # for i, l in ys:
-    #     print(len(i))
-    #     print(l)
-    plot(x, ys, 'Demographics', 'years', 'number of people')
+    ys.remove((s['living people'], 'living people'))
+    plot(x, ys, 'Demographics', 'years', 'number of people', True)
 
 """
 DISTANC ANALYSIS
@@ -156,83 +191,74 @@ def similarity_analysis():
     # people_vector = []
     matches = []
     output = []
-    no_people = 10
-    for i in range(no_people):
-        output.append([])
+    exemplar_results = []
+    no_exemplars = 10 
+    ftypes = ['age', 'distance', 'kinsey distance', 'network size', 'life events']
+    field_names = [f"{ft}-{fi}" for ft in ftypes for fi in range(6)]
+    print(field_names)
+    for exemplar in range(no_exemplars):
         # select random person older than 15 NOT first gen
         while True:
-            f = random.choice(os.listdir(directory))
-            path = f"{directory}{f}"
+            f3 = random.choice(os.listdir(directory))
+            path = f"{directory}{f3}"
             with open(path) as json_data:
-                p = json.load(json_data)
-            if p[f[0:-5]]['network']['parents'] != 'firstgen' and p[f[0:-5]]['age'] > 15:
-                person =  p[f[0:-5]]
+                p5 = json.load(json_data)[f3[0:-5]]
+            if p5['network']['parents'] != 'firstgen' and p5['age'] > 15:
+                person =  p5
                 # print(person)
-                people.append(f[0:-5]) # save key
+                people.append(f3[0:-5]) # save key
                 break
         # create vector of personality and age
         person_vector = get_personality_vector_from_person(person)
         person_kin = get_bornlikethis_vector_from_person(person)
+
         # loop over all people finding best matches
         all_distances = []
-        option_counter = 0
-        for f in os.listdir(directory):
-            path = f"{directory}{f}"
+        for f2 in os.listdir(directory):
+            path = f"{directory}{f2}"
             with open(path) as json_data:
-                p = json.load(json_data)[f[0:-5]]
-            if p['network']['parents'] != 'firstgen' and p['age'] > 15:
-                my_vector = get_personality_vector_from_person(p)
-                this = (get_vector_distance(person_vector, my_vector), f[0:-5])
+                p2 = json.load(json_data)[f2[0:-5]]
+            if p2['network']['parents'] != 'firstgen' and p2['age'] > 15:
+                my_vector = get_personality_vector_from_person(p2)
+                this = (get_vector_distance(person_vector, my_vector), f2[0:-5])
                 all_distances.append(this)
-                option_counter += 1
             else:
-                break
-        print(option_counter)
+                continue
         all_distances.sort()
         best_matches = all_distances[0:6]
         matches.append(best_matches)
 
+
+        this_row = {}
         # for each best match, determine number of life events and network size
         for ii, (s, k) in enumerate(best_matches):
             path = f"{directory}{k}.json"
             with open(path) as json_data:
                 p = json.load(json_data)[k]
 
-            match_info = {
-                # f'key-{ii}' : k,
-                f'age-{ii}' : p['age'],
-                f'distance-{ii}' : s,
-                f'kinsey distance-{ii}' : 0,
-                f'network size-{ii}' : 0,
-                f'life events-{ii}' : 0,
-            }
-            
-            # life events
-            for memkey in p['memory']:
-                for y in p['memory'][memkey]:
-                    acontecimientos = p['memory'][memkey][y]
-                    if isinstance(acontecimientos, dict):
-                        match_info[f'life events-{ii}'] += 1
-                    else:
-                        match_info[f'life events-{ii}'] += len(acontecimientos)
-            # network size
-            for rkey in p['network']['relationship keys']:
-                netx = p['network']['relationship keys'][rkey]
-                if isinstance(netx, dict):
-                    match_info[f'network size-{ii}'] += len(netx['birth'])
-                else: 
-                    match_info[f'network size-{ii}'] += len(netx)
+                   
+            this_row[f'age-{ii}'] = p['age']
+            this_row[f'distance-{ii}'] = s
 
-            # kinsey distance
+            le, ns = get_network_and_event_size(p)     
+            this_row[f'life events-{ii}'] = le
+            this_row[f'network size-{ii}'] = ns
+            
             thiskin = get_bornlikethis_vector_from_person(p)
-            match_info[f'kinsey distance-{ii}'] = get_vector_distance(person_kin, thiskin)
-            # print(match_info)
-            output[i].append(match_info)
-            # print(output)
+            this_row[f'kinsey distance-{ii}'] = get_vector_distance(person_kin, thiskin)
+
+            
+            with open(f"output/analysis/exemplars/e{exemplar}.m{ii}.json", 'w') as exemplar_results:
+                json.dump(p, exemplar_results, indent=2, separators=(',', ': '))
+        output.append(this_row)
+
     # CSV output (thank you chatgpt)
     import csv
     csv_file_path = 'output/analysis/csv/difference_matches.csv'
 
+    # field_names = set().union(*(d.keys() for inner_list in exemplar_results for d in inner_list))
+    print(field_names)
+    print(exemplar_results)
     with open(csv_file_path, 'w', newline='') as csv_file:
         writer = csv.DictWriter(csv_file, fieldnames=field_names)
 
@@ -240,13 +266,13 @@ def similarity_analysis():
         writer.writeheader()
 
         # Write the data
-        for inner_list in output:
-            thisrow = {}
-            for it in inner_list:
-                thisrow = {
-                    ** thisrow, 
-                    ** it
-                }
+        for thisrow in output:
+            # thisrow = {}
+            # for it in inner_list:
+            #     thisrow = {
+            #         ** thisrow, 
+            #         ** it
+            #     }
             writer.writerow(thisrow)
 
 
@@ -261,14 +287,14 @@ if __name__ == '__main__':
 
     directory = 'output/people_json/'
     counter = 0
-    for f in os.listdir(directory):
-        path = f"{directory}{f}"
-        with open(path) as json_data:
-            p = json.load(json_data)[f[0:-5]]
-        if p['network']['parents'] != 'firstgen' and p['age'] > 15:
-            counter += 1
-    print(counter)
-    # similarity_analysis()
-    relationship_analysis()
-    overall_stats()
-    output_people()
+    # for f in os.listdir(directory):
+    #     path = f"{directory}{f}"
+    #     with open(path) as json_data:
+    #         p = json.load(json_data)[f[0:-5]]
+    #     if p['network']['parents'] != 'firstgen' and p['age'] > 15:
+    #         counter += 1
+    # print(f"Number of people older than 15 and not first-gen: {counter}")
+    similarity_analysis()
+    # relationship_analysis()
+    # overall_stats()
+    # output_people()
