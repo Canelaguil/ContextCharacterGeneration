@@ -22,11 +22,13 @@ so close to her sibling that their death affected her way more than her mother�
 because she was neglected as a child and that sibling was her actual caretaker”. Even though
 the stronger reaction was a coincidence cause by different numbers being chosen from the normal
 distribution, and the neglect not actually influencing any chance.
-4.2 The framework
-Figure 4.1 shows the set-up of the model. It is designed to be modular: all communication
+
+## The framework
+The model is designed to be modular: all communication
 between agents happens through the community model, and likewise all support classes of the
 agents are addressed through their respective agents. As a result, all support classes can easily
 be replaced by treating them as APIs.
+
 In addition to that, existing systems within the model can be adjusted to a project’s need.
 Take the faction system for example: ”factions” can be used to represent:
 
