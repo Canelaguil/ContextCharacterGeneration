@@ -4,7 +4,6 @@ from .home import Home
 from .utils import *
 from .person_classes import *
 
-# TODO: Parent info???
 class Person(Agent):
     """
     Represents an inhabitant of a community. 

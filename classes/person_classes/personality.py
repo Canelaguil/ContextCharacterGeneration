@@ -35,12 +35,6 @@ class Personality():
                 return True
         return False
     
-    # def influence_attitude(self, trait, chance, modifier):
-    #     if rand() < chance:
-    #         self.attitude[trait] = fair_mod(self.attitude[trait], modifier, 1, 3)
-    #         return True
-    #     return False
-
     def trigger(self, trigger, params = None):
         """
         Receive & process personality triggers

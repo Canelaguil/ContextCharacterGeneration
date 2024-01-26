@@ -45,6 +45,23 @@ def plot_scatter(x, y, title, xlabel='', ylabel='', all_xticks=False, stretch=Fa
     plt.savefig(f'output/analysis/plots/{experiment}{title}.png')
     plt.close()
 
+def scatterspecial(xy1, xy2, title, xlabel='', ylabel='', stretch=True):
+    x1, y1 = zip(*xy1)
+    x2, y2 = zip(*xy2)
+    plt.scatter(x1, y1, s=6, linewidth=0, label='closest')
+    plt.scatter(x2, y2, s=6, linewidth=0, label='furthest')
+    plt.legend()
+    if stretch:
+        fig = plt.gcf()
+        fig.set_size_inches(9, 4)   
+    plt.title(title)
+    plt.xlabel(xlabel)
+    plt.ylabel(ylabel)
+    # if all_xticks:
+    #     plt.xticks(x)
+    plt.savefig(f'output/analysis/plots/{experiment}{title}.png')
+    plt.close()
+
 def plot_bar(ys, title, xs = None, xlabel='', ylabel=''):
     if not xs:
         xs = [i for i in range(len(ys))]
@@ -172,8 +189,8 @@ def get_vector_distance(element1, element2):
         e2 = np.array(element2)
 
     distance = np.linalg.norm(e2 - e1)
-    max_distance = 1.732 # distance between (0, 0, 0) and (1, 1, 1)
-    return round(distance / max_distance, 3)
+    # max_distance = 1.732 # distance between (0, 0, 0) and (1, 1, 1)
+    return round(distance, 3)
 
 def get_personality_vector_from_person(per):
     a = list(per['personality'].values()) + [per['age']]
@@ -190,12 +207,13 @@ def similarity_analysis():
     people = []
     # people_vector = []
     matches = []
-    output = []
+    output_closest = []
+    output_furthest = []
     exemplar_results = []
     no_exemplars = 10 
     ftypes = ['age', 'distance', 'kinsey distance', 'network size', 'life events']
     field_names = [f"{ft}-{fi}" for ft in ftypes for fi in range(6)]
-    print(field_names)
+    exemplarletters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J']
     for exemplar in range(no_exemplars):
         # select random person older than 15 NOT first gen
         while True:
@@ -226,16 +244,17 @@ def similarity_analysis():
                 continue
         all_distances.sort()
         best_matches = all_distances[0:6]
+        worst_matches = [all_distances[0]] + all_distances[-5:]
         matches.append(best_matches)
 
-
         this_row = {}
+        print('BEST')
         # for each best match, determine number of life events and network size
         for ii, (s, k) in enumerate(best_matches):
+            print(k)
             path = f"{directory}{k}.json"
             with open(path) as json_data:
                 p = json.load(json_data)[k]
-
                    
             this_row[f'age-{ii}'] = p['age']
             this_row[f'distance-{ii}'] = s
@@ -246,19 +265,38 @@ def similarity_analysis():
             
             thiskin = get_bornlikethis_vector_from_person(p)
             this_row[f'kinsey distance-{ii}'] = get_vector_distance(person_kin, thiskin)
+            
+            with open(f"output/analysis/closest_exemplars/{k}.closest_e{exemplarletters[exemplar]}.m{ii}.json", 'w') as exemplar_results:
+                json.dump(p, exemplar_results, indent=2, separators=(',', ': '))
+        output_closest.append(this_row)
+        this_row2 = {}
+        print('WORST')
+        # for each worst match, determine number of life events and network size
+        for ii, (s2, k2) in enumerate(worst_matches):
+            path = f"{directory}{k2}.json"
+            print(k2)
+            with open(path) as json_data:
+                p8 = json.load(json_data)[k2]
+                   
+            this_row2[f'age-{ii}'] = p8['age']
+            this_row2[f'distance-{ii}'] = s2
+
+            le, ns = get_network_and_event_size(p8)     
+            this_row2[f'life events-{ii}'] = le
+            this_row2[f'network size-{ii}'] = ns
+            
+            thiskin = get_bornlikethis_vector_from_person(p8)
+            this_row2[f'kinsey distance-{ii}'] = get_vector_distance(person_kin, thiskin)
 
             
-            with open(f"output/analysis/exemplars/e{exemplar}.m{ii}.json", 'w') as exemplar_results:
-                json.dump(p, exemplar_results, indent=2, separators=(',', ': '))
-        output.append(this_row)
+            with open(f"output/analysis/furthest_exemplars/{k2}.furthest_e{exemplarletters[exemplar]}.m{ii}.json", 'w') as exemplar_results:
+                json.dump(p8, exemplar_results, indent=2, separators=(',', ': '))
+        output_furthest.append(this_row2)
 
     # CSV output (thank you chatgpt)
     import csv
-    csv_file_path = 'output/analysis/csv/difference_matches.csv'
+    csv_file_path = 'output/analysis/csv/closest_matches.csv'
 
-    # field_names = set().union(*(d.keys() for inner_list in exemplar_results for d in inner_list))
-    print(field_names)
-    print(exemplar_results)
     with open(csv_file_path, 'w', newline='') as csv_file:
         writer = csv.DictWriter(csv_file, fieldnames=field_names)
 
@@ -266,14 +304,162 @@ def similarity_analysis():
         writer.writeheader()
 
         # Write the data
-        for thisrow in output:
-            # thisrow = {}
-            # for it in inner_list:
-            #     thisrow = {
-            #         ** thisrow, 
-            #         ** it
-            #     }
+        for thisrow in output_closest:
             writer.writerow(thisrow)
+
+    csv_file_path = 'output/analysis/csv/furthest_matches.csv'
+
+    with open(csv_file_path, 'w', newline='') as csv_file:
+        writer = csv.DictWriter(csv_file, fieldnames=field_names)
+
+        # Write the header
+        writer.writeheader()
+
+        # Write the data
+        for thisrow in output_furthest:
+            writer.writerow(thisrow)
+
+def links_analysis():
+    import math
+    no_links = [0] * 2000
+    directory1 = 'output/analysis/thesis_results/closest_exemplars/'
+    directory2 = 'output/analysis/thesis_results/furthest_exemplars/'
+    directory3 = 'output/people_json/'
+    close_points = []
+    all_points = []
+    furthest_points = []
+    closest_results = []
+    keys = [] # furthest has a lot of doubles, so to counteract
+    for f in os.listdir(directory1):
+        total_links = 0
+        total_events = 0
+        path = f"{directory1}{f}"
+        with open(path) as json_data:
+            per = json.load(json_data)
+
+        memkey = 'events' # only count events
+        for y in per['memory'][memkey]:
+            acontecimientos = per['memory'][memkey][y]
+            if isinstance(acontecimientos, dict):
+                total_events += 1
+            else:
+                no_events = len(acontecimientos)
+                total_events += no_events
+                if no_events > 1:
+                    total_links += math.comb(no_events, 2)
+        descripte_title = f.split('.')
+        keys.append(descripte_title[0])
+
+        # process results
+        no_links[total_links] += 1
+        close_points.append((total_events, total_links))
+
+        thisrow = {
+            'key' : descripte_title[0],
+            'events' : total_events,
+            'links' : total_links,
+            'type' : descripte_title[1].split('_')[0],
+            'em' : f"{descripte_title[1].split('_')[1][1]}{descripte_title[2][1]}",
+            'exemplar' : descripte_title[1].split('_')[1][1],
+            'match' : descripte_title[2][1]
+        }
+        closest_results.append(thisrow)
+
+    furthest_results = []
+    for f in os.listdir(directory2):
+        total_links = 0
+        total_events = 0
+        path = f"{directory2}{f}"
+        with open(path) as json_data:
+            per = json.load(json_data)
+
+        memkey = 'events' # only count events
+        for y in per['memory'][memkey]:
+            acontecimientos = per['memory'][memkey][y]
+            if isinstance(acontecimientos, dict):
+                total_events += 1
+            else:
+                no_events = len(acontecimientos)
+                total_events += no_events
+                if no_events > 1:
+                    total_links += math.comb(no_events, 2)
+        descripte_title = f.split('.')
+        if descripte_title[0] in keys:
+            continue
+        keys.append(descripte_title[0])
+
+        no_links[total_links] += 1
+        furthest_points.append((total_events, total_links))
+
+        thisrow = {
+            'key' : descripte_title[0],
+            'events' : total_events,
+            'links' : total_links,
+            'type' : descripte_title[1].split('_')[0],
+            'em' : f"{descripte_title[1].split('_')[1][1]}{descripte_title[2][1]}",
+            'exemplar' : descripte_title[1].split('_')[1][1],
+            'match' : descripte_title[2][1]
+        }
+        furthest_results.append(thisrow)
+
+    for f in os.listdir(directory3):
+        total_links = 0
+        total_events = 0
+        path = f"{directory3}{f}"
+        with open(path) as json_data:
+            per = json.load(json_data)
+            per = per[list(per.keys())[0]]
+        if per['age'] > 15 and per['network']['parents'] != 'firstgen':
+            memkey = 'events' # only count events
+            for y in per['memory'][memkey]:
+                acontecimientos = per['memory'][memkey][y]
+                if isinstance(acontecimientos, dict):
+                    total_events += 1
+                else:
+                    no_events = len(acontecimientos)
+                    total_events += no_events
+                    if no_events > 1:
+                        total_links += math.comb(no_events, 2)
+            descripte_title = f.split('.')
+            keys.append(descripte_title[0])
+
+            # process results
+            # no_links[total_links] += 1
+            all_points.append((total_events, total_links))
+    import numpy as np
+    mx, my = zip(*all_points)
+    print(len(mx))
+    print(f"events mean: {np.mean(mx)}")
+    print(f"events min: {np.min(mx)}, events max: {np.max(mx)}")
+    print(f"links mean: {np.mean(my)}")
+    print(f"links min: {np.min(my)}, links max: {np.max(my)}")
+    # print(len(all_points))
+    plot_scatter(mx, my, 'All relations between events and links', 'number of events', 'number of links', stretch=True)
+
+    import csv
+    field_names = list(thisrow.keys())
+
+    csv_file_path1 = 'output/analysis/csv/closest_links.csv'
+    with open(csv_file_path1, 'w', newline='') as csv_file:
+        writer = csv.DictWriter(csv_file, fieldnames=field_names)
+        # Write the header
+        writer.writeheader()
+        # Write the data
+        for thisrow in closest_results:
+            writer.writerow(thisrow)
+
+    csv_file_path2 = 'output/analysis/csv/furthest_links.csv'
+    with open(csv_file_path2, 'w', newline='') as csv_file:
+        writer = csv.DictWriter(csv_file, fieldnames=field_names)
+        # Write the header
+        writer.writeheader()
+        # Write the data
+        for thisrow in furthest_results:
+            writer.writerow(thisrow)
+
+    scatterspecial(close_points, furthest_points, 'Relation between number of events and number of links', 'number of events', 'number of links')
+    # plot_bar(no_links, 'Number of links - closest', None, 'number of links', 'frequency')
+                    
 
 
 if __name__ == '__main__':
@@ -286,7 +472,7 @@ if __name__ == '__main__':
         experiment = arg + '_'
 
     directory = 'output/people_json/'
-    counter = 0
+    # counter = 0
     # for f in os.listdir(directory):
     #     path = f"{directory}{f}"
     #     with open(path) as json_data:
@@ -294,7 +480,9 @@ if __name__ == '__main__':
     #     if p['network']['parents'] != 'firstgen' and p['age'] > 15:
     #         counter += 1
     # print(f"Number of people older than 15 and not first-gen: {counter}")
-    similarity_analysis()
+    # similarity_analysis()
+
+    links_analysis()
     # relationship_analysis()
     # overall_stats()
     # output_people()
