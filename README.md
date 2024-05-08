@@ -44,10 +44,9 @@ This leaves the developer with the following personalization options:
 4. Exchanging support classes for other classes
 5. Interpreting the output as desired during post-processing
 
+![model](https://github.com/Canelaguil/ContextCharacterGeneration/assets/29520988/3b4b8d5f-5cf7-42e9-91be-a079c8f77245)
 
-![model](https://github.com/Canelaguil/ContextCharacterGeneration/blob/main/model set up-1-1.pdf)
 
-## Runing the code
 ```
  # run simulation with input specified in /input/
 python generation.py
