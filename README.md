@@ -45,6 +45,8 @@ This leaves the developer with the following personalization options:
 5. Interpreting the output as desired during post-processing
 
 
+![model](https://github.com/Canelaguil/ContextCharacterGeneration/blob/main/model set up-1-1.pdf)
+
 ## Runing the code
 ```
  # run simulation with input specified in /input/
